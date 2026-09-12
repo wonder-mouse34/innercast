@@ -51,14 +51,14 @@ export default function TabLayout() {
         <Tabs.Screen
           name="journal"
           options={{
-            title: 'Journal',
+            title: 'Reflect',
             tabBarIcon: ({ color, size }) => <NotebookPen color={color} size={size ?? 24} />,
           }}
         />
         <Tabs.Screen
           name="circles"
           options={{
-            title: 'Circles',
+            title: 'Connect',
             tabBarIcon: ({ color, size }) => <Users color={color} size={size ?? 24} />,
           }}
         />
