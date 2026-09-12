@@ -23,7 +23,7 @@ import { goBackOrReplace } from '@/lib/navigation';
 import { monogram } from '@/components/ShowArtwork';
 import { personaLabel } from '@/lib/data/personaTraits';
 import { situationLabel } from '@/lib/data/situations';
-import { useNativeThemeColor, withAlpha } from '@/lib/theme';
+import { showTint, useNativeThemeColor, withAlpha } from '@/lib/theme';
 import { useProfileStore } from '@/lib/store/profile';
 import { useSessionStore } from '@/lib/store/sessions';
 import { useWatchlistStore } from '@/lib/store/watchlist';
@@ -114,19 +114,20 @@ export default function ShowDetailScreen() {
   }
 
   const isSaved = entry?.status === 'saved' || entry?.status === 'watching';
+  const tint = showTint(show.palette);
 
   return (
     <ScrollView className="flex-1" contentContainerClassName="pb-16">
       <LinearGradient
-        colors={[show.palette[0], show.palette[1]]}
+        colors={[tint.from, tint.to]}
         start={{ x: 0.1, y: 0 }}
         end={{ x: 1, y: 1 }}
         className="pt-safe-offset-3 gap-5 px-5 pb-7"
       >
-        {/* Scrim: show palettes run from dark to bright, so theme text needs a
-            dark base underneath it to stay readable on the bright end. */}
+        {/* Paper scrim: fades the tinted wash into the page below so the hero
+            sits flush with the light background instead of ending on a seam. */}
         <LinearGradient
-          colors={[withAlpha(background, 0.2), withAlpha(background, 0.85)]}
+          colors={[withAlpha(background, 0), withAlpha(background, 0.7)]}
           start={{ x: 0, y: 0 }}
           end={{ x: 0, y: 1 }}
           className="absolute inset-0"
@@ -136,7 +137,7 @@ export default function ShowDetailScreen() {
           onPress={() => goBackOrReplace('/')}
           accessibilityRole="button"
           accessibilityLabel="Go back"
-          className="bg-background/40 h-10 w-10 items-center justify-center rounded-full"
+          className="bg-surface/85 border-border h-10 w-10 items-center justify-center rounded-full border"
           style={({ pressed }) => ({ opacity: pressed ? 0.7 : 1 })}
         >
           <ArrowLeft color={foreground} size={20} />
@@ -146,18 +147,17 @@ export default function ShowDetailScreen() {
           <Typography
             type="body-xs"
             weight="semibold"
-            className="text-foreground/85"
-            style={{ letterSpacing: 2 }}
+            style={{ letterSpacing: 2, color: tint.ink }}
           >
             {monogram(show.title)} · {show.origin.toUpperCase()}
           </Typography>
           <Typography type="h2" weight="bold" className="text-foreground">
             {show.title}
           </Typography>
-          <Typography type="body-sm" className="text-foreground/75">
+          <Typography type="body-sm" color="muted">
             {show.years} · {show.genres.join(' · ')}
           </Typography>
-          <Typography type="body-sm" className="text-foreground/90 mt-1 leading-6">
+          <Typography type="body-sm" className="text-foreground mt-1 leading-6">
             {show.logline}
           </Typography>
         </View>

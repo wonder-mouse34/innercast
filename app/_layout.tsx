@@ -13,7 +13,7 @@ import Constants, { ExecutionEnvironment } from 'expo-constants';
 import { Platform } from 'react-native';
 import { useEffect } from 'react';
 import * as DevClient from 'expo-dev-client';
-import { HeroUINativeProvider, useThemeColor } from 'heroui-native';
+import { HeroUINativeProvider } from 'heroui-native';
 import { Uniwind } from 'uniwind';
 import {
   ErrorBoundary as ExpoErrorBoundary,
@@ -25,6 +25,7 @@ import {
 import { initPostHog } from '@/lib/posthog';
 import { registerServiceWorker } from '@/lib/registerServiceWorker';
 import { reportErrorToParent } from '@/lib/reportPreviewError';
+import { useNativeThemeColor } from '@/lib/theme';
 import { InstallPrompt } from '@/components/InstallPrompt';
 
 /**
@@ -44,7 +45,7 @@ function ErrorBoundary({ error, retry }: ErrorBoundaryProps) {
 export { ErrorBoundary };
 
 function RootNavigator() {
-  const [background, foreground, panel] = useThemeColor([
+  const [background, foreground, panel] = useNativeThemeColor([
     'background',
     'foreground',
     'background-secondary',
@@ -88,8 +89,8 @@ function RootNavigator() {
   );
 }
 
-// Lantern is a low-light, evening-companion app: dark theme only.
-Uniwind.setTheme('dark');
+// Lantern uses a light, Scandinavian palette: light theme only.
+Uniwind.setTheme('light');
 
 void SplashScreen.preventAutoHideAsync();
 

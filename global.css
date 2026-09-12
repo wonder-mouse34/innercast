@@ -40,75 +40,77 @@
 @source './node_modules/heroui-native/lib';
 
 /*
- * Lantern theme — warm, intimate, low-light.
- * Both variants carry the same warm values; the app locks to dark.
+ * Lantern theme — light, Scandinavian: bone and linen surfaces, birch borders,
+ * soft ink text and a muted clay accent. Both variants carry the same light
+ * values; the app locks to light.
  */
 @layer theme {
   :root {
     @variant light {
-      --background: oklch(0.16 0.012 55);
-      --background-secondary: oklch(0.195 0.014 55);
-      --background-tertiary: oklch(0.23 0.016 55);
-      --foreground: oklch(0.95 0.012 80);
-      --muted: oklch(0.7 0.022 70);
-      --surface: oklch(0.215 0.016 55);
-      --border: oklch(0.32 0.022 60);
-      --border-secondary: oklch(0.28 0.02 60);
-      --separator: oklch(0.29 0.02 60);
-      --default: oklch(0.27 0.018 58);
-      --default-foreground: oklch(0.93 0.012 80);
-      --accent: oklch(0.79 0.13 70);
-      --accent-foreground: oklch(0.2 0.035 60);
-      --accent-soft: oklch(0.31 0.055 65);
-      --accent-soft-foreground: oklch(0.88 0.1 78);
-      --success: oklch(0.73 0.11 155);
-      --warning: oklch(0.82 0.13 82);
-      --warning-soft: oklch(0.3 0.06 80);
-      --warning-soft-foreground: oklch(0.9 0.09 85);
-      --danger: oklch(0.66 0.16 28);
-      --link: oklch(0.79 0.13 70);
-      --focus: oklch(0.79 0.13 70);
-      --field: oklch(0.215 0.016 55);
-      --field-border: oklch(0.32 0.022 60);
+      --background: oklch(0.972 0.005 85);
+      --background-secondary: oklch(0.945 0.008 82);
+      --background-tertiary: oklch(0.912 0.01 80);
+      --foreground: oklch(0.29 0.012 62);
+      --muted: oklch(0.535 0.014 64);
+      --surface: oklch(0.995 0.003 85);
+      --border: oklch(0.885 0.008 80);
+      --border-secondary: oklch(0.915 0.007 80);
+      --separator: oklch(0.9 0.007 80);
+      --default: oklch(0.928 0.008 82);
+      --default-foreground: oklch(0.32 0.012 62);
+      --accent: oklch(0.51 0.115 40);
+      --accent-foreground: oklch(0.985 0.004 85);
+      --accent-soft: oklch(0.93 0.03 44);
+      --accent-soft-foreground: oklch(0.44 0.1 38);
+      --success: oklch(0.52 0.085 155);
+      --warning: oklch(0.68 0.11 72);
+      --warning-soft: oklch(0.945 0.035 80);
+      --warning-soft-foreground: oklch(0.45 0.09 68);
+      --danger: oklch(0.52 0.16 27);
+      --link: oklch(0.51 0.115 40);
+      --focus: oklch(0.51 0.115 40);
+      --field: oklch(0.99 0.003 85);
+      --field-border: oklch(0.875 0.008 80);
     }
 
     @variant dark {
-      --background: oklch(0.16 0.012 55);
-      --background-secondary: oklch(0.195 0.014 55);
-      --background-tertiary: oklch(0.23 0.016 55);
-      --foreground: oklch(0.95 0.012 80);
-      --muted: oklch(0.7 0.022 70);
-      --surface: oklch(0.215 0.016 55);
-      --border: oklch(0.32 0.022 60);
-      --border-secondary: oklch(0.28 0.02 60);
-      --separator: oklch(0.29 0.02 60);
-      --default: oklch(0.27 0.018 58);
-      --default-foreground: oklch(0.93 0.012 80);
-      --accent: oklch(0.79 0.13 70);
-      --accent-foreground: oklch(0.2 0.035 60);
-      --accent-soft: oklch(0.31 0.055 65);
-      --accent-soft-foreground: oklch(0.88 0.1 78);
-      --success: oklch(0.73 0.11 155);
-      --warning: oklch(0.82 0.13 82);
-      --warning-soft: oklch(0.3 0.06 80);
-      --warning-soft-foreground: oklch(0.9 0.09 85);
-      --danger: oklch(0.66 0.16 28);
-      --link: oklch(0.79 0.13 70);
-      --focus: oklch(0.79 0.13 70);
-      --field: oklch(0.215 0.016 55);
-      --field-border: oklch(0.32 0.022 60);
+      --background: oklch(0.972 0.005 85);
+      --background-secondary: oklch(0.945 0.008 82);
+      --background-tertiary: oklch(0.912 0.01 80);
+      --foreground: oklch(0.29 0.012 62);
+      --muted: oklch(0.535 0.014 64);
+      --surface: oklch(0.995 0.003 85);
+      --border: oklch(0.885 0.008 80);
+      --border-secondary: oklch(0.915 0.007 80);
+      --separator: oklch(0.9 0.007 80);
+      --default: oklch(0.928 0.008 82);
+      --default-foreground: oklch(0.32 0.012 62);
+      --accent: oklch(0.51 0.115 40);
+      --accent-foreground: oklch(0.985 0.004 85);
+      --accent-soft: oklch(0.93 0.03 44);
+      --accent-soft-foreground: oklch(0.44 0.1 38);
+      --success: oklch(0.52 0.085 155);
+      --warning: oklch(0.68 0.11 72);
+      --warning-soft: oklch(0.945 0.035 80);
+      --warning-soft-foreground: oklch(0.45 0.09 68);
+      --danger: oklch(0.52 0.16 27);
+      --link: oklch(0.51 0.115 40);
+      --focus: oklch(0.51 0.115 40);
+      --field: oklch(0.99 0.003 85);
+      --field-border: oklch(0.875 0.008 80);
     }
   }
 }
 
 @theme {
-  --color-ember: oklch(0.72 0.15 45);
-  --color-lantern: oklch(0.84 0.14 78);
-  --color-dusk: oklch(0.62 0.1 300);
-  --color-sage: oklch(0.72 0.07 160);
-  --color-canvas-deep: oklch(0.125 0.01 55);
-  --color-parchment: oklch(0.93 0.03 85);
-  --color-ink-soft: oklch(0.44 0.022 60);
+  --color-clay: oklch(0.51 0.115 40);
+  --color-clay-soft: oklch(0.93 0.03 44);
+  --color-birch: oklch(0.885 0.008 80);
+  --color-linen: oklch(0.945 0.008 82);
+  --color-bone: oklch(0.972 0.005 85);
+  --color-fjord: oklch(0.58 0.055 235);
+  --color-moss: oklch(0.6 0.06 150);
+  --color-ink-soft: oklch(0.44 0.014 62);
 }
 
 /*

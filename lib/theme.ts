@@ -82,6 +82,62 @@ export function withAlpha(hexColor: string, alpha: number): string {
   return `${base.slice(0, 7)}${toHexPair(alpha)}`;
 }
 
+function hexChannels(hexColor: string): [number, number, number] | null {
+  const base = toNativeColor(hexColor);
+  if (!base.startsWith('#') || base.length < 7) return null;
+  return [
+    Number.parseInt(base.slice(1, 3), 16),
+    Number.parseInt(base.slice(3, 5), 16),
+    Number.parseInt(base.slice(5, 7), 16),
+  ];
+}
+
+/** Linear blend between two colors: amount 0 keeps `from`, 1 returns `to`. */
+export function mixColors(from: string, to: string, amount: number): string {
+  const a = hexChannels(from);
+  const b = hexChannels(to);
+  if (!a || !b) return toNativeColor(from);
+  const t = clamp01(amount);
+  const channel = (index: 0 | 1 | 2) => Math.round(a[index] + (b[index] - a[index]) * t);
+  return `#${[0, 1, 2]
+    .map((index) =>
+      channel(index as 0 | 1 | 2)
+        .toString(16)
+        .padStart(2, '0'),
+    )
+    .join('')}`;
+}
+
+const TINT_PAPER = '#fbf8f3';
+const TINT_INK = '#2a221a';
+
+export type ShowTint = {
+  /** Pale wash for the top-left of artwork/hero gradients. */
+  from: string;
+  /** Even paler wash for the bottom-right. */
+  to: string;
+  /** Deep version of the show's hue, readable on the wash. */
+  ink: string;
+  /** Hairline border that still hints at the show's hue. */
+  border: string;
+};
+
+/**
+ * The corpus stores each show as a dark base plus a vivid accent, which was
+ * authored for a dark UI. On the light Scandinavian palette we keep the hue but
+ * lift it into a pale paper wash and darken it for text, so artwork reads as a
+ * tinted card rather than a dark block.
+ */
+export function showTint(palette: readonly [string, string] | readonly string[]): ShowTint {
+  const hue = palette[1] ?? palette[0] ?? TINT_INK;
+  return {
+    from: mixColors(hue, TINT_PAPER, 0.8),
+    to: mixColors(hue, TINT_PAPER, 0.93),
+    ink: mixColors(hue, TINT_INK, 0.52),
+    border: mixColors(hue, TINT_PAPER, 0.65),
+  };
+}
+
 type ThemeColorKey = Parameters<typeof useThemeColor>[0] extends readonly (infer K)[] ? K : never;
 
 /** useThemeColor, but every value is safe to hand to a native prop. */

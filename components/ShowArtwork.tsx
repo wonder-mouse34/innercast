@@ -1,6 +1,7 @@
 import { Typography } from 'heroui-native';
 
 import { LinearGradient } from '@/components/ui/primitives/LinearGradient';
+import { showTint } from '@/lib/theme';
 import { cn } from '@/lib/utils';
 import type { Show } from '@/lib/types';
 
@@ -38,17 +39,20 @@ type Props = {
 };
 
 export function ShowArtwork({ show, size = 'md', className }: Props) {
+  const tint = showTint(show.palette);
+
   return (
     <LinearGradient
-      colors={[show.palette[0], show.palette[1]]}
+      colors={[tint.from, tint.to]}
       start={{ x: 0.1, y: 0 }}
       end={{ x: 1, y: 1 }}
       className={cn('items-center justify-center overflow-hidden', SIZE_CLASS[size], className)}
+      style={{ borderWidth: 1, borderColor: tint.border }}
     >
       <Typography
         type={TEXT_TYPE[size]}
         weight="bold"
-        style={{ color: '#f6efe6', letterSpacing: 1 }}
+        style={{ color: tint.ink, letterSpacing: 1 }}
       >
         {monogram(show.title)}
       </Typography>
