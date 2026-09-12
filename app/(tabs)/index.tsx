@@ -194,7 +194,7 @@ export default function DiscoverScreen() {
             <TextArea
               value={text}
               onChangeText={setText}
-              placeholder="I finally have a free evening and want something funny, warm, and full of characters I can root for."
+              placeholder="I just started a new job and want to connect with my team, but I keep overthinking every conversation and wondering if I belong."
               className="min-h-28"
               multiline
               numberOfLines={5}
