@@ -14,6 +14,7 @@ import { Redirect, router } from 'expo-router';
 
 import { EngineBadge } from '@/components/EngineBadge';
 import { MatchCard } from '@/components/MatchCard';
+import { PillarsSection } from '@/components/PillarsSection';
 import { PersonaChips } from '@/components/PersonaChips';
 import { RetrievalTrace } from '@/components/RetrievalTrace';
 import { SectionHeading } from '@/components/SectionHeading';
@@ -409,6 +410,10 @@ export default function DiscoverScreen() {
             </Surface>
           )}
         </View>
+
+        <PillarsSection
+          onDiscoverPress={() => scrollRef.current?.scrollTo({ y: 0, animated: true })}
+        />
       </ScrollView>
     </KeyboardAvoidingView>
   );
