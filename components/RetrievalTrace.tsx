@@ -68,6 +68,7 @@ export function RetrievalTrace({ rows, queryTokens = [], filteredOut = [] }: Pro
               </Typography>
               <Typography type="body-xs" color="muted" className="leading-5">
                 {queryTokens.slice(0, 28).join(' · ')}
+                {queryTokens.length > 28 ? ` · +${queryTokens.length - 28} more` : ''}
               </Typography>
             </View>
           ) : null}

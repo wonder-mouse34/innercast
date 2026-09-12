@@ -4,7 +4,6 @@ import { excerpt, scoreChunks } from '@/lib/rag/chunkIndex';
 import { detectSituations, stem, tokenize, tokenizeQuery } from '@/lib/rag/tokenize';
 import type { SituationHit } from '@/lib/rag/tokenize';
 import {
-  TRAIT_AXES,
   TRAIT_META,
   type ChunkKind,
   type RetrievedShow,
@@ -71,6 +70,12 @@ function axisAlignment(
   return { aligned, strained };
 }
 
+/**
+ * A topic the person asked to steer around counts as a hit when the show's
+ * warnings or themes carry any of its meaningful words. Requiring every word to
+ * match let phrases like "suicide and violence" slip past a show warned only
+ * for suicide, which is the failure that actually hurts someone.
+ */
 function avoidHit(show: Show, avoidTopics: string[]): string | null {
   if (avoidTopics.length === 0) return null;
   const warningTokens = new Set(tokenize(show.contentWarnings.join(' ')));
@@ -78,7 +83,7 @@ function avoidHit(show: Show, avoidTopics: string[]): string | null {
   for (const topic of avoidTopics) {
     const tokens = tokenize(topic);
     if (tokens.length === 0) continue;
-    const isHit = tokens.every((token) => warningTokens.has(token) || themeTokens.has(token));
+    const isHit = tokens.some((token) => warningTokens.has(token) || themeTokens.has(token));
     if (isHit) return topic;
   }
   return null;
@@ -202,5 +207,3 @@ export function axisSummary(axis: TraitAxis, value: number): string {
   if (value <= 45) return meta.lowLabel.toLowerCase();
   return `balanced ${meta.label.toLowerCase()}`;
 }
-
-export const ALL_AXES = TRAIT_AXES;

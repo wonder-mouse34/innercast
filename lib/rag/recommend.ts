@@ -34,6 +34,8 @@ export type MatchOutcome = {
 };
 
 const MAX_REASON_LENGTH = 520;
+/** A single honest sentence is enough; anything shorter is not an explanation. */
+const MIN_REASON_LENGTH = 12;
 
 function clean(value: string | null | undefined, limit = MAX_REASON_LENGTH): string {
   if (!value) return '';
@@ -122,6 +124,7 @@ export async function runMatch(request: MatchRequest): Promise<MatchOutcome> {
   const byId = new Map(retrieval.candidates.map((candidate) => [candidate.show.id, candidate]));
   const recommendations: Recommendation[] = [];
   let hallucinated = 0;
+  let unusable = 0;
 
   for (const entry of parsed) {
     const candidate = byId.get(entry.id.trim());
@@ -131,7 +134,10 @@ export async function runMatch(request: MatchRequest): Promise<MatchOutcome> {
     }
     if (recommendations.some((item) => item.showId === candidate.show.id)) continue;
     const reason = clean(entry.reason);
-    if (reason.length < 20) continue;
+    if (reason.length < MIN_REASON_LENGTH) {
+      unusable += 1;
+      continue;
+    }
 
     recommendations.push({
       showId: candidate.show.id,
@@ -142,20 +148,27 @@ export async function runMatch(request: MatchRequest): Promise<MatchOutcome> {
     });
   }
 
+  // One usable pick is a thin answer; below that the model has told us nothing
+  // we can show, so the on-device writer covers the same candidates instead.
   if (recommendations.length < 2) {
     return {
       engine: 'on-device',
-      engineNote: 'The model did not stay inside the library, so matching ran on this device.',
+      engineNote:
+        hallucinated > unusable
+          ? 'The model suggested shows outside the library, so matching ran on this device.'
+          : 'The model did not explain its picks, so matching ran on this device.',
       recommendations: fallback(),
       retrieval,
     };
   }
 
+  const dropped = hallucinated + unusable;
+
   return {
     engine: 'local-model',
     engineNote:
-      hallucinated > 0
-        ? `${hallucinated} suggestion${hallucinated === 1 ? '' : 's'} outside the library were dropped.`
+      dropped > 0
+        ? `${dropped} unusable suggestion${dropped === 1 ? '' : 's'} were dropped.`
         : undefined,
     modelName: result.model ?? settings.model,
     recommendations: recommendations.slice(0, 4),

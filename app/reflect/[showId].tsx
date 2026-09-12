@@ -9,6 +9,7 @@ import { SectionHeading } from '@/components/SectionHeading';
 import { ShowArtwork } from '@/components/ShowArtwork';
 import { SituationChips } from '@/components/SituationChips';
 import { getShow } from '@/lib/data/shows';
+import { FREE_REFLECTION_ID } from '@/lib/navigation';
 import { selectPrompts, promptById, swapPrompt } from '@/lib/data/reflectionPrompts';
 import { useNativeThemeColor } from '@/lib/theme';
 import { useReflectionStore } from '@/lib/store/reflections';
@@ -25,7 +26,7 @@ export default function ReflectScreen() {
   const [muted] = useNativeThemeColor(['muted']);
   const addReflection = useReflectionStore((state) => state.addReflection);
 
-  const show = getShow(showId);
+  const show = showId === FREE_REFLECTION_ID ? undefined : getShow(showId);
   const [situations, setSituations] = useState<SituationId[]>(
     () => show?.situations.slice(0, 3) ?? [],
   );

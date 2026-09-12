@@ -20,7 +20,7 @@ import { commitmentLabel, getShow, relatedShows } from '@/lib/data/shows';
 import { goBackOrReplace } from '@/lib/navigation';
 import { monogram } from '@/components/ShowArtwork';
 import { situationLabel } from '@/lib/data/situations';
-import { useNativeThemeColor } from '@/lib/theme';
+import { useNativeThemeColor, withAlpha } from '@/lib/theme';
 import { useProfileStore } from '@/lib/store/profile';
 import { useSessionStore } from '@/lib/store/sessions';
 import { useWatchlistStore } from '@/lib/store/watchlist';
@@ -73,11 +73,13 @@ function AxisCompare({ show, traits }: { show: Show; traits: TraitVector }) {
 
 export default function ShowDetailScreen() {
   const { id, sessionId } = useLocalSearchParams<{ id: string; sessionId?: string }>();
-  const [accent, muted, warning, accentForeground] = useNativeThemeColor([
+  const [accent, muted, warning, accentForeground, background, foreground] = useNativeThemeColor([
     'accent',
     'muted',
     'warning',
     'accent-foreground',
+    'background',
+    'foreground',
   ]);
 
   const traits = useProfileStore((state) => state.traits);
@@ -116,31 +118,41 @@ export default function ShowDetailScreen() {
         end={{ x: 1, y: 1 }}
         className="pt-safe-offset-3 gap-5 px-5 pb-7"
       >
+        {/* Scrim: show palettes run from dark to bright, so theme text needs a
+            dark base underneath it to stay readable on the bright end. */}
+        <LinearGradient
+          colors={[withAlpha(background, 0.2), withAlpha(background, 0.85)]}
+          start={{ x: 0, y: 0 }}
+          end={{ x: 0, y: 1 }}
+          className="absolute inset-0"
+        />
+
         <Pressable
           onPress={() => goBackOrReplace('/')}
           accessibilityRole="button"
           accessibilityLabel="Go back"
-          className="h-10 w-10 items-center justify-center rounded-full bg-black/25"
+          className="bg-background/40 h-10 w-10 items-center justify-center rounded-full"
           style={({ pressed }) => ({ opacity: pressed ? 0.7 : 1 })}
         >
-          <ArrowLeft color="#f6efe6" size={20} />
+          <ArrowLeft color={foreground} size={20} />
         </Pressable>
 
         <View className="gap-2">
           <Typography
             type="body-xs"
             weight="semibold"
-            style={{ color: '#f6efe6', letterSpacing: 2 }}
+            className="text-foreground/85"
+            style={{ letterSpacing: 2 }}
           >
             {monogram(show.title)} · {show.origin.toUpperCase()}
           </Typography>
-          <Typography type="h2" weight="bold" style={{ color: '#fdf8f1' }}>
+          <Typography type="h2" weight="bold" className="text-foreground">
             {show.title}
           </Typography>
-          <Typography type="body-sm" style={{ color: '#f2e7da' }}>
+          <Typography type="body-sm" className="text-foreground/75">
             {show.years} · {show.genres.join(' · ')}
           </Typography>
-          <Typography type="body-sm" className="mt-1 leading-6" style={{ color: '#f6efe6' }}>
+          <Typography type="body-sm" className="text-foreground/90 mt-1 leading-6">
             {show.logline}
           </Typography>
         </View>

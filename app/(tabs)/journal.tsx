@@ -8,6 +8,7 @@ import { MoodDelta } from '@/components/MoodDelta';
 import { SectionHeading } from '@/components/SectionHeading';
 import { ShowArtwork } from '@/components/ShowArtwork';
 import { getShow } from '@/lib/data/shows';
+import { FREE_REFLECTION_ID, reflectHref } from '@/lib/navigation';
 import { situationLabel } from '@/lib/data/situations';
 import { useNativeThemeColor } from '@/lib/theme';
 import { useReflectionStore } from '@/lib/store/reflections';
@@ -195,7 +196,7 @@ export default function JournalScreen() {
 
           <TrendCard entries={entries} />
 
-          <Button variant="primary" onPress={() => router.push('/reflect/free')}>
+          <Button variant="primary" onPress={() => router.push(reflectHref(FREE_REFLECTION_ID))}>
             <PenLine color={accentForeground} size={17} />
             <Button.Label>Write an entry</Button.Label>
           </Button>

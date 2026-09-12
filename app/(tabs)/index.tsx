@@ -86,6 +86,10 @@ export default function DiscoverScreen() {
 
     setError(null);
     setIsMatching(true);
+    // Drop the previous answer now: leaving it on screen under a spinner reads
+    // as if those picks belong to the situation just typed.
+    setOutcome(null);
+    setSessionId(undefined);
     const request = {
       text: trimmed,
       selectedSituations: selected,
