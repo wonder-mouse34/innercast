@@ -1,7 +1,7 @@
 {
-  "name": "Your App Name",
-  "short_name": "Your App",
-  "description": "An app built with Bilt",
+  "name": "Inner Cast",
+  "short_name": "Inner Cast",
+  "description": "Find the character who is going through what you are going through.",
   "start_url": "/",
   "scope": "/",
   "display": "standalone",

@@ -170,7 +170,7 @@ export default function DiscoverScreen() {
         <View className="flex-row items-start justify-between gap-3">
           <View className="flex-1">
             <Typography type="body-xs" color="muted" className="tracking-widest uppercase">
-              Lantern
+              Inner Cast
             </Typography>
             <Typography type="h3" weight="semibold" className="mt-1.5">
               {greeting()}

@@ -93,8 +93,8 @@ export default function ModelSettingsScreen() {
                 Use my own model
               </Typography>
               <Typography type="body-xs" color="muted" className="mt-1 leading-5">
-                Lantern sends your situation and the shows it retrieved to a server you run. Nothing
-                goes anywhere else.
+                Inner Cast sends your situation and the shows it retrieved to a server you run.
+                Nothing goes anywhere else.
               </Typography>
             </View>
             <Switch

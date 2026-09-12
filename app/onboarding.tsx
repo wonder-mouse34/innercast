@@ -128,7 +128,7 @@ export default function OnboardingScreen() {
             </View>
             <View className="gap-3">
               <Typography type="h2" weight="semibold">
-                Lantern
+                Inner Cast
               </Typography>
               <Typography type="body" color="muted" className="leading-7">
                 Tell it what you are going through and it points you at someone on screen living
@@ -136,7 +136,7 @@ export default function OnboardingScreen() {
                 trending.
               </Typography>
               <Typography type="body-sm" color="muted" className="leading-6">
-                Everything you write stays on this device. If you point Lantern at your own local
+                Everything you write stays on this device. If you point Inner Cast at your own local
                 model, that is the only place your words are ever sent.
               </Typography>
             </View>
@@ -161,7 +161,7 @@ export default function OnboardingScreen() {
                 Which of these sound like you?
               </Typography>
               <Typography type="body-sm" color="muted" className="leading-6">
-                Lantern matches you to a person on screen, not a genre. Pick up to{' '}
+                Inner Cast matches you to a person on screen, not a genre. Pick up to{' '}
                 {MAX_PERSONA_TAGS} that ring true — this is the part that decides who you get
                 pointed at.
               </Typography>
@@ -317,8 +317,8 @@ export default function OnboardingScreen() {
 
         {step === STEP_COUNT - 1 ? (
           <Typography type="body-xs" color="muted" className="text-center leading-5">
-            You can point Lantern at your own local model later in You → Local model. Until then it
-            ranks the library on this device.
+            You can point Inner Cast at your own local model later in You → Local model. Until then
+            it ranks the library on this device.
           </Typography>
         ) : null}
       </ScrollView>

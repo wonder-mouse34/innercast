@@ -137,7 +137,7 @@ export default function YouScreen() {
         <View>
           <SectionHeading
             title="Who you are"
-            caption="What Lantern matches against the people on screen. Change it whenever it stops being true."
+            caption="What Inner Cast matches against the people on screen. Change it whenever it stops being true."
           />
           <Surface variant="secondary" className="gap-3 rounded-3xl p-4">
             <PersonaChips

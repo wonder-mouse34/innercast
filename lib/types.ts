@@ -1,5 +1,5 @@
 /**
- * Domain types for Lantern.
+ * Domain types for Inner Cast.
  *
  * The show corpus in `lib/data/shows.ts` is the retrieval database: every field
  * that appears here is either indexed for lexical search, used for trait

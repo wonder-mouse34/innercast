@@ -1,7 +1,7 @@
 import type { Show } from '@/lib/types';
 
 /**
- * The Lantern corpus.
+ * The Inner Cast corpus.
  *
  * This file is the retrieval database. Nothing here is generated at runtime and
  * the language model is never allowed to recommend a title that is not in this

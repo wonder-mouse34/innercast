@@ -89,7 +89,7 @@ function RootNavigator() {
   );
 }
 
-// Lantern uses a light, Scandinavian palette: light theme only.
+// Inner Cast uses a light, Scandinavian palette: light theme only.
 Uniwind.setTheme('light');
 
 void SplashScreen.preventAutoHideAsync();
