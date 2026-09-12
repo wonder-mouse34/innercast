@@ -13,6 +13,7 @@ import {
 } from 'lucide-react-native';
 import { router } from 'expo-router';
 
+import { PersonaChips } from '@/components/PersonaChips';
 import { SectionHeading } from '@/components/SectionHeading';
 import { ShowRow } from '@/components/ShowRow';
 import { TraitSliders } from '@/components/TraitSliders';
@@ -22,7 +23,7 @@ import { relativeTime } from '@/lib/circleAffinity';
 import { situationLabel } from '@/lib/data/situations';
 import { useCircleStore } from '@/lib/store/circles';
 import { useNativeThemeColor } from '@/lib/theme';
-import { useProfileStore } from '@/lib/store/profile';
+import { MAX_PERSONA_TAGS, useProfileStore } from '@/lib/store/profile';
 import { useReflectionStore } from '@/lib/store/reflections';
 import { useSessionStore } from '@/lib/store/sessions';
 import { useSettingsStore } from '@/lib/store/settings';
@@ -57,6 +58,8 @@ export default function YouScreen() {
   const traits = useProfileStore((state) => state.traits);
   const setTrait = useProfileStore((state) => state.setTrait);
   const resetTraits = useProfileStore((state) => state.resetTraits);
+  const personaTags = useProfileStore((state) => state.personaTags);
+  const togglePersonaTag = useProfileStore((state) => state.togglePersonaTag);
   const avoidTopics = useProfileStore((state) => state.avoidTopics);
   const addAvoidTopic = useProfileStore((state) => state.addAvoidTopic);
   const removeAvoidTopic = useProfileStore((state) => state.removeAvoidTopic);
@@ -130,6 +133,26 @@ export default function YouScreen() {
             <Stat value={joinedIds.length} label="circles" />
           </View>
         </Surface>
+
+        <View>
+          <SectionHeading
+            title="Who you are"
+            caption="What Lantern matches against the people on screen. Change it whenever it stops being true."
+          />
+          <Surface variant="secondary" className="gap-3 rounded-3xl p-4">
+            <PersonaChips
+              selected={personaTags}
+              onToggle={togglePersonaTag}
+              max={MAX_PERSONA_TAGS}
+            />
+            {personaTags.length === 0 ? (
+              <Typography type="body-sm" color="muted" className="leading-6">
+                Nothing picked yet, so matching leans on your words and how you like to watch. Pick
+                a couple and you start getting pointed at particular people instead.
+              </Typography>
+            ) : null}
+          </Surface>
+        </View>
 
         <View>
           <SectionHeading

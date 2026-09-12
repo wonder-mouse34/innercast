@@ -1,20 +1,26 @@
+import { CHARACTERS } from '@/lib/data/characters';
 import { SHOWS } from '@/lib/data/shows';
 import { SITUATION_BY_ID } from '@/lib/data/situations';
 import { commitmentLabel } from '@/lib/data/shows';
+import { personaEcho } from '@/lib/data/personaTraits';
 import { tokenize } from '@/lib/rag/tokenize';
-import type { ChunkKind, Show, ShowChunk } from '@/lib/types';
+import type { Character, ChunkKind, Show, ShowChunk } from '@/lib/types';
 
 /**
  * BM25 index over the show corpus.
  *
- * Each show is split into three chunks so a query about a life situation is not
- * diluted by plot description, and vice versa. The index is built once, lazily.
+ * Each show is split into a situation, story and tone chunk so a query about a
+ * life situation is not diluted by plot description, plus one chunk per
+ * character. Character chunks carry the most weight: the app's argument is
+ * person-to-person, so the words someone uses about themselves should land on
+ * the record of the person on screen. The index is built once, lazily.
  */
 
 const K1 = 1.4;
 const B = 0.72;
 
 const CHUNK_WEIGHT: Record<ChunkKind, number> = {
+  character: 1.35,
   situation: 1.25,
   story: 1,
   texture: 0.85,
@@ -44,6 +50,23 @@ function textureChunk(show: Show): string {
   ].join(' ');
 }
 
+function characterChunk(character: Character): string {
+  const situationText = character.situations
+    .map((id) => SITUATION_BY_ID[id]?.label ?? id)
+    .join(', ');
+  return [
+    character.name,
+    character.role,
+    character.portrait,
+    character.facing,
+    character.traits.join(', '),
+    character.personaTags.map((tag) => personaEcho(tag)).join('. '),
+    situationText,
+    character.arc,
+    character.recognizeIf,
+  ].join(' ');
+}
+
 export type ChunkIndex = {
   chunks: ShowChunk[];
   /** term -> number of chunks containing it */
@@ -67,6 +90,17 @@ export function getChunkIndex(): ChunkIndex {
     for (const [kind, text] of parts) {
       chunks.push({ showId: show.id, kind, text, tokens: tokenize(text) });
     }
+  }
+
+  for (const character of CHARACTERS) {
+    const text = characterChunk(character);
+    chunks.push({
+      showId: character.showId,
+      kind: 'character',
+      characterId: character.id,
+      text,
+      tokens: tokenize(text),
+    });
   }
 
   const docFreq = new Map<string, number>();

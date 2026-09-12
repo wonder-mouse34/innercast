@@ -1,11 +1,22 @@
+import { charactersForShow } from '@/lib/data/characters';
+import { PERSONA_BY_ID } from '@/lib/data/personaTraits';
 import { SHOWS } from '@/lib/data/shows';
 import { SITUATION_BY_ID } from '@/lib/data/situations';
 import { excerpt, scoreChunks } from '@/lib/rag/chunkIndex';
-import { detectSituations, stem, tokenize, tokenizeQuery } from '@/lib/rag/tokenize';
-import type { SituationHit } from '@/lib/rag/tokenize';
+import {
+  detectPersonas,
+  detectSituations,
+  stem,
+  tokenize,
+  tokenizeQuery,
+} from '@/lib/rag/tokenize';
+import type { PersonaHit, SituationHit } from '@/lib/rag/tokenize';
 import {
   TRAIT_META,
+  type Character,
   type ChunkKind,
+  type MatchedCharacter,
+  type PersonaTraitId,
   type RetrievedShow,
   type Show,
   type SituationId,
@@ -17,6 +28,8 @@ export type RetrievalRequest = {
   text: string;
   selectedSituations: SituationId[];
   traits: TraitVector;
+  /** How the person describes themselves, from onboarding or the You tab. */
+  personaTags?: PersonaTraitId[];
   avoidTopics?: string[];
   limit?: number;
 };
@@ -25,6 +38,10 @@ export type RetrievalResult = {
   candidates: RetrievedShow[];
   detectedSituations: SituationHit[];
   activeSituations: SituationId[];
+  /** Self-descriptions read out of the free text. */
+  detectedPersonas: PersonaHit[];
+  /** Saved plus detected self-descriptions, deduped. */
+  activePersonas: PersonaTraitId[];
   queryTokens: string[];
   /** Shows removed because of the person's avoid list. */
   filteredOut: { showId: string; reason: string }[];
@@ -90,16 +107,76 @@ function avoidHit(show: Show, avoidTopics: string[]): string | null {
 }
 
 /**
- * Hybrid retrieval: BM25 over the chunked corpus, trait-vector similarity, and
- * situation-tag overlap. Weights shift toward traits and tags when the person
- * wrote very little.
+ * How closely one person on screen mirrors the person watching.
+ *
+ * Three signals: shared self-descriptions (the strongest, because it is a
+ * person-to-person claim), shared situations, and the words of their record
+ * echoing what the person wrote. Weights collapse onto whatever signal exists.
+ */
+function scoreCharacter(
+  character: Character,
+  activePersonas: PersonaTraitId[],
+  activeSituations: SituationId[],
+  lexical: { score: number; terms: string[] } | undefined,
+  maxCharacterChunkScore: number,
+): MatchedCharacter {
+  const sharedPersona = character.personaTags.filter((tag) => activePersonas.includes(tag));
+  const sharedSituations = character.situations.filter((id) => activeSituations.includes(id));
+
+  const personaOverlap =
+    activePersonas.length === 0
+      ? 0
+      : Math.min(1, sharedPersona.length / Math.min(3, activePersonas.length));
+  const situationOverlap =
+    activeSituations.length === 0
+      ? 0
+      : Math.min(1, sharedSituations.length / Math.min(2, activeSituations.length));
+  const lex =
+    maxCharacterChunkScore > 0 ? Math.min(1, (lexical?.score ?? 0) / maxCharacterChunkScore) : 0;
+
+  const personaWeight = activePersonas.length > 0 ? 0.5 : 0;
+  const situationWeight = activeSituations.length > 0 ? 0.3 : 0;
+  const lexicalWeight = 1 - personaWeight - situationWeight;
+
+  const score =
+    personaOverlap * personaWeight + situationOverlap * situationWeight + lex * lexicalWeight;
+
+  return {
+    characterId: character.id,
+    name: character.name,
+    showId: character.showId,
+    score,
+    sharedPersona,
+    sharedSituations,
+    matchedTerms: (lexical?.terms ?? []).slice(0, 8),
+  };
+}
+
+/**
+ * Hybrid retrieval, led by character. BM25 over the chunked corpus (including
+ * one chunk per character), character-to-person overlap, trait-vector
+ * similarity, and situation-tag overlap. The character term carries the most
+ * weight whenever the person has told us anything about themselves; it drops
+ * out entirely when there is no signal to match a person against.
  */
 export function retrieve(request: RetrievalRequest): RetrievalResult {
-  const { text, selectedSituations, traits, avoidTopics = [], limit = 8 } = request;
+  const {
+    text,
+    selectedSituations,
+    traits,
+    personaTags = [],
+    avoidTopics = [],
+    limit = 8,
+  } = request;
 
   const detectedSituations = detectSituations(text);
   const activeSituations = [
     ...new Set<SituationId>([...selectedSituations, ...detectedSituations.map((hit) => hit.id)]),
+  ];
+
+  const detectedPersonas = detectPersonas(text);
+  const activePersonas = [
+    ...new Set<PersonaTraitId>([...personaTags, ...detectedPersonas.map((hit) => hit.id)]),
   ];
 
   const situationQueryText = activeSituations
@@ -111,11 +188,22 @@ export function retrieve(request: RetrievalRequest): RetrievalResult {
     })
     .join(' ');
 
+  const personaQueryText = activePersonas
+    .map((id) => {
+      const trait = PERSONA_BY_ID[id];
+      return trait ? `${trait.label} ${trait.blurb} ${trait.keywords.join(' ')}` : '';
+    })
+    .join(' ');
+
   const freeTextTokens = tokenizeQuery(text);
-  const queryTokens = [...new Set([...freeTextTokens, ...tokenize(situationQueryText)])];
+  const queryTokens = [
+    ...new Set([...freeTextTokens, ...tokenize(situationQueryText), ...tokenize(personaQueryText)]),
+  ];
 
   const chunkScores = scoreChunks(queryTokens);
   const maxChunkScore = chunkScores[0]?.score ?? 0;
+  const maxCharacterChunkScore =
+    chunkScores.find((scored) => scored.chunk.kind === 'character')?.score ?? 0;
 
   const perShow = new Map<
     string,
@@ -123,6 +211,7 @@ export function retrieve(request: RetrievalRequest): RetrievalResult {
       lexical: number;
       chunks: { kind: ChunkKind; score: number; excerpt: string }[];
       terms: Set<string>;
+      characterLexical: Map<string, { score: number; terms: string[] }>;
     }
   >();
 
@@ -131,6 +220,7 @@ export function retrieve(request: RetrievalRequest): RetrievalResult {
       lexical: 0,
       chunks: [],
       terms: new Set<string>(),
+      characterLexical: new Map<string, { score: number; terms: string[] }>(),
     };
     // Best chunk dominates; additional chunks contribute a fraction.
     entry.lexical = Math.max(entry.lexical, scored.score) + scored.score * 0.18;
@@ -140,14 +230,31 @@ export function retrieve(request: RetrievalRequest): RetrievalResult {
       excerpt: excerpt(scored.chunk.text),
     });
     for (const term of scored.matchedTerms) entry.terms.add(term);
+    if (scored.chunk.characterId) {
+      entry.characterLexical.set(scored.chunk.characterId, {
+        score: scored.score,
+        terms: scored.matchedTerms,
+      });
+    }
     perShow.set(scored.chunk.showId, entry);
   }
 
   // Little or no text: lean on the sliders and chips instead of lexical noise.
   const textWeightFactor = Math.min(1, freeTextTokens.length / 8);
-  const lexicalWeight = 0.16 + 0.34 * textWeightFactor;
-  const situationWeight = activeSituations.length > 0 ? 0.26 : 0;
-  const traitWeight = 1 - lexicalWeight - situationWeight;
+
+  // Character leads whenever there is anything to match a person against.
+  const characterWeight =
+    activePersonas.length > 0
+      ? 0.42
+      : freeTextTokens.length >= 4
+        ? 0.3
+        : activeSituations.length > 0
+          ? 0.2
+          : 0;
+  const rest = 1 - characterWeight;
+  const lexicalWeight = (0.16 + 0.34 * textWeightFactor) * rest;
+  const situationWeight = (activeSituations.length > 0 ? 0.26 : 0) * rest;
+  const traitWeight = rest - lexicalWeight - situationWeight;
 
   const filteredOut: { showId: string; reason: string }[] = [];
   const candidates: RetrievedShow[] = [];
@@ -168,16 +275,45 @@ export function retrieve(request: RetrievalRequest): RetrievalResult {
         ? 0
         : Math.min(1, matchedSituations.length / Math.min(3, activeSituations.length));
 
+    const scoredCharacters = charactersForShow(show.id)
+      .map((character) =>
+        scoreCharacter(
+          character,
+          activePersonas,
+          activeSituations,
+          entry?.characterLexical.get(character.id),
+          maxCharacterChunkScore,
+        ),
+      )
+      .sort((a, b) => b.score - a.score);
+
+    // One person carrying the show is the claim; a strong second adds a little.
+    const characterScore = Math.min(
+      1,
+      (scoredCharacters[0]?.score ?? 0) + (scoredCharacters[1]?.score ?? 0) * 0.15,
+    );
+
     const fit = traitFit(traits, show);
-    const total = lexical * lexicalWeight + fit * traitWeight + situationScore * situationWeight;
+    const total =
+      lexical * lexicalWeight +
+      fit * traitWeight +
+      situationScore * situationWeight +
+      characterScore * characterWeight;
     const { aligned, strained } = axisAlignment(traits, show);
 
     candidates.push({
       show,
-      score: { lexical, traitFit: fit, situation: situationScore, total },
-      matchedChunks: (entry?.chunks ?? []).sort((a, b) => b.score - a.score).slice(0, 2),
+      score: {
+        lexical,
+        traitFit: fit,
+        situation: situationScore,
+        character: characterScore,
+        total,
+      },
+      matchedChunks: (entry?.chunks ?? []).sort((a, b) => b.score - a.score).slice(0, 3),
       matchedTerms: [...(entry?.terms ?? [])].slice(0, 12),
       matchedSituations,
+      matchedCharacters: scoredCharacters.filter((character) => character.score > 0).slice(0, 2),
       alignedAxes: aligned,
       strainedAxes: strained,
     });
@@ -189,6 +325,8 @@ export function retrieve(request: RetrievalRequest): RetrievalResult {
     candidates: candidates.slice(0, limit),
     detectedSituations,
     activeSituations,
+    detectedPersonas,
+    activePersonas,
     queryTokens,
     filteredOut,
   };

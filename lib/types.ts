@@ -136,6 +136,64 @@ export type Situation = {
   nudge: Partial<TraitVector>;
 };
 
+/**
+ * How someone describes themselves, independent of what they want to watch.
+ * Characters in the corpus carry the same tags, so a person can be matched to a
+ * person on screen rather than only to a genre.
+ */
+export type PersonaTraitId =
+  | 'caretaker'
+  | 'deflector'
+  | 'withdrawer'
+  | 'overthinker'
+  | 'over-functioner'
+  | 'peacekeeper'
+  | 'outsider'
+  | 'rebuilder'
+  | 'quietly-angry'
+  | 'seeker'
+  | 'stoic'
+  | 'tender'
+  | 'perfectionist'
+  | 'drifter'
+  | 'newly-alone'
+  | 'striver';
+
+export type PersonaTrait = {
+  id: PersonaTraitId;
+  /** First-person chip label, e.g. "I'm the one everyone leans on". */
+  label: string;
+  /** Short expansion shown under the label. */
+  blurb: string;
+  /** Terms that surface this pattern from free-text input. */
+  keywords: string[];
+};
+
+/**
+ * A person on screen. This is the unit a recommendation is built around: the
+ * app argues from a character's inner life outward to the show.
+ */
+export type Character = {
+  id: string;
+  showId: string;
+  name: string;
+  /** Their place in the story, e.g. "line cook, late twenties". */
+  role: string;
+  /** Their inner life in a sentence or two. Quoted back to the user. */
+  portrait: string;
+  /** What they are living through — the bridge to the person's situation. */
+  facing: string;
+  /** How they behave under pressure. Indexed for lexical search. */
+  traits: string[];
+  /** Self-descriptions this character mirrors. */
+  personaTags: PersonaTraitId[];
+  situations: SituationId[];
+  /** What shifts for them across the series. */
+  arc: string;
+  /** Completes "You may recognise yourself in them if …". */
+  recognizeIf: string;
+};
+
 export type Show = {
   id: string;
   title: string;
@@ -160,20 +218,37 @@ export type Show = {
   palette: [string, string];
 };
 
-export type ChunkKind = 'situation' | 'story' | 'texture';
+export type ChunkKind = 'situation' | 'story' | 'texture' | 'character';
 
 export type ShowChunk = {
   showId: string;
   kind: ChunkKind;
   text: string;
   tokens: string[];
+  /** Set on `character` chunks. */
+  characterId?: string;
 };
 
 export type ScoreBreakdown = {
   lexical: number;
   traitFit: number;
   situation: number;
+  /** How closely someone on screen mirrors this person and their situation. */
+  character: number;
   total: number;
+};
+
+/** A person on screen who lines up with the person watching. */
+export type MatchedCharacter = {
+  characterId: string;
+  name: string;
+  showId: string;
+  score: number;
+  /** Self-descriptions shared with the person. */
+  sharedPersona: PersonaTraitId[];
+  sharedSituations: SituationId[];
+  /** Words from their record that echoed what the person wrote. */
+  matchedTerms: string[];
 };
 
 export type RetrievedShow = {
@@ -183,6 +258,8 @@ export type RetrievedShow = {
   matchedChunks: { kind: ChunkKind; score: number; excerpt: string }[];
   matchedTerms: string[];
   matchedSituations: SituationId[];
+  /** Characters who line up with this person, best first. */
+  matchedCharacters: MatchedCharacter[];
   /** Axes where the show sits close to what the person asked for. */
   alignedAxes: TraitAxis[];
   /** Axes where the show pushes past what the person asked for. */
@@ -195,6 +272,11 @@ export type Recommendation = {
   showId: string;
   /** Why this show, in the app's voice, grounded in the retrieved record. */
   reason: string;
+  /** The character the recommendation is built around. */
+  characterId?: string;
+  characterName?: string;
+  /** One sentence on how that character lines up with this person. */
+  characterLink?: string;
   /** Optional caution: content, commitment, or timing. */
   caution?: string;
   /** How to watch it — dosing, episode to start on, what to pair it with. */
@@ -208,6 +290,8 @@ export type MatchSession = {
   situationText: string;
   selectedSituations: SituationId[];
   traits: TraitVector;
+  /** Self-descriptions in play when this match ran. */
+  personaTags?: PersonaTraitId[];
   engine: RecommendationEngine;
   engineNote?: string;
   modelName?: string;
@@ -218,6 +302,8 @@ export type MatchSession = {
     matchedTerms: string[];
     matchedSituations: SituationId[];
     chunkKinds: ChunkKind[];
+    /** Ids of the characters that carried this show into the results. */
+    characterIds?: string[];
   }[];
 };
 

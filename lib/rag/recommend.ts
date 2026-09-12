@@ -1,3 +1,4 @@
+import { charactersForShow, getCharacter } from '@/lib/data/characters';
 import {
   chatCompletion,
   parseModelPayload,
@@ -10,6 +11,7 @@ import { synthesizeRecommendations } from '@/lib/rag/synthesize';
 import { createId } from '@/lib/utils';
 import type {
   MatchSession,
+  PersonaTraitId,
   Recommendation,
   RecommendationEngine,
   SituationId,
@@ -19,6 +21,7 @@ import type {
 export type MatchRequest = {
   text: string;
   selectedSituations: SituationId[];
+  personaTags: PersonaTraitId[];
   traits: TraitVector;
   avoidTopics: string[];
   settings: ModelSettings;
@@ -55,11 +58,12 @@ function clean(value: string | null | undefined, limit = MAX_REASON_LENGTH): str
  * over with the same candidate set.
  */
 export async function runMatch(request: MatchRequest): Promise<MatchOutcome> {
-  const { text, selectedSituations, traits, avoidTopics, settings } = request;
+  const { text, selectedSituations, personaTags, traits, avoidTopics, settings } = request;
 
   const retrieval = retrieve({
     text,
     selectedSituations,
+    personaTags,
     traits,
     avoidTopics,
     limit: 8,
@@ -96,6 +100,7 @@ export async function runMatch(request: MatchRequest): Promise<MatchOutcome> {
   const messages = buildMessages({
     text,
     situations: retrieval.activeSituations,
+    personaTags: retrieval.activePersonas,
     traits,
     candidates: retrieval.candidates,
   });
@@ -139,8 +144,24 @@ export async function runMatch(request: MatchRequest): Promise<MatchOutcome> {
       continue;
     }
 
+    // The pick must hang on a real person from this record. A named id that is
+    // not in the corpus means the model invented someone, so the pick goes.
+    const claimedId = entry.characterId?.trim() ?? '';
+    let character = claimedId.length > 0 ? getCharacter(claimedId) : undefined;
+    if (claimedId.length > 0 && (!character || character.showId !== candidate.show.id)) {
+      hallucinated += 1;
+      continue;
+    }
+    if (!character) {
+      const best = candidate.matchedCharacters[0];
+      character = best ? getCharacter(best.characterId) : charactersForShow(candidate.show.id)[0];
+    }
+
     recommendations.push({
       showId: candidate.show.id,
+      characterId: character?.id,
+      characterName: character?.name,
+      characterLink: clean(entry.characterLink, 240) || undefined,
       reason,
       caution: clean(entry.caution, 220) || undefined,
       howToWatch: clean(entry.howToWatch, 220) || undefined,
@@ -155,7 +176,7 @@ export async function runMatch(request: MatchRequest): Promise<MatchOutcome> {
       engine: 'on-device',
       engineNote:
         hallucinated > unusable
-          ? 'The model suggested shows outside the library, so matching ran on this device.'
+          ? 'The model went outside the library, so matching ran on this device.'
           : 'The model did not explain its picks, so matching ran on this device.',
       recommendations: fallback(),
       retrieval,
@@ -182,6 +203,7 @@ export function buildSession(request: MatchRequest, outcome: MatchOutcome): Matc
     createdAt: new Date().toISOString(),
     situationText: request.text.trim(),
     selectedSituations: outcome.retrieval.activeSituations,
+    personaTags: outcome.retrieval.activePersonas,
     traits: request.traits,
     engine: outcome.engine,
     engineNote: outcome.engineNote,
@@ -193,6 +215,7 @@ export function buildSession(request: MatchRequest, outcome: MatchOutcome): Matc
       matchedTerms: candidate.matchedTerms,
       matchedSituations: candidate.matchedSituations,
       chunkKinds: candidate.matchedChunks.map((chunk) => chunk.kind),
+      characterIds: candidate.matchedCharacters.map((character) => character.characterId),
     })),
   };
 }

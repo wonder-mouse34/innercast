@@ -177,7 +177,11 @@ export async function chatCompletion(
 
 const recommendationSchema = z.object({
   id: z.string(),
+  /** Which person on screen the pick is built around. */
+  characterId: z.string().optional().nullable(),
   reason: z.string(),
+  /** One sentence on what the person and that character share. */
+  characterLink: z.string().optional().nullable(),
   caution: z.string().optional().nullable(),
   howToWatch: z.string().optional().nullable(),
 });

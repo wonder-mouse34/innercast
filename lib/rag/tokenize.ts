@@ -1,5 +1,6 @@
+import { PERSONA_TRAITS } from '@/lib/data/personaTraits';
 import { SITUATIONS } from '@/lib/data/situations';
-import type { SituationId } from '@/lib/types';
+import type { PersonaTraitId, SituationId } from '@/lib/types';
 
 const STOPWORDS = new Set([
   'a',
@@ -286,6 +287,41 @@ export function detectSituations(input: string): SituationHit[] {
       }
     }
     if (strength > 0) hits.push({ id: situation.id, strength, matched });
+  }
+
+  return hits.sort((a, b) => b.strength - a.strength);
+}
+
+export type PersonaHit = { id: PersonaTraitId; strength: number; matched: string[] };
+
+/**
+ * Read self-description patterns out of free text, the same way situations are
+ * read. Phrases are matched against the normalized string so "I keep the peace"
+ * lands even though every word in it is a stopword on its own.
+ */
+export function detectPersonas(input: string): PersonaHit[] {
+  const normalized = normalizeText(input);
+  if (!normalized) return [];
+  const tokenSet = new Set(tokenize(input));
+  const hits: PersonaHit[] = [];
+
+  for (const trait of PERSONA_TRAITS) {
+    const matched: string[] = [];
+    let strength = 0;
+    for (const keyword of trait.keywords) {
+      if (keyword.includes(' ')) {
+        if (normalized.includes(keyword)) {
+          matched.push(keyword);
+          strength += 2;
+        }
+        continue;
+      }
+      if (tokenSet.has(stem(keyword))) {
+        matched.push(keyword);
+        strength += 1;
+      }
+    }
+    if (strength > 0) hits.push({ id: trait.id, strength, matched });
   }
 
   return hits.sort((a, b) => b.strength - a.strength);

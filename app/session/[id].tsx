@@ -11,6 +11,7 @@ import { TRAIT_META } from '@/lib/types';
 import { axisSummary } from '@/lib/rag/retrieve';
 import { getShow } from '@/lib/data/shows';
 import { goBackOrReplace } from '@/lib/navigation';
+import { personaLabel } from '@/lib/data/personaTraits';
 import { relativeTime } from '@/lib/circleAffinity';
 import { situationLabel } from '@/lib/data/situations';
 import { useSessionStore } from '@/lib/store/sessions';
@@ -61,6 +62,11 @@ export default function SessionScreen() {
               </View>
             ))}
           </View>
+        ) : null}
+        {(session.personaTags ?? []).length > 0 ? (
+          <Typography type="body-xs" color="muted" className="leading-5">
+            You described yourself as {(session.personaTags ?? []).map(personaLabel).join(', ')}.
+          </Typography>
         ) : null}
         {traitLines.length > 0 ? (
           <Typography type="body-xs" color="muted" className="leading-5">

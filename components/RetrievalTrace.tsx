@@ -4,10 +4,12 @@ import { Pressable, View } from 'react-native';
 import { useState } from 'react';
 
 import { ScoreBar } from '@/components/ScoreBar';
+import { getCharacter } from '@/lib/data/characters';
 import { getShow } from '@/lib/data/shows';
+import { personaLabel } from '@/lib/data/personaTraits';
 import { situationLabel } from '@/lib/data/situations';
 import { useNativeThemeColor } from '@/lib/theme';
-import type { ChunkKind, ScoreBreakdown, SituationId } from '@/lib/types';
+import type { ChunkKind, MatchedCharacter, ScoreBreakdown, SituationId } from '@/lib/types';
 
 export type TraceRow = {
   showId: string;
@@ -15,6 +17,10 @@ export type TraceRow = {
   matchedTerms: string[];
   matchedSituations: SituationId[];
   chunkKinds: ChunkKind[];
+  /** People on screen who carried this show into the results, best first. */
+  matchedCharacters?: MatchedCharacter[];
+  /** Saved sessions keep ids only; names are resolved from the corpus. */
+  characterIds?: string[];
 };
 
 type Props = {
@@ -27,6 +33,7 @@ const CHUNK_LABEL: Record<ChunkKind, string> = {
   situation: 'situation record',
   story: 'story record',
   texture: 'tone record',
+  character: 'character record',
 };
 
 /**
@@ -86,9 +93,39 @@ export function RetrievalTrace({ rows, queryTokens = [], filteredOut = [] }: Pro
                     total {Math.round(row.score.total * 100)}
                   </Typography>
                 </View>
+                <ScoreBar label="Character match" value={row.score.character} />
                 <ScoreBar label="Text match" value={row.score.lexical} />
                 <ScoreBar label="Trait fit" value={row.score.traitFit} />
                 <ScoreBar label="Situation overlap" value={row.score.situation} />
+                {(row.matchedCharacters ?? []).length > 0 ? (
+                  <View className="gap-1">
+                    {(row.matchedCharacters ?? []).map((character) => {
+                      const shared = [
+                        ...character.sharedPersona.map(personaLabel),
+                        ...character.sharedSituations.map(situationLabel),
+                      ];
+                      return (
+                        <Typography
+                          key={character.characterId}
+                          type="body-xs"
+                          color="muted"
+                          className="leading-5"
+                        >
+                          {`${character.name} ${Math.round(character.score * 100)}`}
+                          {shared.length > 0 ? ` — shares ${shared.join(', ')}` : ''}
+                        </Typography>
+                      );
+                    })}
+                  </View>
+                ) : (row.characterIds ?? []).length > 0 ? (
+                  <Typography type="body-xs" color="muted" className="leading-5">
+                    Through{' '}
+                    {(row.characterIds ?? [])
+                      .map((characterId) => getCharacter(characterId)?.name)
+                      .filter((value): value is string => Boolean(value))
+                      .join(', ')}
+                  </Typography>
+                ) : null}
                 {row.matchedSituations.length > 0 ? (
                   <Typography type="body-xs" color="muted">
                     Filed under {row.matchedSituations.map(situationLabel).join(', ')}

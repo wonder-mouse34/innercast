@@ -1,12 +1,24 @@
+import { charactersForShow, getCharacter } from '@/lib/data/characters';
+import { personaEcho } from '@/lib/data/personaTraits';
 import { situationLabel } from '@/lib/data/situations';
-import type { Recommendation, RetrievedShow, TraitAxis, TraitVector } from '@/lib/types';
+import type {
+  Character,
+  MatchedCharacter,
+  Recommendation,
+  RetrievedShow,
+  TraitAxis,
+  TraitVector,
+} from '@/lib/types';
 
 /**
  * On-device rationale writer.
  *
  * Used when no local model is reachable. Every sentence is assembled from the
- * retrieved record, so the claims stay identical to what a model would be given
- * as context — there is no invented information here.
+ * retrieved record and the character records inside it, so the claims stay
+ * identical to what a model would be given as context — nothing is invented.
+ *
+ * The argument runs the same way round as the model's: one person on screen
+ * first, then the show they are in.
  */
 
 const HIGH_PHRASE: Record<TraitAxis, string> = {
@@ -33,6 +45,10 @@ function joinList(items: string[]): string {
   if (items.length === 0) return '';
   if (items.length === 1) return items[0];
   return `${items.slice(0, -1).join(', ')} and ${items[items.length - 1]}`;
+}
+
+function firstName(name: string): string {
+  return name.split(' ')[0];
 }
 
 function axisPhrases(candidate: RetrievedShow, limit = 2): string[] {
@@ -84,6 +100,38 @@ function buildHowToWatch(candidate: RetrievedShow): string {
   return `${show.runtimeMinutes}-minute episodes. Give it a full evening rather than half your attention.`;
 }
 
+/** The person on screen this recommendation is argued from. */
+function anchorCharacter(
+  candidate: RetrievedShow,
+): { character: Character; matched?: MatchedCharacter } | undefined {
+  const matched = candidate.matchedCharacters[0];
+  const character = matched
+    ? getCharacter(matched.characterId)
+    : charactersForShow(candidate.show.id)[0];
+  if (!character) return undefined;
+  return { character, matched };
+}
+
+/** One sentence on what this person and that character have in common. */
+function buildCharacterLink(character: Character, matched?: MatchedCharacter): string {
+  const name = firstName(character.name);
+
+  if (matched && matched.sharedPersona.length > 0) {
+    const echoes = matched.sharedPersona.slice(0, 2).map(personaEcho);
+    return `You said that about yourself, and ${name} ${joinList(echoes)}.`;
+  }
+  if (matched && matched.sharedSituations.length > 0) {
+    const situations = matched.sharedSituations
+      .slice(0, 2)
+      .map((id) => situationLabel(id).toLowerCase());
+    return `${name} is in the middle of ${joinList(situations)}, which is where your description landed.`;
+  }
+  if (matched && matched.matchedTerms.length > 0) {
+    return `${name}'s record picks up ${joinList(matched.matchedTerms.slice(0, 3))} from what you wrote.`;
+  }
+  return `You may recognise yourself in ${name} if ${character.recognizeIf}`;
+}
+
 export function synthesizeRecommendations(
   candidates: RetrievedShow[],
   traits: TraitVector,
@@ -91,20 +139,34 @@ export function synthesizeRecommendations(
 ): Recommendation[] {
   return candidates.slice(0, limit).map((candidate) => {
     const phrases = axisPhrases(candidate);
-    const situations = candidate.matchedSituations.slice(0, 2).map(situationLabel);
+    const anchor = anchorCharacter(candidate);
+    const sentences: string[] = [];
 
-    const sentences: string[] = [candidate.show.whyItHelps];
-    if (situations.length > 0) {
-      sentences.push(
-        `Its record is filed under ${joinList(situations.map((label) => label.toLowerCase()))}, which is where your description landed.`,
-      );
+    if (anchor) {
+      const { character } = anchor;
+      // Character first: who they are and what they are carrying. The overlap
+      // with this person is stated separately, in characterLink.
+      sentences.push(`${character.name}, ${character.role}. ${character.facing}`);
+      sentences.push(candidate.show.whyItHelps);
+    } else {
+      sentences.push(candidate.show.whyItHelps);
+      const situations = candidate.matchedSituations.slice(0, 2).map(situationLabel);
+      if (situations.length > 0) {
+        sentences.push(
+          `Its record is filed under ${joinList(situations.map((label) => label.toLowerCase()))}, which is where your description landed.`,
+        );
+      }
     }
+
     if (phrases.length > 0) {
       sentences.push(`Tonally it is ${joinList(phrases)} — close to what you asked for.`);
     }
 
     return {
       showId: candidate.show.id,
+      characterId: anchor?.character.id,
+      characterName: anchor?.character.name,
+      characterLink: anchor ? buildCharacterLink(anchor.character, anchor.matched) : undefined,
       reason: sentences.join(' '),
       caution: buildCaution(candidate, traits),
       howToWatch: buildHowToWatch(candidate),

@@ -8,21 +8,24 @@ import {
   RotateCcw,
   Search,
   SlidersHorizontal,
+  UserRound,
 } from 'lucide-react-native';
 import { Redirect, router } from 'expo-router';
 
 import { EngineBadge } from '@/components/EngineBadge';
 import { MatchCard } from '@/components/MatchCard';
+import { PersonaChips } from '@/components/PersonaChips';
 import { RetrievalTrace } from '@/components/RetrievalTrace';
 import { SectionHeading } from '@/components/SectionHeading';
 import { SituationChips } from '@/components/SituationChips';
 import { TraitSliders } from '@/components/TraitSliders';
 import { buildSession, runMatch, type MatchOutcome } from '@/lib/rag/recommend';
 import { getShow, SHOWS } from '@/lib/data/shows';
+import { personaLabel } from '@/lib/data/personaTraits';
 import { situationLabel } from '@/lib/data/situations';
 import { useNativeThemeColor } from '@/lib/theme';
 import { useProfileHydrated } from '@/lib/store/hydration';
-import { useProfileStore } from '@/lib/store/profile';
+import { MAX_PERSONA_TAGS, useProfileStore } from '@/lib/store/profile';
 import { useSessionStore } from '@/lib/store/sessions';
 import { useSettingsStore } from '@/lib/store/settings';
 import type { RetrievedShow, SituationId, TraitAxis, TraitVector } from '@/lib/types';
@@ -40,6 +43,8 @@ export default function DiscoverScreen() {
   const hasOnboarded = useProfileStore((state) => state.hasOnboarded);
   const name = useProfileStore((state) => state.name);
   const profileTraits = useProfileStore((state) => state.traits);
+  const personaTags = useProfileStore((state) => state.personaTags);
+  const togglePersonaTag = useProfileStore((state) => state.togglePersonaTag);
   const avoidTopics = useProfileStore((state) => state.avoidTopics);
   const settings = useSettingsStore((state) => state.model);
   const sessions = useSessionStore((state) => state.sessions);
@@ -54,6 +59,7 @@ export default function DiscoverScreen() {
   const [selected, setSelected] = useState<SituationId[]>([]);
   const [tonight, setTonight] = useState<TraitVector | null>(null);
   const [tuningOpen, setTuningOpen] = useState(false);
+  const [personaOpen, setPersonaOpen] = useState(false);
   const [isMatching, setIsMatching] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [outcome, setOutcome] = useState<MatchOutcome | null>(null);
@@ -93,6 +99,7 @@ export default function DiscoverScreen() {
     const request = {
       text: trimmed,
       selectedSituations: selected,
+      personaTags,
       traits,
       avoidTopics,
       settings,
@@ -112,7 +119,7 @@ export default function DiscoverScreen() {
     } finally {
       setIsMatching(false);
     }
-  }, [addSession, avoidTopics, selected, settings, text, traits]);
+  }, [addSession, avoidTopics, personaTags, selected, settings, text, traits]);
 
   const candidateByShow = useMemo(() => {
     const map = new Map<string, RetrievedShow>();
@@ -129,6 +136,7 @@ export default function DiscoverScreen() {
         matchedTerms: candidate.matchedTerms,
         matchedSituations: candidate.matchedSituations,
         chunkKinds: candidate.matchedChunks.map((chunk) => chunk.kind),
+        matchedCharacters: candidate.matchedCharacters,
       })),
     [outcome],
   );
@@ -201,6 +209,43 @@ export default function DiscoverScreen() {
               Or pick what fits
             </Typography>
             <SituationChips selected={selected} onToggle={toggleSituation} />
+          </View>
+
+          <View className="border-border/60 border-t pt-3.5">
+            <Pressable
+              onPress={() => setPersonaOpen((value) => !value)}
+              accessibilityRole="button"
+              accessibilityState={{ expanded: personaOpen }}
+              className="flex-row items-center gap-2.5"
+              style={({ pressed }) => ({ opacity: pressed ? 0.7 : 1 })}
+            >
+              <UserRound color={personaTags.length > 0 ? accent : muted} size={16} />
+              <View className="flex-1">
+                <Typography type="body-sm" weight="medium">
+                  Who you are in this
+                </Typography>
+                <Typography type="body-xs" color="muted" className="mt-0.5 leading-5">
+                  {personaTags.length > 0
+                    ? personaTags.map(personaLabel).join(' · ')
+                    : 'Say how you handle things and you get matched to a person, not a genre'}
+                </Typography>
+              </View>
+              {personaOpen ? (
+                <ChevronUp color={muted} size={18} />
+              ) : (
+                <ChevronDown color={muted} size={18} />
+              )}
+            </Pressable>
+
+            {personaOpen ? (
+              <View className="mt-4">
+                <PersonaChips
+                  selected={personaTags}
+                  onToggle={togglePersonaTag}
+                  max={MAX_PERSONA_TAGS}
+                />
+              </View>
+            ) : null}
           </View>
 
           <View className="border-border/60 border-t pt-3.5">

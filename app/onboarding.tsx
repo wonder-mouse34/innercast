@@ -4,11 +4,12 @@ import { Button, Input, Label, Surface, TextField, Typography } from 'heroui-nat
 import { ArrowLeft, Lightbulb, Plus, X } from 'lucide-react-native';
 import { router } from 'expo-router';
 
+import { PersonaChips } from '@/components/PersonaChips';
 import { TraitSliders } from '@/components/TraitSliders';
-import { DEFAULT_TRAITS, useProfileStore } from '@/lib/store/profile';
+import { DEFAULT_TRAITS, MAX_PERSONA_TAGS, useProfileStore } from '@/lib/store/profile';
 import { TRAIT_META } from '@/lib/types';
 import { useNativeThemeColor } from '@/lib/theme';
-import type { TraitAxis, TraitVector } from '@/lib/types';
+import type { PersonaTraitId, TraitAxis, TraitVector } from '@/lib/types';
 
 const FIRST_AXES: readonly TraitAxis[] = ['comfort', 'intensity', 'humor', 'pace'];
 const SECOND_AXES: readonly TraitAxis[] = ['escapism', 'ensemble', 'catharsis'];
@@ -22,23 +23,33 @@ const COMMON_AVOIDS = [
   'animal death',
 ];
 
-const STEP_COUNT = 4;
+const STEP_COUNT = 5;
 
 export default function OnboardingScreen() {
   const setName = useProfileStore((state) => state.setName);
   const setTraits = useProfileStore((state) => state.setTraits);
+  const setPersonaTags = useProfileStore((state) => state.setPersonaTags);
   const addAvoidTopic = useProfileStore((state) => state.addAvoidTopic);
   const completeOnboarding = useProfileStore((state) => state.completeOnboarding);
   const [accent, muted] = useNativeThemeColor(['accent', 'muted']);
 
   const [step, setStep] = useState(0);
   const [name, setLocalName] = useState('');
+  const [personaTags, setLocalPersonaTags] = useState<PersonaTraitId[]>([]);
   const [traits, setLocalTraits] = useState<TraitVector>({ ...DEFAULT_TRAITS });
   const [avoids, setAvoids] = useState<string[]>([]);
   const [avoidDraft, setAvoidDraft] = useState('');
 
   const setTrait = useCallback((axis: TraitAxis, value: number) => {
     setLocalTraits((current) => ({ ...current, [axis]: Math.round(value) }));
+  }, []);
+
+  const togglePersona = useCallback((id: PersonaTraitId) => {
+    setLocalPersonaTags((current) => {
+      if (current.includes(id)) return current.filter((tag) => tag !== id);
+      if (current.length >= MAX_PERSONA_TAGS) return current;
+      return [...current, id];
+    });
   }, []);
 
   const toggleAvoid = useCallback((topic: string) => {
@@ -64,11 +75,22 @@ export default function OnboardingScreen() {
 
   const finish = useCallback(() => {
     setName(name.trim());
+    setPersonaTags(personaTags);
     setTraits(traits);
     for (const topic of avoids) addAvoidTopic(topic);
     completeOnboarding();
     router.replace('/(tabs)');
-  }, [addAvoidTopic, avoids, completeOnboarding, name, setName, setTraits, traits]);
+  }, [
+    addAvoidTopic,
+    avoids,
+    completeOnboarding,
+    name,
+    personaTags,
+    setName,
+    setPersonaTags,
+    setTraits,
+    traits,
+  ]);
 
   const next = useCallback(() => {
     if (step === STEP_COUNT - 1) {
@@ -109,8 +131,9 @@ export default function OnboardingScreen() {
                 Lantern
               </Typography>
               <Typography type="body" color="muted" className="leading-7">
-                Tell it what you are going through and it finds a show worth your evening — from a
-                small, hand-written library rather than whatever is trending.
+                Tell it what you are going through and it points you at someone on screen living
+                something close to it — from a small, hand-written library rather than whatever is
+                trending.
               </Typography>
               <Typography type="body-sm" color="muted" className="leading-6">
                 Everything you write stays on this device. If you point Lantern at your own local
@@ -131,11 +154,37 @@ export default function OnboardingScreen() {
           </View>
         ) : null}
 
-        {step === 1 || step === 2 ? (
+        {step === 1 ? (
           <View className="gap-6">
             <View className="gap-2">
               <Typography type="h4" weight="semibold">
-                {step === 1 ? 'How you like to watch' : 'What you want it to do to you'}
+                Which of these sound like you?
+              </Typography>
+              <Typography type="body-sm" color="muted" className="leading-6">
+                Lantern matches you to a person on screen, not a genre. Pick up to{' '}
+                {MAX_PERSONA_TAGS} that ring true — this is the part that decides who you get
+                pointed at.
+              </Typography>
+            </View>
+
+            <PersonaChips
+              selected={personaTags}
+              onToggle={togglePersona}
+              max={MAX_PERSONA_TAGS}
+              showBlurbs
+            />
+
+            <Typography type="body-xs" color="muted" className="leading-5">
+              None of it is a diagnosis, and you can change it any time in You.
+            </Typography>
+          </View>
+        ) : null}
+
+        {step === 2 || step === 3 ? (
+          <View className="gap-6">
+            <View className="gap-2">
+              <Typography type="h4" weight="semibold">
+                {step === 2 ? 'How you like to watch' : 'What you want it to do to you'}
               </Typography>
               <Typography type="body-sm" color="muted" className="leading-6">
                 There are no wrong answers, and you can change any of this later. Tonight’s mood can
@@ -144,7 +193,7 @@ export default function OnboardingScreen() {
             </View>
 
             <Surface variant="secondary" className="gap-4 rounded-3xl p-4">
-              {(step === 1 ? questions.first : questions.second).map((meta) => (
+              {(step === 2 ? questions.first : questions.second).map((meta) => (
                 <Typography key={meta.axis} type="body-sm" color="muted" className="leading-6">
                   · {meta.question}
                 </Typography>
@@ -154,12 +203,12 @@ export default function OnboardingScreen() {
             <TraitSliders
               traits={traits}
               onChange={setTrait}
-              axes={step === 1 ? FIRST_AXES : SECOND_AXES}
+              axes={step === 2 ? FIRST_AXES : SECOND_AXES}
             />
           </View>
         ) : null}
 
-        {step === 3 ? (
+        {step === 4 ? (
           <View className="gap-6">
             <View className="gap-2">
               <Typography type="h4" weight="semibold">
@@ -244,7 +293,13 @@ export default function OnboardingScreen() {
         <View className="mt-2 gap-3">
           <Button variant="primary" onPress={next}>
             <Button.Label>
-              {step === STEP_COUNT - 1 ? 'Start' : step === 0 ? 'Set up my taste' : 'Continue'}
+              {step === STEP_COUNT - 1
+                ? 'Start'
+                : step === 0
+                  ? 'Tell it about me'
+                  : step === 1
+                    ? 'That’s me'
+                    : 'Continue'}
             </Button.Label>
           </Button>
 

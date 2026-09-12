@@ -9,6 +9,7 @@ import {
   ChevronRight,
   Clock,
   PenLine,
+  UserRound,
 } from 'lucide-react-native';
 import { router, useLocalSearchParams } from 'expo-router';
 
@@ -16,9 +17,11 @@ import { LinearGradient } from '@/components/ui/primitives/LinearGradient';
 import { ScoreBar } from '@/components/ScoreBar';
 import { SectionHeading } from '@/components/SectionHeading';
 import { ShowRow } from '@/components/ShowRow';
+import { charactersForShow, getCharacter } from '@/lib/data/characters';
 import { commitmentLabel, getShow, relatedShows } from '@/lib/data/shows';
 import { goBackOrReplace } from '@/lib/navigation';
 import { monogram } from '@/components/ShowArtwork';
+import { personaLabel } from '@/lib/data/personaTraits';
 import { situationLabel } from '@/lib/data/situations';
 import { useNativeThemeColor, withAlpha } from '@/lib/theme';
 import { useProfileStore } from '@/lib/store/profile';
@@ -83,6 +86,7 @@ export default function ShowDetailScreen() {
   ]);
 
   const traits = useProfileStore((state) => state.traits);
+  const personaTags = useProfileStore((state) => state.personaTags);
   const sessions = useSessionStore((state) => state.sessions);
   const entries = useWatchlistStore((state) => state.entries);
   const setStatus = useWatchlistStore((state) => state.setStatus);
@@ -94,6 +98,7 @@ export default function ShowDetailScreen() {
   const recommendation = session?.recommendations.find((item) => item.showId === id);
   const trace = session?.retrieval.find((item) => item.showId === id);
   const related = useMemo(() => (show ? relatedShows(show) : []), [show]);
+  const characters = useMemo(() => (show ? charactersForShow(show.id) : []), [show]);
 
   if (!show) {
     return (
@@ -171,9 +176,22 @@ export default function ShowDetailScreen() {
                 </Typography>
               </View>
             </View>
+            {recommendation.characterName ? (
+              <View className="flex-row items-center gap-1.5">
+                <UserRound color={accent} size={14} />
+                <Typography type="body-xs" weight="semibold" className="text-accent flex-1">
+                  {`Through ${recommendation.characterName}`}
+                </Typography>
+              </View>
+            ) : null}
             <Typography type="body-sm" className="leading-6">
               {recommendation.reason}
             </Typography>
+            {recommendation.characterLink ? (
+              <Typography type="body-xs" color="muted" className="leading-5 italic">
+                {recommendation.characterLink}
+              </Typography>
+            ) : null}
             {recommendation.howToWatch ? (
               <View className="flex-row gap-2">
                 <Clock color={muted} size={14} style={{ marginTop: 3 }} />
@@ -203,6 +221,62 @@ export default function ShowDetailScreen() {
             ) : null}
           </Surface>
         ) : null}
+
+        <View className="gap-3">
+          <SectionHeading
+            title="Who you would be sitting with"
+            caption="The people this show is built around, and when they tend to land."
+            className="mb-0"
+          />
+          {characters.map((character) => {
+            const shared = character.personaTags.filter((tag) => personaTags.includes(tag));
+            const anchored = recommendation?.characterId === character.id;
+            return (
+              <Surface
+                key={character.id}
+                variant={anchored ? 'secondary' : 'default'}
+                className={`gap-2 rounded-3xl p-4 ${anchored ? 'border-accent/50 border' : ''}`}
+              >
+                <View className="flex-row items-center gap-2">
+                  <UserRound color={anchored ? accent : muted} size={15} />
+                  <Typography type="body-sm" weight="semibold" className="flex-1">
+                    {character.name}
+                  </Typography>
+                  <Typography
+                    type="body-xs"
+                    color="muted"
+                    numberOfLines={1}
+                    className="max-w-[45%]"
+                  >
+                    {character.role}
+                  </Typography>
+                </View>
+                <Typography type="body-sm" className="leading-6">
+                  {character.portrait}
+                </Typography>
+                <Typography type="body-xs" color="muted" className="leading-5">
+                  Carrying: {character.facing}
+                </Typography>
+                <Typography type="body-xs" color="muted" className="leading-5">
+                  You may recognise yourself in them if {character.recognizeIf}
+                </Typography>
+                {shared.length > 0 ? (
+                  <View className="mt-0.5 flex-row flex-wrap gap-1.5">
+                    {shared.map((tag) => (
+                      <View key={tag} className="bg-accent-soft rounded-full px-2.5 py-1">
+                        <Typography type="body-xs" className="text-accent-soft-foreground">
+                          {personaLabel(tag)}
+                        </Typography>
+                      </View>
+                    ))}
+                  </View>
+                ) : null}
+              </Surface>
+            );
+          })}
+        </View>
+
+        <Separator />
 
         <View className="gap-3">
           <SectionHeading title="What it does for people" className="mb-0" />
@@ -284,9 +358,19 @@ export default function ShowDetailScreen() {
             <Typography type="body-sm" weight="semibold">
               How it surfaced
             </Typography>
+            <ScoreBar label="Character match" value={trace.score.character} />
             <ScoreBar label="Text match" value={trace.score.lexical} />
             <ScoreBar label="Trait fit" value={trace.score.traitFit} />
             <ScoreBar label="Situation overlap" value={trace.score.situation} />
+            {(trace.characterIds ?? []).length > 0 ? (
+              <Typography type="body-xs" color="muted" className="leading-5">
+                Carried by{' '}
+                {(trace.characterIds ?? [])
+                  .map((characterId) => getCharacter(characterId)?.name)
+                  .filter((value): value is string => Boolean(value))
+                  .join(', ')}
+              </Typography>
+            ) : null}
             {trace.matchedTerms.length > 0 ? (
               <Typography type="body-xs" color="muted" className="leading-5">
                 Matched on {trace.matchedTerms.slice(0, 10).join(', ')}

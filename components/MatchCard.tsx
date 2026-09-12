@@ -1,4 +1,11 @@
-import { AlertTriangle, Bookmark, BookmarkCheck, Clock, PenLine } from 'lucide-react-native';
+import {
+  AlertTriangle,
+  Bookmark,
+  BookmarkCheck,
+  Clock,
+  PenLine,
+  UserRound,
+} from 'lucide-react-native';
 import { Button, Surface, Typography } from 'heroui-native';
 import { Pressable, View } from 'react-native';
 import { router } from 'expo-router';
@@ -96,9 +103,24 @@ export function MatchCard({
           </View>
         </View>
 
-        <Typography type="body-sm" className="leading-6">
-          {recommendation.reason}
-        </Typography>
+        <View className="gap-1.5">
+          {recommendation.characterName ? (
+            <View className="flex-row items-center gap-1.5">
+              <UserRound color={accent} size={13} />
+              <Typography type="body-xs" weight="semibold" className="text-accent flex-1">
+                {`Through ${recommendation.characterName}`}
+              </Typography>
+            </View>
+          ) : null}
+          <Typography type="body-sm" className="leading-6">
+            {recommendation.reason}
+          </Typography>
+          {recommendation.characterLink ? (
+            <Typography type="body-xs" color="muted" className="leading-5 italic">
+              {recommendation.characterLink}
+            </Typography>
+          ) : null}
+        </View>
 
         {alignedPhrases.length > 0 || matchedSituations.length > 0 ? (
           <View className="flex-row flex-wrap gap-1.5">
