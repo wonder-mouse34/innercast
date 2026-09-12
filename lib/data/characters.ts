@@ -1,7 +1,9 @@
+import { graphCorpus } from '@/lib/graph/corpus';
 import type { Character } from '@/lib/types';
 
 /**
- * The character layer of the corpus.
+ * The hand-authored character layer of the corpus. A supplied knowledge graph
+ * replaces it, together with the show list.
  *
  * A recommendation is argued from a person on screen outward: who they are, what
  * they are carrying, and how they behave under pressure. Every entry is written
@@ -11,7 +13,7 @@ import type { Character } from '@/lib/types';
  * `personaTags` are the same self-descriptions the person picks in onboarding,
  * which is what makes person-to-character comparison possible.
  */
-export const CHARACTERS: readonly Character[] = [
+const AUTHORED_CHARACTERS: readonly Character[] = [
   // Ted Lasso
   {
     id: 'ted-lasso-ted',
@@ -1865,6 +1867,9 @@ export const CHARACTERS: readonly Character[] = [
     recognizeIf: 'you are proving you have changed to someone who has not asked',
   },
 ];
+
+/** The active character layer, matching whichever corpus `SHOWS` came from. */
+export const CHARACTERS: readonly Character[] = graphCorpus()?.characters ?? AUTHORED_CHARACTERS;
 
 const BY_SHOW = new Map<string, Character[]>();
 for (const character of CHARACTERS) {

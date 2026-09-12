@@ -216,6 +216,7 @@ export function buildSession(request: MatchRequest, outcome: MatchOutcome): Matc
       matchedSituations: candidate.matchedSituations,
       chunkKinds: candidate.matchedChunks.map((chunk) => chunk.kind),
       characterIds: candidate.matchedCharacters.map((character) => character.characterId),
+      graphPath: candidate.graphPath,
     })),
   };
 }

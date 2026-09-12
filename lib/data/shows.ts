@@ -1,15 +1,19 @@
+import { graphCorpus } from '@/lib/graph/corpus';
 import type { Show } from '@/lib/types';
 
 /**
- * The Inner Cast corpus.
+ * The hand-authored Inner Cast corpus.
  *
- * This file is the retrieval database. Nothing here is generated at runtime and
- * the language model is never allowed to recommend a title that is not in this
- * list — it only ranks and explains the records handed to it.
+ * Nothing here is generated at runtime and the language model is never allowed
+ * to recommend a title that is not in the active corpus — it only ranks and
+ * explains the records handed to it.
+ *
+ * A supplied knowledge graph (see `lib/graph`) replaces this list; it serves
+ * whenever no graph is in place.
  *
  * Episode and season counts are approximate for long-running series.
  */
-export const SHOWS: readonly Show[] = [
+const AUTHORED_SHOWS: readonly Show[] = [
   {
     id: 'ted-lasso',
     title: 'Ted Lasso',
@@ -2464,6 +2468,13 @@ export const SHOWS: readonly Show[] = [
     palette: ['#26291f', '#a4b45f'],
   },
 ];
+
+/**
+ * The active corpus: graph-derived when a graph document has been supplied,
+ * hand-authored otherwise. Both arrive in the same shape, so nothing downstream
+ * needs to know which is in play.
+ */
+export const SHOWS: readonly Show[] = graphCorpus()?.shows ?? AUTHORED_SHOWS;
 
 export const SHOW_BY_ID: Record<string, Show> = Object.fromEntries(
   SHOWS.map((show) => [show.id, show]),

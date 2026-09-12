@@ -2,6 +2,15 @@ import { charactersForShow } from '@/lib/data/characters';
 import { PERSONA_BY_ID } from '@/lib/data/personaTraits';
 import { SHOWS } from '@/lib/data/shows';
 import { SITUATION_BY_ID } from '@/lib/data/situations';
+import { getGraph, graphIsSupplied } from '@/lib/graph/store';
+import {
+  pathLines,
+  pathSentence,
+  walkGraph,
+  type GraphSeed,
+  type GraphWalk,
+} from '@/lib/graph/traverse';
+import { personaNodeId, situationNodeId } from '@/lib/graph/types';
 import { excerpt, scoreChunks } from '@/lib/rag/chunkIndex';
 import {
   detectPersonas,
@@ -15,6 +24,7 @@ import {
   TRAIT_META,
   type Character,
   type ChunkKind,
+  type GraphTrace,
   type MatchedCharacter,
   type PersonaTraitId,
   type RetrievedShow,
@@ -153,9 +163,33 @@ function scoreCharacter(
 }
 
 /**
+ * Walk the supplied graph outward from this person.
+ *
+ * Self-descriptions start at full strength and situations slightly below, since
+ * "this is who I am" is a steadier signal than "this is what is happening right
+ * now". Returns null when no graph is supplied, when the person has told us
+ * nothing to start from, or when the walk reached no show — every one of which
+ * leaves the rest of retrieval exactly as it was.
+ */
+function walkForPerson(
+  activePersonas: PersonaTraitId[],
+  activeSituations: SituationId[],
+): GraphWalk | null {
+  if (!graphIsSupplied()) return null;
+  const seeds: GraphSeed[] = [
+    ...activePersonas.map((id) => ({ id: personaNodeId(id), weight: 1 })),
+    ...activeSituations.map((id) => ({ id: situationNodeId(id), weight: 0.9 })),
+  ];
+  if (seeds.length === 0) return null;
+  const walk = walkGraph(getGraph(), seeds);
+  return walk.shows.length > 0 ? walk : null;
+}
+
+/**
  * Hybrid retrieval, led by character. BM25 over the chunked corpus (including
  * one chunk per character), character-to-person overlap, trait-vector
- * similarity, and situation-tag overlap. The character term carries the most
+ * similarity, situation-tag overlap, and — when a knowledge graph is supplied —
+ * multi-hop reachability through it. The character term carries the most
  * weight whenever the person has told us anything about themselves; it drops
  * out entirely when there is no signal to match a person against.
  */
@@ -256,6 +290,20 @@ export function retrieve(request: RetrievalRequest): RetrievalResult {
   const situationWeight = (activeSituations.length > 0 ? 0.26 : 0) * rest;
   const traitWeight = rest - lexicalWeight - situationWeight;
 
+  // The graph, when supplied, claims a fixed share and every other term is
+  // scaled down proportionally, so their balance is unchanged and the total
+  // still comes to 1. With no graph the arithmetic is exactly as before.
+  const walk = walkForPerson(activePersonas, activeSituations);
+  const graphWeight = walk ? 0.24 : 0;
+  const keep = 1 - graphWeight;
+  const weights = {
+    lexical: lexicalWeight * keep,
+    situation: situationWeight * keep,
+    trait: traitWeight * keep,
+    character: characterWeight * keep,
+    graph: graphWeight,
+  };
+
   const filteredOut: { showId: string; reason: string }[] = [];
   const candidates: RetrievedShow[] = [];
 
@@ -294,11 +342,30 @@ export function retrieve(request: RetrievalRequest): RetrievalResult {
     );
 
     const fit = traitFit(traits, show);
+
+    const reach = walk?.showById.get(show.id);
+    const graphScore = reach?.score ?? 0;
+    const graphPath: GraphTrace | undefined = reach
+      ? {
+          seedLabel: reach.seedLabel,
+          sentence: pathSentence(reach),
+          lines: pathLines(reach),
+          strength: reach.raw,
+          anchors: reach.characters.map((anchor) => ({
+            characterId: anchor.characterId,
+            name: anchor.label,
+            sentence: pathSentence(anchor),
+            strength: anchor.strength,
+          })),
+        }
+      : undefined;
+
     const total =
-      lexical * lexicalWeight +
-      fit * traitWeight +
-      situationScore * situationWeight +
-      characterScore * characterWeight;
+      lexical * weights.lexical +
+      fit * weights.trait +
+      situationScore * weights.situation +
+      characterScore * weights.character +
+      graphScore * weights.graph;
     const { aligned, strained } = axisAlignment(traits, show);
 
     candidates.push({
@@ -308,12 +375,14 @@ export function retrieve(request: RetrievalRequest): RetrievalResult {
         traitFit: fit,
         situation: situationScore,
         character: characterScore,
+        graph: graphScore,
         total,
       },
       matchedChunks: (entry?.chunks ?? []).sort((a, b) => b.score - a.score).slice(0, 3),
       matchedTerms: [...(entry?.terms ?? [])].slice(0, 12),
       matchedSituations,
       matchedCharacters: scoredCharacters.filter((character) => character.score > 0).slice(0, 2),
+      graphPath,
       alignedAxes: aligned,
       strainedAxes: strained,
     });

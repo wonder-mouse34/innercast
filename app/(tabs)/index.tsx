@@ -138,6 +138,7 @@ export default function DiscoverScreen() {
         matchedSituations: candidate.matchedSituations,
         chunkKinds: candidate.matchedChunks.map((chunk) => chunk.kind),
         matchedCharacters: candidate.matchedCharacters,
+        graphPath: candidate.graphPath,
       })),
     [outcome],
   );

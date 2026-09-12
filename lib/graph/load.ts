@@ -53,9 +53,7 @@ export function buildGraph(sources: GraphSource[], seed: GraphDiagnostic[] = [])
               ...existing,
               ...node,
               props:
-                existing.props || node.props
-                  ? { ...existing.props, ...node.props }
-                  : undefined,
+                existing.props || node.props ? { ...existing.props, ...node.props } : undefined,
             }
           : node,
       );

@@ -235,7 +235,31 @@ export type ScoreBreakdown = {
   situation: number;
   /** How closely someone on screen mirrors this person and their situation. */
   character: number;
+  /**
+   * How strongly the knowledge graph connects this person to this show, 0-1
+   * relative to the strongest show the walk reached. Absent on sessions saved
+   * before a graph was in play, and zero when the walk never got here.
+   */
+  graph?: number;
   total: number;
+};
+
+/**
+ * The path the graph walk took to reach a show, already in words.
+ *
+ * Kept as plain strings so the trace UI and the prompt can use it without
+ * knowing anything about nodes and edges.
+ */
+export type GraphTrace = {
+  /** What the walk started from: a self-description or a situation. */
+  seedLabel: string;
+  /** The whole path on one line, "→" between hops. */
+  sentence: string;
+  /** One hop per line, for a trace with room to breathe. */
+  lines: string[];
+  strength: number;
+  /** Characters the walk passed through on the way here, strongest first. */
+  anchors: { characterId: string; name: string; sentence: string; strength: number }[];
 };
 
 /** A person on screen who lines up with the person watching. */
@@ -260,6 +284,8 @@ export type RetrievedShow = {
   matchedSituations: SituationId[];
   /** Characters who line up with this person, best first. */
   matchedCharacters: MatchedCharacter[];
+  /** How the knowledge graph got from this person to this show, when it did. */
+  graphPath?: GraphTrace;
   /** Axes where the show sits close to what the person asked for. */
   alignedAxes: TraitAxis[];
   /** Axes where the show pushes past what the person asked for. */
@@ -304,6 +330,8 @@ export type MatchSession = {
     chunkKinds: ChunkKind[];
     /** Ids of the characters that carried this show into the results. */
     characterIds?: string[];
+    /** The graph path that reached this show, when a graph was in play. */
+    graphPath?: GraphTrace;
   }[];
 };
 

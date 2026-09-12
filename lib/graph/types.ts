@@ -207,12 +207,12 @@ export const EDGE_TRAVERSAL: Record<GraphEdgeType, EdgeTraversal> = {
   },
 };
 
-export function edgeTraversal(type: string): EdgeTraversal {
-  return EDGE_TRAVERSAL[type as GraphEdgeType] ?? UNKNOWN_EDGE_TRAVERSAL;
-}
-
 export function isKnownEdgeType(type: string): type is GraphEdgeType {
   return Object.hasOwn(EDGE_TRAVERSAL, type);
+}
+
+export function edgeTraversal(type: string): EdgeTraversal {
+  return isKnownEdgeType(type) ? EDGE_TRAVERSAL[type] : UNKNOWN_EDGE_TRAVERSAL;
 }
 
 export function isKnownNodeType(type: string): type is GraphNodeType {

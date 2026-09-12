@@ -4,6 +4,7 @@ import { Button, Input, Label, Surface, TextField, Typography } from 'heroui-nat
 import {
   ChevronRight,
   Cpu,
+  Network,
   Plus,
   RotateCcw,
   Smartphone,
@@ -19,6 +20,7 @@ import { ShowRow } from '@/components/ShowRow';
 import { TraitSliders } from '@/components/TraitSliders';
 import { axisSummary } from '@/lib/rag/retrieve';
 import { getShow } from '@/lib/data/shows';
+import { graphSummary } from '@/lib/graph/store';
 import { relativeTime } from '@/lib/circleAffinity';
 import { situationLabel } from '@/lib/data/situations';
 import { useCircleStore } from '@/lib/store/circles';
@@ -75,6 +77,7 @@ export default function YouScreen() {
 
   const [accent, muted] = useNativeThemeColor(['accent', 'muted']);
   const [avoidDraft, setAvoidDraft] = useState('');
+  const graph = useMemo(() => graphSummary(), []);
 
   const addDraft = useCallback(() => {
     const value = avoidDraft.trim();
@@ -351,6 +354,31 @@ export default function YouScreen() {
                             : ' · unreachable'
                       }`
                     : 'Off — matches are ranked on this device'}
+                </Typography>
+              </View>
+              <ChevronRight color={muted} size={18} />
+            </Surface>
+          </Pressable>
+
+          <Pressable
+            onPress={() => router.push('/settings/graph')}
+            accessibilityRole="button"
+            style={({ pressed }) => ({ opacity: pressed ? 0.8 : 1 })}
+          >
+            <Surface variant="secondary" className="flex-row items-center gap-3 rounded-3xl p-4">
+              <Network color={graph.supplied ? accent : muted} size={20} />
+              <View className="flex-1">
+                <Typography type="body" weight="medium">
+                  Knowledge graph
+                </Typography>
+                <Typography type="body-xs" color="muted" className="mt-1 leading-5">
+                  {graph.supplied
+                    ? `${graph.name ?? 'Loaded'} — ${graph.stats.nodes} nodes, ${graph.stats.edges} links${
+                        graph.diagnostics.length > 0
+                          ? ` · ${graph.diagnostics.length} to look at`
+                          : ''
+                      }`
+                    : 'None supplied — matching on the built-in library'}
                 </Typography>
               </View>
               <ChevronRight color={muted} size={18} />

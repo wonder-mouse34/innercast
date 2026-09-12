@@ -9,7 +9,13 @@ import { getShow } from '@/lib/data/shows';
 import { personaLabel } from '@/lib/data/personaTraits';
 import { situationLabel } from '@/lib/data/situations';
 import { useNativeThemeColor } from '@/lib/theme';
-import type { ChunkKind, MatchedCharacter, ScoreBreakdown, SituationId } from '@/lib/types';
+import type {
+  ChunkKind,
+  GraphTrace,
+  MatchedCharacter,
+  ScoreBreakdown,
+  SituationId,
+} from '@/lib/types';
 
 export type TraceRow = {
   showId: string;
@@ -21,6 +27,8 @@ export type TraceRow = {
   matchedCharacters?: MatchedCharacter[];
   /** Saved sessions keep ids only; names are resolved from the corpus. */
   characterIds?: string[];
+  /** The graph path that reached this show, when a graph was in play. */
+  graphPath?: GraphTrace;
 };
 
 type Props = {
@@ -97,6 +105,21 @@ export function RetrievalTrace({ rows, queryTokens = [], filteredOut = [] }: Pro
                 <ScoreBar label="Text match" value={row.score.lexical} />
                 <ScoreBar label="Trait fit" value={row.score.traitFit} />
                 <ScoreBar label="Situation overlap" value={row.score.situation} />
+                {row.graphPath ? (
+                  <>
+                    <ScoreBar label="Graph reach" value={row.score.graph ?? 0} />
+                    <View className="border-border/60 gap-0.5 rounded-xl border border-dashed p-2.5">
+                      <Typography type="body-xs" weight="semibold" color="muted">
+                        Path through the graph
+                      </Typography>
+                      {row.graphPath.lines.map((line, hop) => (
+                        <Typography key={line} type="body-xs" color="muted" className="leading-5">
+                          {hop + 1}. {line}
+                        </Typography>
+                      ))}
+                    </View>
+                  </>
+                ) : null}
                 {(row.matchedCharacters ?? []).length > 0 ? (
                   <View className="gap-1">
                     {(row.matchedCharacters ?? []).map((character) => {

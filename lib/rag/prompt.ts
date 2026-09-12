@@ -29,6 +29,7 @@ Rules you must follow:
 5. Refer to what the person wrote in their own words where you can. Be plain and specific; no therapy jargon, no false cheer, no emojis, no promises about how they will feel.
 6. If a record carries content warnings that could land badly given their situation, say so in the caution field.
 7. Rank by how closely the character mirrors this person tonight, not by the general quality of the series.
+8. Some records carry a "graph path": a chain of links from something this person told us, through a character, to the series. Where one is present it is evidence you may retrace in your reason — but only with the exact people and links written there. Never extend a path or add a step of your own.
 
 Reply with JSON only, no prose outside the JSON, in exactly this shape:
 {"recommendations":[{"id":"<record id>","characterId":"<character id from that record>","reason":"<2-3 sentences, second person, character first>","characterLink":"<one sentence on what they share>","caution":"<one sentence or empty string>","howToWatch":"<one practical sentence about dosing or where to start>"}]}
@@ -82,6 +83,11 @@ function renderCharacters(candidate: RetrievedShow): string {
     .join('\n');
 }
 
+/** Keep one prompt line short enough that a wide graph cannot crowd out records. */
+function cap(value: string, limit = 220): string {
+  return value.length <= limit ? value : `${value.slice(0, limit - 1).trimEnd()}…`;
+}
+
 function renderRecord(candidate: RetrievedShow, position: number): string {
   const { show } = candidate;
   const warnings = show.contentWarnings.filter((warning) => !warning.startsWith('none'));
@@ -105,6 +111,14 @@ function renderRecord(candidate: RetrievedShow, position: number): string {
       candidate.score.traitFit * 100,
     )}, situation ${Math.round(candidate.score.situation * 100)})`,
   ];
+  if (candidate.graphPath) {
+    // The path is the strongest thing we can hand the model: it is an argument,
+    // not a number. Capped so a wide graph cannot crowd out the records.
+    lines.push(`graph path: ${cap(candidate.graphPath.sentence)}`);
+    for (const anchor of candidate.graphPath.anchors.slice(0, 2)) {
+      lines.push(`  through ${anchor.name}: ${cap(anchor.sentence)}`);
+    }
+  }
   if (candidate.matchedSituations.length > 0) {
     lines.push(
       `matched situation tags: ${candidate.matchedSituations.map(situationLabel).join(', ')}`,
