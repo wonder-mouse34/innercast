@@ -1,4 +1,47 @@
-import type { ReflectionPrompt, SituationId } from '@/lib/types';
+import type { Character, ReflectionPrompt, Show, SituationId } from '@/lib/types';
+
+export type GuidedReflectionPrompt = {
+  id: string;
+  label: string;
+  text: string;
+};
+
+/**
+ * Questions used after a recommendation. They stay specific to the chosen
+ * character when one is available, and gracefully fall back to the show.
+ */
+export function guidedReflectionPrompts(
+  show: Show,
+  character?: Character,
+): GuidedReflectionPrompt[] {
+  const subject = character?.name ?? `someone in ${show.title}`;
+  const characterStory = character ? `${character.name}'s story` : `the story in ${show.title}`;
+
+  return [
+    {
+      id: 'guided-resonance',
+      label: 'Resonance',
+      text: character
+        ? `Did ${character.name} resonate with you? What felt familiar in what they were facing?`
+        : `Did someone in ${show.title} resonate with you? What felt familiar?`,
+    },
+    {
+      id: 'guided-impression',
+      label: 'What stayed',
+      text: `What about ${characterStory} has stayed with you since watching?`,
+    },
+    {
+      id: 'guided-moment',
+      label: 'A moment',
+      text: `Was there a sentence, scene, or small moment involving ${subject} that stayed with you? Why that one?`,
+    },
+    {
+      id: 'guided-action',
+      label: 'Into your life',
+      text: `Has ${characterStory} inspired you to take an action or make a change, however small?`,
+    },
+  ];
+}
 
 /**
  * Reflection prompt bank. Prompts are selected by matching a show's situation

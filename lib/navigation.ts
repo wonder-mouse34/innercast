@@ -11,6 +11,9 @@ export function goBackOrReplace(fallback: Href) {
  */
 export const FREE_REFLECTION_ID = 'free';
 
-export function reflectHref(showId: string): Href {
-  return { pathname: '/reflect/[showId]', params: { showId } };
+export function reflectHref(showId: string, characterId?: string): Href {
+  return {
+    pathname: '/reflect/[showId]',
+    params: { showId, ...(characterId ? { characterId } : {}) },
+  };
 }

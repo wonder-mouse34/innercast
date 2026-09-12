@@ -183,7 +183,6 @@ const recommendationSchema = z.object({
   /** One sentence on what the person and that character share. */
   characterLink: z.string().optional().nullable(),
   caution: z.string().optional().nullable(),
-  howToWatch: z.string().optional().nullable(),
 });
 
 const payloadSchema = z.object({

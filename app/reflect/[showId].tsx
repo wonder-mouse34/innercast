@@ -8,9 +8,15 @@ import { MoodPicker } from '@/components/MoodPicker';
 import { SectionHeading } from '@/components/SectionHeading';
 import { ShowArtwork } from '@/components/ShowArtwork';
 import { SituationChips } from '@/components/SituationChips';
+import { getCharacter } from '@/lib/data/characters';
 import { getShow } from '@/lib/data/shows';
 import { FREE_REFLECTION_ID } from '@/lib/navigation';
-import { selectPrompts, promptById, swapPrompt } from '@/lib/data/reflectionPrompts';
+import {
+  guidedReflectionPrompts,
+  selectPrompts,
+  promptById,
+  swapPrompt,
+} from '@/lib/data/reflectionPrompts';
 import { useNativeThemeColor } from '@/lib/theme';
 import { useReflectionStore } from '@/lib/store/reflections';
 import type { MoodScore, ReflectionPrompt, SituationId } from '@/lib/types';
@@ -21,12 +27,24 @@ const KIND_LABEL: Record<ReflectionPrompt['kind'], string> = {
   closing: 'Before you close the night',
 };
 
+type DisplayPrompt = {
+  id: string;
+  label: string;
+  text: string;
+  source?: ReflectionPrompt;
+};
+
 export default function ReflectScreen() {
-  const { showId } = useLocalSearchParams<{ showId: string }>();
+  const { showId, characterId } = useLocalSearchParams<{
+    showId: string;
+    characterId?: string;
+  }>();
   const [muted] = useNativeThemeColor(['muted']);
   const addReflection = useReflectionStore((state) => state.addReflection);
 
   const show = showId === FREE_REFLECTION_ID ? undefined : getShow(showId);
+  const candidateCharacter = characterId ? getCharacter(characterId) : undefined;
+  const character = candidateCharacter?.showId === show?.id ? candidateCharacter : undefined;
   const [situations, setSituations] = useState<SituationId[]>(
     () => show?.situations.slice(0, 3) ?? [],
   );
@@ -40,32 +58,51 @@ export default function ReflectScreen() {
   const [takeaway, setTakeaway] = useState('');
   const [error, setError] = useState<string | undefined>(undefined);
 
-  // Questions follow the chosen situations, except where someone asked for a
-  // different question of that kind — that choice sticks.
-  const prompts = useMemo(
+  // Free entries continue to follow the selected situations. Reflections tied
+  // to a show use a stable set of post-watch questions about that story.
+  const situationalPrompts = useMemo(
     () => selectPrompts(situations).map((prompt) => overrides[prompt.kind] ?? prompt),
     [situations, overrides],
   );
+  const guidedPrompts = useMemo(
+    () => (show ? guidedReflectionPrompts(show, character) : []),
+    [show, character],
+  );
+  const prompts: DisplayPrompt[] = show
+    ? guidedPrompts
+    : situationalPrompts.map((prompt) => ({
+        id: prompt.id,
+        label: KIND_LABEL[prompt.kind],
+        text: prompt.text,
+        source: prompt,
+      }));
 
-  const handleSwap = (prompt: ReflectionPrompt) => {
+  const handleSwap = (prompt?: ReflectionPrompt) => {
+    if (!prompt) return;
     setOverrides((current) => ({ ...current, [prompt.kind]: swapPrompt(prompt, situations) }));
   };
 
   const handleSave = () => {
     const shown = new Set(prompts.map((prompt) => prompt.id));
-    const filled = [
-      ...prompts.map((prompt) => ({ prompt, text: (answers[prompt.id] ?? '').trim() })),
-      // Keep answers to questions that scrolled out of view when situations changed.
-      ...Object.entries(answers)
-        .filter(([id]) => !shown.has(id))
-        .map(([id, text]) => {
-          const prompt = promptById(id);
-          return prompt ? { prompt, text: text.trim() } : undefined;
-        })
-        .filter((item): item is { prompt: ReflectionPrompt; text: string } => Boolean(item)),
-    ]
-      .filter((item) => item.text.length > 0)
-      .map((item) => ({ promptId: item.prompt.id, prompt: item.prompt.text, answer: item.text }));
+    const visibleAnswers = prompts.map((prompt) => ({
+      promptId: prompt.id,
+      prompt: prompt.text,
+      answer: (answers[prompt.id] ?? '').trim(),
+    }));
+    const previousAnswers = Object.entries(answers)
+      .filter(([id]) => !shown.has(id))
+      .map(([id, answer]) => {
+        const prompt = promptById(id);
+        return prompt
+          ? { promptId: prompt.id, prompt: prompt.text, answer: answer.trim() }
+          : undefined;
+      })
+      .filter((answer): answer is { promptId: string; prompt: string; answer: string } =>
+        Boolean(answer),
+      );
+    const filled = [...visibleAnswers, ...previousAnswers].filter(
+      (answer) => answer.answer.length > 0,
+    );
 
     if (filled.length === 0 && takeaway.trim().length === 0) {
       setError('Write at least one line — a single sentence is a real entry.');
@@ -74,6 +111,8 @@ export default function ReflectScreen() {
 
     addReflection({
       showId: show?.id,
+      characterId: character?.id,
+      characterName: character?.name,
       situationText: situationText.trim() || undefined,
       situations,
       moodBefore,
@@ -107,7 +146,7 @@ export default function ReflectScreen() {
                 {show.title}
               </Typography>
               <Typography type="body-xs" color="muted" className="mt-0.5">
-                {show.themes.slice(0, 3).join(' · ')}
+                {character ? `Through ${character.name}` : show.themes.slice(0, 3).join(' · ')}
               </Typography>
             </View>
           </View>
@@ -143,7 +182,9 @@ export default function ReflectScreen() {
             }
           />
           <Typography type="body-xs" color="muted" className="leading-5">
-            The questions below follow whatever you pick here.
+            {show
+              ? 'Keep the themes that were present for you while watching.'
+              : 'The questions below follow whatever you pick here.'}
           </Typography>
         </View>
 
@@ -170,7 +211,7 @@ export default function ReflectScreen() {
           {prompts.map((prompt) => (
             <Surface key={prompt.id} variant="default" className="gap-3 rounded-3xl p-4">
               <Typography type="body-xs" weight="semibold" color="muted">
-                {KIND_LABEL[prompt.kind].toUpperCase()}
+                {prompt.label.toUpperCase()}
               </Typography>
               <Typography type="body" className="leading-6">
                 {prompt.text}
@@ -187,15 +228,17 @@ export default function ReflectScreen() {
                   numberOfLines={4}
                 />
               </TextField>
-              <Button
-                variant="ghost"
-                size="sm"
-                className="self-start px-0"
-                onPress={() => handleSwap(prompt)}
-              >
-                <RefreshCw color={muted} size={14} />
-                <Button.Label>Ask me something else</Button.Label>
-              </Button>
+              {prompt.source ? (
+                <Button
+                  variant="ghost"
+                  size="sm"
+                  className="self-start px-0"
+                  onPress={() => handleSwap(prompt.source)}
+                >
+                  <RefreshCw color={muted} size={14} />
+                  <Button.Label>Ask me something else</Button.Label>
+                </Button>
+              ) : null}
             </Surface>
           ))}
         </View>

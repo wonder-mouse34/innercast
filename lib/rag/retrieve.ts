@@ -2,6 +2,7 @@ import { charactersForShow } from '@/lib/data/characters';
 import { PERSONA_BY_ID } from '@/lib/data/personaTraits';
 import { SHOWS } from '@/lib/data/shows';
 import { SITUATION_BY_ID } from '@/lib/data/situations';
+import { matchesGenreFilter, type GenreFilter } from '@/lib/genres';
 import { getGraph, graphIsSupplied } from '@/lib/graph/store';
 import {
   pathLines,
@@ -41,6 +42,7 @@ export type RetrievalRequest = {
   /** How the person describes themselves, from onboarding or the You tab. */
   personaTags?: PersonaTraitId[];
   avoidTopics?: string[];
+  selectedGenres?: GenreFilter[];
   limit?: number;
 };
 
@@ -200,6 +202,7 @@ export function retrieve(request: RetrievalRequest): RetrievalResult {
     traits,
     personaTags = [],
     avoidTopics = [],
+    selectedGenres = [],
     limit = 8,
   } = request;
 
@@ -308,6 +311,10 @@ export function retrieve(request: RetrievalRequest): RetrievalResult {
   const candidates: RetrievedShow[] = [];
 
   for (const show of SHOWS) {
+    if (!matchesGenreFilter(show.genres, selectedGenres)) {
+      filteredOut.push({ showId: show.id, reason: `genre: ${selectedGenres.join(', ')}` });
+      continue;
+    }
     const avoided = avoidHit(show, avoidTopics);
     if (avoided) {
       filteredOut.push({ showId: show.id, reason: avoided });

@@ -81,25 +81,6 @@ function buildCaution(candidate: RetrievedShow, traits: TraitVector): string | u
   return `${sentence.charAt(0).toUpperCase()}${sentence.slice(1)}.`;
 }
 
-function buildHowToWatch(candidate: RetrievedShow): string {
-  const { show } = candidate;
-  const totalHours = Math.round((show.episodes * show.runtimeMinutes) / 60);
-
-  if (show.runtimeMinutes <= 12) {
-    return 'Episodes are tiny. Put one on in a gap and stop whenever you like.';
-  }
-  if (show.seasons === 1) {
-    return `One season, ${show.episodes} episodes, about ${totalHours} hours end to end. It has a finish line.`;
-  }
-  if (show.runtimeMinutes <= 30) {
-    return `Half-hour episodes — one or two a night is a real dose, and season one stands on its own.`;
-  }
-  if (show.seasons >= 5) {
-    return `Long series, but you are only committing to season one. ${show.runtimeMinutes}-minute episodes want a proper sitting.`;
-  }
-  return `${show.runtimeMinutes}-minute episodes. Give it a full evening rather than half your attention.`;
-}
-
 /** The person on screen this recommendation is argued from. */
 function anchorCharacter(
   candidate: RetrievedShow,
@@ -169,7 +150,6 @@ export function synthesizeRecommendations(
       characterLink: anchor ? buildCharacterLink(anchor.character, anchor.matched) : undefined,
       reason: sentences.join(' '),
       caution: buildCaution(candidate, traits),
-      howToWatch: buildHowToWatch(candidate),
       fit: Math.round(candidate.score.total * 100),
     };
   });

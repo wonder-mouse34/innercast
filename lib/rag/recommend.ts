@@ -9,6 +9,7 @@ import { buildMessages } from '@/lib/rag/prompt';
 import { retrieve, type RetrievalResult } from '@/lib/rag/retrieve';
 import { synthesizeRecommendations } from '@/lib/rag/synthesize';
 import { createId } from '@/lib/utils';
+import type { GenreFilter } from '@/lib/genres';
 import type {
   MatchSession,
   PersonaTraitId,
@@ -24,6 +25,7 @@ export type MatchRequest = {
   personaTags: PersonaTraitId[];
   traits: TraitVector;
   avoidTopics: string[];
+  selectedGenres: GenreFilter[];
   settings: ModelSettings;
 };
 
@@ -58,7 +60,8 @@ function clean(value: string | null | undefined, limit = MAX_REASON_LENGTH): str
  * over with the same candidate set.
  */
 export async function runMatch(request: MatchRequest): Promise<MatchOutcome> {
-  const { text, selectedSituations, personaTags, traits, avoidTopics, settings } = request;
+  const { text, selectedSituations, personaTags, traits, avoidTopics, selectedGenres, settings } =
+    request;
 
   const retrieval = retrieve({
     text,
@@ -66,6 +69,7 @@ export async function runMatch(request: MatchRequest): Promise<MatchOutcome> {
     personaTags,
     traits,
     avoidTopics,
+    selectedGenres,
     limit: 8,
   });
 
@@ -164,7 +168,6 @@ export async function runMatch(request: MatchRequest): Promise<MatchOutcome> {
       characterLink: clean(entry.characterLink, 240) || undefined,
       reason,
       caution: clean(entry.caution, 220) || undefined,
-      howToWatch: clean(entry.howToWatch, 220) || undefined,
       fit: Math.round(candidate.score.total * 100),
     });
   }
@@ -205,6 +208,7 @@ export function buildSession(request: MatchRequest, outcome: MatchOutcome): Matc
     selectedSituations: outcome.retrieval.activeSituations,
     personaTags: outcome.retrieval.activePersonas,
     traits: request.traits,
+    selectedGenres: request.selectedGenres,
     engine: outcome.engine,
     engineNote: outcome.engineNote,
     modelName: outcome.modelName,

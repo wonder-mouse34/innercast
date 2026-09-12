@@ -81,6 +81,11 @@ export default function JournalEntryScreen() {
           <Typography type="h3" weight="semibold">
             {show ? show.title : 'A quiet entry'}
           </Typography>
+          {entry.characterName ? (
+            <Typography type="body-sm" color="muted">
+              A reflection on {entry.characterName}
+            </Typography>
+          ) : null}
           <MoodDelta before={entry.moodBefore} after={entry.moodAfter} />
           {entry.situationText ? (
             <Typography type="body-sm" color="muted" className="leading-6">

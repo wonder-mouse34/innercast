@@ -188,6 +188,8 @@ export type Character = {
   /** Self-descriptions this character mirrors. */
   personaTags: PersonaTraitId[];
   situations: SituationId[];
+  /** Where they appear when they are not present throughout the series. */
+  appearanceNote?: string;
   /** What shifts for them across the series. */
   arc: string;
   /** Completes "You may recognise yourself in them if …". */
@@ -206,6 +208,12 @@ export type Show = {
   logline: string;
   synopsis: string;
   tone: string[];
+  /** Ending classification, intentionally hidden until spoilers are revealed. */
+  endingTone?: 'happy' | 'unhappy' | 'bittersweet' | 'open';
+  /** Spoiler-bearing explanation of the ending classification. */
+  endingNote?: string;
+  /** Expanded story description that may contain spoilers. */
+  spoilerSummary?: string;
   themes: string[];
   situations: SituationId[];
   traits: TraitVector;
@@ -305,8 +313,6 @@ export type Recommendation = {
   characterLink?: string;
   /** Optional caution: content, commitment, or timing. */
   caution?: string;
-  /** How to watch it — dosing, episode to start on, what to pair it with. */
-  howToWatch?: string;
   fit: number;
 };
 
@@ -318,6 +324,8 @@ export type MatchSession = {
   traits: TraitVector;
   /** Self-descriptions in play when this match ran. */
   personaTags?: PersonaTraitId[];
+  /** Genres selected for this match. Empty means the full library. */
+  selectedGenres?: import('@/lib/genres').GenreFilter[];
   engine: RecommendationEngine;
   engineNote?: string;
   modelName?: string;
@@ -356,6 +364,9 @@ export type Reflection = {
   id: string;
   createdAt: string;
   showId?: string;
+  /** Character context is optional so entries saved before guided reflection remain valid. */
+  characterId?: string;
+  characterName?: string;
   situationText?: string;
   situations: SituationId[];
   moodBefore: MoodScore;

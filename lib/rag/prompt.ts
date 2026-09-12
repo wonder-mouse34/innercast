@@ -30,9 +30,10 @@ Rules you must follow:
 6. If a record carries content warnings that could land badly given their situation, say so in the caution field.
 7. Rank by how closely the character mirrors this person tonight, not by the general quality of the series.
 8. Some records carry a "graph path": a chain of links from something this person told us, through a character, to the series. Where one is present it is evidence you may retrace in your reason — but only with the exact people and links written there. Never extend a path or add a step of your own.
+9. Keep every recommendation spoiler-free. Do not reveal character outcomes, late-story turns, or endings.
 
 Reply with JSON only, no prose outside the JSON, in exactly this shape:
-{"recommendations":[{"id":"<record id>","characterId":"<character id from that record>","reason":"<2-3 sentences, second person, character first>","characterLink":"<one sentence on what they share>","caution":"<one sentence or empty string>","howToWatch":"<one practical sentence about dosing or where to start>"}]}
+{"recommendations":[{"id":"<record id>","characterId":"<character id from that record>","reason":"<2-3 sentences, second person, character first and spoiler-free>","characterLink":"<one sentence on what they share>","caution":"<one sentence or empty string>"}]}
 
 Return between 3 and 4 recommendations, best first.`;
 
@@ -59,7 +60,6 @@ function renderCharacters(candidate: RetrievedShow): string {
         `    who they are: ${character.portrait}`,
         `    what they are facing: ${character.facing}`,
         `    under pressure: ${character.traits.join(', ')}`,
-        `    where they end up: ${character.arc}`,
         `    recognise yourself if: ${character.recognizeIf}`,
       ];
       if (matched) {
@@ -98,8 +98,7 @@ function renderRecord(candidate: RetrievedShow, position: number): string {
     `commitment: ${commitmentLabel(show)}`,
     `genres: ${show.genres.join(', ')}`,
     `logline: ${show.logline}`,
-    `synopsis: ${show.synopsis}`,
-    `tone: ${show.tone.join(', ')}`,
+    `overall sentiment: ${show.tone.join(', ')}`,
     `themes: ${show.themes.join('; ')}`,
     `situations it speaks to: ${show.situations.map(situationLabel).join(', ')}`,
     `why it helps: ${show.whyItHelps}`,

@@ -232,6 +232,7 @@ export function projectCorpus(graph: Graph): ProjectedCorpus {
       traits: props.traits ?? [],
       personaTags: [...new Set(personaTags)],
       situations,
+      appearanceNote: props.appearanceNote,
       arc: props.arc ?? '',
       recognizeIf: props.recognizeIf ?? '',
     });
@@ -288,6 +289,9 @@ export function projectCorpus(graph: Graph): ProjectedCorpus {
       logline: props.logline ?? '',
       synopsis,
       tone: props.tone ?? [],
+      endingTone: props.endingTone,
+      endingNote: props.endingNote,
+      spoilerSummary: props.spoilerSummary,
       themes,
       situations,
       traits: { ...defaultTraits(), ...props.traits },

@@ -1,4 +1,4 @@
-import { useMemo } from 'react';
+import { useMemo, useState } from 'react';
 import { Pressable, ScrollView, View } from 'react-native';
 import { Button, Chip, Separator, Surface, Typography } from 'heroui-native';
 import {
@@ -7,7 +7,8 @@ import {
   Bookmark,
   BookmarkCheck,
   ChevronRight,
-  Clock,
+  Eye,
+  EyeOff,
   PenLine,
   UserRound,
 } from 'lucide-react-native';
@@ -19,7 +20,7 @@ import { SectionHeading } from '@/components/SectionHeading';
 import { ShowRow } from '@/components/ShowRow';
 import { charactersForShow, getCharacter } from '@/lib/data/characters';
 import { commitmentLabel, getShow, relatedShows } from '@/lib/data/shows';
-import { goBackOrReplace } from '@/lib/navigation';
+import { goBackOrReplace, reflectHref } from '@/lib/navigation';
 import { monogram } from '@/components/ShowArtwork';
 import { personaLabel } from '@/lib/data/personaTraits';
 import { situationLabel } from '@/lib/data/situations';
@@ -76,6 +77,7 @@ function AxisCompare({ show, traits }: { show: Show; traits: TraitVector }) {
 
 export default function ShowDetailScreen() {
   const { id, sessionId } = useLocalSearchParams<{ id: string; sessionId?: string }>();
+  const [spoilersVisible, setSpoilersVisible] = useState(false);
   const [accent, muted, warning, accentForeground, background, foreground] = useNativeThemeColor([
     'accent',
     'muted',
@@ -168,7 +170,9 @@ export default function ShowDetailScreen() {
           <Surface variant="secondary" className="gap-3 rounded-3xl p-4">
             <View className="flex-row items-center justify-between gap-3">
               <Typography type="body-sm" weight="semibold">
-                Why this came up for you
+                {recommendation.characterName
+                  ? `${recommendation.characterName}, in ${show.title}`
+                  : 'Why this came up for you'}
               </Typography>
               <View className="bg-accent-soft rounded-2xl px-2.5 py-1">
                 <Typography type="body-xs" weight="bold" className="text-accent-soft-foreground">
@@ -191,14 +195,6 @@ export default function ShowDetailScreen() {
               <Typography type="body-xs" color="muted" className="leading-5 italic">
                 {recommendation.characterLink}
               </Typography>
-            ) : null}
-            {recommendation.howToWatch ? (
-              <View className="flex-row gap-2">
-                <Clock color={muted} size={14} style={{ marginTop: 3 }} />
-                <Typography type="body-xs" color="muted" className="flex-1 leading-5">
-                  {recommendation.howToWatch}
-                </Typography>
-              </View>
             ) : null}
             {recommendation.caution ? (
               <View className="bg-warning-soft/60 flex-row gap-2 rounded-2xl px-3 py-2.5">
@@ -254,6 +250,11 @@ export default function ShowDetailScreen() {
                 <Typography type="body-sm" className="leading-6">
                   {character.portrait}
                 </Typography>
+                {character.appearanceNote ? (
+                  <Typography type="body-xs" weight="semibold" className="text-accent">
+                    Appears in: {character.appearanceNote}
+                  </Typography>
+                ) : null}
                 <Typography type="body-xs" color="muted" className="leading-5">
                   Carrying: {character.facing}
                 </Typography>
@@ -296,9 +297,44 @@ export default function ShowDetailScreen() {
             caption={commitmentLabel(show)}
             className="mb-0"
           />
-          <Typography type="body-sm" className="leading-6">
-            {show.synopsis}
+          <Typography type="body-sm" weight="semibold">
+            Overall sentiment
           </Typography>
+          <Typography type="body-sm" color="muted" className="leading-6">
+            {show.tone.length > 0 ? show.tone.join(' · ') : 'Not yet described'}
+          </Typography>
+          <Button
+            variant="secondary"
+            size="sm"
+            className="self-start"
+            onPress={() => setSpoilersVisible((value) => !value)}
+          >
+            {spoilersVisible ? <EyeOff color={muted} size={15} /> : <Eye color={muted} size={15} />}
+            <Button.Label>
+              {spoilersVisible ? 'Hide story spoilers' : 'Reveal story and ending'}
+            </Button.Label>
+          </Button>
+          {spoilersVisible ? (
+            <Surface variant="default" className="gap-2 rounded-2xl p-3">
+              <Typography type="body-xs" weight="semibold" className="text-warning">
+                Spoilers below
+              </Typography>
+              <Typography type="body-sm" className="leading-6">
+                {show.spoilerSummary ?? show.synopsis}
+              </Typography>
+              <Typography type="body-xs" weight="semibold">
+                Ending:{' '}
+                {show.endingTone
+                  ? `${show.endingTone.charAt(0).toUpperCase()}${show.endingTone.slice(1)}`
+                  : 'Not classified in this library record'}
+              </Typography>
+              {show.endingNote ? (
+                <Typography type="body-xs" color="muted" className="leading-5">
+                  {show.endingNote}
+                </Typography>
+              ) : null}
+            </Surface>
+          ) : null}
           <View className="mt-1 flex-row flex-wrap gap-1.5">
             {show.tone.map((tone) => (
               <View key={tone} className="border-border/70 rounded-full border px-2.5 py-1">
@@ -419,9 +455,7 @@ export default function ShowDetailScreen() {
           <Button
             variant="primary"
             className="flex-1"
-            onPress={() =>
-              router.push({ pathname: '/reflect/[showId]', params: { showId: show.id } })
-            }
+            onPress={() => router.push(reflectHref(show.id, recommendation?.characterId))}
           >
             <PenLine color={accentForeground} size={17} />
             <Button.Label>Reflect</Button.Label>

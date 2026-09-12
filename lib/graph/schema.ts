@@ -42,6 +42,9 @@ export const showPropsSchema = z.object({
   logline: z.string().optional(),
   synopsis: z.string().optional(),
   tone: z.array(z.string()).optional(),
+  endingTone: z.enum(['happy', 'unhappy', 'bittersweet', 'open']).optional(),
+  endingNote: z.string().optional(),
+  spoilerSummary: z.string().optional(),
   contentWarnings: z.array(z.string()).optional(),
   whyItHelps: z.string().optional(),
   afterward: z.string().optional(),
@@ -60,6 +63,7 @@ export const characterPropsSchema = z.object({
   facing: z.string().optional(),
   /** How they behave under pressure, as short phrases. */
   traits: z.array(z.string()).optional(),
+  appearanceNote: z.string().optional(),
   arc: z.string().optional(),
   recognizeIf: z.string().optional(),
 });

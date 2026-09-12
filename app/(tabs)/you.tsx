@@ -1,12 +1,11 @@
 import { useCallback, useMemo, useState } from 'react';
 import { KeyboardAvoidingView, Platform, Pressable, ScrollView, View } from 'react-native';
-import { Button, Input, Label, Surface, TextField, Typography } from 'heroui-native';
+import { Button, Input, Surface, TextField, Typography } from 'heroui-native';
 import {
   ChevronRight,
   Cpu,
   Network,
   Plus,
-  RotateCcw,
   Smartphone,
   Sparkles,
   Trash2,
@@ -14,23 +13,20 @@ import {
 } from 'lucide-react-native';
 import { router } from 'expo-router';
 
-import { PersonaChips } from '@/components/PersonaChips';
 import { SectionHeading } from '@/components/SectionHeading';
 import { ShowRow } from '@/components/ShowRow';
-import { TraitSliders } from '@/components/TraitSliders';
-import { axisSummary } from '@/lib/rag/retrieve';
 import { getShow } from '@/lib/data/shows';
 import { graphSummary } from '@/lib/graph/store';
 import { relativeTime } from '@/lib/circleAffinity';
 import { situationLabel } from '@/lib/data/situations';
 import { useCircleStore } from '@/lib/store/circles';
 import { useNativeThemeColor } from '@/lib/theme';
-import { MAX_PERSONA_TAGS, useProfileStore } from '@/lib/store/profile';
+import { useProfileStore } from '@/lib/store/profile';
 import { useReflectionStore } from '@/lib/store/reflections';
 import { useSessionStore } from '@/lib/store/sessions';
 import { useSettingsStore } from '@/lib/store/settings';
 import { useWatchlistStore } from '@/lib/store/watchlist';
-import { TRAIT_META, type Show, type WatchEntry, type WatchStatus } from '@/lib/types';
+import { type Show, type WatchEntry, type WatchStatus } from '@/lib/types';
 
 const STATUS_LABEL: Record<WatchStatus, string> = {
   saved: 'Saved for later',
@@ -55,13 +51,6 @@ function Stat({ value, label }: { value: number; label: string }) {
 }
 
 export default function YouScreen() {
-  const name = useProfileStore((state) => state.name);
-  const setName = useProfileStore((state) => state.setName);
-  const traits = useProfileStore((state) => state.traits);
-  const setTrait = useProfileStore((state) => state.setTrait);
-  const resetTraits = useProfileStore((state) => state.resetTraits);
-  const personaTags = useProfileStore((state) => state.personaTags);
-  const togglePersonaTag = useProfileStore((state) => state.togglePersonaTag);
   const avoidTopics = useProfileStore((state) => state.avoidTopics);
   const addAvoidTopic = useProfileStore((state) => state.addAvoidTopic);
   const removeAvoidTopic = useProfileStore((state) => state.removeAvoidTopic);
@@ -85,14 +74,6 @@ export default function YouScreen() {
     addAvoidTopic(value);
     setAvoidDraft('');
   }, [addAvoidTopic, avoidDraft]);
-
-  const signature = useMemo(() => {
-    const scored = TRAIT_META.map((meta) => ({
-      meta,
-      distance: Math.abs(traits[meta.axis] - 50) * meta.weight,
-    })).sort((a, b) => b.distance - a.distance);
-    return scored.slice(0, 3).map((entry) => axisSummary(entry.meta.axis, traits[entry.meta.axis]));
-  }, [traits]);
 
   const shelf = useMemo(() => {
     const rows: { entry: WatchEntry; show: Show }[] = [];
@@ -119,16 +100,7 @@ export default function YouScreen() {
         contentContainerClassName="px-5 pt-2 pb-16 gap-7"
         keyboardShouldPersistTaps="handled"
       >
-        <Surface variant="secondary" className="gap-4 rounded-3xl p-4">
-          <TextField>
-            <Label>Your name</Label>
-            <Input
-              value={name}
-              onChangeText={setName}
-              placeholder="Add your name"
-              autoCapitalize="words"
-            />
-          </TextField>
+        <Surface variant="secondary" className="rounded-3xl p-4">
           <View className="flex-row gap-3">
             <Stat value={sessions.length} label="evenings guided" />
             <Stat value={reflections.length} label="reflections" />
@@ -136,56 +108,6 @@ export default function YouScreen() {
             <Stat value={joinedIds.length} label="circles" />
           </View>
         </Surface>
-
-        <View>
-          <SectionHeading
-            title="Who you are"
-            caption="What Inner Cast matches against the people on screen. Change it whenever it stops being true."
-          />
-          <Surface variant="secondary" className="gap-3 rounded-3xl p-4">
-            <PersonaChips
-              selected={personaTags}
-              onToggle={togglePersonaTag}
-              max={MAX_PERSONA_TAGS}
-            />
-            {personaTags.length === 0 ? (
-              <Typography type="body-sm" color="muted" className="leading-6">
-                Nothing picked yet, so matching leans on your words and how you like to watch. Pick
-                a couple and you start getting pointed at particular people instead.
-              </Typography>
-            ) : null}
-          </Surface>
-        </View>
-
-        <View>
-          <SectionHeading
-            title="How you watch"
-            caption="Your baseline. Discover starts here and lets you bend it for one evening."
-          />
-          {signature.length > 0 ? (
-            <View className="mb-4 flex-row flex-wrap gap-2">
-              {signature.map((line) => (
-                <View key={line} className="bg-accent-soft rounded-full px-3 py-1.5">
-                  <Typography type="body-xs" className="text-accent">
-                    {line}
-                  </Typography>
-                </View>
-              ))}
-            </View>
-          ) : null}
-          <Surface variant="secondary" className="rounded-3xl p-4">
-            <TraitSliders traits={traits} onChange={setTrait} />
-            <Button
-              variant="ghost"
-              size="sm"
-              className="mt-4 self-start px-0"
-              onPress={resetTraits}
-            >
-              <RotateCcw color={muted} size={14} />
-              <Button.Label>Reset to the starting point</Button.Label>
-            </Button>
-          </Surface>
-        </View>
 
         <View>
           <SectionHeading

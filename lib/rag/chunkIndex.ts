@@ -62,7 +62,6 @@ function characterChunk(character: Character): string {
     character.traits.join(', '),
     character.personaTags.map((tag) => personaEcho(tag)).join('. '),
     situationText,
-    character.arc,
     character.recognizeIf,
   ].join(' ');
 }

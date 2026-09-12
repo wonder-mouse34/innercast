@@ -1,35 +1,26 @@
 import { useCallback, useMemo, useRef, useState } from 'react';
 import { KeyboardAvoidingView, Platform, Pressable, ScrollView, View } from 'react-native';
 import { Button, Label, Spinner, Surface, TextArea, TextField, Typography } from 'heroui-native';
-import {
-  ChevronDown,
-  ChevronUp,
-  Cpu,
-  RotateCcw,
-  Search,
-  SlidersHorizontal,
-  UserRound,
-} from 'lucide-react-native';
+import { Cpu, Search } from 'lucide-react-native';
 import { Redirect, router } from 'expo-router';
 
 import { EngineBadge } from '@/components/EngineBadge';
+import { GenreFilterChips } from '@/components/GenreFilterChips';
 import { MatchCard } from '@/components/MatchCard';
 import { PillarsSection } from '@/components/PillarsSection';
-import { PersonaChips } from '@/components/PersonaChips';
 import { RetrievalTrace } from '@/components/RetrievalTrace';
 import { SectionHeading } from '@/components/SectionHeading';
 import { SituationChips } from '@/components/SituationChips';
-import { TraitSliders } from '@/components/TraitSliders';
 import { buildSession, runMatch, type MatchOutcome } from '@/lib/rag/recommend';
 import { getShow, SHOWS } from '@/lib/data/shows';
-import { personaLabel } from '@/lib/data/personaTraits';
+import type { GenreFilter } from '@/lib/genres';
 import { situationLabel } from '@/lib/data/situations';
 import { useNativeThemeColor } from '@/lib/theme';
 import { useProfileHydrated } from '@/lib/store/hydration';
-import { MAX_PERSONA_TAGS, useProfileStore } from '@/lib/store/profile';
+import { useProfileStore } from '@/lib/store/profile';
 import { useSessionStore } from '@/lib/store/sessions';
 import { useSettingsStore } from '@/lib/store/settings';
-import type { RetrievedShow, SituationId, TraitAxis, TraitVector } from '@/lib/types';
+import type { RetrievedShow, SituationId } from '@/lib/types';
 
 function greeting(): string {
   const hour = new Date().getHours();
@@ -45,7 +36,6 @@ export default function DiscoverScreen() {
   const name = useProfileStore((state) => state.name);
   const profileTraits = useProfileStore((state) => state.traits);
   const personaTags = useProfileStore((state) => state.personaTags);
-  const togglePersonaTag = useProfileStore((state) => state.togglePersonaTag);
   const avoidTopics = useProfileStore((state) => state.avoidTopics);
   const settings = useSettingsStore((state) => state.model);
   const sessions = useSessionStore((state) => state.sessions);
@@ -58,9 +48,7 @@ export default function DiscoverScreen() {
 
   const [text, setText] = useState('');
   const [selected, setSelected] = useState<SituationId[]>([]);
-  const [tonight, setTonight] = useState<TraitVector | null>(null);
-  const [tuningOpen, setTuningOpen] = useState(false);
-  const [personaOpen, setPersonaOpen] = useState(false);
+  const [selectedGenres, setSelectedGenres] = useState<GenreFilter[]>([]);
   const [isMatching, setIsMatching] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [outcome, setOutcome] = useState<MatchOutcome | null>(null);
@@ -69,20 +57,17 @@ export default function DiscoverScreen() {
   const scrollRef = useRef<ScrollView>(null);
   const resultsY = useRef(0);
 
-  const traits = tonight ?? profileTraits;
-
   const toggleSituation = useCallback((id: SituationId) => {
     setSelected((current) =>
       current.includes(id) ? current.filter((item) => item !== id) : [...current, id],
     );
   }, []);
 
-  const setTraitForTonight = useCallback(
-    (axis: TraitAxis, value: number) => {
-      setTonight((current) => ({ ...(current ?? profileTraits), [axis]: Math.round(value) }));
-    },
-    [profileTraits],
-  );
+  const toggleGenre = useCallback((genre: GenreFilter) => {
+    setSelectedGenres((current) =>
+      current.includes(genre) ? current.filter((item) => item !== genre) : [...current, genre],
+    );
+  }, []);
 
   const handleMatch = useCallback(async () => {
     const trimmed = text.trim();
@@ -101,8 +86,9 @@ export default function DiscoverScreen() {
       text: trimmed,
       selectedSituations: selected,
       personaTags,
-      traits,
+      traits: profileTraits,
       avoidTopics,
+      selectedGenres,
       settings,
     };
 
@@ -120,7 +106,16 @@ export default function DiscoverScreen() {
     } finally {
       setIsMatching(false);
     }
-  }, [addSession, avoidTopics, personaTags, selected, settings, text, traits]);
+  }, [
+    addSession,
+    avoidTopics,
+    personaTags,
+    profileTraits,
+    selected,
+    selectedGenres,
+    settings,
+    text,
+  ]);
 
   const candidateByShow = useMemo(() => {
     const map = new Map<string, RetrievedShow>();
@@ -214,84 +209,7 @@ export default function DiscoverScreen() {
           </View>
 
           <View className="border-border/60 border-t pt-3.5">
-            <Pressable
-              onPress={() => setPersonaOpen((value) => !value)}
-              accessibilityRole="button"
-              accessibilityState={{ expanded: personaOpen }}
-              className="flex-row items-center gap-2.5"
-              style={({ pressed }) => ({ opacity: pressed ? 0.7 : 1 })}
-            >
-              <UserRound color={personaTags.length > 0 ? accent : muted} size={16} />
-              <View className="flex-1">
-                <Typography type="body-sm" weight="medium">
-                  Who you are in this
-                </Typography>
-                <Typography type="body-xs" color="muted" className="mt-0.5 leading-5">
-                  {personaTags.length > 0
-                    ? personaTags.map(personaLabel).join(' · ')
-                    : 'Say how you handle things and you get matched to a person, not a genre'}
-                </Typography>
-              </View>
-              {personaOpen ? (
-                <ChevronUp color={muted} size={18} />
-              ) : (
-                <ChevronDown color={muted} size={18} />
-              )}
-            </Pressable>
-
-            {personaOpen ? (
-              <View className="mt-4">
-                <PersonaChips
-                  selected={personaTags}
-                  onToggle={togglePersonaTag}
-                  max={MAX_PERSONA_TAGS}
-                />
-              </View>
-            ) : null}
-          </View>
-
-          <View className="border-border/60 border-t pt-3.5">
-            <Pressable
-              onPress={() => setTuningOpen((value) => !value)}
-              accessibilityRole="button"
-              accessibilityState={{ expanded: tuningOpen }}
-              className="flex-row items-center gap-2.5"
-              style={({ pressed }) => ({ opacity: pressed ? 0.7 : 1 })}
-            >
-              <SlidersHorizontal color={muted} size={16} />
-              <View className="flex-1">
-                <Typography type="body-sm" weight="medium">
-                  Tune it for tonight
-                </Typography>
-                <Typography type="body-xs" color="muted" className="mt-0.5">
-                  {tonight
-                    ? 'Using tonight’s settings, not your usual ones'
-                    : 'Starting from your usual preferences'}
-                </Typography>
-              </View>
-              {tuningOpen ? (
-                <ChevronUp color={muted} size={18} />
-              ) : (
-                <ChevronDown color={muted} size={18} />
-              )}
-            </Pressable>
-
-            {tuningOpen ? (
-              <View className="mt-4 gap-4">
-                <TraitSliders traits={traits} onChange={setTraitForTonight} />
-                {tonight ? (
-                  <Button
-                    variant="ghost"
-                    size="sm"
-                    className="self-start px-0"
-                    onPress={() => setTonight(null)}
-                  >
-                    <RotateCcw color={muted} size={14} />
-                    <Button.Label>Back to my usual settings</Button.Label>
-                  </Button>
-                ) : null}
-              </View>
-            ) : null}
+            <GenreFilterChips selected={selectedGenres} onToggle={toggleGenre} />
           </View>
 
           {avoidTopics.length > 0 ? (

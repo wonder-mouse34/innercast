@@ -1,6 +1,6 @@
-import { useMemo } from 'react';
-import { ScrollView, View } from 'react-native';
-import { Button, Chip, Surface, Typography } from 'heroui-native';
+import { useMemo, useState } from 'react';
+import { KeyboardAvoidingView, Platform, ScrollView, View } from 'react-native';
+import { Button, Chip, Input, Label, Surface, TextField, Typography } from 'heroui-native';
 import { Plus, Users } from 'lucide-react-native';
 import { router } from 'expo-router';
 
@@ -100,9 +100,12 @@ export default function CirclesScreen() {
   const circles = useCircleStore((state) => state.circles);
   const joinedIds = useCircleStore((state) => state.joinedIds);
   const traits = useProfileStore((state) => state.traits);
+  const name = useProfileStore((state) => state.name);
+  const setName = useProfileStore((state) => state.setName);
   const sessions = useSessionStore((state) => state.sessions);
   const entries = useReflectionStore((state) => state.entries);
   const [accentForeground] = useNativeThemeColor(['accent-foreground']);
+  const [nameDraft, setNameDraft] = useState('');
 
   const recentSituations = useMemo(() => {
     const counts = new Map<SituationId, number>();
@@ -133,6 +136,51 @@ export default function CirclesScreen() {
       ),
     [circles, joinedIds, traits, recentSituations],
   );
+
+  if (!name.trim()) {
+    const continueToConnect = () => {
+      const value = nameDraft.trim();
+      if (value) setName(value);
+    };
+
+    return (
+      <KeyboardAvoidingView
+        className="bg-background flex-1"
+        behavior={Platform.OS === 'ios' ? 'padding' : undefined}
+      >
+        <ScrollView
+          className="flex-1"
+          contentContainerClassName="px-5 pt-6 pb-16 gap-5"
+          keyboardShouldPersistTaps="handled"
+        >
+          <View className="gap-2">
+            <Typography type="h3" weight="semibold">
+              What should people call you?
+            </Typography>
+            <Typography type="body-sm" color="muted" className="leading-6">
+              This name is only used when you join or post in a circle. You can use a first name,
+              nickname, or pseudonym.
+            </Typography>
+          </View>
+          <Surface variant="secondary" className="gap-4 rounded-3xl p-4">
+            <TextField>
+              <Label>Name in Connect</Label>
+              <Input
+                value={nameDraft}
+                onChangeText={setNameDraft}
+                placeholder="What should we call you?"
+                autoCapitalize="words"
+                onSubmitEditing={continueToConnect}
+              />
+            </TextField>
+            <Button variant="primary" isDisabled={!nameDraft.trim()} onPress={continueToConnect}>
+              <Button.Label>Continue to Connect</Button.Label>
+            </Button>
+          </Surface>
+        </ScrollView>
+      </KeyboardAvoidingView>
+    );
+  }
 
   return (
     <ScrollView className="flex-1" contentContainerClassName="px-5 pt-4 pb-16 gap-8">

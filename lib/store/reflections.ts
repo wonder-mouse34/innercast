@@ -7,6 +7,8 @@ import type { MoodScore, Reflection, ReflectionAnswer, SituationId } from '@/lib
 
 export type NewReflection = {
   showId?: string;
+  characterId?: string;
+  characterName?: string;
   situationText?: string;
   situations: SituationId[];
   moodBefore: MoodScore;
