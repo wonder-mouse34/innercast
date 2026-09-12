@@ -25,6 +25,7 @@
     "babel-preset-expo": "~57.0.9",
     "class-variance-authority": "~0.7.1",
     "clsx": "~2.1.1",
+    "date-fns": "^4.4.0",
     "expo": "~57.0.19",
     "expo-blur": "~57.0.2",
     "expo-constants": "~57.0.17",

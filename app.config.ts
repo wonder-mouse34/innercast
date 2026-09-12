@@ -10,11 +10,11 @@ export default ({ config }: ConfigContext): ExpoConfig => {
 
   return {
     ...config,
-    name: 'SereneScreen',
+    name: 'Lantern',
     slug: 'serenescreen',
     version: process.env.BILT_APP_VERSION ?? '1.0.0',
     orientation: 'portrait',
-    userInterfaceStyle: 'automatic',
+    userInterfaceStyle: 'dark',
     scheme: 'serenescreen',
     runtimeVersion: {
       policy: 'appVersion',

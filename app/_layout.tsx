@@ -13,7 +13,7 @@ import Constants, { ExecutionEnvironment } from 'expo-constants';
 import { Platform } from 'react-native';
 import { useEffect } from 'react';
 import * as DevClient from 'expo-dev-client';
-import { HeroUINativeProvider } from 'heroui-native';
+import { HeroUINativeProvider, useThemeColor } from 'heroui-native';
 import { Uniwind } from 'uniwind';
 import {
   ErrorBoundary as ExpoErrorBoundary,
@@ -43,8 +43,53 @@ function ErrorBoundary({ error, retry }: ErrorBoundaryProps) {
 
 export { ErrorBoundary };
 
-// Starter is light-only by default. Remove this when implementing requested dark mode.
-Uniwind.setTheme('light');
+function RootNavigator() {
+  const [background, foreground, panel] = useThemeColor([
+    'background',
+    'foreground',
+    'background-secondary',
+  ]);
+
+  return (
+    <Stack
+      screenOptions={{
+        headerStyle: { backgroundColor: background },
+        headerTintColor: foreground,
+        headerTitleStyle: { color: foreground, fontFamily: 'Inter_600SemiBold' },
+        headerShadowVisible: false,
+        headerBackButtonDisplayMode: 'minimal',
+        contentStyle: { backgroundColor: background },
+      }}
+    >
+      <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
+      <Stack.Screen name="onboarding" options={{ headerShown: false }} />
+      <Stack.Screen name="show/[id]" options={{ headerShown: false }} />
+      <Stack.Screen
+        name="reflect/[showId]"
+        options={{
+          title: 'Reflection',
+          presentation: 'modal',
+          contentStyle: { backgroundColor: panel },
+        }}
+      />
+      <Stack.Screen name="journal/[entryId]" options={{ title: 'Entry' }} />
+      <Stack.Screen name="circle/[id]" options={{ title: '' }} />
+      <Stack.Screen
+        name="circle/new"
+        options={{
+          title: 'New circle',
+          presentation: 'modal',
+          contentStyle: { backgroundColor: panel },
+        }}
+      />
+      <Stack.Screen name="session/[id]" options={{ title: 'Past matches' }} />
+      <Stack.Screen name="settings/model" options={{ title: 'Local model' }} />
+    </Stack>
+  );
+}
+
+// Lantern is a low-light, evening-companion app: dark theme only.
+Uniwind.setTheme('dark');
 
 void SplashScreen.preventAutoHideAsync();
 
@@ -141,9 +186,7 @@ export default function RootLayout() {
   return (
     <GestureHandlerRootView style={{ flex: 1 }}>
       <HeroUINativeProvider>
-        <Stack>
-          <Stack.Screen name="(tabs)" options={{ title: 'Habits', headerShown: false }} />
-        </Stack>
+        <RootNavigator />
         <InstallPrompt />
       </HeroUINativeProvider>
     </GestureHandlerRootView>
