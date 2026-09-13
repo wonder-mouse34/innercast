@@ -1,0 +1,1202 @@
+[
+  {
+    "source": "arc:arcane/vi/holding_everyone_together",
+    "target": "arc:avatar/katara/parentified_caretaker",
+    "bridge": "Both became the parent of the family far too young, holding everyone together while their own anger and exhaustion go unseen."
+  },
+  {
+    "source": "arc:arcane/vi/holding_everyone_together",
+    "target": "arc:squid_game/kang_sae_byeok/the_loner_who_trusts_no_one",
+    "bridge": "Both carry a younger sibling and a rigged world on their shoulders alone, convinced that nobody else can be trusted to keep the people they love safe."
+  },
+  {
+    "source": "arc:arcane/vi/searching_for_her_sister",
+    "target": "arc:my_hero_academia/shoto_todoroki/reaching_for_family",
+    "bridge": "Both reach for a sibling who was damaged by the same past and has grown into someone dangerous, trying to hold love and accountability in the same hand."
+  },
+  {
+    "source": "arc:arcane/vi/searching_for_her_sister",
+    "target": "arc:game_of_thrones/arya_stark/the_other_sister",
+    "bridge": "Both are thrown back together with a sister after years of separate hardships and have to find out whether the hurt between them can be crossed."
+  },
+  {
+    "source": "arc:arcane/powder/desperate_to_be_useful",
+    "target": "arc:walking_dead/eugene_porter/worth_more_than_a_title",
+    "bridge": "Both believe they will only be kept if they prove themselves useful, and every failure feels like the moment they will finally be left behind."
+  },
+  {
+    "source": "arc:arcane/powder/desperate_to_be_useful",
+    "target": "arc:buffy/dawn_summers/earning_her_place",
+    "bridge": "Both are the youngest, treated as someone to protect rather than someone who can help, and ache to be seen as more than a burden."
+  },
+  {
+    "source": "arc:arcane/jayce_talis/dream_called_reckless",
+    "target": "arc:parks_and_rec/ben_wyatt/living_down_a_youthful_failure",
+    "bridge": "Both were publicly humiliated for betting everything on a young idea and have to decide whether they dare to believe in something again."
+  },
+  {
+    "source": "arc:arcane/jayce_talis/dream_called_reckless",
+    "target": "arc:buffy/wesley_wyndam_pryce/never_good_enough",
+    "bridge": "Both are cast out after a public failure and rebuild from nothing, earning back the respect they once assumed their talent guaranteed."
+  },
+  {
+    "source": "arc:arcane/jayce_talis/when_success_changes_you",
+    "target": "arc:breaking_bad/jimmy_mcgill/the_mask_that_becomes_the_man",
+    "bridge": "Both keep getting rewarded for the shortcuts they swore off, and slowly drift from the person who first set out with good intentions."
+  },
+  {
+    "source": "arc:arcane/viktor/overlooked_genius_finds_a_partner",
+    "target": "arc:game_of_thrones/samwell_tarly/courage_his_own_way",
+    "bridge": "Both are quiet, easily dismissed minds whose real strength is how they think, and one loyal companion changes what they believe they are worth."
+  },
+  {
+    "source": "arc:arcane/viktor/overlooked_genius_finds_a_partner",
+    "target": "arc:mad_men/peggy_olson/from_the_typing_pool_to_the_table",
+    "bridge": "Both come from modest beginnings into a world that expects them to stay in the background, and risk their small foothold to back the talent nobody else sees."
+  },
+  {
+    "source": "arc:arcane/viktor/racing_the_clock",
+    "target": "arc:breaking_bad/walter_white/the_overlooked_man_wants_his_due",
+    "bridge": "Both are handed a deadline on their life and pour their gifts into a work that finally makes them feel significant, whatever it costs the people around them."
+  },
+  {
+    "source": "arc:arcane/caitlyn_kiramman/privileged_idealist",
+    "target": "arc:friends/rachel_green/building_a_life_of_her_own",
+    "bridge": "Both walk away from the comfortable future their family planned and have to prove, mostly to themselves, that they can do real work in a harder world."
+  },
+  {
+    "source": "arc:arcane/caitlyn_kiramman/privileged_idealist",
+    "target": "arc:greys_anatomy/jackson_avery/beyond_the_family_name",
+    "bridge": "Both want to be judged on their own merit while the power of their family keeps opening doors and casting shadows they have to learn to see."
+  },
+  {
+    "source": "arc:arcane/caitlyn_kiramman/grief_wants_someone_to_pay",
+    "target": "arc:walking_dead/maggie_greene/leading_through_grief",
+    "bridge": "Both are handed power in the rawest days of grief, and their anger at the one they blame starts steering every decision and straining every friendship."
+  },
+  {
+    "source": "arc:arcane/caitlyn_kiramman/grief_wants_someone_to_pay",
+    "target": "arc:fma/roy_mustang/when_grief_becomes_vengeance",
+    "bridge": "Both look composed from the outside while grief quietly turns into a single-minded hunt for someone to punish, eroding the values they once lived by."
+  },
+  {
+    "source": "arc:arcane/silco/an_old_wound_as_a_mission",
+    "target": "arc:fma/scar/consumed_by_revenge",
+    "bridge": "Both carry a grievance that began in real injustice and has swallowed everything else they were, until the cause and the wound are impossible to separate."
+  },
+  {
+    "source": "arc:arcane/vander/keeping_the_peace",
+    "target": "arc:breaking_bad/mike_ehrmantraut/living_for_his_granddaughter",
+    "bridge": "Both pour everything into protecting the young ones left in their care while keeping a violent part of their own past locked away from them."
+  },
+  {
+    "source": "arc:arcane/ekko/growing_up_too_fast",
+    "target": "arc:walking_dead/carl_grimes/growing_up_too_fast",
+    "bridge": "Both are children forced to carry adult danger and loss long before they are ready, trying to hold on to who they are while life hardens them."
+  },
+  {
+    "source": "arc:arcane/ekko/growing_up_too_fast",
+    "target": "arc:naruto/shikamaru_nara/losing_a_mentor",
+    "bridge": "Both lose the older figure who sheltered them and suddenly become the one others rely on, with no time to grieve what they lost."
+  },
+  {
+    "source": "arc:arcane/ekko/the_life_he_could_have_had",
+    "target": "arc:game_of_thrones/jon_snow/love_duty_and_identity",
+    "bridge": "Both are torn between a love that offers them rest and the people who depend on them, and have to decide what they owe themselves versus what they owe others."
+  },
+  {
+    "source": "arc:arcane/ekko/the_life_he_could_have_had",
+    "target": "arc:buffy/buffy_summers/reluctant_chosen_one",
+    "bridge": "Both carry a responsibility that cuts them off from the ordinary happiness everyone else seems to get, and keep being tempted by a life where they could simply set it down."
+  },
+  {
+    "source": "arc:brooklyn_99/jake_peralta/the_case_of_growing_up",
+    "target": "arc:parks_and_rec/andy_dwyer/growing_up_after_being_left",
+    "bridge": "Both are lovable kids at heart who have to become reliable adults without losing the joy that makes people love them."
+  },
+  {
+    "source": "arc:brooklyn_99/jake_peralta/falling_for_his_rival",
+    "target": "arc:avatar/asami_sato/rival_to_closest_friend",
+    "bridge": "Both start out as rivals trying to outdo each other and slowly discover that the person who knows all their flaws is the one they most want close."
+  },
+  {
+    "source": "arc:brooklyn_99/jake_peralta/falling_for_his_rival",
+    "target": "arc:the_good_place/chidi_anagonye/loving_his_opposite",
+    "bridge": "Both fall for their complete opposite, and loving them means risking the vulnerability they have always avoided."
+  },
+  {
+    "source": "arc:brooklyn_99/raymond_holt/earning_the_command",
+    "target": "arc:game_of_thrones/brienne_of_tarth/proving_herself",
+    "bridge": "Both spent years being underestimated for who they are, and pour themselves into a role that was never meant for them with iron discipline and no room for error."
+  },
+  {
+    "source": "arc:brooklyn_99/raymond_holt/earning_the_command",
+    "target": "arc:mad_men/joan_holloway/fighting_to_be_taken_seriously",
+    "bridge": "Both have earned a seat the system kept denying them and have to decide how to hold power without becoming as closed-off as the people who held them back."
+  },
+  {
+    "source": "arc:brooklyn_99/raymond_holt/letting_feelings_show",
+    "target": "arc:ted_lasso/roy_kent/letting_someone_in",
+    "bridge": "Both equate vulnerability with weakness and have to learn, late and awkwardly, to show affection and admit hurt to the people they love."
+  },
+  {
+    "source": "arc:brooklyn_99/amy_santiago/chasing_approval_and_the_top_job",
+    "target": "arc:friends/monica_geller/never_good_enough_for_mom",
+    "bridge": "Both grew up competing for a parent's attention among siblings and cope with the fear of not being enough by controlling every detail and needing to win."
+  },
+  {
+    "source": "arc:brooklyn_99/amy_santiago/chasing_approval_and_the_top_job",
+    "target": "arc:my_hero_academia/tenya_iida/by_the_book_leader",
+    "bridge": "Both believe that doing everything correctly is how you earn your place, and have to learn to trust their own judgement when the rules and the right thing part ways."
+  },
+  {
+    "source": "arc:brooklyn_99/rosa_diaz/walls_up",
+    "target": "arc:walking_dead/michonne/letting_people_back_in",
+    "bridge": "Both keep the world at arm's length with toughness and silence, and slowly let in the people who keep showing up anyway."
+  },
+  {
+    "source": "arc:brooklyn_99/rosa_diaz/walls_up",
+    "target": "arc:the_good_place/eleanor_shellstrop/letting_people_in",
+    "bridge": "Both learned early that they had to handle everything alone, and have to find out whether letting others matter is worth the risk of being hurt."
+  },
+  {
+    "source": "arc:brooklyn_99/rosa_diaz/telling_her_family_who_she_is",
+    "target": "arc:greys_anatomy/callie_torres/coming_out",
+    "bridge": "Both come out to traditional parents whose approval matters desperately, and must decide whether to live honestly even if their family never accepts them."
+  },
+  {
+    "source": "arc:brooklyn_99/rosa_diaz/telling_her_family_who_she_is",
+    "target": "arc:sex_education/eric_effiong/being_himself_out_loud",
+    "bridge": "Both long to belong to a family and a culture that may not fully accept who they love, and refuse to choose between parts of themselves."
+  },
+  {
+    "source": "arc:brooklyn_99/terry_jeffords/afraid_to_get_hurt",
+    "target": "arc:breaking_bad/hank_schrader/the_tough_guy_who_cant_admit_fear",
+    "bridge": "Both are strong people whose identity rests on being unshakeable, suddenly frozen by a fear they are ashamed to let anyone see."
+  },
+  {
+    "source": "arc:brooklyn_99/terry_jeffords/afraid_to_get_hurt",
+    "target": "arc:gilmore_girls/sookie_st_james/panicking_at_every_big_step",
+    "bridge": "Both are completely confident in their work but thrown into panic by the new stakes of family life, and have to name the fear instead of acting it out."
+  },
+  {
+    "source": "arc:brooklyn_99/terry_jeffords/speaking_up_at_a_cost",
+    "target": "arc:ted_lasso/sam_obisanya/doing_the_right_thing",
+    "bridge": "Both are well-liked people who could stay comfortable by staying quiet, and choose to speak against an injustice even when the backlash becomes personal."
+  },
+  {
+    "source": "arc:brooklyn_99/terry_jeffords/speaking_up_at_a_cost",
+    "target": "arc:greys_anatomy/meredith_grey/breaking_rules_for_right_reasons",
+    "bridge": "Both put a career they worked for on the line to stand against a system that fails people, knowing their families will share the fallout."
+  },
+  {
+    "source": "arc:brooklyn_99/charles_boyle/loving_too_hard",
+    "target": "arc:bojack/mr_peanutbutter/learning_to_be_alone",
+    "bridge": "Both love big and fast to avoid the loneliness underneath, and have to learn to be with themselves before they can love without clinging."
+  },
+  {
+    "source": "arc:brooklyn_99/charles_boyle/loving_too_hard",
+    "target": "arc:greys_anatomy/callie_torres/loving_someone_who_doesnt_choose_you",
+    "bridge": "Both rush into devotion hoping it will secure their place, and have to face whether the person they cling to is really choosing them back."
+  },
+  {
+    "source": "arc:brooklyn_99/charles_boyle/becoming_a_father",
+    "target": "arc:money_heist/denver/unexpected_family",
+    "bridge": "Both step up to be a parent to a child who isn't biologically theirs and wrestle with the fear that the bond won't be as real."
+  },
+  {
+    "source": "arc:brooklyn_99/gina_linetti/meant_for_more",
+    "target": "arc:doctor_who/donna_noble/just_a_temp",
+    "bridge": "Both are sharp, loud people settled in jobs beneath them, who discover how much more they are once someone finally believes in them."
+  },
+  {
+    "source": "arc:brooklyn_99/gina_linetti/meant_for_more",
+    "target": "arc:sex_education/maeve_wiley/the_gifted_outsider",
+    "bridge": "Both hide real brilliance behind a pose of not caring, and a mentor's push forces them to decide whether to risk wanting a bigger future."
+  },
+  {
+    "source": "arc:dark/jonas_kahnwald/searching_for_why",
+    "target": "arc:naruto/kakashi_hatake/making_peace_with_a_disgraced_father",
+    "bridge": "Both are marked by a parent's death that no one would explain, and spend years trying to understand the choice that left them behind."
+  },
+  {
+    "source": "arc:dark/jonas_kahnwald/first_love_and_best_friend",
+    "target": "arc:avatar/sokka/love_you_cant_keep",
+    "bridge": "Both love someone who loves them back while forces far bigger than either of them keep pulling the relationship apart."
+  },
+  {
+    "source": "arc:dark/jonas_kahnwald/first_love_and_best_friend",
+    "target": "arc:sex_education/otis_milburn/falling_for_his_business_partner",
+    "bridge": "Both keep reaching for the same person through bad timing, loyalty to others and missed moments, wondering whether loving someone is enough to make it work."
+  },
+  {
+    "source": "arc:dark/jonas_kahnwald/taking_it_on_himself",
+    "target": "arc:attack_on_titan/eren_yeager/pushing_everyone_away",
+    "bridge": "Both decide the catastrophe around them is theirs alone to carry, and wrestle with whether their path is a free choice or one laid down long before them."
+  },
+  {
+    "source": "arc:dark/jonas_kahnwald/taking_it_on_himself",
+    "target": "arc:fma/edward_elric/carrying_the_blame_alone",
+    "bridge": "Both throw every choice into undoing a terrible past on their own, refusing help, and have to learn the difference between responsibility and self-punishment."
+  },
+  {
+    "source": "arc:dark/martha_nielsen/torn_between_two_boys",
+    "target": "arc:gilmore_girls/lorelai_gilmore/letting_someone_all_the_way_in",
+    "bridge": "Both are caught between the old flame everyone expects and the steady person who is there, and must choose honestly rather than let others decide for them."
+  },
+  {
+    "source": "arc:dark/martha_nielsen/choosing_her_own_path",
+    "target": "arc:attack_on_titan/historia/choosing_her_own_path",
+    "bridge": "Both discover that powerful people have scripted their life and expect them to play a part, and have to claim the right to choose their own purpose."
+  },
+  {
+    "source": "arc:dark/martha_nielsen/choosing_her_own_path",
+    "target": "arc:naruto/neji_hyuga/breaking_free_from_fate",
+    "bridge": "Both are told their future was settled before they had any say, and have to find out whether a life decided by others can still become their own."
+  },
+  {
+    "source": "arc:dark/ulrich_nielsen/a_father_who_wont_stop_searching",
+    "target": "arc:squid_game/hwang_jun_ho/searching_for_a_missing_brother",
+    "bridge": "Both go after a missing family member alone when those in authority won't take it seriously, breaking every rule as the search becomes an obsession."
+  },
+  {
+    "source": "arc:dark/ulrich_nielsen/a_father_who_wont_stop_searching",
+    "target": "arc:stranger_things/joyce_byers/the_mother_no_one_believes",
+    "bridge": "Both are parents certain of something about a vanished child that nobody else will accept, risking their reputation and relationships on it."
+  },
+  {
+    "source": "arc:dark/ulrich_nielsen/living_a_double_life",
+    "target": "arc:breaking_bad/walter_white/the_double_life_at_home",
+    "bridge": "Both keep a second life hidden from their family, telling themselves it is separate, until a crisis makes the split impossible to hold."
+  },
+  {
+    "source": "arc:dark/ulrich_nielsen/living_a_double_life",
+    "target": "arc:mad_men/pete_campbell/the_life_he_thought_he_wanted",
+    "bridge": "Both feel trapped inside the family life they built and look for escape elsewhere, careless of the people they hurt along the way."
+  },
+  {
+    "source": "arc:dark/charlotte_doppler/keeping_order_when_nothing_makes_sense",
+    "target": "arc:avatar/lin_beifong/duty_above_all",
+    "bridge": "Both are the composed authority everyone relies on in a crisis, and their job is armour that keeps them from asking what is wrong at home."
+  },
+  {
+    "source": "arc:dark/charlotte_doppler/keeping_order_when_nothing_makes_sense",
+    "target": "arc:walking_dead/carol_peletier/the_weight_of_being_strong",
+    "bridge": "Both have been the steady, capable one for so long that nobody notices the cost, least of all the people closest to them."
+  },
+  {
+    "source": "arc:dark/charlotte_doppler/where_she_comes_from",
+    "target": "arc:bojack/hollyhock/searching_for_where_she_comes_from",
+    "bridge": "Both carry the ache of not knowing the people who made them, and wonder whether finding out will change who their family really is."
+  },
+  {
+    "source": "arc:dark/hannah_kahnwald/wanting_what_isnt_hers",
+    "target": "arc:the_good_place/janet/feelings_she_wasnt_built_for",
+    "bridge": "Both are overwhelmed by a love for someone who chooses differently, and struggle with jealousy and the pain of not being the one picked."
+  },
+  {
+    "source": "arc:dark/hannah_kahnwald/starting_over_alone",
+    "target": "arc:bojack/mr_peanutbutter/learning_to_be_alone",
+    "bridge": "Both keep starting over only to rebuild the same relationship patterns, because the fresh start never includes facing themselves."
+  },
+  {
+    "source": "arc:dark/claudia_tiedemann/career_before_family",
+    "target": "arc:avatar/toph_beifong/making_amends_as_a_parent",
+    "bridge": "Both are formidable parents whose absence and hardness left a child hurting, and have to face that damage while wondering if it is too late to repair."
+  },
+  {
+    "source": "arc:dark/claudia_tiedemann/career_before_family",
+    "target": "arc:schitts_creek/johnny_rose/absent_father_to_cheerleader",
+    "bridge": "Both spent their child's early years chasing work instead of being present, and only later see the distance they created."
+  },
+  {
+    "source": "arc:dark/claudia_tiedemann/whatever_it_takes_for_her_daughter",
+    "target": "arc:breaking_bad/skyler_white/complicit_to_protect_her_kids",
+    "bridge": "Both cross their own moral lines telling themselves it is all for their child, until the love starts to justify any means."
+  },
+  {
+    "source": "arc:dark/claudia_tiedemann/whatever_it_takes_for_her_daughter",
+    "target": "arc:game_of_thrones/cersei_lannister/a_mother_fighting_for_control",
+    "bridge": "Both pour a fierce, all-consuming protectiveness into a child and have to face what that love is actually protecting."
+  },
+  {
+    "source": "arc:dark/katharina_nielsen/holding_the_family_together",
+    "target": "arc:greys_anatomy/derek_shepherd/starting_over_after_betrayal",
+    "bridge": "Both discover a spouse's affair with a close friend and have to keep functioning while the ground of their marriage gives way."
+  },
+  {
+    "source": "arc:dark/katharina_nielsen/going_back_for_her_family",
+    "target": "arc:greys_anatomy/alex_karev/not_his_father",
+    "bridge": "Both have spent a lifetime escaping a violent parent and are forced back into that parent's orbit, where old fear meets their fiercest love."
+  },
+  {
+    "source": "arc:dark/katharina_nielsen/going_back_for_her_family",
+    "target": "arc:ted_lasso/jamie_tartt/the_fathers_voice",
+    "bridge": "Both must finally stand in front of the parent who taught them fear and decide what to do with a lifetime of hurt."
+  },
+  {
+    "source": "arc:dark/regina_tiedemann/old_wounds_that_never_healed",
+    "target": "arc:bojack/bojack_horseman/still_waiting_for_his_mother",
+    "bridge": "Both are adults still shaped by a parent who gave criticism instead of love, waiting for an apology that may never come."
+  },
+  {
+    "source": "arc:dark/regina_tiedemann/old_wounds_that_never_healed",
+    "target": "arc:sex_education/ruby_matthews/starting_over_without_a_crown",
+    "bridge": "Both still carry childhood humiliation, and when the person who hurt them crosses their path again they must choose between old resentment and something harder."
+  },
+  {
+    "source": "arc:dark/regina_tiedemann/holding_on_while_everything_slips",
+    "target": "arc:greys_anatomy/miranda_bailey/strong_one_asks_for_help",
+    "bridge": "Both are self-reliant people whose bodies and circumstances give way at once, forcing them to accept that they need care."
+  },
+  {
+    "source": "arc:dark/regina_tiedemann/holding_on_while_everything_slips",
+    "target": "arc:sex_education/jean_milburn/when_the_helper_needs_help",
+    "bridge": "Both insist they are coping as health, money and family strain together, and have to learn to lean on people they have kept at a distance."
+  },
+  {
+    "source": "arc:fma/edward_elric/anger_at_an_absent_father",
+    "target": "arc:brooklyn_99/jake_peralta/the_case_of_growing_up",
+    "bridge": "Both grew up in the shadow of a parent who simply left, and defined themselves against that absence long before they could hear the other side."
+  },
+  {
+    "source": "arc:fma/edward_elric/anger_at_an_absent_father",
+    "target": "arc:money_heist/denver/his_fathers_son",
+    "bridge": "Both have to reconcile the family story they grew up with and a parent more complicated than the one they blamed or idolised."
+  },
+  {
+    "source": "arc:fma/edward_elric/working_for_a_system_you_distrust",
+    "target": "arc:breaking_bad/mike_ehrmantraut/the_professional_with_a_code",
+    "bridge": "Both take the resources of a system they don't believe in and try to keep a personal code intact inside it."
+  },
+  {
+    "source": "arc:fma/edward_elric/working_for_a_system_you_distrust",
+    "target": "arc:buffy/winifred_burkle/big_job_inside_the_machine",
+    "bridge": "Both accept an institution's power because they need it to do good, and wonder what the bargain will ultimately cost them."
+  },
+  {
+    "source": "arc:fma/alphonse_elric/am_i_still_real",
+    "target": "arc:the_good_place/janet/more_than_a_helper",
+    "bridge": "Both are defined by what they can do for others and quietly need someone to recognise them as a full person with a self of their own."
+  },
+  {
+    "source": "arc:fma/alphonse_elric/the_steady_younger_sibling",
+    "target": "arc:doctor_who/martha_jones/holding_everyone_together",
+    "bridge": "Both are the calm anchor of a shaken family, putting everyone else first until nobody thinks to ask whether they are all right."
+  },
+  {
+    "source": "arc:fma/alphonse_elric/the_steady_younger_sibling",
+    "target": "arc:schitts_creek/twyla_sands/kindness_despite_chaos",
+    "bridge": "Both choose gentleness in the middle of family chaos and quietly show up for everyone while their own needs stay invisible."
+  },
+  {
+    "source": "arc:fma/roy_mustang/climbing_to_change_the_system",
+    "target": "arc:attack_on_titan/erwin_smith/a_dream_worth_the_cost",
+    "bridge": "Both are charismatic leaders chasing a goal that is part service and part private obsession, asking others to trust that the climb is worth its cost."
+  },
+  {
+    "source": "arc:fma/roy_mustang/when_grief_becomes_vengeance",
+    "target": "arc:walking_dead/carol_peletier/grief_that_wants_someone_to_pay",
+    "bridge": "Both pour a loss too deep to bear into making the one responsible pay, while the obsession quietly endangers the people keeping them afloat."
+  },
+  {
+    "source": "arc:fma/riza_hawkeye/living_with_what_she_has_done",
+    "target": "arc:game_of_thrones/theon_greyjoy/earning_forgiveness",
+    "bridge": "Both live with harm they took part in by quietly backing someone they believe can do better, choosing usefulness over asking to be forgiven."
+  },
+  {
+    "source": "arc:fma/riza_hawkeye/living_with_what_she_has_done",
+    "target": "arc:game_of_thrones/tyrion_lannister/advising_the_one_he_believes_in",
+    "bridge": "Both give themselves to a leader they believe in, serving as the conscience at their side, and have to decide how much of themselves that loyalty can ask."
+  },
+  {
+    "source": "arc:fma/winry_rockbell/the_one_who_waits_at_home",
+    "target": "arc:breaking_bad/skyler_white/the_wife_who_notices",
+    "bridge": "Both love people who keep secrets for their supposed protection, and are left furious and afraid at being shut out."
+  },
+  {
+    "source": "arc:fma/winry_rockbell/the_one_who_waits_at_home",
+    "target": "arc:naruto/sakura_haruno/loving_someone_who_pushes_you_away",
+    "bridge": "Both keep caring for someone who keeps walking away into danger, and must find their own path instead of only waiting."
+  },
+  {
+    "source": "arc:fma/winry_rockbell/choosing_not_to_pull_the_trigger",
+    "target": "arc:avatar/katara/revenge_or_release",
+    "bridge": "Both come face to face with the person behind their family's deepest loss and must decide whether refusing cruelty means forgiving."
+  },
+  {
+    "source": "arc:fma/winry_rockbell/choosing_not_to_pull_the_trigger",
+    "target": "arc:walking_dead/rick_grimes/choosing_the_future_over_revenge",
+    "bridge": "Both have every reason to make someone suffer and choose restraint instead, without pretending the harm was ever acceptable."
+  },
+  {
+    "source": "arc:fma/scar/consumed_by_revenge",
+    "target": "arc:game_of_thrones/arya_stark/list_of_names",
+    "bridge": "Both let a real injustice harden into a need for payback that slowly erases who they were before it."
+  },
+  {
+    "source": "arc:fma/scar/facing_the_harm_he_caused",
+    "target": "arc:buffy/faith_lehane/facing_what_she_did",
+    "bridge": "Both must take responsibility for the pain they caused without collapsing into self-hatred, and keep choosing better for years."
+  },
+  {
+    "source": "arc:fma/ling_yao/carrying_a_clans_hopes",
+    "target": "arc:my_hero_academia/ochaco_uraraka/working_for_her_family",
+    "bridge": "Both chase a big goal chiefly to lift the family counting on them, and keep their own feelings on the back burner to stay focused."
+  },
+  {
+    "source": "arc:fma/ling_yao/carrying_a_clans_hopes",
+    "target": "arc:avatar/aang/reluctant_chosen_one",
+    "bridge": "Both are young people told that everyone is counting on them, hiding the weight behind lightness while deciding how much they are willing to carry."
+  },
+  {
+    "source": "arc:fma/ling_yao/what_makes_a_true_leader",
+    "target": "arc:money_heist/the_professor/responsible_for_everyone",
+    "bridge": "Both lead people who would risk everything for them, and carry every price those people pay as a personal debt."
+  },
+  {
+    "source": "arc:fma/ling_yao/what_makes_a_true_leader",
+    "target": "arc:naruto/tsunade/sending_loved_ones_into_danger",
+    "bridge": "Both have to send the people who trust them into harm's way and live with what they owe the ones who follow."
+  },
+  {
+    "source": "arc:fma/izumi_curtis/a_grief_she_never_speaks_of",
+    "target": "arc:doctor_who/twelfth_doctor/cannot_let_her_go",
+    "bridge": "Both, in the rawest moment of grief, were willing to break every rule to undo a loss, and live with what that desperation cost."
+  },
+  {
+    "source": "arc:fma/izumi_curtis/a_grief_she_never_speaks_of",
+    "target": "arc:doctor_who/amy_pond/future_she_planned",
+    "bridge": "Both lost the family they hoped for and quietly blame themselves, carrying a grief they rarely put into words."
+  },
+  {
+    "source": "arc:fma/izumi_curtis/tough_love_for_kids_not_her_own",
+    "target": "arc:buffy/rupert_giles/mentor_becomes_father",
+    "bridge": "Both are demanding mentors who become stand-in parents, struggling to know when to protect, when to push and when to let go."
+  },
+  {
+    "source": "arc:gilmore_girls/lorelai_gilmore/going_back_to_the_family_she_fled",
+    "target": "arc:avatar/toph_beifong/breaking_out_of_the_cage",
+    "bridge": "Both broke away from a controlling family to live on their own terms, and carry guilt and defiance whenever they are pulled back in."
+  },
+  {
+    "source": "arc:gilmore_girls/lorelai_gilmore/going_back_to_the_family_she_fled",
+    "target": "arc:bojack/diane_nguyen/carrying_the_damage_from_home",
+    "bridge": "Both built themselves in reaction to a belittling family and still half-hope, against experience, to finally be seen by them."
+  },
+  {
+    "source": "arc:gilmore_girls/lorelai_gilmore/building_her_own_inn",
+    "target": "arc:schitts_creek/david_rose/building_his_own_thing",
+    "bridge": "Both turn a dream they have long talked about into a real business, risking their stability on the belief that what they love can make a living."
+  },
+  {
+    "source": "arc:gilmore_girls/lorelai_gilmore/building_her_own_inn",
+    "target": "arc:the_office/michael_scott/walking_away_to_start_over",
+    "bridge": "Both leave the security of running someone else's operation to bet on themselves, with money, pride and friendship all at stake."
+  },
+  {
+    "source": "arc:gilmore_girls/lorelai_gilmore/letting_someone_all_the_way_in",
+    "target": "arc:doctor_who/amy_pond/left_waiting",
+    "bridge": "Both are fiercely independent people who bolt when love gets serious, unsure whether they are choosing freedom or fleeing commitment."
+  },
+  {
+    "source": "arc:gilmore_girls/rory_gilmore/living_up_to_the_plan",
+    "target": "arc:my_hero_academia/katsuki_bakugo/the_prodigy_meets_his_equals",
+    "bridge": "Both built their identity on being the best, and arriving among equals forces them to find out who they are when they no longer are."
+  },
+  {
+    "source": "arc:gilmore_girls/rory_gilmore/living_up_to_the_plan",
+    "target": "arc:sex_education/jackson_marchetti/the_golden_boy_under_pressure",
+    "bridge": "Both carry everyone's high hopes and have to ask whether the plan they have followed since childhood was ever really their own."
+  },
+  {
+    "source": "arc:gilmore_girls/rory_gilmore/adrift_in_her_thirties",
+    "target": "arc:stranger_things/steve_harrington/life_after_peaking_early",
+    "bridge": "Both were expected to do great things and find themselves drifting, still defined by an old image and an old relationship, facing the gap between promise and life."
+  },
+  {
+    "source": "arc:gilmore_girls/rory_gilmore/adrift_in_her_thirties",
+    "target": "arc:buffy/alexander_harris/left_behind_after_school",
+    "bridge": "Both move back home while others seem to race ahead, afraid they have become the one everyone quietly pities."
+  },
+  {
+    "source": "arc:gilmore_girls/emily_gilmore/earning_a_place_in_her_daughters_life",
+    "target": "arc:mad_men/betty_draper/mother_who_was_never_mothered",
+    "bridge": "Both are parents who can only show love through standards and criticism, and the harder they try to manage their child the further that child pulls away."
+  },
+  {
+    "source": "arc:gilmore_girls/emily_gilmore/earning_a_place_in_her_daughters_life",
+    "target": "arc:stranger_things/jim_hopper/a_father_afraid_to_lose_again",
+    "bridge": "Both love a child fiercely but express it as control, and have to learn to say what they feel instead of setting another rule."
+  },
+  {
+    "source": "arc:gilmore_girls/emily_gilmore/marriage_on_the_rocks",
+    "target": "arc:greys_anatomy/derek_shepherd/starting_over_after_betrayal",
+    "bridge": "Both discover a partner hid part of their life, and the betrayal shakes their sense of who they have been all those years."
+  },
+  {
+    "source": "arc:gilmore_girls/emily_gilmore/starting_over_late_in_life",
+    "target": "arc:schitts_creek/moira_rose/clinging_to_former_glory",
+    "bridge": "Both lose the world that told them who they were and must discover, late in life, a self that does not depend on the old rules and audience."
+  },
+  {
+    "source": "arc:gilmore_girls/emily_gilmore/starting_over_late_in_life",
+    "target": "arc:the_good_place/tahani_al_jamil/who_she_is_without_an_audience",
+    "bridge": "Both built their identity on status and appearances, and have to reinvent themselves once the setting that gave it meaning is gone."
+  },
+  {
+    "source": "arc:gilmore_girls/richard_gilmore/reaching_the_daughter_he_lost",
+    "target": "arc:schitts_creek/moira_rose/learning_to_mother",
+    "bridge": "Both are parents who were emotionally absent and try, awkwardly and late, to become someone their adult child can lean on."
+  },
+  {
+    "source": "arc:gilmore_girls/richard_gilmore/who_he_is_without_his_job",
+    "target": "arc:ted_lasso/roy_kent/who_am_i_after_this",
+    "bridge": "Both lose the career that defined them before they were ready and have to find worth beyond the title, with pride fighting every step."
+  },
+  {
+    "source": "arc:gilmore_girls/richard_gilmore/who_he_is_without_his_job",
+    "target": "arc:greys_anatomy/richard_webber/pushed_aside",
+    "bridge": "Both are experienced people pushed out of the work that held their identity, wondering whether they still matter."
+  },
+  {
+    "source": "arc:gilmore_girls/luke_danes/the_guarded_heart",
+    "target": "arc:the_office/jim_halpert/in_love_with_a_friend_who_is_taken",
+    "bridge": "Both hide a long love for a friend behind steady everyday presence and must decide when protecting the friendship has become hiding from their own life."
+  },
+  {
+    "source": "arc:gilmore_girls/luke_danes/responsibility_he_never_asked_for",
+    "target": "arc:game_of_thrones/sandor_clegane/reluctant_guardian",
+    "bridge": "Both are gruff loners who end up responsible for a hurt, angry young person, building a rough care neither will admit to."
+  },
+  {
+    "source": "arc:gilmore_girls/luke_danes/responsibility_he_never_asked_for",
+    "target": "arc:my_hero_academia/shota_aizawa/unexpected_guardian",
+    "bridge": "Both are practical people who never pictured themselves as caregivers and have to learn, without a playbook, to make a young person feel safe."
+  },
+  {
+    "source": "arc:gilmore_girls/lane_kim/living_a_double_life",
+    "target": "arc:walking_dead/maggie_greene/stepping_out_of_her_fathers_world",
+    "bridge": "Both love a strict parent whose worldview doesn't fit who they are becoming, and try to live honestly without losing their family."
+  },
+  {
+    "source": "arc:gilmore_girls/lane_kim/living_a_double_life",
+    "target": "arc:brooklyn_99/rosa_diaz/telling_her_family_who_she_is",
+    "bridge": "Both keep a real self hidden from traditional parents and weigh the fear of rejection against the cost of living split in two."
+  },
+  {
+    "source": "arc:gilmore_girls/lane_kim/life_outruns_her_plans",
+    "target": "arc:greys_anatomy/miranda_bailey/career_and_motherhood",
+    "bridge": "Both are hit with parenthood in the middle of chasing their dream and have to hold on to themselves while stepping into a new role."
+  },
+  {
+    "source": "arc:gilmore_girls/lane_kim/life_outruns_her_plans",
+    "target": "arc:doctor_who/clara_oswald/carer_who_never_left",
+    "bridge": "Both watch caring responsibilities swallow the plans they fought for, and struggle to keep one piece of their life for themselves."
+  },
+  {
+    "source": "arc:gilmore_girls/paris_geller/perfection_as_armor",
+    "target": "arc:avatar/azula/the_perfect_daughter",
+    "bridge": "Both learned that only flawless achievement makes them worthy, and treat every setback as unthinkable because underneath they fear they are only lovable when they win."
+  },
+  {
+    "source": "arc:gilmore_girls/paris_geller/perfection_as_armor",
+    "target": "arc:the_good_place/tahani_al_jamil/outside_her_sisters_shadow",
+    "bridge": "Both perform achievement for distant parents who never applaud enough, and have to find out who they are without the scoreboard."
+  },
+  {
+    "source": "arc:gilmore_girls/paris_geller/leading_without_driving_everyone_away",
+    "target": "arc:the_office/dwight_schrute/craving_authority",
+    "bridge": "Both finally get the authority they crave and run it so hard that they turn colleagues into rebels, learning slowly that leading means caring."
+  },
+  {
+    "source": "arc:gilmore_girls/paris_geller/leading_without_driving_everyone_away",
+    "target": "arc:greys_anatomy/miranda_bailey/leading_the_hospital",
+    "bridge": "Both push bold, unpopular demands on their peers to prove they deserve the top job, and have to learn that being in charge is not the same as being right."
+  },
+  {
+    "source": "arc:gilmore_girls/sookie_st_james/panicking_at_every_big_step",
+    "target": "arc:friends/chandler_bing/afraid_of_commitment",
+    "bridge": "Both want love and family but panic whenever it gets real, and have to name the fear instead of sabotaging what they want."
+  },
+  {
+    "source": "arc:gilmore_girls/sookie_st_james/betting_on_a_shared_dream",
+    "target": "arc:the_office/jim_halpert/betting_on_the_dream",
+    "bridge": "Both are offered a real shot at a long-held dream that means a financial gamble and asking a lot of the people who share their life."
+  },
+  {
+    "source": "arc:gilmore_girls/sookie_st_james/betting_on_a_shared_dream",
+    "target": "arc:schitts_creek/stevie_budd/stuck_local_steps_up",
+    "bridge": "Both have lived safely in someone else's operation and are asked to take on ownership and risk they doubt they can handle."
+  },
+  {
+    "source": "arc:mad_men/don_draper/the_man_behind_the_pitch",
+    "target": "arc:greys_anatomy/jo_wilson/learning_to_be_safe",
+    "bridge": "Both rebuilt themselves under a new identity to escape a brutal past, and keep everyone at arm's length because being known feels dangerous."
+  },
+  {
+    "source": "arc:mad_men/don_draper/the_man_behind_the_pitch",
+    "target": "arc:bojack/bojack_horseman/wanting_to_be_loved_while_hating_himself",
+    "bridge": "Both are admired on the surface while numbing a deep self-loathing, wanting to be loved but convinced nobody could love who they really are."
+  },
+  {
+    "source": "arc:mad_men/don_draper/drinking_through_the_emptiness",
+    "target": "arc:game_of_thrones/tyrion_lannister/rock_bottom_and_purpose",
+    "bridge": "Both once seemed brilliant and in control, and now numb themselves with drink until something makes them face whether they can climb back."
+  },
+  {
+    "source": "arc:mad_men/don_draper/drinking_through_the_emptiness",
+    "target": "arc:succession/kendall_roy/staying_sober_under_pressure",
+    "bridge": "Both have coping habits that turned on them, and try to stop while the pressure of work and family keeps giving them reasons to reach for a drink."
+  },
+  {
+    "source": "arc:mad_men/don_draper/becoming_the_father_he_never_had",
+    "target": "arc:buffy/alexander_harris/fear_of_becoming_his_parents",
+    "bridge": "Both grew up without a model of loving parenthood and fear that the damage of their own childhood will surface in the family they are building."
+  },
+  {
+    "source": "arc:mad_men/don_draper/becoming_the_father_he_never_had",
+    "target": "arc:schitts_creek/johnny_rose/absent_father_to_cheerleader",
+    "bridge": "Both provided for their children without ever being truly present, and later try to become the parent they wish they had been."
+  },
+  {
+    "source": "arc:mad_men/peggy_olson/from_the_typing_pool_to_the_table",
+    "target": "arc:avatar/katara/fighting_to_be_taught",
+    "bridge": "Both have raw talent in a world that expects people like them to stay in their place, and fight gatekeepers for a seat at the table."
+  },
+  {
+    "source": "arc:mad_men/peggy_olson/stepping_out_of_the_mentors_shadow",
+    "target": "arc:money_heist/nairobi/taking_charge",
+    "bridge": "Both do the real work under a leader they owe much to, and have to claim their own authority when loyalty starts to mean staying small."
+  },
+  {
+    "source": "arc:mad_men/peggy_olson/stepping_out_of_the_mentors_shadow",
+    "target": "arc:parks_and_rec/april_ludgate/what_do_you_want_to_do_with_your_life",
+    "bridge": "Both feel that choosing their own path would betray the person who helped them get started, and have to grow up anyway."
+  },
+  {
+    "source": "arc:mad_men/joan_holloway/the_plan_she_was_raised_for",
+    "target": "arc:game_of_thrones/sansa_stark/fairy_tale_to_cage",
+    "bridge": "Both were raised to believe the right marriage was the prize, and get exactly what they were promised only to find it is a trap."
+  },
+  {
+    "source": "arc:mad_men/joan_holloway/the_plan_she_was_raised_for",
+    "target": "arc:schitts_creek/patrick_brewer/living_true_to_himself",
+    "bridge": "Both did everything expected of them and realise the life they built never felt like theirs, and must write a new script."
+  },
+  {
+    "source": "arc:mad_men/joan_holloway/fighting_to_be_taken_seriously",
+    "target": "arc:ted_lasso/keeley_jones/taken_seriously",
+    "bridge": "Both are judged by their image while discovering real talent, and fight to be recognised for their minds in rooms that keep dismissing them."
+  },
+  {
+    "source": "arc:mad_men/pete_campbell/never_enough_for_anyone",
+    "target": "arc:ted_lasso/nate_shelley/hungry_to_be_seen",
+    "bridge": "Both were starved of a parent's warmth and grab for recognition so hungrily that envy and resentment turn on the people who gave them a chance."
+  },
+  {
+    "source": "arc:mad_men/pete_campbell/the_life_he_thought_he_wanted",
+    "target": "arc:money_heist/tokyo/love_versus_freedom",
+    "bridge": "Both chafe against the settled life that was supposed to make them happy, and their hunger for thrill collides with a partner's need for security."
+  },
+  {
+    "source": "arc:mad_men/roger_sterling/the_party_that_cant_last",
+    "target": "arc:squid_game/oh_il_nam/one_last_game",
+    "bridge": "Both have coasted into old age and, facing mortality, reach for a last taste of youthful excitement while wondering what their life actually meant."
+  },
+  {
+    "source": "arc:mad_men/roger_sterling/the_party_that_cant_last",
+    "target": "arc:money_heist/berlin/nothing_left_to_lose",
+    "bridge": "Both treat life as a party because consequences feel irrelevant, until the end in sight asks whether they have given anything back."
+  },
+  {
+    "source": "arc:mad_men/roger_sterling/proving_he_still_matters",
+    "target": "arc:my_hero_academia/all_might/finding_worth_beyond_strength",
+    "bridge": "Both lose the one thing that made them valuable and have to find out whether their worth was ever only in what they could do."
+  },
+  {
+    "source": "arc:mad_men/roger_sterling/proving_he_still_matters",
+    "target": "arc:buffy/rupert_giles/when_theyre_grown",
+    "bridge": "Both watch younger people overtake the role they held and must reinvent their usefulness or learn when to step back."
+  },
+  {
+    "source": "arc:mad_men/betty_draper/the_perfect_wife_with_numb_hands",
+    "target": "arc:the_office/pam_beesly/finding_her_voice",
+    "bridge": "Both are living a safe, expected life by default and slowly realise they have never said out loud what they actually want."
+  },
+  {
+    "source": "arc:mad_men/betty_draper/the_perfect_wife_with_numb_hands",
+    "target": "arc:game_of_thrones/daenerys_targaryen/finding_her_voice",
+    "bridge": "Both were raised to be ornamental and obedient, treated as childlike by those around them, and must find a voice of their own."
+  },
+  {
+    "source": "arc:mad_men/betty_draper/mother_who_was_never_mothered",
+    "target": "arc:avatar/toph_beifong/making_amends_as_a_parent",
+    "bridge": "Both repeat the harm of their own upbringing with their children and have to face what they did before the chance to repair slips away."
+  },
+  {
+    "source": "arc:mad_men/sally_draper/the_child_who_sees_everything",
+    "target": "arc:breaking_bad/walter_white_jr/the_kid_left_out_of_the_family_secret",
+    "bridge": "Both are children who sense their family falling apart while the adults hide the truth, and try to make sense of it alone."
+  },
+  {
+    "source": "arc:mad_men/sally_draper/the_child_who_sees_everything",
+    "target": "arc:buffy/dawn_summers/earning_her_place",
+    "bridge": "Both act out because the overwhelmed adults around them have no attention left to give, and negative attention is still attention."
+  },
+  {
+    "source": "arc:mad_men/sally_draper/refusing_to_become_her_parents",
+    "target": "arc:my_hero_academia/shoto_todoroki/refusing_his_fathers_half",
+    "bridge": "Both define themselves by refusing to become the parents who failed them, and must learn to forgive without excusing."
+  },
+  {
+    "source": "arc:mad_men/sally_draper/refusing_to_become_her_parents",
+    "target": "arc:bojack/hollyhock/protecting_herself_from_someone_she_loves",
+    "bridge": "Both love a flawed parent figure while learning to protect themselves from them, deciding how much of that person to let in."
+  },
+  {
+    "source": "arc:mad_men/megan_calvet/choosing_her_own_dream",
+    "target": "arc:greys_anatomy/cristina_yang/work_first_love_second",
+    "bridge": "Both find that loving an established partner quietly asks them to become smaller, and must choose whether to follow their own calling."
+  },
+  {
+    "source": "arc:mad_men/megan_calvet/choosing_her_own_dream",
+    "target": "arc:doctor_who/rose_tyler/outgrowing_a_small_life",
+    "bridge": "Both leave a safe path others would envy to chase a bigger life, and try to grow without abandoning the people who loved them as they were."
+  },
+  {
+    "source": "arc:parks_and_rec/leslie_knope/dreaming_big_from_the_bottom_rung",
+    "target": "arc:bojack/diane_nguyen/wanting_her_work_to_matter",
+    "bridge": "Both need their work to change the world to feel worthwhile, and have to learn how to live with progress that is small and slow."
+  },
+  {
+    "source": "arc:parks_and_rec/leslie_knope/dreaming_big_from_the_bottom_rung",
+    "target": "arc:my_hero_academia/izuku_midoriya/the_kid_who_was_told_no",
+    "bridge": "Both make up for a lack of standing with obsessive preparation and sheer stubbornness, inspiring and exhausting the people around them."
+  },
+  {
+    "source": "arc:parks_and_rec/leslie_knope/when_the_heart_and_the_dream_collide",
+    "target": "arc:money_heist/the_professor/the_plan_versus_the_heart",
+    "bridge": "Both are meticulous planners whose own rules forbid the one feeling they cannot plan for."
+  },
+  {
+    "source": "arc:parks_and_rec/ron_swanson/the_man_who_wants_to_be_left_alone",
+    "target": "arc:squid_game/kang_sae_byeok/the_loner_who_trusts_no_one",
+    "bridge": "Both have arranged their life so no one gets close, and slowly learn that fierce independence and deep connection can live in the same person."
+  },
+  {
+    "source": "arc:parks_and_rec/ron_swanson/the_man_who_wants_to_be_left_alone",
+    "target": "arc:walking_dead/michonne/letting_people_back_in",
+    "bridge": "Both survive on pure self-reliance behind a shut door until a group of people, especially the young ones, keep showing up anyway."
+  },
+  {
+    "source": "arc:parks_and_rec/ron_swanson/the_ex_he_cant_stay_away_from",
+    "target": "arc:game_of_thrones/jaime_lannister/love_that_consumes",
+    "bridge": "Both keep being pulled back to a relationship that brings out their worst, long after everyone around them has seen the pattern."
+  },
+  {
+    "source": "arc:parks_and_rec/ron_swanson/the_ex_he_cant_stay_away_from",
+    "target": "arc:breaking_bad/kim_wexler/loving_someone_who_brings_out_your_wild_side",
+    "bridge": "Both are disciplined people drawn to someone who unleashes a reckless side of them, and have to ask whether that pull reveals their true self or their worst."
+  },
+  {
+    "source": "arc:parks_and_rec/april_ludgate/pretending_not_to_care",
+    "target": "arc:squid_game/ji_yeong/one_real_friend",
+    "bridge": "Both hide behind jokes and total indifference until one person actually listens, and they have to admit how much it matters."
+  },
+  {
+    "source": "arc:parks_and_rec/april_ludgate/pretending_not_to_care",
+    "target": "arc:stranger_things/max_mayfield/belonging_while_home_is_unsafe",
+    "bridge": "Both act tough and flippant to seem untouchable while privately craving to be let into a group that truly gets them."
+  },
+  {
+    "source": "arc:parks_and_rec/april_ludgate/what_do_you_want_to_do_with_your_life",
+    "target": "arc:friends/chandler_bing/stuck_in_the_wrong_career",
+    "bridge": "Both drifted into jobs they are good at but don't care about, and have to find the courage to start over at the bottom of something that fits."
+  },
+  {
+    "source": "arc:parks_and_rec/andy_dwyer/growing_up_after_being_left",
+    "target": "arc:bojack/todd_chavez/drifting_on_a_friends_couch",
+    "bridge": "Both are warm, directionless people who let someone else carry adult life for them, and have to learn to stand on their own."
+  },
+  {
+    "source": "arc:parks_and_rec/andy_dwyer/looking_for_what_hes_good_at",
+    "target": "arc:friends/joey_tribbiani/chasing_the_big_break",
+    "bridge": "Both are good-hearted people without much formal education chasing a dream through rejection, trying to believe in themselves without pride getting in the way."
+  },
+  {
+    "source": "arc:parks_and_rec/andy_dwyer/looking_for_what_hes_good_at",
+    "target": "arc:sex_education/adam_groff/finding_what_hes_good_at",
+    "bridge": "Both were always the ones who never took learning seriously and stumble into work that finally uses who they really are."
+  },
+  {
+    "source": "arc:parks_and_rec/tom_haverford/the_mogul_in_waiting",
+    "target": "arc:the_office/ryan_howard/in_a_hurry_to_be_somebody",
+    "bridge": "Both love the image of success more than the slow work it takes, and chase quick wins while doubting they are good enough."
+  },
+  {
+    "source": "arc:parks_and_rec/tom_haverford/the_mogul_in_waiting",
+    "target": "arc:succession/connor_roy/the_forgotten_eldest",
+    "bridge": "Both latch onto grand plans nobody believes in, hoping one of them will finally make the people around them pay attention."
+  },
+  {
+    "source": "arc:parks_and_rec/tom_haverford/playing_the_field_to_avoid_getting_hurt",
+    "target": "arc:money_heist/berlin/believing_in_love_again",
+    "bridge": "Both chase the thrill of romance as a performance so nobody can truly know or reject them, and are lost when real feelings arrive."
+  },
+  {
+    "source": "arc:parks_and_rec/tom_haverford/playing_the_field_to_avoid_getting_hurt",
+    "target": "arc:sex_education/maeve_wiley/letting_her_guard_down",
+    "bridge": "Both keep romance casual as armour, and have to risk being seen honestly by someone who gets under their defences."
+  },
+  {
+    "source": "arc:parks_and_rec/ann_perkins/finding_herself_outside_a_relationship",
+    "target": "arc:buffy/anya_jenkins/owning_her_life",
+    "bridge": "Both have always defined themselves through a partner and have to figure out who they are once that relationship is gone."
+  },
+  {
+    "source": "arc:parks_and_rec/ann_perkins/finding_herself_outside_a_relationship",
+    "target": "arc:ted_lasso/keeley_jones/choosing_herself",
+    "bridge": "Both have spent years caring for a self-absorbed partner and slowly learn to choose themselves rather than be defined by whoever they are with."
+  },
+  {
+    "source": "arc:parks_and_rec/ann_perkins/building_a_family_on_her_own_terms",
+    "target": "arc:bojack/princess_carolyn/wanting_to_be_a_mother",
+    "bridge": "Both finally admit they want a child and face the question of what family looks like when it doesn't arrive the way they pictured."
+  },
+  {
+    "source": "arc:parks_and_rec/ann_perkins/building_a_family_on_her_own_terms",
+    "target": "arc:greys_anatomy/amelia_shepherd/choosing_her_own_shape",
+    "bridge": "Both decide to build a family in an unconventional way and have to hold to what they want despite everyone else's picture of a happy ending."
+  },
+  {
+    "source": "arc:parks_and_rec/chris_traeger/positivity_as_a_shield",
+    "target": "arc:ted_lasso/ted_lasso/behind_the_smile",
+    "bridge": "Both use relentless optimism to keep old pain out of sight, until it leaks out in their body and they have to let people see them struggle."
+  },
+  {
+    "source": "arc:parks_and_rec/chris_traeger/positivity_as_a_shield",
+    "target": "arc:doctor_who/tenth_doctor/charm_over_grief",
+    "bridge": "Both keep moving and smiling because standing still would mean feeling what they have been outrunning."
+  },
+  {
+    "source": "arc:sex_education/otis_milburn/the_advice_giver",
+    "target": "arc:friends/chandler_bing/afraid_of_commitment",
+    "bridge": "Both grew up watching their parents' marriage break painfully, and use wit and helpfulness as armour against their own fear of intimacy."
+  },
+  {
+    "source": "arc:sex_education/otis_milburn/the_advice_giver",
+    "target": "arc:bojack/princess_carolyn/the_one_who_holds_it_together",
+    "bridge": "Both are so good at fixing everyone else's problems that being needed has become a way to avoid admitting their own."
+  },
+  {
+    "source": "arc:sex_education/otis_milburn/growing_up_under_a_parent_who_knows_too_much",
+    "target": "arc:stranger_things/joyce_byers/loving_without_holding_back",
+    "bridge": "Both sit inside a fierce, hovering parent-child bond and have to find room for the child to become their own person without losing the closeness."
+  },
+  {
+    "source": "arc:sex_education/otis_milburn/growing_up_under_a_parent_who_knows_too_much",
+    "target": "arc:avatar/katara/parentified_caretaker",
+    "bridge": "Both are the child a single parent leans on most, carrying care and quiet resentment they are not allowed to name."
+  },
+  {
+    "source": "arc:sex_education/otis_milburn/falling_for_his_business_partner",
+    "target": "arc:friends/rachel_green/love_with_a_close_friend",
+    "bridge": "Both keep missing each other with the person they love most, and every missed moment leaves new partners caught in the middle."
+  },
+  {
+    "source": "arc:sex_education/maeve_wiley/raising_herself",
+    "target": "arc:greys_anatomy/alex_karev/tough_guy_softens",
+    "bridge": "Both had to parent their own parents and wall themselves off with sharpness, until people who refuse to give up on them get through."
+  },
+  {
+    "source": "arc:sex_education/maeve_wiley/raising_herself",
+    "target": "arc:walking_dead/daryl_dixon/outsider_finds_a_family",
+    "bridge": "Both were raised in neglect and taught to expect nothing, and have to decide whether they can let a chosen family claim them."
+  },
+  {
+    "source": "arc:sex_education/maeve_wiley/the_gifted_outsider",
+    "target": "arc:breaking_bad/kim_wexler/climbing_on_her_own_terms",
+    "bridge": "Both come from hard backgrounds and fight their way into privileged rooms on sheer discipline, never quite trusting that the future can't be taken away."
+  },
+  {
+    "source": "arc:sex_education/eric_effiong/being_himself_out_loud",
+    "target": "arc:stranger_things/will_byers/afraid_to_be_seen",
+    "bridge": "Both carry a truth about who they are and who they love, and have to find out whether the people they love are bigger than their fears."
+  },
+  {
+    "source": "arc:sex_education/eric_effiong/what_he_deserves_in_love",
+    "target": "arc:doctor_who/martha_jones/waiting_to_be_seen",
+    "bridge": "Both give far more than they get to someone who won't fully show up for them, and have to learn when to walk away for their own sake."
+  },
+  {
+    "source": "arc:sex_education/eric_effiong/what_he_deserves_in_love",
+    "target": "arc:the_office/erin_hannon/learning_she_deserves_better",
+    "bridge": "Both have to learn the difference between being wanted and being treated well, and choose the love that doesn't make them smaller."
+  },
+  {
+    "source": "arc:sex_education/jean_milburn/the_expert_who_cant_fix_her_own_home",
+    "target": "arc:ted_lasso/rebecca_welton/letting_herself_want_again",
+    "bridge": "Both were hurt by a partner long ago and keep romance at a controlled distance, unsure in midlife whether they dare want something real."
+  },
+  {
+    "source": "arc:sex_education/jean_milburn/the_expert_who_cant_fix_her_own_home",
+    "target": "arc:succession/shiv_roy/love_on_her_own_terms",
+    "bridge": "Both learned that dependence is dangerous and keep the upper hand in love, until a steady partner asks for more than control allows."
+  },
+  {
+    "source": "arc:sex_education/jean_milburn/when_the_helper_needs_help",
+    "target": "arc:bojack/princess_carolyn/the_one_who_holds_it_together",
+    "bridge": "Both are capable people who take care of everyone and insist they are fine, and have to accept help before they collapse."
+  },
+  {
+    "source": "arc:sex_education/adam_groff/the_bully_who_hates_himself",
+    "target": "arc:my_hero_academia/katsuki_bakugo/facing_the_person_he_hurt",
+    "bridge": "Both spent years putting someone down out of their own insecurity, and have to swallow their pride to own the harm."
+  },
+  {
+    "source": "arc:sex_education/adam_groff/the_bully_who_hates_himself",
+    "target": "arc:ted_lasso/jamie_tartt/the_fathers_voice",
+    "bridge": "Both hear a harsh parent's voice in everything they do and only know how to show toughness, until someone makes room for their softer side."
+  },
+  {
+    "source": "arc:sex_education/adam_groff/finding_what_hes_good_at",
+    "target": "arc:buffy/alexander_harris/left_behind_after_school",
+    "bridge": "Both are convinced they are the one who isn't good at anything, and find a quieter kind of value in patient, hands-on work."
+  },
+  {
+    "source": "arc:sex_education/aimee_gibbs/finding_out_what_she_wants",
+    "target": "arc:attack_on_titan/historia/the_girl_behind_the_kindness",
+    "bridge": "Both learned to survive by being endlessly agreeable and have to discover, for the first time, who they are and what they want underneath."
+  },
+  {
+    "source": "arc:sex_education/aimee_gibbs/finding_out_what_she_wants",
+    "target": "arc:the_good_place/janet/more_than_a_helper",
+    "bridge": "Both have always gone along with what others need and are startled to discover they have wishes of their own."
+  },
+  {
+    "source": "arc:sex_education/aimee_gibbs/feeling_safe_in_her_body_again",
+    "target": "arc:avatar/korra/healing_after_trauma",
+    "bridge": "Both try to carry on as if they are fine after being violated, until fear and shame surface and healing begins only when they face what happened."
+  },
+  {
+    "source": "arc:sex_education/aimee_gibbs/feeling_safe_in_her_body_again",
+    "target": "arc:money_heist/rio/after_the_trauma",
+    "bridge": "Both find panic and numbness surfacing at unexpected moments after something terrible, and have to heal at their own pace among people who love them."
+  },
+  {
+    "source": "arc:sex_education/jackson_marchetti/the_golden_boy_under_pressure",
+    "target": "arc:squid_game/cho_sang_woo/the_golden_boy_who_fell",
+    "bridge": "Both are the family's pride, carrying a parent's invested dreams, and cannot say they are breaking under the weight."
+  },
+  {
+    "source": "arc:sex_education/jackson_marchetti/who_he_is_beyond_the_image",
+    "target": "arc:greys_anatomy/callie_torres/coming_out",
+    "bridge": "Both are thrown by feelings that don't fit the identity they assumed they had, and have to sit with the uncertainty instead of forcing an answer."
+  },
+  {
+    "source": "arc:sex_education/jackson_marchetti/who_he_is_beyond_the_image",
+    "target": "arc:buffy/willow_rosenberg/wallflower_finds_herself",
+    "bridge": "Both discover a truth about who they are drawn to that they never saw coming, and have to let their sense of self grow around it."
+  },
+  {
+    "source": "arc:sex_education/ruby_matthews/the_queen_bee_armour",
+    "target": "arc:buffy/cordelia_chase/popularity_or_real_friends",
+    "bridge": "Both built an untouchable status out of sharpness, and find themselves drawn to someone their crowd looks down on who sees the real them."
+  },
+  {
+    "source": "arc:sex_education/ruby_matthews/the_queen_bee_armour",
+    "target": "arc:avatar/azula/ruling_by_fear",
+    "bridge": "Both keep people in line through intimidation because a secret fear of being hurt or left sits underneath the control."
+  },
+  {
+    "source": "arc:sex_education/ruby_matthews/starting_over_without_a_crown",
+    "target": "arc:stranger_things/steve_harrington/from_popular_jerk_to_protector",
+    "bridge": "Both lose the popularity that defined them and discover a better self in kindness and in looking after others."
+  },
+  {
+    "source": "arc:succession/logan_roy/refusing_to_let_go",
+    "target": "arc:game_of_thrones/cersei_lannister/holding_on_at_any_cost",
+    "bridge": "Both answer every threat to their power by grabbing more control, unable to let go because letting go would mean admitting their time is ending."
+  },
+  {
+    "source": "arc:succession/logan_roy/refusing_to_let_go",
+    "target": "arc:buffy/rupert_giles/when_theyre_grown",
+    "bridge": "Both have to face that holding on to the young people they shaped may be exactly what keeps those people from standing on their own."
+  },
+  {
+    "source": "arc:succession/logan_roy/the_childhood_he_never_mentions",
+    "target": "arc:avatar/lin_beifong/old_family_wounds",
+    "bridge": "Both carry an old injustice from childhood into a bitter estrangement with a sibling, and every meeting reopens the wound instead of healing it."
+  },
+  {
+    "source": "arc:succession/logan_roy/the_childhood_he_never_mentions",
+    "target": "arc:mad_men/don_draper/the_man_behind_the_pitch",
+    "bridge": "Both survived a harsh, loveless childhood and built a powerful life on never letting anyone see where they came from."
+  },
+  {
+    "source": "arc:succession/kendall_roy/chasing_his_fathers_chair",
+    "target": "arc:avatar/zuko/fathers_approval",
+    "bridge": "Both built their entire identity around winning a harsh parent's approval, swinging between desperate loyalty and rebellion without knowing what they really want."
+  },
+  {
+    "source": "arc:succession/kendall_roy/chasing_his_fathers_chair",
+    "target": "arc:game_of_thrones/tyrion_lannister/the_unwanted_son",
+    "bridge": "Both excel when given real responsibility, yet the parent whose recognition they crave keeps moving the finish line."
+  },
+  {
+    "source": "arc:succession/kendall_roy/staying_sober_under_pressure",
+    "target": "arc:greys_anatomy/richard_webber/sobriety",
+    "bridge": "Both hold positions of power while fighting to stay clean under pressure, knowing that people around them could use their past against them."
+  },
+  {
+    "source": "arc:succession/shiv_roy/claiming_a_seat_at_the_table",
+    "target": "arc:game_of_thrones/theon_greyjoy/two_families",
+    "bridge": "Both return to a cold parent desperate to be finally taken seriously, and risk betraying the life and values they built elsewhere to prove they belong."
+  },
+  {
+    "source": "arc:succession/shiv_roy/claiming_a_seat_at_the_table",
+    "target": "arc:game_of_thrones/sansa_stark/stepping_into_leadership",
+    "bridge": "Both have to fight siblings and a doubting family for authority they know they are capable of, deciding when to trust others and when to trust themselves."
+  },
+  {
+    "source": "arc:succession/shiv_roy/love_on_her_own_terms",
+    "target": "arc:money_heist/tokyo/love_versus_freedom",
+    "bridge": "Both want love and freedom at the same time, and keep testing a devoted partner who wants a steadier life."
+  },
+  {
+    "source": "arc:succession/roman_roy/the_joker_who_wants_to_be_taken_seriously",
+    "target": "arc:avatar/sokka/ordinary_among_gifted",
+    "bridge": "Both cover the fear of being the weak link with jokes and bravado, and have to risk real failure to discover what they actually contribute."
+  },
+  {
+    "source": "arc:succession/roman_roy/the_joker_who_wants_to_be_taken_seriously",
+    "target": "arc:breaking_bad/jimmy_mcgill/the_little_brother_never_good_enough",
+    "bridge": "Both are the family's supposed screw-up, craving respect from someone who will never quite give it and letting the resentment shape them."
+  },
+  {
+    "source": "arc:succession/roman_roy/closeness_only_as_a_joke",
+    "target": "arc:schitts_creek/david_rose/letting_himself_be_loved",
+    "bridge": "Both keep closeness at bay with sarcasm and deflection because letting someone in feels like handing them a weapon."
+  },
+  {
+    "source": "arc:succession/roman_roy/closeness_only_as_a_joke",
+    "target": "arc:parks_and_rec/tom_haverford/playing_the_field_to_avoid_getting_hurt",
+    "bridge": "Both approach intimacy only as a game or a performance, and have no idea what to do when someone actually wants to know them."
+  },
+  {
+    "source": "arc:succession/connor_roy/paying_for_love",
+    "target": "arc:the_office/michael_scott/longing_for_someone_to_come_home_to",
+    "bridge": "Both long for a family of their own and keep settling for relationships where they are tolerated rather than loved."
+  },
+  {
+    "source": "arc:succession/tom_wambsgans/the_outsider_who_wants_in",
+    "target": "arc:game_of_thrones/arya_stark/becoming_no_one",
+    "bridge": "Both try to belong to a closed, demanding group that asks them to give up who they are, and must decide whether belonging is worth disappearing."
+  },
+  {
+    "source": "arc:succession/tom_wambsgans/loving_someone_who_holds_the_power",
+    "target": "arc:doctor_who/martha_jones/waiting_to_be_seen",
+    "bridge": "Both love someone who gives less than they do, accepting one condition after another while quiet resentment builds."
+  },
+  {
+    "source": "arc:succession/tom_wambsgans/loving_someone_who_holds_the_power",
+    "target": "arc:the_office/dwight_schrute/a_love_he_cant_show",
+    "bridge": "Both are devoted to a partner who controls the terms of the relationship, and pride and hurt keep them circling instead of speaking plainly."
+  },
+  {
+    "source": "arc:succession/greg_hirsch/learning_the_price_of_getting_ahead",
+    "target": "arc:walking_dead/eugene_porter/safety_at_what_price",
+    "bridge": "Both are frightened people offered comfort and status by someone powerful and cruel, telling themselves they are only surviving as their conscience wears away."
+  },
+  {
+    "source": "arc:succession/greg_hirsch/learning_the_price_of_getting_ahead",
+    "target": "arc:avatar/bolin/following_the_wrong_leader",
+    "bridge": "Both are naive newcomers drawn in because a powerful patron makes them feel important, while the methods get harder to ignore."
+  },
+  {
+    "source": "arc:succession/gerri_kellman/competent_and_overlooked",
+    "target": "arc:breaking_bad/mike_ehrmantraut/the_professional_with_a_code",
+    "bridge": "Both are highly competent people who clean up for powerful employers they don't admire, balancing self-protection against protecting others."
+  },
+  {
+    "source": "arc:succession/gerri_kellman/competent_and_overlooked",
+    "target": "arc:mad_men/joan_holloway/fighting_to_be_taken_seriously",
+    "bridge": "Both are the ones everyone relies on and nobody considers for the top, and have to decide whether to claim a turn at power."
+  },
+  {
+    "source": "arc:the_good_place/eleanor_shellstrop/earning_her_place",
+    "target": "arc:buffy/spike/monster_to_man",
+    "bridge": "Both start trying to become good only to win approval or avoid consequences, and slowly find the change becoming their own."
+  },
+  {
+    "source": "arc:the_good_place/eleanor_shellstrop/earning_her_place",
+    "target": "arc:avatar/zuko/earning_trust_back",
+    "bridge": "Both have to do the awkward, humbling work of proving through actions that they can be better than the selfish person they were."
+  },
+  {
+    "source": "arc:the_good_place/eleanor_shellstrop/letting_people_in",
+    "target": "arc:naruto/gaara/the_boy_they_called_a_monster",
+    "bridge": "Both learned in childhood that nobody would care for them and decided to care only about themselves, until real connection makes them question that armour."
+  },
+  {
+    "source": "arc:the_good_place/eleanor_shellstrop/responsible_for_others",
+    "target": "arc:naruto/shikamaru_nara/reluctant_leader",
+    "bridge": "Both would rather avoid responsibility altogether and keep being put in charge, doubting they are the right person to carry hard decisions."
+  },
+  {
+    "source": "arc:the_good_place/chidi_anagonye/choosing_without_certainty",
+    "target": "arc:attack_on_titan/armin_arlert/standing_in_a_greater_place",
+    "bridge": "Both second-guess every decision so painfully that fear of being wrong becomes its own kind of harm."
+  },
+  {
+    "source": "arc:the_good_place/chidi_anagonye/loving_his_opposite",
+    "target": "arc:breaking_bad/kim_wexler/loving_someone_who_brings_out_your_wild_side",
+    "bridge": "Both are principled rule-followers who fall for a reckless rule-breaker and are changed by how alive it makes them feel."
+  },
+  {
+    "source": "arc:the_good_place/tahani_al_jamil/outside_her_sisters_shadow",
+    "target": "arc:greys_anatomy/amelia_shepherd/out_of_the_shadow",
+    "bridge": "Both have always been measured against an admired sibling and have to discover who they are when they stop competing."
+  },
+  {
+    "source": "arc:the_good_place/tahani_al_jamil/who_she_is_without_an_audience",
+    "target": "arc:buffy/cordelia_chase/from_fame_to_calling",
+    "bridge": "Both lose the glamorous life that made them someone and find unexpected meaning in work they care about rather than in being admired."
+  },
+  {
+    "source": "arc:the_good_place/jason_mendoza/behind_the_silence",
+    "target": "arc:attack_on_titan/reiner_braun/the_dependable_one",
+    "bridge": "Both play a role so others will accept them, and the gap between who they show and who they are grows harder to bear."
+  },
+  {
+    "source": "arc:the_good_place/jason_mendoza/thinking_before_acting",
+    "target": "arc:squid_game/seong_gi_hun/the_screw_up_who_wants_to_do_right",
+    "bridge": "Both are warm, loyal people whose impulsive choices keep letting others down, trying to become someone their loved ones can count on."
+  },
+  {
+    "source": "arc:the_good_place/jason_mendoza/thinking_before_acting",
+    "target": "arc:parks_and_rec/andy_dwyer/growing_up_after_being_left",
+    "bridge": "Both are lovable, reckless people who have to grow up and choose the people they love over their next impulse."
+  },
+  {
+    "source": "arc:the_good_place/michael/first_big_project",
+    "target": "arc:ted_lasso/leslie_higgins/finding_his_spine",
+    "bridge": "Both have served powerful superiors for years, and getting close to the people their work harms forces them to question whose side they are on."
+  },
+  {
+    "source": "arc:the_good_place/michael/learning_from_his_charges",
+    "target": "arc:avatar/iroh/from_power_to_peace",
+    "bridge": "Both spent a very long time defined by status and power, and find late in life that meaning lies in humbler bonds and simple joys."
+  },
+  {
+    "source": "arc:the_good_place/michael/learning_from_his_charges",
+    "target": "arc:doctor_who/twelfth_doctor/keeping_his_word",
+    "bridge": "Both are weary elders reawakened by teaching younger people, and have to accept limits to keep choosing kindness."
+  },
+  {
+    "source": "arc:the_good_place/janet/feelings_she_wasnt_built_for",
+    "target": "arc:doctor_who/rose_tyler/love_she_cannot_name",
+    "bridge": "Both are swept into a first love so intense it frightens them, full of jealousy and the knowledge that it may not be allowed to last."
+  }
+]

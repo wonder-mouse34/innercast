@@ -1,0 +1,854 @@
+{
+  "show": "game_of_thrones",
+  "characters": [
+    {
+      "id": "char:game_of_thrones/daenerys_targaryen",
+      "name": "Daenerys Targaryen",
+      "role": "The exiled younger sister of a would-be king, living on the charity of foreign hosts and about to be married off to a warlord in exchange for an army.",
+      "relations": [
+        {"target": "char:game_of_thrones/jon_snow", "relation": "partner"},
+        {"target": "char:game_of_thrones/tyrion_lannister", "relation": "colleague"},
+        {"target": "char:game_of_thrones/cersei_lannister", "relation": "enemy"},
+        {"target": "char:game_of_thrones/jaime_lannister", "relation": "enemy"},
+        {"target": "char:game_of_thrones/sansa_stark", "relation": "rival"}
+      ],
+      "arcs": [
+        {
+          "id": "arc:game_of_thrones/daenerys_targaryen/finding_her_voice",
+          "title": "From bargaining chip to her own person",
+          "literal_situation": "A frightened teenage exile is handed by her volatile brother to a foreign warlord as payment for an army, in a culture whose language and customs she does not know.",
+          "pattern_label": "finding your voice after being treated as property",
+          "pattern_text": "Someone raised to be quiet and useful to a controlling family member is pushed into a life she never chose. Surrounded by strangers, she slowly learns their language, earns their respect and discovers she can give orders instead of only taking them. The question becomes what she will do with power once she finally has it.",
+          "hook": "She is timid, obedient and afraid of her brother's temper, and she has just been married to a man she cannot even speak to.",
+          "why_relatable": "How do you stand up to the family member who has always controlled you? Can a life you were forced into become one you actually own? What does confidence look like for someone who was never allowed any?",
+          "watch_for": [
+            "Notice the first moment she refuses to be pushed around - what gives her the courage?",
+            "Watch how she treats people with less power than her, and whether that changes as she gains more.",
+            "What does she believe she is owed, and where did she learn it?"
+          ],
+          "start_at": "S1E1",
+          "span": "S1-S3",
+          "situations": [
+            {"id": "confidence_struggle", "weight": 0.9},
+            {"id": "family_expectations", "weight": 0.7},
+            {"id": "identity_and_self_acceptance", "weight": 0.7},
+            {"id": "moving_somewhere_new", "weight": 0.6}
+          ],
+          "conflicts": ["self_vs_family_expectations", "safety_vs_growth"],
+          "emotions": {"start": ["fear", "shame"], "middle": ["grief", "determination"], "end": ["confidence", "pride"]},
+          "ending_tone": "hopeful",
+          "intensity": "heavy",
+          "warnings": ["abuse", "domestic_violence", "sexual_violence", "death_of_loved_one", "grief", "war_and_violence", "graphic_gore", "betrayal"],
+          "example_user_messages": [
+            "My brother has always decided everything for me and I've never once said no to him.",
+            "I got married young because my family needed it and now I'm living somewhere I don't even speak the language.",
+            "I'm starting to realise people actually listen to me, and it's scary how good that feels.",
+            "I lost the person I'd finally started building a life with and I don't know who I am without them."
+          ],
+          "spoiler": {
+            "summary": "Sold by Viserys to Khal Drogo, Daenerys endures a brutal wedding night but gradually wins Drogo's love and the respect of the khalasar, and finally strikes back at her abusive brother, whom Drogo kills with molten gold. After an assassination attempt Drogo swears to invade Westeros, but a festering wound and Mirri Maz Duur's blood magic cost her both husband and unborn son. She smothers the catatonic Drogo, walks into his funeral pyre and emerges unburnt with three newly hatched dragons. Betrayed in Qarth, she seals Xaro and Doreah in an empty vault, then buys the Unsullied in Astapor only to free them by burning their master, liberates Yunkai and is hailed 'Mhysa' by the freed slaves.",
+            "key_events": [
+              "Married to Khal Drogo and assaulted on her wedding night",
+              "Strikes Viserys back; Drogo kills Viserys with molten gold",
+              "Blood magic kills her unborn son and leaves Drogo catatonic",
+              "Smothers Drogo, walks into his pyre and emerges with three dragons",
+              "Betrayed by Xaro and Doreah in Qarth; locks them in an empty vault",
+              "Frees the Unsullied in Astapor with 'Dracarys'",
+              "Liberates Yunkai and is called 'Mhysa'"
+            ],
+            "got_right": "She learns the culture she was thrown into, listens to advisers, protects the vulnerable and turns powerlessness into leadership without waiting for permission.",
+            "got_wrong": "She trusts a stranger's blood magic over her people's warnings, and her growing power comes with a taste for fiery, public vengeance."
+          }
+        },
+        {
+          "id": "arc:game_of_thrones/daenerys_targaryen/learning_to_rule",
+          "title": "Winning was the easy part",
+          "literal_situation": "Later in the series, once the story has put real power in her hands, a young ruler learns that the changes she fought for are unravelling behind her, and decides to stay and govern rather than move on.",
+          "pattern_label": "an idealistic leader discovering change is messy",
+          "pattern_text": "After a string of dramatic wins, a young leader has to stop crusading and start actually running things. Every decision seems to hurt someone, old enemies resist in the shadows, and the people she freed do not always want what she expected. She must decide whether to rule through mercy or fear, and whose advice to trust.",
+          "hook": "She is responsible for people on both sides of an old injustice who hate each other, and her own power is starting to grow beyond her control.",
+          "why_relatable": "What do you do when the people you helped don't react the way you hoped? Is it weakness to compromise with people you despise? How do you lead when every option costs something?",
+          "watch_for": [
+            "Notice how she responds when an adviser tells her she is wrong.",
+            "Watch the difference between choices she makes in anger and ones she makes after reflection.",
+            "Who does she keep close, and who does she push away?"
+          ],
+          "start_at": "S4",
+          "span": "S4-S6",
+          "situations": [
+            {"id": "becoming_a_manager", "weight": 0.9},
+            {"id": "imposter_syndrome", "weight": 0.5},
+            {"id": "burnout_at_work", "weight": 0.5},
+            {"id": "responsibility_you_didnt_ask_for", "weight": 0.4}
+          ],
+          "conflicts": ["power_vs_morality", "control_vs_trust"],
+          "emotions": {"start": ["pride", "determination"], "middle": ["overwhelm", "self_doubt", "loneliness"], "end": ["confidence", "determination"]},
+          "ending_tone": "bittersweet",
+          "intensity": "heavy",
+          "warnings": ["war_and_violence", "graphic_gore", "betrayal", "death_of_loved_one", "grief", "child_endangerment", "sexual_violence"],
+          "example_user_messages": [
+            "I finally got the promotion I fought for and now every decision I make seems to upset someone.",
+            "I changed things for the better but half my team is quietly working against me.",
+            "I keep swinging between being too soft and way too harsh with the people I manage.",
+            "My advisers keep telling me to compromise with people I think are awful and I don't know if that's wisdom or cowardice."
+          ],
+          "spoiler": {
+            "summary": "Daenerys crucifies 163 masters in retaliation, then stays in Meereen to learn to rule. She learns Jorah once spied on her and banishes him, chains two of her dragons after Drogon kills a child, and faces the Sons of the Harpy insurgency, which kills Barristan. She reopens the fighting pits and agrees to marry Hizdahr to keep the peace; when the Harpies attack the pits she escapes on Drogon, is captured by a khalasar, burns the khals alive in Vaes Dothrak and emerges unburnt as leader of the Dothraki. Returning to Meereen she burns the slavers' fleet, names Tyrion Hand of the Queen, ends her affair with Daario and sails for Westeros.",
+            "key_events": [
+              "Crucifies 163 Great Masters",
+              "Banishes Jorah after learning he spied on her",
+              "Chains her dragons after Drogon kills a child",
+              "Barristan killed by the Sons of the Harpy",
+              "Flies away on Drogon during the attack at Daznak's Pit",
+              "Burns the khals in the Temple of the Dosh Khaleen and takes command of the Dothraki",
+              "Destroys the slavers' fleet; names Tyrion her Hand; leaves Daario behind"
+            ],
+            "got_right": "She admits mistakes, reverses course when advisers make a good case, and eventually pairs her strength with counsel from someone like Tyrion.",
+            "got_wrong": "Her first instinct is often retribution, and she sees the world in black and white, underestimating how complicated freedom is for the people she liberates."
+          }
+        },
+        {
+          "id": "arc:game_of_thrones/daenerys_targaryen/the_price_of_destiny",
+          "title": "When the thing you dreamed of finally comes close",
+          "literal_situation": "Late in the series, after a lifetime abroad, she finally reaches the place she has always believed was hers by right, expecting to be welcomed.",
+          "pattern_label": "needing to be recognised as the rightful one",
+          "pattern_text": "A person who has built her whole identity around one goal she believes she was born for finally reaches the place where it is supposed to come true, only to find that people there see her as an outsider. As setbacks and losses pile up, she has to choose between patience and force, and between being loved and being obeyed.",
+          "hook": "She has much of what she once lacked, but the people she hoped would embrace her barely know her and do not trust her.",
+          "why_relatable": "What happens when the thing you've worked toward your whole life doesn't feel the way you imagined? How much of yourself rests on being seen as legitimate? Can you trust people who seem to love someone else more than you?",
+          "watch_for": [
+            "Notice how she reacts when others are admired more than she is.",
+            "What does she do with her grief - does she share it, or turn it outward?",
+            "Who is she still listening to by the end, and who has she stopped hearing?"
+          ],
+          "start_at": "S7E1",
+          "span": "S7-S8",
+          "situations": [
+            {"id": "grief_and_loss", "weight": 0.8},
+            {"id": "moving_somewhere_new", "weight": 0.7},
+            {"id": "loneliness", "weight": 0.7},
+            {"id": "falling_for_someone_unexpected", "weight": 0.6}
+          ],
+          "conflicts": ["power_vs_morality", "holding_on_vs_letting_go"],
+          "emotions": {"start": ["hope", "determination"], "middle": ["grief", "jealousy", "loneliness"], "end": ["anger", "betrayal"]},
+          "ending_tone": "tragic",
+          "intensity": "heavy",
+          "warnings": ["death_of_main_character", "death_of_loved_one", "grief", "war_and_violence", "graphic_gore", "betrayal", "child_endangerment", "bleak_ending"],
+          "example_user_messages": [
+            "I moved back to the place I always thought of as home and nobody there seems to want me.",
+            "Everyone keeps comparing me to someone more likeable and I'm starting to resent them for it.",
+            "I've lost the people who kept me grounded and I don't trust anyone left around me.",
+            "I've given up so much for this goal that I can't imagine accepting anything less than getting it."
+          ],
+          "spoiler": {
+            "summary": "Landing on Dragonstone, Daenerys loses her Greyjoy, Dornish and Tyrell allies to Euron and Jaime partly because of Tyrion's cautious plans, then burns the Lannister army at the Goldroad and executes Randyll and Dickon Tarly. She flies north to rescue Jon's wight-hunting party, losing Viserion to the Night King; Jon bends the knee and they become lovers. In the North she is distrusted by Sansa, learns Jon is Aegon Targaryen with a better claim, loses Jorah in the Battle of Winterfell, then Rhaegal to Euron and Missandei to Cersei's executioner. After burning Varys for treason she attacks King's Landing and, after the bells of surrender ring, burns the city and its people anyway. In the ruined throne room Jon stabs her; Drogon melts the Iron Throne and carries her body away.",
+            "key_events": [
+              "Allies destroyed; Tyrion's strategy fails",
+              "Burns the Tarlys after the Battle of the Goldroad",
+              "Viserion killed and raised by the Night King beyond the Wall",
+              "Jon bends the knee; they become lovers",
+              "Learns Jon is Aegon Targaryen, heir to the Iron Throne",
+              "Jorah dies defending her; Rhaegal and Missandei killed",
+              "Burns Varys alive for plotting against her",
+              "Burns King's Landing after it surrenders",
+              "Killed by Jon; Drogon melts the Iron Throne"
+            ],
+            "got_right": "She sets aside her ambition to fight an existential threat for people who did not trust her, and risks her dragons to save allies.",
+            "got_wrong": "She mistakes being feared for being secure, stops listening to counsel, and lets grief and entitlement turn her into the tyrant she swore not to become."
+          }
+        }
+      ]
+    },
+    {
+      "id": "char:game_of_thrones/tyrion_lannister",
+      "name": "Tyrion Lannister",
+      "role": "The witty, hard-drinking youngest son of the realm's richest family, a dwarf whose father and sister blame him for his mother's death in childbirth.",
+      "relations": [
+        {"target": "char:game_of_thrones/jaime_lannister", "relation": "sibling"},
+        {"target": "char:game_of_thrones/cersei_lannister", "relation": "sibling"},
+        {"target": "char:game_of_thrones/sansa_stark", "relation": "ex_partner"},
+        {"target": "char:game_of_thrones/jon_snow", "relation": "friend"},
+        {"target": "char:game_of_thrones/daenerys_targaryen", "relation": "boss"},
+        {"target": "char:game_of_thrones/bran_stark", "relation": "boss"}
+      ],
+      "arcs": [
+        {
+          "id": "arc:game_of_thrones/tyrion_lannister/the_unwanted_son",
+          "title": "The son his father never wanted",
+          "literal_situation": "A clever, scorned younger son relies on his wit and family name to survive among powerful people, while his father treats him as an embarrassment.",
+          "pattern_label": "chasing respect from a parent who withholds it",
+          "pattern_text": "Someone who has been mocked and underestimated all his life leans on his wit to prove his worth. When he is finally given real responsibility he excels, but the parent whose approval he craves refuses to acknowledge it and the family keeps treating him as the problem. He must decide how much of himself to sacrifice for people who will never love him back.",
+          "hook": "He is the family's black sheep, drinking and joking to deflect the contempt of his father and sister, with only his older brother on his side.",
+          "why_relatable": "Can you ever earn love from a parent who has already decided who you are? What do you do when you're good at your job but get none of the credit? When does protecting yourself start turning you into the people who hurt you?",
+          "watch_for": [
+            "Notice how he uses humour - when is it armour and when is it a weapon?",
+            "Watch how he treats other outsiders compared with how his family treats him.",
+            "What does he actually want from his father, and does he ever say it out loud?"
+          ],
+          "start_at": "S1E1",
+          "span": "S1-S4",
+          "situations": [
+            {"id": "difficult_parent", "weight": 1.0},
+            {"id": "family_expectations", "weight": 0.8},
+            {"id": "identity_and_self_acceptance", "weight": 0.6},
+            {"id": "new_job", "weight": 0.4}
+          ],
+          "conflicts": ["self_vs_family_expectations", "belonging_vs_integrity"],
+          "emotions": {"start": ["resentment", "rejection"], "middle": ["pride", "hope"], "end": ["betrayal", "anger", "grief"]},
+          "ending_tone": "tragic",
+          "intensity": "heavy",
+          "warnings": ["abuse", "sexual_violence", "war_and_violence", "graphic_gore", "betrayal", "death_of_loved_one"],
+          "example_user_messages": [
+            "My dad has never once said he's proud of me, even when I've done everything right.",
+            "I saved the project and my boss gave all the credit to someone else in front of everyone.",
+            "I make jokes about myself before anyone else can, it's just easier that way.",
+            "My family treats me like a mistake and I'm starting to hate them back."
+          ],
+          "spoiler": {
+            "summary": "Arrested by Catelyn for the attempt on Bran, Tyrion wins freedom through Bronn in a trial by combat, then is sent by Tywin to King's Landing as acting Hand. He outmanoeuvres Cersei and the small council and saves the city at the Blackwater with wildfire and a personal sortie, but is scarred by a Kingsguard assassin while Tywin takes the credit. Tywin refuses him Casterly Rock and forces him to marry Sansa, whom he refuses to bed. When Joffrey is poisoned, Cersei has Tyrion tried for regicide; Shae testifies against him and he demands trial by combat, which Oberyn loses to the Mountain. Jaime frees him; he finds Shae in his father's bed, strangles her, and kills Tywin with a crossbow before fleeing with Varys.",
+            "key_events": [
+              "Trial by combat at the Eyrie won by Bronn",
+              "Acting Hand of the King; exiles Janos Slynt",
+              "Wins the Battle of the Blackwater with wildfire; scarred and stripped of credit",
+              "Tywin denies him Casterly Rock",
+              "Forced marriage to Sansa",
+              "Accused of Joffrey's murder; Shae testifies against him",
+              "Oberyn dies as his champion; sentenced to death",
+              "Kills Shae and Tywin while escaping"
+            ],
+            "got_right": "He protects the vulnerable, including Sansa, governs competently and finally refuses to accept a rigged verdict on his existence.",
+            "got_wrong": "He lets years of humiliation curdle into rage, and in his darkest hour kills the woman he loved and his own father."
+          }
+        },
+        {
+          "id": "arc:game_of_thrones/tyrion_lannister/rock_bottom_and_purpose",
+          "title": "Rock bottom, and a reason to keep going",
+          "literal_situation": "Later in the series, after a turning point that costs him nearly everything, he is far from home with no title, no family and no will to live, and intends to drink himself to death.",
+          "pattern_label": "finding purpose again after losing everything",
+          "pattern_text": "After a catastrophic fall, a once-brilliant person has given up and is numbing himself with alcohol. A friend pushes him toward one last chance to be useful, and he slowly discovers that serving something bigger than himself might be a reason to live. Recovery comes not from being rescued but from being needed.",
+          "hook": "He is far from home, drunk, cut off from his family and wanted, with no plan beyond the next bottle.",
+          "why_relatable": "How do you climb back when you've burned every bridge? Can you believe in anything again after your whole world has come apart? What makes a life worth continuing when your old identity is gone?",
+          "watch_for": [
+            "Notice when he starts caring about outcomes again - what triggers it?",
+            "Watch how he earns trust from people who have every reason to distrust him.",
+            "Does he drink less when he has something meaningful to do?"
+          ],
+          "start_at": "S5E1",
+          "span": "S5-S6",
+          "situations": [
+            {"id": "starting_over", "weight": 1.0},
+            {"id": "addiction_and_recovery", "weight": 0.6},
+            {"id": "new_job", "weight": 0.6},
+            {"id": "losing_a_job", "weight": 0.5}
+          ],
+          "conflicts": ["past_vs_future", "holding_on_vs_letting_go"],
+          "emotions": {"start": ["numbness", "guilt", "grief"], "middle": ["curiosity", "self_doubt"], "end": ["hope", "belonging"]},
+          "ending_tone": "hopeful",
+          "intensity": "moderate",
+          "warnings": ["addiction", "self_harm_or_suicide", "grief", "war_and_violence"],
+          "example_user_messages": [
+            "I lost my job, my relationship and my family in the same year and honestly I've just been drinking.",
+            "A friend keeps dragging me to things and I only go because it's easier than arguing.",
+            "I didn't think I'd ever care about anything again, but this new job is actually starting to matter to me.",
+            "I don't know if I deserve a second chance after what I did."
+          ],
+          "spoiler": {
+            "summary": "In Pentos Varys persuades a suicidal Tyrion to meet Daenerys. En route he is kidnapped by Jorah, survives the Stone Men and slavers, and talks his way into the fighting pits of Meereen, where he meets Daenerys and becomes her adviser. After the Harpy attack and her flight on Drogon he governs Meereen with Varys, Missandei and Grey Worm, unchains the starving dragons, and negotiates a seven-year phase-out of slavery with the masters, who break the deal and attack. Daenerys returns and burns their fleet; Tyrion steers her away from repeating her father's atrocities, advises her to leave Daario, and is named Hand of the Queen after telling her he has come to believe in her.",
+            "key_events": [
+              "Agrees to go with Varys to meet Daenerys",
+              "Kidnapped by Jorah; attacked by Stone Men; sold by slavers",
+              "Meets Daenerys in the fighting pit and becomes her adviser",
+              "Rules Meereen in her absence and frees the dragons",
+              "Compromise with the slave masters collapses into a siege",
+              "Named Hand of the Queen"
+            ],
+            "got_right": "He accepts help, admits he has nothing left to lose, and uses his talents to build rather than to win arguments, earning genuine trust.",
+            "got_wrong": "His compromise with the slavers alienates the freed people, and he underestimates how readily his enemies will break their word."
+          }
+        },
+        {
+          "id": "arc:game_of_thrones/tyrion_lannister/advising_the_one_he_believes_in",
+          "title": "Advising someone you believe in",
+          "literal_situation": "Late in the series, once the story moves him into a new role, he advises a leader he believes in, planning a war that sets him against his own family while trying to hold that leader back from their worst impulses.",
+          "pattern_label": "the loyal adviser whose faith is tested",
+          "pattern_text": "A person who has finally found a leader worth believing in becomes their right hand, trying to steer them toward restraint. As plans fail and trust frays, he is caught between loyalty to his leader, love for his estranged family and his own conscience. He has to decide when speaking up is enough and when it is time to act.",
+          "hook": "He finally has a purpose, a title and a leader he trusts, but his first war plans put him directly against the family he came from.",
+          "why_relatable": "How loyal should you be to a boss you believe in when they start ignoring you? Can you work against your family and still love them? When does keeping quiet to protect your position become complicity?",
+          "watch_for": [
+            "Notice how his advice changes after his plans fail.",
+            "Watch whose secrets he keeps and whose he passes on.",
+            "What does he believe about his leader by the end, and has that belief been earned?"
+          ],
+          "start_at": "S7E1",
+          "span": "S7-S8",
+          "situations": [
+            {"id": "standing_up_to_authority", "weight": 0.8},
+            {"id": "mentor_and_protege", "weight": 0.6},
+            {"id": "family_expectations", "weight": 0.5},
+            {"id": "burnout_at_work", "weight": 0.4}
+          ],
+          "conflicts": ["power_vs_morality", "belonging_vs_integrity"],
+          "emotions": {"start": ["hope", "determination"], "middle": ["anxiety", "self_doubt", "guilt"], "end": ["grief", "acceptance"]},
+          "ending_tone": "bittersweet",
+          "intensity": "heavy",
+          "warnings": ["war_and_violence", "graphic_gore", "death_of_loved_one", "betrayal", "grief", "child_endangerment"],
+          "example_user_messages": [
+            "I really believed in my boss but lately she's making decisions that scare me.",
+            "My plans at work keep failing and I can feel my manager losing faith in me.",
+            "I'm caught between my team and my family and I feel like a traitor to both.",
+            "I reported a colleague to stay loyal and now I think they were the one who was right."
+          ],
+          "spoiler": {
+            "summary": "Tyrion's plan to besiege King's Landing with Westerosi allies while the Unsullied take Casterly Rock collapses as Euron destroys the fleets and Jaime sacks Highgarden. He fails to stop Daenerys burning the Tarlys, proposes the wight hunt, and brokers a truce with Cersei, who deceives him. At Winterfell Sansa tells him Jon's true parentage; he tells Varys, then reports Varys's treason to Daenerys, who burns Varys. He secretly frees Jaime to persuade Cersei to surrender, but Daenerys burns King's Landing after the bells ring; Tyrion finds his siblings dead, throws away his Hand's pin and is imprisoned. He convinces Jon that Daenerys must be stopped, and at the Great Council proposes Bran as king, who names Tyrion his Hand as penance.",
+            "key_events": [
+              "Casterly Rock plan backfires; allies lost",
+              "Secret meeting with Jaime; Cersei deceives the truce",
+              "Tells Varys about Jon's parentage, then betrays Varys to Daenerys",
+              "Frees Jaime before the Battle of King's Landing",
+              "Finds Jaime and Cersei dead in the ruins",
+              "Resigns as Hand and is imprisoned",
+              "Urges Jon to act against Daenerys",
+              "Proposes Bran as king; becomes Hand of the King"
+            ],
+            "got_right": "He keeps speaking for mercy, owns his mistakes, and in the end helps build a fairer way of choosing rulers.",
+            "got_wrong": "He clings too long to his faith in his queen, betrays Varys who was right, and his cautious strategy costs them key allies."
+          }
+        }
+      ]
+    },
+    {
+      "id": "char:game_of_thrones/jon_snow",
+      "name": "Jon Snow",
+      "role": "The illegitimate son of a respected northern lord, raised alongside his half-siblings but never quite one of them, about to leave home to join a remote sworn military order.",
+      "relations": [
+        {"target": "char:game_of_thrones/sansa_stark", "relation": "sibling"},
+        {"target": "char:game_of_thrones/arya_stark", "relation": "sibling"},
+        {"target": "char:game_of_thrones/bran_stark", "relation": "sibling"},
+        {"target": "char:game_of_thrones/samwell_tarly", "relation": "friend"},
+        {"target": "char:game_of_thrones/tyrion_lannister", "relation": "friend"},
+        {"target": "char:game_of_thrones/daenerys_targaryen", "relation": "partner"},
+        {"target": "char:game_of_thrones/theon_greyjoy", "relation": "rival"}
+      ],
+      "arcs": [
+        {
+          "id": "arc:game_of_thrones/jon_snow/looking_for_belonging",
+          "title": "The outsider looking for a place to belong",
+          "literal_situation": "An illegitimate son who has always sat at the side table leaves his family to join a sworn brotherhood at the edge of the world, hoping it will give him honour and a place of his own.",
+          "pattern_label": "leaving home to find where you belong",
+          "pattern_text": "Someone who has always felt like the family's outsider leaves home expecting a noble fresh start, and finds a rough, disappointing place instead. He learns to earn friends rather than look down on them, and then falls for someone from the very group he was taught to see as the enemy. He must decide which of his loyalties is really his.",
+          "hook": "He is proud, lonely and a little arrogant, sure that joining the brotherhood will prove he is worth something.",
+          "why_relatable": "What do you do when the fresh start you dreamed of is nothing like you expected? Can you belong to two groups who hate each other? Is loyalty to a promise more important than loyalty to a person?",
+          "watch_for": [
+            "Notice how he changes once someone points out his own privilege.",
+            "Watch the moments where he hesitates - what is he protecting?",
+            "Which of his promises does he keep, and which does he bend?"
+          ],
+          "start_at": "S1E1",
+          "span": "S1-S4",
+          "situations": [
+            {"id": "finding_your_people", "weight": 0.9},
+            {"id": "leaving_home", "weight": 0.8},
+            {"id": "identity_and_self_acceptance", "weight": 0.7},
+            {"id": "falling_for_someone_unexpected", "weight": 0.6}
+          ],
+          "conflicts": ["belonging_vs_integrity", "duty_vs_desire"],
+          "emotions": {"start": ["loneliness", "rejection"], "middle": ["belonging", "love", "confusion"], "end": ["grief", "determination"]},
+          "ending_tone": "tragic",
+          "intensity": "heavy",
+          "warnings": ["war_and_violence", "graphic_gore", "death_of_loved_one", "grief", "betrayal", "abuse", "child_endangerment"],
+          "example_user_messages": [
+            "I've always felt like the odd one out in my family, like I'm only half part of it.",
+            "I moved away for a fresh start and it's nothing like I imagined.",
+            "I fell for someone my friends would never accept and I don't know whose side I'm on.",
+            "I thought I was better than the people around me until someone pointed out I just had it easier."
+          ],
+          "spoiler": {
+            "summary": "Jon joins the Night's Watch, befriends Sam and the other recruits after Tyrion humbles him, and becomes Lord Commander Mormont's steward, earning Longclaw by saving Mormont from a wight. He tries to desert after Ned's execution but is brought back. On the great ranging he spares the wildling Ygritte, is captured, and on Qhorin Halfhand's orders kills Qhorin to infiltrate Mance Rayder's army. He becomes Ygritte's lover and climbs the Wall with the raiders, but refuses to kill an innocent old man and flees back to Castle Black, shot by Ygritte. He helps lead the defence of Castle Black, where Ygritte dies in his arms, then goes to parley with Mance intending to kill him just as Stannis's army arrives.",
+            "key_events": [
+              "Joins the Night's Watch; befriends Samwell Tarly",
+              "Saves Mormont from a wight and receives Longclaw",
+              "Tries to desert after Ned's execution",
+              "Kills Qhorin Halfhand to infiltrate the wildlings",
+              "Falls in love with Ygritte; breaks his vows",
+              "Escapes back to the Wall, shot by Ygritte",
+              "Ygritte dies in his arms during the Battle of Castle Black"
+            ],
+            "got_right": "He learns humility, protects the weak and comes to see the wildlings as people rather than enemies.",
+            "got_wrong": "He tries to keep faith with everyone at once, and the deception costs him the woman he loves."
+          }
+        },
+        {
+          "id": "arc:game_of_thrones/jon_snow/leading_those_who_resent_him",
+          "title": "Leading people who don't want to follow",
+          "literal_situation": "Later in the series, once the story moves him into a new role, he must make unpopular decisions for a brotherhood where many despise him, to prepare for a threat most of his men refuse to take seriously.",
+          "pattern_label": "leading former peers who resent you",
+          "pattern_text": "A young person is suddenly put in charge of the colleagues he trained alongside, some of whom openly resent him. He makes decisions he believes are right but that his people see as betrayal, and discovers how lonely and dangerous leadership can be. When it all falls apart, he has to find a reason to keep fighting, this time for his own family.",
+          "hook": "He now has authority over men who used to be his equals, with a rival who resents him among his officers and many of his brothers doubting him.",
+          "why_relatable": "How do you lead people who used to be your equals? What if doing the right thing makes you hated? When a role asks for everything you have, how much do you owe it?",
+          "watch_for": [
+            "Notice who he consults before big decisions, and who he doesn't.",
+            "Watch how he handles open defiance from someone under him.",
+            "What keeps him going when leadership gets lonely?"
+          ],
+          "start_at": "S5E1",
+          "span": "S5-S6",
+          "situations": [
+            {"id": "leading_former_peers", "weight": 1.0},
+            {"id": "becoming_a_manager", "weight": 0.8},
+            {"id": "burnout_at_work", "weight": 0.6},
+            {"id": "responsibility_you_didnt_ask_for", "weight": 0.6}
+          ],
+          "conflicts": ["duty_vs_desire", "belonging_vs_integrity"],
+          "emotions": {"start": ["determination", "anxiety"], "middle": ["loneliness", "betrayal", "burnout"], "end": ["determination", "belonging"]},
+          "ending_tone": "bittersweet",
+          "intensity": "heavy",
+          "warnings": ["betrayal", "death_of_main_character", "war_and_violence", "graphic_gore", "child_endangerment", "death_of_loved_one", "grief"],
+          "example_user_messages": [
+            "I just got promoted over the people I used to work alongside and half of them clearly hate it.",
+            "I made the right call but my whole team thinks I betrayed them.",
+            "I gave everything to that job and it broke me, and now I feel guilty for wanting out.",
+            "My sister is begging me to help her fight for our family and I'm just so tired."
+          ],
+          "spoiler": {
+            "summary": "Jon mercifully shoots Mance at the stake, refuses Stannis's offer to legitimise him, and is elected Lord Commander. He beheads Janos Slynt for insubordination and, against his brothers' will, lets the wildlings through the Wall, witnessing the Night King's power at Hardhome. Thorne, Olly and other brothers stab him to death 'For the Watch'. Melisandre resurrects him; he hangs the mutineers, including Olly, and leaves the Watch. Reunited with Sansa, he agrees to retake Winterfell from Ramsay Bolton; at the Battle of the Bastards Rickon is killed and Jon's army is nearly crushed until the Knights of the Vale, secretly summoned by Sansa, arrive. Winterfell is retaken and the northern lords proclaim Jon King in the North.",
+            "key_events": [
+              "Elected 998th Lord Commander of the Night's Watch",
+              "Executes Janos Slynt",
+              "Lets the wildlings pass the Wall; massacre at Hardhome",
+              "Murdered by his own brothers in a mutiny",
+              "Resurrected by Melisandre; hangs the mutineers and leaves the Watch",
+              "Rickon killed at the Battle of the Bastards",
+              "Proclaimed King in the North"
+            ],
+            "got_right": "He puts saving lives above popularity, keeps his word, and in the end fights for his family.",
+            "got_wrong": "He fails to bring his men along with his decisions, and in battle lets emotion override strategy and brushes off Sansa's warnings."
+          }
+        },
+        {
+          "id": "arc:game_of_thrones/jon_snow/love_duty_and_identity",
+          "title": "Responsible for everyone he loves",
+          "literal_situation": "Late in the series, once the fate of his homeland rests on him, he must travel south to ask a powerful stranger for help against a threat almost no one else believes in.",
+          "pattern_label": "choosing between love, duty and who you are",
+          "pattern_text": "Someone who never wanted power finds himself responsible for everyone he loves, and is willing to give up his title to protect them. He falls for a formidable partner, then learns something about his own origins that changes how everyone sees him. In the end he has to choose between the person he loves and the people he swore to protect.",
+          "hook": "People who once dismissed him now look to him, and his first big decision is to leave home to seek an unlikely alliance.",
+          "why_relatable": "Is it pride or principle to refuse to bow? What happens to your sense of self when the ground shifts under everything you were told? What do you owe someone you love when duty pulls the other way?",
+          "watch_for": [
+            "Notice how he balances honesty against diplomacy.",
+            "Notice what he holds on to when everything around him is changing.",
+            "Whose warnings does he listen to, and whose does he brush aside?"
+          ],
+          "start_at": "S7E1",
+          "span": "S7-S8",
+          "situations": [
+            {"id": "identity_and_self_acceptance", "weight": 0.8},
+            {"id": "falling_for_someone_unexpected", "weight": 0.8},
+            {"id": "responsibility_you_didnt_ask_for", "weight": 0.7},
+            {"id": "family_expectations", "weight": 0.4}
+          ],
+          "conflicts": ["duty_vs_desire", "truth_vs_protecting_others"],
+          "emotions": {"start": ["determination", "anxiety"], "middle": ["love", "confusion"], "end": ["grief", "guilt"]},
+          "ending_tone": "bittersweet",
+          "intensity": "heavy",
+          "warnings": ["death_of_loved_one", "war_and_violence", "graphic_gore", "betrayal", "grief", "bleak_ending"],
+          "example_user_messages": [
+            "I found out the parent who raised me isn't who I thought and I don't know who I am now.",
+            "I'm in love with someone who's starting to scare me.",
+            "I gave up a position I'd earned because I thought it was the right thing for everyone.",
+            "I had to choose between someone I love and doing the right thing, and I don't know if I can live with it."
+          ],
+          "spoiler": {
+            "summary": "Jon goes to Dragonstone, refuses to bend the knee but wins permission to mine dragonglass, then leads a wight-hunting mission beyond the Wall; Daenerys rescues the party at the cost of Viserion and Jon pledges himself to her. They become lovers, and he refuses to lie to Cersei at the Dragonpit. At Winterfell Sam reveals Jon is Aegon Targaryen, son of Rhaegar and Lyanna and rightful heir, straining his relationship with Daenerys. After the Battle of Winterfell he tells Sansa and Arya the secret, which spreads. When Daenerys burns King's Landing after its surrender, Tyrion convinces Jon she must be stopped, and Jon stabs her in the throne room. The Great Council exiles him to the Night's Watch, and he rides north beyond the Wall with the Free Folk and Ghost.",
+            "key_events": [
+              "Meets Daenerys; mines dragonglass on Dragonstone",
+              "Wight hunt beyond the Wall; Viserion lost",
+              "Bends the knee to Daenerys; they become lovers",
+              "Learns he is Aegon Targaryen, the true heir",
+              "Tells Sansa and Arya his parentage",
+              "Kills Daenerys after she burns King's Landing",
+              "Exiled to the Night's Watch; leaves with the Free Folk"
+            ],
+            "got_right": "He is honest, puts the living ahead of titles and is willing to give up a crown to protect people.",
+            "got_wrong": "He ignores warning signs in someone he loves, and his inability to keep either a lie or a secret feeds the chaos that follows."
+          }
+        }
+      ]
+    },
+    {
+      "id": "char:game_of_thrones/jaime_lannister",
+      "name": "Jaime Lannister",
+      "role": "A famously skilled, arrogant knight of the royal guard, sneered at as the 'Kingslayer' for killing the king he swore to protect, and secretly devoted to his twin sister.",
+      "relations": [
+        {"target": "char:game_of_thrones/cersei_lannister", "relation": "partner"},
+        {"target": "char:game_of_thrones/cersei_lannister", "relation": "sibling"},
+        {"target": "char:game_of_thrones/tyrion_lannister", "relation": "sibling"},
+        {"target": "char:game_of_thrones/brienne_of_tarth", "relation": "friend"},
+        {"target": "char:game_of_thrones/daenerys_targaryen", "relation": "enemy"}
+      ],
+      "arcs": [
+        {
+          "id": "arc:game_of_thrones/jaime_lannister/losing_what_defined_him",
+          "title": "A proud man forced to depend on someone he mocks",
+          "literal_situation": "Later in the series, once circumstances take away his freedom, a proud knight is sent on a long journey across a war zone with a tall, stubborn woman warrior he mocks at every turn.",
+          "pattern_label": "rebuilding yourself after losing your defining skill",
+          "pattern_text": "Someone whose whole identity rests on one talent and a cynical reputation is forced to depend on a person he looks down on. A devastating loss strips away what made him special, and in the vulnerability that follows he tells the truth about his past for the first time. He has to figure out who he is when he can no longer rely on what he was.",
+          "hook": "He is sarcastic and contemptuous of his companion, convinced he is still the most dangerous man in any room.",
+          "why_relatable": "Who are you underneath the reputation everyone knows you for? Why do we hide the good reasons behind our worst reputations? Can respect for someone you mocked change who you are?",
+          "watch_for": [
+            "Notice when his mockery of his companion starts to soften.",
+            "Listen to how he explains the act that earned him his nickname.",
+            "Watch what he chooses to do with promises he once would have ignored."
+          ],
+          "start_at": "S2E10",
+          "span": "S2-S4",
+          "situations": [
+            {"id": "illness_or_injury", "weight": 0.9},
+            {"id": "identity_and_self_acceptance", "weight": 0.8},
+            {"id": "redemption_after_mistakes", "weight": 0.7},
+            {"id": "confidence_struggle", "weight": 0.5}
+          ],
+          "conflicts": ["past_vs_future", "belonging_vs_integrity"],
+          "emotions": {"start": ["pride", "anger"], "middle": ["shame", "numbness"], "end": ["self_respect", "determination"]},
+          "ending_tone": "bittersweet",
+          "intensity": "heavy",
+          "warnings": ["medical_trauma", "torture", "sexual_violence", "war_and_violence", "graphic_gore", "death_of_loved_one"],
+          "example_user_messages": [
+            "My whole identity was being an athlete and after the injury I don't know who I am.",
+            "Everyone judges me for one thing I did, but nobody ever asked why I did it.",
+            "I was really dismissive of a coworker and now they're the only one who's had my back.",
+            "I want to be someone who keeps promises, but I've never really been that person."
+          ],
+          "spoiler": {
+            "summary": "Released by Catelyn in exchange for her daughters, Jaime is escorted by Brienne, fights her on a bridge and is captured with her by Locke's men. He talks them out of raping Brienne, and Locke cuts off his sword hand. Wanting to die, he is shamed into living by Brienne, and in the baths at Harrenhal confesses that he killed the Mad King to stop him burning King's Landing with wildfire. He goes back to save Brienne from a bear pit. In King's Landing Cersei turns cold, he learns to fight left-handed with Bronn, and he forces himself on Cersei beside Joffrey's body. He refuses to kill Tyrion or hunt Sansa, gives Brienne the sword Oathkeeper to find Sansa, offers to leave the Kingsguard to save Tyrion, and finally frees his brother - who kills their father on the way out.",
+            "key_events": [
+              "Released by Catelyn into Brienne's custody",
+              "Saves Brienne from rape; Locke cuts off his sword hand",
+              "Confesses the truth about killing the Mad King",
+              "Rescues Brienne from the bear pit",
+              "Forces himself on Cersei beside Joffrey's corpse",
+              "Gives Brienne Oathkeeper to protect Sansa",
+              "Frees Tyrion, who then kills Tywin"
+            ],
+            "got_right": "He comes to respect Brienne, starts keeping his oaths and chooses his brother's life over his father's plans.",
+            "got_wrong": "He still cannot see his sister clearly, commits a violent act against her in grief, and his rescue of Tyrion leads directly to his father's death."
+          }
+        },
+        {
+          "id": "arc:game_of_thrones/jaime_lannister/love_that_consumes",
+          "title": "Loyal to a love that keeps costing him",
+          "literal_situation": "Later in the series, after painful losses in his family, he stays at the side of the twin he has loved all his life, as enemies close in on them.",
+          "pattern_label": "struggling to leave a love that consumes you",
+          "pattern_text": "A person who has organised his whole life around one relationship begins to see the damage it does to him and to everyone around them. Each time he tries to act on his own conscience, love and loyalty pull him back. He has to decide whether he can walk away from the person who defines him, and what it will cost if he doesn't.",
+          "hook": "His family is coming apart, someone he loves is far away and in danger, and the woman he loves blames him for all of it.",
+          "why_relatable": "How do you know when loyalty has become something unhealthy? Can you love someone and still refuse to follow them? Is it ever too late to become a better person?",
+          "watch_for": [
+            "Notice when he says 'no' to her, and what it costs him.",
+            "Watch which promises he keeps even when they cause him trouble.",
+            "Who seems to bring out a better version of him?"
+          ],
+          "start_at": "S5E1",
+          "span": "S5-S8",
+          "situations": [
+            {"id": "breakup", "weight": 0.7},
+            {"id": "redemption_after_mistakes", "weight": 0.7},
+            {"id": "grief_and_loss", "weight": 0.6},
+            {"id": "family_expectations", "weight": 0.5}
+          ],
+          "conflicts": ["holding_on_vs_letting_go", "power_vs_morality"],
+          "emotions": {"start": ["guilt", "anxiety"], "middle": ["grief", "anger", "confusion"], "end": ["longing", "acceptance"]},
+          "ending_tone": "tragic",
+          "intensity": "heavy",
+          "warnings": ["death_of_main_character", "death_of_loved_one", "grief", "war_and_violence", "graphic_gore", "betrayal", "self_harm_or_suicide", "bleak_ending"],
+          "example_user_messages": [
+            "Every time I try to leave this relationship I end up going back, even though I know it's bad for me.",
+            "My partner and I have done terrible things for each other and I'm starting to hate who I've become.",
+            "I finally stood up to her and walked out, but I still miss her every day.",
+            "I met someone who makes me want to be a better person, but I don't know if I can let go of the past."
+          ],
+          "spoiler": {
+            "summary": "Jaime's mission to bring Myrcella home from Dorne ends with her acknowledging him as her father and dying of poison in his arms. Removed from the Kingsguard by Tommen under the High Sparrow's influence, he takes Riverrun without a battle by threatening Edmure's infant son, and returns to find Cersei has blown up the Great Sept, Tommen is dead and she is queen. He sacks Highgarden, where Olenna confesses to Joffrey's murder, and barely survives the Battle of the Goldroad. When Cersei reveals she will betray the truce against the dead, he finally leaves her and rides north alone. At Winterfell he knights Brienne, fights in the Long Night and becomes her lover, but when Cersei's defeat looms he goes back to her, kills Euron, and dies with Cersei in the collapsing Red Keep.",
+            "key_events": [
+              "Myrcella dies in his arms after calling him father",
+              "Takes Riverrun by threatening Edmure's child",
+              "Cersei destroys the Sept; Tommen dies",
+              "Sacks Highgarden; Olenna confesses to killing Joffrey",
+              "Leaves Cersei and rides north to fight the dead",
+              "Knights Brienne; becomes her lover",
+              "Returns to Cersei; kills Euron; dies with her beneath the Red Keep"
+            ],
+            "got_right": "He finally honours his word over his sister's schemes, fights for the living and treats Brienne and his brother with real love.",
+            "got_wrong": "Even after breaking free, he returns to the relationship that destroys him, abandoning a healthier love and a better self."
+          }
+        }
+      ]
+    },
+    {
+      "id": "char:game_of_thrones/cersei_lannister",
+      "name": "Cersei Lannister",
+      "role": "The queen of the realm, trapped in a loveless marriage to a drunken king, fiercely protective of her three children and hiding a dangerous secret about who their father is.",
+      "relations": [
+        {"target": "char:game_of_thrones/jaime_lannister", "relation": "partner"},
+        {"target": "char:game_of_thrones/jaime_lannister", "relation": "sibling"},
+        {"target": "char:game_of_thrones/tyrion_lannister", "relation": "sibling"},
+        {"target": "char:game_of_thrones/sansa_stark", "relation": "enemy"},
+        {"target": "char:game_of_thrones/arya_stark", "relation": "enemy"},
+        {"target": "char:game_of_thrones/daenerys_targaryen", "relation": "enemy"}
+      ],
+      "arcs": [
+        {
+          "id": "arc:game_of_thrones/cersei_lannister/a_mother_fighting_for_control",
+          "title": "A mother fighting for control",
+          "literal_situation": "A queen whose husband openly disrespects her fears that a family secret will be exposed, and will do anything to secure her eldest son's future.",
+          "pattern_label": "controlling everything to protect your children",
+          "pattern_text": "A woman who was married off for her family's benefit, and never taken seriously by her father, pours all her ambition into her children. Believing anyone outside the family is a threat, she grabs for control whenever she feels it slipping, even when her choices make things worse. She has to face what her fierce protectiveness is really protecting.",
+          "hook": "She is powerful on paper but powerless in practice, sidelined by her father, humiliated by her husband and terrified of being found out.",
+          "why_relatable": "Is it love or control when you'd do anything for your kids? What happens when you're never given the chance to prove you can lead? Why do we keep blaming the same person for things that aren't their fault?",
+          "watch_for": [
+            "Notice how she talks about her children compared with how she actually treats them.",
+            "Watch how she reacts when someone younger and more popular appears.",
+            "Pay attention to how often she blames her younger brother, and whether it's fair."
+          ],
+          "start_at": "S1E1",
+          "span": "S1-S4",
+          "situations": [
+            {"id": "family_expectations", "weight": 0.8},
+            {"id": "difficult_parent", "weight": 0.7},
+            {"id": "caring_for_family", "weight": 0.6},
+            {"id": "sibling_rivalry", "weight": 0.6}
+          ],
+          "conflicts": ["control_vs_trust", "self_vs_family_expectations"],
+          "emotions": {"start": ["resentment", "fear"], "middle": ["anxiety", "envy", "pride"], "end": ["grief", "anger"]},
+          "ending_tone": "tragic",
+          "intensity": "heavy",
+          "warnings": ["domestic_violence", "abuse", "sexual_violence", "death_of_loved_one", "grief", "child_endangerment", "war_and_violence", "graphic_gore"],
+          "example_user_messages": [
+            "I'd do literally anything for my kids, and people keep telling me that's the problem.",
+            "My father never took me seriously and gave every chance to my brother instead.",
+            "I'm stuck in a marriage where he doesn't even pretend to respect me anymore.",
+            "There's a younger woman everyone adores and I can't stand being in the same room as her."
+          ],
+          "spoiler": {
+            "summary": "After Bran sees her with Jaime and is pushed from the tower, Cersei fights to keep her secret. Ned confronts her about her children's true father; Robert dies after Lancel gets him drunk, she installs Joffrey and has Ned arrested, but Joffrey executes Ned against her wishes and ignites a war. Tyrion arrives as Hand and outmanoeuvres her, sending Myrcella to Dorne. During the Blackwater she prepares to poison Tommen rather than be captured, until Tywin saves the city. She watches Margaery win Joffrey over, is ordered by Tywin to marry Loras, and loses Joffrey to poison at his wedding. Blaming Tyrion, she engineers his conviction, is forced by a grieving Jaime beside Joffrey's body, and finally confesses the incest to her father.",
+            "key_events": [
+              "Bran pushed from the tower to protect her secret",
+              "Robert strikes her",
+              "Installs Joffrey; Ned arrested and executed against her wishes",
+              "Nearly poisons Tommen during the Blackwater",
+              "Tywin orders her to marry Loras Tyrell",
+              "Joffrey poisoned at his wedding; she accuses Tyrion",
+              "Assaulted by Jaime beside Joffrey's corpse",
+              "Admits the incest to Tywin"
+            ],
+            "got_right": "She sees earlier than most how dangerous Joffrey's cruelty is, and her love for her children and for Jaime is real.",
+            "got_wrong": "She confuses control with love, blames Tyrion for everything, and her short-sighted schemes repeatedly backfire."
+          }
+        },
+        {
+          "id": "arc:game_of_thrones/cersei_lannister/holding_on_at_any_cost",
+          "title": "Holding on to power at any cost",
+          "literal_situation": "Later in the series, after losses that take away the people who anchored her, she fights to keep her grip on power and on what is left of her family.",
+          "pattern_label": "answering every loss by grabbing more control",
+          "pattern_text": "After losing the people who anchored her, a woman tries to regain security by outmanoeuvring everyone around her. Each clever plan creates new enemies, and each humiliation makes her more ruthless. She has to decide whether she will ever let go, or whether control is all she has left.",
+          "hook": "She is grieving and furious, convinced her younger brother is to blame, and watching a young rival win over someone she loves.",
+          "why_relatable": "When everything is slipping, why does grabbing harder feel like the only option? What happens to a person who can never admit a mistake? Can shame become fuel for revenge?",
+          "watch_for": [
+            "Notice who she empowers to get rid of a rival, and what that costs her.",
+            "Watch how she treats those who once humiliated her.",
+            "Is there anyone she still listens to?"
+          ],
+          "start_at": "S5E1",
+          "span": "S5-S8",
+          "situations": [
+            {"id": "grief_and_loss", "weight": 0.8},
+            {"id": "loneliness", "weight": 0.6},
+            {"id": "caring_for_family", "weight": 0.5},
+            {"id": "standing_up_to_authority", "weight": 0.4}
+          ],
+          "conflicts": ["control_vs_trust", "revenge_vs_forgiveness"],
+          "emotions": {"start": ["grief", "anger", "jealousy"], "middle": ["shame", "resentment"], "end": ["fear", "dread"]},
+          "ending_tone": "tragic",
+          "intensity": "heavy",
+          "warnings": ["death_of_main_character", "death_of_loved_one", "self_harm_or_suicide", "abuse", "torture", "war_and_violence", "graphic_gore", "betrayal", "bleak_ending"],
+          "example_user_messages": [
+            "Ever since my dad died I feel like I have to control everything or it'll all fall apart.",
+            "I got humiliated in front of everyone and all I can think about is making them pay.",
+            "Everyone tells me I'm my own worst enemy but I think they're just jealous.",
+            "I've pushed away everyone who loved me and I don't know how to stop."
+          ],
+          "spoiler": {
+            "summary": "Cersei arms the High Sparrow's Faith Militant to destroy Margaery, but the Sparrows arrest her too; she confesses to adultery and is forced into a naked walk of atonement through the city. Myrcella is poisoned by the Dornish, and Tommen bans trial by combat. On the day of her trial Cersei blows up the Great Sept with wildfire, killing Margaery, the Tyrells, her uncle Kevan and the Sparrows; Tommen jumps to his death and she crowns herself queen. She allies with Euron, poisons Tyene in front of Ellaria, fakes agreement to a truce against the dead, and hires the Golden Company while Jaime leaves her. She executes Missandei and refuses to surrender; when Daenerys burns King's Landing, she dies with Jaime and her unborn child beneath the collapsing Red Keep.",
+            "key_events": [
+              "Empowers the Faith Militant, then is imprisoned by it",
+              "Walk of atonement",
+              "Myrcella poisoned",
+              "Destroys the Great Sept with wildfire",
+              "Tommen takes his own life; she is crowned queen",
+              "Lies about joining the fight against the dead; Jaime leaves her",
+              "Executes Missandei",
+              "Dies with Jaime and her unborn child in the Red Keep"
+            ],
+            "got_right": "She endures extraordinary humiliation without breaking, and her love for Jaime is genuine to the end.",
+            "got_wrong": "She never takes responsibility, meets every setback with escalation, and her need for control destroys everyone she loves."
+          }
+        }
+      ]
+    },
+    {
+      "id": "char:game_of_thrones/sansa_stark",
+      "name": "Sansa Stark",
+      "role": "The elder daughter of a noble northern family, a romantic girl who dreams of marrying a prince and living like the heroines of the songs.",
+      "relations": [
+        {"target": "char:game_of_thrones/jon_snow", "relation": "sibling"},
+        {"target": "char:game_of_thrones/arya_stark", "relation": "sibling"},
+        {"target": "char:game_of_thrones/bran_stark", "relation": "sibling"},
+        {"target": "char:game_of_thrones/tyrion_lannister", "relation": "ex_partner"},
+        {"target": "char:game_of_thrones/cersei_lannister", "relation": "enemy"},
+        {"target": "char:game_of_thrones/theon_greyjoy", "relation": "friend"},
+        {"target": "char:game_of_thrones/brienne_of_tarth", "relation": "friend"},
+        {"target": "char:game_of_thrones/sandor_clegane", "relation": "friend"},
+        {"target": "char:game_of_thrones/daenerys_targaryen", "relation": "rival"}
+      ],
+      "arcs": [
+        {
+          "id": "arc:game_of_thrones/sansa_stark/fairy_tale_to_cage",
+          "title": "When the fairy tale turns into a cage",
+          "literal_situation": "A romantic young girl is betrothed to the handsome crown prince and follows her father to the glamorous capital, sure her dreams are coming true.",
+          "pattern_label": "learning the world isn't what you were promised",
+          "pattern_text": "A trusting young person who believes in fairy-tale endings gets exactly what she wished for, and it turns into a nightmare. Isolated among people who smile while they hurt her, she learns to hide her feelings, say what others want to hear and quietly watch how power works. The question is whether she can survive without losing who she is.",
+          "hook": "She is thrilled, a little vain and at odds with her sister, convinced the prince is kind and that life at court will be like the songs.",
+          "why_relatable": "What happens when the relationship or dream you wanted turns out to be cruel? How do you protect yourself when you can't leave? Is learning to lie a loss of innocence or a survival skill?",
+          "watch_for": [
+            "Notice how her way of speaking changes as time goes on.",
+            "Watch who actually helps her, compared with who only promises to.",
+            "What does she keep believing in, even when everything else is taken?"
+          ],
+          "start_at": "S1E1",
+          "span": "S1-S4",
+          "situations": [
+            {"id": "coming_of_age", "weight": 1.0},
+            {"id": "grief_and_loss", "weight": 0.7},
+            {"id": "leaving_home", "weight": 0.6},
+            {"id": "identity_and_self_acceptance", "weight": 0.5}
+          ],
+          "conflicts": ["safety_vs_growth", "truth_vs_protecting_others"],
+          "emotions": {"start": ["hope", "joy"], "middle": ["fear", "grief", "loneliness"], "end": ["determination", "confidence"]},
+          "ending_tone": "bittersweet",
+          "intensity": "heavy",
+          "warnings": ["abuse", "domestic_violence", "sexual_violence", "death_of_loved_one", "grief", "child_endangerment", "war_and_violence", "graphic_gore"],
+          "example_user_messages": [
+            "I was so excited about this relationship and now I'm scared of him but I can't just leave.",
+            "I moved to a big city thinking my life would be perfect and it's been the loneliest time of my life.",
+            "I've gotten really good at smiling and saying the right thing even when I'm dying inside.",
+            "I used to believe people were basically good and now I don't know what I believe."
+          ],
+          "spoiler": {
+            "summary": "Sansa sides with Joffrey over Arya on the Kingsroad and loses her wolf Lady. In King's Landing she begs for her father's life, but Joffrey has Ned beheaded in front of her and forces her to look at his head on a spike. Held hostage, she is beaten in court, nearly raped in a riot until the Hound saves her, and learns to feign loyalty. A Tyrell plan to marry her to Loras fails and she is forced to marry Tyrion, who treats her kindly; soon after, her mother and brother are murdered at the Red Wedding. When Joffrey is poisoned at his wedding, Dontos smuggles her to Littlefinger, who takes her to the Vale disguised as his niece. After Lysa tries to throw her through the Moon Door and Littlefinger kills Lysa, Sansa lies to the lords of the Vale to protect him, stepping into the game herself.",
+            "key_events": [
+              "Lady executed after the Kingsroad incident",
+              "Ned beheaded in front of her",
+              "Beaten in court and nearly raped in the riot; saved by the Hound",
+              "Forced to marry Tyrion",
+              "Mother and brother killed at the Red Wedding",
+              "Escapes King's Landing after Joffrey's poisoning",
+              "Littlefinger kills Lysa; Sansa covers for him"
+            ],
+            "got_right": "She survives through courtesy and quiet observation, shows kindness to people like Dontos and Tyrion, and learns to read people.",
+            "got_wrong": "Early on she chooses a fantasy over the truth, failing her sister and father, and she later leans too readily on Littlefinger."
+          }
+        },
+        {
+          "id": "arc:game_of_thrones/sansa_stark/taking_her_life_back",
+          "title": "Surviving the worst and taking back your life",
+          "literal_situation": "Later in the series, after everything she knew has been torn apart, a young woman is steered by a scheming protector into a marriage he promises will change her fortunes.",
+          "pattern_label": "escaping abuse and reclaiming your life",
+          "pattern_text": "A young woman who has already survived a great deal is pushed into a marriage that turns out to be brutally abusive. Escaping takes courage, help from an unlikely ally and her refusal to be broken. Once free, she has to decide whether to hide in safety or fight to reclaim the home and the self that were taken from her.",
+          "hook": "She is warier and more guarded than ever, told by her protector that this marriage is her chance at safety, power and revenge.",
+          "why_relatable": "How do you get out of a relationship that is destroying you? Can you forgive someone who hurt your family if they help you now? After surviving something terrible, how do you stop feeling like the person things just happen to?",
+          "watch_for": [
+            "Notice who she asks for help, and how she persuades them.",
+            "Watch how she treats someone who once betrayed her family.",
+            "When she disagrees with the people she relies on, does she say so?"
+          ],
+          "start_at": "S5",
+          "span": "S5-S6",
+          "situations": [
+            {"id": "starting_over", "weight": 0.8},
+            {"id": "standing_up_to_authority", "weight": 0.7},
+            {"id": "identity_and_self_acceptance", "weight": 0.6},
+            {"id": "divorce", "weight": 0.5}
+          ],
+          "conflicts": ["revenge_vs_forgiveness", "control_vs_trust"],
+          "emotions": {"start": ["anxiety", "dread"], "middle": ["fear", "shame", "anger"], "end": ["self_respect", "confidence"]},
+          "ending_tone": "hopeful",
+          "intensity": "heavy",
+          "warnings": ["sexual_violence", "domestic_violence", "abuse", "torture", "graphic_gore", "death_of_loved_one", "child_endangerment", "war_and_violence"],
+          "example_user_messages": [
+            "I got out of an abusive marriage and I'm still scared he'll find me.",
+            "The person who hurt my family is the one who helped me escape, and I don't know how to feel about that.",
+            "I keep telling my brother his plan won't work but he won't listen to me.",
+            "I don't want to be the one things just happen to anymore."
+          ],
+          "spoiler": {
+            "summary": "Littlefinger marries Sansa to Ramsay Bolton, who rapes her on their wedding night and keeps her a prisoner. She learns from Theon that Bran and Rickon are alive, and escapes with him by leaping from the walls. Brienne rescues them and Sansa accepts her service. At Castle Black she reunites with Jon and persuades him to retake Winterfell; she rejects Littlefinger in person but secretly writes to him for the Knights of the Vale. At the Battle of the Bastards Rickon is killed and Jon's army is nearly destroyed until Sansa arrives with the Vale knights. Winterfell is retaken, Sansa feeds Ramsay to his own hounds, and Jon is proclaimed King in the North while she becomes Lady of Winterfell.",
+            "key_events": [
+              "Married to and raped by Ramsay Bolton",
+              "Learns Bran and Rickon are alive",
+              "Escapes Winterfell with Theon; Brienne pledges to her",
+              "Reunites with Jon at Castle Black",
+              "Secretly summons the Knights of the Vale",
+              "Rickon killed; Vale army wins the Battle of the Bastards",
+              "Feeds Ramsay to his hounds"
+            ],
+            "got_right": "She refuses to be broken, reaches out to Theon with compassion, and her strategic call for help wins the battle.",
+            "got_wrong": "She hides the Vale army from Jon instead of trusting him, which nearly costs them everything."
+          }
+        },
+        {
+          "id": "arc:game_of_thrones/sansa_stark/stepping_into_leadership",
+          "title": "Stepping up while someone else holds the title",
+          "literal_situation": "Late in the series, once the story moves her into a position of real responsibility, she helps a family member govern, but clashes with him in public and worries about his trust in outsiders.",
+          "pattern_label": "becoming a leader while family doubts you",
+          "pattern_text": "A person who has learned hard lessons about power now helps run her family's affairs, but her sibling holds the title and doesn't always listen. Old family tensions resurface, a manipulative former mentor tries to divide them, and a powerful newcomer threatens the independence she fought for. She has to learn when to trust others and when to trust herself.",
+          "hook": "She has survived a great deal and earned her place, but someone else holds the title and she fears he is repeating their family's mistakes.",
+          "why_relatable": "How do you disagree with a family member who's in charge without undermining them? How do you tell a mentor's help from manipulation? Is protecting what's yours ambition or wisdom?",
+          "watch_for": [
+            "Notice how she handles someone trying to turn her against her own family.",
+            "Watch how she weighs loyalty to family against what she thinks is best for her people.",
+            "When does she trust her own judgment over the people around her?"
+          ],
+          "start_at": "S7E1",
+          "span": "S7-S8",
+          "situations": [
+            {"id": "becoming_a_manager", "weight": 0.8},
+            {"id": "sibling_rivalry", "weight": 0.6},
+            {"id": "confidence_struggle", "weight": 0.5},
+            {"id": "responsibility_you_didnt_ask_for", "weight": 0.5}
+          ],
+          "conflicts": ["control_vs_trust", "loyalty_vs_ambition"],
+          "emotions": {"start": ["anxiety", "determination"], "middle": ["resentment", "self_doubt"], "end": ["confidence", "self_respect"]},
+          "ending_tone": "hopeful",
+          "intensity": "moderate",
+          "warnings": ["war_and_violence", "graphic_gore", "betrayal", "death_of_loved_one", "grief"],
+          "example_user_messages": [
+            "My brother runs the family business and every time I disagree he says I'm undermining him.",
+            "My sister came home after years away and she feels like a stranger to me.",
+            "Everyone expects me to trust his new partner and my gut says no.",
+            "I've finally realised I'm actually good at leading, and I'm done apologising for it."
+          ],
+          "spoiler": {
+            "summary": "Left as regent when Jon goes south, Sansa prepares the North for winter. Bran and Arya return, and Littlefinger tries to set the sisters against each other with an old letter; instead Sansa, using Bran's visions, puts Littlefinger on trial and Arya executes him. When Jon returns having bent the knee to Daenerys, Sansa distrusts the queen and questions her plans for the North. She shelters in the crypts during the Battle of Winterfell, then, after Jon reveals he is a Targaryen and swears her to secrecy, tells Tyrion anyway, setting off a chain of betrayals. After Daenerys burns King's Landing and is killed by Jon, Sansa demands independence for the North at the Great Council and is crowned Queen in the North.",
+            "key_events": [
+              "Rules Winterfell as regent",
+              "Reunited with Bran and Arya",
+              "Littlefinger tried and executed",
+              "Clashes with Daenerys over the North",
+              "Reveals Jon's parentage to Tyrion despite her oath",
+              "Secures independence for the North",
+              "Crowned Queen in the North"
+            ],
+            "got_right": "She plans practically, learns to trust her sister, sees through Littlefinger and stands firm for her people's independence.",
+            "got_wrong": "She breaks her promise to Jon by revealing his secret, a choice with deadly consequences."
+          }
+        }
+      ]
+    }
+  ]
+}

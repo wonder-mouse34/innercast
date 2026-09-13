@@ -1,0 +1,941 @@
+{
+  "show": "squid_game",
+  "characters": [
+    {
+      "id": "char:squid_game/seong_gi_hun",
+      "name": "Seong Gi-hun",
+      "role": "A divorced, debt-ridden gambler living with his elderly mother who accepts a mysterious invitation to play children's games for a huge cash prize.",
+      "relations": [
+        {
+          "target": "char:squid_game/cho_sang_woo",
+          "relation": "friend"
+        },
+        {
+          "target": "char:squid_game/oh_il_nam",
+          "relation": "friend"
+        },
+        {
+          "target": "char:squid_game/kang_sae_byeok",
+          "relation": "friend"
+        },
+        {
+          "target": "char:squid_game/ali_abdul",
+          "relation": "friend"
+        },
+        {
+          "target": "char:squid_game/hwang_jun_ho",
+          "relation": "colleague"
+        },
+        {
+          "target": "char:squid_game/jang_deok_su",
+          "relation": "enemy"
+        }
+      ],
+      "arcs": [
+        {
+          "id": "arc:squid_game/seong_gi_hun/the_screw_up_who_wants_to_do_right",
+          "title": "The screw-up who wants to do right by his family",
+          "literal_situation": "Gi-hun steals from his mother to bet on horse races, owes money to loan sharks who threaten to take his organs, and can barely afford a birthday dinner for the daughter his ex-wife's new husband may take abroad. A stranger offers him a way out through a series of games.",
+          "pattern_label": "a lovable failure desperate to become someone his family can count on",
+          "pattern_text": "A warm-hearted person whose bad habits and bad luck have wrecked their finances and let down everyone who loves them is handed one last desperate chance to fix it all. Under crushing pressure they have to decide how far they will go, and whether they can stay a decent person when decency seems to cost everything.",
+          "hook": "Gi-hun is middle-aged, broke, living with his mother and ashamed in front of his daughter. He still believes his luck is about to turn, and he says yes to a game he knows nothing about.",
+          "why_relatable": "He loves his family but keeps failing them, and his good intentions never survive his next impulse. Can someone who has disappointed everyone still be trusted? Is kindness a strength or a weakness when everything is at stake?",
+          "watch_for": [
+            "What does he do when helping someone else might cost him his own chance?",
+            "How does he treat the people around him who are weaker than he is?",
+            "Does he actually change, or does he just want to be seen as someone who has?"
+          ],
+          "start_at": "S1E1",
+          "span": "S1",
+          "situations": [
+            {
+              "id": "addiction_and_recovery",
+              "weight": 0.8
+            },
+            {
+              "id": "redemption_after_mistakes",
+              "weight": 0.85
+            },
+            {
+              "id": "caring_for_family",
+              "weight": 0.7
+            },
+            {
+              "id": "divorce",
+              "weight": 0.4
+            }
+          ],
+          "conflicts": [
+            "power_vs_morality",
+            "duty_vs_desire"
+          ],
+          "emotions": {
+            "start": [
+              "shame",
+              "inadequacy",
+              "hope"
+            ],
+            "middle": [
+              "fear",
+              "guilt",
+              "belonging"
+            ],
+            "end": [
+              "grief",
+              "guilt",
+              "numbness"
+            ]
+          },
+          "ending_tone": "bittersweet",
+          "intensity": "heavy",
+          "warnings": [
+            "war_and_violence",
+            "graphic_gore",
+            "death_of_loved_one",
+            "grief",
+            "betrayal",
+            "self_harm_or_suicide",
+            "serious_illness",
+            "addiction"
+          ],
+          "example_user_messages": [
+            "I've let my family down so many times with money that even my kid doesn't expect anything from me anymore.",
+            "I'm drowning in debt and I keep thinking one big win will fix everything, even though I know that's how I got here.",
+            "My ex's new partner can give my child everything I can't, and it makes me feel worthless.",
+            "I want to be a good person but I'm so desperate right now I'm scared of what I might do.",
+            "I'm in my forties, living with my mom again, and I don't know how I ended up like this."
+          ],
+          "spoiler": {
+            "summary": "Gi-hun enters the deadly games, votes to leave after the first massacre, then returns when his mother needs diabetes treatment. He tries to protect weaker players, but cheats his friend Il-nam at marbles. Il-nam lets him win anyway before his apparent death. Sae-byeok talks him out of killing Sang-woo, then Sang-woo kills the wounded Sae-byeok. In the final game Gi-hun spares Sang-woo and offers to quit together, but Sang-woo kills himself and asks Gi-hun to look after his mother. Gi-hun wins the prize and comes home to find his mother dead. A year later he learns that Il-nam created the games. He places Sae-byeok's brother with Sang-woo's mother along with money, then turns back from a flight to his daughter to take on the games.",
+            "key_events": [
+              "Votes to end the games; returns because of his mother's illness",
+              "Deceives Il-nam at marbles; Il-nam lets him win as his 'gganbu'",
+              "Sae-byeok is killed by Sang-woo",
+              "Spares Sang-woo, who stabs himself and asks Gi-hun to care for his mother",
+              "Wins the prize; finds his mother dead",
+              "Il-nam reveals on his deathbed that he created the games",
+              "Abandons his flight to his daughter and vows to stop the games"
+            ],
+            "got_right": "He holds on to empathy and loyalty in a place built to destroy them, and refuses to become a killer even when he could.",
+            "got_wrong": "His impulsiveness and wishful thinking keep hurting the people he loves, and in the marbles game desperation leads him to exploit a vulnerable friend."
+          }
+        },
+        {
+          "id": "arc:squid_game/seong_gi_hun/the_crusade_against_the_system",
+          "title": "The man who can't walk away",
+          "literal_situation": "Later in the series, after a turning point that leaves him haunted and unable to live a normal life, Gi-hun pours everything he has into tracking down the people behind the games, determined to stop them instead of moving on.",
+          "pattern_label": "survivor's guilt turned into an all-consuming mission",
+          "pattern_text": "After living through something that destroyed many others, a person cannot go back to ordinary life. They throw themselves into a mission to stop it happening to anyone else. The mission gives their guilt a purpose, but it also costs them relationships and judgment, and it raises the question of what they are willing to sacrifice to be the hero.",
+          "hook": "Gi-hun is older, harder and grimly focused. He has put his own life on hold and spends his days hunting for a way back into the thing he most fears.",
+          "why_relatable": "He feels he owes something to people who can no longer be helped. Is he fighting injustice, or punishing himself? Can one person stand up to a whole system, and what happens to the people who follow him?",
+          "watch_for": [
+            "When does his sense of justice help others, and when does it put them in danger?",
+            "How does he handle being responsible for other people's choices?",
+            "What does he think he owes the people he couldn't save?"
+          ],
+          "start_at": "S2E1",
+          "span": "S2-S3",
+          "situations": [
+            {
+              "id": "standing_up_to_authority",
+              "weight": 0.9
+            },
+            {
+              "id": "grief_and_loss",
+              "weight": 0.6
+            },
+            {
+              "id": "responsibility_you_didnt_ask_for",
+              "weight": 0.7
+            },
+            {
+              "id": "redemption_after_mistakes",
+              "weight": 0.5
+            }
+          ],
+          "conflicts": [
+            "revenge_vs_forgiveness",
+            "past_vs_future"
+          ],
+          "emotions": {
+            "start": [
+              "guilt",
+              "determination",
+              "anger"
+            ],
+            "middle": [
+              "hope",
+              "overwhelm",
+              "grief"
+            ],
+            "end": [
+              "guilt",
+              "acceptance",
+              "love"
+            ]
+          },
+          "ending_tone": "tragic",
+          "intensity": "heavy",
+          "warnings": [
+            "death_of_main_character",
+            "death_of_loved_one",
+            "war_and_violence",
+            "graphic_gore",
+            "betrayal",
+            "self_harm_or_suicide",
+            "child_endangerment",
+            "bleak_ending"
+          ],
+          "example_user_messages": [
+            "I got out of a terrible situation that others didn't survive and I can't just go back to normal life.",
+            "I've made fighting this injustice my whole life, and I'm starting to wonder if it's really about guilt.",
+            "People followed my lead and got hurt, and I don't know how to live with that.",
+            "Everyone tells me to move on and be with my family, but walking away feels like betraying the people who didn't make it."
+          ],
+          "spoiler": {
+            "summary": "For three years Gi-hun uses his prize money to hunt the recruiter. He beats him at Russian roulette, allies with Jun-ho and Woo-seok, and deliberately re-enters the 34th games. His tracker is found. He warns the players and pushes votes to leave, then leads an armed rebellion that fails because his trusted ally 'Young-il' is the Front Man, Hwang In-ho, who executes his best friend Jung-bae in front of him. Broken, Gi-hun strangles Dae-ho, whom he blames, and attempts suicide. He then protects Jun-hee's newborn baby. After Jun-hee sacrifices herself, he spares a player despite In-ho's offer of a knife, fights to the end of the Sky Squid Game, and sacrifices himself so the baby survives, declaring 'We are not horses. We are humans.'",
+            "key_events": [
+              "Wins a Russian roulette game against the recruiter, who shoots himself",
+              "Re-enters the games deliberately; his tracker is removed",
+              "Armed rebellion fails; Young-il is revealed as the Front Man",
+              "Jung-bae is executed in front of him",
+              "Kills Dae-ho in rage, then attempts suicide",
+              "Protects Jun-hee's newborn baby",
+              "Sacrifices himself in the final game to save the baby"
+            ],
+            "got_right": "He refuses to let the system decide who counts as human, and in the end chooses to protect someone helpless over his own survival.",
+            "got_wrong": "His recklessness and poor planning turn his crusade into a disaster for the people who trusted him, and guilt turns into rage against the wrong target."
+          }
+        }
+      ]
+    },
+    {
+      "id": "char:squid_game/cho_sang_woo",
+      "name": "Cho Sang-woo",
+      "role": "Gi-hun's brilliant childhood friend, the neighbourhood's pride and a top-university graduate, who has quietly fallen into enormous debt.",
+      "relations": [
+        {
+          "target": "char:squid_game/seong_gi_hun",
+          "relation": "friend"
+        },
+        {
+          "target": "char:squid_game/seong_gi_hun",
+          "relation": "rival"
+        },
+        {
+          "target": "char:squid_game/ali_abdul",
+          "relation": "protege"
+        },
+        {
+          "target": "char:squid_game/kang_sae_byeok",
+          "relation": "rival"
+        },
+        {
+          "target": "char:squid_game/oh_il_nam",
+          "relation": "colleague"
+        },
+        {
+          "target": "char:squid_game/jang_deok_su",
+          "relation": "enemy"
+        }
+      ],
+      "arcs": [
+        {
+          "id": "arc:squid_game/cho_sang_woo/the_golden_boy_who_fell",
+          "title": "The golden boy who can't face home",
+          "literal_situation": "Sang-woo, the gifted son everyone in the neighbourhood boasted about, has lost a fortune in bad investments that put his mother's shop at risk. He can't bring himself to tell her and sees the game as his only way out.",
+          "pattern_label": "the family's pride hiding a catastrophic failure",
+          "pattern_text": "Someone who was always the smart one, the one everyone expected great things from, has made a disastrous mistake that could ruin the people who believed in them. Too ashamed to admit it, they decide that only winning can undo it. The longer they chase that win, the more they are tempted to treat other people as obstacles.",
+          "hook": "Sang-woo is calm, sharp and composed, the person in the room who figures out the rules first. Behind that, he is hiding from his own mother.",
+          "why_relatable": "He believes being clever and rational is what will save him. How much of himself will he trade away to avoid the shame of failing? Can someone who has only ever been praised for winning admit he has lost?",
+          "watch_for": [
+            "How does he talk about his mother, and why can't he face her?",
+            "Where does he draw the line between being strategic and being ruthless?",
+            "How does he treat people who trust him?"
+          ],
+          "start_at": "S1E1",
+          "span": "S1",
+          "situations": [
+            {
+              "id": "family_expectations",
+              "weight": 0.9
+            },
+            {
+              "id": "taking_a_big_risk",
+              "weight": 0.6
+            },
+            {
+              "id": "losing_a_job",
+              "weight": 0.4
+            },
+            {
+              "id": "imposter_syndrome",
+              "weight": 0.3
+            }
+          ],
+          "conflicts": [
+            "power_vs_morality",
+            "self_vs_family_expectations"
+          ],
+          "emotions": {
+            "start": [
+              "shame",
+              "fear",
+              "dread"
+            ],
+            "middle": [
+              "determination",
+              "guilt",
+              "loneliness"
+            ],
+            "end": [
+              "guilt",
+              "shame",
+              "acceptance"
+            ]
+          },
+          "ending_tone": "tragic",
+          "intensity": "heavy",
+          "warnings": [
+            "death_of_main_character",
+            "self_harm_or_suicide",
+            "betrayal",
+            "war_and_violence",
+            "graphic_gore"
+          ],
+          "example_user_messages": [
+            "Everyone back home thinks I'm this huge success, and I've actually lost everything, including money that wasn't mine.",
+            "I can't tell my mom how badly I messed up. She's bragged about me my whole life.",
+            "I've always been the smart one, so admitting I failed feels impossible.",
+            "I'm starting to justify things I would never have done before, just to get out of this hole."
+          ],
+          "spoiler": {
+            "summary": "Sang-woo embezzled clients' money in failed futures trades and is wanted by the police. After the vote he nearly kills himself, then returns to the games. He is the group's strategist and a real friend to Ali, but in marbles he tricks Ali, swapping his marbles for pebbles, and Ali is shot. He pushes the glassmaker off the bridge to learn which panels are safe, then kills the gravely wounded Sae-byeok so Gi-hun can't vote to end the game. In the final Squid Game he fights Gi-hun to the death. When Gi-hun spares him and offers to quit together, Sang-woo apologises, stabs himself in the neck and asks Gi-hun to look after his mother.",
+            "key_events": [
+              "Wanted by police for stealing clients' money",
+              "Nearly takes his own life between rounds",
+              "Betrays Ali in marbles",
+              "Shoves the glassmaker to his death",
+              "Kills Sae-byeok",
+              "Kills himself in the final game, asking Gi-hun to care for his mother"
+            ],
+            "got_right": "His love for his mother is real, and at the very end he admits what he has become and takes responsibility for it.",
+            "got_wrong": "He decides that winning justifies anything and sacrifices every relationship, including the people who trusted him most, to avoid facing his failure."
+          }
+        }
+      ]
+    },
+    {
+      "id": "char:squid_game/kang_sae_byeok",
+      "name": "Kang Sae-byeok",
+      "role": "A guarded, self-reliant pickpocket and defector from North Korea who needs money to bring her scattered family back together.",
+      "relations": [
+        {
+          "target": "char:squid_game/seong_gi_hun",
+          "relation": "friend"
+        },
+        {
+          "target": "char:squid_game/ji_yeong",
+          "relation": "friend"
+        },
+        {
+          "target": "char:squid_game/jang_deok_su",
+          "relation": "enemy"
+        },
+        {
+          "target": "char:squid_game/jang_deok_su",
+          "relation": "boss"
+        },
+        {
+          "target": "char:squid_game/cho_sang_woo",
+          "relation": "enemy"
+        },
+        {
+          "target": "char:squid_game/ali_abdul",
+          "relation": "colleague"
+        }
+      ],
+      "arcs": [
+        {
+          "id": "arc:squid_game/kang_sae_byeok/the_loner_who_trusts_no_one",
+          "title": "The loner who trusts no one",
+          "literal_situation": "Sae-byeok escaped North Korea. Her little brother is in a children's home and her mother is still stuck on the other side of the border. Working alone, she needs enough money to pay a broker and reunite them, and she enters the games with no intention of relying on anyone.",
+          "pattern_label": "a fiercely independent person learning to let others in",
+          "pattern_text": "A young person who has had to look after herself and her family alone has learned that trusting people gets you hurt. She keeps everyone at arm's length and carries every burden herself. Surviving now may depend on the one thing she has avoided: letting someone get close.",
+          "hook": "Sae-byeok is quiet, sharp and always watching the exits. She is carrying a promise to her younger brother that she refuses to break.",
+          "why_relatable": "She is responsible for others and has no one responsible for her. Is keeping everyone out what keeps her safe, or what keeps her alone? What would it take for her to accept help?",
+          "watch_for": [
+            "Who, if anyone, manages to get past her guard, and how?",
+            "When does her independence protect her, and when does it isolate her?",
+            "What does she reveal about her family, and to whom?"
+          ],
+          "start_at": "S1E1",
+          "span": "S1",
+          "situations": [
+            {
+              "id": "caring_for_family",
+              "weight": 0.85
+            },
+            {
+              "id": "responsibility_you_didnt_ask_for",
+              "weight": 0.7
+            },
+            {
+              "id": "finding_your_people",
+              "weight": 0.6
+            },
+            {
+              "id": "moving_somewhere_new",
+              "weight": 0.4
+            }
+          ],
+          "conflicts": [
+            "independence_vs_connection",
+            "control_vs_trust"
+          ],
+          "emotions": {
+            "start": [
+              "loneliness",
+              "determination",
+              "anxiety"
+            ],
+            "middle": [
+              "belonging",
+              "grief",
+              "hope"
+            ],
+            "end": [
+              "love",
+              "fear"
+            ]
+          },
+          "ending_tone": "tragic",
+          "intensity": "heavy",
+          "warnings": [
+            "death_of_main_character",
+            "death_of_loved_one",
+            "war_and_violence",
+            "graphic_gore",
+            "betrayal",
+            "grief"
+          ],
+          "example_user_messages": [
+            "I've been taking care of my younger sibling on my own since we moved here and I don't let anyone help.",
+            "I learned early that if you trust people they let you down, so I just handle everything myself.",
+            "My family is split up and I feel like it's entirely on me to bring us back together.",
+            "Someone keeps trying to be my friend and I don't know how to let them."
+          ],
+          "spoiler": {
+            "summary": "Sae-byeok votes to continue and returns to the games to pay a broker. Her father was killed crossing the border and her mother was caught and sent back. She crawls through air ducts to spy on the organisers. She is attacked by her former boss Deok-su and reluctantly joins Gi-hun's team. In marbles she and Ji-yeong spend their time sharing their stories, and Ji-yeong deliberately loses so Sae-byeok can live. A glass shard badly wounds her after the glass bridge. On the final night she and Gi-hun promise to care for each other's families, and she stops him from killing Sang-woo. While Gi-hun goes for help, Sang-woo kills her. Gi-hun later keeps his promise and places her brother Cheol with Sang-woo's mother.",
+            "key_events": [
+              "Former employee of Deok-su, who targets her",
+              "Spies on the organisers through the air vents",
+              "Ji-yeong sacrifices herself for her in marbles",
+              "Wounded by glass after the fifth game",
+              "Stops Gi-hun from killing Sang-woo",
+              "Killed by Sang-woo",
+              "Gi-hun places her brother with Sang-woo's mother"
+            ],
+            "got_right": "She stays clear-headed and principled, and lets herself form real bonds with Ji-yeong and Gi-hun.",
+            "got_wrong": "She hides how badly she is hurt and trusts no one enough to say so until it is too late."
+          }
+        }
+      ]
+    },
+    {
+      "id": "char:squid_game/oh_il_nam",
+      "name": "Oh Il-nam",
+      "role": "Player 001, the oldest contestant, a frail and cheerful man who says he has a brain tumour and memory problems.",
+      "relations": [
+        {
+          "target": "char:squid_game/seong_gi_hun",
+          "relation": "friend"
+        },
+        {
+          "target": "char:squid_game/cho_sang_woo",
+          "relation": "colleague"
+        },
+        {
+          "target": "char:squid_game/ali_abdul",
+          "relation": "colleague"
+        }
+      ],
+      "arcs": [
+        {
+          "id": "arc:squid_game/oh_il_nam/one_last_game",
+          "title": "One last game before the end",
+          "literal_situation": "An elderly man with a brain tumour and a failing memory joins the games, saying he would rather play than sit at home waiting to die. The childhood games stir up memories of the neighbourhood where he grew up.",
+          "pattern_label": "facing the end of life by reaching back to childhood",
+          "pattern_text": "Near the end of their life, someone feels that the years have gone flat and empty, and they reach back to the simple joys of childhood to feel alive one more time. Along the way an unexpected friendship reminds them what connection felt like. It also forces the question of what their life has actually meant.",
+          "hook": "Il-nam is the oldest player by far, frail and forgetful, and quickly adopted by a kind stranger who decides to look out for him.",
+          "why_relatable": "He is facing the end with a strange mix of lightness and loneliness. What makes a life feel worth having lived? Can a short, late friendship matter as much as a long one?",
+          "watch_for": [
+            "What do the childhood games bring back for him?",
+            "How does he respond when a younger person looks after him?",
+            "What does he seem to be looking for, beyond survival?"
+          ],
+          "start_at": "S1E1",
+          "span": "S1",
+          "situations": [
+            {
+              "id": "illness_or_injury",
+              "weight": 0.7
+            },
+            {
+              "id": "loneliness",
+              "weight": 0.8
+            },
+            {
+              "id": "finding_your_people",
+              "weight": 0.5
+            },
+            {
+              "id": "grief_and_loss",
+              "weight": 0.3
+            }
+          ],
+          "conflicts": [
+            "holding_on_vs_letting_go",
+            "power_vs_morality"
+          ],
+          "emotions": {
+            "start": [
+              "boredom",
+              "nostalgia",
+              "loneliness"
+            ],
+            "middle": [
+              "joy",
+              "belonging",
+              "curiosity"
+            ],
+            "end": [
+              "nostalgia",
+              "loneliness",
+              "acceptance"
+            ]
+          },
+          "ending_tone": "ambiguous",
+          "intensity": "heavy",
+          "warnings": [
+            "serious_illness",
+            "death_of_main_character",
+            "war_and_violence",
+            "graphic_gore",
+            "betrayal"
+          ],
+          "example_user_messages": [
+            "I'm getting old and everything feels flat. Nothing excites me anymore.",
+            "I keep thinking about my childhood. It's the last time I remember really having fun.",
+            "I got a serious diagnosis and I'd rather do something that makes me feel alive than just wait.",
+            "I made a friend late in life and it's reminded me how lonely I've been for years."
+          ],
+          "spoiler": {
+            "summary": "Il-nam is the creator and host of the Squid Games. He is a rich loan-shark tycoon who invented them in 1988 to cure his and his wealthy clients' boredom, and he joined the 33rd game as Player 001 to finally play rather than watch before his tumour killed him. He casts the deciding vote to stop the games, and his words convince Gi-hun to return. In marbles he pretends to be confused, sees through Gi-hun's cheating and gives him the last marble anyway, calling him 'gganbu'. His elimination is faked. A year later he summons Gi-hun to his deathbed, reveals the truth, explains his cynical view of humanity and bets on whether anyone will help a drunk man freezing in the street. Someone does, and Il-nam dies. He had earlier groomed Hwang In-ho as his successor.",
+            "key_events": [
+              "Casts the deciding vote to end the games",
+              "Lets Gi-hun win at marbles; his 'elimination' is staged",
+              "Revealed on his deathbed as the creator and host of the games",
+              "Final bet on whether anyone will help a man in the street",
+              "Dies; In-ho takes full control of the games"
+            ],
+            "got_right": "He recognises that real connection and play gave him more joy than any amount of money.",
+            "got_wrong": "He turned his own emptiness and contempt for people into a machine that killed thousands for entertainment."
+          }
+        }
+      ]
+    },
+    {
+      "id": "char:squid_game/ali_abdul",
+      "name": "Ali Abdul",
+      "role": "A kind, polite migrant worker from Pakistan whose factory boss has stopped paying him, leaving his wife and baby son without support.",
+      "relations": [
+        {
+          "target": "char:squid_game/cho_sang_woo",
+          "relation": "mentor"
+        },
+        {
+          "target": "char:squid_game/seong_gi_hun",
+          "relation": "friend"
+        },
+        {
+          "target": "char:squid_game/oh_il_nam",
+          "relation": "colleague"
+        },
+        {
+          "target": "char:squid_game/kang_sae_byeok",
+          "relation": "colleague"
+        }
+      ],
+      "arcs": [
+        {
+          "id": "arc:squid_game/ali_abdul/a_trusting_outsider",
+          "title": "A good man far from home",
+          "literal_situation": "Ali moved to Korea to support his family, but his boss has refused to pay him for six months and he lost two fingers in a factory accident he couldn't afford to treat. Unfamiliar with the local games and customs, he relies on the kindness of the people he meets.",
+          "pattern_label": "a trusting outsider exploited by the people he depends on",
+          "pattern_text": "A person who moved far from home to provide for their family is being cheated by someone with power over them. They are generous, grateful and quick to trust. In an unfamiliar place they lean on the few people who have been kind to them, and they have to work out who really has their back.",
+          "hook": "Ali is the strongest and gentlest of his group. He is endlessly thankful for small favours and quietly desperate to get money back to his wife and son.",
+          "why_relatable": "He is an outsider who doesn't know the rules everyone else takes for granted. Is his trust in others a strength or a danger? What can someone in his position do when the people above him take advantage?",
+          "watch_for": [
+            "Who does he choose to rely on, and why?",
+            "How do the others treat him because he is a newcomer?",
+            "What does he owe the people who have been kind to him?"
+          ],
+          "start_at": "S1E1",
+          "span": "S1",
+          "situations": [
+            {
+              "id": "moving_somewhere_new",
+              "weight": 0.8
+            },
+            {
+              "id": "caring_for_family",
+              "weight": 0.8
+            },
+            {
+              "id": "mentor_and_protege",
+              "weight": 0.5
+            },
+            {
+              "id": "standing_up_to_authority",
+              "weight": 0.4
+            }
+          ],
+          "conflicts": [
+            "control_vs_trust",
+            "belonging_vs_integrity"
+          ],
+          "emotions": {
+            "start": [
+              "anxiety",
+              "hope",
+              "determination"
+            ],
+            "middle": [
+              "belonging",
+              "relief",
+              "fear"
+            ],
+            "end": [
+              "betrayal",
+              "grief"
+            ]
+          },
+          "ending_tone": "tragic",
+          "intensity": "heavy",
+          "warnings": [
+            "death_of_main_character",
+            "betrayal",
+            "war_and_violence",
+            "graphic_gore"
+          ],
+          "example_user_messages": [
+            "I moved to another country to support my family and my employer hasn't paid me in months.",
+            "I don't really understand how things work here, so I just trust whoever is nice to me.",
+            "People take advantage of me because I'm too polite to push back.",
+            "I found someone at work who took me under their wing, and I'd do anything for them."
+          ],
+          "spoiler": {
+            "summary": "Ali saves Gi-hun's life in the first game and votes to leave. When he finally confronts his boss, he accidentally injures him, takes the wages he is owed and sends his wife and son back to Pakistan, then returns to the games. He becomes devoted to Sang-woo, who once paid his bus fare, and calls him 'older brother'. In marbles Ali wins every round fairly. Sang-woo then says he has a plan to save them both, hangs Ali's marble bag around his neck, swaps the marbles for pebbles and hands them in. Ali realises he has been betrayed and is shot.",
+            "key_events": [
+              "Saves Gi-hun in Red Light, Green Light",
+              "Confronts his boss, takes his wages and sends his family home",
+              "Pairs with Sang-woo in marbles",
+              "Tricked by Sang-woo, who swaps his marbles for pebbles",
+              "Shot after realising the betrayal"
+            ],
+            "got_right": "He stays generous and honest even when the setting rewards the opposite, and he stands up for his family.",
+            "got_wrong": "He hands over his trust completely, and lets gratitude stop him from questioning someone who has an obvious reason to deceive him."
+          }
+        }
+      ]
+    },
+    {
+      "id": "char:squid_game/hwang_jun_ho",
+      "name": "Hwang Jun-ho",
+      "role": "A young police detective whose older brother, also a police officer, has gone missing.",
+      "relations": [
+        {
+          "target": "char:squid_game/seong_gi_hun",
+          "relation": "colleague"
+        }
+      ],
+      "arcs": [
+        {
+          "id": "arc:squid_game/hwang_jun_ho/searching_for_a_missing_brother",
+          "title": "Searching for a missing brother",
+          "literal_situation": "Jun-ho's older brother, who once gave him a kidney, has stopped answering his phone. In the empty apartment Jun-ho finds a strange business card that matches the story of a man everyone at the police station laughed off, so he decides to follow the lead himself.",
+          "pattern_label": "chasing the truth about a sibling you idolised",
+          "pattern_text": "A person whose older sibling was their role model and once saved their life suddenly loses contact with them. When no one in authority takes it seriously, they go after the truth alone, risking their career and safety. What they find may force them to choose between justice and loyalty to family.",
+          "hook": "Jun-ho is meticulous, stubborn and on his own. His mother is worried sick, his colleagues are indifferent, and he owes his brother his life.",
+          "why_relatable": "He feels he owes his brother everything, and no one else will look. How far should you go for family when the institutions meant to help don't care? What do you do when the person you looked up to may not be who you thought?",
+          "watch_for": [
+            "How does his debt to his brother shape the risks he takes?",
+            "What does he do when he can't prove what he knows?",
+            "Is he acting as a detective or as a younger brother?"
+          ],
+          "start_at": "S1E2",
+          "span": "S1 onward",
+          "situations": [
+            {
+              "id": "standing_up_to_authority",
+              "weight": 0.7
+            },
+            {
+              "id": "grief_and_loss",
+              "weight": 0.5
+            },
+            {
+              "id": "family_expectations",
+              "weight": 0.4
+            },
+            {
+              "id": "career_change",
+              "weight": 0.3
+            }
+          ],
+          "conflicts": [
+            "truth_vs_protecting_others",
+            "duty_vs_desire"
+          ],
+          "emotions": {
+            "start": [
+              "anxiety",
+              "determination",
+              "longing"
+            ],
+            "middle": [
+              "betrayal",
+              "confusion",
+              "anger"
+            ],
+            "end": [
+              "grief",
+              "confusion",
+              "hope"
+            ]
+          },
+          "ending_tone": "bittersweet",
+          "intensity": "heavy",
+          "warnings": [
+            "war_and_violence",
+            "graphic_gore",
+            "betrayal",
+            "medical_trauma"
+          ],
+          "example_user_messages": [
+            "My brother cut contact and nobody seems worried except me and my mom.",
+            "I reported something serious and no one believes me, so I feel like I have to handle it myself.",
+            "My older sibling was my hero, and now I'm scared I didn't really know them.",
+            "I owe my brother so much that I'd risk anything to find out what happened to him."
+          ],
+          "spoiler": {
+            "summary": "Jun-ho infiltrates the island disguised as a worker, uncovers an organ-trafficking ring among the staff and kills its ringleader. In the Front Man's archive he discovers that his brother In-ho won the games in 2015. He escapes with evidence, but on a cliff the Front Man unmasks as In-ho, shoots him in the shoulder, and Jun-ho falls into the sea. In-ho secretly arranged his rescue. After a coma he becomes a traffic cop no one believes, teams up with Gi-hun while lying that he never saw the Front Man's face, resigns and leads a mercenary search for the island. The sea captain who saved him turns out to be In-ho's plant and kills most of the crew. Jun-ho reaches the island too late, sees In-ho carry the baby off the final platform, and is ignored when he asks why. Later In-ho leaves the baby and all the prize money with him.",
+            "key_events": [
+              "Infiltrates the games as a worker; exposes organ trafficking",
+              "Discovers his brother won the 2015 games",
+              "The Front Man is revealed as his brother In-ho, who shoots him off a cliff",
+              "Survives after a coma; demoted to traffic duty and disbelieved",
+              "Hides his brother's identity from Gi-hun",
+              "Betrayed by Captain Park, secretly working for In-ho",
+              "Receives Jun-hee's baby and the prize money from In-ho"
+            ],
+            "got_right": "He never gives up on the truth or on the victims, even when every institution dismisses him.",
+            "got_wrong": "His loyalty to his brother leads him to lie to his allies, and his trust in the man who rescued him puts his whole mission at risk."
+          }
+        }
+      ]
+    },
+    {
+      "id": "char:squid_game/ji_yeong",
+      "name": "Ji-yeong",
+      "role": "Player 240, a laid-back, sardonic loner who seems unusually indifferent to what happens to her.",
+      "relations": [
+        {
+          "target": "char:squid_game/kang_sae_byeok",
+          "relation": "friend"
+        },
+        {
+          "target": "char:squid_game/seong_gi_hun",
+          "relation": "colleague"
+        }
+      ],
+      "arcs": [
+        {
+          "id": "arc:squid_game/ji_yeong/one_real_friend",
+          "title": "Finding one real friend",
+          "literal_situation": "Ji-yeong joins Gi-hun's team only because Sae-byeok picks her, and she nearly walks away when one teammate complains. She has nobody waiting for her outside and treats the whole thing with dark humour.",
+          "pattern_label": "a person with nothing to lose finding one real connection",
+          "pattern_text": "Someone carrying a painful past has stopped expecting anything from life and hides that behind jokes and indifference. Then one person actually talks to them and listens, and for a short time they feel seen. The question becomes what that single connection is worth to them.",
+          "hook": "Ji-yeong is blunt, funny and unbothered, the kind of person who shrugs at danger, and she is openly irritated by anyone preaching about forgiveness.",
+          "why_relatable": "She acts as if nothing matters, but her hostility to certain people hints at old wounds. What changes when someone treats you as a friend? Can a single conversation give a person a reason to care?",
+          "watch_for": [
+            "What is behind her dislike of the religious player?",
+            "How does she change when someone opens up to her?",
+            "What does she seem to want for other people that she doesn't want for herself?"
+          ],
+          "start_at": "S1E4",
+          "span": "S1",
+          "situations": [
+            {
+              "id": "finding_your_people",
+              "weight": 0.9
+            },
+            {
+              "id": "loneliness",
+              "weight": 0.8
+            },
+            {
+              "id": "starting_over",
+              "weight": 0.4
+            },
+            {
+              "id": "difficult_parent",
+              "weight": 0.4
+            }
+          ],
+          "conflicts": [
+            "independence_vs_connection",
+            "holding_on_vs_letting_go"
+          ],
+          "emotions": {
+            "start": [
+              "numbness",
+              "loneliness",
+              "resentment"
+            ],
+            "middle": [
+              "belonging",
+              "joy",
+              "grief"
+            ],
+            "end": [
+              "love",
+              "acceptance"
+            ]
+          },
+          "ending_tone": "bittersweet",
+          "intensity": "heavy",
+          "warnings": [
+            "abuse",
+            "domestic_violence",
+            "death_of_main_character",
+            "self_harm_or_suicide",
+            "war_and_violence"
+          ],
+          "example_user_messages": [
+            "I've been through so much that I don't really care what happens to me anymore.",
+            "I joke about everything because it's easier than admitting how empty I feel.",
+            "For the first time in years someone actually wanted to hear about my life.",
+            "Being around people who talk about forgiveness makes me angry because of what I lived through at home."
+          ],
+          "spoiler": {
+            "summary": "In marbles Ji-yeong and Sae-byeok spend their time sharing their stories instead of playing. Ji-yeong reveals that her father, a pastor, abused her and her mother and prayed for forgiveness each time. When she found he had killed her mother, she killed him, and she was handed the game card the day she left prison. Realising Sae-byeok has something to live for and she doesn't, Ji-yeong deliberately drops her marble to lose. She thanks Sae-byeok for playing with her, asks her to live fully, and is shot.",
+            "key_events": [
+              "Revealed: abused by her pastor father, who killed her mother",
+              "Killed her father and served time in prison",
+              "Bonds with Sae-byeok during marbles",
+              "Deliberately loses so Sae-byeok survives, and is shot"
+            ],
+            "got_right": "She lets herself be vulnerable with someone and gives a stranger the kindness she was never shown.",
+            "got_wrong": "She decides her own life has no value once she has helped someone else, never allowing that she might also deserve a future."
+          }
+        }
+      ]
+    },
+    {
+      "id": "char:squid_game/jang_deok_su",
+      "name": "Jang Deok-su",
+      "role": "A violent gangster running from his boss and from gambling debts, who throws his weight around from the first night.",
+      "relations": [
+        {
+          "target": "char:squid_game/kang_sae_byeok",
+          "relation": "enemy"
+        },
+        {
+          "target": "char:squid_game/seong_gi_hun",
+          "relation": "enemy"
+        }
+      ],
+      "arcs": [
+        {
+          "id": "arc:squid_game/jang_deok_su/ruling_through_fear",
+          "title": "Ruling through fear",
+          "literal_situation": "Deok-su is on the run from his crime boss and from foreign loan sharks after huge gambling losses. In the games he gathers a gang of followers and uses intimidation to put himself on top.",
+          "pattern_label": "a bully whose dominance hides deep fear",
+          "pattern_text": "A person whose life has collapsed through their own reckless choices tries to regain control by dominating everyone around them. They build a following through fear and treat loyalty as something owed to them, never something they give. Underneath the swagger they are terrified, and they suspect the people they rule would turn on them the moment they could.",
+          "hook": "Deok-su is loud, brutal and quick to pick on the weakest person in the room. He is also cornered, with nowhere left to run.",
+          "why_relatable": "He is someone who controls others so no one can see his own fear. What does power built on intimidation actually buy him? Can he trust anyone when he has never been loyal himself?",
+          "watch_for": [
+            "How does he react when someone he relies on stands up to him?",
+            "What happens to his confidence when he isn't in control?",
+            "How does he treat the people who help him?"
+          ],
+          "start_at": "S1E1",
+          "span": "S1",
+          "situations": [
+            {
+              "id": "taking_a_big_risk",
+              "weight": 0.6
+            },
+            {
+              "id": "addiction_and_recovery",
+              "weight": 0.4
+            },
+            {
+              "id": "losing_a_job",
+              "weight": 0.3
+            }
+          ],
+          "conflicts": [
+            "power_vs_morality",
+            "control_vs_trust"
+          ],
+          "emotions": {
+            "start": [
+              "fear",
+              "anger",
+              "pride"
+            ],
+            "middle": [
+              "pride",
+              "anxiety",
+              "resentment"
+            ],
+            "end": [
+              "fear",
+              "dread"
+            ]
+          },
+          "ending_tone": "tragic",
+          "intensity": "heavy",
+          "warnings": [
+            "war_and_violence",
+            "graphic_gore",
+            "betrayal",
+            "death_of_main_character",
+            "self_harm_or_suicide"
+          ],
+          "example_user_messages": [
+            "I've burned every bridge and now I only feel safe when people are a bit scared of me.",
+            "I run my group by keeping everyone in line, but I'm always waiting for someone to stab me in the back.",
+            "I gambled myself into a hole and I'm angry at everyone except myself.",
+            "People say I use others and drop them, but I think that's just how you survive."
+          ],
+          "spoiler": {
+            "summary": "Deok-su tries to recruit a crew to rob the games but no one will work with him, so he returns. He leads a gang, gets insider tips from the doctor Byeong-gi, and repeatedly attacks Sae-byeok, who once worked for him. He starts the night-time massacre during the Special Game. He dumps Mi-nyeo, who helped him survive dalgona and slept with him, to get stronger men for tug of war, and she vows revenge. In marbles he survives against his own henchman by demanding a change of game. On the glass bridge he refuses to go first, and Mi-nyeo grabs him and pulls them both to their deaths.",
+            "key_events": [
+              "Can't raise a crew outside, so returns to the games",
+              "Leads a gang and starts the night-time massacre",
+              "Abandons Mi-nyeo before tug of war",
+              "Survives marbles against his own henchman",
+              "Pulled off the glass bridge by Mi-nyeo in a murder-suicide"
+            ],
+            "got_right": "He is quick to read the rules and use them, and he understands early that the games reward force.",
+            "got_wrong": "He treats everyone as disposable while demanding loyalty for himself, so the people he used become the ones who bring him down."
+          }
+        }
+      ]
+    }
+  ]
+}

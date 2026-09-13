@@ -1,0 +1,716 @@
+{
+  "show": "naruto",
+  "characters": [
+    {
+      "id": "char:naruto/naruto_uzumaki",
+      "name": "Naruto Uzumaki",
+      "role": "An orphaned, loud-mouthed prankster shunned by his village because of a monster sealed inside him at birth, who dreams of becoming its leader so that everyone will finally acknowledge him.",
+      "relations": [
+        {"target": "char:naruto/sasuke_uchiha", "relation": "rival"},
+        {"target": "char:naruto/sasuke_uchiha", "relation": "friend"},
+        {"target": "char:naruto/sakura_haruno", "relation": "friend"},
+        {"target": "char:naruto/kakashi_hatake", "relation": "mentor"},
+        {"target": "char:naruto/hinata_hyuga", "relation": "friend"},
+        {"target": "char:naruto/rock_lee", "relation": "friend"},
+        {"target": "char:naruto/gaara", "relation": "friend"},
+        {"target": "char:naruto/shikamaru_nara", "relation": "friend"},
+        {"target": "char:naruto/neji_hyuga", "relation": "rival"},
+        {"target": "char:naruto/itachi_uchiha", "relation": "enemy"},
+        {"target": "char:naruto/jiraiya", "relation": "mentor"},
+        {"target": "char:naruto/tsunade", "relation": "boss"}
+      ],
+      "arcs": [
+        {
+          "id": "arc:naruto/naruto_uzumaki/earning_acknowledgement",
+          "title": "The outcast who wants to be seen",
+          "literal_situation": "Naruto has just failed his academy graduation exam yet again. The villagers glare at him, his classmates mock him, and he has no family. He pulls pranks to get noticed and loudly insists he will become Hokage, the village's leader, so everyone will have to respect him.",
+          "pattern_label": "an outcast fighting to be acknowledged",
+          "pattern_text": "Someone grows up rejected and alone, blamed for something that was never their fault, and learns to cover the hurt with noise and bravado. They set an enormous goal mainly so the people who dismissed them will have to look up to them. Slowly, through the few people who believe in them, they have to work out whether they want applause or genuine belonging, and what to do with the resentment they still carry.",
+          "hook": "A lonely, underestimated kid with no family, failing at school and treated as a nuisance, who covers his loneliness with jokes and grand promises.",
+          "why_relatable": "How do you keep believing in yourself when almost everyone has decided you're a failure? Is the loud confidence real, or is it armour? And if people ever do start to accept you, can you forgive them for the years they didn't?",
+          "watch_for": [
+            "Who treats him as a person rather than a problem, and how does he react when someone does?",
+            "What is he actually chasing when he talks about his dream: respect, or something else?",
+            "What happens to the anger he rarely lets anyone see?"
+          ],
+          "start_at": "Naruto Ep 1",
+          "span": "Naruto Ep 1 - Shippuden Ep 175",
+          "situations": [
+            {"id": "loneliness", "weight": 0.9},
+            {"id": "finding_your_people", "weight": 0.8},
+            {"id": "confidence_struggle", "weight": 0.6},
+            {"id": "identity_and_self_acceptance", "weight": 0.6}
+          ],
+          "conflicts": ["fitting_in_vs_standing_out", "revenge_vs_forgiveness"],
+          "emotions": {"start": ["loneliness", "rejection", "determination"], "middle": ["hope", "belonging", "anger"], "end": ["acceptance", "belonging", "self_respect"]},
+          "ending_tone": "hopeful",
+          "intensity": "moderate",
+          "warnings": ["war_and_violence", "death_of_loved_one", "grief"],
+          "example_user_messages": [
+            "I've always been the kid nobody picked, and I still act like the class clown so nobody sees how much it hurts.",
+            "Everyone in my hometown decided I was trouble before I ever did anything. I want to make something of myself so big they can't ignore me.",
+            "I keep failing the same exam and everyone expects me to give up. I refuse to, but some nights I wonder if they're right.",
+            "People who used to look down on me are suddenly friendly now that I'm doing well, and part of me is still angry about it."
+          ],
+          "spoiler": {
+            "summary": "Naruto graduates after protecting his teacher Iruka, who becomes the first adult to acknowledge him. He learns that the Nine-Tails is sealed inside him, finds a team in Team 7, and wins over one former enemy after another (Neji, Gaara, Tsunade) through stubborn kindness. He later discovers that his parents were the Fourth Hokage Minato and Kushina, who died protecting him. After Jiraiya's death he masters Sage Mode, defeats Pain, saves the village and comes home to cheering crowds: the acknowledgement he always wanted. He then confronts his own buried grudge against the village (Dark Naruto) by accepting it rather than denying it, meets his mother's spirit, befriends Kurama, and as an adult becomes the Seventh Hokage.",
+            "key_events": [
+              "Iruka protects and acknowledges him (Ep 1)",
+              "Learns the Nine-Tails is sealed inside him",
+              "Defeats Neji and Gaara, changing both of their outlooks",
+              "Learns the Fourth Hokage Minato is his father",
+              "Saves the village from Pain and is hailed as a hero",
+              "Embraces his inner darkness at the Falls of Truth",
+              "Meets his mother Kushina's spirit",
+              "Befriends Kurama",
+              "Becomes the Seventh Hokage"
+            ],
+            "got_right": "He never lets other people's low expectations define him, and he turns his pain into empathy. He recognises loneliness in others and reaches out to them instead of lashing out.",
+            "got_wrong": "For a long time he mistakes recognition for belonging, acts before he thinks, and tries to carry everything alone. He has to learn to let his friends help and to admit the grudge he secretly holds."
+          }
+        },
+        {
+          "id": "arc:naruto/naruto_uzumaki/never_giving_up_on_a_friend",
+          "title": "Refusing to give up on a friend",
+          "literal_situation": "Naruto's teammate and rival Sasuke, the closest thing he has to a brother, is growing colder and more obsessed with getting stronger at any cost, and has just turned on Naruto in a real fight.",
+          "pattern_label": "holding on to a friend who's walking away",
+          "pattern_text": "A person's closest friend, who is also their fiercest rival, starts pulling away, consumed by old pain and a single-minded goal. Everyone else eventually says to let them go, or even to cut them off for good. The one who stays has to decide how long loyalty is worth it, what it costs them, and whether you can save someone who doesn't want to be saved.",
+          "hook": "A boy who has finally found a friend who understands loneliness watches that friend turn cold, competitive and pull further away from everyone.",
+          "why_relatable": "When someone you love is set on self-destruction, do you keep chasing them or protect yourself? Is your loyalty admirable, or just stubborn? What do you owe a friend who keeps pushing you away?",
+          "watch_for": [
+            "How do other people's opinions of the friend change over time, and does his change too?",
+            "What does he say the friendship means to him, and does that answer change?",
+            "How does chasing one person affect the people standing right next to him?"
+          ],
+          "start_at": "Naruto Ep 107",
+          "span": "Naruto Ep 107 - Shippuden Ep 478",
+          "situations": [
+            {"id": "friendship_ending", "weight": 0.9},
+            {"id": "sibling_rivalry", "weight": 0.5},
+            {"id": "finding_your_people", "weight": 0.4}
+          ],
+          "conflicts": ["holding_on_vs_letting_go", "duty_vs_desire"],
+          "emotions": {"start": ["betrayal", "anger", "determination"], "middle": ["grief", "self_doubt", "determination"], "end": ["relief", "acceptance", "joy"]},
+          "ending_tone": "hopeful",
+          "intensity": "heavy",
+          "warnings": ["war_and_violence", "betrayal", "graphic_gore", "death_of_loved_one"],
+          "example_user_messages": [
+            "My best friend is spiralling and pushing everyone away. People keep telling me to let him go, but I made a promise and I can't.",
+            "We were rivals and basically brothers at the same time. Now he's cut me off completely and I don't know if chasing him is loyalty or just stupidity.",
+            "Everyone in our friend group has written him off. I'm the only one still defending him and it's costing me.",
+            "How do you save someone who keeps saying they don't want to be saved?"
+          ],
+          "spoiler": {
+            "summary": "Sasuke defects to Orochimaru. Naruto fails to stop him at the Valley of the End and vows to Sakura that he will bring him back. For years he trains and chases him, refusing to give up even as Sasuke joins Akatsuki, attacks the Five Kage Summit and nearly kills Sakura. The rest of their friends decide Sasuke must be killed, and Naruto claims that fight as his own. After fighting side by side in the war, the two have a final battle at the Valley of the End in which both lose an arm. Naruto explains that he feels Sasuke's pain as his own; Sasuke admits defeat, apologises, and they reconcile. Naruto returns Sasuke's forehead protector as he leaves on a journey of atonement.",
+            "key_events": [
+              "Sasuke leaves the village; Naruto loses to him at the Valley of the End",
+              "Promises Sakura he will bring Sasuke back",
+              "Refuses Jiraiya's advice to give up on Sasuke",
+              "The reunion at Orochimaru's hideout goes badly",
+              "Lets Kumo ninja beat him rather than give up information on Sasuke",
+              "Sees through Sakura's false love confession",
+              "Their friends decide to kill Sasuke; Naruto insists the fight is his",
+              "Final battle: both lose an arm, Sasuke admits defeat and they reconcile"
+            ],
+            "got_right": "His loyalty is unconditional without being naive. He acknowledges what Sasuke has done but refuses to define him by it, and in the end he reaches him through empathy rather than force.",
+            "got_wrong": "He treats the promise as a burden only he can carry, often neglects his own safety and the feelings of the people beside him, and nearly lets the chase consume his life."
+          }
+        },
+        {
+          "id": "arc:naruto/naruto_uzumaki/grief_and_the_cycle_of_hatred",
+          "title": "Grief, rage, and choosing a different path",
+          "literal_situation": "Later in the series, Naruto is hit by devastating news about someone he loves like a father, and learns that the person responsible is coming for his home next.",
+          "pattern_label": "grieving a mentor and refusing to become bitter",
+          "pattern_text": "After losing the mentor who believed in them most, a young person is flooded with grief and rage toward the one responsible. They get the chance to take revenge, but the other side has its own story of suffering, which makes simple hatred harder. They have to decide whether to carry on their mentor's hopes, and whether it's possible to stop pain from being passed down.",
+          "hook": "A young man reeling from a painful loss, angry, blaming the people around him, and suddenly expected to face the person responsible.",
+          "why_relatable": "What do you do with your anger at someone who hurt the person you loved most? Does understanding why someone did harm mean excusing it? How do you honour someone who can no longer tell you what to do?",
+          "watch_for": [
+            "Who does he lash out at in his grief, and what pulls him out of it?",
+            "How does his opponent justify himself, and does it change anything for him?",
+            "What does he choose to do with the hopes he has been left with?"
+          ],
+          "start_at": "Shippuden Ep 152",
+          "span": "Shippuden Ep 152-175",
+          "situations": [
+            {"id": "grief_and_loss", "weight": 0.9},
+            {"id": "mentor_and_protege", "weight": 0.7},
+            {"id": "responsibility_you_didnt_ask_for", "weight": 0.6}
+          ],
+          "conflicts": ["revenge_vs_forgiveness", "past_vs_future"],
+          "emotions": {"start": ["grief", "anger", "overwhelm"], "middle": ["determination", "dread", "confusion"], "end": ["relief", "hope", "belonging"]},
+          "ending_tone": "bittersweet",
+          "intensity": "heavy",
+          "warnings": ["death_of_main_character", "death_of_loved_one", "grief", "war_and_violence"],
+          "example_user_messages": [
+            "My mentor died suddenly and I'm so angry I can't think straight. I keep blaming people who didn't do anything.",
+            "The person who hurt my family had a terrible childhood too, and I hate that knowing that makes it harder to hate him.",
+            "I want to carry on what my teacher started, but I don't know how without him here to tell me.",
+            "Everyone says revenge won't help. I know that, but I don't know what I'm supposed to feel instead."
+          ],
+          "spoiler": {
+            "summary": "Jiraiya has been killed by Pain, who turns out to be his former student Nagato. Naruto first blames Tsunade, then helps decode Jiraiya's last message and trains in Sage Mode. Pain flattens Konoha. Naruto returns and defeats the Six Paths, but after Hinata is struck down he nearly loses himself to the Nine-Tails, until his father Minato's sealed chakra appears and restores his resolve. He goes to face Nagato in person, hears his story of war and loss, and chooses not to kill him but to pursue the peace Jiraiya dreamed of. Moved, Nagato sacrifices himself to revive everyone he killed, and Naruto returns to a hero's welcome.",
+            "key_events": [
+              "Jiraiya dies fighting Pain",
+              "Naruto masters Sage Mode",
+              "Pain destroys the village",
+              "Hinata confesses her love and is struck down",
+              "Minato appears inside Naruto's seal",
+              "Naruto spares Nagato, who revives the dead",
+              "The village hails Naruto as a hero"
+            ],
+            "got_right": "He listens to his enemy's pain instead of simply retaliating, and chooses to carry on his mentor's hope of breaking the cycle of hatred.",
+            "got_wrong": "In his early grief he lashes out at Tsunade, and later he nearly lets his rage hand control to the Nine-Tails, which puts everyone in danger."
+          }
+        }
+      ]
+    },
+    {
+      "id": "char:naruto/sasuke_uchiha",
+      "name": "Sasuke Uchiha",
+      "role": "The aloof top student of his class and one of the last survivors of a family massacre, whose only stated ambition is to restore his clan and kill a certain man.",
+      "relations": [
+        {"target": "char:naruto/naruto_uzumaki", "relation": "rival"},
+        {"target": "char:naruto/naruto_uzumaki", "relation": "friend"},
+        {"target": "char:naruto/sakura_haruno", "relation": "colleague"},
+        {"target": "char:naruto/kakashi_hatake", "relation": "mentor"},
+        {"target": "char:naruto/itachi_uchiha", "relation": "sibling"},
+        {"target": "char:naruto/rock_lee", "relation": "rival"},
+        {"target": "char:naruto/gaara", "relation": "rival"}
+      ],
+      "arcs": [
+        {
+          "id": "arc:naruto/sasuke_uchiha/living_for_revenge",
+          "title": "Living for revenge",
+          "literal_situation": "Sasuke is a gifted, solitary twelve-year-old whose family was killed when he was a child. He has been put on a team with a loud rival and an admiring classmate, and all he wants is the strength to kill the man responsible.",
+          "pattern_label": "letting a wound become your whole identity",
+          "pattern_text": "After a devastating loss in childhood, someone organises their entire life around one goal: making the person who hurt them pay. They keep others at arm's length because closeness feels like weakness or a distraction. When new friendships start to matter, they have to choose between the people who care for them now and the old wound that has defined them.",
+          "hook": "A brilliant, lonely boy who survived a family tragedy, admired by everyone and close to no one, secretly measuring every day against a single goal.",
+          "why_relatable": "Can you build a life around getting even without losing everything else? What happens when people start to care about you and you're not sure you're allowed to care back? Is strength something you earn, or something you'd take any shortcut to get?",
+          "watch_for": [
+            "When does his guard drop around his teammates, and what makes it go back up?",
+            "Who offers him power, and what do they want in return?",
+            "How does being compared to someone else shape his choices?"
+          ],
+          "start_at": "Naruto Ep 3",
+          "span": "Naruto Ep 3 - Shippuden Ep 138",
+          "situations": [
+            {"id": "grief_and_loss", "weight": 0.8},
+            {"id": "loneliness", "weight": 0.7},
+            {"id": "friendship_ending", "weight": 0.6},
+            {"id": "sibling_rivalry", "weight": 0.5}
+          ],
+          "conflicts": ["revenge_vs_forgiveness", "independence_vs_connection"],
+          "emotions": {"start": ["grief", "anger", "loneliness"], "middle": ["envy", "resentment", "determination"], "end": ["confusion", "grief", "numbness"]},
+          "ending_tone": "tragic",
+          "intensity": "heavy",
+          "warnings": ["death_of_loved_one", "grief", "war_and_violence", "child_endangerment", "torture", "betrayal", "graphic_gore"],
+          "example_user_messages": [
+            "Ever since what happened to my family, all I can think about is making the person responsible pay. I don't have room for friends.",
+            "I finally had people who cared about me and I walked away from them because I thought they were holding me back.",
+            "My friend who used to be way behind me is suddenly better than me and I can't stand it.",
+            "I'd take any shortcut to get stronger, even from people I know are using me.",
+            "I've built my whole life around one goal. I'm scared of who I am without it."
+          ],
+          "spoiler": {
+            "summary": "On Team 7 Sasuke learns teamwork and briefly finds happiness, but Orochimaru brands him with a cursed seal, and Itachi, the older brother who massacred their clan, defeats him effortlessly again. Jealous of Naruto's growth and desperate for power, he defects to Orochimaru. At the Valley of the End he nearly kills Naruto but spares him. After years of training he overpowers and absorbs Orochimaru, forms Team Hebi and hunts Itachi down. He wins their battle, and Itachi dies poking his forehead. Tobi then reveals that Itachi massacred the clan on the village's orders to stop a coup, and spared and manipulated Sasuke to protect him. Sasuke is left shattered with grief.",
+            "key_events": [
+              "The Uchiha massacre by Itachi (backstory)",
+              "Shields Naruto from Haku's needles",
+              "Receives Orochimaru's cursed seal",
+              "Defeated and tortured by Itachi's Tsukuyomi",
+              "Rejects Sakura and leaves the village",
+              "Defeats Naruto at the Valley of the End but spares him",
+              "Overpowers Orochimaru and forms Team Hebi",
+              "Kills Itachi, then learns Itachi was protecting him"
+            ],
+            "got_right": "He shows real care in unguarded moments: protecting Naruto and Sakura, sparing Naruto, and refusing to let Itachi's method (killing his best friend) dictate his path.",
+            "got_wrong": "He treats connection as weakness, accepts power from a man who plans to take over his body, and abandons the people who love him for a goal that ultimately rests on a lie."
+          }
+        },
+        {
+          "id": "arc:naruto/sasuke_uchiha/coming_back_from_darkness",
+          "title": "Can you come back after going too far?",
+          "literal_situation": "Later in the series, after choices that have taken him far from everyone who cared about him, Sasuke learns something that turns his world upside down and turns his anger toward a much bigger target. His old teammates are still trying to reach him.",
+          "pattern_label": "coming back after you've hurt everyone",
+          "pattern_text": "Someone who has already walked away from everyone discovers that the story they built their life on was false, and turns their rage on a bigger target. They hurt the people who still love them and lash out at anyone who tries to help. Eventually they have to face what they've done, decide whether they deserve a way back, and learn that atonement is a long road rather than a single apology.",
+          "hook": "A young man who has already burned his bridges, reeling from a revelation that upends everything he believed and full of fresh fury.",
+          "why_relatable": "When everything you believed turns out to be wrong, what do you do with the anger? Can someone who has hurt people this badly still come home? Is it possible to accept love you feel you don't deserve?",
+          "watch_for": [
+            "How does he treat the people who still reach out to him, compared with the people he finds useful?",
+            "What does he believe his family wanted for him?",
+            "What does he think separates taking responsibility from being alone?"
+          ],
+          "start_at": "Shippuden Ep 141",
+          "span": "Shippuden Ep 141-479",
+          "situations": [
+            {"id": "redemption_after_mistakes", "weight": 0.9},
+            {"id": "identity_and_self_acceptance", "weight": 0.6},
+            {"id": "grief_and_loss", "weight": 0.6},
+            {"id": "standing_up_to_authority", "weight": 0.4}
+          ],
+          "conflicts": ["revenge_vs_forgiveness", "independence_vs_connection"],
+          "emotions": {"start": ["grief", "anger", "betrayal"], "middle": ["resentment", "confusion", "loneliness"], "end": ["guilt", "acceptance", "peace"]},
+          "ending_tone": "hopeful",
+          "intensity": "heavy",
+          "warnings": ["war_and_violence", "betrayal", "graphic_gore", "death_of_loved_one", "grief"],
+          "example_user_messages": [
+            "I found out the story I was told about my family was a lie, and now I'm furious at everyone who kept it from me.",
+            "I've hurt the people who cared about me most. Part of me wants to come back and part of me thinks I don't deserve to.",
+            "My old friends keep reaching out after everything I did and I don't know how to let them in.",
+            "I apologised, but I know saying sorry isn't enough. I want to actually make things right."
+          ],
+          "spoiler": {
+            "summary": "Learning that Itachi sacrificed everything to protect him, Sasuke vows to destroy Konoha. He works with Akatsuki, attacks the Five Kage Summit, kills Danzō by stabbing through his own teammate Karin, and tries to kill Sakura and Kakashi. After receiving Itachi's eyes, he fights beside the reincarnated Itachi, who tells him he will love him no matter what he chooses. Sasuke questions the resurrected Hokage about what the village was meant to be, decides to protect it, and joins Team 7 in the war, but then announces a plan to kill the Five Kage and bear the world's hatred alone as the 'true Hokage'. In their final battle Naruto refuses to give up on him; both lose an arm, and Sasuke admits defeat, apologises to Sakura and is pardoned. He leaves on a journey of atonement, later marries Sakura, and protects the village from the shadows.",
+            "key_events": [
+              "Learns the truth about Itachi and the massacre",
+              "Vows to destroy Konoha and attacks the Kage Summit",
+              "Kills Danzō, stabbing through Karin to do it",
+              "Nearly kills Sakura",
+              "Receives Itachi's eyes",
+              "Reincarnated Itachi: 'I will love you no matter what'",
+              "Chooses to protect the village and joins the war",
+              "Announces a 'revolution' to kill the Kage",
+              "Final fight with Naruto: both lose an arm and Sasuke admits defeat",
+              "Apologises to Sakura and leaves on an atonement journey",
+              "Later marries Sakura; they have a daughter, Sarada"
+            ],
+            "got_right": "He finally asks what he truly wants instead of acting on other people's versions of the truth. He admits defeat, apologises sincerely, and chooses atonement over a quick way out.",
+            "got_wrong": "He lets grief turn into blame for a whole community, treats people as disposable tools, and believes carrying everything alone makes him noble rather than isolated."
+          }
+        }
+      ]
+    },
+    {
+      "id": "char:naruto/sakura_haruno",
+      "name": "Sakura Haruno",
+      "role": "A bright, book-smart academy graduate with a crush on her aloof teammate, who hides her real feelings behind a polite front and quickly finds herself outmatched in the field.",
+      "relations": [
+        {"target": "char:naruto/naruto_uzumaki", "relation": "friend"},
+        {"target": "char:naruto/sasuke_uchiha", "relation": "colleague"},
+        {"target": "char:naruto/kakashi_hatake", "relation": "mentor"},
+        {"target": "char:naruto/tsunade", "relation": "mentor"},
+        {"target": "char:naruto/rock_lee", "relation": "friend"},
+        {"target": "char:naruto/hinata_hyuga", "relation": "friend"}
+      ],
+      "arcs": [
+        {
+          "id": "arc:naruto/sakura_haruno/tired_of_being_saved",
+          "title": "Tired of being the one who needs saving",
+          "literal_situation": "Sakura aced her academy exams, but on her new team's first dangerous missions she can only watch while her two teammates do the fighting and get hurt protecting her.",
+          "pattern_label": "going from feeling useless to indispensable",
+          "pattern_text": "A person who excelled at the kind of success measured in tests finds themselves the least capable member of a high-pressure team. Watching others take all the risks while they stand on the sidelines eats at them. They have to decide whether to keep comparing themselves to more naturally gifted peers, or to find a mentor, work relentlessly, and build a strength that is genuinely their own.",
+          "hook": "Top of her class on paper, she is suddenly the weakest link on a team with two naturally gifted boys.",
+          "why_relatable": "What do you do when the skills that got you here aren't the ones that matter anymore? How long can you be protected before it starts to feel like failure? Can you build your own kind of strength instead of copying someone else's?",
+          "watch_for": [
+            "When does she decide she's done waiting to be rescued?",
+            "Who does she look up to, and what does she take from them?",
+            "How does she measure herself against her teammates, and does that ever change?"
+          ],
+          "start_at": "Naruto Ep 3",
+          "span": "Naruto Ep 3 - early Shippuden, with payoffs later in the series",
+          "situations": [
+            {"id": "confidence_struggle", "weight": 0.8},
+            {"id": "imposter_syndrome", "weight": 0.7},
+            {"id": "mentor_and_protege", "weight": 0.7},
+            {"id": "coming_of_age", "weight": 0.5}
+          ],
+          "conflicts": ["safety_vs_growth"],
+          "emotions": {"start": ["inadequacy", "self_doubt", "envy"], "middle": ["determination", "pride", "fear"], "end": ["confidence", "self_respect", "belonging"]},
+          "ending_tone": "hopeful",
+          "intensity": "moderate",
+          "warnings": ["war_and_violence"],
+          "example_user_messages": [
+            "I was always the smart one in school, but at my new job everyone else is so much more capable and I just feel like dead weight.",
+            "I'm tired of my teammates always having to cover for me. I want to be someone people can rely on.",
+            "My friends have natural talent I'll never have. I'm trying to figure out what my own strength actually is.",
+            "I finally asked someone I admire to mentor me, and it's the hardest thing I've ever done."
+          ],
+          "spoiler": {
+            "summary": "Through most of Part I Sakura is protected by Naruto and Sasuke, though she shows courage when she cuts off her hair to fight the Sound ninja. After Sasuke leaves, she asks Tsunade to train her and becomes a formidable medical ninja with monstrous strength. In Part II she draws Sasori's poison out of Kankurō and, with Chiyo, defeats Sasori of Akatsuki. In the war she keeps Naruto alive by manually pumping his heart, fights alongside Naruto and Sasuke as an equal, and lands the decisive punch on Kaguya. As an adult she heads the village's medical department.",
+            "key_events": [
+              "Cuts her hair to fight the Sound ninja in the Forest of Death",
+              "Ties with Ino in the preliminaries",
+              "Becomes Tsunade's apprentice",
+              "Defeats Sasori together with Chiyo",
+              "Keeps Naruto alive by manually pumping his heart",
+              "Masters the Strength of a Hundred Seal",
+              "Punches Kaguya to set up the final seal",
+              "Later heads Konoha's medical department"
+            ],
+            "got_right": "She stops waiting to be rescued, chooses a mentor who matches her talents, and builds a strength (healing, precision and raw power) that complements her teammates rather than copying them.",
+            "got_wrong": "Her drive to prove herself sometimes makes her rash, and she keeps measuring her worth against Naruto and Sasuke long after she has proven herself."
+          }
+        },
+        {
+          "id": "arc:naruto/sakura_haruno/loving_someone_who_pushes_you_away",
+          "title": "Loving someone who keeps pushing you away",
+          "literal_situation": "Sakura has had a crush on her classmate Sasuke for years and is thrilled to be on his team, but he is cold and dismissive and wrapped up in a dark goal of his own.",
+          "pattern_label": "loving someone who won't let you in",
+          "pattern_text": "Someone falls hard for a person who is distant, guarded and focused on their own pain. As that person drifts further into self-destruction, the one who loves them has to decide whether to wait, chase or let go, and whether their love is helping anyone. They also have to untangle real love from loyalty, guilt and the fear of losing the life they imagined.",
+          "hook": "A girl whose schoolyard crush now sits beside her every day on her new team, and barely acknowledges she exists.",
+          "why_relatable": "How long do you hold on to someone who keeps rejecting you? Do you love them, or the person you hope they'll become? What does loving someone ask of your honesty, with yourself and with others?",
+          "watch_for": [
+            "How do her feelings shift from admiring an image to worrying about a real person?",
+            "How do her feelings affect her other teammate?",
+            "What is she really trying to protect when she makes hard choices about him?"
+          ],
+          "start_at": "Naruto Ep 3",
+          "span": "Naruto Ep 3 - Shippuden Ep 478",
+          "situations": [
+            {"id": "unrequited_love", "weight": 0.9},
+            {"id": "friendship_ending", "weight": 0.5},
+            {"id": "coming_of_age", "weight": 0.4}
+          ],
+          "conflicts": ["holding_on_vs_letting_go", "truth_vs_protecting_others"],
+          "emotions": {"start": ["longing", "rejection", "jealousy"], "middle": ["grief", "guilt", "anxiety"], "end": ["relief", "love", "hope"]},
+          "ending_tone": "bittersweet",
+          "intensity": "moderate",
+          "warnings": ["betrayal", "war_and_violence"],
+          "example_user_messages": [
+            "I've liked the same person since I was a kid. He's always been distant and now he's shutting everyone out completely.",
+            "I told my friend I didn't care about him anymore just so my other friend would stop chasing him for my sake. I was lying.",
+            "He left and told me I was annoying. I still can't stop hoping he'll come back.",
+            "Is it loyalty or just stubbornness to keep loving someone who keeps hurting me?"
+          ],
+          "spoiler": {
+            "summary": "Sasuke rebuffs Sakura again and again. When he defects, she confesses her love and begs to go with him; he thanks her and knocks her out. She asks Naruto to bring him back, and later regrets burdening him with that promise. When Sasuke becomes an international criminal, she falsely tells Naruto she loves him to release him from the promise, then sets out to kill Sasuke herself, but she can't do it and he nearly kills her. During the war he returns but still dismisses her and knocks her out with a genjutsu. After his final battle with Naruto, Sasuke apologises to her and she tearfully forgives him. They later marry and have a daughter, Sarada, whom Sakura largely raises alone while he travels.",
+            "key_events": [
+              "Confesses to Sasuke as he leaves; he thanks her and knocks her out",
+              "Asks Naruto to promise to bring Sasuke back",
+              "Makes a false love confession to Naruto",
+              "Tries and fails to kill Sasuke, who nearly kills her",
+              "Sasuke puts her under a genjutsu at the end of the war",
+              "Sasuke apologises and she forgives him",
+              "Marries Sasuke; they have a daughter, Sarada"
+            ],
+            "got_right": "Her love matures from infatuation into genuine care, and she eventually takes responsibility for the burden she placed on Naruto and tries to face Sasuke herself.",
+            "got_wrong": "She tries to protect others by lying and taking everything on alone, and for years she builds her happiness around someone who treats her poorly."
+          }
+        }
+      ]
+    },
+    {
+      "id": "char:naruto/kakashi_hatake",
+      "name": "Kakashi Hatake",
+      "role": "The laid-back, perpetually late elite leader of Team 7, who reads racy novels in public, hides most of his face, and is known as one of the village's finest ninja.",
+      "relations": [
+        {"target": "char:naruto/naruto_uzumaki", "relation": "protege"},
+        {"target": "char:naruto/sasuke_uchiha", "relation": "protege"},
+        {"target": "char:naruto/sakura_haruno", "relation": "protege"},
+        {"target": "char:naruto/jiraiya", "relation": "colleague"},
+        {"target": "char:naruto/tsunade", "relation": "boss"},
+        {"target": "char:naruto/itachi_uchiha", "relation": "enemy"}
+      ],
+      "arcs": [
+        {
+          "id": "arc:naruto/kakashi_hatake/teaching_the_lesson_that_cost_everything",
+          "title": "Teaching the lesson that cost you everything",
+          "literal_situation": "Kakashi, a respected veteran who has failed every team of students he's been given, takes on three self-absorbed twelve-year-olds and tests whether they will put each other ahead of the rules. He visits a memorial stone for fallen comrades every day.",
+          "pattern_label": "turning old guilt into care for others",
+          "pattern_text": "A seasoned professional quietly carries guilt over friends they lost years ago because of their own rigid choices. They hide it behind a relaxed, detached manner and pour what they learned into the next generation. When a student starts down the same lonely path they once walked, and ghosts from the past resurface, they have to face whether they can ever forgive themselves.",
+          "hook": "An easygoing, famously late teacher with a painful past he never talks about, taking on a new team he doesn't expect to pass.",
+          "why_relatable": "Can you pass a lesson on to others while still punishing yourself for learning it too late? What do you owe the people you failed who are no longer here? What do you do when a student reminds you of your younger self?",
+          "watch_for": [
+            "Where does he go when he's late, and what does he say about it?",
+            "What does his first test really measure, and why does he care so much?",
+            "How does he respond when a student starts down a path he recognises?"
+          ],
+          "start_at": "Naruto Ep 3",
+          "span": "Naruto Ep 3 - late Shippuden",
+          "situations": [
+            {"id": "mentor_and_protege", "weight": 0.9},
+            {"id": "grief_and_loss", "weight": 0.7},
+            {"id": "redemption_after_mistakes", "weight": 0.5},
+            {"id": "responsibility_you_didnt_ask_for", "weight": 0.4}
+          ],
+          "conflicts": ["past_vs_future", "holding_on_vs_letting_go"],
+          "emotions": {"start": ["guilt", "grief", "numbness"], "middle": ["self_doubt", "betrayal", "determination"], "end": ["acceptance", "peace", "pride"]},
+          "ending_tone": "bittersweet",
+          "intensity": "heavy",
+          "warnings": ["death_of_loved_one", "grief", "war_and_violence", "betrayal"],
+          "example_user_messages": [
+            "I lost friends years ago because I cared more about following the rules than about them. I still visit their graves.",
+            "I teach younger people now and I'm hard on them about looking out for each other, because I learned that lesson way too late.",
+            "One of my students is making the exact same mistakes I made, and I feel like I've failed him.",
+            "Someone I mourned for years turned out to be alive and completely changed, and I don't know how to feel."
+          ],
+          "spoiler": {
+            "summary": "As a boy Kakashi's teammate Obito gave him his Sharingan while apparently dying, and later Rin died on Kakashi's Chidori when she threw herself into it to protect the village. The guilt sent Kakashi into a stretch of cold, reckless Anbu work. He passes Team 7 because they put each other ahead of the rules and tries to steer Sasuke away from revenge, but fails and blames himself. In the war the masked Tobi turns out to be Obito, who became a villain after Rin's death. Kakashi fights him and stabs him, but with Minato's and Naruto's help he reconnects with his old friend. Obito dies saving Kakashi, briefly lends him his eyes to defeat Kaguya, and they part reconciled. Kakashi sees Team 7 reunited and becomes the Sixth Hokage.",
+            "key_events": [
+              "Obito gives Kakashi his Sharingan (backstory)",
+              "Rin dies on Kakashi's Chidori (backstory)",
+              "Passes Team 7 at the bell test",
+              "Fails to stop Sasuke from defecting",
+              "Offers to kill Sasuke himself to spare Sakura",
+              "Tobi is revealed to be Obito",
+              "Fights and stabs Obito in Kamui's dimension",
+              "Obito dies saving Kakashi and lends him Susanoo",
+              "Team 7 reunites; Kakashi becomes Sixth Hokage"
+            ],
+            "got_right": "He turns his worst failure into the core of his teaching (comrades before rules) and never fully gives up on a student or an old friend.",
+            "got_wrong": "He carries his guilt alone for years, hides it behind detachment, and takes full personal blame for other people's choices, including Sasuke's."
+          }
+        },
+        {
+          "id": "arc:naruto/kakashi_hatake/making_peace_with_a_disgraced_father",
+          "title": "Making peace with a father's disgrace",
+          "literal_situation": "Flashbacks to Kakashi's childhood show a prodigy raised by a famous father, who watched the village turn on that father after one controversial decision and resolved never to make the same choice.",
+          "pattern_label": "rejecting a parent's choices, then understanding them",
+          "pattern_text": "A gifted child watches a beloved parent get publicly shamed for choosing people over duty, and the fallout devastates their family. Determined never to share that fate, they become rigidly rule-bound and cold. Years of loss slowly teach them that the parent may have been right, and they have to decide whether they can make peace with the parent they spent a lifetime defining themselves against.",
+          "hook": "A brilliant, rule-obsessed child prodigy trying to be nothing like the father the whole community blamed.",
+          "why_relatable": "What happens when you build yourself around avoiding a parent's mistake? Can you forgive a parent for leaving you with their shame? Is it ever too late to tell them you understand?",
+          "watch_for": [
+            "How does he talk about the rules, and what does that cost his teammates?",
+            "What does a friend say about his father that he can't shake off?",
+            "What would he want to tell his father, if he could?"
+          ],
+          "start_at": "Shippuden Ep 119",
+          "span": "Shippuden Ep 119-120 (flashback), resolved around Shippuden Ep 152-175",
+          "situations": [
+            {"id": "difficult_parent", "weight": 0.8},
+            {"id": "grief_and_loss", "weight": 0.7},
+            {"id": "family_expectations", "weight": 0.6},
+            {"id": "identity_and_self_acceptance", "weight": 0.5}
+          ],
+          "conflicts": ["self_vs_family_expectations", "duty_vs_desire"],
+          "emotions": {"start": ["shame", "grief", "pride"], "middle": ["guilt", "loneliness", "confusion"], "end": ["acceptance", "peace", "relief"]},
+          "ending_tone": "bittersweet",
+          "intensity": "heavy",
+          "warnings": ["self_harm_or_suicide", "death_of_loved_one", "grief", "war_and_violence", "child_endangerment"],
+          "example_user_messages": [
+            "My dad was publicly humiliated for a decision he made and it destroyed him. I've spent my whole life trying to be his opposite.",
+            "I became so strict about the rules because I saw what happened when he broke them. Now I'm not sure he was wrong.",
+            "My father died when I was a kid and people blamed him for everything. I wish I could tell him I finally understand.",
+            "I'm realising a lot of my coldness comes from being ashamed of my parent."
+          ],
+          "spoiler": {
+            "summary": "Kakashi's father Sakumo, the famed White Fang, abandoned a mission to save his comrades. The village, including the comrades he saved, vilified him, and he took his own life. Young Kakashi became obsessed with the rules until Obito told him that those who abandon their friends are worse than scum; Obito's apparent death then changed him. Years later Kakashi is killed fighting Pain and meets Sakumo in the afterlife. He tells his father about his life, says he understands his choice and is proud to be his son, and Sakumo, finally at peace, moves on as Kakashi is revived.",
+            "key_events": [
+              "Sakumo's disgrace and suicide (backstory)",
+              "Obito: those who abandon their friends are worse than scum",
+              "Kakashi dies fighting Pain",
+              "Meets his father in the afterlife and makes peace with him",
+              "Revived by Nagato"
+            ],
+            "got_right": "He comes to understand his father's choice, lives by it, and tells his father so, which frees them both.",
+            "got_wrong": "As a child he let fear of shame make him rigid and callous, and he nearly abandoned his teammates to escape his father's fate."
+          }
+        }
+      ]
+    },
+    {
+      "id": "char:naruto/hinata_hyuga",
+      "name": "Hinata Hyūga",
+      "role": "The shy, soft-spoken eldest daughter of a powerful and demanding family, whose father considers her too timid to lead it, and who quietly admires her loud classmate Naruto.",
+      "relations": [
+        {"target": "char:naruto/naruto_uzumaki", "relation": "friend"},
+        {"target": "char:naruto/neji_hyuga", "relation": "rival"},
+        {"target": "char:naruto/sakura_haruno", "relation": "friend"},
+        {"target": "char:naruto/tsunade", "relation": "boss"}
+      ],
+      "arcs": [
+        {
+          "id": "arc:naruto/hinata_hyuga/courage_when_family_gave_up",
+          "title": "Believing you can change when your family has given up on you",
+          "literal_situation": "In her first big exam, Hinata is matched against her gifted cousin Neji, who tells her in front of everyone that she is weak, that her father has given up on her, and that she is destined to fail.",
+          "pattern_label": "finding courage when your family's written you off",
+          "pattern_text": "A gentle, anxious person grows up in a family that prizes strength and has quietly decided they don't measure up, and years of disappointment have worn their confidence down to almost nothing. Inspired by someone who refuses to quit despite everyone doubting them, they start trying to change little by little. They have to learn to stand up for themselves without becoming someone they're not.",
+          "hook": "A timid girl whose demanding father sees her as a disappointment, facing a relative who tells her to her face that she will never amount to anything.",
+          "why_relatable": "Can you change who you are when your family has already decided who you are? Is kindness a weakness or a strength? What does it take to keep standing up when you know you'll probably lose?",
+          "watch_for": [
+            "Whose voice keeps her on her feet when she wants to give up?",
+            "How do her teammates treat her compared with her family?",
+            "What does she say back to the person who calls her a failure?"
+          ],
+          "start_at": "Naruto Ep 46",
+          "span": "Naruto Ep 46 - late Shippuden",
+          "situations": [
+            {"id": "family_expectations", "weight": 0.9},
+            {"id": "confidence_struggle", "weight": 0.9},
+            {"id": "difficult_parent", "weight": 0.6},
+            {"id": "coming_of_age", "weight": 0.5}
+          ],
+          "conflicts": ["self_vs_family_expectations", "safety_vs_growth"],
+          "emotions": {"start": ["inadequacy", "shame", "fear"], "middle": ["determination", "hope", "self_doubt"], "end": ["confidence", "self_respect", "belonging"]},
+          "ending_tone": "hopeful",
+          "intensity": "moderate",
+          "warnings": ["war_and_violence", "death_of_loved_one", "grief"],
+          "example_user_messages": [
+            "My parents always made it clear my younger sister was the one with real potential. I've stopped believing I'm good at anything.",
+            "I'm so afraid of letting people down that I freeze up whenever it actually matters.",
+            "Someone in my family told me I'd never amount to anything and I cried in front of everyone. I want to prove them wrong.",
+            "I'm naturally gentle and everyone treats that as weakness. I want to be strong without becoming harsh."
+          ],
+          "spoiler": {
+            "summary": "Hinata loses to Neji but refuses to forfeit until she collapses, which earns Naruto's respect and fuels his own win over Neji. Humbled by that loss, Neji reconciles with the main family and becomes her protector. Hinata keeps growing: she earns her father's praise, is promoted to chūnin, and later stands alone against Pain to protect Naruto. In the war she shields Naruto with her body and Neji dies shielding her; when Naruto nearly despairs, she reminds him never to give up. She later marries Naruto, and as a mother she is confident and assertive.",
+            "key_events": [
+              "Refuses to forfeit against Neji and nearly dies",
+              "Naruto tells her he likes her after the fight",
+              "Neji changes and becomes her protector",
+              "Earns her father Hiashi's praise",
+              "Stands alone against Pain",
+              "Neji dies protecting her in the war",
+              "Rallies Naruto after Neji's death"
+            ],
+            "got_right": "She changes through small, steady acts of courage and keeps her kindness instead of trading it for harshness.",
+            "got_wrong": "For a long time she measures her worth by other people's approval, first her father's and then Naruto's, rather than her own."
+          }
+        },
+        {
+          "id": "arc:naruto/hinata_hyuga/loving_from_afar",
+          "title": "Quietly loving someone who hasn't noticed",
+          "literal_situation": "Hinata has admired her loud, overlooked classmate Naruto ever since he stood up to bullies for her when they were small, but around him she blushes, stammers and nearly faints, and he just thinks she's weird.",
+          "pattern_label": "finding the courage to say how you feel",
+          "pattern_text": "Someone has quietly loved a person for years, drawing strength from watching them persist through hardship, yet can barely speak to them. The other person is oblivious and chasing someone else. They must decide whether to keep their feelings hidden where they're safe or risk saying them out loud, and what it means when the moment finally comes.",
+          "hook": "A painfully shy girl who has loved the same boy from a distance for years and can't get a full sentence out around him.",
+          "why_relatable": "Is it better to love someone silently than to risk rejection? What does it mean if the person you admire doesn't even see you? Can admiring someone help you grow, or does it keep you in their shadow?",
+          "watch_for": [
+            "When does she find her voice around him, and what prompts it?",
+            "What does she see in him that others miss?",
+            "How does she balance her feelings with her loyalty to her family?"
+          ],
+          "start_at": "Naruto Ep 46",
+          "span": "Naruto Ep 46 - late Shippuden, concluding in a follow-up movie",
+          "situations": [
+            {"id": "unrequited_love", "weight": 0.9},
+            {"id": "confidence_struggle", "weight": 0.6},
+            {"id": "family_expectations", "weight": 0.3}
+          ],
+          "conflicts": ["safety_vs_growth", "duty_vs_desire"],
+          "emotions": {"start": ["longing", "anxiety", "self_doubt"], "middle": ["hope", "fear", "determination"], "end": ["love", "joy", "confidence"]},
+          "ending_tone": "hopeful",
+          "intensity": "moderate",
+          "warnings": ["war_and_violence", "child_endangerment"],
+          "example_user_messages": [
+            "I've liked the same guy for years and he has no idea. Every time I try to talk to him I completely freeze.",
+            "He's always chasing someone else, and I've just watched from the sidelines.",
+            "Watching how hard he works made me want to be braver. I think I finally need to tell him.",
+            "I told him how I feel at the worst possible moment and now I don't know where we stand."
+          ],
+          "spoiler": {
+            "summary": "Hinata's admiration for Naruto fuels her growth through Part I. When Pain pins Naruto down, she confesses her love and fights Pain alone, nearly dying. Naruto is stunned but slow to respond and still fixated on Sakura. In the war she stands by him after Neji's death. In The Last, she knits him a scarf, and Toneri asks her to marry him; she agrees to leave with Toneri to save her sister Hanabi, breaking Naruto's heart. Through her memories Naruto finally realises how long she has loved him, confesses, rescues her, and they share their first kiss. They marry and have two children.",
+            "key_events": [
+              "Keeps the scarf Naruto gave her as a child",
+              "Encourages Naruto before his fight with Neji",
+              "Confesses her love while facing Pain",
+              "Pulls Naruto back from despair after Neji's death",
+              "The Last: Naruto finally realises her feelings and confesses",
+              "First kiss; later marries Naruto (children Boruto and Himawari)"
+            ],
+            "got_right": "She says what she feels when it matters most, and her love is based on who he really is, not an image.",
+            "got_wrong": "For years she hides her feelings, puts him on a pedestal, and lets him define her sense of worth."
+          }
+        }
+      ]
+    },
+    {
+      "id": "char:naruto/rock_lee",
+      "name": "Rock Lee",
+      "role": "An energetic, fiercely earnest young ninja who can't use ninjutsu or genjutsu at all, determined to prove that hard work alone can beat natural genius.",
+      "relations": [
+        {"target": "char:naruto/neji_hyuga", "relation": "rival"},
+        {"target": "char:naruto/neji_hyuga", "relation": "colleague"},
+        {"target": "char:naruto/sakura_haruno", "relation": "friend"},
+        {"target": "char:naruto/naruto_uzumaki", "relation": "friend"},
+        {"target": "char:naruto/sasuke_uchiha", "relation": "rival"},
+        {"target": "char:naruto/gaara", "relation": "friend"},
+        {"target": "char:naruto/tsunade", "relation": "boss"}
+      ],
+      "arcs": [
+        {
+          "id": "arc:naruto/rock_lee/hard_work_vs_talent",
+          "title": "Proving hard work can beat talent",
+          "literal_situation": "Lee is a first-time exam candidate with no talent for the techniques everyone else relies on. He has trained relentlessly under his eccentric teacher Guy and wants to prove himself against the gifted Sasuke and against his own teammate Neji, who calls him a failure.",
+          "pattern_label": "outworking people who were born gifted",
+          "pattern_text": "Someone lacks the natural ability their field seems to demand and is mocked for even trying. With a mentor who believes in them, they commit to outworking everyone and measure themselves against the gifted peers who look down on them. They have to discover how far effort can really take them, and what happens when they push themselves past their limits to prove a point.",
+          "hook": "The kid everyone said would never make it, pouring everything into the one skill he has, desperate to show the naturally gifted they're wrong.",
+          "why_relatable": "Can effort really close the gap with talent, or is that a comforting lie? How much of yourself are you willing to risk to prove someone wrong? Are you training for yourself, or for a rival's approval?",
+          "watch_for": [
+            "How does his teacher respond to his wins and his failures?",
+            "What does his rivalry with his teammate reveal about both of them?",
+            "How far is he willing to go in a single fight, and who tries to stop him?"
+          ],
+          "start_at": "Naruto Ep 21",
+          "span": "Naruto Ep 21-50",
+          "situations": [
+            {"id": "mentor_and_protege", "weight": 0.8},
+            {"id": "confidence_struggle", "weight": 0.6},
+            {"id": "taking_a_big_risk", "weight": 0.5},
+            {"id": "imposter_syndrome", "weight": 0.4}
+          ],
+          "conflicts": ["safety_vs_growth"],
+          "emotions": {"start": ["inadequacy", "determination", "envy"], "middle": ["pride", "hope", "determination"], "end": ["pride", "self_doubt", "dread"]},
+          "ending_tone": "bittersweet",
+          "intensity": "moderate",
+          "warnings": ["war_and_violence", "medical_trauma"],
+          "example_user_messages": [
+            "Everyone else in my program seems naturally gifted. I have to work twice as hard for half the results.",
+            "People laughed when I said what I wanted to do because I don't have the talent. I'm going to prove them wrong.",
+            "My teammate is a natural and keeps telling me I'll never catch up. I just want to beat him once.",
+            "My coach is the only one who's ever believed in me and I'd do anything not to let him down."
+          ],
+          "spoiler": {
+            "summary": "Lee shocks Sasuke with his speed, rescues Sakura in the Forest of Death, and in the preliminaries faces Gaara, whose sand defence no one can get through. Taking off his weights and opening the Eight Gates, he lands the Reverse Lotus, but Gaara survives and crushes Lee's left arm and leg. Lee gets back on his feet to keep fighting while unconscious. Later, humbled by his loss to Naruto, Neji comes to respect Lee's belief that hard work can surpass genius.",
+            "key_events": [
+              "Spars with Sasuke and nearly beats him",
+              "Saves Sakura from Team Dosu",
+              "Opens the Eight Gates against Gaara",
+              "Gaara crushes his arm and leg",
+              "Stands up to keep fighting while unconscious",
+              "Neji comes to respect Lee's effort"
+            ],
+            "got_right": "His discipline and sincerity are real. He honours his opponents and his teacher and never lets mockery stop him.",
+            "got_wrong": "He ties his worth to beating 'geniuses' and is willing to wreck his own body to prove a point."
+          }
+        },
+        {
+          "id": "arc:naruto/rock_lee/when_your_body_fails_you",
+          "title": "When the path you built your life on is in doubt",
+          "literal_situation": "Later on, Lee is faced with news that could end the only path he has ever wanted. His entire identity is built on physical training, and he keeps trying to train anyway.",
+          "pattern_label": "facing a career-ending injury",
+          "pattern_text": "A person whose whole identity rests on physical effort is told an injury may end the only path they have ever wanted. Stubbornly training anyway only makes things worse. They have to decide how to live with the uncertainty, whether to take a risky chance at recovery, and who they are if it doesn't work.",
+          "hook": "A young man whose one path in life depends on his body, suddenly being told it may be over.",
+          "why_relatable": "Who are you when the thing you've built your life around is taken away? Is it brave or reckless to gamble everything on a risky chance to get it back? How do you accept help and rest when everything in you says to keep pushing?",
+          "watch_for": [
+            "How does he react when he's told to rest?",
+            "What role does his teacher play when he is at his lowest?",
+            "How does he treat someone he has every reason to resent?"
+          ],
+          "start_at": "Naruto Ep 50",
+          "span": "Naruto Ep 50-124",
+          "situations": [
+            {"id": "illness_or_injury", "weight": 0.9},
+            {"id": "taking_a_big_risk", "weight": 0.7},
+            {"id": "mentor_and_protege", "weight": 0.5},
+            {"id": "losing_a_job", "weight": 0.3}
+          ],
+          "conflicts": ["safety_vs_growth", "holding_on_vs_letting_go"],
+          "emotions": {"start": ["dread", "inadequacy", "fear"], "middle": ["anxiety", "hope", "determination"], "end": ["relief", "pride", "acceptance"]},
+          "ending_tone": "hopeful",
+          "intensity": "moderate",
+          "warnings": ["medical_trauma", "war_and_violence"],
+          "example_user_messages": [
+            "I got injured and the doctors say I might never compete again. It's the only thing I've ever wanted to do.",
+            "I keep trying to train even though I'm supposed to be resting, because sitting still makes me feel worthless.",
+            "There's a surgery that could fix it, but it's risky. I don't know if I should take the chance.",
+            "I have to find a way to forgive the person who hurt me, and I'm not sure I can."
+          ],
+          "spoiler": {
+            "summary": "Told he may never be a ninja again, Lee trains in secret and makes his condition worse, and Gaara even tries to kill him in the hospital. Tsunade finds bone fragments lodged near his spine and offers an operation with a fifty percent chance of death. Encouraged by Guy, who promises to die with him if it fails, Lee accepts, and the surgery succeeds. While still recovering he rushes to help the Sasuke Recovery Team and fights Kimimaro, briefly gaining the upper hand after accidentally drinking sake he mistook for medicine. Gaara arrives to save him, and the two become friends.",
+            "key_events": [
+              "Medics predict he can never be a ninja again",
+              "Gaara tries to kill him in the hospital",
+              "Tsunade offers a surgery with a 50% chance of death",
+              "Guy promises to die with him if it fails",
+              "The surgery succeeds",
+              "Fights Kimimaro with the Drunken Fist",
+              "Rescued by Gaara; they become friends"
+            ],
+            "got_right": "He leans on his mentor, takes the risk with his eyes open, and forgives Gaara, turning a former enemy into a friend.",
+            "got_wrong": "His refusal to rest nearly makes his injury permanent, and he rushes back into battle before he has healed."
+          }
+        }
+      ]
+    }
+  ]
+}

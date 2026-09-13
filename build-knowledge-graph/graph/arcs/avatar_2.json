@@ -1,0 +1,657 @@
+{
+  "show": "avatar",
+  "characters": [
+    {
+      "id": "char:avatar/azula",
+      "name": "Azula",
+      "role": "The Fire Nation's brilliant, ruthless princess and her father's favourite, sent to hunt down her exiled brother and the Avatar",
+      "relations": [
+        {"target": "char:avatar/zuko", "relation": "sibling"},
+        {"target": "char:avatar/iroh", "relation": "enemy"},
+        {"target": "char:avatar/aang", "relation": "enemy"},
+        {"target": "char:avatar/katara", "relation": "enemy"},
+        {"target": "char:avatar/sokka", "relation": "enemy"},
+        {"target": "char:avatar/toph_beifong", "relation": "enemy"}
+      ],
+      "arcs": [
+        {
+          "id": "arc:avatar/azula/the_perfect_daughter",
+          "title": "The perfect daughter who can never slip",
+          "literal_situation": "A teenage princess and firebending prodigy, raised by a demanding father as his true heir, is given a mission to bring home her disgraced brother and uncle. She has never failed at anything and does not intend to start.",
+          "pattern_label": "worth measured only by flawless achievement",
+          "pattern_text": "A gifted child learns early that a parent's approval depends on being flawless, and that the other parent seemed to prefer a sibling. She becomes the star performer, never shows weakness, and treats every setback as unthinkable. The higher she climbs, the more fragile the whole structure becomes, because underneath the success is the belief that she is only lovable when she wins.",
+          "hook": "She is at the height of her powers: admired, feared, trusted by her father, and sure she is destined to rule. Her brother is the family's failure; she is its success.",
+          "why_relatable": "What happens to someone whose entire sense of worth rests on never failing? Is being the favourite child a privilege or a trap? Can you be loved for who you are if you only ever show people what you can achieve?",
+          "watch_for": [
+            "What does she say, and not say, when the subject of her mother comes up?",
+            "How does she react on the rare occasions when something doesn't go to plan?",
+            "Who does she actually trust, and why?"
+          ],
+          "start_at": "ATLA S2E1",
+          "span": "ATLA S2-S3",
+          "situations": [
+            {"id": "difficult_parent", "weight": 0.9},
+            {"id": "family_expectations", "weight": 0.9},
+            {"id": "sibling_rivalry", "weight": 0.6},
+            {"id": "burnout_at_work", "weight": 0.4}
+          ],
+          "conflicts": ["perfectionism_vs_good_enough", "self_vs_family_expectations"],
+          "emotions": {"start": ["pride", "confidence"], "middle": ["anxiety", "rejection"], "end": ["overwhelm", "loneliness", "grief"]},
+          "ending_tone": "tragic",
+          "intensity": "heavy",
+          "warnings": ["abuse", "war_and_violence", "betrayal", "bleak_ending"],
+          "example_user_messages": [
+            "I've been the high achiever in my family my whole life and I honestly don't know who I am if I'm not winning.",
+            "My dad only ever paid attention to me when I was the best at something. Now I can't stop and I'm falling apart.",
+            "I always felt my mom preferred my brother, so I made myself impossible to ignore instead.",
+            "Everyone thinks I have it all together but I feel like one mistake away from collapsing."
+          ],
+          "spoiler": {
+            "summary": "Azula conquers Ba Sing Se, strikes down Aang and returns home a hero, but her control starts to crack when Mai and Ty Lee betray her. Her father takes the world-conquering role for himself and leaves her as Fire Lord of the homeland; feeling sidelined and abandoned, she spirals into paranoia, banishes her staff, hallucinates her mother, and loses the Agni Kai against Zuko and Katara, ending in a complete breakdown chained to the ground. Afterwards she is committed to a mental health facility.",
+            "key_events": [
+              "Orchestrates the coup of Ba Sing Se and turns Zuko against Iroh",
+              "Hits Aang with lightning in the Crystal Catacombs",
+              "Admits on Ember Island she thinks her mother saw her as a monster",
+              "Mai and Ty Lee betray her at the Boiling Rock",
+              "Ozai names himself Phoenix King and leaves her behind as Fire Lord",
+              "Paranoid collapse before her coronation, hallucinated mother says she loves her",
+              "Loses the Agni Kai to Zuko and Katara and breaks down",
+              "Placed in a mental health facility"
+            ],
+            "got_right": "She is genuinely brilliant, disciplined and decisive; in moments like Ember Island she is honest about the pain of feeling unloved by her mother.",
+            "got_wrong": "She mistakes fear for loyalty and perfection for worth, cannot tolerate vulnerability or failure, and places her whole identity in the approval of a father who only valued her as a weapon."
+          }
+        },
+        {
+          "id": "arc:avatar/azula/ruling_by_fear",
+          "title": "Keeping friends close through fear",
+          "literal_situation": "To hunt her brother and the Avatar, the princess recruits her two childhood friends, a knife-throwing noble's daughter and a cheerful circus acrobat, using charm, pressure and veiled threats to get them on board.",
+          "pattern_label": "controlling people so they can't leave you",
+          "pattern_text": "Someone who secretly fears being left keeps friends in line through intimidation, manipulation and a constant display of strength. It works as long as everyone is afraid of her. The question is what happens when the people she thinks she controls start to care about someone else more than they fear her.",
+          "hook": "She has a tight-knit elite team made up of her oldest friends. They follow her orders, laugh at her jokes and never seem to challenge her.",
+          "why_relatable": "Is a friend who stays out of fear really a friend? What does it cost to never let anyone have power over you? Why do some people push away the very closeness they want?",
+          "watch_for": [
+            "How does she get each friend to join her, and how do they seem to feel about it?",
+            "Notice the moments when her friends hesitate. How does she respond?",
+            "What does she believe trust is for?"
+          ],
+          "start_at": "ATLA S2E3",
+          "span": "ATLA S2-S3",
+          "situations": [
+            {"id": "friendship_ending", "weight": 0.9},
+            {"id": "loneliness", "weight": 0.7},
+            {"id": "becoming_a_manager", "weight": 0.4}
+          ],
+          "conflicts": ["control_vs_trust", "independence_vs_connection"],
+          "emotions": {"start": ["confidence", "pride"], "middle": ["jealousy", "betrayal", "anger"], "end": ["loneliness", "dread", "rejection"]},
+          "ending_tone": "tragic",
+          "intensity": "heavy",
+          "warnings": ["betrayal", "war_and_violence", "abuse", "bleak_ending"],
+          "example_user_messages": [
+            "My friends say I'm controlling. I just don't want to be the one who gets left behind.",
+            "I'd rather people respect me than like me, but lately I'm really lonely.",
+            "My best friend chose her boyfriend over me and it felt like the ultimate betrayal.",
+            "I think I keep people close by making them a bit scared of me and I don't know how to stop."
+          ],
+          "spoiler": {
+            "summary": "Azula's team with Mai and Ty Lee works brilliantly through Ba Sing Se and the Day of Black Sun, but at the Boiling Rock Mai frees Zuko because she loves him more than she fears Azula, and Ty Lee chi-blocks Azula to protect Mai. Azula imprisons both friends, and the betrayal cracks her composure; alone and suspicious of everyone, she banishes all her servants and advisers before her coronation. In the later comics she repeats the pattern with new followers, the Fire Warriors, who eventually abandon her too.",
+            "key_events": [
+              "Pressures Ty Lee to leave the circus and recruits Mai in Omashu",
+              "Admits jealousy of Ty Lee's popularity on Ember Island",
+              "Mai betrays her to save Zuko at the Boiling Rock",
+              "Ty Lee chi-blocks her to protect Mai; she has both imprisoned",
+              "Declares 'Trust is for fools. Fear is the only reliable way'",
+              "Banishes Lo, Li, the Dai Li and her servants out of paranoia"
+            ],
+            "got_right": "She is a capable, decisive leader who builds a formidable team and sometimes shows real, if awkward, affection for her friends.",
+            "got_wrong": "She relies on fear instead of trust, so her friendships have no foundation when tested, and she treats any independent choice by a friend as treason."
+          }
+        }
+      ]
+    },
+    {
+      "id": "char:avatar/korra",
+      "name": "Korra",
+      "role": "A headstrong, fiercely physical teenage Avatar from the Southern Water Tribe who has mastered three elements but struggles with airbending and the spiritual side of her role",
+      "relations": [
+        {"target": "char:avatar/tenzin", "relation": "mentor"},
+        {"target": "char:avatar/katara", "relation": "mentor"},
+        {"target": "char:avatar/aang", "relation": "mentor"},
+        {"target": "char:avatar/toph_beifong", "relation": "mentor"},
+        {"target": "char:avatar/iroh", "relation": "mentor"},
+        {"target": "char:avatar/asami_sato", "relation": "partner"},
+        {"target": "char:avatar/bolin", "relation": "friend"},
+        {"target": "char:avatar/lin_beifong", "relation": "friend"},
+        {"target": "char:avatar/zuko", "relation": "friend"}
+      ],
+      "arcs": [
+        {
+          "id": "arc:avatar/korra/hothead_in_training",
+          "title": "The prodigy who can't do the patient part",
+          "literal_situation": "After a sheltered childhood in a guarded compound, a seventeen-year-old Avatar who has mastered water, earth and fire runs away to the big city to learn airbending, the one art that demands the patience and calm she lacks.",
+          "pattern_label": "a gifted achiever who defines herself by her role",
+          "pattern_text": "A confident, talented young woman has been told her whole life that she is special and was made for one big role, and she has thrown herself into the parts of it that come naturally. When she finally leaves the protected world she grew up in, she hits the parts that don't: patience, reflection, and not knowing the answer. Her sense of self is so tied to the role that every setback feels like proof she is nothing without it.",
+          "hook": "She is bold, strong and eager, sure she is ready for anything, and frustrated that her new teacher wants her to slow down and meditate when she wants to act.",
+          "why_relatable": "Who are you if the thing you've built your identity around is threatened? Is confidence the same as readiness? How do you learn from a mentor whose style is the opposite of yours, and when should you stop listening to them?",
+          "watch_for": [
+            "Notice how she reacts when something can't be solved by pushing harder.",
+            "Whose guidance does she seek out, and why does she choose them?",
+            "What does being the Avatar mean to her, and does that change?"
+          ],
+          "start_at": "Korra S1E1",
+          "span": "Korra S1-S2",
+          "situations": [
+            {"id": "coming_of_age", "weight": 0.9},
+            {"id": "identity_and_self_acceptance", "weight": 0.8},
+            {"id": "mentor_and_protege", "weight": 0.7},
+            {"id": "leaving_home", "weight": 0.5}
+          ],
+          "conflicts": ["safety_vs_growth", "independence_vs_connection"],
+          "emotions": {"start": ["confidence", "restlessness"], "middle": ["fear", "self_doubt", "anger"], "end": ["acceptance", "determination"]},
+          "ending_tone": "hopeful",
+          "intensity": "moderate",
+          "warnings": ["war_and_violence", "betrayal"],
+          "example_user_messages": [
+            "I've always been the strong one who's good at everything, and now I'm failing at the one thing that matters and I can't handle it.",
+            "My parents kept me really sheltered and I just moved out. The real world is way harder than I expected.",
+            "My mentor keeps telling me to be patient and it drives me insane. I want to do something now.",
+            "My whole identity is my job. If I'm not good at it, what am I?"
+          ],
+          "spoiler": {
+            "summary": "Korra's brashness gets her in trouble with Tenzin, the police and the Equalist leader Amon, whom she secretly fears. Kidnapped by the bloodbender Tarrlok, she first connects with Aang; when Amon takes her bending, she unlocks airbending to defeat him, and in her lowest moment finally connects spiritually with her past lives, who restore her bending. In Book Two she breaks with Tenzin to follow her uncle Unalaq, who turns out to be manipulating her to free Vaatu; she loses her connection to her past lives, but by learning Avatar Wan's story she realises she is defined by her choices rather than her title, defeats UnaVaatu and chooses to leave the spirit portals open.",
+            "key_events": [
+              "Stows away to Republic City and joins the Fire Ferrets",
+              "Kidnapped by Tarrlok, who is revealed as a bloodbender",
+              "Amon takes her bending; she unlocks airbending and defeats him",
+              "Aang restores her bending when she hits rock bottom; she becomes a couple with Mako",
+              "Learns Tenzin and her father kept her secluded; turns to Unalaq",
+              "Unalaq is revealed as a manipulator who wants to free Vaatu",
+              "Breaks up with Mako",
+              "Raava is ripped out and her link to past lives is severed",
+              "Defeats UnaVaatu and leaves the portals open"
+            ],
+            "got_right": "Her courage, loyalty and willingness to act; over time she learns humility, apologises to Tenzin, and trusts her own judgment instead of looking for a perfect right answer.",
+            "got_wrong": "She ties her self-worth entirely to her title, acts impulsively, and hands her trust to a flattering new mentor out of anger at the one who had her best interests at heart."
+          }
+        },
+        {
+          "id": "arc:avatar/korra/healing_after_trauma",
+          "title": "The long way back to herself",
+          "literal_situation": "Later in the series, after an ordeal that leaves her shaken in body and mind, the once-invincible Avatar is back at her parents' home, slowly rebuilding and haunted by what happened, while the world moves on and others handle the problems she used to handle.",
+          "pattern_label": "recovering from trauma when strength was everything",
+          "pattern_text": "A person whose identity was built on being strong and capable is badly hurt and has to rebuild slowly, body and mind. Physical recovery comes, but fear, flashbacks and shame keep her stuck, and she hides from the people who love her rather than admit she is not okay. The real healing only starts when she stops fighting her memories and faces what happened.",
+          "hook": "Her body and her confidence have both been badly shaken. Her friends are out doing important work, the job she was made for is being done by others, and she is starting to wonder if she will ever be herself again.",
+          "why_relatable": "How long is it acceptable to take to recover, and who decides? Why is it so hard to tell people you're not okay? Can you get your old self back after something like this, or do you become someone new?",
+          "watch_for": [
+            "Notice who she lets in and who she keeps at arm's length while she heals.",
+            "What does she see when she tries to go back to her old life?",
+            "Is she fighting her past, or trying to understand it?"
+          ],
+          "start_at": "Korra S4E2",
+          "span": "Korra S4",
+          "situations": [
+            {"id": "illness_or_injury", "weight": 0.9},
+            {"id": "confidence_struggle", "weight": 0.7},
+            {"id": "starting_over", "weight": 0.6},
+            {"id": "loneliness", "weight": 0.5}
+          ],
+          "conflicts": ["holding_on_vs_letting_go", "past_vs_future"],
+          "emotions": {"start": ["fear", "inadequacy", "shame"], "middle": ["loneliness", "self_doubt", "determination"], "end": ["acceptance", "peace", "self_respect"]},
+          "ending_tone": "hopeful",
+          "intensity": "heavy",
+          "warnings": ["medical_trauma", "war_and_violence", "death_of_loved_one"],
+          "example_user_messages": [
+            "I was always the strong one, and after what happened I can't even do basic things. I feel useless.",
+            "I keep having flashbacks and I've been lying to my family that I'm fine.",
+            "Physically I'm better, but mentally I'm not back and everyone expects me to be.",
+            "Everyone else moved on with their lives while I was recovering and I feel left behind.",
+            "I ran away from everyone because I didn't want them to see me like this."
+          ],
+          "spoiler": {
+            "summary": "Korra spends two years in physiotherapy with Katara, physically recovers but can't enter the Avatar State and is stalked by a vision of her own Avatar self. She pretends to be back in Republic City while secretly wandering alone for six months, until she ends up in the Foggy Swamp with Toph, who tells her she is subconsciously clinging to the mercury poison out of fear. She bends the poison out, but only after visiting Zaheer in prison and letting him guide her through the memory does she reconnect with Raava. Having faced her pain she beats Kuvira through empathy rather than force, saves her life, and begins a relationship with Asami.",
+            "key_events": [
+              "Relearns to walk with Katara's help; snaps at her in frustration",
+              "Only writes back to Asami, admitting how bad it has been",
+              "Lies to her parents and wanders alone for six months",
+              "Loses to Kuvira at Zaofu when a vision paralyses her",
+              "Toph helps her bend out the remaining mercury",
+              "Faces Zaheer in prison and reconnects with Raava",
+              "Saves Kuvira's life and talks her into surrendering",
+              "Hiroshi Sato dies in the final battle",
+              "Walks into the spirit portal hand in hand with Asami"
+            ],
+            "got_right": "She keeps trying, eventually asks for help, faces her fear instead of avoiding it, and turns her suffering into empathy for others, even her enemies.",
+            "got_wrong": "She isolates herself, lies to the people who love her, measures her recovery against impossible deadlines, and wanders alone for months instead of letting others in."
+          }
+        }
+      ]
+    },
+    {
+      "id": "char:avatar/tenzin",
+      "name": "Tenzin",
+      "role": "The serious, traditional airbending master, son of Avatar Aang and council member, who becomes the teenage Avatar's reluctant teacher while raising a lively young family",
+      "relations": [
+        {"target": "char:avatar/aang", "relation": "parent"},
+        {"target": "char:avatar/katara", "relation": "parent"},
+        {"target": "char:avatar/korra", "relation": "protege"},
+        {"target": "char:avatar/lin_beifong", "relation": "ex_partner"},
+        {"target": "char:avatar/asami_sato", "relation": "friend"},
+        {"target": "char:avatar/bolin", "relation": "friend"}
+      ],
+      "arcs": [
+        {
+          "id": "arc:avatar/tenzin/teaching_his_opposite",
+          "title": "Teaching a student who is nothing like you",
+          "literal_situation": "A calm, rule-bound airbending master, busy with council politics and three small children with a fourth on the way, suddenly has the impatient, fiery teenage Avatar living on his island, and she can't airbend at all.",
+          "pattern_label": "a strict mentor learning to trust his protege",
+          "pattern_text": "A careful, traditional teacher is handed a gifted student whose temperament is the complete opposite of his. He insists on doing things the proper way while she wants to charge ahead, and both get frustrated. Over the years he has to learn when to guide, when to protect, and when to let go and trust her to make her own choices.",
+          "hook": "He is patient in theory and exasperated in practice: his lessons aren't landing, his student would rather be at the arena, and the city is getting more dangerous.",
+          "why_relatable": "What do you do when the way you learned isn't the way your student learns? How much should a mentor protect someone who wants to take risks? Can a teacher also learn from his student?",
+          "watch_for": [
+            "Notice what he does when his usual teaching methods don't work.",
+            "When should a mentor stop a student, and when should he step back?",
+            "What does he keep from her, and why?"
+          ],
+          "start_at": "Korra S1E1",
+          "span": "Korra S1-S4",
+          "situations": [
+            {"id": "mentor_and_protege", "weight": 0.9},
+            {"id": "responsibility_you_didnt_ask_for", "weight": 0.5},
+            {"id": "caring_for_family", "weight": 0.4}
+          ],
+          "conflicts": ["control_vs_trust", "safety_vs_growth"],
+          "emotions": {"start": ["anxiety", "restlessness"], "middle": ["rejection", "self_doubt"], "end": ["pride", "love", "acceptance"]},
+          "ending_tone": "hopeful",
+          "intensity": "light",
+          "warnings": ["war_and_violence"],
+          "example_user_messages": [
+            "I'm mentoring a new hire who is talented but does everything the opposite of how I would, and we keep clashing.",
+            "I'm trying to protect someone I care about, but she says I'm holding her back.",
+            "My trainee went to someone else for advice after we argued and it really stung.",
+            "How do I know when to step back and let someone make their own mistakes?"
+          ],
+          "spoiler": {
+            "summary": "Tenzin and Korra clash over airbending and her priorities, but he comforts her when she is frightened of Amon and tells her how proud he is when she regains her bending. In Book Two she rejects him as spiritual guide after learning he helped keep her secluded as a child, and follows Unalaq instead; he stays loyal and later reminds her that she is defined by her own accomplishments, then encourages her to follow her instincts on the portals. After her injury he urges patience, and in Book Four he tells her she has grown from a hot-headed girl into a thoughtful woman who puts others first.",
+            "key_events": [
+              "Korra can't airbend and bristles at his lessons",
+              "Tells her 'I am so proud of you, Avatar Korra'",
+              "Korra replaces him with Unalaq after learning of her secluded upbringing",
+              "Helps her find her feet at the Tree of Time after Raava is lost",
+              "Reluctantly lets her face Zaheer to save Jinora",
+              "Praises how much she has matured"
+            ],
+            "got_right": "He stays loyal and patient even when rejected, admits his mistakes, and lets his student grow into her own person.",
+            "got_wrong": "He is rigid and overprotective, and keeps important truths from Korra, which makes her feel managed rather than trusted."
+          }
+        },
+        {
+          "id": "arc:avatar/tenzin/fathers_shadow",
+          "title": "Living up to a legendary father",
+          "literal_situation": "As the last airbending master and son of the Avatar who saved the world, Tenzin carries the full weight of preserving his father's culture, while quietly hiding that he has never been able to enter the Spirit World, something his young daughter seems able to do.",
+          "pattern_label": "trying to become your famous parent",
+          "pattern_text": "The child of a much-loved, larger-than-life parent takes on the job of carrying the family legacy and tries to be exactly who that parent was. He is responsible and serious, but the pressure makes him rigid, envious of those who find it easy, and harsh with the people who don't meet his standards. He has to discover that he can honour a legacy without becoming a copy of the person who left it.",
+          "hook": "He is dutiful and stretched thin: guardian of a disappearing tradition, teased by his carefree siblings, and privately worried he is not enough like his father.",
+          "why_relatable": "Can you ever measure up to a parent everyone admired? Is carrying on a family legacy a gift or a burden? What happens to your relationships when you hold everyone to impossible standards, including yourself?",
+          "watch_for": [
+            "Notice how he reacts when someone else succeeds at something he struggles with.",
+            "How does he treat his brother and sister, and how do they treat him?",
+            "Whose expectations is he really trying to meet?"
+          ],
+          "start_at": "Korra S2E1",
+          "span": "Korra S2-S3",
+          "situations": [
+            {"id": "family_expectations", "weight": 0.9},
+            {"id": "sibling_rivalry", "weight": 0.5},
+            {"id": "becoming_a_manager", "weight": 0.5},
+            {"id": "becoming_a_parent", "weight": 0.4}
+          ],
+          "conflicts": ["self_vs_family_expectations", "perfectionism_vs_good_enough"],
+          "emotions": {"start": ["inadequacy", "anxiety"], "middle": ["envy", "self_doubt", "fear"], "end": ["acceptance", "confidence", "peace"]},
+          "ending_tone": "hopeful",
+          "intensity": "moderate",
+          "warnings": ["child_endangerment", "war_and_violence"],
+          "example_user_messages": [
+            "My dad was a legend in our field and everyone expects me to be him. I'm exhausted from trying.",
+            "My kid is naturally good at the thing I've struggled with my whole life and I feel weirdly jealous.",
+            "I took over the family business and I'm so worried about ruining what my father built.",
+            "I've become really strict with the people I lead and they're starting to resent me."
+          ],
+          "spoiler": {
+            "summary": "At the Southern Air Temple Tenzin clashes with Bumi and Kya and admits their father seemed to favour him as the only airbender; he hides his inability to reach the Spirit World and resents that Jinora can. When Jinora's soul is trapped, he searches the Fog of Lost Souls and, as he loses himself, a vision of Aang tells him to stop trying to be anyone but himself; he escapes with his daughter and siblings. In Book Three, leading the new airbenders, he turns into a drill sergeant until Pema helps him see his harshness, and he apologises to Bumi and agrees Jinora is ready to grow up; later he fights the whole Red Lotus alone to protect them and lives to see Jinora made a master.",
+            "key_events": [
+              "Siblings argue about Aang favouring Tenzin",
+              "Jealous of Jinora's spiritual gifts",
+              "Jinora's spirit is captured by Unalaq",
+              "Aang's vision frees him in the Fog of Lost Souls",
+              "Harsh drill-sergeant training of the new airbenders; Bumi quits",
+              "Apologises to Bumi and Jinora",
+              "Beaten nearly to death by the Red Lotus defending the Air Nation",
+              "Gives Jinora her master's tattoos"
+            ],
+            "got_right": "He takes his responsibilities seriously, loves his family fiercely, admits when he is wrong and learns to share leadership with others, including his daughter.",
+            "got_wrong": "He tries to be a copy of his father, hides his weaknesses out of pride, envies his own child, and pushes people too hard to meet his standards."
+          }
+        }
+      ]
+    },
+    {
+      "id": "char:avatar/asami_sato",
+      "name": "Asami Sato",
+      "role": "The capable, warm-hearted heiress of a famous inventor and industrialist, a skilled driver and fighter who lost her mother as a child",
+      "relations": [
+        {"target": "char:avatar/korra", "relation": "partner"},
+        {"target": "char:avatar/bolin", "relation": "friend"},
+        {"target": "char:avatar/tenzin", "relation": "friend"},
+        {"target": "char:avatar/lin_beifong", "relation": "friend"}
+      ],
+      "arcs": [
+        {
+          "id": "arc:avatar/asami_sato/fathers_betrayal",
+          "title": "When the parent you adore is accused",
+          "literal_situation": "Her beloved father, the widowed industrialist who raised her and made her who she is, comes under suspicion in the conflict that is threatening her new friends, and she has to decide whom to believe.",
+          "pattern_label": "discovering a parent's hidden wrongdoing",
+          "pattern_text": "A loving daughter who idolises the parent who raised her alone learns he may have done something deeply wrong. She has to choose between loyalty to him and her own sense of right, then live with the consequences: running the family's damaged name, carrying anger she can't let go of, and wondering whether forgiveness is possible or even deserved.",
+          "hook": "She has a father she adores, a comfortable life and a new circle of friends. Then serious questions arise about the man she has always looked up to.",
+          "why_relatable": "What do you owe a parent who loves you but may have done terrible things? Can you stand by your values when it costs you your family? Is forgiving someone the same as excusing them?",
+          "watch_for": [
+            "Notice how she weighs the evidence against her love for him.",
+            "How does the anger she feels show up in the rest of her life?",
+            "What does she owe him, and what does she owe herself?"
+          ],
+          "start_at": "Korra S1E7",
+          "span": "Korra S1-S4",
+          "situations": [
+            {"id": "difficult_parent", "weight": 0.9},
+            {"id": "responsibility_you_didnt_ask_for", "weight": 0.6},
+            {"id": "grief_and_loss", "weight": 0.6},
+            {"id": "starting_over", "weight": 0.4}
+          ],
+          "conflicts": ["belonging_vs_integrity", "revenge_vs_forgiveness"],
+          "emotions": {"start": ["betrayal", "confusion"], "middle": ["anger", "resentment", "loneliness"], "end": ["grief", "acceptance", "peace"]},
+          "ending_tone": "bittersweet",
+          "intensity": "heavy",
+          "warnings": ["betrayal", "death_of_loved_one", "grief", "war_and_violence"],
+          "example_user_messages": [
+            "I just found out my dad did something awful and I don't know if I can ever look at him the same way.",
+            "My father keeps writing to me from prison and I don't know whether to open the letters.",
+            "I had to take over the family company after a scandal and everyone judges me for his name.",
+            "I'm so angry at my parent, but I also miss him and I hate that I miss him."
+          ],
+          "spoiler": {
+            "summary": "Hiroshi Sato is revealed as the Equalists' weapons maker and asks Asami to join him; she refuses, shocks him with her glove, and later fights and captures him in a mecha tank battle when he tries to kill her. She takes over a disgraced Future Industries, nearly loses it to theft and Varrick's schemes, and rebuilds it over three years while refusing to read her father's letters. In Book Four she visits him, is moved when he calls her the greatest thing he ever made, and plays Pai Sho with him. During the fight against the Colossus they work together; he saves her by ejecting her from the suit and dies cutting the hole that lets Korra inside. She later says she is relieved she had begun to forgive him.",
+            "key_events": [
+              "Hiroshi revealed as an Equalist; Asami turns against him",
+              "Defeats and captures her father after he tries to kill her",
+              "Becomes CEO of a failing Future Industries; sells a majority stake to Varrick",
+              "Returns his unopened letters, then plays Pai Sho with him in prison",
+              "Hiroshi tells her he loves her and dies saving her in the Colossus fight",
+              "Grieves him and finds peace in having started to forgive"
+            ],
+            "got_right": "She chooses her values over blind loyalty, takes on responsibility with competence and integrity, and eventually opens the door to forgiveness on her own terms.",
+            "got_wrong": "She buries her anger and loneliness under work, holds lasting grudges, and cuts off contact for years in a way she almost doesn't get the chance to undo."
+          }
+        },
+        {
+          "id": "arc:avatar/asami_sato/rival_to_closest_friend",
+          "title": "The girl everyone assumed would be the rival",
+          "literal_situation": "A wealthy young woman starts dating the captain of a pro-bending team, only to find that his new teammate, the Avatar, clearly has feelings for him and resents her.",
+          "pattern_label": "a romantic rival becoming the person closest to you",
+          "pattern_text": "Two very different young women start out on opposite sides of the same relationship, wary and jealous of each other. Through shared hardship, loss and loyalty, the rivalry turns into a friendship where each is the one person the other really opens up to, and eventually into something neither of them expected.",
+          "hook": "She's kind and confident, and she's dating a boy she likes. The only problem is the brash teammate who can't hide how much she wishes she were in her place.",
+          "why_relatable": "Can you befriend someone you were set up to compete with? What makes one friend the person you tell everything to? How does a friendship grow when neither of you expected it?",
+          "watch_for": [
+            "Notice how she handles jealousy compared with the people around her.",
+            "Who does she turn to when things get hard, and who turns to her?",
+            "What does each friend give the other that nobody else does?"
+          ],
+          "start_at": "Korra S1E4",
+          "span": "Korra S1-S4",
+          "situations": [
+            {"id": "falling_for_someone_unexpected", "weight": 0.8},
+            {"id": "finding_your_people", "weight": 0.7},
+            {"id": "breakup", "weight": 0.4},
+            {"id": "long_distance", "weight": 0.4}
+          ],
+          "conflicts": ["independence_vs_connection", "truth_vs_protecting_others"],
+          "emotions": {"start": ["jealousy", "confusion"], "middle": ["longing", "loneliness", "hope"], "end": ["love", "joy", "belonging"]},
+          "ending_tone": "hopeful",
+          "intensity": "light",
+          "warnings": ["war_and_violence", "death_of_loved_one"],
+          "example_user_messages": [
+            "I used to see her as competition, now she's the only person I really talk to.",
+            "We both liked the same guy, and somehow that turned into the best friendship of my life.",
+            "My best friend moved away to recover from something awful and I only realised how much I missed her when she was gone.",
+            "I think I'm falling for my best friend and I'm terrified of ruining what we have."
+          ],
+          "spoiler": {
+            "summary": "Asami dates Mako while Korra is jealous; Mako and Korra kiss behind her back, and the love triangle ends with both women eventually leaving him. After her father's betrayal, Asami and Korra bond during their desert captivity in Book Three, and when Korra leaves to heal, Asami writes to her for three years and is the only friend she writes back to. Asami realises she has fallen in love with Korra but keeps quiet out of fear of rejection. After Hiroshi's death Korra comforts her, they go on a trip to the Spirit World, and walk into the portal hand in hand; they become a couple, share their first kiss, and later declare their love for one another.",
+            "key_events": [
+              "Dates Mako; Mako and Korra kiss",
+              "Breaks up with Mako; later briefly dates him again",
+              "Stranded in the desert with Korra, building trust",
+              "Only one of Korra's friends she writes back to during recovery",
+              "Snaps at Korra on her return over her father",
+              "Korra and Asami walk into the spirit portal together and become a couple"
+            ],
+            "got_right": "She refuses to hold a grudge against Korra, supports her unconditionally through her lowest point, and allows herself to feel something new.",
+            "got_wrong": "She hides her feelings and her hurt, sometimes letting resentment out sideways instead of saying what she needs."
+          }
+        }
+      ]
+    },
+    {
+      "id": "char:avatar/lin_beifong",
+      "name": "Lin Beifong",
+      "role": "Republic City's tough, no-nonsense Chief of Police and daughter of Toph Beifong, who has no patience for the new Avatar and an awkward history with Tenzin",
+      "relations": [
+        {"target": "char:avatar/toph_beifong", "relation": "parent"},
+        {"target": "char:avatar/tenzin", "relation": "ex_partner"},
+        {"target": "char:avatar/korra", "relation": "friend"},
+        {"target": "char:avatar/bolin", "relation": "colleague"},
+        {"target": "char:avatar/asami_sato", "relation": "friend"}
+      ],
+      "arcs": [
+        {
+          "id": "arc:avatar/lin_beifong/duty_above_all",
+          "title": "A hard-edged chief who lives for the job",
+          "literal_situation": "The metalbending Chief of Police runs her city with an iron hand, answers to a council that includes her ex, who has since married and started the family she didn't want, and resents a reckless teenage Avatar who wrecks property in her streets.",
+          "pattern_label": "a tough leader whose job is her armour",
+          "pattern_text": "A blunt, fiercely competent woman has made her work her whole identity. She doesn't do small talk, keeps everyone at a distance, and still carries resentment towards her ex and his new family. When a public failure puts her reputation and her team on the line, she has to decide what she's willing to give up, and who she is when the title is gone.",
+          "hook": "She is at the top of her profession, respected and feared, dismissive of the new Avatar and allergic to anyone offering to look after her.",
+          "why_relatable": "What happens when your work is the only thing holding you together? Can you work alongside someone who broke your heart? What does it mean to own a failure?",
+          "watch_for": [
+            "Notice how she reacts when someone offers her help.",
+            "When a choice comes between her goal and a person in danger, what does she pick?",
+            "How does she treat the young Avatar, and does it change?"
+          ],
+          "start_at": "Korra S1E1",
+          "span": "Korra S1",
+          "situations": [
+            {"id": "burnout_at_work", "weight": 0.6},
+            {"id": "losing_a_job", "weight": 0.6},
+            {"id": "standing_up_to_authority", "weight": 0.4},
+            {"id": "breakup", "weight": 0.3}
+          ],
+          "conflicts": ["duty_vs_desire", "independence_vs_connection"],
+          "emotions": {"start": ["pride", "resentment"], "middle": ["shame", "guilt"], "end": ["self_respect", "belonging"]},
+          "ending_tone": "hopeful",
+          "intensity": "moderate",
+          "warnings": ["war_and_violence"],
+          "example_user_messages": [
+            "My job is my whole life and I don't let anyone close. Lately I'm wondering if that's working.",
+            "I have to work every day with my ex, who is now married with kids. I act like I'm fine.",
+            "I failed publicly at work and my team got hurt because of it. I'm thinking about quitting.",
+            "People say I'm cold, but I just don't trust anyone to have my back."
+          ],
+          "spoiler": {
+            "summary": "Lin warms to Korra after they fight Amon together, choosing to save Korra's life instead of capturing him. When the raid on Sato's secret factory fails and her officers are captured, she resigns to go after Amon outside the law, rescues Team Avatar from prison, and finds her officers already de-bent. Defending Tenzin's family, she sacrifices herself to take down Equalist airships and refuses to reveal Korra's location, letting Amon take her bending. Korra later restores it, and Lin is reinstated as chief, now on good terms with Tenzin and Korra.",
+            "key_events": [
+              "Saves Korra instead of catching Amon at the arena",
+              "Loses her officers in the Sato factory trap and resigns",
+              "Rescues Team Avatar from Tarrlok's jail",
+              "Sacrifices herself to protect Tenzin's family",
+              "Amon takes her bending when she refuses to betray Korra",
+              "Korra restores her bending; reinstated as chief"
+            ],
+            "got_right": "She takes responsibility for failures, puts others' lives before her goals, and is willing to sacrifice everything for people she once kept at arm's length.",
+            "got_wrong": "She uses her job and toughness as armour, refuses help and closeness, and lets old resentments shape how she treats people."
+          }
+        },
+        {
+          "id": "arc:avatar/lin_beifong/old_family_wounds",
+          "title": "The sister who never forgave",
+          "literal_situation": "While escorting the Avatar across the Earth Kingdom, the police chief is forced to visit the city run by the younger sister she hasn't spoken to in decades, over an old family rift she has never let go of.",
+          "pattern_label": "a lonely grudge against your own family",
+          "pattern_text": "A woman has spent decades estranged from her sister and her mother, holding on to an old injustice and an absent parent's silence about her father. Forced back into their world, she is cold, bitter and cruel to relatives who want to know her, and has to confront whether her anger protects her or is simply keeping her alone.",
+          "hook": "She is guarded, prickly and determined to leave as fast as possible. Her sister is warm and successful, and her niece desperately wants a relationship with the aunt she's only heard stories about.",
+          "why_relatable": "How long can you hold on to a grudge before it becomes who you are? Is it possible to forgive a family member who never seemed to take responsibility? What do you do with anger at a parent who did her best but still let you down?",
+          "watch_for": [
+            "Notice what she's really angry about, underneath the argument she's having.",
+            "How does she respond to the niece who wants to know her?",
+            "What does she need to hear from her family, and can they say it?"
+          ],
+          "start_at": "Korra S3E5",
+          "span": "Korra S3-S4",
+          "situations": [
+            {"id": "sibling_rivalry", "weight": 0.9},
+            {"id": "difficult_parent", "weight": 0.7},
+            {"id": "loneliness", "weight": 0.7},
+            {"id": "midlife_reinvention", "weight": 0.3}
+          ],
+          "conflicts": ["holding_on_vs_letting_go", "revenge_vs_forgiveness"],
+          "emotions": {"start": ["resentment", "anger", "loneliness"], "middle": ["grief", "shame"], "end": ["relief", "belonging", "acceptance"]},
+          "ending_tone": "hopeful",
+          "intensity": "moderate",
+          "warnings": ["war_and_violence"],
+          "example_user_messages": [
+            "I haven't talked to my sister in over twenty years and now I have to see her. I'm dreading it.",
+            "My mom was so hands-off that I basically raised myself, and she never told me who my dad was.",
+            "Someone told me I'm going to end up a bitter, lonely woman and I cried because they might be right.",
+            "My niece wants to get to know me and I pushed her away, and I hate myself for it."
+          ],
+          "spoiler": {
+            "summary": "In Zaofu Lin is cold to Suyin and brutally rejects her niece Opal, and Korra tells her she will always be a lonely and bitter woman, leaving her in tears. Acupuncture forces her to relive the day Suyin scarred her and Toph tore up the arrest report; she attacks Suyin, they fight it out, then sleep, apologise and make peace. Lin reconnects with Opal and later tells Suyin she loves her during the Red Lotus battle. In Book Four, meeting Toph after twenty years, she finally confronts her mother about growing up without a father; after Toph saves her, Lin apologises and they reconcile with an embrace.",
+            "key_events": [
+              "Scarred by Suyin's cable during a triad chase as a young officer",
+              "Toph tears up the arrest report; Lin stops speaking to Suyin",
+              "Tells Opal to get out; Korra calls her bitter and lonely",
+              "Acupuncture memories lead to a fight with Suyin",
+              "Apologises to Opal and reconciles with Suyin",
+              "Confronts Toph about her absent father",
+              "Reconciles with Toph after rescuing the Beifongs from Kuvira"
+            ],
+            "got_right": "She finally names what hurt her, apologises when she's wrong, and chooses to show up for the family she once pushed away.",
+            "got_wrong": "She lets one old injustice harden into decades of estrangement, takes her pain out on innocent relatives, and refuses to talk about her feelings until her body forces her to."
+          }
+        }
+      ]
+    },
+    {
+      "id": "char:avatar/bolin",
+      "name": "Bolin",
+      "role": "A goofy, big-hearted pro-bending earthbender who grew up on the streets under his older brother Mako's protection after their parents were killed",
+      "relations": [
+        {"target": "char:avatar/korra", "relation": "friend"},
+        {"target": "char:avatar/asami_sato", "relation": "friend"},
+        {"target": "char:avatar/lin_beifong", "relation": "boss"},
+        {"target": "char:avatar/tenzin", "relation": "friend"}
+      ],
+      "arcs": [
+        {
+          "id": "arc:avatar/bolin/little_brother_finding_his_worth",
+          "title": "The lovable sidekick looking for his own worth",
+          "literal_situation": "An orphaned younger brother who has always been looked after by his serious older sibling is the cheerful, clumsy earthbender on their struggling pro-bending team, and falls instantly for the new teammate, who has eyes for his brother.",
+          "pattern_label": "a lovable younger sibling stuck in a shadow",
+          "pattern_text": "A warm, funny younger sibling has spent his life being protected by a more serious, more capable older brother. People like him but don't take him seriously, he struggles with the skill everyone expects him to have, and he keeps losing out in love. He has to figure out whether he is just the comic relief or someone who can stand on his own.",
+          "hook": "He is optimistic, starstruck and a little naive. His brother makes the decisions, his crush likes someone else, and he can't master the advanced technique he's dreamed of since childhood.",
+          "why_relatable": "What happens when you're the fun one but never the one people count on? How do you step out from a sibling who has always protected you? What if the thing you're best at isn't the thing you wanted to be good at?",
+          "watch_for": [
+            "Notice how others react when he tries to be taken seriously.",
+            "What does he do when he's left out of the group's plans?",
+            "When does he surprise himself?"
+          ],
+          "start_at": "Korra S1E1",
+          "span": "Korra S1-S3",
+          "situations": [
+            {"id": "confidence_struggle", "weight": 0.8},
+            {"id": "finding_your_people", "weight": 0.6},
+            {"id": "unrequited_love", "weight": 0.5},
+            {"id": "sibling_rivalry", "weight": 0.4}
+          ],
+          "conflicts": ["fitting_in_vs_standing_out", "independence_vs_connection"],
+          "emotions": {"start": ["joy", "self_doubt"], "middle": ["rejection", "loneliness", "inadequacy"], "end": ["confidence", "pride", "belonging"]},
+          "ending_tone": "hopeful",
+          "intensity": "light",
+          "warnings": ["war_and_violence"],
+          "example_user_messages": [
+            "I'm always the funny friend but nobody ever takes me seriously.",
+            "My older brother basically raised me and I don't know how to do things without him.",
+            "I liked her first, but she fell for my brother. It's fine. It's totally fine.",
+            "Everyone else in my friend group seems to have a purpose and I'm just along for the ride."
+          ],
+          "spoiler": {
+            "summary": "Bolin's crush on Korra ends in rejection when she and Mako fall for each other. In Book Two he drifts from the team, gets trapped in a relationship with the domineering Eska and becomes a movie star as Nuktuk for Varrick, then saves President Raiko and exposes Varrick's scheme on his own. In Book Three he fails to learn metalbending but, trapped by Ghazan's lava in the collapsing Northern Air Temple, discovers he can lavabend, saving Mako, Asami and Tenzin, and later holds off Ghazan in battle. He also begins dating Opal.",
+            "key_events": [
+              "Crush on Korra is rejected; she and Mako get together",
+              "Captain of a failing Fire Ferrets",
+              "Relationship with Eska, then fleeing her",
+              "Becomes famous as Nuktuk and exposes Varrick's kidnapping plot",
+              "Can't learn metalbending at Zaofu; meets Opal",
+              "Discovers lavabending at the Northern Air Temple"
+            ],
+            "got_right": "He stays kind, forgiving and loyal, and when it counts he steps up with courage and finds his own unique strength.",
+            "got_wrong": "He is gullible, can't keep secrets, and leans on others' approval to feel worthwhile."
+          }
+        },
+        {
+          "id": "arc:avatar/bolin/following_the_wrong_leader",
+          "title": "All in on a cause",
+          "literal_situation": "Later in the series, he has found a new purpose as a proud officer serving a charismatic leader who is restoring order to a troubled region, and he is the face of her aid work, while the people closest to him grow more and more skeptical.",
+          "pattern_label": "realising the cause you joined isn't good",
+          "pattern_text": "An idealistic young man joins a charismatic leader's movement because it seems to be helping people and makes him feel important. The people he loves warn him, and he defends his choice. As the leader's methods become harder to ignore, he has to admit he was wrong, break away at real personal cost, and try to repair the relationships his loyalty damaged.",
+          "hook": "He is excited and proud, sure he's making history by bringing food and order to struggling towns, and frustrated that his loved ones can't see the good he thinks he's doing.",
+          "why_relatable": "How do you know whether a cause you believe in is really doing good? Why is it so hard to hear doubts from the people who love you? What would it take to question something that gave you purpose?",
+          "watch_for": [
+            "Notice the moments when he chooses not to ask questions.",
+            "How does he react when someone he loves challenges what he's seen?",
+            "What would it take for him to change his mind, and what would it cost him?"
+          ],
+          "start_at": "Korra S4E1",
+          "span": "Korra S4",
+          "situations": [
+            {"id": "redemption_after_mistakes", "weight": 0.8},
+            {"id": "standing_up_to_authority", "weight": 0.7},
+            {"id": "new_job", "weight": 0.5},
+            {"id": "long_distance", "weight": 0.4}
+          ],
+          "conflicts": ["belonging_vs_integrity", "loyalty_vs_ambition"],
+          "emotions": {"start": ["pride", "hope"], "middle": ["confusion", "anxiety", "guilt"], "end": ["relief", "self_respect", "belonging"]},
+          "ending_tone": "hopeful",
+          "intensity": "moderate",
+          "warnings": ["war_and_violence", "betrayal", "death_of_loved_one"],
+          "example_user_messages": [
+            "I joined a company I really believed in, and I'm starting to realise the boss is doing shady stuff.",
+            "My girlfriend and my brother both say I've been brainwashed by this group, and I keep defending it.",
+            "I'm scared to admit I got it wrong because I've told everyone how great this was.",
+            "I finally walked away and now I have to apologise to everyone I argued with."
+          ],
+          "spoiler": {
+            "summary": "Bolin defends Kuvira to Opal and Mako and even blames Mako for wasting his time, but at Zaofu he sees her threaten dissenters with reeducation camps and realises, with Varrick, that she is a tyrant. His escape fails and he is sentenced to a reeducation camp; he and Varrick escape by blowing up the train, help other fugitives, and reach Republic City to warn the world about her superweapon. He apologises to Mako, helps Lin and Toph free the Beifongs, saves Zhu Li, wins back Opal, and fights inside the Colossus alongside his brother, carrying Mako out when the core explodes.",
+            "key_events": [
+              "Recruited as the face of Kuvira's army",
+              "Tells Mako he's making history while Mako is a glorified butler",
+              "Kuvira threatens him with a reeducation camp",
+              "Deserts with Varrick and Zhu Li; captured and sentenced",
+              "Escapes the train with Varrick and warns Republic City",
+              "Apologises to Mako and wins Opal back",
+              "Carries Mako out of the exploding Colossus",
+              "Hiroshi Sato is killed in the final battle"
+            ],
+            "got_right": "His heart is always in helping people; once he sees the truth he risks his freedom to act on it and humbly makes amends.",
+            "got_wrong": "He lets flattery, purpose and a charismatic leader override his conscience, dismisses the warnings of those who love him, and looks away from evidence he doesn't want to see."
+          }
+        }
+      ]
+    }
+  ]
+}

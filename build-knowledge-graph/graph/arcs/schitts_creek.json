@@ -1,0 +1,719 @@
+{
+  "show": "schitts_creek",
+  "characters": [
+    {
+      "id": "char:schitts_creek/johnny_rose",
+      "name": "Johnny Rose",
+      "role": "A self-made video-store tycoon whose family loses its entire fortune overnight, leaving them with nothing but a tiny rural town he once bought as a joke, where they move into two adjoining motel rooms.",
+      "relations": [
+        {"target": "char:schitts_creek/moira_rose", "relation": "partner"},
+        {"target": "char:schitts_creek/david_rose", "relation": "child"},
+        {"target": "char:schitts_creek/alexis_rose", "relation": "child"},
+        {"target": "char:schitts_creek/stevie_budd", "relation": "colleague"},
+        {"target": "char:schitts_creek/stevie_budd", "relation": "friend"},
+        {"target": "char:schitts_creek/stevie_budd", "relation": "protege"},
+        {"target": "char:schitts_creek/roland_schitt", "relation": "rival"},
+        {"target": "char:schitts_creek/roland_schitt", "relation": "friend"},
+        {"target": "char:schitts_creek/roland_schitt", "relation": "colleague"},
+        {"target": "char:schitts_creek/patrick_brewer", "relation": "friend"}
+      ],
+      "arcs": [
+        {
+          "id": "arc:schitts_creek/johnny_rose/starting_over_from_zero",
+          "title": "Starting from scratch at sixty",
+          "literal_situation": "His business manager embezzled the family's money and stopped paying their taxes, so the government has taken everything. The only asset left is a small backwater town he bought for his son as a gag gift, and the family is now living in its run-down motel.",
+          "pattern_label": "losing everything you built late in life",
+          "pattern_text": "Someone who spent decades building a successful life loses all of it through no fault of their own and has to start again with almost nothing. Their first instinct is to treat the setback as a temporary mess to escape as quickly as possible, and to lean on the status and methods that worked before. The real question is whether they can find purpose, pride and a new kind of work in the humble place they landed.",
+          "hook": "He is in shock but determined to act like a CEO: making calls, trying to sell the town, and planning the family's exit. He is used to people returning his calls and taking his name seriously, and suddenly nobody does.",
+          "why_relatable": "He asks himself who he is without the company, the money and the respect that came with them. He wonders whether taking small, unglamorous work means admitting defeat, and how long he can hold his family together on optimism alone.",
+          "watch_for": [
+            "How does he treat the locals when he still believes he is above the town?",
+            "Which of his old business habits help him, and which hold him back?",
+            "When does 'getting out' stop being the only goal he talks about?"
+          ],
+          "start_at": "S1E1",
+          "span": "S1-S6",
+          "situations": [
+            {"id": "starting_over", "weight": 0.95},
+            {"id": "losing_a_job", "weight": 0.7},
+            {"id": "midlife_reinvention", "weight": 0.8},
+            {"id": "starting_a_business", "weight": 0.5}
+          ],
+          "conflicts": ["past_vs_future", "holding_on_vs_letting_go"],
+          "emotions": {"start": ["shame", "anxiety", "determination"], "middle": ["inadequacy", "hope"], "end": ["pride", "self_respect", "belonging"]},
+          "ending_tone": "hopeful",
+          "intensity": "light",
+          "warnings": [],
+          "example_user_messages": [
+            "I lost my business after thirty years and I honestly don't know who I am if I'm not running something.",
+            "We went bankrupt and had to move into a tiny place in a town I'd never have chosen. I keep telling myself it's temporary.",
+            "At my age I thought I'd be retiring, not starting over from nothing.",
+            "I feel embarrassed taking a small job when I used to be the boss of hundreds of people.",
+            "How do you rebuild your confidence when everything you worked for is just gone?"
+          ],
+          "spoiler": {
+            "summary": "Johnny spends the early seasons trying to sell the town, chase old contacts and find a quick way back, while slowly softening toward the townspeople and the mayor who once took their doors off. When Stevie inherits the motel after her great-aunt Maureen dies, Johnny becomes her business partner, renames it the Rosebud Motel and revives it. The motel earns acclaim, Roland joins the team, and the trio pitches the idea of a motel franchise. His former assistant's New York hedge fund turns them down, but another investor funds the Rosebud Motel Group. Johnny sets up the company's office in Los Angeles so he can be with Moira, leaving town as an up-and-coming hotelier with his pride and purpose restored.",
+            "key_events": [
+              "Business manager Eli embezzled the fortune",
+              "Johnny tries and fails to sell the town early on",
+              "Stevie inherits the motel and Johnny becomes her partner",
+              "The motel is rebranded as the Rosebud Motel",
+              "Former assistant's hedge fund rejects the franchise pitch",
+              "A different investor funds the Rosebud Motel Group",
+              "Johnny moves the headquarters to Los Angeles to be with Moira"
+            ],
+            "got_right": "He never stops working or taking responsibility, treats his partners as equals once he respects them, and learns that a small, well-run business built with people he cares about can give him as much pride as an empire.",
+            "got_wrong": "At first he is condescending to the town and clings to the idea of a rescue from his old world; he often relies on outdated methods and underestimates the locals, especially Stevie, until they prove him wrong."
+          }
+        },
+        {
+          "id": "arc:schitts_creek/johnny_rose/absent_father_to_cheerleader",
+          "title": "Getting to know his own family",
+          "literal_situation": "After years of long hours running a company, he barely knows his adult son and daughter, who have no life skills. Now all four of them are crammed into two motel rooms with a connecting door.",
+          "pattern_label": "a busy parent finally getting close to grown children",
+          "pattern_text": "A parent who spent their children's childhood working and providing, rather than being present, is suddenly forced into close quarters with them as adults. They alternate between frustration at how unprepared their kids are and guilt about their own absence. The question is whether it's too late to become the steady, encouraging parent they wish they had been.",
+          "hook": "He loves his family deeply but mostly knows how to fix problems with money, and the money is gone. His grown kids can't hold a job or do laundry, and his wife is falling apart over the loss of her old life.",
+          "why_relatable": "He wonders how to push his kids to grow up without crushing them, and whether he contributed to their helplessness. He is also trying to be the calm one for everybody while quietly panicking himself.",
+          "watch_for": [
+            "Notice how he talks to his children when they fail compared with when they try.",
+            "What does he do with his own fear so that nobody else sees it?",
+            "How does the way he supports his wife change over time?"
+          ],
+          "start_at": "S1E1",
+          "span": "S1-S6",
+          "situations": [
+            {"id": "caring_for_family", "weight": 0.8},
+            {"id": "family_expectations", "weight": 0.5},
+            {"id": "responsibility_you_didnt_ask_for", "weight": 0.5}
+          ],
+          "conflicts": ["career_vs_relationships", "control_vs_trust"],
+          "emotions": {"start": ["overwhelm", "guilt", "anxiety"], "middle": ["hope", "love"], "end": ["pride", "joy", "peace"]},
+          "ending_tone": "hopeful",
+          "intensity": "light",
+          "warnings": [],
+          "example_user_messages": [
+            "I worked nonstop when my kids were young and now they're adults and I feel like I don't really know them.",
+            "My grown kids moved back in and I'm torn between wanting them to stand on their own and wanting to protect them.",
+            "I'm the one holding everyone together and I'm terrified, but I can't let them see it.",
+            "Is it too late to be a better parent when your children are already in their thirties?"
+          ],
+          "spoiler": {
+            "summary": "Johnny goes from exasperated reality-check to the family's biggest supporter. He pushes David and Alexis to work, then cheers on David's store, Alexis's diploma, degree and PR firm, and patiently backs Moira through her council seat, theatre directing and film comeback, even taking out a line of credit to fund her spending. By the finale the family is closer than it ever was when they were rich; Johnny watches David marry Patrick, sees Alexis off to a job in New York, and leaves for California with Moira.",
+            "key_events": [
+              "Pushes David and Alexis to get jobs",
+              "Proudly supports Rose Apothecary and Alexis's business",
+              "Takes out a line of credit to fund Moira's spending",
+              "Attends David and Patrick's wedding",
+              "The family scatters: Alexis to New York, Johnny and Moira to Los Angeles"
+            ],
+            "got_right": "His loyalty never wavers; he learns that encouragement gets more from his children than lectures, and that being present matters more than providing.",
+            "got_wrong": "He sometimes micromanages, loses his temper over his family's incompetence, and enables Moira's spending rather than having hard conversations."
+          }
+        }
+      ]
+    },
+    {
+      "id": "char:schitts_creek/moira_rose",
+      "name": "Moira Rose",
+      "role": "A dramatic former soap-opera star with an unplaceable accent and a closet of wigs, who is devastated to find herself stripped of her fortune and living in a small-town motel.",
+      "relations": [
+        {"target": "char:schitts_creek/johnny_rose", "relation": "partner"},
+        {"target": "char:schitts_creek/david_rose", "relation": "child"},
+        {"target": "char:schitts_creek/alexis_rose", "relation": "child"},
+        {"target": "char:schitts_creek/roland_schitt", "relation": "colleague"},
+        {"target": "char:schitts_creek/twyla_sands", "relation": "friend"},
+        {"target": "char:schitts_creek/stevie_budd", "relation": "protege"},
+        {"target": "char:schitts_creek/patrick_brewer", "relation": "protege"}
+      ],
+      "arcs": [
+        {
+          "id": "arc:schitts_creek/moira_rose/clinging_to_former_glory",
+          "title": "A star with no stage",
+          "literal_situation": "A once-famous actress whose best-known role ended years ago has lost her mansion, her staff and her place in high society, and now lives in a motel in a town she finds unbearable.",
+          "pattern_label": "holding on to who you used to be",
+          "pattern_text": "Someone whose whole sense of self was built on being admired and important loses the status, the audience and the lifestyle that proved it. They keep performing the old identity loudly, partly as armour against grief and humiliation. The question is whether they can find new ways to matter, and a real community, without pretending the loss never happened.",
+          "hook": "She stays in bed, mourns her lost wig collection's former home, and treats every local as beneath her. She insists her comeback is always around the corner.",
+          "why_relatable": "She wrestles with whether admitting she's no longer at the top means disappearing entirely. She wonders if small, local ways of contributing count for anything, and whether she can accept kindness from people she has been dismissing.",
+          "watch_for": [
+            "What does she do when someone in town offers her friendship she didn't ask for?",
+            "When does her grandness look like confidence, and when does it look like fear?",
+            "Which small-town roles does she scorn at first, and how does she treat them later?"
+          ],
+          "start_at": "S1E1",
+          "span": "S1-S6",
+          "situations": [
+            {"id": "identity_and_self_acceptance", "weight": 0.85},
+            {"id": "starting_over", "weight": 0.7},
+            {"id": "midlife_reinvention", "weight": 0.7},
+            {"id": "finding_your_people", "weight": 0.4}
+          ],
+          "conflicts": ["past_vs_future", "holding_on_vs_letting_go"],
+          "emotions": {"start": ["grief", "shame", "loneliness"], "middle": ["determination", "hope", "self_doubt"], "end": ["pride", "confidence", "belonging"]},
+          "ending_tone": "hopeful",
+          "intensity": "light",
+          "warnings": [],
+          "example_user_messages": [
+            "I used to be somebody. People recognised me. Now nobody here has any idea who I was and it's crushing.",
+            "Since I stopped working I feel invisible, and I keep acting bigger than I feel so no one notices.",
+            "I lost my house and my whole social circle and I refuse to accept this is my life now.",
+            "Is it pathetic to still be hoping for a comeback at my age?"
+          ],
+          "spoiler": {
+            "summary": "Moira goes from sulking in the motel to joining the Jazzagals, winning a seat on the town council and directing the town's production of Cabaret. She lands a role in the low-budget horror sequel The Crows Have Eyes 3, which becomes a surprise success helped by Alexis's publicity work. Finally she is offered a return to Sunrise Bay in its reboot; after her conditions are met (including not casting Clifton Sparks), she accepts and moves to California with Johnny, having also let the town into her heart.",
+            "key_events": [
+              "Joins the Jazzagals and befriends Jocelyn and Twyla",
+              "Wins a seat on the town council",
+              "Directs the town's production of Cabaret",
+              "Stars in The Crows Have Eyes 3",
+              "Signs on to the Sunrise Bay reboot and moves to California"
+            ],
+            "got_right": "She never lets anyone tell her she's finished, pours real energy into the town's culture, and eventually lets herself love the people she once looked down on.",
+            "got_wrong": "Her vanity and snobbery hurt people, she resists accepting kindness for far too long, and she sometimes chases status at the expense of those around her."
+          }
+        },
+        {
+          "id": "arc:schitts_creek/moira_rose/learning_to_mother",
+          "title": "A distant mother, up close",
+          "literal_situation": "She was a largely absent parent who left her children to nannies; she can't remember her daughter's middle name. Now she shares a motel room wall with her grown son and daughter.",
+          "pattern_label": "an emotionally distant parent learning to show up",
+          "pattern_text": "A parent who was more focused on their own life and image than on raising their children is suddenly living in close quarters with them as adults. Their attempts at affection come out awkward, self-centred or theatrical, and the children don't expect much. The question is whether real closeness can grow late, and what it takes to become the parent your kids can actually lean on.",
+          "hook": "She loves her children in theory but mostly relates to them through criticism, grand pronouncements and favouritism toward her son. Her daughter has spent years far away and they are practically strangers.",
+          "why_relatable": "She is confronted with how little she knows about her own kids, and has to decide whether to face that guilt or perform her way around it. Can someone who never learned to nurture start now?",
+          "watch_for": [
+            "How does she respond when her daughter needs comfort rather than advice?",
+            "Notice the difference between how she treats her two children.",
+            "When does she drop the performance and simply show she cares?"
+          ],
+          "start_at": "S1E1",
+          "span": "S1-S6",
+          "situations": [
+            {"id": "difficult_parent", "weight": 0.6},
+            {"id": "caring_for_family", "weight": 0.6},
+            {"id": "redemption_after_mistakes", "weight": 0.5}
+          ],
+          "conflicts": ["independence_vs_connection"],
+          "emotions": {"start": ["guilt", "inadequacy"], "middle": ["confusion", "love"], "end": ["pride", "love", "acceptance"]},
+          "ending_tone": "hopeful",
+          "intensity": "light",
+          "warnings": [],
+          "example_user_messages": [
+            "I wasn't a very present mother and now my adult kids treat me like an acquaintance.",
+            "I don't really know how to comfort my daughter. Everything I say comes out wrong.",
+            "I was so wrapped up in my own career that I missed most of my children growing up. Can I fix that now?",
+            "My kids joke about how little I know them and it stings because it's true."
+          ],
+          "spoiler": {
+            "summary": "Moira slowly builds real relationships with both children, especially Alexis, whom she had long neglected. She comforts Alexis after her breakup with Ted, bonds with her over the film's publicity, and officiates David's wedding to Patrick in a pope-inspired outfit. Alexis ends the series telling her she's grateful they lost everything because it let her truly know her family.",
+            "key_events": [
+              "Forgets Alexis's middle name early on",
+              "Grows closer to Alexis over the years",
+              "Alexis works as her publicist for The Crows Have Eyes 3",
+              "Officiates David and Patrick's wedding",
+              "Alexis says she is grateful they lost their fortune"
+            ],
+            "got_right": "She keeps trying, and learns to show up with warmth instead of grand gestures; she is openly proud of her children's ambition.",
+            "got_wrong": "Her self-absorption repeatedly makes moments about her, and she plays favourites, leaving Alexis feeling second-best for a long time."
+          }
+        }
+      ]
+    },
+    {
+      "id": "char:schitts_creek/david_rose",
+      "name": "David Rose",
+      "role": "The anxious, sarcastic, fashion-obsessed adult son of a formerly wealthy family, a former New York gallerist forced to move into a small-town motel with his parents and sister.",
+      "relations": [
+        {"target": "char:schitts_creek/johnny_rose", "relation": "parent"},
+        {"target": "char:schitts_creek/moira_rose", "relation": "parent"},
+        {"target": "char:schitts_creek/alexis_rose", "relation": "sibling"},
+        {"target": "char:schitts_creek/stevie_budd", "relation": "friend"},
+        {"target": "char:schitts_creek/stevie_budd", "relation": "ex_partner"},
+        {"target": "char:schitts_creek/patrick_brewer", "relation": "partner"},
+        {"target": "char:schitts_creek/patrick_brewer", "relation": "colleague"}
+      ],
+      "arcs": [
+        {
+          "id": "arc:schitts_creek/david_rose/letting_himself_be_loved",
+          "title": "The guarded heart",
+          "literal_situation": "Back in the city, his friends and lovers mostly wanted his money and status. Now broke and stuck in a tiny town, he is prickly, fearful and convinced nobody here could understand him.",
+          "pattern_label": "learning to trust love after being used",
+          "pattern_text": "Someone who has been used and discarded by the people around them has learned to keep everyone at a distance with sarcasm and high standards. They expect every relationship to end badly and sabotage things before they can get hurt. The question is whether they can let themselves be seen and loved by someone kind, and believe they deserve it.",
+          "hook": "He is miserable, lonely and anxious, hiding behind sharp jokes and black-and-white sweaters. The only person in town he clicks with is the equally sardonic motel clerk.",
+          "why_relatable": "He wonders whether his old friends ever cared about him, and whether he can make real connections in a place where he feels like an outsider. When someone is kind to him, he isn't sure whether to trust it.",
+          "watch_for": [
+            "How does he react when someone is straightforwardly nice to him?",
+            "Notice the ways he protects himself before he can be rejected.",
+            "What does his friendship with the motel clerk give him that nothing else does?"
+          ],
+          "start_at": "S1E1",
+          "span": "S1-S6",
+          "situations": [
+            {"id": "falling_for_someone_unexpected", "weight": 0.8},
+            {"id": "finding_your_people", "weight": 0.7},
+            {"id": "loneliness", "weight": 0.5},
+            {"id": "identity_and_self_acceptance", "weight": 0.5}
+          ],
+          "conflicts": ["control_vs_trust", "independence_vs_connection"],
+          "emotions": {"start": ["loneliness", "anxiety", "self_doubt"], "middle": ["hope", "fear", "love"], "end": ["love", "belonging", "peace"]},
+          "ending_tone": "hopeful",
+          "intensity": "light",
+          "warnings": [],
+          "example_user_messages": [
+            "Every relationship I've had, people wanted something from me. I don't know how to trust someone who's just nice.",
+            "I push people away with jokes before they can get close enough to hurt me.",
+            "I've never been in a relationship longer than a few months and I'm scared I'm just not built for it.",
+            "I moved somewhere I hate and the only friend I have is the one person as cynical as me.",
+            "Someone genuinely kind likes me and my first instinct is to find out what's wrong with them."
+          ],
+          "spoiler": {
+            "summary": "David has a brief fling with Stevie that turns into a deep best-friendship, gets hurt in a messy throuple with Stevie and Jake, and is manipulated by an old flame. Then he meets Patrick, his business partner at Rose Apothecary; they begin dating and it becomes the longest relationship of his life. A rough patch when Patrick's ex-fiancee Rachel shows up tests his trust, but they reconcile, Patrick proposes on a hike, and David chooses to stay in town, buy the cottage Patrick loves and marry him in the town hall, with Moira officiating.",
+            "key_events": [
+              "Brief romantic fling with Stevie becomes best-friendship",
+              "Throuple with Stevie and Jake",
+              "Meets Patrick and starts dating him",
+              "Patrick's ex-fiancee Rachel appears",
+              "Patrick proposes on a hike",
+              "David decides not to move to New York and stays",
+              "David and Patrick marry in the town hall"
+            ],
+            "got_right": "He eventually lets his guard down, forgives, communicates his fears, and makes a romantic gesture of his own instead of waiting to be pursued.",
+            "got_wrong": "He catastrophises, retreats when hurt, and tests people's loyalty instead of trusting it; his sarcasm often hurts those who care about him."
+          }
+        },
+        {
+          "id": "arc:schitts_creek/david_rose/building_his_own_thing",
+          "title": "Taste looking for a purpose",
+          "literal_situation": "He has an eye for design and curation but no practical skills with money, paperwork or inventory. Needing an income, he has to find work in a town that doesn't value anything he's good at.",
+          "pattern_label": "turning a niche talent into a real livelihood",
+          "pattern_text": "Someone with a strong creative eye but little practical experience has to earn a living for the first time in a place that doesn't seem to need what they offer. They must decide whether to compromise their standards or find a way to make their taste useful to others. The question is whether they can build something of their own, and accept help from people with the skills they lack.",
+          "hook": "He is scornful of every job on offer and scared of failing at something that matters to him. His past career has left him with standards but no plan.",
+          "why_relatable": "He asks whether he is actually good at anything that pays, whether working for someone else is a humiliation, and whether it's safe to risk failure publicly.",
+          "watch_for": [
+            "What does he do when a job clashes with his idea of good taste?",
+            "How does he handle being told his numbers don't add up?",
+            "Notice when he lets someone else's strengths fill his gaps."
+          ],
+          "start_at": "S2",
+          "span": "S2-S5",
+          "situations": [
+            {"id": "starting_a_business", "weight": 0.85},
+            {"id": "new_job", "weight": 0.5},
+            {"id": "confidence_struggle", "weight": 0.6},
+            {"id": "taking_a_big_risk", "weight": 0.5}
+          ],
+          "conflicts": ["perfectionism_vs_good_enough", "control_vs_trust"],
+          "emotions": {"start": ["inadequacy", "self_doubt"], "middle": ["determination", "anxiety"], "end": ["pride", "confidence"]},
+          "ending_tone": "hopeful",
+          "intensity": "light",
+          "warnings": [],
+          "example_user_messages": [
+            "I have great taste and zero business sense. How do I turn that into an actual job?",
+            "I'm terrified of opening my own shop because if it fails, it's my failure in front of everyone.",
+            "The only jobs around here feel beneath me and I hate that I think that way.",
+            "I'm creative but spreadsheets make me want to cry. I need a partner who's the opposite of me."
+          ],
+          "spoiler": {
+            "summary": "David first takes a job at the Blouse Barn and transforms it into an upscale boutique, then opens Rose Apothecary, which rebrands local products on consignment. Patrick, a practical business-minded newcomer, helps him with the licensing and becomes his business partner. The store thrives; David learns to trust Patrick's financial sense while supplying the vision, and ultimately chooses to keep running it in town rather than move back to New York.",
+            "key_events": [
+              "Works at the Blouse Barn",
+              "Opens Rose Apothecary",
+              "Patrick becomes his business partner",
+              "Stays in town to keep running the store"
+            ],
+            "got_right": "He commits to his vision, discovers he is genuinely brilliant at retail, and learns to share control with a partner who complements him.",
+            "got_wrong": "He is snobbish about honest work early on, avoids the unglamorous parts of business, and lets fear of failure make him defensive."
+          }
+        }
+      ]
+    },
+    {
+      "id": "char:schitts_creek/alexis_rose",
+      "name": "Alexis Rose",
+      "role": "A globe-trotting socialite who has partied with celebrities and escaped absurd scrapes abroad, and who never finished high school, now broke and stuck with her family in a small-town motel.",
+      "relations": [
+        {"target": "char:schitts_creek/johnny_rose", "relation": "parent"},
+        {"target": "char:schitts_creek/moira_rose", "relation": "parent"},
+        {"target": "char:schitts_creek/david_rose", "relation": "sibling"},
+        {"target": "char:schitts_creek/twyla_sands", "relation": "friend"},
+        {"target": "char:schitts_creek/stevie_budd", "relation": "friend"},
+        {"target": "char:schitts_creek/patrick_brewer", "relation": "friend"}
+      ],
+      "arcs": [
+        {
+          "id": "arc:schitts_creek/alexis_rose/earning_her_own_way",
+          "title": "The girl who was always rescued",
+          "literal_situation": "She has always survived on charm, wealthy boyfriends and her parents' money. With all of that gone, she has no diploma, no job history and no plan beyond waiting for someone to whisk her away.",
+          "pattern_label": "going from dependent to self-made",
+          "pattern_text": "Someone who has always been carried by charm, money or the people who wanted to take care of them suddenly has none of that safety net. They have to go back to basics, often feeling behind people much younger, and discover whether they can build a life on their own effort. The question is whether they can take themselves seriously before anyone else does.",
+          "hook": "She is bored, oblivious and sure this is a brief detour. Her main strategy is finding a man who can get her out of town.",
+          "why_relatable": "She wonders whether she is more than a pretty face with good stories, whether it's embarrassing to go back and finish what she skipped, and what she actually wants to do with her life.",
+          "watch_for": [
+            "What does she do when she's the oldest person in a room of beginners?",
+            "Notice which of her party-girl skills turn out to be useful.",
+            "When does she start choosing things for herself rather than for a partner?"
+          ],
+          "start_at": "S1E1",
+          "span": "S1-S6",
+          "situations": [
+            {"id": "coming_of_age", "weight": 0.7},
+            {"id": "starting_over", "weight": 0.6},
+            {"id": "career_change", "weight": 0.6},
+            {"id": "confidence_struggle", "weight": 0.5}
+          ],
+          "conflicts": ["independence_vs_connection", "safety_vs_growth"],
+          "emotions": {"start": ["boredom", "restlessness", "inadequacy"], "middle": ["determination", "self_doubt"], "end": ["confidence", "self_respect", "pride"]},
+          "ending_tone": "hopeful",
+          "intensity": "light",
+          "warnings": [],
+          "example_user_messages": [
+            "I'm almost thirty and I never finished school. Going back feels humiliating but I don't see another way.",
+            "I've always relied on whoever I was dating to take care of me, and now I'm on my own and I don't know where to start.",
+            "People think I'm shallow and honestly I'm scared they're right.",
+            "I want to build a career that's actually mine, not something someone handed me."
+          ],
+          "spoiler": {
+            "summary": "Alexis finishes her high school diploma, earns an associate degree in public relations at Elmdale College, and starts Alexis Rose Communications, doing marketing for the motel and organising events for the town. After a heartbreaking breakup she throws herself into work as Moira's publicist for The Crows Have Eyes 3, impressing the streaming service Interflix, which hires her in New York. She even turns down Twyla's offer of money to make it on her own.",
+            "key_events": [
+              "Earns her high school diploma",
+              "Studies PR at Elmdale College",
+              "Starts Alexis Rose Communications",
+              "Works as Moira's publicist for the film",
+              "Hired by Interflix in New York",
+              "Turns down Twyla's money to go it alone"
+            ],
+            "got_right": "She commits to the unglamorous work of catching up, turns her social skills into a profession, and chooses independence even when help is offered.",
+            "got_wrong": "Early on she is self-absorbed and flaky, leans on men and her brother to bail her out, and underestimates herself for a long time."
+          }
+        },
+        {
+          "id": "arc:schitts_creek/alexis_rose/love_that_asks_something",
+          "title": "Choosing between two kinds of love",
+          "literal_situation": "Used to flings with celebrities, she quickly attracts attention from two very different local men: a laid-back, off-grid guy and the earnest town vet.",
+          "pattern_label": "learning that love means sacrifice",
+          "pattern_text": "Someone who has always treated romance as fun, escape or rescue discovers that real love asks for honesty, patience and sometimes letting go. They bounce between partners without knowing what they truly want. The question is whether they can love someone generously, even when it costs them.",
+          "hook": "She is enjoying the attention and treating romance as a way to pass the time or escape. She hasn't had to think about what a partner needs from her.",
+          "why_relatable": "She wonders if she's ready for something serious, whether she's just attracted to being wanted, and what happens when a relationship clashes with her own goals.",
+          "watch_for": [
+            "What draws her to each of the two men, and what does she avoid with each?",
+            "How does she react when someone asks for a real commitment?",
+            "Notice when she starts putting someone else's needs next to her own."
+          ],
+          "start_at": "S1E1",
+          "span": "S1-S6",
+          "situations": [
+            {"id": "breakup", "weight": 0.6},
+            {"id": "long_distance", "weight": 0.5},
+            {"id": "coming_of_age", "weight": 0.5},
+            {"id": "identity_and_self_acceptance", "weight": 0.4}
+          ],
+          "conflicts": ["career_vs_relationships", "holding_on_vs_letting_go"],
+          "emotions": {"start": ["restlessness", "curiosity"], "middle": ["confusion", "love", "longing"], "end": ["grief", "acceptance", "self_respect"]},
+          "ending_tone": "bittersweet",
+          "intensity": "light",
+          "warnings": [],
+          "example_user_messages": [
+            "I keep going back and forth between two people and I don't know if I actually love either of them.",
+            "My partner got an amazing opportunity far away and I don't know whether to follow or stay.",
+            "We love each other but our careers are pulling us in opposite directions.",
+            "I've always dated for fun. I don't know how to be in something real."
+          ],
+          "spoiler": {
+            "summary": "Alexis vacillates between Mutt and Ted, turning down proposals, then takes time to focus on herself. She reunites with Ted at the end of season four and they build a mature relationship. Ted gets a research job in the Galapagos; she hesitates to leave her family, agrees to go, but a mix-up means she never leaves. After a stretch of long-distance dating she ends it with him amicably because their careers are headed in opposite directions, a painful but selfless choice.",
+            "key_events": [
+              "Dates both Mutt and Ted",
+              "Turns down marriage proposals",
+              "Reunites with Ted at the end of season four",
+              "Ted leaves for the Galapagos",
+              "Long-distance relationship with Ted",
+              "Amicable breakup with Ted"
+            ],
+            "got_right": "She learns to love generously, supports Ted's dream even when it hurts her, and ends things with honesty and kindness instead of drifting.",
+            "got_wrong": "She strings both men along early on and uses relationships as escape routes before she knows what she wants."
+          }
+        }
+      ]
+    },
+    {
+      "id": "char:schitts_creek/stevie_budd",
+      "name": "Stevie Budd",
+      "role": "The deadpan, cynical clerk at the town's run-down motel, a local who has never left and keeps most people at arm's length.",
+      "relations": [
+        {"target": "char:schitts_creek/david_rose", "relation": "friend"},
+        {"target": "char:schitts_creek/david_rose", "relation": "ex_partner"},
+        {"target": "char:schitts_creek/johnny_rose", "relation": "colleague"},
+        {"target": "char:schitts_creek/johnny_rose", "relation": "mentor"},
+        {"target": "char:schitts_creek/johnny_rose", "relation": "friend"},
+        {"target": "char:schitts_creek/roland_schitt", "relation": "colleague"},
+        {"target": "char:schitts_creek/moira_rose", "relation": "mentor"},
+        {"target": "char:schitts_creek/patrick_brewer", "relation": "friend"},
+        {"target": "char:schitts_creek/alexis_rose", "relation": "friend"}
+      ],
+      "arcs": [
+        {
+          "id": "arc:schitts_creek/stevie_budd/stuck_local_steps_up",
+          "title": "The loner behind the front desk",
+          "literal_situation": "She has spent her whole life in a small town where she finds almost no one interesting, working a dead-end motel job and doing as little as possible. Then an eccentric, broke family moves into two of the rooms.",
+          "pattern_label": "a stuck, guarded person letting others in",
+          "pattern_text": "Someone who never left their hometown has settled into a small, safe routine and a protective cynicism, expecting little from life or people. When unexpected newcomers show up, they find a real friend and start being asked to take on more than they think they can handle. The question is whether they can let people close and believe they are capable of more.",
+          "hook": "She is sarcastic, lonely and unimpressed by everything, especially the new motel guests. She would rather mock the family than admit she's curious about them.",
+          "why_relatable": "She wonders whether she's already missed her chance at a bigger life, whether she will end up alone like her great-aunt, and whether she's worth taking seriously.",
+          "watch_for": [
+            "How does she respond when someone treats her as an equal instead of a townie?",
+            "Notice how she handles moments where she's asked to take charge.",
+            "What does her humour protect her from?"
+          ],
+          "start_at": "S1E1",
+          "span": "S1-S4",
+          "situations": [
+            {"id": "finding_your_people", "weight": 0.8},
+            {"id": "responsibility_you_didnt_ask_for", "weight": 0.7},
+            {"id": "confidence_struggle", "weight": 0.6},
+            {"id": "loneliness", "weight": 0.5}
+          ],
+          "conflicts": ["safety_vs_growth", "independence_vs_connection"],
+          "emotions": {"start": ["boredom", "loneliness", "self_doubt"], "middle": ["belonging", "anxiety", "determination"], "end": ["confidence", "belonging"]},
+          "ending_tone": "hopeful",
+          "intensity": "light",
+          "warnings": ["death_of_loved_one"],
+          "example_user_messages": [
+            "I've lived in the same small town my whole life and I've basically given up expecting anything to happen.",
+            "I don't really have friends. People bore me, or at least that's what I tell myself.",
+            "Suddenly I'm responsible for something big and I have no idea if I can handle it.",
+            "I'm scared of turning into the lonely relative everyone pities."
+          ],
+          "spoiler": {
+            "summary": "Stevie has a brief fling with David that turns into a lifelong best-friendship. When her great-aunt Maureen dies she inherits the motel, and with Johnny as her business partner she steps up, renames and renovates it as the Rosebud Motel, and learns marketing and management. She becomes part of the Rose family in all but name.",
+            "key_events": [
+              "Brief fling with David becomes best-friendship",
+              "Great-aunt Maureen dies",
+              "Inherits the motel",
+              "Partners with Johnny to relaunch it as the Rosebud Motel"
+            ],
+            "got_right": "She lets herself care about people, rises to responsibility, and learns from Johnny without losing her own voice.",
+            "got_wrong": "She hides behind cynicism and low self-esteem, and often assumes the worst about herself and others."
+          }
+        },
+        {
+          "id": "arc:schitts_creek/stevie_budd/what_else_could_i_be",
+          "title": "Wondering what else is out there",
+          "literal_situation": "Later in the series, after a turning point that makes her life look more stable than ever, she suddenly starts questioning her future and whether she has settled for the town she grew up in.",
+          "pattern_label": "questioning whether you've settled for too little",
+          "pattern_text": "Someone whose life has finally become stable is hit by the worry that they never tested what else they could have done. Friends seem to be moving forward while they feel stuck. The question is whether they need to leave to prove themselves, or just need to know that they could.",
+          "hook": "She is doing better than she ever has, but restlessness and a fear of being ordinary are creeping in, and she feels left behind by the people around her.",
+          "why_relatable": "She wonders if staying close to home is a choice or a lack of courage, whether she should take risks that terrify her, and what happens if she tries and fails.",
+          "watch_for": [
+            "What does she say yes to that surprises everyone, including herself?",
+            "How does comparing herself with her friends affect her choices?",
+            "Notice the difference between wanting to leave and wanting the option to."
+          ],
+          "start_at": "S5",
+          "span": "S5-S6",
+          "situations": [
+            {"id": "taking_a_big_risk", "weight": 0.7},
+            {"id": "confidence_struggle", "weight": 0.6},
+            {"id": "career_change", "weight": 0.5},
+            {"id": "identity_and_self_acceptance", "weight": 0.5}
+          ],
+          "conflicts": ["safety_vs_growth", "past_vs_future"],
+          "emotions": {"start": ["restlessness", "envy", "self_doubt"], "middle": ["fear", "curiosity"], "end": ["confidence", "peace", "self_respect"]},
+          "ending_tone": "hopeful",
+          "intensity": "light",
+          "warnings": [],
+          "example_user_messages": [
+            "My life is fine, stable even, but lately I can't shake the feeling that I've settled.",
+            "Everyone around me seems to be moving on to bigger things and I'm still in my hometown.",
+            "I don't necessarily want to leave. I just want to know I could.",
+            "I said yes to something completely outside my comfort zone and now I'm panicking."
+          ],
+          "spoiler": {
+            "summary": "In season five Stevie has an existential crisis and pushes herself out of her comfort zone, accepting Moira's offer to play Sally Bowles in the town's Cabaret, and triumphing. In season six she briefly quits to work as a flight attendant for Larry Air, then returns to help Johnny and Roland land an investor for the Rosebud Motel Group. She stays based in town while travelling to open new locations, explaining to David she never needed to move to a big city, she just needed to know she could.",
+            "key_events": [
+              "Plays Sally Bowles in Moira's Cabaret",
+              "Briefly leaves to work for Larry Air",
+              "Helps found the Rosebud Motel Group",
+              "Stays based in town while travelling for new locations"
+            ],
+            "got_right": "She takes real risks, trusts mentors who believe in her, and defines success on her own terms.",
+            "got_wrong": "She compares herself to others and makes impulsive moves to prove something rather than figuring out what she actually wants."
+          }
+        }
+      ]
+    },
+    {
+      "id": "char:schitts_creek/patrick_brewer",
+      "name": "Patrick Brewer",
+      "role": "An earnest, practical, business-minded newcomer to town who helps with local business registrations and takes an interest in a new shop opening up.",
+      "relations": [
+        {"target": "char:schitts_creek/david_rose", "relation": "partner"},
+        {"target": "char:schitts_creek/david_rose", "relation": "colleague"},
+        {"target": "char:schitts_creek/stevie_budd", "relation": "friend"},
+        {"target": "char:schitts_creek/alexis_rose", "relation": "friend"},
+        {"target": "char:schitts_creek/johnny_rose", "relation": "friend"},
+        {"target": "char:schitts_creek/moira_rose", "relation": "mentor"}
+      ],
+      "arcs": [
+        {
+          "id": "arc:schitts_creek/patrick_brewer/living_true_to_himself",
+          "title": "The steady guy starting fresh",
+          "literal_situation": "Later in the series, a calm, practical man arrives in town having left his previous life behind. He is drawn to helping launch a quirky new local shop and to the person running it.",
+          "pattern_label": "realising the life you planned wasn't yours",
+          "pattern_text": "Someone who did everything expected of them realises the life they were building never quite felt right, and leaves it behind without being sure what comes next. As they start fresh, they have to learn to name what they truly want and say it out loud, even to the people they love most. The question is whether they can stop avoiding hard conversations and live openly as themselves.",
+          "hook": "He seems like the most well-adjusted person in town: kind, organised and confident about business. Beneath that, he is private about his past and unsure how to say what he really feels.",
+          "why_relatable": "He wonders how to tell the people who know him best that he has changed, whether starting over this late means he wasted years, and how to be brave about feelings when he's always been the calm, sensible one.",
+          "watch_for": [
+            "Notice what he leaves unsaid, and how that affects the people around him.",
+            "How does he handle it when someone reacts to him with insecurity rather than trust?",
+            "When does his calmness help, and when is it a way of avoiding something?"
+          ],
+          "start_at": "S3",
+          "span": "S3-S6",
+          "situations": [
+            {"id": "identity_and_self_acceptance", "weight": 0.9},
+            {"id": "falling_for_someone_unexpected", "weight": 0.8},
+            {"id": "starting_over", "weight": 0.5},
+            {"id": "family_expectations", "weight": 0.5}
+          ],
+          "conflicts": ["truth_vs_protecting_others", "self_vs_family_expectations"],
+          "emotions": {"start": ["confusion", "hope", "curiosity"], "middle": ["fear", "love", "anxiety"], "end": ["love", "freedom", "acceptance"]},
+          "ending_tone": "hopeful",
+          "intensity": "light",
+          "warnings": [],
+          "example_user_messages": [
+            "I was engaged, I had the whole life planned out, and I walked away because something never felt right.",
+            "I'm in my thirties and only now figuring out who I actually am. Is that normal?",
+            "I'm terrified to tell my parents something about myself because I don't want them to see me differently.",
+            "I avoid the big conversations and then people get hurt because I didn't say anything.",
+            "I finally feel like myself and I want to do something romantic about it, but I've never been good at saying how I feel."
+          ],
+          "spoiler": {
+            "summary": "Patrick left his fiancee Rachel and moved to town, realising he had never felt the right way about the relationships he was in. He becomes David's business partner at Rose Apothecary, lets David make the first move, and they begin dating; it is his first relationship with a man and he finally feels 'what right feels like'. Rachel's surprise appearance causes a rift because he never told David about her, but they reconcile. He comes out to his loving parents, who accept him, stars in Moira's Cabaret, sets down roots in town, proposes to David on a hike and marries him, and they buy the cottage he dreamed of.",
+            "key_events": [
+              "Left ex-fiancee Rachel before arriving",
+              "Becomes David's business partner",
+              "David kisses him and they start dating",
+              "Serenades David at the store's open mic",
+              "Rachel shows up unannounced",
+              "Comes out to his parents, who accept him",
+              "Proposes to David and marries him"
+            ],
+            "got_right": "He is kind, patient and brave in his romantic gestures, and ultimately lives openly and joyfully as himself.",
+            "got_wrong": "He avoids rocking the boat on big things: he didn't make clear their first date was a date, hid his past engagement, and delayed telling his parents, which hurt people he loved."
+          }
+        }
+      ]
+    },
+    {
+      "id": "char:schitts_creek/roland_schitt",
+      "name": "Roland Schitt",
+      "role": "The nosy, loud, fourth-generation mayor of the small town, who enjoys lording his local power over the newly broke family that just arrived.",
+      "relations": [
+        {"target": "char:schitts_creek/johnny_rose", "relation": "rival"},
+        {"target": "char:schitts_creek/johnny_rose", "relation": "friend"},
+        {"target": "char:schitts_creek/johnny_rose", "relation": "colleague"},
+        {"target": "char:schitts_creek/moira_rose", "relation": "colleague"},
+        {"target": "char:schitts_creek/stevie_budd", "relation": "colleague"}
+      ],
+      "arcs": [
+        {
+          "id": "arc:schitts_creek/roland_schitt/petty_power_to_true_friend",
+          "title": "The small-town big shot",
+          "literal_situation": "As mayor of a town the newcomers technically own, he enjoys reminding the formerly rich family that they depend on his goodwill, and turns up uninvited to comment on everything they do.",
+          "pattern_label": "a petty power player learning generosity",
+          "pattern_text": "Someone who has always been a big fish in a small pond uses the little power they have to feel important, especially over people who once looked down on them. They are loud, tactless and more interested in the title than the work. The question is whether they can become someone people rely on and grow into their responsibilities at work and at home.",
+          "hook": "He takes the family's doors off their motel rooms after a spat, overshares constantly, and seems to embody everything they fear about the town.",
+          "why_relatable": "Under the bluster he wants respect and friendship, and he is unsure how to earn them. He is also facing whether he takes his responsibilities, at work and at home, as seriously as he takes his title.",
+          "watch_for": [
+            "What does he want from the newcomers underneath the teasing?",
+            "Notice the moments he goes out of his way for someone without making a show of it.",
+            "Which responsibility does he treat seriously first?"
+          ],
+          "start_at": "S1E1",
+          "span": "S1-S6",
+          "situations": [
+            {"id": "redemption_after_mistakes", "weight": 0.5},
+            {"id": "becoming_a_parent", "weight": 0.6},
+            {"id": "midlife_reinvention", "weight": 0.4}
+          ],
+          "conflicts": ["power_vs_morality", "fitting_in_vs_standing_out"],
+          "emotions": {"start": ["pride", "envy"], "middle": ["inadequacy", "hope"], "end": ["belonging", "joy"]},
+          "ending_tone": "hopeful",
+          "intensity": "light",
+          "warnings": [],
+          "example_user_messages": [
+            "I've always liked being the guy in charge around here, but I'm not sure anyone actually respects me.",
+            "I realise I've been kind of a bully to someone new and now I want to be their friend.",
+            "I'm becoming a dad again later in life and I want to do it properly this time.",
+            "I talk big but honestly I've never done much with my position."
+          ],
+          "spoiler": {
+            "summary": "Roland's antagonism toward Johnny softens into an unlikely friendship; they help each other out and he eventually takes a job at the motel with Johnny and Stevie. When Jocelyn has a baby, being a hands-on father becomes the first job he really takes seriously. He becomes a partner in the Rosebud Motel Group, stays to run the town location with a new income, and sends the Roses off with a prank tribute, putting their pictures on the town's welcome sign.",
+            "key_events": [
+              "Removes the Roses' motel room doors early on",
+              "Becomes friends with Johnny",
+              "He and Jocelyn have a baby",
+              "Starts working at the motel",
+              "Partner in the Rosebud Motel Group",
+              "Puts the Roses on the town welcome sign"
+            ],
+            "got_right": "He is fiercely loyal once he cares about someone, wants to do right by his town, and embraces fatherhood wholeheartedly.",
+            "got_wrong": "He uses petty power to feel important, is tactless and lazy about real change, and makes things about himself."
+          }
+        }
+      ]
+    },
+    {
+      "id": "char:schitts_creek/twyla_sands",
+      "name": "Twyla Sands",
+      "role": "The endlessly cheerful waitress at the town cafe, who offers kindness to every newcomer and casually tells alarming stories about her chaotic family.",
+      "relations": [
+        {"target": "char:schitts_creek/alexis_rose", "relation": "friend"},
+        {"target": "char:schitts_creek/moira_rose", "relation": "friend"}
+      ],
+      "arcs": [
+        {
+          "id": "arc:schitts_creek/twyla_sands/kindness_despite_chaos",
+          "title": "Sunshine from a stormy family",
+          "literal_situation": "She waits tables at the local cafe, often gets orders wrong, and shrugs off stories about relatives in prison, cults and bad marriages as perfectly normal. The formerly rich family becomes some of her regulars.",
+          "pattern_label": "staying kind when your family is chaos",
+          "pattern_text": "Someone raised in a chaotic, dysfunctional family has chosen to be warm, generous and content with a simple life. Others underestimate them or overlook them, but they quietly show up for everyone. The question is what they really want for themselves, and whether they can let people see beyond their cheerful role.",
+          "hook": "She is sweet, a little scattered and always ready to listen, while the people around her mostly talk about their own problems and rarely ask about hers.",
+          "why_relatable": "She quietly faces the question of how much of her family's chaos she carries, whether being the kind one means being overlooked, and what she would do if her life suddenly offered more choices.",
+          "watch_for": [
+            "Notice how others treat her stories, and how she tells them.",
+            "Who in the new family actually sees her, and when?",
+            "What does she seem to want for herself, when she's asked?"
+          ],
+          "start_at": "S1E1",
+          "span": "S1-S6",
+          "situations": [
+            {"id": "difficult_parent", "weight": 0.6},
+            {"id": "finding_your_people", "weight": 0.6},
+            {"id": "identity_and_self_acceptance", "weight": 0.5}
+          ],
+          "conflicts": ["fitting_in_vs_standing_out"],
+          "emotions": {"start": ["hope", "loneliness"], "middle": ["belonging", "joy"], "end": ["peace", "self_respect", "joy"]},
+          "ending_tone": "hopeful",
+          "intensity": "light",
+          "warnings": [],
+          "example_user_messages": [
+            "My family is a total mess and I've just decided to be nice to everyone anyway.",
+            "People think I'm a bit of an airhead and never ask how I'm doing.",
+            "I'm happy with a simple life and people act like that means I lack ambition.",
+            "I always listen to everyone else's problems. I'm not sure anyone would listen to mine."
+          ],
+          "spoiler": {
+            "summary": "Twyla stays a warm presence throughout, befriending Moira in the Jazzagals and becoming close to Alexis. At the end of the series she reveals she won the lottery around the time the Roses arrived, keeping $46 million secret because she didn't want to be treated differently. She decides she already has what she needs, buys Cafe Tropical to run as her own, and offers Alexis money for New York, which Alexis declines, calling her the best person she has ever known.",
+            "key_events": [
+              "Joins the Jazzagals with Moira",
+              "Close friendship with Alexis",
+              "Reveals she secretly won the lottery",
+              "Buys Cafe Tropical",
+              "Offers Alexis money for New York"
+            ],
+            "got_right": "She defines a good life on her own terms and treats everyone with generosity, rich or broke.",
+            "got_wrong": "She keeps her own needs and secrets so hidden that even friends rarely see her fully, and normalises some genuinely troubling family history."
+          }
+        }
+      ]
+    }
+  ]
+}

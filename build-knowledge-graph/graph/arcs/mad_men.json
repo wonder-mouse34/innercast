@@ -1,0 +1,1513 @@
+{
+  "show": "mad_men",
+  "characters": [
+    {
+      "id": "char:mad_men/don_draper",
+      "name": "Don Draper",
+      "role": "The brilliant, magnetic creative director of a Madison Avenue ad agency in 1960, with a beautiful wife and two kids in the suburbs and a past he never talks about.",
+      "relations": [
+        {
+          "target": "char:mad_men/betty_draper",
+          "relation": "ex_partner"
+        },
+        {
+          "target": "char:mad_men/megan_calvet",
+          "relation": "ex_partner"
+        },
+        {
+          "target": "char:mad_men/sally_draper",
+          "relation": "child"
+        },
+        {
+          "target": "char:mad_men/peggy_olson",
+          "relation": "protege"
+        },
+        {
+          "target": "char:mad_men/roger_sterling",
+          "relation": "friend"
+        },
+        {
+          "target": "char:mad_men/pete_campbell",
+          "relation": "colleague"
+        },
+        {
+          "target": "char:mad_men/joan_holloway",
+          "relation": "colleague"
+        }
+      ],
+      "arcs": [
+        {
+          "id": "arc:mad_men/don_draper/the_man_behind_the_pitch",
+          "title": "The man who has everything and feels nothing",
+          "literal_situation": "Don is the star of Sterling Cooper: he can sell anything with one pitch, has a house in Ossining, a wife who looks like a movie star and two children. He drinks all day, sleeps with other women, and refuses to talk about where he comes from.",
+          "pattern_label": "a self-made success hiding who they really are",
+          "pattern_text": "A person rebuilt themselves from nothing and is now admired for a life that looks perfect from the outside. Keeping the old self buried takes constant effort, so they hold everyone at arm's length and fill the emptiness with work, drink and escape. The story asks whether you can ever be loved if nobody is allowed to know you.",
+          "hook": "Don is at the top of his game: admired at work, envied at home, and quietly miserable. He keeps a locked drawer, avoids every question about his childhood, and seems happiest when he is somewhere nobody knows him.",
+          "why_relatable": "What happens when the version of you that everyone admires is one you invented to survive? Can you let the people closest to you see the parts you are ashamed of, or is running away easier than being known? Is success enough to fill a hole that was dug long before it?",
+          "watch_for": [
+            "Notice what he does whenever someone gets too close to his past.",
+            "Watch how his pitches reveal feelings he never says out loud at home.",
+            "Which people does he let in, even a little, and what makes them different?"
+          ],
+          "start_at": "S1E1",
+          "span": "S1-S7",
+          "situations": [
+            {
+              "id": "identity_and_self_acceptance",
+              "weight": 0.95
+            },
+            {
+              "id": "loneliness",
+              "weight": 0.7
+            },
+            {
+              "id": "redemption_after_mistakes",
+              "weight": 0.5
+            },
+            {
+              "id": "starting_over",
+              "weight": 0.4
+            }
+          ],
+          "conflicts": [
+            "past_vs_future",
+            "truth_vs_protecting_others"
+          ],
+          "emotions": {
+            "start": [
+              "shame",
+              "restlessness",
+              "loneliness"
+            ],
+            "middle": [
+              "dread",
+              "guilt",
+              "numbness"
+            ],
+            "end": [
+              "acceptance",
+              "peace"
+            ]
+          },
+          "ending_tone": "ambiguous",
+          "intensity": "heavy",
+          "warnings": [
+            "addiction",
+            "betrayal",
+            "abuse",
+            "self_harm_or_suicide",
+            "death_of_loved_one"
+          ],
+          "example_user_messages": [
+            "Everyone thinks I have my life together but nobody actually knows where I come from, and I work really hard to keep it that way.",
+            "I built a whole new version of myself and now I'm terrified someone will see through it.",
+            "I have the job, the house and the family and I still feel completely empty.",
+            "Whenever things get serious with someone I just want to get in the car and disappear.",
+            "I'm ashamed of how I grew up and I've never told my partner the truth about it."
+          ],
+          "spoiler": {
+            "summary": "Don is really Dick Whitman, the son of a prostitute raised in poverty and a brothel, who swapped dog tags with his dead officer Lt. Don Draper in Korea and built a new life on the stolen identity. His half-brother Adam finds him; Don pays him off and pushes him away, and Adam hangs himself. Pete discovers the secret and tries to blackmail him, but Bert Cooper shrugs it off. Betty eventually finds his box of documents, he confesses, and the marriage ends. Over the following seasons he keeps repeating the pattern with women and work, is forced out of his own agency after a breakdown during a Hershey pitch where he tells the truth about his childhood, earns his way back, and finally walks away from everything on a road trip. At a California retreat, broken and alone, he hugs a stranger who describes feeling invisible, meditates, and the series ends with a smile that implies he created the famous 'hilltop' Coca-Cola ad.",
+            "key_events": [
+              "Real name Dick Whitman; stole a dead officer's identity in Korea",
+              "Adam Whitman's suicide after Don rejects him",
+              "Pete's blackmail attempt fails when Cooper doesn't care",
+              "Betty discovers the truth; divorce",
+              "Anna Draper, the only person who knew him fully, dies",
+              "Confesses his brothel childhood in the Hershey pitch and is put on leave",
+              "Shows his children the house where he grew up",
+              "Ends at a retreat in California; implied to create the Coke 'hilltop' ad"
+            ],
+            "got_right": "He eventually tells the truth about himself to the people who matter, and his empathy for outsiders (Peggy, the man in the group) is real.",
+            "got_wrong": "For years he treats his past as something to escape rather than face, lies to everyone who loves him, and repeatedly abandons people when intimacy gets real."
+          }
+        },
+        {
+          "id": "arc:mad_men/don_draper/drinking_through_the_emptiness",
+          "title": "When the drink stops working",
+          "literal_situation": "Don's personal life has been turned upside down. He is drinking heavily, blacking out, sleeping with strangers and slipping at work, while his agency's survival depends on him.",
+          "pattern_label": "hitting bottom and trying to rebuild yourself",
+          "pattern_text": "A person who always seemed in control finds that their coping habits have turned on them. Lonely and unmoored, they drink to get through the nights, lose track of whole days and start hurting the people who depend on them. The story asks whether they can face themselves honestly enough to stop, and what it costs to try.",
+          "hook": "Later in the series, after a turning point that upends his home life, Don is drinking more than ever and starting to lose track of what he did the night before.",
+          "why_relatable": "What do you do when the thing that numbed the pain starts creating more of it? Can someone who has always relied on charm and control admit they are not okay? Who, if anyone, can he be honest with?",
+          "watch_for": [
+            "Notice the moments when he writes down what he's feeling instead of drinking it away.",
+            "Watch who tells him the truth about himself, and how he reacts.",
+            "How does his work change when he's struggling?"
+          ],
+          "start_at": "S4E1",
+          "span": "S4-S7",
+          "situations": [
+            {
+              "id": "addiction_and_recovery",
+              "weight": 0.9
+            },
+            {
+              "id": "loneliness",
+              "weight": 0.7
+            },
+            {
+              "id": "midlife_reinvention",
+              "weight": 0.6
+            },
+            {
+              "id": "burnout_at_work",
+              "weight": 0.4
+            }
+          ],
+          "conflicts": [
+            "holding_on_vs_letting_go",
+            "control_vs_trust"
+          ],
+          "emotions": {
+            "start": [
+              "loneliness",
+              "numbness",
+              "shame"
+            ],
+            "middle": [
+              "grief",
+              "determination",
+              "self_doubt"
+            ],
+            "end": [
+              "acceptance",
+              "freedom"
+            ]
+          },
+          "ending_tone": "ambiguous",
+          "intensity": "heavy",
+          "warnings": [
+            "addiction",
+            "death_of_loved_one",
+            "grief",
+            "betrayal"
+          ],
+          "example_user_messages": [
+            "I've been drinking alone every night since the separation and I can't remember half of last weekend.",
+            "I used to be the one who held everything together and now I'm messing up at work.",
+            "I started keeping a journal because I'm scared of who I'm turning into.",
+            "I keep telling myself I can stop whenever I want, but I haven't.",
+            "I don't know who I am without the life I used to have."
+          ],
+          "spoiler": {
+            "summary": "After his divorce Don spirals through 1964-65: blackouts, a lost Clio-night pitch where he steals a slogan, one-night stands. Anna Draper dies of cancer, and he spends a night with Peggy grieving. He starts a journal, cuts back on drinking, swims, and has a real relationship with Faye Miller, but impulsively proposes to his secretary Megan instead. The pattern returns in later seasons: an affair with his neighbour Sylvia, drinking, and a breakdown in the Hershey pitch that gets him put on leave. He returns on humiliating terms, rebuilds some trust, and eventually leaves everything behind to drift west.",
+            "key_events": [
+              "Blackouts and heavy drinking after the divorce",
+              "Anna Draper dies",
+              "'The Suitcase': a night of honesty with Peggy",
+              "Journaling and trying to sober up",
+              "Dumps Faye and proposes to Megan",
+              "Put on leave after the Hershey pitch",
+              "Returns under strict conditions",
+              "Walks away from McCann on a road trip"
+            ],
+            "got_right": "He recognises the drinking as a problem, starts writing honestly, and eventually accepts humbling conditions to earn his place back.",
+            "got_wrong": "He keeps confusing a new start with a new person, running into fresh relationships instead of changing, and relapses whenever things hurt."
+          }
+        },
+        {
+          "id": "arc:mad_men/don_draper/becoming_the_father_he_never_had",
+          "title": "A father who never learned how",
+          "literal_situation": "Don loves his children in his own way, but he is mostly absent: home late, emotionally closed, and happier playing the role of 'Daddy' at birthdays than actually knowing them.",
+          "pattern_label": "a parent breaking the cycle of their own childhood",
+          "pattern_text": "A person who grew up unloved becomes a parent and discovers they have no model for how to do it. They provide, they show up for the photos, but real closeness and honesty feel impossible. The story asks whether you can give your children what you never got, and whether the truth hurts them more than the secrets.",
+          "hook": "Don is the kind of father who arrives late to the birthday party with a dog in the car instead of the cake. His daughter adores him; he isn't sure what to do with that.",
+          "why_relatable": "How do you parent when your own childhood gave you nothing to copy? Is it kinder to protect kids from who you really are, or to let them see it? What happens when a child starts seeing through the image?",
+          "watch_for": [
+            "Notice the moments when Sally asks him something direct, and how he answers.",
+            "Watch how he behaves with his children compared to how he behaves with clients.",
+            "What does he choose to tell his kids about himself, and when?"
+          ],
+          "start_at": "S1E1",
+          "span": "S1-S7",
+          "situations": [
+            {
+              "id": "becoming_a_parent",
+              "weight": 0.6
+            },
+            {
+              "id": "caring_for_family",
+              "weight": 0.6
+            },
+            {
+              "id": "difficult_parent",
+              "weight": 0.5
+            },
+            {
+              "id": "redemption_after_mistakes",
+              "weight": 0.6
+            }
+          ],
+          "conflicts": [
+            "truth_vs_protecting_others",
+            "career_vs_relationships"
+          ],
+          "emotions": {
+            "start": [
+              "inadequacy",
+              "guilt"
+            ],
+            "middle": [
+              "shame",
+              "love"
+            ],
+            "end": [
+              "acceptance",
+              "love"
+            ]
+          },
+          "ending_tone": "bittersweet",
+          "intensity": "moderate",
+          "warnings": [
+            "betrayal",
+            "abuse",
+            "death_of_main_character",
+            "serious_illness"
+          ],
+          "example_user_messages": [
+            "My dad was awful to me and now that I have kids I'm scared I don't know how to be any different.",
+            "I provide for my family but my kids barely know me.",
+            "My teenager caught me doing something I'm ashamed of and now she won't look at me.",
+            "I've never told my children anything about where I grew up."
+          ],
+          "spoiler": {
+            "summary": "Don is a distracted, often absent father through the early seasons and after the divorce sees the kids on weekends. Sally worships him until, at 14, she walks in on him having sex with the neighbour Sylvia; he lies and she turns cold. At the end of season 6 he takes the children to the run-down brothel where he grew up, a first act of honesty, and Sally slowly forgives him. When Betty is dying, Sally tells Don the boys should stay with Henry, and he accepts that his role is to support rather than take over.",
+            "key_events": [
+              "Forgets Sally's birthday cake and brings a dog",
+              "Sally catches him with Sylvia",
+              "Shows his kids the brothel he grew up in",
+              "Sally begins to forgive him",
+              "Accepts Sally's plan for the boys after Betty's diagnosis"
+            ],
+            "got_right": "He eventually chooses honesty over image with his children, and genuinely respects Sally as a person.",
+            "got_wrong": "For most of their childhood he is emotionally absent, lets his affairs spill into their lives, and lies when caught."
+          }
+        }
+      ]
+    },
+    {
+      "id": "char:mad_men/peggy_olson",
+      "name": "Peggy Olson",
+      "role": "A shy, naive young woman from Brooklyn starting her first day as Don Draper's secretary at a Madison Avenue ad agency in 1960.",
+      "relations": [
+        {
+          "target": "char:mad_men/don_draper",
+          "relation": "mentor"
+        },
+        {
+          "target": "char:mad_men/pete_campbell",
+          "relation": "ex_partner"
+        },
+        {
+          "target": "char:mad_men/joan_holloway",
+          "relation": "friend"
+        },
+        {
+          "target": "char:mad_men/roger_sterling",
+          "relation": "boss"
+        },
+        {
+          "target": "char:mad_men/megan_calvet",
+          "relation": "colleague"
+        }
+      ],
+      "arcs": [
+        {
+          "id": "arc:mad_men/peggy_olson/from_the_typing_pool_to_the_table",
+          "title": "The secretary who wants to write",
+          "literal_situation": "Peggy arrives at Sterling Cooper as Don's new secretary. Joan tells her how to dress and behave, the men treat her like fresh meat, and nobody expects her to have ideas. Then she starts noticing that she does.",
+          "pattern_label": "breaking into a field that doesn't expect you",
+          "pattern_text": "A young person from a modest background starts at the very bottom of a workplace where people like them are expected to stay invisible. They discover real talent and hunger for more, but every step forward costs them something with family, colleagues and their own sense of who they are supposed to be. The story asks how much you have to give up to be taken seriously, and whether it is worth it.",
+          "hook": "Peggy is 20, just out of secretarial school, and completely out of her depth on day one. She's supposed to fetch coffee and look pretty, but she has opinions about the lipstick account.",
+          "why_relatable": "What do you do when you are good at something nobody expects someone like you to do? How do you handle a workplace that sees you as either a girl or a threat? Can you grow into the person you want to be without losing the people who knew you before?",
+          "watch_for": [
+            "Notice how she changes the way she talks and dresses as her confidence grows.",
+            "Watch whose approval she seeks most, and what she does when she doesn't get it.",
+            "How do her mother and sister react to the life she's building?"
+          ],
+          "start_at": "S1E1",
+          "span": "S1-S7",
+          "situations": [
+            {
+              "id": "imposter_syndrome",
+              "weight": 0.8
+            },
+            {
+              "id": "new_job",
+              "weight": 0.6
+            },
+            {
+              "id": "mentor_and_protege",
+              "weight": 0.7
+            },
+            {
+              "id": "confidence_struggle",
+              "weight": 0.7
+            }
+          ],
+          "conflicts": [
+            "fitting_in_vs_standing_out",
+            "self_vs_family_expectations"
+          ],
+          "emotions": {
+            "start": [
+              "self_doubt",
+              "anxiety",
+              "curiosity"
+            ],
+            "middle": [
+              "determination",
+              "loneliness",
+              "shame"
+            ],
+            "end": [
+              "confidence",
+              "self_respect",
+              "love"
+            ]
+          },
+          "ending_tone": "hopeful",
+          "intensity": "moderate",
+          "warnings": [
+            "medical_trauma",
+            "betrayal"
+          ],
+          "example_user_messages": [
+            "I'm the only woman on my team and I feel like I have to be twice as good just to be heard.",
+            "I started as an assistant and I know I have better ideas than half the people above me.",
+            "My family doesn't understand why I care so much about my career.",
+            "Every time I get a win at work someone else gets the credit.",
+            "I keep wondering if I'm really talented or if I just got lucky."
+          ],
+          "spoiler": {
+            "summary": "Peggy sleeps with Pete on her first night, then impresses Don during a lipstick focus group and becomes the first female copywriter since the war. She gains weight without realising she is pregnant, gives birth at the end of season 1, suffers a breakdown in hospital and gives the baby (Pete's son) up; Don visits and tells her to move forward and pretend it never happened. She rises steadily, fights for her own office and credit, and becomes Don's closest creative ally. She later becomes copy chief, then works through years under demanding bosses at the merged and absorbed agencies. In the finale she turns down Joan's offer to be a partner in a new production company, stays at McCann to build her career, and she and art director Stan Rizzo confess their love for each other.",
+            "key_events": [
+              "Sleeps with Pete on her first night",
+              "Becomes a junior copywriter",
+              "Gives birth to Pete's son and gives him up",
+              "Don visits her in hospital",
+              "Tells Pete about the baby in season 2",
+              "Moves in with Abe; later breaks up after she accidentally stabs him",
+              "Affair with Ted Chaough",
+              "Walks into McCann with sunglasses and a cigarette",
+              "Ends in love with Stan"
+            ],
+            "got_right": "She trusts her talent, keeps pushing for credit and pay, and learns to value real partnership over approval.",
+            "got_wrong": "She buries her pain instead of dealing with it, often copies Don's worst habits as a boss, and chases men who can't commit to her."
+          }
+        },
+        {
+          "id": "arc:mad_men/peggy_olson/stepping_out_of_the_mentors_shadow",
+          "title": "Outgrowing the boss who made her",
+          "literal_situation": "Peggy has become one of the best writers in the office, but every idea still goes out under Don's name, he forgets to thank her, and her salary lags behind the men she works beside.",
+          "pattern_label": "leaving the mentor who shaped you",
+          "pattern_text": "A person owes much of their career to one demanding mentor who saw something in them early. Years later, the gratitude has turned into frustration: they're doing the work and getting none of the credit, and staying feels like staying small. The story asks how to separate love and loyalty from the need to grow up and stand on your own.",
+          "hook": "Later in the series, after years of working under the same brilliant, moody boss, Peggy does much of his work and gets little of the credit. She's starting to wonder what she's worth anywhere else.",
+          "why_relatable": "What do you owe the person who gave you your start? When does loyalty become a cage? And if you ever lead, how do you avoid becoming the kind of boss you hated working for?",
+          "watch_for": [
+            "Notice what she asks Don for, and what she's really asking for.",
+            "Watch how she treats the people who work for her.",
+            "Does she want his approval less over time, or just differently?"
+          ],
+          "start_at": "S4E7",
+          "span": "S4-S7",
+          "situations": [
+            {
+              "id": "mentor_and_protege",
+              "weight": 0.9
+            },
+            {
+              "id": "career_change",
+              "weight": 0.6
+            },
+            {
+              "id": "standing_up_to_authority",
+              "weight": 0.7
+            },
+            {
+              "id": "becoming_a_manager",
+              "weight": 0.4
+            }
+          ],
+          "conflicts": [
+            "loyalty_vs_ambition",
+            "independence_vs_connection"
+          ],
+          "emotions": {
+            "start": [
+              "resentment",
+              "longing"
+            ],
+            "middle": [
+              "determination",
+              "guilt",
+              "loneliness"
+            ],
+            "end": [
+              "self_respect",
+              "confidence"
+            ]
+          },
+          "ending_tone": "hopeful",
+          "intensity": "moderate",
+          "warnings": [
+            "death_of_loved_one",
+            "betrayal"
+          ],
+          "example_user_messages": [
+            "My boss taught me everything I know but he never gives me credit and I'm starting to resent him.",
+            "I got a much better offer elsewhere and I feel like leaving would be a betrayal.",
+            "Now that I manage people I catch myself treating them the way I was treated.",
+            "I keep waiting for my mentor to tell me I'm good enough and it never happens."
+          ],
+          "spoiler": {
+            "summary": "In 'The Suitcase' Peggy confronts Don about never thanking her, and they spend a night together that ends with a real friendship. Frustrated as Don favours Megan and newcomer Ginsberg, she accepts Ted Chaough's offer to be copy chief at CGC; Don kisses her hand when she leaves. She beats him to the Heinz account, is swept back under him when the agencies merge, and has an affair with Ted that ends badly. Under Lou Avery she is dismissed, but when Don returns humbled they rebuild as near-equals, sharing the Burger Chef pitch and dancing to 'My Way'. She ends the series stepping confidently into McCann as her own person.",
+            "key_events": [
+              "Confronts Don in 'The Suitcase'",
+              "Quits to become copy chief at CGC",
+              "Wins Heinz Ketchup away from Don",
+              "Merger puts her back under Don",
+              "Affair with Ted Chaough",
+              "Burger Chef pitch and 'My Way' dance with Don",
+              "Arrives at McCann on her own terms"
+            ],
+            "got_right": "She leaves when staying would keep her small, and later meets her mentor as an equal instead of a disciple.",
+            "got_wrong": "She sometimes turns cold and tyrannical with her own staff, and mistakes an affair with a boss for being valued."
+          }
+        }
+      ]
+    },
+    {
+      "id": "char:mad_men/joan_holloway",
+      "name": "Joan Holloway",
+      "role": "The glamorous, all-knowing office manager of Sterling Cooper in 1960, who runs the secretarial pool and is certain a woman's best future is marrying a successful man.",
+      "relations": [
+        {
+          "target": "char:mad_men/roger_sterling",
+          "relation": "ex_partner"
+        },
+        {
+          "target": "char:mad_men/peggy_olson",
+          "relation": "friend"
+        },
+        {
+          "target": "char:mad_men/don_draper",
+          "relation": "colleague"
+        },
+        {
+          "target": "char:mad_men/pete_campbell",
+          "relation": "colleague"
+        },
+        {
+          "target": "char:mad_men/megan_calvet",
+          "relation": "colleague"
+        }
+      ],
+      "arcs": [
+        {
+          "id": "arc:mad_men/joan_holloway/the_plan_she_was_raised_for",
+          "title": "Following the plan she was raised for",
+          "literal_situation": "Joan is over thirty, admired by every man in the office and in total command of it. She tells Peggy the goal is to land a good husband and move to the country, and she is determined to follow her own advice.",
+          "pattern_label": "living the life you were told to want",
+          "pattern_text": "A person was raised to believe that their worth lies in being admired and choosing the right partner, and they have played that role flawlessly. When they finally commit to the person who fits the plan, the reality doesn't match the picture. The story asks what happens when the script you were given stops working, and whether you can trust yourself enough to write a new one.",
+          "hook": "Joan knows exactly how the world works and exactly what she wants: a respectable marriage to a man with a future. She's great at her job, but she sees it as a stop on the way, not the destination.",
+          "why_relatable": "What if the life you worked hardest for isn't the one that fits? How do you admit a choice isn't working when everyone expected you to make it? Can you stop performing the role you were raised for?",
+          "watch_for": [
+            "Notice how she talks about marriage at the start compared to how she actually feels in it.",
+            "Watch what she does when people in the office underestimate her.",
+            "What does she hide from the people closest to her, and why?"
+          ],
+          "start_at": "S1E1",
+          "span": "S1-S5",
+          "situations": [
+            {
+              "id": "family_expectations",
+              "weight": 0.8
+            },
+            {
+              "id": "identity_and_self_acceptance",
+              "weight": 0.6
+            },
+            {
+              "id": "divorce",
+              "weight": 0.6
+            },
+            {
+              "id": "becoming_a_parent",
+              "weight": 0.4
+            }
+          ],
+          "conflicts": [
+            "self_vs_family_expectations",
+            "duty_vs_desire"
+          ],
+          "emotions": {
+            "start": [
+              "pride",
+              "confidence"
+            ],
+            "middle": [
+              "betrayal",
+              "anger",
+              "loneliness"
+            ],
+            "end": [
+              "self_respect",
+              "determination"
+            ]
+          },
+          "ending_tone": "bittersweet",
+          "intensity": "heavy",
+          "warnings": [
+            "sexual_violence",
+            "domestic_violence",
+            "betrayal"
+          ],
+          "example_user_messages": [
+            "I did everything right: married the right person, stayed home when I was supposed to, and I'm miserable.",
+            "My mom raised me to believe my looks were my biggest asset and I don't know who I am without that.",
+            "I stayed with someone who hurt me because leaving felt like admitting I failed.",
+            "Everyone thinks my relationship is perfect and I can't tell anyone what it's really like.",
+            "I'm raising a baby mostly on my own and I never pictured it this way."
+          ],
+          "spoiler": {
+            "summary": "Joan ends her long affair with Roger after his heart attacks and gets engaged to Dr. Greg Harris, who rapes her in Don's office before their wedding; she marries him anyway. Greg turns out to be an incompetent surgeon, fails repeatedly, and she has to leave her job and then take work in a department store. She smashes a vase over his head; he enlists in the army. After a night with Roger during a mugging she becomes pregnant, decides to keep the baby and passes Kevin off as Greg's. When Greg volunteers for another tour and lies about it, she tells him he was never a good man and throws him out; they divorce and she raises Kevin with her mother's help.",
+            "key_events": [
+              "Ends the affair with Roger",
+              "Raped by her fiancé Greg",
+              "Marries Greg anyway",
+              "Greg's career collapses; he joins the army",
+              "Pregnant by Roger; keeps the baby",
+              "Throws Greg out: 'you're not a good man'",
+              "Divorce; single mother to Kevin"
+            ],
+            "got_right": "She finally names Greg for what he is and walks away, and chooses to raise her son on her own terms.",
+            "got_wrong": "She stays loyal to a plan and a man long past the evidence, and her pride keeps her from asking for help."
+          }
+        },
+        {
+          "id": "arc:mad_men/joan_holloway/fighting_to_be_taken_seriously",
+          "title": "Proving she's more than the office manager",
+          "literal_situation": "Joan is asked to read TV scripts to spot where ads should run. She's brilliant at it, clients love her, and she loves the work more than anything she's done before, but nobody in charge thinks of it as her job.",
+          "pattern_label": "being seen for your mind, not your image",
+          "pattern_text": "A person who is judged mostly on appearance and competence at support work discovers they have real talent and ambition for something bigger. The people above them keep taking it for granted, handing their wins to others or offering recognition only at a humiliating price. The story asks what dignity and power are worth, and how far you will go to claim a seat you've already earned.",
+          "hook": "Joan has always kept the office running without anyone noticing how. Now she's found work she actually loves, and she wonders whether anyone upstairs will notice.",
+          "why_relatable": "How do you get people to see you as more than the role they've put you in? What do you do when the only door that opens asks too much of you? Is it possible to build something that is fully yours?",
+          "watch_for": [
+            "Notice who takes credit for what she does, and whether she says anything.",
+            "Notice how she handles people who try to embarrass her in front of the office.",
+            "What does 'security' mean to her, and does that change?"
+          ],
+          "start_at": "S2E8",
+          "span": "S2-S7",
+          "situations": [
+            {
+              "id": "standing_up_to_authority",
+              "weight": 0.8
+            },
+            {
+              "id": "career_change",
+              "weight": 0.5
+            },
+            {
+              "id": "starting_a_business",
+              "weight": 0.6
+            },
+            {
+              "id": "confidence_struggle",
+              "weight": 0.4
+            }
+          ],
+          "conflicts": [
+            "power_vs_morality",
+            "belonging_vs_integrity"
+          ],
+          "emotions": {
+            "start": [
+              "joy",
+              "pride"
+            ],
+            "middle": [
+              "shame",
+              "anger",
+              "resentment"
+            ],
+            "end": [
+              "self_respect",
+              "freedom",
+              "determination"
+            ]
+          },
+          "ending_tone": "hopeful",
+          "intensity": "heavy",
+          "warnings": [
+            "sexual_violence",
+            "self_harm_or_suicide",
+            "betrayal"
+          ],
+          "example_user_messages": [
+            "I found something I'm genuinely great at at work and they gave it to a guy they hired above me.",
+            "People only notice how I look, never how much I actually run things.",
+            "I got the promotion but I feel like I paid for it in a way nobody should have to.",
+            "My new boss keeps making comments about my body and HR shrugs it off.",
+            "I'm thinking of leaving to start my own thing because I'm done asking permission."
+          ],
+          "spoiler": {
+            "summary": "Joan's script-reading role is given to a new man she must train. At SCDP she becomes Director of Agency Operations 'with no money'. In season 5 a Jaguar dealer demands a night with her in exchange for his vote; the partners (minus Don, who leaves the room) agree to pay, and Lane persuades her to demand a 5% partnership instead. She goes through with it and becomes a partner. Lane later commits suicide and she wonders if she could have helped him. In season 7, after the absorption into McCann, she faces open sexual harassment from her new boss, fights back, and is forced out with half her money. She founds Holloway Harris, a film production company, run from her own home.",
+            "key_events": [
+              "Script-reading job taken away",
+              "Becomes Director of Agency Operations",
+              "Sleeps with the Jaguar dealer for a 5% partnership",
+              "Lane's suicide",
+              "Harassed at McCann; forced out with half her buyout",
+              "Founds Holloway Harris production company"
+            ],
+            "got_right": "She insists on equity instead of a payout, refuses to accept harassment quietly, and finally builds a business under her own name.",
+            "got_wrong": "She sometimes accepts terms that cost her dignity because she has learned not to expect better, and she resents allies who fight her battles differently."
+          }
+        }
+      ]
+    },
+    {
+      "id": "char:mad_men/pete_campbell",
+      "name": "Pete Campbell",
+      "role": "An ambitious, entitled young account man from an old-money New York family, about to get married and desperate to be taken seriously at the agency.",
+      "relations": [
+        {
+          "target": "char:mad_men/don_draper",
+          "relation": "boss"
+        },
+        {
+          "target": "char:mad_men/peggy_olson",
+          "relation": "ex_partner"
+        },
+        {
+          "target": "char:mad_men/roger_sterling",
+          "relation": "colleague"
+        },
+        {
+          "target": "char:mad_men/joan_holloway",
+          "relation": "colleague"
+        }
+      ],
+      "arcs": [
+        {
+          "id": "arc:mad_men/pete_campbell/never_enough_for_anyone",
+          "title": "The heir who is never enough",
+          "literal_situation": "Pete comes from a famous family but has no money of his own. His father sneers at him, Don treats him like a nuisance, and he's convinced he deserves more respect than anyone gives him.",
+          "pattern_label": "chasing recognition from people who withhold it",
+          "pattern_text": "A person who grew up with a famous name but no warmth keeps trying to force the world to admit they matter. They scheme, whine and grab for credit, and every snub confirms their fear that they will never measure up. The story asks whether they can find self-worth that doesn't depend on a parent's or a boss's approval.",
+          "hook": "Pete is getting married on the weekend, sulking that he isn't a creative, and certain Don owes him something. Everyone else sees an obnoxious kid; he sees a man nobody is taking seriously.",
+          "why_relatable": "What do you do when the people whose approval you need most refuse to give it? Why does every slight feel like proof that you're worthless? Can you earn respect by pushing harder, or does that only push people away?",
+          "watch_for": [
+            "Notice how he acts right after his father puts him down.",
+            "Watch the gap between his instincts about the future and how people treat his ideas.",
+            "When is Pete actually right, and why doesn't anyone listen?"
+          ],
+          "start_at": "S1E1",
+          "span": "S1-S4",
+          "situations": [
+            {
+              "id": "difficult_parent",
+              "weight": 0.8
+            },
+            {
+              "id": "confidence_struggle",
+              "weight": 0.6
+            },
+            {
+              "id": "imposter_syndrome",
+              "weight": 0.5
+            },
+            {
+              "id": "new_job",
+              "weight": 0.3
+            }
+          ],
+          "conflicts": [
+            "loyalty_vs_ambition",
+            "self_vs_family_expectations"
+          ],
+          "emotions": {
+            "start": [
+              "envy",
+              "resentment",
+              "inadequacy"
+            ],
+            "middle": [
+              "anger",
+              "rejection",
+              "grief"
+            ],
+            "end": [
+              "pride",
+              "determination"
+            ]
+          },
+          "ending_tone": "bittersweet",
+          "intensity": "moderate",
+          "warnings": [
+            "death_of_loved_one",
+            "betrayal"
+          ],
+          "example_user_messages": [
+            "My father has never once said he's proud of me and I'm 26.",
+            "I have good ideas at work and nobody listens until someone older says the same thing.",
+            "I come from a family that everyone thinks is impressive but it's never felt like home.",
+            "I get so jealous when my coworkers get recognition that I can't stand myself.",
+            "I keep doing things to get my boss's attention and they always backfire."
+          ],
+          "spoiler": {
+            "summary": "Pete sleeps with Peggy the night before his wedding and later learns she had his child. He steals a box from Don's brother Adam, discovers Don's real identity and tries to blackmail him for a promotion; Bert Cooper doesn't care, and Don never fully trusts him again. His father dies in the 1962 American Airlines crash. He is repeatedly passed over for promotion but proves to be an early spotter of trends (the Black market, Honda, youth marketing). When Don, Roger and Bert start SCDP he is invited as a founding employee and becomes a junior partner, bringing in major clients.",
+            "key_events": [
+              "Sleeps with Peggy on his wedding weekend",
+              "Tries to blackmail Don with his real identity",
+              "Father dies in a plane crash",
+              "Peggy tells him she gave up their baby",
+              "Passed over; Ken Cosgrove promoted over him",
+              "Becomes a partner at SCDP"
+            ],
+            "got_right": "He has real instincts about where the market is going and brings in business others dismiss.",
+            "got_wrong": "He tries to take respect by force, even blackmail, and treats women and colleagues as tools for his ego."
+          }
+        },
+        {
+          "id": "arc:mad_men/pete_campbell/the_life_he_thought_he_wanted",
+          "title": "Having it all and hating it",
+          "literal_situation": "Pete now commutes from a house in the suburbs with his wife and small daughter. He's making money, but he's bored, bitter and itching for something he can't name.",
+          "pattern_label": "restless inside the life you worked for",
+          "pattern_text": "A person finally gets the house, the family and the status they chased, and discovers it feels like a trap. They lash out, look for thrills elsewhere and blame everyone else for their unhappiness. The story asks whether starting over means running away, or whether they can learn to want what they already have.",
+          "hook": "Later in the series, after a stretch of hard-won success, Pete has moved his family out to the suburbs. He hates the commute, the lawn and the dinner parties, and he's starting to wonder if this is all there is.",
+          "why_relatable": "Why does getting what you wanted sometimes make you more miserable? Is the problem your life, or you? When you feel trapped, how do you tell a real change from an escape?",
+          "watch_for": [
+            "Notice what he tells himself about why he's unhappy.",
+            "Watch how he treats his wife when he feels small at work.",
+            "Does moving somewhere new change him, or does he bring himself along?"
+          ],
+          "start_at": "S5E1",
+          "span": "S5-S7",
+          "situations": [
+            {
+              "id": "midlife_reinvention",
+              "weight": 0.7
+            },
+            {
+              "id": "moving_somewhere_new",
+              "weight": 0.5
+            },
+            {
+              "id": "starting_over",
+              "weight": 0.6
+            },
+            {
+              "id": "divorce",
+              "weight": 0.5
+            }
+          ],
+          "conflicts": [
+            "career_vs_relationships",
+            "duty_vs_desire"
+          ],
+          "emotions": {
+            "start": [
+              "restlessness",
+              "resentment",
+              "boredom"
+            ],
+            "middle": [
+              "loneliness",
+              "shame",
+              "freedom"
+            ],
+            "end": [
+              "hope",
+              "love",
+              "peace"
+            ]
+          },
+          "ending_tone": "hopeful",
+          "intensity": "moderate",
+          "warnings": [
+            "betrayal",
+            "medical_trauma",
+            "death_of_loved_one"
+          ],
+          "example_user_messages": [
+            "I have the house and the family I always wanted and I'm bored out of my mind.",
+            "I cheated on my wife and I still don't understand why I did it.",
+            "I moved across the country to start fresh and I'm still the same person.",
+            "I think I ruined the best thing I had and I want to try to get her back."
+          ],
+          "spoiler": {
+            "summary": "Bored in Cos Cob, Pete has an affair with Beth Dawes, the wife of a commuter friend; she undergoes electroshock therapy and forgets him. He sleeps with a neighbour, Trudy throws him out, and he gets an apartment in the city. His mother, suffering from dementia, is lost overboard from a cruise ship, apparently pushed by the nurse Pete hired. He moves to the Los Angeles office, dates a real-estate agent and embraces the relaxed life. In the final season he realises he still loves Trudy, wins her back, and they leave with their daughter for Wichita and a new job at Learjet.",
+            "key_events": [
+              "Affair with Beth Dawes, who gets electroshock",
+              "Trudy throws him out",
+              "Mother lost at sea from a cruise ship",
+              "Moves to the California office",
+              "Reconciles with Trudy",
+              "Takes a job at Learjet in Wichita"
+            ],
+            "got_right": "He finally admits he was the problem, stops chasing the next thing, and fights for his family.",
+            "got_wrong": "For years he blames his marriage and suburban life for an emptiness he carries with him, and hurts his wife and others looking for escape."
+          }
+        }
+      ]
+    },
+    {
+      "id": "char:mad_men/roger_sterling",
+      "name": "Roger Sterling",
+      "role": "The witty, hard-drinking senior partner who inherited his seat at Sterling Cooper from his father, and treats life like a long, expensive lunch.",
+      "relations": [
+        {
+          "target": "char:mad_men/joan_holloway",
+          "relation": "ex_partner"
+        },
+        {
+          "target": "char:mad_men/don_draper",
+          "relation": "friend"
+        },
+        {
+          "target": "char:mad_men/pete_campbell",
+          "relation": "colleague"
+        },
+        {
+          "target": "char:mad_men/peggy_olson",
+          "relation": "colleague"
+        },
+        {
+          "target": "char:mad_men/megan_calvet",
+          "relation": "colleague"
+        }
+      ],
+      "arcs": [
+        {
+          "id": "arc:mad_men/roger_sterling/the_party_that_cant_last",
+          "title": "The charming man who never grew up",
+          "literal_situation": "Roger has everything handed to him: his father's name on the door, a wife, a grown daughter, a charming line for every woman in the office, and three-martini lunches. He treats nothing seriously, including himself.",
+          "pattern_label": "a charming coaster confronting mortality and meaning",
+          "pattern_text": "A person born into comfort has coasted on charm for decades, treating life as a party and responsibility as someone else's problem. A health scare and the passing years force them to wonder what they've actually built and who would miss them. The story asks whether it's too late to become someone who matters, and whether chasing youth is the answer.",
+          "hook": "Roger is funny, rich and always holding a drink. He jokes about everything, especially the things that should worry him, like his health and his marriage.",
+          "why_relatable": "What happens when you realise you've been coasting your whole life? Does a brush with mortality make you wiser, or just more desperate to feel young? Can a person who always made things light learn to take anything seriously?",
+          "watch_for": [
+            "Notice which moments make him stop joking, even briefly.",
+            "Watch how he talks about the relationships he's lost.",
+            "What does he think will make him feel alive, and does it work?"
+          ],
+          "start_at": "S1E1",
+          "span": "S1-S7",
+          "situations": [
+            {
+              "id": "midlife_reinvention",
+              "weight": 0.9
+            },
+            {
+              "id": "illness_or_injury",
+              "weight": 0.5
+            },
+            {
+              "id": "divorce",
+              "weight": 0.4
+            },
+            {
+              "id": "addiction_and_recovery",
+              "weight": 0.3
+            }
+          ],
+          "conflicts": [
+            "duty_vs_desire",
+            "past_vs_future"
+          ],
+          "emotions": {
+            "start": [
+              "boredom",
+              "restlessness"
+            ],
+            "middle": [
+              "fear",
+              "loneliness",
+              "nostalgia"
+            ],
+            "end": [
+              "acceptance",
+              "joy"
+            ]
+          },
+          "ending_tone": "bittersweet",
+          "intensity": "moderate",
+          "warnings": [
+            "serious_illness",
+            "addiction",
+            "betrayal",
+            "death_of_loved_one"
+          ],
+          "example_user_messages": [
+            "I've spent my whole life making jokes and I just realised I don't have anything real to show for it.",
+            "I had a health scare and now I'm terrified of getting old.",
+            "I left my marriage for someone much younger and I think I made a huge mistake.",
+            "My grown daughter barely speaks to me and I don't know how to fix it.",
+            "I drink too much and everyone thinks it's part of my charm."
+          ],
+          "spoiler": {
+            "summary": "Roger has two heart attacks in 1960, which end his affair with Joan. He leaves his wife Mona for Don's young secretary Jane and alienates his daughter Margaret. He has a night with Joan during a mugging that leaves her pregnant with his son Kevin, whom he can't openly claim. After LSD with Jane they admit their marriage is over; he drifts through therapy and affairs, loses his mother and his friend Bert Cooper, and loses his daughter to a hippie commune. He negotiates the sale to McCann, reconciles with Joan's decision to raise Kevin without him, provides for Kevin in his will, and ends the series happily married to Megan's mother Marie.",
+            "key_events": [
+              "Two heart attacks",
+              "Leaves Mona to marry Jane",
+              "Fathers Joan's son Kevin",
+              "LSD trip ends his marriage to Jane",
+              "Daughter Margaret leaves for a commune",
+              "Leaves his fortune to Kevin",
+              "Marries Marie Calvet"
+            ],
+            "got_right": "He learns to be generous and loyal to the people he loves, and accepts his age with humour instead of denial.",
+            "got_wrong": "He hides from every hard feeling behind jokes, drink and younger women, and leaves real damage in his family."
+          }
+        },
+        {
+          "id": "arc:mad_men/roger_sterling/proving_he_still_matters",
+          "title": "The partner who's afraid he's obsolete",
+          "literal_situation": "Roger's value at the firm rests almost entirely on one big client he keeps happy with dinners and favours. Younger colleagues are bringing in new business, and he's starting to feel like a figurehead.",
+          "pattern_label": "fearing you've become irrelevant at work",
+          "pattern_text": "A person who has relied on relationships and status for years watches younger, hungrier people overtake them. When their one source of value disappears, they must decide whether to hide, sabotage others, or finally do real work. The story asks whether you can reinvent your usefulness late in the game.",
+          "hook": "Later in the series, Roger's position at the agency depends on one relationship he's been nursing for decades. He jokes about being useless, but it's not really a joke.",
+          "why_relatable": "What do you do when you realise your seniority is the only thing keeping you in the room? Can you compete with people who want it more? Is it too late to prove you're more than your title?",
+          "watch_for": [
+            "Notice how he treats younger colleagues who bring in business.",
+            "Watch what he does when bad news reaches him first.",
+            "When he actually tries, what does he turn out to be good at?"
+          ],
+          "start_at": "S4E1",
+          "span": "S4-S7",
+          "situations": [
+            {
+              "id": "burnout_at_work",
+              "weight": 0.5
+            },
+            {
+              "id": "midlife_reinvention",
+              "weight": 0.6
+            },
+            {
+              "id": "losing_a_job",
+              "weight": 0.4
+            },
+            {
+              "id": "confidence_struggle",
+              "weight": 0.6
+            }
+          ],
+          "conflicts": [
+            "holding_on_vs_letting_go",
+            "past_vs_future"
+          ],
+          "emotions": {
+            "start": [
+              "inadequacy",
+              "envy"
+            ],
+            "middle": [
+              "shame",
+              "fear"
+            ],
+            "end": [
+              "pride",
+              "acceptance"
+            ]
+          },
+          "ending_tone": "bittersweet",
+          "intensity": "moderate",
+          "warnings": [
+            "betrayal",
+            "self_harm_or_suicide"
+          ],
+          "example_user_messages": [
+            "The younger people at work are running circles around me and I feel like a relic.",
+            "I lost my biggest client and I haven't told anyone yet.",
+            "I've been coasting on my title for years and I'm scared someone will notice.",
+            "I want to prove I'm still useful but I don't know where to start."
+          ],
+          "spoiler": {
+            "summary": "Roger's anti-Japanese outburst sabotages the Honda pitch. Lucky Strike fires SCDP, and Roger hides it from the partners for weeks, faking a phone call and pretending to fly to North Carolina. Bert tells him he failed because he never took himself seriously. In season 5 he pays Peggy and Pete to get into meetings. In season 6 he uses an airline girlfriend's tip to set up the Chevy pitch that leads to the merger with CGC. In season 7 he negotiates the sale to McCann to keep the partners together, and finally accepts that the agency's era is over.",
+            "key_events": [
+              "Sabotages Honda",
+              "Hides the loss of Lucky Strike",
+              "Fakes a call and a trip",
+              "Buys his way into work with cash",
+              "Sets up the Chevy pitch and the merger",
+              "Negotiates the sale to McCann"
+            ],
+            "got_right": "When he stops feeling sorry for himself, his relationships and instincts still win real business.",
+            "got_wrong": "He hides failure instead of owning it, and lets pride and old grudges cost the firm."
+          }
+        }
+      ]
+    },
+    {
+      "id": "char:mad_men/betty_draper",
+      "name": "Betty Draper",
+      "role": "A former model from a well-off Philadelphia family, now a picture-perfect suburban housewife and mother of two, married to Don Draper.",
+      "relations": [
+        {
+          "target": "char:mad_men/don_draper",
+          "relation": "ex_partner"
+        },
+        {
+          "target": "char:mad_men/sally_draper",
+          "relation": "child"
+        }
+      ],
+      "arcs": [
+        {
+          "id": "arc:mad_men/betty_draper/the_perfect_wife_with_numb_hands",
+          "title": "The perfect wife whose hands go numb",
+          "literal_situation": "Betty has the house in Ossining, two children and a handsome, successful husband. She's also lonely, recently lost her mother, and her hands keep going numb for no reason her doctor can find, so she is sent to a psychiatrist.",
+          "pattern_label": "a picture-perfect life hiding quiet despair",
+          "pattern_text": "A person has done everything they were raised to do: married well, made a beautiful home, raised children. Yet they feel invisible, childlike in the eyes of their partner, and their body starts expressing what they can't say. The story asks whether they can find a self beyond being admired, and what they will risk to stop pretending.",
+          "hook": "Betty looks like she has everything. But she's spending her days alone with the children, her husband comes home late and says little, and her body is starting to betray her.",
+          "why_relatable": "What do you do when the life you were promised would make you happy doesn't? How do you speak up when you were raised to be pleasant and pretty? Can someone start to grow up when everyone treats them like a child?",
+          "watch_for": [
+            "Notice how her body reacts when she can't say what she feels.",
+            "Watch how she treats other people when she feels powerless.",
+            "What does she want for herself, and who ever asks her?"
+          ],
+          "start_at": "S1E2",
+          "span": "S1-S3",
+          "situations": [
+            {
+              "id": "identity_and_self_acceptance",
+              "weight": 0.8
+            },
+            {
+              "id": "loneliness",
+              "weight": 0.7
+            },
+            {
+              "id": "grief_and_loss",
+              "weight": 0.4
+            },
+            {
+              "id": "divorce",
+              "weight": 0.5
+            }
+          ],
+          "conflicts": [
+            "duty_vs_desire",
+            "self_vs_family_expectations"
+          ],
+          "emotions": {
+            "start": [
+              "loneliness",
+              "numbness",
+              "anxiety"
+            ],
+            "middle": [
+              "betrayal",
+              "anger",
+              "resentment"
+            ],
+            "end": [
+              "freedom",
+              "hope"
+            ]
+          },
+          "ending_tone": "bittersweet",
+          "intensity": "moderate",
+          "warnings": [
+            "betrayal",
+            "death_of_loved_one",
+            "grief"
+          ],
+          "example_user_messages": [
+            "From the outside my life looks perfect and I cry in the car every day.",
+            "My partner never tells me anything and I feel like a stranger in my own marriage.",
+            "I gave up my career to raise the kids and now I don't know who I am.",
+            "My doctor says there's nothing physically wrong but I keep having these symptoms.",
+            "I think my husband is cheating and he looks me in the eye and denies it."
+          ],
+          "spoiler": {
+            "summary": "Betty's psychiatrist reports her sessions to Don; she discovers this and uses the sessions to send messages. She learns of Don's affair with Bobbie Barrett and throws him out, sleeps with a stranger in a bar, then takes him back when she learns she is pregnant. Her father's decline and death, and an emotional affair with political aide Henry Francis, follow. She finds Don's box of documents, learns he is really Dick Whitman, and after Kennedy's assassination tells Don she doesn't love him anymore, divorces him in Reno and marries Henry.",
+            "key_events": [
+              "Psychiatrist reports to Don",
+              "Discovers the Bobbie Barrett affair and throws Don out",
+              "Pregnant with Gene",
+              "Father's death",
+              "Emotional affair with Henry Francis",
+              "Discovers Don's real identity",
+              "Divorces Don and marries Henry"
+            ],
+            "got_right": "She finally refuses to live inside a lie and acts on her own wishes.",
+            "got_wrong": "She mostly swaps one powerful man for another rather than building a self of her own, and takes her unhappiness out on her children."
+          }
+        },
+        {
+          "id": "arc:mad_men/betty_draper/mother_who_was_never_mothered",
+          "title": "A mother who was raised to be looked at",
+          "literal_situation": "Betty is raising her children and still judging herself, and her daughter Sally, by appearance. She is strict and cold with Sally, jealous of the attention the girl gives her father, and has no idea how to talk to her.",
+          "pattern_label": "repeating a parent's harshness with your own child",
+          "pattern_text": "A person whose own mother taught them that looks and manners were everything finds themselves passing the same pressure to their child. They swing between coldness and neediness, and the child pushes back hard. The story asks whether a parent can grow up enough to see their child as a person, and whether love can be said before it is too late.",
+          "hook": "Later in the series, after a turning point that reshapes her household, Betty is fighting with her pre-teen daughter at every turn. She doesn't know how to be the mother Sally needs, and she isn't sure she wants to learn.",
+          "why_relatable": "How do you stop yourself from becoming your own mother? Why is it so hard to be gentle with a child who reminds you of yourself? Can you find something for yourself after years of living for how things look?",
+          "watch_for": [
+            "Notice what Betty's own mother told her, and where it shows up in how she speaks to Sally.",
+            "Watch the rare moments when she and Sally actually connect.",
+            "What does she reach for when she wants a life of her own?"
+          ],
+          "start_at": "S4E1",
+          "span": "S4-S7",
+          "situations": [
+            {
+              "id": "difficult_parent",
+              "weight": 0.8
+            },
+            {
+              "id": "caring_for_family",
+              "weight": 0.6
+            },
+            {
+              "id": "identity_and_self_acceptance",
+              "weight": 0.6
+            },
+            {
+              "id": "illness_or_injury",
+              "weight": 0.4
+            }
+          ],
+          "conflicts": [
+            "control_vs_trust",
+            "perfectionism_vs_good_enough"
+          ],
+          "emotions": {
+            "start": [
+              "resentment",
+              "jealousy",
+              "anger"
+            ],
+            "middle": [
+              "inadequacy",
+              "loneliness",
+              "fear"
+            ],
+            "end": [
+              "acceptance",
+              "love",
+              "peace"
+            ]
+          },
+          "ending_tone": "tragic",
+          "intensity": "heavy",
+          "warnings": [
+            "abuse",
+            "serious_illness",
+            "death_of_main_character",
+            "grief"
+          ],
+          "example_user_messages": [
+            "I hear my mother's voice come out of my mouth every time I criticise my daughter's weight.",
+            "My daughter and I fight constantly and I honestly don't know how to talk to her.",
+            "I've gained weight and I feel like I've lost the only thing I was ever valued for.",
+            "I went back to school in my thirties and my family treats it like a hobby.",
+            "I just got a serious diagnosis and I need my daughter to know I love her."
+          ],
+          "spoiler": {
+            "summary": "Betty slaps Sally for cutting her hair, sends her to a child psychiatrist and moves the family to stop Sally seeing Glen. In 1966 she gains weight, has a thyroid cancer scare and joins Weight Watchers; out of jealousy she tells Sally about Don's first wife Anna. She briefly bonds with Sally over her first period, loses the weight, and eventually goes back to college to study psychology. In the final season she is diagnosed with terminal lung cancer, refuses treatment, and gives Sally a letter saying she loves her and has always admired her independence. She plans for her death with dignity.",
+            "key_events": [
+              "Slaps Sally over her haircut",
+              "Weight gain and cancer scare",
+              "Tells Sally about Anna out of spite",
+              "Comforts Sally at her first period",
+              "Goes back to college for psychology",
+              "Terminal lung cancer diagnosis",
+              "Letter to Sally saying she loves her"
+            ],
+            "got_right": "In the end she finally tells Sally she loves her and trusts her, and reaches for an education of her own.",
+            "got_wrong": "For years she treats her daughter as a rival or a reflection, passing on her mother's cruelty about looks."
+          }
+        }
+      ]
+    },
+    {
+      "id": "char:mad_men/sally_draper",
+      "name": "Sally Draper",
+      "role": "Don and Betty's bright, curious young daughter, growing up in the suburbs in 1960 and watching the adults more closely than they realise.",
+      "relations": [
+        {
+          "target": "char:mad_men/don_draper",
+          "relation": "parent"
+        },
+        {
+          "target": "char:mad_men/betty_draper",
+          "relation": "parent"
+        }
+      ],
+      "arcs": [
+        {
+          "id": "arc:mad_men/sally_draper/the_child_who_sees_everything",
+          "title": "A child watching her family from the stairs",
+          "literal_situation": "Sally is a lively little girl who adores her father and clashes with her mother. She mixes her dad's drinks, plays in the dry-cleaning bags, and senses the tension in the house even when nobody explains it.",
+          "pattern_label": "a child absorbing the adults' unspoken troubles",
+          "pattern_text": "A sharp, sensitive child grows up in a home where the adults say one thing and do another. With no one explaining what's happening, the child acts out, looks for comfort in unlikely places and tries to make sense of loss and change alone. The story asks how a child finds footing when the grown-ups are too lost to guide them.",
+          "hook": "Sally is only six at the start, bursting with energy and questions. Her father is her hero and her mother is the one who says no, and she can tell something is wrong at home even if nobody says so.",
+          "why_relatable": "What does a child do with feelings nobody gives them words for? Who can a kid trust when the adults keep secrets? How much of our adult selves gets shaped by what we saw and weren't told?",
+          "watch_for": [
+            "Notice which adults actually listen to her.",
+            "Watch how her behaviour changes when the house gets tense.",
+            "What does she copy from each parent?"
+          ],
+          "start_at": "S1E1",
+          "span": "S1-S5",
+          "situations": [
+            {
+              "id": "coming_of_age",
+              "weight": 0.8
+            },
+            {
+              "id": "difficult_parent",
+              "weight": 0.7
+            },
+            {
+              "id": "divorce",
+              "weight": 0.6
+            },
+            {
+              "id": "grief_and_loss",
+              "weight": 0.4
+            }
+          ],
+          "conflicts": [
+            "independence_vs_connection",
+            "truth_vs_protecting_others"
+          ],
+          "emotions": {
+            "start": [
+              "curiosity",
+              "love"
+            ],
+            "middle": [
+              "grief",
+              "anger",
+              "confusion"
+            ],
+            "end": [
+              "acceptance",
+              "hope"
+            ]
+          },
+          "ending_tone": "bittersweet",
+          "intensity": "moderate",
+          "warnings": [
+            "death_of_loved_one",
+            "grief",
+            "abuse"
+          ],
+          "example_user_messages": [
+            "When I was a kid nobody ever explained anything to me, I just had to figure out that my parents were falling apart.",
+            "My parents split up when I was little and I acted out for years because I didn't know what else to do.",
+            "My grandfather was the only one who really paid attention to me and when he died no one else did.",
+            "I always felt like my mom was jealous of how close I was to my dad."
+          ],
+          "spoiler": {
+            "summary": "Sally's grandfather Gene moves in and becomes her closest ally, then dies suddenly; she is the only one who cries openly. Her parents divorce; she hates her stepfather Henry, cuts her hair, is caught touching herself at a sleepover, and runs away to her father in the city. She befriends the troubled older boy Glen and sees a child psychiatrist, gradually improving. By season 5 she accepts Megan as a stepmother, witnesses Marie Calvet with Roger at a gala, gets her first period and runs home to Betty for comfort.",
+            "key_events": [
+              "Grandpa Gene dies",
+              "Parents divorce",
+              "Cuts her hair; slapped by Betty",
+              "Runs away to Don",
+              "Friendship with Glen Bishop",
+              "Sees a child psychiatrist",
+              "Sees Marie with Roger",
+              "First period; comforted by Betty"
+            ],
+            "got_right": "She says what she feels, even when adults don't want to hear it, and seeks help from the people who listen.",
+            "got_wrong": "Without guidance she acts out in ways that isolate her and hurts herself to get attention."
+          }
+        },
+        {
+          "id": "arc:mad_men/sally_draper/refusing_to_become_her_parents",
+          "title": "A teenager who has seen too much",
+          "literal_situation": "Sally is a smart, sarcastic teenager who feels her parents' world is phony. She wants to get out, be independent and be taken seriously as an adult.",
+          "pattern_label": "a teenager disillusioned with their parents",
+          "pattern_text": "A teenager has watched their parents' failings up close and decides they want to be nothing like them. They rebel, keep their distance and trust no one, until real trouble at home asks them to step up. The story asks whether you can forgive the people who raised you without excusing them, and what kind of adult you choose to be.",
+          "hook": "Later in the series, Sally is a sharp-tongued teenager who sees through the adults around her. She's eager to leave home and allergic to any hint of her parents' hypocrisy.",
+          "why_relatable": "What do you do with the moment you realise your parents are just flawed people? Can you keep loving someone whose choices you despise? How do you become your own person without simply rejecting everything they are?",
+          "watch_for": [
+            "Notice when she chooses honesty over politeness, and what it costs her.",
+            "Watch how her view of each parent shifts over time.",
+            "What makes her decide to show up for her family?"
+          ],
+          "start_at": "S6",
+          "span": "S6-S7",
+          "situations": [
+            {
+              "id": "coming_of_age",
+              "weight": 0.9
+            },
+            {
+              "id": "difficult_parent",
+              "weight": 0.7
+            },
+            {
+              "id": "responsibility_you_didnt_ask_for",
+              "weight": 0.6
+            },
+            {
+              "id": "grief_and_loss",
+              "weight": 0.5
+            }
+          ],
+          "conflicts": [
+            "independence_vs_connection",
+            "revenge_vs_forgiveness"
+          ],
+          "emotions": {
+            "start": [
+              "anger",
+              "resentment"
+            ],
+            "middle": [
+              "betrayal",
+              "loneliness"
+            ],
+            "end": [
+              "grief",
+              "love",
+              "acceptance"
+            ]
+          },
+          "ending_tone": "bittersweet",
+          "intensity": "heavy",
+          "warnings": [
+            "betrayal",
+            "death_of_main_character",
+            "serious_illness",
+            "grief",
+            "addiction"
+          ],
+          "example_user_messages": [
+            "I caught my dad doing something terrible and he lied to my face about it. I don't know how to forgive him.",
+            "I swore I'd never be like my parents and now I see bits of them in me.",
+            "I'm 16 and I feel more mature than the adults in my family.",
+            "My mom is really sick and I'm the one who has to hold everything together for my little brothers.",
+            "My mom and I fought my whole life and now I don't know how much time we have left."
+          ],
+          "spoiler": {
+            "summary": "At 14 Sally walks in on Don having sex with neighbour Sylvia Rosen; Don lies, and she turns cold, choosing boarding school, drinking and smoking. Don shows the children the brothel where he grew up, and she slowly forgives him, telling him she doesn't want to be like either parent. She fights with Glen when he enlists for Vietnam, then apologises. Betty is diagnosed with terminal lung cancer and gives her a letter saying she loves her; Sally reads it early and weeps, cancels a trip to Madrid, insists her brothers stay with Henry, and is last seen washing dishes at home while Betty smokes at the table.",
+            "key_events": [
+              "Catches Don with Sylvia",
+              "Goes to boarding school",
+              "Sees the brothel Don grew up in",
+              "Begins to forgive Don",
+              "Glen enlists",
+              "Betty's terminal diagnosis and letter",
+              "Stays home to care for her brothers"
+            ],
+            "got_right": "She tells the truth, holds her parents accountable, and ultimately chooses to show up for her family.",
+            "got_wrong": "For a while she punishes herself as much as her parents with cynicism and self-destructive behaviour."
+          }
+        }
+      ]
+    },
+    {
+      "id": "char:mad_men/megan_calvet",
+      "name": "Megan Calvet",
+      "role": "A bright, warm young woman from Montreal working the front desk at Don's new agency, curious about the creative work going on around her.",
+      "relations": [
+        {
+          "target": "char:mad_men/don_draper",
+          "relation": "ex_partner"
+        },
+        {
+          "target": "char:mad_men/peggy_olson",
+          "relation": "mentor"
+        },
+        {
+          "target": "char:mad_men/roger_sterling",
+          "relation": "colleague"
+        },
+        {
+          "target": "char:mad_men/joan_holloway",
+          "relation": "colleague"
+        }
+      ],
+      "arcs": [
+        {
+          "id": "arc:mad_men/megan_calvet/choosing_her_own_dream",
+          "title": "Following her own dream",
+          "literal_situation": "Megan is in her twenties and her life has changed quickly. She has shown a real knack for creative work at the agency, but a different, riskier dream from before still pulls at her.",
+          "pattern_label": "choosing your calling over the safe path",
+          "pattern_text": "A young person is doing well on a secure path that others would envy, yet the dream they had before keeps calling. Pursuing it means disappointing people, facing rejection and straining a relationship with an older, more established partner who liked things as they were. The story asks whether you can follow your own path and still keep the people you love.",
+          "hook": "Later in the series, Megan is doing well at work and admired for it, but it isn't what she dreamed of. She's starting to wonder whether she's living her own life or someone else's.",
+          "why_relatable": "Do you owe it to yourself to chase a risky dream when you're already doing fine? What if the people who love you prefer the safer version of you? How do you handle rejection when you've given up something certain?",
+          "watch_for": [
+            "Notice how others react when she's good at something she doesn't love.",
+            "Watch how her parents' expectations shape her choices.",
+            "What does she want from the people close to her, and does she ask for it?"
+          ],
+          "start_at": "S5E1",
+          "span": "S5-S7",
+          "situations": [
+            {
+              "id": "career_change",
+              "weight": 0.9
+            },
+            {
+              "id": "taking_a_big_risk",
+              "weight": 0.7
+            },
+            {
+              "id": "long_distance",
+              "weight": 0.4
+            },
+            {
+              "id": "divorce",
+              "weight": 0.4
+            }
+          ],
+          "conflicts": [
+            "career_vs_relationships",
+            "safety_vs_growth"
+          ],
+          "emotions": {
+            "start": [
+              "restlessness",
+              "longing"
+            ],
+            "middle": [
+              "self_doubt",
+              "rejection",
+              "loneliness"
+            ],
+            "end": [
+              "freedom",
+              "self_respect"
+            ]
+          },
+          "ending_tone": "bittersweet",
+          "intensity": "moderate",
+          "warnings": [
+            "betrayal"
+          ],
+          "example_user_messages": [
+            "I'm good at my job but it isn't what I want, and everyone thinks I'm crazy to leave.",
+            "I quit a stable career to chase acting and I keep getting rejected.",
+            "My partner says he supports me but he gets cold whenever my career takes me away.",
+            "I moved across the country for my dream and my relationship is falling apart.",
+            "My parents expected me to settle down and I just can't."
+          ],
+          "spoiler": {
+            "summary": "Megan marries Don after a whirlwind engagement in California and becomes a copywriter at SCDP, where she wins the Heinz Baked Beans pitch. She quits to pursue acting despite Don's resentment; her father criticises her for giving up, and her mother flirts with Roger. She lands a soap-opera role, then moves to Los Angeles for her career while Don stays in New York. Growing apart, and after Don's affairs and emotional absence, they divorce; Don gives her a million-dollar cheque.",
+            "key_events": [
+              "Engaged to Don in California",
+              "Wins Heinz as a copywriter",
+              "Quits to act",
+              "Soap-opera role",
+              "Moves to Los Angeles",
+              "Divorce; Don gives her $1 million"
+            ],
+            "got_right": "She refuses to shrink her ambition to keep her marriage comfortable.",
+            "got_wrong": "She married quickly into a relationship with a man she didn't really know, and keeps hoping he'll change."
+          }
+        }
+      ]
+    }
+  ]
+}

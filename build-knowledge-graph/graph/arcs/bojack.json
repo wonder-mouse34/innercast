@@ -1,0 +1,673 @@
+{
+  "show": "bojack",
+  "characters": [
+    {
+      "id": "char:bojack/bojack_horseman",
+      "name": "BoJack Horseman",
+      "role": "The washed-up star of a hit 90s family sitcom, now in his fifties, drinking on his couch in a Hollywood hills mansion and trying to get his career and his life going again.",
+      "relations": [
+        {"target": "char:bojack/diane_nguyen", "relation": "friend"},
+        {"target": "char:bojack/princess_carolyn", "relation": "ex_partner"},
+        {"target": "char:bojack/todd_chavez", "relation": "friend"},
+        {"target": "char:bojack/mr_peanutbutter", "relation": "rival"},
+        {"target": "char:bojack/hollyhock", "relation": "sibling"}
+      ],
+      "arcs": [
+        {
+          "id": "arc:bojack/bojack_horseman/wanting_to_be_loved_while_hating_himself",
+          "title": "Wanting to be loved while hating himself",
+          "literal_situation": "Twenty years after his sitcom ended, BoJack spends his days drinking and watching his own reruns. A publisher wants his memoir, he can't write a word of it, and he's saddled with a ghostwriter who asks questions he'd rather not answer.",
+          "pattern_label": "craving love while believing you don't deserve it",
+          "pattern_text": "A person whose biggest success is decades behind them numbs a deep self-loathing with drinking, charm and cruelty, and pushes away everyone who gets close. They desperately want someone to tell them they are good, but keep doing things that prove otherwise. The question is whether feeling bad about yourself is the same as changing, and whether it is ever too late to become someone better.",
+          "hook": "BoJack is rich, lonely and stuck. He mocks the people who stick around, sabotages anything that might change his routine, and secretly hopes that telling his story will finally make people understand and love him.",
+          "why_relatable": "He is funny, self-aware and in real pain, and he hurts people anyway. Can someone who has always used self-hatred as an excuse learn to take responsibility instead? Is the loneliness something done to him, or something he keeps choosing?",
+          "watch_for": [
+            "When he apologises, is he trying to repair things or trying to feel better about himself?",
+            "Who does he reach for when he is at his lowest, and what does he ask of them?",
+            "Does admitting he is 'a bad person' ever change what he does next?"
+          ],
+          "start_at": "S1E1",
+          "span": "S1-S6",
+          "situations": [
+            {"id": "identity_and_self_acceptance", "weight": 0.8},
+            {"id": "loneliness", "weight": 0.8},
+            {"id": "redemption_after_mistakes", "weight": 0.8},
+            {"id": "midlife_reinvention", "weight": 0.5}
+          ],
+          "conflicts": ["past_vs_future", "independence_vs_connection"],
+          "emotions": {"start": ["numbness", "loneliness", "shame"], "middle": ["guilt", "longing", "self_doubt"], "end": ["grief", "acceptance"]},
+          "ending_tone": "bittersweet",
+          "intensity": "heavy",
+          "warnings": ["addiction", "abuse", "self_harm_or_suicide", "death_of_loved_one", "grief", "betrayal"],
+          "example_user_messages": [
+            "I keep pushing away anyone who actually cares about me and then I'm furious that I'm alone.",
+            "Everything good in my life happened twenty years ago and I don't know who I am now.",
+            "I say sorry all the time but I keep doing the same awful things. I don't know if I can actually change.",
+            "Some part of me thinks if people really knew me they'd leave, so I make them leave first.",
+            "I drink so I don't have to think about how much I hate myself."
+          ],
+          "spoiler": {
+            "summary": "BoJack's memoir, ghostwritten by Diane, becomes a hit but exposes him. He lands his dream role as Secretariat, falls for Diane (who marries Mr. Peanutbutter), betrays and hurts nearly everyone around him: he sabotages Todd, sleeps with Todd's friend Emily, pressures a teenage girl's friends into drinking at prom in New Mexico, and goes on a bender with his former TV daughter Sarah Lynn that ends with her fatal overdose. He finds a half-sister in Hollyhock, gets sober in rehab and becomes a drama professor, but journalists uncover the truth about Sarah Lynn and his pattern with young women. Hollyhock cuts him off, he relapses and nearly drowns in his old house, having a near-death vision of lost friends. He survives, serves a prison sentence, and on day release attends Princess Carolyn's wedding, ending on a quiet rooftop talk with Diane that feels like a goodbye.",
+            "key_events": [
+              "Memoir 'One Trick Pony' becomes a hit and wins him acclaim",
+              "Herb Kazzaz refuses to give him closure and later dies",
+              "Declares love to Diane; she marries Mr. Peanutbutter",
+              "Sleeps with Todd's friend Emily; Todd ends their friendship",
+              "Sarah Lynn dies of an overdose after a bender with him",
+              "Chokes co-star Gina on set while high on painkillers",
+              "Goes to rehab and gets sober; teaches drama at Wesleyan",
+              "Public exposure in a disastrous TV interview",
+              "Hollyhock cuts contact; he relapses and nearly drowns",
+              "Serves time in prison; final rooftop conversation with Diane"
+            ],
+            "got_right": "He eventually stops running, gets sober, and accepts that he has to live with the consequences of what he did rather than be absolved of them. He also shows real care, especially for Hollyhock and Todd, and is sometimes the only one honest enough to name uncomfortable truths.",
+            "got_wrong": "He treats self-loathing as a substitute for accountability, uses the people who love him as emotional crutches, abuses his power over younger women, and keeps choosing the momentary escape over the harder work of changing."
+          }
+        },
+        {
+          "id": "arc:bojack/bojack_horseman/still_waiting_for_his_mother",
+          "title": "Still waiting for his mother's approval",
+          "literal_situation": "BoJack finally lands the role he has wanted since childhood and is trying to be positive, but memories of the cold, cutting mother who raised him keep surfacing, and she still has the power to wound him with a single phone call.",
+          "pattern_label": "a grown adult still aching for a cruel parent's love",
+          "pattern_text": "A middle-aged person raised by a cold, contemptuous parent keeps hoping that some achievement or some confrontation will finally make that parent say they are proud of them. As the parent ages and the chance for a real reckoning slips away, they have to decide what to do with a lifetime of anger. The question is whether you can let go of the apology you are owed without pretending the damage never happened.",
+          "hook": "BoJack is trying out a new, optimistic outlook, yet every conversation with his mother reduces him to the scared kid hiding under the kitchen table. He wants her to see him, and he wants her to pay.",
+          "why_relatable": "How much of who he is was shaped by a parent who told him he ruined her life? Can he stop repeating her cruelty? And what does he actually want from her: love, an apology, or just the last word?",
+          "watch_for": [
+            "What does he hope will happen every time he sees his mother?",
+            "Which of her habits and phrases show up in the way he treats others?",
+            "When he finally has the chance to say what he's always wanted to say, what does he choose?"
+          ],
+          "start_at": "S2E1",
+          "span": "S2-S5",
+          "situations": [
+            {"id": "difficult_parent", "weight": 0.95},
+            {"id": "caring_for_family", "weight": 0.5},
+            {"id": "grief_and_loss", "weight": 0.5}
+          ],
+          "conflicts": ["revenge_vs_forgiveness", "holding_on_vs_letting_go"],
+          "emotions": {"start": ["resentment", "longing", "shame"], "middle": ["anger", "confusion", "grief"], "end": ["grief", "acceptance"]},
+          "ending_tone": "bittersweet",
+          "intensity": "heavy",
+          "warnings": ["abuse", "addiction", "serious_illness", "child_endangerment", "death_of_loved_one", "grief"],
+          "example_user_messages": [
+            "I'm 50 and I still want my mom to tell me she's proud of me. She never will.",
+            "My parent was cruel to me my whole childhood and now they're old and sick and I'm supposed to take care of them.",
+            "Every time I talk to my mother I feel like a scared kid again, even though I'm a grown adult.",
+            "I always imagined I'd finally tell my dad everything he did to me, and now I don't know if there's any point."
+          ],
+          "spoiler": {
+            "summary": "Flashbacks show Beatrice and Butterscotch's abusive, alcoholic marriage and how Beatrice's own trauma (her mother's lobotomy, her father's coldness, a childhood fire) shaped her. In Season 4, Beatrice has dementia and BoJack reluctantly takes her in at Hollyhock's urging, hoping she'll remember him so he can tell her off. After learning she has been secretly drugging Hollyhock with diet pills, he takes her to a grim nursing home, but when she finally recognises him he gives her a comforting fantasy of a summer night at her family's lake house instead of the confrontation. In Season 5 she dies, and BoJack delivers a long, raw eulogy (Free Churro) processing that she never loved him in the way he needed.",
+            "key_events": [
+              "Beatrice develops dementia and moves into BoJack's house",
+              "Beatrice secretly drugs Hollyhock, causing an overdose",
+              "BoJack chooses kindness over revenge at the nursing home",
+              "Beatrice's death and BoJack's eulogy in 'Free Churro'"
+            ],
+            "got_right": "In the end he chooses compassion over retaliation, and he begins to see his mother as a damaged person shaped by her own abuse.",
+            "got_wrong": "For decades he let the wish for her approval drive him, and he reproduced her cruelty and drinking in his own relationships instead of looking at where they came from."
+          }
+        },
+        {
+          "id": "arc:bojack/bojack_horseman/getting_sober_and_facing_the_harm",
+          "title": "Getting sober and facing the past",
+          "literal_situation": "Later in the series, BoJack is working again on a demanding new show and trying to limit himself to a set amount of alcohol a day, but the limit keeps creeping up and the line between the dark character he plays and himself keeps blurring.",
+          "pattern_label": "getting clean and reckoning with the harm you caused",
+          "pattern_text": "A person with a long history of substance use and hurting people finally tries to get clean and build a new life. Sobriety brings real progress, but it also removes the fog that kept them from looking at what they actually did. The question is whether a fresh start is possible without facing the people you hurt, and what accountability really demands.",
+          "hook": "Later in the series, BoJack is telling himself he has things under control. He wants a clean slate and a second chance, and he's terrified of what honesty about his past would cost him.",
+          "why_relatable": "Is getting sober the same as making amends? Does a new life count if the old one is kept secret? He wants to be seen as someone who changed, but can he stand the scrutiny that real change requires?",
+          "watch_for": [
+            "Notice what he tells himself about his drinking at the start of this stretch, and what he admits later.",
+            "When people from his past resurface, does he want to repair things or to control the story?",
+            "What does he think he is owed for getting better?"
+          ],
+          "start_at": "S5",
+          "span": "S5-S6",
+          "situations": [
+            {"id": "addiction_and_recovery", "weight": 0.95},
+            {"id": "redemption_after_mistakes", "weight": 0.9},
+            {"id": "starting_over", "weight": 0.5}
+          ],
+          "conflicts": ["past_vs_future", "truth_vs_protecting_others"],
+          "emotions": {"start": ["numbness", "shame", "dread"], "middle": ["hope", "determination", "guilt"], "end": ["grief", "loneliness", "acceptance"]},
+          "ending_tone": "bittersweet",
+          "intensity": "heavy",
+          "warnings": ["addiction", "abuse", "self_harm_or_suicide", "death_of_loved_one", "grief"],
+          "example_user_messages": [
+            "I'm 90 days sober and now I have to actually look at everything I did when I was using.",
+            "I told myself I'd only have two drinks a day. Now it's a bottle.",
+            "I'm terrified that if the people in my new life find out what I did years ago, they'll leave.",
+            "I want a fresh start so badly but I don't know if I've earned one."
+          ],
+          "spoiler": {
+            "summary": "After a back injury on the set of Philbert, BoJack spirals on painkillers and alcohol, blurs reality with his role, and nearly strangles co-star and girlfriend Gina on set, which the studio covers up. Diane refuses to let him hide, and he checks himself into rehab, gets sober and becomes a drama professor at Wesleyan. He tries to make amends privately, but journalists piece together the truth about Sarah Lynn's death and his history with young women. His first interview goes well; the second exposes him. He relapses, nearly drowns, then goes to prison and emerges sober but without the life he tried to rebuild.",
+            "key_events": [
+              "Back injury and painkiller addiction on the Philbert set",
+              "Strangles Gina while high; incident is covered up",
+              "Checks into rehab and gets sober",
+              "Becomes a drama professor at Wesleyan",
+              "Sarah Lynn story breaks; second TV interview exposes him",
+              "Relapses and nearly drowns in his old home",
+              "Sentenced to prison"
+            ],
+            "got_right": "He does go to rehab and genuinely works on sobriety, and he stops insisting on forgiveness he hasn't earned.",
+            "got_wrong": "He tries to leave his past behind instead of owning it, chooses publicity over honesty, and relapses when the consequences arrive rather than leaning on the people and practices that kept him sober."
+          }
+        }
+      ]
+    },
+    {
+      "id": "char:bojack/diane_nguyen",
+      "name": "Diane Nguyen",
+      "role": "A thoughtful, idealistic writer from Boston, hired to ghostwrite BoJack's memoir, who lives with her cheerful celebrity boyfriend, Mr. Peanutbutter.",
+      "relations": [
+        {"target": "char:bojack/bojack_horseman", "relation": "friend"},
+        {"target": "char:bojack/mr_peanutbutter", "relation": "ex_partner"},
+        {"target": "char:bojack/princess_carolyn", "relation": "colleague"},
+        {"target": "char:bojack/todd_chavez", "relation": "friend"}
+      ],
+      "arcs": [
+        {
+          "id": "arc:bojack/diane_nguyen/wanting_her_work_to_matter",
+          "title": "Wanting her work to matter",
+          "literal_situation": "Diane, who wrote a respected biography of a sports legend, takes a job ghostwriting the memoir of a washed-up sitcom star, hoping to find the real person behind the persona and write something honest.",
+          "pattern_label": "needing your work to change the world",
+          "pattern_text": "A smart, principled person believes their work has to be meaningful, and ideally world-changing, or they themselves are worthless. They keep taking on causes and projects that disappoint them, and every compromise feels like a betrayal of who they are. The question is whether they can find value in work that is simply good, and in a life that isn't a constant fight.",
+          "hook": "Diane is sharp, awkward and eager to do something important. The memoir job is a paycheck, but she is determined to make it true, whether or not her subject likes what she finds.",
+          "why_relatable": "She holds herself to impossible standards and never feels like she has done enough. Is she chasing meaning or running from herself? What happens when the work that is supposed to prove her worth doesn't?",
+          "watch_for": [
+            "How does she decide what the 'honest' version of someone's story is?",
+            "What does she do when a cause she believes in turns out to be messier than she hoped?",
+            "Does she ever let herself enjoy something without justifying it?"
+          ],
+          "start_at": "S1E1",
+          "span": "S1-S6",
+          "situations": [
+            {"id": "career_change", "weight": 0.7},
+            {"id": "identity_and_self_acceptance", "weight": 0.7},
+            {"id": "imposter_syndrome", "weight": 0.5},
+            {"id": "burnout_at_work", "weight": 0.4}
+          ],
+          "conflicts": ["perfectionism_vs_good_enough", "belonging_vs_integrity"],
+          "emotions": {"start": ["restlessness", "curiosity", "self_doubt"], "middle": ["inadequacy", "burnout", "loneliness"], "end": ["relief", "peace", "joy"]},
+          "ending_tone": "hopeful",
+          "intensity": "moderate",
+          "warnings": ["abuse", "war_and_violence", "betrayal"],
+          "example_user_messages": [
+            "I feel like if my job doesn't make a real difference then I'm just wasting my life.",
+            "Every project I take on I end up feeling like a fraud or a sellout.",
+            "I've been trying to write this thing for months and I can't, and I feel like I'm failing at the one thing I'm supposed to be good at.",
+            "Why can't I just be happy doing something that's fun and simple?"
+          ],
+          "spoiler": {
+            "summary": "Diane's memoir of BoJack, 'One Trick Pony', is a hit but damages their friendship. She flees to war-torn Cordovia to work for a humanitarian celebrity, fails, and hides at BoJack's house in shame. She ghostwrites celebrity tweets, writes feminist think-pieces for Girl Croosh, exposes a beloved TV host's abuse allegations only to see him face no consequences, and consults on 'Philbert', a show that uses her pain as material. In Season 6, struggling to write a memoir of personal essays about her 'good damage', she starts antidepressants and instead writes 'Ivy Tran', a fun middle-grade mystery series, finally accepting that she doesn't have to suffer for her work to count.",
+            "key_events": [
+              "Writes BoJack's memoir 'One Trick Pony'",
+              "Fails in Cordovia and hides at BoJack's house",
+              "Goes after Hank Hippopopalous; the story is buried",
+              "Works at Girl Croosh",
+              "Consults on 'Philbert' and clashes with BoJack",
+              "Writes the 'Ivy Tran' book series instead of her memoir"
+            ],
+            "got_right": "She keeps telling the truth when it costs her, and eventually lets go of the idea that her worth depends on suffering or on changing the world.",
+            "got_wrong": "She is self-righteous and rigid, often judges others for compromises she makes too, and runs from her problems into new causes rather than dealing with them."
+          }
+        },
+        {
+          "id": "arc:bojack/diane_nguyen/carrying_the_damage_from_home",
+          "title": "Carrying the damage from home",
+          "literal_situation": "A family occasion forces Diane back to Boston, to the loud, dismissive family who mocked her all her life, and she finds they haven't changed at all, while she still hopes they'll finally appreciate her.",
+          "pattern_label": "believing your pain is what makes you worthwhile",
+          "pattern_text": "A person raised in a belittling, neglectful family has built their whole identity around surviving it, and quietly believes their pain is what makes them interesting and real. When depression settles in, they resist help, afraid that feeling better would mean losing who they are. The question is whether you can heal without betraying your story, and let go of hoping your family will ever see you.",
+          "hook": "Diane is sure she's grown past her family, yet going home turns her into the ignored daughter again. She wants one sign of respect from them and knows she won't get it.",
+          "why_relatable": "Why does she keep going back to people who hurt her? What does she think her unhappiness protects? And what would she lose, or gain, by getting help?",
+          "watch_for": [
+            "How does she describe her family to outsiders versus how she acts around them?",
+            "What does she say when someone suggests she might need help?",
+            "Does she treat her sadness as a problem to solve or as part of her identity?"
+          ],
+          "start_at": "S1E5",
+          "span": "S1-S6",
+          "situations": [
+            {"id": "difficult_parent", "weight": 0.7},
+            {"id": "identity_and_self_acceptance", "weight": 0.6},
+            {"id": "illness_or_injury", "weight": 0.4},
+            {"id": "confidence_struggle", "weight": 0.4}
+          ],
+          "conflicts": ["past_vs_future", "self_vs_family_expectations"],
+          "emotions": {"start": ["rejection", "resentment", "loneliness"], "middle": ["numbness", "overwhelm", "inadequacy"], "end": ["relief", "hope", "peace"]},
+          "ending_tone": "hopeful",
+          "intensity": "heavy",
+          "warnings": ["abuse", "death_of_loved_one", "self_harm_or_suicide"],
+          "example_user_messages": [
+            "Every time I visit my family they make me feel small, and I still keep hoping this time will be different.",
+            "My therapist wants me to try antidepressants but I'm scared I won't be me anymore.",
+            "I think I've made my whole personality about how messed up my childhood was.",
+            "I haven't left the apartment in days and I keep telling everyone I'm fine."
+          ],
+          "spoiler": {
+            "summary": "Diane goes home for her father's funeral, where her brothers and mother belittle her; BoJack tells her she doesn't need closure from them. Over the years her depression surfaces in her flight from Cordovia, her abortion, her failing marriage and her stalled career. In Season 6, in Chicago with her new partner Guy, she can't write her essays about her childhood 'good damage', becomes severely depressed, and finally tries antidepressants. She gains weight, feels lighter, and writes a joyful book series instead. BoJack's drunken, suicidal voicemail shakes her, but she keeps going, moves to Houston and marries Guy, and in her last talk with BoJack she gently lets their friendship end.",
+            "key_events": [
+              "Father's funeral in Boston",
+              "Hides at BoJack's house after Cordovia",
+              "Refuses, then starts antidepressants",
+              "Gives up the 'good damage' memoir for 'Ivy Tran'",
+              "BoJack's suicidal voicemail",
+              "Marries Guy and moves to Houston",
+              "Final rooftop goodbye with BoJack"
+            ],
+            "got_right": "She finally accepts help, questions the idea that trauma is what makes her valuable, and chooses a relationship where she feels part of an 'us'.",
+            "got_wrong": "She clung to her pain as identity for years, isolated herself, and got tangled in codependent friendships instead of taking care of herself."
+          }
+        },
+        {
+          "id": "arc:bojack/diane_nguyen/loving_someone_so_different",
+          "title": "Loving someone so different from her",
+          "literal_situation": "Diane lives with Mr. Peanutbutter, a relentlessly cheerful celebrity who loves big gestures and never overthinks anything, while she overthinks everything.",
+          "pattern_label": "committing to a partner who is your opposite",
+          "pattern_text": "A serious, introspective person commits to a warm, carefree partner whose optimism first feels like relief. Over time their differences grow into loneliness: one wants to talk about hard things, the other wants everything to be fine. The question is whether love can bridge two completely different ways of seeing the world, or whether staying means shrinking yourself.",
+          "hook": "Diane's boyfriend adores her and makes life easy and fun. She loves him, and she also isn't sure he actually hears her.",
+          "why_relatable": "Can someone love you well if they don't understand you? Is she choosing him, or choosing not to be alone? What does she owe a partner who is kind but doesn't listen?",
+          "watch_for": [
+            "What do they each do when they disagree about something big?",
+            "Who adjusts to whom in this relationship?",
+            "Does she tell him what she really feels, or what will keep the peace?"
+          ],
+          "start_at": "S1E1",
+          "span": "S1-S5",
+          "situations": [
+            {"id": "divorce", "weight": 0.8},
+            {"id": "identity_and_self_acceptance", "weight": 0.5},
+            {"id": "loneliness", "weight": 0.5}
+          ],
+          "conflicts": ["independence_vs_connection", "belonging_vs_integrity"],
+          "emotions": {"start": ["love", "hope", "self_doubt"], "middle": ["resentment", "loneliness", "guilt"], "end": ["grief", "relief", "acceptance"]},
+          "ending_tone": "bittersweet",
+          "intensity": "moderate",
+          "warnings": ["betrayal"],
+          "example_user_messages": [
+            "My husband is a good person but I feel like I'm married to someone who doesn't know me.",
+            "Everyone says we're a perfect couple but I feel so alone in this relationship.",
+            "I always want to talk about the hard stuff and my partner just wants everything to be fine.",
+            "I think I'm the problem in my marriage and I don't know if I should stay."
+          ],
+          "spoiler": {
+            "summary": "Mr. Peanutbutter proposes and they marry in Season 1. They clash over Diane's trip to Cordovia, her abortion, his vanity campaign for governor and his big gestures, including an expensive house he builds for her without asking. She moves out and they divorce at the start of Season 5, then sleep together while he is dating Pickles. In Season 6 they reconcile as friends, and he apologises for never really listening to her.",
+            "key_events": [
+              "Engagement and wedding in Season 1",
+              "Clashes over Cordovia and her abortion",
+              "His run for governor; she moves out",
+              "Divorce in Season 5",
+              "They sleep together while he's with Pickles",
+              "Friendly reconciliation phone call in Season 6"
+            ],
+            "got_right": "She eventually admits the marriage isn't working and leaves, and later recognises her own part in it.",
+            "got_wrong": "She hid her real feelings for years, let resentment build, and later helped betray his new girlfriend."
+          }
+        }
+      ]
+    },
+    {
+      "id": "char:bojack/princess_carolyn",
+      "name": "Princess Carolyn",
+      "role": "BoJack's tireless, fast-talking talent agent and on-again, off-again girlfriend, who can juggle a dozen crises at once but never finds time for herself.",
+      "relations": [
+        {"target": "char:bojack/bojack_horseman", "relation": "ex_partner"},
+        {"target": "char:bojack/diane_nguyen", "relation": "colleague"},
+        {"target": "char:bojack/todd_chavez", "relation": "friend"},
+        {"target": "char:bojack/mr_peanutbutter", "relation": "colleague"}
+      ],
+      "arcs": [
+        {
+          "id": "arc:bojack/princess_carolyn/the_one_who_holds_it_together",
+          "title": "The one who holds everything together",
+          "literal_situation": "Princess Carolyn is a talent agent at a big agency, battling a rival for clients, carrying her most difficult client, BoJack, and trying to decide whether she can have a career and a love life at the same time.",
+          "pattern_label": "the fixer who never asks for help",
+          "pattern_text": "A driven, capable person takes care of everyone around them and believes hard work can fix anything. They hide their own needs to seem easy and unflappable, and pour years into people who don't give much back. The question is whether they can admit what they want for themselves, accept help, and stop measuring their worth by how much they carry.",
+          "hook": "Princess Carolyn is great at her job and always lands on her feet, or at least that's the story she tells. Her personal life is a string of compromises, and she's starting to wonder if the life she wants exists.",
+          "why_relatable": "Why does she keep investing in people who take her for granted? Is her ambition joy or armor? What would happen if she stopped being the one who fixes everything?",
+          "watch_for": [
+            "How does she respond when someone offers to take care of her?",
+            "When she says she wants a quiet life, does she mean it?",
+            "Notice how long she stays in things after they stop working, and why."
+          ],
+          "start_at": "S1E1",
+          "span": "S1-S6",
+          "situations": [
+            {"id": "burnout_at_work", "weight": 0.8},
+            {"id": "starting_a_business", "weight": 0.6},
+            {"id": "becoming_a_manager", "weight": 0.5}
+          ],
+          "conflicts": ["career_vs_relationships", "control_vs_trust"],
+          "emotions": {"start": ["determination", "burnout", "loneliness"], "middle": ["overwhelm", "inadequacy", "resentment"], "end": ["love", "acceptance", "peace"]},
+          "ending_tone": "hopeful",
+          "intensity": "moderate",
+          "warnings": ["betrayal"],
+          "example_user_messages": [
+            "I'm the person everyone calls when something goes wrong, and nobody ever asks how I'm doing.",
+            "I've spent years propping up someone who never shows up for me and I can't seem to stop.",
+            "I started my own company and I'm drowning, but I'd rather die than ask for help.",
+            "I keep saying I want a calmer life but honestly I think I'd be bored."
+          ],
+          "spoiler": {
+            "summary": "PC is dumped by, then breaks up with BoJack, dates Rutabaga Rabitowitz, leaves Vigor and founds VIM, dropping Rutabaga as a partner. VIM struggles and closes, but she reopens it as a management company. She dates Ralph Stilton, produces 'Philbert' and 'Birthday Dad', and becomes a mother. She finally realises her assistant Judah has been the one quietly taking care of her; she turns down a big production deal from Lenny Turteltaub, starts her own company, and marries Judah in the finale, while BoJack helps her admit what she actually wants.",
+            "key_events": [
+              "Leaves Vigor and founds VIM",
+              "VIM closes; she reopens it as a management company",
+              "Ends her long attachment to BoJack",
+              "Produces 'Philbert' and 'Birthday Dad'",
+              "Turns down Lenny Turteltaub's offer",
+              "Marries her assistant Judah"
+            ],
+            "got_right": "She is resilient, loyal and very good at her work, and she eventually lets someone care for her and makes choices from what she wants rather than from fear.",
+            "got_wrong": "She sank decades into BoJack out of sunk-cost loyalty, hid her needs to seem 'easy', and let work swallow every other part of her life."
+          }
+        },
+        {
+          "id": "arc:bojack/princess_carolyn/wanting_to_be_a_mother",
+          "title": "Wanting to be a mother",
+          "literal_situation": "Later in the series, after years of putting her career first, Princess Carolyn finally lets herself admit how badly she wants a child, and worries she may have waited too long.",
+          "pattern_label": "longing for a child when time feels short",
+          "pattern_text": "A career-focused person finally admits they want to become a parent, only to face fertility struggles, repeated loss, and fear that there's no room in their life for a child. They try to do it all alone and perfectly, as they do everything else. The question is what family looks like when it doesn't happen the way you planned, and whether you can accept help.",
+          "hook": "Later in the series, Princess Carolyn is determined to make motherhood happen with the same relentless energy she brings to work, and just as determined not to let anyone see how scared she is.",
+          "why_relatable": "Can she want this without it becoming another project to manage? What does she do with grief she won't talk about? Is going it alone strength or fear?",
+          "watch_for": [
+            "Who does she tell about her setbacks, and who does she hide them from?",
+            "What does she believe she has to give up to be a good parent?",
+            "When help is offered, what makes her say no?"
+          ],
+          "start_at": "S4E1",
+          "span": "S4-S6",
+          "situations": [
+            {"id": "becoming_a_parent", "weight": 0.9},
+            {"id": "grief_and_loss", "weight": 0.6},
+            {"id": "breakup", "weight": 0.3}
+          ],
+          "conflicts": ["career_vs_relationships", "perfectionism_vs_good_enough"],
+          "emotions": {"start": ["hope", "longing", "anxiety"], "middle": ["grief", "shame", "overwhelm"], "end": ["love", "acceptance", "joy"]},
+          "ending_tone": "hopeful",
+          "intensity": "heavy",
+          "warnings": ["grief", "medical_trauma"],
+          "example_user_messages": [
+            "We've been trying for a baby for a year and I'm running out of time.",
+            "I had another miscarriage and I haven't told anyone, not even my partner.",
+            "I adopted my daughter on my own and I'm so exhausted I don't know if I'm doing any of it right.",
+            "I feel like I have to choose between my career and being a good mom."
+          ],
+          "spoiler": {
+            "summary": "PC tells Ralph Stilton she's had a miscarriage, and they try to conceive. In 'Ruthie' she suffers her fifth miscarriage and learns she's unlikely to carry a child; she breaks up with Ralph rather than admit she isn't 'easy'. She pursues adoption, is rejected by a teen birth mother (Sadie) in her hometown, and misses another adoption, then at the end of Season 5 adopts a baby porcupine girl. Exhausted by juggling work and baby, she learns to accept help from Todd and Judah and names her daughter Ruthie.",
+            "key_events": [
+              "Multiple miscarriages; told she likely can't carry a child",
+              "Breaks up with Ralph",
+              "Adoption falls through with Sadie",
+              "Adopts a baby girl she names Ruthie",
+              "Accepts help with parenting from Todd and Judah"
+            ],
+            "got_right": "She never gives up on becoming a mother and eventually learns to accept support.",
+            "got_wrong": "She hid her grief, pushed away a partner who wanted to share the load, and tried to parent the way she works: alone and flawlessly."
+          }
+        }
+      ]
+    },
+    {
+      "id": "char:bojack/todd_chavez",
+      "name": "Todd Chavez",
+      "role": "A sweet, aimless twenty-something who has been crashing on BoJack's couch for years, full of wild schemes and blindly loyal to his grumpy host.",
+      "relations": [
+        {"target": "char:bojack/bojack_horseman", "relation": "friend"},
+        {"target": "char:bojack/princess_carolyn", "relation": "friend"},
+        {"target": "char:bojack/diane_nguyen", "relation": "friend"},
+        {"target": "char:bojack/mr_peanutbutter", "relation": "friend"}
+      ],
+      "arcs": [
+        {
+          "id": "arc:bojack/todd_chavez/drifting_on_a_friends_couch",
+          "title": "Drifting through life on a friend's couch",
+          "literal_situation": "Todd lives rent-free on BoJack's couch, tolerating constant insults, bouncing between creative projects and odd schemes, with no job, no plan and a family he doesn't talk about.",
+          "pattern_label": "a kind drifter searching for where they belong",
+          "pattern_text": "A good-hearted, directionless young adult has been living in someone else's space for years, loyal to a friend who treats them badly. They are creative and generous but never commit to anything, and haven't dealt with the family rift that set them adrift. The question is when loyalty becomes self-neglect, and how you build a life of your own.",
+          "hook": "Todd seems happy with his chaotic life, and he truly loves his roommate. But he is always the sidekick in someone else's story.",
+          "why_relatable": "Why does he forgive everything? Is his easygoing attitude peace or avoidance? What would it mean for him to decide what he wants?",
+          "watch_for": [
+            "What does he do when a friend does something truly unforgivable?",
+            "Which of his schemes does he actually see through, and why?",
+            "What does he avoid talking about?"
+          ],
+          "start_at": "S1E1",
+          "span": "S1-S6",
+          "situations": [
+            {"id": "finding_your_people", "weight": 0.8},
+            {"id": "coming_of_age", "weight": 0.6},
+            {"id": "friendship_ending", "weight": 0.5},
+            {"id": "difficult_parent", "weight": 0.4}
+          ],
+          "conflicts": ["belonging_vs_integrity", "independence_vs_connection"],
+          "emotions": {"start": ["restlessness", "curiosity", "loneliness"], "middle": ["betrayal", "confusion", "determination"], "end": ["belonging", "self_respect", "joy"]},
+          "ending_tone": "hopeful",
+          "intensity": "moderate",
+          "warnings": ["betrayal"],
+          "example_user_messages": [
+            "I'm almost 30 and still living on my friend's couch and I don't know how to change it.",
+            "My best friend treats me terribly but I keep forgiving him.",
+            "I haven't talked to my mom in ten years and part of me wishes I could.",
+            "I have so many ideas but I never finish anything."
+          ],
+          "spoiler": {
+            "summary": "BoJack secretly sabotages Todd's rock opera so he won't move out. Todd goes to prison, joins a cult-like improv group, co-founds Cabracadabra with Emily, and forgives BoJack again and again until he learns BoJack slept with Emily, and tells him he is the problem. Todd moves out and lives with Diane, Mr. Peanutbutter, and later in Princess Carolyn's apartment. He runs a clown dentist business, becomes an ad executive, and finally finds purpose as Ruthie's nanny and starting a daycare. He reconciles with his mother, moves in with Maude, and remains a gentle friend to BoJack in the end.",
+            "key_events": [
+              "BoJack sabotages his rock opera",
+              "Learns BoJack slept with Emily and ends their friendship",
+              "Moves out of BoJack's house",
+              "Becomes Ruthie's nanny and opens a daycare",
+              "Reconciles with his mother",
+              "Moves in with Maude"
+            ],
+            "got_right": "He finally draws a line with BoJack, names what he does, and builds a life around what he's actually good at: caring for others.",
+            "got_wrong": "For years he let his loyalty be exploited and drifted to avoid his own pain."
+          }
+        },
+        {
+          "id": "arc:bojack/todd_chavez/not_feeling_what_others_feel",
+          "title": "Not feeling what everyone expects",
+          "literal_situation": "Later in the series, when someone he dated as a teenager wants to pick up where they left off, Todd finds himself making excuses to avoid getting intimate, and he can't explain why, even to himself.",
+          "pattern_label": "realising you don't feel what others expect",
+          "pattern_text": "A person slowly realises they don't experience attraction the way the people around them do, and doesn't have words for it. Naming it brings relief but also fear of being labeled or seen as broken. The question is how to accept yourself, find people like you, and build love and relationships on your own terms.",
+          "hook": "Later in the series, Todd has always gone along with what's expected of him, but now he's avoiding something without knowing why, and it confuses him.",
+          "why_relatable": "What if you don't want what everyone assumes you want? Is a label freeing or limiting? Can he find people who understand him without having to explain himself?",
+          "watch_for": [
+            "How does he react the first time someone names what he might be feeling?",
+            "Who does he choose to tell, and how do they respond?",
+            "What does connection look like for him once he stops pretending?"
+          ],
+          "start_at": "S3E5",
+          "span": "S3-S6",
+          "situations": [
+            {"id": "identity_and_self_acceptance", "weight": 0.95},
+            {"id": "finding_your_people", "weight": 0.6},
+            {"id": "coming_of_age", "weight": 0.4}
+          ],
+          "conflicts": ["fitting_in_vs_standing_out", "belonging_vs_integrity"],
+          "emotions": {"start": ["confusion", "self_doubt", "loneliness"], "middle": ["fear", "relief", "curiosity"], "end": ["acceptance", "belonging", "joy"]},
+          "ending_tone": "hopeful",
+          "intensity": "light",
+          "warnings": ["betrayal"],
+          "example_user_messages": [
+            "I don't think I feel attraction the way my friends do and I don't know what that means.",
+            "Everyone assumes I want a sex life and I just... don't.",
+            "I'm scared if I tell people who I am, they'll think something is wrong with me.",
+            "I finally found a word for myself and I still don't know how to say it out loud."
+          ],
+          "spoiler": {
+            "summary": "Todd avoids sleeping with Emily; later he tells her he might be 'nothing', and after resisting the label, he comes out as asexual to BoJack, joins an asexual support group, dates Yolanda (they break up amicably), creates an asexual dating app, and finds a happy relationship with Maude.",
+            "key_events": [
+              "Avoids sleeping with Emily",
+              "Tells Emily he might be 'nothing'",
+              "Comes out as asexual",
+              "Dates Yolanda, then breaks up",
+              "Creates an asexual dating app; meets Maude"
+            ],
+            "got_right": "He stays honest with himself and others, and seeks out a community.",
+            "got_wrong": "At first he avoided the conversation through excuses, and briefly let others' labels scare him."
+          }
+        }
+      ]
+    },
+    {
+      "id": "char:bojack/mr_peanutbutter",
+      "name": "Mr. Peanutbutter",
+      "role": "A relentlessly cheerful, beloved TV star, BoJack's old sitcom rival, who lives with his writer girlfriend Diane and keeps trying to be BoJack's friend.",
+      "relations": [
+        {"target": "char:bojack/diane_nguyen", "relation": "ex_partner"},
+        {"target": "char:bojack/bojack_horseman", "relation": "rival"},
+        {"target": "char:bojack/todd_chavez", "relation": "friend"},
+        {"target": "char:bojack/princess_carolyn", "relation": "colleague"}
+      ],
+      "arcs": [
+        {
+          "id": "arc:bojack/mr_peanutbutter/learning_to_be_alone",
+          "title": "Never slowing down long enough to be alone",
+          "literal_situation": "Mr. Peanutbutter has everything easy: a successful career, a partner he adores, endless enthusiasm and a new idea every day. He fills every moment with noise, parties and grand gestures, and he never stops to think.",
+          "pattern_label": "a relentlessly upbeat person who can't be alone",
+          "pattern_text": "A warm, eternally positive person throws themselves into relationships and projects, but uses cheerfulness and busyness to avoid their own sadness. They love big but don't really listen, and repeat the same relationship patterns over and over. The question is whether they can sit still, face the loneliness they've been outrunning, and learn who they are on their own.",
+          "hook": "Everyone loves Mr. Peanutbutter, and he loves everyone. He can't imagine a problem that can't be solved with a surprise party, and he doesn't notice when his partner goes quiet.",
+          "why_relatable": "Is relentless positivity a strength or a way to hide? Why does he always need someone beside him? What happens if he stops moving?",
+          "watch_for": [
+            "How does he react when a partner tells him something he doesn't want to hear?",
+            "Notice the kinds of people he chooses, and whether the pattern changes.",
+            "What does he do when he's alone?"
+          ],
+          "start_at": "S1E1",
+          "span": "S1-S6",
+          "situations": [
+            {"id": "divorce", "weight": 0.7},
+            {"id": "identity_and_self_acceptance", "weight": 0.7},
+            {"id": "loneliness", "weight": 0.6},
+            {"id": "midlife_reinvention", "weight": 0.3}
+          ],
+          "conflicts": ["independence_vs_connection", "truth_vs_protecting_others"],
+          "emotions": {"start": ["joy", "love", "restlessness"], "middle": ["loneliness", "guilt", "confusion"], "end": ["acceptance", "self_respect", "hope"]},
+          "ending_tone": "bittersweet",
+          "intensity": "moderate",
+          "warnings": ["betrayal"],
+          "example_user_messages": [
+            "Everyone tells me I'm so positive but honestly I just can't stand being alone with my own thoughts.",
+            "I've been divorced three times and I think I might be the common denominator.",
+            "My partner says I never listen to her, I just jump in with some big gesture.",
+            "I've never been single for more than a month and I think I need to learn how."
+          ],
+          "spoiler": {
+            "summary": "Mr. Peanutbutter marries Diane, but their marriage suffers from his refusal to listen and from grand gestures like building her a house without asking and running for governor. They divorce in Season 5, following two earlier divorces (Katrina and Jessica Biel) that repeated the same pattern. He dates much-younger Pickles, sleeps with Diane, and proposes to Pickles rather than confess. Pickles later leaves him for Joey Pogo. Alone, he admits his loneliness, apologises to Diane for not listening, writes a memoir about his sadness, and decides to focus on himself for a while.",
+            "key_events": [
+              "Marries Diane; runs for governor",
+              "Divorce from Diane, his third divorce",
+              "Cheats on Pickles with Diane and proposes instead of confessing",
+              "Pickles leaves him for Joey Pogo",
+              "Apologises to Diane and chooses to be single"
+            ],
+            "got_right": "He is genuinely kind, loyal to his friends (even BoJack), and eventually admits his flaws and chooses to learn to be alone.",
+            "got_wrong": "He never listened to his partners, used big gestures and positivity to avoid hard conversations, and repeated the same relationship over and over."
+          }
+        }
+      ]
+    },
+    {
+      "id": "char:bojack/hollyhock",
+      "name": "Hollyhock",
+      "role": "A curious, awkward and warm seventeen-year-old raised by eight loving adoptive dads, who comes to Los Angeles in her gap year to find her biological family.",
+      "relations": [
+        {"target": "char:bojack/bojack_horseman", "relation": "sibling"}
+      ],
+      "arcs": [
+        {
+          "id": "arc:bojack/hollyhock/searching_for_where_she_comes_from",
+          "title": "Searching for where she comes from",
+          "literal_situation": "Later in the series, Hollyhock, a teenager with a big, loving family of adoptive dads, travels alone to Los Angeles with a spy kit and a single clue, determined to track down her biological mother.",
+          "pattern_label": "an adopted teen searching for their roots",
+          "pattern_text": "A young person raised in a loving adoptive family can't shake the need to know where they came from, and feels guilty for wanting it. They set out alone to find their biological family, carrying a quiet inner voice that says they're not good enough. The question is what they hope to find, what they'll learn about themselves, and whether finding it changes who their family is.",
+          "hook": "Later in the series, Hollyhock arrives in a strange city on her own, full of nerve and very unsure of herself. She loves her dads and still wants to know who she is.",
+          "why_relatable": "Is it disloyal to search for your roots when you already have a family? What does she hope finding her mother will answer? How does she cope with the voice in her head that tells her she's worthless?",
+          "watch_for": [
+            "How does she talk about her dads when she's away from them?",
+            "What does she say about the voice in her head, and who does she confide in?",
+            "Notice how she responds when the people she meets don't live up to her hopes."
+          ],
+          "start_at": "S4E3",
+          "span": "S4-S5",
+          "situations": [
+            {"id": "identity_and_self_acceptance", "weight": 0.8},
+            {"id": "coming_of_age", "weight": 0.7},
+            {"id": "leaving_home", "weight": 0.5},
+            {"id": "confidence_struggle", "weight": 0.4}
+          ],
+          "conflicts": ["self_vs_family_expectations", "past_vs_future"],
+          "emotions": {"start": ["curiosity", "hope", "guilt"], "middle": ["self_doubt", "anxiety", "fear"], "end": ["belonging", "relief", "hope"]},
+          "ending_tone": "hopeful",
+          "intensity": "heavy",
+          "warnings": ["child_endangerment", "medical_trauma"],
+          "example_user_messages": [
+            "I'm adopted and I love my parents, but I can't stop wondering who my birth mom is.",
+            "I feel guilty for wanting to find my biological family, like I'm betraying the people who raised me.",
+            "There's this voice in my head that tells me I'm ugly and stupid and everyone hates me.",
+            "I'm taking a gap year and I don't really know what I'm looking for."
+          ],
+          "spoiler": {
+            "summary": "A DNA test shows Hollyhock is related to BoJack, and she believes he's her father. She moves in with him while they search for her mother, but BoJack's mother Beatrice secretly doses her coffee with weight-loss pills, causing an overdose. Her dads take her home, BoJack learns she's actually his half-sister (daughter of Butterscotch and the maid Henrietta), and he passes Henrietta's number to her dads anonymously. Hollyhock finds her mother and tells BoJack she's never had a brother before. She starts college, but is left with lasting anxiety.",
+            "key_events": [
+              "DNA test shows she's related to BoJack",
+              "Secretly drugged by Beatrice and overdoses",
+              "Revealed as BoJack's half-sister",
+              "Finds her birth mother Henrietta",
+              "Tells BoJack she's never had a brother"
+            ],
+            "got_right": "She is brave about asking hard questions, open about her feelings, and able to lean on her dads.",
+            "got_wrong": "She trusted too quickly and assumed family ties meant safety."
+          }
+        },
+        {
+          "id": "arc:bojack/hollyhock/protecting_herself_from_someone_she_loves",
+          "title": "Protecting herself from someone she loves",
+          "literal_situation": "Later in the series, after a frightening experience that still sets off panic attacks, Hollyhock is at college, trying to get 'okay-er over time' while staying close to someone she cares about but has only known a short while.",
+          "pattern_label": "setting a boundary with someone you love",
+          "pattern_text": "A young person recovering from a traumatic experience is trying to stay close to a family member they love but don't really know. As they learn more about the harm this person has done to others, they have to decide how much of him they can let into their life. The question is whether you can love someone and still protect yourself from them.",
+          "hook": "Later in the series, Hollyhock is building a life of her own, with friends, sports and classes, and working on her anxiety. She is fiercely loyal to the people she loves, and she's starting to feel crowded.",
+          "why_relatable": "How do you set a boundary with someone who clearly needs you? When does forgiving someone become ignoring what they did? Is it cruel to say 'I need space' to a person you love?",
+          "watch_for": [
+            "What does she do when her anxiety spikes, and who helps her?",
+            "How does she set limits, and how does the other person respond?",
+            "What would it take for her to walk away from someone she loves?"
+          ],
+          "start_at": "S5",
+          "span": "S5-S6",
+          "situations": [
+            {"id": "coming_of_age", "weight": 0.6},
+            {"id": "friendship_ending", "weight": 0.5},
+            {"id": "illness_or_injury", "weight": 0.4},
+            {"id": "family_expectations", "weight": 0.4}
+          ],
+          "conflicts": ["holding_on_vs_letting_go", "independence_vs_connection"],
+          "emotions": {"start": ["anxiety", "love", "fear"], "middle": ["confusion", "betrayal", "anger"], "end": ["self_respect", "grief"]},
+          "ending_tone": "bittersweet",
+          "intensity": "moderate",
+          "warnings": ["addiction", "betrayal", "medical_trauma"],
+          "example_user_messages": [
+            "My brother keeps showing up in my life uninvited and I don't know how to tell him I need space.",
+            "I found out something awful someone I love did, and I don't know if I can keep him in my life.",
+            "I still get panic attacks from something that happened a year ago.",
+            "Is it wrong to cut off family if they keep hurting people?"
+          ],
+          "spoiler": {
+            "summary": "Hollyhock has panic attacks and flushes BoJack's painkillers, suspecting he drugged her. In Season 6, BoJack becomes a drama professor at her college; a guy named Peter tells her about how a movie star (BoJack) got his girlfriend Maddy alcohol poisoning at prom and abandoned them at the ER. She distances herself, quits rugby to avoid him, and tells him being siblings means nothing when they don't know each other. After his televised interview reveals his role in Sarah Lynn's death, she sends him a letter and changes her number, cutting him off entirely.",
+            "key_events": [
+              "Panic attacks and flushed pills",
+              "BoJack becomes a professor at her college",
+              "Learns about BoJack's past from Peter",
+              "Quits rugby to avoid him",
+              "Sends a letter and cuts BoJack off"
+            ],
+            "got_right": "She learns grounding techniques for anxiety, and protects herself by setting firm boundaries even when it hurts.",
+            "got_wrong": "She initially made excuses for BoJack out of love, and struggled to say what she needed directly until it was too much."
+          }
+        }
+      ]
+    }
+  ]
+}

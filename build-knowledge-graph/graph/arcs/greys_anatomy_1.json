@@ -1,0 +1,977 @@
+{
+  "show": "greys_anatomy",
+  "characters": [
+    {
+      "id": "char:greys_anatomy/meredith_grey",
+      "name": "Meredith Grey",
+      "role": "A new surgical intern starting at the hospital where her famous surgeon mother made her name, while secretly caring for that mother, who has early-onset Alzheimer's.",
+      "relations": [
+        {"target": "char:greys_anatomy/derek_shepherd", "relation": "partner"},
+        {"target": "char:greys_anatomy/cristina_yang", "relation": "friend"},
+        {"target": "char:greys_anatomy/alex_karev", "relation": "friend"},
+        {"target": "char:greys_anatomy/miranda_bailey", "relation": "mentor"},
+        {"target": "char:greys_anatomy/richard_webber", "relation": "mentor"},
+        {"target": "char:greys_anatomy/amelia_shepherd", "relation": "sibling"},
+        {"target": "char:greys_anatomy/owen_hunt", "relation": "friend"},
+        {"target": "char:greys_anatomy/jo_wilson", "relation": "protege"},
+        {"target": "char:greys_anatomy/jackson_avery", "relation": "friend"},
+        {"target": "char:greys_anatomy/callie_torres", "relation": "friend"},
+        {"target": "char:greys_anatomy/arizona_robbins", "relation": "colleague"}
+      ],
+      "arcs": [
+        {
+          "id": "arc:greys_anatomy/meredith_grey/letting_love_in",
+          "title": "Too dark and twisty to be loved",
+          "literal_situation": "On her first day as a surgical intern, Meredith discovers that the man she had a one-night stand with the night before is one of her new bosses. She lives alone in her mother's empty house, hides her mother's Alzheimer's from everyone, and keeps people at arm's length.",
+          "pattern_label": "learning to let love in after childhood neglect",
+          "pattern_text": "A person raised by a brilliant, cold parent who never had time for them has learned to expect that everyone leaves. They sabotage closeness, choose unavailable partners and bolt the moment things get real, while quietly longing to be chosen. Slowly, with friends who become family, they have to decide whether they deserve a love that stays.",
+          "hook": "Meredith is guarded, self-deprecating and a little reckless. She is starting a punishing job while carrying a secret about her mother and a habit of running from anyone who gets close.",
+          "why_relatable": "How do you let someone in when the person who was supposed to love you most never did? Can you stop waiting to be abandoned? Is being 'dark and twisty' a flaw to fix, or just who you are?",
+          "watch_for": [
+            "When things start going well with someone, what does she do next?",
+            "How does she talk about her mother, and how does her mother talk about her?",
+            "Who does she let see her at her worst?"
+          ],
+          "start_at": "S1E1",
+          "span": "S1-S5",
+          "situations": [
+            {"id": "difficult_parent", "weight": 0.9},
+            {"id": "identity_and_self_acceptance", "weight": 0.7},
+            {"id": "falling_for_someone_unexpected", "weight": 0.6},
+            {"id": "finding_your_people", "weight": 0.6}
+          ],
+          "conflicts": ["independence_vs_connection", "past_vs_future"],
+          "emotions": {"start": ["loneliness", "rejection", "self_doubt"], "middle": ["confusion", "grief", "longing"], "end": ["acceptance", "love", "hope"]},
+          "ending_tone": "hopeful",
+          "intensity": "heavy",
+          "warnings": ["serious_illness", "death_of_loved_one", "grief", "medical_trauma", "betrayal", "abuse", "self_harm_or_suicide"],
+          "example_user_messages": [
+            "My mom always cared more about her career than about me and now I can't let anyone get close.",
+            "Every time a relationship gets serious I find a reason to run.",
+            "I keep falling for people who aren't really available and I don't understand why.",
+            "My friends feel more like family than my actual family ever did.",
+            "Part of me thinks I'm just too messed up to be loved."
+          ],
+          "spoiler": {
+            "summary": "Meredith falls for Derek, who turns out to be married; when his wife Addison arrives he chooses his marriage and Meredith becomes hospital gossip. She dates Finn, reunites with Derek after the prom, but keeps pushing him away. She nearly drowns in a ferry disaster, briefly dies and meets her mother in limbo; Ellis dies that same day. Her estranged father Thatcher slaps her and blames her after his wife Susan dies. Therapy with Dr. Wyatt helps her face her abandonment issues; she builds a 'house of candles' on Derek's land and asks to be 'extraordinary together'. She makes peace with Richard, accepts her half-sister Lexie, and marries Derek with vows written on a Post-it note, shortly before her friend George dies.",
+            "key_events": [
+              "Derek's wife Addison arrives; he chooses his marriage",
+              "'Pick me, choose me, love me' speech",
+              "Nearly drowns in the ferry accident and is revived",
+              "Ellis dies; in limbo she tells Meredith she is extraordinary",
+              "Thatcher slaps her after Susan's death",
+              "Therapy with Dr. Wyatt",
+              "House of candles; reunites with Derek",
+              "Accepts half-sister Lexie",
+              "Post-it wedding to Derek",
+              "George dies"
+            ],
+            "got_right": "She stays in therapy long enough to name her fear, chooses her friends as family, and eventually risks asking for a love that lasts.",
+            "got_wrong": "She tests and punishes the people who love her, runs when things get good, and treats her own survival carelessly."
+          }
+        },
+        {
+          "id": "arc:greys_anatomy/meredith_grey/living_again_after_loss",
+          "title": "Allowing herself to be happy again",
+          "literal_situation": "Later in the series, after a painful loss that reshapes her whole life, Meredith is raising her kids and sharing a house with family. She is back at work but closed off, convinced her chance at real happiness is behind her.",
+          "pattern_label": "letting yourself want joy again after loss",
+          "pattern_text": "A person widowed young is raising children alone and has decided that the great love of their life has come and gone. Throwing themselves into work feels safer than wanting anything. As new people and new chances appear, they have to figure out whether moving on betrays the past and whether they are allowed to be happy again.",
+          "hook": "Meredith is capable, numb and prickly, surviving rather than living, and she wants nobody's pity and nobody's romance.",
+          "why_relatable": "Are you allowed to want happiness again after the worst has happened? Does moving forward mean leaving the past behind? How do you let people close when you know exactly how much losing them hurts?",
+          "watch_for": [
+            "What does she tell herself about whether she's allowed to want more?",
+            "How does she handle it when someone new wants to get close?",
+            "When does work stop being a refuge and start being a hiding place?"
+          ],
+          "start_at": "S12E1",
+          "span": "S12-S15",
+          "situations": [
+            {"id": "grief_and_loss", "weight": 0.9},
+            {"id": "starting_over", "weight": 0.8},
+            {"id": "caring_for_family", "weight": 0.5},
+            {"id": "falling_for_someone_unexpected", "weight": 0.5}
+          ],
+          "conflicts": ["holding_on_vs_letting_go", "past_vs_future"],
+          "emotions": {"start": ["grief", "numbness", "loneliness"], "middle": ["guilt", "confusion", "hope"], "end": ["joy", "love", "acceptance"]},
+          "ending_tone": "hopeful",
+          "intensity": "moderate",
+          "warnings": ["grief", "death_of_loved_one", "war_and_violence", "medical_trauma"],
+          "example_user_messages": [
+            "My husband died and dating again still feels like cheating on him.",
+            "I've buried myself in work since the funeral because it's the only place I don't have to feel anything.",
+            "Someone asked me out and I panicked. I don't know if I'm ready to want anything again.",
+            "Everyone says I deserve to be happy but I don't know how to believe that."
+          ],
+          "spoiler": {
+            "summary": "Meredith stands up for herself when she is promoted to Head of General Surgery and negotiates her salary, and survives a brutal beating by a patient whom she later forgives. She has a secret affair with Nathan Riggs but pushes him back to his long-lost fiancée Megan when she is found alive. Her matchmaker patient Cece pushes her to date and dies on the table, leaving Meredith determined to squeeze joy out of life. She says goodbye to her dying father Thatcher, is torn between Link and Andrew DeLuca, and chooses Andrew. His 'I love you' terrifies her because it reminds her of Derek, but when he goes to jail to protect her she tells him she loves him too.",
+            "key_events": [
+              "Moves back into her childhood home with Amelia and Maggie",
+              "Brutally attacked by a patient; later forgives him",
+              "Promoted to Head of General Surgery and negotiates her salary",
+              "Affair with Nathan Riggs; sends him back to Megan",
+              "Hires matchmaker Cece, who dies during her transplant",
+              "Sits with Thatcher as he dies",
+              "Love triangle with Link and Andrew DeLuca",
+              "Tells Andrew she loves him after he takes the fall for her"
+            ],
+            "got_right": "She eventually lets herself want more, chooses to say goodbye to her father, and learns that new love doesn't erase old love.",
+            "got_wrong": "She hides behind work and excuses, strings people along rather than choosing, and lies to her sister to avoid conflict."
+          }
+        },
+        {
+          "id": "arc:greys_anatomy/meredith_grey/breaking_rules_for_right_reasons",
+          "title": "Breaking the rules to do what's right",
+          "literal_situation": "Later in the series, Meredith, now a highly respected surgeon, treats a young girl recently separated from her mother at the border whose father earns too much for state coverage but far too little to pay for the surgery she urgently needs.",
+          "pattern_label": "risking everything to defy an unjust system",
+          "pattern_text": "A respected person sees someone vulnerable being failed by the system that should protect them and decides to break the rules to help. The choice puts their career, reputation and family at risk and drags the people close to them into the fallout. They must face whether doing right and following the rules can ever be the same thing, and what they owe the people who try to protect them.",
+          "hook": "Meredith has earned her place at the top, trusts her own judgment, and is used to bending rules and getting away with it.",
+          "why_relatable": "When a system is broken, do you work within it or break it? What do you owe the people who get pulled in with you? Could you stand by a choice that might cost you your job?",
+          "watch_for": [
+            "Who does she tell, and who does she keep in the dark?",
+            "How does she weigh what her choice could cost the people around her?",
+            "What does she tell herself about whether it's worth the risk?"
+          ],
+          "start_at": "S15",
+          "span": "S15-S16",
+          "situations": [
+            {"id": "standing_up_to_authority", "weight": 0.9},
+            {"id": "losing_a_job", "weight": 0.8},
+            {"id": "taking_a_big_risk", "weight": 0.6},
+            {"id": "redemption_after_mistakes", "weight": 0.4}
+          ],
+          "conflicts": ["belonging_vs_integrity", "truth_vs_protecting_others"],
+          "emotions": {"start": ["determination", "anger"], "middle": ["guilt", "fear", "anger"], "end": ["self_respect", "relief", "belonging"]},
+          "ending_tone": "hopeful",
+          "intensity": "moderate",
+          "warnings": ["serious_illness", "betrayal"],
+          "example_user_messages": [
+            "I bent the rules at work to help someone who had nowhere else to go and now I might lose everything.",
+            "Someone I love took the blame for something I did and I can't let them.",
+            "I got fired for doing what I truly believe was right and I'm not sorry.",
+            "The system is broken and I'm tired of pretending that following the rules fixes it."
+          ],
+          "spoiler": {
+            "summary": "Meredith puts her daughter's name on the girl's paperwork, committing insurance fraud; Richard helps keep the girl hospitalized long enough for new coverage to kick in. When it comes to light, Andrew takes the fall and is arrested. Meredith confesses and Bailey fires her, Alex and Richard. Sentenced to community service picking up trash, she runs a street clinic, writes an article that ends up trashing the hospital, skips a court date to be with Zola during surgery and serves time in jail. At her medical board hearing, a panel member turns out to be the doctor who let Derek die. Alex brings in a crowd of former patients, Bailey reverses her cold testimony, and Meredith keeps her license and returns to work, though her relationship with Andrew starts to crack.",
+            "key_events": [
+              "Commits insurance fraud using her daughter's name",
+              "Andrew takes the fall and is arrested",
+              "Confesses; Bailey fires Meredith, Alex and Richard",
+              "Community service and a street clinic",
+              "Article 'Hospital Hell at Grey Sloan' goes viral",
+              "Spends time in jail after missing court for Zola's surgery",
+              "Lashes out at the panel doctor who let Derek die",
+              "Former patients testify; she keeps her license and is rehired"
+            ],
+            "got_right": "She owns her choice, refuses to let Andrew suffer for it, and keeps advocating for people the system fails.",
+            "got_wrong": "She acts alone, pulls colleagues into legal risk, and hurts her mentor by going public without thinking through the consequences."
+          }
+        }
+      ]
+    },
+    {
+      "id": "char:greys_anatomy/miranda_bailey",
+      "name": "Miranda Bailey",
+      "role": "A formidable, no-nonsense surgical resident nicknamed 'The Nazi', put in charge of a new group of interns she has no intention of coddling.",
+      "relations": [
+        {"target": "char:greys_anatomy/richard_webber", "relation": "mentor"},
+        {"target": "char:greys_anatomy/meredith_grey", "relation": "protege"},
+        {"target": "char:greys_anatomy/alex_karev", "relation": "protege"},
+        {"target": "char:greys_anatomy/cristina_yang", "relation": "protege"},
+        {"target": "char:greys_anatomy/jo_wilson", "relation": "protege"},
+        {"target": "char:greys_anatomy/owen_hunt", "relation": "colleague"},
+        {"target": "char:greys_anatomy/derek_shepherd", "relation": "colleague"},
+        {"target": "char:greys_anatomy/callie_torres", "relation": "colleague"},
+        {"target": "char:greys_anatomy/arizona_robbins", "relation": "colleague"},
+        {"target": "char:greys_anatomy/jackson_avery", "relation": "colleague"},
+        {"target": "char:greys_anatomy/amelia_shepherd", "relation": "colleague"}
+      ],
+      "arcs": [
+        {
+          "id": "arc:greys_anatomy/miranda_bailey/career_and_motherhood",
+          "title": "Trying to have it all",
+          "literal_situation": "Bailey, a fiercely driven senior resident, is pregnant with her first child after years of trying, and keeps it quiet because she doesn't want her personal life to change how anyone sees her at work.",
+          "pattern_label": "juggling a demanding career and a new family",
+          "pattern_text": "A highly driven person becomes a parent during the hardest stretch of their career and refuses to let anyone think they've gone soft. Colleagues question whether they can do both, their partner resents the hours, and a scare at home makes the guilt unbearable. Eventually they are forced to choose between a dream opportunity and the family they have.",
+          "hook": "Bailey is tough, respected and controlled, about to become a mother and determined that nothing about her professional reputation will slip.",
+          "why_relatable": "Can you be excellent at your job and a good parent at the same time? Who gets a say in your ambitions? What do you do when people doubt you because you're a mother?",
+          "watch_for": [
+            "How does she respond when colleagues question her commitment after the baby?",
+            "What does her husband want from her, and what does she want?",
+            "What is she willing to give up, and what isn't she?"
+          ],
+          "start_at": "S2",
+          "span": "S2-S5",
+          "situations": [
+            {"id": "becoming_a_parent", "weight": 0.9},
+            {"id": "divorce", "weight": 0.6},
+            {"id": "family_expectations", "weight": 0.5},
+            {"id": "burnout_at_work", "weight": 0.4}
+          ],
+          "conflicts": ["career_vs_relationships", "self_vs_family_expectations"],
+          "emotions": {"start": ["pride", "anxiety"], "middle": ["guilt", "inadequacy", "resentment"], "end": ["self_respect", "determination", "grief"]},
+          "ending_tone": "bittersweet",
+          "intensity": "moderate",
+          "warnings": ["medical_trauma", "child_endangerment", "death_of_loved_one", "grief"],
+          "example_user_messages": [
+            "Since I had my baby everyone at work acts like I can't handle the same responsibilities.",
+            "My husband told me it's him or the opportunity I've worked toward for years.",
+            "I feel guilty every minute I'm at work and every minute I'm not.",
+            "I'm a single mom now and I turned down the thing I always wanted so I could be there for my kid."
+          ],
+          "spoiler": {
+            "summary": "Bailey goes into labor during a bomb scare while her husband is in surgery after a car crash, and George coaches her through the birth of Tuck. Back at work she fights guilt and doubt; after Denny's death an M&M questions whether she can juggle career and motherhood. She opens a free clinic and is named Chief Resident after covering for Callie. After Tuck is hurt at home the marriage frays, and when she wins a pediatric surgery fellowship, Tucker gives her an ultimatum. She leaves him but also turns down the fellowship to be a single mother, becoming a general surgery attending, and then loses George, her favorite intern.",
+            "key_events": [
+              "Gives birth during the bomb scare, coached by George",
+              "Criticized at M&M over losing control of her interns",
+              "Opens the Denny Duquette free clinic",
+              "Named Chief Resident after covering for Callie",
+              "Tuck is hurt at home; the marriage strains",
+              "Tucker's ultimatum: the fellowship or the marriage",
+              "Divorces Tucker and turns down the peds fellowship",
+              "George dies"
+            ],
+            "got_right": "She refuses to accept an ultimatum as the basis of a marriage and lets her interns see the warmth behind the toughness.",
+            "got_wrong": "She tries to prove motherhood hasn't changed her instead of asking for support, and lets work crowd out her home life."
+          }
+        },
+        {
+          "id": "arc:greys_anatomy/miranda_bailey/leading_the_hospital",
+          "title": "Asking to lead the people who raised you",
+          "literal_situation": "Later in the series, Bailey is finally in line to become Chief of Surgery, but the board makes her compete against a polished outside candidate, and the job would make her the boss of her own mentor and former students.",
+          "pattern_label": "stepping up to lead your mentors and peers",
+          "pattern_text": "A person who has worked their way up is finally given the top job, overseeing the mentor who trained them and the friends they came up with. To prove themselves they push through bold, unpopular changes, and a decision that sidelines their mentor splits the team. They have to learn the difference between being in charge and being right.",
+          "hook": "Bailey is sure she has earned it, but an impressive rival shakes her certainty, and winning would mean leading people whose loyalty she has always taken for granted.",
+          "why_relatable": "How do you lead people who knew you before you had power? What do you owe the person who made you? Can you admit you might be wrong without losing your authority?",
+          "watch_for": [
+            "How does she handle it when loyalty to her mentor and her own ambitions pull in different directions?",
+            "Who does she listen to when her team pushes back?",
+            "How does she treat the people who knew her before she had power?"
+          ],
+          "start_at": "S12E1",
+          "span": "S12-S13",
+          "situations": [
+            {"id": "becoming_a_manager", "weight": 0.9},
+            {"id": "leading_former_peers", "weight": 0.8},
+            {"id": "mentor_and_protege", "weight": 0.6},
+            {"id": "imposter_syndrome", "weight": 0.4}
+          ],
+          "conflicts": ["loyalty_vs_ambition", "control_vs_trust"],
+          "emotions": {"start": ["determination", "self_doubt"], "middle": ["overwhelm", "anger", "guilt"], "end": ["confidence", "self_respect"]},
+          "ending_tone": "hopeful",
+          "intensity": "moderate",
+          "warnings": ["betrayal", "sexual_violence"],
+          "example_user_messages": [
+            "I just got promoted and now I'm managing the person who trained me.",
+            "I made a big change at work that I was sure was right and now half my team is furious.",
+            "My mentor feels betrayed by a decision I made as the boss.",
+            "I'm afraid that if I admit I got it wrong nobody will respect me again."
+          ],
+          "spoiler": {
+            "summary": "Bailey wins the Chief job over Tracy McConnell with a passionate speech about the hospital. Pushed by Catherine, she hires Eliza Minnick to overhaul resident teaching, replacing Richard as program director; Richard feels betrayed, the attendings take sides, and Bailey suspends Meredith for refusing to cooperate. She also has to put her own husband Ben on probation. During a Code Orange over a rapist and a hospital fire, Minnick fails to alert police about a missing resident; Bailey fires her, saying a hospital needs humans who know when not to follow the rules, and gives Richard his job back.",
+            "key_events": [
+              "Beats outside candidate Tracy McConnell for Chief",
+              "Puts husband Ben on probation",
+              "Hires Eliza Minnick, sidelining Richard",
+              "Suspends Meredith for refusing Minnick in her OR",
+              "Code Orange and hospital fire",
+              "Fires Minnick and reinstates Richard"
+            ],
+            "got_right": "She fights for the job she earned, and in the end admits her mistake and restores her mentor.",
+            "got_wrong": "She mistakes control for leadership, tries to engineer outcomes, and underestimates how much she hurt her mentor."
+          }
+        },
+        {
+          "id": "arc:greys_anatomy/miranda_bailey/strong_one_asks_for_help",
+          "title": "The strong one who can't ask for help",
+          "literal_situation": "Later in the series, after a deadly surgical infection is traced back to her, Bailey returns to the OR fixated on control, and her compulsive rituals start to worry the people closest to her.",
+          "pattern_label": "admitting the strong one needs help too",
+          "pattern_text": "A person everyone relies on to be tough and in control starts to crack under pressure: compulsive habits, crushing stress, a body that finally gives out. They insist they can handle it, fear that asking for help makes them weak, and try to fix everything by controlling their surroundings. They have to accept that their mind and health need care as much as anyone's.",
+          "hook": "Bailey is shaken, perfectionistic and adamant that she's fine. She has always been the one who takes care of everyone else.",
+          "why_relatable": "Why is it so hard for the capable one to admit something is wrong? Is stepping back the same as failing? Can you love someone whose choices terrify you without trying to control them?",
+          "watch_for": [
+            "What does she do when someone suggests she needs treatment?",
+            "How does she respond when her own health starts to worry the people around her?",
+            "What does she try to change first, herself or everything around her?"
+          ],
+          "start_at": "S10",
+          "span": "S10-S15",
+          "situations": [
+            {"id": "burnout_at_work", "weight": 0.8},
+            {"id": "illness_or_injury", "weight": 0.8},
+            {"id": "identity_and_self_acceptance", "weight": 0.5},
+            {"id": "confidence_struggle", "weight": 0.4}
+          ],
+          "conflicts": ["control_vs_trust", "perfectionism_vs_good_enough"],
+          "emotions": {"start": ["fear", "anxiety", "shame"], "middle": ["overwhelm", "burnout", "loneliness"], "end": ["acceptance", "peace", "relief"]},
+          "ending_tone": "hopeful",
+          "intensity": "moderate",
+          "warnings": ["serious_illness", "medical_trauma"],
+          "example_user_messages": [
+            "Everyone thinks I have it all together but I've started doing these rituals I can't stop.",
+            "I went to the ER with chest pain and they told me it was just stress.",
+            "I stepped back from my big job hoping it would help, but I'm still so anxious I can't breathe.",
+            "Asking for help feels like admitting I'm failing.",
+            "My partner's job scares me so much that I asked for a break from our marriage."
+          ],
+          "spoiler": {
+            "summary": "Bailey develops OCD, is judged unfit to operate, and only accepts medication after Richard talks about living with his own incurable disease. Years later, as Chief, she has a heart attack that another hospital's doctors dismiss as stress until she collapses. She tells Ben to follow his dream of firefighting, then takes a sabbatical from the Chief job, but her stress and blood pressure stay high and she asks Ben for a marriage 'time-out'. Richard tells her she can't fix the inside from the outside. She goes back to her therapist, has her medication adjusted, openly calls herself someone with a mental illness, and reunites with Ben, who builds her a treehouse.",
+            "key_events": [
+              "MRSA outbreak traced to her; three patients die",
+              "Develops OCD and is benched",
+              "Accepts medication after Richard's talk about addiction",
+              "Heart attack dismissed as stress by another hospital",
+              "Takes a sabbatical as Chief",
+              "Asks Ben for a marriage sabbatical",
+              "Returns to therapy and adjusts her meds",
+              "Reunites with Ben"
+            ],
+            "got_right": "She goes back to therapy, names her mental illness out loud, and tells others it's okay to ask for help.",
+            "got_wrong": "She tries to manage her anxiety by controlling everything around her, including pushing her husband away rather than facing her fear."
+          }
+        }
+      ]
+    },
+    {
+      "id": "char:greys_anatomy/richard_webber",
+      "name": "Richard Webber",
+      "role": "The long-serving Chief of Surgery and mentor to generations of surgeons, with a personal history at the hospital that he rarely talks about.",
+      "relations": [
+        {"target": "char:greys_anatomy/meredith_grey", "relation": "protege"},
+        {"target": "char:greys_anatomy/miranda_bailey", "relation": "protege"},
+        {"target": "char:greys_anatomy/derek_shepherd", "relation": "protege"},
+        {"target": "char:greys_anatomy/alex_karev", "relation": "protege"},
+        {"target": "char:greys_anatomy/cristina_yang", "relation": "protege"},
+        {"target": "char:greys_anatomy/jackson_avery", "relation": "child"},
+        {"target": "char:greys_anatomy/owen_hunt", "relation": "friend"},
+        {"target": "char:greys_anatomy/arizona_robbins", "relation": "friend"},
+        {"target": "char:greys_anatomy/amelia_shepherd", "relation": "friend"},
+        {"target": "char:greys_anatomy/callie_torres", "relation": "colleague"},
+        {"target": "char:greys_anatomy/jo_wilson", "relation": "colleague"}
+      ],
+      "arcs": [
+        {
+          "id": "arc:greys_anatomy/richard_webber/sobriety",
+          "title": "Staying sober when everything shakes",
+          "literal_situation": "Later in the series, under the pressure of a hospital merger and grief over a painful loss, the Chief quietly starts drinking again while still running the hospital and operating.",
+          "pattern_label": "fighting a relapse and relearning to lean on others",
+          "pattern_text": "A person in authority, sober for years, starts drinking again under pressure and hides it from the people who depend on them. Once exposed, they have to give up control, go through recovery and rebuild trust. Years later, losing the one person who truly held their secrets tests whether they can stay sober without leaning on anyone.",
+          "hook": "Richard is proud, overworked and convinced he can carry everything alone. He is nowhere near ready to admit he has lost control.",
+          "why_relatable": "How do you ask for help when everyone sees you as the one in charge? What does recovery look like when you're not drinking but you're still not okay? Who do you let hold your secrets?",
+          "watch_for": [
+            "Who notices first, and what do they do about it?",
+            "How does he respond when he's confronted?",
+            "What keeps him steady, and what happens when he lets it slip?"
+          ],
+          "start_at": "S6",
+          "span": "S6-S15",
+          "situations": [
+            {"id": "addiction_and_recovery", "weight": 1.0},
+            {"id": "burnout_at_work", "weight": 0.5},
+            {"id": "grief_and_loss", "weight": 0.5},
+            {"id": "losing_a_job", "weight": 0.3}
+          ],
+          "conflicts": ["control_vs_trust", "holding_on_vs_letting_go"],
+          "emotions": {"start": ["shame", "overwhelm", "anxiety"], "middle": ["guilt", "grief", "anger"], "end": ["acceptance", "self_respect", "belonging"]},
+          "ending_tone": "hopeful",
+          "intensity": "heavy",
+          "warnings": ["addiction", "death_of_loved_one", "grief", "war_and_violence"],
+          "example_user_messages": [
+            "I'd been sober for years and started drinking again when work got overwhelming, and nobody knows.",
+            "Everyone looks to me to hold things together so I can't admit I'm falling apart.",
+            "The person who got me sober just died and I haven't been to a meeting since.",
+            "I'm not drinking, but I'm angry all the time and I don't know what's wrong with me."
+          ],
+          "spoiler": {
+            "summary": "Meredith discovers his drinking during private teaching sessions; Derek reports him to the board, and Bailey gets him to admit it and choose rehab over early retirement. He sobers up and regains the Chief position after the hospital shooting. Over years of sobriety he supports Bailey, Amelia and others, telling them addiction is a disease that can be managed but not alone. When his sponsor Ollie dies he accepts her wish to stop treatment, then quits meetings and becomes an angry 'dry drunk'. After losing a beloved nurse he walks into a bar that trades shots for AA chips, smashes every bottle and is arrested. Facing Catherine's cancer, he finds a new sponsor and goes back to meetings.",
+            "key_events": [
+              "Relapses during the merger",
+              "Derek reports him; he chooses rehab",
+              "Returns as Chief after the shooting",
+              "Talks Bailey into accepting treatment",
+              "Sponsor Ollie dies; he stops going to meetings",
+              "Smashes a bar and is arrested",
+              "Finds a new sponsor"
+            ],
+            "got_right": "He calls his illness what it is, supports other addicts generously, and goes back to meetings when it matters.",
+            "got_wrong": "He hides his relapse, lashes out at the people who expose him, and tries to white-knuckle his grief alone."
+          }
+        },
+        {
+          "id": "arc:greys_anatomy/richard_webber/wife_slipping_away",
+          "title": "Loving a wife who is slipping away",
+          "literal_situation": "Richard's wife Adele starts showing signs of Alzheimer's, the same disease he has already watched a woman he once loved struggle with, just as a clinical trial at his hospital offers a sliver of hope.",
+          "pattern_label": "caring for a spouse through dementia and letting go",
+          "pattern_text": "A person watches their long-time partner lose their memory to an incurable illness and tries desperately to fix it. They make sacrifices, blame themselves for years of neglect, and are devastated when their partner no longer recognizes them and finds comfort with someone else. They must learn to love by letting go instead of holding on.",
+          "hook": "Richard is guilt-ridden about years of putting work before his marriage and desperate to give Adele a chance.",
+          "why_relatable": "What do you owe a partner you haven't always treated well? How do you grieve someone who is still alive? Can letting go be an act of love?",
+          "watch_for": [
+            "What is he willing to sacrifice to give his wife a chance?",
+            "How does he react when she no longer recognizes him?",
+            "Who does he turn to when he's lonely?"
+          ],
+          "start_at": "S7",
+          "span": "S7-S9",
+          "situations": [
+            {"id": "caring_for_family", "weight": 0.9},
+            {"id": "grief_and_loss", "weight": 0.8},
+            {"id": "losing_a_job", "weight": 0.4}
+          ],
+          "conflicts": ["holding_on_vs_letting_go", "duty_vs_desire"],
+          "emotions": {"start": ["dread", "guilt"], "middle": ["grief", "jealousy", "loneliness"], "end": ["acceptance", "love", "grief"]},
+          "ending_tone": "bittersweet",
+          "intensity": "moderate",
+          "warnings": ["serious_illness", "death_of_loved_one", "grief"],
+          "example_user_messages": [
+            "My wife has dementia and some days she doesn't know who I am.",
+            "She's in a care home now and she's fallen for another resident, and I'm trying to be okay with it.",
+            "I spent so many years putting work first and now I can't make it up to her.",
+            "How do you grieve someone who is still alive?"
+          ],
+          "spoiler": {
+            "summary": "Meredith tampers with Derek's Alzheimer's trial so Adele gets the real drug; Richard takes the blame, resigns as Chief and stays on as an attending. As Adele declines she asks to move into a care facility, stops recognizing him and starts a romance with another resident, Allan. Richard first resists, then lets Allan take his place, and begins a relationship with Catherine Avery. Adele dies of a heart attack after surgery on the day of Bailey's wedding.",
+            "key_events": [
+              "Adele diagnosed with Alzheimer's",
+              "Meredith rigs the trial for Adele",
+              "Richard takes the fall and steps down as Chief",
+              "Adele moves into Roseridge and bonds with Allan",
+              "Richard lets go",
+              "Relationship with Catherine begins",
+              "Adele dies on Bailey's wedding day"
+            ],
+            "got_right": "He lets Adele be happy even when it breaks his heart, and protects Meredith at great cost to himself.",
+            "got_wrong": "He carries his guilt alone, and his need to fix things leads him to cover up a serious ethics breach."
+          }
+        },
+        {
+          "id": "arc:greys_anatomy/richard_webber/pushed_aside",
+          "title": "Finding purpose after being pushed aside",
+          "literal_situation": "Later in the series, Richard learns that the hospital's leadership is bringing in an outside expert to take over the teaching program he built and still runs.",
+          "pattern_label": "reinventing yourself after being pushed out",
+          "pattern_text": "An experienced person whose identity is built on their work is sidelined by someone they mentored, and later loses their job altogether. Their marriage buckles, their body starts failing them, and they wonder whether they still matter. They have to decide whether to cling to the legacy they built or find a new way to be useful.",
+          "hook": "Richard feels betrayed and fiercely protective of the program and people he shaped.",
+          "why_relatable": "Who are you when the role that defined you is taken away? What do you do when the people you trained stop needing you? How do you tell pride from purpose?",
+          "watch_for": [
+            "How does he respond when younger people take over what he built?",
+            "What does he need from the people closest to him when he feels pushed aside?",
+            "What makes him feel useful again?"
+          ],
+          "start_at": "S13",
+          "span": "S13-S16",
+          "situations": [
+            {"id": "losing_a_job", "weight": 0.8},
+            {"id": "midlife_reinvention", "weight": 0.8},
+            {"id": "mentor_and_protege", "weight": 0.6},
+            {"id": "divorce", "weight": 0.4},
+            {"id": "illness_or_injury", "weight": 0.4}
+          ],
+          "conflicts": ["past_vs_future", "loyalty_vs_ambition"],
+          "emotions": {"start": ["resentment", "betrayal"], "middle": ["anger", "loneliness", "grief"], "end": ["relief", "self_respect"]},
+          "ending_tone": "bittersweet",
+          "intensity": "moderate",
+          "warnings": ["serious_illness", "death_of_loved_one", "betrayal"],
+          "example_user_messages": [
+            "My old protégé is my boss now and just handed my job to someone else.",
+            "I got let go after thirty-five years and I don't know who I am without that place.",
+            "My spouse didn't stand up for me when I lost my job and I can't forgive it.",
+            "I'm starting over at the bottom at an age when everyone expects me to retire."
+          ],
+          "spoiler": {
+            "summary": "Bailey hires Eliza Minnick to run resident teaching; Richard is sidelined until Minnick is fired. Years later he helps cover Meredith's insurance fraud and Bailey fires him; Catherine doesn't defend him and their marriage cracks. He gets Alex hired as Chief of struggling Pac-North and finds new purpose turning it around, rejects Gemma's advances, and loses his niece Sabi on Maggie's table. Catherine buys Pac-North to shut it down and they separate. He develops a tremor and hallucinations, melts down publicly at a conference and appears to have dementia, until Andrew diagnoses cobalt poisoning from his hip replacement. Cured, he orders Catherine out of his room.",
+            "key_events": [
+              "Replaced as residency director by Eliza Minnick, then reinstated",
+              "Fired by Bailey over Meredith's insurance fraud",
+              "Rebuilds Pac-North with Alex",
+              "Rejects Gemma",
+              "Niece Sabi dies in surgery",
+              "Catherine buys and closes Pac-North; they separate",
+              "Tremor, hallucinations and public meltdown",
+              "Cobalt poisoning diagnosed and cured"
+            ],
+            "got_right": "He turns his hurt into mentoring at a struggling hospital and stays faithful to his wife under temptation.",
+            "got_wrong": "He isolates himself, lets pride drive his decisions, and hides his tremor instead of seeking help."
+          }
+        }
+      ]
+    },
+    {
+      "id": "char:greys_anatomy/alex_karev",
+      "name": "Alex Karev",
+      "role": "A cocky, abrasive surgical intern with a chip on his shoulder who pushes people away with insults and hides a hard upbringing.",
+      "relations": [
+        {"target": "char:greys_anatomy/meredith_grey", "relation": "friend"},
+        {"target": "char:greys_anatomy/cristina_yang", "relation": "friend"},
+        {"target": "char:greys_anatomy/miranda_bailey", "relation": "mentor"},
+        {"target": "char:greys_anatomy/arizona_robbins", "relation": "mentor"},
+        {"target": "char:greys_anatomy/richard_webber", "relation": "mentor"},
+        {"target": "char:greys_anatomy/jo_wilson", "relation": "partner"},
+        {"target": "char:greys_anatomy/owen_hunt", "relation": "colleague"},
+        {"target": "char:greys_anatomy/derek_shepherd", "relation": "colleague"},
+        {"target": "char:greys_anatomy/callie_torres", "relation": "colleague"},
+        {"target": "char:greys_anatomy/jackson_avery", "relation": "colleague"},
+        {"target": "char:greys_anatomy/amelia_shepherd", "relation": "colleague"}
+      ],
+      "arcs": [
+        {
+          "id": "arc:greys_anatomy/alex_karev/tough_guy_softens",
+          "title": "The jerk who's afraid to be soft",
+          "literal_situation": "Alex starts his surgical internship alongside four others, stealing cases, mocking his colleagues and insisting he wants to do plastic surgery, while privately terrified of failing and of anyone seeing where he came from.",
+          "pattern_label": "dropping the tough-guy armor and letting people in",
+          "pattern_text": "Someone who grew up in chaos and had to parent their own parents walls themselves off with arrogance and cruelty. They mock others, sabotage relationships and act out whenever they feel weak. Through mentors who believe in them, work that brings out their tenderness and friends who won't give up on them, they slowly discover they can be both tough and kind.",
+          "hook": "Alex is arrogant, crude and defensive, the intern everyone dislikes, with a past he would rather die than talk about.",
+          "why_relatable": "What happens when the armor that kept you alive as a kid stops working? Can you become gentle without feeling weak? Who gets to see the real you?",
+          "watch_for": [
+            "When does his cruelty come out: when he's winning, or when he's scared?",
+            "How does he act around the most vulnerable people he meets?",
+            "Who does he trust enough to fall apart in front of?"
+          ],
+          "start_at": "S1E1",
+          "span": "S1-S9",
+          "situations": [
+            {"id": "identity_and_self_acceptance", "weight": 0.8},
+            {"id": "coming_of_age", "weight": 0.7},
+            {"id": "mentor_and_protege", "weight": 0.6},
+            {"id": "confidence_struggle", "weight": 0.6}
+          ],
+          "conflicts": ["independence_vs_connection", "past_vs_future"],
+          "emotions": {"start": ["anger", "shame", "inadequacy"], "middle": ["longing", "betrayal", "guilt"], "end": ["belonging", "self_respect", "confidence"]},
+          "ending_tone": "hopeful",
+          "intensity": "heavy",
+          "warnings": ["serious_illness", "self_harm_or_suicide", "war_and_violence", "death_of_loved_one", "grief", "betrayal", "medical_trauma"],
+          "example_user_messages": [
+            "I act like a jerk because if people like me they'll just leave anyway.",
+            "I grew up taking care of my whole family and now I don't know how to let anyone take care of me.",
+            "I failed a huge exam and I'm too ashamed to tell anyone.",
+            "I finally found something I'm good at and it scares me how much I care."
+          ],
+          "spoiler": {
+            "summary": "Alex fails his boards, humiliates Izzie and cheats on her, then chooses to be 'nice Alex' and wins her back. He tries to take care of Ava alone until her psychiatric crisis forces him to admit she needs help. He marries Izzie when she has cancer, but she leaves him after he tells the Chief she can't handle work. He is shot during the hospital shooting and cries out for Izzie. Mentored by Arizona, he finds his calling in pediatrics and launches the Africa project, then drunkenly exposes Meredith's trial tampering and has to earn back her friendship. He takes a Johns Hopkins fellowship, so Arizona takes his seat on the plane that crashes; guilt-ridden, he amputates her leg and chooses to stay in Seattle as her fellow.",
+            "key_events": [
+              "Fails his medical boards",
+              "Chooses 'nice Alex' and dates Izzie",
+              "Ava's psychiatric crisis",
+              "Marries Izzie during her cancer; she leaves him",
+              "Shot during the hospital shooting",
+              "Finds pediatrics under Arizona; the Africa project",
+              "Betrays Meredith's secret; wins back her forgiveness",
+              "Arizona takes his plane seat and loses her leg",
+              "Stays in Seattle instead of going to Hopkins"
+            ],
+            "got_right": "He chooses kindness, shows up for sick kids and for his friends, and stays when guilt and love call him to.",
+            "got_wrong": "He lashes out when hurt, betrays his closest friend in a drunken moment, and hides behind casual sex when he's scared."
+          }
+        },
+        {
+          "id": "arc:greys_anatomy/alex_karev/not_his_father",
+          "title": "Afraid of becoming his father",
+          "literal_situation": "Later in the series, Alex, now settled in his career and in a steady relationship, comes face to face with the abusive, drug-addicted father he threw out of the house at fifteen, who turns up injured in the ER after a drug-fueled car crash.",
+          "pattern_label": "breaking the cycle of an abusive parent",
+          "pattern_text": "Someone raised by a violent, addicted parent is haunted by the fear that the same anger lives in them. When the parent resurfaces, old wounds reopen. Later, a moment of protective rage has serious consequences, and they must prove to their partner and to themselves that they can protect the people they love without becoming the person who hurt them.",
+          "hook": "Alex has built a good life and can't bring himself to say a word to the man who made his childhood hell.",
+          "why_relatable": "Do you owe anything to a parent who abused you? Is anger inherited? What does it take to trust yourself around the people you love?",
+          "watch_for": [
+            "What does he do when his father tries to reconnect?",
+            "What does he do with his anger when it surfaces?",
+            "What does his partner need from him, and can he give it?"
+          ],
+          "start_at": "S10",
+          "span": "S10-S14",
+          "situations": [
+            {"id": "difficult_parent", "weight": 0.9},
+            {"id": "redemption_after_mistakes", "weight": 0.7},
+            {"id": "identity_and_self_acceptance", "weight": 0.5},
+            {"id": "grief_and_loss", "weight": 0.3}
+          ],
+          "conflicts": ["revenge_vs_forgiveness", "past_vs_future"],
+          "emotions": {"start": ["anger", "resentment", "fear"], "middle": ["shame", "guilt", "grief"], "end": ["self_respect", "love", "peace"]},
+          "ending_tone": "hopeful",
+          "intensity": "heavy",
+          "warnings": ["abuse", "domestic_violence", "addiction", "death_of_loved_one"],
+          "example_user_messages": [
+            "My dad was violent and an addict, and now he wants to be part of my life.",
+            "I'm terrified I have my father's temper.",
+            "I hurt someone because I thought they were hurting the person I love, and I was wrong.",
+            "I want to protect my partner from the man who abused her without turning into a monster myself."
+          ],
+          "spoiler": {
+            "summary": "Alex stalks his father James through bars and fights him, then, pushed by Jo, tries to help when James wants to get clean. James dies after Shane freezes during his surgery, and Alex beats Shane. Years later, believing Andrew DeLuca is assaulting Jo, Alex beats him badly, is charged with a felony, and decides to take a plea deal after learning Jo is hiding from an abusive husband. Andrew refuses to cooperate and the charges are dropped. Alex tracks down Jo's husband Paul but walks away without touching him, which proves to Jo he isn't violent. Jo files for divorce, Paul is killed in an accident, and Alex and Jo marry on a ferry.",
+            "key_events": [
+              "Father James turns up in the ER",
+              "Fights James in a bar; later tries to help him",
+              "James dies; Alex beats up Shane",
+              "Beats Andrew DeLuca, believing he's assaulting Jo",
+              "Charged with felony assault; charges later dropped",
+              "Finds Jo's abusive husband and walks away",
+              "Marries Jo on a ferry"
+            ],
+            "got_right": "He shows Jo restraint when it counts and lets himself say goodbye to his father.",
+            "got_wrong": "He jumps to conclusions and uses his fists, nearly destroying his career and another man, and never properly apologizes to Andrew."
+          }
+        },
+        {
+          "id": "arc:greys_anatomy/alex_karev/partner_in_depression",
+          "title": "Loving someone who's shutting you out",
+          "literal_situation": "Later in the series, while carrying new responsibilities at work, Alex watches his partner come back from a trip to find her birth mother and withdraw into silence, lying in bed for days and refusing to say what happened.",
+          "pattern_label": "standing by a partner through depression",
+          "pattern_text": "Someone who grew up with a mentally ill parent watches their partner sink into a deep depression and refuse to talk. Desperate to fix it and terrified of being left again, they swing between patience and anger. They have to learn that love can't cure someone, that professional help isn't a failure, and that staying means facing their own fear.",
+          "hook": "Alex is thriving at work but frightened and helpless at home, afraid she will leave the way everyone else has.",
+          "why_relatable": "How do you help someone who won't let you in? When does giving space become neglect? What if your love isn't enough?",
+          "watch_for": [
+            "What does he do when his patience runs out?",
+            "Who does he ask for help, and when?",
+            "How does his childhood shape the way he reacts to her illness?"
+          ],
+          "start_at": "S15",
+          "span": "S15-S16",
+          "situations": [
+            {"id": "caring_for_family", "weight": 0.8},
+            {"id": "loneliness", "weight": 0.5},
+            {"id": "becoming_a_manager", "weight": 0.4}
+          ],
+          "conflicts": ["control_vs_trust", "holding_on_vs_letting_go"],
+          "emotions": {"start": ["confusion", "anxiety", "fear"], "middle": ["overwhelm", "loneliness", "anger"], "end": ["hope", "love", "acceptance"]},
+          "ending_tone": "bittersweet",
+          "intensity": "heavy",
+          "warnings": ["sexual_violence", "betrayal"],
+          "example_user_messages": [
+            "My wife came back from a trip and hasn't gotten out of bed in a week, and she won't tell me why.",
+            "I keep telling my partner they can tell me anything but they just shut me out.",
+            "I grew up with a mentally ill mom and now I'm terrified of losing my partner the same way.",
+            "She checked herself into treatment and I don't know if I'm strong enough for this."
+          ],
+          "spoiler": {
+            "summary": "Jo learns in Pittsburgh that she was conceived through rape and sinks into depression. Alex, finishing his stint as interim Chief (and refusing to hand the job back early to Bailey), pleads and threatens until Meredith gets through to Jo. Jo checks herself into inpatient care and then a 30-day program; Alex is fired alongside Meredith over the insurance fraud and his life falls apart. Richard gets him to become Chief at Pac-North, he proposes to Jo again, and they legally marry on Halloween. After Meredith's trial he calls Izzie for a support letter, discovers she had twins with their frozen embryos, and leaves Jo by letter to raise his children with Izzie in Kansas.",
+            "key_events": [
+              "Jo learns she was conceived through rape",
+              "Jo's depression; Alex is shut out",
+              "Meredith breaks through; Jo checks into psychiatric care",
+              "Alex is fired and becomes Chief at Pac-North",
+              "Proposes again; legal wedding on Halloween",
+              "Discovers his twins with Izzie",
+              "Leaves Jo by letter"
+            ],
+            "got_right": "He keeps showing up, gets Jo professional help, and admits his own fear instead of only trying to fix her.",
+            "got_wrong": "He pressures and threatens Jo when he's scared, and in the end leaves her by letter without facing her."
+          }
+        }
+      ]
+    },
+    {
+      "id": "char:greys_anatomy/owen_hunt",
+      "name": "Owen Hunt",
+      "role": "An Army trauma surgeon just back from Iraq who joins the hospital's trauma team: brilliant under pressure, but carrying the war home with him.",
+      "relations": [
+        {"target": "char:greys_anatomy/cristina_yang", "relation": "ex_partner"},
+        {"target": "char:greys_anatomy/amelia_shepherd", "relation": "ex_partner"},
+        {"target": "char:greys_anatomy/meredith_grey", "relation": "friend"},
+        {"target": "char:greys_anatomy/derek_shepherd", "relation": "friend"},
+        {"target": "char:greys_anatomy/richard_webber", "relation": "friend"},
+        {"target": "char:greys_anatomy/callie_torres", "relation": "friend"},
+        {"target": "char:greys_anatomy/alex_karev", "relation": "colleague"},
+        {"target": "char:greys_anatomy/miranda_bailey", "relation": "colleague"},
+        {"target": "char:greys_anatomy/jackson_avery", "relation": "colleague"},
+        {"target": "char:greys_anatomy/arizona_robbins", "relation": "colleague"},
+        {"target": "char:greys_anatomy/jo_wilson", "relation": "colleague"}
+      ],
+      "arcs": [
+        {
+          "id": "arc:greys_anatomy/owen_hunt/bringing_war_home",
+          "title": "Bringing the war home",
+          "literal_situation": "Owen arrives in Seattle straight from Iraq, a field surgeon who improvises with a pen and a staple gun, and comes back to work in trauma. He is detached, intense and unwilling to talk about what he saw, even as he is drawn to someone at the hospital.",
+          "pattern_label": "facing trauma instead of outrunning it",
+          "pattern_text": "A person comes back from an experience of terrible violence and loss and tries to act as if they're fine, throwing themselves into work and a new relationship. Nightmares and flashbacks break through, and in one terrifying moment they hurt someone they love without meaning to. They have to accept that the injury is real, get help, and face the family they've been avoiding.",
+          "hook": "Owen is magnetic, capable and closed off. He would rather phone his mother as if he were still overseas than let her see how he has changed.",
+          "why_relatable": "How do you come home from something that changed you? When does 'I'm fine' become dangerous? Can you let someone love you when you're afraid of what you might do?",
+          "watch_for": [
+            "What sets him off, and does he see it coming?",
+            "How does he react when someone offers help?",
+            "Why won't he go see his mother?"
+          ],
+          "start_at": "S5E1",
+          "span": "S5",
+          "situations": [
+            {"id": "starting_over", "weight": 0.7},
+            {"id": "grief_and_loss", "weight": 0.7},
+            {"id": "illness_or_injury", "weight": 0.6},
+            {"id": "falling_for_someone_unexpected", "weight": 0.5}
+          ],
+          "conflicts": ["independence_vs_connection", "past_vs_future"],
+          "emotions": {"start": ["numbness", "guilt", "restlessness"], "middle": ["fear", "shame", "longing"], "end": ["relief", "hope", "love"]},
+          "ending_tone": "hopeful",
+          "intensity": "heavy",
+          "warnings": ["war_and_violence", "domestic_violence", "grief", "medical_trauma"],
+          "example_user_messages": [
+            "I survived something my whole team didn't and I just want to pretend I'm fine.",
+            "I had a nightmare and hurt my partner in my sleep and now I'm scared of myself.",
+            "I've been back for months and I still haven't gone to see my mom.",
+            "Therapy feels pointless but I can't keep living like this."
+          ],
+          "spoiler": {
+            "summary": "Owen's entire unit of 19 was killed in an ambush, leaving him the sole survivor. Hired as Head of Trauma, he has mood swings, turns up drunk for his first date with Cristina, and panics when his ex-fiancée Beth appears. A ceiling fan triggers a flashback and he nearly strangles Cristina in his sleep until Callie stops him. Cristina, afraid to sleep beside him, breaks up with him. Therapy with Dr. Wyatt helps him name his triggers; he speaks in three-word sentences that secretly mean 'I love you'. He considers going back to the army, but instead visits his mother; his nightmares stop and he and Cristina reunite.",
+            "key_events": [
+              "Sole survivor of his unit's ambush",
+              "Kisses Cristina and is hired as Head of Trauma",
+              "Strangles Cristina during a PTSD nightmare",
+              "Cristina breaks up with him",
+              "Therapy with Dr. Wyatt; 'take care now'",
+              "Visits his mother; the nightmares stop",
+              "Reunites with Cristina"
+            ],
+            "got_right": "He takes what happened seriously, goes to therapy, and finally faces his mother.",
+            "got_wrong": "He isolates himself and hides his symptoms until someone gets hurt."
+          }
+        },
+        {
+          "id": "arc:greys_anatomy/owen_hunt/wanting_a_family",
+          "title": "Longing for a family of his own",
+          "literal_situation": "Later in the series, Owen, in a committed relationship, learns his partner is pregnant, and that she has never wanted children and plans to end the pregnancy.",
+          "pattern_label": "wanting children when your partner doesn't",
+          "pattern_text": "A person who has always dreamed of a big, noisy family keeps falling for partners who don't share that dream. They try to persuade, then compromise, then resent, and their hurt leads them to wound the people they love. Over years of heartbreak they have to accept that they can't make someone want what they want, and find another way to become the parent they long to be.",
+          "hook": "Owen loves his partner and has always pictured kids, camping trips and cookouts; he feels shut out of a decision he believes belongs to both of them.",
+          "why_relatable": "What happens when two people who love each other want different lives? Can you support a choice that breaks your heart? What do you do with resentment you can't say out loud?",
+          "watch_for": [
+            "How does he act on his hurt when he can't say it out loud?",
+            "Does he notice a pattern in what he asks of the people he loves?",
+            "What does he do with a dream that doesn't fit the life he has?"
+          ],
+          "start_at": "S8",
+          "span": "S8-S15",
+          "situations": [
+            {"id": "becoming_a_parent", "weight": 0.8},
+            {"id": "divorce", "weight": 0.7},
+            {"id": "breakup", "weight": 0.5}
+          ],
+          "conflicts": ["holding_on_vs_letting_go", "control_vs_trust"],
+          "emotions": {"start": ["hope", "longing"], "middle": ["resentment", "anger", "grief"], "end": ["joy", "acceptance", "love"]},
+          "ending_tone": "hopeful",
+          "intensity": "moderate",
+          "warnings": ["betrayal", "addiction", "grief"],
+          "example_user_messages": [
+            "I've always wanted kids and my partner just told me they never will.",
+            "I said I supported her decision but I'm so angry and I don't know what to do with it.",
+            "I cheated on my spouse and I think part of me did it to hurt them back.",
+            "I'm thinking about fostering on my own because I'm done waiting for the right person to have a family."
+          ],
+          "spoiler": {
+            "summary": "At the last moment Owen supports Cristina's abortion but resents it, screams at Zola's birthday party that she killed their baby, cheats on her with a patient's friend, and they divorce; Cristina finally leaves him so he can find someone who wants children. He impulsively marries Amelia, and their fights about children end the marriage after her brain tumor is found. He becomes a foster parent to baby Leo and co-parents with Amelia and Leo's teenage mother Betty. He loses Leo to Betty's parents, then gets him back and adopts him, while Teddy, pregnant after their night in Germany, prepares to have his daughter.",
+            "key_events": [
+              "Cristina's abortion; Owen holds her hand",
+              "'You killed our baby' outburst",
+              "Cheats on Cristina",
+              "Divorce; Cristina leaves so he can have kids",
+              "Marries and divorces Amelia",
+              "Fosters baby Leo; Betty moves in",
+              "Leo goes to Betty's parents, then returns; Owen adopts him",
+              "Teddy is pregnant with his daughter"
+            ],
+            "got_right": "He eventually stops trying to change his partners and becomes a father on his own terms.",
+            "got_wrong": "He lets resentment fester, punishes Cristina with infidelity, and treats his partners' choices as betrayals."
+          }
+        },
+        {
+          "id": "arc:greys_anatomy/owen_hunt/distrusting_joy",
+          "title": "Sabotaging happiness before it can be taken",
+          "literal_situation": "Later in the series, Owen, finally building the family life he wanted and in a relationship he cares about, is thrown when an old friend from his past turns up unexpectedly with something she isn't ready to tell him.",
+          "pattern_label": "learning to trust joy instead of sabotaging it",
+          "pattern_text": "A person who learned young that happiness is always followed by catastrophe keeps making choices that blow up their own chances at love. Caught between people and obligations, they hurt everyone, themselves included. Only when they trace the pattern back to its root can they let themselves want something good, and even then the people they love carry wounds of their own.",
+          "hook": "Owen finally has the family life he wanted, but his feelings for two women and his habit of self-sabotage are about to collide.",
+          "why_relatable": "Why do some of us ruin good things before they can be taken away? Can therapy really change a lifelong pattern? What does commitment look like when it isn't just obligation?",
+          "watch_for": [
+            "What does he do each time he gets close to what he wants?",
+            "What memory does therapy bring up, and how does it change him?",
+            "How does he respond to other people's fears once he has faced his own?"
+          ],
+          "start_at": "S15",
+          "span": "S15-S16",
+          "situations": [
+            {"id": "becoming_a_parent", "weight": 0.6},
+            {"id": "identity_and_self_acceptance", "weight": 0.6},
+            {"id": "breakup", "weight": 0.5}
+          ],
+          "conflicts": ["duty_vs_desire", "past_vs_future"],
+          "emotions": {"start": ["confusion", "guilt"], "middle": ["anger", "shame", "relief"], "end": ["joy", "love", "betrayal"]},
+          "ending_tone": "bittersweet",
+          "intensity": "moderate",
+          "warnings": ["betrayal", "grief", "medical_trauma"],
+          "example_user_messages": [
+            "Whenever things are going really well I find a way to wreck them.",
+            "My ex is pregnant with my baby and I'm in a relationship with someone else.",
+            "Therapy took me back to the day my dad died and I realized I've never trusted happiness since.",
+            "I finally told the person I've loved for years how I feel, and I'm scared I'll ruin it."
+          ],
+          "spoiler": {
+            "summary": "Teddy reveals she's pregnant with his baby. Owen chooses Amelia, but they split after Leo is taken away and they fight over whether addiction is a disease. At his sister Megan's urging he returns to therapy, which uncovers the memory of running home with a school award on the day his father died, the root of his distrust of joy. He admits to Amelia that he was the one incapable of love, tells Teddy he has always loved her as she gives birth to their daughter Allison, and later proposes. On their wedding day a voicemail reveals Teddy having 'goodbye sex' with Tom Koracick, and Owen quietly calls off the wedding without telling her why.",
+            "key_events": [
+              "Teddy reveals she's pregnant with his baby",
+              "Chooses Amelia; they later split",
+              "Therapy uncovers the day his father died",
+              "Tells Teddy he loves her during Allison's birth",
+              "Proposes to Teddy",
+              "Voicemail reveals Teddy with Tom; he calls off the wedding"
+            ],
+            "got_right": "He does the work in therapy, owns his part in his failed relationships, and shows up as a father.",
+            "got_wrong": "He keeps secrets from partners, lets his jealousy of Tom turn aggressive, and walks away rather than confront Teddy."
+          }
+        }
+      ]
+    },
+    {
+      "id": "char:greys_anatomy/derek_shepherd",
+      "name": "Derek Shepherd",
+      "role": "A charming, gifted neurosurgeon who has just left a prestigious New York practice for Seattle, for reasons he keeps to himself.",
+      "relations": [
+        {"target": "char:greys_anatomy/meredith_grey", "relation": "partner"},
+        {"target": "char:greys_anatomy/amelia_shepherd", "relation": "sibling"},
+        {"target": "char:greys_anatomy/richard_webber", "relation": "mentor"},
+        {"target": "char:greys_anatomy/owen_hunt", "relation": "friend"},
+        {"target": "char:greys_anatomy/cristina_yang", "relation": "friend"},
+        {"target": "char:greys_anatomy/miranda_bailey", "relation": "colleague"},
+        {"target": "char:greys_anatomy/callie_torres", "relation": "colleague"},
+        {"target": "char:greys_anatomy/alex_karev", "relation": "colleague"},
+        {"target": "char:greys_anatomy/jackson_avery", "relation": "colleague"},
+        {"target": "char:greys_anatomy/arizona_robbins", "relation": "colleague"}
+      ],
+      "arcs": [
+        {
+          "id": "arc:greys_anatomy/derek_shepherd/starting_over_after_betrayal",
+          "title": "Starting over after betrayal",
+          "literal_situation": "Derek has moved to Seattle to start over and fallen for Meredith, an intern, when someone from the life he left behind in New York shows up and asks for another chance.",
+          "pattern_label": "torn between a broken commitment and a new love",
+          "pattern_text": "A person who fled their old life after their partner betrayed them with their closest friend is just starting to feel alive again with someone new when the spouse asks for a second chance. Duty and years of shared history pull one way, new love the other. They must work out what they truly want, own their part in the marriage failing, and decide whether forgiveness is possible.",
+          "hook": "Derek is charming but wounded, living in a trailer in the woods, caught between guilt over the life he left behind and his feelings for Meredith.",
+          "why_relatable": "Do you owe your past another try when your heart is elsewhere? How much of what went wrong was your fault too? Can you ever forgive someone who betrayed you?",
+          "watch_for": [
+            "How does he explain himself to the people caught in the middle?",
+            "When does he admit his own role in what went wrong back home?",
+            "How does he treat the people who hurt him when he can't avoid them?"
+          ],
+          "start_at": "S1E9",
+          "span": "S1-S3",
+          "situations": [
+            {"id": "divorce", "weight": 0.9},
+            {"id": "starting_over", "weight": 0.7},
+            {"id": "falling_for_someone_unexpected", "weight": 0.6},
+            {"id": "moving_somewhere_new", "weight": 0.5}
+          ],
+          "conflicts": ["duty_vs_desire", "revenge_vs_forgiveness"],
+          "emotions": {"start": ["betrayal", "guilt", "confusion"], "middle": ["jealousy", "longing", "anger"], "end": ["relief", "hope", "love"]},
+          "ending_tone": "hopeful",
+          "intensity": "moderate",
+          "warnings": ["betrayal"],
+          "example_user_messages": [
+            "My wife cheated on me with my best friend so I moved across the country to start over.",
+            "I met someone new and now my ex wants to try again and I don't know what I owe her.",
+            "I stayed in my marriage out of obligation but I'm in love with someone else.",
+            "I'm starting to realize I was never around either, and that's part of why it fell apart."
+          ],
+          "spoiler": {
+            "summary": "Out of obligation, Derek chooses to try again with Addison, leaving Meredith heartbroken; he admits he was never around, but stays emotionally distant. Jealous of Meredith's new boyfriend Finn, he calls her a whore, then sleeps with her at the hospital prom; Addison finds Meredith's underwear and the marriage ends. He learns Addison and Mark lived together for months after he left. He steps aside so Meredith can be with Finn, but she chooses him. Their reunion is rocky because of her fear of commitment and his impatience. He punches Mark but gradually rebuilds their friendship.",
+            "key_events": [
+              "Chooses Addison over Meredith",
+              "Takes in Meredith's dog with Addison",
+              "Sleeps with Meredith at the prom; the marriage ends",
+              "Learns Addison lived with Mark",
+              "Bows out so Meredith can be with Finn; she chooses Derek",
+              "Divorce from Addison",
+              "Rebuilds his friendship with Mark"
+            ],
+            "got_right": "He takes responsibility for his part in the marriage failing and eventually forgives Mark.",
+            "got_wrong": "He hides his marriage from Meredith, strings two women along, and lashes out cruelly when jealous."
+          }
+        },
+        {
+          "id": "arc:greys_anatomy/derek_shepherd/trauma_and_recklessness",
+          "title": "Driving too fast to feel anything",
+          "literal_situation": "Later in the series, weeks after a traumatic event that shakes the whole hospital, Derek is back at work in a demanding role he never wanted, and copes by speeding through Seattle.",
+          "pattern_label": "coping with trauma through reckless risk",
+          "pattern_text": "After surviving a violent event, a person insists they're fine and returns to a demanding role they never wanted. Instead of talking, they chase adrenaline and keep getting into trouble, frightening a partner who is quietly carrying a loss of their own. They have to see what their recklessness costs the people who love them and let go of the role that's crushing them.",
+          "hook": "Derek is restless, defiant and dismissive of the mandatory counseling, sure he's handling it.",
+          "why_relatable": "Why does danger feel better than feeling? When is quitting the brave choice? What aren't the people around you saying, because you're not listening?",
+          "watch_for": [
+            "What does he do instead of talking about what happened?",
+            "How does the person closest to him react, and why?",
+            "What does he finally admit to the counselor?"
+          ],
+          "start_at": "S7E1",
+          "span": "S7",
+          "situations": [
+            {"id": "burnout_at_work", "weight": 0.6},
+            {"id": "illness_or_injury", "weight": 0.5},
+            {"id": "responsibility_you_didnt_ask_for", "weight": 0.5},
+            {"id": "career_change", "weight": 0.3}
+          ],
+          "conflicts": ["duty_vs_desire", "independence_vs_connection"],
+          "emotions": {"start": ["numbness", "restlessness", "anger"], "middle": ["guilt", "fear"], "end": ["relief", "acceptance", "love"]},
+          "ending_tone": "hopeful",
+          "intensity": "moderate",
+          "warnings": ["war_and_violence", "grief", "medical_trauma"],
+          "example_user_messages": [
+            "Since it happened I keep driving way too fast and I honestly don't care.",
+            "My partner is scared for me but I feel fine, or I think I do.",
+            "I took a leadership role I never actually wanted and I think I'm going to quit.",
+            "I found out my partner went through a loss alone because I was too wrapped up in myself."
+          ],
+          "spoiler": {
+            "summary": "Derek quits as Chief, admitting to the counselor Dr. Perkins that the shooting gave him the courage to leave a job he hated. He keeps getting arrested for speeding, and Meredith leaves him in jail overnight on the night of Cristina and Owen's wedding. When he confronts her, she reveals that she miscarried during the shooting and only felt at peace when he was locked up and safe. He promises to slow down, and they turn toward trying for a family and his Alzheimer's trial.",
+            "key_events": [
+              "Survives being shot by Gary Clark",
+              "Quits as Chief of Surgery",
+              "Repeated arrests for speeding",
+              "Meredith leaves him in jail overnight",
+              "Learns about Meredith's miscarriage",
+              "Promises to drive safely"
+            ],
+            "got_right": "He admits he never wanted the Chief job and finally hears Meredith's pain.",
+            "got_wrong": "He treats his trauma as something to outrun and ignores the fear he is causing at home."
+          }
+        },
+        {
+          "id": "arc:greys_anatomy/derek_shepherd/sacrifice_and_resentment",
+          "title": "Resenting the sacrifice he chose",
+          "literal_situation": "Later in the series, Derek has promised to step back at work so his family can come first, but an invitation to help lead a presidential brain-mapping project in Washington, D.C. is the opportunity of a lifetime.",
+          "pattern_label": "sacrificing your dream for family and resenting it",
+          "pattern_text": "A person offered a once-in-a-lifetime opportunity gives it up for their partner and children, even though no one asked them to. Instead of peace, the sacrifice curdles into bitterness that poisons their marriage and their relationships at work. They have to own their choice, stop making the people they love pay for it, and work out what matters most.",
+          "hook": "Derek is at the height of his career, eager to change the world, and struggling to keep a promise to his family.",
+          "why_relatable": "Whose career comes first when both partners have big ambitions? Is a sacrifice still generous if you keep score? Can distance save a relationship, or only break it?",
+          "watch_for": [
+            "Who does he blame for his unhappiness?",
+            "What happens when someone points out that nobody asked him to give it up?",
+            "What does he learn about what he really wants?"
+          ],
+          "start_at": "S10",
+          "span": "S10-S11",
+          "situations": [
+            {"id": "long_distance", "weight": 0.7},
+            {"id": "midlife_reinvention", "weight": 0.5},
+            {"id": "taking_a_big_risk", "weight": 0.5},
+            {"id": "family_expectations", "weight": 0.4}
+          ],
+          "conflicts": ["career_vs_relationships", "duty_vs_desire"],
+          "emotions": {"start": ["pride", "hope"], "middle": ["resentment", "anger", "loneliness"], "end": ["love", "peace"]},
+          "ending_tone": "tragic",
+          "intensity": "heavy",
+          "warnings": ["death_of_main_character", "grief", "medical_trauma"],
+          "example_user_messages": [
+            "I turned down my dream job so my spouse could focus on theirs and now I'm bitter all the time.",
+            "I keep reminding my partner what I gave up and I know it's making everything worse.",
+            "We're trying to make a long-distance marriage work while one of us chases a big opportunity.",
+            "I finally got what I wanted and realized my family mattered more."
+          ],
+          "spoiler": {
+            "summary": "Derek turns down the D.C. job when Meredith refuses to move, then becomes bitter, clashes with his sister Amelia (who took over his department), compares Meredith to her cold mother, and hits rock bottom. After their biggest fight he takes the job, and they agree on the phone to make it work long-distance. A research fellow, Renee, kisses him; he stops her and flies home, telling Meredith that she and the kids are everything. On his way to D.C. to resign, he stops to rescue victims of a car crash, is hit by a truck, and is declared brain dead after a hospital fails to get him a timely head CT. Meredith takes him off life support.",
+            "key_events": [
+              "Recruited to the presidential brain-mapping initiative",
+              "Turns down D.C. when Meredith won't move",
+              "Bitterness and clashes with Amelia; hits rock bottom",
+              "Takes the job after a huge fight",
+              "Stops Renee's kiss and comes home",
+              "Rescues crash victims, then is hit by a truck",
+              "Dies after a failure to order a head CT; Meredith lets him go"
+            ],
+            "got_right": "He recognizes he has lost himself, apologizes, and chooses his family freely.",
+            "got_wrong": "He sacrifices without being asked and then makes his wife pay for it."
+          }
+        }
+      ]
+    }
+  ]
+}

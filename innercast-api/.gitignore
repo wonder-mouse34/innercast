@@ -1,0 +1,15 @@
+# Private settings: API keys and server address - never commit
+qwen_credentials.env
+BILT_SECRETS.txt
+BILT_MESSAGES_READY.txt
+BILT_CONNECT_EXISTING_APP.txt
+# Written at runtime
+INNERCAST_URL.txt
+logs/
+bin/
+test_runs/
+__pycache__/
+*.pyc
+# The graph is built and versioned in ../build-knowledge-graph/qwen_server/graph.json.
+# setup_linux.sh copies it here when this folder is deployed on its own.
+graph.json

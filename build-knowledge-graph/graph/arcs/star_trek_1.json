@@ -1,0 +1,664 @@
+{
+  "show": "star_trek",
+  "characters": [
+    {
+      "id": "char:star_trek/james_t_kirk",
+      "name": "James T. Kirk",
+      "role": "A young, confident starship captain beginning a five-year exploration mission, known for bold instincts and fierce loyalty to his crew.",
+      "relations": [
+        {"target": "char:star_trek/spock", "relation": "friend"},
+        {"target": "char:star_trek/spock", "relation": "colleague"},
+        {"target": "char:star_trek/jean_luc_picard", "relation": "colleague"}
+      ],
+      "arcs": [
+        {
+          "id": "arc:star_trek/james_t_kirk/married_to_the_ship",
+          "title": "Married to the job",
+          "literal_situation": "Kirk commands the Enterprise on a years-long mission far from Earth. The ship and crew take everything he has, and there is little room for a partner, a family or a life of his own.",
+          "pattern_label": "a leader whose work has swallowed his personal life",
+          "pattern_text": "A driven, charismatic person has finally landed the job they always wanted, and it asks for everything. Whenever real love or a quieter life comes within reach, they have to choose between it and the people who depend on them. They begin to wonder whether they can want anything besides the work.",
+          "hook": "Kirk is at the top of his game, commanding a ship he adores and a crew that trusts him. He keeps his feelings for anyone else at arm's length.",
+          "why_relatable": "What does it cost to be the person everyone relies on? Can you love someone without giving up the work that defines you, and do you even want to? When the job is who you are, what's left if you step away?",
+          "watch_for": [
+            "What does he admit about the ship when he can't hide his feelings?",
+            "How does he choose when love and duty point in opposite directions?",
+            "Who gets to see him when he isn't being the captain?"
+          ],
+          "start_at": "TOS S1E1",
+          "span": "TOS S1-S3",
+          "situations": [
+            {"id": "loneliness", "weight": 0.6},
+            {"id": "falling_for_someone_unexpected", "weight": 0.6},
+            {"id": "burnout_at_work", "weight": 0.4},
+            {"id": "grief_and_loss", "weight": 0.5}
+          ],
+          "conflicts": ["career_vs_relationships", "duty_vs_desire"],
+          "emotions": {"start": ["pride", "restlessness"], "middle": ["longing", "loneliness", "grief"], "end": ["acceptance", "belonging"]},
+          "ending_tone": "bittersweet",
+          "intensity": "moderate",
+          "warnings": ["death_of_loved_one", "grief", "war_and_violence", "sexual_violence"],
+          "example_user_messages": [
+            "My job is my whole life and I'm good at it, but every relationship I start ends because I always choose work.",
+            "I met someone amazing, but being with them would mean giving up what I've spent years working toward.",
+            "Everyone at work depends on me and I don't know who I am when I'm not needed.",
+            "I just realised I haven't had a real personal life in years, and I'm not sure I want one enough to change."
+          ],
+          "spoiler": {
+            "summary": "Throughout the five-year mission Kirk keeps choosing the Enterprise over personal happiness. In 'The Naked Time' his hidden longing surfaces (the ship 'won't permit me my life'), but he still pledges himself to her. In 'The City on the Edge of Forever' he falls deeply for Edith Keeler in 1930s New York and has to let her die to restore history. In 'The Paradise Syndrome' he loses his memory and briefly gets the quiet life of husband and father-to-be as 'Kirok', until Miramanee and their unborn child are killed. His brother Sam dies on Deneva. By the end of the mission his family is Spock and McCoy, not a family of his own. The films show him restless behind an admiral's desk and meeting a grown son he never raised.",
+            "key_events": [
+              "Admits under intoxication that the ship won't let him have a life ('The Naked Time')",
+              "Transporter split shows how much command depends on his darker drives ('The Enemy Within')",
+              "Lets Edith Keeler die to save history ('The City on the Edge of Forever')",
+              "Brother Sam killed on Deneva ('Operation: Annihilate!')",
+              "Marries Miramanee as 'Kirok'; she and their unborn child die ('The Paradise Syndrome')",
+              "Films: an estranged son, David Marcus, who grew up without him"
+            ],
+            "got_right": "He's honest with himself about what he is choosing, he never stops showing up for the people who rely on him, and his friends become a real family.",
+            "got_wrong": "He keeps treating love and command as either/or, and never builds a life that could survive leaving the job, so time off the bridge leaves him lost."
+          }
+        },
+        {
+          "id": "arc:star_trek/james_t_kirk/haunted_by_hesitation",
+          "title": "The moments he wishes he'd acted faster",
+          "literal_situation": "Kirk is newly in command, and an old friend is one of his officers. He carries wounds from earlier in his life, and his first missions will test whether he can make fast, hard decisions when someone he cares about is involved.",
+          "pattern_label": "a decisive leader haunted by moments of hesitation",
+          "pattern_text": "A person known for quick, confident decisions privately carries guilt over a time they froze and people got hurt. New crises reopen the old wound, and they swing between second-guessing themselves and pushing recklessly to make up for it. They have to work out which part of the blame was ever really theirs.",
+          "hook": "Kirk comes across as fearless and certain. Underneath, he carries memories from his past that he rarely talks about.",
+          "why_relatable": "How do you trust your judgement again after a call that went wrong? When a friend is the one at risk, does loyalty cloud your thinking? Is your guilt telling you the truth about what happened, or just punishing you?",
+          "watch_for": [
+            "When his closest advisers disagree, whose voice does he listen to?",
+            "How does he react when something drags up an old failure?",
+            "Is he solving the problem in front of him, or trying to settle something from the past?"
+          ],
+          "start_at": "TOS S1E3",
+          "span": "TOS S1-S2",
+          "situations": [
+            {"id": "redemption_after_mistakes", "weight": 0.8},
+            {"id": "friendship_ending", "weight": 0.5},
+            {"id": "confidence_struggle", "weight": 0.5}
+          ],
+          "conflicts": ["past_vs_future", "holding_on_vs_letting_go"],
+          "emotions": {"start": ["guilt", "self_doubt"], "middle": ["anger", "determination"], "end": ["relief", "acceptance"]},
+          "ending_tone": "hopeful",
+          "intensity": "moderate",
+          "warnings": ["death_of_loved_one", "betrayal", "war_and_violence", "grief"],
+          "example_user_messages": [
+            "Years ago I froze at a critical moment at work and people got hurt. I still think about it every day.",
+            "A close friend is turning into someone I don't recognise, and I might have to be the one who stops them.",
+            "I reported a friend's mistake because it was the right thing to do, and he's resented me ever since.",
+            "Something happened when I was a kid that I never talk about, and now it's suddenly back in my life."
+          ],
+          "spoiler": {
+            "summary": "In 'Where No Man Has Gone Before' Kirk resists Spock's advice to act as his friend Gary Mitchell's godlike powers grow, and in the end has to kill Mitchell himself. In 'The Conscience of the King' he pursues an actor he suspects is Kodos the Executioner, the governor who ordered the Tarsus IV massacre Kirk witnessed at thirteen; the recent murders turn out to be the work of Kodos's daughter Lenore, and Kodos dies. In 'Court Martial' his old friend Ben Finney, bitter since Kirk logged his mistake years before, fakes his own death to frame Kirk. In 'Obsession' Kirk hunts the cloud creature that killed his old captain, convinced his slow reaction caused the disaster, and learns that phasers could never have stopped it. He lets the guilt go and frees young Ensign Garrovick from the same self-blame.",
+            "key_events": [
+              "Forced to kill his friend Gary Mitchell",
+              "Revealed as a child survivor and witness of the Tarsus IV massacre",
+              "Old friend Ben Finney fakes his death to frame him; Kirk faces a court martial",
+              "Learns he couldn't have stopped the creature that killed his first captain",
+              "Passes that forgiveness on to Ensign Garrovick"
+            ],
+            "got_right": "He owns his decisions, faces his past rather than burying it, and passes forgiveness on to a young officer in the position he was once in.",
+            "got_wrong": "He lets guilt turn into obsession that endangers his crew, and he is slow to act against a friend even when the warning signs are clear."
+          }
+        }
+      ]
+    },
+    {
+      "id": "char:star_trek/spock",
+      "name": "Spock",
+      "role": "The half-Vulcan, half-Human science officer of the Enterprise, who lives by strict logic and keeps his emotions under tight control.",
+      "relations": [
+        {"target": "char:star_trek/james_t_kirk", "relation": "friend"},
+        {"target": "char:star_trek/james_t_kirk", "relation": "boss"},
+        {"target": "char:star_trek/jean_luc_picard", "relation": "colleague"}
+      ],
+      "arcs": [
+        {
+          "id": "arc:star_trek/spock/between_two_worlds",
+          "title": "Half of two worlds, at home in neither",
+          "literal_situation": "Spock is the son of a Vulcan father and a Human mother, and the only Vulcan on a mostly Human crew. He has chosen to live entirely by Vulcan logic and hides his Human feelings, while crewmates tease him for being cold.",
+          "pattern_label": "suppressing half of who you are to belong",
+          "pattern_text": "Someone with mixed roots was taught as a child that one side of them was a weakness, so they built their whole identity on the other side. Surrounded by people who share neither identity, they keep a rigid mask in place, and under pressure it cracks. The question is whether they can stop treating half of themselves as the enemy.",
+          "hook": "Spock is brilliant, respected and apparently untouched by emotion. He insists that logic is all he needs, as he has his whole life.",
+          "why_relatable": "What happens to the parts of yourself you were taught to be ashamed of? Can you belong somewhere without hiding who you are? When the mask slips, is that a failure or a beginning?",
+          "watch_for": [
+            "What comes out when something forces his guard down?",
+            "How does he respond when a friend teases him about the feelings he denies?",
+            "Which of his two heritages does he defend when someone insults it?"
+          ],
+          "start_at": "TOS S1E1",
+          "span": "TOS S1-S3",
+          "situations": [
+            {"id": "identity_and_self_acceptance", "weight": 1.0},
+            {"id": "family_expectations", "weight": 0.6},
+            {"id": "finding_your_people", "weight": 0.6},
+            {"id": "loneliness", "weight": 0.5}
+          ],
+          "conflicts": ["fitting_in_vs_standing_out", "self_vs_family_expectations"],
+          "emotions": {"start": ["shame", "loneliness"], "middle": ["confusion", "longing", "joy"], "end": ["belonging", "acceptance"]},
+          "ending_tone": "bittersweet",
+          "intensity": "moderate",
+          "warnings": ["war_and_violence"],
+          "example_user_messages": [
+            "I'm mixed race, and I've always hidden one side of my family because I was teased about it as a kid.",
+            "People at work call me cold and robotic, but I learned early that showing feelings wasn't safe.",
+            "I've been the calm, logical one for so long that I don't know what to do when I actually feel something.",
+            "I don't fully fit in with either side of my family and I'm tired of having to choose."
+          ],
+          "spoiler": {
+            "summary": "Spock's control keeps cracking. In 'The Naked Time' he weeps that he never told his mother he loved her. In 'This Side of Paradise' alien spores let him love Leila Kalomi and feel happy for the first time, until Kirk goads him into rage and the spell breaks. In 'Amok Time' his biology drags him home for a mating ritual; his betrothed T'Pring rejects him and he believes he has killed Kirk, then breaks into a joyful 'Jim!' on finding him alive. In 'All Our Yesterdays' he falls in love in a primitive past that loosens his control. The series ends with him still divided. In the films he tries to purge all emotion through kolinahr, sees in V'Ger that pure logic is empty, and comes to accept his Human side, able to tell Kirk plainly that he is his friend.",
+            "key_events": [
+              "Breaks down about his mother under intoxication ('The Naked Time')",
+              "Feels happiness for the first time, then loses it ('This Side of Paradise')",
+              "Rejected by T'Pring and thinks he's killed Kirk ('Amok Time')",
+              "Films: abandons the kolinahr purge and accepts his emotions after V'Ger"
+            ],
+            "got_right": "He keeps to his values under enormous pressure and slowly lets his friends in, eventually seeing that logic and feeling don't have to be enemies.",
+            "got_wrong": "For decades he treats his feelings as shameful, pushes away people who love him, and tries to cut off half of himself instead of accepting it."
+          }
+        },
+        {
+          "id": "arc:star_trek/spock/estranged_father",
+          "title": "Eighteen years of silence with his father",
+          "literal_situation": "Spock hasn't spoken to his father Sarek, a renowned ambassador, since choosing Starfleet over the path Sarek wanted for him. Now Sarek is travelling aboard the Enterprise with Spock's Human mother, Amanda, who is caught in the middle.",
+          "pattern_label": "reconnecting with a parent after years of silence",
+          "pattern_text": "An adult child and a proud, reserved parent haven't spoken in years over a career choice the parent never accepted. Being stuck in the same place brings the old hurt back, while the other parent pleads for peace. Neither can say what they feel, and the time to fix it is running out.",
+          "hook": "Spock and his father are cool and formal with each other, and neither will give an inch first. Kirk is surprised to learn the ambassador is Spock's father.",
+          "why_relatable": "Can you make peace with a parent who never approved of your path without giving the path up? What does it take for two stubborn people to say what they mean? How much time do you assume you still have?",
+          "watch_for": [
+            "How does each of them show care without saying it?",
+            "What does his mother ask of him, and how does he weigh it against his duty?",
+            "Will either of them bend first?"
+          ],
+          "start_at": "TOS S2E10",
+          "span": "TOS S2 - TNG S5",
+          "situations": [
+            {"id": "difficult_parent", "weight": 1.0},
+            {"id": "family_expectations", "weight": 0.8},
+            {"id": "caring_for_family", "weight": 0.4},
+            {"id": "grief_and_loss", "weight": 0.4}
+          ],
+          "conflicts": ["self_vs_family_expectations", "duty_vs_desire"],
+          "emotions": {"start": ["resentment", "pride"], "middle": ["guilt", "anxiety"], "end": ["grief", "acceptance", "peace"]},
+          "ending_tone": "bittersweet",
+          "intensity": "moderate",
+          "warnings": ["serious_illness", "death_of_loved_one", "grief"],
+          "example_user_messages": [
+            "My dad and I have barely spoken since I chose a career he thought was beneath me.",
+            "My father is ill and I have to see him again after years apart. I don't know how to act around him.",
+            "My mum keeps begging me to make up with my dad, but he's the one who owes me an apology.",
+            "My father died before we ever talked about how he really felt about me."
+          ],
+          "spoiler": {
+            "summary": "In 'Journey to Babel' Sarek needs heart surgery and only Spock can give blood, but Spock refuses to leave his post while Kirk is injured, and Amanda slaps him. Kirk fakes his recovery so Spock can donate, and father and son reconcile enough to tease Amanda together. In the films Sarek apologises for opposing Spock's career. Later they fall out again over politics. In TNG's 'Sarek' the elderly ambassador has Bendii syndrome, and in 'Unification' Spock learns from Picard that his father has died before they made peace. Picard, who once shared a mind meld with Sarek, offers a meld so Spock can finally feel how much his father loved him.",
+            "key_events": [
+              "Refuses to leave his post to save his father; Amanda slaps him",
+              "Gives blood and reconciles with Sarek ('Journey to Babel')",
+              "Films: Sarek apologises for opposing his Starfleet career",
+              "New political rift; Sarek dies before they reconcile",
+              "Learns his father's true feelings through a mind meld with Picard ('Unification')"
+            ],
+            "got_right": "He does eventually meet his father halfway, and accepts help from someone else to understand what his father couldn't say.",
+            "got_wrong": "He lets pride and principle keep them apart for years, twice, and never has the direct conversation while Sarek is alive."
+          }
+        }
+      ]
+    },
+    {
+      "id": "char:star_trek/jean_luc_picard",
+      "name": "Jean-Luc Picard",
+      "role": "The cultured, reserved captain of the Federation flagship Enterprise-D, a seasoned diplomat who keeps his crew at a respectful distance.",
+      "relations": [
+        {"target": "char:star_trek/data", "relation": "protege"},
+        {"target": "char:star_trek/worf", "relation": "colleague"},
+        {"target": "char:star_trek/james_t_kirk", "relation": "colleague"},
+        {"target": "char:star_trek/spock", "relation": "colleague"},
+        {"target": "char:star_trek/benjamin_sisko", "relation": "colleague"}
+      ],
+      "arcs": [
+        {
+          "id": "arc:star_trek/jean_luc_picard/after_assimilation",
+          "title": "Holding it together after the unthinkable",
+          "literal_situation": "A single Borg cube, from a relentless collective that absorbs everything in its path, is heading for Earth. Picard has to lead his crew against an enemy that can't be negotiated with.",
+          "pattern_label": "rebuilding yourself after a violating trauma",
+          "pattern_text": "A capable, self-contained person goes through something that strips away all control and is then used to hurt others. Afterwards they try to carry on as if nothing has changed, until it breaks through: at the childhood home, in a need for revenge, in how they treat anyone connected to it. Recovery means admitting how deep it went.",
+          "hook": "Picard is composed, principled and very private. He has never let anyone see him fall apart, and has never needed to.",
+          "why_relatable": "What happens to someone who believes they can handle anything when something happens that they can't? Who can they let see them struggle? How do they stop the past from driving every decision?",
+          "watch_for": [
+            "Where does he finally let his guard down, and with whom?",
+            "How does he treat someone connected to what hurt him?",
+            "When he's certain he's right, who can still reach him?"
+          ],
+          "start_at": "TNG S3E26",
+          "span": "TNG S3-S6 (and the film First Contact)",
+          "situations": [
+            {"id": "illness_or_injury", "weight": 0.6},
+            {"id": "identity_and_self_acceptance", "weight": 0.6},
+            {"id": "starting_over", "weight": 0.5},
+            {"id": "grief_and_loss", "weight": 0.4}
+          ],
+          "conflicts": ["revenge_vs_forgiveness", "control_vs_trust"],
+          "emotions": {"start": ["confidence", "dread"], "middle": ["shame", "guilt", "anger"], "end": ["acceptance", "peace"]},
+          "ending_tone": "hopeful",
+          "intensity": "heavy",
+          "warnings": ["medical_trauma", "war_and_violence", "torture"],
+          "example_user_messages": [
+            "Something happened to me that I had no control over, and then it was used to hurt other people. I can't forgive myself.",
+            "Everyone says I'm coping really well, but I'm not. I just don't let it show.",
+            "I went home to see my family for the first time in years and fell apart in front of my brother.",
+            "I know I'm obsessed with getting back at the people who hurt me, and it's starting to affect everyone around me."
+          ],
+          "spoiler": {
+            "summary": "Picard is captured and assimilated as Locutus, and the Borg use his knowledge to destroy 39 ships at Wolf 359. The crew rescues him and his link helps destroy the cube, but in 'Family' he goes home to the vineyard and breaks down during a muddy fight with his brother Robert, admitting he couldn't stop them. He faces Sisko, who blames him for his wife's death at Wolf 359. In 'I, Borg' he's ready to use a captured drone, Hugh, as a weapon, but lets him go once he sees Hugh as an individual. In 'Chain of Command' he's tortured by a Cardassian interrogator and nearly breaks. In First Contact his hunger for revenge endangers his crew until Lily Sloane compares him to Ahab, and he chooses to abandon ship rather than keep fighting.",
+            "key_events": [
+              "Assimilated as Locutus; used to destroy the fleet at Wolf 359",
+              "Breaks down with his brother Robert at the family vineyard ('Family')",
+              "Spares the drone Hugh instead of using him as a weapon ('I, Borg')",
+              "Tortured by Gul Madred ('Chain of Command')",
+              "First Contact: lets go of vengeance after being compared to Ahab"
+            ],
+            "got_right": "He lets himself fall apart in front of someone he trusts, and each time he pulls back from revenge when someone holds up a mirror.",
+            "got_wrong": "He hides how damaged he is for years, and his anger makes him reckless with other people's lives."
+          }
+        },
+        {
+          "id": "arc:star_trek/jean_luc_picard/the_life_not_lived",
+          "title": "The man with no life outside the job",
+          "literal_situation": "Picard left his family's vineyard in France against his father's wishes and has lived on starships ever since. He has no spouse or children, is uneasy around the families aboard the Enterprise and keeps his officers at a formal distance.",
+          "pattern_label": "wondering about the life you gave up for your career",
+          "pattern_text": "Someone rejected their family's expectations to chase an ambitious career, and it worked. Decades later they have respect but no partner, no children and a distant sibling. Glimpses of other lives they might have lived make them ask whether it was worth it, and whether it's too late to want something different.",
+          "hook": "Picard has the job he always dreamed of. He says he's 'not a family man' and seems content to leave it that way.",
+          "why_relatable": "Did your chosen path cost more than you realised? If you could undo the risks you took when you were young, would you? Is it too late to let people closer?",
+          "watch_for": [
+            "How does he treat the children aboard at first, and does that change?",
+            "What does he take from the lives he glimpses that aren't his own?",
+            "Who gets past the formality, and when?"
+          ],
+          "start_at": "TNG S1E1",
+          "span": "TNG S1-S7",
+          "situations": [
+            {"id": "midlife_reinvention", "weight": 0.7},
+            {"id": "loneliness", "weight": 0.6},
+            {"id": "family_expectations", "weight": 0.5},
+            {"id": "sibling_rivalry", "weight": 0.5}
+          ],
+          "conflicts": ["career_vs_relationships", "past_vs_future"],
+          "emotions": {"start": ["pride", "loneliness"], "middle": ["longing", "nostalgia", "grief"], "end": ["acceptance", "peace"]},
+          "ending_tone": "bittersweet",
+          "intensity": "moderate",
+          "warnings": ["death_of_loved_one", "grief"],
+          "example_user_messages": [
+            "I've been so focused on my career that I'm in my fifties with no partner or kids, and I'm starting to wonder if it was worth it.",
+            "I left the family business to do my own thing and my brother still resents me for it.",
+            "I've always kept people at work at arm's length, and now I'm realising I don't have any real friends.",
+            "I keep imagining the life I'd have now if I'd made different choices when I was young."
+          ],
+          "spoiler": {
+            "summary": "In 'The Inner Light' an alien probe makes him live a whole lifetime as Kamin, husband, father and grandfather on a dying world. He wakes after 25 minutes with a flute and the knowledge of what family feels like. In 'Tapestry' Q lets him undo the reckless mistake of his youth, and he finds that without it he'd have become a cautious, forgettable officer, so he chooses his real life. He grows closer to Beverly Crusher, but they hold back, partly out of respect for her late husband, and in the finale he finally joins his officers' poker game. In the film Generations his brother Robert and nephew René die in a fire, ending the family line, and he grieves the family he never had.",
+            "key_events": [
+              "Lives an entire life as Kamin on Kataan ('The Inner Light')",
+              "Q shows him the dull life he'd have had without his youthful risk ('Tapestry')",
+              "Chooses friendship over romance with Beverly Crusher ('Attached')",
+              "Joins the crew's poker game at last ('All Good Things...')",
+              "Generations: brother and nephew die"
+            ],
+            "got_right": "He faces his regrets honestly and accepts his choices instead of wishing them away, while slowly letting his crew become his family.",
+            "got_wrong": "For decades he uses duty to avoid intimacy, and he waits too long to tell the people who matter what he feels."
+          }
+        }
+      ]
+    },
+    {
+      "id": "char:star_trek/data",
+      "name": "Data",
+      "role": "An android officer on the Enterprise-D who has no emotions, is endlessly curious about people, and wants more than anything to become more human.",
+      "relations": [
+        {"target": "char:star_trek/jean_luc_picard", "relation": "mentor"},
+        {"target": "char:star_trek/jean_luc_picard", "relation": "boss"},
+        {"target": "char:star_trek/worf", "relation": "friend"}
+      ],
+      "arcs": [
+        {
+          "id": "arc:star_trek/data/becoming_human",
+          "title": "Studying people to become one of them",
+          "literal_situation": "Data is the only android in Starfleet. He's stronger and faster than anyone aboard, but he can't feel emotions, doesn't get jokes and never uses contractions. He watches his crewmates closely, hoping to become more human.",
+          "pattern_label": "an outsider studying others to learn how to belong",
+          "pattern_text": "Someone who has always felt fundamentally different from those around them treats social life as a subject to master, copying habits and jokes that never quite land. Other people sometimes doubt that their inner life is real. Over time they have to decide whether belonging means becoming like everyone else or being accepted as they are.",
+          "hook": "Data is capable and kind, and puzzled by the people he serves with. He is trying hard to understand them, and some of them aren't sure he's more than a machine.",
+          "why_relatable": "Is there a right way to be a person, and do you have to fit it? What makes someone real to others? Can you want connection when you're not sure you feel it the way other people do?",
+          "watch_for": [
+            "Who treats him as a person and who doesn't, and how does he handle each?",
+            "Which of his attempts to fit in work, and which backfire?",
+            "Does he want to change himself, or to be accepted as he is?"
+          ],
+          "start_at": "TNG S1E1",
+          "span": "TNG S1-S7 (continues in the films)",
+          "situations": [
+            {"id": "identity_and_self_acceptance", "weight": 1.0},
+            {"id": "finding_your_people", "weight": 0.7},
+            {"id": "loneliness", "weight": 0.5},
+            {"id": "confidence_struggle", "weight": 0.3}
+          ],
+          "conflicts": ["fitting_in_vs_standing_out", "belonging_vs_integrity"],
+          "emotions": {"start": ["curiosity", "longing"], "middle": ["confusion", "inadequacy", "grief"], "end": ["belonging", "self_respect"]},
+          "ending_tone": "bittersweet",
+          "intensity": "moderate",
+          "warnings": ["death_of_main_character", "death_of_loved_one", "grief"],
+          "example_user_messages": [
+            "I've always felt like I'm watching people from the outside and trying to copy how they act.",
+            "I'm autistic, and I spend so much energy learning social rules that everyone else just seems to know.",
+            "People at work say I come across as cold, but I really do care. I just don't show it the way they expect.",
+            "I want close friends, but I'm never sure I'm doing it right."
+          ],
+          "spoiler": {
+            "summary": "Data's personhood is tested again and again. In 'The Measure of a Man' a cyberneticist wants to disassemble him, and Picard wins a hearing that rules he isn't Starfleet property. He keeps a keepsake of Tasha Yar, who dies in the first season. His attempt at dating Jenna D'Sora ('In Theory') fails. In 'The Offspring' he builds a daughter, Lal, who develops emotions and dies. He paints, plays violin, starts to dream, and makes what Picard calls his most human decision when he protects the exocomps. In the film Generations he installs the emotion chip and is overwhelmed by fear and guilt before learning to live with feelings, weeping with joy when he finds his cat Spot. In First Contact he resists the Borg Queen's offer of human skin. In Nemesis he sacrifices himself to save Picard and the crew.",
+            "key_events": [
+              "Tasha Yar dies in season 1",
+              "Ruled a person with rights, not property ('The Measure of a Man')",
+              "His daughter Lal dies ('The Offspring')",
+              "Generations: installs the emotion chip",
+              "Nemesis: dies saving Picard and the crew"
+            ],
+            "got_right": "He stays curious and kind, defends other people's right to be treated as persons, and grows by accepting who he is rather than only imitating others.",
+            "got_wrong": "He treats emotion as something to install, missing that it was already there in his loyalty and care, and his literal attempts to fit in sometimes hurt people."
+          }
+        },
+        {
+          "id": "arc:star_trek/data/creator_and_brother",
+          "title": "Meeting the family that made him",
+          "literal_situation": "Data was found alone on a destroyed colony with no memory of the scientist who built him. When the Enterprise returns to that colony, he starts to learn where he came from.",
+          "pattern_label": "meeting the parent and sibling who shaped you",
+          "pattern_text": "Someone who grew up not knowing where they came from finally meets their family: a brilliant, self-absorbed parent and a charming, resentful older sibling who came first. Every meeting raises old questions about why they were left behind, what they owe, and whether the family's darkness is in them too.",
+          "hook": "Data has always wondered about the man who created him and why he was left behind. He is about to get closer to an answer than he ever has.",
+          "why_relatable": "What do you owe a family that abandoned you? Can you love relatives who are not good for you? Are you defined by where you came from?",
+          "watch_for": [
+            "How does he respond when someone offers him what he has always wanted?",
+            "What does he want from his creator, and does he get it?",
+            "How does he treat family members who don't treat him well?"
+          ],
+          "start_at": "TNG S1E13",
+          "span": "TNG S1-S7",
+          "situations": [
+            {"id": "sibling_rivalry", "weight": 0.8},
+            {"id": "difficult_parent", "weight": 0.8},
+            {"id": "identity_and_self_acceptance", "weight": 0.5},
+            {"id": "becoming_a_parent", "weight": 0.4}
+          ],
+          "conflicts": ["belonging_vs_integrity", "truth_vs_protecting_others"],
+          "emotions": {"start": ["curiosity", "hope"], "middle": ["betrayal", "confusion", "grief"], "end": ["acceptance", "peace"]},
+          "ending_tone": "bittersweet",
+          "intensity": "moderate",
+          "warnings": ["death_of_loved_one", "betrayal", "war_and_violence", "grief"],
+          "example_user_messages": [
+            "I've just met my biological father for the first time. He's brilliant, but he only seems interested in himself.",
+            "My older brother has always been the charming one. He's jealous of me and keeps trying to pull me into his mess.",
+            "I found out my parents left me behind when I was little and I don't know how to feel about it.",
+            "I'm scared I'll turn out like the worst person in my family."
+          ],
+          "spoiler": {
+            "summary": "In 'Datalore' Data meets Lore, his earlier, emotional 'brother', who impersonates him and betrays the crew. In 'Brothers' their creator Noonien Soong summons Data to give him an emotion chip, but Lore steals it; Soong dies, and Data calls him 'Father' for the first time. In 'The Offspring' Data creates a daughter, Lal, who dies. In 'Descent' Lore uses the chip to feed Data negative emotions, switches off his ethics and leads a rogue Borg faction; Data turns on his friends until his ethics are restored and he deactivates Lore. In 'Inheritance' he meets Juliana Soong, who says she is his mother, and discovers she is an android replica built by Soong. He chooses not to tell her.",
+            "key_events": [
+              "Brother Lore impersonates him and betrays the crew ('Datalore')",
+              "Creator Soong dies; Lore steals the emotion chip ('Brothers')",
+              "Daughter Lal dies ('The Offspring')",
+              "Manipulated by Lore into betraying his friends, then deactivates him ('Descent')",
+              "Keeps secret that his 'mother' Juliana is an android ('Inheritance')"
+            ],
+            "got_right": "He meets his family with openness, in the end chooses his friends' values over his brother's pull, and treats his 'mother' with compassion.",
+            "got_wrong": "His longing for feelings and family leaves him open to Lore's manipulation, and he hurts the people who love him as a result."
+          }
+        }
+      ]
+    },
+    {
+      "id": "char:star_trek/kathryn_janeway",
+      "name": "Kathryn Janeway",
+      "role": "A scientist-turned-captain commanding the new starship Voyager, sent to track down a missing ship of Maquis rebels in a dangerous region of space.",
+      "relations": [
+        {"target": "char:star_trek/seven_of_nine", "relation": "protege"},
+        {"target": "char:star_trek/the_doctor", "relation": "friend"},
+        {"target": "char:star_trek/the_doctor", "relation": "colleague"}
+      ],
+      "arcs": [
+        {
+          "id": "arc:star_trek/kathryn_janeway/getting_everyone_home",
+          "title": "Responsible for getting everyone home",
+          "literal_situation": "Voyager is flung 70,000 light years from home, a journey of about 75 years. Janeway has to merge her Starfleet crew with the Maquis rebels she was sent to capture and lead them all home through unknown, hostile space.",
+          "pattern_label": "a leader who feels responsible for stranding her team",
+          "pattern_text": "A principled, driven leader makes a hard call that leaves the people depending on her far from home, including former opponents she now has to lead. She holds herself to every rule while carrying the guilt, chases any shortcut back and puts her own life on hold. She has to learn when principle becomes stubbornness, and how to let others share the weight.",
+          "hook": "Janeway is brilliant, confident and devoted to her crew, with a fiancé and a dog waiting for her back home. She is about to lead them into a mission that goes badly wrong.",
+          "why_relatable": "How do you keep your principles when bending them would help people you care about? How much of your own life should you give up for a team? When does determination turn into obsession?",
+          "watch_for": [
+            "How does she deal with advisers who push back on her decisions?",
+            "What won't she give up, even when it would make things easier?",
+            "Where does she let herself have something just for her?"
+          ],
+          "start_at": "VOY S1E1",
+          "span": "VOY S1-S7",
+          "situations": [
+            {"id": "responsibility_you_didnt_ask_for", "weight": 0.9},
+            {"id": "moving_somewhere_new", "weight": 0.5},
+            {"id": "long_distance", "weight": 0.5},
+            {"id": "burnout_at_work", "weight": 0.5}
+          ],
+          "conflicts": ["duty_vs_desire", "power_vs_morality"],
+          "emotions": {"start": ["determination", "guilt"], "middle": ["loneliness", "burnout", "anger"], "end": ["relief", "pride"]},
+          "ending_tone": "hopeful",
+          "intensity": "moderate",
+          "warnings": ["war_and_violence", "death_of_loved_one", "betrayal", "grief"],
+          "example_user_messages": [
+            "I made a call at work that I believed was right, but it's left my whole team struggling and I feel responsible for every one of them.",
+            "I've put my relationship and my whole personal life on hold for this project, and my partner has moved on.",
+            "I've been put in charge of a team that includes people I used to compete against.",
+            "Everyone says I'm too stubborn, but if I lower my standards, what's left of me?"
+          ],
+          "spoiler": {
+            "summary": "Janeway destroys the Caretaker's array rather than let the Kazon use it, stranding Voyager, and makes Maquis leader Chakotay her first officer. Over seven years she merges the crews and faces the Kazon, the Borg and the Hirogen. She refuses shortcuts that break her principles, as with the Sikarians, but also makes brutal calls such as separating Tuvix to restore Tuvok and Neelix. Her fiancé Mark marries someone else. In 'Night' she withdraws into depression, and in 'Equinox' she nearly tortures a man and relieves Chakotay of duty. She and Chakotay set aside a possible romance ('Resolutions'). In 'Endgame' her future self, embittered by a 23-year journey, returns to bring them home early, and Voyager reaches Earth after destroying a Borg transwarp hub.",
+            "key_events": [
+              "Destroys the array, stranding Voyager ('Caretaker')",
+              "Seska betrays the crew to the Kazon",
+              "Separates Tuvix, ending his life ('Tuvix')",
+              "Fiancé Mark marries someone else",
+              "Crosses the line hunting Ransom ('Equinox')",
+              "Future self helps them get home ('Endgame')"
+            ],
+            "got_right": "She holds her crew together, gives people second chances, and admits it when she has gone too far.",
+            "got_wrong": "She treats the guilt as hers alone, sometimes risks others to win her battles, and at times lets obsession override advice from people she trusts."
+          }
+        },
+        {
+          "id": "arc:star_trek/kathryn_janeway/mentoring_seven",
+          "title": "Taking on someone who doesn't want saving",
+          "literal_situation": "In a desperate alliance with the Borg, Janeway has to work closely with a Borg drone who speaks for the Collective. The drone was assimilated as a small child and remembers nothing of being an individual.",
+          "pattern_label": "mentoring someone who resists your help",
+          "pattern_text": "A strong-willed leader takes responsibility for someone who was cut off from ordinary life as a child and resents the new world they've been pulled into. The young person pushes back, questions every rule and wants to go back to the only life they knew. Both have to work out how much to guide, how much to control and how much to trust.",
+          "hook": "Janeway has made a deal she isn't sure about with an enemy she fears, and now has to work with one of them up close.",
+          "why_relatable": "Is it help if someone doesn't want it? How do you guide someone without trying to own their choices? When they push back hard, what if they're right?",
+          "watch_for": [
+            "When does she choose discipline over patience, and does it work?",
+            "How does she react when she's accused of forcing her values on someone?",
+            "Does she let the other person teach her anything?"
+          ],
+          "start_at": "VOY S4E1",
+          "span": "VOY S4-S7",
+          "situations": [
+            {"id": "mentor_and_protege", "weight": 1.0},
+            {"id": "becoming_a_parent", "weight": 0.4},
+            {"id": "caring_for_family", "weight": 0.3}
+          ],
+          "conflicts": ["control_vs_trust", "independence_vs_connection"],
+          "emotions": {"start": ["determination", "anxiety"], "middle": ["anger", "self_doubt"], "end": ["pride", "love"]},
+          "ending_tone": "hopeful",
+          "intensity": "moderate",
+          "warnings": ["medical_trauma", "war_and_violence"],
+          "example_user_messages": [
+            "I've taken in my teenage niece after years in a controlling group, and she keeps saying she wants to go back.",
+            "I'm mentoring someone who questions everything I say, and I can't tell if I'm helping them or just controlling them.",
+            "I keep telling myself I know what's best for her, but maybe she needs to make her own mistakes.",
+            "The person I've been supporting just told me I'm forcing my values on them, and I'm not sure they're wrong."
+          ],
+          "spoiler": {
+            "summary": "Janeway has Seven of Nine severed from the Collective and refuses to send her back, even when Seven demands it; Seven calls it forcing her own values on her. They clash often: Seven disobeys orders and hands a wounded Species 8472 to the Hirogen ('Prey'), faces her childhood trauma in 'The Raven', and is tempted back toward the Borg in 'Dark Frontier', where Janeway rescues her from the Borg Queen. Janeway sometimes punishes her and increasingly lets her choose for herself, and in 'Latent Image' Seven's challenge convinces Janeway to let the Doctor keep his memories. Seven becomes her own person and Janeway's friend, and comes home to Earth with the crew.",
+            "key_events": [
+              "Severs Seven from the Collective against her will ('The Gift')",
+              "Confines Seven after she defies orders ('Prey')",
+              "Rescues her from the Borg Queen ('Dark Frontier')",
+              "Seven's challenge changes Janeway's mind about the Doctor ('Latent Image')",
+              "Seven grows into an independent friend and comes home with the crew"
+            ],
+            "got_right": "She believes in Seven's humanity and keeps showing up for her, while learning to let Seven make her own choices.",
+            "got_wrong": "At first she decides for Seven, using her authority to impose her own idea of who Seven should become."
+          }
+        }
+      ]
+    },
+    {
+      "id": "char:star_trek/benjamin_sisko",
+      "name": "Benjamin Sisko",
+      "role": "A Starfleet commander sent to run Deep Space Nine, a battered space station orbiting a newly liberated planet, while raising his teenage son alone.",
+      "relations": [
+        {"target": "char:star_trek/kira_nerys", "relation": "colleague"},
+        {"target": "char:star_trek/kira_nerys", "relation": "friend"},
+        {"target": "char:star_trek/odo", "relation": "friend"},
+        {"target": "char:star_trek/julian_bashir", "relation": "colleague"},
+        {"target": "char:star_trek/worf", "relation": "colleague"},
+        {"target": "char:star_trek/jean_luc_picard", "relation": "colleague"}
+      ],
+      "arcs": [
+        {
+          "id": "arc:star_trek/benjamin_sisko/widowers_fresh_start",
+          "title": "A widower who wants to quit",
+          "literal_situation": "Three years after his wife died in a Borg attack, Sisko arrives with his son Jake to command a run-down station he doesn't want. He plans to resign, and he's about to meet the man he blames for his wife's death.",
+          "pattern_label": "a grieving parent stuck in the moment of loss",
+          "pattern_text": "Years after losing a spouse, a single parent has held it together on the outside but is still living in the day it happened. A new job in an unfamiliar place feels like a burden to escape. To move forward they have to stop running from the grief, forgive the person they blame and build a home for the child who is still there.",
+          "hook": "Sisko is a devoted father, capable and angry, arriving at a posting he already plans to leave. To him his wife's death still feels like yesterday.",
+          "why_relatable": "How long can you outrun grief before it catches up? Can you forgive someone who had no choice in hurting you? What does a child need from a parent who is still hurting?",
+          "watch_for": [
+            "How does he speak to the person he blames when they finally meet?",
+            "What makes a strange place start to feel like home?",
+            "How does he balance raising his son with the demands of the job?"
+          ],
+          "start_at": "DS9 S1E1",
+          "span": "DS9 S1-S3",
+          "situations": [
+            {"id": "grief_and_loss", "weight": 1.0},
+            {"id": "starting_over", "weight": 0.8},
+            {"id": "caring_for_family", "weight": 0.6},
+            {"id": "moving_somewhere_new", "weight": 0.6}
+          ],
+          "conflicts": ["holding_on_vs_letting_go", "revenge_vs_forgiveness"],
+          "emotions": {"start": ["grief", "anger", "numbness"], "middle": ["acceptance", "hope"], "end": ["peace", "love", "belonging"]},
+          "ending_tone": "hopeful",
+          "intensity": "moderate",
+          "warnings": ["death_of_loved_one", "grief", "war_and_violence"],
+          "example_user_messages": [
+            "My wife died three years ago and I'm still acting like it happened yesterday.",
+            "I'm raising my son alone and I've just moved for a job I don't even want.",
+            "I still blame the person who caused the accident, even though I know it wasn't really their fault.",
+            "I keep thinking about quitting everything and starting over somewhere nobody knows me."
+          ],
+          "spoiler": {
+            "summary": "In 'Emissary' the wormhole aliens make Sisko relive Jennifer's death, and he sees that part of him never left that moment. He faces his grief, forgives Picard and decides to stay. He and Jake make the station home: Sisko comes round to Jake's friendship with Nog, accepts that Jake wants to be a writer rather than an officer, and lets him grow up. From season 3 he dates freighter captain Kasidy Yates, and her smuggling for the Maquis later tests them. 'The Visitor' shows how deeply Jake loves him. Sisko and Kasidy eventually marry.",
+            "key_events": [
+              "Relives Jennifer's death and realises he's never moved on ('Emissary')",
+              "Forgives Picard and withdraws his resignation",
+              "Blesses Jake's choice to become a writer instead of joining Starfleet",
+              "Begins a relationship with Kasidy Yates"
+            ],
+            "got_right": "He faces his grief instead of just surviving it, and becomes a loving, flexible father who lets his son be his own person.",
+            "got_wrong": "For three years he let grief and blame steer his life, and he nearly gave up a career he loved."
+          }
+        },
+        {
+          "id": "arc:star_trek/benjamin_sisko/reluctant_emissary",
+          "title": "Handed a calling he never asked for",
+          "literal_situation": "Bajor's spiritual leader tells Sisko he is the Emissary, a prophesied figure of the Bajoran faith. He is a Starfleet officer and a skeptic, and wants no part in becoming someone else's religious icon.",
+          "pattern_label": "slowly accepting a calling you didn't choose",
+          "pattern_text": "A practical, skeptical professional is told by a community that they have a special part to play in its story. At first it's embarrassing and clashes with their job and their principles. As events seem to prove the community right, they have to decide how far to trust something they can't control, and what it will cost the people they love.",
+          "hook": "Sisko sees himself as an officer doing a job. Being revered by an entire people makes him deeply uncomfortable.",
+          "why_relatable": "What do you do when others see something in you that you can't see yourself? Can you serve two masters that want different things? How far should you trust a path you can't fully understand?",
+          "watch_for": [
+            "When does he start to take the role seriously, and why?",
+            "How does he handle it when his superiors and his calling want different things?",
+            "What does he give up, and who pays for it?"
+          ],
+          "start_at": "DS9 S1E1",
+          "span": "DS9 S1-S7",
+          "situations": [
+            {"id": "responsibility_you_didnt_ask_for", "weight": 1.0},
+            {"id": "identity_and_self_acceptance", "weight": 0.6},
+            {"id": "standing_up_to_authority", "weight": 0.4}
+          ],
+          "conflicts": ["control_vs_trust", "duty_vs_desire"],
+          "emotions": {"start": ["confusion", "resentment"], "middle": ["curiosity", "determination"], "end": ["acceptance", "peace"]},
+          "ending_tone": "bittersweet",
+          "intensity": "heavy",
+          "warnings": ["death_of_main_character", "death_of_loved_one", "serious_illness", "war_and_violence", "grief"],
+          "example_user_messages": [
+            "My whole family expects me to take over the role my grandfather had in our community, and I never asked for it.",
+            "People at church keep telling me I have a calling, and I honestly don't know what I believe.",
+            "I'm being asked to choose between my career and something that feels more important but that I can't explain.",
+            "I followed my gut against everyone's advice and now I'm scared of what it'll cost my family."
+          ],
+          "spoiler": {
+            "summary": "Sisko discovers the wormhole and its non-linear Prophets, who call him 'the Sisko'. In 'Accession' he tries to hand the title to the poet Akorem, then takes it back when Akorem's orthodoxy threatens Bajor. In 'Rapture' visions nearly kill him, and he urges Bajor not to join the Federation yet. In 'Sacrifice of Angels' the Prophets wipe out a Dominion fleet at his plea, but warn he will find no rest on Bajor. Admiral Ross makes him choose between Starfleet and the Emissary; he ignores the Prophets' warning and leads the attack, and Jadzia is killed and the wormhole closes ('Tears of the Prophets'). He learns his mother was possessed by a Prophet to bring him into being. The Prophets warn him against marrying Kasidy, and he marries her anyway. In the finale he defeats Dukat and the Pah-wraiths in the Fire Caves and is taken into the Celestial Temple, leaving his pregnant wife and Jake with a promise to return someday.",
+            "key_events": [
+              "Named Emissary; discovers the wormhole ('Emissary')",
+              "Tries to give the role away, then reclaims it ('Accession')",
+              "Life-threatening visions ('Rapture')",
+              "Chooses Starfleet over the Prophets' warning; Jadzia dies ('Tears of the Prophets')",
+              "Learns his mother was a vessel for a Prophet",
+              "Taken into the Celestial Temple, leaving Kasidy and Jake ('What You Leave Behind')"
+            ],
+            "got_right": "He grows into the role on his own terms, challenges the Prophets when they're wrong, and stays true to the people he loves.",
+            "got_wrong": "He starts out dismissing a whole people's faith, and in the end his calling takes him away from his family and the ordinary life he wanted."
+          }
+        },
+        {
+          "id": "arc:star_trek/benjamin_sisko/war_compromises",
+          "title": "What he's willing to do to win",
+          "literal_situation": "Later in the series a wider conflict closes in on the station. Sisko has to defend the people he is responsible for and then lead through a long crisis his side could lose.",
+          "pattern_label": "a decent person bending their principles for a cause",
+          "pattern_text": "A principled person is put in charge during a crisis in which the other side doesn't play fair and people are dying every day. Under the pressure they make compromises they once would have condemned, including trusting someone they know is ruthless. Afterwards they have to decide whether they can live with what they did.",
+          "hook": "Sisko is a strong leader, a family man and a believer in his principles. He is about to face a stretch of the story that tests all three.",
+          "why_relatable": "How far would you go to protect the people you're responsible for? What happens to your integrity when you win by breaking your own rules? How do you keep going when the cost keeps rising?",
+          "watch_for": [
+            "How does he justify each step to himself?",
+            "Who does he trust to do what he can't, and what does that say about him?",
+            "Does he still recognise himself when it's over?"
+          ],
+          "start_at": "DS9 S5E26",
+          "span": "DS9 S5-S7",
+          "situations": [
+            {"id": "burnout_at_work", "weight": 0.7},
+            {"id": "responsibility_you_didnt_ask_for", "weight": 0.6},
+            {"id": "grief_and_loss", "weight": 0.5}
+          ],
+          "conflicts": ["power_vs_morality", "truth_vs_protecting_others"],
+          "emotions": {"start": ["determination", "dread"], "middle": ["guilt", "burnout", "grief"], "end": ["guilt", "acceptance"]},
+          "ending_tone": "ambiguous",
+          "intensity": "heavy",
+          "warnings": ["war_and_violence", "death_of_loved_one", "death_of_main_character", "betrayal", "grief"],
+          "example_user_messages": [
+            "I lied to close a deal that saved a lot of jobs, and I'm not sure I can live with myself.",
+            "I've lost so many people this year that I'm thinking of walking away from everything.",
+            "My boss asked me to do something I think is wrong, for the good of the company, and I did it.",
+            "I used to judge people who cut corners, and now I'm the one doing it."
+          ],
+          "spoiler": {
+            "summary": "Sisko mines the wormhole and loses the station in 'Call to Arms', then fights to retake it in Operation Return. After losing a friend he considers quitting, and the visions in 'Far Beyond the Stars' help him decide to stay. In 'In the Pale Moonlight' he recruits Garak to fake evidence that will bring the Romulans into the war. Garak murders Senator Vreenak to make it work, and Sisko concludes 'I can live with it' before deleting his log. Jadzia is killed. He helps lead the final assault on Cardassia, but can't celebrate the victory amid the devastation and leaves the war a changed man.",
+            "key_events": [
+              "Loses Deep Space Nine to the Dominion ('Call to Arms')",
+              "Nearly resigns after losing a friend ('Far Beyond the Stars')",
+              "Conspires with Garak; Senator Vreenak is murdered ('In the Pale Moonlight')",
+              "Jadzia Dax killed",
+              "Victory at Cardassia feels hollow"
+            ],
+            "got_right": "He keeps his people alive, is honest with himself about what he has done, and never pretends his compromises were clean.",
+            "got_wrong": "He lets the ends justify the means, trusts someone he knows is capable of murder, and buries the truth instead of owning it."
+          }
+        }
+      ]
+    }
+  ]
+}

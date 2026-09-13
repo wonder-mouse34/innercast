@@ -1,0 +1,751 @@
+{
+  "show": "arcane",
+  "characters": [
+    {
+      "id": "char:arcane/vi",
+      "name": "Vi",
+      "role": "The fierce, protective eldest of four orphaned kids being raised by a bar owner in the city's poor undercity, leading her little sister and adopted brothers on risky jobs.",
+      "relations": [
+        {"target": "char:arcane/powder", "relation": "sibling"},
+        {"target": "char:arcane/vander", "relation": "parent"},
+        {"target": "char:arcane/caitlyn_kiramman", "relation": "partner"},
+        {"target": "char:arcane/ekko", "relation": "friend"},
+        {"target": "char:arcane/silco", "relation": "enemy"},
+        {"target": "char:arcane/jayce_talis", "relation": "colleague"}
+      ],
+      "arcs": [
+        {
+          "id": "arc:arcane/vi/holding_everyone_together",
+          "title": "The big sister who has to hold everyone together",
+          "literal_situation": "Vi, a teenager in the undercity who lost her parents in an uprising years ago, leads her little sister Powder and two adopted brothers on thieving jobs. When a heist in the rich city above goes badly wrong, the authorities come looking for a culprit, and Vi chafes against her adoptive father Vander's insistence on keeping the peace.",
+          "pattern_label": "the eldest child who became the family's protector",
+          "pattern_text": "The oldest sibling, pushed into a parent's role too early, feels responsible for everyone's safety and everyone's mistakes. Angry at a world that seems rigged against her family and impatient with the adult who urges caution, she wants to fix everything herself, and has to learn what that burden costs her and the people she is shielding.",
+          "hook": "At the start of the show, Vi is the tough, loyal leader of her siblings, fiercely defending her little sister and itching to strike back at the powerful city that looks down on them.",
+          "why_relatable": "How do you protect the people you love when you are barely more than a kid yourself? Is taking the blame for everyone strength or recklessness? And what happens to a family when the person holding it together is running on anger?",
+          "watch_for": [
+            "How does Vi speak to Powder when the others blame her, and how does Powder hear it?",
+            "What does Vi want from Vander, and does he give it to her?",
+            "How does she decide who is 'ready' to come along and who isn't?"
+          ],
+          "start_at": "S1E1",
+          "span": "S1",
+          "situations": [
+            {"id": "responsibility_you_didnt_ask_for", "weight": 0.9},
+            {"id": "caring_for_family", "weight": 0.8},
+            {"id": "standing_up_to_authority", "weight": 0.6},
+            {"id": "coming_of_age", "weight": 0.5}
+          ],
+          "conflicts": ["control_vs_trust", "duty_vs_desire"],
+          "emotions": {"start": ["determination", "anger"], "middle": ["fear", "anxiety"], "end": ["grief", "guilt"]},
+          "ending_tone": "tragic",
+          "intensity": "heavy",
+          "warnings": ["death_of_loved_one", "child_endangerment", "war_and_violence", "grief"],
+          "example_user_messages": [
+            "I'm the oldest and I've basically been raising my younger siblings since our parents died, and I'm exhausted from being the one who has to fix everything.",
+            "My little sister keeps messing up and everyone blames her, and I'm always stuck defending her even when I'm frustrated too.",
+            "I snapped at the person I love most on the worst day of my life and I can't take it back.",
+            "The adult in charge keeps telling me to keep my head down, but it just feels like cowardice to me."
+          ],
+          "spoiler": {
+            "summary": "Vi leads the heist on Jayce's workshop that sets everything off. When the enforcers demand a culprit she tries to turn herself in, but Vander locks her in Benzo's basement and surrenders in her place; Silco's men kill Grayson and Benzo and abduct Vander. Vi, Claggor and Mylo go to rescue him and refuse to let Powder come. Powder, desperate to help, sets off a hextech-crystal bomb that kills Mylo and Claggor; Vander, stabbed by Silco, takes Shimmer to save Vi and dies telling her to protect Powder. In her grief Vi slaps Powder and calls her a jinx, walks away, and is drugged by Marcus and taken to Stillwater prison before she can go back, leaving Powder alone for Silco to take in.",
+            "key_events": [
+              "Vander surrenders himself in Vi's place",
+              "Silco abducts Vander after killing Grayson and Benzo",
+              "Powder's bomb kills Mylo and Claggor",
+              "Vander apparently dies saving Vi",
+              "Vi hits Powder and calls her a jinx",
+              "Vi is taken to Stillwater prison; Silco adopts Powder"
+            ],
+            "got_right": "Her instinct to shield her siblings and take responsibility for them is genuinely loving and brave.",
+            "got_wrong": "She shuts Powder out to keep her safe without listening to her, and in one moment of grief says the words that break her sister."
+          }
+        },
+        {
+          "id": "arc:arcane/vi/searching_for_her_sister",
+          "title": "Looking for the little sister she left behind",
+          "literal_situation": "After the show's jump forward in time, Vi is a hardened young woman back in undercity streets she barely recognises, determined to find her little sister, and reluctantly teaming up with Caitlyn, an idealistic officer from the wealthy city above.",
+          "pattern_label": "trying to reconnect with an estranged sibling",
+          "pattern_text": "After years apart, a person tries to find and reconnect with a younger sibling they feel they failed, only to discover that the sibling has grown up shaped by that abandonment. Torn between guilt, love and the need to protect other people, they must decide how much of the past can be repaired, while also opening up to a new and unlikely love.",
+          "hook": "Later in the series, after a turning point that tore her family apart and a jump of several years, Vi is tougher, scarred and fixated on finding the little sister she has not seen since they were kids.",
+          "why_relatable": "Can you repair a relationship you believe you broke? What do you owe a family member who may have changed beyond recognition? And can you let someone new in while you are still carrying that guilt?",
+          "watch_for": [
+            "What does Vi expect to find, and how does she cope when reality doesn't match?",
+            "When does she let Caitlyn see her vulnerable side?",
+            "Which loyalty does she choose when the people she loves pull in opposite directions?"
+          ],
+          "start_at": "S1E4",
+          "span": "S1-S2",
+          "situations": [
+            {"id": "redemption_after_mistakes", "weight": 0.8},
+            {"id": "falling_for_someone_unexpected", "weight": 0.6},
+            {"id": "grief_and_loss", "weight": 0.6},
+            {"id": "caring_for_family", "weight": 0.7}
+          ],
+          "conflicts": ["holding_on_vs_letting_go", "past_vs_future"],
+          "emotions": {"start": ["guilt", "longing", "anger"], "middle": ["love", "betrayal", "grief"], "end": ["grief", "love", "acceptance"]},
+          "ending_tone": "bittersweet",
+          "intensity": "heavy",
+          "warnings": ["death_of_loved_one", "death_of_main_character", "war_and_violence", "grief", "addiction", "betrayal"],
+          "example_user_messages": [
+            "I haven't spoken to my younger brother in years and I feel like it's my fault he turned out the way he did.",
+            "I reached out to my sister after a long estrangement and she's so angry at me I don't know how to get through to her.",
+            "I'm falling for someone from a completely different world than mine and part of me doesn't trust it.",
+            "I feel stuck between the person I love and my own family, and whatever I choose someone gets hurt."
+          ],
+          "spoiler": {
+            "summary": "After seven years in Stillwater, Vi trades her help to Caitlyn for her release. She learns Powder has become Jinx, Silco's adopted daughter and enforcer. Their reunion collapses when Jinx sees Caitlyn as her replacement. At Jinx's twisted 'tea party' Jinx asks Vi to kill Caitlyn; Vi refuses, and her attempt to call Powder back triggers a breakdown in which Jinx kills Silco and fires a rocket into the council, killing Caitlyn's mother. In season 2 Vi joins Caitlyn's strike team to hunt Jinx but stops Caitlyn shooting her, which splits them; she sinks into drinking and pit fighting. Jinx seeks her out after learning Vander is alive as the beast Warwick, and the sisters briefly reunite around him until it ends in Isha's death. Vi and Caitlyn reconcile and become lovers. In the final battle the sisters fight side by side; Jinx sacrifices herself to destroy Warwick and save Vi, with a hint she may have escaped. Vi ends up living with Caitlyn in Piltover.",
+            "key_events": [
+              "Powder has become Jinx, Silco's adopted daughter",
+              "Tea party: Jinx kills Silco and bombs the council",
+              "Vi joins the enforcers' strike team, then splits from Caitlyn",
+              "Vander is alive as Warwick; the sisters reunite around him",
+              "Vi and Caitlyn become lovers",
+              "Jinx sacrifices herself to save Vi, possibly surviving"
+            ],
+            "got_right": "She never stops seeing her sister as a person worth saving, and she learns to accept love from someone unexpected.",
+            "got_wrong": "She keeps trying to force the old Powder back instead of meeting her sister as she is, and her divided loyalties hurt both women she loves."
+          }
+        }
+      ]
+    },
+    {
+      "id": "char:arcane/powder",
+      "name": "Powder (Jinx)",
+      "role": "Vi's little sister Powder, the youngest of four orphans in the undercity: a clever, jittery tinkerer desperate to be useful to her family.",
+      "relations": [
+        {"target": "char:arcane/vi", "relation": "sibling"},
+        {"target": "char:arcane/vander", "relation": "parent"},
+        {"target": "char:arcane/silco", "relation": "parent"},
+        {"target": "char:arcane/ekko", "relation": "friend"},
+        {"target": "char:arcane/caitlyn_kiramman", "relation": "enemy"}
+      ],
+      "arcs": [
+        {
+          "id": "arc:arcane/powder/desperate_to_be_useful",
+          "title": "Desperate to prove she's not a burden",
+          "literal_situation": "Powder is the youngest in a found family of kids raised by Vander. Her homemade gadgets never work, her older adopted brother grumbles that she ruins every job, and she clings to her big sister Vi, terrified of being left behind whenever the others take on something dangerous.",
+          "pattern_label": "the youngest child terrified of being left behind",
+          "pattern_text": "The youngest in the family keeps hearing that she is too little, too clumsy, the one who messes things up. She pours everything into proving she can help, because being useful feels like the only way to be kept. Her story looks at how a sensitive child's fear of abandonment shapes her, and how much the words of the people she loves can build her up or break her.",
+          "hook": "At the start of the show, Powder is a sweet, anxious kid tinkering with inventions that fizzle, adoring her big sister and afraid the others see her as bad luck.",
+          "why_relatable": "What do you do when you are sure you are the weak link? How much of a child's sense of worth rests on one person's approval? And when everyone protects you by leaving you out, how does that feel from the inside?",
+          "watch_for": [
+            "How does Powder react each time she's told she's not ready?",
+            "Who in the family actually listens to her ideas, and who talks over her?",
+            "Why does being included in the older kids' plans matter so much to her?"
+          ],
+          "start_at": "S1E1",
+          "span": "S1-S2",
+          "situations": [
+            {"id": "confidence_struggle", "weight": 0.8},
+            {"id": "identity_and_self_acceptance", "weight": 0.7},
+            {"id": "grief_and_loss", "weight": 0.6},
+            {"id": "sibling_rivalry", "weight": 0.4}
+          ],
+          "conflicts": ["self_vs_family_expectations", "holding_on_vs_letting_go"],
+          "emotions": {"start": ["inadequacy", "fear", "longing"], "middle": ["guilt", "rejection", "anger"], "end": ["grief", "love", "acceptance"]},
+          "ending_tone": "bittersweet",
+          "intensity": "heavy",
+          "warnings": ["death_of_loved_one", "death_of_main_character", "child_endangerment", "war_and_violence", "grief", "self_harm_or_suicide", "abuse", "betrayal"],
+          "example_user_messages": [
+            "I'm the youngest and everyone treats me like I'm going to screw things up, so I try twice as hard and it still goes wrong.",
+            "My older sister is my whole world and I'm terrified she'll leave me behind.",
+            "One mistake of mine hurt people I love and I don't know how to live with who that makes me.",
+            "I keep hearing my family's voices in my head telling me I'm the problem.",
+            "Some days it feels like there are two versions of me and I don't know which one is real."
+          ],
+          "spoiler": {
+            "summary": "Left behind when the others go to rescue Vander, Powder uses the hextech crystals she took from Jayce's workshop to make a bomb that finally works; it kills Mylo and Claggor and contributes to Vander's apparent death. Vi hits her and calls her a jinx, and Silco finds her sobbing and adopts her. Seven years later she is Jinx, Silco's volatile enforcer, haunted by hallucinations of her dead family. She steals the hextech gemstone, reunites with Vi but sees Caitlyn as her replacement, nearly dies fighting Ekko and is saved by a Shimmer infusion. At her 'tea party' she panics and shoots Silco, then fires a rocket into the council, killing three councillors including Caitlyn's mother. In season 2 she becomes a symbol of the undercity's rebellion, raises the orphan Isha, reunites with Vi around the transformed Vander (Warwick), and loses Isha, who sacrifices herself to save her. She surrenders, escapes, and tries to end her life, but Ekko stops her. She joins the defence of Piltover and, fighting alongside Vi, sacrifices herself to destroy Warwick and save her sister; a final scene hints she escaped through the vents.",
+            "key_events": [
+              "Her hextech bomb kills Mylo and Claggor",
+              "Vi hits her and calls her a jinx; Silco adopts her",
+              "She becomes Jinx",
+              "Saved by a Shimmer infusion after fighting Ekko",
+              "Accidentally kills Silco and bombs the council at the tea party",
+              "Raises Isha, who dies saving her",
+              "Suicide attempt stopped by Ekko",
+              "Sacrifices herself to destroy Warwick and save Vi; hinted to have survived"
+            ],
+            "got_right": "She never stops reaching for her sister, and in the end she chooses to protect others and break the cycle instead of repeating it.",
+            "got_wrong": "She lets guilt and fear of abandonment turn into rage, and comes to believe she is only a monster who ruins everything."
+          }
+        }
+      ]
+    },
+    {
+      "id": "char:arcane/jayce_talis",
+      "name": "Jayce Talis",
+      "role": "An ambitious young scholar in the wealthy city of Piltover, obsessed with harnessing magic through science, whose unauthorised research has just blown up in his face.",
+      "relations": [
+        {"target": "char:arcane/viktor", "relation": "friend"},
+        {"target": "char:arcane/caitlyn_kiramman", "relation": "friend"},
+        {"target": "char:arcane/vi", "relation": "colleague"},
+        {"target": "char:arcane/silco", "relation": "enemy"}
+      ],
+      "arcs": [
+        {
+          "id": "arc:arcane/jayce_talis/dream_called_reckless",
+          "title": "Holding on to a dream everyone calls reckless",
+          "literal_situation": "Jayce's experiments with magical crystals cause an explosion in his workshop. The council puts him on trial, his patrons turn their backs, and he is expelled from the Academy, facing a future in the family toolmaking trade he never wanted.",
+          "pattern_label": "picking yourself up after public failure",
+          "pattern_text": "A driven young person bets everything on an unconventional idea and fails publicly, losing their place, their mentors' support and any sense of a future. At rock bottom, a partnership with an unlikely collaborator offers a second chance, and the question becomes whether success will change them.",
+          "hook": "At the start of the show, Jayce is a disgraced student whose life's work has just been declared too dangerous, humiliated in front of the people whose approval he wanted most.",
+          "why_relatable": "What do you do when the people who backed you walk away? Is your big idea visionary or just reckless? How much of your identity is tied to being proven right, and who might believe in you when you have stopped believing in yourself?",
+          "watch_for": [
+            "Who stands by Jayce when it costs them something?",
+            "How does he treat his mentor's caution?",
+            "What does being taken seriously do to him?"
+          ],
+          "start_at": "S1E1",
+          "span": "S1",
+          "situations": [
+            {"id": "taking_a_big_risk", "weight": 0.8},
+            {"id": "losing_a_job", "weight": 0.6},
+            {"id": "starting_over", "weight": 0.6},
+            {"id": "mentor_and_protege", "weight": 0.5}
+          ],
+          "conflicts": ["safety_vs_growth", "self_vs_family_expectations"],
+          "emotions": {"start": ["shame", "rejection", "self_doubt"], "middle": ["hope", "curiosity", "determination"], "end": ["pride", "joy"]},
+          "ending_tone": "hopeful",
+          "intensity": "moderate",
+          "warnings": ["self_harm_or_suicide"],
+          "example_user_messages": [
+            "I got let go from the place I'd poured my whole life into and I honestly don't know who I am without it.",
+            "Everyone told me my idea was too risky and now that it failed they're all saying they told me so.",
+            "My family always wanted me to join the family business and after this failure it feels like the only option left.",
+            "I hit such a low point that I wasn't sure I wanted to keep going, and then a near-stranger believed in me."
+          ],
+          "spoiler": {
+            "summary": "Expelled and suicidal, Jayce is talked down from the ledge of his wrecked workshop by Viktor, Heimerdinger's assistant, who supplies the missing insight for his theory. They break into Heimerdinger's lab to reclaim the confiscated crystals and achieve the first stable hextech reaction just as they are caught; Mel Medarda sees its promise and champions them before the council. Hextech is born, and Jayce and Viktor become partners.",
+            "key_events": [
+              "Expelled from the Academy after the explosion",
+              "Viktor talks him down from suicide",
+              "Break-in at Heimerdinger's lab",
+              "First stable hextech reaction",
+              "Mel Medarda backs them before the council"
+            ],
+            "got_right": "He refuses to abandon a dream he believes in, and accepts help from someone others overlooked.",
+            "got_wrong": "He is so hungry for vindication that he starts to treat caution as an insult."
+          }
+        },
+        {
+          "id": "arc:arcane/jayce_talis/when_success_changes_you",
+          "title": "When getting what you wanted starts to change you",
+          "literal_situation": "Later in the series, after a turning point that makes his invention the pride of the city, Jayce is the public face of progress, courted by powerful people and increasingly pulled between politics and the lab partner who shares his original dream.",
+          "pattern_label": "an idealist pulled into compromise by power",
+          "pattern_text": "Someone who got ahead on a pure ideal discovers that influence demands compromise. Each small deal feels justified, but they drift from their closest collaborator and from their own principles, and have to face whether they are still the person who started out.",
+          "hook": "Later in the series, after a turning point that brings his work success and influence, Jayce finds that the rooms he always wanted to be in come with deals, compromises and pressure to use his work in ways he never intended.",
+          "why_relatable": "How many small compromises add up to becoming someone you don't recognise? Can a friendship survive when your careers pull you in different directions? When is using force protection, and when is it fear?",
+          "watch_for": [
+            "Who does Jayce listen to when he's under pressure?",
+            "How do his relationships with his mentor and his partner shift as his influence grows?",
+            "What does he tell himself each time he crosses one of his own lines?"
+          ],
+          "start_at": "S1E4",
+          "span": "S1-S2",
+          "situations": [
+            {"id": "becoming_a_manager", "weight": 0.6},
+            {"id": "friendship_ending", "weight": 0.6},
+            {"id": "redemption_after_mistakes", "weight": 0.6},
+            {"id": "responsibility_you_didnt_ask_for", "weight": 0.5}
+          ],
+          "conflicts": ["power_vs_morality", "career_vs_relationships"],
+          "emotions": {"start": ["pride", "determination"], "middle": ["guilt", "anxiety", "overwhelm"], "end": ["grief", "love", "acceptance"]},
+          "ending_tone": "tragic",
+          "intensity": "heavy",
+          "warnings": ["war_and_violence", "child_endangerment", "death_of_loved_one", "death_of_main_character", "betrayal", "grief"],
+          "example_user_messages": [
+            "I got the promotion I always wanted and now I'm making compromises I would have been disgusted by five years ago.",
+            "My best friend and I built something together, but since I moved into leadership we barely talk and I think I've let him down.",
+            "I made a decision that hurt someone innocent and I can't stop thinking about it.",
+            "Everyone around me says being tough is the only way to keep people safe, and I'm starting to believe them."
+          ],
+          "spoiler": {
+            "summary": "Jayce becomes the council's eighth member, trades favours with merchants, forces his mentor Heimerdinger into retirement, and begins a romance with Mel Medarda. Pushed by Mel and her mother Ambessa, he builds hextech weapons, raids a Shimmer factory with Vi, and accidentally kills a child, which horrifies him into negotiating Zaun's independence with Silco. Jinx's rocket hits the council; to save the dying Viktor, Jayce fuses him with the Hexcore, breaking his promise to destroy it, and arms the enforcers. Viktor leaves him. Stranded by the hexgate anomaly in a ruined future caused by Viktor's power, Jayce returns determined to stop him and kills him, but Singed revives Viktor. In the final battle Jayce reaches Viktor's human side; they reconcile and together sacrifice themselves to destroy the rune, vanishing from existence.",
+            "key_events": [
+              "Becomes the eighth councillor",
+              "Forces Heimerdinger's retirement",
+              "Romance with Mel Medarda",
+              "Accidentally kills a child in the factory raid",
+              "Fuses the dying Viktor with the Hexcore",
+              "Stranded in a ruined future",
+              "Kills Viktor, who is revived",
+              "Jayce and Viktor sacrifice themselves together"
+            ],
+            "got_right": "He never stops loving his partner, and at the end chooses reconciliation and sacrifice over victory.",
+            "got_wrong": "He lets fear, flattery and the need to control outcomes lead him to break his principles and his promises."
+          }
+        }
+      ]
+    },
+    {
+      "id": "char:arcane/viktor",
+      "name": "Viktor",
+      "role": "A brilliant, soft-spoken assistant to the Academy's dean who grew up in the poor undercity and walks with a cane, quietly determined that science should help people like the ones he came from.",
+      "relations": [
+        {"target": "char:arcane/jayce_talis", "relation": "friend"}
+      ],
+      "arcs": [
+        {
+          "id": "arc:arcane/viktor/overlooked_genius_finds_a_partner",
+          "title": "The overlooked genius who finds a partner",
+          "literal_situation": "Viktor, an assistant from the undercity who is used to being underestimated, reads a disgraced student's confiscated notes, sees what everyone else missed, and decides to seek him out.",
+          "pattern_label": "the quiet outsider whose talent goes unseen",
+          "pattern_text": "Someone from a poor background with a visible disability has worked hard to earn a modest place among the privileged, but still lives in the background. When they spot potential that others dismissed, they risk their position to champion it, and find in a collaboration the recognition and companionship they have always lacked.",
+          "hook": "When his arc begins, Viktor is a behind-the-scenes assistant who knows how much he could do if anyone listened, and who is about to take a quiet risk that could cost him his place.",
+          "why_relatable": "What does it take to step out of the background? Is it worth risking the little security you have for something that truly excites you? And what does it feel like to be really seen by someone?",
+          "watch_for": [
+            "What does Viktor's childhood tell you about why he wants science to help people?",
+            "How does he balance loyalty to his mentor with his own ambitions?",
+            "Where do he and Jayce complement each other, and where do they differ?"
+          ],
+          "start_at": "S1E2",
+          "span": "S1",
+          "situations": [
+            {"id": "finding_your_people", "weight": 0.8},
+            {"id": "taking_a_big_risk", "weight": 0.6},
+            {"id": "identity_and_self_acceptance", "weight": 0.5},
+            {"id": "imposter_syndrome", "weight": 0.4}
+          ],
+          "conflicts": ["safety_vs_growth", "fitting_in_vs_standing_out"],
+          "emotions": {"start": ["loneliness", "curiosity"], "middle": ["hope", "joy"], "end": ["pride", "belonging"]},
+          "ending_tone": "hopeful",
+          "intensity": "moderate",
+          "warnings": [],
+          "example_user_messages": [
+            "I'm the only one at my workplace from a working-class background and I always feel like the assistant in the corner.",
+            "I have a disability and people underestimate me constantly, so I've stopped speaking up in meetings.",
+            "I met someone who gets my ideas in a way nobody else ever has, and working with them makes me feel alive.",
+            "I could lose my safe position if I back this risky project, but I've never been this excited about anything."
+          ],
+          "spoiler": {
+            "summary": "Viktor takes Jayce's notebook from Heimerdinger's office, finds Jayce on the ledge of his destroyed workshop and talks him out of suicide, then supplies the insight that stabilises the crystal. Their night break-in at Heimerdinger's lab works, Mel Medarda champions them, and the two become partners in creating hextech, which over the following years transforms Piltover through the Hexgates.",
+            "key_events": [
+              "Takes Jayce's notebook from Heimerdinger's office",
+              "Talks Jayce down from the ledge",
+              "First stable hextech crystal",
+              "Partnership with Jayce founds hextech"
+            ],
+            "got_right": "He trusts his own judgment, reaches out to someone at their lowest, and turns his outsider's view into a strength.",
+            "got_wrong": "He lets others take the public credit and keeps his own needs, including his health, out of sight."
+          }
+        },
+        {
+          "id": "arc:arcane/viktor/racing_the_clock",
+          "title": "Racing a clock no one else can hear",
+          "literal_situation": "Later in the series, after a turning point that makes his own time feel short, Viktor, now a respected inventor, pushes himself ever harder in the lab, drawn to a new creation that might change everything, including for himself.",
+          "pattern_label": "facing mortality by chasing a legacy",
+          "pattern_text": "A person facing a serious illness pours themselves into their work, desperate to leave something meaningful behind. The urgency makes them take risks with their health and with the people around them, and forces the question of what a good life, and a good legacy, really is.",
+          "hook": "Later in the series, after a turning point that forces him to face how much time he may have left, Viktor throws himself into his research, afraid that everything he cares about will be forgotten.",
+          "why_relatable": "How do you live when you can feel time running out? Where is the line between determination and recklessness? Who pays the price for your urgency, and what do people actually need from you?",
+          "watch_for": [
+            "What is Viktor willing to try for more time, and who does he turn to for help?",
+            "How does he react when others counsel caution?",
+            "What does he believe people really need, and does that belief change?"
+          ],
+          "start_at": "S1E4",
+          "span": "S1-S2",
+          "situations": [
+            {"id": "illness_or_injury", "weight": 0.9},
+            {"id": "grief_and_loss", "weight": 0.5},
+            {"id": "burnout_at_work", "weight": 0.5},
+            {"id": "identity_and_self_acceptance", "weight": 0.4}
+          ],
+          "conflicts": ["power_vs_morality", "holding_on_vs_letting_go"],
+          "emotions": {"start": ["fear", "determination", "dread"], "middle": ["guilt", "grief", "hope"], "end": ["peace", "acceptance", "love"]},
+          "ending_tone": "tragic",
+          "intensity": "heavy",
+          "warnings": ["serious_illness", "medical_trauma", "death_of_loved_one", "death_of_main_character", "self_harm_or_suicide", "war_and_violence"],
+          "example_user_messages": [
+            "I've been diagnosed with something serious and all I can think about is finishing my work before I run out of time.",
+            "I pushed so hard on my own goals that someone who cared about me got hurt.",
+            "I'm scared that when I'm gone nobody will remember anything I did.",
+            "Everyone tells me to rest, but resting feels like giving up."
+          ],
+          "spoiler": {
+            "summary": "Viktor is terminally ill. He takes a Shimmer variant from Singed alongside Hexcore exposure, which briefly heals his leg, but when the Hexcore surges his assistant Sky is killed pulling him away. Wracked with guilt, he contemplates suicide and asks Jayce to destroy the Hexcore. Gravely injured by Jinx's rocket, he is fused with the Hexcore by Jayce and wakes transformed, angry at the broken promise. He leaves, heals Shimmer addicts in the undercity and builds a devoted commune, and tries to restore Vander's mind. Jayce kills him; Singed revives him, and he becomes the Machine Herald, allies with Ambessa and pursues a 'Glorious Evolution' that strips people of their humanity. In the Hexgate Jayce reaches him; Viktor sees the ruined future his path creates, reconciles with Jayce, and the two sacrifice themselves destroying the rune.",
+            "key_events": [
+              "Terminal diagnosis",
+              "Sky dies because of the Hexcore",
+              "Fused with the Hexcore after Jinx's rocket",
+              "Builds a commune of people he heals",
+              "Killed by Jayce and revived by Singed",
+              "Becomes the Machine Herald",
+              "Reconciles with Jayce and sacrifices himself"
+            ],
+            "got_right": "He genuinely wants to use his gifts to relieve suffering, and in the end chooses to undo his own mistake.",
+            "got_wrong": "Terror of dying and being forgotten makes him ignore risk and other people's consent, until he decides he knows what is best for everyone."
+          }
+        }
+      ]
+    },
+    {
+      "id": "char:arcane/caitlyn_kiramman",
+      "name": "Caitlyn Kiramman",
+      "role": "The sharp, sheltered daughter of one of Piltover's most powerful families, who grows into a sharpshooting young enforcer determined to do real good.",
+      "relations": [
+        {"target": "char:arcane/vi", "relation": "partner"},
+        {"target": "char:arcane/jayce_talis", "relation": "friend"},
+        {"target": "char:arcane/powder", "relation": "enemy"},
+        {"target": "char:arcane/silco", "relation": "enemy"}
+      ],
+      "arcs": [
+        {
+          "id": "arc:arcane/caitlyn_kiramman/privileged_idealist",
+          "title": "The privileged idealist who wants to do real good",
+          "literal_situation": "After the show's jump forward in time, Caitlyn is a junior enforcer from an elite family, sidelined by her superiors and doubted by her parents. Convinced someone is behind the undercity's violence, she recruits Vi, a tough woman from the undercity, as her guide and goes down there herself.",
+          "pattern_label": "leaving a sheltered life to find your purpose",
+          "pattern_text": "A person raised in comfort rejects the safe path their family planned and insists on doing meaningful work, even though no one takes them seriously. Stepping into a world far harder than their own challenges everything they assumed, forces them to face their privilege, and opens them up to someone they would never otherwise have met.",
+          "hook": "When her arc begins, Caitlyn is a well-meaning officer whose ideas keep getting dismissed, eager to prove she earned her place and not her family name.",
+          "why_relatable": "How do you prove yourself when everyone assumes your success was bought? What happens to your values when you see how the other half lives? And can you trust someone who has every reason to resent people like you?",
+          "watch_for": [
+            "How does Caitlyn react the first time she's out of her depth?",
+            "How does her view of her own city change as she spends time below it?",
+            "What pulls her and Vi together, and what keeps pushing them apart?"
+          ],
+          "start_at": "S1E4",
+          "span": "S1",
+          "situations": [
+            {"id": "family_expectations", "weight": 0.7},
+            {"id": "falling_for_someone_unexpected", "weight": 0.7},
+            {"id": "standing_up_to_authority", "weight": 0.6},
+            {"id": "imposter_syndrome", "weight": 0.4}
+          ],
+          "conflicts": ["self_vs_family_expectations", "belonging_vs_integrity"],
+          "emotions": {"start": ["determination", "restlessness", "self_doubt"], "middle": ["curiosity", "anger", "love"], "end": ["love", "self_respect", "grief"]},
+          "ending_tone": "bittersweet",
+          "intensity": "moderate",
+          "warnings": ["war_and_violence", "death_of_loved_one", "addiction"],
+          "example_user_messages": [
+            "I come from money and at work everyone assumes I only got here because of my parents.",
+            "My family wants me to take the safe route, but I want work that actually matters.",
+            "Volunteering in a really different neighbourhood has made me see how sheltered I was, and I'm a bit embarrassed by it.",
+            "I'm falling for someone whose life is completely different from mine, and my family would never understand."
+          ],
+          "spoiler": {
+            "summary": "Caitlyn gets Vi released from Stillwater prison and they track Silco through the undercity. She discovers that Sheriff Marcus is corrupt and in Silco's pocket, sees Shimmer's devastation first-hand, and confronts her mother over the council's neglect of the undercity. When the council refuses to act, she and Vi grow closer. Jinx kidnaps her for the 'tea party' and demands that Vi kill her; the evening ends with Jinx firing a rocket into the council, killing Caitlyn's mother Cassandra.",
+            "key_events": [
+              "Frees Vi from Stillwater",
+              "Discovers Marcus is working for Silco",
+              "Romance with Vi begins",
+              "Kidnapped for Jinx's tea party",
+              "Her mother is killed by Jinx's rocket"
+            ],
+            "got_right": "She follows her conscience, listens to people outside her bubble and changes her mind when faced with the truth.",
+            "got_wrong": "Her certainty and sheltered upbringing make her naive about how dangerous the world below really is."
+          }
+        },
+        {
+          "id": "arc:arcane/caitlyn_kiramman/grief_wants_someone_to_pay",
+          "title": "When grief wants someone to pay",
+          "literal_situation": "Later in the series, after a turning point that shatters her world, Caitlyn channels her pain into a mission and uses her family's influence to push for force in the undercity.",
+          "pattern_label": "grief hardening into a need for revenge",
+          "pattern_text": "After a devastating loss, a person turns their pain into a crusade. The mission gives them purpose and power, but it also pushes away the people who love them and slowly erodes the values they once lived by. They have to decide who they want to be once the anger runs out.",
+          "hook": "Later in the series, after a turning point that shatters her world, Caitlyn is grieving, furious and certain that justice means making someone pay, even as the people she cares about warn her she is changing.",
+          "why_relatable": "Is what you are chasing justice or revenge? What happens to your relationships when grief makes you hard? And can you come back from choices you made in anger?",
+          "watch_for": [
+            "Who does Caitlyn listen to while she's grieving, and who does she stop listening to?",
+            "How does she treat the people who stand between her and her goal?",
+            "What does she hold on to from who she used to be?"
+          ],
+          "start_at": "S2E1",
+          "span": "S2",
+          "situations": [
+            {"id": "grief_and_loss", "weight": 0.9},
+            {"id": "redemption_after_mistakes", "weight": 0.6},
+            {"id": "becoming_a_manager", "weight": 0.5},
+            {"id": "breakup", "weight": 0.4}
+          ],
+          "conflicts": ["revenge_vs_forgiveness", "power_vs_morality"],
+          "emotions": {"start": ["grief", "anger"], "middle": ["resentment", "loneliness", "guilt"], "end": ["acceptance", "love", "self_respect"]},
+          "ending_tone": "bittersweet",
+          "intensity": "heavy",
+          "warnings": ["grief", "death_of_loved_one", "war_and_violence", "betrayal"],
+          "example_user_messages": [
+            "Since my mom died I've thrown myself into getting justice and my partner says she doesn't recognise me anymore.",
+            "I want the person who hurt my family to suffer and I'm scared of how much I want it.",
+            "I took on a leadership role right after a loss and I think I made decisions I'm ashamed of.",
+            "I pushed away the one person who understood me because they wouldn't hate the same people I did."
+          ],
+          "spoiler": {
+            "summary": "Mourning her mother, Caitlyn leads an enforcer strike team into the undercity to hunt Jinx and shoots off one of Jinx's fingers, but Vi stops her from firing again when the child Isha is in the way, and they separate. Caitlyn allies with Ambessa Medarda, trains with her, and is put in command of Piltover's forces under martial law, leading a harsh crackdown that endangers civilians. She reconciles with Vi and they become lovers, helps protect Vander, and slowly recognises Ambessa's manipulation. In the final battle she duels Ambessa and loses an eye, rejects her influence, and ends the series reconciled with Vi, wearing an eyepatch and recommitted to justice without vengeance.",
+            "key_events": [
+              "Leads the strike team hunting Jinx",
+              "Vi stops her shot and they separate",
+              "Allies with Ambessa and takes command under martial law",
+              "Reconciles with Vi and they become lovers",
+              "Loses an eye dueling Ambessa"
+            ],
+            "got_right": "She eventually recognises how far she has strayed and chooses her principles and her love over revenge.",
+            "got_wrong": "She lets grief turn her into the kind of authority she once criticised, and lets a manipulator use her pain."
+          }
+        }
+      ]
+    },
+    {
+      "id": "char:arcane/silco",
+      "name": "Silco",
+      "role": "A soft-spoken, scarred schemer in the undercity who works from the shadows, determined that the undercity will one day be free of the city above.",
+      "relations": [
+        {"target": "char:arcane/vander", "relation": "enemy"},
+        {"target": "char:arcane/powder", "relation": "child"},
+        {"target": "char:arcane/vi", "relation": "enemy"},
+        {"target": "char:arcane/caitlyn_kiramman", "relation": "enemy"},
+        {"target": "char:arcane/jayce_talis", "relation": "rival"},
+        {"target": "char:arcane/ekko", "relation": "enemy"}
+      ],
+      "arcs": [
+        {
+          "id": "arc:arcane/silco/an_old_wound_as_a_mission",
+          "title": "Building a life around an old wound",
+          "literal_situation": "Silco, a patient schemer in the undercity, is moving against Vander, the man who keeps an uneasy peace with the city above, with the help of a ruthless scientist and dangerous new means.",
+          "pattern_label": "a grievance that becomes a life's purpose",
+          "pattern_text": "Someone deeply hurt by a person they once trusted builds their whole identity around never being that powerless again. Their cause may be just, but the old wound drives everything, and they must face whether they have become the very thing they hated.",
+          "hook": "At the start of the show, Silco is an unseen power waiting for his moment, convinced that the man keeping the peace has sold out their people and that he himself is the one who will set them free.",
+          "why_relatable": "When does a righteous cause become a personal grudge? What are you willing to sacrifice for a goal you believe in? And can you let go of an old hurt, or does it end up running your life?",
+          "watch_for": [
+            "How does Silco talk about Vander, and what lies underneath it?",
+            "How does he treat the people who work for him?",
+            "What does 'freedom' mean to him, and who pays for it?"
+          ],
+          "start_at": "S1E1",
+          "span": "S1",
+          "situations": [
+            {"id": "friendship_ending", "weight": 0.7},
+            {"id": "standing_up_to_authority", "weight": 0.6},
+            {"id": "taking_a_big_risk", "weight": 0.5}
+          ],
+          "conflicts": ["revenge_vs_forgiveness", "power_vs_morality"],
+          "emotions": {"start": ["resentment", "determination"], "middle": ["anger", "pride"], "end": ["pride", "loneliness"]},
+          "ending_tone": "ambiguous",
+          "intensity": "heavy",
+          "warnings": ["war_and_violence", "addiction", "child_endangerment", "death_of_loved_one", "betrayal"],
+          "example_user_messages": [
+            "My closest friend turned on me years ago and honestly I've built my whole life around proving him wrong.",
+            "I'm fighting for something I believe in, but I've started to wonder if it's really about getting even.",
+            "I've done things to get ahead that I'd never admit to anyone.",
+            "I can't forgive the person who hurt me, and I'm not sure I want to."
+          ],
+          "spoiler": {
+            "summary": "Silco and Vander were once like brothers fighting for the undercity's freedom; after the failed uprising Vander tried to drown him, leaving his eye scarred. Years later, armed with Singed's Shimmer, Silco tests the drug on Deckard, bribes Marcus, has Grayson and Benzo killed and abducts Vander for Singed's experiments. In the chaos caused by Powder's bomb he stabs Vander, who dies after taking Shimmer. Silco finds the sobbing, abandoned Powder, nearly kills her, but when she hugs him he takes her in as his daughter.",
+            "key_events": [
+              "Vander once tried to drown him",
+              "Has Grayson and Benzo killed",
+              "Abducts Vander and stabs him",
+              "Vander dies; Silco takes control of the undercity",
+              "Adopts the abandoned Powder"
+            ],
+            "got_right": "He genuinely wants his people to stop living under another city's boot.",
+            "got_wrong": "He turns his pain into cruelty, poisons the people he claims to free, and treats everyone as a tool."
+          }
+        },
+        {
+          "id": "arc:arcane/silco/the_cause_or_the_child",
+          "title": "Torn between his life's cause and the person he loves",
+          "literal_situation": "Later in the series, after a turning point that brings someone into his life he never expected to care about, Silco controls the undercity's criminal world and is closer than ever to his dream, but the young woman he treats as a daughter is volatile and draws dangerous attention.",
+          "pattern_label": "choosing between your life's work and your child",
+          "pattern_text": "A hard, guarded person unexpectedly becomes a parent figure and loves fiercely in their own flawed way. When their life's ambition and their child's wellbeing collide, they are forced to face the same choice they once condemned someone else for making, and to question what kind of love they have been offering.",
+          "hook": "Later in the series, after a turning point that brings someone into his life he never expected to love, Silco discovers that caring for a person can threaten everything he has built, and that he may be forced to choose.",
+          "why_relatable": "Can you love someone well while you are still carrying your own wounds? What do you do when your ambitions and your family cannot both win? Are you repeating the mistakes you swore you would never make?",
+          "watch_for": [
+            "How does Silco handle the mistakes of the person he cares about?",
+            "What does he want her to let go of, and why?",
+            "What does he say when he thinks he's alone?"
+          ],
+          "start_at": "S1E4",
+          "span": "S1",
+          "situations": [
+            {"id": "becoming_a_parent", "weight": 0.8},
+            {"id": "caring_for_family", "weight": 0.6},
+            {"id": "responsibility_you_didnt_ask_for", "weight": 0.6}
+          ],
+          "conflicts": ["career_vs_relationships", "control_vs_trust"],
+          "emotions": {"start": ["love", "pride", "anxiety"], "middle": ["fear", "dread", "confusion"], "end": ["love", "acceptance"]},
+          "ending_tone": "tragic",
+          "intensity": "heavy",
+          "warnings": ["death_of_main_character", "war_and_violence", "addiction", "abuse", "betrayal"],
+          "example_user_messages": [
+            "I became a parent later than I expected and I love my kid more than anything, but I don't think I know how to love without trying to control.",
+            "My career has always come first and now I'm facing a choice where my child would pay the price.",
+            "I keep telling my kid to stop dwelling on the past, but maybe I'm the one who never let go.",
+            "I'm scared I'm turning into the kind of parent I always judged."
+          ],
+          "spoiler": {
+            "summary": "Silco has raised Powder as Jinx, his enforcer and adopted daughter, urging her to kill off the 'weak' Powder inside her. He forgives her disasters, begs Singed to save her after her fight with Ekko, and faces chem-barons angry about her. When Jayce offers Zaun's independence in exchange for Jinx, Silco stands at Vander's statue and admits he now understands Vander's choice. Jinx overhears, believes he will betray her, and ties him up at her 'tea party'. When he aims a gun at Vi, Jinx shoots him in panic; dying, he tells her he would never have given her up and that she is perfect.",
+            "key_events": [
+              "Has raised Powder as Jinx",
+              "Offered Zaun's independence in exchange for Jinx",
+              "Jinx overhears him and thinks he will betray her",
+              "Accidentally shot by Jinx at the tea party",
+              "Dies telling her she is perfect"
+            ],
+            "got_right": "He truly loves her, and at the end he accepts her wholly instead of asking her to be someone else.",
+            "got_wrong": "He teaches her that feelings are weakness, feeds her rage, and ties her worth to how useful she is to him."
+          }
+        }
+      ]
+    },
+    {
+      "id": "char:arcane/vander",
+      "name": "Vander",
+      "role": "The big-hearted bar owner who keeps the peace in the undercity and is raising four orphaned kids, including the sisters Vi and Powder, as his own.",
+      "relations": [
+        {"target": "char:arcane/vi", "relation": "child"},
+        {"target": "char:arcane/powder", "relation": "child"},
+        {"target": "char:arcane/silco", "relation": "enemy"},
+        {"target": "char:arcane/ekko", "relation": "friend"}
+      ],
+      "arcs": [
+        {
+          "id": "arc:arcane/vander/keeping_the_peace",
+          "title": "Keeping the peace at any cost",
+          "literal_situation": "Vander, a former fighter who once led an uprising against the city above, now keeps an uneasy arrangement with the authorities to hold the undercity together. When his kids' heist brings the law down on everyone, he has to decide what he will sacrifice to protect them.",
+          "pattern_label": "a reformed fighter protecting his family",
+          "pattern_text": "A parent figure with a violent past has chosen peace for the sake of the children they took in, even if it means swallowing their pride and making compromises others see as weakness. When the kids' mistakes bring danger to the door, they must decide how far they will go to protect them, and whether to tell them the truth about their past.",
+          "hook": "At the start of the show, Vander is the respected gentle giant of the undercity, a father to four kids who aren't his by blood, trying to stop them from making the mistakes he made.",
+          "why_relatable": "How do you protect kids who don't want to be protected? When is keeping the peace wisdom, and when is it giving up? How much of your past do you owe the people you are raising?",
+          "watch_for": [
+            "How does Vander respond when the kids think he's a coward?",
+            "What does he tell Vi about her parents, and why now?",
+            "What is he willing to give up for them?"
+          ],
+          "start_at": "S1E1",
+          "span": "S1-S2",
+          "situations": [
+            {"id": "caring_for_family", "weight": 0.9},
+            {"id": "redemption_after_mistakes", "weight": 0.7},
+            {"id": "becoming_a_parent", "weight": 0.6},
+            {"id": "responsibility_you_didnt_ask_for", "weight": 0.5}
+          ],
+          "conflicts": ["truth_vs_protecting_others", "safety_vs_growth"],
+          "emotions": {"start": ["guilt", "love", "anxiety"], "middle": ["fear", "determination"], "end": ["love", "acceptance"]},
+          "ending_tone": "tragic",
+          "intensity": "heavy",
+          "warnings": ["death_of_main_character", "war_and_violence", "child_endangerment", "medical_trauma", "torture", "grief"],
+          "example_user_messages": [
+            "I did things I'm not proud of when I was younger and now I'm trying to raise kids who won't end up like me.",
+            "My teenager thinks I'm weak because I don't fight back, but they don't know what fighting cost me.",
+            "I took in my late friends' kids and I'm terrified of failing them.",
+            "I've never told my kids the whole truth about what happened to their parents and I don't know if I should."
+          ],
+          "spoiler": {
+            "summary": "Vander tells Vi that he led the uprising in which her parents died. When the enforcers demand a culprit, he locks Vi away and surrenders himself; Silco abducts him. During the rescue Powder's bomb goes off; stabbed by Silco, Vander takes Shimmer to save Vi and dies after telling her to protect Powder. Singed takes his body and turns him into the beast Warwick. In season 2 flashes of memory return when he sees Jinx; the sisters find him, he remembers Vi, Viktor begins restoring him, and he protects Jinx ('Don't touch my daughter!'). Singed's serum makes him feral again, Isha dies stopping him, Singed and Viktor erase what remains of Vander, and in the final battle Jinx blows him up to save Vi.",
+            "key_events": [
+              "Confesses he led the uprising that killed Vi's parents",
+              "Surrenders himself in Vi's place",
+              "Dies saving Vi after taking Shimmer",
+              "Turned into Warwick by Singed",
+              "Briefly remembers his daughters",
+              "Destroyed by Jinx in the final battle"
+            ],
+            "got_right": "He turns his remorse into real, lifelong care for his children and sacrifices himself for them.",
+            "got_wrong": "His secrets and insistence on appeasement leave his children without the truth or the tools they need."
+          }
+        }
+      ]
+    },
+    {
+      "id": "char:arcane/ekko",
+      "name": "Ekko",
+      "role": "A quick, cheeky undercity kid who works at a local shop, idolises Vi and is Powder's best friend.",
+      "relations": [
+        {"target": "char:arcane/vi", "relation": "friend"},
+        {"target": "char:arcane/powder", "relation": "friend"},
+        {"target": "char:arcane/vander", "relation": "friend"},
+        {"target": "char:arcane/silco", "relation": "enemy"}
+      ],
+      "arcs": [
+        {
+          "id": "arc:arcane/ekko/growing_up_too_fast",
+          "title": "The kid who has to grow up too fast",
+          "literal_situation": "Ekko is a young boy working for a shopkeeper, eavesdropping on adult business and tagging along after the older kids he looks up to, eager to be part of their crew.",
+          "pattern_label": "a kid forced to carry adult responsibilities",
+          "pattern_text": "A young person who idolised the older people around them is thrown into a world where they have to take care of themselves and others far too early. They become the one others rely on, while carrying grief and broken friendships they never had time to process.",
+          "hook": "At the start of the show, Ekko is a playful, clever kid who worships Vi, loves inventing, and is best friends with Powder.",
+          "why_relatable": "What happens to a kid who has to become the grown-up? How do you keep hope alive when you have had to fight for everything? What do you do with the grief you never had time to feel?",
+          "watch_for": [
+            "What does Ekko do with information he isn't supposed to know?",
+            "Who does he look up to, and how does that shape him?",
+            "How does he balance toughness and softness as he grows up?"
+          ],
+          "start_at": "S1E1",
+          "span": "S1-S2",
+          "situations": [
+            {"id": "responsibility_you_didnt_ask_for", "weight": 0.9},
+            {"id": "coming_of_age", "weight": 0.7},
+            {"id": "friendship_ending", "weight": 0.6},
+            {"id": "grief_and_loss", "weight": 0.5}
+          ],
+          "conflicts": ["revenge_vs_forgiveness", "duty_vs_desire"],
+          "emotions": {"start": ["joy", "curiosity"], "middle": ["grief", "loneliness", "determination"], "end": ["hope", "love"]},
+          "ending_tone": "bittersweet",
+          "intensity": "heavy",
+          "warnings": ["death_of_loved_one", "war_and_violence", "child_endangerment", "addiction", "grief"],
+          "example_user_messages": [
+            "I had to become an adult way too early after my family fell apart, and I don't really know how to ask for help.",
+            "Everyone in my friend group depends on me to hold things together and I'm tired.",
+            "My childhood best friend and I ended up on totally different paths and now we can barely look at each other.",
+            "I lost the people I looked up to when I was young and I've been trying to live up to them ever since."
+          ],
+          "spoiler": {
+            "summary": "Ekko sees Deckard, on Silco's orders, kill Benzo, his guardian, and tells Vi where Vander has been taken. After the cannery explosion he believes Vi is dead and loses Powder to Silco. Seven years later he leads the Firelights, a hidden resistance of undercity youths sabotaging Shimmer shipments from a haven around the last great tree. He reunites with Vi, fights Jinx on the bridge and almost kills her but cannot finish it. In season 2 he works with Heimerdinger, is thrown into another world through the Hexgate anomaly, returns to stop Jinx's suicide attempt, and rallies the undercity to defend Piltover, overloading his time device against Viktor.",
+            "key_events": [
+              "Witnesses Benzo's murder",
+              "Believes Vi died and loses Powder to Silco",
+              "Leads the Firelights",
+              "Fights Jinx on the bridge",
+              "Stops Jinx's suicide attempt",
+              "Uses the Z-Drive against Viktor"
+            ],
+            "got_right": "He turns his grief into protecting others and keeps the door open to the friend he lost.",
+            "got_wrong": "He bottles everything up and carries the weight alone, letting old hurt keep him from reaching out sooner."
+          }
+        },
+        {
+          "id": "arc:arcane/ekko/the_life_he_could_have_had",
+          "title": "Tempted by the life he always wished for",
+          "literal_situation": "Later in the series, after a turning point that throws him far from everything he knows, Ekko finds himself in a gentler life than any he has had, one that offers the peace and connection he has always been denied, while the people he left behind still need him.",
+          "pattern_label": "choosing duty over a comfortable escape",
+          "pattern_text": "Someone who has carried heavy responsibility for years is offered an escape into a life that has everything they wished for: safety, belonging, even love. Staying would be easy and arguably deserved, but leaving means going back to people who depend on them. They have to decide what they owe themselves versus what they owe others.",
+          "hook": "Later in the series, after a turning point that throws him far from everything he knows, Ekko gets a taste of the carefree life he never had, and has to reckon with what it would mean to keep it.",
+          "why_relatable": "Is it selfish to choose your own happiness when others still need you? How do you let yourself enjoy peace when it might not last? What does it mean to love a place that keeps hurting you?",
+          "watch_for": [
+            "What does Ekko allow himself to enjoy, and what does he hold back from?",
+            "What makes this life so tempting to him?",
+            "How does he weigh what he's been given against what he left behind?"
+          ],
+          "start_at": "S2E7",
+          "span": "S2",
+          "situations": [
+            {"id": "responsibility_you_didnt_ask_for", "weight": 0.8},
+            {"id": "moving_somewhere_new", "weight": 0.5},
+            {"id": "falling_for_someone_unexpected", "weight": 0.5},
+            {"id": "starting_over", "weight": 0.4}
+          ],
+          "conflicts": ["duty_vs_desire", "holding_on_vs_letting_go"],
+          "emotions": {"start": ["confusion", "longing"], "middle": ["joy", "love", "belonging"], "end": ["grief", "determination", "hope"]},
+          "ending_tone": "bittersweet",
+          "intensity": "moderate",
+          "warnings": ["death_of_loved_one", "war_and_violence", "grief"],
+          "example_user_messages": [
+            "I got offered a job abroad where life would be so much easier, but my family back home really depends on me.",
+            "For the first time in years I feel happy and safe, and I feel guilty about it because the people I left are still struggling.",
+            "I met someone who makes me feel like I could have a normal life, but I don't know if I get to have that.",
+            "Part of me wants to run away from everything and never come back."
+          ],
+          "spoiler": {
+            "summary": "Pulled into an alternate world through the Hexgate anomaly, Ekko finds Piltover and Zaun at peace, with Vander, Benzo and Silco alive and reconciled, and Powder a brilliant inventor who never became Jinx (in this world Vi died in the childhood heist). He and Powder fall in love and, with Heimerdinger, build the Z-Drive, but he chooses to return home to help his people. Back in his own world he finds Jinx about to blow herself up in the Last Drop, stops her, tells her what he saw, and together they rally the undercity to join the final battle.",
+            "key_events": [
+              "Alternate world where Powder never became Jinx",
+              "Vander, Benzo and Silco alive there; Vi died in the heist",
+              "Romance with alternate Powder",
+              "Chooses to return home",
+              "Stops Jinx's suicide attempt"
+            ],
+            "got_right": "He lets himself feel joy and love, then honours his responsibilities without resenting the people who need him.",
+            "got_wrong": "He struggles to accept that he deserves happiness too, treating his own needs as something to sacrifice."
+          }
+        }
+      ]
+    }
+  ]
+}

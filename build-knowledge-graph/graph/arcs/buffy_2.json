@@ -1,0 +1,674 @@
+{
+  "show": "buffy",
+  "characters": [
+    {
+      "id": "char:buffy/cordelia_chase",
+      "name": "Cordelia Chase",
+      "role": "The rich, sharp-tongued queen bee of Sunnydale High who rules the popular crowd and looks down on everyone else.",
+      "relations": [
+        {"target": "char:buffy/buffy_summers", "relation": "rival"},
+        {"target": "char:buffy/alexander_harris", "relation": "ex_partner"},
+        {"target": "char:buffy/willow_rosenberg", "relation": "friend"},
+        {"target": "char:buffy/rupert_giles", "relation": "friend"},
+        {"target": "char:buffy/angel", "relation": "boss"},
+        {"target": "char:buffy/wesley_wyndam_pryce", "relation": "colleague"},
+        {"target": "char:buffy/winifred_burkle", "relation": "friend"},
+        {"target": "char:buffy/anya_jenkins", "relation": "friend"}
+      ],
+      "arcs": [
+        {
+          "id": "arc:buffy/cordelia_chase/popularity_or_real_friends",
+          "title": "The queen bee who starts to care",
+          "literal_situation": "Cordelia is the most popular girl at school, mocks the 'losers', and keeps getting dragged into the dangerous secret world of the new girl and her misfit friends.",
+          "pattern_label": "choosing real friends over social status",
+          "pattern_text": "Someone whose identity is built on being admired by the right crowd finds herself drawn to people her circle considers beneath her. Every step toward them costs her standing, and she has to decide whether being liked is worth more than being known. Her bluntness, once a weapon, slowly becomes a kind of honesty.",
+          "hook": "She is at the top of the social ladder, sure of her worth, and irritated that the new girl won't play by her rules.",
+          "why_relatable": "What happens when the people who make you feel important aren't the people who actually show up for you? Can you keep your sharp edges and still let people in? How much humiliation are you willing to risk for something real?",
+          "watch_for": [
+            "What does she do when her old friends make her choose between them and the misfits?",
+            "Notice when her bluntness hurts people and when it is the only honest voice in the room.",
+            "How does she react when her own life stops going to plan?"
+          ],
+          "start_at": "BtVS S1E1",
+          "span": "BtVS S1-S3",
+          "situations": [
+            {"id": "finding_your_people", "weight": 0.9},
+            {"id": "coming_of_age", "weight": 0.7},
+            {"id": "identity_and_self_acceptance", "weight": 0.6},
+            {"id": "breakup", "weight": 0.5}
+          ],
+          "conflicts": ["fitting_in_vs_standing_out", "belonging_vs_integrity"],
+          "emotions": {"start": ["pride", "boredom"], "middle": ["love", "rejection", "betrayal"], "end": ["self_respect", "determination"]},
+          "ending_tone": "bittersweet",
+          "intensity": "moderate",
+          "warnings": ["betrayal", "war_and_violence"],
+          "example_user_messages": [
+            "I've always been part of the popular group but lately I actually like hanging out with people they make fun of.",
+            "My friends dumped me when they found out who I'm dating and I caved. Now I regret it.",
+            "Everyone thinks I'm shallow and mean because I say exactly what I think.",
+            "I gave up my whole social circle for someone and then he cheated on me.",
+            "My family suddenly lost all its money and I'm too proud to admit it to anyone."
+          ],
+          "spoiler": {
+            "summary": "Cordelia goes from mocking Buffy's circle to reluctantly joining it after being saved repeatedly. She secretly dates Xander, dumps him under peer pressure, then gives up her popularity to be with him openly. When she catches Xander kissing Willow she is badly injured and breaks up with him, is rejected by her old clique, and in her anger makes the wish that creates a nightmare world without Buffy. In senior year her father is arrested for tax fraud and her family goes bankrupt; she secretly works in a dress shop, and she graduates having lost her money, her boyfriend and her college plans but with a new courage and real friends.",
+            "key_events": [
+              "Learns the truth about Sunnydale and becomes a reluctant ally",
+              "Kisses Xander and dates him in secret",
+              "Dumps him on Valentine's Day under peer pressure, then chooses him over popularity",
+              "Catches Xander and Willow kissing and is impaled on rebar",
+              "Shunned by her old clique; her wish creates an alternate reality",
+              "Family bankrupted by her father's tax fraud; can't afford college",
+              "Brief awkward romance with Wesley; fights at graduation"
+            ],
+            "got_right": "She chose loyalty to people who deserved it over a status that was hollow, and her honesty became a strength.",
+            "got_wrong": "She let peer pressure and pride drive her choices, lashed out at others when she was hurt, and hid her struggles instead of asking for help."
+          }
+        },
+        {
+          "id": "arc:buffy/cordelia_chase/from_fame_to_calling",
+          "title": "Broke in the big city, looking for her break",
+          "literal_situation": "Cordelia has moved to Los Angeles to become an actress, but she is penniless, lives in a dilapidated apartment, and pretends to be successful while stealing food at parties. A chance reunion with someone from her past turns into a job helping run a small detective agency.",
+          "pattern_label": "a fallen star finding a calling in service",
+          "pattern_text": "A young woman who grew up with money and expected fame starts over with nothing in a big city, bluffing that she's doing fine. A job she took purely to pay the rent begins to show her other people's pain up close, and it changes what she wants from life. The work becomes a calling, but it also starts to cost her physically, and she hides how much.",
+          "hook": "She's broke, alone, too proud to admit it, and taking a job she thinks is temporary until her acting career takes off.",
+          "why_relatable": "What do you do when the life you assumed you'd have never arrives? Can a job you fell into become more meaningful than the dream you came for? What do you do when something you care about starts to cost you?",
+          "watch_for": [
+            "How does she treat the work when she thinks it's just a paycheck?",
+            "Notice how her attitude toward strangers in trouble shifts over time.",
+            "What does she refuse to give up, even when it would make her life easier?"
+          ],
+          "start_at": "Angel S1E1",
+          "span": "Angel S1-S3",
+          "situations": [
+            {"id": "starting_over", "weight": 0.9},
+            {"id": "career_change", "weight": 0.8},
+            {"id": "responsibility_you_didnt_ask_for", "weight": 0.7},
+            {"id": "illness_or_injury", "weight": 0.5}
+          ],
+          "conflicts": ["duty_vs_desire", "career_vs_relationships"],
+          "emotions": {"start": ["shame", "loneliness", "pride"], "middle": ["grief", "determination", "fear"], "end": ["self_respect", "love", "acceptance"]},
+          "ending_tone": "bittersweet",
+          "intensity": "heavy",
+          "warnings": ["death_of_loved_one", "grief", "serious_illness", "medical_trauma", "war_and_violence"],
+          "example_user_messages": [
+            "I moved to a new city to follow a dream and I'm basically broke but I keep telling everyone it's going great.",
+            "I took a job just to pay the bills and somehow it matters more to me than what I came here for.",
+            "My work is wrecking my health but I can't imagine giving it up, it's who I am now.",
+            "I grew up with money and now I have none and I'm too proud to ask my family for anything.",
+            "I used to only care about myself and now I feel everyone else's pain and it's overwhelming."
+          ],
+          "spoiler": {
+            "summary": "Cordelia's romance with Doyle ends with his sacrificial death, and his parting kiss passes his visions to her. The visions make her feel the suffering of victims, stripping away her selfishness and making her the team's heart, but they are slowly destroying her brain and she hides the scans and painkillers. She refuses to give the visions away in Pylea, and on her 21st birthday she rejects a timeline where she is a famous TV star, choosing to become part-demon to keep her calling. She falls in love with Angel, but on her way to tell him she ascends to a higher plane. Later she returns amnesiac, is possessed by the rogue power Jasmine, falls into a coma, and finally appears to Angel one last time to set him back on his path before dying.",
+            "key_events": [
+              "Doyle dies and passes her the visions with a kiss",
+              "Visions secretly damage her brain; she hides the medical tests",
+              "Refuses to give up the visions: 'they're part of who I am'",
+              "Rejects a timeline where she is a famous actress; becomes part-demon",
+              "Falls for Angel; relationship with Groo",
+              "Ascends to a higher plane before she can confess her love",
+              "Possessed by Jasmine, left in a coma",
+              "Final goodbye kiss with Angel; dies in her coma"
+            ],
+            "got_right": "She found meaning in helping others and chose purpose over fame, owning her calling as part of her identity.",
+            "got_wrong": "She hid her suffering from the people who loved her, and kept putting her own feelings on hold until the chance to act on them was gone."
+          }
+        }
+      ]
+    },
+    {
+      "id": "char:buffy/faith_lehane",
+      "name": "Faith Lehane",
+      "role": "A tough, wild second Slayer from Boston who arrives in Sunnydale with no family, a dead Watcher behind her, and a live-for-the-moment attitude.",
+      "relations": [
+        {"target": "char:buffy/buffy_summers", "relation": "rival"},
+        {"target": "char:buffy/angel", "relation": "mentor"},
+        {"target": "char:buffy/wesley_wyndam_pryce", "relation": "mentor"},
+        {"target": "char:buffy/rupert_giles", "relation": "mentor"},
+        {"target": "char:buffy/willow_rosenberg", "relation": "enemy"},
+        {"target": "char:buffy/winifred_burkle", "relation": "friend"}
+      ],
+      "arcs": [
+        {
+          "id": "arc:buffy/faith_lehane/looking_for_a_family",
+          "title": "The outsider who wants to belong",
+          "literal_situation": "Faith, a newly called Slayer whose Watcher was just murdered, arrives in Sunnydale and tries to fit into Buffy's life, with her close friends, loving mother and trusted Watcher.",
+          "pattern_label": "an abandoned person seeking a family at any cost",
+          "pattern_text": "Someone raised by neglectful parents walks into a world where another person has everything she never had: a loving home, loyal friends, a mentor who believes in them. She acts like she doesn't care, but every small exclusion confirms that she'll always be second choice. The hunger for someone to claim her makes her dangerously easy to recruit by whoever offers acceptance first.",
+          "hook": "She's cocky, fun and fearless on the surface, fleeing something she won't talk about, and quietly comparing herself to someone who seems to have it all.",
+          "why_relatable": "What do you do with the envy of someone who got the life you didn't? How do you tell the difference between people who care about you and people who just need you? Can you trust anyone when everyone has let you down before?",
+          "watch_for": [
+            "Notice the small moments where she's left out, and how she covers the hurt.",
+            "How does she react when she makes a mistake she can't undo?",
+            "Who offers her approval, and what do they ask in return?"
+          ],
+          "start_at": "BtVS S3E3",
+          "span": "BtVS S3",
+          "situations": [
+            {"id": "difficult_parent", "weight": 0.8},
+            {"id": "loneliness", "weight": 0.8},
+            {"id": "finding_your_people", "weight": 0.7},
+            {"id": "confidence_struggle", "weight": 0.5}
+          ],
+          "conflicts": ["belonging_vs_integrity", "independence_vs_connection"],
+          "emotions": {"start": ["loneliness", "envy", "fear"], "middle": ["guilt", "anger", "resentment"], "end": ["betrayal", "belonging", "rejection"]},
+          "ending_tone": "tragic",
+          "intensity": "heavy",
+          "warnings": ["abuse", "betrayal", "war_and_violence", "sexual_violence", "death_of_loved_one"],
+          "example_user_messages": [
+            "My parents were a mess and I never had a real home. Now I'm around people with perfect families and I hate how jealous I am.",
+            "I act like nothing gets to me but I always feel like the backup option.",
+            "I did something really bad by accident and I can't admit it, so I'm pushing everyone away instead.",
+            "The only person who makes me feel wanted is someone my friends say is bad news.",
+            "I keep ending up with people who use me because I want someone to be there for me so badly."
+          ],
+          "spoiler": {
+            "summary": "Faith defeats Kakistos, the vampire who killed her Watcher, with Buffy's help, but feels excluded by the Scooby Gang and is betrayed by a fake Watcher, Gwendolyn Post. During a reckless night of slaying she accidentally kills the deputy mayor, denies it, tries to frame Buffy, and nearly assaults Xander. After Wesley's heavy-handed Council arrest wrecks Angel's attempt to reach her, she defects to Mayor Wilkins, who becomes the loving father she never had. She works as a double agent, kills for him, and poisons Angel; Buffy stabs her with the Mayor's knife and she falls into a coma.",
+            "key_events": [
+              "Kills Kakistos with Buffy's help",
+              "Manipulated by the false Watcher Gwendolyn Post",
+              "Accidentally kills Deputy Mayor Allan Finch",
+              "Blames Buffy; nearly strangles Xander",
+              "Defects to the Mayor, who treats her like a daughter",
+              "Poisons Angel with an arrow",
+              "Stabbed by Buffy and left in a coma"
+            ],
+            "got_right": "She was capable, brave and hungry for connection, and her longing for family was real and human.",
+            "got_wrong": "She hid guilt behind bravado, turned envy into sabotage, and gave her loyalty to whoever made her feel wanted rather than whoever deserved it."
+          }
+        },
+        {
+          "id": "arc:buffy/faith_lehane/facing_what_she_did",
+          "title": "Out of time and full of rage",
+          "literal_situation": "Later in the series, Faith finds that the world has moved on without her. She is furious at Buffy and has nothing left, and she lashes out across Sunnydale and Los Angeles.",
+          "pattern_label": "from self-hatred to taking responsibility",
+          "pattern_text": "A person who has done serious harm keeps acting out, hoping someone will finally punish them the way they believe they deserve. When someone refuses to give up on them, they have to face a harder choice: to stop running and own what they did, and then keep choosing to do better for years. Accountability turns out to be not a single moment but a lifelong practice.",
+          "hook": "She's angry, isolated, and determined to make the people she blames pay, while insisting she doesn't care what anyone thinks of her.",
+          "why_relatable": "Is it possible to come back from the worst thing you've ever done? What does it take to stop punishing yourself and start making amends? Can you lead or help others when you still don't trust yourself?",
+          "watch_for": [
+            "What is she really asking for when she provokes people?",
+            "Notice how she treats people who are where she used to be.",
+            "How does she handle it when the people she hurt don't forgive her on her timeline?"
+          ],
+          "start_at": "BtVS S4E15",
+          "span": "BtVS S4 – BtVS S7",
+          "situations": [
+            {"id": "redemption_after_mistakes", "weight": 1.0},
+            {"id": "identity_and_self_acceptance", "weight": 0.7},
+            {"id": "mentor_and_protege", "weight": 0.5},
+            {"id": "leading_former_peers", "weight": 0.4}
+          ],
+          "conflicts": ["revenge_vs_forgiveness", "past_vs_future"],
+          "emotions": {"start": ["anger", "resentment", "shame"], "middle": ["guilt", "grief", "self_doubt"], "end": ["self_respect", "acceptance", "belonging"]},
+          "ending_tone": "hopeful",
+          "intensity": "heavy",
+          "warnings": ["torture", "self_harm_or_suicide", "war_and_violence", "betrayal", "addiction", "grief"],
+          "example_user_messages": [
+            "I hurt people really badly and part of me wants someone to just punish me and get it over with.",
+            "I keep blowing up my life because I think I don't deserve anything good.",
+            "I finally owned up to what I did and accepted the consequences, but I don't know how to be a good person now.",
+            "People put me in charge and I'm terrified I'll screw it up like I screwed up everything else.",
+            "Someone I wronged still doesn't trust me and I have to live with that."
+          ],
+          "spoiler": {
+            "summary": "Faith wakes from her coma, learns the Mayor is dead, and uses his parting gift to swap bodies with Buffy, sleeping with Riley and tasting a life of love she never had, before being forced back. In Los Angeles she tortures Wesley as Wolfram & Hart's hired killer, but her real aim is to make Angel kill her; he refuses, and she breaks down begging to die. With Angel's help she turns herself in and serves time in prison. Three years later she breaks out to help recapture Angelus, nearly dies from the Orpheus drug, and is told atonement never ends. She returns to Sunnydale, briefly leads the Potentials into a disastrous trap, makes peace with Buffy, and fights in the final battle. In the comics she becomes a 'Slayer social worker' helping other lost Slayers.",
+            "key_events": [
+              "Wakes from coma; body-swaps with Buffy",
+              "Hired by Wolfram & Hart; tortures Wesley",
+              "Begs Angel to kill her, then breaks down",
+              "Surrenders to police and goes to prison",
+              "Breaks out to help stop Angelus; nearly dies in Orpheus",
+              "Leads the Potentials into a trap; reconciles with Buffy",
+              "Fights in the final battle against the First"
+            ],
+            "got_right": "She stopped running, accepted real consequences, and turned what she learned into helping others on the same edge.",
+            "got_wrong": "She tried to escape her guilt through violence and self-destruction, and she still carries a buried belief that she deserves every bad thing that happens to her."
+          }
+        }
+      ]
+    },
+    {
+      "id": "char:buffy/dawn_summers",
+      "name": "Dawn Summers",
+      "role": "Buffy's bratty 14-year-old little sister, who feels overlooked in a family where her big sister is the center of attention.",
+      "relations": [
+        {"target": "char:buffy/buffy_summers", "relation": "sibling"},
+        {"target": "char:buffy/spike", "relation": "friend"},
+        {"target": "char:buffy/alexander_harris", "relation": "friend"},
+        {"target": "char:buffy/willow_rosenberg", "relation": "friend"},
+        {"target": "char:buffy/rupert_giles", "relation": "mentor"},
+        {"target": "char:buffy/anya_jenkins", "relation": "friend"}
+      ],
+      "arcs": [
+        {
+          "id": "arc:buffy/dawn_summers/am_i_real",
+          "title": "The little sister nobody takes seriously",
+          "literal_situation": "Dawn is a moody teenager who writes in her diary about being treated like a kid, is babysat by her sister's friends, and senses they are all keeping secrets from her.",
+          "pattern_label": "discovering your family story isn't what you thought",
+          "pattern_text": "A teenager senses the adults around her are hiding something about her, and when she finds out the truth about where she came from, her whole sense of self collapses. She has to work out whether she's really part of her family, and who she is if her origin isn't what she believed. Then, before she has steadied herself, she loses a parent.",
+          "hook": "She's the overlooked younger sister, sure that everyone is whispering about her behind her back.",
+          "why_relatable": "What happens to your identity when you learn a family secret about yourself? Does where you came from decide whether you belong? How do you hold yourself together when everything around you is shifting?",
+          "watch_for": [
+            "How do the adults around her decide what she's allowed to know?",
+            "Notice where she goes looking for answers when no one will give them.",
+            "How does her relationship with her sister change under pressure?"
+          ],
+          "start_at": "BtVS S5E2",
+          "span": "BtVS S5",
+          "situations": [
+            {"id": "identity_and_self_acceptance", "weight": 1.0},
+            {"id": "grief_and_loss", "weight": 0.8},
+            {"id": "coming_of_age", "weight": 0.6},
+            {"id": "sibling_rivalry", "weight": 0.4}
+          ],
+          "conflicts": ["truth_vs_protecting_others", "holding_on_vs_letting_go"],
+          "emotions": {"start": ["resentment", "loneliness", "restlessness"], "middle": ["confusion", "grief", "guilt"], "end": ["grief", "love", "acceptance"]},
+          "ending_tone": "tragic",
+          "intensity": "heavy",
+          "warnings": ["self_harm_or_suicide", "death_of_loved_one", "grief", "serious_illness", "child_endangerment", "death_of_main_character"],
+          "example_user_messages": [
+            "I just found out I was adopted and everyone knew except me. I don't know who I am anymore.",
+            "My family keeps having conversations that stop the second I walk in the room.",
+            "I feel like a burden my older sister got stuck with.",
+            "My mom died suddenly and I would do anything, even something crazy, to get her back.",
+            "Everything bad that happens around me feels like it's my fault."
+          ],
+          "spoiler": {
+            "summary": "Dawn is revealed to be the Key, a mystical energy the monks made human and placed in Buffy's family, with everyone's memories rewritten. When she reads Giles's diary and learns the truth, she self-harms and runs away until Buffy convinces her they are real sisters. Their mother Joyce dies of an aneurysm and Dawn tries a resurrection spell, then undoes it at the last second. Blaming herself for the harm the hell-god Glory causes, she is kidnapped to open the dimensional gates; she is ready to jump to her death to close them, but Buffy sacrifices herself instead.",
+            "key_events": [
+              "Revealed to be the Key, made human with false memories",
+              "Learns the truth, cuts herself and runs away",
+              "Buffy tells her they are real sisters",
+              "Joyce dies; Dawn attempts and aborts a resurrection spell",
+              "Kidnapped by Glory for the ritual",
+              "Buffy jumps into the portal to save her and dies"
+            ],
+            "got_right": "She insisted on the truth about herself and was willing to sacrifice herself for others.",
+            "got_wrong": "She turned her pain inward, blamed herself for things beyond her control, and nearly did something dangerous out of grief."
+          }
+        },
+        {
+          "id": "arc:buffy/dawn_summers/earning_her_place",
+          "title": "Everybody's afterthought",
+          "literal_situation": "Later in the series, Dawn is a teenager with no steady adult to lean on, looked after by whoever is around, stealing things, and feeling like everyone is too busy with their own crises to notice her.",
+          "pattern_label": "a neglected teen acting out, then stepping up",
+          "pattern_text": "A teenager who has lost the adults who anchored her acts out with stealing and angry outbursts, because negative attention is still attention. The people raising her are overwhelmed and keep treating her as someone to protect rather than someone who can help. She has to find a way to be seen, and eventually to prove she's more than a responsibility.",
+          "hook": "She's lonely, hurting, and quietly stealing, while the adults around her are too wrapped up in their own struggles to notice.",
+          "why_relatable": "What happens when the people who are supposed to look after you are barely holding it together? How do you ask to be noticed without making things worse? Can you be taken seriously when everyone still sees you as the kid?",
+          "watch_for": [
+            "What is the stealing really about for her?",
+            "Notice how she responds when she's shut out of decisions.",
+            "Does she keep waiting to be included, or does she claim her place?"
+          ],
+          "start_at": "BtVS S6E1",
+          "span": "BtVS S6-S7",
+          "situations": [
+            {"id": "loneliness", "weight": 0.9},
+            {"id": "coming_of_age", "weight": 0.8},
+            {"id": "confidence_struggle", "weight": 0.5},
+            {"id": "grief_and_loss", "weight": 0.5}
+          ],
+          "conflicts": ["independence_vs_connection", "safety_vs_growth"],
+          "emotions": {"start": ["loneliness", "rejection", "resentment"], "middle": ["anger", "shame", "grief"], "end": ["confidence", "belonging", "determination"]},
+          "ending_tone": "hopeful",
+          "intensity": "moderate",
+          "warnings": ["death_of_loved_one", "grief", "addiction", "war_and_violence", "child_endangerment"],
+          "example_user_messages": [
+            "My parents are gone and my older sibling is raising me but she's so depressed she barely sees me.",
+            "I've been shoplifting and I don't even really want the stuff.",
+            "Everyone treats me like I'm twelve even though I can handle way more than they think.",
+            "I want to help my family but they keep sending me away to keep me safe.",
+            "I'm tired of being the one everyone has to protect."
+          ],
+          "spoiler": {
+            "summary": "After Buffy is brought back, Dawn feels abandoned while Buffy is numb and depressed. Her kleptomania escalates; she is injured in a car crash caused by Willow's magic addiction, and her unspoken wish for people to stay traps everyone in the house until her stolen stash and loneliness come out. She finds Tara's body, sees Willow turn murderous, and then proves herself fighting beside Buffy, who promises to show her the world. In the final season she becomes a capable researcher, learns she is not a Potential, is told by Xander she is extraordinary, orders Buffy out of the house during the mutiny, and refuses to be sent away, fighting in the final battle.",
+            "key_events": [
+              "Kleptomania escalates after Buffy's return",
+              "Broken arm in a crash caused by Willow's magic abuse",
+              "Accidental wish traps the gang in the house; stolen items exposed",
+              "Finds Tara's body",
+              "Fights beside Buffy and earns her trust",
+              "Discovers she isn't a Potential; Xander's 'extraordinary' speech",
+              "Tasers Xander to return and fight in the final battle"
+            ],
+            "got_right": "She eventually said out loud that she felt abandoned and stood up to prove what she could do.",
+            "got_wrong": "She acted out through stealing and anger rather than asking for help, and sometimes lashed out at the people who were also struggling."
+          }
+        }
+      ]
+    },
+    {
+      "id": "char:buffy/wesley_wyndam_pryce",
+      "name": "Wesley Wyndam-Pryce",
+      "role": "A stuffy, by-the-book young Watcher sent from England to serve as Buffy and Faith's Watcher, with plenty of book knowledge and little real-world experience.",
+      "relations": [
+        {"target": "char:buffy/buffy_summers", "relation": "protege"},
+        {"target": "char:buffy/faith_lehane", "relation": "protege"},
+        {"target": "char:buffy/rupert_giles", "relation": "rival"},
+        {"target": "char:buffy/cordelia_chase", "relation": "friend"},
+        {"target": "char:buffy/angel", "relation": "friend"},
+        {"target": "char:buffy/winifred_burkle", "relation": "partner"},
+        {"target": "char:buffy/spike", "relation": "colleague"}
+      ],
+      "arcs": [
+        {
+          "id": "arc:buffy/wesley_wyndam_pryce/never_good_enough",
+          "title": "The failed Watcher who has to start over",
+          "literal_situation": "Wesley arrives in Sunnydale as the Council's replacement Watcher, sure of his training, but he freezes in fights and is ignored by the Slayers he is supposed to lead and by the older Watcher who still has their trust.",
+          "pattern_label": "from failed high achiever to earned leader",
+          "pattern_text": "A rule-following high achiever, raised by a father who was never impressed, walks into his first real job convinced that credentials equal competence, and falls flat. After being publicly let go, he has to rebuild from nothing among people who don't take him seriously. Slowly, by showing up and taking risks, he earns the respect he could never demand, and even ends up in charge.",
+          "hook": "He's pompous, nervous, clinging to the rulebook, and desperate for the respect his position is supposed to give him.",
+          "why_relatable": "What do you do when your qualifications don't make you good at the job? Can you stop measuring yourself by a parent's disappointment? How do you lead people who remember you at your worst?",
+          "watch_for": [
+            "Notice how he behaves when no one is listening to him.",
+            "What does he do when the role he trained for doesn't turn out the way he imagined?",
+            "Who does he measure himself against, and why?"
+          ],
+          "start_at": "BtVS S3E14",
+          "span": "BtVS S3 – Angel S2",
+          "situations": [
+            {"id": "imposter_syndrome", "weight": 0.9},
+            {"id": "losing_a_job", "weight": 0.7},
+            {"id": "difficult_parent", "weight": 0.7},
+            {"id": "becoming_a_manager", "weight": 0.6}
+          ],
+          "conflicts": ["self_vs_family_expectations", "perfectionism_vs_good_enough"],
+          "emotions": {"start": ["pride", "inadequacy", "anxiety"], "middle": ["shame", "self_doubt", "determination"], "end": ["confidence", "self_respect", "belonging"]},
+          "ending_tone": "hopeful",
+          "intensity": "moderate",
+          "warnings": ["war_and_violence"],
+          "example_user_messages": [
+            "I had the best grades and credentials but I'm terrible at my actual job and everyone can tell.",
+            "I got fired from the career I trained for my whole life and I'm too embarrassed to tell anyone.",
+            "My dad has never once said he was proud of me, even when I got promoted.",
+            "I ended up managing the team, and my old boss just came back and everyone still looks to him.",
+            "I keep acting more confident than I feel and it makes people like me even less."
+          ],
+          "spoiler": {
+            "summary": "Wesley's Council-minded choices, especially calling in the special ops team on Faith, alienate everyone, and after Buffy breaks with the Council he is fired. Reinventing himself as a 'rogue demon hunter', he joins Angel Investigations, grows braver and more loyal, turns down reinstatement to protect Faith, and becomes team leader when Angel fires everyone. His father still only expects failure. When Angel returns, Wesley stays in charge and makes ruthless, effective calls in the Pylean rebellion. Years later a cyborg posing as his father threatens Fred and Wesley shoots it.",
+            "key_events": [
+              "Arrives as Buffy and Faith's new Watcher and is ignored",
+              "Calls in the Council's team on Faith, driving her to the Mayor",
+              "Fired by the Watchers Council",
+              "Joins Angel Investigations as a 'rogue demon hunter'",
+              "Chooses Angel and Faith over reinstatement to the Council",
+              "Becomes leader of the team; shot protecting Gunn",
+              "Father remains dismissive; commands the rebellion in Pylea"
+            ],
+            "got_right": "He kept showing up after humiliation, admitted his failures, and grew into real courage and leadership.",
+            "got_wrong": "He hid behind rules and rank at first, tried to control people rather than earn their trust, and kept seeking approval from a father who would never give it."
+          }
+        },
+        {
+          "id": "arc:buffy/wesley_wyndam_pryce/the_hard_call_alone",
+          "title": "The man who carries the hard decisions",
+          "literal_situation": "Later in the series, Wesley has become a respected, capable member of a small team in Los Angeles, quietly attracted to a newer colleague, while his close friend is drawn to her too.",
+          "pattern_label": "deciding alone and losing everyone",
+          "pattern_text": "A man who has finally earned his place among friends faces an agonising decision and, trusting no one, makes it alone. The fallout costs him the people he loves, and he hardens into someone colder and more isolated. He has to find out whether he can come back from what he became, and what's left of him when the person he held on to is gone.",
+          "hook": "He's valued, competent, and hopelessly awkward with the woman he likes, just as a rival for her attention appears in his closest friend.",
+          "why_relatable": "What do you do when you believe you're the only one who sees the danger? Is making the hard call alone strength or arrogance? How do you live with love that isn't returned, or a mistake that can't be undone?",
+          "watch_for": [
+            "Notice who he confides in when he's frightened, and who he doesn't.",
+            "How does he treat the people who once shut him out?",
+            "What does he hold on to when things fall apart?"
+          ],
+          "start_at": "Angel S3E1",
+          "span": "Angel S3-S5",
+          "situations": [
+            {"id": "unrequited_love", "weight": 0.7},
+            {"id": "friendship_ending", "weight": 0.8},
+            {"id": "redemption_after_mistakes", "weight": 0.7},
+            {"id": "grief_and_loss", "weight": 0.8}
+          ],
+          "conflicts": ["control_vs_trust", "truth_vs_protecting_others"],
+          "emotions": {"start": ["longing", "anxiety", "dread"], "middle": ["betrayal", "loneliness", "numbness"], "end": ["grief", "love", "acceptance"]},
+          "ending_tone": "tragic",
+          "intensity": "heavy",
+          "warnings": ["betrayal", "child_endangerment", "death_of_loved_one", "death_of_main_character", "grief", "addiction", "graphic_gore", "war_and_violence"],
+          "example_user_messages": [
+            "I made a huge decision without telling anyone because I thought I knew best, and now my friends won't speak to me.",
+            "I've been in love with a coworker for ages and she's dating my best friend.",
+            "Since everything blew up I've become colder and harder, and I don't like who I am now.",
+            "The person I loved died and I don't know what I'm living for anymore.",
+            "People tell me I'm forgiven but I can't go back to how things were."
+          ],
+          "spoiler": {
+            "summary": "Fred chooses Gunn, and Wesley watches from the sidelines. Believing a (fake) prophecy that Angel will kill his newborn son Connor, Wesley secretly takes the baby, has his throat cut by Justine, and loses Connor to Holtz in a hell dimension. Angel tries to smother him and he is exiled, drifting into a cold affair with Lilah and leading mercenaries. He rescues Angel from the ocean floor and slowly returns to the team, though his memories of the betrayal are later wiped. At Wolfram & Hart he finally gets together with Fred, only for her to die in his arms as the Old One Illyria hollows her out. He stabs Gunn, kills Knox, drinks, clings to Illyria, and dies in the final battle while Illyria takes Fred's form to comfort him.",
+            "key_events": [
+              "Fred chooses Gunn",
+              "Kidnaps baby Connor based on a fake prophecy; throat cut",
+              "Angel tries to kill him; exiled from the team",
+              "Affair with Lilah; beheads her body after Angelus kills her",
+              "Rescues Angel from the ocean; slowly returns",
+              "Shoots a replica of his father to save Fred",
+              "Finally with Fred; she dies in his arms",
+              "Dies fighting Vail; Illyria appears as Fred for his last moments"
+            ],
+            "got_right": "He was willing to act when others wouldn't, stayed loyal in deeds even while estranged, and loved deeply.",
+            "got_wrong": "He trusted no one with his fears, chose secrecy over friendship, and let grief turn him cold and self-destructive."
+          }
+        }
+      ]
+    },
+    {
+      "id": "char:buffy/anya_jenkins",
+      "name": "Anya Jenkins",
+      "role": "A thousand-year-old vengeance demon who punishes unfaithful men, until she is stripped of her powers and stuck living as an ordinary high school girl.",
+      "relations": [
+        {"target": "char:buffy/alexander_harris", "relation": "ex_partner"},
+        {"target": "char:buffy/rupert_giles", "relation": "boss"},
+        {"target": "char:buffy/willow_rosenberg", "relation": "rival"},
+        {"target": "char:buffy/spike", "relation": "friend"},
+        {"target": "char:buffy/buffy_summers", "relation": "friend"},
+        {"target": "char:buffy/dawn_summers", "relation": "friend"},
+        {"target": "char:buffy/cordelia_chase", "relation": "friend"}
+      ],
+      "arcs": [
+        {
+          "id": "arc:buffy/anya_jenkins/learning_to_be_human",
+          "title": "Stripped of power, learning to be human",
+          "literal_situation": "Anyanka, a vengeance demon, has lost her powers after granting a wish in Sunnydale and is stuck as a mortal teenager, bitter about men and bewildered by human customs.",
+          "pattern_label": "rebuilding a life after losing your identity",
+          "pattern_text": "Someone who spent a very long time defined by one role, and by a grudge, suddenly loses it and has to live an ordinary life she has no idea how to navigate. Blunt, socially awkward and new to vulnerability, she falls in love, finds a job she's good at, and slowly earns a place in a group that doesn't quite trust her. Having built her new self around one relationship, she has to face what happens when it wobbles.",
+          "hook": "She's lost the power and purpose she had for centuries, is furious about it, and has absolutely no idea how normal people behave.",
+          "why_relatable": "Who are you when the role you had for years is suddenly gone? Can you let yourself love someone when you've spent your life expecting betrayal? How do you fit into a group when you always say the wrong thing?",
+          "watch_for": [
+            "Notice how she handles feelings she doesn't have words for yet.",
+            "How do the others react to her bluntness, and does she change for them?",
+            "How much of her new identity rests on one person?"
+          ],
+          "start_at": "BtVS S3E9",
+          "span": "BtVS S3-S6",
+          "situations": [
+            {"id": "starting_over", "weight": 0.8},
+            {"id": "identity_and_self_acceptance", "weight": 0.8},
+            {"id": "falling_for_someone_unexpected", "weight": 0.8},
+            {"id": "finding_your_people", "weight": 0.6}
+          ],
+          "conflicts": ["fitting_in_vs_standing_out", "independence_vs_connection"],
+          "emotions": {"start": ["anger", "resentment", "confusion"], "middle": ["love", "anxiety", "belonging"], "end": ["rejection", "betrayal", "grief"]},
+          "ending_tone": "tragic",
+          "intensity": "moderate",
+          "warnings": ["betrayal", "war_and_violence"],
+          "example_user_messages": [
+            "I spent years defined by one job and now that it's gone I have no idea who I am.",
+            "I always say the wrong thing and people in my new friend group don't really trust me.",
+            "I swore off relationships after being cheated on, and now I've fallen hard for someone.",
+            "I'm scared of getting old and dying and nobody seems to take it seriously.",
+            "My whole new life is built around my partner and I'm terrified he doesn't want it as much as I do."
+          ],
+          "spoiler": {
+            "summary": "After her amulet is destroyed, Anya tries and fails to regain her powers, then asks Xander to the prom and falls for him. She flees town before graduation but returns, seduces Xander, and they become a couple. She becomes an accepted if tactless member of the gang, finds she loves money and runs the Magic Box, confronts her mortality after Joyce's death, and makes peace with Willow. Xander proposes before the battle with Glory. On their wedding day Xander, shaken by a vision of their future and his fear of becoming his parents, leaves her at the altar.",
+            "key_events": [
+              "Loses her powers and is stuck as a human",
+              "Asks Xander to the prom; falls for him",
+              "Flees before graduation, then returns and dates Xander",
+              "Becomes a Magic Box employee with a gift for business",
+              "Breaks down over not understanding Joyce's death",
+              "Engaged to Xander",
+              "Xander leaves her at the altar"
+            ],
+            "got_right": "She threw herself into a human life, loved openly and honestly, and grew in empathy.",
+            "got_wrong": "She tied her whole identity to one relationship and ignored the signs that her partner wasn't ready."
+          }
+        },
+        {
+          "id": "arc:buffy/anya_jenkins/owning_her_life",
+          "title": "Starting over after a public heartbreak",
+          "literal_situation": "Later in the series, after a painful, very public heartbreak, Anya is offered her old life back and has to decide who she wants to be on her own.",
+          "pattern_label": "finding yourself after being left behind",
+          "pattern_text": "After a public, devastating rejection, a woman slides back into the old identity she once took pride in, the angry, punishing version of herself. But she has changed, and the old role now fills her with guilt instead of satisfaction. She has to face that she has always defined herself through someone else, whether a boss, a partner or a group, and figure out who she is on her own.",
+          "hook": "She's hurt and humiliated, and she's being welcomed back into a role that makes her feel powerful again.",
+          "why_relatable": "When someone breaks your heart, is revenge a way to heal or a way to disappear? Can you go back to who you were before, once you've changed? Who are you when nobody is telling you what you're for?",
+          "watch_for": [
+            "Does going back to her old life actually make her feel better?",
+            "Notice who she turns to when she's lonely, and why.",
+            "What does she decide she needs, for herself alone?"
+          ],
+          "start_at": "BtVS S6E16",
+          "span": "BtVS S6-S7",
+          "situations": [
+            {"id": "breakup", "weight": 0.9},
+            {"id": "identity_and_self_acceptance", "weight": 0.9},
+            {"id": "redemption_after_mistakes", "weight": 0.7}
+          ],
+          "conflicts": ["revenge_vs_forgiveness", "independence_vs_connection"],
+          "emotions": {"start": ["rejection", "anger", "shame"], "middle": ["guilt", "loneliness", "numbness"], "end": ["self_respect", "acceptance", "determination"]},
+          "ending_tone": "bittersweet",
+          "intensity": "heavy",
+          "warnings": ["betrayal", "graphic_gore", "death_of_loved_one", "death_of_main_character", "war_and_violence"],
+          "example_user_messages": [
+            "My fiancé called off our wedding on the day and I just want him to hurt like I do.",
+            "After the breakup I went back to my old lifestyle and it doesn't feel good anymore.",
+            "I realised I've always built my life around whoever I was with. I don't know what I want on my own.",
+            "I slept with someone to get back at my ex and it just made everything worse.",
+            "I did something I really regret and I'd give anything to undo it."
+          ],
+          "spoiler": {
+            "summary": "Anya becomes a vengeance demon again but can't bring herself to curse Xander; she sleeps with Spike, which the others learn about painfully. She finds she no longer enjoys vengeance, and when pressured by Halfrek she has a Grimslaw demon slaughter twelve frat boys. Horrified, she offers her own life to undo it; D'Hoffryn kills Halfrek instead and makes Anya human so she must live with the guilt. Realising she has always depended on others, she sets out to find her own purpose, makes peace with Xander, admits she admires human resilience, and is killed in the final battle against the First.",
+            "key_events": [
+              "Returns to being a vengeance demon after the failed wedding",
+              "Sleeps with Spike; Xander finds out",
+              "Grants a wish that kills twelve frat boys",
+              "Offers her life to undo it; D'Hoffryn kills Halfrek instead",
+              "Made human again; resolves to find her own purpose",
+              "Makes peace with Xander",
+              "Killed in the final battle"
+            ],
+            "got_right": "She took responsibility for the harm she caused and chose to find an identity of her own rather than borrow one.",
+            "got_wrong": "She reached for revenge and old roles to numb her pain, and hurt others and herself in the process."
+          }
+        }
+      ]
+    },
+    {
+      "id": "char:buffy/winifred_burkle",
+      "name": "Winifred \"Fred\" Burkle",
+      "role": "A brilliant, gentle Texan physics student who has been trapped alone for five years in a demon dimension and has lost her grip on the world she came from.",
+      "relations": [
+        {"target": "char:buffy/angel", "relation": "friend"},
+        {"target": "char:buffy/wesley_wyndam_pryce", "relation": "partner"},
+        {"target": "char:buffy/cordelia_chase", "relation": "friend"},
+        {"target": "char:buffy/spike", "relation": "friend"},
+        {"target": "char:buffy/willow_rosenberg", "relation": "friend"},
+        {"target": "char:buffy/faith_lehane", "relation": "friend"}
+      ],
+      "arcs": [
+        {
+          "id": "arc:buffy/winifred_burkle/coming_back_to_life",
+          "title": "Coming back from the cave",
+          "literal_situation": "Fred has survived five years as a slave in Pylea and is found hiding in a cave covered in her own scribbled equations, half-convinced her old life in Los Angeles was never real. Brought back to Earth, she won't leave her room at the hotel.",
+          "pattern_label": "rebuilding a life after trauma and isolation",
+          "pattern_text": "A gifted young woman returns from years of captivity and isolation, and ordinary life feels impossible: she hides in her room, avoids her loving parents, and can barely talk to people. With patient friends she slowly rebuilds, finds her talents again and falls in love. Then she learns that the mentor she idolised was the one who caused her ordeal, and she has to decide what to do with her rage.",
+          "hook": "She's traumatised, sweet, brilliant, and hiding in her room, attached to the one person who made her feel safe.",
+          "why_relatable": "How do you come back to ordinary life after something that broke you? Why is it sometimes hardest to face the people who love you most? What do you do with anger about the years that were taken from you?",
+          "watch_for": [
+            "Notice what small steps bring her out of her room.",
+            "Why does she avoid the people who love her most?",
+            "Where does her anger go, and who helps her carry it?"
+          ],
+          "start_at": "Angel S2E21",
+          "span": "Angel S2-S4",
+          "situations": [
+            {"id": "starting_over", "weight": 0.9},
+            {"id": "illness_or_injury", "weight": 0.6},
+            {"id": "finding_your_people", "weight": 0.7},
+            {"id": "falling_for_someone_unexpected", "weight": 0.4}
+          ],
+          "conflicts": ["safety_vs_growth", "revenge_vs_forgiveness"],
+          "emotions": {"start": ["fear", "confusion", "loneliness"], "middle": ["hope", "belonging", "love"], "end": ["anger", "betrayal", "grief"]},
+          "ending_tone": "bittersweet",
+          "intensity": "moderate",
+          "warnings": ["abuse", "betrayal", "war_and_violence"],
+          "example_user_messages": [
+            "I got out of a really bad situation after years and now I can barely leave my room.",
+            "My parents are loving and supportive but I'm scared to see them, and I don't know why.",
+            "I'm slowly getting back to normal life and I've even started dating, but I feel fragile.",
+            "I just found out the mentor I looked up to is the one who wrecked my life. I want him to pay.",
+            "My partner stepped in to handle something I needed to do myself and I can't forgive it."
+          ],
+          "spoiler": {
+            "summary": "Rescued from Pylea by Angel's team, Fred slowly readjusts at the Hyperion, has an unrequited crush on Angel, avoids her parents out of trauma, and finally chooses to stay in Los Angeles with Angel Investigations. She falls in love with Gunn, while Wesley pines for her. She discovers her professor Seidel deliberately banished her and other promising students, and plots to kill him with Wesley's help; Gunn snaps Seidel's neck himself to spare her, and the act ends their relationship.",
+            "key_events": [
+              "Rescued from five years of slavery in Pylea",
+              "Hides in her room; crush on Angel",
+              "Avoids her parents, then chooses to stay in LA",
+              "Falls in love with Gunn",
+              "Learns Professor Seidel banished her deliberately",
+              "Plots to kill him; Gunn kills him instead",
+              "Relationship with Gunn falls apart"
+            ],
+            "got_right": "She rebuilt her life with courage, let people help her, and reclaimed her brilliance.",
+            "got_wrong": "She let rage at her abuser push her toward something that would have changed her, and couldn't talk through what it did to her relationship."
+          }
+        },
+        {
+          "id": "arc:buffy/winifred_burkle/big_job_inside_the_machine",
+          "title": "Running the lab for people she doesn't trust",
+          "literal_situation": "Much later in the series, after a big shift for her team, Fred becomes head of science at a powerful organisation she has every reason to distrust, with a huge lab, a staff, and doubts about whether they can do good there.",
+          "pattern_label": "a dream job with a moral price",
+          "pattern_text": "A gentle, brilliant woman who has never thought of herself as a hero is handed a dream job with unlimited resources inside an organisation she doesn't trust. She throws herself into the work, trying to prove she can do good from within, and finally lets herself pursue the person who has loved her quietly for years. The question is what the bargain will cost.",
+          "hook": "She's thrilled by the resources and the chance to do real science, anxious about who she's working for, and slowly noticing her feelings for an old friend.",
+          "why_relatable": "Can you do good inside a system you believe is rotten? Is a dream job worth it if you have to look away from how it works? What stops you from reaching for someone who has been there all along?",
+          "watch_for": [
+            "Notice how the job changes her confidence, for better and worse.",
+            "Who does she trust at work, and why?",
+            "What finally makes her act on what she feels?"
+          ],
+          "start_at": "Angel S5E1",
+          "span": "Angel S5",
+          "situations": [
+            {"id": "new_job", "weight": 0.8},
+            {"id": "becoming_a_manager", "weight": 0.6},
+            {"id": "falling_for_someone_unexpected", "weight": 0.6},
+            {"id": "illness_or_injury", "weight": 0.5}
+          ],
+          "conflicts": ["power_vs_morality", "career_vs_relationships"],
+          "emotions": {"start": ["curiosity", "anxiety", "hope"], "middle": ["love", "joy", "self_doubt"], "end": ["fear", "love", "grief"]},
+          "ending_tone": "tragic",
+          "intensity": "heavy",
+          "warnings": ["death_of_main_character", "serious_illness", "medical_trauma", "grief", "war_and_violence"],
+          "example_user_messages": [
+            "I got my dream job but at a company whose values I really don't agree with.",
+            "I finally have the resources to do the work I love and I'm scared of what I'm compromising for it.",
+            "I've just been put in charge of a team and I'm not sure I'm a leader.",
+            "I think I've been in love with my close friend for a while and I'm scared to ruin it.",
+            "Everyone treats me as the sweet, harmless one, but I want to be taken seriously."
+          ],
+          "spoiler": {
+            "summary": "Fred thrives running the Wolfram & Hart lab, works tirelessly to restore the ghostly Spike, dates her assistant Knox, and finally gets together with Wesley. Within about a week she is infected by the sarcophagus of the Old One Illyria, which Knox, a secret worshipper, arranged and which came through on Gunn's signature. Angel and Spike refuse to save her at the cost of thousands of lives, and she dies in Wesley's arms as Illyria takes over her body. In the comics she is later restored, sharing her body with Illyria.",
+            "key_events": [
+              "Becomes head of Wolfram & Hart's science division",
+              "Works to make Spike corporeal",
+              "Briefly dates Knox",
+              "Finally gets together with Wesley",
+              "Infected by Illyria's sarcophagus",
+              "Dies in Wesley's arms; Illyria takes her body"
+            ],
+            "got_right": "She stayed kind, curious and principled inside a corrupt place, and finally reached for the love she wanted.",
+            "got_wrong": "She trusted the resources and the people around her more than she should have, and waited a long time to act on her feelings."
+          }
+        }
+      ]
+    }
+  ]
+}

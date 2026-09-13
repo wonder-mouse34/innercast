@@ -1,0 +1,728 @@
+{
+  "show": "buffy",
+  "characters": [
+    {
+      "id": "char:buffy/buffy_summers",
+      "name": "Buffy Summers",
+      "role": "A 16-year-old former cheerleader who moves to a small California town after her parents' divorce, secretly chosen as the one girl in her generation meant to fight the forces of darkness.",
+      "relations": [
+        {"target": "char:buffy/rupert_giles", "relation": "mentor"},
+        {"target": "char:buffy/willow_rosenberg", "relation": "friend"},
+        {"target": "char:buffy/alexander_harris", "relation": "friend"},
+        {"target": "char:buffy/angel", "relation": "ex_partner"},
+        {"target": "char:buffy/spike", "relation": "ex_partner"},
+        {"target": "char:buffy/dawn_summers", "relation": "sibling"},
+        {"target": "char:buffy/faith_lehane", "relation": "rival"},
+        {"target": "char:buffy/cordelia_chase", "relation": "friend"},
+        {"target": "char:buffy/anya_jenkins", "relation": "friend"}
+      ],
+      "arcs": [
+        {
+          "id": "arc:buffy/buffy_summers/reluctant_chosen_one",
+          "title": "The girl who just wanted a normal life",
+          "literal_situation": "Expelled from her last school and newly arrived in Sunnydale, Buffy wants to make friends, date, and be a normal teenager, but a new Watcher insists she keep training and hunting vampires because she is the Slayer.",
+          "pattern_label": "carrying a responsibility you never chose",
+          "pattern_text": "A young person is handed a heavy, lifelong responsibility they never asked for, one that cuts them off from the ordinary life everyone around them gets to have. They keep trying to have it both ways, dating and fitting in while secretly holding everything together, and wonder whether the role will eventually swallow who they are. The story asks whether you can accept a burden without letting it erase you.",
+          "hook": "She has just moved to a new town to start over and wants nothing to do with her calling, but the town seems to need her anyway.",
+          "why_relatable": "How do you balance a duty that others depend on with the right to your own life? Can you be the one everyone relies on and still be a kid, a girlfriend, a daughter? What do you owe people when you are the only one who can do something?",
+          "watch_for": [
+            "Notice how she uses jokes and bravado when she's actually scared.",
+            "Watch how her relationship with her mentor changes each time she pushes back against the rules.",
+            "What does she decide to keep for herself, and what does she give up?"
+          ],
+          "start_at": "S1E1",
+          "span": "S1-S5",
+          "situations": [
+            {"id": "responsibility_you_didnt_ask_for", "weight": 1.0},
+            {"id": "coming_of_age", "weight": 0.8},
+            {"id": "moving_somewhere_new", "weight": 0.4},
+            {"id": "caring_for_family", "weight": 0.5}
+          ],
+          "conflicts": ["duty_vs_desire", "independence_vs_connection"],
+          "emotions": {"start": ["resentment", "restlessness", "fear"], "middle": ["loneliness", "overwhelm", "determination"], "end": ["acceptance", "peace", "love"]},
+          "ending_tone": "bittersweet",
+          "intensity": "heavy",
+          "warnings": ["death_of_main_character", "death_of_loved_one", "grief", "war_and_violence", "serious_illness", "betrayal"],
+          "example_user_messages": [
+            "Everyone expects me to be the responsible one and I never signed up for it.",
+            "I'm 17 and I feel like my whole life got decided for me before I had a say.",
+            "I keep trying to have a normal social life but my obligations always wreck it.",
+            "My family depends on me and sometimes I just want to run away and be nobody.",
+            "How do I accept something I didn't choose without losing myself?"
+          ],
+          "spoiler": {
+            "summary": "Buffy starts by trying to escape her calling, briefly quits when a prophecy says she will die, then faces the Master anyway. She is drowned and revived, then learns from Kendra that being the Slayer is who she is, not a job. After having to send Angel to hell she runs away to Los Angeles under her middle name, then returns. She rebels against the Watchers Council and eventually cuts ties with it, leads her class against the Mayor at graduation, and in college starts to study what being the Slayer means. After her mother dies suddenly, she becomes her sister's guardian. When a spirit guide tells her 'death is your gift', she finally understands it at the climax against Glory and sacrifices herself to save Dawn and the world.",
+            "key_events": [
+              "Prophecy says the Master will kill her; she quits, then goes anyway",
+              "Dies briefly and is revived by Xander's CPR",
+              "Kills Angel to close Acathla's portal and runs away to LA",
+              "Council's Cruciamentum test; Giles is fired",
+              "Leads her graduating class against the Mayor; school is blown up",
+              "Mother Joyce dies of an aneurysm",
+              "Discovers her sister Dawn is the Key",
+              "Jumps from the tower in Dawn's place and dies, saving the world"
+            ],
+            "got_right": "She refuses to give up friendships and love for duty, and her connections turn out to be the source of her strength, not a weakness. She takes responsibility with real courage.",
+            "got_wrong": "She keeps secrets from the people closest to her, shuts people out when she's hurting, and at times treats running away as the only way out."
+          }
+        },
+        {
+          "id": "arc:buffy/buffy_summers/first_love_turns",
+          "title": "A first love she was warned about",
+          "literal_situation": "In her new town, Buffy is drawn to a mysterious, older, handsome stranger who shows up with cryptic warnings and clearly has a past he won't talk about.",
+          "pattern_label": "first love that cannot survive the truth",
+          "pattern_text": "A teenager falls hard for someone older and mysterious whose past everyone warns her about. The relationship feels destined, but intimacy changes everything and the person she loved seems to become a stranger who knows exactly how to hurt her. She has to face that loving someone doesn't mean she can keep them, and to protect herself and others even when her heart hasn't let go.",
+          "hook": "She's intrigued by a stranger who always seems to know where danger is, but she knows almost nothing about who he really is.",
+          "why_relatable": "What do you do when your friends distrust the person you love? How much of someone's past should matter? And when a relationship turns painful, how do you tell the difference between loyalty and holding on too long?",
+          "watch_for": [
+            "Notice how her friends' opinions of him shape her choices, or don't.",
+            "How much does she blame herself when things go wrong?",
+            "Watch what she's willing to sacrifice for the relationship, and what she refuses to."
+          ],
+          "start_at": "S1E1",
+          "span": "S1-S3",
+          "situations": [
+            {"id": "falling_for_someone_unexpected", "weight": 0.9},
+            {"id": "breakup", "weight": 0.9},
+            {"id": "coming_of_age", "weight": 0.6}
+          ],
+          "conflicts": ["holding_on_vs_letting_go", "duty_vs_desire"],
+          "emotions": {"start": ["curiosity", "longing"], "middle": ["love", "betrayal", "shame", "grief"], "end": ["acceptance", "self_respect"]},
+          "ending_tone": "bittersweet",
+          "intensity": "heavy",
+          "warnings": ["abuse", "death_of_loved_one", "betrayal", "torture", "war_and_violence"],
+          "example_user_messages": [
+            "The first time we slept together he turned cold and cruel and I don't understand what I did.",
+            "My friends never liked my boyfriend and now I can't admit they were right.",
+            "I still love someone who hurt me and I hate myself for it.",
+            "He broke up with me because he says he can't give me a normal future, and I'm devastated.",
+            "How do you let go of a first love that felt like destiny?"
+          ],
+          "spoiler": {
+            "summary": "Buffy learns Angel is a vampire cursed with a soul and they fall in love. On her seventeenth birthday they sleep together, his moment of true happiness breaks the curse, and he becomes the cruel Angelus again, stalking and taunting her, killing Jenny Calendar and torturing Giles. Just as Willow restores his soul, Buffy has to run him through with a sword to close a portal to hell. He later returns, they try again, but he leaves her before the prom because he can't give her a normal life, and after graduation he leaves town for good.",
+            "key_events": [
+              "Angel revealed as a vampire with a soul",
+              "They sleep together in 'Surprise'; he loses his soul",
+              "Angelus stalks her and kills Jenny Calendar",
+              "Buffy kills Angel just after his soul is restored, sending him to hell",
+              "Angel returns from hell; they resume a celibate relationship",
+              "He breaks up with her before the prom, then leaves town after graduation"
+            ],
+            "got_right": "She chooses to protect the world and her friends over her own heart when it matters, and doesn't let his cruelty define her.",
+            "got_wrong": "She hides his return from her friends and blames herself for his cruelty, as though she caused it by loving him."
+          }
+        },
+        {
+          "id": "arc:buffy/buffy_summers/finding_reason_to_live",
+          "title": "Going through the motions",
+          "literal_situation": "Later in the series, after a turning point that shatters her, Buffy is in charge of her home and her teenage sister: bills she can't pay, a greasy fast-food job, and friends who think they know what she needs, while she privately feels numb and disconnected from everything.",
+          "pattern_label": "depression after your world collapses",
+          "pattern_text": "After a shattering loss, a person who has always been the strong one goes back to daily life and feels nothing: work, bills, and caring for a younger sibling pile up while they hide how empty they are so no one worries. They reach for a secret, self-destructive relationship just to feel something, and push away anyone who might see the truth. The story is about the slow, messy climb from numbness back to wanting to be alive.",
+          "hook": "She is doing all the things she's supposed to do, but nothing feels real, and she's hiding how bad it is from the people who love her.",
+          "why_relatable": "What do you do when you're expected to hold everyone together but can't feel anything yourself? Why is it easier to tell a stranger, or the wrong person, than your closest friends? What does it take to want your life again?",
+          "watch_for": [
+            "Notice who she confides in and who she hides from, and why.",
+            "Watch how money and adult responsibilities weigh on her.",
+            "What small moments make her feel alive, and are they good for her?"
+          ],
+          "start_at": "S6E1",
+          "span": "S6",
+          "situations": [
+            {"id": "grief_and_loss", "weight": 0.8},
+            {"id": "caring_for_family", "weight": 0.7},
+            {"id": "burnout_at_work", "weight": 0.4},
+            {"id": "loneliness", "weight": 0.6}
+          ],
+          "conflicts": ["truth_vs_protecting_others", "past_vs_future"],
+          "emotions": {"start": ["numbness", "grief", "overwhelm"], "middle": ["shame", "loneliness", "self_doubt"], "end": ["hope", "love", "acceptance"]},
+          "ending_tone": "hopeful",
+          "intensity": "heavy",
+          "warnings": ["grief", "sexual_violence", "abuse", "death_of_loved_one", "addiction", "self_harm_or_suicide", "graphic_gore"],
+          "example_user_messages": [
+            "I go to work, pay the bills, look after my sister, and feel absolutely nothing.",
+            "Everyone thinks I'm fine because I keep functioning, but inside I'm empty.",
+            "I'm in a toxic secret relationship because it's the only thing that makes me feel anything.",
+            "I'm drowning in debt and responsibility at 20 and I can't tell my friends how bad it is.",
+            "How do you start wanting to be alive again?"
+          ],
+          "spoiler": {
+            "summary": "Buffy was resurrected by her friends, who thought they had rescued her from hell, but she had been in heaven. She hides this, confides only in Spike, and starts a violent, secret sexual relationship with him to feel something. She works at the Doublemeat Palace, struggles with money after Giles leaves, and misses Willow's addiction. She ends the affair, admitting she was using him, and Spike later tries to rape her. After Tara's murder and Willow's rampage, trapped underground with Dawn, Buffy realizes she wants to live and promises to be there for her sister.",
+            "key_events": [
+              "Friends resurrect her; she was in heaven, not hell",
+              "Reveals the truth in song in 'Once More, with Feeling'",
+              "Giles leaves for England so she will stand on her own",
+              "Secret, violent affair with Spike",
+              "Ends it: 'I'm using you... it's killing me'",
+              "Spike's attempted rape in 'Seeing Red'",
+              "Tara is shot dead; Willow goes on a rampage",
+              "Buffy climbs out of the grave with Dawn, choosing life"
+            ],
+            "got_right": "She eventually tells the truth, ends a relationship she knows is hurting her, and chooses to show up for her sister.",
+            "got_wrong": "She hides her pain, uses someone to numb it, and neglects the people who needed her, including a friend spiraling into addiction."
+          }
+        }
+      ]
+    },
+    {
+      "id": "char:buffy/angel",
+      "name": "Angel",
+      "role": "A brooding, centuries-old vampire whose soul has been restored as a curse, haunted by the atrocities he committed and searching for a way to atone.",
+      "relations": [
+        {"target": "char:buffy/buffy_summers", "relation": "ex_partner"},
+        {"target": "char:buffy/spike", "relation": "protege"},
+        {"target": "char:buffy/spike", "relation": "rival"},
+        {"target": "char:buffy/cordelia_chase", "relation": "colleague"},
+        {"target": "char:buffy/wesley_wyndam_pryce", "relation": "colleague"},
+        {"target": "char:buffy/winifred_burkle", "relation": "colleague"},
+        {"target": "char:buffy/faith_lehane", "relation": "protege"},
+        {"target": "char:buffy/willow_rosenberg", "relation": "friend"},
+        {"target": "char:buffy/alexander_harris", "relation": "rival"}
+      ],
+      "arcs": [
+        {
+          "id": "arc:buffy/angel/atonement_for_the_past",
+          "title": "Helping the hopeless to make up for the past",
+          "literal_situation": "Later on, having moved to Los Angeles, far from the woman he loves, Angel, a vampire with a soul and a monstrous history, lives alone in the shadows until a stranger with visions pushes him to start helping people in need.",
+          "pattern_label": "trying to atone for a terrible past",
+          "pattern_text": "A person who once did real, lasting harm now carries the guilt every day and tries to make up for it by helping others, often in isolation. Friends slowly draw them out of their shell, but setbacks and old temptations keep making them wonder whether redemption is even possible or whether they're fooling themselves. It is a story about doing good without any guarantee of forgiveness.",
+          "hook": "He is far from the one person who gave him hope, in a big city where no one knows him, trying to stay away from people so he can't hurt them.",
+          "why_relatable": "Can you ever make up for the worst thing you've done? Should you help people for a reward, even just forgiveness, or for its own sake? What happens to someone who keeps everyone at arm's length because they don't trust themselves?",
+          "watch_for": [
+            "Notice when he lets people in and when he pushes them away.",
+            "What does he believe he 'deserves', and how does that shape his choices?",
+            "Watch how he responds when doing the right thing doesn't seem to change anything."
+          ],
+          "start_at": "Angel S1E1",
+          "span": "Angel S1-S5",
+          "situations": [
+            {"id": "redemption_after_mistakes", "weight": 1.0},
+            {"id": "starting_over", "weight": 0.6},
+            {"id": "finding_your_people", "weight": 0.6},
+            {"id": "loneliness", "weight": 0.5}
+          ],
+          "conflicts": ["past_vs_future", "independence_vs_connection"],
+          "emotions": {"start": ["guilt", "loneliness", "shame"], "middle": ["determination", "anger", "numbness"], "end": ["belonging", "self_respect", "determination"]},
+          "ending_tone": "bittersweet",
+          "intensity": "heavy",
+          "warnings": ["death_of_loved_one", "death_of_main_character", "betrayal", "war_and_violence", "torture", "graphic_gore", "grief"],
+          "example_user_messages": [
+            "I did things in my past that I can never undo and I don't know if I deserve a second chance.",
+            "I volunteer and try to help people but the guilt never goes away.",
+            "I keep isolating myself because I'm scared I'll hurt the people close to me again.",
+            "What's the point of being good if it doesn't change anything?",
+            "How do you forgive yourself when the people you hurt can't forgive you?"
+          ],
+          "spoiler": {
+            "summary": "Angel founds Angel Investigations with Doyle and Cordelia; Doyle dies, and Wesley, Gunn, Fred and Lorne join. When Wolfram & Hart resurrects Darla, Angel spirals into obsession, fires his team, lets Darla and Drusilla slaughter lawyers, and sleeps with Darla hoping to lose his soul, but finds 'perfect despair' and an epiphany: if nothing we do matters, all that matters is what we do. He rebuilds his family, loses Cordelia and his son, and takes over Wolfram & Hart to give Connor a normal life, becoming morally compromised. After Fred dies, he secretly signs away the Shanshu prophecy to infiltrate and assassinate the Circle of the Black Thorn, knowing it will likely kill them all. Wesley dies, and the survivors face an apocalyptic army in an alley.",
+            "key_events": [
+              "Doyle sacrifices himself in 'Hero'",
+              "Darla resurrected; Angel fires his friends and goes dark",
+              "Epiphany after sleeping with Darla",
+              "Cordelia ascends, later falls into a coma and dies",
+              "Takes over the Wolfram & Hart LA branch",
+              "Fred dies and becomes Illyria",
+              "Signs away the Shanshu prophecy to infiltrate the Black Thorn",
+              "Wesley dies; the final battle begins in the alley"
+            ],
+            "got_right": "He learns to do good for its own sake rather than for a reward, and eventually lets a chosen family in.",
+            "got_wrong": "He isolates himself, makes huge decisions for other people without asking them, and repeatedly believes the ends justify the means."
+          }
+        },
+        {
+          "id": "arc:buffy/angel/unexpected_fatherhood",
+          "title": "The father who never expected to be one",
+          "literal_situation": "Much later in the series, Angel, who thought he could never have children, unexpectedly becomes a father, just as old enemies and ghosts from his past start taking an interest in the baby.",
+          "pattern_label": "a parent whose past threatens their child",
+          "pattern_text": "Someone who believed parenthood was impossible for them suddenly has a child, and their own past mistakes follow them into the nursery. They love the child fiercely, but losing the child, and then being hated by them, forces the parent to face how much their history shapes their child's life. In the end they have to decide whether love means holding on or letting the child have a life without them.",
+          "hook": "He has a baby son he never thought was possible and is terrified the enemies he made long ago will come for him.",
+          "why_relatable": "Can you be a good parent when you carry so much baggage? What happens when your past reaches into your child's life? How far would you go to give your kid a better life?",
+          "watch_for": [
+            "Notice how his fear for his son changes how he treats his friends.",
+            "Notice how much of his past he tries to shield his son from.",
+            "What is he willing to give up for his child's happiness?"
+          ],
+          "start_at": "Angel S3E9",
+          "span": "Angel S3-S5",
+          "situations": [
+            {"id": "becoming_a_parent", "weight": 1.0},
+            {"id": "caring_for_family", "weight": 0.7},
+            {"id": "grief_and_loss", "weight": 0.5},
+            {"id": "difficult_parent", "weight": 0.4}
+          ],
+          "conflicts": ["holding_on_vs_letting_go", "truth_vs_protecting_others"],
+          "emotions": {"start": ["love", "fear", "joy"], "middle": ["grief", "rejection", "anger", "guilt"], "end": ["acceptance", "love", "peace"]},
+          "ending_tone": "bittersweet",
+          "intensity": "heavy",
+          "warnings": ["child_endangerment", "death_of_loved_one", "betrayal", "war_and_violence", "grief"],
+          "example_user_messages": [
+            "I never thought I could be a parent and now I'm terrified my past will hurt my kid.",
+            "My child was raised by someone else to believe I'm a terrible person.",
+            "My teenager hates me and I don't know how to reach him.",
+            "Would giving my kid a better life without me be the most loving thing I could do?",
+            "My own bad history keeps landing on my child and I feel so guilty."
+          ],
+          "spoiler": {
+            "summary": "Darla, impossibly pregnant with Angel's child, stakes herself to give birth to Connor. Wesley, misled by a false prophecy that 'the father will kill the son', takes the baby, and Holtz kidnaps Connor into the hell dimension Quor'toth. Connor returns days later as a teenager raised to hate Angel; Holtz stages his own death to frame Angel, and Connor sinks his father to the ocean floor. Connor becomes entangled with a possessed Cordelia and Jasmine. Angel accepts control of Wolfram & Hart in exchange for erasing everyone's memories of Connor and giving him a normal family. Later Connor's memories return, and he tells Angel he's grateful but wants to keep his normal life.",
+            "key_events": [
+              "Darla stakes herself to give birth to Connor",
+              "Holtz takes infant Connor to Quor'toth",
+              "Connor returns as a teen who hates Angel",
+              "Connor sinks Angel to the bottom of the ocean",
+              "Connor sleeps with Cordelia and helps birth Jasmine",
+              "Angel trades the Wolfram & Hart deal for Connor's memory wipe and new family",
+              "Connor's memories return in 'Origin'"
+            ],
+            "got_right": "His love for his son never wavers, and he puts Connor's wellbeing above his own need to be known and loved as a father.",
+            "got_wrong": "He makes enormous, secret decisions on his son's behalf, including rewriting reality, without anyone's consent, and lashes out at friends in fear."
+          }
+        }
+      ]
+    },
+    {
+      "id": "char:buffy/willow_rosenberg",
+      "name": "Willow Rosenberg",
+      "role": "A shy, brilliant high-school computer nerd, mocked by the popular girls and secretly in love with her lifelong best friend.",
+      "relations": [
+        {"target": "char:buffy/buffy_summers", "relation": "friend"},
+        {"target": "char:buffy/alexander_harris", "relation": "friend"},
+        {"target": "char:buffy/rupert_giles", "relation": "mentor"},
+        {"target": "char:buffy/cordelia_chase", "relation": "rival"},
+        {"target": "char:buffy/angel", "relation": "friend"},
+        {"target": "char:buffy/anya_jenkins", "relation": "friend"},
+        {"target": "char:buffy/dawn_summers", "relation": "friend"}
+      ],
+      "arcs": [
+        {
+          "id": "arc:buffy/willow_rosenberg/wallflower_finds_herself",
+          "title": "The wallflower who grows into herself",
+          "literal_situation": "Willow is a shy, smart sophomore who tutors everyone, dresses the way her mother picks, is bullied by the popular girls, and is hopelessly in love with her best friend Xander, who only has eyes for the new girl.",
+          "pattern_label": "a quiet person discovering who they really are",
+          "pattern_text": "A shy, overlooked young person who has spent years being the dependable helper slowly discovers her talents, her voice and her own desires. Along the way she has to get over a long, unreturned crush, survive heartbreak, and admit to herself and her friends a truth about who she loves that she hadn't seen coming. It's a story of confidence, identity and learning to take up space.",
+          "hook": "She's the reliable, invisible best friend who gets picked on at school and is hopelessly in love with a boy who doesn't notice her.",
+          "why_relatable": "What happens when the 'good, reliable one' starts wanting things for herself? How do you move on from someone who only sees you as a friend? What if the person you're becoming isn't who everyone expected, including you?",
+          "watch_for": [
+            "Notice the small moments where she starts to assert herself.",
+            "Watch how she handles being taken for granted by the people she loves.",
+            "Who sees her clearly before she sees herself?"
+          ],
+          "start_at": "S1E1",
+          "span": "S1-S4",
+          "situations": [
+            {"id": "confidence_struggle", "weight": 0.9},
+            {"id": "identity_and_self_acceptance", "weight": 0.9},
+            {"id": "unrequited_love", "weight": 0.6},
+            {"id": "finding_your_people", "weight": 0.6}
+          ],
+          "conflicts": ["fitting_in_vs_standing_out", "safety_vs_growth"],
+          "emotions": {"start": ["inadequacy", "longing", "anxiety"], "middle": ["rejection", "curiosity", "grief"], "end": ["confidence", "love", "acceptance"]},
+          "ending_tone": "hopeful",
+          "intensity": "moderate",
+          "warnings": ["death_of_loved_one", "betrayal", "war_and_violence"],
+          "example_user_messages": [
+            "I've always been the quiet reliable one and I'm tired of being overlooked.",
+            "I've been in love with my best friend for years and he's into someone else.",
+            "I think I might be gay and I'm scared of how my friends will react.",
+            "My boyfriend left and I don't know who I am without him.",
+            "How do I stop being so shy and actually speak up for myself?"
+          ],
+          "spoiler": {
+            "summary": "Willow befriends Buffy and joins the fight, starting as the researcher and hacker. She is heartbroken when Xander secretly dates Cordelia and moves on with Oz, a musician who turns out to be a werewolf. After Jenny Calendar's murder she starts practicing magic and restores Angel's soul. She chooses UC Sunnydale over elite colleges. In college Oz cheats on her and leaves; she falls apart, then meets Tara in a Wicca group. They fall in love, and when Oz returns she chooses Tara and comes out to her friends.",
+            "key_events": [
+              "Crush on Xander goes unreturned",
+              "Catches Xander and Cordelia kissing",
+              "Dates Oz, who is a werewolf",
+              "Performs the spell that restores Angel's soul",
+              "Oz leaves after cheating with Veruca",
+              "Falls in love with Tara and comes out"
+            ],
+            "got_right": "She moves on from an unreturned crush, finds her voice and her talents, and embraces her identity with honesty.",
+            "got_wrong": "She sometimes uses her new power impulsively, for revenge or to avoid pain, and ignores warnings from friends."
+          }
+        },
+        {
+          "id": "arc:buffy/willow_rosenberg/power_becomes_addiction",
+          "title": "When her gift becomes a crutch",
+          "literal_situation": "Later in the series, Willow has become the group's most powerful witch and its leader in a crisis. Her abilities are growing faster than her judgment, and her partner is quietly worried about how often, and how casually, she reaches for magic.",
+          "pattern_label": "when what makes you special becomes an addiction",
+          "pattern_text": "A person who spent years feeling small discovers something that makes her powerful, needed and admired, and starts reaching for it to fix every problem and escape every uncomfortable feeling. The habit costs her the trust of the person she loves and endangers someone who depends on her. After she hits bottom and tries to get clean, a devastating loss tests whether recovery can hold, and she has to learn who she is without the thing that made her feel strong.",
+          "hook": "She is admired for what she can do and has started to rely on it, and the people closest to her are beginning to look worried.",
+          "why_relatable": "When does a talent or coping habit become a problem? Why is it so hard to hear concern from people who love you? Who are you without the thing that makes you feel special?",
+          "watch_for": [
+            "Notice the excuses she gives for using, and how reasonable they sound.",
+            "Watch how she reacts when someone close to her sets a boundary.",
+            "What is she really trying to avoid feeling?"
+          ],
+          "start_at": "S6E1",
+          "span": "S6-S7",
+          "situations": [
+            {"id": "addiction_and_recovery", "weight": 1.0},
+            {"id": "redemption_after_mistakes", "weight": 0.7},
+            {"id": "grief_and_loss", "weight": 0.6},
+            {"id": "breakup", "weight": 0.5}
+          ],
+          "conflicts": ["power_vs_morality", "control_vs_trust"],
+          "emotions": {"start": ["pride", "confidence", "restlessness"], "middle": ["shame", "grief", "anger"], "end": ["guilt", "hope", "acceptance"]},
+          "ending_tone": "hopeful",
+          "intensity": "heavy",
+          "warnings": ["addiction", "death_of_loved_one", "grief", "graphic_gore", "torture", "betrayal", "child_endangerment"],
+          "example_user_messages": [
+            "I only feel useful and strong when I'm using, and I don't know who I am without it.",
+            "My partner left because I kept breaking promises about my habit.",
+            "I put a kid in danger because I was high and I can't forgive myself.",
+            "After my girlfriend died I relapsed and did things I'm terrified of.",
+            "I'm in recovery but I'm scared I'll never trust myself again."
+          ],
+          "spoiler": {
+            "summary": "Willow leads the spell that resurrects Buffy and grows dependent on magic, even erasing Tara's memory of a fight; Tara leaves her after a forgetting spell backfires. Willow spirals with Amy and the dealer Rack, crashes a car with Dawn inside, and quits cold turkey. She and Tara reconcile, but Tara is killed by Warren's stray bullet. Willow absorbs dark magic, flays Warren alive, tries to kill Andrew and Jonathan, overpowers Buffy and Giles, and tries to end the world to stop all pain until Xander talks her down with love. She rehabilitates with Giles in England, returns fearful of her power, and finally channels it for good by activating every Potential Slayer.",
+            "key_events": [
+              "Uses a memory spell on Tara",
+              "Tara leaves her after 'Tabula Rasa'",
+              "Binges with Rack; car crash injures Dawn in 'Wrecked'",
+              "Tara is shot and killed in 'Seeing Red'",
+              "Dark Willow flays Warren alive",
+              "Tries to destroy the world; Xander's 'yellow crayon' speech stops her",
+              "Rehab with the Devon coven",
+              "Activates all Potential Slayers in 'Chosen'"
+            ],
+            "got_right": "She finally admits she has a problem, cuts off the enablers, and does the slow, frightening work of learning to use her strength safely.",
+            "got_wrong": "She violates her partner's trust, endangers a child, and turns grief into vengeance instead of letting herself feel it."
+          }
+        }
+      ]
+    },
+    {
+      "id": "char:buffy/spike",
+      "name": "Spike",
+      "role": "A swaggering, punk-styled vampire with a notorious reputation for having killed two Slayers, devoted to his unstable partner Drusilla and eager to make Buffy his third.",
+      "relations": [
+        {"target": "char:buffy/buffy_summers", "relation": "ex_partner"},
+        {"target": "char:buffy/angel", "relation": "mentor"},
+        {"target": "char:buffy/angel", "relation": "rival"},
+        {"target": "char:buffy/dawn_summers", "relation": "friend"},
+        {"target": "char:buffy/alexander_harris", "relation": "rival"},
+        {"target": "char:buffy/winifred_burkle", "relation": "friend"}
+      ],
+      "arcs": [
+        {
+          "id": "arc:buffy/spike/monster_to_man",
+          "title": "Trying to become someone worth loving",
+          "literal_situation": "Later in the series, Spike, a notorious killer who has tried for years to kill the Slayer, is left unable to harm humans by circumstances outside his control, leaving him hungry, humiliated, and forced to depend on his enemies.",
+          "pattern_label": "changing yourself to deserve love",
+          "pattern_text": "Someone with a long history of hurting people is forced by circumstance to stop, and slowly falls in love with a person who sees them as beneath contempt. At first their changes are only for her approval, and their worst impulses return when she rejects them. Only after causing real harm do they seek genuine change for its own sake. The story asks whether people can truly change, and whether change done for someone else can become your own.",
+          "hook": "He is powerless for the first time in over a century, dependent on people he despises, and has no idea what he is anymore.",
+          "why_relatable": "Can you change who you are if you're only doing it to win someone's love? What happens when the person you're trying to impress keeps telling you you're incapable of good? Is being stopped from doing harm the same as being good?",
+          "watch_for": [
+            "Notice the difference between what he does when she's watching and when she isn't.",
+            "Watch how he treats the people she loves, especially the ones who can't help him.",
+            "What does he finally decide he wants for himself?"
+          ],
+          "start_at": "S4E7",
+          "span": "S4-S7",
+          "situations": [
+            {"id": "redemption_after_mistakes", "weight": 1.0},
+            {"id": "unrequited_love", "weight": 0.8},
+            {"id": "identity_and_self_acceptance", "weight": 0.7},
+            {"id": "finding_your_people", "weight": 0.4}
+          ],
+          "conflicts": ["past_vs_future", "belonging_vs_integrity"],
+          "emotions": {"start": ["anger", "shame", "resentment"], "middle": ["longing", "love", "rejection", "guilt"], "end": ["self_respect", "peace", "love"]},
+          "ending_tone": "bittersweet",
+          "intensity": "heavy",
+          "warnings": ["sexual_violence", "abuse", "torture", "death_of_main_character", "war_and_violence", "self_harm_or_suicide"],
+          "example_user_messages": [
+            "I've done bad things and I'm trying to be better, but only because I want her to love me.",
+            "She keeps telling me I'm incapable of real feelings and part of me believes her.",
+            "I did something unforgivable to someone I love and I don't know how to live with myself.",
+            "I used to be a bully and now I'm stuck depending on the people I used to torment.",
+            "Can a person actually change, or am I just pretending?"
+          ],
+          "spoiler": {
+            "summary": "Chipped and helpless, Spike becomes a reluctant ally to the Scoobies, briefly betrays them to Adam, and then realizes he's in love with Buffy. She rejects him, he builds a Buffybot, then endures torture by Glory rather than reveal Dawn's identity, earning Buffy's trust. After Buffy's death he protects Dawn. When Buffy returns from heaven they have a secret, violent affair; she ends it, and he tries to rape her. Horrified at himself, he goes to Africa, passes demon trials and wins back his soul. Tormented by guilt and manipulated by the First, he recovers with Buffy's faith, and in the final battle wears the amulet, destroys the Hellmouth and dies. Buffy tells him she loves him; he replies 'No, you don't. But thanks for saying it.'",
+            "key_events": [
+              "Initiative chip leaves him unable to harm humans",
+              "Allies with Adam to split the Scoobies",
+              "Realizes he loves Buffy; she rejects him",
+              "Tortured by Glory to protect Dawn",
+              "Secret affair with Buffy after her resurrection",
+              "Attempted rape in 'Seeing Red'",
+              "Wins back his soul through the demon trials",
+              "Sacrifices himself in 'Chosen' to close the Hellmouth"
+            ],
+            "got_right": "He eventually seeks to change for its own sake, takes responsibility for the harm he's done, and shows fierce loyalty to Dawn.",
+            "got_wrong": "For years his goodness depends on Buffy's approval, he confuses obsession with love, and he commits a violent act that betrays everything he claimed to feel."
+          }
+        },
+        {
+          "id": "arc:buffy/spike/proving_himself_to_the_one_who_made_him",
+          "title": "Stepping out of his mentor's shadow",
+          "literal_situation": "Much later, Spike turns up in Los Angeles in a strange, diminished state he doesn't understand, stuck in the orbit of his former mentor and longtime rival, Angel, and unable to simply walk away.",
+          "pattern_label": "competing with the person who shaped you",
+          "pattern_text": "Someone who has just gone through a huge change finds themselves stuck in the orbit of the older figure who shaped their worst years, now a rival for recognition and for the same role. They bicker, compete, and try to prove who is the real hero, while quietly wondering whether their own transformation counts. Over time they have to decide whether they're defined by the old rivalry or by the person they're choosing to be.",
+          "hook": "He's starting over in a strange limbo, stuck working alongside the rival who once taught him to be cruel, and is desperate to prove he's more than a sidekick.",
+          "why_relatable": "What do you do when you're forced to work beside the person who shaped your worst habits? Why do we keep measuring ourselves against one person? Can two people who compete over everything learn to stand side by side?",
+          "watch_for": [
+            "Notice how he defines himself in contrast to his rival.",
+            "Watch who he chooses to help when there's no one to impress.",
+            "When does competition turn into respect, if it does?"
+          ],
+          "start_at": "Angel S5E1",
+          "span": "Angel S5",
+          "situations": [
+            {"id": "starting_over", "weight": 0.7},
+            {"id": "mentor_and_protege", "weight": 0.6},
+            {"id": "sibling_rivalry", "weight": 0.6},
+            {"id": "identity_and_self_acceptance", "weight": 0.6}
+          ],
+          "conflicts": ["past_vs_future", "independence_vs_connection"],
+          "emotions": {"start": ["confusion", "resentment", "fear"], "middle": ["envy", "determination", "grief"], "end": ["belonging", "self_respect"]},
+          "ending_tone": "ambiguous",
+          "intensity": "moderate",
+          "warnings": ["death_of_loved_one", "war_and_violence", "grief", "torture"],
+          "example_user_messages": [
+            "I'm stuck working under the person who taught me all my worst habits and we're constantly competing.",
+            "I changed a lot, but everyone still sees me as the other guy's sidekick.",
+            "I keep comparing myself to one person and it's eating me alive.",
+            "I've started over and I don't know if my new life counts for anything.",
+            "How do I stop needing to prove myself to someone from my past?"
+          ],
+          "spoiler": {
+            "summary": "Spike, bound to the amulet, haunts Wolfram & Hart, fears being dragged to hell, and gives up a chance to regain his body to save Fred. Once corporeal, he duels Angel for the Cup of Perpetual Torment and wins, though the cup turns out to be fake, shaking Angel's confidence. Lindsey, posing as Doyle, manipulates Spike into playing champion. He chooses not to contact Buffy, preferring she remember him as a hero. After Fred dies and becomes Illyria, Spike stays in her honor and bonds with Illyria. He reads his old poem to applause on what might be his last day, and joins Angel, Gunn and Illyria in the final alley battle.",
+            "key_events": [
+              "Returns as a ghost bound to Wolfram & Hart",
+              "Sacrifices his chance at a body to save Fred",
+              "Beats Angel in the fight for the Cup in 'Destiny'",
+              "Manipulated by Lindsey posing as Doyle",
+              "Fred dies; he stays and trains Illyria",
+              "Poetry reading and final alley battle in 'Not Fade Away'"
+            ],
+            "got_right": "He chooses heroism without an audience, including when it costs him, and grows into a peer rather than a shadow.",
+            "got_wrong": "He lets rivalry and ego drive many choices and is easily manipulated by anyone who flatters his need to be the chosen one."
+          }
+        }
+      ]
+    },
+    {
+      "id": "char:buffy/rupert_giles",
+      "name": "Rupert Giles",
+      "role": "A reserved, tweed-wearing British school librarian who is secretly the Watcher sent to train and guide the new Slayer.",
+      "relations": [
+        {"target": "char:buffy/buffy_summers", "relation": "protege"},
+        {"target": "char:buffy/willow_rosenberg", "relation": "protege"},
+        {"target": "char:buffy/alexander_harris", "relation": "protege"},
+        {"target": "char:buffy/faith_lehane", "relation": "protege"},
+        {"target": "char:buffy/wesley_wyndam_pryce", "relation": "colleague"},
+        {"target": "char:buffy/anya_jenkins", "relation": "colleague"}
+      ],
+      "arcs": [
+        {
+          "id": "arc:buffy/rupert_giles/mentor_becomes_father",
+          "title": "The mentor who comes to love his student",
+          "literal_situation": "Giles arrives in Sunnydale as the school librarian and secret Watcher assigned by an old, rigid institution to train a 16-year-old girl who doesn't want the job and doesn't take him seriously.",
+          "pattern_label": "a mentor torn between institution and protege",
+          "pattern_text": "A buttoned-up professional is assigned to train a young person under the rules of an institution he has served his whole life. As he comes to love his protege like a daughter, he is caught between the organization's demands and his instinct to protect her, and a past he's ashamed of keeps catching up with him. He has to decide where his loyalty truly lies and what it costs to choose a person over an institution.",
+          "hook": "He is by-the-book and a little stuffy, stuck guiding a teenager who rolls her eyes at everything he says, and he's carrying secrets about his own youth.",
+          "why_relatable": "What do you do when the organization you've given your life to and the person you care about pull you in opposite directions? Can you be an authority figure and still be honest about your own mistakes? Where is the line between guiding someone and controlling them?",
+          "watch_for": [
+            "Notice when he chooses the rules and when he chooses her.",
+            "Watch how he reacts when his own past comes up.",
+            "How does his idea of his job change as the years go by?"
+          ],
+          "start_at": "S1E1",
+          "span": "S1-S3",
+          "situations": [
+            {"id": "mentor_and_protege", "weight": 1.0},
+            {"id": "standing_up_to_authority", "weight": 0.7},
+            {"id": "new_job", "weight": 0.3},
+            {"id": "redemption_after_mistakes", "weight": 0.4}
+          ],
+          "conflicts": ["belonging_vs_integrity", "duty_vs_desire"],
+          "emotions": {"start": ["anxiety", "self_doubt"], "middle": ["love", "guilt", "grief", "anger"], "end": ["self_respect", "love", "pride"]},
+          "ending_tone": "hopeful",
+          "intensity": "moderate",
+          "warnings": ["death_of_loved_one", "torture", "betrayal", "grief", "war_and_violence"],
+          "example_user_messages": [
+            "My company is asking me to do something I think will really hurt someone I mentor.",
+            "I've started to care about my student like she's my own kid and it's complicating everything.",
+            "I'm terrified the young people I guide will find out what I was like at their age.",
+            "Should I stay loyal to the organization I've given my life to, or to the person in front of me?",
+            "I got fired for doing the right thing and I don't regret it."
+          ],
+          "spoiler": {
+            "summary": "Giles trains Buffy, tries to fight the Master in her place, and becomes a father figure to her and her friends. His rebellious 'Ripper' youth with Ethan Rayne and the demon Eyghon resurfaces and endangers Jenny Calendar, whom he loves. Jenny is murdered by Angelus, who leaves her body in Giles's bed; Giles attacks Angel in grief-stricken revenge, and is later kidnapped and tortured by him. Ordered by the Council, he secretly drugs Buffy for the Cruciamentum, then confesses and intervenes to save her; the Council fires him for his 'father's love', but he keeps guiding her, and triggers the explosion that destroys the Mayor.",
+            "key_events": [
+              "Tries to face the Master in Buffy's place",
+              "His Ripper past and Eyghon revealed in 'The Dark Age'",
+              "Jenny Calendar murdered by Angelus in 'Passion'",
+              "Tortured by Angelus",
+              "Betrays, then saves, Buffy in the Cruciamentum ('Helpless')",
+              "Fired by the Watchers Council",
+              "Detonates the school to kill the Mayor"
+            ],
+            "got_right": "He ultimately puts a young person's life above institutional loyalty and admits his failures honestly.",
+            "got_wrong": "He follows the Council's cruel orders at first, keeps his past secret until it hurts someone, and lets grief drive him to reckless revenge."
+          }
+        },
+        {
+          "id": "arc:buffy/rupert_giles/when_theyre_grown",
+          "title": "What's left when they don't need you",
+          "literal_situation": "The job that defined Giles has ended, the teenagers he guided are starting college, and he finds himself at home in the middle of the day with no role, no title and no clear reason to stay.",
+          "pattern_label": "losing your role when others grow up",
+          "pattern_text": "A person whose identity was built on guiding young people suddenly loses the job and the daily purpose that came with it, just as the people he raised start their own lives. He drifts, feels useless, tries a new venture, and has to face a painful question: sometimes being there is exactly what keeps the people you love from standing on their own. The story is about reinventing yourself in midlife and knowing when to step back.",
+          "hook": "He's unemployed, feels invisible to the young people he used to guide, and is quietly wondering where he fits now.",
+          "why_relatable": "Who are you when the role that defined you ends? How do you stay close to people who no longer need you the way they did? When does helping become holding someone back?",
+          "watch_for": [
+            "Notice how he fills the empty space in his days.",
+            "Watch how his protege's needs change, and whether he notices.",
+            "What does he think the people he guided still need from him?"
+          ],
+          "start_at": "S4E1",
+          "span": "S4-S6",
+          "situations": [
+            {"id": "losing_a_job", "weight": 0.8},
+            {"id": "midlife_reinvention", "weight": 0.9},
+            {"id": "starting_a_business", "weight": 0.4},
+            {"id": "mentor_and_protege", "weight": 0.7}
+          ],
+          "conflicts": ["holding_on_vs_letting_go", "career_vs_relationships"],
+          "emotions": {"start": ["numbness", "loneliness", "inadequacy"], "middle": ["determination", "grief", "anger"], "end": ["acceptance", "pride", "love"]},
+          "ending_tone": "bittersweet",
+          "intensity": "moderate",
+          "warnings": ["death_of_loved_one", "death_of_main_character", "grief", "war_and_violence", "addiction"],
+          "example_user_messages": [
+            "My kids have grown up and left and I have no idea what my purpose is now.",
+            "I lost the job that defined me and I spend my days feeling useless.",
+            "I'm in my 40s starting a small business and wondering if I'm too old to reinvent myself.",
+            "I think my being around is stopping my adult child from standing on her own feet.",
+            "How do you step back from someone you love without abandoning them?"
+          ],
+          "spoiler": {
+            "summary": "Unemployed and sidelined, Giles sinks into depression, feels excluded, and is turned into a demon by Ethan. He plans to return to England, but Buffy asks him to be her Watcher again. He buys the Magic Box and wins back his official role and pay when Buffy faces down the Council. He argues Dawn may have to die to stop Glory and secretly kills Ben himself so Buffy won't have to. After Buffy dies and is resurrected, she leans on him for everything, so he leaves for England to force her to grow up. He returns with borrowed power to stop Dark Willow, is nearly killed, apologizes for leaving, and Buffy tells him he was right.",
+            "key_events": [
+              "Sidelined and depressed after the school's destruction",
+              "Turned into a Fyarl demon in 'A New Man'",
+              "Buys the Magic Box",
+              "Reinstated as Watcher in 'Checkpoint'",
+              "Smothers Ben to stop Glory",
+              "Leaves for England so Buffy stands on her own",
+              "Returns to fight Dark Willow in 'Two to Go'/'Grave'"
+            ],
+            "got_right": "He recognizes that his presence is enabling dependence and makes the painful choice to step back, and he returns when truly needed.",
+            "got_wrong": "He sulks and withdraws when he feels unneeded instead of saying so, and leaves at a moment when the group is more fragile than he realizes."
+          }
+        }
+      ]
+    },
+    {
+      "id": "char:buffy/alexander_harris",
+      "name": "Xander Harris",
+      "role": "A goofy, wisecracking high-school sophomore with no special talents, the lifelong best friend of Willow and instantly smitten with the new girl, Buffy.",
+      "relations": [
+        {"target": "char:buffy/buffy_summers", "relation": "friend"},
+        {"target": "char:buffy/willow_rosenberg", "relation": "friend"},
+        {"target": "char:buffy/rupert_giles", "relation": "mentor"},
+        {"target": "char:buffy/anya_jenkins", "relation": "ex_partner"},
+        {"target": "char:buffy/cordelia_chase", "relation": "ex_partner"},
+        {"target": "char:buffy/angel", "relation": "rival"},
+        {"target": "char:buffy/spike", "relation": "rival"},
+        {"target": "char:buffy/dawn_summers", "relation": "friend"}
+      ],
+      "arcs": [
+        {
+          "id": "arc:buffy/alexander_harris/left_behind_after_school",
+          "title": "The one who didn't go to college",
+          "literal_situation": "After high school, while his best friends start college, Xander comes home from a failed road trip to live in his parents' basement, paying rent and bouncing between dead-end jobs, feeling like the useless one in a group of gifted friends.",
+          "pattern_label": "feeling left behind while friends move ahead",
+          "pattern_text": "A young adult without an obvious talent watches his closest friends head off to college and bright futures while he moves back into his parents' basement and drifts between odd jobs. He covers his insecurity with jokes, fears he's the one everyone quietly pities, and wonders if he'll ever be more than the sidekick. Gradually he finds a trade, a partner who makes him feel like an adult, and a quieter kind of value.",
+          "hook": "He's living in his parents' basement, working whatever job he can find, and suspects his friends see him as dead weight.",
+          "why_relatable": "What happens when your friends are all 'going somewhere' and you're not? Can you have worth without a degree or special talent? How do you tell the people you love that you feel left behind?",
+          "watch_for": [
+            "Notice how he uses humor to deflect when he feels small.",
+            "Watch what his friends actually rely on him for.",
+            "What changes when he starts seeing himself as capable?"
+          ],
+          "start_at": "S4E1",
+          "span": "S4-S5",
+          "situations": [
+            {"id": "confidence_struggle", "weight": 0.9},
+            {"id": "coming_of_age", "weight": 0.8},
+            {"id": "career_change", "weight": 0.5},
+            {"id": "imposter_syndrome", "weight": 0.5}
+          ],
+          "conflicts": ["fitting_in_vs_standing_out", "safety_vs_growth"],
+          "emotions": {"start": ["inadequacy", "envy", "loneliness"], "middle": ["self_doubt", "determination"], "end": ["confidence", "self_respect", "belonging"]},
+          "ending_tone": "hopeful",
+          "intensity": "light",
+          "warnings": ["addiction"],
+          "example_user_messages": [
+            "All my friends went to university and I'm stuck in my parents' basement working dead-end jobs.",
+            "I feel like the useless one in my friend group.",
+            "I make jokes all the time so nobody notices how insecure I am.",
+            "I didn't go to college and I'm scared I'll never amount to anything.",
+            "I finally found a trade I'm good at but I still feel behind everyone."
+          ],
+          "spoiler": {
+            "summary": "Xander drifts through odd jobs, feels excluded by his college friends, and starts a relationship with Anya that becomes genuinely loving. Spike exploits his fear that the group sees him as useless, but he rejoins them and provides the 'heart' in the enjoining spell against Adam. After being split in two by a spell, he realizes his confident half is his true potential; he gets a construction promotion and moves out of the basement. He gives Buffy honest advice about Riley and proposes to Anya before the battle with Glory.",
+            "key_events": [
+              "Failed road trip; moves into the basement",
+              "Starts dating Anya",
+              "Spike manipulates him into feeling useless",
+              "Provides the 'heart' in the spell against Adam",
+              "Split in two in 'The Replacement'; promoted, moves out",
+              "Proposes to Anya before the fight with Glory"
+            ],
+            "got_right": "He shows up for his friends without powers or credentials, and builds real skills and a stable life step by step.",
+            "got_wrong": "He hides insecurity behind jokes and resentment instead of admitting how left out he feels."
+          }
+        },
+        {
+          "id": "arc:buffy/alexander_harris/fear_of_becoming_his_parents",
+          "title": "Afraid of becoming his parents",
+          "literal_situation": "Later in the series, Xander is engaged and planning a wedding, while his own alcoholic father and bitter mother, whose marriage he grew up inside, are a constant reminder of what marriage can turn into.",
+          "pattern_label": "fear of repeating your parents' marriage",
+          "pattern_text": "A young man who grew up with a drinking, verbally abusive father and an unhappy mother is about to marry someone he loves. As the wedding nears, his fear that he'll turn into his parents grows until it overwhelms him, and a decision made out of fear causes deep hurt to both of them. Afterwards he has to live with it, face his anger and helplessness, and figure out what kind of man he actually wants to be.",
+          "hook": "He's engaged, excited and terrified in equal measure, and his family history is looming over every plan.",
+          "why_relatable": "Can you escape the patterns you grew up with? What's the difference between fearing marriage and fearing the wedding? What do you do with a fear you can't admit to the person you love?",
+          "watch_for": [
+            "Notice how his family shows up around the wedding, and how he reacts.",
+            "Watch whether he talks about his fears with his fiancee, or keeps them inside.",
+            "How does he treat others who make choices he disapproves of?"
+          ],
+          "start_at": "S6E1",
+          "span": "S6-S7",
+          "situations": [
+            {"id": "difficult_parent", "weight": 0.8},
+            {"id": "breakup", "weight": 0.8},
+            {"id": "family_expectations", "weight": 0.5},
+            {"id": "grief_and_loss", "weight": 0.5}
+          ],
+          "conflicts": ["past_vs_future", "holding_on_vs_letting_go"],
+          "emotions": {"start": ["anxiety", "love", "dread"], "middle": ["guilt", "shame", "jealousy", "anger"], "end": ["grief", "acceptance", "love"]},
+          "ending_tone": "bittersweet",
+          "intensity": "heavy",
+          "warnings": ["addiction", "abuse", "death_of_loved_one", "grief", "betrayal", "war_and_violence", "graphic_gore"],
+          "example_user_messages": [
+            "My dad is an alcoholic who screams at my mom and I'm terrified of turning out like him.",
+            "I'm engaged and I love her but I'm panicking that we'll end up like my parents.",
+            "I called off my wedding and I hurt someone I really love.",
+            "Seeing my ex with someone else made me furious and I don't know what to do with it.",
+            "How do I stop my parents' bad marriage from ruining my own relationships?"
+          ],
+          "spoiler": {
+            "summary": "Xander announces his engagement to Anya but grows increasingly anxious. At the wedding, a demon posing as his future self shows him a vision of a bitter marriage like his parents'; with his drunk father insulting everyone, Xander walks out and leaves Anya at the altar. Anya returns to vengeance and sleeps with Spike; Xander tries to kill Spike and learns about Buffy's affair with him. After Tara is killed he blames himself for freezing when he saw Warren's gun, then stops Willow from ending the world by telling her he loves her. In season 7 he defends Anya's chance at redemption, they finally break up still loving each other, he loses an eye, and Anya dies in the final battle.",
+            "key_events": [
+              "Engagement announced; wedding stress",
+              "Leaves Anya at the altar in 'Hell's Bells'",
+              "Anya returns to vengeance and sleeps with Spike",
+              "Tara is shot; he blames himself",
+              "Talks Dark Willow down in 'Grave'",
+              "Loses his eye to Caleb",
+              "Anya dies in 'Chosen'"
+            ],
+            "got_right": "He recognizes the pattern he fears, takes responsibility for his choices, and shows extraordinary loyalty and love when a friend is at her worst.",
+            "got_wrong": "He never talks his fears through with Anya, walks out at the worst possible moment, and lets jealousy and self-righteousness cloud how he treats others."
+          }
+        }
+      ]
+    }
+  ]
+}

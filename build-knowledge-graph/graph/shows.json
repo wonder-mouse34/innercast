@@ -1,0 +1,407 @@
+[
+ {
+  "id": "show:avatar",
+  "name": "Avatar: The Last Airbender / The Legend of Korra",
+  "format": "animated",
+  "genres": [
+   "fantasy",
+   "adventure",
+   "coming-of-age"
+  ],
+  "setting": "a world of four nations inspired by East and South Asian and Inuit cultures",
+  "culture": "East Asian and Inuit inspired",
+  "era": "pre-industrial (ATLA) to 1920s-like industrial (Korra)",
+  "tone": "warm, funny and earnest, with real darkness around war and trauma",
+  "seasons": "ATLA 3 + Korra 4"
+ },
+ {
+  "id": "show:greys_anatomy",
+  "name": "Grey's Anatomy",
+  "format": "live-action",
+  "genres": [
+   "medical drama",
+   "workplace",
+   "romance"
+  ],
+  "setting": "a Seattle teaching hospital",
+  "culture": "contemporary American",
+  "era": "2005-present",
+  "tone": "emotional, romantic, often heartbreaking, with dark humour",
+  "seasons": "21+"
+ },
+ {
+  "id": "show:buffy",
+  "name": "Buffy the Vampire Slayer / Angel",
+  "format": "live-action",
+  "genres": [
+   "supernatural",
+   "teen drama",
+   "action",
+   "comedy"
+  ],
+  "setting": "a small California town on a Hellmouth, later Los Angeles",
+  "culture": "American suburban",
+  "era": "late 1990s-early 2000s",
+  "tone": "witty and self-aware, monsters as metaphors for growing up",
+  "seasons": "Buffy 7 + Angel 5"
+ },
+ {
+  "id": "show:game_of_thrones",
+  "name": "Game of Thrones",
+  "format": "live-action",
+  "genres": [
+   "fantasy",
+   "political drama",
+   "war"
+  ],
+  "setting": "a medieval-style continent of rival noble houses",
+  "culture": "medieval European inspired",
+  "era": "invented medieval",
+  "tone": "brutal, morally grey, high stakes; frequent violence and deaths",
+  "seasons": "8"
+ },
+ {
+  "id": "show:naruto",
+  "name": "Naruto / Naruto Shippuden",
+  "format": "anime",
+  "genres": [
+   "action",
+   "coming-of-age",
+   "adventure"
+  ],
+  "setting": "ninja villages in a fantasy world",
+  "culture": "Japanese",
+  "era": "fantasy feudal-modern mix",
+  "tone": "energetic and emotional; themes of loneliness, rivalry, perseverance",
+  "seasons": "220 + 500 episodes"
+ },
+ {
+  "id": "show:doctor_who",
+  "name": "Doctor Who (2005 revival)",
+  "format": "live-action",
+  "genres": [
+   "science fiction",
+   "adventure",
+   "family drama"
+  ],
+  "setting": "anywhere in time and space, starting from ordinary British homes",
+  "culture": "British",
+  "era": "past, present and far future",
+  "tone": "whimsical, warm and sometimes devastating; about ordinary people discovering they matter",
+  "seasons": "13+ series"
+ },
+ {
+  "id": "show:walking_dead",
+  "name": "The Walking Dead",
+  "format": "live-action",
+  "genres": [
+   "post-apocalyptic",
+   "survival drama",
+   "horror"
+  ],
+  "setting": "the American South after society collapses",
+  "culture": "American",
+  "era": "near-present collapse",
+  "tone": "bleak, tense and violent, about who you become when the rules are gone",
+  "seasons": "11"
+ },
+ {
+  "id": "show:breaking_bad",
+  "name": "Breaking Bad / Better Call Saul",
+  "format": "live-action",
+  "genres": [
+   "crime drama",
+   "character study"
+  ],
+  "setting": "Albuquerque, New Mexico",
+  "culture": "contemporary American",
+  "era": "2000s",
+  "tone": "slow-burning, tense, morally dark, darkly funny",
+  "seasons": "5 + 6"
+ },
+ {
+  "id": "show:stranger_things",
+  "name": "Stranger Things",
+  "format": "live-action",
+  "genres": [
+   "sci-fi horror",
+   "coming-of-age",
+   "adventure"
+  ],
+  "setting": "a small Indiana town in the 1980s",
+  "culture": "American small-town",
+  "era": "1980s",
+  "tone": "nostalgic, scary and heartfelt; friendship against the dark",
+  "seasons": "5"
+ },
+ {
+  "id": "show:the_office",
+  "name": "The Office (US)",
+  "format": "live-action",
+  "genres": [
+   "workplace comedy",
+   "mockumentary"
+  ],
+  "setting": "a paper company branch office in Scranton, Pennsylvania",
+  "culture": "contemporary American",
+  "era": "2005-2013",
+  "tone": "cringe comedy with a big heart",
+  "seasons": "9"
+ },
+ {
+  "id": "show:friends",
+  "name": "Friends",
+  "format": "live-action",
+  "genres": [
+   "sitcom",
+   "romantic comedy"
+  ],
+  "setting": "a group of friends in their twenties in Manhattan",
+  "culture": "American urban",
+  "era": "1994-2004",
+  "tone": "light, warm and comforting",
+  "seasons": "10"
+ },
+ {
+  "id": "show:attack_on_titan",
+  "name": "Attack on Titan",
+  "format": "anime",
+  "genres": [
+   "dark fantasy",
+   "action",
+   "war drama"
+  ],
+  "setting": "a walled city besieged by giants, later a wider world at war",
+  "culture": "Japanese (European-inspired setting)",
+  "era": "invented pre-industrial to early-modern",
+  "tone": "intense, tragic, morally complex",
+  "seasons": "4"
+ },
+ {
+  "id": "show:my_hero_academia",
+  "name": "My Hero Academia",
+  "format": "anime",
+  "genres": [
+   "superhero",
+   "coming-of-age",
+   "school"
+  ],
+  "setting": "a hero academy in a world where most people have superpowers",
+  "culture": "Japanese",
+  "era": "near future",
+  "tone": "earnest, energetic and hopeful; about earning your place",
+  "seasons": "7"
+ },
+ {
+  "id": "show:squid_game",
+  "name": "Squid Game",
+  "format": "live-action",
+  "genres": [
+   "survival thriller",
+   "social drama"
+  ],
+  "setting": "deadly children's games played by people drowning in debt",
+  "culture": "South Korean",
+  "era": "contemporary",
+  "tone": "tense, violent and heartbreaking; a critique of inequality",
+  "seasons": "3"
+ },
+ {
+  "id": "show:ted_lasso",
+  "name": "Ted Lasso",
+  "format": "live-action",
+  "genres": [
+   "sports comedy",
+   "workplace drama"
+  ],
+  "setting": "a struggling London football club",
+  "culture": "British and American",
+  "era": "contemporary",
+  "tone": "kind, funny and emotionally honest; mental health handled with care",
+  "seasons": "3"
+ },
+ {
+  "id": "show:schitts_creek",
+  "name": "Schitt's Creek",
+  "format": "live-action",
+  "genres": [
+   "sitcom",
+   "family comedy"
+  ],
+  "setting": "a tiny rural town where a rich family lands after losing everything",
+  "culture": "Canadian",
+  "era": "contemporary",
+  "tone": "gentle, witty and warm; a slow turn from snobbery to love",
+  "seasons": "6"
+ },
+ {
+  "id": "show:bojack",
+  "name": "BoJack Horseman",
+  "format": "animated",
+  "genres": [
+   "adult animation",
+   "tragicomedy"
+  ],
+  "setting": "Hollywood, in a world of humans and anthropomorphic animals",
+  "culture": "American (Hollywood)",
+  "era": "contemporary",
+  "tone": "absurd and funny on the surface, unflinching about depression and addiction",
+  "seasons": "6"
+ },
+ {
+  "id": "show:money_heist",
+  "name": "Money Heist (La casa de papel)",
+  "format": "live-action",
+  "genres": [
+   "heist thriller",
+   "crime drama"
+  ],
+  "setting": "a crew of outsiders pulling off huge heists in Madrid",
+  "culture": "Spanish",
+  "era": "contemporary",
+  "tone": "fast, stylish, emotional, with found-family loyalty",
+  "seasons": "5 parts"
+ },
+ {
+  "id": "show:mad_men",
+  "name": "Mad Men",
+  "format": "live-action",
+  "genres": [
+   "period drama",
+   "workplace drama"
+  ],
+  "setting": "a Madison Avenue advertising agency in 1960s New York",
+  "culture": "American",
+  "era": "1960s",
+  "tone": "slow, stylish and melancholy; about reinvention and the cost of success",
+  "seasons": "7"
+ },
+ {
+  "id": "show:succession",
+  "name": "Succession",
+  "format": "live-action",
+  "genres": [
+   "family drama",
+   "dark comedy",
+   "corporate drama"
+  ],
+  "setting": "a billionaire media family fighting over who will inherit the company",
+  "culture": "American (New York elite)",
+  "era": "contemporary",
+  "tone": "sharp, cruel and very funny; about love, power and never being enough",
+  "seasons": "4"
+ },
+ {
+  "id": "show:parks_and_rec",
+  "name": "Parks and Recreation",
+  "format": "live-action",
+  "genres": [
+   "workplace comedy",
+   "mockumentary"
+  ],
+  "setting": "a small-town parks department in Pawnee, Indiana",
+  "culture": "American small-town",
+  "era": "2009-2015",
+  "tone": "warm, optimistic and silly; friendship and public service",
+  "seasons": "7"
+ },
+ {
+  "id": "show:brooklyn_99",
+  "name": "Brooklyn Nine-Nine",
+  "format": "live-action",
+  "genres": [
+   "workplace comedy",
+   "police sitcom"
+  ],
+  "setting": "a New York police precinct",
+  "culture": "American urban",
+  "era": "2013-2021",
+  "tone": "fast, goofy and kind; found family at work",
+  "seasons": "8"
+ },
+ {
+  "id": "show:gilmore_girls",
+  "name": "Gilmore Girls",
+  "format": "live-action",
+  "genres": [
+   "family drama",
+   "comedy"
+  ],
+  "setting": "a quirky small town in Connecticut",
+  "culture": "American (New England)",
+  "era": "2000-2007",
+  "tone": "cosy, witty and fast-talking; mothers, daughters and ambition",
+  "seasons": "7 + revival"
+ },
+ {
+  "id": "show:the_good_place",
+  "name": "The Good Place",
+  "format": "live-action",
+  "genres": [
+   "fantasy comedy",
+   "philosophy"
+  ],
+  "setting": "a colourful afterlife neighbourhood",
+  "culture": "American",
+  "era": "timeless afterlife",
+  "tone": "clever, playful and big-hearted; what it means to be a good person",
+  "seasons": "4"
+ },
+ {
+  "id": "show:fma",
+  "name": "Fullmetal Alchemist: Brotherhood",
+  "format": "anime",
+  "genres": [
+   "fantasy",
+   "adventure",
+   "war drama"
+  ],
+  "setting": "an industrial-age country where alchemy is a science",
+  "culture": "Japanese (European-inspired setting)",
+  "era": "early-20th-century-like",
+  "tone": "adventurous and funny, with deep grief, guilt and war",
+  "seasons": "64 episodes"
+ },
+ {
+  "id": "show:arcane",
+  "name": "Arcane",
+  "format": "animated",
+  "genres": [
+   "fantasy",
+   "action drama"
+  ],
+  "setting": "a gleaming city and the poor undercity beneath it",
+  "culture": "French-produced, steampunk-inspired",
+  "era": "invented industrial",
+  "tone": "gorgeous, tense and tragic; sisters on opposite sides",
+  "seasons": "2"
+ },
+ {
+  "id": "show:dark",
+  "name": "Dark",
+  "format": "live-action",
+  "genres": [
+   "sci-fi mystery",
+   "family drama"
+  ],
+  "setting": "a small German town where a child's disappearance exposes connected family secrets",
+  "culture": "German",
+  "era": "1953-2053 across timelines",
+  "tone": "bleak, intricate and haunting; grief and fate",
+  "seasons": "3"
+ },
+ {
+  "id": "show:sex_education",
+  "name": "Sex Education",
+  "format": "live-action",
+  "genres": [
+   "teen comedy-drama",
+   "coming-of-age"
+  ],
+  "setting": "a British secondary school where a sex therapist's son starts an advice clinic",
+  "culture": "British",
+  "era": "contemporary",
+  "tone": "frank, funny and tender; identity, intimacy and growing up",
+  "seasons": "4"
+ }
+]

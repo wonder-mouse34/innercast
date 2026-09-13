@@ -1,0 +1,2489 @@
+{
+  "patterns": [
+    {
+      "id": "pattern:theme_family_origin",
+      "label": "family and where you come from",
+      "description": "How the families we are born into, raised by or measured against shape who we become.",
+      "broader": []
+    },
+    {
+      "id": "pattern:theme_harm_repair",
+      "label": "harm, guilt and repair",
+      "description": "Living with harm done or suffered: guilt, blame, revenge, forgiveness and making amends.",
+      "broader": []
+    },
+    {
+      "id": "pattern:theme_love_intimacy",
+      "label": "love and intimacy",
+      "description": "Wanting, risking, keeping and losing closeness with a partner or someone you love.",
+      "broader": []
+    },
+    {
+      "id": "pattern:theme_work_purpose",
+      "label": "work, calling and purpose",
+      "description": "What we give our working lives to, what it costs, and what gives life meaning.",
+      "broader": []
+    },
+    {
+      "id": "pattern:theme_leadership_power",
+      "label": "leadership and power",
+      "description": "Being put in charge, carrying other people's safety, and what power asks of your conscience.",
+      "broader": []
+    },
+    {
+      "id": "pattern:theme_loss_grief",
+      "label": "loss and grief",
+      "description": "Living through the death or disappearance of people, places and futures you counted on.",
+      "broader": []
+    },
+    {
+      "id": "pattern:theme_belonging",
+      "label": "belonging and being an outsider",
+      "description": "Feeling different, finding your people, and what you will trade to be accepted.",
+      "broader": []
+    },
+    {
+      "id": "pattern:theme_identity",
+      "label": "identity and self-acceptance",
+      "description": "Working out who you are underneath the roles, labels and expectations placed on you.",
+      "broader": []
+    },
+    {
+      "id": "pattern:theme_control_letting_go",
+      "label": "control and letting go",
+      "description": "Holding on too tightly, being controlled by others, and learning to trust and release.",
+      "broader": []
+    },
+    {
+      "id": "pattern:theme_trauma_recovery",
+      "label": "trauma and recovery",
+      "description": "Recovering from violence, abuse, injury, addiction and the defences built to survive them.",
+      "broader": []
+    },
+    {
+      "id": "pattern:theme_courage_self_worth",
+      "label": "courage and self-worth",
+      "description": "Believing you are enough, finding your voice and your own kind of strength.",
+      "broader": []
+    },
+    {
+      "id": "pattern:theme_duty_vs_desire",
+      "label": "duty vs. the life you want",
+      "description": "Obligations and responsibilities pulling against the ordinary life or love you long for.",
+      "broader": []
+    },
+    {
+      "id": "pattern:theme_caring_guiding",
+      "label": "caring for and guiding others",
+      "description": "Parenting, mentoring and looking after people, and how hard it is to do it well.",
+      "broader": []
+    },
+    {
+      "id": "pattern:approval_from_withholding_parent",
+      "label": "chasing approval from a parent who withholds it",
+      "description": "Building your life around winning the love or respect of a parent who keeps withholding it, and wondering what it is costing you.",
+      "broader": [
+        "pattern:theme_family_origin",
+        "pattern:theme_courage_self_worth"
+      ]
+    },
+    {
+      "id": "pattern:family_wrote_you_off",
+      "label": "finding your own strength when family has written you off",
+      "description": "A family (your own, or the one you hope to join) has decided you don't measure up, and you have to find out what your real strengths are.",
+      "broader": [
+        "pattern:theme_family_origin",
+        "pattern:theme_courage_self_worth"
+      ]
+    },
+    {
+      "id": "pattern:measured_against_a_sibling",
+      "label": "always measured against a sibling",
+      "description": "Growing up compared with a brother or sister who seems to fit the mould better, and trying to be someone in your own right.",
+      "broader": [
+        "pattern:theme_family_origin",
+        "pattern:theme_identity"
+      ]
+    },
+    {
+      "id": "pattern:family_legacy_weight",
+      "label": "living up to, or escaping, a family legacy",
+      "description": "Carrying a family name, position or famous parent that decides your worth before you've done anything, and trying to be judged on your own terms.",
+      "broader": [
+        "pattern:theme_family_origin",
+        "pattern:theme_identity"
+      ]
+    },
+    {
+      "id": "pattern:family_secret_rewrites_story",
+      "label": "a family secret that rewrites who you thought you were",
+      "description": "Learning something hidden about a parent or your own origins that shakes your sense of who you are and where you belong.",
+      "broader": [
+        "pattern:theme_family_origin",
+        "pattern:theme_identity"
+      ]
+    },
+    {
+      "id": "pattern:making_peace_with_a_parent",
+      "label": "making peace with an estranged parent or relative",
+      "description": "Years of silence, grudges or unfinished business with a parent or relative, and the question of whether you can understand them before time runs out.",
+      "broader": [
+        "pattern:theme_family_origin",
+        "pattern:theme_harm_repair"
+      ]
+    },
+    {
+      "id": "pattern:breaking_the_family_cycle",
+      "label": "trying not to repeat what your parents did",
+      "description": "Fearing that the anger, coldness or failures of the people who raised you live in you too, and trying to be a different kind of partner or parent.",
+      "broader": [
+        "pattern:theme_family_origin",
+        "pattern:theme_trauma_recovery"
+      ]
+    },
+    {
+      "id": "pattern:parentified_child",
+      "label": "the child who had to become the parent",
+      "description": "Stepping into the caretaker role far too young, keeping everyone afloat while your own needs and anger go unspoken.",
+      "broader": [
+        "pattern:theme_family_origin",
+        "pattern:theme_caring_guiding"
+      ]
+    },
+    {
+      "id": "pattern:tired_of_being_protected",
+      "label": "tired of being the one everyone protects",
+      "description": "Being treated as fragile, too young or the one who needs saving, and fighting to show you can stand on your own.",
+      "broader": [
+        "pattern:theme_courage_self_worth",
+        "pattern:theme_family_origin"
+      ]
+    },
+    {
+      "id": "pattern:unready_parent",
+      "label": "unready parent, suddenly responsible",
+      "description": "Suddenly responsible for a child you didn't plan for, while still working out your own life, and unsure you are fit for it.",
+      "broader": [
+        "pattern:theme_caring_guiding",
+        "pattern:theme_family_origin"
+      ]
+    },
+    {
+      "id": "pattern:reluctant_guardian",
+      "label": "a loner who ends up looking after someone",
+      "description": "Someone who never planned to care for anyone ends up responsible for a young person, and the bond changes them both.",
+      "broader": [
+        "pattern:theme_caring_guiding",
+        "pattern:theme_love_intimacy"
+      ]
+    },
+    {
+      "id": "pattern:guiding_someone_who_resists",
+      "label": "guiding a young person who fights your help",
+      "description": "Mentoring or loving a young person who pushes you away, and learning how much to guide, how much to protect and when to trust them.",
+      "broader": [
+        "pattern:theme_caring_guiding",
+        "pattern:theme_control_letting_go"
+      ]
+    },
+    {
+      "id": "pattern:protective_love_becomes_control",
+      "label": "protective love that turns into control",
+      "description": "A parent or caregiver whose fear for the people in their care turns into rules, control and surveillance that push them away.",
+      "broader": [
+        "pattern:theme_caring_guiding",
+        "pattern:theme_control_letting_go"
+      ]
+    },
+    {
+      "id": "pattern:control_so_no_one_leaves",
+      "label": "grabbing for control whenever you fear losing people",
+      "description": "Answering fear of loss or abandonment by tightening your grip on the people around you, even as it drives them off.",
+      "broader": [
+        "pattern:theme_control_letting_go",
+        "pattern:theme_love_intimacy"
+      ]
+    },
+    {
+      "id": "pattern:fix_someone_you_cant_save",
+      "label": "trying to fix someone you love when you can't",
+      "description": "Watching someone close to you suffer, desperately trying to fix it, and having to learn the limits of what love can do.",
+      "broader": [
+        "pattern:theme_control_letting_go",
+        "pattern:theme_love_intimacy"
+      ]
+    },
+    {
+      "id": "pattern:carrying_a_secret_alone",
+      "label": "carrying a hard decision or secret alone",
+      "description": "Deciding by yourself what is best for the people you love and hiding it from them, and facing whether that protection was ever really yours to give.",
+      "broader": [
+        "pattern:theme_control_letting_go",
+        "pattern:theme_duty_vs_desire"
+      ]
+    },
+    {
+      "id": "pattern:leaving_controlling_group",
+      "label": "leaving a controlling group or person and relearning who you are",
+      "description": "After life under someone else's control, learning what you actually think, feel and want, and trusting people who offer a different way to live.",
+      "broader": [
+        "pattern:theme_control_letting_go",
+        "pattern:theme_identity"
+      ]
+    },
+    {
+      "id": "pattern:earning_back_trust",
+      "label": "earning back trust from the people you hurt",
+      "description": "Wanting to make things right with the people you wronged, who have every reason to keep you out, and proving it through actions over time.",
+      "broader": [
+        "pattern:theme_harm_repair",
+        "pattern:theme_belonging"
+      ]
+    },
+    {
+      "id": "pattern:can_you_really_change",
+      "label": "trying to become better than your worst past",
+      "description": "Carrying real guilt for past harm and trying to live differently, while wondering whether people can truly change.",
+      "broader": [
+        "pattern:theme_harm_repair",
+        "pattern:theme_identity"
+      ]
+    },
+    {
+      "id": "pattern:blaming_yourself",
+      "label": "blaming yourself for harm you couldn't prevent",
+      "description": "Replaying a moment, a choice or a string of bad luck and believing the losses around you are your fault.",
+      "broader": [
+        "pattern:theme_harm_repair",
+        "pattern:theme_loss_grief"
+      ]
+    },
+    {
+      "id": "pattern:guilt_into_care",
+      "label": "turning guilt into care for others",
+      "description": "Channelling guilt over people you failed into protecting, teaching or serving others, while still struggling to forgive yourself.",
+      "broader": [
+        "pattern:theme_harm_repair",
+        "pattern:theme_caring_guiding"
+      ]
+    },
+    {
+      "id": "pattern:revenge_as_identity",
+      "label": "letting a wound turn into a mission of payback",
+      "description": "After being badly hurt, organising your life around making someone pay, until the grudge starts to define who you are.",
+      "broader": [
+        "pattern:theme_harm_repair",
+        "pattern:theme_loss_grief"
+      ]
+    },
+    {
+      "id": "pattern:forgive_or_get_even",
+      "label": "deciding whether to forgive, confront or let go",
+      "description": "Face to face with the source of your pain, working out what you actually want: justice, an apology, revenge or simply to be free of it.",
+      "broader": [
+        "pattern:theme_harm_repair",
+        "pattern:theme_control_letting_go"
+      ]
+    },
+    {
+      "id": "pattern:stuck_in_grief",
+      "label": "stuck in grief and afraid to live again",
+      "description": "Holding on to a loss so tightly that moving forward, or letting yourself be happy again, feels like a betrayal.",
+      "broader": [
+        "pattern:theme_loss_grief"
+      ]
+    },
+    {
+      "id": "pattern:numb_after_collapse",
+      "label": "going numb after your world falls apart",
+      "description": "After a shattering loss, going through the motions, hiding how empty you feel and slowly losing hope.",
+      "broader": [
+        "pattern:theme_loss_grief",
+        "pattern:theme_trauma_recovery"
+      ]
+    },
+    {
+      "id": "pattern:taking_stock_of_a_life",
+      "label": "taking stock of the life you chose",
+      "description": "Looking back at what you gave up, what you failed at and what you passed on, and asking what your life has meant.",
+      "broader": [
+        "pattern:theme_duty_vs_desire",
+        "pattern:theme_loss_grief"
+      ]
+    },
+    {
+      "id": "pattern:love_you_couldnt_keep",
+      "label": "a love you couldn't keep",
+      "description": "Falling hard for someone when circumstances, duty or the truth about them stand in the way, and learning to carry that heartbreak.",
+      "broader": [
+        "pattern:theme_love_intimacy",
+        "pattern:theme_loss_grief"
+      ]
+    },
+    {
+      "id": "pattern:letting_love_in",
+      "label": "learning to let love in when you expect it to leave",
+      "description": "Someone who learned early that people leave, and who sabotages, runs from or braces against closeness, trying to trust a love that might stay.",
+      "broader": [
+        "pattern:theme_love_intimacy",
+        "pattern:theme_trauma_recovery"
+      ]
+    },
+    {
+      "id": "pattern:hidden_love",
+      "label": "loving someone quietly without saying it",
+      "description": "Loving a friend or someone you admire for a long time in silence, and weighing the safety of hiding it against the risk of saying it.",
+      "broader": [
+        "pattern:theme_love_intimacy",
+        "pattern:theme_courage_self_worth"
+      ]
+    },
+    {
+      "id": "pattern:holding_on_to_someone_pulling_away",
+      "label": "holding on to someone who keeps pulling away",
+      "description": "Loving a partner or friend who is guarded, half-committed or walking away, and deciding how long to wait, chase or let go.",
+      "broader": [
+        "pattern:theme_love_intimacy",
+        "pattern:theme_control_letting_go"
+      ]
+    },
+    {
+      "id": "pattern:unlikely_bond",
+      "label": "an unlikely bond with someone you started out opposing",
+      "description": "A rival or someone you disliked on sight becomes the person who understands you best, in a way neither of you can easily name.",
+      "broader": [
+        "pattern:theme_love_intimacy",
+        "pattern:theme_belonging"
+      ]
+    },
+    {
+      "id": "pattern:torn_between_two_loves",
+      "label": "torn between two loves that stand for two versions of you",
+      "description": "Caught between two people, each tied to a different life or a different side of yourself, and realising the real choice is about who you want to be.",
+      "broader": [
+        "pattern:theme_love_intimacy",
+        "pattern:theme_identity"
+      ]
+    },
+    {
+      "id": "pattern:lost_inside_one_relationship",
+      "label": "a relationship that became your whole identity",
+      "description": "Having built your sense of self around one person or relationship, and having to find out who you are without it.",
+      "broader": [
+        "pattern:theme_love_intimacy",
+        "pattern:theme_identity"
+      ]
+    },
+    {
+      "id": "pattern:partners_want_different_lives",
+      "label": "a committed relationship pulling apart",
+      "description": "A marriage or engagement strained when partners want different futures, grieve in ways the other can't reach, or one of them is frozen by fear of what commitment will turn them into.",
+      "broader": [
+        "pattern:theme_love_intimacy",
+        "pattern:theme_duty_vs_desire"
+      ]
+    },
+    {
+      "id": "pattern:rebuilding_after_being_left",
+      "label": "rebuilding yourself after being left",
+      "description": "After a partner leaves or a marriage ends, finding your footing, your confidence and your own sense of worth again.",
+      "broader": [
+        "pattern:theme_love_intimacy",
+        "pattern:theme_loss_grief"
+      ]
+    },
+    {
+      "id": "pattern:discovering_who_you_love",
+      "label": "discovering who you love and living it openly",
+      "description": "Realising something new about who you are attracted to, and deciding whether to live honestly even if others may not accept it.",
+      "broader": [
+        "pattern:theme_identity",
+        "pattern:theme_love_intimacy"
+      ]
+    },
+    {
+      "id": "pattern:calling_vs_love",
+      "label": "when your calling competes with love and family",
+      "description": "A demanding career or vocation keeps pulling against a partner, children or the people back home, and every choice gives something up.",
+      "broader": [
+        "pattern:theme_work_purpose",
+        "pattern:theme_duty_vs_desire"
+      ]
+    },
+    {
+      "id": "pattern:role_you_never_asked_for",
+      "label": "handed a role you never asked for",
+      "description": "Being given a huge responsibility or destiny you didn't choose, and fearing it will swallow the ordinary life and the person you were.",
+      "broader": [
+        "pattern:theme_duty_vs_desire",
+        "pattern:theme_identity"
+      ]
+    },
+    {
+      "id": "pattern:dream_isnt_what_promised",
+      "label": "discovering the dream isn't what you were promised",
+      "description": "Finally reaching the fresh start, dream place or dream job, and finding it harsher and less welcoming than you imagined.",
+      "broader": [
+        "pattern:theme_work_purpose",
+        "pattern:theme_identity"
+      ]
+    },
+    {
+      "id": "pattern:reinvention_after_losing_role",
+      "label": "who you are when the role that defined you is gone",
+      "description": "Losing the title, job, fight or status your identity rested on, and having to rebuild meaning from something new.",
+      "broader": [
+        "pattern:theme_work_purpose",
+        "pattern:theme_identity"
+      ]
+    },
+    {
+      "id": "pattern:purpose_from_being_needed",
+      "label": "finding a reason to keep going by being useful",
+      "description": "At a low point, discovering that being needed by others, or serving something bigger than yourself, can become a reason to live.",
+      "broader": [
+        "pattern:theme_work_purpose",
+        "pattern:theme_trauma_recovery"
+      ]
+    },
+    {
+      "id": "pattern:promoted_over_peers",
+      "label": "promoted to lead people who used to be your peers",
+      "description": "Suddenly in charge of colleagues, friends or people who doubt you, and learning how lonely it is when your calls are resented.",
+      "broader": [
+        "pattern:theme_leadership_power",
+        "pattern:theme_work_purpose"
+      ]
+    },
+    {
+      "id": "pattern:weight_of_leading",
+      "label": "carrying the weight of every decision as a leader",
+      "description": "Responsible for other people's safety, feeling every loss as your own, and struggling to share the load or accept that you can't control every outcome.",
+      "broader": [
+        "pattern:theme_leadership_power",
+        "pattern:theme_control_letting_go"
+      ]
+    },
+    {
+      "id": "pattern:crossing_a_line_under_pressure",
+      "label": "pressured to cross a line your conscience forbids",
+      "description": "Everyone agrees on the 'necessary' choice and it is the one thing your principles reject, and you have to decide what you can live with.",
+      "broader": [
+        "pattern:theme_leadership_power",
+        "pattern:theme_identity"
+      ]
+    },
+    {
+      "id": "pattern:conscience_vs_institution",
+      "label": "choosing your conscience over the institution you serve",
+      "description": "Loyal to an organisation, a leader or its rules, until they collide with what you know is right for a person in front of you.",
+      "broader": [
+        "pattern:theme_work_purpose",
+        "pattern:theme_leadership_power"
+      ]
+    },
+    {
+      "id": "pattern:complicit_in_bad_organisation",
+      "label": "working for a boss or group whose methods you can't stomach",
+      "description": "Staying inside an organisation, cause or boss that does harm, telling yourself you can do good from within, and deciding when to walk away.",
+      "broader": [
+        "pattern:theme_work_purpose",
+        "pattern:theme_leadership_power"
+      ]
+    },
+    {
+      "id": "pattern:fighting_for_respect",
+      "label": "fighting for respect in a place that says you don't belong",
+      "description": "Pushing into a path, team or role usually closed to people like you, and demanding to be treated as a full person rather than a tool or a joke.",
+      "broader": [
+        "pattern:theme_belonging",
+        "pattern:theme_courage_self_worth"
+      ]
+    },
+    {
+      "id": "pattern:ordinary_among_gifted",
+      "label": "feeling ordinary among naturally gifted people",
+      "description": "Surrounded by people with obvious talent, feeling you bring nothing special, and working out what your own strengths really are.",
+      "broader": [
+        "pattern:theme_courage_self_worth",
+        "pattern:theme_belonging"
+      ]
+    },
+    {
+      "id": "pattern:worth_only_when_winning",
+      "label": "believing you're only worth something when you succeed",
+      "description": "An identity built on being the best or living up to a role, where every setback feels like proof you are nothing without it.",
+      "broader": [
+        "pattern:theme_courage_self_worth",
+        "pattern:theme_identity"
+      ]
+    },
+    {
+      "id": "pattern:outsider_learning_to_belong",
+      "label": "the outsider studying others to learn how to belong",
+      "description": "Someone who feels fundamentally different treats ordinary social life as something to learn, and wonders whether to become like others or be accepted as they are.",
+      "broader": [
+        "pattern:theme_belonging",
+        "pattern:theme_identity"
+      ]
+    },
+    {
+      "id": "pattern:between_two_worlds",
+      "label": "caught between two cultures or families that each claim you",
+      "description": "Belonging to two worlds and fully to neither, suppressing or idealising one side of yourself while trying to choose which values are really yours.",
+      "broader": [
+        "pattern:theme_belonging",
+        "pattern:theme_family_origin"
+      ]
+    },
+    {
+      "id": "pattern:giving_yourself_up_to_belong",
+      "label": "how much of yourself you'll give up to belong",
+      "description": "Hungry to be accepted by a group, and discovering the price of admission is your honesty, your name or your sense of who you are.",
+      "broader": [
+        "pattern:theme_belonging",
+        "pattern:theme_identity"
+      ]
+    },
+    {
+      "id": "pattern:starving_to_matter",
+      "label": "starving to be recognised as someone who matters",
+      "description": "After a life of being overlooked, rejected or blamed, needing desperately to be seen as special or chosen, and what that hunger makes you do.",
+      "broader": [
+        "pattern:theme_belonging",
+        "pattern:theme_courage_self_worth"
+      ]
+    },
+    {
+      "id": "pattern:dropping_the_armour",
+      "label": "dropping the armour you built after early rejection",
+      "description": "Someone who learned young that caring makes you weak hides behind coldness, arrogance or distance, and slowly risks letting people in.",
+      "broader": [
+        "pattern:theme_trauma_recovery",
+        "pattern:theme_love_intimacy"
+      ]
+    },
+    {
+      "id": "pattern:find_your_voice",
+      "label": "finding your voice after being silenced",
+      "description": "Someone who was expected to stay quiet, obedient or decorative slowly learns to speak up and take charge of their own life.",
+      "broader": [
+        "pattern:theme_courage_self_worth",
+        "pattern:theme_control_letting_go"
+      ]
+    },
+    {
+      "id": "pattern:relearning_safety_after_abuse",
+      "label": "learning to feel safe again after abuse",
+      "description": "After abuse, captivity or violence, rebuilding a life and learning whether it is safe to be close to people and to be known.",
+      "broader": [
+        "pattern:theme_trauma_recovery",
+        "pattern:theme_control_letting_go"
+      ]
+    },
+    {
+      "id": "pattern:strong_one_cracks",
+      "label": "when the strong, capable one starts to crack",
+      "description": "Someone whose identity rests on being strong and competent hits a breaking point, and has to admit they need help.",
+      "broader": [
+        "pattern:theme_trauma_recovery",
+        "pattern:theme_identity"
+      ]
+    },
+    {
+      "id": "pattern:pretending_fine_after_trauma",
+      "label": "insisting you're fine after something terrible",
+      "description": "After a violent or violating experience, throwing yourself back into life as if nothing changed, until it breaks through and hurts the people close to you.",
+      "broader": [
+        "pattern:theme_trauma_recovery"
+      ]
+    },
+    {
+      "id": "pattern:body_blow",
+      "label": "rebuilding yourself after a body or health blow",
+      "description": "An injury or illness takes away the ability your life was built on, and you have to work out who you are in the body you have now.",
+      "broader": [
+        "pattern:theme_trauma_recovery",
+        "pattern:theme_identity"
+      ]
+    },
+    {
+      "id": "pattern:numbing_habit",
+      "label": "numbing pain with a habit that takes over",
+      "description": "Reaching for a drink, a drug, food or a feeling of power to cope, hiding it from people who depend on you, and fighting to get and stay clean.",
+      "broader": [
+        "pattern:theme_trauma_recovery",
+        "pattern:theme_control_letting_go"
+      ]
+    },
+    {
+      "id": "pattern:persona_replacing_you",
+      "label": "a role or persona that starts to replace who you are",
+      "description": "Playing a part, a louder version of yourself or a whole double life so long and so well that the gap between the person you show and the person you are threatens to swallow you.",
+      "broader": [
+        "pattern:theme_identity",
+        "pattern:theme_duty_vs_desire"
+      ]
+    },
+    {
+      "id": "pattern:longing_for_a_family_of_your_own",
+      "label": "longing for a family that won't arrive the way you pictured",
+      "description": "Wanting a partner, a child or a home of your own while timing, bodies, loss or the wrong relationships keep getting in the way, and deciding what family can look like instead.",
+      "broader": [
+        "pattern:theme_love_intimacy",
+        "pattern:theme_family_origin"
+      ]
+    },
+    {
+      "id": "pattern:betting_on_yourself",
+      "label": "leaving the safe path to bet on yourself",
+      "description": "Walking away from a comfortable, expected or dead-end life to chase work or a life that actually fits you, with no guarantee and plenty of people saying it's a mistake.",
+      "broader": [
+        "pattern:theme_work_purpose",
+        "pattern:theme_courage_self_worth"
+      ]
+    },
+    {
+      "id": "pattern:outrunning_pain",
+      "label": "staying in motion so the pain can't catch up",
+      "description": "Keeping busy, cheerful, reckless or always on the move so that old pain or fresh grief never has to be felt, until it starts leaking out anyway.",
+      "broader": [
+        "pattern:theme_loss_grief",
+        "pattern:theme_trauma_recovery"
+      ]
+    },
+    {
+      "id": "pattern:second_chance_as_a_parent",
+      "label": "a second chance to be the parent you weren't",
+      "description": "A parent who was absent, self-absorbed or cut off from their child by their own choices gets a late chance to be close, and has to find out whether it is too late.",
+      "broader": [
+        "pattern:theme_caring_guiding",
+        "pattern:theme_harm_repair"
+      ]
+    },
+    {
+      "id": "pattern:learning_what_you_deserve_in_love",
+      "label": "learning what you deserve in love",
+      "description": "Staying with people who neglect, belittle or take you for granted, waiting to be chosen, and slowly learning to name what you need and walk away from less.",
+      "broader": [
+        "pattern:theme_love_intimacy",
+        "pattern:theme_courage_self_worth"
+      ]
+    },
+    {
+      "id": "pattern:shoes_you_cant_fill",
+      "label": "stepping into shoes you feel you can't fill",
+      "description": "Handed the place, work or trust of someone you admired, haunted by comparison and the feeling it should have gone to someone better, and trying to do it your own way.",
+      "broader": [
+        "pattern:theme_leadership_power",
+        "pattern:theme_courage_self_worth"
+      ]
+    },
+    {
+      "id": "pattern:loving_family_who_do_harm",
+      "label": "loving a family member who does harm",
+      "description": "Discovering that someone in your family has hurt you or other people, and working out how much of them you can keep loving, defending or letting close without betraying yourself.",
+      "broader": [
+        "pattern:theme_family_origin",
+        "pattern:theme_harm_repair"
+      ]
+    },
+    {
+      "id": "pattern:trusting_your_instincts",
+      "label": "trusting your instincts when no one believes you",
+      "description": "Sensing that something is badly wrong while everyone around you calls it worry, nagging or hysteria, and deciding whether to trust what you see and act on it.",
+      "broader": [
+        "pattern:theme_courage_self_worth"
+      ]
+    },
+    {
+      "id": "pattern:power_going_to_your_head",
+      "label": "letting power or status go to your head",
+      "description": "Hungry for authority, or suddenly free of anyone to check you, starting to believe the rules don't apply and treating people as tools, and finding out what real responsibility asks.",
+      "broader": [
+        "pattern:theme_leadership_power",
+        "pattern:theme_identity"
+      ]
+    },
+    {
+      "id": "pattern:fear_making_your_choices",
+      "label": "when fear starts making your choices for you",
+      "description": "Anxiety about getting it wrong, getting hurt or facing a big change freezes you in place or sends you into a panic at every step forward, and you have to learn to act, commit and live with uncertainty.",
+      "broader": [
+        "pattern:theme_courage_self_worth",
+        "pattern:theme_control_letting_go"
+      ]
+    },
+    {
+      "id": "pattern:finally_growing_up",
+      "label": "the lovable one who finally has to grow up",
+      "description": "Coasting on charm, jokes or impulse while other people carry the adult responsibilities, and learning to become someone others can rely on without losing the joy that made people love you.",
+      "broader": [
+        "pattern:theme_identity",
+        "pattern:theme_duty_vs_desire"
+      ]
+    },
+    {
+      "id": "pattern:helper_with_no_needs",
+      "label": "the helper who never asks for anything",
+      "description": "Always the one who listens, fixes, calms and puts everyone else first, until you realise you have never asked what you want or let anyone look after you.",
+      "broader": [
+        "pattern:theme_caring_guiding",
+        "pattern:theme_courage_self_worth"
+      ]
+    },
+    {
+      "id": "pattern:adrift_looking_for_a_calling",
+      "label": "drifting and searching for work that feels like yours",
+      "description": "Unsure what you are good at or what you actually want, drifting through jobs or plans that don't fit, and trying to find a purpose that belongs to you rather than to other people's expectations.",
+      "broader": [
+        "pattern:theme_work_purpose",
+        "pattern:theme_identity"
+      ]
+    },
+    {
+      "id": "pattern:affair_breaks_the_trust",
+      "label": "an affair or hidden life that breaks a marriage's trust",
+      "description": "A partner's affair or long-kept secret cracks open a marriage, and both the one who strayed and the one betrayed have to face the harm and decide what, if anything, can be rebuilt.",
+      "broader": [
+        "pattern:theme_love_intimacy",
+        "pattern:theme_harm_repair"
+      ]
+    }
+  ],
+  "assign": {
+    "arc:avatar/aang/reluctant_chosen_one": [
+      "pattern:role_you_never_asked_for"
+    ],
+    "arc:avatar/aang/last_of_his_people": [
+      "pattern:stuck_in_grief",
+      "pattern:blaming_yourself"
+    ],
+    "arc:avatar/aang/values_under_pressure": [
+      "pattern:crossing_a_line_under_pressure"
+    ],
+    "arc:avatar/katara/parentified_caretaker": [
+      "pattern:parentified_child"
+    ],
+    "arc:avatar/katara/fighting_to_be_taught": [
+      "pattern:fighting_for_respect"
+    ],
+    "arc:avatar/katara/revenge_or_release": [
+      "pattern:forgive_or_get_even"
+    ],
+    "arc:avatar/zuko/fathers_approval": [
+      "pattern:approval_from_withholding_parent"
+    ],
+    "arc:avatar/zuko/earning_trust_back": [
+      "pattern:earning_back_trust"
+    ],
+    "arc:avatar/sokka/ordinary_among_gifted": [
+      "pattern:ordinary_among_gifted"
+    ],
+    "arc:avatar/sokka/love_you_cant_keep": [
+      "pattern:love_you_couldnt_keep",
+      "pattern:blaming_yourself"
+    ],
+    "arc:avatar/toph_beifong/breaking_out_of_the_cage": [
+      "pattern:tired_of_being_protected"
+    ],
+    "arc:avatar/toph_beifong/making_amends_as_a_parent": [
+      "pattern:breaking_the_family_cycle"
+    ],
+    "arc:avatar/iroh/loving_someone_who_pushes_you_away": [
+      "pattern:guiding_someone_who_resists"
+    ],
+    "arc:avatar/iroh/from_power_to_peace": [
+      "pattern:reinvention_after_losing_role"
+    ],
+    "arc:avatar/azula/the_perfect_daughter": [
+      "pattern:worth_only_when_winning",
+      "pattern:measured_against_a_sibling"
+    ],
+    "arc:avatar/azula/ruling_by_fear": [
+      "pattern:control_so_no_one_leaves"
+    ],
+    "arc:avatar/korra/hothead_in_training": [
+      "pattern:worth_only_when_winning",
+      "pattern:role_you_never_asked_for"
+    ],
+    "arc:avatar/korra/healing_after_trauma": [
+      "pattern:strong_one_cracks",
+      "pattern:body_blow"
+    ],
+    "arc:avatar/tenzin/teaching_his_opposite": [
+      "pattern:guiding_someone_who_resists"
+    ],
+    "arc:avatar/tenzin/fathers_shadow": [
+      "pattern:family_legacy_weight"
+    ],
+    "arc:avatar/asami_sato/fathers_betrayal": [
+      "pattern:family_secret_rewrites_story",
+      "pattern:forgive_or_get_even"
+    ],
+    "arc:avatar/asami_sato/rival_to_closest_friend": [
+      "pattern:unlikely_bond"
+    ],
+    "arc:avatar/lin_beifong/duty_above_all": [
+      "pattern:reinvention_after_losing_role",
+      "pattern:dropping_the_armour"
+    ],
+    "arc:avatar/lin_beifong/old_family_wounds": [
+      "pattern:making_peace_with_a_parent",
+      "pattern:measured_against_a_sibling"
+    ],
+    "arc:avatar/bolin/little_brother_finding_his_worth": [
+      "pattern:measured_against_a_sibling",
+      "pattern:tired_of_being_protected"
+    ],
+    "arc:avatar/bolin/following_the_wrong_leader": [
+      "pattern:complicit_in_bad_organisation",
+      "pattern:earning_back_trust"
+    ],
+    "arc:buffy/buffy_summers/reluctant_chosen_one": [
+      "pattern:role_you_never_asked_for"
+    ],
+    "arc:buffy/buffy_summers/first_love_turns": [
+      "pattern:love_you_couldnt_keep"
+    ],
+    "arc:buffy/buffy_summers/finding_reason_to_live": [
+      "pattern:numb_after_collapse",
+      "pattern:parentified_child"
+    ],
+    "arc:buffy/angel/atonement_for_the_past": [
+      "pattern:can_you_really_change",
+      "pattern:guilt_into_care"
+    ],
+    "arc:buffy/angel/unexpected_fatherhood": [
+      "pattern:unready_parent",
+      "pattern:can_you_really_change"
+    ],
+    "arc:buffy/willow_rosenberg/wallflower_finds_herself": [
+      "pattern:discovering_who_you_love",
+      "pattern:hidden_love"
+    ],
+    "arc:buffy/willow_rosenberg/power_becomes_addiction": [
+      "pattern:numbing_habit"
+    ],
+    "arc:buffy/spike/monster_to_man": [
+      "pattern:can_you_really_change",
+      "pattern:holding_on_to_someone_pulling_away"
+    ],
+    "arc:buffy/spike/proving_himself_to_the_one_who_made_him": [
+      "pattern:can_you_really_change"
+    ],
+    "arc:buffy/rupert_giles/mentor_becomes_father": [
+      "pattern:conscience_vs_institution",
+      "pattern:reluctant_guardian"
+    ],
+    "arc:buffy/rupert_giles/when_theyre_grown": [
+      "pattern:reinvention_after_losing_role"
+    ],
+    "arc:buffy/alexander_harris/left_behind_after_school": [
+      "pattern:ordinary_among_gifted"
+    ],
+    "arc:buffy/alexander_harris/fear_of_becoming_his_parents": [
+      "pattern:breaking_the_family_cycle",
+      "pattern:partners_want_different_lives"
+    ],
+    "arc:buffy/cordelia_chase/popularity_or_real_friends": [
+      "pattern:giving_yourself_up_to_belong"
+    ],
+    "arc:buffy/cordelia_chase/from_fame_to_calling": [
+      "pattern:purpose_from_being_needed",
+      "pattern:reinvention_after_losing_role"
+    ],
+    "arc:buffy/faith_lehane/looking_for_a_family": [
+      "pattern:giving_yourself_up_to_belong",
+      "pattern:starving_to_matter"
+    ],
+    "arc:buffy/faith_lehane/facing_what_she_did": [
+      "pattern:can_you_really_change"
+    ],
+    "arc:buffy/dawn_summers/am_i_real": [
+      "pattern:family_secret_rewrites_story"
+    ],
+    "arc:buffy/dawn_summers/earning_her_place": [
+      "pattern:tired_of_being_protected",
+      "pattern:starving_to_matter"
+    ],
+    "arc:buffy/wesley_wyndam_pryce/never_good_enough": [
+      "pattern:worth_only_when_winning",
+      "pattern:approval_from_withholding_parent"
+    ],
+    "arc:buffy/wesley_wyndam_pryce/the_hard_call_alone": [
+      "pattern:carrying_a_secret_alone"
+    ],
+    "arc:buffy/anya_jenkins/learning_to_be_human": [
+      "pattern:outsider_learning_to_belong",
+      "pattern:lost_inside_one_relationship"
+    ],
+    "arc:buffy/anya_jenkins/owning_her_life": [
+      "pattern:lost_inside_one_relationship",
+      "pattern:rebuilding_after_being_left"
+    ],
+    "arc:buffy/winifred_burkle/coming_back_to_life": [
+      "pattern:relearning_safety_after_abuse",
+      "pattern:forgive_or_get_even"
+    ],
+    "arc:buffy/winifred_burkle/big_job_inside_the_machine": [
+      "pattern:complicit_in_bad_organisation"
+    ],
+    "arc:game_of_thrones/daenerys_targaryen/finding_her_voice": [
+      "pattern:find_your_voice"
+    ],
+    "arc:game_of_thrones/daenerys_targaryen/learning_to_rule": [
+      "pattern:weight_of_leading",
+      "pattern:crossing_a_line_under_pressure"
+    ],
+    "arc:game_of_thrones/daenerys_targaryen/the_price_of_destiny": [
+      "pattern:starving_to_matter"
+    ],
+    "arc:game_of_thrones/tyrion_lannister/the_unwanted_son": [
+      "pattern:approval_from_withholding_parent"
+    ],
+    "arc:game_of_thrones/tyrion_lannister/rock_bottom_and_purpose": [
+      "pattern:purpose_from_being_needed"
+    ],
+    "arc:game_of_thrones/tyrion_lannister/advising_the_one_he_believes_in": [
+      "pattern:conscience_vs_institution"
+    ],
+    "arc:game_of_thrones/jon_snow/looking_for_belonging": [
+      "pattern:dream_isnt_what_promised",
+      "pattern:between_two_worlds"
+    ],
+    "arc:game_of_thrones/jon_snow/leading_those_who_resent_him": [
+      "pattern:promoted_over_peers"
+    ],
+    "arc:game_of_thrones/jon_snow/love_duty_and_identity": [
+      "pattern:role_you_never_asked_for",
+      "pattern:family_secret_rewrites_story"
+    ],
+    "arc:game_of_thrones/jaime_lannister/losing_what_defined_him": [
+      "pattern:body_blow"
+    ],
+    "arc:game_of_thrones/jaime_lannister/love_that_consumes": [
+      "pattern:lost_inside_one_relationship"
+    ],
+    "arc:game_of_thrones/cersei_lannister/a_mother_fighting_for_control": [
+      "pattern:protective_love_becomes_control"
+    ],
+    "arc:game_of_thrones/cersei_lannister/holding_on_at_any_cost": [
+      "pattern:control_so_no_one_leaves"
+    ],
+    "arc:game_of_thrones/sansa_stark/fairy_tale_to_cage": [
+      "pattern:dream_isnt_what_promised",
+      "pattern:find_your_voice"
+    ],
+    "arc:game_of_thrones/sansa_stark/taking_her_life_back": [
+      "pattern:relearning_safety_after_abuse"
+    ],
+    "arc:game_of_thrones/sansa_stark/stepping_into_leadership": [
+      "pattern:promoted_over_peers",
+      "pattern:weight_of_leading"
+    ],
+    "arc:game_of_thrones/arya_stark/list_of_names": [
+      "pattern:revenge_as_identity"
+    ],
+    "arc:game_of_thrones/arya_stark/becoming_no_one": [
+      "pattern:giving_yourself_up_to_belong"
+    ],
+    "arc:game_of_thrones/arya_stark/the_other_sister": [
+      "pattern:measured_against_a_sibling"
+    ],
+    "arc:game_of_thrones/theon_greyjoy/two_families": [
+      "pattern:approval_from_withholding_parent",
+      "pattern:between_two_worlds"
+    ],
+    "arc:game_of_thrones/theon_greyjoy/losing_his_name": [
+      "pattern:leaving_controlling_group",
+      "pattern:relearning_safety_after_abuse"
+    ],
+    "arc:game_of_thrones/theon_greyjoy/earning_forgiveness": [
+      "pattern:earning_back_trust",
+      "pattern:purpose_from_being_needed"
+    ],
+    "arc:game_of_thrones/brienne_of_tarth/proving_herself": [
+      "pattern:fighting_for_respect"
+    ],
+    "arc:game_of_thrones/brienne_of_tarth/keeping_the_promise": [
+      "pattern:guilt_into_care"
+    ],
+    "arc:game_of_thrones/brienne_of_tarth/unlikely_bond": [
+      "pattern:unlikely_bond"
+    ],
+    "arc:game_of_thrones/samwell_tarly/courage_his_own_way": [
+      "pattern:family_wrote_you_off"
+    ],
+    "arc:game_of_thrones/samwell_tarly/dream_institution": [
+      "pattern:dream_isnt_what_promised",
+      "pattern:conscience_vs_institution"
+    ],
+    "arc:game_of_thrones/sandor_clegane/cruel_boss": [
+      "pattern:complicit_in_bad_organisation"
+    ],
+    "arc:game_of_thrones/sandor_clegane/reluctant_guardian": [
+      "pattern:reluctant_guardian"
+    ],
+    "arc:game_of_thrones/sandor_clegane/second_chance": [
+      "pattern:can_you_really_change",
+      "pattern:revenge_as_identity"
+    ],
+    "arc:game_of_thrones/bran_stark/after_the_fall": [
+      "pattern:body_blow"
+    ],
+    "arc:game_of_thrones/bran_stark/the_burden": [
+      "pattern:role_you_never_asked_for"
+    ],
+    "arc:greys_anatomy/meredith_grey/letting_love_in": [
+      "pattern:letting_love_in"
+    ],
+    "arc:greys_anatomy/meredith_grey/living_again_after_loss": [
+      "pattern:stuck_in_grief"
+    ],
+    "arc:greys_anatomy/meredith_grey/breaking_rules_for_right_reasons": [
+      "pattern:conscience_vs_institution"
+    ],
+    "arc:greys_anatomy/miranda_bailey/career_and_motherhood": [
+      "pattern:calling_vs_love"
+    ],
+    "arc:greys_anatomy/miranda_bailey/leading_the_hospital": [
+      "pattern:promoted_over_peers"
+    ],
+    "arc:greys_anatomy/miranda_bailey/strong_one_asks_for_help": [
+      "pattern:strong_one_cracks"
+    ],
+    "arc:greys_anatomy/richard_webber/sobriety": [
+      "pattern:numbing_habit"
+    ],
+    "arc:greys_anatomy/richard_webber/wife_slipping_away": [
+      "pattern:fix_someone_you_cant_save"
+    ],
+    "arc:greys_anatomy/richard_webber/pushed_aside": [
+      "pattern:reinvention_after_losing_role"
+    ],
+    "arc:greys_anatomy/alex_karev/tough_guy_softens": [
+      "pattern:dropping_the_armour",
+      "pattern:parentified_child"
+    ],
+    "arc:greys_anatomy/alex_karev/not_his_father": [
+      "pattern:breaking_the_family_cycle"
+    ],
+    "arc:greys_anatomy/alex_karev/partner_in_depression": [
+      "pattern:fix_someone_you_cant_save"
+    ],
+    "arc:greys_anatomy/owen_hunt/bringing_war_home": [
+      "pattern:pretending_fine_after_trauma"
+    ],
+    "arc:greys_anatomy/owen_hunt/wanting_a_family": [
+      "pattern:partners_want_different_lives"
+    ],
+    "arc:greys_anatomy/owen_hunt/distrusting_joy": [
+      "pattern:letting_love_in"
+    ],
+    "arc:greys_anatomy/derek_shepherd/starting_over_after_betrayal": [
+      "pattern:torn_between_two_loves"
+    ],
+    "arc:greys_anatomy/derek_shepherd/trauma_and_recklessness": [
+      "pattern:pretending_fine_after_trauma"
+    ],
+    "arc:greys_anatomy/derek_shepherd/sacrifice_and_resentment": [
+      "pattern:calling_vs_love",
+      "pattern:taking_stock_of_a_life"
+    ],
+    "arc:greys_anatomy/cristina_yang/work_first_love_second": [
+      "pattern:calling_vs_love"
+    ],
+    "arc:greys_anatomy/cristina_yang/after_the_trauma": [
+      "pattern:strong_one_cracks"
+    ],
+    "arc:greys_anatomy/cristina_yang/outgrowing_home": [
+      "pattern:calling_vs_love"
+    ],
+    "arc:greys_anatomy/amelia_shepherd/out_of_the_shadow": [
+      "pattern:measured_against_a_sibling",
+      "pattern:numbing_habit"
+    ],
+    "arc:greys_anatomy/amelia_shepherd/marriage_and_the_tumor": [
+      "pattern:partners_want_different_lives"
+    ],
+    "arc:greys_anatomy/amelia_shepherd/choosing_her_own_shape": [
+      "pattern:partners_want_different_lives"
+    ],
+    "arc:greys_anatomy/callie_torres/loving_someone_who_doesnt_choose_you": [
+      "pattern:holding_on_to_someone_pulling_away"
+    ],
+    "arc:greys_anatomy/callie_torres/coming_out": [
+      "pattern:discovering_who_you_love"
+    ],
+    "arc:greys_anatomy/callie_torres/after_the_impossible_choice": [
+      "pattern:fix_someone_you_cant_save"
+    ],
+    "arc:greys_anatomy/jackson_avery/beyond_the_family_name": [
+      "pattern:family_legacy_weight"
+    ],
+    "arc:greys_anatomy/jackson_avery/grief_and_a_marriage": [
+      "pattern:partners_want_different_lives",
+      "pattern:stuck_in_grief"
+    ],
+    "arc:greys_anatomy/jo_wilson/learning_to_be_safe": [
+      "pattern:relearning_safety_after_abuse",
+      "pattern:letting_love_in"
+    ],
+    "arc:greys_anatomy/jo_wilson/finding_where_you_came_from": [
+      "pattern:family_secret_rewrites_story",
+      "pattern:numb_after_collapse"
+    ],
+    "arc:greys_anatomy/jo_wilson/left_behind_and_rebuilding": [
+      "pattern:rebuilding_after_being_left"
+    ],
+    "arc:greys_anatomy/arizona_robbins/losing_part_of_yourself": [
+      "pattern:body_blow"
+    ],
+    "arc:greys_anatomy/arizona_robbins/starting_over_single": [
+      "pattern:rebuilding_after_being_left"
+    ],
+    "arc:naruto/naruto_uzumaki/earning_acknowledgement": [
+      "pattern:starving_to_matter"
+    ],
+    "arc:naruto/naruto_uzumaki/never_giving_up_on_a_friend": [
+      "pattern:holding_on_to_someone_pulling_away"
+    ],
+    "arc:naruto/naruto_uzumaki/grief_and_the_cycle_of_hatred": [
+      "pattern:forgive_or_get_even"
+    ],
+    "arc:naruto/sasuke_uchiha/living_for_revenge": [
+      "pattern:revenge_as_identity"
+    ],
+    "arc:naruto/sasuke_uchiha/coming_back_from_darkness": [
+      "pattern:earning_back_trust"
+    ],
+    "arc:naruto/sakura_haruno/tired_of_being_saved": [
+      "pattern:tired_of_being_protected",
+      "pattern:ordinary_among_gifted"
+    ],
+    "arc:naruto/sakura_haruno/loving_someone_who_pushes_you_away": [
+      "pattern:holding_on_to_someone_pulling_away"
+    ],
+    "arc:naruto/kakashi_hatake/teaching_the_lesson_that_cost_everything": [
+      "pattern:guilt_into_care"
+    ],
+    "arc:naruto/kakashi_hatake/making_peace_with_a_disgraced_father": [
+      "pattern:making_peace_with_a_parent"
+    ],
+    "arc:naruto/hinata_hyuga/courage_when_family_gave_up": [
+      "pattern:family_wrote_you_off"
+    ],
+    "arc:naruto/hinata_hyuga/loving_from_afar": [
+      "pattern:hidden_love"
+    ],
+    "arc:naruto/rock_lee/hard_work_vs_talent": [
+      "pattern:ordinary_among_gifted"
+    ],
+    "arc:naruto/rock_lee/when_your_body_fails_you": [
+      "pattern:body_blow"
+    ],
+    "arc:naruto/gaara/the_boy_they_called_a_monster": [
+      "pattern:dropping_the_armour"
+    ],
+    "arc:naruto/gaara/leading_those_who_feared_him": [
+      "pattern:promoted_over_peers",
+      "pattern:earning_back_trust"
+    ],
+    "arc:naruto/shikamaru_nara/reluctant_leader": [
+      "pattern:promoted_over_peers"
+    ],
+    "arc:naruto/shikamaru_nara/losing_a_mentor": [
+      "pattern:forgive_or_get_even"
+    ],
+    "arc:naruto/itachi_uchiha/the_brother_who_chose_to_be_hated": [
+      "pattern:carrying_a_secret_alone"
+    ],
+    "arc:naruto/neji_hyuga/breaking_free_from_fate": [
+      "pattern:family_legacy_weight"
+    ],
+    "arc:naruto/jiraiya/the_reluctant_father_figure": [
+      "pattern:reluctant_guardian"
+    ],
+    "arc:naruto/jiraiya/a_life_measured_in_failures": [
+      "pattern:taking_stock_of_a_life"
+    ],
+    "arc:naruto/tsunade/the_healer_who_stopped_believing": [
+      "pattern:numb_after_collapse"
+    ],
+    "arc:naruto/tsunade/sending_loved_ones_into_danger": [
+      "pattern:weight_of_leading"
+    ],
+    "arc:attack_on_titan/eren_yeager/channeling_helplessness_into_rage": [
+      "pattern:revenge_as_identity"
+    ],
+    "arc:attack_on_titan/eren_yeager/pushing_everyone_away": [
+      "pattern:carrying_a_secret_alone",
+      "pattern:role_you_never_asked_for"
+    ],
+    "arc:attack_on_titan/mikasa_ackerman/protecting_her_only_family": [
+      "pattern:lost_inside_one_relationship"
+    ],
+    "arc:attack_on_titan/mikasa_ackerman/loving_someone_who_is_changing": [
+      "pattern:holding_on_to_someone_pulling_away"
+    ],
+    "arc:attack_on_titan/armin_arlert/finding_his_worth": [
+      "pattern:ordinary_among_gifted"
+    ],
+    "arc:attack_on_titan/armin_arlert/standing_in_a_greater_place": [
+      "pattern:shoes_you_cant_fill"
+    ],
+    "arc:attack_on_titan/levi/carrying_the_fallen": [
+      "pattern:weight_of_leading"
+    ],
+    "arc:attack_on_titan/levi/the_man_who_raised_him": [
+      "pattern:breaking_the_family_cycle"
+    ],
+    "arc:attack_on_titan/hange_zoe/curiosity_over_hatred": [
+      "pattern:forgive_or_get_even"
+    ],
+    "arc:attack_on_titan/hange_zoe/leading_after_a_legend": [
+      "pattern:shoes_you_cant_fill",
+      "pattern:weight_of_leading"
+    ],
+    "arc:attack_on_titan/reiner_braun/the_dependable_one": [
+      "pattern:persona_replacing_you",
+      "pattern:strong_one_cracks"
+    ],
+    "arc:attack_on_titan/reiner_braun/guilt_and_the_will_to_live": [
+      "pattern:can_you_really_change",
+      "pattern:purpose_from_being_needed"
+    ],
+    "arc:attack_on_titan/erwin_smith/a_dream_worth_the_cost": [
+      "pattern:weight_of_leading"
+    ],
+    "arc:attack_on_titan/historia/the_girl_behind_the_kindness": [
+      "pattern:giving_yourself_up_to_belong"
+    ],
+    "arc:attack_on_titan/historia/choosing_her_own_path": [
+      "pattern:approval_from_withholding_parent",
+      "pattern:family_legacy_weight"
+    ],
+    "arc:bojack/bojack_horseman/wanting_to_be_loved_while_hating_himself": [
+      "pattern:can_you_really_change",
+      "pattern:numbing_habit"
+    ],
+    "arc:bojack/bojack_horseman/still_waiting_for_his_mother": [
+      "pattern:approval_from_withholding_parent",
+      "pattern:making_peace_with_a_parent"
+    ],
+    "arc:bojack/bojack_horseman/getting_sober_and_facing_the_harm": [
+      "pattern:numbing_habit",
+      "pattern:can_you_really_change"
+    ],
+    "arc:bojack/diane_nguyen/wanting_her_work_to_matter": [
+      "pattern:worth_only_when_winning",
+      "pattern:dream_isnt_what_promised"
+    ],
+    "arc:bojack/diane_nguyen/carrying_the_damage_from_home": [
+      "pattern:family_wrote_you_off",
+      "pattern:numb_after_collapse"
+    ],
+    "arc:bojack/diane_nguyen/loving_someone_so_different": [
+      "pattern:partners_want_different_lives"
+    ],
+    "arc:bojack/princess_carolyn/the_one_who_holds_it_together": [
+      "pattern:strong_one_cracks"
+    ],
+    "arc:bojack/princess_carolyn/wanting_to_be_a_mother": [
+      "pattern:longing_for_a_family_of_your_own"
+    ],
+    "arc:bojack/todd_chavez/drifting_on_a_friends_couch": [
+      "pattern:giving_yourself_up_to_belong"
+    ],
+    "arc:bojack/todd_chavez/not_feeling_what_others_feel": [
+      "pattern:discovering_who_you_love"
+    ],
+    "arc:bojack/mr_peanutbutter/learning_to_be_alone": [
+      "pattern:outrunning_pain",
+      "pattern:lost_inside_one_relationship"
+    ],
+    "arc:bojack/hollyhock/searching_for_where_she_comes_from": [
+      "pattern:family_secret_rewrites_story"
+    ],
+    "arc:bojack/hollyhock/protecting_herself_from_someone_she_loves": [
+      "pattern:loving_family_who_do_harm",
+      "pattern:relearning_safety_after_abuse"
+    ],
+    "arc:breaking_bad/walter_white/the_overlooked_man_wants_his_due": [
+      "pattern:starving_to_matter",
+      "pattern:taking_stock_of_a_life"
+    ],
+    "arc:breaking_bad/walter_white/the_double_life_at_home": [
+      "pattern:carrying_a_secret_alone",
+      "pattern:persona_replacing_you"
+    ],
+    "arc:breaking_bad/jesse_pinkman/proving_hes_more_than_a_screwup": [
+      "pattern:family_wrote_you_off",
+      "pattern:leaving_controlling_group"
+    ],
+    "arc:breaking_bad/jesse_pinkman/carrying_guilt_he_cant_put_down": [
+      "pattern:can_you_really_change",
+      "pattern:numbing_habit"
+    ],
+    "arc:breaking_bad/skyler_white/the_wife_who_notices": [
+      "pattern:trusting_your_instincts"
+    ],
+    "arc:breaking_bad/skyler_white/complicit_to_protect_her_kids": [
+      "pattern:crossing_a_line_under_pressure",
+      "pattern:complicit_in_bad_organisation"
+    ],
+    "arc:breaking_bad/hank_schrader/the_tough_guy_who_cant_admit_fear": [
+      "pattern:strong_one_cracks",
+      "pattern:pretending_fine_after_trauma"
+    ],
+    "arc:breaking_bad/hank_schrader/the_case_he_cant_let_go": [
+      "pattern:calling_vs_love",
+      "pattern:loving_family_who_do_harm"
+    ],
+    "arc:breaking_bad/jimmy_mcgill/the_little_brother_never_good_enough": [
+      "pattern:measured_against_a_sibling"
+    ],
+    "arc:breaking_bad/jimmy_mcgill/the_mask_that_becomes_the_man": [
+      "pattern:persona_replacing_you",
+      "pattern:can_you_really_change"
+    ],
+    "arc:breaking_bad/mike_ehrmantraut/living_for_his_granddaughter": [
+      "pattern:guilt_into_care",
+      "pattern:blaming_yourself"
+    ],
+    "arc:breaking_bad/mike_ehrmantraut/the_professional_with_a_code": [
+      "pattern:complicit_in_bad_organisation"
+    ],
+    "arc:breaking_bad/kim_wexler/climbing_on_her_own_terms": [
+      "pattern:fighting_for_respect",
+      "pattern:dream_isnt_what_promised"
+    ],
+    "arc:breaking_bad/kim_wexler/loving_someone_who_brings_out_your_wild_side": [
+      "pattern:torn_between_two_loves"
+    ],
+    "arc:breaking_bad/walter_white_jr/the_kid_left_out_of_the_family_secret": [
+      "pattern:family_secret_rewrites_story",
+      "pattern:tired_of_being_protected"
+    ],
+    "arc:doctor_who/tenth_doctor/charm_over_grief": [
+      "pattern:outrunning_pain",
+      "pattern:letting_love_in"
+    ],
+    "arc:doctor_who/tenth_doctor/alone_and_unchecked": [
+      "pattern:power_going_to_your_head",
+      "pattern:taking_stock_of_a_life"
+    ],
+    "arc:doctor_who/twelfth_doctor/am_i_a_good_man": [
+      "pattern:can_you_really_change"
+    ],
+    "arc:doctor_who/twelfth_doctor/cannot_let_her_go": [
+      "pattern:control_so_no_one_leaves",
+      "pattern:stuck_in_grief"
+    ],
+    "arc:doctor_who/twelfth_doctor/keeping_his_word": [
+      "pattern:purpose_from_being_needed",
+      "pattern:taking_stock_of_a_life"
+    ],
+    "arc:doctor_who/rose_tyler/outgrowing_a_small_life": [
+      "pattern:betting_on_yourself",
+      "pattern:calling_vs_love"
+    ],
+    "arc:doctor_who/rose_tyler/love_she_cannot_name": [
+      "pattern:love_you_couldnt_keep",
+      "pattern:hidden_love"
+    ],
+    "arc:doctor_who/martha_jones/waiting_to_be_seen": [
+      "pattern:holding_on_to_someone_pulling_away",
+      "pattern:learning_what_you_deserve_in_love"
+    ],
+    "arc:doctor_who/martha_jones/holding_everyone_together": [
+      "pattern:parentified_child",
+      "pattern:role_you_never_asked_for"
+    ],
+    "arc:doctor_who/donna_noble/just_a_temp": [
+      "pattern:family_wrote_you_off",
+      "pattern:ordinary_among_gifted"
+    ],
+    "arc:doctor_who/amy_pond/left_waiting": [
+      "pattern:letting_love_in"
+    ],
+    "arc:doctor_who/amy_pond/future_she_planned": [
+      "pattern:longing_for_a_family_of_your_own",
+      "pattern:partners_want_different_lives"
+    ],
+    "arc:doctor_who/rory_williams/in_someone_elses_shadow": [
+      "pattern:ordinary_among_gifted"
+    ],
+    "arc:doctor_who/rory_williams/quiet_man_stands_up": [
+      "pattern:find_your_voice"
+    ],
+    "arc:doctor_who/clara_oswald/carer_who_never_left": [
+      "pattern:parentified_child"
+    ],
+    "arc:doctor_who/clara_oswald/living_a_double_life": [
+      "pattern:persona_replacing_you",
+      "pattern:carrying_a_secret_alone"
+    ],
+    "arc:doctor_who/clara_oswald/outrunning_grief": [
+      "pattern:outrunning_pain"
+    ],
+    "arc:friends/rachel_green/building_a_life_of_her_own": [
+      "pattern:betting_on_yourself",
+      "pattern:tired_of_being_protected"
+    ],
+    "arc:friends/rachel_green/love_with_a_close_friend": [
+      "pattern:holding_on_to_someone_pulling_away",
+      "pattern:love_you_couldnt_keep"
+    ],
+    "arc:friends/monica_geller/wanting_a_family": [
+      "pattern:longing_for_a_family_of_your_own"
+    ],
+    "arc:friends/monica_geller/never_good_enough_for_mom": [
+      "pattern:approval_from_withholding_parent",
+      "pattern:measured_against_a_sibling"
+    ],
+    "arc:friends/monica_geller/earning_respect_at_work": [
+      "pattern:promoted_over_peers"
+    ],
+    "arc:friends/phoebe_buffay/finding_family_after_a_hard_start": [
+      "pattern:making_peace_with_a_parent"
+    ],
+    "arc:friends/phoebe_buffay/carrying_a_gift_for_someone_else": [
+      "pattern:longing_for_a_family_of_your_own"
+    ],
+    "arc:friends/phoebe_buffay/wanting_a_love_with_a_future": [
+      "pattern:partners_want_different_lives",
+      "pattern:torn_between_two_loves"
+    ],
+    "arc:friends/joey_tribbiani/chasing_the_big_break": [
+      "pattern:betting_on_yourself"
+    ],
+    "arc:friends/joey_tribbiani/falling_for_a_friend": [
+      "pattern:hidden_love"
+    ],
+    "arc:friends/chandler_bing/afraid_of_commitment": [
+      "pattern:letting_love_in",
+      "pattern:breaking_the_family_cycle"
+    ],
+    "arc:friends/chandler_bing/stuck_in_the_wrong_career": [
+      "pattern:betting_on_yourself"
+    ],
+    "arc:friends/ross_geller/starting_over_after_divorce": [
+      "pattern:rebuilding_after_being_left"
+    ],
+    "arc:friends/ross_geller/afraid_of_being_left_again": [
+      "pattern:control_so_no_one_leaves",
+      "pattern:letting_love_in"
+    ],
+    "arc:money_heist/the_professor/the_plan_versus_the_heart": [
+      "pattern:carrying_a_secret_alone",
+      "pattern:letting_love_in"
+    ],
+    "arc:money_heist/the_professor/responsible_for_everyone": [
+      "pattern:weight_of_leading"
+    ],
+    "arc:money_heist/tokyo/running_from_the_past": [
+      "pattern:outrunning_pain",
+      "pattern:dropping_the_armour"
+    ],
+    "arc:money_heist/tokyo/love_versus_freedom": [
+      "pattern:partners_want_different_lives",
+      "pattern:letting_love_in"
+    ],
+    "arc:money_heist/berlin/nothing_left_to_lose": [
+      "pattern:power_going_to_your_head",
+      "pattern:taking_stock_of_a_life"
+    ],
+    "arc:money_heist/berlin/believing_in_love_again": [
+      "pattern:letting_love_in",
+      "pattern:hidden_love"
+    ],
+    "arc:money_heist/nairobi/getting_her_son_back": [
+      "pattern:second_chance_as_a_parent",
+      "pattern:can_you_really_change"
+    ],
+    "arc:money_heist/nairobi/taking_charge": [
+      "pattern:fighting_for_respect",
+      "pattern:promoted_over_peers"
+    ],
+    "arc:money_heist/denver/his_fathers_son": [
+      "pattern:family_secret_rewrites_story",
+      "pattern:loving_family_who_do_harm"
+    ],
+    "arc:money_heist/denver/unexpected_family": [
+      "pattern:unready_parent",
+      "pattern:unlikely_bond"
+    ],
+    "arc:money_heist/rio/all_in_on_first_love": [
+      "pattern:lost_inside_one_relationship",
+      "pattern:holding_on_to_someone_pulling_away"
+    ],
+    "arc:money_heist/rio/after_the_trauma": [
+      "pattern:relearning_safety_after_abuse"
+    ],
+    "arc:money_heist/raquel_murillo/trusting_again": [
+      "pattern:relearning_safety_after_abuse",
+      "pattern:letting_love_in"
+    ],
+    "arc:money_heist/raquel_murillo/choosing_a_new_life": [
+      "pattern:betting_on_yourself"
+    ],
+    "arc:money_heist/helsinki/the_gentle_giant": [
+      "pattern:fix_someone_you_cant_save"
+    ],
+    "arc:money_heist/helsinki/loving_a_guarded_heart": [
+      "pattern:holding_on_to_someone_pulling_away",
+      "pattern:hidden_love"
+    ],
+    "arc:my_hero_academia/izuku_midoriya/the_kid_who_was_told_no": [
+      "pattern:ordinary_among_gifted",
+      "pattern:fighting_for_respect"
+    ],
+    "arc:my_hero_academia/izuku_midoriya/living_up_to_a_legacy": [
+      "pattern:shoes_you_cant_fill"
+    ],
+    "arc:my_hero_academia/izuku_midoriya/carrying_it_alone": [
+      "pattern:carrying_a_secret_alone"
+    ],
+    "arc:my_hero_academia/katsuki_bakugo/the_prodigy_meets_his_equals": [
+      "pattern:worth_only_when_winning"
+    ],
+    "arc:my_hero_academia/katsuki_bakugo/facing_the_person_he_hurt": [
+      "pattern:earning_back_trust"
+    ],
+    "arc:my_hero_academia/shoto_todoroki/refusing_his_fathers_half": [
+      "pattern:breaking_the_family_cycle",
+      "pattern:family_legacy_weight"
+    ],
+    "arc:my_hero_academia/shoto_todoroki/reaching_for_family": [
+      "pattern:loving_family_who_do_harm"
+    ],
+    "arc:my_hero_academia/ochaco_uraraka/working_for_her_family": [
+      "pattern:parentified_child",
+      "pattern:ordinary_among_gifted"
+    ],
+    "arc:my_hero_academia/ochaco_uraraka/reaching_out_to_an_enemy": [
+      "pattern:forgive_or_get_even",
+      "pattern:pretending_fine_after_trauma"
+    ],
+    "arc:my_hero_academia/all_might/the_pillar_running_out_of_time": [
+      "pattern:strong_one_cracks",
+      "pattern:carrying_a_secret_alone"
+    ],
+    "arc:my_hero_academia/all_might/finding_worth_beyond_strength": [
+      "pattern:reinvention_after_losing_role",
+      "pattern:body_blow"
+    ],
+    "arc:my_hero_academia/shota_aizawa/tough_love_teacher": [
+      "pattern:protective_love_becomes_control",
+      "pattern:stuck_in_grief"
+    ],
+    "arc:my_hero_academia/shota_aizawa/unexpected_guardian": [
+      "pattern:reluctant_guardian"
+    ],
+    "arc:my_hero_academia/tenya_iida/by_the_book_leader": [
+      "pattern:promoted_over_peers",
+      "pattern:conscience_vs_institution"
+    ],
+    "arc:my_hero_academia/tenya_iida/grief_and_revenge": [
+      "pattern:revenge_as_identity"
+    ],
+    "arc:my_hero_academia/endeavor/forever_second_best": [
+      "pattern:worth_only_when_winning"
+    ],
+    "arc:my_hero_academia/endeavor/atoning_too_late": [
+      "pattern:earning_back_trust",
+      "pattern:can_you_really_change"
+    ],
+    "arc:schitts_creek/johnny_rose/starting_over_from_zero": [
+      "pattern:reinvention_after_losing_role"
+    ],
+    "arc:schitts_creek/johnny_rose/absent_father_to_cheerleader": [
+      "pattern:second_chance_as_a_parent"
+    ],
+    "arc:schitts_creek/moira_rose/clinging_to_former_glory": [
+      "pattern:reinvention_after_losing_role"
+    ],
+    "arc:schitts_creek/moira_rose/learning_to_mother": [
+      "pattern:second_chance_as_a_parent"
+    ],
+    "arc:schitts_creek/david_rose/letting_himself_be_loved": [
+      "pattern:letting_love_in",
+      "pattern:dropping_the_armour"
+    ],
+    "arc:schitts_creek/david_rose/building_his_own_thing": [
+      "pattern:betting_on_yourself",
+      "pattern:reinvention_after_losing_role"
+    ],
+    "arc:schitts_creek/alexis_rose/earning_her_own_way": [
+      "pattern:tired_of_being_protected",
+      "pattern:reinvention_after_losing_role"
+    ],
+    "arc:schitts_creek/alexis_rose/love_that_asks_something": [
+      "pattern:partners_want_different_lives",
+      "pattern:love_you_couldnt_keep"
+    ],
+    "arc:schitts_creek/stevie_budd/stuck_local_steps_up": [
+      "pattern:dropping_the_armour"
+    ],
+    "arc:schitts_creek/stevie_budd/what_else_could_i_be": [
+      "pattern:betting_on_yourself",
+      "pattern:taking_stock_of_a_life"
+    ],
+    "arc:schitts_creek/patrick_brewer/living_true_to_himself": [
+      "pattern:discovering_who_you_love",
+      "pattern:find_your_voice"
+    ],
+    "arc:schitts_creek/roland_schitt/petty_power_to_true_friend": [
+      "pattern:power_going_to_your_head"
+    ],
+    "arc:schitts_creek/twyla_sands/kindness_despite_chaos": [
+      "pattern:find_your_voice"
+    ],
+    "arc:squid_game/seong_gi_hun/the_screw_up_who_wants_to_do_right": [
+      "pattern:earning_back_trust",
+      "pattern:crossing_a_line_under_pressure"
+    ],
+    "arc:squid_game/seong_gi_hun/the_crusade_against_the_system": [
+      "pattern:guilt_into_care",
+      "pattern:blaming_yourself"
+    ],
+    "arc:squid_game/cho_sang_woo/the_golden_boy_who_fell": [
+      "pattern:worth_only_when_winning",
+      "pattern:crossing_a_line_under_pressure"
+    ],
+    "arc:squid_game/kang_sae_byeok/the_loner_who_trusts_no_one": [
+      "pattern:dropping_the_armour",
+      "pattern:parentified_child"
+    ],
+    "arc:squid_game/oh_il_nam/one_last_game": [
+      "pattern:taking_stock_of_a_life"
+    ],
+    "arc:squid_game/ali_abdul/a_trusting_outsider": [
+      "pattern:dream_isnt_what_promised"
+    ],
+    "arc:squid_game/hwang_jun_ho/searching_for_a_missing_brother": [
+      "pattern:loving_family_who_do_harm",
+      "pattern:conscience_vs_institution"
+    ],
+    "arc:squid_game/ji_yeong/one_real_friend": [
+      "pattern:numb_after_collapse",
+      "pattern:unlikely_bond"
+    ],
+    "arc:squid_game/jang_deok_su/ruling_through_fear": [
+      "pattern:control_so_no_one_leaves",
+      "pattern:power_going_to_your_head"
+    ],
+    "arc:stranger_things/eleven/learning_what_a_friend_is": [
+      "pattern:leaving_controlling_group",
+      "pattern:relearning_safety_after_abuse"
+    ],
+    "arc:stranger_things/eleven/who_am_i_without_it": [
+      "pattern:reinvention_after_losing_role",
+      "pattern:worth_only_when_winning"
+    ],
+    "arc:stranger_things/mike_wheeler/refusing_to_give_up_on_a_friend": [
+      "pattern:fix_someone_you_cant_save"
+    ],
+    "arc:stranger_things/mike_wheeler/afraid_of_not_being_needed": [
+      "pattern:ordinary_among_gifted",
+      "pattern:stuck_in_grief"
+    ],
+    "arc:stranger_things/will_byers/nobody_understands_what_i_went_through": [
+      "pattern:pretending_fine_after_trauma"
+    ],
+    "arc:stranger_things/will_byers/afraid_to_be_seen": [
+      "pattern:discovering_who_you_love",
+      "pattern:hidden_love"
+    ],
+    "arc:stranger_things/dustin_henderson/an_unlikely_big_brother": [
+      "pattern:unlikely_bond"
+    ],
+    "arc:stranger_things/dustin_henderson/standing_by_a_misjudged_friend": [
+      "pattern:conscience_vs_institution",
+      "pattern:stuck_in_grief"
+    ],
+    "arc:stranger_things/max_mayfield/belonging_while_home_is_unsafe": [
+      "pattern:dropping_the_armour",
+      "pattern:loving_family_who_do_harm"
+    ],
+    "arc:stranger_things/max_mayfield/grief_she_cant_say_out_loud": [
+      "pattern:blaming_yourself",
+      "pattern:numb_after_collapse"
+    ],
+    "arc:stranger_things/jim_hopper/numbing_a_grief_he_wont_face": [
+      "pattern:numb_after_collapse",
+      "pattern:purpose_from_being_needed"
+    ],
+    "arc:stranger_things/jim_hopper/a_father_afraid_to_lose_again": [
+      "pattern:protective_love_becomes_control"
+    ],
+    "arc:stranger_things/joyce_byers/the_mother_no_one_believes": [
+      "pattern:trusting_your_instincts"
+    ],
+    "arc:stranger_things/joyce_byers/loving_without_holding_back": [
+      "pattern:protective_love_becomes_control"
+    ],
+    "arc:stranger_things/steve_harrington/from_popular_jerk_to_protector": [
+      "pattern:giving_yourself_up_to_belong",
+      "pattern:purpose_from_being_needed"
+    ],
+    "arc:stranger_things/steve_harrington/life_after_peaking_early": [
+      "pattern:reinvention_after_losing_role",
+      "pattern:longing_for_a_family_of_your_own"
+    ],
+    "arc:ted_lasso/ted_lasso/leading_without_knowing_the_rules": [
+      "pattern:promoted_over_peers"
+    ],
+    "arc:ted_lasso/ted_lasso/behind_the_smile": [
+      "pattern:outrunning_pain",
+      "pattern:strong_one_cracks"
+    ],
+    "arc:ted_lasso/ted_lasso/parenting_from_across_an_ocean": [
+      "pattern:calling_vs_love"
+    ],
+    "arc:ted_lasso/rebecca_welton/from_revenge_to_healing": [
+      "pattern:revenge_as_identity",
+      "pattern:rebuilding_after_being_left"
+    ],
+    "arc:ted_lasso/rebecca_welton/letting_herself_want_again": [
+      "pattern:longing_for_a_family_of_your_own",
+      "pattern:learning_what_you_deserve_in_love"
+    ],
+    "arc:ted_lasso/roy_kent/who_am_i_after_this": [
+      "pattern:reinvention_after_losing_role"
+    ],
+    "arc:ted_lasso/roy_kent/letting_someone_in": [
+      "pattern:dropping_the_armour",
+      "pattern:letting_love_in"
+    ],
+    "arc:ted_lasso/roy_kent/leading_the_ones_he_once_fought": [
+      "pattern:promoted_over_peers",
+      "pattern:unlikely_bond"
+    ],
+    "arc:ted_lasso/keeley_jones/taken_seriously": [
+      "pattern:fighting_for_respect"
+    ],
+    "arc:ted_lasso/keeley_jones/choosing_herself": [
+      "pattern:learning_what_you_deserve_in_love",
+      "pattern:lost_inside_one_relationship"
+    ],
+    "arc:ted_lasso/jamie_tartt/the_fathers_voice": [
+      "pattern:approval_from_withholding_parent",
+      "pattern:dropping_the_armour"
+    ],
+    "arc:ted_lasso/jamie_tartt/from_star_to_teammate": [
+      "pattern:earning_back_trust"
+    ],
+    "arc:ted_lasso/nate_shelley/hungry_to_be_seen": [
+      "pattern:starving_to_matter",
+      "pattern:earning_back_trust"
+    ],
+    "arc:ted_lasso/leslie_higgins/finding_his_spine": [
+      "pattern:complicit_in_bad_organisation",
+      "pattern:find_your_voice"
+    ],
+    "arc:ted_lasso/sam_obisanya/far_from_home": [
+      "pattern:between_two_worlds",
+      "pattern:dream_isnt_what_promised"
+    ],
+    "arc:ted_lasso/sam_obisanya/doing_the_right_thing": [
+      "pattern:conscience_vs_institution"
+    ],
+    "arc:the_office/michael_scott/wanting_to_be_liked_by_his_team": [
+      "pattern:starving_to_matter",
+      "pattern:promoted_over_peers"
+    ],
+    "arc:the_office/michael_scott/longing_for_someone_to_come_home_to": [
+      "pattern:longing_for_a_family_of_your_own",
+      "pattern:learning_what_you_deserve_in_love"
+    ],
+    "arc:the_office/michael_scott/walking_away_to_start_over": [
+      "pattern:betting_on_yourself",
+      "pattern:reinvention_after_losing_role"
+    ],
+    "arc:the_office/jim_halpert/in_love_with_a_friend_who_is_taken": [
+      "pattern:hidden_love"
+    ],
+    "arc:the_office/jim_halpert/betting_on_the_dream": [
+      "pattern:calling_vs_love",
+      "pattern:betting_on_yourself"
+    ],
+    "arc:the_office/pam_beesly/finding_her_voice": [
+      "pattern:find_your_voice"
+    ],
+    "arc:the_office/pam_beesly/testing_the_dream_once_its_real": [
+      "pattern:dream_isnt_what_promised"
+    ],
+    "arc:the_office/pam_beesly/holding_it_together_alone": [
+      "pattern:partners_want_different_lives",
+      "pattern:calling_vs_love"
+    ],
+    "arc:the_office/dwight_schrute/craving_authority": [
+      "pattern:power_going_to_your_head",
+      "pattern:starving_to_matter"
+    ],
+    "arc:the_office/dwight_schrute/a_love_he_cant_show": [
+      "pattern:holding_on_to_someone_pulling_away"
+    ],
+    "arc:the_office/andy_bernard/needing_everyone_to_like_him": [
+      "pattern:measured_against_a_sibling",
+      "pattern:giving_yourself_up_to_belong"
+    ],
+    "arc:the_office/andy_bernard/chasing_a_dream_late": [
+      "pattern:betting_on_yourself"
+    ],
+    "arc:the_office/ryan_howard/in_a_hurry_to_be_somebody": [
+      "pattern:power_going_to_your_head",
+      "pattern:starving_to_matter"
+    ],
+    "arc:the_office/ryan_howard/reinventing_instead_of_growing_up": [
+      "pattern:starving_to_matter",
+      "pattern:persona_replacing_you"
+    ],
+    "arc:the_office/erin_hannon/looking_for_family_at_work": [
+      "pattern:giving_yourself_up_to_belong",
+      "pattern:longing_for_a_family_of_your_own"
+    ],
+    "arc:the_office/erin_hannon/learning_she_deserves_better": [
+      "pattern:learning_what_you_deserve_in_love"
+    ],
+    "arc:the_office/angela_martin/keeping_everything_under_control": [
+      "pattern:dropping_the_armour",
+      "pattern:persona_replacing_you"
+    ],
+    "arc:the_office/angela_martin/starting_over_from_the_bottom": [
+      "pattern:reinvention_after_losing_role",
+      "pattern:can_you_really_change"
+    ],
+    "arc:walking_dead/rick_grimes/carrying_everyones_survival": [
+      "pattern:weight_of_leading",
+      "pattern:crossing_a_line_under_pressure"
+    ],
+    "arc:walking_dead/rick_grimes/coming_home_changed": [
+      "pattern:partners_want_different_lives"
+    ],
+    "arc:walking_dead/rick_grimes/choosing_the_future_over_revenge": [
+      "pattern:forgive_or_get_even"
+    ],
+    "arc:walking_dead/daryl_dixon/outsider_finds_a_family": [
+      "pattern:family_wrote_you_off",
+      "pattern:dropping_the_armour"
+    ],
+    "arc:walking_dead/daryl_dixon/learning_to_stay": [
+      "pattern:letting_love_in",
+      "pattern:reluctant_guardian"
+    ],
+    "arc:walking_dead/carol_peletier/from_meek_to_formidable": [
+      "pattern:find_your_voice",
+      "pattern:relearning_safety_after_abuse"
+    ],
+    "arc:walking_dead/carol_peletier/the_weight_of_being_strong": [
+      "pattern:strong_one_cracks"
+    ],
+    "arc:walking_dead/carol_peletier/grief_that_wants_someone_to_pay": [
+      "pattern:revenge_as_identity"
+    ],
+    "arc:walking_dead/glenn_rhee/finding_his_own_voice": [
+      "pattern:find_your_voice"
+    ],
+    "arc:walking_dead/glenn_rhee/love_in_the_worst_of_times": [
+      "pattern:love_you_couldnt_keep"
+    ],
+    "arc:walking_dead/maggie_greene/stepping_out_of_her_fathers_world": [
+      "pattern:tired_of_being_protected",
+      "pattern:between_two_worlds"
+    ],
+    "arc:walking_dead/maggie_greene/leading_through_grief": [
+      "pattern:weight_of_leading",
+      "pattern:revenge_as_identity"
+    ],
+    "arc:walking_dead/michonne/letting_people_back_in": [
+      "pattern:stuck_in_grief",
+      "pattern:letting_love_in"
+    ],
+    "arc:walking_dead/michonne/the_guarded_protector": [
+      "pattern:protective_love_becomes_control"
+    ],
+    "arc:walking_dead/carl_grimes/growing_up_too_fast": [
+      "pattern:tired_of_being_protected",
+      "pattern:parentified_child"
+    ],
+    "arc:walking_dead/carl_grimes/choosing_hope": [
+      "pattern:forgive_or_get_even",
+      "pattern:find_your_voice"
+    ],
+    "arc:walking_dead/eugene_porter/worth_more_than_a_title": [
+      "pattern:ordinary_among_gifted",
+      "pattern:outsider_learning_to_belong"
+    ],
+    "arc:walking_dead/eugene_porter/safety_at_what_price": [
+      "pattern:complicit_in_bad_organisation"
+    ],
+    "arc:arcane/vi/holding_everyone_together": [
+      "pattern:parentified_child",
+      "pattern:weight_of_leading"
+    ],
+    "arc:arcane/vi/searching_for_her_sister": [
+      "pattern:earning_back_trust",
+      "pattern:blaming_yourself"
+    ],
+    "arc:arcane/powder/desperate_to_be_useful": [
+      "pattern:tired_of_being_protected",
+      "pattern:family_wrote_you_off"
+    ],
+    "arc:arcane/jayce_talis/dream_called_reckless": [
+      "pattern:betting_on_yourself",
+      "pattern:unlikely_bond"
+    ],
+    "arc:arcane/jayce_talis/when_success_changes_you": [
+      "pattern:power_going_to_your_head",
+      "pattern:crossing_a_line_under_pressure"
+    ],
+    "arc:arcane/viktor/overlooked_genius_finds_a_partner": [
+      "pattern:fighting_for_respect",
+      "pattern:unlikely_bond"
+    ],
+    "arc:arcane/viktor/racing_the_clock": [
+      "pattern:taking_stock_of_a_life",
+      "pattern:body_blow"
+    ],
+    "arc:arcane/caitlyn_kiramman/privileged_idealist": [
+      "pattern:betting_on_yourself",
+      "pattern:tired_of_being_protected"
+    ],
+    "arc:arcane/caitlyn_kiramman/grief_wants_someone_to_pay": [
+      "pattern:revenge_as_identity"
+    ],
+    "arc:arcane/silco/an_old_wound_as_a_mission": [
+      "pattern:revenge_as_identity",
+      "pattern:power_going_to_your_head"
+    ],
+    "arc:arcane/silco/the_cause_or_the_child": [
+      "pattern:calling_vs_love",
+      "pattern:reluctant_guardian"
+    ],
+    "arc:arcane/vander/keeping_the_peace": [
+      "pattern:can_you_really_change",
+      "pattern:carrying_a_secret_alone"
+    ],
+    "arc:arcane/ekko/growing_up_too_fast": [
+      "pattern:parentified_child",
+      "pattern:weight_of_leading"
+    ],
+    "arc:arcane/ekko/the_life_he_could_have_had": [
+      "pattern:role_you_never_asked_for",
+      "pattern:love_you_couldnt_keep"
+    ],
+    "arc:brooklyn_99/jake_peralta/the_case_of_growing_up": [
+      "pattern:finally_growing_up",
+      "pattern:breaking_the_family_cycle"
+    ],
+    "arc:brooklyn_99/jake_peralta/falling_for_his_rival": [
+      "pattern:unlikely_bond",
+      "pattern:letting_love_in"
+    ],
+    "arc:brooklyn_99/raymond_holt/earning_the_command": [
+      "pattern:fighting_for_respect",
+      "pattern:weight_of_leading"
+    ],
+    "arc:brooklyn_99/raymond_holt/letting_feelings_show": [
+      "pattern:dropping_the_armour"
+    ],
+    "arc:brooklyn_99/amy_santiago/chasing_approval_and_the_top_job": [
+      "pattern:worth_only_when_winning",
+      "pattern:measured_against_a_sibling"
+    ],
+    "arc:brooklyn_99/rosa_diaz/walls_up": [
+      "pattern:dropping_the_armour",
+      "pattern:letting_love_in"
+    ],
+    "arc:brooklyn_99/rosa_diaz/telling_her_family_who_she_is": [
+      "pattern:discovering_who_you_love",
+      "pattern:family_wrote_you_off"
+    ],
+    "arc:brooklyn_99/terry_jeffords/afraid_to_get_hurt": [
+      "pattern:fear_making_your_choices",
+      "pattern:strong_one_cracks"
+    ],
+    "arc:brooklyn_99/terry_jeffords/speaking_up_at_a_cost": [
+      "pattern:conscience_vs_institution",
+      "pattern:fighting_for_respect"
+    ],
+    "arc:brooklyn_99/charles_boyle/loving_too_hard": [
+      "pattern:control_so_no_one_leaves",
+      "pattern:rebuilding_after_being_left"
+    ],
+    "arc:brooklyn_99/charles_boyle/becoming_a_father": [
+      "pattern:longing_for_a_family_of_your_own"
+    ],
+    "arc:brooklyn_99/gina_linetti/meant_for_more": [
+      "pattern:betting_on_yourself",
+      "pattern:dropping_the_armour"
+    ],
+    "arc:dark/jonas_kahnwald/searching_for_why": [
+      "pattern:family_secret_rewrites_story",
+      "pattern:stuck_in_grief"
+    ],
+    "arc:dark/jonas_kahnwald/first_love_and_best_friend": [
+      "pattern:love_you_couldnt_keep"
+    ],
+    "arc:dark/jonas_kahnwald/taking_it_on_himself": [
+      "pattern:blaming_yourself",
+      "pattern:role_you_never_asked_for"
+    ],
+    "arc:dark/martha_nielsen/torn_between_two_boys": [
+      "pattern:torn_between_two_loves",
+      "pattern:holding_on_to_someone_pulling_away"
+    ],
+    "arc:dark/martha_nielsen/choosing_her_own_path": [
+      "pattern:leaving_controlling_group",
+      "pattern:role_you_never_asked_for"
+    ],
+    "arc:dark/ulrich_nielsen/a_father_who_wont_stop_searching": [
+      "pattern:stuck_in_grief",
+      "pattern:blaming_yourself"
+    ],
+    "arc:dark/ulrich_nielsen/living_a_double_life": [
+      "pattern:affair_breaks_the_trust"
+    ],
+    "arc:dark/charlotte_doppler/keeping_order_when_nothing_makes_sense": [
+      "pattern:strong_one_cracks",
+      "pattern:weight_of_leading"
+    ],
+    "arc:dark/charlotte_doppler/where_she_comes_from": [
+      "pattern:family_secret_rewrites_story"
+    ],
+    "arc:dark/hannah_kahnwald/wanting_what_isnt_hers": [
+      "pattern:control_so_no_one_leaves",
+      "pattern:holding_on_to_someone_pulling_away"
+    ],
+    "arc:dark/hannah_kahnwald/starting_over_alone": [
+      "pattern:unready_parent",
+      "pattern:dream_isnt_what_promised"
+    ],
+    "arc:dark/claudia_tiedemann/career_before_family": [
+      "pattern:calling_vs_love",
+      "pattern:second_chance_as_a_parent"
+    ],
+    "arc:dark/claudia_tiedemann/whatever_it_takes_for_her_daughter": [
+      "pattern:second_chance_as_a_parent",
+      "pattern:crossing_a_line_under_pressure"
+    ],
+    "arc:dark/katharina_nielsen/holding_the_family_together": [
+      "pattern:affair_breaks_the_trust",
+      "pattern:strong_one_cracks"
+    ],
+    "arc:dark/katharina_nielsen/going_back_for_her_family": [
+      "pattern:forgive_or_get_even",
+      "pattern:relearning_safety_after_abuse"
+    ],
+    "arc:dark/regina_tiedemann/old_wounds_that_never_healed": [
+      "pattern:forgive_or_get_even",
+      "pattern:approval_from_withholding_parent"
+    ],
+    "arc:dark/regina_tiedemann/holding_on_while_everything_slips": [
+      "pattern:body_blow",
+      "pattern:strong_one_cracks"
+    ],
+    "arc:fma/edward_elric/carrying_the_blame_alone": [
+      "pattern:blaming_yourself",
+      "pattern:guilt_into_care"
+    ],
+    "arc:fma/edward_elric/anger_at_an_absent_father": [
+      "pattern:making_peace_with_a_parent"
+    ],
+    "arc:fma/edward_elric/working_for_a_system_you_distrust": [
+      "pattern:complicit_in_bad_organisation",
+      "pattern:conscience_vs_institution"
+    ],
+    "arc:fma/alphonse_elric/am_i_still_real": [
+      "pattern:body_blow"
+    ],
+    "arc:fma/alphonse_elric/the_steady_younger_sibling": [
+      "pattern:helper_with_no_needs",
+      "pattern:forgive_or_get_even"
+    ],
+    "arc:fma/roy_mustang/climbing_to_change_the_system": [
+      "pattern:guilt_into_care",
+      "pattern:can_you_really_change"
+    ],
+    "arc:fma/roy_mustang/when_grief_becomes_vengeance": [
+      "pattern:revenge_as_identity",
+      "pattern:forgive_or_get_even"
+    ],
+    "arc:fma/riza_hawkeye/living_with_what_she_has_done": [
+      "pattern:guilt_into_care"
+    ],
+    "arc:fma/winry_rockbell/the_one_who_waits_at_home": [
+      "pattern:holding_on_to_someone_pulling_away",
+      "pattern:helper_with_no_needs"
+    ],
+    "arc:fma/winry_rockbell/choosing_not_to_pull_the_trigger": [
+      "pattern:forgive_or_get_even"
+    ],
+    "arc:fma/scar/consumed_by_revenge": [
+      "pattern:revenge_as_identity"
+    ],
+    "arc:fma/scar/facing_the_harm_he_caused": [
+      "pattern:can_you_really_change",
+      "pattern:guilt_into_care"
+    ],
+    "arc:fma/ling_yao/carrying_a_clans_hopes": [
+      "pattern:family_legacy_weight",
+      "pattern:weight_of_leading"
+    ],
+    "arc:fma/ling_yao/what_makes_a_true_leader": [
+      "pattern:weight_of_leading"
+    ],
+    "arc:fma/izumi_curtis/a_grief_she_never_speaks_of": [
+      "pattern:blaming_yourself",
+      "pattern:stuck_in_grief"
+    ],
+    "arc:fma/izumi_curtis/tough_love_for_kids_not_her_own": [
+      "pattern:guiding_someone_who_resists"
+    ],
+    "arc:gilmore_girls/lorelai_gilmore/going_back_to_the_family_she_fled": [
+      "pattern:making_peace_with_a_parent",
+      "pattern:approval_from_withholding_parent"
+    ],
+    "arc:gilmore_girls/lorelai_gilmore/building_her_own_inn": [
+      "pattern:betting_on_yourself"
+    ],
+    "arc:gilmore_girls/lorelai_gilmore/letting_someone_all_the_way_in": [
+      "pattern:letting_love_in",
+      "pattern:torn_between_two_loves"
+    ],
+    "arc:gilmore_girls/rory_gilmore/living_up_to_the_plan": [
+      "pattern:worth_only_when_winning",
+      "pattern:dream_isnt_what_promised"
+    ],
+    "arc:gilmore_girls/rory_gilmore/adrift_in_her_thirties": [
+      "pattern:adrift_looking_for_a_calling",
+      "pattern:taking_stock_of_a_life"
+    ],
+    "arc:gilmore_girls/emily_gilmore/earning_a_place_in_her_daughters_life": [
+      "pattern:protective_love_becomes_control",
+      "pattern:making_peace_with_a_parent"
+    ],
+    "arc:gilmore_girls/emily_gilmore/marriage_on_the_rocks": [
+      "pattern:affair_breaks_the_trust",
+      "pattern:partners_want_different_lives"
+    ],
+    "arc:gilmore_girls/emily_gilmore/starting_over_late_in_life": [
+      "pattern:reinvention_after_losing_role",
+      "pattern:stuck_in_grief"
+    ],
+    "arc:gilmore_girls/richard_gilmore/reaching_the_daughter_he_lost": [
+      "pattern:second_chance_as_a_parent",
+      "pattern:making_peace_with_a_parent"
+    ],
+    "arc:gilmore_girls/richard_gilmore/who_he_is_without_his_job": [
+      "pattern:reinvention_after_losing_role"
+    ],
+    "arc:gilmore_girls/luke_danes/the_guarded_heart": [
+      "pattern:hidden_love",
+      "pattern:dropping_the_armour"
+    ],
+    "arc:gilmore_girls/luke_danes/responsibility_he_never_asked_for": [
+      "pattern:reluctant_guardian",
+      "pattern:guiding_someone_who_resists"
+    ],
+    "arc:gilmore_girls/lane_kim/living_a_double_life": [
+      "pattern:persona_replacing_you",
+      "pattern:between_two_worlds"
+    ],
+    "arc:gilmore_girls/lane_kim/life_outruns_her_plans": [
+      "pattern:unready_parent",
+      "pattern:calling_vs_love"
+    ],
+    "arc:gilmore_girls/paris_geller/perfection_as_armor": [
+      "pattern:worth_only_when_winning",
+      "pattern:dropping_the_armour"
+    ],
+    "arc:gilmore_girls/paris_geller/leading_without_driving_everyone_away": [
+      "pattern:promoted_over_peers",
+      "pattern:weight_of_leading"
+    ],
+    "arc:gilmore_girls/sookie_st_james/panicking_at_every_big_step": [
+      "pattern:fear_making_your_choices"
+    ],
+    "arc:gilmore_girls/sookie_st_james/betting_on_a_shared_dream": [
+      "pattern:betting_on_yourself"
+    ],
+    "arc:mad_men/don_draper/the_man_behind_the_pitch": [
+      "pattern:persona_replacing_you",
+      "pattern:dropping_the_armour"
+    ],
+    "arc:mad_men/don_draper/drinking_through_the_emptiness": [
+      "pattern:numbing_habit"
+    ],
+    "arc:mad_men/don_draper/becoming_the_father_he_never_had": [
+      "pattern:breaking_the_family_cycle"
+    ],
+    "arc:mad_men/peggy_olson/from_the_typing_pool_to_the_table": [
+      "pattern:fighting_for_respect"
+    ],
+    "arc:mad_men/peggy_olson/stepping_out_of_the_mentors_shadow": [
+      "pattern:betting_on_yourself"
+    ],
+    "arc:mad_men/joan_holloway/the_plan_she_was_raised_for": [
+      "pattern:dream_isnt_what_promised",
+      "pattern:learning_what_you_deserve_in_love"
+    ],
+    "arc:mad_men/joan_holloway/fighting_to_be_taken_seriously": [
+      "pattern:fighting_for_respect"
+    ],
+    "arc:mad_men/pete_campbell/never_enough_for_anyone": [
+      "pattern:approval_from_withholding_parent",
+      "pattern:starving_to_matter"
+    ],
+    "arc:mad_men/pete_campbell/the_life_he_thought_he_wanted": [
+      "pattern:dream_isnt_what_promised",
+      "pattern:affair_breaks_the_trust"
+    ],
+    "arc:mad_men/roger_sterling/the_party_that_cant_last": [
+      "pattern:taking_stock_of_a_life",
+      "pattern:finally_growing_up"
+    ],
+    "arc:mad_men/roger_sterling/proving_he_still_matters": [
+      "pattern:reinvention_after_losing_role"
+    ],
+    "arc:mad_men/betty_draper/the_perfect_wife_with_numb_hands": [
+      "pattern:find_your_voice",
+      "pattern:lost_inside_one_relationship"
+    ],
+    "arc:mad_men/betty_draper/mother_who_was_never_mothered": [
+      "pattern:breaking_the_family_cycle"
+    ],
+    "arc:mad_men/sally_draper/the_child_who_sees_everything": [
+      "pattern:loving_family_who_do_harm",
+      "pattern:family_secret_rewrites_story"
+    ],
+    "arc:mad_men/sally_draper/refusing_to_become_her_parents": [
+      "pattern:breaking_the_family_cycle",
+      "pattern:making_peace_with_a_parent"
+    ],
+    "arc:mad_men/megan_calvet/choosing_her_own_dream": [
+      "pattern:betting_on_yourself",
+      "pattern:calling_vs_love"
+    ],
+    "arc:parks_and_rec/leslie_knope/dreaming_big_from_the_bottom_rung": [
+      "pattern:fighting_for_respect"
+    ],
+    "arc:parks_and_rec/leslie_knope/when_the_heart_and_the_dream_collide": [
+      "pattern:calling_vs_love"
+    ],
+    "arc:parks_and_rec/ron_swanson/the_man_who_wants_to_be_left_alone": [
+      "pattern:dropping_the_armour"
+    ],
+    "arc:parks_and_rec/ron_swanson/the_ex_he_cant_stay_away_from": [
+      "pattern:learning_what_you_deserve_in_love"
+    ],
+    "arc:parks_and_rec/ben_wyatt/living_down_a_youthful_failure": [
+      "pattern:can_you_really_change"
+    ],
+    "arc:parks_and_rec/april_ludgate/pretending_not_to_care": [
+      "pattern:dropping_the_armour"
+    ],
+    "arc:parks_and_rec/april_ludgate/what_do_you_want_to_do_with_your_life": [
+      "pattern:adrift_looking_for_a_calling"
+    ],
+    "arc:parks_and_rec/andy_dwyer/growing_up_after_being_left": [
+      "pattern:finally_growing_up",
+      "pattern:rebuilding_after_being_left"
+    ],
+    "arc:parks_and_rec/andy_dwyer/looking_for_what_hes_good_at": [
+      "pattern:adrift_looking_for_a_calling"
+    ],
+    "arc:parks_and_rec/tom_haverford/the_mogul_in_waiting": [
+      "pattern:betting_on_yourself",
+      "pattern:persona_replacing_you"
+    ],
+    "arc:parks_and_rec/tom_haverford/playing_the_field_to_avoid_getting_hurt": [
+      "pattern:letting_love_in",
+      "pattern:dropping_the_armour"
+    ],
+    "arc:parks_and_rec/ann_perkins/finding_herself_outside_a_relationship": [
+      "pattern:lost_inside_one_relationship"
+    ],
+    "arc:parks_and_rec/ann_perkins/building_a_family_on_her_own_terms": [
+      "pattern:longing_for_a_family_of_your_own"
+    ],
+    "arc:parks_and_rec/chris_traeger/positivity_as_a_shield": [
+      "pattern:outrunning_pain",
+      "pattern:strong_one_cracks"
+    ],
+    "arc:sex_education/otis_milburn/the_advice_giver": [
+      "pattern:helper_with_no_needs"
+    ],
+    "arc:sex_education/otis_milburn/growing_up_under_a_parent_who_knows_too_much": [
+      "pattern:tired_of_being_protected",
+      "pattern:parentified_child"
+    ],
+    "arc:sex_education/otis_milburn/falling_for_his_business_partner": [
+      "pattern:hidden_love",
+      "pattern:love_you_couldnt_keep"
+    ],
+    "arc:sex_education/maeve_wiley/raising_herself": [
+      "pattern:parentified_child",
+      "pattern:making_peace_with_a_parent"
+    ],
+    "arc:sex_education/maeve_wiley/the_gifted_outsider": [
+      "pattern:betting_on_yourself",
+      "pattern:fighting_for_respect"
+    ],
+    "arc:sex_education/maeve_wiley/letting_her_guard_down": [
+      "pattern:letting_love_in",
+      "pattern:dropping_the_armour"
+    ],
+    "arc:sex_education/eric_effiong/being_himself_out_loud": [
+      "pattern:between_two_worlds",
+      "pattern:discovering_who_you_love"
+    ],
+    "arc:sex_education/eric_effiong/what_he_deserves_in_love": [
+      "pattern:learning_what_you_deserve_in_love"
+    ],
+    "arc:sex_education/jean_milburn/the_expert_who_cant_fix_her_own_home": [
+      "pattern:letting_love_in",
+      "pattern:protective_love_becomes_control"
+    ],
+    "arc:sex_education/jean_milburn/when_the_helper_needs_help": [
+      "pattern:strong_one_cracks",
+      "pattern:making_peace_with_a_parent"
+    ],
+    "arc:sex_education/adam_groff/the_bully_who_hates_himself": [
+      "pattern:dropping_the_armour",
+      "pattern:can_you_really_change"
+    ],
+    "arc:sex_education/adam_groff/finding_what_hes_good_at": [
+      "pattern:adrift_looking_for_a_calling",
+      "pattern:family_wrote_you_off"
+    ],
+    "arc:sex_education/aimee_gibbs/finding_out_what_she_wants": [
+      "pattern:find_your_voice",
+      "pattern:giving_yourself_up_to_belong"
+    ],
+    "arc:sex_education/aimee_gibbs/feeling_safe_in_her_body_again": [
+      "pattern:relearning_safety_after_abuse",
+      "pattern:pretending_fine_after_trauma"
+    ],
+    "arc:sex_education/jackson_marchetti/the_golden_boy_under_pressure": [
+      "pattern:worth_only_when_winning",
+      "pattern:strong_one_cracks"
+    ],
+    "arc:sex_education/jackson_marchetti/who_he_is_beyond_the_image": [
+      "pattern:discovering_who_you_love",
+      "pattern:family_secret_rewrites_story"
+    ],
+    "arc:sex_education/ruby_matthews/the_queen_bee_armour": [
+      "pattern:dropping_the_armour"
+    ],
+    "arc:sex_education/ruby_matthews/starting_over_without_a_crown": [
+      "pattern:reinvention_after_losing_role",
+      "pattern:forgive_or_get_even"
+    ],
+    "arc:succession/logan_roy/refusing_to_let_go": [
+      "pattern:control_so_no_one_leaves",
+      "pattern:taking_stock_of_a_life"
+    ],
+    "arc:succession/logan_roy/the_childhood_he_never_mentions": [
+      "pattern:dropping_the_armour",
+      "pattern:making_peace_with_a_parent"
+    ],
+    "arc:succession/kendall_roy/chasing_his_fathers_chair": [
+      "pattern:approval_from_withholding_parent",
+      "pattern:family_legacy_weight"
+    ],
+    "arc:succession/kendall_roy/staying_sober_under_pressure": [
+      "pattern:numbing_habit",
+      "pattern:earning_back_trust"
+    ],
+    "arc:succession/shiv_roy/claiming_a_seat_at_the_table": [
+      "pattern:approval_from_withholding_parent",
+      "pattern:fighting_for_respect"
+    ],
+    "arc:succession/shiv_roy/love_on_her_own_terms": [
+      "pattern:letting_love_in",
+      "pattern:partners_want_different_lives"
+    ],
+    "arc:succession/roman_roy/the_joker_who_wants_to_be_taken_seriously": [
+      "pattern:approval_from_withholding_parent",
+      "pattern:family_wrote_you_off"
+    ],
+    "arc:succession/roman_roy/closeness_only_as_a_joke": [
+      "pattern:letting_love_in",
+      "pattern:dropping_the_armour"
+    ],
+    "arc:succession/connor_roy/the_forgotten_eldest": [
+      "pattern:starving_to_matter"
+    ],
+    "arc:succession/connor_roy/paying_for_love": [
+      "pattern:letting_love_in"
+    ],
+    "arc:succession/tom_wambsgans/the_outsider_who_wants_in": [
+      "pattern:giving_yourself_up_to_belong",
+      "pattern:complicit_in_bad_organisation"
+    ],
+    "arc:succession/tom_wambsgans/loving_someone_who_holds_the_power": [
+      "pattern:learning_what_you_deserve_in_love"
+    ],
+    "arc:succession/greg_hirsch/learning_the_price_of_getting_ahead": [
+      "pattern:complicit_in_bad_organisation",
+      "pattern:giving_yourself_up_to_belong"
+    ],
+    "arc:succession/gerri_kellman/competent_and_overlooked": [
+      "pattern:fighting_for_respect",
+      "pattern:complicit_in_bad_organisation"
+    ],
+    "arc:the_good_place/eleanor_shellstrop/earning_her_place": [
+      "pattern:can_you_really_change"
+    ],
+    "arc:the_good_place/eleanor_shellstrop/letting_people_in": [
+      "pattern:letting_love_in",
+      "pattern:dropping_the_armour"
+    ],
+    "arc:the_good_place/eleanor_shellstrop/responsible_for_others": [
+      "pattern:weight_of_leading",
+      "pattern:role_you_never_asked_for"
+    ],
+    "arc:the_good_place/chidi_anagonye/choosing_without_certainty": [
+      "pattern:fear_making_your_choices"
+    ],
+    "arc:the_good_place/chidi_anagonye/loving_his_opposite": [
+      "pattern:unlikely_bond",
+      "pattern:fear_making_your_choices"
+    ],
+    "arc:the_good_place/tahani_al_jamil/outside_her_sisters_shadow": [
+      "pattern:measured_against_a_sibling",
+      "pattern:approval_from_withholding_parent"
+    ],
+    "arc:the_good_place/tahani_al_jamil/who_she_is_without_an_audience": [
+      "pattern:reinvention_after_losing_role",
+      "pattern:adrift_looking_for_a_calling"
+    ],
+    "arc:the_good_place/jason_mendoza/behind_the_silence": [
+      "pattern:giving_yourself_up_to_belong",
+      "pattern:persona_replacing_you"
+    ],
+    "arc:the_good_place/jason_mendoza/thinking_before_acting": [
+      "pattern:finally_growing_up"
+    ],
+    "arc:the_good_place/michael/first_big_project": [
+      "pattern:conscience_vs_institution",
+      "pattern:complicit_in_bad_organisation"
+    ],
+    "arc:the_good_place/michael/learning_from_his_charges": [
+      "pattern:taking_stock_of_a_life",
+      "pattern:reinvention_after_losing_role"
+    ],
+    "arc:the_good_place/janet/more_than_a_helper": [
+      "pattern:helper_with_no_needs",
+      "pattern:find_your_voice"
+    ],
+    "arc:the_good_place/janet/feelings_she_wasnt_built_for": [
+      "pattern:love_you_couldnt_keep"
+    ]
+  }
+}

@@ -1,0 +1,854 @@
+{
+  "show": "stranger_things",
+  "characters": [
+    {
+      "id": "char:stranger_things/eleven",
+      "name": "Eleven",
+      "role": "A near-silent, shaven-headed girl with a number tattooed on her arm who has fled the secret government laboratory where she was raised as a test subject.",
+      "relations": [
+        {"target": "char:stranger_things/mike_wheeler", "relation": "partner"},
+        {"target": "char:stranger_things/jim_hopper", "relation": "parent"},
+        {"target": "char:stranger_things/joyce_byers", "relation": "parent"},
+        {"target": "char:stranger_things/will_byers", "relation": "sibling"},
+        {"target": "char:stranger_things/max_mayfield", "relation": "friend"},
+        {"target": "char:stranger_things/dustin_henderson", "relation": "friend"},
+        {"target": "char:stranger_things/steve_harrington", "relation": "friend"}
+      ],
+      "arcs": [
+        {
+          "id": "arc:stranger_things/eleven/learning_what_a_friend_is",
+          "title": "Learning what a friend is",
+          "literal_situation": "A girl raised inside a government laboratory, taught to call the scientist in charge 'Papa', flees into the woods of a small Indiana town. Three boys searching for their missing friend find her in the rain and hide her in a basement. She barely speaks, panics behind closed doors, and has never had a friend.",
+          "pattern_label": "learning to trust after a controlled, loveless upbringing",
+          "pattern_text": "Someone raised under total control, where approval had to be earned and failure was punished, suddenly finds themselves among people who offer kindness for free. They don't know how to trust it, what the rules are, or whether they deserve it. Slowly they have to learn that love isn't conditional on performance, and choose for themselves who their real family is.",
+          "hook": "She is hungry, hunted and almost wordless, sheltering with a boy who treats her like a person instead of an experiment. She has no idea what the word 'friend' means, but she knows the people who raised her are looking for her.",
+          "why_relatable": "What do you do with kindness when you've only ever known conditions? Can someone who was taught to see themselves as a tool believe they're worth protecting? And how do you handle fear and anger when the only tool you've ever been given is force?",
+          "watch_for": [
+            "How does she react the first time someone keeps a promise to her?",
+            "What does she do when a friend accuses her of lying?",
+            "Notice how she uses the word 'friend': what does it come to mean to her?"
+          ],
+          "start_at": "S1E1",
+          "span": "S1-S2",
+          "situations": [
+            {"id": "finding_your_people", "weight": 0.9},
+            {"id": "difficult_parent", "weight": 0.6},
+            {"id": "identity_and_self_acceptance", "weight": 0.5},
+            {"id": "coming_of_age", "weight": 0.4}
+          ],
+          "conflicts": ["control_vs_trust", "past_vs_future"],
+          "emotions": {"start": ["fear", "loneliness", "confusion"], "middle": ["belonging", "anger", "longing"], "end": ["love", "belonging", "hope"]},
+          "ending_tone": "hopeful",
+          "intensity": "heavy",
+          "warnings": ["abuse", "child_endangerment", "war_and_violence", "graphic_gore"],
+          "example_user_messages": [
+            "I grew up in a house where love had to be earned, and now that people are just nice to me I don't trust it.",
+            "My new friends keep inviting me places and I keep waiting for the catch.",
+            "I left a really controlling family and I don't even know what normal relationships are supposed to look like.",
+            "I've never had a real friend before and I'm scared I'll mess it up."
+          ],
+          "spoiler": {
+            "summary": "Taken from her mother Terry at birth and raised as Dr. Brenner's test subject, Eleven escapes after accidentally opening a gate to another dimension. Mike, Lucas and Dustin hide her; she helps them find Will, clashes with Lucas when she steers them away from the Gate, saves Mike from bullies at the quarry and shares a first kiss with him. Cornered at the school by lab agents and the Demogorgon, she destroys the creature and vanishes. She survives, lives wild for a month, then hides in a cabin with Hopper, whose fearful rules lead to an explosive fight. She runs away, finds her catatonic mother, and joins her lab 'sister' Kali's gang in Chicago, but refuses to kill the orderly who tortured her mother and chooses her friends over revenge. She returns, reconciles with Hopper, closes the Gate, is legally adopted as Jane Hopper and dances with Mike at the Snow Ball.",
+            "key_events": [
+              "Escapes Hawkins Lab and is hidden in Mike's basement",
+              "Steers the compasses away from the Gate and falls out with Lucas",
+              "Saves Mike at the quarry; first kiss with Mike",
+              "Destroys the Demogorgon and vanishes; later found alive by Hopper",
+              "Lives in hiding under Hopper's rules; they have an explosive fight",
+              "Finds her catatonic mother Terry Ives and her lab sister Kali",
+              "Spares the orderly who tortured her mother",
+              "Closes the Gate; adopted as Jane Hopper; Snow Ball dance with Mike"
+            ],
+            "got_right": "She keeps choosing loyalty and mercy even when rage would be easier: sparing Ray, going back for her friends, protecting others at great cost to herself.",
+            "got_wrong": "Never taught to put feelings into words, she lashes out with force (hurting Lucas, smashing the cabin windows) and runs away instead of saying what she needs."
+          }
+        },
+        {
+          "id": "arc:stranger_things/eleven/who_am_i_without_it",
+          "title": "Who am I if I'm not special?",
+          "literal_situation": "Later in the series, after a turning point that uproots her life, she is the new girl at a California high school, mocked daily by a popular clique, stripped of the ability that always made her feel strong, and writing cheerful letters home about how well everything is going. None of it is true.",
+          "pattern_label": "losing the one thing that made you feel worthy",
+          "pattern_text": "A person whose whole sense of worth rested on one extraordinary ability loses it, and with it their place in the world. Now ordinary, bullied and pretending to be fine, they have to face the painful past they buried and decide whether they are defined by what they can do, by what was done to them, or by what they choose. In the end the question becomes how much of themselves they owe to the people they love.",
+          "hook": "She lies to the people she loves about being happy, because the truth, that she is lonely, humiliated and powerless, feels unbearable to admit. When someone offers her a way to become her old self again, the price is facing everything she has forgotten.",
+          "why_relatable": "Who are you when the thing you were known for is gone? Why is it so hard to tell the people who love you that you're struggling? And if getting your strength back means reopening your worst memories and trusting people whose motives you aren't sure of, is it worth it?",
+          "watch_for": [
+            "Why does she keep the truth from the people closest to her?",
+            "What does she decide she owes to the people who shaped her, for better or worse?",
+            "How does she weigh her own future against keeping others safe?"
+          ],
+          "start_at": "S4E1",
+          "span": "S4-S5",
+          "situations": [
+            {"id": "identity_and_self_acceptance", "weight": 1.0},
+            {"id": "confidence_struggle", "weight": 0.8},
+            {"id": "responsibility_you_didnt_ask_for", "weight": 0.7},
+            {"id": "moving_somewhere_new", "weight": 0.4}
+          ],
+          "conflicts": ["past_vs_future", "duty_vs_desire"],
+          "emotions": {"start": ["shame", "loneliness", "inadequacy"], "middle": ["anger", "fear", "determination"], "end": ["self_respect", "love", "acceptance"]},
+          "ending_tone": "bittersweet",
+          "intensity": "heavy",
+          "warnings": ["abuse", "medical_trauma", "child_endangerment", "war_and_violence", "graphic_gore", "death_of_main_character", "death_of_loved_one", "grief"],
+          "example_user_messages": [
+            "I've been telling everyone I'm doing great at my new school, but honestly I get bullied every day and eat lunch alone.",
+            "I used to be the best at what I did, and since my injury I feel like a nobody.",
+            "I feel like I'm only worth something to people when I'm useful to them.",
+            "I keep pushing my boyfriend away because I'm scared that once he sees the real me he'll leave."
+          ],
+          "spoiler": {
+            "summary": "Powerless since the Mind Flayer's bite and grieving Hopper, Eleven is bullied in Lenora Hills until she smashes her tormentor Angela in the face with a roller skate and is arrested. Dr. Owens takes her to the Nina Project, where she learns Brenner is alive. Reliving her buried memories, she discovers that Henry Creel (One) massacred the lab's children and that she banished him to the other dimension, where he became Vecna. Her powers return. When Sullivan's forces attack the facility she denies the dying Brenner forgiveness, then enters Max's mind from a makeshift tank to fight Vecna; Mike's declaration of love frees her, and after Max dies she restarts her heart. In the final season she trains for a rematch while hunted by the military, enters Vecna's mind with Max and Kali, and in the Abyss defeats Vecna with Will's help. To end the hunt for her and the experiments on people like her, she stays at the gate as the Upside Down is destroyed. Eighteen months later Mike theorises that Kali's illusion let her escape to live in peace, and her friends choose to believe it.",
+            "key_events": [
+              "Attacks her bully Angela and is arrested",
+              "Discovers Brenner is alive at the Nina Project",
+              "Remembers that One/Vecna massacred the lab children and that she banished him",
+              "Refuses to forgive the dying Brenner",
+              "Restarts Max's heart after Vecna kills her",
+              "Defeats Vecna in the Abyss with Will's help",
+              "Sacrifices herself as the Upside Down collapses; Mike believes Kali's illusion let her escape"
+            ],
+            "got_right": "She stops running from her own history, faces the memories she buried, and refuses to let the man who raised her rewrite what he did.",
+            "got_wrong": "She hides her pain behind lies until it erupts as violence, and keeps believing she must carry every burden alone rather than let the people who love her share it."
+          }
+        }
+      ]
+    },
+    {
+      "id": "char:stranger_things/mike_wheeler",
+      "name": "Mike Wheeler",
+      "role": "The bossy, fiercely loyal leader of a group of nerdy middle-school friends who spend their nights playing Dungeons & Dragons in his basement.",
+      "relations": [
+        {"target": "char:stranger_things/eleven", "relation": "partner"},
+        {"target": "char:stranger_things/will_byers", "relation": "friend"},
+        {"target": "char:stranger_things/dustin_henderson", "relation": "friend"},
+        {"target": "char:stranger_things/max_mayfield", "relation": "friend"},
+        {"target": "char:stranger_things/steve_harrington", "relation": "friend"},
+        {"target": "char:stranger_things/jim_hopper", "relation": "mentor"}
+      ],
+      "arcs": [
+        {
+          "id": "arc:stranger_things/mike_wheeler/refusing_to_give_up_on_a_friend",
+          "title": "Refusing to give up on a friend",
+          "literal_situation": "When his best friend vanishes on the way home from their game night, twelve-year-old Mike ignores the police chief's orders, leads his friends into the woods to search, and stumbles on a strange girl he decides to hide in his basement, keeping her secret from his own parents.",
+          "pattern_label": "the loyal friend who won't accept a loss",
+          "pattern_text": "When someone close to them is suddenly gone and the adults seem to have given up, a young person refuses to accept it and throws themselves into getting them back. Their loyalty is fierce but stubborn: it holds the group together, and it also makes them lash out at the people standing right beside them. Along the way, they discover how much they can feel for someone new.",
+          "hook": "Mike is the one who organises everyone, makes the plans and never admits he's scared. With his best friend gone and a mysterious girl hiding in his basement, he's trying to be the leader his friends need while keeping enormous secrets from his family.",
+          "why_relatable": "How long do you keep hoping when everyone else says to stop? Can you lead your friends when you're this frightened yourself? And what happens to a friendship when loyalty to one person pits you against another?",
+          "watch_for": [
+            "How does he treat friends who disagree with his plans?",
+            "What does he say to someone who thinks they're the problem?",
+            "When he's wrong, how does he try to make it right?"
+          ],
+          "start_at": "S1E1",
+          "span": "S1-S2",
+          "situations": [
+            {"id": "coming_of_age", "weight": 0.7},
+            {"id": "finding_your_people", "weight": 0.6},
+            {"id": "falling_for_someone_unexpected", "weight": 0.6},
+            {"id": "grief_and_loss", "weight": 0.5}
+          ],
+          "conflicts": ["holding_on_vs_letting_go", "truth_vs_protecting_others"],
+          "emotions": {"start": ["fear", "determination", "anxiety"], "middle": ["anger", "longing", "loneliness"], "end": ["relief", "love", "joy"]},
+          "ending_tone": "hopeful",
+          "intensity": "moderate",
+          "warnings": ["child_endangerment", "war_and_violence", "grief"],
+          "example_user_messages": [
+            "My best friend stopped answering and everyone says I should let it go, but I can't.",
+            "I'm always the one who plans everything for my friends and I'm scared of letting them down.",
+            "I got into a huge fight with one friend because I defended another, and now the group is split.",
+            "I think I'm falling for someone who's really different from anyone I've known."
+          ],
+          "spoiler": {
+            "summary": "Mike leads the search for Will, hides Eleven and trusts her against Lucas's suspicion, which splits the Party until they make up. He jumps off the quarry cliff to save Dustin from knife-wielding bullies, and Eleven catches him. He kisses her and promises to take her to the Snow Ball, then watches her vanish destroying the Demogorgon; Will is rescued. For nearly a year he radios Eleven every night with no answer, while supporting Will through his episodes and possession, and resents newcomer Max. He is furious to learn Hopper hid Eleven, reunites with her, helps burn the tunnels, and dances with her at the Snow Ball.",
+            "key_events": [
+              "Hides Eleven and uses her to search for Will",
+              "Falls out with Lucas over Eleven",
+              "Jumps off the quarry cliff; Eleven saves him",
+              "First kiss with Eleven; she vanishes after the Demogorgon fight",
+              "Radios Eleven every night for almost a year",
+              "Supports Will through his possession",
+              "Reunites with Eleven; Snow Ball dance"
+            ],
+            "got_right": "His loyalty is unshakeable: he never stops believing in Will or Eleven and stands up to bullies and adults to protect them.",
+            "got_wrong": "He is stubborn and possessive, shuts out a newcomer like Max, and lashes out at friends when he's scared."
+          }
+        },
+        {
+          "id": "arc:stranger_things/mike_wheeler/afraid_of_not_being_needed",
+          "title": "Afraid of not being needed",
+          "literal_situation": "Later in the series, Mike is a high-school outsider in the school's tabletop gaming club. He flies across the country for spring break to see someone he cares about deeply, and quickly discovers she has been hiding how badly she's struggling, while he has been hiding his own fear that he is the ordinary one between them.",
+          "pattern_label": "feeling ordinary beside someone extraordinary",
+          "pattern_text": "A person who has always been the planner and the glue of their group starts to feel ordinary next to someone they love who seems far more remarkable. Afraid of being unnecessary, they hold back what they feel and say the wrong things at the worst moments. When real loss arrives, they have to learn to say what matters out loud, and decide how to carry grief without letting it swallow the rest of their life.",
+          "hook": "Mike can talk his friends into any plan, but he can't bring himself to write the one word his letters are missing. Next to someone extraordinary, he wonders what he really has to offer.",
+          "why_relatable": "What if the people you love don't need you as much as you need them? Why is it easier to be supportive in general than to say how you actually feel? And when things fall apart, is your job to fix everything, or just to stay?",
+          "watch_for": [
+            "Why does he hesitate to say certain things out loud?",
+            "How does he treat the friend who has always been at his side?",
+            "What does he choose to believe when he can't know the truth?"
+          ],
+          "start_at": "S4E1",
+          "span": "S4-S5",
+          "situations": [
+            {"id": "confidence_struggle", "weight": 0.8},
+            {"id": "grief_and_loss", "weight": 0.7},
+            {"id": "long_distance", "weight": 0.6},
+            {"id": "caring_for_family", "weight": 0.4}
+          ],
+          "conflicts": ["holding_on_vs_letting_go", "independence_vs_connection"],
+          "emotions": {"start": ["self_doubt", "inadequacy", "longing"], "middle": ["guilt", "fear", "determination"], "end": ["grief", "hope", "acceptance"]},
+          "ending_tone": "bittersweet",
+          "intensity": "heavy",
+          "warnings": ["death_of_loved_one", "grief", "child_endangerment", "war_and_violence", "graphic_gore"],
+          "example_user_messages": [
+            "My girlfriend is so talented and I feel like the boring one. What does she even need me for?",
+            "I can say supportive stuff all day but I freeze when I try to tell someone I love them.",
+            "We're long distance and I just found out she's been lying about how she's doing.",
+            "Someone I loved made a choice I can't undo and everyone else seems to have moved on except me."
+          ],
+          "spoiler": {
+            "summary": "Mike visits Eleven in California, finds she's been lying about her life, and can't bring himself to say he loves her. After she is taken to the Nina Project, he, Will, Jonathan and Argyle track her down; while she fights Vecna from a makeshift tank, Mike tells her he loves her with or without her powers, giving her the strength to break free. Back in Hawkins under military quarantine, he masterminds the Party's plans and comforts his little sister Holly; after a Demogorgon attacks his parents and Holly is taken, he works out that her imaginary friend 'Mr. Whatsit' is Henry Creel. He apologises to Will for not being there before Will came out, and they reaffirm they're best friends. After Vecna's defeat, Eleven stays behind as the Upside Down collapses. Eighteen months later Mike is still grieving; Hopper tells him about the two roads of grief. At a final D&D session Mike theorises that Kali's illusion let Eleven escape, chooses to believe it, and becomes a writer.",
+            "key_events": [
+              "Finds Eleven has been lying about her life in California",
+              "Tells Eleven he loves her, helping her fight Vecna",
+              "Vecna kidnaps Holly; Mike works out Mr. Whatsit is Henry Creel",
+              "Apologises to Will after Will comes out",
+              "Loses Eleven when she stays behind as the Upside Down collapses",
+              "Chooses to believe Eleven escaped; becomes a writer"
+            ],
+            "got_right": "He finally says what he feels, becomes the strategist who holds everyone together, and makes amends to Will.",
+            "got_wrong": "He lets insecurity turn into moping and cutting remarks, and is so absorbed in his own relationship that he misses what his best friend is going through."
+          }
+        }
+      ]
+    },
+    {
+      "id": "char:stranger_things/will_byers",
+      "name": "Will Byers",
+      "role": "A shy, gentle, artistic boy who loves drawing and Dungeons & Dragons with his three best friends, raised by a hard-working single mother and a protective older brother.",
+      "relations": [
+        {"target": "char:stranger_things/joyce_byers", "relation": "parent"},
+        {"target": "char:stranger_things/eleven", "relation": "sibling"},
+        {"target": "char:stranger_things/mike_wheeler", "relation": "friend"},
+        {"target": "char:stranger_things/dustin_henderson", "relation": "friend"},
+        {"target": "char:stranger_things/max_mayfield", "relation": "friend"},
+        {"target": "char:stranger_things/steve_harrington", "relation": "friend"}
+      ],
+      "arcs": [
+        {
+          "id": "arc:stranger_things/will_byers/nobody_understands_what_i_went_through",
+          "title": "Nobody understands what I went through",
+          "literal_situation": "Later in the series, after a turning point that leaves him marked by an ordeal nobody else fully understands, Will has flashback-like episodes, is treated as fragile by his mother, stared at by classmates, and examined by doctors who tell him it's just trauma. He's starting to fear something far worse is happening to him.",
+          "pattern_label": "living with the aftermath of trauma no one can see",
+          "pattern_text": "After surviving something terrifying, a young person is expected to go back to normal. Instead they have episodes they can't explain, everyone watches them nervously, and they start hiding what's happening so they won't be treated as broken. The fear inside grows until it threatens to take over completely, and their recovery depends on whether the people who love them can keep reaching the real them.",
+          "hook": "Will just wants to be a normal kid again: trick-or-treating in a group costume, beating the arcade high scores. But reality keeps flickering around him, and he's too scared to tell anyone how bad it's getting.",
+          "why_relatable": "How do you tell people you're not okay when they're all desperate for you to be fine? Is facing your fear head-on always brave, or can it make things worse? And how do you hold on to yourself when something inside you feels like it isn't you?",
+          "watch_for": [
+            "Who does he trust with the truth first, and why them?",
+            "Notice the advice he gets about facing fear: does it help him?",
+            "What small memories keep him connected to the people who love him?"
+          ],
+          "start_at": "S2E1",
+          "span": "S2",
+          "situations": [
+            {"id": "illness_or_injury", "weight": 0.8},
+            {"id": "loneliness", "weight": 0.5},
+            {"id": "identity_and_self_acceptance", "weight": 0.4},
+            {"id": "grief_and_loss", "weight": 0.3}
+          ],
+          "conflicts": ["truth_vs_protecting_others", "independence_vs_connection"],
+          "emotions": {"start": ["anxiety", "fear", "loneliness"], "middle": ["overwhelm", "dread", "guilt"], "end": ["relief", "grief", "belonging"]},
+          "ending_tone": "hopeful",
+          "intensity": "heavy",
+          "warnings": ["child_endangerment", "medical_trauma", "death_of_loved_one", "grief", "war_and_violence"],
+          "example_user_messages": [
+            "Ever since the accident I get flashbacks, and I pretend I'm fine because everyone's so worried about me.",
+            "People at school act like I'm a freak since what happened.",
+            "My mom watches me like I'm made of glass and I just want to be normal again.",
+            "It feels like something inside me has taken over and I'm not myself anymore."
+          ],
+          "spoiler": {
+            "summary": "Rescued from the Upside Down, Will is mocked as 'Zombie Boy' and suffers 'episodes' that Dr. Owens dismisses as PTSD. Taking Bob's advice to stand up to his fears, he tells the Shadow Monster to go away, and it possesses him. He becomes part of the Mind Flayer's hive mind, forgets the people he loves, and is used to lure soldiers into a Demodog trap; Bob is killed helping everyone escape the lab. Tied up in the shed, a part of him taps 'CLOSE GATE' in Morse code. Joyce, Jonathan and Nancy burn the Mind Flayer out of him with heaters and a hot poker while Eleven closes the Gate, and a month later he dances at the Snow Ball.",
+            "key_events": [
+              "Coughs up a slug and sees the Upside Down flicker around him",
+              "Stands up to the Shadow Monster and is possessed",
+              "Unknowingly leads soldiers into a Demodog trap; Bob is killed",
+              "Signals 'close gate' in Morse code",
+              "The Mind Flayer is burned out of him"
+            ],
+            "got_right": "He keeps a core of himself alive under the possession and finds a way to help even when he isn't in control.",
+            "got_wrong": "He hides how bad his episodes are, to protect his mother and to seem normal, which lets the danger grow."
+          }
+        },
+        {
+          "id": "arc:stranger_things/will_byers/afraid_to_be_seen",
+          "title": "Afraid to be seen for who he is",
+          "literal_situation": "Later in the series, the summer his friends start dating and lose interest in the games they've played since childhood, Will is still trying to get them to sit down for one more campaign. He feels left behind, and quietly carries feelings he doesn't dare name, especially toward his best friend.",
+          "pattern_label": "hiding your true self for fear of losing everyone",
+          "pattern_text": "As friends grow up and pair off, one person feels left behind and quietly carries a truth about who they are and who they love that they're terrified to share. They play the supportive friend while their own heart breaks, convinced that honesty would cost them everyone. The journey is about accepting themselves first, and discovering whether the people they love are bigger than their fears.",
+          "hook": "Will wants things to stay the way they were: basement campaigns, bikes, comics. Everyone else seems to be moving on without him, and one careless remark from his best friend cuts deeper than anyone realises.",
+          "why_relatable": "What do you do when your friends grow in a direction you can't follow? How long can you cheer on someone you have feelings for? And is keeping a secret protecting your friendships, or slowly isolating you from them?",
+          "watch_for": [
+            "What does he give up to keep his best friend happy?",
+            "Who helps him feel less alone, and what do they share with him?",
+            "What changes in him when he stops trying to hide?"
+          ],
+          "start_at": "S3E1",
+          "span": "S3-S5",
+          "situations": [
+            {"id": "identity_and_self_acceptance", "weight": 1.0},
+            {"id": "unrequited_love", "weight": 0.7},
+            {"id": "coming_of_age", "weight": 0.6},
+            {"id": "finding_your_people", "weight": 0.4}
+          ],
+          "conflicts": ["fitting_in_vs_standing_out", "belonging_vs_integrity"],
+          "emotions": {"start": ["loneliness", "rejection", "longing"], "middle": ["shame", "fear", "anxiety"], "end": ["acceptance", "belonging", "freedom"]},
+          "ending_tone": "hopeful",
+          "intensity": "heavy",
+          "warnings": ["child_endangerment", "war_and_violence", "graphic_gore", "death_of_loved_one", "grief"],
+          "example_user_messages": [
+            "All my friends have girlfriends now and I just feel left behind.",
+            "I've had feelings for my best friend for years and I keep helping him with his relationship instead.",
+            "I'm gay and I haven't told my friends because I'm scared everything would change.",
+            "I feel like I'm the only one who still wants things to stay the way they were."
+          ],
+          "spoiler": {
+            "summary": "In 1985 Will feels abandoned as the Party pairs off; after Mike snaps 'It's not my fault you don't like girls', he wrecks Castle Byers, then senses the Mind Flayer's return and puts his feelings aside to fight. In California he supports Eleven through bullying; on the road to find her he gives Mike a painting he made for him, pretending Eleven commissioned it and telling Mike he's the heart of the Party, then cries silently. Jonathan quietly lets him know he knows and loves him. Back in Hawkins, Robin's story of her first crush helps him accept himself; embracing his happy memories, he channels Vecna's powers through the hive mind to save his friends. After Vecna uses his fear of rejection against him, he comes out to his family and friends, who embrace him; Mike apologises and they stay best friends. He helps restrain Vecna in the Abyss, graduates in 1989, and later finds acceptance, and possibly love, in a new city.",
+            "key_events": [
+              "Mike's 'you don't like girls' remark; Will destroys Castle Byers",
+              "Gives Mike the painting and says he's the heart of the Party",
+              "Jonathan signals he knows and accepts him",
+              "Robin's coming-out story helps him accept himself",
+              "Channels Vecna's powers to kill the Demogorgons",
+              "Comes out to his family and friends",
+              "Helps restrain Vecna in the Abyss; moves to a new city"
+            ],
+            "got_right": "He shows extraordinary loyalty and compassion, and in time trusts the people who love him with the truth, finding strength rather than weakness in who he is.",
+            "got_wrong": "He hides his feelings for so long that he suffers alone and shrinks himself to keep the peace."
+          }
+        }
+      ]
+    },
+    {
+      "id": "char:stranger_things/dustin_henderson",
+      "name": "Dustin Henderson",
+      "role": "A funny, curious, science-obsessed kid whose missing teeth, caused by a rare condition, make him a target for bullies, and who plays peacemaker in his friend group.",
+      "relations": [
+        {"target": "char:stranger_things/steve_harrington", "relation": "mentor"},
+        {"target": "char:stranger_things/mike_wheeler", "relation": "friend"},
+        {"target": "char:stranger_things/will_byers", "relation": "friend"},
+        {"target": "char:stranger_things/max_mayfield", "relation": "friend"},
+        {"target": "char:stranger_things/eleven", "relation": "friend"}
+      ],
+      "arcs": [
+        {
+          "id": "arc:stranger_things/dustin_henderson/an_unlikely_big_brother",
+          "title": "Finding an unlikely big brother",
+          "literal_situation": "In seventh grade, Dustin is desperate to impress the new girl, is hiding a strange little creature he found in his trash can, and keeps getting sidelined as his friends make plans without him. When he needs help, the only person available is a fading high-school heartthrob he barely knows.",
+          "pattern_label": "an overlooked kid finding a mentor in an unlikely place",
+          "pattern_text": "A young person who is easy to overlook, teased for how they look and rejected when they put themselves out there, finds guidance from someone nobody would expect: an older person whose own status has just crumbled. What starts as an awkward alliance becomes a real mentorship in both directions, and the young person learns that being openly enthusiastic and kind is worth more than being cool.",
+          "hook": "Dustin puts himself out there every time, with jokes, inventions and dance invitations, and gets laughed at a lot. He's also the one most willing to see the good in people nobody else trusts.",
+          "why_relatable": "How do you keep your enthusiasm when people keep rejecting it? What can you learn from someone who seems to be your opposite? And how do you handle feeling like your friends have moved on without you?",
+          "watch_for": [
+            "What advice does he take from his new mentor, and what does he teach back?",
+            "How does he react when his friends doubt something that matters to him?",
+            "Notice the moments he feels left out: what does he do with that feeling?"
+          ],
+          "start_at": "S2E1",
+          "span": "S2-S3",
+          "situations": [
+            {"id": "mentor_and_protege", "weight": 1.0},
+            {"id": "confidence_struggle", "weight": 0.6},
+            {"id": "finding_your_people", "weight": 0.6},
+            {"id": "coming_of_age", "weight": 0.4}
+          ],
+          "conflicts": ["fitting_in_vs_standing_out", "belonging_vs_integrity"],
+          "emotions": {"start": ["curiosity", "self_doubt", "loneliness"], "middle": ["rejection", "belonging", "determination"], "end": ["confidence", "belonging", "joy"]},
+          "ending_tone": "hopeful",
+          "intensity": "moderate",
+          "warnings": ["child_endangerment", "war_and_violence", "torture"],
+          "example_user_messages": [
+            "I asked someone to dance at a party and got turned down in front of everyone. I'm so embarrassed.",
+            "The person who ended up helping me most is someone I never thought I'd get along with.",
+            "My friends all have partners now and they keep ditching me.",
+            "I get teased for how I look and I try to laugh it off, but it hurts."
+          ],
+          "spoiler": {
+            "summary": "Dustin secretly raises Dart, who turns out to be a baby Demogorgon and eats his cat. Needing help, he recruits Steve, who shares advice about girls and his hairspray secret while they fight Demodogs at the junkyard and burn the tunnels. At the Snow Ball every girl turns him down, but Nancy asks him to dance. In 1985 he returns from camp with a girlfriend, Suzie, whom nobody believes exists, feels ditched by his friends, and with Steve, Robin and Erica uncovers a Soviet base under Starcourt Mall, rescuing the drugged Steve and Robin. Suzie proves real, gives him Planck's constant at the critical moment, and makes him sing their Neverending Story duet over the radio.",
+            "key_events": [
+              "Hides Dart, a baby Demogorgon that eats his cat",
+              "Recruits Steve; they bond on the train tracks and at the junkyard",
+              "Rejected by every girl at the Snow Ball; Nancy dances with him",
+              "Uncovers the Soviet base under Starcourt with Steve, Robin and Erica",
+              "Suzie supplies Planck's constant; the Neverending Story duet"
+            ],
+            "got_right": "He stays generous and open-hearted, sees the good in Steve, and his curiosity keeps saving the day.",
+            "got_wrong": "His need to be taken seriously leads him to hide a dangerous secret from his friends and to put his big discovery ahead of their safety."
+          }
+        },
+        {
+          "id": "arc:stranger_things/dustin_henderson/standing_by_a_misjudged_friend",
+          "title": "Standing by a friend everyone misjudges",
+          "literal_situation": "Later in the series, starting high school as outsiders, Dustin and Mike are taken under the wing of the loud, eccentric leader of the school's tabletop gaming club, whom most of the school considers a freak. When his new mentor is accused of a terrible crime, Dustin is sure the town has it wrong.",
+          "pattern_label": "defending a misjudged friend against a whole community",
+          "pattern_text": "A young person finds belonging with an older misfit that everyone else dismisses as trouble. When that friend is blamed for something terrible, they refuse to go along with the crowd. Their loyalty is tested by fear, loss and a community that would rather have a scapegoat than the truth, and they must figure out how to carry anger and grief without letting it eat away at their other friendships.",
+          "hook": "Dustin has found a place where being a nerd is a badge of honour, led by someone who stands up for kids like him. Now the whole town is hunting that person, and Dustin is one of the few who want to hear his side.",
+          "why_relatable": "How far would you go to defend someone everyone else has already judged? What do you do with your anger at a community that won't listen? And when grief makes you lash out, how do you keep from pushing away the people still beside you?",
+          "watch_for": [
+            "How does he respond when adults and classmates repeat what 'everyone knows'?",
+            "What does he do with his anger, and who gets caught in it?",
+            "What does he want people to remember about his friend?"
+          ],
+          "start_at": "S4E1",
+          "span": "S4-S5",
+          "situations": [
+            {"id": "grief_and_loss", "weight": 0.9},
+            {"id": "standing_up_to_authority", "weight": 0.7},
+            {"id": "finding_your_people", "weight": 0.5},
+            {"id": "friendship_ending", "weight": 0.3}
+          ],
+          "conflicts": ["fitting_in_vs_standing_out", "holding_on_vs_letting_go"],
+          "emotions": {"start": ["belonging", "pride", "determination"], "middle": ["grief", "anger", "resentment"], "end": ["acceptance", "pride", "freedom"]},
+          "ending_tone": "bittersweet",
+          "intensity": "heavy",
+          "warnings": ["death_of_loved_one", "grief", "graphic_gore", "war_and_violence", "child_endangerment"],
+          "example_user_messages": [
+            "My friend got blamed for something he didn't do and now everyone treats him like a criminal.",
+            "Since my friend died I've been so angry at everyone, and I'm pushing my other friends away.",
+            "People keep repeating rumours about someone I care about and I'm the only one defending him.",
+            "I don't want to just fit in and pretend everything is fine after what happened."
+          ],
+          "spoiler": {
+            "summary": "In the Hellfire Club, Dustin bonds with Eddie Munson. When cheerleader Chrissy is killed in Eddie's trailer and the town blames Eddie, Dustin and Max realise Vecna is responsible. In the Upside Down, Dustin and Eddie lure the Demobats away from the Creel House; Eddie stops running and sacrifices himself, dying in Dustin's arms. Dustin tells Eddie's uncle Wayne that he died a hero. Over the next eighteen months Dustin grows his hair like Eddie, wears a Hellfire shirt and gets bullied for it, and grows bitter towards Hawkins and his friends, including Steve. He works out the plan to destroy the Upside Down, fights the Mind Flayer beside Steve 'for Eddie', and as valedictorian in 1989 gives a defiant anti-conformity speech, revealing a 'Hellfire Lives' shirt.",
+            "key_events": [
+              "Bonds with Hellfire Club leader Eddie Munson",
+              "Town blames Eddie for Chrissy's murder",
+              "Eddie sacrifices himself and dies in Dustin's arms",
+              "Tells Eddie's uncle Wayne that Eddie was a hero",
+              "Grief turns to bitterness and a rift with Steve",
+              "Devises the bomb plan; fights the Mind Flayer 'for Eddie'",
+              "Valedictorian speech revealing a Hellfire Lives shirt"
+            ],
+            "got_right": "He refuses to abandon a friend to the crowd, tells the truth about Eddie, and turns his grief into a stand for people who don't fit in.",
+            "got_wrong": "He lets grief harden into bitterness, picking fights with bullies and snapping at friends who are grieving differently."
+          }
+        }
+      ]
+    },
+    {
+      "id": "char:stranger_things/max_mayfield",
+      "name": "Max Mayfield",
+      "role": "A tough, sarcastic, skateboarding new girl who has just moved to Indiana from California with her mother, stepfather and volatile older stepbrother.",
+      "relations": [
+        {"target": "char:stranger_things/eleven", "relation": "friend"},
+        {"target": "char:stranger_things/mike_wheeler", "relation": "friend"},
+        {"target": "char:stranger_things/will_byers", "relation": "friend"},
+        {"target": "char:stranger_things/dustin_henderson", "relation": "friend"},
+        {"target": "char:stranger_things/steve_harrington", "relation": "friend"}
+      ],
+      "arcs": [
+        {
+          "id": "arc:stranger_things/max_mayfield/belonging_while_home_is_unsafe",
+          "title": "Trying to belong while home is unsafe",
+          "literal_situation": "Max has just moved to a small Indiana town, beats the local boys' arcade high scores, and gets invited trick-or-treating by two of them, while their leader freezes her out and the whole group clearly keeps secrets from her. At home, her older stepbrother bullies and threatens her, and she has learned to handle it alone.",
+          "pattern_label": "a guarded newcomer seeking belonging while home is unsafe",
+          "pattern_text": "A newcomer with a frightening home life tries to break into a tight-knit friend group that keeps secrets from them. Used to handling everything alone, they act tough and flippant while craving to be let in. As they finally find people who have their back, they also have to confront the person at home who has been scaring them, and sort out what they feel about that relationship.",
+          "hook": "Max plays it cool and sarcastic, but she's the new kid in a town she never wanted to move to, the group she wants to join won't tell her the truth, and her stepbrother's temper is getting scarier.",
+          "why_relatable": "How do you ask to be let in without looking like you care too much? When do you stop quietly absorbing the behaviour of someone who scares you? And what do you do with complicated feelings about a family member who hurts you?",
+          "watch_for": [
+            "What makes her decide to stay with the group instead of walking away?",
+            "When does she stop covering for her stepbrother?",
+            "How does her first close friendship with another girl change her?"
+          ],
+          "start_at": "S2E1",
+          "span": "S2-S3",
+          "situations": [
+            {"id": "finding_your_people", "weight": 0.9},
+            {"id": "moving_somewhere_new", "weight": 0.7},
+            {"id": "difficult_parent", "weight": 0.5}
+          ],
+          "conflicts": ["independence_vs_connection", "belonging_vs_integrity"],
+          "emotions": {"start": ["loneliness", "anger", "rejection"], "middle": ["belonging", "fear", "confidence"], "end": ["belonging", "grief", "confusion"]},
+          "ending_tone": "bittersweet",
+          "intensity": "heavy",
+          "warnings": ["abuse", "domestic_violence", "child_endangerment", "death_of_loved_one", "war_and_violence"],
+          "example_user_messages": [
+            "I moved to a new school and the group I want to be friends with keeps whispering and shutting me out.",
+            "My stepbrother is really aggressive and I've always just dealt with it on my own.",
+            "I act like I don't care but honestly I just want someone to let me in.",
+            "I finally have a best friend who's a girl and it's changing how I see myself."
+          ],
+          "spoiler": {
+            "summary": "Max is lied to and excluded until Lucas tells her the truth, and she sees the Demodogs herself at the junkyard. When Billy beats Steve unconscious at the Byers house, she jabs Billy with a sedative, threatens him with Steve's nail bat, and drives the group to the tunnels in his car. She kisses Lucas at the Snow Ball. In 1985 she befriends Eleven, teaching her to think for herself and have fun, and they discover Billy has been possessed by the Mind Flayer. At Starcourt, Billy, reminded of his mother by Eleven, breaks free and sacrifices himself to save her, dying in front of Max.",
+            "key_events": [
+              "Lucas tells her the truth; she sees Demodogs at the junkyard",
+              "Sedates Billy and threatens him with a nail bat",
+              "First kiss with Lucas at the Snow Ball",
+              "Best friendship with Eleven",
+              "Billy is possessed by the Mind Flayer",
+              "Billy sacrifices himself and dies in front of her"
+            ],
+            "got_right": "She stops enduring Billy's abuse in silence and stands up to him, and she lets herself be a real friend to Eleven.",
+            "got_wrong": "She keeps people at arm's length, tries to handle everything alone, and brushes off warning signs about Billy when facing them feels too hard."
+          }
+        },
+        {
+          "id": "arc:stranger_things/max_mayfield/grief_she_cant_say_out_loud",
+          "title": "The grief she can't say out loud",
+          "literal_situation": "Later in the series, after a turning point that leaves her carrying a loss and a guilt she won't talk about, Max lives in a trailer with her struggling mother, skips her sessions with the school counsellor, has pushed away everyone who used to be close to her, and drifts through her new high school with headphones on and headaches that won't stop.",
+          "pattern_label": "survivor's guilt and isolation after a complicated loss",
+          "pattern_text": "After losing someone they had a painful, complicated relationship with, a person is quietly consumed by guilt over feelings they had before the loss. They withdraw, insist they're fine, and shut out everyone who tries to help, until the darkness feels like it's hunting them. Surviving means saying the unsayable out loud, letting friends hold on to them, and finding the one thing that ties them to life.",
+          "hook": "Max has decided that people just change, and that she doesn't need to talk about it. But the headaches and nightmares are getting worse, and she's starting to see things no one else can.",
+          "why_relatable": "What do you do with grief for someone you sometimes wished was gone? Why is it so hard to accept help when you feel you don't deserve it? And what connects you to life when you feel yourself slipping?",
+          "watch_for": [
+            "What is she refusing to say, even to herself?",
+            "Who keeps showing up for her, even when she pushes them away?",
+            "What does she hold on to when things get darkest?"
+          ],
+          "start_at": "S4E1",
+          "span": "S4-S5",
+          "situations": [
+            {"id": "grief_and_loss", "weight": 1.0},
+            {"id": "loneliness", "weight": 0.7},
+            {"id": "illness_or_injury", "weight": 0.5},
+            {"id": "finding_your_people", "weight": 0.4}
+          ],
+          "conflicts": ["holding_on_vs_letting_go", "independence_vs_connection"],
+          "emotions": {"start": ["numbness", "guilt", "loneliness"], "middle": ["dread", "fear", "grief"], "end": ["hope", "belonging", "love"]},
+          "ending_tone": "hopeful",
+          "intensity": "heavy",
+          "warnings": ["grief", "death_of_loved_one", "death_of_main_character", "self_harm_or_suicide", "graphic_gore", "medical_trauma", "serious_illness", "child_endangerment"],
+          "example_user_messages": [
+            "My stepbrother died last year and part of me had wished he'd disappear. I can't forgive myself.",
+            "I've shut everyone out since the funeral and I don't know how to let them back in.",
+            "Everyone keeps asking if I'm okay and I keep saying yes, but I'm really not.",
+            "Sometimes I feel like I don't deserve to be alive.",
+            "Music is the only thing getting me through right now."
+          ],
+          "spoiler": {
+            "summary": "Isolated by grief and survivor's guilt over Billy's death, Max becomes Vecna's next target. Reading a farewell letter at Billy's grave, she is pulled into Vecna's mindscape but escapes when her friends play Kate Bush's 'Running Up That Hill' and she sees them fighting for her. She volunteers as bait; in the Creel House she confesses she once wished Billy dead and afterwards prayed to die too. Vecna breaks her bones and blinds her; she dies in Lucas's arms, opening the fourth gate, until Eleven restarts her heart, leaving her in a coma. Trapped in Vecna's memories, she hides in a cave he fears, guides Holly to escape, wakes in hospital, and guides Eleven and Kali through Vecna's mind. She relearns to walk and skate, graduates, and builds a life with Lucas.",
+            "key_events": [
+              "Cursed by Vecna because of her guilt over Billy",
+              "Saved by 'Running Up That Hill' at Billy's grave",
+              "Confesses she wished Billy dead, then prayed to die",
+              "Dies in Lucas's arms; Eleven restarts her heart; coma",
+              "Hides in Vecna's mind and leads Holly out",
+              "Wakes up, recovers and builds a life with Lucas"
+            ],
+            "got_right": "She finally says the unsayable, lets her friends in, and fights for her life, then uses what she learned to lead a frightened child to safety.",
+            "got_wrong": "She tries to carry her guilt alone, punishing herself and pushing away the people who could have helped her much sooner."
+          }
+        }
+      ]
+    },
+    {
+      "id": "char:stranger_things/jim_hopper",
+      "name": "Jim Hopper",
+      "role": "The gruff, hard-drinking police chief of a sleepy small town, going through the motions of a job where nothing ever happens while carrying a private grief from his past.",
+      "relations": [
+        {"target": "char:stranger_things/eleven", "relation": "child"},
+        {"target": "char:stranger_things/joyce_byers", "relation": "partner"}
+      ],
+      "arcs": [
+        {
+          "id": "arc:stranger_things/jim_hopper/numbing_a_grief_he_wont_face",
+          "title": "Numbing a grief he won't face",
+          "literal_situation": "Chief Hopper starts his days with beer, pills and a cigarette, and assumes the missing-boy report from his old high-school friend Joyce is just a kid playing hooky. He treats the job like a joke, but the case starts pulling on a wound he has spent years avoiding.",
+          "pattern_label": "a numb, grieving person finding a reason to care again",
+          "pattern_text": "Years after a devastating loss, a person has settled into a life of numbing routines: drinking, casual flings, doing the bare minimum. When someone else faces the kind of crisis they once went through, they are forced to wake up and fight. Caring again means facing the guilt they buried, and making hard, compromised choices to protect people who aren't even their own.",
+          "hook": "Hopper is the guy who shrugs everything off. But when a frantic mother insists her son is alive and nobody believes her, something in him won't let it go.",
+          "why_relatable": "What does grief look like when it's been buried under routine for years? Can you help someone through the worst days of their life when you never got through your own? And what compromises would you make to save someone?",
+          "watch_for": [
+            "What does he keep on his wrist, and when does he look at it?",
+            "What makes him stop dismissing things and start listening?",
+            "What deal is he willing to strike, and what does it cost him?"
+          ],
+          "start_at": "S1E1",
+          "span": "S1",
+          "situations": [
+            {"id": "grief_and_loss", "weight": 0.9},
+            {"id": "redemption_after_mistakes", "weight": 0.6},
+            {"id": "addiction_and_recovery", "weight": 0.5},
+            {"id": "responsibility_you_didnt_ask_for", "weight": 0.5}
+          ],
+          "conflicts": ["past_vs_future", "truth_vs_protecting_others"],
+          "emotions": {"start": ["numbness", "grief", "boredom"], "middle": ["determination", "guilt", "anger"], "end": ["hope", "relief", "determination"]},
+          "ending_tone": "hopeful",
+          "intensity": "heavy",
+          "warnings": ["death_of_loved_one", "grief", "serious_illness", "addiction", "child_endangerment", "war_and_violence"],
+          "example_user_messages": [
+            "Since my daughter passed I just go through the motions. Drink, work, sleep, repeat.",
+            "I've been numbing myself for years and something just happened that made me realise I can't keep doing this.",
+            "Helping someone else through their crisis is bringing up everything I never dealt with.",
+            "I made a deal I'm not proud of to protect someone and I don't know how to live with it."
+          ],
+          "spoiler": {
+            "summary": "Hopper, a Vietnam veteran whose young daughter Sara died of cancer he blames on his Agent Orange exposure, has numbed himself in Hawkins with alcohol, pills and casual flings. Will's disappearance wakes him up: he discovers the lab planted a fake body, breaks into the lab, finds the Gate and learns about Eleven. To get into the Upside Down, he trades Eleven's location to Brenner; he and Joyce find Will in the Upside Down library and revive him with CPR as Hopper relives Sara's death. Afterwards he quietly leaves Eggos in the woods for Eleven.",
+            "key_events": [
+              "Backstory: daughter Sara died of cancer; divorce; drinking",
+              "Cuts open the fake body and finds it stuffed with cotton",
+              "Breaks into Hawkins Lab and finds the Gate",
+              "Gives up Eleven's location to Brenner in exchange for access to the Gate",
+              "Revives Will with CPR while remembering Sara",
+              "Leaves Eggos in the woods for Eleven"
+            ],
+            "got_right": "Once he wakes up, he believes Joyce, fights the lab's cover-up and risks everything to save a child.",
+            "got_wrong": "He spent years self-medicating instead of grieving, and his deal with Brenner sells out Eleven to save Will."
+          }
+        },
+        {
+          "id": "arc:stranger_things/jim_hopper/a_father_afraid_to_lose_again",
+          "title": "A father terrified of losing another child",
+          "literal_situation": "Later in the series, after a turning point that makes him the secret guardian of a traumatised girl who must stay hidden, Hopper runs their shared life on strict rules: curtains closed, door locked, never go outside. He keeps showing up late and losing his temper, and can't see that his protection is starting to feel like a cage.",
+          "pattern_label": "an overprotective parent learning to let go",
+          "pattern_text": "A parent who has already lost one child becomes the fiercely protective guardian of another, and their fear turns into control: rules, curfews, explosive arguments. Their love is real, but they struggle to say it, and the child starts to see them as a jailer. The journey is about learning to say what they feel, trusting a growing child with their own choices, and surviving the grief of letting them go.",
+          "hook": "Hopper would do anything to keep this kid safe, but 'anything' is starting to include locking her away, and when she pushes back, he pushes harder.",
+          "why_relatable": "Where is the line between keeping someone safe and controlling them? Why is it easier to set rules than to say 'I'm scared of losing you'? And how do you parent a child who has already been through more than you can fix?",
+          "watch_for": [
+            "What does he try to write down that he can't say out loud?",
+            "How does he react when she breaks his rules?",
+            "What does he tell himself when he isn't there to protect her?"
+          ],
+          "start_at": "S2E1",
+          "span": "S2-S5",
+          "situations": [
+            {"id": "becoming_a_parent", "weight": 1.0},
+            {"id": "caring_for_family", "weight": 0.7},
+            {"id": "grief_and_loss", "weight": 0.5},
+            {"id": "midlife_reinvention", "weight": 0.3}
+          ],
+          "conflicts": ["control_vs_trust", "holding_on_vs_letting_go"],
+          "emotions": {"start": ["anxiety", "anger", "fear"], "middle": ["guilt", "grief", "loneliness"], "end": ["acceptance", "love", "peace"]},
+          "ending_tone": "bittersweet",
+          "intensity": "heavy",
+          "warnings": ["death_of_loved_one", "grief", "torture", "war_and_violence", "child_endangerment", "graphic_gore"],
+          "example_user_messages": [
+            "My teenager says I'm suffocating her, but I'm just terrified something will happen to her.",
+            "I lost a child years ago and now I can't stop being overprotective with my adopted daughter.",
+            "I'm better at yelling rules than telling my kid I love her.",
+            "My daughter made a huge decision without me and I have to accept it even though it breaks my heart."
+          ],
+          "spoiler": {
+            "summary": "Hopper hides Eleven in his grandfather's cabin; his rules and lateness lead to a violent blow-up and her running away. He apologises, admitting he was afraid of losing her like Sara, helps her close the Gate, and adopts her as Jane Hopper. In 1985 he tries to scare Mike off and drafts a heart-to-heart letter he never delivers. When the Soviet Key explodes he is presumed dead but has been captured, tortured and sent to a prison in Kamchatka, where he realises he needed Joyce and Eleven more than they needed him. Rescued by Joyce and Murray, he returns to Eleven. In 1987 he trains her while hiding from the military, tells her about Sara and the war, and reluctantly lets her go into the Abyss; he loses her when she stays behind as the Upside Down collapses. Eighteen months later he uses his own grief for Sara to help Mike accept the loss, and proposes to Joyce, planning a new life in Montauk.",
+            "key_events": [
+              "Explosive fight with Eleven over his rules; she runs away",
+              "Apologises and admits his fear of losing her like Sara",
+              "Adopts her as Jane Hopper",
+              "Writes a heart-to-heart letter he never delivers",
+              "Presumed dead; imprisoned and tortured in Kamchatka",
+              "Loses Eleven when she stays behind as the Upside Down collapses",
+              "Counsels Mike on grief; proposes to Joyce"
+            ],
+            "got_right": "He learns to say what he feels, to trust Eleven's choices, and to turn his hard-won grief into wisdom for others.",
+            "got_wrong": "His fear makes him controlling, explosive and absent in the ways that matter, and he mistakes rules for love."
+          }
+        }
+      ]
+    },
+    {
+      "id": "char:stranger_things/joyce_byers",
+      "name": "Joyce Byers",
+      "role": "A frazzled, chain-smoking single mother of two who works long hours at the local general store to keep her small family afloat.",
+      "relations": [
+        {"target": "char:stranger_things/will_byers", "relation": "child"},
+        {"target": "char:stranger_things/eleven", "relation": "child"},
+        {"target": "char:stranger_things/jim_hopper", "relation": "partner"}
+      ],
+      "arcs": [
+        {
+          "id": "arc:stranger_things/joyce_byers/the_mother_no_one_believes",
+          "title": "The mother no one believes",
+          "literal_situation": "The morning Joyce discovers her younger son never came home, the police chief tells her he's probably playing hooky. As the days pass she becomes convinced her boy is trying to reach her through the lights in her house, and everyone, even her older son, thinks grief has broken her.",
+          "pattern_label": "trusting your instincts when everyone says you're wrong",
+          "pattern_text": "When someone they love is in danger, a parent becomes certain of something no one else will accept. Friends, family and authorities treat them as hysterical, and their other child fears they're falling apart. Holding on means risking their reputation, their relationships and their own sanity on a belief they can't prove, and learning that fierce love can be a strength rather than a weakness.",
+          "hook": "Joyce is exhausted, broke and barely holding it together, but when it comes to her kids she will not back down, no matter how crazy she looks.",
+          "why_relatable": "What do you do when your gut tells you something everyone else says is impossible? How do you keep fighting when the people you love think you're losing your mind? And how do you care for one child while terrified for another?",
+          "watch_for": [
+            "How does she respond when people ask her to 'be reasonable'?",
+            "What does she do to stay connected to her son?",
+            "Notice how her relationship with her older son changes under pressure."
+          ],
+          "start_at": "S1E1",
+          "span": "S1",
+          "situations": [
+            {"id": "caring_for_family", "weight": 1.0},
+            {"id": "standing_up_to_authority", "weight": 0.7},
+            {"id": "grief_and_loss", "weight": 0.5}
+          ],
+          "conflicts": ["holding_on_vs_letting_go", "belonging_vs_integrity"],
+          "emotions": {"start": ["fear", "anxiety", "overwhelm"], "middle": ["determination", "anger", "loneliness"], "end": ["relief", "love", "hope"]},
+          "ending_tone": "hopeful",
+          "intensity": "heavy",
+          "warnings": ["child_endangerment", "grief", "war_and_violence"],
+          "example_user_messages": [
+            "My kid is in trouble and nobody believes me. They all think I'm overreacting.",
+            "Even my own family is telling me I'm crazy, but I know I'm right.",
+            "I'm a single mom working long shifts and when something goes wrong I have to handle it alone.",
+            "The doctors keep saying one thing and my gut keeps telling me something else."
+          ],
+          "spoiler": {
+            "summary": "Joyce communicates with Will through Christmas lights and an alphabet painted on her wall, refuses to accept the body pulled from the quarry, and throws out her opportunistic ex-husband Lonnie. Hopper comes to believe her; they meet Eleven, learn Will is trapped in the Upside Down, and are allowed through the Gate at Hawkins Lab. In the Upside Down library they find Will near death and revive him with CPR.",
+            "key_events": [
+              "Talks to Will through Christmas lights and a painted alphabet",
+              "Refuses to accept the fake body",
+              "Throws out her ex-husband Lonnie",
+              "Enters the Upside Down with Hopper",
+              "Revives Will with CPR"
+            ],
+            "got_right": "She trusts herself, refuses to be shamed into silence and never stops fighting for her son.",
+            "got_wrong": "In her desperation she has little left for Jonathan, who is left to carry much of the family's grief on his own."
+          }
+        },
+        {
+          "id": "arc:stranger_things/joyce_byers/loving_without_holding_back",
+          "title": "Protecting a child who needs to grow",
+          "literal_situation": "Later in the series, after a turning point that leaves her youngest son shaken by an ordeal that still haunts him, Joyce is dating a sweet, dorky old classmate and trying to live a normal life, while taking her son to medical appointments and watching his every move.",
+          "pattern_label": "loving fiercely without holding a child back",
+          "pattern_text": "A parent who once nearly lost their child cannot stop hovering, and every new sign of trouble sends them into protective overdrive. At the same time they are trying to rebuild their own life and heart after more loss. The journey asks them to let the child become their own person, to trust the judgment of someone they still see as fragile, and to let love back in for themselves.",
+          "hook": "Joyce has been through the worst thing a parent can imagine and is determined it will never happen again. She wants a normal life, a kind partner and family dinners, but she can't turn off the alarm bells.",
+          "why_relatable": "How do you protect a child without smothering them? When is it time to trust their judgment over yours? And after so much loss, can you let yourself want something just for you?",
+          "watch_for": [
+            "How does she react when her son wants to take a risk?",
+            "What does she hold back from the people who love her?",
+            "What makes her change her mind about what her son can handle?"
+          ],
+          "start_at": "S2E1",
+          "span": "S2-S5",
+          "situations": [
+            {"id": "caring_for_family", "weight": 0.9},
+            {"id": "grief_and_loss", "weight": 0.6},
+            {"id": "starting_over", "weight": 0.5}
+          ],
+          "conflicts": ["control_vs_trust", "safety_vs_growth"],
+          "emotions": {"start": ["anxiety", "fear", "hope"], "middle": ["grief", "loneliness", "determination"], "end": ["pride", "love", "peace"]},
+          "ending_tone": "hopeful",
+          "intensity": "heavy",
+          "warnings": ["death_of_loved_one", "grief", "child_endangerment", "medical_trauma", "war_and_violence", "graphic_gore"],
+          "example_user_messages": [
+            "My son went through something awful and now I can't stop hovering over him, even though he's a teenager.",
+            "My kid wants to do something risky to help and every part of me wants to say no.",
+            "I lost someone I loved and I'm scared to open up to anyone again.",
+            "I keep treating my son like he's fragile and he's telling me to trust him."
+          ],
+          "spoiler": {
+            "summary": "Joyce dates Bob Newby while monitoring Will's episodes; when the Mind Flayer possesses Will she burns it out of him with heaters, but Bob is killed by Demodogs helping them escape the lab. Grieving and lonely, she plans to leave Hawkins, follows failing fridge magnets to the Soviet base, and has to turn the keys that apparently kill Hopper. She moves the family, including Eleven, to California, then learns Hopper is alive, flies to Russia with Murray, survives a plane crash and frees him from Kamchatka. In 1987 she tries to keep Will away from danger; after he defies her and his plan works, she apologises, trusts him, and backs him in using his hive-mind powers. She finishes Vecna off herself with an axe, telling him he messed with the wrong family, sees both sons grow up, and accepts Hopper's proposal.",
+            "key_events": [
+              "Burns the Mind Flayer out of Will",
+              "Bob is killed by Demodogs",
+              "Turns the keys that apparently kill Hopper",
+              "Moves to California with her sons and Eleven",
+              "Rescues Hopper from a Soviet prison in Kamchatka",
+              "Learns to trust Will's plans and powers",
+              "Beheads Vecna with an axe; accepts Hopper's proposal"
+            ],
+            "got_right": "She learns to trust Will as a capable young man and lets herself love again, while staying fearless when it counts.",
+            "got_wrong": "Her fear makes her overprotective, and she sometimes keeps big secrets from her children 'for their own good'."
+          }
+        }
+      ]
+    },
+    {
+      "id": "char:stranger_things/steve_harrington",
+      "name": "Steve Harrington",
+      "role": "The rich, popular 'king' of Hawkins High, with perfect hair and careless friends, who is dating a studious girl from outside his usual crowd.",
+      "relations": [
+        {"target": "char:stranger_things/dustin_henderson", "relation": "protege"},
+        {"target": "char:stranger_things/max_mayfield", "relation": "friend"},
+        {"target": "char:stranger_things/mike_wheeler", "relation": "friend"}
+      ],
+      "arcs": [
+        {
+          "id": "arc:stranger_things/steve_harrington/from_popular_jerk_to_protector",
+          "title": "From popular jerk to protector",
+          "literal_situation": "Steve is the most popular guy at school, throws parties while his parents are away, and is dating a smart girl who seems a little too good for his crowd. When she starts acting distant and spending time with a quiet outsider, he assumes the worst and lets his friends egg him on.",
+          "pattern_label": "a popular person discovering who they want to be",
+          "pattern_text": "Someone who has always coasted on status and approval realises that the people around them are shallow and that they've been acting like a jerk. Breaking from the crowd costs them their standing, and then their relationship. Stripped of what used to define them, they discover a better version of themselves in the least expected role: looking after people who need them.",
+          "hook": "Steve has the car, the hair and the girl. He's also jealous, careless and surrounded by friends who bring out his worst, and none of it is as solid as it looks.",
+          "why_relatable": "Who are you without the image you've built? What does it take to admit you were wrong and walk away from friends who bring out your worst side? And what if the thing that gives your life meaning isn't what you expected?",
+          "watch_for": [
+            "What makes him turn on his old friends?",
+            "How does he react when he feels replaced?",
+            "Notice how he talks to the younger kids: what kind of role model is he trying to be?"
+          ],
+          "start_at": "S1E1",
+          "span": "S1-S2",
+          "situations": [
+            {"id": "redemption_after_mistakes", "weight": 0.9},
+            {"id": "mentor_and_protege", "weight": 0.6},
+            {"id": "breakup", "weight": 0.5},
+            {"id": "identity_and_self_acceptance", "weight": 0.5}
+          ],
+          "conflicts": ["belonging_vs_integrity", "fitting_in_vs_standing_out"],
+          "emotions": {"start": ["pride", "jealousy", "anger"], "middle": ["shame", "rejection", "loneliness"], "end": ["self_respect", "belonging", "acceptance"]},
+          "ending_tone": "hopeful",
+          "intensity": "moderate",
+          "warnings": ["war_and_violence", "child_endangerment"],
+          "example_user_messages": [
+            "I used to be the popular one and now I'm realising my friends were never actually good people.",
+            "I acted like a jerk when I got jealous and I want to be a better person.",
+            "My girlfriend told me she doesn't love me and I don't know who I am without that relationship.",
+            "Weirdly, hanging out with my little cousin and his friends is the only time I feel useful lately."
+          ],
+          "spoiler": {
+            "summary": "At Steve's party, Barb is taken while he and Nancy sleep together. Jealous of Jonathan, he lets Tommy spray obscene graffiti about Nancy and Jonathan and gets beaten in a fight with Jonathan. Ashamed, he dumps his friends, helps scrub the cinema marquee, goes back to apologise, and fights the Demogorgon with a nail bat. In 1984 a drunk Nancy tells him she doesn't love him and their relationship ends, while Billy displaces him as king of the school. He becomes Dustin's reluctant mentor, fighting Demodogs at the junkyard, taking a brutal beating from Billy to protect the kids, and guiding them through the tunnels. He drives Dustin to the Snow Ball with pep talks and watches Nancy from a distance, accepting it's over.",
+            "key_events": [
+              "Barb disappears from his pool party",
+              "Obscene graffiti about Nancy and Jonathan; fight with Jonathan",
+              "Dumps Tommy and Carol and apologises",
+              "Fights the Demogorgon with a nail bat",
+              "Nancy says she doesn't love him; they split",
+              "Becomes Dustin's mentor; beaten by Billy protecting the kids"
+            ],
+            "got_right": "He owns his mistakes, walks away from toxic friends, and discovers he's a natural protector who puts the kids' safety above his pride.",
+            "got_wrong": "At first he lets jealousy and peer pressure make him cruel, and he measures his worth by status and a girlfriend."
+          }
+        },
+        {
+          "id": "arc:stranger_things/steve_harrington/life_after_peaking_early",
+          "title": "Life after peaking in high school",
+          "literal_situation": "Later in the series, Steve has graduated without the grades for college and is stuck scooping ice cream in a sailor uniform at the new mall, striking out with every girl while his sharp-tongued coworker keeps a tally of his failures.",
+          "pattern_label": "finding purpose after peaking early",
+          "pattern_text": "A person whose best years seem to be behind them ends up in a dead-end job with no plan, still defined by an old relationship and an old image. Through an unlikely friendship that becomes something different from what they hoped, they learn that deep connection doesn't have to look like romance. Their real purpose emerges in showing up for others, even as they keep longing for the family life they picture.",
+          "hook": "Steve used to be somebody. Now he's wearing a sailor hat, his dad is disappointed in him, and even his coworker can see he has no idea what comes next.",
+          "why_relatable": "What do you do when your peak seems to be behind you? Can you build a meaningful life even if it isn't the one you planned? And how do you let go of someone you still picture your future with?",
+          "watch_for": [
+            "How does he change when someone needs him?",
+            "What does he learn from the friend who knows him best?",
+            "What future does he picture, and who is in it?"
+          ],
+          "start_at": "S3E1",
+          "span": "S3-S5",
+          "situations": [
+            {"id": "confidence_struggle", "weight": 0.7},
+            {"id": "finding_your_people", "weight": 0.7},
+            {"id": "starting_over", "weight": 0.5},
+            {"id": "unrequited_love", "weight": 0.5}
+          ],
+          "conflicts": ["past_vs_future", "holding_on_vs_letting_go"],
+          "emotions": {"start": ["inadequacy", "restlessness", "loneliness"], "middle": ["self_doubt", "belonging", "longing"], "end": ["self_respect", "belonging", "acceptance"]},
+          "ending_tone": "bittersweet",
+          "intensity": "heavy",
+          "warnings": ["torture", "war_and_violence", "child_endangerment", "grief"],
+          "example_user_messages": [
+            "I peaked in high school and now I'm working a job I hate with no idea what to do next.",
+            "I had feelings for a friend who could never feel the same way, and somehow we got even closer.",
+            "Everyone from school has moved on and I'm still stuck in my hometown.",
+            "I keep picturing a future with my ex and I can't let it go.",
+            "My dad thinks I'm a failure because I didn't go to college."
+          ],
+          "spoiler": {
+            "summary": "Stuck at Scoops Ahoy after failing to get into college, Steve teams up with Dustin, Robin and Erica to decode a Russian message, is captured, brutally beaten under interrogation and dosed with truth serum; he confesses he likes Robin, who comes out to him, and he accepts her, starting a deep platonic friendship. In 1986 at Family Video he dates aimlessly, is dragged into the Upside Down and mauled by Demobats, tells Nancy he dreams of six kids and pictured her as their mother, and sets Vecna ablaze with a Molotov cocktail. In 1987 he bickers with Jonathan and drifts from Dustin, comes up with the 'Beanstalk' idea of climbing the radio tower into the Abyss, and fights the Mind Flayer beside Dustin 'for Eddie'.",
+            "key_events": [
+              "Beaten and drugged by the Soviets under Starcourt",
+              "Robin comes out to him; they become best friends",
+              "Mauled by Demobats in the Upside Down",
+              "Tells Nancy about his dream of six kids with her",
+              "Sets Vecna on fire with a Molotov cocktail",
+              "Proposes the Beanstalk plan; fights the Mind Flayer with Dustin"
+            ],
+            "got_right": "He becomes the steady, selfless protector of the younger kids and forms a deep, accepting friendship with Robin.",
+            "got_wrong": "He clings to an old relationship and an old idea of who he's supposed to be instead of building a direction of his own."
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,734 @@
+{
+  "show": "friends",
+  "characters": [
+    {
+      "id": "char:friends/rachel_green",
+      "name": "Rachel Green",
+      "role": "A sheltered young woman from a wealthy family who runs out on her own wedding and turns up, soaked and in her wedding dress, looking for her childhood best friend.",
+      "relations": [
+        {"target": "char:friends/monica_geller", "relation": "friend"},
+        {"target": "char:friends/phoebe_buffay", "relation": "friend"},
+        {"target": "char:friends/chandler_bing", "relation": "friend"},
+        {"target": "char:friends/joey_tribbiani", "relation": "friend"},
+        {"target": "char:friends/joey_tribbiani", "relation": "ex_partner"},
+        {"target": "char:friends/ross_geller", "relation": "partner"}
+      ],
+      "arcs": [
+        {
+          "id": "arc:friends/rachel_green/building_a_life_of_her_own",
+          "title": "Walking away from the life that was planned for her",
+          "literal_situation": "Rachel, raised rich and sheltered, has just run out on her own wedding. Her father cuts her off, so she moves in with her childhood best friend, gets her first ever job as a waitress in the neighbourhood coffee house, and has to learn to pay her own way.",
+          "pattern_label": "leaving a comfortable script to build your own life",
+          "pattern_text": "A person who has always been taken care of walks away from the safe future everyone planned for them, with no money, no skills and no plan. Old friends pity them, family disapproves, and the first steps are humbling. They have to find out whether they can do more than anyone, including themselves, expected, and what they actually want to do with their life.",
+          "hook": "Rachel is in a wet wedding dress, cut off from her family's money, surrounded by people she barely knows, with no idea how to do anything for herself.",
+          "why_relatable": "Was leaving brave or just reckless? Can you build a life from scratch when you have never had to? How do you cope when people from your old life look down on the new one? And when do you stop settling for any job and go after the one you really want?",
+          "watch_for": [
+            "How does she react when friends from her old life come to see her new one?",
+            "What would it take for her to risk going after the career she actually wants?",
+            "How does her relationship with her father change as she stands on her own?"
+          ],
+          "start_at": "S1E1",
+          "span": "S1-S10",
+          "situations": [
+            {"id": "starting_over", "weight": 0.9},
+            {"id": "leaving_home", "weight": 0.7},
+            {"id": "career_change", "weight": 0.6},
+            {"id": "family_expectations", "weight": 0.5}
+          ],
+          "conflicts": ["self_vs_family_expectations", "safety_vs_growth"],
+          "emotions": {"start": ["fear", "self_doubt", "freedom"], "middle": ["determination", "inadequacy"], "end": ["confidence", "pride", "self_respect"]},
+          "ending_tone": "hopeful",
+          "intensity": "light",
+          "warnings": ["betrayal"],
+          "example_user_messages": [
+            "I called off my wedding at the last minute and now my whole family thinks I've lost my mind.",
+            "I'm in my twenties and I just realised I don't know how to do anything for myself.",
+            "My parents cut me off because I won't live the life they planned for me.",
+            "I'm stuck in a job way below what I want to do and I'm scared to quit and try.",
+            "Everyone from my old life seems to feel sorry for me now."
+          ],
+          "spoiler": {
+            "summary": "Rachel leaves Barry at the altar, then learns he had been cheating on her with her friend Mindy. She cuts up her credit cards and works as a hopeless waitress at Central Perk. Pushed by Joey and Chandler, she quits in S3, takes a lowly fashion job where she still pours coffee, and then becomes an assistant buyer at Bloomingdale's through Mark. After her boss Joanna dies she is demoted to personal shopper, but in S5 she is hired at Ralph Lauren and later promoted to merchandising manager. Her father turns out to be proud that she is the daughter who supports herself. In S8 she has a baby, Emma, with Ross. In S10 she is fired from Ralph Lauren for interviewing elsewhere, is offered a job at Louis Vuitton in Paris, and in the finale gets off the plane to stay with Ross.",
+            "key_events": [
+              "Leaves Barry at the altar and is cut off by her father",
+              "Learns Barry cheated on her with her friend Mindy",
+              "Quits waitressing to chase a career in fashion",
+              "Hired at Bloomingdale's, later demoted to personal shopper",
+              "Hired at Ralph Lauren and promoted",
+              "Has a daughter, Emma, with Ross",
+              "Fired from Ralph Lauren in the final season",
+              "Offered a job in Paris, then gets off the plane to stay with Ross"
+            ],
+            "got_right": "She keeps choosing growth over comfort. She leaves a loveless marriage, quits a dead-end job and works her way up from the bottom without going back to her father's money.",
+            "got_wrong": "She often dodges responsibility, lying or blaming others (such as her assistant Tag) to save face, and she can be petty and vindictive when she feels threatened."
+          }
+        },
+        {
+          "id": "arc:friends/rachel_green/love_with_a_close_friend",
+          "title": "The friend who might be more",
+          "literal_situation": "Rachel reconnects with her best friend's older brother, a sweet, awkward, newly divorced man she knew in high school, just as she's walked out of her engagement and decided she's done with men for a while.",
+          "pattern_label": "an on-off love with someone who knows you best",
+          "pattern_text": "Two people with a long shared history keep missing each other: when one is ready, the other has moved on. Jealousy, pride and bad timing leave wounds that neither can quite let go of, and the whole friend group gets caught in the middle. They have to decide whether a love that keeps going wrong is something to outgrow or something worth risking again.",
+          "hook": "Rachel has just walked out on a man she didn't love. She is free and a little lost, and she hasn't noticed how the most earnest member of her new friend group looks at her.",
+          "why_relatable": "What do you do when someone who might be right for you shows up at the wrong time? Can you date someone who is woven into your whole friend group? When is shared history a reason to try again, and when is it a reason to stop?",
+          "watch_for": [
+            "How does timing keep getting in the way, and who is responsible for it?",
+            "How do their friends react every time something shifts between them?",
+            "What does she do with jealousy when he is seeing someone else?"
+          ],
+          "start_at": "S1E1",
+          "span": "S1-S10",
+          "situations": [
+            {"id": "falling_for_someone_unexpected", "weight": 0.8},
+            {"id": "breakup", "weight": 0.7},
+            {"id": "unrequited_love", "weight": 0.5}
+          ],
+          "conflicts": ["holding_on_vs_letting_go", "control_vs_trust"],
+          "emotions": {"start": ["curiosity", "longing"], "middle": ["betrayal", "jealousy", "anger"], "end": ["love", "acceptance", "hope"]},
+          "ending_tone": "hopeful",
+          "intensity": "moderate",
+          "warnings": ["betrayal"],
+          "example_user_messages": [
+            "I think I have feelings for my best friend's brother and I don't want to ruin everything by saying something.",
+            "We broke up years ago but we keep ending up back in each other's lives.",
+            "Every time I'm ready he's with someone else, and every time he's ready I'm not.",
+            "I still can't forgive what he did when we were taking time apart, but I can't stop caring about him either.",
+            "Our whole friend group gets dragged into it every time we fight."
+          ],
+          "spoiler": {
+            "summary": "At the end of S1 Rachel learns Ross loves her, but he comes back from China with Julie. They get together in S2 after she sees the prom video. In S3 Ross's jealousy of her colleague Mark leads to 'a break', Ross sleeps with Chloe the same night, and Rachel ends it in a devastating fight. A reunion at the beach falls apart over her 18-page letter. Ross gets engaged to Emily, and Rachel flies to London to confess but can't; Ross says 'Rachel' at the altar. In S5 they get drunk and marry in Vegas, then divorce in S6. A night together before Monica's wedding leads to a pregnancy, and Emma is born at the end of S8. They live together as friends and co-parents, fall out, and Rachel briefly dates Joey in S9-S10. In the finale Ross tells her he loves her as she leaves for Paris, and she gets off the plane. They get back together for good.",
+            "key_events": [
+              "Rachel learns Ross loves her while he is away in China",
+              "Ross comes back with a girlfriend, Julie",
+              "They get together in S2 and break up in S3 after Ross sleeps with Chloe during 'the break'",
+              "Ross says Rachel's name at his wedding to Emily",
+              "Drunken Vegas wedding and divorce",
+              "Pregnancy and birth of their daughter Emma",
+              "Rachel briefly dates Joey",
+              "Rachel gets off the plane to Paris and reunites with Ross"
+            ],
+            "got_right": "She eventually owns her feelings and says them out loud, and she and Ross build a genuinely loving co-parenting friendship before they get back together.",
+            "got_wrong": "She sabotages Ross's other relationships out of jealousy (Julie's haircut, Bonnie's shaved head), demands he take all the blame for their breakup, and avoids owning her part in their problems."
+          }
+        }
+      ]
+    },
+    {
+      "id": "char:friends/monica_geller",
+      "name": "Monica Geller",
+      "role": "A driven, tidy, fiercely competitive chef whose apartment is the group's home base; she mothers everyone while still trying to win her critical mother's approval.",
+      "relations": [
+        {"target": "char:friends/ross_geller", "relation": "sibling"},
+        {"target": "char:friends/rachel_green", "relation": "friend"},
+        {"target": "char:friends/phoebe_buffay", "relation": "friend"},
+        {"target": "char:friends/joey_tribbiani", "relation": "friend"},
+        {"target": "char:friends/chandler_bing", "relation": "partner"}
+      ],
+      "arcs": [
+        {
+          "id": "arc:friends/monica_geller/wanting_a_family",
+          "title": "Ready for a family before life is",
+          "literal_situation": "Monica is a single, driven chef in her mid-twenties who badly wants to fall in love, marry and have children, and feels the clock ticking as relationship after relationship goes nowhere.",
+          "pattern_label": "wanting a family before the right life arrives",
+          "pattern_text": "A person who has always known they want a committed partner and children watches relationships end for reasons that have nothing to do with love: timing, age gaps, mismatched futures. They have to decide what they will and won't compromise on, and how to hold on to the dream when the road there refuses to look the way they pictured.",
+          "hook": "Monica is the caretaker of her friend group, hosting every dinner and fixing everyone's problems, while quietly wondering why her own love life never lasts.",
+          "why_relatable": "Should you stay with someone you love if you want different futures? How long can you wait for the life you want? What do you do when the dream doesn't arrive the way you planned it?",
+          "watch_for": [
+            "What does she refuse to compromise on, even when it costs her?",
+            "How does she react when people around her seem to be moving ahead?",
+            "Who makes her feel accepted rather than judged for wanting so much?"
+          ],
+          "start_at": "S1E1",
+          "span": "S1-S10",
+          "situations": [
+            {"id": "becoming_a_parent", "weight": 0.7},
+            {"id": "breakup", "weight": 0.6},
+            {"id": "falling_for_someone_unexpected", "weight": 0.6},
+            {"id": "family_expectations", "weight": 0.4}
+          ],
+          "conflicts": ["holding_on_vs_letting_go", "perfectionism_vs_good_enough"],
+          "emotions": {"start": ["longing", "loneliness", "anxiety"], "middle": ["grief", "love", "hope"], "end": ["joy", "belonging", "love"]},
+          "ending_tone": "hopeful",
+          "intensity": "moderate",
+          "warnings": [],
+          "example_user_messages": [
+            "I really want kids and my boyfriend doesn't, and I don't know if love is enough.",
+            "All my friends are pairing off and I'm starting to feel left behind.",
+            "I just broke up with someone I loved because we wanted different futures.",
+            "We've been trying for a baby for a year and nothing is happening.",
+            "I had my whole life planned out and none of it is going the way I pictured."
+          ],
+          "spoiler": {
+            "summary": "In S2 Monica falls for Richard, her father's friend and 21 years older, but they break up because he doesn't want more children. After Pete, Timothy and other short relationships, she sleeps with Chandler in London at the end of S4. They date in secret through S5, nearly marry in Vegas, and move in together in S6. Richard comes back declaring he now wants to marry her and have kids, but she chooses Chandler, and they get engaged and marry in S7. In S9 they learn they are very unlikely to conceive, so they decide to adopt. In the finale their birth mother, Erica, has twins, Jack and Erica, and they move to a house in the suburbs.",
+            "key_events": [
+              "Breaks up with Richard because he doesn't want children",
+              "Sleeps with Chandler in London",
+              "Secret relationship with Chandler, then moving in together",
+              "Chooses Chandler over Richard; engagement and wedding",
+              "Fertility tests show they are unlikely to conceive",
+              "Adopts twins and moves to the suburbs"
+            ],
+            "got_right": "She refuses to stay with someone who would only have children because he has to, and she learns to value the marriage over the perfect wedding.",
+            "got_wrong": "Her need for control sometimes pushes her to steamroll or deceive people to get what she wants, such as being ready to keep up the lie with the birth mother during the adoption."
+          }
+        },
+        {
+          "id": "arc:friends/monica_geller/never_good_enough_for_mom",
+          "title": "Never quite good enough for her mother",
+          "literal_situation": "Monica, once the overweight kid overshadowed by her golden-boy older brother, is now a capable adult, yet her mother still greets every achievement with a critique. Monica copes by controlling everything around her: her apartment, her plans, and every game she plays.",
+          "pattern_label": "perfectionism born from a parent's constant criticism",
+          "pattern_text": "A person grew up as the less favoured child, measured against a sibling who could do no wrong and a parent whose approval never came. As an adult they are capable and caring, but they cope by controlling every detail and needing to win. They have to learn that being loved does not depend on being perfect.",
+          "hook": "Monica's apartment is spotless and her dinners are flawless, and one offhand remark from her mother can still undo her.",
+          "why_relatable": "Why does one parent's comment still hurt more than anyone else's praise helps? Is your need for control protecting you or pushing people away? Can you stop competing with a sibling for a parent's attention?",
+          "watch_for": [
+            "How does she act differently when her parents are in the room?",
+            "What happens when something in her home is moved out of place?",
+            "Who in her life accepts her intensity instead of asking her to tone it down?"
+          ],
+          "start_at": "S1E1",
+          "span": "S1-S10",
+          "situations": [
+            {"id": "difficult_parent", "weight": 0.9},
+            {"id": "sibling_rivalry", "weight": 0.7},
+            {"id": "confidence_struggle", "weight": 0.5}
+          ],
+          "conflicts": ["perfectionism_vs_good_enough", "control_vs_trust"],
+          "emotions": {"start": ["inadequacy", "resentment", "anxiety"], "middle": ["anger", "rejection"], "end": ["self_respect", "acceptance"]},
+          "ending_tone": "hopeful",
+          "intensity": "light",
+          "warnings": [],
+          "example_user_messages": [
+            "My mom finds something wrong with everything I do, even when I'm doing great.",
+            "My parents always favoured my brother and it still stings as an adult.",
+            "I clean and organise when I'm anxious and my friends say I'm too controlling.",
+            "I can't stand losing, even at board games, and I know it's a problem.",
+            "I was the chubby kid nobody noticed and I still feel like her sometimes."
+          ],
+          "spoiler": {
+            "summary": "Judy keeps undermining Monica and favouring Ross. She doesn't want Monica to give the toast at their anniversary, turns her bedroom into a gym, spends her wedding fund on a beach house, and lets her childhood mementos be ruined by using the boxes to block floodwater while Ross's things stay safe. Her father tries to make up for it by giving her his Porsche. Monica and Ross trade their childhood secrets in front of their parents. Chandler reframes her 'high-maintenance' side as passion, and Monica builds her own family where her intensity is loved, even though her mother never really changes.",
+            "key_events": [
+              "Judy's constant criticism and favouritism toward Ross",
+              "Her parents spent her wedding fund on a beach house",
+              "Her childhood boxes are ruined while Ross's are kept safe; her father gives her his Porsche",
+              "Chandler embraces her intensity instead of asking her to change"
+            ],
+            "got_right": "She builds her own chosen family where her care and intensity are valued, and she calls out her parents' favouritism instead of swallowing it.",
+            "got_wrong": "She lets competitiveness and control override other people's feelings, for example betting the apartment on a trivia game and taking over Phoebe's wedding until Phoebe fires her."
+          }
+        },
+        {
+          "id": "arc:friends/monica_geller/earning_respect_at_work",
+          "title": "Fighting for respect at work",
+          "literal_situation": "Later in the series, after a setback leaves her out of work, Monica, a proud and talented chef, has to take jobs she finds humiliating just to pay the rent, while waiting for a real chance to run a kitchen.",
+          "pattern_label": "earning respect from people who resent you",
+          "pattern_text": "A skilled, proud person hits a career setback and has to take work far below their abilities. When they finally get the position they wanted, the team they now lead resents them and tries to push them out. They have to find a way to command respect without losing who they are.",
+          "hook": "Monica is overqualified and underemployed, wearing a ridiculous uniform for tips and sure she's meant for more.",
+          "why_relatable": "How do you keep your pride while doing work you think is beneath you? What do you do when you finally get the job and the team hates you? As a boss, is it more important to be liked or respected?",
+          "watch_for": [
+            "How does she carry herself in the jobs she hates?",
+            "If the people she works with turned on her, who would she ask for help?",
+            "What does she learn about the difference between being tough and being liked?"
+          ],
+          "start_at": "S2",
+          "span": "S2-S4",
+          "situations": [
+            {"id": "becoming_a_manager", "weight": 0.8},
+            {"id": "losing_a_job", "weight": 0.7},
+            {"id": "new_job", "weight": 0.5},
+            {"id": "confidence_struggle", "weight": 0.4}
+          ],
+          "conflicts": ["belonging_vs_integrity", "safety_vs_growth"],
+          "emotions": {"start": ["shame", "inadequacy"], "middle": ["anxiety", "rejection", "determination"], "end": ["confidence", "pride"]},
+          "ending_tone": "hopeful",
+          "intensity": "light",
+          "warnings": [],
+          "example_user_messages": [
+            "I got let go and the only job I could find is embarrassing for someone with my experience.",
+            "I finally got promoted to run the team and they all hate me because I replaced someone they loved.",
+            "My new staff are openly trying to make me quit.",
+            "I don't know how to be a boss without being either a pushover or a tyrant.",
+            "I know I'm good at what I do but nobody will give me a real chance."
+          ],
+          "spoiler": {
+            "summary": "In S2 Monica is fired for accepting a gift from a food supplier, loses most of her savings on the stock market, and ends up at the 1950s-themed Moondance Diner in a blonde wig, roller skates and fake breasts. In S3 her boyfriend Pete opens a restaurant with her as head chef, and after they split she runs a short-lived catering business with Phoebe. In S4 a scathing review she wrote gets her hired as head chef at Alessandro's, where the staff (children of the chef she replaced) bully her and lock her in the freezer. She hires Joey just so she can fire him in front of them, which finally earns their respect. Later she becomes head chef at the upscale restaurant Javu.",
+            "key_events": [
+              "Fired for accepting a gift from a supplier",
+              "Works at the Moondance Diner in costume",
+              "Head chef at Pete's restaurant, then a catering business with Phoebe",
+              "Hired as head chef at Alessandro's and bullied by the staff",
+              "Hires and publicly fires Joey to win the staff's respect"
+            ],
+            "got_right": "She keeps working, keeps her standards, and doesn't quit when her team tries to drive her out.",
+            "got_wrong": "Her pride makes the humbling jobs miserable, and she wins respect through a staged stunt rather than real leadership."
+          }
+        }
+      ]
+    },
+    {
+      "id": "char:friends/phoebe_buffay",
+      "name": "Phoebe Buffay",
+      "role": "An eccentric masseuse and coffee-house folk singer who survived a rough childhood and teenage years on the streets, and now lives cheerfully by her own offbeat rules.",
+      "relations": [
+        {"target": "char:friends/monica_geller", "relation": "friend"},
+        {"target": "char:friends/rachel_green", "relation": "friend"},
+        {"target": "char:friends/joey_tribbiani", "relation": "friend"},
+        {"target": "char:friends/chandler_bing", "relation": "friend"},
+        {"target": "char:friends/ross_geller", "relation": "friend"}
+      ],
+      "arcs": [
+        {
+          "id": "arc:friends/phoebe_buffay/finding_family_after_a_hard_start",
+          "title": "Choosing a family after a childhood without one",
+          "literal_situation": "Phoebe grew up with a mother who died by suicide, a father who left, and years living on the streets as a teenager. Now she is a gentle, eccentric masseuse and singer with a twin sister she doesn't get along with, and a close circle of friends who are the nearest thing to family she has.",
+          "pattern_label": "finding belonging after a childhood of abandonment",
+          "pattern_text": "A person who survived a chaotic, lonely childhood has built a cheerful, unconventional life on their own terms. When the chance comes to find the relatives who left or were lost, they have to decide how much of the past to open up, and whether the people who chose them now matter more than the people who were supposed to.",
+          "hook": "Phoebe is warm, strange and fiercely herself. She tells the darkest parts of her past as if they were ordinary stories and rarely lets anyone see what they cost her.",
+          "why_relatable": "Do you owe anything to family who weren't there for you? What if looking for answers hurts more than not knowing? Can friends really be your family?",
+          "watch_for": [
+            "How does she talk about her childhood, compared with how she reacts when it comes close?",
+            "What does she do when she has a chance to find family she lost?",
+            "How do her friends show up for her, and does she let them?"
+          ],
+          "start_at": "S1E1",
+          "span": "S1-S5",
+          "situations": [
+            {"id": "finding_your_people", "weight": 0.8},
+            {"id": "difficult_parent", "weight": 0.7},
+            {"id": "grief_and_loss", "weight": 0.6},
+            {"id": "sibling_rivalry", "weight": 0.4}
+          ],
+          "conflicts": ["past_vs_future", "revenge_vs_forgiveness"],
+          "emotions": {"start": ["loneliness", "longing"], "middle": ["rejection", "grief", "curiosity"], "end": ["belonging", "acceptance", "peace"]},
+          "ending_tone": "bittersweet",
+          "intensity": "moderate",
+          "warnings": ["self_harm_or_suicide", "death_of_loved_one", "grief"],
+          "example_user_messages": [
+            "I basically raised myself and sometimes I wonder if I should look for my dad.",
+            "My friends are more like family to me than anyone I'm related to.",
+            "My twin and I are complete opposites and she always got the attention.",
+            "I found out something about my birth family and I don't know if I want to know more.",
+            "I joke about my childhood but some days it still really gets to me."
+          ],
+          "spoiler": {
+            "summary": "In S2 Phoebe tracks down her father's house but can't bring herself to go in, and meets her half-brother Frank Jr., who was also abandoned. At the beach in S3 she learns that Phoebe Abbott, a friend of her late mother, is actually her birth mother, who gave the twins up. After a painful start they build a relationship. In S5 her grandmother dies, and at the funeral she meets her father, Frank Sr. She confronts him about leaving and gives him a chance. Ursula stays cold and manipulative throughout, and the friends remain her real family.",
+            "key_events": [
+              "Finds her father's house but can't go in",
+              "Meets her half-brother Frank Jr.",
+              "Learns Phoebe Abbott is her birth mother",
+              "Her grandmother dies",
+              "Meets and forgives her father"
+            ],
+            "got_right": "She gives people who hurt her a chance to explain, and she puts her energy into the family she chose.",
+            "got_wrong": "She often turns her tragic past into a joke or a bargaining chip instead of dealing with it, and her rivalry with Ursula is never resolved."
+          }
+        },
+        {
+          "id": "arc:friends/phoebe_buffay/carrying_a_gift_for_someone_else",
+          "title": "Saying yes to the biggest favour of her life",
+          "literal_situation": "Later in the series, Phoebe's younger half-brother and his wife find they can't have a baby, and they ask her to be their surrogate. She is single and broke, has never had much family, and is being asked to carry the family someone else will raise.",
+          "pattern_label": "giving something enormous to family and letting go",
+          "pattern_text": "A person with little family of their own is asked by a relative to do something huge and physical for them, something that will take over their body and their year and that they will ultimately have to hand over. They have to weigh generosity against protecting themselves, and prepare for a goodbye they agreed to in advance.",
+          "hook": "Phoebe has finally found a brother who wants her in his life, and he is asking her for the one thing only she can give.",
+          "why_relatable": "How much do you owe family you only recently found? Can you give away something that becomes part of you? What happens to you once the favour is done?",
+          "watch_for": [
+            "Why does she say yes, and what does she hope it will give her?",
+            "How do her friends support her along the way?",
+            "What does she let herself feel as the end approaches?"
+          ],
+          "start_at": "S4E11",
+          "span": "S4-S5",
+          "situations": [
+            {"id": "caring_for_family", "weight": 0.9},
+            {"id": "taking_a_big_risk", "weight": 0.6},
+            {"id": "becoming_a_parent", "weight": 0.4}
+          ],
+          "conflicts": ["holding_on_vs_letting_go", "duty_vs_desire"],
+          "emotions": {"start": ["hope", "anxiety"], "middle": ["love", "belonging", "overwhelm"], "end": ["grief", "pride", "acceptance"]},
+          "ending_tone": "bittersweet",
+          "intensity": "moderate",
+          "warnings": [],
+          "example_user_messages": [
+            "My brother and his wife can't have kids and they asked me to carry a baby for them.",
+            "I agreed to be a surrogate and now I'm scared of how I'll feel when I have to hand the baby over.",
+            "I did something huge for my family and now I feel strangely empty.",
+            "I'm single and pregnant with a baby that isn't mine to keep.",
+            "I finally have family that wants me and I'd do anything for them."
+          ],
+          "spoiler": {
+            "summary": "Phoebe has the embryos implanted and learns she is pregnant with triplets. She has to miss Ross's wedding in London because she can't fly. She craves meat, and Joey goes vegetarian so no extra animals die for her. In S5 she gives birth to Frank Jr. Jr., Leslie and Chandler. She admits she wishes she could keep one, but she hands them over, knowing she'll be part of their lives as their aunt.",
+            "key_events": [
+              "Agrees to be a surrogate for Frank Jr. and Alice",
+              "Pregnant with triplets",
+              "Gives birth and hands the babies over"
+            ],
+            "got_right": "She is generous and brave, and honest about wanting to keep one instead of hiding the grief.",
+            "got_wrong": "She underestimates how attached she'll become and how hard the goodbye will be."
+          }
+        },
+        {
+          "id": "arc:friends/phoebe_buffay/wanting_a_love_with_a_future",
+          "title": "Wanting a love with a future",
+          "literal_situation": "Later in the series, after years of short and strange relationships, Phoebe falls properly for a laid-back, funny man, and starts to wonder whether they want the same things from the future.",
+          "pattern_label": "loving someone who doesn't want the same future",
+          "pattern_text": "After a lifetime of chaotic or short-lived relationships, a free-spirited person finally finds someone who feels right, then learns they may not want the same level of commitment. When another option appears that seems more certain, they have to choose between the safe choice and the love they really feel.",
+          "hook": "Phoebe, who has always lived by her own rules, is surprised to find herself wanting something conventional.",
+          "why_relatable": "Is it okay for a free spirit to want something traditional? Should you stay with someone you love if they don't want what you want? How do you choose between the person who feels right and the one who seems sure?",
+          "watch_for": [
+            "What does she say she wants, and what does she actually want?",
+            "How does she handle it when her friends have opinions about her choices?",
+            "What does commitment mean to her, in her own words?"
+          ],
+          "start_at": "S9",
+          "span": "S9-S10",
+          "situations": [
+            {"id": "falling_for_someone_unexpected", "weight": 0.6},
+            {"id": "breakup", "weight": 0.6},
+            {"id": "identity_and_self_acceptance", "weight": 0.4}
+          ],
+          "conflicts": ["independence_vs_connection", "holding_on_vs_letting_go"],
+          "emotions": {"start": ["hope", "joy"], "middle": ["confusion", "grief", "longing"], "end": ["love", "peace", "joy"]},
+          "ending_tone": "hopeful",
+          "intensity": "light",
+          "warnings": [],
+          "example_user_messages": [
+            "I finally met someone I really love and he told me he never wants to get married.",
+            "I always thought I didn't care about marriage, but now I realise I do.",
+            "Someone from my past came back ready to commit, but I'm still in love with someone else.",
+            "Is it wrong to want a future with someone who is happy just living in the present?",
+            "I've never had a normal relationship and I don't know what normal is supposed to feel like."
+          ],
+          "spoiler": {
+            "summary": "Joey forgets to find Phoebe a date and grabs a random man, Mike, who turns out to be perfect for her. They fall in love but break up when Mike says he never wants to marry again. David, the one that got away, returns from Minsk. They date and he plans to propose in Barbados, but Mike bursts in and proposes first. Phoebe says she doesn't need marriage, only a future, and they get back together. In S10, after a botched proposal at a Knicks game and a ring hidden in a cake, Mike proposes simply and she accepts. They marry in the snow outside Central Perk.",
+            "key_events": [
+              "Meets Mike through Joey's random set-up",
+              "Breaks up with Mike over marriage",
+              "Dates David again; Mike interrupts his proposal",
+              "Gets back together with Mike",
+              "Engaged, then married in the snow"
+            ],
+            "got_right": "She is honest that she needs a relationship with a future and doesn't settle for less, and she doesn't pretend with David once she knows her heart.",
+            "got_wrong": "She drifts back toward David partly to avoid the hurt, and she keeps changing her mind about what kind of wedding and commitment she really wants."
+          }
+        }
+      ]
+    },
+    {
+      "id": "char:friends/joey_tribbiani",
+      "name": "Joey Tribbiani",
+      "role": "A good-hearted, not-so-bright struggling actor who shares an apartment with his best friend, auditions for anything, and dates everyone.",
+      "relations": [
+        {"target": "char:friends/chandler_bing", "relation": "friend"},
+        {"target": "char:friends/ross_geller", "relation": "friend"},
+        {"target": "char:friends/monica_geller", "relation": "friend"},
+        {"target": "char:friends/phoebe_buffay", "relation": "friend"},
+        {"target": "char:friends/rachel_green", "relation": "friend"},
+        {"target": "char:friends/rachel_green", "relation": "ex_partner"}
+      ],
+      "arcs": [
+        {
+          "id": "arc:friends/joey_tribbiani/chasing_the_big_break",
+          "title": "Chasing the big break",
+          "literal_situation": "Joey is a struggling actor with a handful of tiny roles, a devoted agent with almost no other clients, and a long list of rejections. His best friend often covers his rent, and he takes any gig going, even embarrassing ones.",
+          "pattern_label": "chasing a dream career through constant rejection",
+          "pattern_text": "A good-hearted person without much formal education turned down the family trade to chase an unlikely dream. For years they take humiliating side jobs, lean on friends to cover the bills, and hear no far more often than yes. They have to keep believing in themselves without letting pride sabotage the chances that do come.",
+          "hook": "Joey is cheerful, broke and certain that his big break is just one audition away.",
+          "why_relatable": "How long do you chase a dream before you're supposed to be 'realistic'? How do you take criticism of the thing you care about most? What do you do if success comes and then disappears?",
+          "watch_for": [
+            "How does he react when a friend doubts his career?",
+            "How does he handle it when things go well?",
+            "Who keeps showing up for him when the work dries up?"
+          ],
+          "start_at": "S1E1",
+          "span": "S1-S10",
+          "situations": [
+            {"id": "taking_a_big_risk", "weight": 0.7},
+            {"id": "confidence_struggle", "weight": 0.6},
+            {"id": "losing_a_job", "weight": 0.6},
+            {"id": "family_expectations", "weight": 0.3}
+          ],
+          "conflicts": ["self_vs_family_expectations", "safety_vs_growth"],
+          "emotions": {"start": ["hope", "determination"], "middle": ["rejection", "shame", "self_doubt"], "end": ["pride", "confidence", "hope"]},
+          "ending_tone": "hopeful",
+          "intensity": "light",
+          "warnings": [],
+          "example_user_messages": [
+            "I've been auditioning for years and keep getting rejected, but I can't imagine doing anything else.",
+            "My dad wanted me to join the family business and I said no to chase something risky.",
+            "My best friend pays my rent sometimes and I feel bad, but I'm so close to making it.",
+            "I finally got my break and then I blew it by bragging.",
+            "I work a side job I'm embarrassed about and I hide it from my friends."
+          ],
+          "spoiler": {
+            "summary": "Joey is hired as Al Pacino's butt double and fired for overacting, and ends up as the face of a VD poster. In S2 he lands Dr. Drake Ramoray on Days of Our Lives and moves out on his own, but his character is killed off after he claims in an interview that he writes his own lines, and he moves back in with Chandler in debt. In S3 he loses a role to a student he tried to sabotage. He works as a cologne sprayer, museum tour guide and waiter. In S5 his Vegas movie loses its funding and he secretly works as a gladiator at Caesars Palace. His show Mac and C.H.E.E.S.E. is cancelled, but in S7 Drake Ramoray comes back to life and Joey is nominated for a Soapie. After the finale he moves to Los Angeles in the spin-off.",
+            "key_events": [
+              "Fired as Al Pacino's butt double",
+              "Lands Days of Our Lives, then is killed off for bragging",
+              "Loses a role to a student he sabotaged",
+              "Vegas movie collapses; he works as a gladiator",
+              "Returns to Days of Our Lives and gets a Soapie nomination"
+            ],
+            "got_right": "He keeps going through rejection after rejection, stays generous, and never lets failure make him bitter.",
+            "got_wrong": "His ego sometimes costs him (bragging about writing his lines, sabotaging a rival, arrogance at auditions), and he leans heavily on Chandler's money."
+          }
+        },
+        {
+          "id": "arc:friends/joey_tribbiani/falling_for_a_friend",
+          "title": "Falling for someone he shouldn't",
+          "literal_situation": "Later in the series, after a turning point in the group's lives, Joey, the carefree ladies' man who never takes dating seriously, realises he has real feelings for a close friend who is off-limits because of his loyalty to another friend.",
+          "pattern_label": "falling for a friend when loyalty says no",
+          "pattern_text": "Someone who has always kept romance casual falls truly in love for the first time, with a close friend who is tied to another friend by a complicated history. They have to decide whether to say it, how to cope if the feeling isn't returned, and whether any feeling is worth risking a friendship.",
+          "hook": "Joey, used to easy flings, is caught off guard by a feeling he has never had before and can't joke his way out of.",
+          "why_relatable": "What do you do when you fall for someone your best friend has history with? Should you say how you feel if you're fairly sure it isn't mutual? Can a friendship survive a confession?",
+          "watch_for": [
+            "How does he try to hide what he feels, and who notices first?",
+            "What does loyalty mean to him when it clashes with what he wants?",
+            "How does he behave once the truth is out?"
+          ],
+          "start_at": "S8",
+          "span": "S8-S10",
+          "situations": [
+            {"id": "unrequited_love", "weight": 0.8},
+            {"id": "falling_for_someone_unexpected", "weight": 0.7},
+            {"id": "friendship_ending", "weight": 0.3}
+          ],
+          "conflicts": ["duty_vs_desire", "truth_vs_protecting_others"],
+          "emotions": {"start": ["confusion", "longing"], "middle": ["rejection", "guilt", "loneliness"], "end": ["acceptance", "belonging", "love"]},
+          "ending_tone": "bittersweet",
+          "intensity": "light",
+          "warnings": [],
+          "example_user_messages": [
+            "I've never been serious about anyone and now I'm in love with a close friend.",
+            "I think I'm falling for my best friend's ex and I hate myself for it.",
+            "I told my friend how I felt and she doesn't feel the same, now everything's awkward.",
+            "Is it ever okay to date your friend's ex?",
+            "We tried being together and it felt wrong because we're such good friends."
+          ],
+          "spoiler": {
+            "summary": "While Rachel is pregnant with Ross's baby and living with him, Joey falls in love with her. He eventually confesses and she gently turns him down. Things are awkward, then they recover. In S9 Rachel develops feelings for Joey while he is dating Charlie. When Charlie leaves him for Ross, Joey sees them kiss and angrily goes to kiss Rachel. They date briefly in S10, but they can't get past kissing and decide they are better as friends. Ross struggles but accepts it. Joey ends the series single, and in the spin-off calls Rachel the only woman he has ever said 'I love you' to.",
+            "key_events": [
+              "Joey falls for a pregnant Rachel",
+              "Confesses his love and is turned down",
+              "Rachel later develops feelings for Joey",
+              "They date briefly, then decide to stay friends"
+            ],
+            "got_right": "He tries to put his friendship with Ross first, is honest about his feelings, and handles rejection with grace.",
+            "got_wrong": "He hides his feelings for a long time, and later acts out of anger at Ross by kissing Rachel instead of talking to him."
+          }
+        }
+      ]
+    },
+    {
+      "id": "char:friends/chandler_bing",
+      "name": "Chandler Bing",
+      "role": "A sarcastic office worker in a job nobody can explain, who jokes his way out of every serious moment and panics at the first sign of commitment.",
+      "relations": [
+        {"target": "char:friends/joey_tribbiani", "relation": "friend"},
+        {"target": "char:friends/ross_geller", "relation": "friend"},
+        {"target": "char:friends/monica_geller", "relation": "partner"},
+        {"target": "char:friends/rachel_green", "relation": "friend"},
+        {"target": "char:friends/phoebe_buffay", "relation": "friend"}
+      ],
+      "arcs": [
+        {
+          "id": "arc:friends/chandler_bing/afraid_of_commitment",
+          "title": "Joking his way out of getting close",
+          "literal_situation": "Chandler, whose parents announced their divorce over Thanksgiving dinner when he was nine, is a quick-witted guy who hides behind sarcasm and bolts, or makes a joke, whenever a relationship starts to get serious.",
+          "pattern_label": "fear of commitment rooted in a broken home",
+          "pattern_text": "A person whose parents' marriage fell apart in a painful, public way learned early to use humour as armour. As an adult they crave love but panic when it gets real, sabotaging relationships or choosing ones that can't last. They have to learn that they are not doomed to repeat their parents' story.",
+          "hook": "Chandler is the funny one, always ready with a quip, and privately worried he'll end up alone.",
+          "why_relatable": "Why does closeness feel so frightening when it's what you want? Is your humour helping you connect or keeping people at arm's length? Can you trust love when you never saw it work?",
+          "watch_for": [
+            "When does he make a joke instead of saying what he feels?",
+            "What does he do the moment a relationship asks more of him?",
+            "How do his parents show up in his choices?"
+          ],
+          "start_at": "S1E1",
+          "span": "S1-S7",
+          "situations": [
+            {"id": "difficult_parent", "weight": 0.7},
+            {"id": "falling_for_someone_unexpected", "weight": 0.6},
+            {"id": "identity_and_self_acceptance", "weight": 0.5},
+            {"id": "confidence_struggle", "weight": 0.5}
+          ],
+          "conflicts": ["independence_vs_connection", "past_vs_future"],
+          "emotions": {"start": ["anxiety", "loneliness", "self_doubt"], "middle": ["fear", "jealousy", "love"], "end": ["love", "belonging", "confidence"]},
+          "ending_tone": "hopeful",
+          "intensity": "light",
+          "warnings": ["betrayal"],
+          "example_user_messages": [
+            "Every time a relationship starts getting serious I panic and find a way out.",
+            "My parents had an awful divorce and I don't really believe marriage can work.",
+            "I make jokes about everything, even when I'm actually hurting.",
+            "I think I'm falling for a close friend and I'm terrified I'll mess it up.",
+            "I'm scared I'll end up alone, but I'm also scared of anyone really knowing me."
+          ],
+          "spoiler": {
+            "summary": "Chandler keeps breaking up with Janice, then genuinely falls for her in S2-S3, but she goes back to her ex-husband. In S4 he kisses Joey's girlfriend Kathy. They date, but his jealousy drives her away and she cheats. At Ross's wedding in London he sleeps with Monica. They date in secret through S5, and he tells her he loves her. When commitment panic makes him propose out of fear, she calms him. They nearly marry in Vegas, move in together in S6, and after an elaborate fake-out he gets engaged to her. He panics and runs the day before the wedding, but comes back and marries her in S7. Later they adopt twins.",
+            "key_events": [
+              "On-and-off relationship with Janice, who goes back to her ex-husband",
+              "Kisses Joey's girlfriend Kathy; that relationship ends when she cheats",
+              "Sleeps with Monica in London and dates her in secret",
+              "Moves in with Monica, proposes and marries her",
+              "Panics and runs before the wedding, but returns"
+            ],
+            "got_right": "He learns to push through the panic and show up, telling Monica he loves her and returning to his own wedding.",
+            "got_wrong": "He sabotages relationships with jealousy (Kathy), lies to avoid confrontation (claiming he's moving to Yemen to escape Janice), and runs when the pressure rises."
+          }
+        },
+        {
+          "id": "arc:friends/chandler_bing/stuck_in_the_wrong_career",
+          "title": "Stuck in a job he never meant to keep",
+          "literal_situation": "Chandler has a well-paid office job in data processing that he took as a temporary stopgap years ago. He can't stand it, his friends don't even know what he does, and when he's offered a promotion he wonders if it's finally time to walk away.",
+          "pattern_label": "trapped in a comfortable career you never chose",
+          "pattern_text": "A person drifted into a stable, well-paid job they took 'for now' and never left. The money and the comfort make it easy to stay, even as they grow more bored and bitter. They have to find the courage to start again at the bottom doing something that actually fits them.",
+          "hook": "Chandler is good at a job he finds meaningless, and every raise makes it harder to leave.",
+          "why_relatable": "What if the thing you're good at isn't the thing you want to do? Is it too late to start over in a new field? How much is security worth next to meaning?",
+          "watch_for": [
+            "What keeps pulling him back when he tries to leave?",
+            "How does his job affect the people he loves?",
+            "What would he need to believe about himself to start again?"
+          ],
+          "start_at": "S1E15",
+          "span": "S1-S9",
+          "situations": [
+            {"id": "career_change", "weight": 0.9},
+            {"id": "burnout_at_work", "weight": 0.6},
+            {"id": "midlife_reinvention", "weight": 0.5},
+            {"id": "starting_over", "weight": 0.4}
+          ],
+          "conflicts": ["safety_vs_growth", "career_vs_relationships"],
+          "emotions": {"start": ["boredom", "restlessness", "self_doubt"], "middle": ["resentment", "loneliness"], "end": ["freedom", "hope", "pride"]},
+          "ending_tone": "hopeful",
+          "intensity": "light",
+          "warnings": [],
+          "example_user_messages": [
+            "I've been in the same job for years and I don't even know how I ended up here.",
+            "They keep offering me raises and I keep staying, even though I hate it.",
+            "I'm in my thirties and thinking about starting over as an intern in a totally different field.",
+            "My job is pulling me away from my partner and I'm starting to resent it.",
+            "Nobody even knows what I do at work, including me some days."
+          ],
+          "spoiler": {
+            "summary": "Offered a promotion in S1, Chandler quits to find his passion, but the career tests say he's best suited to data processing, and he goes back for a bigger salary and his own office. He stays for years. In S9 he dozes off in a meeting and accidentally agrees to run the company's Tulsa branch, commuting away from Monica. When he's told to work over Christmas he quits and comes home. With Monica's help he moves into advertising, starting as an unpaid intern, and is quickly hired as a junior copywriter.",
+            "key_events": [
+              "Quits, then returns for more money after a career test",
+              "Accidentally agrees to move to Tulsa",
+              "Quits so he can be home for Christmas",
+              "Starts over as an unpaid advertising intern",
+              "Hired as a junior copywriter"
+            ],
+            "got_right": "He finally chooses meaning and his marriage over money, and he is willing to start at the bottom.",
+            "got_wrong": "He stays years too long out of inertia and conflict-avoidance, and literally sleeps through a decision that uproots his life."
+          }
+        }
+      ]
+    },
+    {
+      "id": "char:friends/ross_geller",
+      "name": "Ross Geller",
+      "role": "An earnest, nerdy museum paleontologist whose wife has just left him for a woman while pregnant with his child, and who has never quite got over his high-school crush.",
+      "relations": [
+        {"target": "char:friends/monica_geller", "relation": "sibling"},
+        {"target": "char:friends/chandler_bing", "relation": "friend"},
+        {"target": "char:friends/joey_tribbiani", "relation": "friend"},
+        {"target": "char:friends/phoebe_buffay", "relation": "friend"},
+        {"target": "char:friends/rachel_green", "relation": "partner"}
+      ],
+      "arcs": [
+        {
+          "id": "arc:friends/ross_geller/starting_over_after_divorce",
+          "title": "Starting over when the marriage ends",
+          "literal_situation": "Ross's wife has just left him for a woman and moved out, and she is pregnant with his child. He is a sensitive, nerdy museum scientist who desperately wants to be married again, and his high-school crush has just walked back into his life.",
+          "pattern_label": "rebuilding yourself after a marriage suddenly ends",
+          "pattern_text": "A person who believed their life was settled is blindsided when their spouse leaves for someone else, with a baby on the way. They have to learn to co-parent with their ex and the ex's new partner, date again with their confidence shattered, and work out whether they can trust love again without letting fear and jealousy take over.",
+          "hook": "Ross is heartbroken, anxious and a little ridiculous, putting furniture together in a half-empty apartment and wondering if anyone will ever love him again.",
+          "why_relatable": "How do you rebuild your sense of self when the life you planned disappears? Can you be a good parent alongside the person who left you? How do you date again without bringing the old hurt into every new relationship?",
+          "watch_for": [
+            "How does he treat his ex's new partner at first, and does that change?",
+            "What does he do with his fear of being left again?",
+            "How does he show up as a father?"
+          ],
+          "start_at": "S1E1",
+          "span": "S1-S3",
+          "situations": [
+            {"id": "divorce", "weight": 0.9},
+            {"id": "starting_over", "weight": 0.7},
+            {"id": "becoming_a_parent", "weight": 0.6},
+            {"id": "falling_for_someone_unexpected", "weight": 0.5}
+          ],
+          "conflicts": ["past_vs_future", "control_vs_trust"],
+          "emotions": {"start": ["grief", "rejection", "loneliness"], "middle": ["hope", "longing", "jealousy"], "end": ["love", "guilt", "acceptance"]},
+          "ending_tone": "bittersweet",
+          "intensity": "moderate",
+          "warnings": ["betrayal"],
+          "example_user_messages": [
+            "My wife left me for someone else and she's pregnant with my baby.",
+            "I'm divorced before 30 and I have no idea how to start dating again.",
+            "I'm trying to co-parent with my ex and her new partner and it's so awkward.",
+            "I've had feelings for the same person since high school and she's suddenly back in my life.",
+            "Since my marriage ended I get jealous over nothing and I hate that about myself."
+          ],
+          "spoiler": {
+            "summary": "Ross clashes with Susan, Carol's partner, until they are locked in a closet during Ben's birth and agree to be co-parents. He adopts a monkey, Marcel, to fill the loneliness. He pines for Rachel all through S1, then leaves for China and returns with Julie just as Rachel learns he loves her. In S2 a pros-and-cons list nearly ruins things, but they get together after the prom video. In S3 his jealousy of Rachel's colleague Mark leads her to call 'a break'. That night he sleeps with Chloe and tries to hide it, and Rachel ends the relationship.",
+            "key_events": [
+              "Makes peace with Carol and Susan at Ben's birth",
+              "Returns from China with Julie",
+              "Gets together with Rachel",
+              "Jealousy of Mark leads to 'the break'",
+              "Sleeps with Chloe; Rachel breaks up with him"
+            ],
+            "got_right": "He becomes a devoted father and builds real respect with Carol and Susan.",
+            "got_wrong": "His insecurity turns into jealousy and control, and he sleeps with someone within hours of the 'break' and then tries to cover it up."
+          }
+        },
+        {
+          "id": "arc:friends/ross_geller/afraid_of_being_left_again",
+          "title": "When the fear of loss drives love away",
+          "literal_situation": "Later in the series, once he is in a relationship that matters deeply to him, Ross finds that his partner's demanding new job and a friendly male colleague stir up the insecurity left over from his marriage ending.",
+          "pattern_label": "insecurity that sabotages the relationships you want",
+          "pattern_text": "A person who was once blindsided by a partner leaving becomes convinced it will happen again. Jealousy, the need to be right and rash decisions under pressure keep damaging the relationships they care about most, and each setback makes the next one easier to fear. They have to face their own part in the pattern before they can build something that lasts.",
+          "hook": "Ross finally has what he always wanted, and he can't stop worrying that someone is about to take it away.",
+          "why_relatable": "Is your jealousy about your partner or about your past? What does it take to admit you were wrong when you're sure you were right? Can you break a pattern once you've seen it?",
+          "watch_for": [
+            "How does he react when his partner's work comes first?",
+            "When he makes a mistake, how does he explain it to himself and to others?",
+            "How do his friends respond when his temper flares?"
+          ],
+          "start_at": "S3E12",
+          "span": "S3-S10",
+          "situations": [
+            {"id": "breakup", "weight": 0.7},
+            {"id": "redemption_after_mistakes", "weight": 0.6},
+            {"id": "divorce", "weight": 0.5},
+            {"id": "confidence_struggle", "weight": 0.4}
+          ],
+          "conflicts": ["control_vs_trust", "holding_on_vs_letting_go"],
+          "emotions": {"start": ["jealousy", "anxiety", "fear"], "middle": ["guilt", "anger", "shame"], "end": ["acceptance", "love", "hope"]},
+          "ending_tone": "hopeful",
+          "intensity": "moderate",
+          "warnings": ["betrayal"],
+          "example_user_messages": [
+            "My girlfriend has a new job and a male coworker and I can't stop feeling jealous.",
+            "I keep sabotaging relationships because I'm sure they'll leave me anyway.",
+            "I've been divorced more than once and I'm starting to feel like the problem is me.",
+            "I can never admit I'm wrong, even when I know I am.",
+            "I've been getting angry over tiny things lately and I don't know what's happening to me."
+          ],
+          "spoiler": {
+            "summary": "Ross's jealousy of Mark leads to the break, the night with Chloe and the breakup with Rachel. He rushes into an engagement with Emily and says 'Rachel' at the altar. Emily demands that he never see Rachel again, and when he can't agree the marriage ends. His temper boils over and he is put on 'sabbatical' from the museum after yelling at his boss over a sandwich. He drunkenly marries Rachel in Vegas, lies about getting an annulment, and ends up with a third divorce. He dates his student Elizabeth. He has a baby, Emma, with Rachel, keeps her dates' messages from her, and loses Charlie to her ex. He bribes Rachel's old boss to keep her in New York. Finally he tells her plainly at the airport that he loves her, and she gets off the plane.",
+            "key_events": [
+              "Jealousy of Mark and the night with Chloe",
+              "Says Rachel's name at his wedding to Emily; the marriage ends",
+              "Put on sabbatical after an outburst at work",
+              "Vegas marriage to Rachel, the annulment lie, a third divorce",
+              "Becomes Emma's father",
+              "Tells Rachel he loves her; she gets off the plane"
+            ],
+            "got_right": "He eventually learns to say plainly what he feels instead of manipulating circumstances, and he is a loving, committed father.",
+            "got_wrong": "He lets jealousy and pride run his relationships, lies to avoid facing things (the annulment, hiding messages), and rushes into commitments out of fear of being alone."
+          }
+        }
+      ]
+    }
+  ]
+}

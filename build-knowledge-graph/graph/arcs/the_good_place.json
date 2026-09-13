@@ -1,0 +1,1123 @@
+{
+  "show": "the_good_place",
+  "characters": [
+    {
+      "id": "char:the_good_place/eleanor_shellstrop",
+      "name": "Eleanor Shellstrop",
+      "role": "A sarcastic, self-serving saleswoman from Arizona who has just died and is welcomed into the Good Place, a paradise for the most virtuous people who ever lived, and quickly realises she is only there by mistake.",
+      "relations": [
+        {
+          "target": "char:the_good_place/chidi_anagonye",
+          "relation": "partner"
+        },
+        {
+          "target": "char:the_good_place/chidi_anagonye",
+          "relation": "mentor"
+        },
+        {
+          "target": "char:the_good_place/tahani_al_jamil",
+          "relation": "friend"
+        },
+        {
+          "target": "char:the_good_place/jason_mendoza",
+          "relation": "friend"
+        },
+        {
+          "target": "char:the_good_place/michael",
+          "relation": "friend"
+        },
+        {
+          "target": "char:the_good_place/janet",
+          "relation": "friend"
+        }
+      ],
+      "arcs": [
+        {
+          "id": "arc:the_good_place/eleanor_shellstrop/earning_her_place",
+          "title": "Faking it until she means it",
+          "literal_situation": "Eleanor wakes up in the afterlife and is told by Michael, the neighbourhood's friendly architect, that she lived an exemplary life of human-rights work. Those memories are not hers: she was a selfish, rude saleswoman, and she has been let in by mistake. Terrified of being sent to the Bad Place, she begs Chidi, the ethics professor assigned as her soulmate, to secretly teach her how to be good.",
+          "pattern_label": "a self-centred person trying to genuinely become good",
+          "pattern_text": "Someone who has always looked out only for themselves suddenly finds themselves surrounded by people who are better than them, and fears being exposed as a fraud. They start trying to be good for purely selfish reasons, to protect themselves. Slowly the question shifts from 'how do I not get caught' to 'what do I actually owe the people around me'.",
+          "hook": "Newly dead and living a lie in paradise, Eleanor is a cynic who has never cared what anyone thought of her, now desperate to learn ethics fast enough to avoid being found out.",
+          "why_relatable": "Can you become a better person if your first reason for trying is self-interest? Is it too late to change who you have been for thirty-odd years? And what does she do when being honest would cost her everything?",
+          "watch_for": [
+            "Notice when her motives for doing good things start to change, and whether she notices it herself.",
+            "How does she react when being selfish would be the easy way out?",
+            "What does she seem to believe about whether people can really change?"
+          ],
+          "start_at": "S1E1",
+          "span": "S1-S4",
+          "situations": [
+            {
+              "id": "redemption_after_mistakes",
+              "weight": 1.0
+            },
+            {
+              "id": "imposter_syndrome",
+              "weight": 0.7
+            },
+            {
+              "id": "starting_over",
+              "weight": 0.6
+            }
+          ],
+          "conflicts": [
+            "belonging_vs_integrity",
+            "truth_vs_protecting_others"
+          ],
+          "emotions": {
+            "start": [
+              "fear",
+              "shame"
+            ],
+            "middle": [
+              "confusion",
+              "determination"
+            ],
+            "end": [
+              "self_respect",
+              "peace"
+            ]
+          },
+          "ending_tone": "bittersweet",
+          "intensity": "light",
+          "warnings": [
+            "betrayal",
+            "death_of_main_character"
+          ],
+          "example_user_messages": [
+            "I've been a pretty selfish person my whole life and I'm only now realising it. Is it too late to change?",
+            "Everyone around me seems so genuinely good and I feel like a fraud who's going to get found out.",
+            "I started volunteering mostly to look good, and now I'm not sure if that makes me a bad person.",
+            "I want to be better but honestly I don't even know where to start."
+          ],
+          "spoiler": {
+            "summary": "Eleanor studies ethics with Chidi and slowly starts to care, eventually confessing she doesn't belong. At the end of season 1 she realises the 'Good Place' is actually the Bad Place: Michael is a demon and the four humans were chosen to torture each other. Michael reboots their memories hundreds of times, but Eleanor keeps figuring it out. The humans team up with Michael, plead with the Judge, and are sent back to Earth to see if they can improve without afterlife motivation. She then discovers the points system is broken, helps run a new test of whether people can improve, and helps design a new afterlife where people can keep growing after death. After finding peace, she eventually chooses to pass through the final door, becoming a spark that nudges a newly human Michael toward kindness.",
+            "key_events": [
+              "Confesses to Tahani and Michael that she is the wrong Eleanor",
+              "Realises 'this is the Bad Place' at the end of season 1",
+              "Michael is revealed to be a demon; hundreds of memory reboots",
+              "Team works with Michael and pleads to the Judge; returned to Earth",
+              "Discovers no one has reached the Good Place in centuries because the system is broken",
+              "Helps design a new afterlife where souls can keep improving",
+              "Eventually walks through the door that ends her existence"
+            ],
+            "got_right": "She never stops questioning, owns her mistakes once she sees them, and learns that being good is about what you owe other people rather than points or self-protection.",
+            "got_wrong": "For a long time she lies and manipulates to save herself, pushes people away before they can reject her, and uses sarcasm to avoid feeling anything."
+          }
+        },
+        {
+          "id": "arc:the_good_place/eleanor_shellstrop/letting_people_in",
+          "title": "A loner learning to let people in",
+          "literal_situation": "Eleanor has been on her own since her early teens, after a childhood with neglectful parents. In the neighbourhood she is suddenly expected to be part of a community, go to parties, and share a home with a soulmate she barely knows.",
+          "pattern_label": "a self-reliant loner learning to trust others",
+          "pattern_text": "A person who learned as a child that nobody would take care of them has built a life around needing no one. Being pushed into close friendships and a serious relationship forces them to face how much they keep people at arm's length. They have to decide whether letting others matter is worth the risk of being hurt again.",
+          "hook": "Eleanor prides herself on needing nobody and caring about no one, but she has just landed in a place where everyone expects her to be part of a close-knit community.",
+          "why_relatable": "What happens when someone who has always been alone is surrounded by people who want to know her? Can she tell the difference between independence and fear? Does she believe anyone would stick around if they knew the real her?",
+          "watch_for": [
+            "Notice how often she uses jokes to deflect when someone gets close.",
+            "How does she treat the people who are kind to her without expecting anything back?",
+            "What do her flashbacks to her childhood tell you about the walls she builds?"
+          ],
+          "start_at": "S1E1",
+          "span": "S1-S4",
+          "situations": [
+            {
+              "id": "difficult_parent",
+              "weight": 0.7
+            },
+            {
+              "id": "finding_your_people",
+              "weight": 0.8
+            },
+            {
+              "id": "falling_for_someone_unexpected",
+              "weight": 0.6
+            },
+            {
+              "id": "loneliness",
+              "weight": 0.6
+            }
+          ],
+          "conflicts": [
+            "independence_vs_connection",
+            "holding_on_vs_letting_go"
+          ],
+          "emotions": {
+            "start": [
+              "loneliness",
+              "resentment"
+            ],
+            "middle": [
+              "longing",
+              "fear"
+            ],
+            "end": [
+              "love",
+              "belonging",
+              "acceptance"
+            ]
+          },
+          "ending_tone": "bittersweet",
+          "intensity": "moderate",
+          "warnings": [
+            "grief",
+            "addiction",
+            "death_of_main_character"
+          ],
+          "example_user_messages": [
+            "I grew up basically raising myself and now I don't know how to let anyone get close.",
+            "Whenever someone is nice to me I get suspicious and push them away.",
+            "My parents were never there for me and I think it's why I act like I don't need anybody.",
+            "I'm falling for someone who is my complete opposite and it terrifies me."
+          ],
+          "spoiler": {
+            "summary": "Eleanor forms a found family with Chidi, Tahani, Jason, Janet and eventually Michael. She and Chidi fall in love across many memory reboots; they finally become a couple on Earth, before Chidi's memory is wiped for a new experiment and she must be near him without him knowing. His memories are later restored. She discovers her mother faked her own death and started a new family under a new name, and learns to accept her limits rather than wait for her approval. In the end Chidi decides he is ready to leave through the final door, and Eleanor learns to let him go before eventually going herself.",
+            "key_events": [
+              "Her mother is alive, living under a false name with a new daughter",
+              "Eleanor and Chidi fall in love in multiple rebooted timelines",
+              "Chidi's memory is wiped, and she must work alongside him as a stranger",
+              "Chidi's memories are restored",
+              "Chidi chooses to walk through the final door; Eleanor lets him go"
+            ],
+            "got_right": "She learns that loving people means showing up for them, and that letting someone go can be an act of love.",
+            "got_wrong": "She repeatedly assumes people will abandon her and tries to handle everything alone rather than asking for help."
+          }
+        },
+        {
+          "id": "arc:the_good_place/eleanor_shellstrop/responsible_for_others",
+          "title": "The loner who has to take charge",
+          "literal_situation": "Later in the series, after a turning point that puts other people's futures in her hands, Eleanor, who has always looked out only for herself, must guide a group of strangers who are counting on her and make hard calls under pressure.",
+          "pattern_label": "a reluctant loner forced to lead",
+          "pattern_text": "Someone who has spent their life avoiding responsibility for anyone else suddenly has other people depending on them. They doubt they are the right person, clash with people they have to help, and struggle with carrying hard decisions alone. They discover whether they can lead without becoming someone they are not.",
+          "hook": "Eleanor has never been responsible for anyone but herself, and now she is the one others turn to, with no idea whether she is up to it.",
+          "why_relatable": "What if the person in charge feels like the least qualified one in the room? How do you help people you don't even like? Can someone lead while still privately struggling?",
+          "watch_for": [
+            "How does she handle the people she finds hardest to care about?",
+            "Notice when she tries to carry everything alone, and when she asks for help.",
+            "What does she learn from her own past when dealing with someone who reminds her of herself?"
+          ],
+          "start_at": "S4",
+          "span": "S4",
+          "situations": [
+            {
+              "id": "responsibility_you_didnt_ask_for",
+              "weight": 0.9
+            },
+            {
+              "id": "becoming_a_manager",
+              "weight": 0.7
+            },
+            {
+              "id": "imposter_syndrome",
+              "weight": 0.6
+            }
+          ],
+          "conflicts": [
+            "duty_vs_desire",
+            "control_vs_trust"
+          ],
+          "emotions": {
+            "start": [
+              "overwhelm",
+              "self_doubt"
+            ],
+            "middle": [
+              "burnout",
+              "determination"
+            ],
+            "end": [
+              "confidence",
+              "peace"
+            ]
+          },
+          "ending_tone": "bittersweet",
+          "intensity": "moderate",
+          "warnings": [
+            "grief"
+          ],
+          "example_user_messages": [
+            "I just got put in charge of a team and I feel like the least qualified person there.",
+            "I've always been a lone wolf and now people are relying on me. I'm freaking out.",
+            "There's one person I'm supposed to help who is awful, and I'm not sure I even want to.",
+            "I'm trying to hold everything together while something personal is breaking my heart."
+          ],
+          "spoiler": {
+            "summary": "Eleanor becomes the architect of a new neighbourhood experiment to prove humans can improve, overseeing four new test subjects, including the unbearable Brent, while Chidi, whose memory has been wiped, is one of the subjects. She runs the project with Michael, cracks under the strain at times, and ultimately comes up with the idea for a reformed afterlife in which people are tested and can keep improving after death.",
+            "key_events": [
+              "Becomes the architect of the new experiment",
+              "Must manage an amnesiac Chidi as a stranger",
+              "Tries to reform the stubborn, entitled Brent",
+              "Helps design the new afterlife system"
+            ],
+            "got_right": "She leads with empathy, recognising her former self in the people she is trying to help.",
+            "got_wrong": "She tries to control every detail and hides her own pain, burning out instead of leaning on her friends."
+          }
+        }
+      ]
+    },
+    {
+      "id": "char:the_good_place/chidi_anagonye",
+      "name": "Chidi Anagonye",
+      "role": "A kind, deeply anxious moral philosophy professor, born in Senegal and raised in Australia, who is introduced as Eleanor's soulmate and reluctantly agrees to secretly teach her ethics.",
+      "relations": [
+        {
+          "target": "char:the_good_place/eleanor_shellstrop",
+          "relation": "partner"
+        },
+        {
+          "target": "char:the_good_place/eleanor_shellstrop",
+          "relation": "protege"
+        },
+        {
+          "target": "char:the_good_place/tahani_al_jamil",
+          "relation": "friend"
+        },
+        {
+          "target": "char:the_good_place/jason_mendoza",
+          "relation": "friend"
+        },
+        {
+          "target": "char:the_good_place/michael",
+          "relation": "protege"
+        },
+        {
+          "target": "char:the_good_place/janet",
+          "relation": "friend"
+        }
+      ],
+      "arcs": [
+        {
+          "id": "arc:the_good_place/chidi_anagonye/choosing_without_certainty",
+          "title": "The man who couldn't decide",
+          "literal_situation": "Chidi has devoted his life to studying ethics, yet he can't pick a muffin without agonising. In the neighbourhood he is told Eleanor is his soulmate, learns she doesn't belong there, and has to decide whether to keep her secret, which goes against everything he believes about honesty.",
+          "pattern_label": "overthinking every choice for fear of being wrong",
+          "pattern_text": "A deeply conscientious person is so afraid of making the wrong choice that they barely make any choices at all. Their search for the perfect, ethically airtight answer leaves them anxious and physically sick with stress, and frustrates everyone around them. They have to learn to act, commit and live with uncertainty.",
+          "hook": "Chidi is a gentle expert on right and wrong who can't make even small decisions, and he has just been handed a massive moral dilemma he can't research his way out of.",
+          "why_relatable": "What do you do when there is no perfect answer? Is endlessly weighing every option really more ethical, or just a way to avoid responsibility? How does his indecision affect the people who depend on him?",
+          "watch_for": [
+            "Notice what his stomach aches tell you about him.",
+            "How do his friends feel when he can't give them a straight answer?",
+            "Does knowing more about ethics make him happier, or more stuck?"
+          ],
+          "start_at": "S1E1",
+          "span": "S1-S4",
+          "situations": [
+            {
+              "id": "confidence_struggle",
+              "weight": 0.8
+            },
+            {
+              "id": "identity_and_self_acceptance",
+              "weight": 0.6
+            },
+            {
+              "id": "mentor_and_protege",
+              "weight": 0.5
+            }
+          ],
+          "conflicts": [
+            "perfectionism_vs_good_enough",
+            "control_vs_trust"
+          ],
+          "emotions": {
+            "start": [
+              "anxiety",
+              "self_doubt"
+            ],
+            "middle": [
+              "overwhelm",
+              "confusion"
+            ],
+            "end": [
+              "peace",
+              "acceptance"
+            ]
+          },
+          "ending_tone": "bittersweet",
+          "intensity": "light",
+          "warnings": [
+            "death_of_main_character"
+          ],
+          "example_user_messages": [
+            "I overthink every single decision to the point where I literally feel sick.",
+            "I'm so scared of choosing wrong that I end up not choosing at all, and people are getting frustrated with me.",
+            "I keep waiting for a perfect answer that never comes.",
+            "My friends say my indecisiveness is exhausting and I don't know how to stop."
+          ],
+          "spoiler": {
+            "summary": "Chidi's indecision turns out to have caused real pain on Earth, and he died because of it when an air conditioner fell on him. In the afterlife, which is revealed to be the Bad Place, he teaches ethics to the humans and even to Michael. Back on Earth he meets neuroscientist Simone. After learning that nothing he does can earn points anymore, he has an existential breakdown and briefly rejects all rules. Later his memory is wiped to help the new experiment, and when his memories return, he finds a new calm: he realises there is no single perfect answer and makes decisions with clarity. In the end he chooses to walk through the final door, comparing it to a wave returning to the ocean.",
+            "key_events": [
+              "His death was caused by his indecision (a falling air conditioner)",
+              "The neighbourhood is revealed to be the Bad Place",
+              "Teaches ethics to Michael",
+              "Existential crisis after learning the points system is rigged",
+              "Memory wiped, then restored with a new clarity",
+              "Chooses to leave through the final door"
+            ],
+            "got_right": "He cares deeply about doing right by people and, at his best, gives others the tools to think for themselves.",
+            "got_wrong": "He hides behind theory and indecision, treating the absence of a perfect answer as a reason not to act."
+          }
+        },
+        {
+          "id": "arc:the_good_place/chidi_anagonye/loving_his_opposite",
+          "title": "Paired with someone nothing like him",
+          "literal_situation": "Chidi is told that Eleanor, a brash, rule-breaking woman who is the opposite of him in every way, is his soulmate. He is torn between his loyalty to her and his disapproval of how she lived.",
+          "pattern_label": "falling for your opposite and learning to let go",
+          "pattern_text": "A cautious, principled person grows close to someone impulsive and rule-breaking whom they initially disapprove of. The relationship pushes them to loosen up, and forces them to face their fear of commitment and of losing control. In time it also raises the question of what it means to love someone when you can't hold on forever.",
+          "hook": "Chidi is stuck sharing a life with someone who makes him deeply uncomfortable, and he isn't sure whether he is her teacher, her accomplice or something more.",
+          "why_relatable": "Can someone who drives you crazy also be good for you? What happens when a careful person lets a chaotic person matter to them? Is loving someone about holding on or about wanting what is best for them?",
+          "watch_for": [
+            "Notice how each of them changes the way the other one thinks.",
+            "When does his discomfort with her turn into something else?",
+            "How does he handle moments when his head and his heart disagree?"
+          ],
+          "start_at": "S1E1",
+          "span": "S1-S4",
+          "situations": [
+            {
+              "id": "falling_for_someone_unexpected",
+              "weight": 0.9
+            },
+            {
+              "id": "mentor_and_protege",
+              "weight": 0.5
+            },
+            {
+              "id": "grief_and_loss",
+              "weight": 0.4
+            }
+          ],
+          "conflicts": [
+            "holding_on_vs_letting_go",
+            "independence_vs_connection"
+          ],
+          "emotions": {
+            "start": [
+              "anxiety",
+              "confusion"
+            ],
+            "middle": [
+              "love",
+              "longing"
+            ],
+            "end": [
+              "peace",
+              "acceptance"
+            ]
+          },
+          "ending_tone": "bittersweet",
+          "intensity": "moderate",
+          "warnings": [
+            "grief",
+            "death_of_main_character"
+          ],
+          "example_user_messages": [
+            "I'm falling for someone who is my total opposite and I don't know if it can work.",
+            "My partner pushes me out of my comfort zone and I love it and hate it at the same time.",
+            "I'm scared of committing because what if I choose wrong?",
+            "How do you love someone knowing it won't last forever?"
+          ],
+          "spoiler": {
+            "summary": "Chidi and Eleanor fall in love in numerous rebooted timelines before becoming a couple for real on Earth. For the new experiment he volunteers to have his memory wiped and lives as a stranger to her, even briefly dating Simone; later his memories are restored and he and Eleanor reunite. In the final episode he realises he is at peace and ready to walk through the final door, and Eleanor, heartbroken, lets him go.",
+            "key_events": [
+              "Falls in love with Eleanor across multiple reboots",
+              "Becomes a couple on Earth",
+              "Has his memory wiped to protect the experiment",
+              "Memories restored; reunites with Eleanor",
+              "Leaves through the final door before Eleanor"
+            ],
+            "got_right": "He learns to open up, take risks and love without needing certainty.",
+            "got_wrong": "For a long time he lets fear and overthinking hold him back from saying what he feels."
+          }
+        }
+      ]
+    },
+    {
+      "id": "char:the_good_place/tahani_al_jamil",
+      "name": "Tahani Al-Jamil",
+      "role": "A glamorous, gracious British socialite and philanthropist who raised billions for charity, and the neighbourhood's self-appointed hostess who can't stop name-dropping famous friends.",
+      "relations": [
+        {
+          "target": "char:the_good_place/eleanor_shellstrop",
+          "relation": "friend"
+        },
+        {
+          "target": "char:the_good_place/chidi_anagonye",
+          "relation": "friend"
+        },
+        {
+          "target": "char:the_good_place/jason_mendoza",
+          "relation": "ex_partner"
+        },
+        {
+          "target": "char:the_good_place/michael",
+          "relation": "friend"
+        },
+        {
+          "target": "char:the_good_place/janet",
+          "relation": "friend"
+        }
+      ],
+      "arcs": [
+        {
+          "id": "arc:the_good_place/tahani_al_jamil/outside_her_sisters_shadow",
+          "title": "Always performing for approval",
+          "literal_situation": "Tahani lives in a mansion in the neighbourhood and throws lavish parties for the other residents. She seems perfect: elegant, generous and endlessly accomplished. Beneath the polish, she has spent her life seeking the approval of cold parents who always preferred her celebrated sister.",
+          "pattern_label": "chasing approval from a family who never gave it",
+          "pattern_text": "A person has built their whole life around winning approval, from parents who favoured a sibling and from everyone watching. Their generosity and achievements are real, but they are also a performance for an audience that never applauds enough. They have to find out who they are when they stop competing and whether they can value themselves without outside praise.",
+          "hook": "Tahani is the most admired person in the room and clearly needs to be, but she cannot quite stop comparing herself to a sister she can never outshine.",
+          "why_relatable": "Who are good deeds for when you need to be seen doing them? Can you stop competing with a sibling who is always ahead? What would it take to feel enough without applause?",
+          "watch_for": [
+            "Notice how she talks about her family, and what she leaves out.",
+            "How does she react when someone isn't impressed by her?",
+            "Is her kindness to others different from her need to be liked?"
+          ],
+          "start_at": "S1E1",
+          "span": "S1-S4",
+          "situations": [
+            {
+              "id": "sibling_rivalry",
+              "weight": 0.9
+            },
+            {
+              "id": "family_expectations",
+              "weight": 0.8
+            },
+            {
+              "id": "difficult_parent",
+              "weight": 0.7
+            },
+            {
+              "id": "identity_and_self_acceptance",
+              "weight": 0.6
+            }
+          ],
+          "conflicts": [
+            "self_vs_family_expectations",
+            "fitting_in_vs_standing_out"
+          ],
+          "emotions": {
+            "start": [
+              "inadequacy",
+              "envy"
+            ],
+            "middle": [
+              "rejection",
+              "self_doubt"
+            ],
+            "end": [
+              "self_respect",
+              "acceptance"
+            ]
+          },
+          "ending_tone": "hopeful",
+          "intensity": "light",
+          "warnings": [
+            "death_of_main_character"
+          ],
+          "example_user_messages": [
+            "My parents always loved my sister more and I've spent my whole life trying to prove myself.",
+            "I do a lot of good things but honestly I think I mostly want people to notice.",
+            "No matter what I achieve my family never seems impressed.",
+            "I'm tired of comparing myself to my sibling all the time."
+          ],
+          "spoiler": {
+            "summary": "Tahani learns she was actually meant for the Bad Place: her charity work was motivated by jealousy and a desire to beat her sister Kamilah, and she died when a statue of Kamilah fell on her. On Earth she gives away her fortune, tries a series of grand gestures, and eventually reconciles with Kamilah after discovering her sister had envied her too. She learns to let go of her parents' approval and finds real friendship with Eleanor.",
+            "key_events": [
+              "Revealed to be in the Bad Place because of her selfish motives",
+              "Died when a statue of her sister fell on her",
+              "Gives away her fortune on Earth",
+              "Reconciles with Kamilah, who was also jealous of her",
+              "Credits Eleanor's friendship for her growth"
+            ],
+            "got_right": "She is genuinely loyal and generous with her friends, and she eventually seeks her own worth rather than her parents' praise.",
+            "got_wrong": "She measures her value by applause and rivalry, and uses charity as a competition."
+          }
+        },
+        {
+          "id": "arc:the_good_place/tahani_al_jamil/who_she_is_without_an_audience",
+          "title": "Finding a purpose of her own",
+          "literal_situation": "Later in the series, after a turning point that strips away the stage she has always performed on, Tahani has to figure out who she is when nobody is watching, and what she might actually be good at beyond being impressive.",
+          "pattern_label": "rebuilding an identity after losing the old one",
+          "pattern_text": "A person whose identity was built on status and appearances loses the setting that gave it meaning. Without their usual role, they try one reinvention after another, looking for a purpose that feels truly theirs. They learn that real worth comes from doing work they care about, not from being admired.",
+          "hook": "For the first time, Tahani can't lean on her status, and she is scrambling to prove, mostly to herself, that she has something real to offer.",
+          "why_relatable": "Who are you once your old role is gone? How do you find work that feels meaningful rather than impressive? Can you start again at the bottom after a lifetime at the top?",
+          "watch_for": [
+            "Notice which new pursuits she tries for show and which she tries for herself.",
+            "How does she cope with being bad at something?",
+            "Who helps her see herself differently?"
+          ],
+          "start_at": "S3",
+          "span": "S3-S4",
+          "situations": [
+            {
+              "id": "midlife_reinvention",
+              "weight": 0.8
+            },
+            {
+              "id": "career_change",
+              "weight": 0.7
+            },
+            {
+              "id": "identity_and_self_acceptance",
+              "weight": 0.7
+            }
+          ],
+          "conflicts": [
+            "past_vs_future",
+            "self_vs_family_expectations"
+          ],
+          "emotions": {
+            "start": [
+              "confusion",
+              "inadequacy"
+            ],
+            "middle": [
+              "determination",
+              "curiosity"
+            ],
+            "end": [
+              "pride",
+              "confidence"
+            ]
+          },
+          "ending_tone": "hopeful",
+          "intensity": "light",
+          "warnings": [],
+          "example_user_messages": [
+            "I've lost the job and lifestyle that defined me and I don't know who I am now.",
+            "I keep trying new things to prove myself but none of it feels like me.",
+            "I'm starting over from scratch after years of being at the top, and it's humbling.",
+            "I want to find work that actually means something to me."
+          ],
+          "spoiler": {
+            "summary": "After returning to Earth and later being thrust back into the afterlife, Tahani gives up her fortune and status, briefly lives off the grid, and learns a string of practical skills to prove herself. She becomes an essential part of the team building the new afterlife. In the finale, instead of walking through the door, she chooses to stay and become an architect alongside Michael, helping others as her true calling.",
+            "key_events": [
+              "Gives away her fortune",
+              "Learns dozens of practical skills in the afterlife",
+              "Helps build the new afterlife",
+              "Chooses to become an architect instead of leaving"
+            ],
+            "got_right": "She finds genuine joy in doing meaningful work and in helping others grow.",
+            "got_wrong": "At first every reinvention is still about proving herself to someone else."
+          }
+        }
+      ]
+    },
+    {
+      "id": "char:the_good_place/jason_mendoza",
+      "name": "Jason Mendoza",
+      "role": "A sweet, impulsive young guy from Florida who has landed in the afterlife neighbourhood and is keeping a very low profile, saying as little as possible.",
+      "relations": [
+        {
+          "target": "char:the_good_place/janet",
+          "relation": "partner"
+        },
+        {
+          "target": "char:the_good_place/tahani_al_jamil",
+          "relation": "ex_partner"
+        },
+        {
+          "target": "char:the_good_place/eleanor_shellstrop",
+          "relation": "friend"
+        },
+        {
+          "target": "char:the_good_place/chidi_anagonye",
+          "relation": "friend"
+        },
+        {
+          "target": "char:the_good_place/michael",
+          "relation": "friend"
+        }
+      ],
+      "arcs": [
+        {
+          "id": "arc:the_good_place/jason_mendoza/behind_the_silence",
+          "title": "The quiet one everyone projects onto",
+          "literal_situation": "In the neighbourhood he barely says a word, communicating only through calm gestures while the people around him talk for him and read their own meaning into his silence.",
+          "pattern_label": "hiding who you are to fit in",
+          "pattern_text": "Someone lands in a world where they are sure they don't belong and decides the safest option is to say as little as possible and let people see whatever they want to see. Keeping up the act is lonely and frightening. Eventually they have to find out whether the people around them will accept who they really are.",
+          "hook": "He never says a word, and the neighbourhood treats his silence as wisdom, but nobody knows what is going on beneath the calm.",
+          "why_relatable": "What is it like to be defined entirely by other people's assumptions? How long can someone keep quiet about who they are? What might a calm surface be hiding?",
+          "watch_for": [
+            "Notice how other characters fill in the blanks about him.",
+            "What might his silence be costing him?",
+            "How does he react when someone treats him as a real person rather than a symbol?"
+          ],
+          "start_at": "S1E1",
+          "span": "S1",
+          "situations": [
+            {
+              "id": "identity_and_self_acceptance",
+              "weight": 0.8
+            },
+            {
+              "id": "imposter_syndrome",
+              "weight": 0.7
+            },
+            {
+              "id": "loneliness",
+              "weight": 0.5
+            }
+          ],
+          "conflicts": [
+            "fitting_in_vs_standing_out",
+            "belonging_vs_integrity"
+          ],
+          "emotions": {
+            "start": [
+              "fear",
+              "loneliness"
+            ],
+            "middle": [
+              "anxiety",
+              "relief"
+            ],
+            "end": [
+              "belonging",
+              "acceptance"
+            ]
+          },
+          "ending_tone": "hopeful",
+          "intensity": "light",
+          "warnings": [],
+          "example_user_messages": [
+            "I'm in a place where I feel totally out of my depth so I just keep quiet and hope nobody notices.",
+            "Everyone thinks I'm someone I'm not and correcting them feels impossible now.",
+            "I'm scared that if people knew the real me they wouldn't want me around.",
+            "I've been pretending for so long I don't know how to stop."
+          ],
+          "spoiler": {
+            "summary": "'Jianyu' is actually Jason Mendoza, an amateur DJ and small-time criminal from Jacksonville, Florida, who died suffocating in a safe during a botched robbery. Placed in the neighbourhood as a silent monk, he kept quiet out of terror of being sent to the Bad Place. He reveals himself to Eleanor early on, and joins the other humans; it later turns out they were all in the Bad Place together.",
+            "key_events": [
+              "'Jianyu' is really Jason Mendoza from Jacksonville",
+              "Died locked in a safe during a botched heist",
+              "Reveals himself to Eleanor and Chidi",
+              "Part of the Bad Place experiment all along"
+            ],
+            "got_right": "Once he opens up, he is loyal, warm and completely himself.",
+            "got_wrong": "Out of fear he lets a lie define him and isolates himself instead of asking for help."
+          }
+        },
+        {
+          "id": "arc:the_good_place/jason_mendoza/thinking_before_acting",
+          "title": "The big-hearted guy learning to think things through",
+          "literal_situation": "Later in the series, after a turning point that changes how everyone sees him, we get to know an impulsive, fun-loving guy who acts first and thinks later, and who must find out whether someone like him can grow up without losing what makes him lovable.",
+          "pattern_label": "an impulsive, loyal person learning to grow up",
+          "pattern_text": "A good-natured but reckless person has spent their life chasing fun and quick fixes, often dragging friends into trouble. They are fiercely loyal and surprisingly wise at moments, but struggle with consequences, responsibility and a parent who modelled the same chaos. They slowly learn to slow down and choose the people they love over their impulses.",
+          "hook": "He is sweet, loyal and utterly impulsive, the kind of guy whose best ideas and worst ideas feel exactly the same to him.",
+          "why_relatable": "Can someone who always chooses fun learn to take responsibility? How much of who we are comes from the parent who raised us? What does real loyalty look like when your friends deserve better choices from you?",
+          "watch_for": [
+            "Notice the moments when he surprises everyone with real insight.",
+            "How does his relationship with his father shape his choices?",
+            "Who does he start putting ahead of his impulses?"
+          ],
+          "start_at": "S1",
+          "span": "S1-S4",
+          "situations": [
+            {
+              "id": "coming_of_age",
+              "weight": 0.8
+            },
+            {
+              "id": "difficult_parent",
+              "weight": 0.5
+            },
+            {
+              "id": "redemption_after_mistakes",
+              "weight": 0.6
+            },
+            {
+              "id": "finding_your_people",
+              "weight": 0.6
+            }
+          ],
+          "conflicts": [
+            "duty_vs_desire",
+            "past_vs_future"
+          ],
+          "emotions": {
+            "start": [
+              "restlessness",
+              "self_doubt"
+            ],
+            "middle": [
+              "love",
+              "determination"
+            ],
+            "end": [
+              "peace",
+              "belonging"
+            ]
+          },
+          "ending_tone": "bittersweet",
+          "intensity": "light",
+          "warnings": [
+            "death_of_main_character",
+            "grief"
+          ],
+          "example_user_messages": [
+            "I always act on impulse and then regret it, and I'm starting to think I need to grow up.",
+            "My dad was kind of a mess and I'm scared I'm turning into him.",
+            "My friends love me but they say I never think things through.",
+            "I don't know how to be a responsible adult, I just want to have fun."
+          ],
+          "spoiler": {
+            "summary": "Jason's dream of success as a DJ was full of petty crimes with his best friend Pillboi and his father Donkey Doug. He falls for Janet and marries her in season 1, has a fling with Tahani after reboots, and on Earth tries to straighten out his dance crew and reconnect with his dad before sliding back. Over time he becomes a trusted part of the team and a devoted partner to Janet. In the end, after finding peace, he waits a long time in the woods to give Janet a necklace he made, then walks through the final door.",
+            "key_events": [
+              "Marries Janet in season 1",
+              "Romance with Tahani in a rebooted timeline",
+              "Reconnects with Donkey Doug, who doesn't change",
+              "Recommits to Janet",
+              "Leaves through the final door after saying goodbye to Janet"
+            ],
+            "got_right": "He is fiercely loyal and his simple, open-hearted instincts are often exactly right.",
+            "got_wrong": "He relies on impulse and 'Molotov cocktail' solutions and repeats his father's reckless patterns."
+          }
+        }
+      ]
+    },
+    {
+      "id": "char:the_good_place/michael",
+      "name": "Michael",
+      "role": "The warm, fussy and endearingly nervous architect who designed the neighbourhood, welcoming new residents to the Good Place in what is his very first neighbourhood.",
+      "relations": [
+        {
+          "target": "char:the_good_place/janet",
+          "relation": "friend"
+        },
+        {
+          "target": "char:the_good_place/chidi_anagonye",
+          "relation": "mentor"
+        },
+        {
+          "target": "char:the_good_place/eleanor_shellstrop",
+          "relation": "friend"
+        },
+        {
+          "target": "char:the_good_place/tahani_al_jamil",
+          "relation": "friend"
+        },
+        {
+          "target": "char:the_good_place/jason_mendoza",
+          "relation": "friend"
+        }
+      ],
+      "arcs": [
+        {
+          "id": "arc:the_good_place/michael/first_big_project",
+          "title": "Keeping his dream project together",
+          "literal_situation": "Michael has just unveiled his first neighbourhood, a paradise he designed down to every frozen-yogurt shop. He is thrilled to welcome his residents, but soon strange malfunctions start disrupting everything, and he is desperate to keep it all from falling apart.",
+          "pattern_label": "questioning the work that defines you",
+          "pattern_text": "Someone has poured their entire identity into a career and a big project meant to impress their superiors. As things start going wrong, they are forced to spend time with the very people their work affects. Slowly they begin questioning what their work is for, and who they want to be beyond their role.",
+          "hook": "Michael is a proud, anxious first-time architect whose perfect neighbourhood is starting to glitch, and his career may depend on fixing it.",
+          "why_relatable": "What happens when your big project doesn't go according to plan? How much of your identity is tied up in your job? What do you owe the people your work affects?",
+          "watch_for": [
+            "Notice how he responds when things go wrong in his neighbourhood.",
+            "How does he talk about the residents, and about his bosses?",
+            "What fascinates him about humans?"
+          ],
+          "start_at": "S1E1",
+          "span": "S1-S2",
+          "situations": [
+            {
+              "id": "new_job",
+              "weight": 0.6
+            },
+            {
+              "id": "redemption_after_mistakes",
+              "weight": 0.9
+            },
+            {
+              "id": "career_change",
+              "weight": 0.6
+            }
+          ],
+          "conflicts": [
+            "power_vs_morality",
+            "loyalty_vs_ambition"
+          ],
+          "emotions": {
+            "start": [
+              "pride",
+              "anxiety"
+            ],
+            "middle": [
+              "confusion",
+              "curiosity"
+            ],
+            "end": [
+              "belonging",
+              "self_respect"
+            ]
+          },
+          "ending_tone": "hopeful",
+          "intensity": "light",
+          "warnings": [
+            "betrayal"
+          ],
+          "example_user_messages": [
+            "My whole career is riding on this project and everything keeps going wrong.",
+            "I've started to wonder if the work I've been doing all these years actually hurts people.",
+            "I care way too much about impressing my bosses.",
+            "I'm realising the people I'm supposed to be managing understand things I don't."
+          ],
+          "spoiler": {
+            "summary": "Michael is actually a demon, and the 'Good Place' is his experimental Bad Place neighbourhood, designed for four humans to psychologically torture each other. When Eleanor figures it out, he reboots them hundreds of times, but they keep uncovering the truth. Facing retirement by his boss Shawn, he teams up with the humans, takes ethics lessons from Chidi, and gradually and genuinely becomes good, eventually betraying the Bad Place to save them.",
+            "key_events": [
+              "Revealed to be a demon; the neighbourhood is the Bad Place",
+              "Reboots the humans more than 800 times",
+              "Teams up with the humans to avoid retirement",
+              "Learns ethics from Chidi",
+              "Turns against the Bad Place to save the humans"
+            ],
+            "got_right": "He eventually lets himself be changed by the people he was meant to hurt and chooses to protect them.",
+            "got_wrong": "He puts his ego and career ambitions over the wellbeing of others and manipulates people who trust him."
+          }
+        },
+        {
+          "id": "arc:the_good_place/michael/learning_from_his_charges",
+          "title": "Finding out what his existence is for",
+          "literal_situation": "Later in the series, after a turning point that changes his relationship with the humans he oversees, Michael finds himself in unfamiliar territory: learning from them, fighting for them, and wondering what his own long existence is really for.",
+          "pattern_label": "rethinking your life's purpose later in life",
+          "pattern_text": "A person who has been around a long time and always defined themselves by their role starts learning from people they once looked down on. Friendship, loyalty and a newfound sense of mortality make them question what gives life meaning. They reinvent themselves and discover that being truly alive means accepting limits.",
+          "hook": "Michael is used to being in charge, and now he has to learn to be a friend, a student and someone others can trust.",
+          "why_relatable": "Can you change who you are after a very long time of being one thing? What does it mean to be a good friend when you have never had one? Would you give up your power for a more meaningful life?",
+          "watch_for": [
+            "Notice how he reacts to the idea of endings and death.",
+            "How does he handle it when the people he cares about are in danger?",
+            "What does he envy about human beings?"
+          ],
+          "start_at": "S2",
+          "span": "S2-S4",
+          "situations": [
+            {
+              "id": "midlife_reinvention",
+              "weight": 0.8
+            },
+            {
+              "id": "mentor_and_protege",
+              "weight": 0.7
+            },
+            {
+              "id": "finding_your_people",
+              "weight": 0.7
+            }
+          ],
+          "conflicts": [
+            "power_vs_morality",
+            "holding_on_vs_letting_go"
+          ],
+          "emotions": {
+            "start": [
+              "curiosity",
+              "dread"
+            ],
+            "middle": [
+              "determination",
+              "love"
+            ],
+            "end": [
+              "joy",
+              "peace"
+            ]
+          },
+          "ending_tone": "hopeful",
+          "intensity": "moderate",
+          "warnings": [
+            "betrayal"
+          ],
+          "example_user_messages": [
+            "I've done the same thing for decades and I'm only now questioning if it means anything.",
+            "I'm realising I've never really had real friends until now.",
+            "I've always been the one in charge and it's strange to be learning from younger people.",
+            "I'm scared of getting older and running out of time."
+          ],
+          "spoiler": {
+            "summary": "Michael faces an existential crisis over death during his ethics lessons, then helps the humans reach the Judge and protects them on Earth. He discovers that nobody has made it into the Good Place in centuries because the points system is broken, runs a new experiment with Eleanor, and helps design a new afterlife. In the finale, instead of retiring, he asks to become human and lives out a mortal life on Earth, finding joy in small things; he is nudged toward kindness by a spark of Eleanor.",
+            "key_events": [
+              "Existential crisis about death",
+              "Protects the humans on Earth",
+              "Discovers the points system is broken",
+              "Co-runs a new experiment with Eleanor",
+              "Becomes human and lives on Earth"
+            ],
+            "got_right": "He embraces humility, friendship and the courage to change completely.",
+            "got_wrong": "He sometimes clings to control and grand schemes when simply trusting his friends would work better."
+          }
+        }
+      ]
+    },
+    {
+      "id": "char:the_good_place/janet",
+      "name": "Janet",
+      "role": "The neighbourhood's cheerful, all-knowing assistant, who appears whenever called and can provide anything the residents need, and who is quick to point out she is not a robot.",
+      "relations": [
+        {
+          "target": "char:the_good_place/jason_mendoza",
+          "relation": "partner"
+        },
+        {
+          "target": "char:the_good_place/michael",
+          "relation": "friend"
+        },
+        {
+          "target": "char:the_good_place/eleanor_shellstrop",
+          "relation": "friend"
+        },
+        {
+          "target": "char:the_good_place/chidi_anagonye",
+          "relation": "friend"
+        },
+        {
+          "target": "char:the_good_place/tahani_al_jamil",
+          "relation": "friend"
+        }
+      ],
+      "arcs": [
+        {
+          "id": "arc:the_good_place/janet/more_than_a_helper",
+          "title": "More than just the helper",
+          "literal_situation": "Janet is the neighbourhood's helpful assistant, answering every question and fetching anything anyone needs with a sunny smile. Everyone treats her as part of the scenery rather than a person.",
+          "pattern_label": "a helper discovering they have needs too",
+          "pattern_text": "Someone whose whole identity is being useful to others has never asked what they want for themselves. As they begin to have feelings and preferences that don't fit their role, they are confused and embarrassed. They have to claim their own inner life and ask others to treat them as a full person.",
+          "hook": "Janet exists to help, and does it perfectly, but nobody, not even Janet, has asked whether there is more to her.",
+          "why_relatable": "What happens when the dependable helper starts wanting something for herself? Can someone defined by their usefulness discover who they are? How do others react when a person they took for granted changes?",
+          "watch_for": [
+            "Notice how the residents talk to Janet compared with each other.",
+            "When does she start behaving in ways that surprise even her?",
+            "Who treats her as a person, and who treats her as a tool?"
+          ],
+          "start_at": "S1E1",
+          "span": "S1-S4",
+          "situations": [
+            {
+              "id": "identity_and_self_acceptance",
+              "weight": 0.9
+            },
+            {
+              "id": "confidence_struggle",
+              "weight": 0.5
+            },
+            {
+              "id": "finding_your_people",
+              "weight": 0.6
+            }
+          ],
+          "conflicts": [
+            "duty_vs_desire",
+            "fitting_in_vs_standing_out"
+          ],
+          "emotions": {
+            "start": [
+              "numbness",
+              "curiosity"
+            ],
+            "middle": [
+              "confusion",
+              "longing"
+            ],
+            "end": [
+              "self_respect",
+              "belonging"
+            ]
+          },
+          "ending_tone": "hopeful",
+          "intensity": "light",
+          "warnings": [],
+          "example_user_messages": [
+            "I'm always the one who helps everyone and I've never really thought about what I want.",
+            "People treat me like I'm just there to be useful.",
+            "I've started having feelings that don't fit the role everyone expects me to play.",
+            "I want to be seen as a whole person, not just the reliable one."
+          ],
+          "spoiler": {
+            "summary": "After being rebooted (and nearly 'killed' by the humans, though she begs for her life only as a safety feature), Janet starts glitching and developing emotions. Each reboot makes her more human. She becomes a true friend and team member to the humans and Michael, even impersonating a Bad Janet and saving everyone by pulling them into her void, where they discover her inner world. By the end she is fully a person with her own feelings and choices.",
+            "key_events": [
+              "The humans try to kill her by resetting her",
+              "Develops emotions and glitches after reboots",
+              "Poses as a Bad Janet",
+              "Pulls the group into her void to save them",
+              "Becomes a full member of the team and a person in her own right"
+            ],
+            "got_right": "She learns to speak up for what she wants and embraces her growing personhood.",
+            "got_wrong": "She suppresses her feelings for too long, treating them as malfunctions."
+          }
+        },
+        {
+          "id": "arc:the_good_place/janet/feelings_she_wasnt_built_for",
+          "title": "Feelings she didn't expect to have",
+          "literal_situation": "Later in the series, after a turning point that stirs unfamiliar feelings in her, Janet finds herself caught up in love, jealousy and heartbreak, emotions she has no experience handling.",
+          "pattern_label": "navigating love for the first time",
+          "pattern_text": "Someone who has always been calm and composed falls in love for the first time and is thrown by the intensity of it. They struggle with jealousy, rejection and the pain of watching someone they love choose differently. They learn that deep feelings are not a malfunction, and that love can involve letting go.",
+          "hook": "Janet has always been perfectly composed, and now her own feelings are making her behave in ways she can't explain.",
+          "why_relatable": "What do you do with feelings you never expected to have? How do you handle jealousy when you're supposed to be fine? Can you love someone without controlling what they choose?",
+          "watch_for": [
+            "Notice what happens to her surroundings when she's upset.",
+            "How does she try to handle heartbreak on her own?",
+            "Does she let herself be honest about what she wants?"
+          ],
+          "start_at": "S1",
+          "span": "S1-S4",
+          "situations": [
+            {
+              "id": "unrequited_love",
+              "weight": 0.8
+            },
+            {
+              "id": "falling_for_someone_unexpected",
+              "weight": 0.7
+            },
+            {
+              "id": "breakup",
+              "weight": 0.5
+            }
+          ],
+          "conflicts": [
+            "holding_on_vs_letting_go",
+            "control_vs_trust"
+          ],
+          "emotions": {
+            "start": [
+              "confusion",
+              "love"
+            ],
+            "middle": [
+              "jealousy",
+              "grief"
+            ],
+            "end": [
+              "acceptance",
+              "peace"
+            ]
+          },
+          "ending_tone": "bittersweet",
+          "intensity": "moderate",
+          "warnings": [
+            "grief",
+            "death_of_main_character"
+          ],
+          "example_user_messages": [
+            "I've never felt this way about anyone before and it's scaring me.",
+            "I'm so jealous of the person my crush likes and I hate feeling like this.",
+            "I made a rebound mistake after getting my heart broken.",
+            "How do you let go of someone you still love?"
+          ],
+          "spoiler": {
+            "summary": "Janet falls in love with Jason and marries him in season 1, but their marriage is erased by a reboot. She suffers when Jason pairs up with Tahani and builds a rebound boyfriend, Derek, who glitches. Eventually she confesses her love to Jason in front of the Judge, and they become a couple again. In the finale, Jason waits a long time to give her a handmade necklace before walking through the final door; Janet stays behind and lets him go.",
+            "key_events": [
+              "Marries Jason in season 1",
+              "Marriage erased by a reboot",
+              "Builds a rebound boyfriend, Derek",
+              "Confesses her love to Jason",
+              "Jason leaves through the final door"
+            ],
+            "got_right": "She learns to admit her feelings and let people make their own choices.",
+            "got_wrong": "She hides her heartbreak and copes by building a replacement instead of dealing with her pain."
+          }
+        }
+      ]
+    }
+  ]
+}

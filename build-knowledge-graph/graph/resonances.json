@@ -1,0 +1,577 @@
+[
+  {
+    "source": "arc:avatar/aang/reluctant_chosen_one",
+    "target": "arc:buffy/buffy_summers/reluctant_chosen_one",
+    "bridge": "Both were handed a weight far too big far too young, and both keep dodging it while wondering whether carrying it will cost them the ordinary, lighter self they want to keep."
+  },
+  {
+    "source": "arc:avatar/aang/reluctant_chosen_one",
+    "target": "arc:naruto/shikamaru_nara/reluctant_leader",
+    "bridge": "Both would rather slip away from a responsibility everyone keeps pressing on them, and both have to decide whether stepping up means giving up the easygoing person they want to be."
+  },
+  {
+    "source": "arc:avatar/aang/reluctant_chosen_one",
+    "target": "arc:game_of_thrones/bran_stark/the_burden",
+    "bridge": "Both are told they are the one everyone needs, and both fear that becoming that person will erase the younger, gentler self they used to be."
+  },
+  {
+    "source": "arc:avatar/aang/last_of_his_people",
+    "target": "arc:naruto/sasuke_uchiha/living_for_revenge",
+    "bridge": "Both lost the entire world that made them who they are in a single blow, and both have to decide whether that grief will close them off or make them hold tighter to whoever is left."
+  },
+  {
+    "source": "arc:avatar/aang/last_of_his_people",
+    "target": "arc:greys_anatomy/meredith_grey/living_again_after_loss",
+    "bridge": "Both are carrying a loss so total that happiness feels like betrayal, and both have to find a way to honour what is gone without letting it swallow the people still in front of them."
+  },
+  {
+    "source": "arc:avatar/aang/last_of_his_people",
+    "target": "arc:game_of_thrones/arya_stark/list_of_names",
+    "bridge": "Both had the people who kept them safe torn away all at once, and both are ambushed by a rage they don't recognise in themselves while trying to hold on to who they were before."
+  },
+  {
+    "source": "arc:avatar/aang/values_under_pressure",
+    "target": "arc:greys_anatomy/meredith_grey/breaking_rules_for_right_reasons",
+    "bridge": "Both refuse to go along with what everyone in charge has agreed is right, and both have to weigh what standing by their conscience will cost the people who stand beside them."
+  },
+  {
+    "source": "arc:avatar/aang/values_under_pressure",
+    "target": "arc:naruto/itachi_uchiha/the_brother_who_chose_to_be_hated",
+    "bridge": "Both are pressed by the people they answer to into an unbearable choice for the greater good, and both are left weighing duty to everyone against the one thing their heart forbids."
+  },
+  {
+    "source": "arc:avatar/katara/parentified_caretaker",
+    "target": "arc:greys_anatomy/miranda_bailey/strong_one_asks_for_help",
+    "bridge": "Both are the one everyone leans on and have quietly decided their own needs don't count, and both have to learn that asking to be looked after is not the same as failing."
+  },
+  {
+    "source": "arc:avatar/katara/parentified_caretaker",
+    "target": "arc:buffy/buffy_summers/finding_reason_to_live",
+    "bridge": "Both stepped into looking after a family long before they were ready, and both keep everyone else afloat while hiding how empty and unlooked-after they feel."
+  },
+  {
+    "source": "arc:avatar/katara/parentified_caretaker",
+    "target": "arc:greys_anatomy/callie_torres/after_the_impossible_choice",
+    "bridge": "Both have become the caretaker who swallows their own grief and anger to keep someone else going, and both have to admit the resentment they aren't supposed to feel."
+  },
+  {
+    "source": "arc:avatar/katara/fighting_to_be_taught",
+    "target": "arc:game_of_thrones/samwell_tarly/dream_institution",
+    "bridge": "Both have real knowledge and hunger but keep being told to wait their turn by gatekeepers, and both have to decide whether to accept the limits or break the rules to do what they know is right."
+  },
+  {
+    "source": "arc:avatar/katara/fighting_to_be_taught",
+    "target": "arc:game_of_thrones/brienne_of_tarth/proving_herself",
+    "bridge": "Both are fiercely capable at something people like them were never supposed to do, and both have to fight for a place that the people in charge keep saying isn't theirs."
+  },
+  {
+    "source": "arc:avatar/katara/revenge_or_release",
+    "target": "arc:naruto/naruto_uzumaki/grief_and_the_cycle_of_hatred",
+    "bridge": "Both finally face the person behind their oldest wound, and both have to decide whether they want revenge, an apology, or simply to stop carrying the pain."
+  },
+  {
+    "source": "arc:avatar/zuko/fathers_approval",
+    "target": "arc:game_of_thrones/tyrion_lannister/the_unwanted_son",
+    "bridge": "Both are trying to earn love from a parent who keeps it just out of reach, and both have to decide whether that approval is worth who they'd have to become."
+  },
+  {
+    "source": "arc:avatar/zuko/earning_trust_back",
+    "target": "arc:game_of_thrones/theon_greyjoy/earning_forgiveness",
+    "bridge": "Both have done real harm and want to make it right, and both have to prove it through quiet, useful actions to people with every reason to keep them out."
+  },
+  {
+    "source": "arc:avatar/zuko/earning_trust_back",
+    "target": "arc:naruto/sasuke_uchiha/coming_back_from_darkness",
+    "bridge": "Both have hurt the very people who never stopped caring about them, and both have to face that coming back is a long, humbling road rather than a single apology."
+  },
+  {
+    "source": "arc:avatar/sokka/ordinary_among_gifted",
+    "target": "arc:buffy/alexander_harris/left_behind_after_school",
+    "bridge": "Both feel like the only ordinary one in a circle of gifted people, and both hide the fear of being quietly pitied behind jokes and bravado."
+  },
+  {
+    "source": "arc:avatar/sokka/ordinary_among_gifted",
+    "target": "arc:naruto/sakura_haruno/tired_of_being_saved",
+    "bridge": "Both are measured against teammates with obvious gifts and feel like dead weight, and both have to find a strength that is genuinely their own instead of borrowed confidence."
+  },
+  {
+    "source": "arc:avatar/sokka/love_you_cant_keep",
+    "target": "arc:greys_anatomy/jo_wilson/left_behind_and_rebuilding",
+    "bridge": "Both lost a love just as they had finally let themselves trust it, and both have to find out whether they can open up again without being paralysed by the fear of losing it."
+  },
+  {
+    "source": "arc:avatar/toph_beifong/breaking_out_of_the_cage",
+    "target": "arc:greys_anatomy/arizona_robbins/losing_part_of_yourself",
+    "bridge": "Both are fiercely independent people whose loved ones see them as fragile, and both have to learn that accepting care is not the same as being pitied."
+  },
+  {
+    "source": "arc:avatar/toph_beifong/breaking_out_of_the_cage",
+    "target": "arc:buffy/dawn_summers/earning_her_place",
+    "bridge": "Both are treated as someone to protect rather than someone who can help, and both are desperate to show the people raising them that they are more capable than anyone thinks."
+  },
+  {
+    "source": "arc:avatar/toph_beifong/breaking_out_of_the_cage",
+    "target": "arc:greys_anatomy/cristina_yang/outgrowing_home",
+    "bridge": "Both have outgrown the home that tries to keep them small, and both are torn between the freedom they need and the guilt of leaving the people who love them."
+  },
+  {
+    "source": "arc:avatar/iroh/loving_someone_who_pushes_you_away",
+    "target": "arc:naruto/naruto_uzumaki/never_giving_up_on_a_friend",
+    "bridge": "Both refuse to give up on someone who keeps walking toward pain, and both have to live with the fact that you cannot force someone to be saved."
+  },
+  {
+    "source": "arc:avatar/iroh/loving_someone_who_pushes_you_away",
+    "target": "arc:greys_anatomy/alex_karev/partner_in_depression",
+    "bridge": "Both love someone who is sinking and shutting them out, and both have to accept that love alone can't fix a person, only keep a door open."
+  },
+  {
+    "source": "arc:avatar/iroh/from_power_to_peace",
+    "target": "arc:greys_anatomy/richard_webber/pushed_aside",
+    "bridge": "Both spent decades building status that has now slipped away, and both have to decide whether this is a humiliation or the start of a life measured differently."
+  },
+  {
+    "source": "arc:avatar/iroh/from_power_to_peace",
+    "target": "arc:buffy/cordelia_chase/from_fame_to_calling",
+    "bridge": "Both fell from a life of prestige into starting over with nothing, and both discover that humble work close to other people's pain might matter more than the status they lost."
+  },
+  {
+    "source": "arc:avatar/iroh/from_power_to_peace",
+    "target": "arc:game_of_thrones/sandor_clegane/second_chance",
+    "bridge": "Both have walked away from years of ambition or violence into simple, useful work, and both are haunted by the harm they did before."
+  },
+  {
+    "source": "arc:avatar/azula/the_perfect_daughter",
+    "target": "arc:buffy/wesley_wyndam_pryce/never_good_enough",
+    "bridge": "Both were raised to believe a parent's approval depends on flawless performance, and both treat every failure as proof they were never enough."
+  },
+  {
+    "source": "arc:avatar/azula/ruling_by_fear",
+    "target": "arc:game_of_thrones/cersei_lannister/holding_on_at_any_cost",
+    "bridge": "Both answer the fear of being left or losing control by tightening their grip on everyone around them, and both have to face what happens when fear stops working."
+  },
+  {
+    "source": "arc:avatar/korra/hothead_in_training",
+    "target": "arc:game_of_thrones/daenerys_targaryen/the_price_of_destiny",
+    "bridge": "Both have been told all their lives they were made for one great role, and both have to face who they are when the world refuses to cooperate with that story."
+  },
+  {
+    "source": "arc:avatar/korra/healing_after_trauma",
+    "target": "arc:greys_anatomy/cristina_yang/after_the_trauma",
+    "bridge": "Both built their identity on being the strongest, most capable person in the room, and after a terrifying experience both have to find their way back without pretending it never happened."
+  },
+  {
+    "source": "arc:avatar/korra/healing_after_trauma",
+    "target": "arc:greys_anatomy/owen_hunt/bringing_war_home",
+    "bridge": "Both come back from violence insisting they are fine, and both have to stop hiding from the people who love them long enough to admit the wound is real."
+  },
+  {
+    "source": "arc:avatar/korra/healing_after_trauma",
+    "target": "arc:game_of_thrones/bran_stark/after_the_fall",
+    "bridge": "Both were active, fearless people until an injury took away the life they imagined, and both have to rebuild a sense of self out of despair and other people's pity."
+  },
+  {
+    "source": "arc:avatar/tenzin/teaching_his_opposite",
+    "target": "arc:buffy/rupert_giles/mentor_becomes_father",
+    "bridge": "Both are mentors trained in a strict tradition who come to love the student they were assigned, and both are torn between doing things properly and trusting who that student is becoming."
+  },
+  {
+    "source": "arc:avatar/tenzin/teaching_his_opposite",
+    "target": "arc:naruto/tsunade/sending_loved_ones_into_danger",
+    "bridge": "Both are responsible for young people who want to charge into danger, and both have to learn to trust them instead of wrapping them in caution."
+  },
+  {
+    "source": "arc:avatar/tenzin/fathers_shadow",
+    "target": "arc:greys_anatomy/jackson_avery/beyond_the_family_name",
+    "bridge": "Both carry the weight of a celebrated family name, and both have to honour a legacy without letting it decide who they are."
+  },
+  {
+    "source": "arc:avatar/tenzin/fathers_shadow",
+    "target": "arc:naruto/kakashi_hatake/making_peace_with_a_disgraced_father",
+    "bridge": "Both define themselves entirely in relation to a parent, one by copying and one by rejecting, and both have to find a self that isn't simply a reaction to that parent."
+  },
+  {
+    "source": "arc:avatar/asami_sato/fathers_betrayal",
+    "target": "arc:greys_anatomy/jo_wilson/finding_where_you_came_from",
+    "bridge": "Both learn a truth about a parent that is darker than they imagined, and both have to decide what that truth says about who they are."
+  },
+  {
+    "source": "arc:avatar/asami_sato/fathers_betrayal",
+    "target": "arc:buffy/winifred_burkle/coming_back_to_life",
+    "bridge": "Both discover that someone they idolised caused them deep harm, and both have to decide what to do with a rage that admiration used to hold back."
+  },
+  {
+    "source": "arc:avatar/asami_sato/fathers_betrayal",
+    "target": "arc:game_of_thrones/sansa_stark/stepping_into_leadership",
+    "bridge": "Both are left to run a family's damaged affairs while carrying anger at the people who damaged them, and both have to learn which of their own instincts to trust."
+  },
+  {
+    "source": "arc:avatar/asami_sato/rival_to_closest_friend",
+    "target": "arc:game_of_thrones/brienne_of_tarth/unlikely_bond",
+    "bridge": "Both begin with someone they are wary and jealous of, and shared hardship turns that person into the one who sees them most truly, in a way neither can quite name."
+  },
+  {
+    "source": "arc:avatar/asami_sato/rival_to_closest_friend",
+    "target": "arc:greys_anatomy/callie_torres/coming_out",
+    "bridge": "Both find their closest bond growing into feelings they have no framework for, and both have to decide whether to follow them into an identity they never expected."
+  },
+  {
+    "source": "arc:avatar/lin_beifong/duty_above_all",
+    "target": "arc:greys_anatomy/richard_webber/pushed_aside",
+    "bridge": "Both have built their sense of worth on a position, and a public setback forces both to ask who they are when the title is taken away."
+  },
+  {
+    "source": "arc:avatar/lin_beifong/duty_above_all",
+    "target": "arc:greys_anatomy/cristina_yang/work_first_love_second",
+    "bridge": "Both are fiercely driven people who keep love at a distance because it seems to ask them to become smaller, and both have to decide what they will and won't give up."
+  },
+  {
+    "source": "arc:avatar/lin_beifong/old_family_wounds",
+    "target": "arc:game_of_thrones/arya_stark/the_other_sister",
+    "bridge": "Both have held a grudge against a sibling through decades of misunderstanding, and being forced back together makes both ask whether their anger is armour or a cage."
+  },
+  {
+    "source": "arc:avatar/bolin/little_brother_finding_his_worth",
+    "target": "arc:greys_anatomy/amelia_shepherd/out_of_the_shadow",
+    "bridge": "Both are the younger sibling everyone likes but no one takes seriously, and both have to find out who they are when they are no longer measured against the admired one."
+  },
+  {
+    "source": "arc:avatar/bolin/little_brother_finding_his_worth",
+    "target": "arc:buffy/alexander_harris/left_behind_after_school",
+    "bridge": "Both are the warm, funny one who suspects they are only the comic relief, and both have to find a kind of worth that doesn't depend on standing next to someone more gifted."
+  },
+  {
+    "source": "arc:avatar/bolin/following_the_wrong_leader",
+    "target": "arc:game_of_thrones/tyrion_lannister/advising_the_one_he_believes_in",
+    "bridge": "Both have pinned their loyalty on a leader they believe in, and both have to decide when defending that leader becomes betraying their own conscience."
+  },
+  {
+    "source": "arc:buffy/buffy_summers/first_love_turns",
+    "target": "arc:naruto/sakura_haruno/loving_someone_who_pushes_you_away",
+    "bridge": "Both love someone who is drifting into darkness and becoming a stranger, and both have to accept that loving them doesn't mean they can keep them."
+  },
+  {
+    "source": "arc:buffy/buffy_summers/first_love_turns",
+    "target": "arc:game_of_thrones/jaime_lannister/love_that_consumes",
+    "bridge": "Both are bound to a love their conscience knows is doing damage, and both have to decide whether they can protect themselves and others when their heart hasn't let go."
+  },
+  {
+    "source": "arc:buffy/buffy_summers/finding_reason_to_live",
+    "target": "arc:game_of_thrones/tyrion_lannister/rock_bottom_and_purpose",
+    "bridge": "Both have hit bottom after a shattering loss and are numbing themselves just to get through the day, and both need a reason to want to be alive again."
+  },
+  {
+    "source": "arc:buffy/buffy_summers/finding_reason_to_live",
+    "target": "arc:naruto/tsunade/the_healer_who_stopped_believing",
+    "bridge": "Both have been hollowed out by loss and are going through the motions while hiding the emptiness, and both have to decide whether to risk caring about anything again."
+  },
+  {
+    "source": "arc:buffy/angel/atonement_for_the_past",
+    "target": "arc:game_of_thrones/sandor_clegane/second_chance",
+    "bridge": "Both are trying to make up for a life of harm by quietly helping others, with no guarantee that redemption is even possible."
+  },
+  {
+    "source": "arc:buffy/angel/unexpected_fatherhood",
+    "target": "arc:greys_anatomy/richard_webber/wife_slipping_away",
+    "bridge": "Both love someone who no longer knows or wants them the way they once did, and both have to decide whether real love means stepping back."
+  },
+  {
+    "source": "arc:buffy/willow_rosenberg/wallflower_finds_herself",
+    "target": "arc:naruto/hinata_hyuga/courage_when_family_gave_up",
+    "bridge": "Both are shy, overlooked people who have spent years in the background, and both have to learn to take up room without becoming someone they're not."
+  },
+  {
+    "source": "arc:buffy/willow_rosenberg/wallflower_finds_herself",
+    "target": "arc:greys_anatomy/callie_torres/coming_out",
+    "bridge": "Both discover, later than they expected, a truth about who they love, and both have to decide whether to live it openly in front of the people who thought they knew them."
+  },
+  {
+    "source": "arc:buffy/willow_rosenberg/power_becomes_addiction",
+    "target": "arc:greys_anatomy/richard_webber/sobriety",
+    "bridge": "Both lean on something that makes them feel powerful and in control, and both have to rebuild trust after it takes over, knowing a single bad day could pull them back."
+  },
+  {
+    "source": "arc:buffy/spike/monster_to_man",
+    "target": "arc:greys_anatomy/alex_karev/tough_guy_softens",
+    "bridge": "Both have hurt people from behind a hard, cruel shell, and both have to discover whether they can become gentler for their own sake rather than only for someone else's approval."
+  },
+  {
+    "source": "arc:buffy/spike/monster_to_man",
+    "target": "arc:naruto/sasuke_uchiha/coming_back_from_darkness",
+    "bridge": "Both have a long history of harming people who tried to reach them, and both have to find out whether change can become truly theirs rather than a performance for someone else."
+  },
+  {
+    "source": "arc:buffy/rupert_giles/mentor_becomes_father",
+    "target": "arc:naruto/kakashi_hatake/making_peace_with_a_disgraced_father",
+    "bridge": "Both are caught between the rules of the institution they serve and the people they love, and both carry old shame about which of those loyalties comes first."
+  },
+  {
+    "source": "arc:buffy/rupert_giles/mentor_becomes_father",
+    "target": "arc:greys_anatomy/meredith_grey/breaking_rules_for_right_reasons",
+    "bridge": "Both are torn between the rules of an institution they serve and their instinct to protect someone vulnerable, and both have to decide what they owe the people caught in the fallout."
+  },
+  {
+    "source": "arc:buffy/rupert_giles/when_theyre_grown",
+    "target": "arc:greys_anatomy/richard_webber/pushed_aside",
+    "bridge": "Both lose the work that gave them purpose just as the people they guided outgrow them, and both have to reinvent themselves in midlife."
+  },
+  {
+    "source": "arc:buffy/rupert_giles/when_theyre_grown",
+    "target": "arc:naruto/jiraiya/a_life_measured_in_failures",
+    "bridge": "Both measure their lives by what they gave to the young people they guided, and both have to decide whether that was enough once the role falls away."
+  },
+  {
+    "source": "arc:buffy/alexander_harris/fear_of_becoming_his_parents",
+    "target": "arc:greys_anatomy/alex_karev/not_his_father",
+    "bridge": "Both are haunted by the fear that a parent's anger and cruelty is waiting inside them, and both are terrified of hurting the person they love most."
+  },
+  {
+    "source": "arc:buffy/alexander_harris/fear_of_becoming_his_parents",
+    "target": "arc:greys_anatomy/owen_hunt/distrusting_joy",
+    "bridge": "Both learned in childhood that happiness comes right before catastrophe, and both are tempted to blow up something good before it can hurt them."
+  },
+  {
+    "source": "arc:buffy/cordelia_chase/popularity_or_real_friends",
+    "target": "arc:game_of_thrones/jon_snow/looking_for_belonging",
+    "bridge": "Both were taught to look down on a group of people, and both find that the ones they dismissed may be the only ones who truly know them."
+  },
+  {
+    "source": "arc:buffy/cordelia_chase/popularity_or_real_friends",
+    "target": "arc:game_of_thrones/arya_stark/becoming_no_one",
+    "bridge": "Both are tempted to give up who they really are to stay accepted by a group that values the wrong things, and both have to decide whether belonging is worth disappearing."
+  },
+  {
+    "source": "arc:buffy/cordelia_chase/from_fame_to_calling",
+    "target": "arc:game_of_thrones/tyrion_lannister/rock_bottom_and_purpose",
+    "bridge": "Both lost the life they were sure they were owed, and both find that being needed by others might be a reason to keep going."
+  },
+  {
+    "source": "arc:buffy/faith_lehane/looking_for_a_family",
+    "target": "arc:game_of_thrones/theon_greyjoy/two_families",
+    "bridge": "Both are desperate to be claimed by someone, and that hunger leads both to turn on the people who actually cared for them."
+  },
+  {
+    "source": "arc:buffy/faith_lehane/looking_for_a_family",
+    "target": "arc:greys_anatomy/callie_torres/loving_someone_who_doesnt_choose_you",
+    "bridge": "Both keep sensing they are not the one who is truly chosen, and both have to decide what they are willing to accept just to belong somewhere."
+  },
+  {
+    "source": "arc:buffy/faith_lehane/facing_what_she_did",
+    "target": "arc:naruto/gaara/leading_those_who_feared_him",
+    "bridge": "Both have done real harm and now carry responsibility for people who remember it, and both learn that accountability is practised every day rather than proved once."
+  },
+  {
+    "source": "arc:buffy/faith_lehane/facing_what_she_did",
+    "target": "arc:game_of_thrones/theon_greyjoy/earning_forgiveness",
+    "bridge": "Both have done serious harm and been harmed, and both have to stop running from what they did and decide to be defined by what they do next."
+  },
+  {
+    "source": "arc:buffy/dawn_summers/am_i_real",
+    "target": "arc:game_of_thrones/jon_snow/love_duty_and_identity",
+    "bridge": "Both learn something about where they came from that changes how everyone sees them, and both have to decide whether it changes who they are."
+  },
+  {
+    "source": "arc:buffy/dawn_summers/earning_her_place",
+    "target": "arc:naruto/sakura_haruno/tired_of_being_saved",
+    "bridge": "Both are tired of being the one others have to protect, and both are hungry to prove they can pull their weight."
+  },
+  {
+    "source": "arc:buffy/dawn_summers/earning_her_place",
+    "target": "arc:naruto/shikamaru_nara/losing_a_mentor",
+    "bridge": "Both lose the adults who kept them safe and are pushed to grow up fast, and both have to decide what to do with grief and anger they don't know how to hold."
+  },
+  {
+    "source": "arc:buffy/wesley_wyndam_pryce/never_good_enough",
+    "target": "arc:game_of_thrones/tyrion_lannister/the_unwanted_son",
+    "bridge": "Both are clever people dismissed by a father who is never impressed, and both have to earn respect among people who don't take them seriously."
+  },
+  {
+    "source": "arc:buffy/wesley_wyndam_pryce/the_hard_call_alone",
+    "target": "arc:naruto/itachi_uchiha/the_brother_who_chose_to_be_hated",
+    "bridge": "Both make an agonising decision alone because they trust no one else with it, and both are isolated by the weight of carrying it."
+  },
+  {
+    "source": "arc:buffy/anya_jenkins/owning_her_life",
+    "target": "arc:greys_anatomy/jo_wilson/left_behind_and_rebuilding",
+    "bridge": "Both are left suddenly by the person they had built their life around, and both have to find out whether they are still worthy of love on their own."
+  },
+  {
+    "source": "arc:buffy/anya_jenkins/owning_her_life",
+    "target": "arc:greys_anatomy/amelia_shepherd/choosing_her_own_shape",
+    "bridge": "Both have always shaped themselves around someone else's idea of who they should be, and both have to discover what they actually want even if it disappoints people."
+  },
+  {
+    "source": "arc:buffy/winifred_burkle/coming_back_to_life",
+    "target": "arc:greys_anatomy/jo_wilson/learning_to_be_safe",
+    "bridge": "Both survived something that made closeness feel dangerous, and both have to relearn, slowly and with steady friends, whether it is safe to be known."
+  },
+  {
+    "source": "arc:game_of_thrones/daenerys_targaryen/learning_to_rule",
+    "target": "arc:greys_anatomy/miranda_bailey/leading_the_hospital",
+    "bridge": "Both are idealistic people handed the top job who push bold changes, and both find that every decision hurts someone and splits the people they lead."
+  },
+  {
+    "source": "arc:game_of_thrones/tyrion_lannister/the_unwanted_son",
+    "target": "arc:naruto/neji_hyuga/breaking_free_from_fate",
+    "bridge": "Both are gifted people treated as lesser by their own family's hierarchy, and both have to decide how much bitterness to carry toward a family that won't recognise them."
+  },
+  {
+    "source": "arc:game_of_thrones/tyrion_lannister/rock_bottom_and_purpose",
+    "target": "arc:naruto/tsunade/the_healer_who_stopped_believing",
+    "bridge": "Both have walked away from what they were good at and numbed the loss with drink, and both are pulled back toward life by someone who needs them."
+  },
+  {
+    "source": "arc:game_of_thrones/jon_snow/leading_those_who_resent_him",
+    "target": "arc:naruto/shikamaru_nara/reluctant_leader",
+    "bridge": "Both are put in charge of their own friends and peers before they feel ready, and both discover how lonely leadership is when the people you lead doubt you."
+  },
+  {
+    "source": "arc:game_of_thrones/jon_snow/leading_those_who_resent_him",
+    "target": "arc:naruto/gaara/leading_those_who_feared_him",
+    "bridge": "Both lead people who openly resent or fear them, and both have to win trust by example rather than by title."
+  },
+  {
+    "source": "arc:game_of_thrones/jon_snow/love_duty_and_identity",
+    "target": "arc:greys_anatomy/derek_shepherd/starting_over_after_betrayal",
+    "bridge": "Both are pulled between duty and shared history on one side and a new love on the other, and both have to work out what they truly want."
+  },
+  {
+    "source": "arc:game_of_thrones/jaime_lannister/losing_what_defined_him",
+    "target": "arc:naruto/rock_lee/when_your_body_fails_you",
+    "bridge": "Both built their entire identity on one physical gift and then had it taken away, and both have to find out who they are without it."
+  },
+  {
+    "source": "arc:game_of_thrones/jaime_lannister/losing_what_defined_him",
+    "target": "arc:greys_anatomy/arizona_robbins/losing_part_of_yourself",
+    "bridge": "Both lose a part of themselves that defined them, and both have to face how they see themselves when they can no longer rely on what they were."
+  },
+  {
+    "source": "arc:game_of_thrones/jaime_lannister/losing_what_defined_him",
+    "target": "arc:greys_anatomy/cristina_yang/after_the_trauma",
+    "bridge": "Both are defined by the one skill that made them exceptional, and both have to rebuild a self when that skill is suddenly out of reach."
+  },
+  {
+    "source": "arc:game_of_thrones/jaime_lannister/love_that_consumes",
+    "target": "arc:naruto/sakura_haruno/loving_someone_who_pushes_you_away",
+    "bridge": "Both are devoted to someone whose path is dragging them into harm, and both have to separate real love from loyalty, guilt and fear of losing the future they imagined."
+  },
+  {
+    "source": "arc:game_of_thrones/sansa_stark/taking_her_life_back",
+    "target": "arc:greys_anatomy/jo_wilson/learning_to_be_safe",
+    "bridge": "Both have survived abuse and have to decide whether safety means hiding or reclaiming the life that was taken from them."
+  },
+  {
+    "source": "arc:game_of_thrones/sansa_stark/stepping_into_leadership",
+    "target": "arc:greys_anatomy/miranda_bailey/leading_the_hospital",
+    "bridge": "Both are stepping into leadership among people who still see them as they used to be, and both have to learn the difference between being in charge and being right."
+  },
+  {
+    "source": "arc:game_of_thrones/arya_stark/list_of_names",
+    "target": "arc:naruto/shikamaru_nara/losing_a_mentor",
+    "bridge": "Both lose the people who sheltered them and have to grow up fast, and both have to decide what to do with the anger that grief leaves behind."
+  },
+  {
+    "source": "arc:game_of_thrones/arya_stark/list_of_names",
+    "target": "arc:naruto/sasuke_uchiha/living_for_revenge",
+    "bridge": "Both organise their lives around settling a childhood score, and both have to choose between that old wound and the people who care for them now."
+  },
+  {
+    "source": "arc:game_of_thrones/arya_stark/the_other_sister",
+    "target": "arc:greys_anatomy/amelia_shepherd/out_of_the_shadow",
+    "bridge": "Both grew up as the difficult sibling next to the one who fitted the family mould, and both have to decide whether that sibling is a rival or an ally."
+  },
+  {
+    "source": "arc:game_of_thrones/theon_greyjoy/earning_forgiveness",
+    "target": "arc:naruto/gaara/leading_those_who_feared_him",
+    "bridge": "Both have done harm and now try to earn a place among people who remember it, by being useful rather than by asking to be forgiven."
+  },
+  {
+    "source": "arc:game_of_thrones/brienne_of_tarth/proving_herself",
+    "target": "arc:naruto/rock_lee/hard_work_vs_talent",
+    "bridge": "Both are mocked for even trying to succeed at something they supposedly aren't suited for, and both pour everything into proving the doubters wrong."
+  },
+  {
+    "source": "arc:game_of_thrones/brienne_of_tarth/proving_herself",
+    "target": "arc:naruto/naruto_uzumaki/earning_acknowledgement",
+    "bridge": "Both have been ridiculed all their lives for not fitting what others expect, and both have to decide whether outside recognition is what they actually need."
+  },
+  {
+    "source": "arc:game_of_thrones/brienne_of_tarth/keeping_the_promise",
+    "target": "arc:naruto/naruto_uzumaki/never_giving_up_on_a_friend",
+    "bridge": "Both have made a promise that everyone else says to abandon, and both have to decide whether faithfulness means sticking to its letter or its spirit."
+  },
+  {
+    "source": "arc:game_of_thrones/brienne_of_tarth/keeping_the_promise",
+    "target": "arc:naruto/kakashi_hatake/teaching_the_lesson_that_cost_everything",
+    "bridge": "Both failed to protect someone they loved, and both turn that guilt into a lifelong duty to the people who came after."
+  },
+  {
+    "source": "arc:game_of_thrones/samwell_tarly/courage_his_own_way",
+    "target": "arc:naruto/hinata_hyuga/courage_when_family_gave_up",
+    "bridge": "Both were written off by a family that prizes toughness, and both have to discover that their gentler kind of courage is a real strength."
+  },
+  {
+    "source": "arc:game_of_thrones/samwell_tarly/dream_institution",
+    "target": "arc:greys_anatomy/meredith_grey/breaking_rules_for_right_reasons",
+    "bridge": "Both know something urgent that the people in charge refuse to hear, and both have to decide whether to follow the rules or break them to do what's right."
+  },
+  {
+    "source": "arc:game_of_thrones/samwell_tarly/dream_institution",
+    "target": "arc:greys_anatomy/cristina_yang/outgrowing_home",
+    "bridge": "Both land in the place they always dreamed of and find their ambitions stifled by politics and other people's priorities, and both have to decide whether staying is loyalty or giving up."
+  },
+  {
+    "source": "arc:game_of_thrones/sandor_clegane/reluctant_guardian",
+    "target": "arc:naruto/jiraiya/the_reluctant_father_figure",
+    "bridge": "Both are bitter loners who end up responsible for a young person with no one else, and both find meaning in a bond they never wanted and won't admit to."
+  },
+  {
+    "source": "arc:game_of_thrones/bran_stark/after_the_fall",
+    "target": "arc:naruto/rock_lee/when_your_body_fails_you",
+    "bridge": "Both are driven young people whose bodies suddenly can't do what their dreams require, and both have to face that the old life may not come back."
+  },
+  {
+    "source": "arc:game_of_thrones/bran_stark/after_the_fall",
+    "target": "arc:greys_anatomy/arizona_robbins/losing_part_of_yourself",
+    "bridge": "Both suffer an injury that changes their body and their future, and both pass through bitterness while others either leave or pity them."
+  },
+  {
+    "source": "arc:greys_anatomy/meredith_grey/letting_love_in",
+    "target": "arc:naruto/gaara/the_boy_they_called_a_monster",
+    "bridge": "Both grew up feeling unwanted and decided the safest thing was to need no one, and both have to question whether that coldness was ever really strength."
+  },
+  {
+    "source": "arc:greys_anatomy/richard_webber/sobriety",
+    "target": "arc:naruto/tsunade/the_healer_who_stopped_believing",
+    "bridge": "Both numbed themselves with drinking when the weight of their losses got too heavy, and both have to rebuild trust and purpose without the crutch."
+  },
+  {
+    "source": "arc:greys_anatomy/alex_karev/tough_guy_softens",
+    "target": "arc:naruto/gaara/the_boy_they_called_a_monster",
+    "bridge": "Both grew up in chaos that taught them to wall themselves off with hostility, and both are changed by people who refuse to give up on them."
+  },
+  {
+    "source": "arc:greys_anatomy/alex_karev/partner_in_depression",
+    "target": "arc:naruto/sakura_haruno/loving_someone_who_pushes_you_away",
+    "bridge": "Both love someone who is sinking and won't let them in, and both swing between waiting and pushing while facing their own fear of being left."
+  },
+  {
+    "source": "arc:greys_anatomy/alex_karev/partner_in_depression",
+    "target": "arc:naruto/naruto_uzumaki/never_giving_up_on_a_friend",
+    "bridge": "Both refuse to let go of someone who is pulling away into their own pain, and both have to learn that staying doesn't mean they can fix them."
+  },
+  {
+    "source": "arc:greys_anatomy/owen_hunt/wanting_a_family",
+    "target": "arc:naruto/jiraiya/the_reluctant_father_figure",
+    "bridge": "Both long to be a parent, and both have to accept that caring for the next generation can take shapes they never planned."
+  },
+  {
+    "source": "arc:greys_anatomy/callie_torres/loving_someone_who_doesnt_choose_you",
+    "target": "arc:naruto/hinata_hyuga/loving_from_afar",
+    "bridge": "Both love someone whose heart is pointed elsewhere, and both have to decide how long they can wait to be chosen."
+  },
+  {
+    "source": "arc:greys_anatomy/jackson_avery/beyond_the_family_name",
+    "target": "arc:naruto/neji_hyuga/breaking_free_from_fate",
+    "bridge": "Both have their worth decided by where they were born in a family's hierarchy, and both have to fight to be judged on what they have actually earned."
+  }
+]

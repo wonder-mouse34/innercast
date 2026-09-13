@@ -1,0 +1,890 @@
+{
+  "show": "my_hero_academia",
+  "characters": [
+    {
+      "id": "char:my_hero_academia/izuku_midoriya",
+      "name": "Izuku Midoriya (Deku)",
+      "role": "A timid, hero-obsessed fourteen-year-old who was born without a superpower in a world where almost everyone has one, and who still dreams of becoming a hero like his idol All Might.",
+      "relations": [
+        {"target": "char:my_hero_academia/all_might", "relation": "mentor"},
+        {"target": "char:my_hero_academia/katsuki_bakugo", "relation": "rival"},
+        {"target": "char:my_hero_academia/katsuki_bakugo", "relation": "friend"},
+        {"target": "char:my_hero_academia/shoto_todoroki", "relation": "friend"},
+        {"target": "char:my_hero_academia/ochaco_uraraka", "relation": "friend"},
+        {"target": "char:my_hero_academia/ochaco_uraraka", "relation": "partner"},
+        {"target": "char:my_hero_academia/tenya_iida", "relation": "friend"},
+        {"target": "char:my_hero_academia/shota_aizawa", "relation": "mentor"},
+        {"target": "char:my_hero_academia/endeavor", "relation": "mentor"}
+      ],
+      "arcs": [
+        {
+          "id": "arc:my_hero_academia/izuku_midoriya/the_kid_who_was_told_no",
+          "title": "The kid everyone said couldn't",
+          "literal_situation": "In a world where most people develop a superpower as small children, Izuku is one of the few born without one. He fills notebooks with analysis of every hero he sees and still wants to become one himself, while his childhood friend Katsuki mocks and bullies him for it daily. When he finally meets his idol All Might, even he tells Izuku to be realistic.",
+          "pattern_label": "chasing a dream everyone says you're not built for",
+          "pattern_text": "Someone has been told since childhood that they simply lack what it takes for the one thing they want to do with their life, and even the people they admire tell them to be realistic. They make up for it with obsessive study and sheer stubbornness. When a door unexpectedly opens, they have to prove, mostly to themselves, that they belong among people who seem to have been born for it.",
+          "hook": "A shy, bullied, relentlessly hopeful teenager with no natural advantages, being told by everyone, including his hero, to give up his dream.",
+          "why_relatable": "How long do you keep going when every sign says no? Is wanting something badly enough a qualification? And when someone finally believes in you, how do you stop feeling that you have to earn it at any cost to yourself?",
+          "watch_for": [
+            "What does he do in the moment when nobody else moves?",
+            "How does he handle it when the classmate who tormented him ends up in the same place he is?",
+            "Which new people start to believe in him, and why?"
+          ],
+          "start_at": "S1E1",
+          "span": "S1-S2",
+          "situations": [
+            {"id": "confidence_struggle", "weight": 0.9},
+            {"id": "coming_of_age", "weight": 0.7},
+            {"id": "finding_your_people", "weight": 0.6},
+            {"id": "mentor_and_protege", "weight": 0.6}
+          ],
+          "conflicts": ["fitting_in_vs_standing_out", "safety_vs_growth"],
+          "emotions": {"start": ["inadequacy", "rejection", "hope"], "middle": ["determination", "self_doubt", "belonging"], "end": ["confidence", "self_respect"]},
+          "ending_tone": "hopeful",
+          "intensity": "moderate",
+          "warnings": ["war_and_violence", "medical_trauma"],
+          "example_user_messages": [
+            "Everyone in my life has told me to pick something more realistic, and I just can't let this dream go.",
+            "I've studied harder than anyone for years, but I still feel like I don't have the natural talent everyone else was born with.",
+            "Someone I really look up to told me I'm not cut out for this. I don't know whether to listen or prove them wrong.",
+            "I finally got into the place I always wanted to be, and now I'm terrified they'll figure out I don't belong."
+          ],
+          "spoiler": {
+            "summary": "When Izuku runs in powerless to save Katsuki from the Sludge Villain, All Might recognises a true hero's instinct, reveals his secret injury and chooses Izuku as his successor. After ten months of training Izuku inherits One For All, passes the U.A. entrance exam by saving Ochaco, and outwits Katsuki in the battle trial. He wins over Tenya, Ochaco and eventually Shoto, earning genuine friends and respect. Across the whole series he goes on to defeat All For One and Tomura at the cost of his power, becomes a teacher, and eight years later returns to hero work in a technological suit funded by his classmates; he and Ochaco begin a relationship.",
+            "key_events": [
+              "Saves Katsuki from the Sludge Villain with no power (S1E2)",
+              "All Might chooses him and passes on One For All (S1E3-S1E4)",
+              "Gets into U.A. through rescue points after saving Ochaco",
+              "Beats Katsuki in the battle trial but breaks his arm",
+              "Breaks through Shoto's walls at the Sports Festival at the cost of his fingers",
+              "Loses One For All in the final battle; becomes a teacher, then returns as a hero in a mechanical suit; begins dating Ochaco"
+            ],
+            "got_right": "He never lets other people's verdict on his potential become his own, and he acts to help others before thinking about whether he is qualified to.",
+            "got_wrong": "He treats his own body and wellbeing as expendable, as if his worth has to be earned through self-sacrifice."
+          }
+        },
+        {
+          "id": "arc:my_hero_academia/izuku_midoriya/living_up_to_a_legacy",
+          "title": "Shoes too big to fill",
+          "literal_situation": "Izuku has been handed All Might's power, but his body can't contain it: every time he uses it at full strength, the limb he uses breaks. He is surrounded by classmates who have trained with their powers for years, he has to keep the source of his strength secret, and he feels he must live up to the greatest hero alive.",
+          "pattern_label": "inheriting a legacy you don't feel worthy of",
+          "pattern_text": "Someone is chosen to carry on the work of a person they have idolised all their life, and is handed responsibility long before they have the skill to handle it. Trying to live up to it, they copy their predecessor and push themselves until they break. They have to learn to grow at their own pace, find their own way of doing things, and trust that being chosen was not a mistake.",
+          "hook": "A newly chosen successor who can barely use what he's been given without hurting himself, trying to live up to his hero's name in front of far more experienced peers.",
+          "why_relatable": "What do you do with a gift you don't feel you've earned? How do you honour a mentor without becoming a copy of them? And how many times can you break yourself trying to prove you were worth choosing?",
+          "watch_for": [
+            "Who warns him about the damage he's doing to himself, and does he listen?",
+            "When does he stop imitating his mentor and start doing things his own way?",
+            "How does his mentor's approach to teaching help him, and where does it fall short?"
+          ],
+          "start_at": "S1E4",
+          "span": "S1-S4",
+          "situations": [
+            {"id": "imposter_syndrome", "weight": 0.9},
+            {"id": "mentor_and_protege", "weight": 0.8},
+            {"id": "responsibility_you_didnt_ask_for", "weight": 0.6},
+            {"id": "identity_and_self_acceptance", "weight": 0.5}
+          ],
+          "conflicts": ["perfectionism_vs_good_enough", "safety_vs_growth"],
+          "emotions": {"start": ["inadequacy", "anxiety", "determination"], "middle": ["self_doubt", "overwhelm", "pride"], "end": ["confidence", "self_respect"]},
+          "ending_tone": "hopeful",
+          "intensity": "moderate",
+          "warnings": ["war_and_violence", "medical_trauma", "child_endangerment"],
+          "example_user_messages": [
+            "My boss handpicked me to take over from them and I feel like a fraud every single day.",
+            "I keep trying to do the job exactly the way my mentor did and I'm burning myself out.",
+            "Everyone expects me to fill the shoes of someone legendary, and I'm nowhere close.",
+            "I keep pushing myself past my limits because I'm scared that if I slow down they'll regret choosing me."
+          ],
+          "spoiler": {
+            "summary": "Izuku repeatedly shatters his limbs using One For All at 100% until Recovery Girl warns he may lose use of his arms. Gran Torino teaches him Full Cowl, letting him spread the power through his body. After the Kamino Incident All Might uses his last power to defeat All For One, retires, and tells Izuku 'Now it's your turn'. Katsuki forces the truth out of him and becomes a fellow keeper of the secret. After permanent scarring from his fight with Muscular, Izuku creates his own kick-based Shoot Style, stepping out of All Might's shadow. Sir Nighteye doubts him as successor, yet Izuku saves Eri from Overhaul, and later learns he can access the Quirks of past holders.",
+            "key_events": [
+              "Breaks his limbs repeatedly; Recovery Girl warns of permanent damage",
+              "Learns Full Cowl from Gran Torino (S2)",
+              "All Might retires after Kamino and tells him it's his turn (S3)",
+              "Katsuki learns the secret after their night fight (S3)",
+              "Develops Shoot Style to protect his arms (S3)",
+              "Defeats Overhaul at 100% while Eri rewinds his injuries (S4)"
+            ],
+            "got_right": "He eventually builds a style suited to his own body instead of copying his idol, and learns to study his limits instead of ignoring them.",
+            "got_wrong": "For a long time he equates worthiness with self-destruction, repeatedly injuring himself when a smarter approach was available."
+          }
+        },
+        {
+          "id": "arc:my_hero_academia/izuku_midoriya/carrying_it_alone",
+          "title": "Pushing everyone away to keep them safe",
+          "literal_situation": "Later in the series, after a turning point that leaves Izuku convinced that the people he cares about are in danger simply by being near him, he decides that the responsible thing is to shoulder the fight completely alone and cut himself off from friends and mentors.",
+          "pattern_label": "isolating yourself to protect the people you love",
+          "pattern_text": "Someone who feels responsible for everyone becomes convinced that their problems will hurt the people around them, so they withdraw and try to carry everything alone. They stop sleeping, stop eating properly and stop letting anyone help. The people who love them have to decide whether to respect the distance or fight to be let back in.",
+          "hook": "A young man who has decided that loving his friends means leaving them behind, running himself into the ground rather than ask for help.",
+          "why_relatable": "When does protecting people turn into shutting them out? Is carrying everything yourself noble, or a kind of pride? And can you let people help when you're convinced you're the danger?",
+          "watch_for": [
+            "What does he stop doing for himself, and who notices first?",
+            "How do the people he left behind react: with anger, fear, or something else?",
+            "What does it take for him to accept help?"
+          ],
+          "start_at": "S6",
+          "span": "S6",
+          "situations": [
+            {"id": "responsibility_you_didnt_ask_for", "weight": 0.9},
+            {"id": "burnout_at_work", "weight": 0.7},
+            {"id": "loneliness", "weight": 0.7},
+            {"id": "finding_your_people", "weight": 0.6}
+          ],
+          "conflicts": ["independence_vs_connection", "control_vs_trust"],
+          "emotions": {"start": ["dread", "guilt", "determination"], "middle": ["burnout", "numbness", "loneliness"], "end": ["relief", "belonging"]},
+          "ending_tone": "hopeful",
+          "intensity": "heavy",
+          "warnings": ["war_and_violence", "grief", "medical_trauma"],
+          "example_user_messages": [
+            "I've stopped telling my friends what's going on because I don't want to drag them into my mess.",
+            "I'm barely sleeping or eating, but I feel like if I stop even for a day, someone will get hurt.",
+            "Everyone keeps offering to help and I keep saying no. It feels safer to just handle it all myself.",
+            "My friends staged basically an intervention and I was angry, but part of me was relieved."
+          ],
+          "spoiler": {
+            "summary": "After the Paranormal Liberation War, All For One targets Izuku for One For All. Izuku writes a letter to his class and leaves U.A. to protect everyone, then even leaves All Might behind. As 'Dark Deku' he hunts villains without rest, becoming ragged and frightening to civilians; Lady Nagant's fight ends with her horribly injured by All For One's trap. Class 1-A tracks him down and fights him to exhaustion; Katsuki sincerely apologises for years of bullying, Tenya takes his hand, and Ochaco publicly defends him to the frightened refugees at U.A. so he can come home.",
+            "key_events": [
+              "Leaves U.A. with a letter to his classmates",
+              "Leaves All Might behind and becomes a ragged vigilante ('Dark Deku')",
+              "Lady Nagant is disfigured by All For One's hidden Quirk",
+              "Class 1-A fights to bring him back; Katsuki apologises for the bullying",
+              "Ochaco's speech convinces the refugees to let him into U.A."
+            ],
+            "got_right": "His desire to protect others is genuine, and he ultimately lets his friends carry the load with him.",
+            "got_wrong": "He decides alone what's best for everyone, treating his own collapse as acceptable and his friends' help as a burden."
+          }
+        }
+      ]
+    },
+    {
+      "id": "char:my_hero_academia/katsuki_bakugo",
+      "name": "Katsuki Bakugo",
+      "role": "A brilliant, explosive-tempered teenager with a powerful explosion ability, praised all his life as a prodigy, who bullies his Quirkless childhood friend Izuku and is determined to become the No. 1 hero.",
+      "relations": [
+        {"target": "char:my_hero_academia/izuku_midoriya", "relation": "rival"},
+        {"target": "char:my_hero_academia/izuku_midoriya", "relation": "friend"},
+        {"target": "char:my_hero_academia/all_might", "relation": "mentor"},
+        {"target": "char:my_hero_academia/shota_aizawa", "relation": "mentor"},
+        {"target": "char:my_hero_academia/endeavor", "relation": "mentor"},
+        {"target": "char:my_hero_academia/shoto_todoroki", "relation": "rival"},
+        {"target": "char:my_hero_academia/ochaco_uraraka", "relation": "colleague"},
+        {"target": "char:my_hero_academia/tenya_iida", "relation": "colleague"}
+      ],
+      "arcs": [
+        {
+          "id": "arc:my_hero_academia/katsuki_bakugo/the_prodigy_meets_his_equals",
+          "title": "The golden boy's first loss",
+          "literal_situation": "Katsuki has been told he is exceptional since early childhood and has always been the best in any room. He treats classmates as 'extras' and sees Izuku as beneath him. At U.A. he is suddenly surrounded by people as talented as he is, and in their first class exercise he is pitted directly against the boy he always looked down on.",
+          "pattern_label": "the gifted kid whose identity rests on being the best",
+          "pattern_text": "Someone praised for their talent from the very start built their whole sense of self on being number one, and learned to treat anyone who seemed weaker with contempt. Arriving somewhere full of equals, and watching someone they always dismissed start to catch up, cracks that identity open. They have to find out whether they can lose, rely on others and still respect themselves.",
+          "hook": "A cocky, genuinely gifted teenager who has never had to doubt himself, meeting real competition for the first time.",
+          "why_relatable": "Who are you if you're no longer the best? Why does it hurt so much more when the person who beats you is someone you never took seriously? And can you learn from losing without letting it destroy you?",
+          "watch_for": [
+            "How does he react the first time he loses in front of everyone?",
+            "What does he refuse to accept, even when he wins?",
+            "Who are the first people whose effort he starts to respect?"
+          ],
+          "start_at": "S1E6",
+          "span": "S1-S3",
+          "situations": [
+            {"id": "identity_and_self_acceptance", "weight": 0.8},
+            {"id": "coming_of_age", "weight": 0.6},
+            {"id": "confidence_struggle", "weight": 0.5},
+            {"id": "finding_your_people", "weight": 0.4}
+          ],
+          "conflicts": ["perfectionism_vs_good_enough", "independence_vs_connection"],
+          "emotions": {"start": ["pride", "anger", "envy"], "middle": ["inadequacy", "shame", "determination"], "end": ["self_respect", "belonging"]},
+          "ending_tone": "hopeful",
+          "intensity": "moderate",
+          "warnings": ["war_and_violence", "child_endangerment"],
+          "example_user_messages": [
+            "I was always the smartest one in class, and now at university I'm just average and I can't stand it.",
+            "Someone I used to look down on just beat me at the thing I'm supposed to be best at, and I'm furious.",
+            "I don't know how to work in a team. I'd rather do everything myself than depend on anyone.",
+            "If I'm not number one, I honestly don't know what I'm worth."
+          ],
+          "spoiler": {
+            "summary": "Katsuki loses the battle trial to Izuku and breaks down in tears, vowing to become number one. He wins the Sports Festival but is enraged because Shoto held back, refusing to accept the victory. The League of Villains kidnaps him at the forest training camp to recruit him; he refuses outright, and his classmates help rescue him at Kamino, where All Might uses up his power defeating All For One. Katsuki blames his own weakness for his idol's retirement, fails the provisional license exam through his arrogance, and gradually learns to cooperate and value his classmates.",
+            "key_events": [
+              "Loses the battle trial to Izuku and cries (S1)",
+              "Wins the Sports Festival but refuses the result because Shoto held back (S2)",
+              "Kidnapped by the League of Villains; refuses to join them (S3)",
+              "Rescued at Kamino; blames himself for All Might's retirement (S3)",
+              "Fails the provisional license exam and takes remedial classes (S3)"
+            ],
+            "got_right": "He works relentlessly, values honest merit over hollow wins, and never compromises his commitment to being a hero.",
+            "got_wrong": "His need to be superior makes him cruel, uncooperative and blind to his own mistakes, especially toward Izuku."
+          }
+        },
+        {
+          "id": "arc:my_hero_academia/katsuki_bakugo/facing_the_person_he_hurt",
+          "title": "Facing the friend he tormented",
+          "literal_situation": "Later in the series, after a turning point that leaves Katsuki quietly blaming himself for something he can't undo, the resentment he has always aimed at Izuku finally boils over. He drags Izuku out at night and demands a fight, not to win, but to understand why the boy he always looked down on keeps getting ahead.",
+          "pattern_label": "owning the harm you did to a childhood friend",
+          "pattern_text": "Someone who spent years putting down a childhood friend starts to realise the cruelty came from their own insecurity and envy. Pride makes it almost impossible to say so out loud. They have to move from rivalry to respect, face what they did, and find out whether an apology can mean anything after so long.",
+          "hook": "A proud young man who can't admit he was wrong, being forced to confront the envy behind years of bullying.",
+          "why_relatable": "Why do we sometimes hurt the people we secretly admire? Can pride and genuine remorse live in the same person? And what does a real apology cost someone who has never said sorry?",
+          "watch_for": [
+            "What does he actually say when he finally lets his guard down?",
+            "How does the way he talks to Izuku, and about him, change over time?",
+            "What does he do that shows he cares before he's willing to say it?"
+          ],
+          "start_at": "S3E23",
+          "span": "S3-S7",
+          "situations": [
+            {"id": "redemption_after_mistakes", "weight": 0.9},
+            {"id": "identity_and_self_acceptance", "weight": 0.6},
+            {"id": "friendship_ending", "weight": 0.3}
+          ],
+          "conflicts": ["past_vs_future", "loyalty_vs_ambition"],
+          "emotions": {"start": ["guilt", "envy", "anger"], "middle": ["shame", "determination"], "end": ["acceptance", "self_respect", "peace"]},
+          "ending_tone": "hopeful",
+          "intensity": "heavy",
+          "warnings": ["war_and_violence", "medical_trauma"],
+          "example_user_messages": [
+            "I was really mean to someone for years and I'm only now realising it was because I was jealous of them.",
+            "I want to apologise to an old friend but my pride keeps getting in the way.",
+            "We've been rivals since we were kids and I don't know how to just be on the same side.",
+            "I treated someone like they were nothing, and now they're the person I respect most. How do I fix that?"
+          ],
+          "spoiler": {
+            "summary": "In their second night fight, Katsuki confesses his guilt over All Might's retirement and his envy of Izuku, learns the truth about One For All and swears to keep it secret. He begins training alongside Izuku and, during the Paranormal Liberation War, throws himself in front of Tomura's attack to save him. When Izuku goes rogue, Katsuki sincerely apologises for all the bullying and calls him by his first name. In the Final War he is killed by Tomura, revived by Edgeshot, and saves All Might from All For One. After the war he cries on learning Izuku lost his power, and years later leads the fundraising for Izuku's suit so they can compete for life.",
+            "key_events": [
+              "Deku vs Kacchan 2: confesses guilt and learns about One For All (S3E23)",
+              "Takes Tomura's Rivet Stabs to save Izuku (S6)",
+              "Apologises to Izuku for years of bullying (S6)",
+              "Briefly dies in the Final War, is revived and saves All Might (S7)",
+              "Cries at the news Izuku is Quirkless; later funds his hero suit"
+            ],
+            "got_right": "He eventually takes full responsibility without excuses and backs his apology with years of loyalty.",
+            "got_wrong": "He let pride delay the apology for years, and his abrasiveness keeps costing him even as an adult."
+          }
+        }
+      ]
+    },
+    {
+      "id": "char:my_hero_academia/shoto_todoroki",
+      "name": "Shoto Todoroki",
+      "role": "A cool, aloof top student admitted to U.A. on recommendation, the youngest son of the No. 2 hero Endeavor, who can create ice from one side of his body and fire from the other.",
+      "relations": [
+        {"target": "char:my_hero_academia/endeavor", "relation": "parent"},
+        {"target": "char:my_hero_academia/izuku_midoriya", "relation": "friend"},
+        {"target": "char:my_hero_academia/katsuki_bakugo", "relation": "rival"},
+        {"target": "char:my_hero_academia/tenya_iida", "relation": "friend"},
+        {"target": "char:my_hero_academia/ochaco_uraraka", "relation": "friend"},
+        {"target": "char:my_hero_academia/shota_aizawa", "relation": "mentor"},
+        {"target": "char:my_hero_academia/all_might", "relation": "mentor"}
+      ],
+      "arcs": [
+        {
+          "id": "arc:my_hero_academia/shoto_todoroki/refusing_his_fathers_half",
+          "title": "Refusing to be his father's son",
+          "literal_situation": "At the U.A. Sports Festival, Shoto coldly declares that he intends to beat Izuku. He is one of the strongest students in the class, yet out of spite for his domineering father Endeavor, who has pushed him relentlessly since early childhood, he refuses to use the fire half of his power in a fight and relies only on ice.",
+          "pattern_label": "refusing to become the parent who shaped you",
+          "pattern_text": "Someone raised by a controlling, harsh parent who treated them as a project rather than a person has built their identity around rejection, refusing any part of themselves that resembles that parent. The refusal keeps them cold, isolated and only half of what they could be. They have to work out whether what they inherited belongs to the parent or to them, and whether resentment can loosen without pretending the harm never happened.",
+          "hook": "A gifted, emotionally shut-down teenager who is holding back half of himself just to spite his father.",
+          "why_relatable": "If you got something from a parent who hurt you, do you have to reject it to reject them? Is living in defiance of someone still letting them run your life? And can you ever reconnect with the family members who were hurt alongside you?",
+          "watch_for": [
+            "Who first tells him that what he has is his, not his father's?",
+            "What happens when he hesitates at the moment he could win?",
+            "How does he treat people who try to get close to him, early on versus later?"
+          ],
+          "start_at": "S2E2",
+          "span": "S2-S5",
+          "situations": [
+            {"id": "difficult_parent", "weight": 0.95},
+            {"id": "identity_and_self_acceptance", "weight": 0.8},
+            {"id": "family_expectations", "weight": 0.6},
+            {"id": "finding_your_people", "weight": 0.4}
+          ],
+          "conflicts": ["self_vs_family_expectations", "revenge_vs_forgiveness"],
+          "emotions": {"start": ["resentment", "anger", "numbness"], "middle": ["confusion", "hope"], "end": ["acceptance", "self_respect"]},
+          "ending_tone": "hopeful",
+          "intensity": "heavy",
+          "warnings": ["abuse", "domestic_violence", "child_endangerment", "war_and_violence"],
+          "example_user_messages": [
+            "My dad pushed me so hard as a kid that I refuse to do anything that reminds me of him, even things I'm good at.",
+            "I've been so focused on proving my parent wrong that I don't even know what I actually want.",
+            "People say I'm cold, but I learned early that shutting down was the only way to survive my house.",
+            "My mum and I were both hurt by the same person, and I don't know how to talk to her about it."
+          ],
+          "spoiler": {
+            "summary": "Shoto tells Izuku that Endeavor made a 'Quirk marriage' to breed a child who could surpass All Might, and that his overwhelmed mother Rei poured boiling water on his face. In their Sports Festival match Izuku insists 'It's your power', and Shoto uses his fire for the first time in years, then freezes up and extinguishes it against Katsuki, losing. He visits and reconciles with his mother, uses fire in the Hosu fight, fails the provisional license exam because of his coldness toward Inasa and redeems it in remedial classes, then interns at Endeavor's agency to learn Flashfire Fist, telling his father he is only using him to improve while cautiously allowing his attempt to atone.",
+            "key_events": [
+              "Reveals the Quirk marriage and his mother's scalding of his face (S2)",
+              "Uses fire against Izuku at the Sports Festival (S2E10)",
+              "Extinguishes his flames and loses to Katsuki (S2)",
+              "Reconciles with his mother Rei (S2-S3)",
+              "Fails the provisional license exam over his feud with Inasa (S3)",
+              "Trains under Endeavor and learns Flashfire Fist (S5)"
+            ],
+            "got_right": "He comes to see his abilities as his own and reconnects with his mother without blaming her.",
+            "got_wrong": "His hatred made him cold and dismissive of others, hurting people like Inasa and holding himself back."
+          }
+        },
+        {
+          "id": "arc:my_hero_academia/shoto_todoroki/reaching_for_family",
+          "title": "Not giving up on his family",
+          "literal_situation": "Later in the series, after a turning point that tears open an old family wound and puts the whole Todoroki family in the public eye, Shoto sees his own old hatred reflected in someone he can't simply fight and forget, and has to decide what he owes to family who have done terrible things.",
+          "pattern_label": "not giving up on a family member who went dark",
+          "pattern_text": "Someone who has slowly healed from a painful childhood discovers that another member of their family was damaged by the same home in a far worse way and has hurt many people. They see what they could have become. They must hold two truths at once, that the harm was real and that the person is still responsible for their choices, while deciding whether to keep reaching for them anyway.",
+          "hook": "A young man who has finally started to heal, pulled back into his family's darkest history just as the whole world starts watching.",
+          "why_relatable": "What do you owe a family member who has done unforgivable things? Can you stop someone and still love them? And who gets to carry the blame for what a family did to its own?",
+          "watch_for": [
+            "How does he treat his father once the family's past becomes public?",
+            "What does he want to know about the person he has to face, beyond the harm they've done?",
+            "Who does he let stand beside him, and who does he try to protect by standing alone?"
+          ],
+          "start_at": "S6",
+          "span": "S6-S7",
+          "situations": [
+            {"id": "grief_and_loss", "weight": 0.6},
+            {"id": "caring_for_family", "weight": 0.6},
+            {"id": "responsibility_you_didnt_ask_for", "weight": 0.6},
+            {"id": "difficult_parent", "weight": 0.5}
+          ],
+          "conflicts": ["holding_on_vs_letting_go", "revenge_vs_forgiveness"],
+          "emotions": {"start": ["betrayal", "grief", "anger"], "middle": ["determination", "longing"], "end": ["grief", "acceptance", "belonging"]},
+          "ending_tone": "bittersweet",
+          "intensity": "heavy",
+          "warnings": ["abuse", "war_and_violence", "grief", "self_harm_or_suicide"],
+          "example_user_messages": [
+            "My brother has done some really awful things and everyone says to cut him off, but I keep thinking about who he was as a kid.",
+            "The way I grew up broke my sibling much worse than it broke me, and I feel guilty that I turned out okay.",
+            "Our family secrets just came out publicly and I don't know how to face people.",
+            "I'm angry at my dad for what he did to all of us, but I also don't want to lose what's left of the family."
+          ],
+          "spoiler": {
+            "summary": "At the end of the Paranormal Liberation War, the villain Dabi reveals on live broadcast that he is Toya Todoroki, the eldest brother presumed dead, and exposes Endeavor's abuse. Shoto is devastated, then offers his grieving father his hand, and the family resolves to face Toya together. In the Final War Shoto defeats Dabi with his new 'cold flame' Phosphor, and after Tenya carries him to Gunga Mountain, helps his family stop Toya's self-destructive explosion. Toya survives only in stasis with little time left, and the family visits him daily. Years later Shoto becomes the No. 2 hero, known for his own name rather than his father's.",
+            "key_events": [
+              "Dabi is revealed to be Toya, his presumed-dead eldest brother (S6)",
+              "Shoto offers his hand to his broken father; the family unites",
+              "Defeats Dabi with Phosphor, then stops his self-destruction with his family (S7)",
+              "Toya is left dying in stasis; the family visits every day",
+              "Becomes the No. 2 hero in his own right"
+            ],
+            "got_right": "He refuses both easy hatred and easy forgiveness, holding his brother and father accountable while still refusing to abandon them.",
+            "got_wrong": "At first he believes it is his fight alone, repeating the isolating pattern he learned growing up."
+          }
+        }
+      ]
+    },
+    {
+      "id": "char:my_hero_academia/ochaco_uraraka",
+      "name": "Ochaco Uraraka",
+      "role": "A cheerful, down-to-earth U.A. first-year from a struggling working family, who can make anything she touches weightless and wants to become a hero partly to support her parents.",
+      "relations": [
+        {"target": "char:my_hero_academia/izuku_midoriya", "relation": "friend"},
+        {"target": "char:my_hero_academia/izuku_midoriya", "relation": "partner"},
+        {"target": "char:my_hero_academia/tenya_iida", "relation": "friend"},
+        {"target": "char:my_hero_academia/shoto_todoroki", "relation": "friend"},
+        {"target": "char:my_hero_academia/katsuki_bakugo", "relation": "rival"},
+        {"target": "char:my_hero_academia/shota_aizawa", "relation": "mentor"},
+        {"target": "char:my_hero_academia/all_might", "relation": "mentor"}
+      ],
+      "arcs": [
+        {
+          "id": "arc:my_hero_academia/ochaco_uraraka/working_for_her_family",
+          "title": "Chasing a dream to lift up her parents",
+          "literal_situation": "Ochaco admits, a little embarrassed, that she wants to become a pro hero mainly for the money: her parents run a struggling construction business and she wants to give them an easy life. Among classmates with idealistic reasons and flashier powers, she is about to face the U.A. Sports Festival and wonders whether she can really hold her own.",
+          "pattern_label": "choosing a path to lift up your family",
+          "pattern_text": "Someone from a family that has always struggled financially chooses an ambitious path largely to make their parents' lives easier, and feels a little ashamed that their motive isn't more noble. Surrounded by people with more natural advantages, they fight hard to hold their own and keep their own feelings on the back burner to stay focused. Along the way they discover what they value beyond paying their family back.",
+          "hook": "A warm, practical girl with an underdog ability, trying to succeed for her parents' sake among classmates who seem made for this.",
+          "why_relatable": "Is it wrong to choose a path for the money if it's for the people you love? How do you compete when you don't have the obvious advantages? And what do you do with feelings that might distract you from what you're working toward?",
+          "watch_for": [
+            "How does she handle a match everyone assumes she will lose?",
+            "Who does she choose to learn from, and why?",
+            "How does she deal with the feelings she decides to set aside?"
+          ],
+          "start_at": "S2E1",
+          "span": "S2-S4",
+          "situations": [
+            {"id": "caring_for_family", "weight": 0.8},
+            {"id": "confidence_struggle", "weight": 0.6},
+            {"id": "coming_of_age", "weight": 0.5},
+            {"id": "unrequited_love", "weight": 0.3}
+          ],
+          "conflicts": ["duty_vs_desire", "career_vs_relationships"],
+          "emotions": {"start": ["determination", "self_doubt", "hope"], "middle": ["inadequacy", "longing", "determination"], "end": ["confidence", "self_respect"]},
+          "ending_tone": "hopeful",
+          "intensity": "moderate",
+          "warnings": ["war_and_violence", "grief"],
+          "example_user_messages": [
+            "Honestly, I picked my career mostly because it pays well and my parents have struggled my whole life.",
+            "Everyone else in my program seems to have natural talent, and I'm just working as hard as I can to keep up.",
+            "I have feelings for someone, but I've decided to focus on my goals first, and it's harder than I thought.",
+            "I'm a little ashamed that my reasons aren't as idealistic as everyone else's."
+          ],
+          "spoiler": {
+            "summary": "Ochaco refuses Izuku's help at the Sports Festival and nearly beats Katsuki with her Meteor Shower strategy before collapsing. She chooses the combat hero Gunhead for her internship and learns martial arts, realises she has feelings for Izuku and decides to put them aside, survives Himiko Toga's attack at the training camp, and during the Shie Hassaikai raid carries the dying Sir Nighteye to the surface, resolving to save more people. She grows into a confident, strategic fighter, and years later sends money to parents who have never touched it.",
+            "key_events": [
+              "Nearly beats Katsuki at the Sports Festival with Meteor Shower (S2)",
+              "Trains in martial arts under Gunhead (S2)",
+              "Realises her feelings for Izuku and sets them aside",
+              "Carries the mortally injured Sir Nighteye during the Overhaul raid (S4)"
+            ],
+            "got_right": "She is honest about her motives, fights on her own merits and seeks out training for her weaknesses.",
+            "got_wrong": "She habitually puts herself last, burying her own wants for so long that she barely lets herself have them."
+          }
+        },
+        {
+          "id": "arc:my_hero_academia/ochaco_uraraka/reaching_out_to_an_enemy",
+          "title": "Trying to understand the one everyone condemns",
+          "literal_situation": "Later in the series, after a turning point that leaves society frightened and angry at the people meant to protect it, Ochaco keeps thinking about an enemy she once refused to understand, and starts wondering what it would mean to actually listen to someone the world has written off.",
+          "pattern_label": "offering compassion to someone everyone condemns",
+          "pattern_text": "Someone kind but conflicted realises that a person who has hurt them was also a lonely, rejected human being, and that simply condemning such people may be part of what made them that way. Choosing to reach out rather than just fight back costs them dearly. Afterwards they hide their grief behind a smile so they won't burden anyone, until they have to let others in.",
+          "hook": "A compassionate young woman who starts to see a human being behind someone she's supposed to see only as an enemy.",
+          "why_relatable": "Can you hold someone accountable and still want to understand them? What do you do with grief for someone other people think didn't deserve it? And why is it so hard to let friends see you fall apart?",
+          "watch_for": [
+            "What does she remember about her enemy that nobody else noticed?",
+            "How does she speak up for someone when a crowd is afraid?",
+            "When she's hurting, who does she hide it from, and why?"
+          ],
+          "start_at": "S6",
+          "span": "S6-S8",
+          "situations": [
+            {"id": "grief_and_loss", "weight": 0.8},
+            {"id": "standing_up_to_authority", "weight": 0.5},
+            {"id": "loneliness", "weight": 0.4}
+          ],
+          "conflicts": ["revenge_vs_forgiveness", "independence_vs_connection"],
+          "emotions": {"start": ["confusion", "fear", "curiosity"], "middle": ["determination", "hope"], "end": ["grief", "guilt", "acceptance"]},
+          "ending_tone": "bittersweet",
+          "intensity": "heavy",
+          "warnings": ["war_and_violence", "grief", "medical_trauma"],
+          "example_user_messages": [
+            "Someone hurt me badly, but I can't stop thinking about how lonely they must have been.",
+            "Everyone around me says certain people are just bad, and I'm starting to think it's more complicated.",
+            "I'm grieving someone other people think I shouldn't grieve, so I just smile and keep it to myself.",
+            "I keep telling myself I could have done more to reach them in time."
+          ],
+          "spoiler": {
+            "summary": "Ochaco realises that Himiko Toga, who tried to kill her and mocked her feelings for Izuku, cried when Ochaco rejected her, and begins to see her as human. When frightened refugees refuse to let the exhausted Izuku into U.A., Ochaco gives a public speech defending him. In the Final War she fights Himiko, is stabbed nearly to death, but chooses to listen instead of just fight, promising to give Himiko her blood; Himiko stands down and transfuses all her blood into Ochaco, saving her life and dying. After the war Ochaco hides her survivor's guilt until she breaks down and her friends comfort her. Years later she leads Quirk counselling for children so no one gets left behind, and she and Izuku finally start a relationship.",
+            "key_events": [
+              "Speech convinces refugees to let Izuku into U.A. (S6E25)",
+              "Awakens her Quirk after being stabbed by Himiko (S7)",
+              "Reaches Himiko by listening; Himiko dies saving her with a transfusion",
+              "Breaks down in grief, then is comforted by Class 1-A",
+              "Leads Quirk counselling as a pro hero; begins a relationship with Izuku"
+            ],
+            "got_right": "She treats even her enemy as a person worth hearing, and turns her grief into work that helps children who might otherwise be left behind.",
+            "got_wrong": "She hides her pain for the sake of others' happiness, isolating herself when she most needs support."
+          }
+        }
+      ]
+    },
+    {
+      "id": "char:my_hero_academia/all_might",
+      "name": "All Might",
+      "role": "Japan's No. 1 hero and 'Symbol of Peace', a towering, ever-smiling figure whose presence alone keeps crime down, who is secretly living with a grave old injury.",
+      "relations": [
+        {"target": "char:my_hero_academia/izuku_midoriya", "relation": "protege"},
+        {"target": "char:my_hero_academia/katsuki_bakugo", "relation": "protege"},
+        {"target": "char:my_hero_academia/shoto_todoroki", "relation": "protege"},
+        {"target": "char:my_hero_academia/ochaco_uraraka", "relation": "protege"},
+        {"target": "char:my_hero_academia/tenya_iida", "relation": "protege"},
+        {"target": "char:my_hero_academia/shota_aizawa", "relation": "colleague"},
+        {"target": "char:my_hero_academia/endeavor", "relation": "rival"}
+      ],
+      "arcs": [
+        {
+          "id": "arc:my_hero_academia/all_might/the_pillar_running_out_of_time",
+          "title": "The symbol who is running out of time",
+          "literal_situation": "All Might is the world's greatest hero, always arriving with a smile and the words 'I am here!'. Privately, an old injury has reduced him to a gaunt, coughing man who can only hold his heroic form for a few hours a day. He is searching for someone to pass his power on to, and has just started teaching at U.A. with no idea how to teach.",
+          "pattern_label": "a beloved pillar quietly preparing for their own decline",
+          "pattern_text": "Someone who has been the dependable pillar everyone leans on is secretly losing their strength, and keeps smiling in public because they believe people need them to be unbreakable. While hiding what it costs, they try to prepare a successor, and discover that mentoring is very different from being the best at the job yourself, and that their habit of self-sacrifice is not something they should pass on.",
+          "hook": "A legendary figure hiding a failing body behind a giant grin, trying to find and train his replacement before time runs out.",
+          "why_relatable": "How long can you keep being the strong one when you're running on empty? What do you owe the people who depend on your image? And how do you teach someone without turning them into a copy of your own worst habits?",
+          "watch_for": [
+            "When does his smile look like strength, and when does it look like a mask?",
+            "How does he react when his student gets hurt copying him?",
+            "What does he keep secret from the people closest to him, and why?"
+          ],
+          "start_at": "S1E2",
+          "span": "S1-S3",
+          "situations": [
+            {"id": "illness_or_injury", "weight": 0.9},
+            {"id": "mentor_and_protege", "weight": 0.9},
+            {"id": "burnout_at_work", "weight": 0.5},
+            {"id": "midlife_reinvention", "weight": 0.4}
+          ],
+          "conflicts": ["duty_vs_desire", "holding_on_vs_letting_go"],
+          "emotions": {"start": ["dread", "determination", "pride"], "middle": ["anxiety", "hope", "guilt"], "end": ["acceptance", "pride"]},
+          "ending_tone": "bittersweet",
+          "intensity": "moderate",
+          "warnings": ["serious_illness", "war_and_violence", "medical_trauma"],
+          "example_user_messages": [
+            "Everyone at work thinks I'm unstoppable, but my health is falling apart and I'm hiding it.",
+            "I've been the one my family leans on for decades and I don't know how to admit I'm tired.",
+            "I'm supposed to train my replacement, and I'm realising I'm not a very good teacher.",
+            "I keep smiling so nobody worries, but I'm scared of what happens when I can't keep it up."
+          ],
+          "spoiler": {
+            "summary": "Moved by Izuku's powerless attempt to save Katsuki, All Might chooses him as the ninth holder of One For All over Sir Nighteye's candidate. He struggles as a teacher, pushes Izuku too hard and is scolded by Recovery Girl, overspends his limited time on heroics, and pushes beyond his limits to defeat the U.S.J. Nomu. He hides Sir Nighteye's prophecy of his violent death. At Kamino, All For One reveals that Tomura is the grandson of his late mentor Nana; All Might's weakened true form is exposed on live television, but he uses the last embers of One For All to defeat All For One, then points at the camera, telling Izuku 'Next is you', and retires.",
+            "key_events": [
+              "Chooses Izuku and passes on One For All (S1)",
+              "Defeats the U.S.J. Nomu past his limit (S1)",
+              "Keeps Sir Nighteye's prophecy of his death secret",
+              "Learns Tomura is Nana Shimura's grandson (S3)",
+              "True form exposed on live TV; defeats All For One and retires (S3E11-S3E12)"
+            ],
+            "got_right": "He chooses a successor based on character rather than talent, and he never stops showing up for people in danger.",
+            "got_wrong": "He hides his fragility to preserve an image, projects his own abilities onto his student, and treats his own life as disposable."
+          }
+        },
+        {
+          "id": "arc:my_hero_academia/all_might/finding_worth_beyond_strength",
+          "title": "Who is he when he can't save everyone?",
+          "literal_situation": "Later in the series, after a turning point that changes what All Might is physically able to do, the man who always came to save everyone has to discover what he is worth, and what he can still offer, when he can no longer be the one who fights.",
+          "pattern_label": "finding your worth after losing what defined you",
+          "pattern_text": "Someone whose identity was built entirely on being the strongest and most needed person in the room loses the ability to do that work. They tell everyone they are fine, throw themselves into supporting others, and yet feel useless and like a burden whenever things go wrong. They have to learn to let others carry the load, and to believe their value was never only in what they could do.",
+          "hook": "A man whose whole life was about being the one people called, learning to stand on the sidelines.",
+          "why_relatable": "What is left of you when the thing that defined you is gone? How do you support people without feeling like dead weight? And can you accept help from the very people you used to protect?",
+          "watch_for": [
+            "What does he find to give his students once he can't lead by example in the old way?",
+            "How does he react when someone he loves decides to face danger without him?",
+            "Who reminds him that he still matters, and does he believe them?"
+          ],
+          "start_at": "S3E12",
+          "span": "S3-S8",
+          "situations": [
+            {"id": "midlife_reinvention", "weight": 0.9},
+            {"id": "losing_a_job", "weight": 0.7},
+            {"id": "illness_or_injury", "weight": 0.6},
+            {"id": "mentor_and_protege", "weight": 0.6}
+          ],
+          "conflicts": ["holding_on_vs_letting_go", "control_vs_trust"],
+          "emotions": {"start": ["grief", "inadequacy", "determination"], "middle": ["guilt", "self_doubt", "loneliness"], "end": ["acceptance", "peace", "pride"]},
+          "ending_tone": "hopeful",
+          "intensity": "moderate",
+          "warnings": ["war_and_violence", "serious_illness", "medical_trauma"],
+          "example_user_messages": [
+            "I had to stop working because of my health, and I feel like I have no purpose anymore.",
+            "My whole identity was being the one who fixes things. Now I just watch other people do it.",
+            "When my kids go through something hard I feel useless because I can't protect them like I used to.",
+            "People keep telling me I still matter, but I honestly feel like a burden."
+          ],
+          "spoiler": {
+            "summary": "Retired and powerless, Toshinori becomes a dedicated teacher, studying teaching guides and improving at mentoring. Inko Midoriya asks him to protect Izuku, and he resolves to defy Nighteye's prophecy and live for his student's sake. When Izuku leaves U.A. and later leaves him behind, Toshinori spirals into self-loathing until an unlikely encounter with Stain shows him that his legacy still inspires people. He accepts that the era of the Symbol of Peace is over. In the Final War he fights All For One in the Armored All Might suit, is nearly killed with his legs crushed, and is saved by the revived Katsuki. He ends up in a wheelchair, later walks again and becomes U.A.'s vice principal, and eight years on presents Izuku with a hero suit so he can return to heroism.",
+            "key_events": [
+              "Retires and becomes a full-time teacher (S3)",
+              "Promises Inko he'll protect Izuku and avoid his prophesied death",
+              "Despairs when Izuku leaves him behind; Stain's words restore him (S6)",
+              "Fights All For One in the Armored All Might suit and is saved by Katsuki (S7)",
+              "Becomes vice principal; gives Izuku a new hero suit years later"
+            ],
+            "got_right": "He finds a new way to be useful through teaching, and learns to accept help and to let the next generation take over.",
+            "got_wrong": "He measures his worth by his power and slips into self-pity and reckless sacrifice when he feels useless."
+          }
+        }
+      ]
+    },
+    {
+      "id": "char:my_hero_academia/shota_aizawa",
+      "name": "Shota Aizawa",
+      "role": "Class 1-A's scruffy, sleep-deprived homeroom teacher and an underground pro hero who can cancel other people's powers by looking at them, known for harsh standards and threatening to expel students.",
+      "relations": [
+        {"target": "char:my_hero_academia/izuku_midoriya", "relation": "protege"},
+        {"target": "char:my_hero_academia/katsuki_bakugo", "relation": "protege"},
+        {"target": "char:my_hero_academia/shoto_todoroki", "relation": "protege"},
+        {"target": "char:my_hero_academia/ochaco_uraraka", "relation": "protege"},
+        {"target": "char:my_hero_academia/tenya_iida", "relation": "protege"},
+        {"target": "char:my_hero_academia/all_might", "relation": "colleague"},
+        {"target": "char:my_hero_academia/endeavor", "relation": "colleague"}
+      ],
+      "arcs": [
+        {
+          "id": "arc:my_hero_academia/shota_aizawa/tough_love_teacher",
+          "title": "The teacher who seems not to care",
+          "literal_situation": "On the first day of class Aizawa skips the welcome ceremony, puts his new students through a power-assessment test and threatens to expel whoever comes last. He openly doubts that Izuku can become a hero, naps in a sleeping bag between lessons, and seems to care about nothing except whether his students are fit for the job.",
+          "pattern_label": "a harsh mentor whose strictness hides fear of loss",
+          "pattern_text": "Someone responsible for young people comes across as cold, blunt and impossible to please, pushing hard and refusing to sugarcoat anything. Underneath is an old wound: they once lost someone they loved to the dangers of the path these young people are choosing. They must balance protecting their charges with letting them grow, and face the grief they buried under work.",
+          "hook": "A tired, blunt teacher who seems to have no patience for his students, and whose motives are harder to read than they first appear.",
+          "why_relatable": "Is being hard on someone a way of caring for them, or a way of keeping them at arm's length? How do you protect people you can't control? And what happens to grief you never let yourself feel?",
+          "watch_for": [
+            "Watch what he does, not just what he says, when his students are in real danger.",
+            "How does he treat the student he said didn't belong?",
+            "What in his own past might explain why he teaches the way he does?"
+          ],
+          "start_at": "S1E5",
+          "span": "S1-S7",
+          "situations": [
+            {"id": "mentor_and_protege", "weight": 0.9},
+            {"id": "grief_and_loss", "weight": 0.6},
+            {"id": "responsibility_you_didnt_ask_for", "weight": 0.5}
+          ],
+          "conflicts": ["safety_vs_growth", "control_vs_trust"],
+          "emotions": {"start": ["numbness", "determination"], "middle": ["fear", "grief", "anger"], "end": ["pride", "acceptance"]},
+          "ending_tone": "bittersweet",
+          "intensity": "heavy",
+          "warnings": ["death_of_loved_one", "grief", "war_and_violence", "medical_trauma"],
+          "example_user_messages": [
+            "My students think I'm heartless because I push them so hard, but I'm terrified of what happens if I don't.",
+            "I lost my best friend when we were young and I think I've been keeping everyone at a distance ever since.",
+            "I'm a strict manager and people resent me, but I've seen what happens when people aren't prepared.",
+            "I never really grieved someone I lost. I just threw myself into work."
+          ],
+          "spoiler": {
+            "summary": "Aizawa's expulsion threat turns out to be a 'logical ruse' to push students; he has actually expelled classes before and re-admitted them. At the U.S.J. he shields his students from dozens of villains and is badly injured by the Nomu, and he later defends his class to the press. It is revealed that his best friend from school, Oboro Shirakumo, was killed as a student and his corpse turned into the League's warp-gate villain Kurogiri; Aizawa confronts Kurogiri in tears and rages at the scientist responsible. In the Paranormal Liberation War he cuts off his own leg to stop a Quirk-destroying drug and loses an eye, yet keeps erasing Tomura's power. After the war he semi-retires to teach full time.",
+            "key_events": [
+              "Expulsion threat revealed as a 'logical ruse' (S1E5)",
+              "Badly injured protecting students at the U.S.J. (S1)",
+              "Revealed: Kurogiri was made from his dead best friend Oboro",
+              "Cuts off his own leg and loses an eye in the Paranormal Liberation War (S6)",
+              "Semi-retires to focus on teaching"
+            ],
+            "got_right": "He protects his students fiercely and prepares them honestly for what they will face.",
+            "got_wrong": "His buried grief makes him guarded and harsh, and his students often don't know how much he cares."
+          }
+        },
+        {
+          "id": "arc:my_hero_academia/shota_aizawa/unexpected_guardian",
+          "title": "The reluctant guardian",
+          "literal_situation": "Later in the series, after a turning point that leaves a traumatised little girl with a dangerous, uncontrollable power in need of an adult who can keep her and everyone else safe, the gruff Aizawa, who has no time for sentimentality, becomes the person responsible for her.",
+          "pattern_label": "suddenly responsible for a hurting child",
+          "pattern_text": "A reserved, practical person who never pictured themselves as a caregiver suddenly becomes responsible for a frightened child who has been badly hurt. They have no playbook and little natural warmth to show. They must learn patience, gentleness and how to help a child feel safe enough to smile.",
+          "hook": "A stern, solitary man taking care of a frightened child who has never known safety.",
+          "why_relatable": "What if you became a parent figure before you felt ready? How do you help a child who's afraid of her own impulses? And can someone who keeps everyone at a distance learn to be gentle?",
+          "watch_for": [
+            "What small moments show her beginning to trust him?",
+            "How does he balance keeping her safe with letting her try?",
+            "Does taking care of her change him?"
+          ],
+          "start_at": "S4",
+          "span": "S4-S5",
+          "situations": [
+            {"id": "becoming_a_parent", "weight": 0.8},
+            {"id": "responsibility_you_didnt_ask_for", "weight": 0.8},
+            {"id": "caring_for_family", "weight": 0.4}
+          ],
+          "conflicts": ["safety_vs_growth", "independence_vs_connection"],
+          "emotions": {"start": ["anxiety", "determination"], "middle": ["hope", "love"], "end": ["peace", "love"]},
+          "ending_tone": "hopeful",
+          "intensity": "moderate",
+          "warnings": ["child_endangerment", "abuse"],
+          "example_user_messages": [
+            "I just became the guardian of my niece after something awful happened, and I have no idea what I'm doing.",
+            "I'm not a warm person, but there's a scared kid depending on me now.",
+            "The child I foster has been through so much that she's afraid of herself. How do I help her?",
+            "I never wanted kids, and now I'd do anything to see this one smile."
+          ],
+          "spoiler": {
+            "summary": "After the raid on the Shie Hassaikai, Eri, a child whose body Overhaul had used to make Quirk-destroying bullets, is rescued but has an uncontrollable Rewind Quirk. Since Aizawa's Erasure can stop it, he becomes her temporary guardian. He brings her to the U.A. School Festival, where she smiles for the first time, and he patiently helps her learn to control Rewind by healing bugs and lizards. She becomes part of the U.A. family, and her power later plays a role in the final war.",
+            "key_events": [
+              "Eri is rescued from Overhaul's abuse (S4)",
+              "Aizawa becomes her guardian because Erasure can halt Rewind",
+              "Eri smiles for the first time at the School Festival (S4)",
+              "He helps her practise Rewind on small animals"
+            ],
+            "got_right": "He shows up consistently and gently, letting her go at her own pace.",
+            "got_wrong": "He still keeps his own warmth mostly hidden, even from the people who would benefit from seeing it."
+          }
+        }
+      ]
+    },
+    {
+      "id": "char:my_hero_academia/tenya_iida",
+      "name": "Tenya Iida",
+      "role": "A formal, rule-obsessed U.A. student with engines in his legs, from a respected family of heroes, who idolises his older brother and takes every responsibility with deadly seriousness.",
+      "relations": [
+        {"target": "char:my_hero_academia/izuku_midoriya", "relation": "friend"},
+        {"target": "char:my_hero_academia/ochaco_uraraka", "relation": "friend"},
+        {"target": "char:my_hero_academia/shoto_todoroki", "relation": "friend"},
+        {"target": "char:my_hero_academia/katsuki_bakugo", "relation": "colleague"},
+        {"target": "char:my_hero_academia/shota_aizawa", "relation": "mentor"},
+        {"target": "char:my_hero_academia/all_might", "relation": "mentor"}
+      ],
+      "arcs": [
+        {
+          "id": "arc:my_hero_academia/tenya_iida/by_the_book_leader",
+          "title": "The class rep who does everything by the book",
+          "literal_situation": "Tenya takes being a model student extremely seriously: he chops the air as he lectures classmates about rules, runs in the hallways only to scold others for running, and wants to live up to his family's name. When the class votes on a representative, he expected to lead and has to deal with not being the obvious choice.",
+          "pattern_label": "a rule-follower learning leadership is more than rules",
+          "pattern_text": "Someone from a family with high standards has always believed that doing things correctly is the same as doing the right thing. Thrust into a leadership role among peers, they enforce order loudly and often annoy everyone. Over time they have to learn when rules protect people and when caring for others means stepping outside them, and how to lead friends rather than police them.",
+          "hook": "An earnest, rigid, well-meaning young man who thinks leadership means enforcing the rules.",
+          "why_relatable": "Is doing things by the book the same as doing the right thing? How do you lead people who are also your friends? And what do you do when the people you care about are about to break the rules?",
+          "watch_for": [
+            "What does he do in a real crisis when everyone else panics?",
+            "How does he react when his friends want to do something he considers wrong?",
+            "How do his classmates' feelings about him change?"
+          ],
+          "start_at": "S1E9",
+          "span": "S1-S6",
+          "situations": [
+            {"id": "leading_former_peers", "weight": 0.8},
+            {"id": "family_expectations", "weight": 0.6},
+            {"id": "becoming_a_manager", "weight": 0.4},
+            {"id": "finding_your_people", "weight": 0.4}
+          ],
+          "conflicts": ["duty_vs_desire", "control_vs_trust"],
+          "emotions": {"start": ["pride", "anxiety", "determination"], "middle": ["self_doubt", "anger"], "end": ["confidence", "belonging"]},
+          "ending_tone": "hopeful",
+          "intensity": "light",
+          "warnings": ["war_and_violence"],
+          "example_user_messages": [
+            "I just got made team lead over people I used to sit next to, and they think I'm way too strict.",
+            "I've always followed the rules, but my friends want to do something that feels wrong to me and I don't know what to do.",
+            "My family has really high standards, and I sometimes feel like I have to be perfect all the time.",
+            "People find me uptight. I just want everyone to be safe and do things properly."
+          ],
+          "spoiler": {
+            "summary": "Izuku wins the class vote but hands the role to Tenya after Tenya calms a stampede during a security scare by leaping onto the exit sign. Tenya runs for help at the U.S.J. invasion. When friends plan to rescue the kidnapped Katsuki, he fiercely opposes it, even punching Izuku, then goes along to keep them in check and proves vital to the rescue. Over time he mellows, keeping his strictness but valuing his friends above procedure, and when Izuku goes rogue it is Tenya who reaches him and takes his hand. In the Final War he carries Shoto at breakneck speed to confront Dabi. Years later he becomes a high-ranking hero and leads his brother's agency.",
+            "key_events": [
+              "Calms the cafeteria stampede and becomes class rep (S1E9)",
+              "Runs for help during the U.S.J. invasion (S1)",
+              "Opposes, then joins, the rescue of Katsuki (S3)",
+              "Takes Izuku's hand to bring him back (S6)",
+              "Carries Shoto to Gunga Mountain in the Final War (S7)"
+            ],
+            "got_right": "He takes responsibility for others' safety and is humble enough to admit when he's wrong.",
+            "got_wrong": "Early on he confuses order with goodness, and his rigidity alienates the friends he's trying to protect."
+          }
+        },
+        {
+          "id": "arc:my_hero_academia/tenya_iida/grief_and_revenge",
+          "title": "Grief that turns into a hunt",
+          "literal_situation": "In the middle of the Sports Festival, Tenya learns that his beloved older brother, the hero he has always wanted to be, has been badly hurt by the notorious Hero Killer Stain. Normally a stickler for rules, he goes quiet, tells no one what he's feeling, and chooses an internship in the city where the attack happened.",
+          "pattern_label": "grief turning a good person toward revenge",
+          "pattern_text": "A person who has always done things by the book is blindsided when someone they idolise is badly hurt by another person's cruelty. They hide their feelings behind a polite face and quietly set out to make the one responsible pay, breaking every principle they used to live by. They must face what the anger is costing them, and whether they can honour the one they love without becoming someone that person wouldn't recognise.",
+          "hook": "A principled teenager whose grief and rage over his brother are pulling him somewhere very dangerous.",
+          "why_relatable": "What do you do with anger that feels completely justified? Is taking revenge a way of honouring someone, or betraying what they stood for? And why is it so hard to tell your friends you're not okay?",
+          "watch_for": [
+            "What does he hide from his friends, and do they notice?",
+            "What makes him question what he is doing?",
+            "How does he decide to carry his brother's legacy afterwards?"
+          ],
+          "start_at": "S2E11",
+          "span": "S2",
+          "situations": [
+            {"id": "grief_and_loss", "weight": 0.7},
+            {"id": "redemption_after_mistakes", "weight": 0.7},
+            {"id": "family_expectations", "weight": 0.5}
+          ],
+          "conflicts": ["revenge_vs_forgiveness", "duty_vs_desire"],
+          "emotions": {"start": ["anger", "grief"], "middle": ["resentment", "shame"], "end": ["guilt", "self_respect", "determination"]},
+          "ending_tone": "hopeful",
+          "intensity": "moderate",
+          "warnings": ["war_and_violence", "medical_trauma"],
+          "example_user_messages": [
+            "Someone badly hurt my brother and I can't think about anything except making them pay.",
+            "I've always been the responsible one, but since what happened to my family I've been making terrible choices.",
+            "I'm acting normal around my friends, but inside I'm consumed with anger.",
+            "I want to honour someone I love, and I'm scared the way I'm doing it is wrong."
+          ],
+          "spoiler": {
+            "summary": "Tensei (Ingenium) is left paralysed by Stain and asks Tenya to take on the name Ingenium. Tenya interns in Hosu to hunt Stain, finds him and is nearly killed; Izuku and Shoto arrive to save him, and fighting alongside them he lets go of vengeance and admits it was not heroism. His left hand is permanently damaged, and he chooses to leave it as a reminder. He takes the Ingenium name to carry his brother's legacy the right way; years later Tensei walks again and the brothers run Team Idaten together.",
+            "key_events": [
+              "Tensei paralysed by Stain (S2E11)",
+              "Hunts Stain in Hosu and is nearly killed (S2)",
+              "Saved by Izuku and Shoto; renounces revenge",
+              "Keeps his damaged hand as a reminder and takes the name Ingenium"
+            ],
+            "got_right": "He is humble enough to admit he was wrong and turns the lesson into a better way of honouring his brother.",
+            "got_wrong": "He hid his grief from friends and let revenge override every principle he had."
+          }
+        }
+      ]
+    },
+    {
+      "id": "char:my_hero_academia/endeavor",
+      "name": "Endeavor (Enji Todoroki)",
+      "role": "Japan's fiery, scowling No. 2 hero, with the most solved cases in history, who has spent his whole life trying and failing to surpass All Might, and who is a notoriously harsh father to his youngest son Shoto.",
+      "relations": [
+        {"target": "char:my_hero_academia/shoto_todoroki", "relation": "child"},
+        {"target": "char:my_hero_academia/all_might", "relation": "rival"},
+        {"target": "char:my_hero_academia/izuku_midoriya", "relation": "protege"},
+        {"target": "char:my_hero_academia/katsuki_bakugo", "relation": "protege"},
+        {"target": "char:my_hero_academia/shota_aizawa", "relation": "colleague"}
+      ],
+      "arcs": [
+        {
+          "id": "arc:my_hero_academia/endeavor/forever_second_best",
+          "title": "Forever second best",
+          "literal_situation": "Endeavor is a formidable, hugely successful hero who has been stuck at No. 2 behind All Might for his whole career. Unable to close the gap himself, he has poured that obsession into his youngest son Shoto, and he watches the U.A. Sports Festival demanding that Shoto use the fire he inherited from him.",
+          "pattern_label": "a lifelong obsession with being the best",
+          "pattern_text": "Someone driven since childhood to be the very best at their work keeps running into a rival they will never surpass. Instead of making peace with it, they pour the obsession into the next generation, treating their family as a means to an end. Admired in public and feared at home, they have to confront what their ambition has cost the people closest to them.",
+          "hook": "A brilliant, relentless professional who has never been number one, and whose family is paying for it.",
+          "why_relatable": "What happens when the thing you've built your life on turns out to be out of reach? Where is the line between having high expectations of your children and using them? And what are you really chasing when you chase being the best?",
+          "watch_for": [
+            "How does he talk about his son, and how does he talk to him?",
+            "How does he react to his rival up close, rather than from a distance?",
+            "What happens when he finally gets something he wanted, and how does it feel to him?"
+          ],
+          "start_at": "S2",
+          "span": "S2-S4",
+          "situations": [
+            {"id": "family_expectations", "weight": 0.7},
+            {"id": "identity_and_self_acceptance", "weight": 0.5},
+            {"id": "redemption_after_mistakes", "weight": 0.4}
+          ],
+          "conflicts": ["career_vs_relationships", "perfectionism_vs_good_enough"],
+          "emotions": {"start": ["envy", "resentment", "determination"], "middle": ["inadequacy", "anger"], "end": ["confusion", "shame"]},
+          "ending_tone": "bittersweet",
+          "intensity": "heavy",
+          "warnings": ["abuse", "domestic_violence", "child_endangerment"],
+          "example_user_messages": [
+            "I've spent my whole career trying to beat one person, and I'm starting to realise I never will.",
+            "I push my kid really hard because I want them to have what I never got, but they seem to hate me for it.",
+            "Everyone respects me at work, but my family can barely stand to be in the same room as me.",
+            "I've achieved almost everything I set out to, and I still feel like a failure."
+          ],
+          "spoiler": {
+            "summary": "Endeavor made a 'Quirk marriage' with Rei to breed a child who could surpass All Might. When his first son Toya's body couldn't handle his flames, he turned to Shoto, training him brutally, isolating him from his siblings and abusing Rei until she broke down and scarred Shoto, after which he had her institutionalised; Toya, desperate for his father's attention, was thought to have died. At the Sports Festival Endeavor gloats when Shoto uses fire. After All Might retires at Kamino, Endeavor becomes No. 1 by default and is furious, feeling his lifetime of effort was wasted, which sets up his turn toward atonement.",
+            "key_events": [
+              "Quirk marriage to Rei to produce a successor",
+              "Toya pushed aside, later presumed dead",
+              "Abuse drives Rei to scald Shoto; she is institutionalised",
+              "Becomes No. 1 only after All Might's retirement and is enraged (S3-S4)"
+            ],
+            "got_right": "He is tireless and genuinely effective at protecting the public, and values earned achievement over empty titles.",
+            "got_wrong": "He treated his wife and children as tools for his ambition, abusing and neglecting them."
+          }
+        },
+        {
+          "id": "arc:my_hero_academia/endeavor/atoning_too_late",
+          "title": "Trying to make amends",
+          "literal_situation": "Later in the series, after a turning point that leaves him asking what all his ambition has actually been for, Endeavor begins trying, awkwardly, to become a real father to children who have every reason to resent him, while carrying new public responsibilities he isn't sure he deserves.",
+          "pattern_label": "trying to make amends to a family you hurt",
+          "pattern_text": "Someone who spent years putting ambition first and treated their partner and children harshly finally sees the damage clearly. They try, clumsily, to make amends, knowing they may never be forgiven and that wanting forgiveness isn't the same as deserving it. When the full consequences of their past surface, they must decide whether to hide, collapse under guilt, or face it honestly and keep atoning.",
+          "hook": "A proud, harsh man starting to understand what he did to his family, and not at all sure it can be repaired.",
+          "why_relatable": "Can someone who did real harm ever become a good parent? What does atonement look like when the people you hurt don't owe you forgiveness? And what do you do when your past catches up with you in public?",
+          "watch_for": [
+            "How do each of his children respond to his attempts to change?",
+            "When he's afraid, does he run toward his family or away from them?",
+            "Is he trying to be forgiven, or trying to make things right? Watch whether those turn out to be the same thing."
+          ],
+          "start_at": "S4E24",
+          "span": "S4-S8",
+          "situations": [
+            {"id": "redemption_after_mistakes", "weight": 0.95},
+            {"id": "midlife_reinvention", "weight": 0.6},
+            {"id": "caring_for_family", "weight": 0.4}
+          ],
+          "conflicts": ["past_vs_future", "truth_vs_protecting_others"],
+          "emotions": {"start": ["guilt", "confusion", "determination"], "middle": ["shame", "dread", "grief"], "end": ["acceptance", "grief"]},
+          "ending_tone": "bittersweet",
+          "intensity": "heavy",
+          "warnings": ["abuse", "domestic_violence", "war_and_violence", "medical_trauma", "self_harm_or_suicide", "grief"],
+          "example_user_messages": [
+            "I was a terrible father when my kids were young, and now I want to fix it, but they don't trust me.",
+            "I hurt my ex-wife badly and I don't know if I even have the right to try to make amends.",
+            "Everything I did in the past is coming out, and part of me wants to hide and part of me wants to finally own it.",
+            "I'm trying to change, but my kids are right not to forgive me yet."
+          ],
+          "spoiler": {
+            "summary": "Advised by All Might to decide what kind of symbol he wants to be, Endeavor fights the High-End Nomu Hood alongside Hawks, is scarred, and rises from the wreckage telling his watching son 'Watch me'. He visits Rei, tries to reconnect with his children and buys them a new home, but freezes when Natsuo is taken hostage. At the end of the Paranormal Liberation War, Dabi reveals himself as his son Toya and broadcasts Endeavor's abuse; Endeavor collapses in guilt until his family helps him stand, and he confesses the truth publicly. In the Final War he loses an arm fighting All For One and accepts he can never be like All Might. The family confronts Toya together; Toya survives only in stasis, dying. Endeavor retires in a wheelchair, visits Toya daily, and devotes the rest of his life to atonement.",
+            "key_events": [
+              "Defeats Hood and is scarred; 'Watch me' (S4E25)",
+              "Tries to reconnect with his family; freezes when Natsuo is kidnapped (S5)",
+              "Dabi revealed as Toya; the abuse becomes public (S6)",
+              "Loses an arm against All For One in the Final War (S7)",
+              "Retires; visits the dying Toya every day"
+            ],
+            "got_right": "When exposed he stops deflecting blame, admits the truth, and keeps showing up without demanding forgiveness.",
+            "got_wrong": "His change came far too late, and at first he sought redemption through heroics and grand gestures rather than listening to what his family needed."
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,943 @@
+{
+  "show": "walking_dead",
+  "characters": [
+    {
+      "id": "char:walking_dead/rick_grimes",
+      "name": "Rick Grimes",
+      "role": "A small-town sheriff's deputy who wakes from a coma into a collapsed world and sets out to find his wife and son.",
+      "relations": [
+        {"target": "char:walking_dead/carl_grimes", "relation": "child"},
+        {"target": "char:walking_dead/michonne", "relation": "partner"},
+        {"target": "char:walking_dead/daryl_dixon", "relation": "friend"},
+        {"target": "char:walking_dead/glenn_rhee", "relation": "friend"},
+        {"target": "char:walking_dead/maggie_greene", "relation": "friend"},
+        {"target": "char:walking_dead/carol_peletier", "relation": "friend"},
+        {"target": "char:walking_dead/eugene_porter", "relation": "friend"}
+      ],
+      "arcs": [
+        {
+          "id": "arc:walking_dead/rick_grimes/carrying_everyones_survival",
+          "title": "Carrying everyone's survival",
+          "literal_situation": "A deputy who went by the book before the collapse becomes the man a band of frightened survivors looks to for every life-or-death decision.",
+          "pattern_label": "a decent person hardened by the weight of leading",
+          "pattern_text": "A principled person ends up responsible for the safety of everyone around them, though they never asked for the job. Each hard call chips away at who they used to be, and they start to fear that protecting their people is turning them into someone they don't recognise. The question is whether you can carry that much responsibility without losing your humanity, and whether you can ever let others share the load.",
+          "hook": "Rick wakes alone in a hospital to a world that has fallen apart. All he wants is to find his family, but his instinct to take charge and do the right thing quickly makes him the person everyone turns to.",
+          "why_relatable": "He holds himself responsible for everyone and sets goals no one could meet. How much of yourself can you give up to keep others safe? When does being decisive turn into being ruthless, and who gets to tell you that you've crossed the line?",
+          "watch_for": [
+            "What does each hard decision seem to cost him personally?",
+            "How does he react when someone in the group challenges his authority?",
+            "Who helps him remember who he was, and does he listen?"
+          ],
+          "start_at": "S1E1",
+          "span": "S1-S9",
+          "situations": [
+            {"id": "responsibility_you_didnt_ask_for", "weight": 0.95},
+            {"id": "becoming_a_manager", "weight": 0.5},
+            {"id": "caring_for_family", "weight": 0.6},
+            {"id": "burnout_at_work", "weight": 0.4}
+          ],
+          "conflicts": ["power_vs_morality", "control_vs_trust"],
+          "emotions": {"start": ["fear", "determination", "hope"], "middle": ["guilt", "anger", "numbness"], "end": ["grief", "acceptance", "peace"]},
+          "ending_tone": "bittersweet",
+          "intensity": "heavy",
+          "warnings": ["death_of_loved_one", "war_and_violence", "graphic_gore", "child_endangerment", "betrayal", "torture", "grief"],
+          "example_user_messages": [
+            "I became the person everyone relies on and I don't know how to put it down. Every mistake feels like it's mine.",
+            "I've had to make so many harsh calls at work that I barely recognise myself anymore.",
+            "My team trusts me completely, and honestly that scares me more than anything.",
+            "I keep telling myself I'm protecting my family, but my partner says I've become cold."
+          ],
+          "spoiler": {
+            "summary": "Rick finds his family and becomes the group's reluctant leader. After killing his best friend Shane and losing his wife Lori in childbirth, he breaks down, then hardens into a ruthless protector who trusts no outsiders (the prison, Terminus, taking over Alexandria). He relinquishes and resumes leadership, embraces his brutality after the Claimers, and becomes Alexandria's leader and Michonne's partner. His overconfidence against the Saviors leads to Negan's line-up, where Glenn and Abraham are killed and Rick is utterly broken, before he rallies the communities to war. After Carl's death he is tempted toward pure vengeance, but Carl's letter moves him to spare Negan and build a peaceful coalition. Eighteen months later he blows up a bridge to stop a herd and is presumed dead, though he is secretly taken away by a helicopter.",
+            "key_events": [
+              "Kills his best friend Shane in self-defence",
+              "Lori dies giving birth to Judith; Rick has a breakdown",
+              "Declares the group is no longer a democracy",
+              "Rips out Joe's throat with his teeth to save Carl",
+              "Becomes leader of Alexandria and Michonne's partner",
+              "Negan kills Glenn and Abraham; Rick submits, then rebels",
+              "Carl dies; Rick spares Negan to honour Carl's vision",
+              "Blows up the bridge and is presumed dead, taken away by helicopter"
+            ],
+            "got_right": "He never stops caring for his people, and at his best he listens to the people who remind him of his conscience; sparing Negan to build a future is his hardest and wisest choice.",
+            "got_wrong": "He repeatedly lets fear and certainty turn into ruthlessness and arrogance, underestimating enemies and dismissing others' judgement, which costs lives."
+          }
+        },
+        {
+          "id": "arc:walking_dead/rick_grimes/coming_home_changed",
+          "title": "Coming home to a family that kept going without him",
+          "literal_situation": "Rick reunites with his wife and son at a survivor camp, where his best friend and fellow deputy has been looking after them while Rick was presumed lost.",
+          "pattern_label": "returning to a family that moved on",
+          "pattern_text": "A person comes back after a long absence expecting to pick up where they left off, only to find that the people they love have adapted without them. A marriage that was already strained and a lifelong friendship are quietly tested by everything nobody is saying. The question is whether honesty and forgiveness can hold a family together when everyone's place in it has shifted.",
+          "hook": "It feels like a miracle: the family Rick feared was gone is alive. But his marriage had problems before the collapse, and his closest friend seems less relieved by his return than he expected.",
+          "why_relatable": "What happens when you come back and everyone's roles have changed? Can a friendship survive when two people want the same place in a family? How honest can a couple be when both are hiding what they went through apart?",
+          "watch_for": [
+            "What goes unsaid between Rick, his wife and his best friend?",
+            "How does Rick handle it when his friend disagrees with how he leads?",
+            "What does their son pick up on that the adults don't say out loud?"
+          ],
+          "start_at": "S1E3",
+          "span": "S1-S3",
+          "situations": [
+            {"id": "friendship_ending", "weight": 0.8},
+            {"id": "divorce", "weight": 0.4},
+            {"id": "caring_for_family", "weight": 0.6},
+            {"id": "grief_and_loss", "weight": 0.6}
+          ],
+          "conflicts": ["truth_vs_protecting_others", "holding_on_vs_letting_go"],
+          "emotions": {"start": ["relief", "joy", "confusion"], "middle": ["jealousy", "betrayal", "anger"], "end": ["grief", "guilt"]},
+          "ending_tone": "tragic",
+          "intensity": "heavy",
+          "warnings": ["betrayal", "death_of_loved_one", "grief", "war_and_violence", "medical_trauma", "graphic_gore"],
+          "example_user_messages": [
+            "I was away for a long time and when I came back my family had their own routines without me. I feel like a guest in my own home.",
+            "I think my best friend has feelings for my wife and I don't know how to bring it up.",
+            "My marriage was already rocky, and now something happened while I was gone that nobody will talk about.",
+            "My oldest friend and I have started competing over everything and I don't know how we got here."
+          ],
+          "spoiler": {
+            "summary": "Rick learns that Lori and Shane had an affair while he was in a coma and that Lori is pregnant, possibly with Shane's child. Shane grows jealous and unstable, challenging Rick's leadership, and tries to lure him into the woods to kill him; Rick kills Shane instead, and Carl puts down Shane's reanimated body. Rick's marriage stays strained until Lori dies giving birth to Judith, before they can fully reconcile. Rick raises Judith as his own and is haunted by hallucinations of Lori.",
+            "key_events": [
+              "Lori and Shane had an affair during Rick's coma",
+              "Lori is pregnant and paternity is uncertain",
+              "Shane tries to kill Rick; Rick kills Shane",
+              "Carl shoots Shane's zombified body",
+              "Lori dies in childbirth before fully reconciling with Rick",
+              "Rick raises Judith as his own daughter"
+            ],
+            "got_right": "He keeps choosing to be a father to both children and eventually understands that Lori's and Shane's choices came from fear and grief, not malice.",
+            "got_wrong": "He avoids emotional honesty with his wife just as he did before the collapse, and he lets the rivalry with Shane escalate instead of confronting it early."
+          }
+        },
+        {
+          "id": "arc:walking_dead/rick_grimes/choosing_the_future_over_revenge",
+          "title": "Revenge or the future",
+          "literal_situation": "In the middle of an all-out war between communities, Rick is fixated on killing the man who tormented his people.",
+          "pattern_label": "choosing mercy after a devastating loss",
+          "pattern_text": "After a devastating loss, a person has every reason to want the one they blame to suffer. But someone they love asked them to picture a life after the fighting, where old enemies have to live side by side. The question is whether you can let go of vengeance and build something, even when it means disappointing the people who share your anger.",
+          "hook": "Later in the series, in the middle of a brutal conflict, a devastating personal loss leaves Rick burning to destroy his enemy, while a message from someone he loves asks him to imagine a future beyond the fighting.",
+          "why_relatable": "Can you honour someone's hopes when your own grief is screaming for something else? Is mercy weakness or strength when others around you want blood? What does it take to lead people toward peace when they have every reason to hate?",
+          "watch_for": [
+            "What does he see in himself that makes him hesitate?",
+            "How do his closest allies react to the choice he makes?",
+            "Can a peace built on one person's vision last without them?"
+          ],
+          "start_at": "S8",
+          "span": "S8-S9",
+          "situations": [
+            {"id": "grief_and_loss", "weight": 0.9},
+            {"id": "responsibility_you_didnt_ask_for", "weight": 0.6},
+            {"id": "redemption_after_mistakes", "weight": 0.5}
+          ],
+          "conflicts": ["revenge_vs_forgiveness", "past_vs_future"],
+          "emotions": {"start": ["grief", "anger"], "middle": ["guilt", "determination"], "end": ["hope", "peace"]},
+          "ending_tone": "bittersweet",
+          "intensity": "heavy",
+          "warnings": ["death_of_loved_one", "grief", "war_and_violence", "graphic_gore", "betrayal"],
+          "example_user_messages": [
+            "Someone took something from me I can never get back, and everyone expects me to want revenge. Part of me does.",
+            "My son always believed people could change. I'm trying to live up to that, but it's so hard.",
+            "I forgave someone who hurt us badly, and now some of my closest friends won't speak to me.",
+            "I'm trying to build something good out of the worst thing that ever happened to me."
+          ],
+          "spoiler": {
+            "summary": "Carl is bitten and takes his own life, leaving letters asking Rick to make peace. Rick first spirals, lying to and slaughtering surrendering Saviors, but after seeing what he has become he slits Negan's throat and then has Siddiq save him, imprisoning Negan for life and offering the Saviors a place in a new coalition. Maggie and Daryl resent the decision. Rick works to unite the communities by rebuilding a bridge, but the project fractures; he ultimately blows up the bridge to stop a herd and is presumed dead, leaving his vision as his legacy.",
+            "key_events": [
+              "Carl dies after a walker bite and leaves letters",
+              "Rick betrays and kills Saviors who helped him",
+              "Rick cuts Negan's throat, then orders him saved",
+              "Negan is imprisoned for life; Maggie is furious",
+              "The bridge project to unite communities falls apart",
+              "Rick blows up the bridge and is presumed dead"
+            ],
+            "got_right": "He chooses to honour his son's vision over his own rage and treats defeated enemies as future neighbours.",
+            "got_wrong": "He imposes his decision without bringing grieving allies like Maggie along, leaving wounds that almost tear the peace apart."
+          }
+        }
+      ]
+    },
+    {
+      "id": "char:walking_dead/daryl_dixon",
+      "name": "Daryl Dixon",
+      "role": "A surly, gifted hunter living in the shadow of his volatile older brother on the edge of a survivor camp outside Atlanta.",
+      "relations": [
+        {"target": "char:walking_dead/rick_grimes", "relation": "friend"},
+        {"target": "char:walking_dead/carol_peletier", "relation": "friend"},
+        {"target": "char:walking_dead/glenn_rhee", "relation": "friend"},
+        {"target": "char:walking_dead/maggie_greene", "relation": "friend"},
+        {"target": "char:walking_dead/michonne", "relation": "friend"},
+        {"target": "char:walking_dead/carl_grimes", "relation": "friend"}
+      ],
+      "arcs": [
+        {
+          "id": "arc:walking_dead/daryl_dixon/outsider_finds_a_family",
+          "title": "The outsider who didn't think he mattered",
+          "literal_situation": "A hunter raised in a neglectful, abusive home and used to following his older brother's lead finds himself part of a camp of strangers who need his skills.",
+          "pattern_label": "an outsider discovering a chosen family",
+          "pattern_text": "Someone raised in neglect and taught that they are worthless has always stayed on the margins, loyal to the one family member who at least showed up. When a group of strangers starts relying on them and treating them with respect, they have to decide who they really are and where they belong. The question is whether they can believe they are worth something, and choose the people who choose them.",
+          "hook": "Daryl is angry, prickly and quick to lash out, and he mostly keeps to himself unless his brother is around. Nobody expects much from him, and he expects even less from himself.",
+          "why_relatable": "What do you owe the family you were born into when they keep pulling you down? Can you trust people who seem to value you when you've never felt valued? How do you stop acting like the person everyone assumed you'd be?",
+          "watch_for": [
+            "Who is the first person he goes out of his way to help, and why?",
+            "How does he behave differently when his brother is around?",
+            "What happens when someone thanks him or praises him?"
+          ],
+          "start_at": "S1E3",
+          "span": "S1-S5",
+          "situations": [
+            {"id": "finding_your_people", "weight": 0.9},
+            {"id": "confidence_struggle", "weight": 0.6},
+            {"id": "difficult_parent", "weight": 0.4},
+            {"id": "sibling_rivalry", "weight": 0.5}
+          ],
+          "conflicts": ["self_vs_family_expectations", "independence_vs_connection"],
+          "emotions": {"start": ["loneliness", "anger", "inadequacy"], "middle": ["confusion", "belonging", "grief"], "end": ["belonging", "self_respect", "love"]},
+          "ending_tone": "bittersweet",
+          "intensity": "heavy",
+          "warnings": ["abuse", "death_of_loved_one", "grief", "war_and_violence", "graphic_gore", "child_endangerment"],
+          "example_user_messages": [
+            "I grew up being told I was worthless and I still kind of believe it, even though people at my new job keep saying I'm good at what I do.",
+            "My older brother is a mess and he drags me into it, but he's the only family I've got.",
+            "I've always been the outsider. Now I have friends who actually care about me and I don't know how to handle it.",
+            "I have to choose between my family and the people who've actually been there for me."
+          ],
+          "spoiler": {
+            "summary": "Daryl's tireless search for Carol's missing daughter Sophia earns him respect and a deep bond with Carol, though he retreats when Sophia is found turned. He becomes indispensable at the prison and one of Rick's closest allies. When he rescues Merle from Woodbury he briefly leaves the group to follow his brother, but returns after seeing Merle's cruelty; Merle later sacrifices himself against the Governor and Daryl has to put down his reanimated brother. After the prison falls he bonds with Beth, who helps him face his past, and is devastated when she is killed. By Alexandria he is Rick's brother in all but blood and Carol's closest friend.",
+            "key_events": [
+              "Searches relentlessly for Sophia; Sophia is found as a walker in the barn",
+              "Chooses to leave with Merle, then returns to the prison",
+              "Merle dies attacking the Governor; Daryl puts him down",
+              "Bonds with Beth, who is later shot at Grady Memorial",
+              "Rick calls Daryl his brother",
+              "Becomes Alexandria's recruiter"
+            ],
+            "got_right": "He lets his actions show who he is and chooses the family that treats him with respect, even when it means breaking from his brother.",
+            "got_wrong": "He shuts down and lashes out when he's hurt, pushing away the people who care about him instead of letting them in."
+          }
+        },
+        {
+          "id": "arc:walking_dead/daryl_dixon/learning_to_stay",
+          "title": "The one who keeps running",
+          "literal_situation": "Years into rebuilding, Daryl spends most of his time alone in the wilderness, uneasy with a settled life, while the people he loves keep needing him closer.",
+          "pattern_label": "a lifelong runner learning to stay",
+          "pattern_text": "A person who learned to survive by leaving has built real bonds, but a settled, peaceful life makes them restless and they keep drifting to the edges. When young people start looking to them as a parent figure, they have to decide whether to stay and be relied on, or keep running from the risk of losing more. The question is whether you can let yourself have a good thing when every instinct says to go.",
+          "hook": "Later in the series, after a turning point that leaves him adrift, Daryl is more at home in the woods than among people. Yet a lost young person with a painful past sees in him someone who understands.",
+          "why_relatable": "Why does a stable life feel harder than a crisis? Can someone who never had a real parent become one? What do you owe the people who depend on you when your heart is pulling you somewhere else?",
+          "watch_for": [
+            "What does he recognise in the young people who look up to him?",
+            "When does he choose to leave, and when does he choose to stay?",
+            "How does he handle it when a friend's choices put people he loves at risk?"
+          ],
+          "start_at": "S9E6",
+          "span": "S9-S11",
+          "situations": [
+            {"id": "responsibility_you_didnt_ask_for", "weight": 0.7},
+            {"id": "becoming_a_parent", "weight": 0.6},
+            {"id": "loneliness", "weight": 0.6},
+            {"id": "friendship_ending", "weight": 0.3}
+          ],
+          "conflicts": ["independence_vs_connection", "holding_on_vs_letting_go"],
+          "emotions": {"start": ["loneliness", "restlessness", "grief"], "middle": ["anger", "betrayal", "love"], "end": ["belonging", "acceptance", "hope"]},
+          "ending_tone": "hopeful",
+          "intensity": "heavy",
+          "warnings": ["abuse", "death_of_loved_one", "grief", "war_and_violence", "graphic_gore", "betrayal"],
+          "example_user_messages": [
+            "Every time my life gets stable I get this urge to leave. I don't know why I can't just settle down.",
+            "My partner's kid has started treating me like a dad, and I'm terrified of letting them down.",
+            "I grew up in an abusive home and now I'm trying to help a teenager who went through the same thing.",
+            "My best friend made a reckless choice that hurt people I care about and I don't know if I can forgive her."
+          ],
+          "spoiler": {
+            "summary": "After Rick's apparent death Daryl searched for his body for years, then lived alone with Dog, and had a relationship with Leah before she left. He becomes a father figure to Lydia, who escaped her abusive mother Alpha, and later to Judith and R.J. Carol's revenge plan traps Connie and Magna in a cave, straining their friendship. Leah resurfaces with the Reapers; Daryl infiltrates them and ultimately kills her to protect Maggie. He reconciles with Carol, joins the Commonwealth army, helps overthrow Pamela Milton, then tells Carol he loves her and rides off to search for Rick, promising Judith he'll come back.",
+            "key_events": [
+              "Spends years searching for Rick's body",
+              "Relationship with Leah in the woods",
+              "Becomes Lydia's protector and father figure",
+              "Rift with Carol after the cave collapse traps Connie",
+              "Kills Leah to protect Maggie",
+              "Leaves to find Rick after learning he is alive"
+            ],
+            "got_right": "He shows up for kids who were hurt the way he was and ultimately gives them the steady care he never had.",
+            "got_wrong": "He isolates himself when grieving and lets bitterness toward Carol fester instead of talking it through."
+          }
+        }
+      ]
+    },
+    {
+      "id": "char:walking_dead/carol_peletier",
+      "name": "Carol Peletier",
+      "role": "A quiet, timid housewife at a survivor camp, trying to shield her young daughter from her controlling, abusive husband.",
+      "relations": [
+        {"target": "char:walking_dead/daryl_dixon", "relation": "friend"},
+        {"target": "char:walking_dead/rick_grimes", "relation": "friend"},
+        {"target": "char:walking_dead/maggie_greene", "relation": "friend"},
+        {"target": "char:walking_dead/carl_grimes", "relation": "friend"}
+      ],
+      "arcs": [
+        {
+          "id": "arc:walking_dead/carol_peletier/from_meek_to_formidable",
+          "title": "Finding the strength she was never allowed to have",
+          "literal_situation": "At a camp outside Atlanta, a woman who has endured years of domestic abuse tries to protect her daughter while keeping her head down.",
+          "pattern_label": "an abuse survivor reclaiming her own power",
+          "pattern_text": "A person who spent years in an abusive relationship, making herself small to survive, is suddenly free of the one who controlled her. Grief and danger force her to discover how capable and clear-eyed she really is. The question is how to become strong without losing the tenderness that made her who she was, and whether others will accept the new version of her.",
+          "hook": "Carol barely speaks above a whisper. She flinches when her husband raises his voice and has spent years convincing herself that enduring is the same as protecting her child.",
+          "why_relatable": "Who are you once the person who defined your life is no longer in charge of it? Can you become strong without becoming hard? What happens when the people around you aren't ready for the stronger you?",
+          "watch_for": [
+            "What small moments show her testing her own voice?",
+            "How do the others treat her as she changes, and does she care?",
+            "What does she keep of her gentleness, and what does she let go?"
+          ],
+          "start_at": "S1",
+          "span": "S1-S4",
+          "situations": [
+            {"id": "starting_over", "weight": 0.8},
+            {"id": "identity_and_self_acceptance", "weight": 0.7},
+            {"id": "grief_and_loss", "weight": 0.7},
+            {"id": "confidence_struggle", "weight": 0.6}
+          ],
+          "conflicts": ["safety_vs_growth", "power_vs_morality"],
+          "emotions": {"start": ["fear", "shame", "numbness"], "middle": ["grief", "determination"], "end": ["confidence", "self_respect", "guilt"]},
+          "ending_tone": "bittersweet",
+          "intensity": "heavy",
+          "warnings": ["domestic_violence", "abuse", "death_of_loved_one", "child_endangerment", "grief", "graphic_gore", "war_and_violence"],
+          "example_user_messages": [
+            "I left an abusive marriage and I don't even know who I am on my own.",
+            "For years I made myself small to keep the peace. Now I'm realising I'm actually really capable.",
+            "Since my divorce I've become tougher, and some of my friends say they don't recognise me anymore.",
+            "I lost the person I was living for and I have to figure out how to keep going."
+          ],
+          "spoiler": {
+            "summary": "After Ed is killed by walkers, Carol pierces his skull herself. Her daughter Sophia goes missing and is later found turned in Hershel's barn, shattering Carol. She rebuilds herself, learning weapons and medicine, and becomes a pragmatic force at the prison, secretly teaching children to fight. She kills two sick members, Karen and David, to stop a flu outbreak and is exiled by Rick. Later she is forced to kill Lizzie, a disturbed girl in her care who murdered her sister Mika, and confesses the Karen killing to Tyreese, who forgives her.",
+            "key_events": [
+              "Ed dies; Carol smashes his head with a pickaxe",
+              "Sophia is missing and later found as a walker in the barn",
+              "Secretly teaches the prison children to fight",
+              "Kills Karen and David to stop the illness; Rick exiles her",
+              "Kills Lizzie after Lizzie murders Mika",
+              "Confesses to Tyreese and is forgiven"
+            ],
+            "got_right": "She refuses to be a victim again and becomes someone who acts decisively to protect the vulnerable.",
+            "got_wrong": "She makes life-or-death choices alone and in secret, becoming so pragmatic that she stops trusting others to share the burden."
+          }
+        },
+        {
+          "id": "arc:walking_dead/carol_peletier/the_weight_of_being_strong",
+          "title": "When being the strong one becomes too much",
+          "literal_situation": "Settled in a community at last, Carol is the group's most ruthless protector behind a harmless-housewife act, but the list of what she has had to do keeps growing.",
+          "pattern_label": "burning out from always being the protector",
+          "pattern_text": "Someone has spent years doing the hard, ugly things no one else would do to keep the people they love safe. They are good at it, and everyone relies on it, but the weight of it starts to crush them. The question is whether they can step back, grieve what it cost, and find a way to live that isn't only about enduring.",
+          "hook": "Later in the series, after years of making the hardest calls for her group, Carol is starting to feel the weight of every one of them. She has found a gentle relationship and a quiet life within reach, and she isn't sure she deserves either.",
+          "why_relatable": "What happens when the thing you're best at is slowly destroying you? Is it selfish to walk away from people who depend on you? Can you ever set down what you've done, or only learn to carry it differently?",
+          "watch_for": [
+            "What does she keep count of, and why?",
+            "How does she respond to people who try to check on her?",
+            "What would make her pick up the fight again?"
+          ],
+          "start_at": "S6",
+          "span": "S6-S7",
+          "situations": [
+            {"id": "burnout_at_work", "weight": 0.8},
+            {"id": "loneliness", "weight": 0.6},
+            {"id": "redemption_after_mistakes", "weight": 0.4},
+            {"id": "starting_over", "weight": 0.5}
+          ],
+          "conflicts": ["duty_vs_desire", "independence_vs_connection"],
+          "emotions": {"start": ["guilt", "numbness", "overwhelm"], "middle": ["burnout", "loneliness"], "end": ["acceptance", "belonging"]},
+          "ending_tone": "hopeful",
+          "intensity": "heavy",
+          "warnings": ["war_and_violence", "death_of_loved_one", "graphic_gore", "grief"],
+          "example_user_messages": [
+            "I've always been the one who handles the hard stuff and I think I'm completely burnt out.",
+            "I keep replaying every tough decision I've had to make. I can't switch it off.",
+            "I want to walk away from all of it and live somewhere quiet, but people keep needing me.",
+            "I did things to protect my family that I'm not proud of, and I don't know how to live with them."
+          ],
+          "spoiler": {
+            "summary": "After the raid on the Saviors' outpost and being captured with Maggie, Carol kills a group of Saviors and is overwhelmed by the number of lives she has taken. She breaks up with Tobin and leaves Alexandria alone, is gravely wounded, and is rescued by Morgan and taken to the Kingdom, where she lives in a cottage on the outskirts, refusing to fight. Ezekiel quietly befriends her. When she learns from Daryl that Glenn and Abraham were killed by Negan, she chooses to rejoin the fight against the Saviors.",
+            "key_events": [
+              "Keeps a list of people she has killed",
+              "Leaves Tobin and Alexandria alone",
+              "Wounded, rescued by Morgan and brought to the Kingdom",
+              "Lives in isolation in a cottage near the Kingdom",
+              "Learns of Glenn and Abraham's deaths and rejoins the fight"
+            ],
+            "got_right": "She recognises her limits and gives herself permission to step away and grieve instead of numbing herself.",
+            "got_wrong": "She tries to handle it completely alone, leaving without telling the people who love her, which leaves her in danger and them in the dark."
+          }
+        },
+        {
+          "id": "arc:walking_dead/carol_peletier/grief_that_wants_someone_to_pay",
+          "title": "Grief that wants someone to pay",
+          "literal_situation": "Leading alongside allies in an uneasy truce with a dangerous group, Carol is fixated on destroying their leader, even as the others choose caution.",
+          "pattern_label": "grief hardening into an obsession with revenge",
+          "pattern_text": "After a loss too deep to bear, a person pours all their pain into making the one responsible pay. Their obsession starts to put friends at risk and strains the relationships that are keeping them afloat. The question is whether revenge can ever bring the peace they want, and whether they can forgive themselves for what their grief made them do.",
+          "hook": "Later in the series, after a loss that cuts deeper than any before, Carol is consumed by the need to make someone pay, and the people closest to her are starting to worry about how far she will go.",
+          "why_relatable": "What do you do with anger that has nowhere to go? When does fighting for justice become hurting the people who are standing next to you? Can you come back from what your grief made you do?",
+          "watch_for": [
+            "Who tries to talk her down, and how does she respond?",
+            "Which relationships does she risk for her goal?",
+            "What does she find, or not find, if she gets what she wants?"
+          ],
+          "start_at": "S10E1",
+          "span": "S10-S11",
+          "situations": [
+            {"id": "grief_and_loss", "weight": 0.9},
+            {"id": "redemption_after_mistakes", "weight": 0.6},
+            {"id": "friendship_ending", "weight": 0.4}
+          ],
+          "conflicts": ["revenge_vs_forgiveness", "holding_on_vs_letting_go"],
+          "emotions": {"start": ["grief", "anger", "resentment"], "middle": ["guilt", "betrayal"], "end": ["acceptance", "relief"]},
+          "ending_tone": "bittersweet",
+          "intensity": "heavy",
+          "warnings": ["death_of_loved_one", "grief", "torture", "war_and_violence", "graphic_gore", "betrayal"],
+          "example_user_messages": [
+            "Someone took my child from me and all I can think about is making them suffer.",
+            "My grief made me do something reckless, and a friend got hurt because of it.",
+            "My best friend says I've become obsessed and I'm scaring him.",
+            "I got the justice I wanted and I don't feel any better."
+          ],
+          "spoiler": {
+            "summary": "After Alpha kills Carol's adopted son Henry and her marriage to Ezekiel ends, Carol is consumed by vengeance. She lies about Lydia, tortures a captured Whisperer and leads a group into Alpha's cave, where a collapse traps Connie and Magna, badly straining her friendship with Daryl. She secretly frees Negan to infiltrate the Whisperers, and he kills Alpha and brings her the head. Revenge brings no peace; Carol later urges Aaron toward forgiveness, helps rescue Connie, and reconciles with Daryl.",
+            "key_events": [
+              "Henry is killed by Alpha",
+              "Carol uses Lydia and tortures a Whisperer",
+              "Cave collapse traps Connie and Magna",
+              "Secret deal with Negan to kill Alpha",
+              "Negan delivers Alpha's head; Daryl pushes Carol away",
+              "Connie is rescued and Carol reconciles with Daryl"
+            ],
+            "got_right": "She owns her mistakes afterward and uses what she learned to steer others away from the same path.",
+            "got_wrong": "She lets vengeance override her judgement, lies to and uses people who trust her, and endangers friends."
+          }
+        }
+      ]
+    },
+    {
+      "id": "char:walking_dead/glenn_rhee",
+      "name": "Glenn Rhee",
+      "role": "A quick-witted former pizza delivery guy who works as his survivor group's nimble, fearless supply runner.",
+      "relations": [
+        {"target": "char:walking_dead/maggie_greene", "relation": "partner"},
+        {"target": "char:walking_dead/rick_grimes", "relation": "friend"},
+        {"target": "char:walking_dead/daryl_dixon", "relation": "friend"},
+        {"target": "char:walking_dead/carl_grimes", "relation": "friend"},
+        {"target": "char:walking_dead/eugene_porter", "relation": "friend"}
+      ],
+      "arcs": [
+        {
+          "id": "arc:walking_dead/glenn_rhee/finding_his_own_voice",
+          "title": "From errand boy to the group's conscience",
+          "literal_situation": "A young man who was stuck in a dead-end delivery job before the collapse is now the one sent into the most dangerous places because he's fast and expendable.",
+          "pattern_label": "an underestimated young person finding their voice",
+          "pattern_text": "A young person who drifted into a going-nowhere role is used to being useful but never listened to. As they earn trust and find people who believe in them, they start speaking up and holding onto their values when others are hardening. The question is whether you can stay kind and hopeful without being naive, and whether you can grow into someone others look to.",
+          "hook": "Glenn is the one who runs into danger so everyone else doesn't have to. He's clever, brave and funny, but he's used to being treated as the kid who fetches things.",
+          "why_relatable": "What happens when you realise you've been playing it safe with your life? Can you speak up in a group that's used to you just going along? How do you keep your decency when everyone around you says it's a luxury?",
+          "watch_for": [
+            "When does he first push back against the older members of the group?",
+            "Who helps him see himself differently?",
+            "How does he react when others argue that mercy is dangerous?"
+          ],
+          "start_at": "S1E2",
+          "span": "S1-S6",
+          "situations": [
+            {"id": "confidence_struggle", "weight": 0.7},
+            {"id": "coming_of_age", "weight": 0.6},
+            {"id": "finding_your_people", "weight": 0.6},
+            {"id": "imposter_syndrome", "weight": 0.3}
+          ],
+          "conflicts": ["belonging_vs_integrity", "safety_vs_growth"],
+          "emotions": {"start": ["self_doubt", "determination"], "middle": ["confidence", "grief", "anger"], "end": ["self_respect", "hope"]},
+          "ending_tone": "bittersweet",
+          "intensity": "heavy",
+          "warnings": ["torture", "war_and_violence", "graphic_gore", "death_of_loved_one", "grief"],
+          "example_user_messages": [
+            "I've been in the same job for years doing whatever I'm told, and I'm realising I have opinions nobody ever asks for.",
+            "Everyone treats me like the young one who runs errands. I want them to take me seriously.",
+            "People keep telling me I'm too soft, but I don't want to become cynical like them.",
+            "My mentor passed away and I feel like I have to step up and be the voice he was."
+          ],
+          "spoiler": {
+            "summary": "Glenn goes from the group's disposable runner to a respected council member and its moral voice. He withstands torture at Woodbury without giving up the group. After Hershel's death he pledges to carry on his role as conscience, protecting Tara and urging Rick to free Terminus captives. Beth's death and Eugene's lie harden him for a time, but he still cannot bring himself to kill Nicholas despite his betrayal, and he tears up at his first human kill during the raid on the Saviors. He is beaten to death by Negan in the Season 7 premiere.",
+            "key_events": [
+              "Saves Rick in Atlanta",
+              "Endures Merle's interrogation at Woodbury without talking",
+              "Takes up Hershel's role as the group's conscience",
+              "Spares Nicholas after Nicholas tries to kill him",
+              "First human kill during the Satellite Outpost raid",
+              "Killed by Negan with Lucille"
+            ],
+            "got_right": "He proves that compassion and courage can coexist and holds onto his humanity longer than almost anyone.",
+            "got_wrong": "He sometimes takes enormous risks for others without weighing the cost to the people who love him."
+          }
+        },
+        {
+          "id": "arc:walking_dead/glenn_rhee/love_in_the_worst_of_times",
+          "title": "Love in the worst of times",
+          "literal_situation": "While his group shelters on a family farm, a young supply runner strikes up an unexpected connection with the farmer's elder daughter.",
+          "pattern_label": "first real love under impossible pressure",
+          "pattern_text": "Someone who never had much luck in love finds a serious relationship at the most unlikely time. The stakes are high, the future is uncertain, and they have to learn to be a partner, protect someone and let themselves be protected. The question is how you build a life with someone when you can't promise them tomorrow.",
+          "hook": "Glenn has never been the guy who gets the girl. Now, while his group waits anxiously on a farm, the farmer's daughter makes the first move, and he has no idea what to do with it.",
+          "why_relatable": "How do you know if something that started in a crisis is real? Can you commit to someone when your life feels so uncertain? What does it mean to protect a partner who wants to be your equal?",
+          "watch_for": [
+            "How does their relationship change the way he takes risks?",
+            "What secrets does he struggle to keep from her?",
+            "How do they handle it when they disagree about what's too dangerous?"
+          ],
+          "start_at": "S2E2",
+          "span": "S2-S7",
+          "situations": [
+            {"id": "falling_for_someone_unexpected", "weight": 0.9},
+            {"id": "becoming_a_parent", "weight": 0.4},
+            {"id": "family_expectations", "weight": 0.3}
+          ],
+          "conflicts": ["duty_vs_desire", "safety_vs_growth"],
+          "emotions": {"start": ["curiosity", "self_doubt", "joy"], "middle": ["love", "fear", "determination"], "end": ["love", "hope"]},
+          "ending_tone": "tragic",
+          "intensity": "heavy",
+          "warnings": ["death_of_main_character", "sexual_violence", "torture", "graphic_gore", "war_and_violence", "grief"],
+          "example_user_messages": [
+            "I started seeing someone right when my life was falling apart. Is it real or just the stress?",
+            "I've never been good with relationships and suddenly I'm in a serious one. I don't know what I'm doing.",
+            "We just found out we're having a baby and the world feels too scary to bring a kid into.",
+            "My girlfriend's dad doesn't think I'm good enough for her."
+          ],
+          "spoiler": {
+            "summary": "Maggie and Glenn begin a relationship on the farm; Glenn wins over Hershel. They are captured and tormented by the Governor at Woodbury, then marry. Separated when the prison falls, Glenn searches desperately for Maggie and they reunite at Terminus. In Alexandria Maggie becomes pregnant. Glenn survives an apparent death in a dumpster, but after the group is captured by the Saviors, Negan beats him to death in front of Maggie; his last words are that he'll find her.",
+            "key_events": [
+              "Relationship with Maggie begins on the farm",
+              "Governor humiliates and threatens them at Woodbury",
+              "Asks Hershel's blessing and marries Maggie",
+              "Separated after the prison falls; reunite near Terminus",
+              "Maggie becomes pregnant in Alexandria",
+              "Negan kills Glenn in front of Maggie"
+            ],
+            "got_right": "He loves wholeheartedly and treats Maggie as an equal partner, not someone to be managed.",
+            "got_wrong": "His need to protect everyone sometimes puts himself in harm's way in ways that terrify the person he loves."
+          }
+        }
+      ]
+    },
+    {
+      "id": "char:walking_dead/maggie_greene",
+      "name": "Maggie Greene",
+      "role": "The headstrong elder daughter of a devout farmer whose family has sheltered from the collapse on their isolated farm.",
+      "relations": [
+        {"target": "char:walking_dead/glenn_rhee", "relation": "partner"},
+        {"target": "char:walking_dead/rick_grimes", "relation": "friend"},
+        {"target": "char:walking_dead/carol_peletier", "relation": "friend"},
+        {"target": "char:walking_dead/daryl_dixon", "relation": "friend"},
+        {"target": "char:walking_dead/michonne", "relation": "friend"}
+      ],
+      "arcs": [
+        {
+          "id": "arc:walking_dead/maggie_greene/stepping_out_of_her_fathers_world",
+          "title": "Stepping out of her father's world",
+          "literal_situation": "On her family's farm, a young woman who has always lived within her father's rules and beliefs meets a band of outsiders who see the world very differently.",
+          "pattern_label": "a young adult breaking from a protective parent",
+          "pattern_text": "A young adult who has lived inside a loving but controlling parent's worldview starts to realise it doesn't match reality. Falling for an outsider and siding with new people forces her to choose her own path without losing her family. The question is how to become your own person while still honouring where you came from.",
+          "hook": "Maggie is confident, sharp and restless on her father's farm. He believes the danger outside is something that will pass, and she's starting to doubt it, and him.",
+          "why_relatable": "What do you do when you love a parent but can't agree with them anymore? Can you choose a partner your family doesn't understand? How do you grow up without breaking the bond that raised you?",
+          "watch_for": [
+            "How does she handle it when her father's beliefs put people in danger?",
+            "Who does she take a chance on, and why?",
+            "What does she carry forward from her father, and what does she leave behind?"
+          ],
+          "start_at": "S2E2",
+          "span": "S2-S4",
+          "situations": [
+            {"id": "family_expectations", "weight": 0.7},
+            {"id": "falling_for_someone_unexpected", "weight": 0.7},
+            {"id": "coming_of_age", "weight": 0.5},
+            {"id": "leaving_home", "weight": 0.5}
+          ],
+          "conflicts": ["self_vs_family_expectations", "safety_vs_growth"],
+          "emotions": {"start": ["restlessness", "curiosity", "anxiety"], "middle": ["love", "fear", "determination"], "end": ["grief", "confidence"]},
+          "ending_tone": "bittersweet",
+          "intensity": "heavy",
+          "warnings": ["death_of_loved_one", "sexual_violence", "medical_trauma", "war_and_violence", "graphic_gore", "grief"],
+          "example_user_messages": [
+            "My dad and I have always been close but I'm starting to think he's wrong about a lot of things.",
+            "I'm dating someone my family doesn't approve of and I don't want to choose.",
+            "I've lived by my parents' rules my whole life and now I'm figuring out what I actually believe.",
+            "I had to leave the place I grew up and I miss it, but I know I can't go back."
+          ],
+          "spoiler": {
+            "summary": "Maggie begins a relationship with Glenn and, after nearly dying to a walker, sides with Rick's group, straining things with Hershel, who comes to accept both. When the farm is overrun she leaves with the group. At the prison she performs an emergency C-section that kills Lori and saves Judith. She and Glenn are captured; the Governor sexually humiliates and threatens her, and she only breaks when he threatens Glenn. She marries Glenn with her father's blessing. When the prison falls, the Governor beheads Hershel in front of her, and she sets out to find Glenn.",
+            "key_events": [
+              "Starts a relationship with Glenn on the farm",
+              "Farm overrun; family home lost",
+              "Delivers Judith by C-section; Lori dies",
+              "Captured and sexually humiliated by the Governor",
+              "Marries Glenn",
+              "Hershel is executed by the Governor at the prison"
+            ],
+            "got_right": "She stands up for what she believes and chooses the people who see the world clearly, while keeping her father's compassion.",
+            "got_wrong": "After the prison falls she focuses on finding Glenn to the point of assuming her sister is dead and not looking for her."
+          }
+        },
+        {
+          "id": "arc:walking_dead/maggie_greene/leading_through_grief",
+          "title": "Leading while carrying a wound",
+          "literal_situation": "In a network of rebuilding communities, Maggie is expected to lead her people while nursing a deep grudge against one man.",
+          "pattern_label": "leading others while consumed by grief and anger",
+          "pattern_text": "Someone suffers a devastating loss and is thrust into leading a community at the same time. They are good at it, but their anger toward the person they blame shapes their choices and strains their friendships. The question is whether they can build a future for the people depending on them without being ruled by the past.",
+          "hook": "Later in the series, after a turning point that shatters her world, Maggie finds herself responsible for an entire community while a burning need for justice against one man drives her.",
+          "why_relatable": "Can you be a good leader and a good parent while you're still falling apart inside? Is wanting justice the same as wanting revenge? What if someone who hurt you truly seems to be changing?",
+          "watch_for": [
+            "How does she decide what punishment fits a crime?",
+            "Who does she trust to tell her the truth about herself?",
+            "What would it take for her to see the man she blames differently?"
+          ],
+          "start_at": "S7",
+          "span": "S7-S11",
+          "situations": [
+            {"id": "grief_and_loss", "weight": 0.9},
+            {"id": "becoming_a_manager", "weight": 0.6},
+            {"id": "becoming_a_parent", "weight": 0.5},
+            {"id": "responsibility_you_didnt_ask_for", "weight": 0.5}
+          ],
+          "conflicts": ["revenge_vs_forgiveness", "duty_vs_desire"],
+          "emotions": {"start": ["grief", "anger", "determination"], "middle": ["resentment", "confidence", "betrayal"], "end": ["acceptance", "self_respect"]},
+          "ending_tone": "bittersweet",
+          "intensity": "heavy",
+          "warnings": ["death_of_loved_one", "grief", "war_and_violence", "graphic_gore", "betrayal"],
+          "example_user_messages": [
+            "I became a single mom and got promoted in the same year, and I'm running on pure anger.",
+            "The person who hurt my family is now part of my social circle and everyone expects me to be okay with it.",
+            "He apologised and I think he means it, but I can't forgive him. I'm not sure I ever will.",
+            "My friends made a decision about someone who hurt me without asking me, and I feel betrayed."
+          ],
+          "spoiler": {
+            "summary": "After Negan kills Glenn, the pregnant Maggie becomes leader of the Hilltop and a co-leader in the war against the Saviors. She is enraged when Rick spares Negan and plans revenge, executes Gregory for trying to have her killed, and eventually confronts Negan in his cell, only to see a broken man. She leaves with her son Hershel to join Georgie's group, returns years later to find Negan free, leads the fight against the Reapers, and in the Commonwealth conflict hears Negan's sincere apology; she cannot forgive him but starts letting go of her hatred.",
+            "key_events": [
+              "Glenn is killed; Maggie gives birth to Hershel",
+              "Becomes leader of the Hilltop",
+              "Furious when Rick spares Negan",
+              "Has Gregory hanged",
+              "Confronts Negan in his cell and spares him",
+              "Leaves Hilltop, returns years later, fights the Reapers",
+              "Receives Negan's apology; cannot forgive but begins to move on"
+            ],
+            "got_right": "She leads with strength and care and refuses to let her enemies take her humanity, sparing surrendered enemies.",
+            "got_wrong": "She lets her grudge steer major decisions, sometimes putting her anger ahead of the fragile peace others are trying to build."
+          }
+        }
+      ]
+    },
+    {
+      "id": "char:walking_dead/michonne",
+      "name": "Michonne",
+      "role": "A silent, sword-wielding loner who has survived for months on her own, trusting no one and revealing nothing about her past.",
+      "relations": [
+        {"target": "char:walking_dead/rick_grimes", "relation": "partner"},
+        {"target": "char:walking_dead/carl_grimes", "relation": "child"},
+        {"target": "char:walking_dead/daryl_dixon", "relation": "friend"},
+        {"target": "char:walking_dead/maggie_greene", "relation": "friend"},
+        {"target": "char:walking_dead/carol_peletier", "relation": "friend"}
+      ],
+      "arcs": [
+        {
+          "id": "arc:walking_dead/michonne/letting_people_back_in",
+          "title": "Letting people back in",
+          "literal_situation": "A self-sufficient loner with a sword arrives, wounded, at the gates of a group she has no intention of joining.",
+          "pattern_label": "reopening your heart after devastating loss",
+          "pattern_text": "After losing everything, a person has walled themselves off and survives on pure self-reliance, trusting only their own instincts. When a new group slowly offers them a place, especially a child who looks up to them, they have to decide whether to risk loving again. The question is whether you can let go of the past enough to live, not just survive.",
+          "hook": "Michonne speaks as little as possible and trusts almost no one. She's hiding a painful past and has no plans to share it, least of all with a group led by a man who doesn't trust her either.",
+          "why_relatable": "How do you let people close after being hurt so badly? What does it mean to stop just surviving and start living again? Can people who have only just met ever become a real family?",
+          "watch_for": [
+            "Who is the first person she lets see her smile, and why them?",
+            "What does she avoid, and what might that say about her past?",
+            "When does she choose to stay instead of walking away?"
+          ],
+          "start_at": "S3E1",
+          "span": "S3-S5",
+          "situations": [
+            {"id": "grief_and_loss", "weight": 0.8},
+            {"id": "finding_your_people", "weight": 0.8},
+            {"id": "loneliness", "weight": 0.7},
+            {"id": "starting_over", "weight": 0.5}
+          ],
+          "conflicts": ["independence_vs_connection", "past_vs_future"],
+          "emotions": {"start": ["numbness", "loneliness", "anger"], "middle": ["guilt", "longing", "belonging"], "end": ["belonging", "love", "hope"]},
+          "ending_tone": "hopeful",
+          "intensity": "heavy",
+          "warnings": ["death_of_loved_one", "grief", "addiction", "war_and_violence", "graphic_gore"],
+          "example_user_messages": [
+            "After I lost my family I shut everyone out. Now people are trying to get close and I don't know if I can let them.",
+            "I'm so used to handling everything alone that accepting help feels like weakness.",
+            "My partner's kid has really taken to me and it's bringing up grief I thought I'd buried.",
+            "I've been in survival mode for so long I don't remember how to just live."
+          ],
+          "spoiler": {
+            "summary": "Michonne, who had been dragging her zombified boyfriend Mike and his friend Terry as camouflage after her son Andre died in a camp overrun, leaves Woodbury after distrusting the Governor and joins Rick's group. She bonds deeply with Carl and later confesses that she lost Andre, the reason she once refused to hold baby Judith. After the prison falls she briefly reverts to wandering with walkers before deciding to find her people. In Alexandria she hangs up her sword to 'live again', later putting it back on as a balance of hope and vigilance.",
+            "key_events": [
+              "Leaves Woodbury, distrusting the Governor",
+              "Bonds with Carl and becomes a mother figure",
+              "Reveals the loss of her son Andre",
+              "Chooses to seek out her people after the prison falls",
+              "Hangs her sword on the wall in Alexandria"
+            ],
+            "got_right": "She takes the risk of loving again and champions the idea that the group should build a real life, not just survive.",
+            "got_wrong": "She hides her grief for so long that it keeps her from connecting, and at first she refuses to believe anyone could be trusted."
+          }
+        },
+        {
+          "id": "arc:walking_dead/michonne/the_guarded_protector",
+          "title": "The guarded protector",
+          "literal_situation": "Years into rebuilding, Michonne leads her community with a closed door, turning away strangers and keeping her distance from old allies.",
+          "pattern_label": "a protective parent closing off after being hurt",
+          "pattern_text": "After being deeply hurt by people they trusted, a person responsible for a family and a community decides the safest thing is to shut the door on outsiders. It keeps them safe, but it also isolates them and the children watching how they live. The question is whether you can protect the people you love without teaching them to be afraid of everyone.",
+          "hook": "Later in the series, after a turning point that reshapes her world, Michonne has become the fiercely guarded protector of her home and the children in her care, wary of every stranger and distant from old friends.",
+          "why_relatable": "How do you protect your family without walling them off from the world? What happens when the child you're protecting disagrees with you? Can you reopen old friendships after keeping everyone at arm's length?",
+          "watch_for": [
+            "What makes her reconsider a stranger?",
+            "How does she respond when a child challenges her decisions?",
+            "What is she protecting besides her family's safety?"
+          ],
+          "start_at": "S9E6",
+          "span": "S9-S10",
+          "situations": [
+            {"id": "caring_for_family", "weight": 0.8},
+            {"id": "becoming_a_manager", "weight": 0.5},
+            {"id": "loneliness", "weight": 0.5},
+            {"id": "friendship_ending", "weight": 0.4}
+          ],
+          "conflicts": ["control_vs_trust", "safety_vs_growth"],
+          "emotions": {"start": ["fear", "resentment", "loneliness"], "middle": ["guilt", "anxiety"], "end": ["hope", "belonging"]},
+          "ending_tone": "hopeful",
+          "intensity": "heavy",
+          "warnings": ["betrayal", "child_endangerment", "war_and_violence", "graphic_gore", "grief"],
+          "example_user_messages": [
+            "Someone I trusted betrayed my family, and since then I don't let anyone new in.",
+            "My daughter says I'm too overprotective and that I'm cutting us off from everyone.",
+            "I've drifted away from my old friends and I don't know how to fix it.",
+            "Being a single parent has made me so cautious that I think I've forgotten how to trust."
+          ],
+          "spoiler": {
+            "summary": "After Rick's apparent death, Michonne raises Judith and their son R.J. She was betrayed by her old friend Jocelyn, who kidnapped children and branded Michonne, leading Michonne and Daryl to kill Jocelyn's group, including indoctrinated children. This leaves her closed off, turning away newcomers and estranged from Maggie and the Hilltop. Judith pushes her to help Magna's group, and the Whisperer threat and Daryl help her reconnect with her friends. Later she discovers evidence that Rick is alive and leaves to find him.",
+            "key_events": [
+              "Raises Judith and R.J. after Rick's disappearance",
+              "Jocelyn's betrayal; Michonne is branded and kills child soldiers",
+              "Closes Alexandria to outsiders",
+              "Judith pushes her to help Magna's group",
+              "Reconciles with the other communities during the Whisperer threat",
+              "Finds Rick's boots and leaves to search for him"
+            ],
+            "got_right": "She listens to her daughter and her friends and finds her way back to trusting others.",
+            "got_wrong": "She lets one betrayal harden into suspicion of everyone and keeps her pain secret from friends who could have helped."
+          }
+        }
+      ]
+    },
+    {
+      "id": "char:walking_dead/carl_grimes",
+      "name": "Carl Grimes",
+      "role": "A shy young boy who has fled with his mother to a survivor camp, believing his father is dead.",
+      "relations": [
+        {"target": "char:walking_dead/rick_grimes", "relation": "parent"},
+        {"target": "char:walking_dead/michonne", "relation": "parent"},
+        {"target": "char:walking_dead/glenn_rhee", "relation": "friend"},
+        {"target": "char:walking_dead/daryl_dixon", "relation": "friend"},
+        {"target": "char:walking_dead/carol_peletier", "relation": "friend"}
+      ],
+      "arcs": [
+        {
+          "id": "arc:walking_dead/carl_grimes/growing_up_too_fast",
+          "title": "Growing up too fast",
+          "literal_situation": "A boy on the edge of adolescence lives in a survivor camp with his mother and his dad's best friend, surrounded by adults who can't hide how frightened they are.",
+          "pattern_label": "a child forced to grow up too soon",
+          "pattern_text": "A child is forced to face adult dangers and losses long before they're ready. They try to prove they can handle it, pushing to be treated as a grown-up, but the things they see and do begin to harden them in ways that frighten the adults around them and themselves. The question is whether you can hold onto who you are when life takes your childhood away.",
+          "hook": "Carl is a quiet kid who still looks to his parents for comfort. He badly wants to help and be taken seriously, and he's paying close attention to how the adults deal with a world that has fallen apart.",
+          "why_relatable": "What happens to a kid who has to be strong for everyone? How do you know if you're maturing or just becoming numb? Can parents protect a child from something they can't escape themselves?",
+          "watch_for": [
+            "Which adults does he copy, and what does he learn from them?",
+            "How do his parents react when he wants to be treated like an adult?",
+            "What does he fear most about who he's becoming?"
+          ],
+          "start_at": "S1E1",
+          "span": "S1-S4",
+          "situations": [
+            {"id": "coming_of_age", "weight": 0.95},
+            {"id": "grief_and_loss", "weight": 0.6},
+            {"id": "family_expectations", "weight": 0.4},
+            {"id": "identity_and_self_acceptance", "weight": 0.4}
+          ],
+          "conflicts": ["safety_vs_growth", "power_vs_morality"],
+          "emotions": {"start": ["fear", "curiosity"], "middle": ["anger", "guilt", "numbness"], "end": ["self_doubt", "hope"]},
+          "ending_tone": "bittersweet",
+          "intensity": "heavy",
+          "warnings": ["death_of_loved_one", "child_endangerment", "medical_trauma", "graphic_gore", "war_and_violence", "grief"],
+          "example_user_messages": [
+            "I had to grow up fast when my family fell apart and I never really got to be a kid.",
+            "I'm 15 and I feel like I have to hold everything together at home.",
+            "Something bad happened and I don't really feel anything about it. Is that normal?",
+            "I'm scared I'm turning into someone my parents wouldn't be proud of."
+          ],
+          "spoiler": {
+            "summary": "Carl is accidentally shot by Otis and nearly dies. He sneaks off and indirectly causes Dale's death, then shoots Shane's reanimated body. At the prison he shoots his dying mother Lori after she delivers Judith, then spirals into cold detachment, shooting a surrendering Woodbury boy. Rick steps back to farm and parent him, and Carl tries to be a kid again. After the prison falls he rages at his father, then reconnects with him and Michonne, admitting he fears he is a monster.",
+            "key_events": [
+              "Accidentally shot by Otis",
+              "Indirectly causes Dale's death",
+              "Shoots Shane's zombified body",
+              "Shoots his mother Lori to prevent reanimation",
+              "Kills a surrendering boy from Woodbury",
+              "Confesses to Michonne that he thinks he's a monster"
+            ],
+            "got_right": "He takes on real responsibility and is honest about his darkest fears with people he trusts.",
+            "got_wrong": "Trying to prove himself, he disobeys and takes lethal decisions into his own hands, confusing coldness with strength."
+          }
+        },
+        {
+          "id": "arc:walking_dead/carl_grimes/choosing_hope",
+          "title": "The teenager who still believes in people",
+          "literal_situation": "A teenager who has survived years of violence is growing into a thoughtful young man with his own view of what his community should become.",
+          "pattern_label": "a young person holding onto hope against cynical adults",
+          "pattern_text": "A young person who has seen the worst in people chooses to keep believing that people can be good and that enemies can one day become neighbours. They start standing up to the adults around them, including their parent, and imagining a future beyond the current conflict. The question is whether idealism is naive or brave, and whether the adults will listen.",
+          "hook": "Later in the series, after a stretch of hardship that could easily have made him cynical, Carl is a teenager who has seen the worst in people and still wants to believe in the best, often more than the adults around him.",
+          "why_relatable": "How do you stand up to a parent you love and respect? Is it naive to believe people can change? What do you do when you're self-conscious and hurting but everyone needs you to be okay?",
+          "watch_for": [
+            "When does he defy his father, and what is he fighting for?",
+            "How does he treat the outcasts no one else will help?",
+            "What vision of the future does he keep coming back to?"
+          ],
+          "start_at": "S5",
+          "span": "S5-S8",
+          "situations": [
+            {"id": "standing_up_to_authority", "weight": 0.7},
+            {"id": "coming_of_age", "weight": 0.6},
+            {"id": "illness_or_injury", "weight": 0.4},
+            {"id": "identity_and_self_acceptance", "weight": 0.4}
+          ],
+          "conflicts": ["revenge_vs_forgiveness", "belonging_vs_integrity"],
+          "emotions": {"start": ["hope", "determination"], "middle": ["anger", "self_doubt", "loneliness"], "end": ["peace", "love"]},
+          "ending_tone": "tragic",
+          "intensity": "heavy",
+          "warnings": ["death_of_main_character", "self_harm_or_suicide", "medical_trauma", "child_endangerment", "war_and_violence", "graphic_gore", "grief"],
+          "example_user_messages": [
+            "Everyone around me thinks the only way to deal with people who hurt us is to hurt them back. I don't believe that.",
+            "I was seriously injured and I pretend I'm fine but I hate how I look now.",
+            "I disagree with my dad about something really important and he won't listen to me.",
+            "I keep reaching out to the people everyone else has written off. My friends think I'm naive."
+          ],
+          "spoiler": {
+            "summary": "Carl pushes the group to save Gabriel and later helps him reintegrate. In Alexandria he bonds with Enid and tries to reach Ron, who ends up shooting Carl's eye out. Scarred and self-conscious, he sneaks into the Sanctuary to kill Negan and is humiliated when forced to show his wound. He increasingly challenges Rick, befriends the stranger Siddiq, and argues for a future where the communities live together. While helping Siddiq he is bitten, hides it, and before turning shoots himself, leaving letters that convince Rick to spare Negan and make peace.",
+            "key_events": [
+              "Befriends Enid in Alexandria",
+              "Shot in the eye by Ron",
+              "Sneaks into the Sanctuary; Negan makes him remove his bandage",
+              "Befriends Siddiq despite Rick's distrust",
+              "Bitten while helping Siddiq",
+              "Takes his own life; his letters change Rick's course"
+            ],
+            "got_right": "He refuses to let cynicism win and sees the humanity in outcasts and enemies long before the adults do.",
+            "got_wrong": "He hides his pain and acts alone, like when he goes after Negan, rather than trusting others with what he's going through."
+          }
+        }
+      ]
+    },
+    {
+      "id": "char:walking_dead/eugene_porter",
+      "name": "Eugene Porter",
+      "role": "A socially awkward, mullet-sporting man who says he holds the key to ending the outbreak and is being escorted to Washington, D.C. by a soldier.",
+      "relations": [
+        {"target": "char:walking_dead/rick_grimes", "relation": "friend"},
+        {"target": "char:walking_dead/glenn_rhee", "relation": "friend"},
+        {"target": "char:walking_dead/maggie_greene", "relation": "colleague"}
+      ],
+      "arcs": [
+        {
+          "id": "arc:walking_dead/eugene_porter/worth_more_than_a_title",
+          "title": "Proving he is worth protecting",
+          "literal_situation": "An anxious, highly intelligent man who is terrified of fighting relies on two tough companions to protect him on a long journey to Washington.",
+          "pattern_label": "feeling you must earn your place to be kept",
+          "pattern_text": "A person who never fit in socially and believes they have nothing real to offer feels they have to prove their importance to be protected and included. Being carried by others brings guilt as well as safety. The question is whether they can build real courage and real friendships, and discover they have value just as they are.",
+          "hook": "Eugene is brilliant, pedantic and deeply afraid. He says he's on a mission of enormous importance, and the people around him are risking their lives to get him where he needs to go.",
+          "why_relatable": "Do you ever feel you'll only be kept around if you're impressive? What does it cost you when others take risks on your behalf? Can someone who has always seen himself as a coward learn to be brave?",
+          "watch_for": [
+            "How does he react when others put themselves in danger for him?",
+            "Who takes him seriously, and who doesn't?",
+            "What small acts of courage does he manage, and what triggers them?"
+          ],
+          "start_at": "S4E11",
+          "span": "S4-S6",
+          "situations": [
+            {"id": "imposter_syndrome", "weight": 0.9},
+            {"id": "confidence_struggle", "weight": 0.8},
+            {"id": "finding_your_people", "weight": 0.5},
+            {"id": "redemption_after_mistakes", "weight": 0.5}
+          ],
+          "conflicts": ["truth_vs_protecting_others", "safety_vs_growth"],
+          "emotions": {"start": ["fear", "inadequacy", "anxiety"], "middle": ["shame", "guilt"], "end": ["confidence", "belonging", "self_respect"]},
+          "ending_tone": "hopeful",
+          "intensity": "moderate",
+          "warnings": ["death_of_loved_one", "war_and_violence", "graphic_gore", "betrayal"],
+          "example_user_messages": [
+            "I overstated my experience to get this job and now everyone's counting on me. I feel like a fraud.",
+            "I've always been the awkward one. I feel like people only keep me around because I'm useful.",
+            "I'm a coward and I hate it. Other people always step up while I freeze.",
+            "I told a lie that got out of hand and I don't know how to come clean without losing my friends."
+          ],
+          "spoiler": {
+            "summary": "Eugene invented a story that he was a Human Genome Project scientist with a cure so Abraham would protect him on the way to D.C.; many people died along the way. As Abraham grows reckless, Eugene confesses the lie, and Abraham nearly beats him to death. The group still makes it to Alexandria, where Eugene becomes the engineer. He slowly grows braver, saving Tara, standing with the group against the herd, and volunteering as a decoy so Rick can get Maggie to the Hilltop. He and Abraham reconcile.",
+            "key_events": [
+              "Admits he is not a scientist and there is no cure",
+              "Abraham knocks him out after the confession",
+              "Becomes Alexandria's engineer",
+              "Saves Tara and fights the herd",
+              "Reconciles with Abraham",
+              "Volunteers to drive the RV as a decoy"
+            ],
+            "got_right": "He eventually tells the truth to protect others, and he keeps taking small, real steps toward bravery.",
+            "got_wrong": "He let others risk and lose their lives for a lie because he was too afraid to trust that he was worth protecting as himself."
+          }
+        },
+        {
+          "id": "arc:walking_dead/eugene_porter/safety_at_what_price",
+          "title": "Safety at what price",
+          "literal_situation": "Plucked from his community, Eugene finds himself in a well-run stronghold whose powerful leader values his skills more than anyone ever has.",
+          "pattern_label": "tempted by comfort and status from a harmful boss",
+          "pattern_text": "A frightened person who has never felt valued is offered respect, comfort and status by someone powerful whose methods are cruel. Going along keeps them safe and makes them feel important, but it means turning their back on the people and values they care about. The question is how long you can tell yourself you're only surviving, and what it takes to choose what's right when it could cost you everything.",
+          "hook": "Later in the series, after a turning point that leaves him more frightened than he has ever been, Eugene is offered safety, comfort and respect by a powerful man he fears, if he puts his talents to work for him.",
+          "why_relatable": "What would you do for security if you'd always felt small and afraid? Can you stay neutral when the people you work for are hurting others? How do you face your old friends after the choices fear made for you?",
+          "watch_for": [
+            "What does he tell himself to justify each choice?",
+            "Which of his old friends' words stay with him?",
+            "Where are the moments when he quietly does the right thing?"
+          ],
+          "start_at": "S7",
+          "span": "S7-S8",
+          "situations": [
+            {"id": "new_job", "weight": 0.6},
+            {"id": "redemption_after_mistakes", "weight": 0.7},
+            {"id": "standing_up_to_authority", "weight": 0.6},
+            {"id": "confidence_struggle", "weight": 0.4}
+          ],
+          "conflicts": ["power_vs_morality", "loyalty_vs_ambition"],
+          "emotions": {"start": ["fear", "relief", "pride"], "middle": ["guilt", "shame", "anxiety"], "end": ["self_respect", "relief", "belonging"]},
+          "ending_tone": "hopeful",
+          "intensity": "heavy",
+          "warnings": ["death_of_loved_one", "war_and_violence", "graphic_gore", "betrayal", "addiction"],
+          "example_user_messages": [
+            "My new boss treats me like a genius, but I know the company is doing shady things and I'm helping.",
+            "I took the safe option and now I feel like I sold out the people who believed in me.",
+            "I've been drinking to avoid thinking about what I'm part of at work.",
+            "I want to make things right with my old friends, but I don't know if they'll ever forgive me."
+          ],
+          "spoiler": {
+            "summary": "After watching Negan kill Abraham and Glenn, Eugene is taken to the Sanctuary for making bullets and declares himself Negan's, becoming a lieutenant and chief engineer who enjoys the perks. He helps Negan's side through the war, refuses to leave with Sasha, and even helps her obtain the poison she uses to kill herself. Wracked with guilt, he drinks heavily but quietly helps Gabriel and Harlan escape. After Rosita confronts him with his betrayal, he sabotages the Saviors' bullets so their guns explode in the final battle, securing the Militia's victory and his friends' forgiveness.",
+            "key_events": [
+              "Declares 'I'm Negan' and joins the Saviors",
+              "Refuses Sasha's rescue; gives her poison",
+              "Becomes chief engineer and runs an outpost",
+              "Secretly helps Gabriel and Harlan escape",
+              "Sabotages the Saviors' bullets in the final battle",
+              "Forgiven and welcomed back by his friends"
+            ],
+            "got_right": "When it truly matters, he risks his safety to do the right thing and later takes full accountability for what he enabled.",
+            "got_wrong": "He trades his friends and conscience for comfort and status, telling himself survival justifies complicity."
+          }
+        }
+      ]
+    }
+  ]
+}

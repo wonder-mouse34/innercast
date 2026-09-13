@@ -1,0 +1,1572 @@
+{
+  "show": "ted_lasso",
+  "characters": [
+    {
+      "id": "char:ted_lasso/ted_lasso",
+      "name": "Ted Lasso",
+      "role": "A relentlessly upbeat American college football coach hired, with no soccer experience, to manage a struggling English Premier League club.",
+      "relations": [
+        {
+          "target": "char:ted_lasso/rebecca_welton",
+          "relation": "boss"
+        },
+        {
+          "target": "char:ted_lasso/nate_shelley",
+          "relation": "protege"
+        },
+        {
+          "target": "char:ted_lasso/jamie_tartt",
+          "relation": "protege"
+        },
+        {
+          "target": "char:ted_lasso/sam_obisanya",
+          "relation": "protege"
+        },
+        {
+          "target": "char:ted_lasso/roy_kent",
+          "relation": "colleague"
+        },
+        {
+          "target": "char:ted_lasso/keeley_jones",
+          "relation": "friend"
+        },
+        {
+          "target": "char:ted_lasso/leslie_higgins",
+          "relation": "friend"
+        }
+      ],
+      "arcs": [
+        {
+          "id": "arc:ted_lasso/ted_lasso/leading_without_knowing_the_rules",
+          "title": "The new boss everyone expects to fail",
+          "literal_situation": "Ted arrives in London to manage AFC Richmond, a Premier League club, despite never having coached, played or even understood English football. At his first press conference the journalists mock him, the fans chant insults and the star players ignore him.",
+          "pattern_label": "leading a group that expects you to fail",
+          "pattern_text": "A person is dropped into a leadership role in an unfamiliar world where they don't know the rules, the language or the culture, and everyone is waiting for them to fail. Instead of faking expertise, they bet on kindness, curiosity and believing in people. The question is whether decency can actually win when the results, the critics and the pressure keep coming.",
+          "hook": "Ted has crossed an ocean for a job he is not qualified for. He knows almost nothing about the sport, the locker room is divided and cold, and the press calls him a joke. He answers everything with jokes, biscuits and a hand-taped sign that says BELIEVE.",
+          "why_relatable": "Can you lead people when you don't know the job better than they do? Is being kind a strategy or a weakness? What do you do when you are underestimated by everyone, and how much of the doubt do you let in?",
+          "watch_for": [
+            "How does he respond when someone insults him to his face?",
+            "What does he care about more than winning, and does that ever cost him?",
+            "Who in the building starts to believe in him first, and why?"
+          ],
+          "start_at": "S1E1",
+          "span": "S1-S3",
+          "situations": [
+            {
+              "id": "new_job",
+              "weight": 0.9
+            },
+            {
+              "id": "becoming_a_manager",
+              "weight": 0.8
+            },
+            {
+              "id": "moving_somewhere_new",
+              "weight": 0.7
+            },
+            {
+              "id": "imposter_syndrome",
+              "weight": 0.6
+            }
+          ],
+          "conflicts": [
+            "fitting_in_vs_standing_out",
+            "perfectionism_vs_good_enough"
+          ],
+          "emotions": {
+            "start": [
+              "self_doubt",
+              "curiosity",
+              "hope"
+            ],
+            "middle": [
+              "determination",
+              "betrayal",
+              "belonging"
+            ],
+            "end": [
+              "pride",
+              "peace",
+              "acceptance"
+            ]
+          },
+          "ending_tone": "bittersweet",
+          "intensity": "moderate",
+          "warnings": [
+            "betrayal"
+          ],
+          "example_user_messages": [
+            "I just got promoted to lead a team in a field I barely understand and I'm sure they all think I'm a fraud.",
+            "Everyone at my new job is waiting for me to mess up. How do I earn their respect without pretending to be someone I'm not?",
+            "I moved to a new country for work and I don't get half the jokes, rules or customs yet.",
+            "My management style is basically being nice to people and I'm scared that's not enough.",
+            "People keep underestimating me and part of me wonders if they're right."
+          ],
+          "spoiler": {
+            "summary": "Ted slowly wins over the club with unconventional coaching: he gives Roy a book to nudge him into leadership, benches star Jamie Tartt to teach teamwork, promotes kit man Nate to assistant coach and holds a ritual to 'break the curse' of the treatment room. Rebecca, who secretly hired him to fail, eventually confesses and he forgives her. Richmond is relegated at the end of season 1 but Rebecca keeps him. In season 2 they draw seven straight games, bring in a sports psychologist, and win promotion back to the Premier League, but Nate leaks Ted's panic attacks to the press and leaves for rival West Ham, tearing down the BELIEVE sign. In season 3 Richmond is predicted to finish last, signs superstar Zava who then quits, and reinvents itself with 'Total Football'; they finish second, beat Nate's West Ham in the final match, and Nate returns. Ted then decides to go home to Kansas to be near his son, leaving the club to Roy and the others; the team repairs the torn BELIEVE sign.",
+            "key_events": [
+              "Rebecca secretly hired him to sabotage the club; she confesses and he forgives her",
+              "Richmond is relegated after losing the last match of season 1",
+              "Promotes kit man Nate to assistant coach",
+              "Nate leaks his panic attacks to the press and defects to West Ham",
+              "Richmond wins promotion in season 2",
+              "Total Football transformation in season 3; Richmond finishes second",
+              "Ted leaves Richmond to return to Kansas for his son; Roy takes over"
+            ],
+            "got_right": "He treats people as whole humans, sees potential in the overlooked, forgives generously and builds a culture where players look after one another.",
+            "got_wrong": "He avoids conflict and his own feelings, sometimes laughs off people who need to be taken seriously (like Nate), and lets his aversion to confrontation leave problems festering."
+          }
+        },
+        {
+          "id": "arc:ted_lasso/ted_lasso/behind_the_smile",
+          "title": "Behind the relentless smile",
+          "literal_situation": "Ted is endlessly cheerful and focused on everyone else's wellbeing. Back home in Kansas his marriage is in a rough patch, and part of the reason he took a job across the ocean is to give his wife some space. He is openly skeptical of therapy.",
+          "pattern_label": "the helper who can't ask for help",
+          "pattern_text": "A warm, funny person who is always there for everyone else uses constant optimism and busyness to keep old pain at arm's length. As their personal life strains, the feelings they have never faced start leaking out in their body and their sleep. They have to learn that asking for help is not weakness, and that you cannot outrun what happened to you as a child.",
+          "hook": "Ted seems like the happiest man in any room. He bakes for his boss, remembers everyone's name and has a pun for every occasion, while his wife is growing distant on the phone and he is a very long way from home.",
+          "why_relatable": "What happens when the person who always holds everyone up quietly starts to crack? Is relentless positivity strength or avoidance? Why is it so hard to accept the same care you give so freely to others?",
+          "watch_for": [
+            "When does his cheerfulness seem like a genuine choice, and when does it look like a shield?",
+            "How does he react when someone refuses to be charmed by him?",
+            "What topics does he change the subject away from?"
+          ],
+          "start_at": "S1E1",
+          "span": "S1-S3",
+          "situations": [
+            {
+              "id": "divorce",
+              "weight": 0.8
+            },
+            {
+              "id": "grief_and_loss",
+              "weight": 0.6
+            },
+            {
+              "id": "loneliness",
+              "weight": 0.5
+            },
+            {
+              "id": "burnout_at_work",
+              "weight": 0.4
+            }
+          ],
+          "conflicts": [
+            "holding_on_vs_letting_go",
+            "control_vs_trust"
+          ],
+          "emotions": {
+            "start": [
+              "loneliness",
+              "anxiety",
+              "hope"
+            ],
+            "middle": [
+              "overwhelm",
+              "grief",
+              "fear"
+            ],
+            "end": [
+              "acceptance",
+              "relief",
+              "peace"
+            ]
+          },
+          "ending_tone": "hopeful",
+          "intensity": "heavy",
+          "warnings": [
+            "self_harm_or_suicide",
+            "grief",
+            "death_of_loved_one",
+            "betrayal"
+          ],
+          "example_user_messages": [
+            "Everyone says I'm the positive one but lately I have panic attacks and I don't know where they come from.",
+            "My marriage is falling apart and I keep telling everyone I'm fine.",
+            "I've always been the person who helps others and I really don't know how to let anyone help me.",
+            "I don't trust therapists but I think I need one.",
+            "Something that happened when I was a teenager still shapes everything and I've never really talked about it."
+          ],
+          "spoiler": {
+            "summary": "Michelle tells Ted she no longer feels the same way; he lets her go and they divorce. Signing the papers triggers a panic attack at a karaoke night, and he has a one-night stand and later an on-and-off casual relationship with Rebecca's friend Sassy. In season 2 the club hires sports psychologist Dr. Sharon Fieldstone; Ted resists her, then after a panic attack during a match he flees to her office asking for an appointment. After witnessing Jamie's abusive father, he tearfully reveals that his own father died by suicide when Ted was a teenager. Nate leaks his panic attacks to the press. In season 3 he struggles as Michelle begins dating Dr. Jacob, the couples counselor who had worked with them, and learns Jacob plans to propose. He keeps working with Sharon remotely, confronts his mother Dottie about how his father's death was handled, starts letting people see his pain, and ultimately chooses to go home to Kansas to be present for his son.",
+            "key_events": [
+              "Michelle ends the marriage; divorce",
+              "Panic attacks at karaoke and during a match",
+              "Begins therapy with Dr. Sharon Fieldstone",
+              "Reveals his father died by suicide when he was a teenager",
+              "Nate leaks his mental health struggles to the press",
+              "Michelle dates their former marriage counselor",
+              "Confronts his mother about his father's death",
+              "Returns home to Kansas"
+            ],
+            "got_right": "He eventually asks for help, lets Sharon challenge him, tells his friends the truth and forgives both himself and the people who hurt him.",
+            "got_wrong": "For a long time he masks everything with jokes, treats his own needs as last, avoids hard conversations and lets resentment toward therapy keep him from getting help sooner."
+          }
+        },
+        {
+          "id": "arc:ted_lasso/ted_lasso/parenting_from_across_an_ocean",
+          "title": "A dad on the other side of the world",
+          "literal_situation": "Ted's young son Henry lives with his mother in Kansas while Ted works in London. He stays in touch through phone and video calls and a lot of goodnight messages across time zones.",
+          "pattern_label": "parenting from far away while building a new life",
+          "pattern_text": "A devoted parent takes an opportunity far from home, telling themselves it is the right thing for everyone. The new life becomes meaningful and full of people who need them, while their child grows up through a screen. Eventually they have to weigh the place and people they have built against being physically present for their kid.",
+          "hook": "Ted adores his son but sees him mostly on a phone screen. He is building something that matters in a new country while his family life back home is uncertain.",
+          "why_relatable": "Can you be a good parent from far away? When does chasing meaningful work start to cost your family too much? How do you choose between two places that both feel like home?",
+          "watch_for": [
+            "How does he talk about his son to the people around him?",
+            "What happens to his mood after calls with home?",
+            "What does 'home' seem to mean to him as the seasons go on?"
+          ],
+          "start_at": "S1E1",
+          "span": "S1-S3",
+          "situations": [
+            {
+              "id": "long_distance",
+              "weight": 0.8
+            },
+            {
+              "id": "caring_for_family",
+              "weight": 0.6
+            },
+            {
+              "id": "moving_somewhere_new",
+              "weight": 0.5
+            }
+          ],
+          "conflicts": [
+            "career_vs_relationships",
+            "duty_vs_desire"
+          ],
+          "emotions": {
+            "start": [
+              "longing",
+              "guilt",
+              "hope"
+            ],
+            "middle": [
+              "loneliness",
+              "guilt",
+              "belonging"
+            ],
+            "end": [
+              "love",
+              "peace",
+              "acceptance"
+            ]
+          },
+          "ending_tone": "bittersweet",
+          "intensity": "moderate",
+          "warnings": [],
+          "example_user_messages": [
+            "I took a job in another country and I only see my kid on video calls.",
+            "I love my work but I feel like I'm missing my child growing up.",
+            "I finally built a life I love far from home and now I have to decide whether to give it up for my family.",
+            "Is it selfish to stay somewhere that makes me happy if my son is thousands of miles away?"
+          ],
+          "spoiler": {
+            "summary": "Henry visits London with Michelle, and the visit reveals the marriage is over. As the divorce goes through and Michelle moves on with Dr. Jacob, Rebecca urges Ted to focus on being Henry's father rather than on his ex. Across season 3 the distance weighs more heavily, and after Richmond's final match Ted decides to leave the club and return to Kansas. The finale shows him coaching Henry's youth soccer team.",
+            "key_events": [
+              "Henry and Michelle visit London",
+              "Divorce; Michelle moves on with their former counselor",
+              "Ted chooses to leave Richmond and go home",
+              "Coaches his son's youth team in Kansas"
+            ],
+            "got_right": "He ultimately puts being present for his son above his own success and leaves gracefully, having set others up to carry on.",
+            "got_wrong": "He used the job partly to avoid his marriage's problems and spent a long time half-present in both places."
+          }
+        }
+      ]
+    },
+    {
+      "id": "char:ted_lasso/rebecca_welton",
+      "name": "Rebecca Welton",
+      "role": "The newly divorced owner of AFC Richmond, who won the club from her cheating billionaire ex-husband in the settlement.",
+      "relations": [
+        {
+          "target": "char:ted_lasso/ted_lasso",
+          "relation": "colleague"
+        },
+        {
+          "target": "char:ted_lasso/keeley_jones",
+          "relation": "friend"
+        },
+        {
+          "target": "char:ted_lasso/leslie_higgins",
+          "relation": "colleague"
+        },
+        {
+          "target": "char:ted_lasso/sam_obisanya",
+          "relation": "ex_partner"
+        },
+        {
+          "target": "char:ted_lasso/roy_kent",
+          "relation": "colleague"
+        },
+        {
+          "target": "char:ted_lasso/nate_shelley",
+          "relation": "colleague"
+        },
+        {
+          "target": "char:ted_lasso/jamie_tartt",
+          "relation": "colleague"
+        }
+      ],
+      "arcs": [
+        {
+          "id": "arc:ted_lasso/rebecca_welton/from_revenge_to_healing",
+          "title": "Getting even with the one who hurt her",
+          "literal_situation": "Rebecca has just come out of a very public divorce from Rupert, a charming, serially unfaithful billionaire, and been awarded the football club he loves. She hires an unqualified American coach, and tells no one except her assistant what she really hopes will happen to Rupert's beloved club.",
+          "pattern_label": "turning heartbreak into a plan for revenge",
+          "pattern_text": "After years of being humiliated and cheated on by a charming partner the world adores, a person is left with the one thing their ex truly loved. Their pain curdles into a quiet campaign to hurt them back, even if innocent people are caught in it. The real question becomes whether they can stop letting the ex define their life and let people who care about them in.",
+          "hook": "Rebecca is sharp, glamorous and guarded. The tabloids call her 'the old Rebecca' now that her ex has a younger girlfriend with the same name. She feels that she alone sees who he really is, and she has decided the club will be her weapon.",
+          "why_relatable": "What do you do with the anger when someone who hurt you seems to face no consequences? How much of yourself are you willing to lose to make them feel what you felt? Can you trust new people when trust has been used against you?",
+          "watch_for": [
+            "How does she treat the people who are kind to her, and does it change?",
+            "Notice who she lets see her real feelings, and when.",
+            "How does her body language change when her ex walks into a room?"
+          ],
+          "start_at": "S1E1",
+          "span": "S1-S3",
+          "situations": [
+            {
+              "id": "divorce",
+              "weight": 0.9
+            },
+            {
+              "id": "redemption_after_mistakes",
+              "weight": 0.7
+            },
+            {
+              "id": "starting_over",
+              "weight": 0.6
+            },
+            {
+              "id": "finding_your_people",
+              "weight": 0.5
+            }
+          ],
+          "conflicts": [
+            "revenge_vs_forgiveness",
+            "holding_on_vs_letting_go"
+          ],
+          "emotions": {
+            "start": [
+              "anger",
+              "resentment",
+              "loneliness"
+            ],
+            "middle": [
+              "guilt",
+              "shame",
+              "belonging"
+            ],
+            "end": [
+              "self_respect",
+              "freedom",
+              "confidence"
+            ]
+          },
+          "ending_tone": "hopeful",
+          "intensity": "moderate",
+          "warnings": [
+            "betrayal",
+            "death_of_loved_one",
+            "grief"
+          ],
+          "example_user_messages": [
+            "My ex cheated on me for years and everyone still thinks he's wonderful. I can't stop wanting him to suffer.",
+            "Since the divorce I've been so bitter I barely recognise myself.",
+            "I did something petty and hurtful to get back at my ex and innocent people got caught in it.",
+            "I feel like I'm the only one who knows what he's really like.",
+            "How do I stop letting my ex live rent-free in my head?"
+          ],
+          "spoiler": {
+            "summary": "Rebecca secretly hired Ted to run the club into the ground to hurt Rupert. She tries to discredit him with paparazzi photos and a hostile profile, but Ted's kindness, Keeley's friendship and Higgins quitting in protest wear her down. When Rupert announces his new partner Bex is pregnant and cruelly says he never wanted a child with Rebecca, she confesses everything to Ted, who instantly forgives her, and she apologises to Higgins. She keeps Ted after relegation and builds a real family at the club. In season 2 her father dies and she admits at the funeral that she hates him for his affairs and resents her mother for staying. Rupert buys rival West Ham and takes Nate. In season 3 she becomes obsessed with beating Rupert, then lets it go; when Bex leaves Rupert over his affair, Rebecca supports her, and she sells 49% of the club to its fans.",
+            "key_events": [
+              "Secretly hired Ted hoping he would fail",
+              "Hires paparazzi to smear Ted; plan exposed by Keeley and Roy",
+              "Confesses to Ted, who forgives her immediately",
+              "Higgins quits over her revenge, then returns after her apology",
+              "Her father dies; she voices her anger at his infidelity",
+              "Rupert buys West Ham and lures Nate away",
+              "Rupert's marriage collapses; she comforts Bex",
+              "Sells 49% of the club to the fans"
+            ],
+            "got_right": "She owns her wrongdoing fully when she finally confesses, apologises without excuses, and learns to put the people around her ahead of her grudge.",
+            "got_wrong": "She lets her pain justify manipulating innocent people, and for a long time measures her life by whether Rupert is winning."
+          }
+        },
+        {
+          "id": "arc:ted_lasso/rebecca_welton/letting_herself_want_again",
+          "title": "Daring to want love again",
+          "literal_situation": "In her forties, freshly divorced after a marriage in which her husband refused to have children with her, Rebecca is guarded about romance. She has a lot of power at work and very little softness in her private life.",
+          "pattern_label": "daring to want love and family after a bad marriage",
+          "pattern_text": "After a long relationship that left them feeling unwanted, a person in midlife isn't sure whether they still want love, whether they deserve it, or whether it is too late for the family they once hoped for. They date, settle, second-guess and sometimes fall for exactly the wrong person on paper. Slowly they learn to stop settling for 'fine' and to listen to what they actually want.",
+          "hook": "Rebecca is elegant and in control, but lonely at home. She insists she is not ready to move on, while her friends keep nudging her back into the world.",
+          "why_relatable": "Is it too late to start over in love? Should you settle for someone perfectly nice who doesn't make your heart race? What if what you want doesn't fit what people expect from someone your age and status?",
+          "watch_for": [
+            "What does she say she wants in a partner, and what actually lights her up?",
+            "How does she respond when friends are honest about someone she's dating?",
+            "When does she protect her image, and when does she protect her heart?"
+          ],
+          "start_at": "S1E1",
+          "span": "S1-S3",
+          "situations": [
+            {
+              "id": "starting_over",
+              "weight": 0.8
+            },
+            {
+              "id": "falling_for_someone_unexpected",
+              "weight": 0.7
+            },
+            {
+              "id": "midlife_reinvention",
+              "weight": 0.6
+            },
+            {
+              "id": "difficult_parent",
+              "weight": 0.4
+            }
+          ],
+          "conflicts": [
+            "safety_vs_growth",
+            "duty_vs_desire"
+          ],
+          "emotions": {
+            "start": [
+              "loneliness",
+              "rejection",
+              "self_doubt"
+            ],
+            "middle": [
+              "longing",
+              "confusion",
+              "joy"
+            ],
+            "end": [
+              "hope",
+              "acceptance",
+              "love"
+            ]
+          },
+          "ending_tone": "hopeful",
+          "intensity": "moderate",
+          "warnings": [
+            "death_of_loved_one",
+            "grief"
+          ],
+          "example_user_messages": [
+            "I'm in my forties, just divorced, and I have no idea how to date again.",
+            "The person I'm seeing is perfectly nice and I feel absolutely nothing.",
+            "I think I've fallen for someone much younger and I'm terrified of what people will say.",
+            "My ex never wanted kids with me and I'm scared I've run out of time.",
+            "I've spent so long being strong that I don't know how to be soft with someone."
+          ],
+          "spoiler": {
+            "summary": "Rebecca has a one-night stand in Liverpool, then dates the pleasant but dull John Wingsnight; Roy's speech that she deserves someone who feels like being struck by lightning makes her end it. On the anonymous dating app Bantr she unknowingly falls for Sam Obisanya, one of her own young players; they begin a secret relationship, which she pauses after her father's funeral. Sam turns down a lucrative transfer, telling her obliquely that he stayed for himself. A psychic tells her she will become a mother, reopening her grief about children. In Amsterdam she spends a magical night with a stranger on a houseboat, and at the end of the series she runs into him again by chance, leaving her love life hopeful and open.",
+            "key_events": [
+              "Casual flings as she re-enters dating",
+              "Dates and breaks up with John Wingsnight after Roy's 'lightning' speech",
+              "Secret relationship with Sam, which she ends",
+              "Her father dies",
+              "A psychic predicts she will be a mother",
+              "Meets a stranger in Amsterdam and later reunites with him"
+            ],
+            "got_right": "She refuses to settle for 'fine', listens to honest friends and allows herself to want things she had given up on.",
+            "got_wrong": "She lets fear of judgment and her own power at work drive decisions about love, hiding and cutting off relationships rather than being honest."
+          }
+        }
+      ]
+    },
+    {
+      "id": "char:ted_lasso/roy_kent",
+      "name": "Roy Kent",
+      "role": "AFC Richmond's gruff, ageing captain, a club legend whose best playing days are behind him.",
+      "relations": [
+        {
+          "target": "char:ted_lasso/keeley_jones",
+          "relation": "ex_partner"
+        },
+        {
+          "target": "char:ted_lasso/jamie_tartt",
+          "relation": "rival"
+        },
+        {
+          "target": "char:ted_lasso/jamie_tartt",
+          "relation": "protege"
+        },
+        {
+          "target": "char:ted_lasso/ted_lasso",
+          "relation": "boss"
+        },
+        {
+          "target": "char:ted_lasso/rebecca_welton",
+          "relation": "friend"
+        },
+        {
+          "target": "char:ted_lasso/nate_shelley",
+          "relation": "colleague"
+        },
+        {
+          "target": "char:ted_lasso/sam_obisanya",
+          "relation": "colleague"
+        },
+        {
+          "target": "char:ted_lasso/leslie_higgins",
+          "relation": "colleague"
+        }
+      ],
+      "arcs": [
+        {
+          "id": "arc:ted_lasso/roy_kent/who_am_i_after_this",
+          "title": "When the thing you were best at starts to leave you",
+          "literal_situation": "Roy is Richmond's captain and a former Champions League winner who is now noticeably slower than the young players around him. The fans still love him, but he knows the end of his career is coming, and he has no idea what he is without it.",
+          "pattern_label": "losing the identity your career gave you",
+          "pattern_text": "Someone who has been exceptional at one thing their whole life starts to feel it slipping away as they age. Their pride makes it hard to admit, and they have no plan for who to be afterwards. They have to find out whether their worth was ever just their performance, and learn to try new things badly in front of people.",
+          "hook": "Roy scowls, grunts and swears. He is proud and fiercely private, and he hears every 'old man' jibe from younger teammates as proof that his time is running out.",
+          "why_relatable": "Who are you when you can no longer do the thing that made you you? How do you handle getting older in a field that worships youth? Can you start again as a beginner when you are used to being the best?",
+          "watch_for": [
+            "How does he react when someone points out he is slowing down?",
+            "What does he refuse to try, and why?",
+            "Who is he gentlest with, and what does that show about him?"
+          ],
+          "start_at": "S1E1",
+          "span": "S1-S2",
+          "situations": [
+            {
+              "id": "career_change",
+              "weight": 0.9
+            },
+            {
+              "id": "identity_and_self_acceptance",
+              "weight": 0.8
+            },
+            {
+              "id": "losing_a_job",
+              "weight": 0.5
+            },
+            {
+              "id": "illness_or_injury",
+              "weight": 0.4
+            }
+          ],
+          "conflicts": [
+            "past_vs_future",
+            "holding_on_vs_letting_go"
+          ],
+          "emotions": {
+            "start": [
+              "anger",
+              "dread",
+              "pride"
+            ],
+            "middle": [
+              "grief",
+              "restlessness",
+              "boredom"
+            ],
+            "end": [
+              "determination",
+              "self_respect",
+              "belonging"
+            ]
+          },
+          "ending_tone": "hopeful",
+          "intensity": "moderate",
+          "warnings": [
+            "grief"
+          ],
+          "example_user_messages": [
+            "I've been good at one thing my whole life and now I'm getting too old for it.",
+            "The younger people at work keep calling me a dinosaur and it really gets to me.",
+            "I retired and I have no idea who I am anymore.",
+            "Everyone says I should try something new but I hate being bad at things.",
+            "My whole identity was my career and it's ending."
+          ],
+          "spoiler": {
+            "summary": "Roy is benched as his form declines. In the season 1 finale he makes a desperate tackle on Jamie that injures his knee and ends his playing career, and he leaves the pitch to the fans chanting his name, crying afterwards with Keeley. In season 2 he is adrift: coaching his niece's under-9 girls team, avoiding a TV pundit job he despises, and doing yoga with older women. Keeley pushes him to try punditry, where his swearing honesty becomes a hit. He then returns to Richmond as a coach after helping captain Isaac rediscover joy, and by the end of the series he is set to lead the club.",
+            "key_events": [
+              "Benched for declining form",
+              "Career-ending knee injury in the final match of season 1",
+              "Becomes a TV pundit",
+              "Returns to Richmond as a coach",
+              "Positioned to take over the club when Ted leaves"
+            ],
+            "got_right": "He eventually lets people he trusts push him, tries new things and finds a role where his experience and honesty are valued.",
+            "got_wrong": "His pride makes him hide from new opportunities and lash out at people who remind him of what he is losing."
+          }
+        },
+        {
+          "id": "arc:ted_lasso/roy_kent/letting_someone_in",
+          "title": "The hard man with the soft heart",
+          "literal_situation": "Roy is emotionally shut down, mostly communicates in grunts and swearing, and keeps to himself outside training. The only person he is visibly tender with is his young niece Phoebe. He is drawn to the confident Keeley, who is dating his teammate and rival.",
+          "pattern_label": "a guarded person learning to love out loud",
+          "pattern_text": "A person who equates vulnerability with weakness falls for someone who sees straight through their tough exterior. Loving them means learning to talk about feelings, accept help and not pull away when things get real. When fear of being left creeps in, they have to decide whether to protect themselves or stay open.",
+          "hook": "Roy is intimidating, blunt and very private. He looks after his niece with fierce love, but with everyone else he keeps a wall up, especially with the woman who seems to know exactly how to get under his skin.",
+          "why_relatable": "What if showing feelings has always felt like losing? How do you let someone help you without feeling smaller? What do you do when you are scared the person you love will outgrow you?",
+          "watch_for": [
+            "When he is hurt, does he speak up or go silent?",
+            "Notice what he does instead of saying how he feels.",
+            "How does he respond when someone he loves needs space?"
+          ],
+          "start_at": "S1E1",
+          "span": "S1-S3",
+          "situations": [
+            {
+              "id": "falling_for_someone_unexpected",
+              "weight": 0.8
+            },
+            {
+              "id": "breakup",
+              "weight": 0.6
+            },
+            {
+              "id": "identity_and_self_acceptance",
+              "weight": 0.5
+            }
+          ],
+          "conflicts": [
+            "independence_vs_connection",
+            "control_vs_trust"
+          ],
+          "emotions": {
+            "start": [
+              "loneliness",
+              "anger",
+              "longing"
+            ],
+            "middle": [
+              "love",
+              "jealousy",
+              "fear"
+            ],
+            "end": [
+              "grief",
+              "acceptance",
+              "hope"
+            ]
+          },
+          "ending_tone": "bittersweet",
+          "intensity": "moderate",
+          "warnings": [],
+          "example_user_messages": [
+            "I'm terrible at talking about my feelings, and my partner says it's like dating a wall.",
+            "I fell for someone who was with a guy I can't stand.",
+            "My girlfriend's career is taking off and I'm scared she's going to leave me behind.",
+            "I pushed away someone I love before they could leave me.",
+            "The only person I'm soft with is my niece."
+          ],
+          "spoiler": {
+            "summary": "After Keeley dumps Jamie, Roy kisses her, then avoids her, and she sleeps with Jamie; he apologises and they start dating, a relationship that softens him. He struggles with jealousy, crowds her until she needs space, and learns to give it. At Rebecca's father's funeral they declare their love, but Jamie also tells Keeley he loves her, and Nate kisses her. When Keeley starts her own PR firm and is too busy for a holiday, Roy panics that she is leaving him and, at the start of season 3, breaks up with her pre-emptively. He regrets it, gets into a fistfight with Jamie over her, and she rejects them both. By the end he is opening up to the Diamond Dogs, admitting he messed up and needs to work on himself; his future with Keeley is left open.",
+            "key_events": [
+              "Kisses Keeley, then avoids her",
+              "Dates Keeley; they say 'I love you'",
+              "Keeley launches her own firm; he feels left behind",
+              "Breaks up with Keeley at the start of season 3",
+              "Fights Jamie over her; she rejects them both",
+              "Opens up to the Diamond Dogs about his mistakes"
+            ],
+            "got_right": "He learns to apologise, to be tender and to ask friends for help, and he is fiercely loyal to the people he loves.",
+            "got_wrong": "He expresses fear as anger or silence, crowds his partner and then ends the relationship to avoid the pain of maybe being left."
+          }
+        },
+        {
+          "id": "arc:ted_lasso/roy_kent/leading_the_ones_he_once_fought",
+          "title": "Reluctant leader",
+          "literal_situation": "As captain, Roy watches the star striker bully the kit man and younger players, and he is furious when the new coach won't simply step in and fix it. Ted gives him a children's book about a girl who has leadership thrust upon her, and Roy is not amused.",
+          "pattern_label": "stepping up to lead when you'd rather not",
+          "pattern_text": "A respected but prickly veteran would rather keep their head down, yet the group keeps looking to them. They have to learn that leadership is not just toughness but taking responsibility for others, including people they can't stand. Over time they find themselves mentoring the very person who used to be their rival.",
+          "hook": "Roy has the respect of the locker room but doesn't want the responsibility that comes with it. He has an arrogant young rival he'd happily headbutt, and a coach who keeps nudging him to be more than a hard man.",
+          "why_relatable": "What if people look to you to lead and you don't want the job? Can you mentor someone who once drove you crazy? How do you pass on what you know without passing on your worst habits?",
+          "watch_for": [
+            "How does he deal with people who aren't pulling their weight?",
+            "What does he teach his niece, on purpose and by accident?",
+            "How does his view of his younger rival change?"
+          ],
+          "start_at": "S1E3",
+          "span": "S1-S3",
+          "situations": [
+            {
+              "id": "responsibility_you_didnt_ask_for",
+              "weight": 0.8
+            },
+            {
+              "id": "mentor_and_protege",
+              "weight": 0.8
+            },
+            {
+              "id": "leading_former_peers",
+              "weight": 0.6
+            },
+            {
+              "id": "becoming_a_manager",
+              "weight": 0.5
+            }
+          ],
+          "conflicts": [
+            "belonging_vs_integrity",
+            "revenge_vs_forgiveness"
+          ],
+          "emotions": {
+            "start": [
+              "anger",
+              "resentment",
+              "self_doubt"
+            ],
+            "middle": [
+              "determination",
+              "pride",
+              "resentment"
+            ],
+            "end": [
+              "pride",
+              "belonging",
+              "love"
+            ]
+          },
+          "ending_tone": "hopeful",
+          "intensity": "moderate",
+          "warnings": [
+            "abuse"
+          ],
+          "example_user_messages": [
+            "Everyone at work looks to me to lead and I never asked for that.",
+            "I've been asked to mentor the one colleague I really can't stand.",
+            "I'm scared my niece is picking up all my worst habits.",
+            "I've gone from being one of the team to being their boss and it's weird."
+          ],
+          "spoiler": {
+            "summary": "Roy realises Ted's gift of A Wrinkle in Time is a nudge to lead, and he stops Jamie's gang bullying Nate. His rivalry with Jamie flares through season 1. As a coach in season 2 he initially refuses to coach Jamie, then teaches him to channel his aggression on the pitch; when Jamie punches his abusive father in the dressing room, Roy wordlessly hugs him. In season 3 he trains Jamie at 4am daily, teaches him to ride a bike and hears about his traumatic past, and they become best friends. He also worries he is passing his swearing and anger on to Phoebe. When Ted leaves, Roy becomes Richmond's manager.",
+            "key_events": [
+              "Gets the leadership message from A Wrinkle in Time",
+              "Stops Jamie's bullying of Nate",
+              "Refuses, then agrees, to coach Jamie",
+              "Hugs Jamie after his father's abuse in the locker room",
+              "4am training sessions; becomes Jamie's best friend",
+              "Takes over as Richmond's manager"
+            ],
+            "got_right": "He shows up for people consistently, is brutally honest in a way that helps, and learns to mentor with care rather than just intimidation.",
+            "got_wrong": "He is slow to let go of grudges and sometimes models the very anger he wants the young people around him to avoid."
+          }
+        }
+      ]
+    },
+    {
+      "id": "char:ted_lasso/keeley_jones",
+      "name": "Keeley Jones",
+      "role": "A cheerful, savvy model and influencer, 'famous for being almost famous', dating Richmond's star striker.",
+      "relations": [
+        {
+          "target": "char:ted_lasso/roy_kent",
+          "relation": "ex_partner"
+        },
+        {
+          "target": "char:ted_lasso/jamie_tartt",
+          "relation": "ex_partner"
+        },
+        {
+          "target": "char:ted_lasso/rebecca_welton",
+          "relation": "friend"
+        },
+        {
+          "target": "char:ted_lasso/rebecca_welton",
+          "relation": "mentor"
+        },
+        {
+          "target": "char:ted_lasso/leslie_higgins",
+          "relation": "mentor"
+        },
+        {
+          "target": "char:ted_lasso/ted_lasso",
+          "relation": "friend"
+        },
+        {
+          "target": "char:ted_lasso/nate_shelley",
+          "relation": "friend"
+        },
+        {
+          "target": "char:ted_lasso/sam_obisanya",
+          "relation": "friend"
+        }
+      ],
+      "arcs": [
+        {
+          "id": "arc:ted_lasso/keeley_jones/taken_seriously",
+          "title": "More than a pretty face",
+          "literal_situation": "Keeley is a glamour model and influencer best known for topless photos and being a footballer's girlfriend. She is clever, warm and brilliant at reading people, but nobody, sometimes including herself, thinks of her as a businesswoman.",
+          "pattern_label": "proving you're more than your image",
+          "pattern_text": "A person known mainly for their looks and charm realises they have real talent for building things and understanding people. Moving into a serious professional world means facing people who dismiss them, doubting themselves, and learning to lead others. Success brings new questions about whether they belong at the top and what it costs.",
+          "hook": "Keeley has more instinct for marketing than most professionals, but her career so far is modelling and her public identity is 'someone's girlfriend'. She is about to meet a powerful older woman who notices her.",
+          "why_relatable": "What if people only see one side of you? Can you reinvent yourself professionally without formal credentials? How do you lead people who don't take you seriously, and what happens when you are in charge and struggling?",
+          "watch_for": [
+            "How does she respond when someone underestimates her?",
+            "Notice what she's naturally good at, even before she has a job title for it.",
+            "Who does she go to for advice, and who does she mentor in return?"
+          ],
+          "start_at": "S1E1",
+          "span": "S1-S3",
+          "situations": [
+            {
+              "id": "career_change",
+              "weight": 0.9
+            },
+            {
+              "id": "starting_a_business",
+              "weight": 0.7
+            },
+            {
+              "id": "imposter_syndrome",
+              "weight": 0.7
+            },
+            {
+              "id": "becoming_a_manager",
+              "weight": 0.6
+            }
+          ],
+          "conflicts": [
+            "career_vs_relationships",
+            "fitting_in_vs_standing_out"
+          ],
+          "emotions": {
+            "start": [
+              "curiosity",
+              "self_doubt",
+              "hope"
+            ],
+            "middle": [
+              "pride",
+              "overwhelm",
+              "inadequacy"
+            ],
+            "end": [
+              "confidence",
+              "self_respect",
+              "hope"
+            ]
+          },
+          "ending_tone": "hopeful",
+          "intensity": "moderate",
+          "warnings": [
+            "betrayal"
+          ],
+          "example_user_messages": [
+            "People only ever saw me as the pretty one and I want to be taken seriously at work.",
+            "I don't have a degree but I know I'm good at this. How do I get people to believe it?",
+            "I started my own company and I cry at my desk because I have no idea what I'm doing.",
+            "My employees don't respect me and I don't know how to be their boss.",
+            "My mentor offered me a huge opportunity and I'm scared it means leaving her behind."
+          ],
+          "spoiler": {
+            "summary": "Keeley befriends Rebecca, lands endorsements for players and is hired as Richmond's marketing head. She launches the dating app Bantr and is featured in Vanity Fair's business issue. With Higgins' advice ('a good mentor hopes you will move on, a great mentor knows you will') she accepts investors' offer to fund her own PR firm, KJPR. In season 3 she struggles to lead, clashes with her strict CFO Barbara, dates investor Jack, and suffers a humiliating leak of a private video she once sent to Jamie. Jack dumps her abruptly and pulls funding, and KJPR collapses. By the end, with Barbara's respect earned and Rebecca offering support, she is set to start again on her own terms.",
+            "key_events": [
+              "Hired as Richmond's marketing head",
+              "Launches Bantr; featured in Vanity Fair",
+              "Leaves to start her own PR firm, KJPR",
+              "Clashes with CFO Barbara",
+              "A private video is leaked",
+              "Investor-girlfriend Jack pulls funding; KJPR fails",
+              "Prepares to start again with Rebecca's backing"
+            ],
+            "got_right": "She trusts her instincts, champions other people (especially women written off like her), and refuses to shrink to fit other people's expectations.",
+            "got_wrong": "She mixes romance with business, hires friends without thinking it through, and hides how overwhelmed she is."
+          }
+        },
+        {
+          "id": "arc:ted_lasso/keeley_jones/choosing_herself",
+          "title": "Between two men, and herself",
+          "literal_situation": "Keeley is dating Jamie, Richmond's vain star striker, who treats her as an accessory. She keeps finding herself drawn into banter with Roy, his gruff rival on the same team.",
+          "pattern_label": "learning what you deserve in love",
+          "pattern_text": "A warm person in a relationship with someone self-absorbed begins to realise they deserve accountability and respect. They move on to someone better but face new tensions: jealousy, space, and whether their growing ambition fits the relationship. Eventually they have to decide whether to be defined by who they are with or to choose themselves.",
+          "hook": "Keeley is fun, affectionate and generous, and she has been with Jamie long enough to excuse his worst behaviour. A conversation about accountability is about to make her look at him differently.",
+          "why_relatable": "When do you stop excusing someone's selfishness? Can you stay friends with an ex? What happens when your career grows and your partner feels threatened? Do you have to choose between the people who love you?",
+          "watch_for": [
+            "What does she want from a partner, and does she ask for it?",
+            "How does she handle it when someone wants more of her time than she has?",
+            "Notice how she treats the people she's broken up with."
+          ],
+          "start_at": "S1E1",
+          "span": "S1-S3",
+          "situations": [
+            {
+              "id": "breakup",
+              "weight": 0.8
+            },
+            {
+              "id": "falling_for_someone_unexpected",
+              "weight": 0.7
+            },
+            {
+              "id": "identity_and_self_acceptance",
+              "weight": 0.6
+            }
+          ],
+          "conflicts": [
+            "independence_vs_connection",
+            "career_vs_relationships"
+          ],
+          "emotions": {
+            "start": [
+              "confusion",
+              "longing",
+              "self_doubt"
+            ],
+            "middle": [
+              "love",
+              "overwhelm",
+              "grief"
+            ],
+            "end": [
+              "freedom",
+              "self_respect",
+              "peace"
+            ]
+          },
+          "ending_tone": "hopeful",
+          "intensity": "moderate",
+          "warnings": [
+            "betrayal"
+          ],
+          "example_user_messages": [
+            "My boyfriend is gorgeous and popular but he never thinks about how I feel.",
+            "I think I'm falling for my boyfriend's rival and I feel awful about it.",
+            "I love my partner but he's smothering me and I need space.",
+            "Two people I care about both want me and honestly I just want to focus on myself."
+          ],
+          "spoiler": {
+            "summary": "After seeing Jamie flirt with Bex and mock people at the charity gala, Keeley breaks up with him. She and Roy kiss, he avoids her, she sleeps with Jamie, and then Roy and she start a loving relationship. She needs more space than he gives, and at Rebecca's father's funeral Jamie tells her he loves her while Nate kisses her during a shopping trip. As her firm takes off she can't take a holiday with Roy, and he breaks up with her at the start of season 3. She briefly dates investor Jack, a woman, who later dumps her. When Roy and Jamie arrive at her house after fighting over her and ask her to choose, she refuses both and throws them out, choosing herself.",
+            "key_events": [
+              "Breaks up with Jamie over his lack of accountability",
+              "Starts dating Roy",
+              "Jamie declares his love; Nate kisses her",
+              "Roy breaks up with her in season 3",
+              "Brief relationship with Jack, who ends it",
+              "Refuses to choose between Roy and Jamie"
+            ],
+            "got_right": "She walks away from people who don't respect her, asks for what she needs and ultimately refuses to let her worth depend on a partner.",
+            "got_wrong": "She sometimes uses one man to get at another, tolerates behaviour she shouldn't, and lets work and romance blur."
+          }
+        }
+      ]
+    },
+    {
+      "id": "char:ted_lasso/jamie_tartt",
+      "name": "Jamie Tartt",
+      "role": "Richmond's cocky, vain young star striker, on loan from Manchester City, who bullies teammates and plays only for himself.",
+      "relations": [
+        {
+          "target": "char:ted_lasso/ted_lasso",
+          "relation": "mentor"
+        },
+        {
+          "target": "char:ted_lasso/roy_kent",
+          "relation": "rival"
+        },
+        {
+          "target": "char:ted_lasso/roy_kent",
+          "relation": "mentor"
+        },
+        {
+          "target": "char:ted_lasso/keeley_jones",
+          "relation": "ex_partner"
+        },
+        {
+          "target": "char:ted_lasso/sam_obisanya",
+          "relation": "colleague"
+        },
+        {
+          "target": "char:ted_lasso/nate_shelley",
+          "relation": "enemy"
+        },
+        {
+          "target": "char:ted_lasso/rebecca_welton",
+          "relation": "boss"
+        },
+        {
+          "target": "char:ted_lasso/leslie_higgins",
+          "relation": "colleague"
+        }
+      ],
+      "arcs": [
+        {
+          "id": "arc:ted_lasso/jamie_tartt/the_fathers_voice",
+          "title": "Playing for a father who is never satisfied",
+          "literal_situation": "Jamie is supremely talented, arrogant and the centre of attention. He hogs the ball, belittles teammates and seems to care only about himself. What drives him is not yet visible.",
+          "pattern_label": "a harsh parent's voice in your head",
+          "pattern_text": "A gifted young person has built their whole personality around never looking weak, because the parent whose approval they crave only respects toughness and winning. The arrogance hides deep insecurity, and the parent's voice drowns out everyone else's. They have to separate who they are from who they were raised to be, set boundaries, and decide what to do with the anger and hurt.",
+          "hook": "Jamie is cocky, handsome and mean to anyone he thinks is beneath him. He calls himself the best, and he expects everyone to agree.",
+          "why_relatable": "Where does arrogance come from? Can you want a parent's approval and still know they are hurting you? What happens when the voice in your head isn't really yours?",
+          "watch_for": [
+            "Who is he trying to impress when he shows off?",
+            "How does he behave when he thinks nobody important is watching?",
+            "Notice how he talks about each of his parents."
+          ],
+          "start_at": "S1E1",
+          "span": "S1-S3",
+          "situations": [
+            {
+              "id": "difficult_parent",
+              "weight": 0.9
+            },
+            {
+              "id": "coming_of_age",
+              "weight": 0.6
+            },
+            {
+              "id": "identity_and_self_acceptance",
+              "weight": 0.6
+            },
+            {
+              "id": "family_expectations",
+              "weight": 0.5
+            }
+          ],
+          "conflicts": [
+            "self_vs_family_expectations",
+            "revenge_vs_forgiveness"
+          ],
+          "emotions": {
+            "start": [
+              "pride",
+              "anger",
+              "inadequacy"
+            ],
+            "middle": [
+              "shame",
+              "grief",
+              "anger"
+            ],
+            "end": [
+              "acceptance",
+              "peace",
+              "self_respect"
+            ]
+          },
+          "ending_tone": "hopeful",
+          "intensity": "heavy",
+          "warnings": [
+            "abuse",
+            "sexual_violence"
+          ],
+          "example_user_messages": [
+            "My dad only ever cared whether I won. Nothing I did was ever good enough for him.",
+            "People think I'm arrogant but honestly I'm terrified of being seen as weak.",
+            "My father is cruel to me and I still want him to be proud of me.",
+            "I finally stood up to my dad and now I don't know how I feel.",
+            "Is it possible to forgive a parent who hurt you without letting them back in?"
+          ],
+          "spoiler": {
+            "summary": "At the treatment-room ritual Jamie burns boots his mother bought him and vows to make her proud rather than act tough like his father. After Richmond's final match of season 1, his father James berates him for passing instead of scoring and throws a shoe at him; Ted witnesses it. In season 2 Jamie reveals he quit Manchester City partly because he was fed up with his father. When a drunk James storms the dressing room after an FA Cup semi-final loss and mocks the team, Jamie tells him to stop, then punches him; Roy embraces him as he sobs. In season 3 he reveals his father coerced him into sex at 14, confides his depression to his loving mother Georgie, and panics about his father being in the crowd at a Manchester match. Ted tells him forgiving his father is for himself; Jamie scores the winner and leaves the pitch in tears.",
+            "key_events": [
+              "Burns his mother's boots and vows to make her proud",
+              "Father throws a shoe at him after season 1's final match",
+              "Punches his drunk, abusive father in the dressing room; Roy hugs him",
+              "Discloses sexual abuse his father arranged when he was 14",
+              "Visits his mother, admits depression",
+              "Chooses to let go of resentment for his own sake"
+            ],
+            "got_right": "He eventually sets boundaries with his father, lets people comfort him and chooses forgiveness as something he does for himself.",
+            "got_wrong": "For years he passes on his father's cruelty to weaker teammates and mistakes arrogance for strength."
+          }
+        },
+        {
+          "id": "arc:ted_lasso/jamie_tartt/from_star_to_teammate",
+          "title": "The star who has to learn to pass",
+          "literal_situation": "Jamie is Richmond's best player and knows it. He ignores the coach, bullies the kit man and newer players, won't pass to teammates and treats his girlfriend as an accessory.",
+          "pattern_label": "from self-centred star to team player",
+          "pattern_text": "The most talented person in the room has always been rewarded for being selfish. When they are held accountable, they lose the relationships, jobs and admirers they took for granted, and have to earn their way back with people who have every reason to dislike them. They discover that being part of something bigger than yourself can feel better than being the star.",
+          "hook": "Jamie is the club's most gifted player and its biggest problem. He believes he doesn't need anyone, and he is used to getting away with everything.",
+          "why_relatable": "What happens when being the best isn't enough? Can you win back people you treated badly? How do you apologise when your pride says you shouldn't have to?",
+          "watch_for": [
+            "How does he react when he's benched or not the centre of attention?",
+            "Notice the first time he does something generous. Why then?",
+            "Who is willing to give him a second chance, and who isn't?"
+          ],
+          "start_at": "S1E1",
+          "span": "S1-S3",
+          "situations": [
+            {
+              "id": "redemption_after_mistakes",
+              "weight": 0.9
+            },
+            {
+              "id": "mentor_and_protege",
+              "weight": 0.7
+            },
+            {
+              "id": "finding_your_people",
+              "weight": 0.7
+            },
+            {
+              "id": "starting_over",
+              "weight": 0.5
+            }
+          ],
+          "conflicts": [
+            "fitting_in_vs_standing_out",
+            "independence_vs_connection"
+          ],
+          "emotions": {
+            "start": [
+              "pride",
+              "envy",
+              "loneliness"
+            ],
+            "middle": [
+              "rejection",
+              "shame",
+              "determination"
+            ],
+            "end": [
+              "belonging",
+              "joy",
+              "self_respect"
+            ]
+          },
+          "ending_tone": "hopeful",
+          "intensity": "moderate",
+          "warnings": [],
+          "example_user_messages": [
+            "I'm the top performer at work but nobody likes me and I'm starting to notice.",
+            "I burned a lot of bridges and now I want to come back and everyone hates me.",
+            "I used to bully people and I'm genuinely trying to be better now.",
+            "My old rival is now the one teaching me and it's humbling.",
+            "I always thought I didn't need anyone. I was wrong."
+          ],
+          "spoiler": {
+            "summary": "Ted benches Jamie for walking over a fallen Sam; Jamie rebels, loses Keeley and is sent back to Manchester City, where at the season 1 finale he makes the unselfish pass that relegates Richmond. He quits City for a reality dating show, is voted off, finds nobody wants him and asks Ted to come back. The squad greets him with fury; he apologises, starts therapy with Sharon, and joins the team's protest in solidarity with Sam. He gives a crucial penalty to Dani in the promotion match. In season 3 he trains with Roy at 4am, becomes a selfless playmaker in Total Football, leads the league in assists, supports teammate Colin coming out, and becomes Roy's best friend.",
+            "key_events": [
+              "Benched for walking over Sam",
+              "Returned to Manchester City; his pass relegates Richmond",
+              "Voted off a reality TV show",
+              "Returns to Richmond; the team resents him",
+              "Tapes over the sponsor logo in solidarity with Sam",
+              "Gives the promotion penalty to Dani",
+              "Roy's protégé and best friend; league leader in assists"
+            ],
+            "got_right": "He apologises honestly, keeps showing up despite hostility, accepts help and learns to share the spotlight.",
+            "got_wrong": "Early on he bullies people, treats others as props, and blames everyone else for consequences he earned."
+          }
+        }
+      ]
+    },
+    {
+      "id": "char:ted_lasso/nate_shelley",
+      "name": "Nate Shelley",
+      "role": "AFC Richmond's timid, overlooked kit man, bullied by the players, whose name nobody bothers to learn.",
+      "relations": [
+        {
+          "target": "char:ted_lasso/ted_lasso",
+          "relation": "mentor"
+        },
+        {
+          "target": "char:ted_lasso/jamie_tartt",
+          "relation": "enemy"
+        },
+        {
+          "target": "char:ted_lasso/roy_kent",
+          "relation": "colleague"
+        },
+        {
+          "target": "char:ted_lasso/keeley_jones",
+          "relation": "friend"
+        },
+        {
+          "target": "char:ted_lasso/leslie_higgins",
+          "relation": "friend"
+        },
+        {
+          "target": "char:ted_lasso/rebecca_welton",
+          "relation": "boss"
+        },
+        {
+          "target": "char:ted_lasso/sam_obisanya",
+          "relation": "colleague"
+        }
+      ],
+      "arcs": [
+        {
+          "id": "arc:ted_lasso/nate_shelley/hungry_to_be_seen",
+          "title": "Hungry to be seen",
+          "literal_situation": "Nate washes the kits and tends the pitch at Richmond. The players mock him, and he is so used to being invisible that when the new coach asks his name, he doesn't know what to say. He has a sharp tactical mind that nobody has noticed.",
+          "pattern_label": "the overlooked one who finally gets noticed",
+          "pattern_text": "A person who has been invisible and belittled their whole life, including by a parent who never praises them, is suddenly noticed and lifted up by a kind mentor. Newfound recognition feels intoxicating, and the old hunger for approval turns into insecurity, envy and resentment towards the people who helped them. They have to figure out whether their worth comes from others' praise, and how to make amends when they hurt the people who believed in them.",
+          "hook": "Nate is shy, anxious and bullied, wearing his father's too-big old suit. The new coach remembers his name, asks his opinion, and treats him like he matters. For Nate, that is completely new.",
+          "why_relatable": "What happens when someone finally believes in you after a lifetime of being overlooked? Can praise ever be enough if you never got it from your parents? How do you handle it when a mentor's light starts to feel like a shadow?",
+          "watch_for": [
+            "How does he treat people who have less power than him as he gains more?",
+            "Notice how he responds to compliments versus small slights.",
+            "What does his father say to him, and how does he carry it afterwards?"
+          ],
+          "start_at": "S1E1",
+          "span": "S1-S3",
+          "situations": [
+            {
+              "id": "confidence_struggle",
+              "weight": 0.9
+            },
+            {
+              "id": "mentor_and_protege",
+              "weight": 0.8
+            },
+            {
+              "id": "difficult_parent",
+              "weight": 0.6
+            },
+            {
+              "id": "redemption_after_mistakes",
+              "weight": 0.7
+            }
+          ],
+          "conflicts": [
+            "loyalty_vs_ambition",
+            "belonging_vs_integrity"
+          ],
+          "emotions": {
+            "start": [
+              "inadequacy",
+              "shame",
+              "loneliness"
+            ],
+            "middle": [
+              "pride",
+              "envy",
+              "resentment"
+            ],
+            "end": [
+              "guilt",
+              "acceptance",
+              "belonging"
+            ]
+          },
+          "ending_tone": "hopeful",
+          "intensity": "moderate",
+          "warnings": [
+            "betrayal"
+          ],
+          "example_user_messages": [
+            "I've been invisible at work for years, and now that I'm finally getting noticed I'm scared of losing it.",
+            "My dad has never once told me he's proud of me.",
+            "My mentor did everything for me and I've started to resent him and I don't know why.",
+            "I did something terrible to someone who believed in me. Can I ever make it right?",
+            "I got the promotion I wanted and I've turned into someone I don't like."
+          ],
+          "spoiler": {
+            "summary": "Ted makes Nate feel seen, buys him a suit, uses his tactical ideas and promotes him to assistant coach. Nate grows in confidence but also cruelty: he belittles the new kit man Will, is crushed by his father's coldness, feels sidelined when Roy joins the coaching staff and when Ted laughs off his offer to help Isaac, and resents Ted. He kisses Keeley, leaks Ted's panic attacks to journalist Trent Crimm, explodes at Ted that he never appreciated him, tears the BELIEVE sign in half and becomes manager of Rupert's West Ham. In season 3 he is praised but hollow under Rupert, finds love with the restaurant hostess Jade, earns his father's approval by playing violin, and quits West Ham when he sees who Rupert really is. He returns to Richmond humbly as kit man, apologises to Ted, who forgives him, and is welcomed back onto the staff.",
+            "key_events": [
+              "Promoted from kit man to assistant coach",
+              "Bullies the new kit man; clashes with his father",
+              "Kisses Keeley",
+              "Leaks Ted's panic attacks to the press",
+              "Rips the BELIEVE sign and joins West Ham under Rupert",
+              "Falls for Jade",
+              "Quits West Ham and returns to Richmond; Ted forgives him"
+            ],
+            "got_right": "His tactical instincts are real, and in the end he recognises what he has become, walks away from a toxic boss and apologises humbly.",
+            "got_wrong": "He needs outside approval so badly that he punches down, sees kindness as condescension and betrays the person who believed in him most."
+          }
+        }
+      ]
+    },
+    {
+      "id": "char:ted_lasso/leslie_higgins",
+      "name": "Leslie Higgins",
+      "role": "AFC Richmond's mild-mannered, long-suffering director of football operations, a loyal family man who has spent years doing whatever his bosses ask.",
+      "relations": [
+        {
+          "target": "char:ted_lasso/rebecca_welton",
+          "relation": "boss"
+        },
+        {
+          "target": "char:ted_lasso/ted_lasso",
+          "relation": "friend"
+        },
+        {
+          "target": "char:ted_lasso/keeley_jones",
+          "relation": "protege"
+        },
+        {
+          "target": "char:ted_lasso/nate_shelley",
+          "relation": "friend"
+        },
+        {
+          "target": "char:ted_lasso/roy_kent",
+          "relation": "friend"
+        },
+        {
+          "target": "char:ted_lasso/jamie_tartt",
+          "relation": "colleague"
+        },
+        {
+          "target": "char:ted_lasso/sam_obisanya",
+          "relation": "colleague"
+        }
+      ],
+      "arcs": [
+        {
+          "id": "arc:ted_lasso/leslie_higgins/finding_his_spine",
+          "title": "The yes-man who finds his spine",
+          "literal_situation": "Higgins has spent years obeying the club's owners, including covering for the previous owner's affairs. The new owner makes him her accomplice in a plan he finds distasteful, sweetening it with a promotion he badly needs to support his wife and five children.",
+          "pattern_label": "going along with a boss you know is wrong",
+          "pattern_text": "A decent, conflict-averse employee has spent years keeping their head down and doing what powerful people ask, even when it made them complicit. When they are asked to help harm someone they have come to like, they have to choose between job security for their family and their own conscience. Standing up for once could cost them everything, but staying silent is costing them themselves.",
+          "hook": "Higgins is kind, awkward, jittery around his boss and fond of the new coach. He has just been promoted, and the price is helping with something that makes him deeply uncomfortable.",
+          "why_relatable": "What do you do when your boss asks you to do something wrong and your family depends on your paycheque? How long can you tell yourself you had no choice? What does it take for a people-pleaser to finally say no?",
+          "watch_for": [
+            "How does he justify going along with things to himself?",
+            "Notice who he feels most at ease with at work, and why.",
+            "What is he like at home compared with the office?"
+          ],
+          "start_at": "S1E1",
+          "span": "S1-S2",
+          "situations": [
+            {
+              "id": "standing_up_to_authority",
+              "weight": 0.9
+            },
+            {
+              "id": "confidence_struggle",
+              "weight": 0.6
+            },
+            {
+              "id": "mentor_and_protege",
+              "weight": 0.4
+            }
+          ],
+          "conflicts": [
+            "belonging_vs_integrity",
+            "safety_vs_growth"
+          ],
+          "emotions": {
+            "start": [
+              "guilt",
+              "anxiety",
+              "fear"
+            ],
+            "middle": [
+              "shame",
+              "anger",
+              "determination"
+            ],
+            "end": [
+              "self_respect",
+              "relief",
+              "belonging"
+            ]
+          },
+          "ending_tone": "hopeful",
+          "intensity": "light",
+          "warnings": [],
+          "example_user_messages": [
+            "My boss keeps asking me to do things I know are wrong and I need this job to support my kids.",
+            "I've spent my whole career saying yes to people and I'm ashamed of some of the things I covered for.",
+            "I finally told my manager off and quit and I'm terrified.",
+            "I'm a people-pleaser and I think it's making me complicit."
+          ],
+          "spoiler": {
+            "summary": "Higgins reluctantly helps Rebecca sabotage Ted, including hiring a paparazzo, but becomes Ted's friend. He organises the ritual that unites the team, and Rebecca punishes him for it. When she orders him to sell home seats to rival fans to spite Rupert, he finally tells her to f*** off, tells her hurting others won't heal her pain, and quits. Rebecca later knocks on his window, apologises and asks him back, and he returns with dignity. Afterwards he becomes the club's quiet heart: a founding Diamond Dog, host of a Christmas dinner for players far from home, a happily married man who tells Jamie to love his father for who he is and forgive him for who he isn't, and a mentor who tells Keeley that 'a great mentor knows you will move on'.",
+            "key_events": [
+              "Helps with Rebecca's sabotage against his conscience",
+              "Organises the ritual that unites the team",
+              "Tells Rebecca off and quits",
+              "Rebecca apologises and he returns",
+              "Becomes a mentor figure and gives Keeley his blessing to leave"
+            ],
+            "got_right": "He finally draws a line, speaks the truth kindly but firmly, and becomes a wise, generous mentor.",
+            "got_wrong": "For years he let fear for his job make him complicit in cruelty to others, including his boss's marriage."
+          }
+        }
+      ]
+    },
+    {
+      "id": "char:ted_lasso/sam_obisanya",
+      "name": "Sam Obisanya",
+      "role": "A sweet, optimistic young Nigerian defender in his first season in the Premier League, far from his family and struggling for form.",
+      "relations": [
+        {
+          "target": "char:ted_lasso/ted_lasso",
+          "relation": "mentor"
+        },
+        {
+          "target": "char:ted_lasso/rebecca_welton",
+          "relation": "ex_partner"
+        },
+        {
+          "target": "char:ted_lasso/jamie_tartt",
+          "relation": "colleague"
+        },
+        {
+          "target": "char:ted_lasso/roy_kent",
+          "relation": "colleague"
+        },
+        {
+          "target": "char:ted_lasso/keeley_jones",
+          "relation": "friend"
+        },
+        {
+          "target": "char:ted_lasso/nate_shelley",
+          "relation": "colleague"
+        },
+        {
+          "target": "char:ted_lasso/leslie_higgins",
+          "relation": "colleague"
+        }
+      ],
+      "arcs": [
+        {
+          "id": "arc:ted_lasso/sam_obisanya/far_from_home",
+          "title": "A long way from home",
+          "literal_situation": "Sam is a young player recently arrived from Nigeria, homesick and struggling on the pitch. The star striker belittles him and his family, and his confidence is slipping as his birthday approaches far from his loved ones.",
+          "pattern_label": "a young person far from home finding their feet",
+          "pattern_text": "A kind, hopeful young person moves far from their family and culture for a big opportunity, and quickly feels lonely, homesick and out of their depth. With the support of people who make them feel seen, they regain confidence and begin to thrive. As they grow, they face bigger choices about love, money and where they truly belong.",
+          "hook": "Sam is gentle, polite and full of promise, but he misses home, his performance is dipping, and he is being picked on by the team's biggest ego.",
+          "why_relatable": "How do you keep your spirit up when you are far from everyone who loves you? Can a little kindness really turn things around? When big opportunities come, how do you decide what is truly best for you?",
+          "watch_for": [
+            "What small things help him feel at home?",
+            "How does he handle the teammate who bullies him?",
+            "Who does he call when he has a big decision to make?"
+          ],
+          "start_at": "S1E2",
+          "span": "S1-S2",
+          "situations": [
+            {
+              "id": "moving_somewhere_new",
+              "weight": 0.9
+            },
+            {
+              "id": "confidence_struggle",
+              "weight": 0.7
+            },
+            {
+              "id": "loneliness",
+              "weight": 0.6
+            },
+            {
+              "id": "falling_for_someone_unexpected",
+              "weight": 0.5
+            }
+          ],
+          "conflicts": [
+            "loyalty_vs_ambition",
+            "duty_vs_desire"
+          ],
+          "emotions": {
+            "start": [
+              "loneliness",
+              "longing",
+              "self_doubt"
+            ],
+            "middle": [
+              "belonging",
+              "love",
+              "confusion"
+            ],
+            "end": [
+              "confidence",
+              "self_respect",
+              "hope"
+            ]
+          },
+          "ending_tone": "hopeful",
+          "intensity": "light",
+          "warnings": [
+            "death_of_loved_one"
+          ],
+          "example_user_messages": [
+            "I moved abroad for a great opportunity but I'm so homesick I can't focus.",
+            "It's my birthday and I'm alone in a new country.",
+            "I fell for someone older and much more powerful and we're keeping it secret.",
+            "I got a huge offer somewhere else, and I need to figure out if staying is right for me or just about someone I love.",
+            "A little kindness from my new colleagues completely changed how I feel about this place."
+          ],
+          "spoiler": {
+            "summary": "Ted and the team throw Sam a birthday party with Nigerian treats, lifting his spirits; he scores the winner against Watford after Jamie is benched. In season 2 he is angry when Jamie returns but eventually becomes his friend. On the dating app Bantr he unknowingly falls for Rebecca, the club owner; they start a secret relationship, which she pauses after her father's funeral. Billionaire Edwin Akufo offers him a fortune to join his new African club; after asking his father and waiting for a sign, Sam turns it down, telling Rebecca and Ted he is staying because it is best for his own journey, not for her. He then buys a property to open a Nigerian restaurant named after his father.",
+            "key_events": [
+              "Team birthday party boosts his confidence",
+              "Scores the stoppage-time winner against Watford",
+              "Secret relationship with Rebecca, which she ends",
+              "Rejects Edwin Akufo's lucrative offer",
+              "Opens a restaurant named after his father"
+            ],
+            "got_right": "He is open-hearted, accepts support, and makes big decisions based on his own values rather than on romance or money.",
+            "got_wrong": "He sometimes defers to others' comfort, keeping a relationship secret and waiting for signs rather than trusting himself."
+          }
+        },
+        {
+          "id": "arc:ted_lasso/sam_obisanya/doing_the_right_thing",
+          "title": "Speaking up when it costs you",
+          "literal_situation": "Sam is excited about his first big advertising campaign for the club's airline sponsor, until his father tells him the airline's parent company is devastating the environment in his home country.",
+          "pattern_label": "standing up for your values at a cost",
+          "pattern_text": "A gentle, well-liked young person discovers that something they benefit from is causing harm to their home community. Speaking up could cost them money, relationships and their reputation, and invite abuse from powerful people. They have to decide whether to stay quiet and comfortable or use their voice, and how to keep going when the backlash is personal.",
+          "hook": "Sam has finally found his feet at the club and is on the verge of a lucrative campaign. Now he has to decide whether to risk it all over something happening thousands of miles away.",
+          "why_relatable": "Is it worth speaking up if it costs you your career? What do you owe the place you come from? How do you stay kind when people attack you for your beliefs?",
+          "watch_for": [
+            "Who stands with him, and who hesitates?",
+            "How does his father influence his choices?",
+            "How does he respond when powerful people try to intimidate him?"
+          ],
+          "start_at": "S2E3",
+          "span": "S2-S3",
+          "situations": [
+            {
+              "id": "standing_up_to_authority",
+              "weight": 0.9
+            },
+            {
+              "id": "identity_and_self_acceptance",
+              "weight": 0.6
+            },
+            {
+              "id": "taking_a_big_risk",
+              "weight": 0.6
+            },
+            {
+              "id": "starting_a_business",
+              "weight": 0.4
+            }
+          ],
+          "conflicts": [
+            "belonging_vs_integrity",
+            "power_vs_morality"
+          ],
+          "emotions": {
+            "start": [
+              "anger",
+              "anxiety",
+              "determination"
+            ],
+            "middle": [
+              "pride",
+              "fear",
+              "grief"
+            ],
+            "end": [
+              "self_respect",
+              "belonging",
+              "determination"
+            ]
+          },
+          "ending_tone": "hopeful",
+          "intensity": "moderate",
+          "warnings": [],
+          "example_user_messages": [
+            "I found out the company I work with is harming my home country and I can't stay silent.",
+            "I spoke out publicly about something important and now I'm getting hate messages.",
+            "Someone vandalised my business because of where I'm from.",
+            "Doing the right thing might cost me my career. Is it worth it?"
+          ],
+          "spoiler": {
+            "summary": "Sam refuses to promote Dubai Air because its parent company Cerithium Oil is polluting Nigeria. He tapes over the logo before a match, the whole team follows in solidarity, and at a press conference he confirms he is accusing the Nigerian government of corruption. Rebecca backs him despite pressure from the oil company's CEO. In season 3 he opens his restaurant, Ola's, and publicly challenges the anti-immigration Home Secretary; the restaurant is vandalised with racist graffiti. His father arrives unexpectedly and tells him not to fight back but to fight forward, and his teammates repair the restaurant. Edwin Akufo takes petty revenge, including paying to keep Sam off Nigeria's national team.",
+            "key_events": [
+              "Taped-over sponsor logo protest; team joins him",
+              "Publicly accuses the Nigerian government of corruption",
+              "Opens a restaurant, Ola's",
+              "Restaurant vandalised by anti-immigration racists",
+              "Teammates rebuild it; his father visits",
+              "Edwin Akufo sabotages his national team call-up"
+            ],
+            "got_right": "He acts on his values calmly, answers hatred with reasoned courage and lets his community support him.",
+            "got_wrong": "He sometimes swallows his hurt silently rather than sharing it, and has to learn that anger is allowed."
+          }
+        }
+      ]
+    }
+  ]
+}

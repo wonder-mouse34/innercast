@@ -1,0 +1,944 @@
+{
+  "show": "gilmore_girls",
+  "characters": [
+    {
+      "id": "char:gilmore_girls/lorelai_gilmore",
+      "name": "Lorelai Gilmore",
+      "role": "A fast-talking, coffee-obsessed single mother in her early thirties who ran away from her wealthy Hartford parents as a teenager and built an independent life managing an inn in a quirky small town, raising her daughter as her best friend.",
+      "relations": [
+        {"target": "char:gilmore_girls/rory_gilmore", "relation": "child"},
+        {"target": "char:gilmore_girls/emily_gilmore", "relation": "parent"},
+        {"target": "char:gilmore_girls/richard_gilmore", "relation": "parent"},
+        {"target": "char:gilmore_girls/luke_danes", "relation": "friend"},
+        {"target": "char:gilmore_girls/luke_danes", "relation": "partner"},
+        {"target": "char:gilmore_girls/sookie_st_james", "relation": "friend"},
+        {"target": "char:gilmore_girls/sookie_st_james", "relation": "colleague"},
+        {"target": "char:gilmore_girls/lane_kim", "relation": "friend"}
+      ],
+      "arcs": [
+        {
+          "id": "arc:gilmore_girls/lorelai_gilmore/going_back_to_the_family_she_fled",
+          "title": "Asking for help from the parents she ran from",
+          "literal_situation": "Her daughter has been accepted to an elite private school she cannot afford. The only people who can pay are her wealthy, controlling parents, whom she has barely spoken to since she left home at seventeen with a baby. They agree to pay on one condition: dinner at their house every Friday night.",
+          "pattern_label": "reconnecting with the family you broke away from",
+          "pattern_text": "A person who left a stifling, judgmental family to build their own life on their own terms is forced to depend on that family again. Every regular visit reopens old wounds: the criticism, the sense of never being good enough, the guilt of having left. The question is whether they can stay in contact with their parents without shrinking back into the child they used to be.",
+          "hook": "She is proud, funny and fiercely self-sufficient, and asking her parents for money feels like admitting defeat. Now she has to sit at their table every week, while her daughter gets to know the grandparents she barely met.",
+          "why_relatable": "How do you have a relationship with parents who still treat you like a disappointment? Can you accept their help without accepting their control? And what does it feel like when your own child gets along with them better than you ever did?",
+          "watch_for": [
+            "How does she change, in voice and posture, the moment she walks into her parents' house?",
+            "When she criticises her mother, notice which of her own habits she is describing.",
+            "What does she need from her father that she never says out loud?"
+          ],
+          "start_at": "S1E1",
+          "span": "S1-Revival",
+          "situations": [
+            {"id": "difficult_parent", "weight": 0.95},
+            {"id": "family_expectations", "weight": 0.8},
+            {"id": "caring_for_family", "weight": 0.3}
+          ],
+          "conflicts": ["independence_vs_connection", "self_vs_family_expectations"],
+          "emotions": {"start": ["resentment", "shame", "anxiety"], "middle": ["anger", "guilt", "longing"], "end": ["acceptance", "grief", "love"]},
+          "ending_tone": "bittersweet",
+          "intensity": "moderate",
+          "warnings": ["death_of_loved_one", "grief", "serious_illness"],
+          "example_user_messages": [
+            "I moved out at eighteen to get away from my parents and now I have to ask them for money. I feel like I'm fifteen again.",
+            "Every time I visit my mother she finds something wrong with me. I don't know how to see her without fighting.",
+            "My kid adores my parents and I'm weirdly jealous. They never treated me like that.",
+            "I built my whole life to prove I didn't need my family. Now I kind of do.",
+            "How do you forgive parents who are still doing the thing that hurt you?"
+          ],
+          "spoiler": {
+            "summary": "The Friday night dinners become a running battleground. Lorelai repays the school loan when an investment Richard made in her name matures, but Rory makes her own deal with her grandparents to pay for Yale, keeping the dinners going. Emily meddles in Lorelai's love life, pushing Christopher back into the picture to break up her relationship with Luke, and Lorelai stops coming for a while. When Rory drops out of Yale, Emily and Richard let her move in with them, which Lorelai experiences as the ultimate betrayal, until Rory rebels against Emily's control too. Richard's heart attack softens things, and at the end of the series Lorelai chooses to keep coming to Friday dinners voluntarily. In the revival, after Richard's death, Lorelai and Emily go to therapy together, clash painfully, and Lorelai only makes peace when she calls Emily with a genuinely loving memory of her father.",
+            "key_events": [
+              "Friday night dinners begin as the price of the school loan",
+              "Loan repaid through an investment Richard made at her birth",
+              "Emily sends Christopher to break up Lorelai and Luke",
+              "Rory drops out of Yale and moves in with her grandparents",
+              "Richard suffers a serious heart attack",
+              "Lorelai freely agrees to keep attending Friday dinners",
+              "Revival: Richard has died; mother and daughter attend therapy together",
+              "Lorelai calls Emily with a heartfelt memory of Richard"
+            ],
+            "got_right": "She keeps showing up, protects her daughter from the pressure she suffered, and in the end chooses a relationship with her parents freely rather than out of obligation.",
+            "got_wrong": "She reverts to sarcasm and teenage defiance at every slight, assumes the worst of her parents' motives, and rarely tells them directly what she needs, so the same fights repeat for years."
+          }
+        },
+        {
+          "id": "arc:gilmore_girls/lorelai_gilmore/building_her_own_inn",
+          "title": "From running someone else's business to building her own",
+          "literal_situation": "She started as a maid at the Independence Inn and worked her way up to manager, while taking business classes on the side. She and her best friend, the inn's chef, have long dreamed of opening an inn of their own, but it has always been a someday plan.",
+          "pattern_label": "turning a someday dream into a real business",
+          "pattern_text": "A self-taught person who worked their way up from the bottom has a secure job running someone else's operation and a long-held dream of starting their own business with a close friend. The dream is safe while it stays a dream. Making it real means risking their savings, their stability and the friendship itself.",
+          "hook": "She is very good at her job, loyal to the owner who took her in, and comfortable. The inn dream with her best friend is exciting to talk about, but there is no money, no building and no real plan yet.",
+          "why_relatable": "When is the right moment to leave a secure job you are grateful for? Can you go into business with your best friend without damaging the friendship? And how do you handle the fear of putting everything on the line for something that might fail?",
+          "watch_for": [
+            "How does she react when the security she took for granted starts to wobble?",
+            "When she and her partner disagree, who panics and who steadies the other?",
+            "Notice what she is willing to give up, and what she refuses to, for the dream."
+          ],
+          "start_at": "S1E1",
+          "span": "S1-S4",
+          "situations": [
+            {"id": "starting_a_business", "weight": 0.95},
+            {"id": "taking_a_big_risk", "weight": 0.7},
+            {"id": "career_change", "weight": 0.4}
+          ],
+          "conflicts": ["safety_vs_growth", "loyalty_vs_ambition"],
+          "emotions": {"start": ["longing", "hope"], "middle": ["anxiety", "overwhelm", "determination"], "end": ["pride", "joy"]},
+          "ending_tone": "hopeful",
+          "intensity": "light",
+          "warnings": [],
+          "example_user_messages": [
+            "My best friend and I have talked about opening our own business for years. Now there's an actual chance and I'm terrified.",
+            "I worked my way up from the bottom and I have a stable job, but I want something that's mine.",
+            "My boss gave me my start and leaving feels like betraying her.",
+            "We're about to sink all our savings into our dream and I keep waking up at 3am panicking."
+          ],
+          "spoiler": {
+            "summary": "When owner Mia plans to sell the Independence Inn, Lorelai panics and lashes out at Sookie before confiding her fears. They find their dream property, the Dragonfly Inn, but the owner Fran won't sell. After Fran dies, her heirs agree to sell, but money becomes a problem until Rory secures Yale funding from her grandparents. A fire at the Independence Inn leads Mia to sell, leaving both women out of work; they run a catering company to fund renovations. The Dragonfly opens to rave reviews at the end of season four.",
+            "key_events": [
+              "Mia plans to sell the Independence Inn",
+              "Lorelai freaks out at Sookie over the uncertainty",
+              "Fran refuses to sell the Dragonfly, then dies and her heirs sell",
+              "Fire at the Independence Inn ends their jobs there",
+              "They run a catering company to fund renovations",
+              "The Dragonfly Inn opens to rave reviews"
+            ],
+            "got_right": "She treats the business as a partnership, handles setbacks with grit and humour, and keeps going when the timing is terrible.",
+            "got_wrong": "She hides her fears and takes them out on her partner, and at times lets pride stop her from accepting help."
+          }
+        },
+        {
+          "id": "arc:gilmore_girls/lorelai_gilmore/letting_someone_all_the_way_in",
+          "title": "Afraid to let anyone all the way in",
+          "literal_situation": "She has raised her daughter mostly alone since she was a teenager. Her daughter's father drifts in and out of their lives, dating has always come second to motherhood, and the gruff diner owner who pours her coffee every morning is just a friend.",
+          "pattern_label": "fear of commitment after raising a child alone",
+          "pattern_text": "A fiercely independent single parent has spent years building a self-sufficient life for two, and letting a partner in threatens that careful balance. They are drawn to people, but pull back or bolt when things get serious, torn between the old flame everyone expects them to settle with and the steady person who has been there all along. The question is whether they can risk real commitment without losing themselves.",
+          "hook": "She is charming, funny and never short of attention, but her life is built around her daughter and her independence. She jokes her way out of vulnerable moments and has never really tried a committed relationship as an adult.",
+          "why_relatable": "What makes someone self-sabotage just as a relationship gets serious? Is the person who knew you when you were young the one you are supposed to end up with? And how do you make room for a partner when you have always done everything yourself?",
+          "watch_for": [
+            "Notice what she does with her feelings when someone asks her for a real commitment.",
+            "How does she treat the people who show up for her without being asked?",
+            "When does her humour protect her, and when does it push people away?"
+          ],
+          "start_at": "S1E1",
+          "span": "S1-Revival",
+          "situations": [
+            {"id": "falling_for_someone_unexpected", "weight": 0.7},
+            {"id": "breakup", "weight": 0.6},
+            {"id": "divorce", "weight": 0.3},
+            {"id": "identity_and_self_acceptance", "weight": 0.4}
+          ],
+          "conflicts": ["independence_vs_connection", "holding_on_vs_letting_go"],
+          "emotions": {"start": ["longing", "fear"], "middle": ["confusion", "guilt", "loneliness"], "end": ["love", "peace", "acceptance"]},
+          "ending_tone": "hopeful",
+          "intensity": "moderate",
+          "warnings": ["betrayal"],
+          "example_user_messages": [
+            "Every time a relationship gets serious I find a reason to run. I don't even know why.",
+            "I raised my kid alone and I'm so used to doing everything myself that I don't know how to let someone help.",
+            "Everyone assumes I'll get back together with my kid's dad, but I'm not sure that's what I want.",
+            "My closest friend might be the person I actually want to be with, and that scares me more than anything.",
+            "I'm in my forties and I still don't know if I'm built for commitment."
+          ],
+          "spoiler": {
+            "summary": "Lorelai gets engaged to Max Medina, then calls off the wedding days before. She briefly plans a family life with Christopher, but he returns to his pregnant girlfriend Sherry. After casual and secret relationships (Alex, Jason Stiles), she and Luke finally kiss on the Dragonfly's test-run night. They break up when Emily pushes Christopher back in, reconcile, and Lorelai proposes; then Luke's newly discovered daughter April pushes the wedding back. Lorelai gives Luke an ultimatum, he hesitates, and she sleeps with Christopher that night. She marries Christopher in Paris but realises he is not the one and they divorce. She and Luke slowly rebuild and kiss at the series end. In the revival they are together but unmarried; after a failed attempt at a solo wilderness hike she has an epiphany, and she and Luke marry.",
+            "key_events": [
+              "Calls off her wedding to Max days before",
+              "Christopher leaves her to return to pregnant Sherry",
+              "First kiss with Luke at the Dragonfly test run",
+              "Lorelai proposes to Luke; April's arrival delays the wedding",
+              "Ultimatum to Luke, then a night with Christopher",
+              "Marries Christopher in Paris; they divorce",
+              "Reconciles with Luke at the series end",
+              "Revival: marries Luke"
+            ],
+            "got_right": "She is honest with herself when a relationship is wrong, even at great cost, and she eventually chooses the partner who knows her best over the one who looks right on paper.",
+            "got_wrong": "She runs from vulnerability, issues ultimatums instead of talking, and makes a rash, hurtful decision in the heat of rejection."
+          }
+        }
+      ]
+    },
+    {
+      "id": "char:gilmore_girls/rory_gilmore",
+      "name": "Rory Gilmore",
+      "role": "A bookish, shy sixteen-year-old who has always done everything right, dreams of Harvard and journalism, and is best friends with her young single mother in a close-knit small town.",
+      "relations": [
+        {"target": "char:gilmore_girls/lorelai_gilmore", "relation": "parent"},
+        {"target": "char:gilmore_girls/richard_gilmore", "relation": "mentor"},
+        {"target": "char:gilmore_girls/emily_gilmore", "relation": "mentor"},
+        {"target": "char:gilmore_girls/lane_kim", "relation": "friend"},
+        {"target": "char:gilmore_girls/paris_geller", "relation": "rival"},
+        {"target": "char:gilmore_girls/paris_geller", "relation": "friend"},
+        {"target": "char:gilmore_girls/luke_danes", "relation": "friend"},
+        {"target": "char:gilmore_girls/sookie_st_james", "relation": "friend"}
+      ],
+      "arcs": [
+        {
+          "id": "arc:gilmore_girls/rory_gilmore/living_up_to_the_plan",
+          "title": "The golden child meets the real world",
+          "literal_situation": "She has just been accepted to Chilton, an elite prep school in Hartford, which should put her on track for Harvard. It means leaving her best friend and the small-town school where she was always top of the class, and walking into a world of wealthy, ruthless overachievers.",
+          "pattern_label": "a high achiever facing her first real failures",
+          "pattern_text": "A diligent, bright young person has built their whole identity on doing what is expected and doing it well. Everyone around them has pinned big hopes on their future. When they move into a more demanding world, they have to find out who they are when they are no longer the best, and whether the plan they have followed since childhood is really their own.",
+          "hook": "She is shy, kind, and used to being the smart girl everyone is proud of. At her new school she is suddenly behind, has a hostile classmate gunning for her, and feels like an outsider among rich kids.",
+          "why_relatable": "What happens to someone whose self-worth depends on getting it right, the first time they get it badly wrong? Is her dream really hers, or her mother's? And how does a people-pleaser learn to speak up for what she wants?",
+          "watch_for": [
+            "How does she handle criticism compared with praise?",
+            "Notice whose voice she is listening to when she makes big decisions.",
+            "When things go wrong, does she face it or look for a way to disappear?"
+          ],
+          "start_at": "S1E1",
+          "span": "S1-S7",
+          "situations": [
+            {"id": "coming_of_age", "weight": 0.9},
+            {"id": "family_expectations", "weight": 0.7},
+            {"id": "confidence_struggle", "weight": 0.6},
+            {"id": "identity_and_self_acceptance", "weight": 0.6}
+          ],
+          "conflicts": ["perfectionism_vs_good_enough", "self_vs_family_expectations"],
+          "emotions": {"start": ["anxiety", "hope", "inadequacy"], "middle": ["shame", "confusion", "self_doubt"], "end": ["determination", "hope", "freedom"]},
+          "ending_tone": "hopeful",
+          "intensity": "moderate",
+          "warnings": [],
+          "example_user_messages": [
+            "I was always the smart one and now I'm surrounded by people who are better than me. I don't know who I am anymore.",
+            "My whole family has pinned their hopes on me and I'm terrified of letting them down.",
+            "I got my first real rejection and it feels like proof I was never good enough.",
+            "I've followed the plan my whole life and I'm starting to wonder if it was ever mine.",
+            "I messed up badly and I just want to run away from everything."
+          ],
+          "spoiler": {
+            "summary": "Rory struggles at first at Chilton, gets her first D, and endures Paris's hostility, but finishes as valedictorian and chooses Yale over Harvard. At Yale, Logan's father Mitchum Huntzberger tells her after an internship that she doesn't have what it takes to be a journalist. Crushed, she steals a yacht with Logan, is arrested, drops out of Yale and moves in with her grandparents, joining the DAR and estranged from her mother. Jess confronts her about losing herself, and she returns to Yale and reconciles with Lorelai. She is rejected by the New York Times, turns down Logan's marriage proposal to keep her future open, and leaves to cover Barack Obama's presidential campaign as a reporter.",
+            "key_events": [
+              "First D at Chilton",
+              "Graduates Chilton as valedictorian",
+              "Chooses Yale over Harvard",
+              "Mitchum Huntzberger says she doesn't have it",
+              "Steals a yacht with Logan and is arrested",
+              "Drops out of Yale and moves in with her grandparents",
+              "Jess's confrontation prompts her return to Yale",
+              "Rejected by the New York Times",
+              "Turns down Logan's proposal",
+              "Takes a job covering the Obama campaign"
+            ],
+            "got_right": "When she recovers, she owns her mistakes, goes back to finish what she started, and chooses an open future over a safe but premature commitment.",
+            "got_wrong": "She treats one harsh judgement as the final word on her worth, responds to failure by running away, and shuts out the mother who tells her the truth."
+          }
+        },
+        {
+          "id": "arc:gilmore_girls/rory_gilmore/adrift_in_her_thirties",
+          "title": "Lost in her early thirties",
+          "literal_situation": "Later in the series, years after her school days, she is in her early thirties, living out of a suitcase, freelancing between cities with no fixed home, and unsure where her career or her personal life is heading.",
+          "pattern_label": "the promising one who feels stuck at thirty",
+          "pattern_text": "Someone everyone expected great things from reaches their early thirties and finds that life has not gone to plan. Work has stalled, they have no home base, and their relationships are messy and half-committed. They drift back to their childhood home and have to face the gap between who they were supposed to become and who they are.",
+          "hook": "Later in the series, after years away, she keeps telling herself and everyone else that things are about to take off. Underneath, she has no plan, is juggling opportunities that do not quite exist, and has let her personal life get complicated.",
+          "why_relatable": "What do you do when the future everyone promised you has not arrived? Is moving back home a defeat or a reset? And how honest is she being with herself about what she actually wants?",
+          "watch_for": [
+            "Notice how she talks about her career to others versus how she prepares for it.",
+            "Which relationships does she take seriously, and which does she treat as convenient?",
+            "What does she find when she stops chasing the big break?"
+          ],
+          "start_at": "Revival E1",
+          "span": "Revival E1-E4",
+          "situations": [
+            {"id": "starting_over", "weight": 0.7},
+            {"id": "identity_and_self_acceptance", "weight": 0.7},
+            {"id": "career_change", "weight": 0.6},
+            {"id": "imposter_syndrome", "weight": 0.4}
+          ],
+          "conflicts": ["past_vs_future", "holding_on_vs_letting_go"],
+          "emotions": {"start": ["restlessness", "self_doubt", "anxiety"], "middle": ["shame", "confusion"], "end": ["determination", "dread"]},
+          "ending_tone": "ambiguous",
+          "intensity": "moderate",
+          "warnings": ["betrayal"],
+          "example_user_messages": [
+            "I'm 32 and everyone thought I'd be successful by now. I'm just freelancing and pretending it's fine.",
+            "I had to move back into my childhood bedroom and I feel like a total failure.",
+            "I'm seeing someone who's engaged to someone else and I know it's going nowhere, but I can't stop.",
+            "I keep telling people big things are about to happen for me, but honestly I have no plan.",
+            "How do you start again when you were supposed to have it all figured out?"
+          ],
+          "spoiler": {
+            "summary": "Riding on a single well-received article, Rory chases a book deal and a job at a website she treats as beneath her, and bombs the interview through lack of preparation. She is having a no-strings affair with Logan, who is engaged, while repeatedly forgetting her own boyfriend, Paul. Broke, she moves back to Stars Hollow and becomes the unpaid editor of the town paper. Jess suggests she write a book about herself and her mother, which she starts despite Lorelai's initial objection. She says goodbye to Logan, and in the final moments tells Lorelai she is pregnant.",
+            "key_events": [
+              "Book deal with Naomi Shropshire falls through",
+              "Bombs the SandeeSays job interview",
+              "Ongoing affair with engaged Logan; keeps forgetting boyfriend Paul",
+              "Moves back to Stars Hollow and runs the town gazette unpaid",
+              "Starts writing a book about her and Lorelai",
+              "Ends things with Logan",
+              "Final words: tells Lorelai she is pregnant"
+            ],
+            "got_right": "She stops waiting for a big break, returns to the writing she loves, and draws on her own life for material.",
+            "got_wrong": "She coasts on past promise, underprepares for real opportunities, and treats people in her life, including a boyfriend and a fiancée she never meets, as if they don't matter."
+          }
+        }
+      ]
+    },
+    {
+      "id": "char:gilmore_girls/emily_gilmore",
+      "name": "Emily Gilmore",
+      "role": "A formidable Hartford society matriarch, exacting with her staff and devoted to her charities, whose only daughter left home as a teenager with a baby and has kept her at arm's length ever since.",
+      "relations": [
+        {"target": "char:gilmore_girls/richard_gilmore", "relation": "partner"},
+        {"target": "char:gilmore_girls/lorelai_gilmore", "relation": "child"},
+        {"target": "char:gilmore_girls/rory_gilmore", "relation": "protege"}
+      ],
+      "arcs": [
+        {
+          "id": "arc:gilmore_girls/emily_gilmore/earning_a_place_in_her_daughters_life",
+          "title": "Trying to be part of her daughter's life",
+          "literal_situation": "Her daughter, who ran away with her baby as a teenager, has come to ask for money for her granddaughter's school fees. She agrees, on the condition that both of them come to dinner every Friday night.",
+          "pattern_label": "a controlling parent longing for closeness",
+          "pattern_text": "A parent whose child pulled away years ago still feels the hurt of being shut out of their life. They show love the only way they know how, through standards, criticism and control, which only pushes the child further away. The question is whether they can learn to connect without trying to manage.",
+          "hook": "She is sharp, proper and used to getting her way. Now she has the weekly access to her daughter and granddaughter she has wanted for sixteen years, and she is not going to waste it.",
+          "why_relatable": "Why do her attempts to help keep landing as attacks? Can a parent admit they were hurt without it turning into blame? And is it possible to accept a grown child whose life looks nothing like the one you planned for them?",
+          "watch_for": [
+            "Notice the moments when her criticism is really a way of saying she was hurt.",
+            "How does she treat her granddaughter differently from her daughter?",
+            "What happens when she is the one who has to ask for something?"
+          ],
+          "start_at": "S1E1",
+          "span": "S1-S7",
+          "situations": [
+            {"id": "family_expectations", "weight": 0.8},
+            {"id": "loneliness", "weight": 0.5},
+            {"id": "caring_for_family", "weight": 0.5}
+          ],
+          "conflicts": ["control_vs_trust", "holding_on_vs_letting_go"],
+          "emotions": {"start": ["rejection", "resentment", "hope"], "middle": ["anger", "betrayal", "loneliness"], "end": ["acceptance", "love"]},
+          "ending_tone": "bittersweet",
+          "intensity": "moderate",
+          "warnings": ["serious_illness"],
+          "example_user_messages": [
+            "My daughter moved far away and hardly calls. When she does visit we just argue.",
+            "I only want what's best for my kids but they say I'm controlling.",
+            "My grandchild is the only way I get to see my daughter, and I think she knows that.",
+            "I don't know how to tell my adult child I'm hurt without it turning into a fight."
+          ],
+          "spoiler": {
+            "summary": "Emily uses the Friday night dinners to stay close, but keeps meddling. She sends Christopher to break up Lorelai and Luke, then, seeing her daughter's misery, goes to Luke herself to fix it. When Rory drops out of Yale, Emily and Richard take her in against Lorelai's wishes and Emily gets her involved in the DAR, a do-over with the daughter she always wanted, until she becomes too controlling of Rory as well. She is devastated to learn Lorelai married Christopher without telling her. In the finale, fearing the dinners will end, she offers to fund an expansion of the Dragonfly as an excuse; Lorelai declines but agrees to keep coming.",
+            "key_events": [
+              "Friday dinners as the condition of the school loan",
+              "Sends Christopher to split Lorelai and Luke",
+              "Goes to Luke herself to reunite them",
+              "Takes Rory in after she drops out of Yale; DAR involvement",
+              "Hurt that Lorelai married Christopher without telling her",
+              "Lorelai agrees to keep Friday dinners going"
+            ],
+            "got_right": "She never gives up on her family, shows up in real crises, and sometimes admits her mistakes and acts to repair them.",
+            "got_wrong": "She tries to control people she loves, meddles in her daughter's relationships, and uses money and access as leverage."
+          }
+        },
+        {
+          "id": "arc:gilmore_girls/emily_gilmore/marriage_on_the_rocks",
+          "title": "Questioning a decades-long marriage",
+          "literal_situation": "Later in the series, after a turning point in her husband's career, she learns something he has kept from her for years, and she starts to wonder whether she has ever really been his priority.",
+          "pattern_label": "a long marriage suddenly in question",
+          "pattern_text": "After decades of marriage built around a spouse's career and a shared social life, someone discovers their partner has been keeping part of his life from them. It shakes their sense of who they have been all these years. They have to decide whether to stay, leave, or rebuild on more honest terms.",
+          "hook": "Later in the series, she feels invisible in a marriage where she has run everything behind the scenes. A small secret becomes a symbol of all the ways she has felt second.",
+          "why_relatable": "Can you start over in a relationship at an age when you thought everything was settled? What do you owe yourself after decades of putting a partner first? And what does a lifelong partner owe you in honesty?",
+          "watch_for": [
+            "How does she handle being alone for the first time in decades?",
+            "Notice how pride affects both of them when neither wants to make the first move.",
+            "What does she need to hear that she has never asked for?"
+          ],
+          "start_at": "S4",
+          "span": "S4-S5",
+          "situations": [
+            {"id": "divorce", "weight": 0.7},
+            {"id": "midlife_reinvention", "weight": 0.5},
+            {"id": "loneliness", "weight": 0.5}
+          ],
+          "conflicts": ["holding_on_vs_letting_go", "control_vs_trust"],
+          "emotions": {"start": ["betrayal", "anger"], "middle": ["loneliness", "confusion"], "end": ["love", "relief"]},
+          "ending_tone": "hopeful",
+          "intensity": "moderate",
+          "warnings": ["betrayal"],
+          "example_user_messages": [
+            "After thirty-five years of marriage I found out my husband has been keeping something from me the whole time.",
+            "I gave up everything to support his career and now I feel invisible.",
+            "We're separated but living on the same property and it's so strange.",
+            "I'm in my sixties and trying to date again. I feel ridiculous."
+          ],
+          "spoiler": {
+            "summary": "Emily discovers Richard has had a lunch with his former fiancée Pennilyn Lott every year for decades, and tensions over his business dealings pile up. They separate: Richard moves into the pool house and Emily briefly tries dating. Jealousy brings them back together when Richard rear-ends her car after seeing her with another man, and they renew their vows.",
+            "key_events": [
+              "Emily learns of Richard's annual lunches with Pennilyn Lott",
+              "Separation; Richard moves into the pool house",
+              "Emily goes on a date with another man",
+              "Richard drives into the back of her car",
+              "Reconciliation and a vow renewal"
+            ],
+            "got_right": "She insists on being valued rather than accepting being taken for granted, and is willing to risk the marriage to be seen.",
+            "got_wrong": "She lets pride and silence stand in for honest conversation, and her anger sometimes spills onto her daughter."
+          }
+        },
+        {
+          "id": "arc:gilmore_girls/emily_gilmore/starting_over_late_in_life",
+          "title": "Starting over in her seventies",
+          "literal_situation": "Later in the series, after a turning point that removes the structure her whole adult life was built around, she is rattling around her huge house, going through the motions of her society obligations and unsure who she is now.",
+          "pattern_label": "rebuilding your identity late in life",
+          "pattern_text": "An older person whose entire life was organised around a long partnership and a rigid social world suddenly finds that world no longer fits. The routines, clubs and rules that once defined them start to feel empty. The question is whether it is too late to let go of who they were expected to be and discover who they actually are.",
+          "hook": "Later in the series, after a turning point she was not ready for, she is keeping up appearances while everything feels hollow. Her daughter is trying to help, but the two of them still cannot talk without fighting.",
+          "why_relatable": "Who are you when the role you played for fifty years is gone? Is it ever too late to change your life completely? And can a mother and daughter learn new ways of being together this late?",
+          "watch_for": [
+            "What does she keep, and what does she throw away?",
+            "Notice how her patience with social rules and polite company changes.",
+            "How does she let her daughter in, or keep her out?"
+          ],
+          "start_at": "Revival E1",
+          "span": "Revival E1-E4",
+          "situations": [
+            {"id": "grief_and_loss", "weight": 0.9},
+            {"id": "starting_over", "weight": 0.8},
+            {"id": "midlife_reinvention", "weight": 0.6},
+            {"id": "moving_somewhere_new", "weight": 0.5}
+          ],
+          "conflicts": ["past_vs_future", "holding_on_vs_letting_go"],
+          "emotions": {"start": ["grief", "numbness", "loneliness"], "middle": ["anger", "confusion"], "end": ["freedom", "peace"]},
+          "ending_tone": "hopeful",
+          "intensity": "moderate",
+          "warnings": ["death_of_loved_one", "grief"],
+          "example_user_messages": [
+            "My husband of fifty years passed away and I don't know how to fill my days.",
+            "Everything I used to care about suddenly seems pointless.",
+            "I'm seventy and thinking about selling the house and moving somewhere completely new. Am I crazy?",
+            "My daughter and I tried therapy together and it just made things worse."
+          ],
+          "spoiler": {
+            "summary": "Emily is newly widowed after Richard's death. She hires a maid, Berta, whose whole family moves into the house, goes to therapy with Lorelai (where they mostly fight), declutters the house and eventually explodes at the DAR, quitting. She sells the Hartford house, moves to Nantucket, and finds new purpose as an outspoken docent at the local whaling museum.",
+            "key_events": [
+              "Richard has died",
+              "Therapy sessions with Lorelai",
+              "Clears out the house",
+              "Quits the DAR in an outburst",
+              "Sells the house and moves to Nantucket",
+              "Becomes a docent at a whaling museum"
+            ],
+            "got_right": "She lets herself break the rules she lived by, grieves honestly, and chooses a completely new life instead of clinging to the old one.",
+            "got_wrong": "She is sometimes cruel in her grief and still struggles to show her daughter any vulnerability."
+          }
+        }
+      ]
+    },
+    {
+      "id": "char:gilmore_girls/richard_gilmore",
+      "name": "Richard Gilmore",
+      "role": "A formal, old-fashioned insurance executive in Hartford who loves cigars, golf and his granddaughter's love of books, but has never really forgiven his daughter for leaving home.",
+      "relations": [
+        {"target": "char:gilmore_girls/emily_gilmore", "relation": "partner"},
+        {"target": "char:gilmore_girls/lorelai_gilmore", "relation": "child"},
+        {"target": "char:gilmore_girls/rory_gilmore", "relation": "protege"}
+      ],
+      "arcs": [
+        {
+          "id": "arc:gilmore_girls/richard_gilmore/reaching_the_daughter_he_lost",
+          "title": "A reserved father and the daughter who left",
+          "literal_situation": "His daughter, who ran away as a teenager with his granddaughter, is suddenly back at his dinner table every Friday because he is paying for his granddaughter's school. He adores his granddaughter but hardly knows how to talk to his daughter.",
+          "pattern_label": "an emotionally distant parent trying to reconnect",
+          "pattern_text": "A reserved, traditional parent who struggles to show affection finds that their adult child is back in their life after years of distance. It is far easier for them to bond with the next generation than with the child who disappointed them. The question is whether they can show the love they feel before it is too late.",
+          "hook": "He is proud, busy and wedded to his work and social rules. His granddaughter delights him, but around his daughter he is stiff and disapproving, and neither of them knows how to break the pattern.",
+          "why_relatable": "Why is it sometimes easier to love a grandchild than your own child? Can a person who shows love through provision learn to say it out loud? And how long can old hurts go unspoken?",
+          "watch_for": [
+            "Notice when he is warm with his granddaughter and formal with his daughter in the same scene.",
+            "How does he respond when his daughter needs him in a crisis?",
+            "What does work give him that family doesn't?"
+          ],
+          "start_at": "S1E1",
+          "span": "S1-S7",
+          "situations": [
+            {"id": "family_expectations", "weight": 0.8},
+            {"id": "caring_for_family", "weight": 0.5},
+            {"id": "illness_or_injury", "weight": 0.4}
+          ],
+          "conflicts": ["career_vs_relationships", "self_vs_family_expectations"],
+          "emotions": {"start": ["resentment", "pride"], "middle": ["fear", "longing"], "end": ["love", "acceptance"]},
+          "ending_tone": "bittersweet",
+          "intensity": "moderate",
+          "warnings": ["serious_illness", "death_of_main_character"],
+          "example_user_messages": [
+            "I'm closer to my grandkids than I ever was to my own children and I feel guilty about it.",
+            "My daughter and I haven't really talked in years. I don't know how to start.",
+            "I was always working when my kids were young. Now I want to fix it and I don't know how.",
+            "I'm not good at saying I love you. I show it by providing."
+          ],
+          "spoiler": {
+            "summary": "Richard gradually softens. An angina scare at Christmas in season one brings Lorelai to his bedside. He dotes on Rory, grilling her boyfriends, supporting her at Yale and later lecturing in economics there. When Rory drops out, he and Emily take her in, but Richard is the first to admit they lost by taking her away from Lorelai. He has a serious heart attack in the final season, prompting more tenderness with Lorelai. He dies between the original series and the revival.",
+            "key_events": [
+              "Angina scare in season one",
+              "Pays for Rory's Yale education",
+              "Takes Rory in after she drops out",
+              "Admits taking Rory from Lorelai was a mistake",
+              "Serious heart attack in the final season",
+              "Dies before the revival"
+            ],
+            "got_right": "He is steady and generous, admits when he is wrong, and gives Rory the encouragement he withheld from Lorelai.",
+            "got_wrong": "He puts work and appearances first, withholds warmth from his daughter, and goes along with Emily's schemes."
+          }
+        },
+        {
+          "id": "arc:gilmore_girls/richard_gilmore/who_he_is_without_his_job",
+          "title": "Who he is without his job",
+          "literal_situation": "Later in the series, after a turning point at the company where he has spent his whole career, he is suddenly at home with nothing to do, rattling around the house and driving his wife mad.",
+          "pattern_label": "losing the career that defined you",
+          "pattern_text": "Someone whose entire identity rests on a long, successful career suddenly loses it before they were ready. Idle and restless, they cast around for something new to do, while wrestling with pride and loyalty. The question is whether they can find worth beyond a title.",
+          "hook": "Later in the series, he is abruptly without the job that gave his days structure and meaning. He does not know how to relax, and everyone around him is feeling it.",
+          "why_relatable": "Who are you when no one needs your expertise any more? Is it too late to start over professionally? And what happens to your relationships when your work is taken away?",
+          "watch_for": [
+            "How does he fill his days when there is nowhere to go?",
+            "Notice how he handles working as a partner rather than a boss.",
+            "When loyalty and self-interest collide, which does he choose?"
+          ],
+          "start_at": "S2",
+          "span": "S2-S5",
+          "situations": [
+            {"id": "losing_a_job", "weight": 0.9},
+            {"id": "midlife_reinvention", "weight": 0.7},
+            {"id": "starting_a_business", "weight": 0.5}
+          ],
+          "conflicts": ["loyalty_vs_ambition", "past_vs_future"],
+          "emotions": {"start": ["shame", "boredom", "restlessness"], "middle": ["determination", "pride"], "end": ["self_respect", "guilt"]},
+          "ending_tone": "bittersweet",
+          "intensity": "light",
+          "warnings": [],
+          "example_user_messages": [
+            "I was pushed into early retirement and I'm going stir crazy at home.",
+            "My whole identity was my job. Now I don't know what I'm for.",
+            "I'm in my sixties and thinking of starting my own company. My wife thinks I'm mad.",
+            "I made a business decision that hurt someone close to me and I'm not sure I'd do it differently."
+          ],
+          "spoiler": {
+            "summary": "Forced into retirement, Richard is restless and bored. He starts his own consulting firm with Jason 'Digger' Stiles, the son of his former employer. When Richard learns Jason is dating Lorelai, he pushes Jason out and returns to his old company, prompting a lawsuit from Jason and damaging his marriage and his relationship with Lorelai. Later he lectures in economics at Yale.",
+            "key_events": [
+              "Forced into retirement",
+              "Starts a firm with Jason Stiles",
+              "Pushes Jason out after learning he is dating Lorelai",
+              "Returns to his old company; Jason sues",
+              "Lectures in economics at Yale"
+            ],
+            "got_right": "He refuses to fade into idleness and keeps looking for ways to contribute.",
+            "got_wrong": "He lets pride and personal grudges drive business decisions and hurts people close to him."
+          }
+        }
+      ]
+    },
+    {
+      "id": "char:gilmore_girls/luke_danes",
+      "name": "Luke Danes",
+      "role": "The flannel-wearing, grumpy owner of the town diner, who has lived in the same small town all his life, hates town events, and serves the Gilmore girls coffee every morning while complaining about it.",
+      "relations": [
+        {"target": "char:gilmore_girls/lorelai_gilmore", "relation": "friend"},
+        {"target": "char:gilmore_girls/lorelai_gilmore", "relation": "partner"},
+        {"target": "char:gilmore_girls/rory_gilmore", "relation": "friend"},
+        {"target": "char:gilmore_girls/lane_kim", "relation": "colleague"},
+        {"target": "char:gilmore_girls/sookie_st_james", "relation": "friend"}
+      ],
+      "arcs": [
+        {
+          "id": "arc:gilmore_girls/luke_danes/the_guarded_heart",
+          "title": "The grump who keeps his feelings to himself",
+          "literal_situation": "He runs the diner that used to be his late father's hardware store, lives alone above it, and has been quietly devoted to one of his regular customers for years without ever saying so.",
+          "pattern_label": "loving someone quietly for years",
+          "pattern_text": "A gruff, private person who was badly hurt by a past relationship has been in love with a close friend for a long time, and shows it only through small acts of care. Speaking up means risking the friendship and their heart. The question is whether they can stop hiding behind grumpiness and actually say what they want.",
+          "hook": "He grumbles about everything, especially her, while fixing things around her house and making sure she always has coffee. He watches her date other men and says nothing.",
+          "why_relatable": "What is the cost of loving someone silently? Can a person burned by an ex learn to trust again? And how much of his gruffness is protecting him from rejection?",
+          "watch_for": [
+            "Notice the favours he does for her without being asked, and whether he ever takes credit.",
+            "How does he react when she dates someone else?",
+            "When he is afraid, does he get angry, or does he go quiet?"
+          ],
+          "start_at": "S1E1",
+          "span": "S1-Revival",
+          "situations": [
+            {"id": "unrequited_love", "weight": 0.7},
+            {"id": "falling_for_someone_unexpected", "weight": 0.5},
+            {"id": "breakup", "weight": 0.5},
+            {"id": "divorce", "weight": 0.3}
+          ],
+          "conflicts": ["independence_vs_connection", "safety_vs_growth"],
+          "emotions": {"start": ["longing", "loneliness"], "middle": ["jealousy", "betrayal", "hope"], "end": ["love", "peace"]},
+          "ending_tone": "hopeful",
+          "intensity": "moderate",
+          "warnings": ["betrayal"],
+          "example_user_messages": [
+            "I've been in love with my best friend for years and I've never said a word.",
+            "I got really hurt by my last relationship and I've basically shut down since.",
+            "Everyone around me says I'm grumpy but honestly I'm just scared of getting hurt again.",
+            "I want to tell her how I feel but I'm terrified I'll ruin the friendship."
+          ],
+          "spoiler": {
+            "summary": "Luke's ex Rachel returns but leaves when she sees he loves Lorelai. He marries Nicole on a cruise, which ends in divorce when she cheats. Lorelai finally kisses him on the Dragonfly test-run night, and he reveals he has kept the horoscope she gave him the day they met. They break up over Christopher, reconcile, and get engaged, but Luke's discovery of his daughter April strains things and Lorelai's ultimatum ends it. Lorelai marries Christopher; after her divorce she and Luke rebuild and kiss at the end of the series. In the revival they finally marry.",
+            "key_events": [
+              "Rachel returns and leaves",
+              "Marries and divorces Nicole",
+              "First kiss with Lorelai; the saved horoscope",
+              "Engagement to Lorelai",
+              "Discovers he has a daughter, April",
+              "Lorelai's ultimatum ends the engagement",
+              "Reconciles with Lorelai; they marry in the revival"
+            ],
+            "got_right": "He is steadfast and generous, shows love through actions, and is the only man in Lorelai's life who calls her out honestly.",
+            "got_wrong": "He hides his feelings for years, shuts people out when he is scared, and freezes when big decisions have to be made."
+          }
+        },
+        {
+          "id": "arc:gilmore_girls/luke_danes/responsibility_he_never_asked_for",
+          "title": "Suddenly responsible for a kid",
+          "literal_situation": "Early in season two, his troubled teenage nephew is sent by his flaky sister to live with him in his tiny apartment above the diner. The kid is sullen, smart, and already in trouble.",
+          "pattern_label": "reluctantly raising someone else's child",
+          "pattern_text": "A single, set-in-their-ways adult who never planned to be a parent suddenly becomes responsible for a young person. The kid is hurt and angry, and pushes every boundary. The question is whether the adult can offer steady love and firm limits without giving up on them.",
+          "hook": "He has no idea how to parent, lives in one room, and the kid wants nothing to do with him. The whole town is watching and blaming him for his nephew's behaviour.",
+          "why_relatable": "What do you owe a child who is not yours? How do you get through to someone who has decided nobody will ever stick around? And how do you parent without any model to follow?",
+          "watch_for": [
+            "How does he balance tough love and patience?",
+            "Notice what he does when the town turns against the kid.",
+            "What does his own childhood tell him about how to behave?"
+          ],
+          "start_at": "S2E5",
+          "span": "S2-S7",
+          "situations": [
+            {"id": "responsibility_you_didnt_ask_for", "weight": 0.9},
+            {"id": "becoming_a_parent", "weight": 0.6},
+            {"id": "caring_for_family", "weight": 0.6}
+          ],
+          "conflicts": ["control_vs_trust", "duty_vs_desire"],
+          "emotions": {"start": ["overwhelm", "anger"], "middle": ["guilt", "determination"], "end": ["love", "pride"]},
+          "ending_tone": "hopeful",
+          "intensity": "moderate",
+          "warnings": [],
+          "example_user_messages": [
+            "My teenage nephew just moved in with me and I have no idea how to be a parent.",
+            "The kid I'm looking after keeps getting into trouble and everyone blames me.",
+            "I just found out I have a kid I never knew about and I don't know where I fit.",
+            "I'm trying to be firm but kind, and I feel like I'm failing at both."
+          ],
+          "spoiler": {
+            "summary": "Jess skips school and clashes with the town. Luke tries tough love, and Jess eventually leaves to find his father in California. Years later Jess has built a life as a writer and the two reconnect. Luke also discovers his twelve-year-old daughter April, via her science fair project, and throws himself into being her father, which strains his engagement to Lorelai. He sues for custody when April's mother Anna tries to keep April from him.",
+            "key_events": [
+              "Jess arrives and clashes with the town",
+              "Jess leaves for California",
+              "Jess later becomes a writer and they reconnect",
+              "Luke discovers his daughter April",
+              "Custody fight with Anna"
+            ],
+            "got_right": "He keeps showing up for Jess and April, sets limits while believing in them, and becomes a real father figure.",
+            "got_wrong": "He sometimes shuts others out while dealing with family, and struggles to integrate his child into the rest of his life."
+          }
+        }
+      ]
+    },
+    {
+      "id": "char:gilmore_girls/lane_kim",
+      "name": "Lane Kim",
+      "role": "Rory's rock-obsessed best friend, a sixteen-year-old whose strict religious mother forbids pop music, dating and make-up, so she hides CDs under her floorboards and leads a double life.",
+      "relations": [
+        {"target": "char:gilmore_girls/rory_gilmore", "relation": "friend"},
+        {"target": "char:gilmore_girls/lorelai_gilmore", "relation": "mentor"},
+        {"target": "char:gilmore_girls/luke_danes", "relation": "boss"}
+      ],
+      "arcs": [
+        {
+          "id": "arc:gilmore_girls/lane_kim/living_a_double_life",
+          "title": "The girl hiding her real life",
+          "literal_situation": "She lives with her strict, devout mother who arranges dates with approved boys and bans rock music. Her records, clothes and make-up are stashed under floorboards, and her best friend is the only person who knows who she really is.",
+          "pattern_label": "hiding your true self from a strict parent",
+          "pattern_text": "A young person raised by a strict, controlling parent keeps their real passions and personality hidden to keep the peace. Their life is split in two: who they are at home and who they are with friends. The question is whether they can live honestly without losing their family.",
+          "hook": "She is funny, passionate and resourceful, with a secret closet full of contraband and a double life she is exhausted by. She loves her mother and does not want to hurt her, but she is suffocating.",
+          "why_relatable": "How long can you hide who you are from the people who raised you? Is being honest worth the risk of losing them? And can a parent and child meet in the middle when their values seem so far apart?",
+          "watch_for": [
+            "What does she risk every time she hides something, and who helps her?",
+            "Notice when she is braver for her passion than for herself.",
+            "What would telling the truth cost her, and what is keeping silent already costing her?"
+          ],
+          "start_at": "S1E1",
+          "span": "S1-S6",
+          "situations": [
+            {"id": "family_expectations", "weight": 0.9},
+            {"id": "identity_and_self_acceptance", "weight": 0.8},
+            {"id": "difficult_parent", "weight": 0.7},
+            {"id": "leaving_home", "weight": 0.5}
+          ],
+          "conflicts": ["self_vs_family_expectations", "belonging_vs_integrity"],
+          "emotions": {"start": ["anxiety", "longing", "guilt"], "middle": ["fear", "loneliness", "determination"], "end": ["freedom", "self_respect", "acceptance"]},
+          "ending_tone": "hopeful",
+          "intensity": "light",
+          "warnings": [],
+          "example_user_messages": [
+            "My parents are super strict and religious and I have to hide everything I actually love.",
+            "I've been living a double life for years and I'm exhausted.",
+            "I want to tell my mom the truth about who I am but I'm scared she'll cut me off.",
+            "My parents keep setting me up with people they approve of and I can't take it anymore.",
+            "I finally stood up to my family and now I'm on my own."
+          ],
+          "spoiler": {
+            "summary": "Lane's first crush Henry dumps her because of all the secrecy. She takes up drums, forms the band Hep Alien, and falls for bandmate Dave, who wins over Mrs. Kim by reading the whole Bible; after a drunken phone confession Lane gets to go to prom with him, but he leaves for college. At her mother's insistence she attends a Seventh-day Adventist college until she sneaks out for a gig; her mother finds all her hidden stashes and asks her to move out. She lives with bandmates Zack and Brian, and Mrs. Kim slowly accepts her life, even pretending the boys are girls. She falls for Zack and later marries him.",
+            "key_events": [
+              "Henry dumps her over the secrecy",
+              "Takes up drums and forms Hep Alien",
+              "Dave wins over Mrs. Kim; prom",
+              "Drunken phone confession to her mother",
+              "Sneaks out for a gig; mother finds her stash and throws her out",
+              "Moves in with Zack and Brian",
+              "Mrs. Kim slowly accepts her life",
+              "Falls for and later marries Zack"
+            ],
+            "got_right": "She finds her passion, chooses honesty even when it costs her, and keeps loving her mother while standing her ground.",
+            "got_wrong": "She hides and schemes for too long, and when she does come clean it is often impulsive rather than planned."
+          }
+        },
+        {
+          "id": "arc:gilmore_girls/lane_kim/life_outruns_her_plans",
+          "title": "When life speeds past your plans",
+          "literal_situation": "Later in the series, after a turning point that fast-forwards her into adult responsibilities, she faces a future very different from the one she imagined, just as her music was starting to take off.",
+          "pattern_label": "adulthood arriving before you were ready",
+          "pattern_text": "A young person who finally broke free to chase their dream finds life changing faster than they planned. New responsibilities arrive all at once, and the dream they fought so hard for seems to be slipping away. The question is whether they can hold on to part of themselves while stepping into a completely new role.",
+          "hook": "Later in the series, she is barely out of her teens, living on very little, and suddenly facing grown-up responsibilities she never planned for, just when her band has a chance.",
+          "why_relatable": "Is it possible to keep your dream alive when life changes course? How do you grieve the future you lost while embracing the one you have? And who do you turn to when you feel like you are drowning?",
+          "watch_for": [
+            "How does she talk about her music now compared with before?",
+            "Notice who shows up to help and who she lets help.",
+            "What small ways does she find to keep hold of herself?"
+          ],
+          "start_at": "S7",
+          "span": "S7-Revival",
+          "situations": [
+            {"id": "becoming_a_parent", "weight": 0.9},
+            {"id": "responsibility_you_didnt_ask_for", "weight": 0.6},
+            {"id": "coming_of_age", "weight": 0.4}
+          ],
+          "conflicts": ["duty_vs_desire", "career_vs_relationships"],
+          "emotions": {"start": ["overwhelm", "fear", "grief"], "middle": ["burnout", "love"], "end": ["acceptance", "joy"]},
+          "ending_tone": "hopeful",
+          "intensity": "light",
+          "warnings": [],
+          "example_user_messages": [
+            "I got pregnant way younger than I planned and I feel like my dreams just ended.",
+            "My band was finally getting somewhere and now I have a baby on the way.",
+            "I love my kids but sometimes I miss who I used to be.",
+            "Everything happened so fast. I'm 22 and I feel like I'm 40."
+          ],
+          "spoiler": {
+            "summary": "Lane marries Zack and becomes pregnant with twins on their honeymoon, while the band is going on tour. She feels her dreams slipping away and is overwhelmed, but Mrs. Kim steps up to help, and Lane gives birth to twin boys, Steve and Kwan. By the revival she is settled in Stars Hollow with Zack and their sons, works in her parents' antique shop and still plays gigs, contentedly.",
+            "key_events": [
+              "Marries Zack",
+              "Pregnant with twins after their honeymoon",
+              "Band's future feels threatened",
+              "Mrs. Kim supports her",
+              "Gives birth to twins",
+              "Revival: settled and still playing music"
+            ],
+            "got_right": "She adjusts, accepts help, and makes room for both motherhood and music.",
+            "got_wrong": "She tries to carry everything herself at first and quietly resents the change without talking about it."
+          }
+        }
+      ]
+    },
+    {
+      "id": "char:gilmore_girls/paris_geller",
+      "name": "Paris Geller",
+      "role": "The fiercely competitive, abrasive star student at Chilton who edits the school paper, runs for everything, and sees the new girl as a threat to her place at the top.",
+      "relations": [
+        {"target": "char:gilmore_girls/rory_gilmore", "relation": "rival"},
+        {"target": "char:gilmore_girls/rory_gilmore", "relation": "friend"}
+      ],
+      "arcs": [
+        {
+          "id": "arc:gilmore_girls/paris_geller/perfection_as_armor",
+          "title": "Perfection as armour",
+          "literal_situation": "She has been top of her class at an elite prep school for years, with neglectful wealthy parents, a crush who ignores her, and her whole life built around getting into Harvard. Then a new girl arrives who might be smarter than her.",
+          "pattern_label": "a perfectionist who feels only achievement makes her worthy",
+          "pattern_text": "A driven overachiever with distant parents has come to believe that being the best is the only thing that makes them worthy. They see peers as threats, alienate people, and are privately terrified of failure. The question is whether they can accept friendship and imperfection without losing their drive.",
+          "hook": "She is brilliant, blunt and exhausting to be around. She treats every friendship as a competition, has almost no support at home, and her plan for her life has no room for failure.",
+          "why_relatable": "What happens when you tie your whole worth to one goal? Can someone who sees everyone as a rival learn to trust a friend? And how do you cope when you do everything right and still don't get what you want?",
+          "watch_for": [
+            "Notice the moments when her aggression is really fear.",
+            "How does she react when someone is kind to her?",
+            "What does she do when a plan fails?"
+          ],
+          "start_at": "S1E2",
+          "span": "S1-S3",
+          "situations": [
+            {"id": "confidence_struggle", "weight": 0.7},
+            {"id": "coming_of_age", "weight": 0.7},
+            {"id": "loneliness", "weight": 0.5},
+            {"id": "finding_your_people", "weight": 0.5}
+          ],
+          "conflicts": ["perfectionism_vs_good_enough", "independence_vs_connection"],
+          "emotions": {"start": ["anxiety", "envy", "loneliness"], "middle": ["jealousy", "inadequacy", "hope"], "end": ["acceptance", "belonging"]},
+          "ending_tone": "hopeful",
+          "intensity": "light",
+          "warnings": [],
+          "example_user_messages": [
+            "I've spent my whole life trying to be the best and I don't know who I am without it.",
+            "My parents never pay attention to me unless I achieve something.",
+            "Someone new joined my class and I'm terrified they'll outshine me.",
+            "I didn't get into my dream school and it feels like my life is over.",
+            "People say I'm too intense and I don't know how to have friends."
+          ],
+          "spoiler": {
+            "summary": "Paris starts out hostile to Rory, but gradually becomes her reluctant friend and running mate for student council. Her crush Tristin only dates her as a favour. She has her first relationship with Jamie and sleeps with him, then is rejected by Harvard and has a meltdown live on C-SPAN. With help from Rory and Lorelai she recovers, accepts Rory being valedictorian, and at graduation the two hug and admit they spent most of their time hating each other.",
+            "key_events": [
+              "Rivalry with Rory; Tristin's rejection",
+              "Rory becomes her student council running mate",
+              "First relationship with Jamie",
+              "Rejected by Harvard; meltdown on C-SPAN",
+              "Accepts Rory as valedictorian"
+            ],
+            "got_right": "She is fearless, loyal once she trusts someone, and learns to accept help and friendship.",
+            "got_wrong": "She treats everyone as a threat, lashes out when insecure, and ties her worth entirely to one outcome."
+          }
+        },
+        {
+          "id": "arc:gilmore_girls/paris_geller/leading_without_driving_everyone_away",
+          "title": "Taking charge and driving people away",
+          "literal_situation": "Later in the series, after high school, she arrives at university determined to dominate, throwing herself into the student paper, dating and her future plans with the same ferocious intensity.",
+          "pattern_label": "a relentless leader who alienates her team",
+          "pattern_text": "A driven, controlling person gets the leadership position they have always wanted and runs it by demanding perfection from everyone. People around them start to rebel. The question is whether they can learn to lead and love without trying to control everything.",
+          "hook": "Later in the series, she is at university and just as intense as ever, running her personal life and the people around her like a military campaign.",
+          "why_relatable": "Why do people who push the hardest often end up alone? Can a perfectionist learn to delegate and trust? And how do you face the moment when the people you lead turn against you?",
+          "watch_for": [
+            "How does she respond when others don't meet her standards?",
+            "Notice who stays with her despite her intensity, and why.",
+            "What does she do when a big decision can't be controlled?"
+          ],
+          "start_at": "S4E1",
+          "span": "S4-S7",
+          "situations": [
+            {"id": "becoming_a_manager", "weight": 0.8},
+            {"id": "leading_former_peers", "weight": 0.6},
+            {"id": "grief_and_loss", "weight": 0.4}
+          ],
+          "conflicts": ["control_vs_trust", "perfectionism_vs_good_enough"],
+          "emotions": {"start": ["determination", "anxiety"], "middle": ["grief", "anger", "rejection"], "end": ["acceptance", "self_respect"]},
+          "ending_tone": "hopeful",
+          "intensity": "moderate",
+          "warnings": ["death_of_loved_one", "grief"],
+          "example_user_messages": [
+            "I finally got the leadership role I wanted and my whole team hates me.",
+            "I push people really hard because I expect a lot from myself, and it's backfiring.",
+            "I've been accepted to several programs and I'm paralysed by the decision.",
+            "People say I'm controlling. I just want things done right."
+          ],
+          "spoiler": {
+            "summary": "Paris becomes Rory's surprise roommate at Yale. She dates Asher Fleming, an older professor, who dies of a heart attack, and she grieves for months. She dates Doyle, becomes editor of the Yale Daily News, and is ousted by her staff for tyranny, replaced by Rory; furious, she evicts Rory, but they reconcile. Her 'Operation Finish Line' gets her into multiple law and medical schools; she chooses medical school, and Doyle insists on following her. In the revival she runs a fertility clinic and is divorcing Doyle.",
+            "key_events": [
+              "Surprise roommate with Rory at Yale",
+              "Relationship with professor Asher Fleming, who dies",
+              "Dating Doyle",
+              "Ousted as editor of the Yale Daily News",
+              "Replaced by Rory and evicts her",
+              "Accepted to many programs; chooses medical school",
+              "Revival: runs a fertility clinic; divorcing Doyle"
+            ],
+            "got_right": "She works harder than anyone, recovers from humiliation, and builds lasting friendships.",
+            "got_wrong": "She tries to control everyone, treats her staff harshly, and lets her ego take over."
+          }
+        }
+      ]
+    },
+    {
+      "id": "char:gilmore_girls/sookie_st_james",
+      "name": "Sookie St. James",
+      "role": "The bubbly, accident-prone, brilliant head chef at the Independence Inn and Lorelai's best friend, whose kitchen is her kingdom and whose love life is non-existent.",
+      "relations": [
+        {"target": "char:gilmore_girls/lorelai_gilmore", "relation": "friend"},
+        {"target": "char:gilmore_girls/lorelai_gilmore", "relation": "colleague"},
+        {"target": "char:gilmore_girls/luke_danes", "relation": "friend"},
+        {"target": "char:gilmore_girls/luke_danes", "relation": "rival"},
+        {"target": "char:gilmore_girls/rory_gilmore", "relation": "friend"}
+      ],
+      "arcs": [
+        {
+          "id": "arc:gilmore_girls/sookie_st_james/panicking_at_every_big_step",
+          "title": "Panicking at every big life step",
+          "literal_situation": "She is a gifted chef who pours her heart into her food, but her personal life is almost empty. She bickers constantly with the inn's produce supplier and has not been on a date in ages.",
+          "pattern_label": "freaking out at every major life change",
+          "pattern_text": "A warm, talented person who is completely confident in their craft becomes a nervous wreck whenever life asks for a big personal change, such as love, commitment or parenthood. Each step forward triggers a panic, a miscommunication, or an overreaction. The question is whether they can learn to name their fears instead of acting them out.",
+          "hook": "She is joyful and in total command in the kitchen, but outside it she is flustered and unsure. She has a friend who notices she never dates, and it stings.",
+          "why_relatable": "Why does someone so capable in one area feel lost in another? Why do good changes sometimes trigger the worst panic? And how do you let a partner share a space you have always controlled?",
+          "watch_for": [
+            "Notice how she handles someone else stepping into her space.",
+            "What does she do when she is afraid, and how long before she says it out loud?",
+            "How does her friendship with her best friend change as their lives change?"
+          ],
+          "start_at": "S1E1",
+          "span": "S1-S7",
+          "situations": [
+            {"id": "falling_for_someone_unexpected", "weight": 0.6},
+            {"id": "becoming_a_parent", "weight": 0.6},
+            {"id": "confidence_struggle", "weight": 0.4}
+          ],
+          "conflicts": ["control_vs_trust", "safety_vs_growth"],
+          "emotions": {"start": ["loneliness", "self_doubt"], "middle": ["anxiety", "overwhelm"], "end": ["love", "joy"]},
+          "ending_tone": "hopeful",
+          "intensity": "light",
+          "warnings": [],
+          "example_user_messages": [
+            "I'm great at my job but when it comes to relationships I'm a mess.",
+            "My partner wants kids right away and I'm totally freaking out.",
+            "Every time something big happens in my life, I panic and do something weird.",
+            "I don't know how to let anyone help me, especially in the things I'm good at."
+          ],
+          "spoiler": {
+            "summary": "Stung by Lorelai's comment about her love life, Sookie asks out Jackson, the produce supplier. They fall in love; when she suggests moving in, he proposes instead, and she has a meltdown over an overblown wedding before choosing a simple ceremony at the end of season two. She panics when Jackson wants four kids in four years, but settles happily into motherhood with Davey and Martha and is expecting a third child at the end of the series. In the revival she has left the Dragonfly and returns only to bake Lorelai's wedding cake.",
+            "key_events": [
+              "Asks out Jackson",
+              "Jackson proposes instead of moving in",
+              "Simple wedding at the end of season two",
+              "Panics over Jackson's plan for four kids",
+              "Becomes a happy mother of Davey and Martha, third on the way",
+              "Revival: returns only to bake the wedding cake"
+            ],
+            "got_right": "She eventually names her fears honestly, chooses what matters over spectacle, and loves generously.",
+            "got_wrong": "She panics and acts out instead of talking, and sometimes drags her friends into her fights."
+          }
+        },
+        {
+          "id": "arc:gilmore_girls/sookie_st_james/betting_on_a_shared_dream",
+          "title": "Betting on a shared dream",
+          "literal_situation": "She and her best friend have long talked about opening their own inn someday. She is secure as the head chef at the Independence Inn, but a real chance to make the dream happen may be coming.",
+          "pattern_label": "going into business with a best friend",
+          "pattern_text": "A creative person who has always worked for someone else considers starting a business with their closest friend. It means stepping from safe employee to co-owner, with money, risk and friendship all on the line. The question is whether their friendship and their very different strengths can survive the pressure.",
+          "hook": "She is creative, passionate and a little chaotic. Her friend is the organiser, and together they dream of their own place, but the practical steps scare her.",
+          "why_relatable": "Can you mix friendship and business without ruining one of them? How do two very different people divide the work and the risk? And what do you do when your partner panics?",
+          "watch_for": [
+            "How do she and her partner complement each other?",
+            "Notice who steadies whom when the plan hits a wall.",
+            "What does she fear more: the business failing or the friendship suffering?"
+          ],
+          "start_at": "S2",
+          "span": "S2-S4",
+          "situations": [
+            {"id": "starting_a_business", "weight": 0.9},
+            {"id": "taking_a_big_risk", "weight": 0.6}
+          ],
+          "conflicts": ["safety_vs_growth", "career_vs_relationships"],
+          "emotions": {"start": ["hope", "anxiety"], "middle": ["overwhelm", "determination"], "end": ["pride", "joy"]},
+          "ending_tone": "hopeful",
+          "intensity": "light",
+          "warnings": [],
+          "example_user_messages": [
+            "My best friend and I want to open a business together. How do we make sure it doesn't wreck our friendship?",
+            "I'm the creative one and my partner is the planner. I feel like I'm not pulling my weight.",
+            "We're finally doing it, putting our savings into our dream, and I'm scared."
+          ],
+          "spoiler": {
+            "summary": "Mia's plan to sell the Independence Inn triggers Lorelai's panic, which lands on Sookie until Lorelai explains. Fran won't sell the Dragonfly, then dies and her heirs sell. A fire at the Independence Inn leaves both unemployed; they run a catering business to fund renovations and open the Dragonfly Inn to rave reviews.",
+            "key_events": [
+              "Mia plans to sell the Independence Inn",
+              "Lorelai freaks out at Sookie",
+              "Fran's death opens the way to buy the Dragonfly",
+              "Fire at the Independence Inn",
+              "Independence Catering funds renovations",
+              "Dragonfly Inn opens"
+            ],
+            "got_right": "She commits fully and brings her talent and warmth to the partnership.",
+            "got_wrong": "She sometimes leaves the hard, practical decisions to her partner and lets anxiety spill over."
+          }
+        }
+      ]
+    }
+  ]
+}

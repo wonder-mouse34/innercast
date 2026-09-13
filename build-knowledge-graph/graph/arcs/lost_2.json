@@ -1,0 +1,669 @@
+{
+  "show": "lost",
+  "characters": [
+    {
+      "id": "char:lost/benjamin_linus",
+      "name": "Benjamin Linus",
+      "role": "A soft-spoken stranger the survivors catch in the jungle in season 2, who says he is a balloonist stranded on the island.",
+      "relations": [
+        {"target": "char:lost/john_locke", "relation": "rival"},
+        {"target": "char:lost/jack_shephard", "relation": "enemy"},
+        {"target": "char:lost/juliet_burke", "relation": "colleague"},
+        {"target": "char:lost/sayid_jarrah", "relation": "enemy"},
+        {"target": "char:lost/desmond_hume", "relation": "enemy"},
+        {"target": "char:lost/james_sawyer_ford", "relation": "enemy"},
+        {"target": "char:lost/hugo_hurley_reyes", "relation": "boss"}
+      ],
+      "arcs": [
+        {
+          "id": "arc:lost/benjamin_linus/never_the_chosen_one",
+          "title": "Needing to be the one who was chosen",
+          "literal_situation": "Later in the series, as more of who he really is comes into view, he keeps the people around him in line through secrecy, rules and carefully rationed information, all in the name of a higher authority he says he serves.",
+          "pattern_label": "a leader starving to be seen as special",
+          "pattern_text": "Someone neglected and blamed as a child claws their way into a position of authority and holds it through control, secrets and manipulation, while privately feeling they have never really been chosen. When a newcomer seems to receive the recognition they have worked for all their life, jealousy pushes them toward something unforgivable. What is left is the question of whether a person who has built themselves on being indispensable can accept being ordinary, and earn forgiveness.",
+          "hook": "He is calm, articulate and always a step ahead, moving the people around him like pieces on a board, and he says it is all for a greater purpose.",
+          "why_relatable": "What happens when your whole sense of worth depends on a title and on the approval of someone above you? Can a person who learned early that no one would choose them ever stop trying to control everyone around them? And what do you do when someone else walks in and gets, without effort, what you have sacrificed everything for?",
+          "watch_for": [
+            "How does he react when someone else seems to be favoured by the authority he answers to?",
+            "When he lies, is he protecting his people, his position, or something more fragile?",
+            "What does he actually want from the people he controls: obedience, or to be seen?"
+          ],
+          "start_at": "S3E1",
+          "span": "S3-S6",
+          "situations": [
+            {"id": "imposter_syndrome", "weight": 0.7},
+            {"id": "identity_and_self_acceptance", "weight": 0.7},
+            {"id": "redemption_after_mistakes", "weight": 0.7},
+            {"id": "difficult_parent", "weight": 0.4}
+          ],
+          "conflicts": ["power_vs_morality", "control_vs_trust"],
+          "emotions": {"start": ["pride", "envy"], "middle": ["jealousy", "rejection", "anger"], "end": ["guilt", "acceptance"]},
+          "ending_tone": "bittersweet",
+          "intensity": "heavy",
+          "warnings": ["abuse", "war_and_violence", "betrayal", "death_of_main_character", "death_of_loved_one"],
+          "example_user_messages": [
+            "I've spent years making myself indispensable at work, and a new hire just got the recognition I never got. I hate how jealous I feel.",
+            "My dad blamed me for my mom's death my whole childhood. Now I manage people and I realise I control everything because I'm scared of not mattering.",
+            "I've told so many small lies to keep my position that I don't know who I'd be without them.",
+            "I did everything that was asked of me for years and never once got told I was good enough. I'm starting to resent the people I work for.",
+            "I did something to someone out of jealousy that I can't take back. Is there any way to come back from that?"
+          ],
+          "spoiler": {
+            "summary": "Ben, the Others' leader, was raised by an abusive father who blamed him for his mother's death, joined the island's natives and helped them massacre the DHARMA Initiative, killing his father himself. As leader he claims to speak for Jacob, the island's protector, but in truth he has never met him. When John Locke arrives and Jacob seems to speak to Locke instead, Ben shoots Locke and leaves him for dead. After moving the island he is exiled; off-island he manipulates Sayid into assassinations and strangles Locke, then brings the survivors back. Judged by the Monster for his daughter's death, he is told to follow 'Locke' (really the Man in Black), and when finally face to face with Jacob he asks 'What about me?' and stabs him to death. Stripped of power and purpose, he briefly sides with the Man in Black and kills Charles Widmore, but eventually saves Hurley's life, becomes his trusted number two as the island's new protector, and in the afterlife apologises to Locke, who forgives him. Ben admits he was selfish and jealous and chooses to stay behind to work things out.",
+            "key_events": [
+              "Childhood abuse by his father; kills his father during the Purge",
+              "Revealed to have never actually seen Jacob",
+              "Shoots Locke into the DHARMA mass grave",
+              "Strangles Locke off-island and stages it as suicide",
+              "Asks Jacob 'What about me?' and murders him",
+              "Kills Charles Widmore",
+              "Saves Hurley from a falling tree and becomes his number two",
+              "Apologises to Locke in the flash-sideways and is forgiven; stays outside the church"
+            ],
+            "got_right": "He eventually admits out loud that he was not special and that jealousy drove him, accepts a supporting role under someone else, and asks for forgiveness instead of demanding recognition.",
+            "got_wrong": "He treated recognition as something to be taken, lied and manipulated compulsively, and destroyed rivals and allies rather than face his fear of being unimportant."
+          }
+        },
+        {
+          "id": "arc:lost/benjamin_linus/father_who_holds_too_tight",
+          "title": "A father who holds on too tightly",
+          "literal_situation": "Later in the series, he is shown as the father of a teenage daughter, fiercely protective of her and suspicious of the boy she cares about, while she grows to resent the rules he imposes.",
+          "pattern_label": "a controlling parent's love turning into a cage",
+          "pattern_text": "A parent who never received love themselves pours everything into protecting their child, but their protection turns into surveillance and control, and the child pulls away. They keep telling themselves it is for the child's own good, while their wider ambitions keep putting the child at risk. The story asks what it costs to finally put a child's future ahead of your own need for control.",
+          "hook": "He is a devoted but overbearing father whose daughter is testing every boundary he sets, just as outsiders begin to threaten the world he has built for her.",
+          "why_relatable": "Where is the line between keeping a child safe and keeping them small? Can you love someone deeply and still be the reason they feel trapped? And when your own goals and your child's wellbeing pull in different directions, which do you really choose?",
+          "watch_for": [
+            "How does he explain his rules to his daughter, and does she believe him?",
+            "What does he put first when his plans and her wishes pull in different directions?",
+            "How does he show her love, and does she recognise it as love?"
+          ],
+          "start_at": "S3",
+          "span": "S3-S6",
+          "situations": [
+            {"id": "caring_for_family", "weight": 0.8},
+            {"id": "grief_and_loss", "weight": 0.7},
+            {"id": "redemption_after_mistakes", "weight": 0.5}
+          ],
+          "conflicts": ["control_vs_trust", "loyalty_vs_ambition"],
+          "emotions": {"start": ["fear", "love"], "middle": ["anger", "dread", "grief"], "end": ["guilt", "love"]},
+          "ending_tone": "bittersweet",
+          "intensity": "heavy",
+          "warnings": ["death_of_loved_one", "child_endangerment", "grief", "war_and_violence"],
+          "example_user_messages": [
+            "My daughter says I'm suffocating her, and honestly I don't know how to stop being afraid for her.",
+            "I kept my kid away from someone she loved because I thought I knew better, and now she barely speaks to me.",
+            "I let my work come first and my family paid for it. I don't know how to live with that.",
+            "Nobody showed me how to be a parent. I'm scared I'm repeating my own father's mistakes in a different way.",
+            "I finally had to choose between the promotion I've wanted for years and what's best for the kid who looks up to me."
+          ],
+          "spoiler": {
+            "summary": "Alex is not Ben's biological daughter: he was ordered to kill Danielle Rousseau and her baby, but spared them and took the infant to raise among the Others. He is overprotective to the point of imprisoning her boyfriend Karl, fearing island pregnancies will kill her as childbirth killed his mother. When Widmore's mercenary Keamy holds Alex hostage, Ben gambles that claiming she means nothing to him will save her, and Keamy shoots her. Grief-stricken, Ben unleashes the Monster, kills Keamy knowing it will blow up the freighter, and vows revenge by killing Widmore's daughter Penny, but lowers his gun when he sees her small son. He later seeks judgement for Alex's death and is confronted by an apparition of her. In the flash-sideways, as a teacher, he gives up blackmailing his way into becoming principal to protect Alex's college recommendation, choosing her future over his ambition, and stays behind at the end, apparently to be near her.",
+            "key_events": [
+              "Revealed he took baby Alex from Rousseau instead of killing her",
+              "Imprisons Karl to keep him from Alex",
+              "Tells Keamy Alex means nothing to him; Keamy executes her",
+              "Summons the Monster and kills Keamy, dooming the freighter",
+              "Vows to kill Penny but cannot shoot in front of her son",
+              "Judged by the Monster, which appears as Alex",
+              "Flash-sideways: sacrifices his promotion for Alex's future"
+            ],
+            "got_right": "In his best moments he loves Alex genuinely, and in the end he learns to put her future above his own ambitions.",
+            "got_wrong": "He smothered her with control, lied about where she came from, and kept putting his power games ahead of her safety until it cost her life."
+          }
+        }
+      ]
+    },
+    {
+      "id": "char:lost/charlie_pace",
+      "name": "Charlie Pace",
+      "role": "A cheeky English bassist from a band that had one hit, who survives the crash carrying a secret habit he is trying to hide.",
+      "relations": [
+        {"target": "char:lost/claire_littleton", "relation": "partner"},
+        {"target": "char:lost/hugo_hurley_reyes", "relation": "friend"},
+        {"target": "char:lost/desmond_hume", "relation": "friend"},
+        {"target": "char:lost/john_locke", "relation": "mentor"},
+        {"target": "char:lost/sayid_jarrah", "relation": "friend"}
+      ],
+      "arcs": [
+        {
+          "id": "arc:lost/charlie_pace/getting_clean_to_be_trusted",
+          "title": "Getting clean and wanting to matter",
+          "literal_situation": "A former rock musician whose band has faded away, he crashes on the island in the middle of a heroin addiction, secretly desperate for his stash while trying to make himself useful to the other survivors.",
+          "pattern_label": "getting clean to become someone worth trusting",
+          "pattern_text": "A person whose early success has faded is quietly drowning in addiction and the feeling that they are useless. Thrown into a new life, they try to quit, find someone they want to protect, and fall in love, but a relapse and the lies around it cost them the trust of the people they care about. They have to prove through actions, not promises, that they can be relied on.",
+          "hook": "He is charming, jokey and eager to help, but he slips away at the first chance to get to the drugs he hid on the plane.",
+          "why_relatable": "What do you have left when the thing that made you special is gone? Can you quit something while still keeping it close 'just in case'? And once you have lost someone's trust, how do you earn it back when you are not even sure you trust yourself?",
+          "watch_for": [
+            "What does he really want when he offers to help the others?",
+            "How does he respond when someone makes quitting his own choice rather than forcing it?",
+            "When he is caught in a lie, does he confess or dig in?"
+          ],
+          "start_at": "S1E1",
+          "span": "S1-S2",
+          "situations": [
+            {"id": "addiction_and_recovery", "weight": 1.0},
+            {"id": "confidence_struggle", "weight": 0.6},
+            {"id": "redemption_after_mistakes", "weight": 0.7},
+            {"id": "falling_for_someone_unexpected", "weight": 0.4}
+          ],
+          "conflicts": ["holding_on_vs_letting_go", "truth_vs_protecting_others"],
+          "emotions": {"start": ["shame", "self_doubt", "inadequacy"], "middle": ["rejection", "loneliness", "guilt"], "end": ["self_respect", "hope", "love"]},
+          "ending_tone": "hopeful",
+          "intensity": "moderate",
+          "warnings": ["addiction", "child_endangerment", "war_and_violence", "betrayal"],
+          "example_user_messages": [
+            "I've been clean for a few weeks but I still keep a stash hidden 'just in case' and I hate myself for it.",
+            "I used to be good at something and people knew my name. Now I'm nobody and I just want to be useful again.",
+            "I relapsed and lied about it, and the person I love won't let me near her kid anymore.",
+            "How do I get someone to trust me again after I've broken their trust over and over?",
+            "My older brother got me into this mess and now I'm the one who can't get out of it."
+          ],
+          "spoiler": {
+            "summary": "Charlie's band Drive Shaft faded after one hit; his brother Liam's heroin addiction dragged Charlie into using too. On the island, Locke takes his stash in exchange for his guitar and promises to give it back on the third request; Charlie throws it into the fire himself. He bonds with pregnant Claire, is hanged and nearly killed by Ethan when Claire is kidnapped, and later shoots Ethan dead. He becomes a surrogate father to baby Aaron but secretly hoards heroin-filled Virgin Mary statues found on a crashed plane. When Eko exposes a statue, Claire throws him out; troubled by dreams, he sets a fire and takes Aaron to 'baptise' him, and Locke beats him. He helps Sawyer stage a fake attack on Sun to humiliate Locke. Slowly he makes amends: he throws the remaining statues into the ocean, brings Claire a vaccine, and they reconcile with a kiss after the hatch implodes.",
+            "key_events": [
+              "Throws his stash into the fire after Locke makes it his choice",
+              "Hanged by Ethan and resuscitated",
+              "Shoots Ethan before he can be interrogated",
+              "Hides heroin-filled statues; Claire expels him when Eko exposes one",
+              "Takes baby Aaron in the night; Locke beats him",
+              "Helps fake an Other attack on Sun",
+              "Throws the remaining statues into the ocean and reconciles with Claire"
+            ],
+            "got_right": "He ultimately chooses to quit himself, makes amends through consistent actions, and keeps showing up for Claire and Aaron.",
+            "got_wrong": "He kept a backup supply, lied to the person he loved, endangered her child, and lashed out with a cruel revenge scheme when he felt humiliated."
+          }
+        },
+        {
+          "id": "arc:lost/charlie_pace/living_with_a_warning",
+          "title": "Living under a warning",
+          "literal_situation": "Later in the series, a friend warns him with unsettling certainty that his time is running out, and every close escape only seems to postpone it.",
+          "pattern_label": "deciding what your life means when time runs short",
+          "pattern_text": "A person is told, with unsettling certainty, that their time may be running out. At first they spiral into fear and self-pity and push away the person they love; then they have to decide how to spend whatever time they have and what they want their life to have meant. The question becomes whether they can stop waiting to be a hero and choose to be one.",
+          "hook": "Just as he is finding some happiness, he is haunted by a warning about his own death and cannot tell whether he should fight it, run from it or accept it.",
+          "why_relatable": "What would you do differently if you believed your time was short? Do you tell the people you love, or protect them from the fear? And can a person who has always felt like a disappointment choose one act that defines them?",
+          "watch_for": [
+            "How does knowing change the way he treats the people he loves?",
+            "Is he trying to escape his fate, or trying to find meaning in it?",
+            "Notice what he chooses to share, and what he keeps to himself."
+          ],
+          "start_at": "S3E8",
+          "span": "S3",
+          "situations": [
+            {"id": "taking_a_big_risk", "weight": 0.8},
+            {"id": "redemption_after_mistakes", "weight": 0.6},
+            {"id": "confidence_struggle", "weight": 0.5},
+            {"id": "grief_and_loss", "weight": 0.5}
+          ],
+          "conflicts": ["holding_on_vs_letting_go", "truth_vs_protecting_others"],
+          "emotions": {"start": ["dread", "fear", "self_doubt"], "middle": ["anger", "love", "determination"], "end": ["acceptance", "love", "self_respect"]},
+          "ending_tone": "bittersweet",
+          "intensity": "heavy",
+          "warnings": ["death_of_main_character", "war_and_violence", "grief"],
+          "example_user_messages": [
+            "I just got news about my health that scares me and I don't know whether to tell my partner.",
+            "I've always been the screw-up of my family. I want to do one thing in my life that actually matters.",
+            "Ever since I found out, I've been pushing away the person I love because I don't want her to watch me fall apart.",
+            "I keep making lists of the best moments of my life and wondering if that's all there is.",
+            "How do you stop living in fear of something you can't control?"
+          ],
+          "spoiler": {
+            "summary": "After the hatch implosion Desmond has flashes of Charlie dying and keeps saving him: from lightning, drowning and a trap. Charlie becomes depressed and snaps at Claire, but a joyous van ride with Hurley lifts him, and Claire vows to face it with him. Desmond's final vision shows Charlie turning off the Looking Glass station's jammer and drowning, after which Claire and Aaron board a rescue helicopter. Charlie accepts, writes a list of his five greatest moments, leaves his family ring in Aaron's crib and knocks Desmond out to go alone. He is beaten by Others in the station, gets the code and disables the jammer, learns from Penny that the ship is not hers, and when Mikhail floods the room he locks himself in to save Desmond, writes 'NOT PENNY'S BOAT' on his hand and drowns, crossing himself. His warning later splits the camp. He appears to Hurley after death and, in the flash-sideways, reunites with Claire as Aaron is born.",
+            "key_events": [
+              "Desmond's premonitions of his death",
+              "Van ride with Hurley restores his hope",
+              "Greatest-hits list; gives his ring to Aaron",
+              "Knocks Desmond out to take the mission alone",
+              "Disables the jammer and warns 'NOT PENNY'S BOAT'",
+              "Drowns in the Looking Glass",
+              "Reunites with Claire in the flash-sideways"
+            ],
+            "got_right": "He chooses courage and generosity over fear, finally becoming the dependable man he always wanted to be.",
+            "got_wrong": "At first he hid his fear, belittled Claire and wallowed, pushing away the support that later carried him."
+          }
+        }
+      ]
+    },
+    {
+      "id": "char:lost/claire_littleton",
+      "name": "Claire Littleton",
+      "role": "A young, heavily pregnant Australian woman who was flying to Los Angeles to give her baby up for adoption.",
+      "relations": [
+        {"target": "char:lost/charlie_pace", "relation": "partner"},
+        {"target": "char:lost/jack_shephard", "relation": "sibling"},
+        {"target": "char:lost/kate_austen", "relation": "friend"},
+        {"target": "char:lost/john_locke", "relation": "friend"},
+        {"target": "char:lost/james_sawyer_ford", "relation": "friend"},
+        {"target": "char:lost/sun_hwa_kwon", "relation": "friend"},
+        {"target": "char:lost/desmond_hume", "relation": "friend"}
+      ],
+      "arcs": [
+        {
+          "id": "arc:lost/claire_littleton/unready_mother",
+          "title": "Becoming a mother she never planned to be",
+          "literal_situation": "Eight months pregnant, abandoned by her boyfriend and pushed onto the flight by a psychic, she is stranded on the island with a baby she had planned to give away.",
+          "pattern_label": "an unplanned parent choosing to keep going",
+          "pattern_text": "A young person facing an unplanned pregnancy is left alone by their partner and plans to let someone else raise the child, convinced they are not good enough. Suddenly thrown into a hard new life, they have to face the birth and the first months alone, surrounded by strangers. They discover whether they can trust their own instincts as a parent, and whether they can let someone new in without losing control of their life.",
+          "hook": "Scared, alone and heavily pregnant among strangers, she feels like a 'time bomb of responsibility' and still is not sure she wants to be a mother.",
+          "why_relatable": "What do you do when life hands you a responsibility you were planning to give away? Can you trust your own instincts after being abandoned? And how do you let new people help without handing them control?",
+          "watch_for": [
+            "How does she respond when people keep things from her 'for her own good'?",
+            "Notice how her feelings about the baby shift as the birth comes closer.",
+            "Who does she decide to trust, and on what basis?"
+          ],
+          "start_at": "S1E1",
+          "span": "S1-S3",
+          "situations": [
+            {"id": "becoming_a_parent", "weight": 1.0},
+            {"id": "responsibility_you_didnt_ask_for", "weight": 0.7},
+            {"id": "breakup", "weight": 0.4},
+            {"id": "starting_over", "weight": 0.4}
+          ],
+          "conflicts": ["control_vs_trust", "independence_vs_connection"],
+          "emotions": {"start": ["fear", "loneliness", "self_doubt"], "middle": ["anxiety", "betrayal", "determination"], "end": ["love", "confidence", "hope"]},
+          "ending_tone": "hopeful",
+          "intensity": "moderate",
+          "warnings": ["child_endangerment", "medical_trauma", "addiction", "war_and_violence", "betrayal"],
+          "example_user_messages": [
+            "I'm pregnant, my boyfriend just walked out, and I honestly don't know if I can raise this baby on my own.",
+            "I was going to give my baby up for adoption, and now I can't imagine it. Am I being selfish?",
+            "Everyone keeps making decisions about me and my baby without asking me.",
+            "I found out the guy I was starting to trust has been lying to me about using. I have a newborn. What do I do?",
+            "I always said I'd be a terrible mom, like I was a terrible daughter. Now I'm one and I'm terrified."
+          ],
+          "spoiler": {
+            "summary": "Claire, pregnant after her boyfriend Thomas left, was steered by psychic Richard Malkin onto Flight 815 to give her baby to a couple in Los Angeles; she also carries guilt over a car crash that left her mother in a coma. On the island she is kidnapped by Ethan, drugged at the Staff station and freed by a girl (Alex) and Rousseau, but returns with amnesia. Charlie kills Ethan. She gives birth with Kate's help, and when Rousseau steals the baby she names him Aaron and fully claims him. When Eko reveals heroin in Charlie's statue, she throws him out and slaps him after he takes Aaron in the night, but has Aaron baptised anyway. Recovering her memories with Kate and Rousseau, she regains her confidence. She forgives Charlie and they kiss after the hatch implodes. In season 3, she learns Desmond keeps saving Charlie and tells Charlie she has not given up on him. She later learns the man who met her in Australia, Christian, was her father, which makes Jack her half-brother.",
+            "key_events": [
+              "Kidnapped by Ethan and drugged; returns with amnesia",
+              "Gives birth to Aaron on the island",
+              "Rousseau kidnaps Aaron; Claire names him and claims him",
+              "Discovers Charlie's hidden heroin and throws him out",
+              "Recovers her memories at the Staff station",
+              "Reconciles with Charlie",
+              "Revealed to be Jack's half-sister"
+            ],
+            "got_right": "She stopped letting others decide her life, trusted her instincts about her son, and gave Charlie a second chance based on his actions.",
+            "got_wrong": "She let a stranger's predictions steer her biggest decision and, when afraid, shut people out entirely."
+          }
+        },
+        {
+          "id": "arc:lost/claire_littleton/lost_in_the_wilderness",
+          "title": "Losing herself to grief and isolation",
+          "literal_situation": "Later in the series, after a painful loss, she ends up with the faction that trusts no one, carrying her infant son and growing more unsettled by the strange things she sees.",
+          "pattern_label": "grief and isolation changing who you are",
+          "pattern_text": "After a devastating loss, a young parent becomes cut off from everyone who knew them and slowly loses themselves to grief, loneliness and the voice of someone who manipulates them. When their old friends finally return, they are no longer sure they are the same person, or that they are fit to be the parent they once were. The story asks whether you can come back from a very dark place and accept help to rebuild.",
+          "hook": "Grieving and exhausted, she sides with the camp's most suspicious leader and starts to feel pulled toward something she cannot explain.",
+          "why_relatable": "What does prolonged loneliness do to a person? How do you know when the voice you are listening to has stopped having your interests at heart? And once you have been somewhere very dark, how do you face the people and responsibilities that still need you?",
+          "watch_for": [
+            "Who does she listen to when she is grieving, and why?",
+            "How does she react to people who say they want to help her?",
+            "What does she believe about herself as a mother, and does it change?"
+          ],
+          "start_at": "S4E1",
+          "span": "S4-S6",
+          "situations": [
+            {"id": "grief_and_loss", "weight": 0.8},
+            {"id": "loneliness", "weight": 0.9},
+            {"id": "identity_and_self_acceptance", "weight": 0.5},
+            {"id": "caring_for_family", "weight": 0.5}
+          ],
+          "conflicts": ["holding_on_vs_letting_go", "control_vs_trust"],
+          "emotions": {"start": ["grief", "loneliness", "confusion"], "middle": ["anger", "resentment", "rejection"], "end": ["shame", "acceptance", "hope"]},
+          "ending_tone": "bittersweet",
+          "intensity": "heavy",
+          "warnings": ["death_of_loved_one", "grief", "war_and_violence", "child_endangerment", "betrayal"],
+          "example_user_messages": [
+            "After my partner died I shut everyone out, and now I barely recognise the person I've become.",
+            "I've been so isolated for so long that I don't know how to be around people anymore.",
+            "Someone else has been raising my child while I was falling apart, and part of me hates them for it.",
+            "I'm not sure I'm well enough to be a good parent right now, and admitting that feels like failing.",
+            "The only person who stuck by me turned out to be using me. How do I trust anyone again?"
+          ],
+          "spoiler": {
+            "summary": "Claire learns from Hurley that Charlie died and heeds his warning by joining Locke's group. After her house is blown up in the mercenary attack, she sees her dead father Christian holding Aaron, follows him into the jungle and abandons Aaron; Locke finds her calmly sitting in Jacob's cabin. She is left behind when the Oceanic Six escape, and Kate raises Aaron. Alone for three years, manipulated by the Man in Black (appearing as her father and as Locke), who tells her the Others have her son, she lives like Rousseau, setting traps, killing Others and cradling a decorated animal skull as a baby. Told Kate has Aaron, she tries to kill Kate, then breaks down apologising. She is left behind again at the submarine, but in the end Kate persuades her to leave on the Ajira plane; Claire admits she does not know if she can be a mother anymore, and Kate promises to help. In the flash-sideways she gives birth to Aaron and reunites with Charlie.",
+            "key_events": [
+              "Learns of Charlie's death",
+              "Follows her father's apparition and abandons Aaron",
+              "Left on the island for three years; Kate raises Aaron",
+              "Becomes a feral, violent survivor manipulated by the Man in Black",
+              "Kills an Other and tries to kill Kate",
+              "Leaves on the Ajira plane with Kate's promise of help",
+              "Flash-sideways: gives birth to Aaron and reunites with Charlie"
+            ],
+            "got_right": "In the end she is honest that she is not okay and accepts help instead of refusing it out of pride or shame.",
+            "got_wrong": "She trusted a voice that fed her rage and isolation, and turned her pain on the person who had cared for her child."
+          }
+        }
+      ]
+    },
+    {
+      "id": "char:lost/desmond_hume",
+      "name": "Desmond Hume",
+      "role": "A Scotsman the survivors find living alone in an underground station on the island, where he has been pushing a button every 108 minutes for years.",
+      "relations": [
+        {"target": "char:lost/charlie_pace", "relation": "friend"},
+        {"target": "char:lost/john_locke", "relation": "friend"},
+        {"target": "char:lost/jack_shephard", "relation": "friend"},
+        {"target": "char:lost/sayid_jarrah", "relation": "friend"},
+        {"target": "char:lost/hugo_hurley_reyes", "relation": "friend"},
+        {"target": "char:lost/benjamin_linus", "relation": "enemy"}
+      ],
+      "arcs": [
+        {
+          "id": "arc:lost/desmond_hume/proving_himself_worthy",
+          "title": "Proving he is worthy of the woman he loves",
+          "literal_situation": "Shipwrecked during a round-the-world sailing race he entered to prove himself to his girlfriend's disapproving father, he has spent years alone in an underground bunker pushing a button, and his hope is nearly gone.",
+          "pattern_label": "a man who keeps running away proving he's enough",
+          "pattern_text": "Someone whose life has been a chain of failures and retreats is told by the powerful parent of the person they love that they will never be good enough, and half believes it. They break off the relationship out of shame, then set out on a reckless mission to prove their worth, only to end up stuck, isolated and close to despair. Their story is about whether love, hope and keeping a promise can pull them back to the person they left.",
+          "hook": "Alone for years, locked into a relentless routine and suspicious of everyone, he is on the edge of giving up, and then the survivors come knocking.",
+          "why_relatable": "What happens when you believe the people who say you are not good enough? Is running away cowardice or self-protection? And how long can you hold on to a love you walked away from?",
+          "watch_for": [
+            "Notice the pattern in how he leaves situations that frighten him.",
+            "What keeps him going when he is completely alone?",
+            "How much of his self-worth depends on one man's opinion of him?"
+          ],
+          "start_at": "S2E1",
+          "span": "S2-S4",
+          "situations": [
+            {"id": "confidence_struggle", "weight": 0.9},
+            {"id": "long_distance", "weight": 0.7},
+            {"id": "loneliness", "weight": 0.6},
+            {"id": "family_expectations", "weight": 0.5}
+          ],
+          "conflicts": ["safety_vs_growth", "self_vs_family_expectations"],
+          "emotions": {"start": ["loneliness", "inadequacy", "fear"], "middle": ["guilt", "longing", "determination"], "end": ["love", "relief", "self_respect"]},
+          "ending_tone": "hopeful",
+          "intensity": "moderate",
+          "warnings": ["self_harm_or_suicide", "war_and_violence", "death_of_loved_one", "grief"],
+          "example_user_messages": [
+            "My girlfriend's dad made it very clear I'm not good enough for her, and part of me thinks he's right.",
+            "I have a history of running away whenever things get serious: the wedding, the career, everything.",
+            "I broke up with the love of my life because I was ashamed I couldn't give her what she deserved.",
+            "I've been so alone for so long that I've started to wonder if it's worth going on.",
+            "We've been apart for years but I still think about her every day. Is it crazy to try to get her back?"
+          ],
+          "spoiler": {
+            "summary": "Desmond ran from a wedding into a monastery, was dismissed, fell in love with Penny Widmore, and was told by her father Charles that he was worth less than a glass of whisky. Ashamed that he could not afford even a photograph, he left Penny, joined the army and was dishonourably discharged; Widmore intercepted his letters and tried to bribe him away. He entered Widmore's sailing race to regain his honour and wrecked on the island, where Kelvin kept him pushing the button for three years. When he discovered Kelvin's deceit he accidentally killed him, and his late button press caused Flight 815 to crash. Alone, he nearly shot himself before finding Penny's hidden letter and hearing Locke on the hatch. He fled, failed to escape by sea, and ultimately turned the failsafe key saying 'I love you, Penny'. Unmoored in time, he makes Penny his 'constant' in a phone call after eight years apart, and is finally reunited with her on her boat. They marry and have a son, Charlie.",
+            "key_events": [
+              "Walks out on Ruth, then leaves Penny out of shame",
+              "Widmore's contempt and bribe; enters the sailing race",
+              "Accidentally kills Kelvin; realises he caused the crash",
+              "Nearly takes his own life; Penny's letter saves him",
+              "Turns the failsafe key: 'I love you, Penny'",
+              "'The Constant' phone call with Penny",
+              "Reunited with Penny; they marry and have a son"
+            ],
+            "got_right": "He kept his promise to call Penny, refused Widmore's bribe, and eventually chose love and responsibility over running.",
+            "got_wrong": "He let Widmore's judgement define him, fled every commitment, and ended a relationship out of shame instead of talking to the person he loved."
+          }
+        },
+        {
+          "id": "arc:lost/desmond_hume/cheating_fate_for_a_friend",
+          "title": "Seeing the future and trying to save a friend",
+          "literal_situation": "Later in the series, after a turning point that shakes him, he starts sensing danger coming for one of his fellow survivors before it happens.",
+          "pattern_label": "knowing a loss is coming and trying to stop it",
+          "pattern_text": "A person sees a loss coming that no one else can see and throws themselves into preventing it, carrying the secret alone. They wrestle with whether telling the other person would help or hurt, and with the fear that no matter what they do, the outcome is already set. It is a story about responsibility, honesty and the limits of what we can protect people from.",
+          "hook": "He is jumpy and secretive, doing odd things that save people at the last second, and he will not explain why.",
+          "why_relatable": "If you knew something bad was coming for a friend, would you tell them? How much responsibility can you take for someone else's fate? And what do you owe a person whose life you keep trying to save?",
+          "watch_for": [
+            "What does he gain, and lose, by keeping what he senses to himself?",
+            "How does he handle the guilt of each close call?",
+            "When the moment comes, whose choice does he let it be?"
+          ],
+          "start_at": "S3E8",
+          "span": "S3",
+          "situations": [
+            {"id": "responsibility_you_didnt_ask_for", "weight": 0.9},
+            {"id": "grief_and_loss", "weight": 0.7}
+          ],
+          "conflicts": ["truth_vs_protecting_others", "holding_on_vs_letting_go"],
+          "emotions": {"start": ["dread", "confusion", "guilt"], "middle": ["anxiety", "determination"], "end": ["grief", "hope"]},
+          "ending_tone": "bittersweet",
+          "intensity": "heavy",
+          "warnings": ["death_of_loved_one", "death_of_main_character", "grief", "war_and_violence"],
+          "example_user_messages": [
+            "I can see my friend heading toward something terrible and nobody believes me.",
+            "Should I tell my friend what I know, even if it scares him, or keep it to myself and try to fix it?",
+            "I keep stepping in to save someone and it's exhausting. How long can I keep this up?",
+            "I feel responsible for things that aren't really in my control, and it's eating me alive.",
+            "I couldn't save him, and I don't know how to stop replaying everything I could have done differently."
+          ],
+          "spoiler": {
+            "summary": "After turning the failsafe key, Desmond relives 1996, where Eloise Hawking tells him the universe 'course-corrects' and he cannot change his fate. Back on the island he gets flashes of Charlie dying and saves him repeatedly, from lightning, drowning, a seagull hunt and a trap, while hiding the reason. When pressed, he tells Charlie, and later tells him that his death at the Looking Glass will get Claire and Aaron rescued. He volunteers to go in Charlie's place, but Charlie knocks him out. Desmond follows, kills Mikhail with a harpoon, sees Penny on the monitor, and watches helplessly through the window as Charlie drowns, having written 'NOT PENNY'S BOAT' on his hand. He carries the warning back to camp.",
+            "key_events": [
+              "Eloise Hawking's 'course correction' warning",
+              "Saves Charlie from lightning, drowning and a trap",
+              "Tells Charlie the truth about his visions",
+              "Offers to die in Charlie's place; is knocked out",
+              "Watches Charlie drown behind the locked door",
+              "Delivers Charlie's warning to the camp"
+            ],
+            "got_right": "He eventually trusted Charlie with the truth and respected his right to choose, while still fighting for him.",
+            "got_wrong": "He carried the secret alone for too long, lashing out and deciding for others what they could handle."
+          }
+        }
+      ]
+    },
+    {
+      "id": "char:lost/sun_hwa_kwon",
+      "name": "Sun-Hwa Kwon",
+      "role": "The quiet, sheltered daughter of a powerful Korean businessman, stranded on the island with her controlling husband and apparently speaking no English.",
+      "relations": [
+        {"target": "char:lost/kate_austen", "relation": "friend"},
+        {"target": "char:lost/hugo_hurley_reyes", "relation": "friend"},
+        {"target": "char:lost/jack_shephard", "relation": "friend"},
+        {"target": "char:lost/claire_littleton", "relation": "friend"},
+        {"target": "char:lost/sayid_jarrah", "relation": "friend"},
+        {"target": "char:lost/juliet_burke", "relation": "rival"},
+        {"target": "char:lost/benjamin_linus", "relation": "enemy"}
+      ],
+      "arcs": [
+        {
+          "id": "arc:lost/sun_hwa_kwon/finding_her_voice",
+          "title": "Finding her voice in a marriage that silenced it",
+          "literal_situation": "She survives the crash beside a husband who orders her to cover up, keeps her away from the other survivors, and speaks for her, while she keeps secrets of her own.",
+          "pattern_label": "finding your voice inside a controlling marriage",
+          "pattern_text": "Someone who married for love finds themselves in a marriage that has become controlling and silent, shaped by a powerful family and years of disappointment. They secretly plan to leave, but when the moment comes they cannot go through with it. Forced into a new life together, they slowly start to speak up, build a life of their own and decide whether the relationship can be rebuilt on honest terms.",
+          "hook": "She stays at her husband's side, obeys his orders and speaks to no one, but she is carrying a plan and a skill that no one knows about.",
+          "why_relatable": "Can you love someone and still need to get away from them? When does keeping the peace become disappearing? And is it possible to rebuild a relationship once you both have secrets?",
+          "watch_for": [
+            "Notice the small ways she starts to disobey, and what gives her the courage.",
+            "What does her husband's controlling behaviour hide about him?",
+            "What does she keep from him, and why?"
+          ],
+          "start_at": "S1E1",
+          "span": "S1-S4",
+          "situations": [
+            {"id": "identity_and_self_acceptance", "weight": 0.8},
+            {"id": "family_expectations", "weight": 0.7},
+            {"id": "divorce", "weight": 0.5},
+            {"id": "standing_up_to_authority", "weight": 0.5}
+          ],
+          "conflicts": ["duty_vs_desire", "independence_vs_connection"],
+          "emotions": {"start": ["loneliness", "fear", "guilt"], "middle": ["determination", "shame", "hope"], "end": ["confidence", "love", "relief"]},
+          "ending_tone": "hopeful",
+          "intensity": "moderate",
+          "warnings": ["self_harm_or_suicide", "betrayal", "war_and_violence"],
+          "example_user_messages": [
+            "My husband decides what I wear, who I talk to, and I've stopped recognising myself.",
+            "I had everything planned to leave him, and at the last second I couldn't do it.",
+            "I've been keeping a big secret from my partner and I don't know if our marriage can survive the truth.",
+            "My parents arranged so much of my life that I don't know what I actually want.",
+            "We've been trying for a baby for years and it's tearing us apart, and I know something he doesn't."
+          ],
+          "spoiler": {
+            "summary": "Sun married Jin for love, but her father made him an enforcer, and the violent work and their infertility turned him cold and controlling. A doctor told Sun that Jin, not she, was infertile, but let Jin believe the fault was hers. She had an affair with Jae Lee, who taught her English; when her father found out, Jin was ordered to kill Jae, who killed himself. Sun planned to vanish at Sydney airport but stayed when Jin held up a flower. On the island she reveals she speaks English, which shocks and humiliates Jin; he leaves on the raft after they reconcile. Reunited, she grows more assertive, telling him she was told what to do for years too. She becomes pregnant on the island, which Juliet reveals will kill her unless she leaves, and she shoots an Other to protect herself. Juliet exposes her affair to Jin, but after Sun confirms the baby is his, Jin forgives her and their marriage becomes a partnership.",
+            "key_events": [
+              "Revealed she speaks English, shocking Jin",
+              "Past affair with Jae Lee; Jae's suicide",
+              "Almost leaves Jin at the airport",
+              "Poisons Jin's water to keep him off the raft",
+              "Pregnant despite Jin's infertility",
+              "Shoots Colleen",
+              "Juliet exposes the affair; Jin forgives her"
+            ],
+            "got_right": "She reclaimed her voice and independence, spoke up for herself, and gave the marriage a chance once it could be honest.",
+            "got_wrong": "She tried to control outcomes through deception, from blaming a maid as a child to the affair to secretly poisoning her husband's water."
+          }
+        },
+        {
+          "id": "arc:lost/sun_hwa_kwon/grief_into_revenge",
+          "title": "Turning grief into a mission",
+          "literal_situation": "Later in the series, after a painful loss, she hides her grief behind composure and starts taking on the people she holds responsible, beginning with her powerful father.",
+          "pattern_label": "channelling grief into control and revenge",
+          "pattern_text": "After a devastating loss, a person hardens their grief into anger and sets out to take power from, and punish, the people they blame, including their own parent. When a sliver of hope appears that what they lost might not be gone, they must decide whether to chase it, even if it means leaving behind the child who needs them. The story is about what vengeance does to love, and what we owe to those still with us.",
+          "hook": "Composed and newly powerful, she is quietly planning to make someone pay for what happened to her family.",
+          "why_relatable": "Can anger keep you going after a loss, and at what cost? What happens when you finally stand up to a parent who always controlled you? And when hope pulls you one way and responsibility another, which do you follow?",
+          "watch_for": [
+            "What is she really after when she confronts her father?",
+            "How do the people who depend on her shape the risks she takes?",
+            "Who does she choose to blame, and does that change?"
+          ],
+          "start_at": "S4",
+          "span": "S4-S6",
+          "situations": [
+            {"id": "grief_and_loss", "weight": 1.0},
+            {"id": "difficult_parent", "weight": 0.6},
+            {"id": "becoming_a_parent", "weight": 0.5},
+            {"id": "standing_up_to_authority", "weight": 0.4}
+          ],
+          "conflicts": ["revenge_vs_forgiveness", "duty_vs_desire"],
+          "emotions": {"start": ["grief", "anger", "resentment"], "middle": ["determination", "longing", "hope"], "end": ["love", "joy", "grief"]},
+          "ending_tone": "tragic",
+          "intensity": "heavy",
+          "warnings": ["death_of_loved_one", "death_of_main_character", "grief", "war_and_violence", "bleak_ending"],
+          "example_user_messages": [
+            "Since my husband died all I can feel is anger, and I want the people responsible to pay.",
+            "I finally took control of my father's business away from him. I thought I'd feel better.",
+            "I'm raising our daughter alone and some days I resent that I have to be strong for her.",
+            "Someone told me there might be a way to get back what I lost, but it means leaving my kid behind for a while.",
+            "My dad controlled my whole life and I blame him for the worst thing that ever happened to me."
+          ],
+          "spoiler": {
+            "summary": "Sun believes Jin died when the freighter exploded. As one of the Oceanic Six she gives birth to Ji Yeon, then uses her settlement to take a controlling stake in her father's company and blames him for Jin's death. She allies with Charles Widmore and plans to kill Ben, but at gunpoint Ben shows her Jin's wedding ring as proof he is alive. She leaves her daughter with her mother and returns on Ajira 316, but lands in 2007 while Jin is stuck in 1977. Kept apart for years, she briefly loses her ability to speak English, and they finally reunite on Hydra Island. Trapped in the sinking submarine after the Man in Black's bomb, she begs Jin to save himself; he refuses, and they drown together holding hands, leaving Ji Yeon orphaned. In the flash-sideways they remember everything during an ultrasound of their daughter.",
+            "key_events": [
+              "Believes Jin died in the freighter explosion",
+              "Buys control of her father's company and blames him",
+              "Plots with Widmore to kill Ben",
+              "Ben produces Jin's ring; she leaves her daughter to return",
+              "Separated from Jin by time",
+              "Reunites with Jin on Hydra Island",
+              "Drowns with Jin in the submarine"
+            ],
+            "got_right": "She finally stood up to her father and refused to give up on the person she loved.",
+            "got_wrong": "She let revenge steer her, and chased her lost love at the cost of leaving her young daughter without either parent."
+          }
+        }
+      ]
+    },
+    {
+      "id": "char:lost/juliet_burke",
+      "name": "Juliet Burke",
+      "role": "A poised fertility doctor introduced in season 3, living far from home in a secluded community that keeps to itself.",
+      "relations": [
+        {"target": "char:lost/benjamin_linus", "relation": "boss"},
+        {"target": "char:lost/jack_shephard", "relation": "friend"},
+        {"target": "char:lost/james_sawyer_ford", "relation": "partner"},
+        {"target": "char:lost/kate_austen", "relation": "rival"},
+        {"target": "char:lost/sun_hwa_kwon", "relation": "colleague"}
+      ],
+      "arcs": [
+        {
+          "id": "arc:lost/juliet_burke/trapped_by_her_boss",
+          "title": "Trapped in the job that was supposed to save her",
+          "literal_situation": "A gifted fertility doctor far from home, she works on a problem no one can solve, in a secluded community run by a man who watches her very closely and will not let her leave.",
+          "pattern_label": "breaking free from a controlling boss",
+          "pattern_text": "A talented professional escapes a controlling ex by taking a dream opportunity, only to find themselves trapped by a new boss whose attention is personal and possessive. Failing at an impossible task and cut off from family, they have to decide whether to keep playing along or defect to outsiders who have every reason to distrust them. It is about finding the courage to switch sides, and whether you can earn a place among people you once worked against.",
+          "hook": "Poised and guarded, she has been stuck in the job for years, asks repeatedly to go home, and is always refused.",
+          "why_relatable": "How do you escape a workplace that has become a trap? What do you owe an employer who controls you through your family? And after you have done things you are ashamed of, can a new group ever trust you?",
+          "watch_for": [
+            "Notice how she talks to her boss, and how she talks about him when he isn't there.",
+            "When she seems to help the newcomers, whose interests is she serving?",
+            "What does it take for her to stop keeping secrets?"
+          ],
+          "start_at": "S3E1",
+          "span": "S3-S4",
+          "situations": [
+            {"id": "standing_up_to_authority", "weight": 0.9},
+            {"id": "finding_your_people", "weight": 0.7},
+            {"id": "burnout_at_work", "weight": 0.5},
+            {"id": "starting_over", "weight": 0.4}
+          ],
+          "conflicts": ["belonging_vs_integrity", "control_vs_trust"],
+          "emotions": {"start": ["loneliness", "resentment", "fear"], "middle": ["guilt", "anxiety", "determination"], "end": ["belonging", "relief", "loneliness"]},
+          "ending_tone": "bittersweet",
+          "intensity": "heavy",
+          "warnings": ["abuse", "death_of_loved_one", "betrayal", "war_and_violence", "medical_trauma"],
+          "example_user_messages": [
+            "My boss won't let me leave. Every time I ask, there's another reason I have to stay.",
+            "I took this job to get away from my ex, and now my manager is obsessed with me and it's worse.",
+            "I've been failing at the one thing I was hired for and people keep getting hurt because of it.",
+            "I want to leave and join a competitor, but they'll never trust me after what I did.",
+            "He uses my family against me to keep me in line. I feel completely trapped."
+          ],
+          "spoiler": {
+            "summary": "Juliet was controlled by her ex-husband Edmund until Richard Alpert recruited her, just after a bus killed Edmund. On the island every pregnant woman dies, and Ben, obsessed with her, refuses to let her leave, holding her sister Rachel's cancer cure over her. When she has an affair with Goodwin, Ben sends him on a mission where he is killed and shows her the body, saying 'you're mine'. She secretly asks Jack to kill Ben during surgery, kills Pickett to free Kate and Sawyer, is sentenced to death, and is branded when Jack bargains for her life. Ben then sends her as a spy into the survivors' camp; she records reports for him but ends with 'I hate you', confides in Jack, and exposes Ben's plan. She becomes the camp's doctor, clashes with Kate over Jack, reveals Sun's affair to keep her away from Locke, operates on Jack's appendix, and, after the freighter explodes, is left drinking rum on the beach with Sawyer as the island moves.",
+            "key_events": [
+              "Ben kept her on the island with lies about her sister",
+              "Ben has Goodwin killed and claims her as 'mine'",
+              "Asks Jack to kill Ben on the operating table",
+              "Kills Pickett; sentenced to death and branded",
+              "Sent as a mole; turns on Ben and exposes his plan",
+              "Reveals Sun's affair to Jin",
+              "Stays behind when the Oceanic Six leave"
+            ],
+            "got_right": "She eventually chose honesty and conscience over self-preservation, turning on a controlling boss and protecting people who distrusted her.",
+            "got_wrong": "She manipulated others to fight her battles, from nudging Michael toward violence to using Jack, and exposed a friend's secret to get her way."
+          }
+        },
+        {
+          "id": "arc:lost/juliet_burke/afraid_to_lose_love",
+          "title": "Letting herself love when she expects to lose it",
+          "literal_situation": "Later in the series, after a turning point leaves her with a small group and no way home, she wants to leave at the first opportunity but agrees to stay just two more weeks.",
+          "pattern_label": "loving fully while fearing it won't last",
+          "pattern_text": "Someone who learned as a child, watching their parents split up, that love does not last finally lets themselves settle into a quiet, happy relationship. When someone from their partner's past returns, all the old fear comes back, and they must decide whether to hold on or let go. The story asks whether it is better to have loved and lost, and what it takes to trust that you are enough.",
+          "hook": "Weary after years of trying to get home, she agrees to stay a little longer, not expecting to build a life there.",
+          "why_relatable": "Can you let yourself be happy when part of you is waiting for it to end? What do you do when someone's past walks back through the door? And is a love worth having if you know it might be taken away?",
+          "watch_for": [
+            "What does she believe about love, and where did she learn it?",
+            "How does she respond when the past turns up in her quiet life?",
+            "Notice what she chooses when she is afraid of losing what she has."
+          ],
+          "start_at": "S5E8",
+          "span": "S5-S6",
+          "situations": [
+            {"id": "falling_for_someone_unexpected", "weight": 0.8},
+            {"id": "starting_over", "weight": 0.8},
+            {"id": "moving_somewhere_new", "weight": 0.4},
+            {"id": "divorce", "weight": 0.3}
+          ],
+          "conflicts": ["holding_on_vs_letting_go", "past_vs_future"],
+          "emotions": {"start": ["restlessness", "loneliness"], "middle": ["love", "joy", "jealousy"], "end": ["fear", "love", "acceptance"]},
+          "ending_tone": "bittersweet",
+          "intensity": "heavy",
+          "warnings": ["death_of_main_character", "grief", "war_and_violence"],
+          "example_user_messages": [
+            "I'm finally happy with someone, and I can't stop waiting for it to fall apart.",
+            "My partner's ex just came back into town and I feel like I'm about to lose everything.",
+            "My parents' divorce taught me that love doesn't last. How do I stop believing that?",
+            "I only meant to stay a few weeks and it turned into three years and a life I love.",
+            "Sometimes I wish we'd never met, just so I wouldn't have to lose him."
+          ],
+          "spoiler": {
+            "summary": "Stuck in 1974 after the time flashes, Juliet agrees to stay two weeks with the DHARMA Initiative at Sawyer's urging and ends up spending three happy years living with him; he secretly buys an engagement ring. When Jack, Kate and Hurley arrive, their cover unravels and Juliet sees how Sawyer still looks at Kate. Recalling her parents' divorce, she decides to help Jack detonate the bomb to reset time, so that she will never meet Sawyer and never have to lose him. At the Swan site she is dragged down the shaft and detonates the bomb by hand. She survives briefly into 2007, tells Sawyer she has something important to say, and dies in his arms; through Miles, her last words are 'It worked'. In the flash-sideways she and Sawyer meet at a vending machine, she says 'It worked', and they remember their love and move on together.",
+            "key_events": [
+              "Three years of happiness with Sawyer in DHARMA",
+              "Sawyer's hidden engagement ring",
+              "Jealousy when Kate returns",
+              "Chooses the bomb plan so she will never lose him",
+              "Detonates the bomb at the bottom of the shaft",
+              "Dies in Sawyer's arms: 'It worked'",
+              "Reunited with Sawyer in the flash-sideways"
+            ],
+            "got_right": "She let herself love fully and built a real life, and she told the truth about her fears.",
+            "got_wrong": "She assumed she would be abandoned and tried to erase the relationship rather than trust Sawyer's choice."
+          }
+        }
+      ]
+    }
+  ]
+}

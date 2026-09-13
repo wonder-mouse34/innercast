@@ -1,0 +1,1481 @@
+{
+  "show": "doctor_who",
+  "characters": [
+    {
+      "id": "char:doctor_who/tenth_doctor",
+      "name": "The Tenth Doctor",
+      "role": "The Doctor in his tenth incarnation: a centuries-old wandering traveller in time and space, the last of his kind, who meets every danger with quick-talking charm and fierce protectiveness of the people he travels with.",
+      "relations": [
+        {
+          "target": "char:doctor_who/rose_tyler",
+          "relation": "partner"
+        },
+        {
+          "target": "char:doctor_who/martha_jones",
+          "relation": "friend"
+        },
+        {
+          "target": "char:doctor_who/donna_noble",
+          "relation": "friend"
+        }
+      ],
+      "arcs": [
+        {
+          "id": "arc:doctor_who/tenth_doctor/charm_over_grief",
+          "title": "Smiling through a loss no one can see",
+          "literal_situation": "Full of fresh energy, the Doctor travels through time and space with his companion Rose, cracking jokes and rushing into danger, while carrying the unspoken guilt of being the last survivor of a war that wiped out his people.",
+          "pattern_label": "hiding survivor's guilt behind relentless cheerfulness",
+          "pattern_text": "Someone who survived a catastrophe that took almost everyone they belonged to keeps moving, keeps joking and keeps rescuing other people, because standing still would mean feeling it. Every friend they let close is a joy and a future loss, so they love fiercely while quietly bracing to be left alone again. The story asks whether you can let people in when you are sure you will outlive every attachment.",
+          "hook": "He has a best friend at his side and the whole universe to show her, and he seems happier than ever, at least on the surface.",
+          "why_relatable": "What does it cost to always be the fun one who never shows the wound? Is it kinder to keep people at arm's length because losing them hurts, or to love them anyway? How much of his cheerfulness is real, and how much is armour?",
+          "watch_for": [
+            "Notice the moments when the grin drops and a very old anger or sadness shows through.",
+            "Watch how he talks about the people and the world he lost. What does he avoid saying?",
+            "How does he treat new people who want to travel with him?"
+          ],
+          "start_at": "DW S2E1",
+          "span": "S2-S4",
+          "situations": [
+            {
+              "id": "grief_and_loss",
+              "weight": 0.9
+            },
+            {
+              "id": "loneliness",
+              "weight": 0.9
+            },
+            {
+              "id": "falling_for_someone_unexpected",
+              "weight": 0.5
+            },
+            {
+              "id": "finding_your_people",
+              "weight": 0.4
+            }
+          ],
+          "conflicts": [
+            "independence_vs_connection",
+            "holding_on_vs_letting_go"
+          ],
+          "emotions": {
+            "start": [
+              "joy",
+              "guilt",
+              "loneliness"
+            ],
+            "middle": [
+              "love",
+              "grief",
+              "anger"
+            ],
+            "end": [
+              "grief",
+              "loneliness"
+            ]
+          },
+          "ending_tone": "bittersweet",
+          "intensity": "moderate",
+          "warnings": [
+            "death_of_loved_one",
+            "grief",
+            "war_and_violence"
+          ],
+          "example_user_messages": [
+            "I'm always the life of the party but honestly I'm just trying not to think about what happened.",
+            "Everyone I get close to leaves eventually, so part of me doesn't even want to try anymore.",
+            "I survived something my whole family didn't and I feel guilty every single day.",
+            "I love my friends so much it scares me, because I know I'll lose them.",
+            "People think I'm fine because I'm funny. I'm not fine."
+          ],
+          "spoiler": {
+            "summary": "With Rose, the Doctor's affection becomes a love neither fully voices. He falls briefly for Madame de Pompadour and loses her to time. At Canary Wharf Rose is trapped in a parallel universe; he burns up a sun to say goodbye on Bad Wolf Bay and is cut off before he can say he loves her. Grieving, he travels with Martha while barely noticing her feelings, and in 1913 lives as the human John Smith, who falls in love with Joan Redfern; she rejects the Doctor when he returns. Martha leaves, and Astrid Peth dies saving him. With Donna he finds a platonic best friend, but River Song dies in the Library knowing him from a future he hasn't lived. Rose returns during the Dalek invasion; he leaves her with his half-human duplicate and must wipe Donna's memory to save her life, ending alone in the rain.",
+            "key_events": [
+              "Rose trapped in a parallel world; goodbye on Bad Wolf Bay",
+              "Madame de Pompadour dies before he can return for her",
+              "Lives as human John Smith and loves Joan Redfern",
+              "Martha leaves; Astrid Peth dies",
+              "River Song dies in the Library",
+              "Leaves Rose with his meta-crisis duplicate",
+              "Wipes Donna's memory to save her life"
+            ],
+            "got_right": "He never stops caring, keeps choosing mercy over violence, and gives the people he travels with a bigger life.",
+            "got_wrong": "He hides his pain behind charm, rarely says what he feels until it is too late, takes Martha for granted while grieving Rose, and lets his fear of loss make decisions for other people."
+          }
+        },
+        {
+          "id": "arc:doctor_who/tenth_doctor/alone_and_unchecked",
+          "title": "No one left to tell him no",
+          "literal_situation": "Later in the series, after a turning point that leaves him travelling on his own, the Doctor insists he is better off without companions, dropping into adventures with strangers and moving on before anyone can get attached.",
+          "pattern_label": "isolation curdling into grandiosity and fear of endings",
+          "pattern_text": "After losing the people who kept them grounded, a gifted person decides it is safer to go it alone. Without anyone to push back, their confidence slides into believing the rules no longer apply to them, and when they sense a chapter of their life closing, they fight it with everything they have. The story asks what happens to good intentions with no one to answer to, and how to face an ending you did not choose.",
+          "hook": "He has sworn off bringing anyone along, and on his own he is quicker, bolder and less willing to accept that anything is beyond his power.",
+          "why_relatable": "Is going it alone strength, or just a way to avoid being hurt again? Who tells a brilliant person they are wrong once everyone who could has gone? How do you face a change that feels like losing yourself?",
+          "watch_for": [
+            "Notice how he treats the strangers who help him compared with the friends he travelled with.",
+            "Watch for the moments he stops asking whether he should do something and only asks whether he can.",
+            "What does he hold onto hardest when change looms?"
+          ],
+          "start_at": "DW S4",
+          "span": "S4 + specials",
+          "situations": [
+            {
+              "id": "loneliness",
+              "weight": 0.9
+            },
+            {
+              "id": "identity_and_self_acceptance",
+              "weight": 0.6
+            },
+            {
+              "id": "grief_and_loss",
+              "weight": 0.6
+            },
+            {
+              "id": "redemption_after_mistakes",
+              "weight": 0.4
+            }
+          ],
+          "conflicts": [
+            "power_vs_morality",
+            "holding_on_vs_letting_go"
+          ],
+          "emotions": {
+            "start": [
+              "loneliness",
+              "grief"
+            ],
+            "middle": [
+              "pride",
+              "dread",
+              "fear"
+            ],
+            "end": [
+              "grief",
+              "acceptance"
+            ]
+          },
+          "ending_tone": "bittersweet",
+          "intensity": "heavy",
+          "warnings": [
+            "death_of_main_character",
+            "self_harm_or_suicide",
+            "war_and_violence",
+            "grief"
+          ],
+          "example_user_messages": [
+            "Since everyone left I've been doing everything alone and I think it's making me arrogant.",
+            "Nobody around me pushes back anymore and I'm scared of what I'm turning into.",
+            "My life is about to change completely and I'm fighting it with everything I have.",
+            "I told myself being alone was safer but I think I'm just hiding.",
+            "I don't want this chapter of my life to end, and I don't know how to let it go."
+          ],
+          "spoiler": {
+            "summary": "Travelling alone after losing Donna, the Doctor turns down would-be companions like Jackson Lake and Lady Christina, and the psychic Carmen warns him that his song is ending and 'he will knock four times'. On Mars he defies a fixed point in time to save the Bowie Base crew and proclaims himself the Time Lord Victorious; Adelaide Brooke shoots herself to restore history, shocking him back to himself. He avoids his fate until he answers the Ood's call, faces the resurrected Master and Rassilon's plan to bring the Time Lords back, and survives, only for Wilf to knock four times from inside a radiation booth. He rages that he could do so much more, then gives his life to save Wilf, visits each of his companions one last time and regenerates, saying 'I don't want to go.'",
+            "key_events": [
+              "Carmen prophesies that his song is ending",
+              "Declares himself the Time Lord Victorious on Mars",
+              "Adelaide Brooke kills herself to restore history",
+              "The Master returns; Rassilon tries to bring back the Time Lords",
+              "Absorbs lethal radiation to save Wilf",
+              "Visits his companions one last time and regenerates"
+            ],
+            "got_right": "In the end he chooses to give his life for one ordinary old man, and he says goodbye to the people he loved.",
+            "got_wrong": "He isolates himself, lets grief turn into arrogance, puts himself above the rules and other people's choices, and treats his own ending as an injustice."
+          }
+        }
+      ]
+    },
+    {
+      "id": "char:doctor_who/twelfth_doctor",
+      "name": "The Twelfth Doctor",
+      "role": "The Doctor in his twelfth incarnation: an older-looking, blunt, prickly traveller in time and space who has just changed faces and is unsure whether the man he has become is a good one.",
+      "relations": [
+        {
+          "target": "char:doctor_who/clara_oswald",
+          "relation": "friend"
+        }
+      ],
+      "arcs": [
+        {
+          "id": "arc:doctor_who/twelfth_doctor/am_i_a_good_man",
+          "title": "Asking whether he's a good man",
+          "literal_situation": "Later in the series, after a turning point that changes him into an older, harsher self, the Doctor struggles to reconnect with his friend Clara, who barely recognises him, and keeps asking whether he is actually a good person.",
+          "pattern_label": "questioning your own goodness after a big change",
+          "pattern_text": "After a major change leaves someone feeling like a stranger to themselves, they become colder and more blunt, pushing away people who liked the old version of them. They start to doubt whether their intentions were ever as good as they believed, while the people close to them wonder if they know them at all. The story asks whether being good is something you are or something you keep choosing.",
+          "hook": "He has a new face, a sharp tongue and no patience for small talk, and the friend who knew him best is not sure she wants to stay.",
+          "why_relatable": "Who are you after you've changed so much that friends hesitate around you? Does being blunt and practical make you unkind, or just honest? Can you trust your own moral compass when you are not sure it was ever right?",
+          "watch_for": [
+            "Notice how often he asks others to judge him, and how he reacts to their answers.",
+            "Watch the gap between what he says about people and what he does for them.",
+            "How does his friend's view of him shift from one crisis to the next?"
+          ],
+          "start_at": "DW S8E1",
+          "span": "S8",
+          "situations": [
+            {
+              "id": "identity_and_self_acceptance",
+              "weight": 1.0
+            },
+            {
+              "id": "midlife_reinvention",
+              "weight": 0.7
+            },
+            {
+              "id": "friendship_ending",
+              "weight": 0.4
+            }
+          ],
+          "conflicts": [
+            "power_vs_morality",
+            "independence_vs_connection"
+          ],
+          "emotions": {
+            "start": [
+              "confusion",
+              "self_doubt",
+              "loneliness"
+            ],
+            "middle": [
+              "resentment",
+              "guilt"
+            ],
+            "end": [
+              "acceptance",
+              "self_respect"
+            ]
+          },
+          "ending_tone": "bittersweet",
+          "intensity": "moderate",
+          "warnings": [
+            "war_and_violence",
+            "death_of_loved_one",
+            "grief",
+            "betrayal"
+          ],
+          "example_user_messages": [
+            "I've changed so much in the last year that my friends don't seem to know how to be around me.",
+            "People say I'm cold now, and I honestly can't tell if I'm a good person anymore.",
+            "I got older and stopped pretending to be nice, and now I wonder if I was ever kind.",
+            "My best friend looks at me like a stranger and it hurts more than I let on."
+          ],
+          "spoiler": {
+            "summary": "The new Doctor disorients Clara, who nearly leaves until a phone call from his previous self asks her to help him. He sees his own hatred reflected in a damaged Dalek, clashes with Clara's boyfriend Danny Pink, a former soldier, and makes cold calculations aboard the Orient Express. After he leaves Clara to decide the fate of the Moon alone she walks out, then keeps travelling anyway. When Danny is killed, Clara threatens to throw away the TARDIS keys to force him to change history; he helps her regardless. Missy, the Master reborn, hands him an army of Cybermen to prove he is like her; he refuses, realising he is not a good man or a bad man but 'an idiot with a box and a screwdriver'. He and Clara part, each lying that they are fine.",
+            "key_events": [
+              "A call from the Eleventh Doctor convinces Clara to stay",
+              "A Dalek tells him he is a good Dalek",
+              "Clara threatens him on a volcano to save Danny, and he forgives her",
+              "Danny Pink dies and returns as a Cyberman",
+              "Missy is revealed as the Master and offers him a Cyber army",
+              "He and Clara part, each lying to spare the other"
+            ],
+            "got_right": "He keeps saving people even when it costs him their affection, and realises goodness lies in helping rather than in labels.",
+            "got_wrong": "He is needlessly harsh, sneers at Danny, manipulates Clara, and hides behind bluntness rather than admit how much he cares."
+          }
+        },
+        {
+          "id": "arc:doctor_who/twelfth_doctor/cannot_let_her_go",
+          "title": "A friendship he'd break the rules for",
+          "literal_situation": "Later in the series, after a turning point that deepens his bond with his friend Clara, the Doctor has loosened up, playing guitar and joking, but he is increasingly frightened by how recklessly she throws herself at danger, and haunted by talk of a mysterious 'Hybrid'.",
+          "pattern_label": "loving someone so much you refuse to accept their loss",
+          "pattern_text": "A person finally lets themselves depend on one close friend, and as that friend becomes more reckless, their fear of losing them grows into something close to obsession. When the worst comes, they cannot accept it and are willing to break every rule they live by to undo it. The story asks where devotion ends and refusing to let go begins.",
+          "hook": "He is looser and happier than before, but he watches his friend take bigger and bigger risks and he cannot stop her.",
+          "why_relatable": "What do you do when the person you care about most starts taking risks you can't control? Is it love or fear when you would do anything to keep someone? What would you give up to change something that cannot be changed?",
+          "watch_for": [
+            "Notice how he reacts every time his friend copies his risk-taking.",
+            "Watch how he handles grief when no one is there to see it.",
+            "Which rules does he treat as sacred, and which is he willing to bend?"
+          ],
+          "start_at": "DW S9E1",
+          "span": "S9",
+          "situations": [
+            {
+              "id": "grief_and_loss",
+              "weight": 1.0
+            },
+            {
+              "id": "friendship_ending",
+              "weight": 0.6
+            },
+            {
+              "id": "loneliness",
+              "weight": 0.5
+            }
+          ],
+          "conflicts": [
+            "holding_on_vs_letting_go",
+            "control_vs_trust"
+          ],
+          "emotions": {
+            "start": [
+              "joy",
+              "anxiety"
+            ],
+            "middle": [
+              "grief",
+              "anger",
+              "loneliness"
+            ],
+            "end": [
+              "grief",
+              "acceptance"
+            ]
+          },
+          "ending_tone": "bittersweet",
+          "intensity": "heavy",
+          "warnings": [
+            "death_of_loved_one",
+            "grief",
+            "torture",
+            "war_and_violence"
+          ],
+          "example_user_messages": [
+            "My best friend has started taking huge risks and I can't sleep worrying about her.",
+            "I lost someone and I'd honestly do anything, even things I know are wrong, to undo it.",
+            "I keep going over every way I could have stopped it from happening.",
+            "I don't know how to live with a loss when every part of me refuses to accept it."
+          ],
+          "spoiler": {
+            "summary": "Clara, increasingly imitating the Doctor, takes on a death sentence meant for Rigsy in Trap Street, believing she can outwit it, and dies facing the raven, begging the Doctor not to take revenge. The Doctor is teleported into his confession dial and relives his grief for four and a half billion years, punching through a wall of azbantium to escape rather than confess. On Gallifrey he overthrows Rassilon and pulls Clara out of her final heartbeat, fleeing with her to the end of the universe. He tries to wipe her memories of him to hide her from the Time Lords, but she reverses the device and he loses his memories of her instead. Clara leaves in a stolen TARDIS with Ashildr, still destined to return to her death one day.",
+            "key_events": [
+              "Clara dies facing the raven",
+              "Four and a half billion years trapped in the confession dial",
+              "Overthrows Rassilon and pulls Clara out of her death",
+              "Tries to erase Clara's memories; loses his own memories of her instead",
+              "Clara leaves in her own TARDIS with Ashildr"
+            ],
+            "got_right": "His love is fierce and real, and in the end he accepts that he has to let her go.",
+            "got_wrong": "He ignores rules that protect everyone, risks the universe to undo one death, and tries to take away her memories without her consent."
+          }
+        },
+        {
+          "id": "arc:doctor_who/twelfth_doctor/keeping_his_word",
+          "title": "A promise to keep, a student to teach",
+          "literal_situation": "Later in the series, the Doctor has settled on Earth as a university lecturer, bound by an oath to guard a mysterious vault and chafing at being stuck in one place, when he takes on a bright, curious young woman named Bill as his personal student.",
+          "pattern_label": "a weary elder choosing to keep going for others",
+          "pattern_text": "A person who has lost too much settles into a quiet, dutiful routine, keeping a promise that ties them to one place. Teaching an eager young person reawakens their joy, and they try to help someone who has done great harm become better. Worn out by endless goodbyes, they have to decide whether to keep showing up and being kind when there is no reward for it.",
+          "hook": "He has a job, a sworn duty he can't walk away from, and a new student who asks all the questions nobody else does.",
+          "why_relatable": "How do you keep caring when you're exhausted by loss? Can people who have done terrible things change, and how much should you risk betting that they can? What does it mean to be kind when nobody is watching and nothing is guaranteed?",
+          "watch_for": [
+            "Notice how his student changes the way he sees the world.",
+            "Watch how he balances his sworn duty against his wish to roam.",
+            "What does he believe about second chances, and what does believing it cost him?"
+          ],
+          "start_at": "DW S10E1",
+          "span": "S10",
+          "situations": [
+            {
+              "id": "mentor_and_protege",
+              "weight": 1.0
+            },
+            {
+              "id": "redemption_after_mistakes",
+              "weight": 0.6
+            },
+            {
+              "id": "responsibility_you_didnt_ask_for",
+              "weight": 0.5
+            },
+            {
+              "id": "illness_or_injury",
+              "weight": 0.3
+            }
+          ],
+          "conflicts": [
+            "duty_vs_desire",
+            "holding_on_vs_letting_go"
+          ],
+          "emotions": {
+            "start": [
+              "restlessness",
+              "loneliness",
+              "curiosity"
+            ],
+            "middle": [
+              "hope",
+              "determination",
+              "fear"
+            ],
+            "end": [
+              "acceptance",
+              "peace"
+            ]
+          },
+          "ending_tone": "bittersweet",
+          "intensity": "heavy",
+          "warnings": [
+            "death_of_main_character",
+            "war_and_violence",
+            "medical_trauma",
+            "betrayal",
+            "grief"
+          ],
+          "example_user_messages": [
+            "I'm tired of goodbyes, but mentoring this one student has made me feel alive again.",
+            "I promised to look after someone who hurt a lot of people, and I'm not sure they can change.",
+            "I've been through so much loss that I don't know if I have it in me to start over again.",
+            "Is it still worth being kind when nobody notices and nothing gets better?"
+          ],
+          "spoiler": {
+            "summary": "The Doctor is guarding Missy in the Vault after refusing to execute her, and hopes to rehabilitate his oldest friend. He tutors Bill Potts and travels with her and Nardole. Blinded in space, he hides it; Bill hands Earth to the Monks to restore his sight, and he has to free humanity from their rule. Missy begins to change and he lets her join them. On a Mondasian colony ship Bill is shot and converted into a Cyberman. Missy meets her past self, the Saxon Master; she finally chooses to stand with the Doctor, and the two Masters kill each other. The Doctor makes a last stand 'without hope, without witness, without reward', is mortally wounded, and resists regenerating. He meets his first incarnation, gets a final goodbye with Bill and his restored memories of Clara, then regenerates into the Thirteenth Doctor after giving his successor advice.",
+            "key_events": [
+              "Guards Missy in the Vault instead of executing her",
+              "Hides his blindness; Bill trades Earth to the Monks to save him",
+              "Bill is converted into a Cyberman",
+              "Missy and the Saxon Master kill each other",
+              "Last stand against the Cybermen",
+              "Meets the First Doctor, then regenerates into the Thirteenth Doctor"
+            ],
+            "got_right": "He keeps believing in kindness and in people's capacity to change, and chooses to fight for strangers with no reward.",
+            "got_wrong": "He hides his blindness, puts his friends in danger to test Missy, and nearly refuses to go on living."
+          }
+        }
+      ]
+    },
+    {
+      "id": "char:doctor_who/rose_tyler",
+      "name": "Rose Tyler",
+      "role": "A 19-year-old London shop assistant living with her mum on a council estate, stuck in a dead-end job and a comfortable relationship, until a mysterious stranger saves her life.",
+      "relations": [
+        {
+          "target": "char:doctor_who/tenth_doctor",
+          "relation": "partner"
+        },
+        {
+          "target": "char:doctor_who/donna_noble",
+          "relation": "friend"
+        },
+        {
+          "target": "char:doctor_who/martha_jones",
+          "relation": "colleague"
+        }
+      ],
+      "arcs": [
+        {
+          "id": "arc:doctor_who/rose_tyler/outgrowing_a_small_life",
+          "title": "The shop girl who wanted more",
+          "literal_situation": "Rose works in a department store, lives with her mother Jackie and dates sweet but unambitious Mickey. When a mysterious man called the Doctor pulls her out of danger and offers to take her anywhere in time and space, she has to decide whether to leave everything familiar behind.",
+          "pattern_label": "leaving a safe small life for something bigger",
+          "pattern_text": "A young person who dropped out of school and settled into a job and a relationship that feel like a dead end is offered the chance of a bigger, riskier life. Leaving means disappointing a protective single parent and a loyal partner who both want them close to home. The story asks how to grow into who you might be without abandoning the people who loved you as you were.",
+          "hook": "She has just been offered the chance of a lifetime by a strange man, and she can only say yes by walking away from her mum and her boyfriend.",
+          "why_relatable": "Is it selfish to want more than the life you were handed? What do you owe the people who stood by you when you had nothing? Can you change so much that you no longer fit at home, and still belong there?",
+          "watch_for": [
+            "Notice how her mother and boyfriend react every time she comes home.",
+            "Watch how she changes the way she speaks up to people with power.",
+            "What does she hold on to from home when everything around her is new?"
+          ],
+          "start_at": "DW S1E1",
+          "span": "S1-S2",
+          "situations": [
+            {
+              "id": "leaving_home",
+              "weight": 0.9
+            },
+            {
+              "id": "coming_of_age",
+              "weight": 0.8
+            },
+            {
+              "id": "taking_a_big_risk",
+              "weight": 0.7
+            },
+            {
+              "id": "family_expectations",
+              "weight": 0.4
+            }
+          ],
+          "conflicts": [
+            "safety_vs_growth",
+            "independence_vs_connection"
+          ],
+          "emotions": {
+            "start": [
+              "boredom",
+              "restlessness",
+              "curiosity"
+            ],
+            "middle": [
+              "joy",
+              "guilt",
+              "confidence"
+            ],
+            "end": [
+              "grief",
+              "love",
+              "longing"
+            ]
+          },
+          "ending_tone": "bittersweet",
+          "intensity": "moderate",
+          "warnings": [
+            "death_of_loved_one",
+            "grief",
+            "war_and_violence"
+          ],
+          "example_user_messages": [
+            "I'm 19, stuck in a job I hate and a relationship that's comfortable, and I feel like life is passing me by.",
+            "I got offered the chance to go travelling for a year and my mum's acting like I'm abandoning her.",
+            "I dropped out of school and I always felt like I was meant for something bigger.",
+            "Every time I come home I feel like I don't fit here anymore, and I feel guilty about it."
+          ],
+          "spoiler": {
+            "summary": "Rose leaves with the Ninth Doctor and discovers courage and purpose. She saves her father's life in 1987, creating a paradox that ends with him choosing to die. She accidentally vanishes for a year, leaving her mum to report her missing and Mickey suspected of murdering her. When the Doctor sends her home to keep her safe from the Daleks, she absorbs the Time Vortex as Bad Wolf to save him, and he regenerates saving her. With the Tenth Doctor she grows closer to him, Mickey stays behind in a parallel world, and at the Battle of Canary Wharf she chooses to stay by the Doctor's side rather than go with her mum, only to be trapped on Pete's World with her mother and an alternate version of her father.",
+            "key_events": [
+              "Saves her father in 1987; he chooses to die to fix time",
+              "Goes missing for a year; Mickey is suspected of her murder",
+              "Absorbs the Time Vortex as Bad Wolf",
+              "The Ninth Doctor regenerates saving her",
+              "Mickey stays in the parallel world",
+              "Trapped on Pete's World at Canary Wharf"
+            ],
+            "got_right": "She says yes to her own life, grows in courage, compassion and conviction, and stays loyal to the people from home.",
+            "got_wrong": "She takes Mickey and her mum for granted, acts impulsively, and gradually hands her whole life over to one person."
+          }
+        },
+        {
+          "id": "arc:doctor_who/rose_tyler/love_she_cannot_name",
+          "title": "Falling for someone you can't grow old with",
+          "literal_situation": "Later in the series, after a turning point that shakes up her life with the Doctor, Rose finds her feelings for him growing into more than friendship, even though he will live far longer than any human and has loved and lost companions before her.",
+          "pattern_label": "loving someone whose life will outlast yours",
+          "pattern_text": "A young person falls deeply for someone who will never age as they do and who has loved and lost many times before. Neither of them says it out loud, and jealousy and fear creep in whenever the past shows up. The story asks whether a love can be worth it when you both know it cannot last forever, and what it means to choose one person over your family and your future.",
+          "hook": "She's happier than she's ever been, but every hint of the people he cared about before makes her wonder where she stands.",
+          "why_relatable": "How do you love someone who won't talk about their feelings? What do you do with jealousy toward someone's past? Would you give up your family and your future for one person?",
+          "watch_for": [
+            "Notice how she reacts when she meets people from his past.",
+            "Watch what goes unsaid between them in the quiet moments.",
+            "How does she weigh her mother against the life she has chosen?"
+          ],
+          "start_at": "DW S2E1",
+          "span": "S2-S4",
+          "situations": [
+            {
+              "id": "falling_for_someone_unexpected",
+              "weight": 0.9
+            },
+            {
+              "id": "long_distance",
+              "weight": 0.5
+            },
+            {
+              "id": "breakup",
+              "weight": 0.4
+            },
+            {
+              "id": "grief_and_loss",
+              "weight": 0.4
+            }
+          ],
+          "conflicts": [
+            "holding_on_vs_letting_go",
+            "past_vs_future"
+          ],
+          "emotions": {
+            "start": [
+              "love",
+              "joy",
+              "jealousy"
+            ],
+            "middle": [
+              "longing",
+              "grief",
+              "determination"
+            ],
+            "end": [
+              "love",
+              "acceptance"
+            ]
+          },
+          "ending_tone": "bittersweet",
+          "intensity": "moderate",
+          "warnings": [
+            "grief",
+            "war_and_violence"
+          ],
+          "example_user_messages": [
+            "I'm in love with someone who never talks about feelings and I don't know where I stand.",
+            "I get so jealous when he talks about the people he loved before me.",
+            "We got separated and I've spent years trying to find my way back to him.",
+            "Would you give up everything, even your family, for one person?",
+            "I know we can't grow old together, but I can't stop loving him."
+          ],
+          "spoiler": {
+            "summary": "Rose's bond with the Tenth Doctor deepens; she feels threatened by Sarah Jane Smith and Madame de Pompadour, and realises he will outlive her. At Canary Wharf she is pulled toward the Void and ends up trapped on Pete's World; on Bad Wolf Bay she tells him she loves him, but he is cut off before he can answer. She works for that world's Torchwood and builds a dimension cannon to cross back as the stars go out, guiding Donna through the Turn Left world. Reunited during the Dalek invasion, she is left on Bad Wolf Bay with the half-human Meta-Crisis Doctor, who can grow old with her, while the original Doctor leaves.",
+            "key_events": [
+              "Jealousy of Sarah Jane and Madame de Pompadour",
+              "Trapped on Pete's World; confesses her love on Bad Wolf Bay",
+              "Builds a dimension cannon to cross back",
+              "Helps Donna change history in the Turn Left world",
+              "Left with the Meta-Crisis Doctor in the parallel world"
+            ],
+            "got_right": "She loves wholeheartedly and bravely, and never stops fighting for what she believes in.",
+            "got_wrong": "Her devotion to one person overshadows her own life and the people who love her, and her jealousy makes her unkind at times."
+          }
+        }
+      ]
+    },
+    {
+      "id": "char:doctor_who/martha_jones",
+      "name": "Martha Jones",
+      "role": "A bright, hardworking medical student in London and the steady peacekeeper of a noisy divorced family, whose hospital is about to be visited by something extraordinary.",
+      "relations": [
+        {
+          "target": "char:doctor_who/tenth_doctor",
+          "relation": "friend"
+        },
+        {
+          "target": "char:doctor_who/donna_noble",
+          "relation": "friend"
+        },
+        {
+          "target": "char:doctor_who/rose_tyler",
+          "relation": "colleague"
+        }
+      ],
+      "arcs": [
+        {
+          "id": "arc:doctor_who/martha_jones/waiting_to_be_seen",
+          "title": "Falling for someone who's still missing someone else",
+          "literal_situation": "Later in the series, medical student Martha helps him save her hospital and is invited on 'one trip' in the TARDIS. She is soon smitten, but he keeps mentioning someone he has lost and often barely notices her.",
+          "pattern_label": "loving someone who is still hung up on their ex",
+          "pattern_text": "A capable, ambitious young woman falls for someone who is still grieving a previous love and keeps comparing her to them. She works harder and harder to be noticed and valued, treated as a friend of convenience while she gives far more than she gets. The story asks when to keep hoping and when to walk away for your own sake.",
+          "hook": "She has been invited along for just one trip, and she is already falling for someone who talks about a person he lost as though they're still in the room.",
+          "why_relatable": "How long do you wait for someone to see you? Is it love or a rebound when they only half notice you? What does it take to decide you deserve more?",
+          "watch_for": [
+            "Notice how often she has to prove she belongs.",
+            "Watch how she responds when he mentions the person he lost.",
+            "What does she need to hear from him, and does she ever ask for it?"
+          ],
+          "start_at": "DW S3E1",
+          "span": "S3",
+          "situations": [
+            {
+              "id": "unrequited_love",
+              "weight": 1.0
+            },
+            {
+              "id": "confidence_struggle",
+              "weight": 0.6
+            },
+            {
+              "id": "imposter_syndrome",
+              "weight": 0.4
+            }
+          ],
+          "conflicts": [
+            "holding_on_vs_letting_go",
+            "independence_vs_connection"
+          ],
+          "emotions": {
+            "start": [
+              "curiosity",
+              "hope",
+              "inadequacy"
+            ],
+            "middle": [
+              "longing",
+              "jealousy",
+              "loneliness"
+            ],
+            "end": [
+              "self_respect",
+              "determination"
+            ]
+          },
+          "ending_tone": "hopeful",
+          "intensity": "moderate",
+          "warnings": [
+            "war_and_violence"
+          ],
+          "example_user_messages": [
+            "I'm in love with a friend who's still hung up on his ex and he barely notices me.",
+            "I keep working harder to be good enough for someone who doesn't even see me.",
+            "He compares me to the girl before me without even realising he's doing it.",
+            "How do I know when it's time to stop waiting for someone to feel the same way?"
+          ],
+          "spoiler": {
+            "summary": "Martha keeps being treated as a stand-in: sharing a bed in Shakespeare's inn while the Doctor talks about Rose, working as a maid in 1913 while the human John Smith falls in love with Joan Redfern, and working a shop job in 1969 to support him. She admits she loves him. After the Year That Never Was she tells him she is leaving for her own sake, comparing herself to a friend who wasted years waiting for a man who never loved her back, and gives him her phone so he can call if needed. She goes on to become a doctor with UNIT, gets engaged to Tom Milligan, and later marries Mickey Smith.",
+            "key_events": [
+              "Shares a bed with the Doctor while he talks about Rose",
+              "Watches the human Doctor fall for Joan Redfern in 1913",
+              "Supports him with a shop job while stranded in 1969",
+              "Confesses her love, then leaves the TARDIS on her own terms",
+              "Joins UNIT; later marries Mickey Smith"
+            ],
+            "got_right": "She recognises she deserves to be loved back and leaves on her own terms, with dignity and without bitterness.",
+            "got_wrong": "She spends a long time trying to earn the love of someone who never offered it, measuring her worth by his attention."
+          }
+        },
+        {
+          "id": "arc:doctor_who/martha_jones/holding_everyone_together",
+          "title": "The dependable one in a family that won't stop fighting",
+          "literal_situation": "Martha is the one who holds her family together: her divorced parents bicker, her father has a much younger girlfriend, and her mother grows suspicious of the strange man her daughter is spending time with. Martha juggles exams, family crises and a secret life she can't explain to any of them.",
+          "pattern_label": "the family peacemaker learning to put herself first",
+          "pattern_text": "A young woman who has always been the reliable one in a chaotic, divorced family carries everyone's worries alongside a demanding career path. When a crisis puts the people she loves in danger, she is forced to carry a responsibility far beyond anything she trained for. The story asks what it costs to be the strong one, and when duty to family means stepping away from the life you wanted.",
+          "hook": "She's the one who smooths over every family fight, and now she's hiding a whole second life from all of them.",
+          "why_relatable": "What happens to the person who always keeps the peace? Can you chase your dreams while carrying your family's problems? How do you know when you've outgrown a situation, even an exciting one?",
+          "watch_for": [
+            "Notice how her family's arguments follow her wherever she goes.",
+            "Watch how her confidence changes when others depend on her.",
+            "What does she give up to protect the people she loves, and does she ever resent it?"
+          ],
+          "start_at": "DW S3E1",
+          "span": "S3-S4",
+          "situations": [
+            {
+              "id": "caring_for_family",
+              "weight": 0.9
+            },
+            {
+              "id": "responsibility_you_didnt_ask_for",
+              "weight": 0.8
+            },
+            {
+              "id": "family_expectations",
+              "weight": 0.5
+            },
+            {
+              "id": "new_job",
+              "weight": 0.3
+            }
+          ],
+          "conflicts": [
+            "duty_vs_desire",
+            "self_vs_family_expectations"
+          ],
+          "emotions": {
+            "start": [
+              "anxiety",
+              "overwhelm"
+            ],
+            "middle": [
+              "fear",
+              "determination",
+              "loneliness"
+            ],
+            "end": [
+              "self_respect",
+              "confidence",
+              "relief"
+            ]
+          },
+          "ending_tone": "hopeful",
+          "intensity": "heavy",
+          "warnings": [
+            "war_and_violence",
+            "torture",
+            "domestic_violence"
+          ],
+          "example_user_messages": [
+            "I'm the one who keeps the peace in my family and I'm exhausted from it.",
+            "My parents are divorced and still fighting and I'm always stuck in the middle.",
+            "Everyone depends on me in a crisis and nobody asks how I'm doing.",
+            "I love my big exciting life but my family needs me at home right now."
+          ],
+          "spoiler": {
+            "summary": "Martha's mother Francine is manipulated by Harold Saxon's agents into distrusting the Doctor. When Saxon, the Master, becomes Prime Minister and conquers Earth, her family is captured and enslaved aboard the Valiant while Martha escapes. She spends a year walking a devastated Earth alone, spreading the Doctor's story so that humanity's belief can defeat the Master. Time is reversed, but her family remembers everything. She leaves the TARDIS to help her traumatised family recover, finishes her medical training, and joins UNIT, returning to help the Doctor as a confident professional.",
+            "key_events": [
+              "Her mother is turned against the Doctor by Saxon's agents",
+              "The Master takes over Earth; her family is enslaved",
+              "Walks the Earth alone for a year to save everyone",
+              "Leaves the TARDIS to look after her family",
+              "Qualifies as a doctor and joins UNIT"
+            ],
+            "got_right": "She shoulders an impossible responsibility with courage and ingenuity, and knows when to step away to care for her family and herself.",
+            "got_wrong": "She tries to handle everything alone, keeps the truth from her family too long, and puts everyone else's needs far ahead of her own."
+          }
+        }
+      ]
+    },
+    {
+      "id": "char:doctor_who/donna_noble",
+      "name": "Donna Noble",
+      "role": "A loud, sharp-tongued London temp in her late thirties who lives with her mother and grandfather and is convinced she is nothing special.",
+      "relations": [
+        {
+          "target": "char:doctor_who/tenth_doctor",
+          "relation": "friend"
+        },
+        {
+          "target": "char:doctor_who/martha_jones",
+          "relation": "friend"
+        },
+        {
+          "target": "char:doctor_who/rose_tyler",
+          "relation": "friend"
+        }
+      ],
+      "arcs": [
+        {
+          "id": "arc:doctor_who/donna_noble/just_a_temp",
+          "title": "The temp who thought she was nothing special",
+          "literal_situation": "Later in the series, after a chance encounter she walked away from, Donna regrets turning down the Doctor's invitation to travel with him. Back home with a critical mother and a doting grandfather, she drifts between temp jobs and investigates strange events in the hope of finding him again.",
+          "pattern_label": "discovering your worth after years of being underestimated",
+          "pattern_text": "A woman approaching middle age drifts between short-term jobs, lives with a mother who constantly criticises her, and believes she is ordinary and a bit of a disappointment. When she finally takes a leap into a bigger life with a friend who believes in her, she discovers she is sharper, braver and kinder than anyone gave her credit for. The story asks whether you can believe in your own worth when the people around you never have.",
+          "hook": "She has been kicking herself for saying no to the adventure of a lifetime, and she's determined not to miss her chance a second time.",
+          "why_relatable": "What if you've been told you're ordinary for so long you believe it? Is it too late to start a big adventure when everyone your age has settled down? Can a friendship change who you think you are?",
+          "watch_for": [
+            "Notice how she talks about herself versus how she acts in a crisis.",
+            "Watch how she pushes back when her friend makes hard choices.",
+            "How does her mother's voice follow her, even far from home?"
+          ],
+          "start_at": "DW S4E1",
+          "span": "S4",
+          "situations": [
+            {
+              "id": "confidence_struggle",
+              "weight": 1.0
+            },
+            {
+              "id": "midlife_reinvention",
+              "weight": 0.8
+            },
+            {
+              "id": "difficult_parent",
+              "weight": 0.5
+            },
+            {
+              "id": "finding_your_people",
+              "weight": 0.5
+            }
+          ],
+          "conflicts": [
+            "safety_vs_growth",
+            "self_vs_family_expectations"
+          ],
+          "emotions": {
+            "start": [
+              "inadequacy",
+              "restlessness",
+              "longing"
+            ],
+            "middle": [
+              "joy",
+              "confidence",
+              "belonging"
+            ],
+            "end": [
+              "confusion",
+              "grief"
+            ]
+          },
+          "ending_tone": "tragic",
+          "intensity": "heavy",
+          "warnings": [
+            "war_and_violence",
+            "self_harm_or_suicide",
+            "grief",
+            "bleak_ending"
+          ],
+          "example_user_messages": [
+            "I'm nearly 40, I've never had a proper career, and my mum makes it clear I'm a disappointment.",
+            "I turned down a big opportunity years ago and I still can't stop thinking about it.",
+            "I always call myself stupid but the truth is I've never been given a chance.",
+            "I finally have a friend who thinks I'm brilliant and it's changing how I see myself.",
+            "Is it too late to start having adventures when everyone else my age has settled down?"
+          ],
+          "spoiler": {
+            "summary": "Donna finds the Doctor at Adipose Industries and joins him as a best friend, not a love interest. She becomes his conscience: begging him to save a family at Pompeii, helping free the Ood, and insisting he accept Jenny as his daughter. In the Library she lives a virtual life with a husband and children who vanish. In Turn Left a parallel world shows what happens if she never meets the Doctor, and her alternate self steps in front of a lorry to change history. During the Dalek invasion she touches the Doctor's regeneration energy, gains a Time Lord mind and saves the universe as the DoctorDonna, but the knowledge will burn out her brain. The Doctor wipes all her memories of him, and she returns to her old loud, self-dismissing life with no idea of what she achieved, while her grandfather Wilf grieves for the woman she became.",
+            "key_events": [
+              "Saves Caecilius's family at Pompeii",
+              "Loses her virtual husband and children in the Library",
+              "Alternate Donna steps in front of a lorry in the Turn Left world",
+              "Becomes the DoctorDonna and saves the universe",
+              "The Doctor wipes her memory to save her life"
+            ],
+            "got_right": "She takes the leap, speaks truth to power, insists on compassion, and discovers she is brilliant.",
+            "got_wrong": "She spent years accepting other people's verdict on her, and her new sense of worth rests heavily on one friendship."
+          }
+        }
+      ]
+    },
+    {
+      "id": "char:doctor_who/amy_pond",
+      "name": "Amy Pond",
+      "role": "A feisty young woman from a small English village who, as a lonely girl raised by her aunt, met a mysterious 'raggedy Doctor' who promised to come back in five minutes.",
+      "relations": [
+        {
+          "target": "char:doctor_who/rory_williams",
+          "relation": "partner"
+        }
+      ],
+      "arcs": [
+        {
+          "id": "arc:doctor_who/amy_pond/left_waiting",
+          "title": "The girl who was left waiting",
+          "literal_situation": "As a child, Amelia was promised by a strange man that he would be back in five minutes, and he didn't return for twelve years. Now grown up, still in her village and uneasy about settling down with her fiancé Rory, she runs off with the Doctor.",
+          "pattern_label": "abandonment making it hard to trust and commit",
+          "pattern_text": "A person who was left alone and let down as a child grows up guarded, restless and unsure that anyone will stay. On the brink of settling down with a devoted partner, they run toward excitement instead, unsure whether they are choosing freedom or fleeing commitment. The story asks whether you can trust someone to stay when the people who mattered most never did.",
+          "hook": "She's finally getting the adventure she has dreamed of since childhood, but she has run away from something important to get it.",
+          "why_relatable": "How do early disappointments shape who you trust as an adult? Are you running toward something or away from something? Can you choose the steady person who has always been there when excitement feels like the only way to feel alive?",
+          "watch_for": [
+            "Notice how she responds whenever someone promises to come back.",
+            "Watch how she treats the person who has always waited for her.",
+            "What is she really looking for when she chooses adventure?"
+          ],
+          "start_at": "DW S5E1",
+          "span": "S5",
+          "situations": [
+            {
+              "id": "loneliness",
+              "weight": 0.7
+            },
+            {
+              "id": "coming_of_age",
+              "weight": 0.6
+            },
+            {
+              "id": "leaving_home",
+              "weight": 0.5
+            },
+            {
+              "id": "falling_for_someone_unexpected",
+              "weight": 0.5
+            }
+          ],
+          "conflicts": [
+            "independence_vs_connection",
+            "past_vs_future"
+          ],
+          "emotions": {
+            "start": [
+              "restlessness",
+              "rejection",
+              "longing"
+            ],
+            "middle": [
+              "joy",
+              "confusion",
+              "grief"
+            ],
+            "end": [
+              "love",
+              "belonging",
+              "joy"
+            ]
+          },
+          "ending_tone": "hopeful",
+          "intensity": "moderate",
+          "warnings": [
+            "death_of_loved_one",
+            "grief",
+            "child_endangerment",
+            "war_and_violence"
+          ],
+          "example_user_messages": [
+            "My parents weren't there for me growing up and now I can't believe anyone will stay.",
+            "I'm about to settle down with a great guy and all I want to do is run away.",
+            "I spent my childhood waiting for someone who promised they'd come back.",
+            "Everyone thought I was making things up as a kid and I still feel like an outsider.",
+            "Am I scared of commitment or do I just want more from life?"
+          ],
+          "spoiler": {
+            "summary": "Amy's parents were erased by the crack in her bedroom wall, which is why she grew up alone. She tries to kiss the Doctor the night before her wedding, so he brings Rory along. In Amy's Choice she realises she loves Rory. Rory is killed and erased from time by a crack, and Amy forgets he ever existed. An Auton copy of Rory returns as a Roman soldier and is forced to shoot her; she is revived inside the Pandorica while Rory guards her for two thousand years. The Doctor reboots the universe; on her wedding day Amy remembers her parents and then the Doctor, bringing him back, and marries Rory.",
+            "key_events": [
+              "Her parents were erased by the crack in time",
+              "Tries to kiss the Doctor before her wedding",
+              "Chooses Rory in Amy's Choice",
+              "Rory dies and is erased from her memory",
+              "Auton Rory shoots her; he guards her Pandorica for 2,000 years",
+              "Remembers the Doctor back into existence and marries Rory"
+            ],
+            "got_right": "She learns to see and value the person who has always been there, and her memory and belief bring back what she lost.",
+            "got_wrong": "She runs from commitment, takes Rory for granted, and chases a childhood fantasy."
+          }
+        },
+        {
+          "id": "arc:doctor_who/amy_pond/future_she_planned",
+          "title": "When the future you planned doesn't come",
+          "literal_situation": "Later in the series, after a turning point that settles her relationship with her childhood friend Rory, Amy divides her life between home and adventures with the Doctor, while keeping a secret about her health that she is afraid to share.",
+          "pattern_label": "grieving the family life you expected to have",
+          "pattern_text": "A couple building an adult life together are hit by a loss that takes away the family they hoped for, and one of them quietly blames herself. Grief and silence push them apart until they must decide whether their love can survive what they have lost. Meanwhile, they have to choose between the thrilling life they have been living and the steadier one waiting at home.",
+          "hook": "She's trying to have it all, the adventures, the home life and the relationship, and she's keeping something to herself.",
+          "why_relatable": "What do you do when the future you planned is taken away? How does grief change a relationship when neither person talks about it? Can you let go of an exciting chapter of life to put down roots?",
+          "watch_for": [
+            "Notice what she keeps from the people closest to her, and why.",
+            "Watch how she and her partner handle pain differently.",
+            "What does 'home' mean to her as time goes on?"
+          ],
+          "start_at": "DW S6E1",
+          "span": "S6-S7",
+          "situations": [
+            {
+              "id": "becoming_a_parent",
+              "weight": 0.8
+            },
+            {
+              "id": "grief_and_loss",
+              "weight": 0.7
+            },
+            {
+              "id": "divorce",
+              "weight": 0.5
+            }
+          ],
+          "conflicts": [
+            "holding_on_vs_letting_go",
+            "truth_vs_protecting_others"
+          ],
+          "emotions": {
+            "start": [
+              "hope",
+              "anxiety"
+            ],
+            "middle": [
+              "grief",
+              "shame",
+              "loneliness"
+            ],
+            "end": [
+              "love",
+              "acceptance"
+            ]
+          },
+          "ending_tone": "bittersweet",
+          "intensity": "heavy",
+          "warnings": [
+            "child_endangerment",
+            "medical_trauma",
+            "grief",
+            "death_of_main_character",
+            "war_and_violence"
+          ],
+          "example_user_messages": [
+            "We lost our chance to have a baby and I can't stop blaming myself.",
+            "My husband and I stopped talking after everything that happened and now we're drifting apart.",
+            "I pushed him away because I thought he'd be happier without me.",
+            "I've spent years living for adventure and now I'm wondering if it's time to settle down."
+          ],
+          "spoiler": {
+            "summary": "Amy believes she is pregnant, but the Amy travelling is a Ganger duplicate; the real Amy has been kidnapped by Madame Kovarian and gives birth at Demons Run to Melody Pond, who is taken from her and turns out to be River Song, and also her childhood friend Mels. She never gets to raise her daughter. By Asylum of the Daleks, Amy and Rory are divorcing: she was left unable to have children and pushed Rory away so he could have a family with someone else. They reconcile and gradually settle into home life. In New York a Weeping Angel sends Rory back in time, and Amy chooses to let the Angel take her too, leaving the Doctor forever to live out her life with Rory in the past.",
+            "key_events": [
+              "The travelling Amy is a Ganger; the real Amy is held captive",
+              "Baby Melody is taken at Demons Run and is River Song",
+              "Left unable to have more children; she and Rory nearly divorce",
+              "They reconcile",
+              "Chooses to follow Rory into the past, leaving the Doctor forever"
+            ],
+            "got_right": "She faces her losses, chooses her marriage, and in the end commits fully to the man she loves.",
+            "got_wrong": "She pushes Rory away rather than share her grief, and makes decisions about their future without him."
+          }
+        }
+      ]
+    },
+    {
+      "id": "char:doctor_who/rory_williams",
+      "name": "Rory Williams",
+      "role": "A shy, loyal nurse from a small English village, devoted to his childhood best friend Amy and deeply sceptical of the mysterious man she has talked about since she was a child.",
+      "relations": [
+        {
+          "target": "char:doctor_who/amy_pond",
+          "relation": "partner"
+        }
+      ],
+      "arcs": [
+        {
+          "id": "arc:doctor_who/rory_williams/in_someone_elses_shadow",
+          "title": "Living in someone else's shadow",
+          "literal_situation": "Rory, a nurse engaged to Amy, is shocked to learn she ran off with the Doctor, the dashing 'imaginary friend' from her childhood. He is dragged along on their adventures, jealous, scared and quietly unsure whether Amy really loves him.",
+          "pattern_label": "feeling second-best to a more exciting rival",
+          "pattern_text": "A kind, dependable person feels permanently outshone by a charismatic figure their partner has idolised since childhood. Swept into a world where they feel out of their depth, they wrestle with jealousy and wonder whether they will ever be enough. The story asks whether quiet loyalty and steady love can matter as much as brilliance and excitement.",
+          "hook": "He has always loved her, and now he's tagging along on adventures with the man she has adored since childhood, feeling very much like the spare wheel.",
+          "why_relatable": "How do you cope with feeling second-best? Is it weak to be the careful, ordinary one? Can you trust someone's love when they seem dazzled by someone else?",
+          "watch_for": [
+            "Notice how he reacts every time he feels overshadowed.",
+            "Watch how he handles danger when the person he loves is at risk.",
+            "What would it take for him to believe he's enough?"
+          ],
+          "start_at": "DW S5E6",
+          "span": "S5-S6",
+          "situations": [
+            {
+              "id": "confidence_struggle",
+              "weight": 1.0
+            },
+            {
+              "id": "identity_and_self_acceptance",
+              "weight": 0.5
+            },
+            {
+              "id": "unrequited_love",
+              "weight": 0.4
+            }
+          ],
+          "conflicts": [
+            "control_vs_trust",
+            "fitting_in_vs_standing_out"
+          ],
+          "emotions": {
+            "start": [
+              "jealousy",
+              "inadequacy",
+              "fear"
+            ],
+            "middle": [
+              "determination",
+              "grief",
+              "love"
+            ],
+            "end": [
+              "self_respect",
+              "love",
+              "confidence"
+            ]
+          },
+          "ending_tone": "hopeful",
+          "intensity": "moderate",
+          "warnings": [
+            "death_of_main_character",
+            "grief",
+            "war_and_violence"
+          ],
+          "example_user_messages": [
+            "My girlfriend has idolised this guy since she was a kid and I feel like I can never compete.",
+            "I'm the boring, reliable one and I'm terrified she'll get bored of me.",
+            "I always feel like the sidekick in my own relationship.",
+            "How do I stop feeling jealous when I know she loves me?"
+          ],
+          "spoiler": {
+            "summary": "Rory joins the TARDIS after the Doctor pops out of the cake at his stag party. In Amy's Choice Amy shows she would rather die than live without him. He is killed by a Silurian in Cold Blood and erased from history by a crack. An Auton copy of Rory, with his memories, is forced to shoot Amy, then guards her in the Pandorica for nearly two thousand years as the Last Centurion. The rebooted universe restores the human Rory, who marries Amy and remembers everything. He grows into a man who faces down a Cyber fleet and an army to rescue his wife and child.",
+            "key_events": [
+              "Amy chooses him in Amy's Choice",
+              "Killed and erased from history by a crack",
+              "As an Auton, forced to shoot Amy",
+              "Guards the Pandorica for 2,000 years as the Last Centurion",
+              "Restored as human and marries Amy"
+            ],
+            "got_right": "He stays loyal and kind, and proves love through actions rather than words.",
+            "got_wrong": "He measures himself against the Doctor and assumes he is not enough, instead of trusting Amy."
+          }
+        },
+        {
+          "id": "arc:doctor_who/rory_williams/quiet_man_stands_up",
+          "title": "When the quiet one draws a line",
+          "literal_situation": "Later in the series, after a turning point that settles his place in Amy's life, Rory is travelling with the Doctor again, more confident but still the sensible one, as the adventures start to demand more of him and his family.",
+          "pattern_label": "a gentle person learning to fight for his family",
+          "pattern_text": "A gentle, peace-loving person who has always gone along with stronger personalities finds his family under threat. He must decide how far he will go to protect them, when to stand up to people he admires, and how to choose between a thrilling life and a normal one. The story asks what strength looks like for someone who has never wanted to be a hero.",
+          "hook": "He is no longer the nervous tag-along, but he's still the one asking whether all this danger is really worth it.",
+          "why_relatable": "How do you protect the people you love without becoming someone you're not? When should you challenge a friend you trust? What would you give up to keep your family together?",
+          "watch_for": [
+            "Notice when he stops deferring to others and speaks up.",
+            "Watch how he balances his love of home with the pull of adventure.",
+            "How does he handle it when his partner shuts him out?"
+          ],
+          "start_at": "DW S6E1",
+          "span": "S6-S7",
+          "situations": [
+            {
+              "id": "becoming_a_parent",
+              "weight": 0.7
+            },
+            {
+              "id": "standing_up_to_authority",
+              "weight": 0.7
+            },
+            {
+              "id": "caring_for_family",
+              "weight": 0.6
+            },
+            {
+              "id": "grief_and_loss",
+              "weight": 0.4
+            }
+          ],
+          "conflicts": [
+            "safety_vs_growth",
+            "control_vs_trust"
+          ],
+          "emotions": {
+            "start": [
+              "determination",
+              "anxiety"
+            ],
+            "middle": [
+              "anger",
+              "grief",
+              "loneliness"
+            ],
+            "end": [
+              "love",
+              "peace",
+              "belonging"
+            ]
+          },
+          "ending_tone": "bittersweet",
+          "intensity": "heavy",
+          "warnings": [
+            "child_endangerment",
+            "war_and_violence",
+            "death_of_main_character",
+            "grief"
+          ],
+          "example_user_messages": [
+            "I've always been the quiet one but someone threatened my family and I'm done being quiet.",
+            "My wife and I can't have kids and she pushed me away instead of talking about it.",
+            "I love my friend, but I'm tired of the risks he keeps putting my family through.",
+            "I want a normal life, a house and a job, but part of me misses the excitement."
+          ],
+          "spoiler": {
+            "summary": "After his baby daughter Melody is stolen, Rory storms a Cyber fleet ('Would you like me to repeat the question?') and joins the assault on Demons Run. He refuses to abandon an older Amy in The Girl Who Waited and calls out the Doctor for making people dangerous to themselves. Amy tries to divorce him because she can no longer have children; they reconcile. With his father Brian he balances home life and travel. In New York a Weeping Angel sends him back in time; he and Amy leap off a roof together to create a paradox, but another Angel sends him back again, and Amy follows so they can live out their lives together in the past.",
+            "key_events": [
+              "Storms the Cyber fleet to find Amy",
+              "Daughter Melody is stolen and turns out to be River Song",
+              "Refuses to leave the older Amy behind",
+              "Nearly divorces Amy, then reconciles",
+              "Sent into the past by a Weeping Angel; Amy follows him"
+            ],
+            "got_right": "He becomes brave on his own terms, stands up to the Doctor, and never gives up on his marriage.",
+            "got_wrong": "He often stays silent about his own needs and lets other people's choices shape his life."
+          }
+        }
+      ]
+    },
+    {
+      "id": "char:doctor_who/clara_oswald",
+      "name": "Clara Oswald",
+      "role": "A bright, bossy young woman in London working as a live-in nanny for a family friend's children, who has never managed to go travelling despite a book of places she dreams of seeing.",
+      "relations": [
+        {
+          "target": "char:doctor_who/twelfth_doctor",
+          "relation": "friend"
+        }
+      ],
+      "arcs": [
+        {
+          "id": "arc:doctor_who/clara_oswald/carer_who_never_left",
+          "title": "The carer who never left",
+          "literal_situation": "Clara put her plans to see the world on hold to look after the children of a family friend after they lost their mother. When the Doctor turns up offering her all of time and space, she has to decide whether she can put herself first.",
+          "pattern_label": "a caregiver choosing her own life at last",
+          "pattern_text": "A young woman shelved her own plans to look after others through a family's grief and has been the dependable one ever since. When a chance for adventure appears, she tries to have both, slipping out for a taste of freedom while keeping her responsibilities at home. The story asks whether you can take something for yourself without feeling you're abandoning the people who rely on you.",
+          "hook": "She has a well-thumbed book of places to visit, a job looking after someone else's kids, and a very strange man offering to take her anywhere.",
+          "why_relatable": "When do you get to put your own dreams first? Can you care for people and still have a life of your own? What does it mean to be needed, and why does it matter so much to her?",
+          "watch_for": [
+            "Notice how she keeps both of her lives running at once.",
+            "Watch how she talks about the places she has never been.",
+            "What does she want from this friendship, and does she ever say it?"
+          ],
+          "start_at": "DW S7E6",
+          "span": "S7",
+          "situations": [
+            {
+              "id": "caring_for_family",
+              "weight": 0.7
+            },
+            {
+              "id": "taking_a_big_risk",
+              "weight": 0.6
+            },
+            {
+              "id": "grief_and_loss",
+              "weight": 0.5
+            },
+            {
+              "id": "coming_of_age",
+              "weight": 0.4
+            }
+          ],
+          "conflicts": [
+            "duty_vs_desire",
+            "safety_vs_growth"
+          ],
+          "emotions": {
+            "start": [
+              "restlessness",
+              "longing",
+              "curiosity"
+            ],
+            "middle": [
+              "joy",
+              "grief",
+              "determination"
+            ],
+            "end": [
+              "love",
+              "determination",
+              "belonging"
+            ]
+          },
+          "ending_tone": "hopeful",
+          "intensity": "moderate",
+          "warnings": [
+            "grief",
+            "death_of_loved_one",
+            "war_and_violence"
+          ],
+          "example_user_messages": [
+            "I've been looking after other people's kids for years and I never got to go travelling.",
+            "I put my plans on hold when a family needed me and now I'm scared to take them back.",
+            "I want adventure but I feel guilty leaving the people who rely on me.",
+            "I always end up being the responsible one and I don't know how to be anything else."
+          ],
+          "spoiler": {
+            "summary": "Clara is the 'Impossible Girl': the Doctor has already met and lost two other versions of her, Oswin in the Dalek Asylum and a Victorian governess. She travels with the Eleventh Doctor on weekly trips while keeping her nanny job, and learns her own mother died when she was young; she offers the leaf that brought her parents together to an ancient god. At Trenzalore she jumps into the Doctor's timestream, splintering into echoes across all his lives to save him from the Great Intelligence, and he rescues her. She stays with him through the Siege of Trenzalore, and when he is dying of old age she persuades the Time Lords to give him a new cycle of regenerations.",
+            "key_events": [
+              "Echoes of Clara (Oswin, the Victorian governess) died before",
+              "Offers her mother's leaf to the Old God",
+              "Jumps into the Doctor's timestream to save him",
+              "Persuades the Time Lords to grant him new regenerations"
+            ],
+            "got_right": "She finds the courage to take her life into her own hands, and her care for others becomes an act of extraordinary bravery.",
+            "got_wrong": "Her need to be needed makes it hard for her to separate her own wants from other people's needs."
+          }
+        },
+        {
+          "id": "arc:doctor_who/clara_oswald/living_a_double_life",
+          "title": "Keeping two lives from colliding",
+          "literal_situation": "Later in the series, after a turning point that makes the Doctor almost unrecognisable to her, Clara is a schoolteacher trying to start a relationship with a colleague, Danny, while secretly carrying on her adventures on the side.",
+          "pattern_label": "hiding one part of your life from another",
+          "pattern_text": "A capable, confident woman runs a demanding job, a new relationship and a secret life of thrills she can't bring herself to give up, telling each side only part of the truth. The more she juggles, the more she discovers she likes being in control, and the more she lies to keep everything from collapsing. The story asks what happens when the parts of your life you keep separate collide.",
+          "hook": "She's balancing a job, a new romance and a friend who now seems like a stranger, and nobody knows the whole story.",
+          "why_relatable": "Why do we hide parts of ourselves from the people we love? When does managing everything turn into controlling everything? Can you keep everyone happy if nobody knows the whole truth?",
+          "watch_for": [
+            "Notice who she lies to, and how she justifies it.",
+            "Watch how the two most important men in her life each see a different version of her.",
+            "What does she feel when she is the one making the hard calls?"
+          ],
+          "start_at": "DW S8E1",
+          "span": "S8",
+          "situations": [
+            {
+              "id": "falling_for_someone_unexpected",
+              "weight": 0.6
+            },
+            {
+              "id": "identity_and_self_acceptance",
+              "weight": 0.6
+            },
+            {
+              "id": "grief_and_loss",
+              "weight": 0.6
+            },
+            {
+              "id": "friendship_ending",
+              "weight": 0.4
+            }
+          ],
+          "conflicts": [
+            "truth_vs_protecting_others",
+            "career_vs_relationships"
+          ],
+          "emotions": {
+            "start": [
+              "confusion",
+              "curiosity"
+            ],
+            "middle": [
+              "guilt",
+              "anxiety",
+              "anger"
+            ],
+            "end": [
+              "grief",
+              "loneliness"
+            ]
+          },
+          "ending_tone": "bittersweet",
+          "intensity": "heavy",
+          "warnings": [
+            "death_of_loved_one",
+            "grief",
+            "betrayal",
+            "war_and_violence"
+          ],
+          "example_user_messages": [
+            "I'm keeping a big part of my life secret from my boyfriend and it's getting harder to hide.",
+            "I tell everyone a different version of the truth and I'm scared it's all about to blow up.",
+            "I think I like being in control more than I want to admit.",
+            "My best friend changed and I'm not sure I still know him."
+          ],
+          "spoiler": {
+            "summary": "Clara nearly leaves the new Doctor until a phone call from his previous self. She falls for Danny Pink, a former soldier, and lies to both him and the Doctor, who clash when they meet. She becomes more like the Doctor, making ruthless calls. Danny is killed by a car; in grief Clara betrays the Doctor on a volcano, threatening to destroy the TARDIS keys to force him to save Danny, and he helps her anyway. Danny, converted into a Cyberman by Missy, sacrifices himself to save the world and later gives his one way back to life to a child he killed as a soldier. Clara and the Doctor each lie that they are happy and part.",
+            "key_events": [
+              "Lies to Danny and the Doctor about each other",
+              "Danny is killed by a car",
+              "Betrays the Doctor on a volcano to save Danny; he forgives her",
+              "Danny becomes a Cyberman and sacrifices himself",
+              "Clara and the Doctor part with mutual lies"
+            ],
+            "got_right": "She is brave and capable, and fiercely loves both men in her life.",
+            "got_wrong": "She lies to everyone, tries to control people and outcomes, and nearly destroys a friendship in her grief."
+          }
+        },
+        {
+          "id": "arc:doctor_who/clara_oswald/outrunning_grief",
+          "title": "Chasing the thrill to outrun the pain",
+          "literal_situation": "Later in the series, after a turning point that leaves her quietly grieving, Clara has thrown herself back into adventures with the Doctor, leaping at danger with a joy that looks a lot like recklessness.",
+          "pattern_label": "risk-taking as a way to outrun grief",
+          "pattern_text": "After a devastating loss, a person throws themselves into thrills and danger, trying to become as fearless as the mentor they admire. Friends see the recklessness growing and struggle to hold them back. The story asks whether chasing adrenaline is healing or hiding, and what happens when you believe you can't be hurt anymore.",
+          "hook": "She's the boldest she has ever been, leaping into danger as if it were a game she can't lose.",
+          "why_relatable": "Is throwing yourself into excitement a way to heal or a way to hide? What happens when you try to become the person you admire? Who gets to tell you you're taking too many risks?",
+          "watch_for": [
+            "Notice how she copies her friend's habits and phrases.",
+            "Watch how she reacts when he tries to protect her.",
+            "What is she running toward, and what might she be running from?"
+          ],
+          "start_at": "DW S9E1",
+          "span": "S9",
+          "situations": [
+            {
+              "id": "grief_and_loss",
+              "weight": 0.9
+            },
+            {
+              "id": "taking_a_big_risk",
+              "weight": 0.8
+            },
+            {
+              "id": "identity_and_self_acceptance",
+              "weight": 0.5
+            },
+            {
+              "id": "mentor_and_protege",
+              "weight": 0.5
+            }
+          ],
+          "conflicts": [
+            "safety_vs_growth",
+            "control_vs_trust"
+          ],
+          "emotions": {
+            "start": [
+              "numbness",
+              "restlessness"
+            ],
+            "middle": [
+              "joy",
+              "pride",
+              "confidence"
+            ],
+            "end": [
+              "acceptance",
+              "freedom"
+            ]
+          },
+          "ending_tone": "bittersweet",
+          "intensity": "heavy",
+          "warnings": [
+            "death_of_main_character",
+            "grief",
+            "war_and_violence"
+          ],
+          "example_user_messages": [
+            "Since my partner died I keep doing more and more dangerous things just to feel something.",
+            "My friends say I'm being reckless, but it's the only time I feel alive.",
+            "I've been trying to be as fearless as my mentor and I'm not sure it's healthy.",
+            "I don't think I'm afraid of anything anymore, and that scares the people around me."
+          ],
+          "spoiler": {
+            "summary": "Clara takes ever bigger risks, dressing and acting like the Doctor. In Face the Raven she takes on Rigsy's death sentence believing she can outwit it, and dies facing the raven, telling the Doctor not to seek revenge. The Doctor pulls her out of her final heartbeat on Gallifrey, but his attempt to erase her memories of him backfires and he forgets her instead. Clara, now living between heartbeats, travels the universe in her own stolen TARDIS with Ashildr, knowing she must one day return to her death.",
+            "key_events": [
+              "Takes Rigsy's death sentence",
+              "Dies facing the raven",
+              "Pulled out of her last heartbeat on Gallifrey",
+              "The Doctor forgets her instead of the other way round",
+              "Travels in her own TARDIS with Ashildr"
+            ],
+            "got_right": "She owns her choices, faces her death bravely, and asks her friend not to take revenge.",
+            "got_wrong": "She confuses recklessness with courage and doesn't let the people who love her keep her safe."
+          }
+        }
+      ]
+    }
+  ]
+}

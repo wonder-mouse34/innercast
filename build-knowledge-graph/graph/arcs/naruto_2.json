@@ -1,0 +1,553 @@
+{
+  "show": "naruto",
+  "characters": [
+    {
+      "id": "char:naruto/gaara",
+      "name": "Gaara",
+      "role": "A feared, silent young fighter from a desert village, sent abroad with his two older siblings to compete in the Chūnin Exams; everyone around him, including his own family, is terrified of him.",
+      "relations": [
+        {"target": "char:naruto/naruto_uzumaki", "relation": "friend"},
+        {"target": "char:naruto/rock_lee", "relation": "rival"},
+        {"target": "char:naruto/sasuke_uchiha", "relation": "rival"},
+        {"target": "char:naruto/shikamaru_nara", "relation": "colleague"},
+        {"target": "char:naruto/tsunade", "relation": "colleague"}
+      ],
+      "arcs": [
+        {
+          "id": "arc:naruto/gaara/the_boy_they_called_a_monster",
+          "title": "The boy everyone treated as a monster",
+          "literal_situation": "A boy with a destructive creature sealed inside him since birth, feared by his village and even by his own brother and sister, enters the Chūnin Exams and kills without hesitation, insisting he lives only for himself.",
+          "pattern_label": "hardening yourself after childhood rejection",
+          "pattern_text": "Someone who was treated as dangerous and unlovable from childhood decided the only safe way to live was to trust no one and care only about themselves. Meeting a person with the same wounds who chose connection instead forces them to question whether their coldness was ever strength at all.",
+          "hook": "He is the most dangerous competitor in the exams: cold to his siblings, unable to sleep, and convinced that other people exist only as threats to him.",
+          "why_relatable": "What happens to a child who reaches out and is met only with fear? Is shutting everyone out a way of surviving or a way of disappearing? Can someone who has hurt others ever be seen as anything other than what he has been?",
+          "watch_for": [
+            "What does he believe gives his life meaning, and where did that belief come from?",
+            "How does he react when someone refuses to be afraid of him?",
+            "How does he treat his siblings, and does that ever shift?"
+          ],
+          "start_at": "Naruto Ep 20",
+          "span": "Naruto Ep 20-80 (from the Chūnin Exams), with a short epilogue later in the series",
+          "situations": [
+            {"id": "loneliness", "weight": 0.9},
+            {"id": "identity_and_self_acceptance", "weight": 0.7},
+            {"id": "redemption_after_mistakes", "weight": 0.7},
+            {"id": "difficult_parent", "weight": 0.6}
+          ],
+          "conflicts": ["independence_vs_connection", "past_vs_future"],
+          "emotions": {"start": ["loneliness", "anger", "rejection"], "middle": ["fear", "confusion"], "end": ["hope", "belonging"]},
+          "ending_tone": "hopeful",
+          "intensity": "heavy",
+          "warnings": ["abuse", "child_endangerment", "betrayal", "death_of_loved_one", "war_and_violence", "graphic_gore"],
+          "example_user_messages": [
+            "Everyone has always been scared of me so I stopped trying to be nice. Now I don't even know how to let people in.",
+            "My dad treated me like a problem to be managed, not a kid. I learned early that nobody was on my side.",
+            "I've hurt people because I was angry at the whole world. I don't know if I'm allowed to change.",
+            "I met someone who went through the same stuff I did but turned out kind, and it honestly made me furious. Why couldn't I do that?"
+          ],
+          "spoiler": {
+            "summary": "Gaara's father, the Fourth Kazekage, had the One-Tail sealed into him before birth; his mother Karura died giving birth to him. As a child he tried to be kind but was feared, and his uncle Yashamaru, the one person he trusted, turned out to be an assassin sent by his father. Yashamaru told him (falsely) that his mother never loved him, then blew himself up. Gaara carved the kanji for 'love' on his forehead, resolved to love only himself, and became a killer who survived repeated assassination attempts. In the Chūnin Exams he crushes Rock Lee's arm and leg and later tries to kill him in hospital. During the invasion of the Leaf he transforms into Shukaku to fight Naruto, a fellow jinchūriki who was just as lonely but draws strength from protecting his friends. Defeated, Gaara realises he gave up on people too easily, apologises to his siblings, and begins trying to live like Naruto, later saving Lee from Kimimaro during the Sasuke Retrieval mission.",
+            "key_events": [
+              "One-Tail sealed into him before birth; mother dies in childbirth",
+              "Uncle Yashamaru attempts to kill him on his father's orders and lies that his mother hated him",
+              "Crushes Rock Lee's arm and leg in the preliminaries",
+              "Transforms into Shukaku during the invasion of the Leaf",
+              "Defeated by Naruto, who understands his loneliness",
+              "Apologises to his siblings",
+              "Returns to save Rock Lee from Kimimaro"
+            ],
+            "got_right": "Once shown another way, he takes responsibility for who he has been instead of defending it: he apologises, protects the person he hurt most, and actually changes his behaviour.",
+            "got_wrong": "He treated the rejection he suffered as proof that connection was impossible, and turned his pain outward on innocent people, including his own siblings."
+          }
+        },
+        {
+          "id": "arc:naruto/gaara/leading_those_who_feared_him",
+          "title": "Leading the people who once feared him",
+          "literal_situation": "Once the story moves him into a new role, leading the very village that once wanted him dead, he has to win over elders who doubt him and citizens who remember what he was, while a dangerous organisation is hunting people like him.",
+          "pattern_label": "earning trust from people who remember your worst",
+          "pattern_text": "Someone with a history of hurting others steps into a position of responsibility over the very people who once feared them. They have to lead by example rather than words, win over those who still doubt them, and eventually reckon with the parent whose choices shaped their darkest years.",
+          "hook": "He is the youngest leader his village has ever had, still only half-trusted by his own council, and he knows he is a target.",
+          "why_relatable": "Can you lead people who remember you at your worst? Do you have to earn forgiveness before you can offer it? How do you make peace with a parent whose choices hurt you?",
+          "watch_for": [
+            "How does he respond to people who still doubt him?",
+            "What does he try to change about how his village deals with old enemies?",
+            "What is he hoping others consumed by hatred will hear when he talks to them?"
+          ],
+          "start_at": "Shippuden Ep 2",
+          "span": "Shippuden: from the opening arc onward, returning in later arcs",
+          "situations": [
+            {"id": "becoming_a_manager", "weight": 0.8},
+            {"id": "redemption_after_mistakes", "weight": 0.8},
+            {"id": "difficult_parent", "weight": 0.6},
+            {"id": "finding_your_people", "weight": 0.5}
+          ],
+          "conflicts": ["past_vs_future", "revenge_vs_forgiveness"],
+          "emotions": {"start": ["self_doubt", "determination"], "middle": ["grief", "hope"], "end": ["belonging", "peace"]},
+          "ending_tone": "hopeful",
+          "intensity": "heavy",
+          "warnings": ["death_of_main_character", "war_and_violence", "grief", "abuse"],
+          "example_user_messages": [
+            "I just got promoted to lead a team of people who knew me back when I was a total mess. I can feel them waiting for me to screw up.",
+            "I did a lot of damage when I was younger. I'm trying to be someone people can rely on now but I don't know if it's enough.",
+            "My father made choices that wrecked my childhood. Now that I'm responsible for other people I kind of understand him, and I hate that.",
+            "How do you get people to trust you when your reputation walks into the room before you do?"
+          ],
+          "spoiler": {
+            "summary": "Having become Kazekage to prove he is no longer a weapon, Gaara defends his village from Deidara but is captured by Akatsuki and dies when Shukaku is extracted from him. Naruto's team and his own villagers pursue him; the elder Chiyo gives her life to revive him, and he wakes up surrounded by people who came to rescue him. At the Five Kage Summit he calls out the older Kage's cynicism, tries to reach Sasuke through his own experience of hatred, and becomes commander of the Allied Shinobi Forces, uniting old enemies with a speech. In the war he fights his reincarnated father Rasa, forgives him, and learns that the sand that always protected him was his mother's love, not the monster's.",
+            "key_events": [
+              "Captured by Deidara while shielding his village",
+              "Dies when Shukaku is extracted; revived by Chiyo's self-sacrifice",
+              "Wakes to find his villagers came to rescue him",
+              "Chosen commander of the Allied Shinobi Forces; gives a unifying speech",
+              "Faces his reincarnated father Rasa and forgives him",
+              "Learns his mother loved him and protected him through the sand"
+            ],
+            "got_right": "He leads by example, offers forgiveness first, and uses his own history of hatred to reach others instead of hiding it.",
+            "got_wrong": "At times he tries to protect people by overruling them, like wanting to keep Naruto out of the war, rather than trusting their judgement."
+          }
+        }
+      ]
+    },
+    {
+      "id": "char:naruto/shikamaru_nara",
+      "name": "Shikamaru Nara",
+      "role": "A brilliant but deeply lazy young ninja who wants nothing more than an unremarkable life watching clouds, forever sighing 'what a drag'.",
+      "relations": [
+        {"target": "char:naruto/naruto_uzumaki", "relation": "friend"},
+        {"target": "char:naruto/tsunade", "relation": "boss"},
+        {"target": "char:naruto/gaara", "relation": "colleague"},
+        {"target": "char:naruto/neji_hyuga", "relation": "colleague"},
+        {"target": "char:naruto/kakashi_hatake", "relation": "colleague"}
+      ],
+      "arcs": [
+        {
+          "id": "arc:naruto/shikamaru_nara/reluctant_leader",
+          "title": "The genius who didn't want responsibility",
+          "literal_situation": "A lazy, gifted genin who would rather nap than compete is dragged into the Chūnin Exams with his team, and keeps finding that every time he helps his friends he gets handed more responsibility.",
+          "pattern_label": "being promoted before you feel ready",
+          "pattern_text": "Someone who has always coasted on raw ability and wants only a quiet, low-stakes life keeps being handed responsibility because they are good at it. When they are put in charge of their friends and things go badly, they have to decide whether to walk away or accept that the others may be safer with them leading.",
+          "hook": "He is the least motivated kid in his class, with no ambition beyond avoiding hassle, and people keep noticing he is smarter than he lets on.",
+          "why_relatable": "What do you do when you're good at something you never wanted to be responsible for? Is avoiding ambition a way to be happy, or a way to never risk failing? When you lead friends into something risky, how much of what happens is on you?",
+          "watch_for": [
+            "When does he choose to step up, even while complaining?",
+            "How does he handle being put in charge of people his own age?",
+            "What does he take from the adults around him when things go wrong?"
+          ],
+          "start_at": "Naruto Ep 23",
+          "span": "Naruto: from the Chūnin Exams to the end of the first series",
+          "situations": [
+            {"id": "responsibility_you_didnt_ask_for", "weight": 0.9},
+            {"id": "leading_former_peers", "weight": 0.8},
+            {"id": "becoming_a_manager", "weight": 0.6},
+            {"id": "confidence_struggle", "weight": 0.5}
+          ],
+          "conflicts": ["safety_vs_growth", "duty_vs_desire"],
+          "emotions": {"start": ["boredom", "restlessness"], "middle": ["anxiety", "guilt", "self_doubt"], "end": ["determination", "self_respect"]},
+          "ending_tone": "hopeful",
+          "intensity": "moderate",
+          "warnings": ["war_and_violence", "child_endangerment"],
+          "example_user_messages": [
+            "I got made team lead even though I never asked for it, and honestly I just wanted a chill job.",
+            "Everyone says I'm smart but I've always done the bare minimum. Now people are depending on me and it's terrifying.",
+            "The first thing I was ever in charge of went badly and my friends got hurt. I don't think I'm cut out to lead.",
+            "I don't want a big impressive life. Is it wrong to just want things to be easy?"
+          ],
+          "spoiler": {
+            "summary": "Shikamaru outwits Kin and then Temari in the Chūnin Exams but forfeits against Temari, judging he has no chakra left; he is still the only genin promoted to chūnin. Soon after, with the village understaffed, Tsunade makes him leader of a genin team sent to bring back Sasuke. He recruits Naruto, Chōji, Kiba and Neji, and one by one they split off to fight the Sound Four; he barely survives Tayuya until Temari rescues him. His teammates come back critically injured and Sasuke escapes. Convinced he is unfit to lead, he is told by his father that his friends will keep going on missions either way, and that they're more likely to survive if he learns from this and leads them. When he hears everyone will live, he breaks down and vows to do better next time.",
+            "key_events": [
+              "Forfeits against Temari despite having her trapped",
+              "Only genin promoted to chūnin",
+              "Leads the Sasuke Retrieval team on his first mission as leader",
+              "Rescued from Tayuya by Temari",
+              "Teammates critically injured; Sasuke escapes",
+              "His father's talk; tearful vow to become a better leader"
+            ],
+            "got_right": "He takes the failure seriously instead of shrugging it off, and chooses to improve rather than quit.",
+            "got_wrong": "He hides behind 'what a drag' and aims low partly to avoid the risk of failing at things that matter."
+          }
+        },
+        {
+          "id": "arc:naruto/shikamaru_nara/losing_a_mentor",
+          "title": "The teacher who believed in him",
+          "literal_situation": "A little older now, he plays shōgi with his laid-back teacher Asuma, who has started acting strangely, as their platoon is sent to hunt down two dangerous criminals roaming the Land of Fire.",
+          "pattern_label": "growing up fast after losing a mentor",
+          "pattern_text": "A young person sheltered by a relaxed, protective mentor is suddenly faced with loss and the realisation that no one can keep them safe forever. They have to choose what to do with their grief and anger, and what responsibility they will carry for the people who come after them.",
+          "hook": "He is comfortable, still dodging long-term goals, and the one adult who really gets him is behaving oddly.",
+          "why_relatable": "What do you owe the people who taught you? Can anger become something constructive, or does it just consume you? When it's your turn to protect the next generation, will you be ready?",
+          "watch_for": [
+            "In the shōgi conversations, what is the 'king' supposed to be?",
+            "How does he handle grief differently from the friends around him?",
+            "What does he choose to carry forward from the people who shaped him?"
+          ],
+          "start_at": "Shippuden: Hidan and Kakuzu arc",
+          "span": "Shippuden: from the Hidan and Kakuzu arc onward",
+          "situations": [
+            {"id": "grief_and_loss", "weight": 0.9},
+            {"id": "mentor_and_protege", "weight": 0.7},
+            {"id": "coming_of_age", "weight": 0.6},
+            {"id": "responsibility_you_didnt_ask_for", "weight": 0.5}
+          ],
+          "conflicts": ["revenge_vs_forgiveness", "holding_on_vs_letting_go"],
+          "emotions": {"start": ["curiosity", "anxiety"], "middle": ["grief", "anger", "guilt"], "end": ["determination", "acceptance"]},
+          "ending_tone": "bittersweet",
+          "intensity": "heavy",
+          "warnings": ["death_of_loved_one", "grief", "war_and_violence", "graphic_gore"],
+          "example_user_messages": [
+            "My mentor died suddenly and I can't stop thinking about what I should have done differently.",
+            "I'm so angry about losing him that all I can think about is making someone pay.",
+            "The person who always had my back is gone, and now people expect me to be that for others.",
+            "I used to avoid anything serious. Losing someone made me realise I can't just coast anymore."
+          ],
+          "spoiler": {
+            "summary": "Asuma is killed by the immortal Hidan's curse while Shikamaru watches, unable to stop it; with his last breath Asuma whispers to Shikamaru who the 'king' is. Shikamaru lights his teacher's last cigarette, skips the funeral, and plans revenge. With Chōji, Ino and Kakashi he tracks down Hidan and Kakuzu, separates Hidan, blows him apart and buries him alive in the Nara clan forest. At Asuma's grave he vows to teach Kurenai's unborn child as Asuma taught him, and realises the king is the next generation. In the Fourth Great Ninja War his team defeats the reincarnated Asuma, who tells them their teamwork is complete, and his father Shikaku is killed when headquarters is destroyed after handing Shikamaru the role of chief strategist.",
+            "key_events": [
+              "Asuma killed by Hidan's curse",
+              "Smokes Asuma's last cigarette; skips the funeral",
+              "Traps Hidan and buries him alive in the Nara forest",
+              "Vows to teach Asuma and Kurenai's unborn daughter",
+              "Realises the 'king' is the next generation",
+              "Defeats the reincarnated Asuma in the war",
+              "Father Shikaku dies; Shikamaru becomes chief strategist"
+            ],
+            "got_right": "He channels grief into careful action and then into responsibility for the future, keeping his teacher's values alive.",
+            "got_wrong": "In the first rush of grief he isolates himself and makes revenge his whole purpose, skipping the chance to mourn with others."
+          }
+        }
+      ]
+    },
+    {
+      "id": "char:naruto/itachi_uchiha",
+      "name": "Itachi Uchiha",
+      "role": "A calm, feared fugitive in a sinister criminal organisation, notorious for murdering his entire clan in one night and sparing only his younger brother Sasuke, who has sworn revenge.",
+      "relations": [
+        {"target": "char:naruto/sasuke_uchiha", "relation": "sibling"},
+        {"target": "char:naruto/kakashi_hatake", "relation": "enemy"},
+        {"target": "char:naruto/jiraiya", "relation": "enemy"},
+        {"target": "char:naruto/naruto_uzumaki", "relation": "enemy"}
+      ],
+      "arcs": [
+        {
+          "id": "arc:naruto/itachi_uchiha/the_brother_who_chose_to_be_hated",
+          "title": "The older brother his sibling lives to destroy",
+          "literal_situation": "Years after slaughtering his clan, he slips back into his old village with his partner, pursuing Naruto, and runs straight into the little brother who has built his whole life around killing him.",
+          "pattern_label": "carrying a painful secret to protect someone",
+          "pattern_text": "An eldest sibling made an unbearable choice under pressure and decided the person they love most is better off hating them than knowing the truth. They carry the guilt alone, steering that person's life from a distance, until they have to face whether controlling someone for their own good was ever really love.",
+          "hook": "He is cold, untouchable and apparently without remorse; his brother is consumed by hatred for him, and he shows no sign of caring.",
+          "why_relatable": "What is left between two brothers when one of them lives for revenge? What does it cost to be hated by someone you once looked after? Can a person be defined by the worst thing they've done?",
+          "watch_for": [
+            "What does he say to his brother, and what does he leave unsaid?",
+            "What does he seem to want from the people pursuing him?",
+            "What do the small gestures between the brothers suggest?"
+          ],
+          "start_at": "Naruto Ep 81",
+          "span": "Naruto: Search for Tsunade arc; Shippuden: the Itachi Pursuit arc and later arcs",
+          "situations": [
+            {"id": "redemption_after_mistakes", "weight": 0.8},
+            {"id": "caring_for_family", "weight": 0.7},
+            {"id": "family_expectations", "weight": 0.6},
+            {"id": "illness_or_injury", "weight": 0.4}
+          ],
+          "conflicts": ["truth_vs_protecting_others", "duty_vs_desire"],
+          "emotions": {"start": ["guilt", "numbness"], "middle": ["loneliness", "dread"], "end": ["acceptance", "love", "peace"]},
+          "ending_tone": "bittersweet",
+          "intensity": "heavy",
+          "warnings": ["death_of_main_character", "death_of_loved_one", "war_and_violence", "torture", "child_endangerment", "serious_illness", "betrayal", "graphic_gore"],
+          "example_user_messages": [
+            "I did something years ago to protect my little brother and he has never forgiven me. He doesn't know the whole story and I don't think he ever should.",
+            "I let someone I love believe the worst about me because the truth would hurt them more.",
+            "I've been carrying a secret alone for so long that it's become who I am.",
+            "I tried to control how my sibling's life turned out and it backfired completely.",
+            "Is it ever too late to tell someone the truth?"
+          ],
+          "spoiler": {
+            "summary": "Itachi, a pacifist prodigy traumatised by war as a child, became a double agent between his clan and the village as the Uchiha plotted a coup. Given a choice by Danzō, he massacred his clan, including his parents, to prevent a civil war, spared Sasuke, and deliberately cast himself as the villain so Sasuke would one day kill him and be hailed as a hero. He joined Akatsuki as a spy to protect Konoha, secretly threatened Danzō to keep Sasuke safe, and kept himself alive through a terminal illness for their final battle. In that fight he seals away Orochimaru's influence from Sasuke, reaches for his eyes but only pokes his forehead, and dies smiling. Obito then tells Sasuke the truth, turning him against Konoha instead. Reincarnated during the war, Itachi breaks free of Kabuto's control, admits to Sasuke that manipulating him was a mistake, ends the reincarnation technique with Izanami, shares his real memories, and tells Sasuke he will love him no matter what.",
+            "key_events": [
+              "Massacred the Uchiha clan to prevent a coup, sparing only Sasuke",
+              "Cast himself as a villain so Sasuke would hate him",
+              "Secretly spied on Akatsuki for Konoha",
+              "Hid a terminal illness",
+              "Dies after the brothers' fight, poking Sasuke's forehead",
+              "Sasuke learns the truth from Obito",
+              "Reincarnated in the war; admits his mistake and says he will always love Sasuke"
+            ],
+            "got_right": "He protected his brother at enormous personal cost and, in the end, had the humility to admit his plan was wrong and tell the truth.",
+            "got_wrong": "He tried to control his brother's life through lies and engineered hatred instead of trusting him with the truth, and insisted on carrying everything alone."
+          }
+        }
+      ]
+    },
+    {
+      "id": "char:naruto/neji_hyuga",
+      "name": "Neji Hyūga",
+      "role": "A cold, arrogant prodigy from the lower branch of a powerful clan, bearing a seal that binds him to serve the main family, and convinced everyone's fate is fixed at birth.",
+      "relations": [
+        {"target": "char:naruto/hinata_hyuga", "relation": "rival"},
+        {"target": "char:naruto/rock_lee", "relation": "rival"},
+        {"target": "char:naruto/naruto_uzumaki", "relation": "friend"},
+        {"target": "char:naruto/shikamaru_nara", "relation": "colleague"},
+        {"target": "char:naruto/tsunade", "relation": "boss"}
+      ],
+      "arcs": [
+        {
+          "id": "arc:naruto/neji_hyuga/breaking_free_from_fate",
+          "title": "The caged prodigy who believes fate is fixed",
+          "literal_situation": "A genius genin from the branch family of his clan enters the Chūnin Exams, bitter toward the main family he is sworn to serve and eager to prove that people like his gentle cousin Hinata can never change their destiny.",
+          "pattern_label": "resenting a family hierarchy that decided your worth",
+          "pattern_text": "A highly talented person born into the lesser side of a family, forced to serve relatives who were handed the privileges they themselves earned, has concluded that life is rigged and nothing can change. The bitterness hardens into contempt for anyone who tries, until someone with far fewer advantages refuses to accept that verdict.",
+          "hook": "He is top of his class and effortlessly strong, but he is seething over an old family wound and certain that birth decides everything.",
+          "why_relatable": "If the system really is unfair, is it foolish to keep trying? Where does bitterness about your family end and your own choices begin? What does freedom look like when your obligations can't simply be walked away from?",
+          "watch_for": [
+            "How does he talk to people he considers weaker than him?",
+            "What does he believe his family took from him, and how does it colour everything?",
+            "What does he say about birds and cages?"
+          ],
+          "start_at": "Naruto Ep 21",
+          "span": "Naruto: Chūnin Exams, with his story continuing into Shippuden",
+          "situations": [
+            {"id": "family_expectations", "weight": 0.9},
+            {"id": "identity_and_self_acceptance", "weight": 0.7},
+            {"id": "grief_and_loss", "weight": 0.5},
+            {"id": "redemption_after_mistakes", "weight": 0.5}
+          ],
+          "conflicts": ["self_vs_family_expectations", "past_vs_future"],
+          "emotions": {"start": ["resentment", "anger", "pride"], "middle": ["confusion", "shame"], "end": ["freedom", "acceptance", "love"]},
+          "ending_tone": "bittersweet",
+          "intensity": "heavy",
+          "warnings": ["abuse", "death_of_loved_one", "death_of_main_character", "war_and_violence", "grief"],
+          "example_user_messages": [
+            "I'm the most capable one in my family but I'll always come second to my cousin because of who her parents are.",
+            "I honestly believe some people are just born to lose, and trying harder won't change that.",
+            "My dad died because of the rest of my family and I can't let it go.",
+            "I was really cruel to someone because she reminded me of everything I hate about my situation."
+          ],
+          "spoiler": {
+            "summary": "Neji believes his father Hizashi was forced to die for the main family, and takes his bitterness out on Hinata, nearly killing her in the Chūnin Exam preliminaries. Naruto, the supposed failure, beats him in the finals and tells him to stop hiding behind fate. His uncle Hiashi then reveals that Hizashi chose to die to protect his brother, and bows to beg Neji's forgiveness. Neji decides to choose his own destiny, trains with the main family, mends his relationship with Hinata, becomes a jōnin and her fierce protector. In the Fourth Great Ninja War he throws himself in front of the Ten-Tails' attack to save Hinata and Naruto, dying with the understanding that, like his father, he chose to die for the people he loved.",
+            "key_events": [
+              "Nearly kills Hinata in the Chūnin Exam preliminaries",
+              "Loses to Naruto in the finals",
+              "Hiashi reveals Hizashi chose his death, and bows in apology",
+              "Reconciles with the main family and trains with Hiashi",
+              "Becomes a jōnin and Hinata's protector",
+              "Dies shielding Hinata and Naruto in the war"
+            ],
+            "got_right": "When shown the truth, he lets go of years of resentment and actively builds a new relationship with the family he hated.",
+            "got_wrong": "He turned his grief into cruelty toward someone just as trapped as he was, and used 'fate' as an excuse not to question his own anger."
+          }
+        }
+      ]
+    },
+    {
+      "id": "char:naruto/jiraiya",
+      "name": "Jiraiya",
+      "role": "A legendary but outrageously perverted wandering ninja and author of racy bestsellers, who reluctantly agrees to train a loud, overlooked boy.",
+      "relations": [
+        {"target": "char:naruto/naruto_uzumaki", "relation": "protege"},
+        {"target": "char:naruto/tsunade", "relation": "friend"},
+        {"target": "char:naruto/kakashi_hatake", "relation": "colleague"},
+        {"target": "char:naruto/itachi_uchiha", "relation": "enemy"}
+      ],
+      "arcs": [
+        {
+          "id": "arc:naruto/jiraiya/the_reluctant_father_figure",
+          "title": "The drifter who became a father figure",
+          "literal_situation": "A famous hermit who chases women, dodges responsibility and rarely visits his home village is roped into training Naruto for the Chūnin Exam finals, and gradually finds himself looking after far more than a student.",
+          "pattern_label": "stepping up as a parent figure late in life",
+          "pattern_text": "A charismatic loner who has spent years avoiding commitment, and who quietly carries a history of disappointments, ends up responsible for a young person with no family. Teaching them becomes the thing that gives their own life meaning, even as they doubt they are doing it right.",
+          "hook": "He would rather be doing 'research' than teaching and treats the training as a favour, but he takes the boy more seriously than he admits.",
+          "why_relatable": "What does it mean to show up for someone who has no one else? Can a person who feels they've failed at everything still be a good mentor? How do you balance protecting someone with letting them take risks?",
+          "watch_for": [
+            "When does his clowning stop and he gets serious?",
+            "How does he respond when his student refuses to give up on something that looks hopeless?",
+            "What is he really trying to prepare his student for?"
+          ],
+          "start_at": "Naruto Ep 52",
+          "span": "Naruto: from the Chūnin Exam finals training onward, continuing into Shippuden",
+          "situations": [
+            {"id": "mentor_and_protege", "weight": 0.9},
+            {"id": "becoming_a_parent", "weight": 0.6},
+            {"id": "responsibility_you_didnt_ask_for", "weight": 0.6},
+            {"id": "midlife_reinvention", "weight": 0.4}
+          ],
+          "conflicts": ["independence_vs_connection", "safety_vs_growth"],
+          "emotions": {"start": ["restlessness", "loneliness"], "middle": ["pride", "love", "anxiety"], "end": ["peace", "acceptance"]},
+          "ending_tone": "bittersweet",
+          "intensity": "heavy",
+          "warnings": ["death_of_main_character", "war_and_violence", "graphic_gore"],
+          "example_user_messages": [
+            "I never had kids and always kept my life free, but now I'm basically raising my friend's son and I don't know what I'm doing.",
+            "I've failed at a lot of things in life. Mentoring this kid is the first thing that has felt like it matters.",
+            "I'm the fun uncle type, not a role model. But this kid looks up to me and it's scary.",
+            "How do I protect someone I care about without holding them back?"
+          ],
+          "spoiler": {
+            "summary": "Jiraiya trains Naruto for the Chūnin Exam finals, throwing him into a ravine so he summons Gamabunta, then takes him on the search for Tsunade, teaches him the Rasengan and tells Orochimaru a true shinobi is someone who never gives up. After Sasuke defects he takes Naruto away for two and a half years of training, nearly dying when Naruto's four-tailed form attacks him, which he hides from Naruto. It emerges that he was the Fourth Hokage's teacher and is Naruto's godfather, and he thinks of Naruto as a grandson. Killed by Pain, in his last moments he recognises Naruto as the Child of Prophecy and entrusts the world to him. Naruto is devastated, builds him a memorial, and later redeems Pain by living out Jiraiya's ideals.",
+            "key_events": [
+              "Trains Naruto to summon Gamabunta",
+              "Teaches Naruto the Rasengan during the search for Tsunade",
+              "Takes Naruto away for two and a half years of training",
+              "Nearly killed by Naruto's four-tailed form and keeps it from him",
+              "Revealed as the Fourth Hokage's teacher and Naruto's godfather",
+              "Dies fighting Pain, entrusting the world to Naruto"
+            ],
+            "got_right": "He believed in his student when others didn't, and treated him as family rather than a weapon to be trained.",
+            "got_wrong": "He often kept Naruto in the dark and hid behind jokes and long absences, leaving the boy on his own for long stretches."
+          }
+        },
+        {
+          "id": "arc:naruto/jiraiya/a_life_measured_in_failures",
+          "title": "Measuring a life by its failures",
+          "literal_situation": "In late middle age, he sets off alone to infiltrate a secretive, rain-soaked nation and uncover who leads a dangerous organisation, carrying decades of regret about the friend he couldn't bring home and the woman who never loved him back.",
+          "pattern_label": "reckoning with a life of disappointments",
+          "pattern_text": "Someone who appears carefree has privately kept score of every failure: the friend they couldn't save, the love that was never returned, the people they couldn't protect. Near the end of their journey they must decide whether their life was a string of losses, or whether what they passed on to others was enough.",
+          "hook": "He is joking over drinks with an old friend, but he is heading into danger alone and quietly wondering whether anything he has done has mattered.",
+          "why_relatable": "What makes a life meaningful if you never got what you most wanted? How do you live with the people you couldn't save? Is what we leave in others enough?",
+          "watch_for": [
+            "How do he and his oldest friend talk around what they actually feel?",
+            "What does he find in his enemy that shakes him?",
+            "How does he frame his own story: as a comedy, a tragedy, or something else?"
+          ],
+          "start_at": "Shippuden: Tale of Jiraiya the Gallant arc",
+          "span": "Shippuden: Tale of Jiraiya the Gallant arc",
+          "situations": [
+            {"id": "unrequited_love", "weight": 0.6},
+            {"id": "grief_and_loss", "weight": 0.6},
+            {"id": "midlife_reinvention", "weight": 0.5},
+            {"id": "redemption_after_mistakes", "weight": 0.5}
+          ],
+          "conflicts": ["holding_on_vs_letting_go", "past_vs_future"],
+          "emotions": {"start": ["nostalgia", "longing", "self_doubt"], "middle": ["dread", "betrayal", "grief"], "end": ["peace", "acceptance", "pride"]},
+          "ending_tone": "bittersweet",
+          "intensity": "heavy",
+          "warnings": ["death_of_main_character", "war_and_violence", "graphic_gore", "betrayal"],
+          "example_user_messages": [
+            "I'm in my fifties and when I look back it feels like a list of things I didn't manage to do.",
+            "The person I loved never felt the same way, and I made a joke of it for decades so it wouldn't hurt.",
+            "Someone I mentored became someone I don't recognise, and I keep wondering what I did wrong.",
+            "I want to believe my life meant something even if it didn't go the way I hoped."
+          ],
+          "spoiler": {
+            "summary": "Before leaving, Jiraiya drinks with Tsunade, who asks him to come back alive. In Amegakure he finds that the leader, Pain, is tied to the war orphans he once trained: Konan attacks him, one of the bodies is Yahiko's, and Pain has the Rinnegan he believed marked Nagato as the Child of Prophecy. Fighting the Six Paths of Pain in Sage Mode, he loses an arm and is mortally wounded after working out that each Pain is someone he met on his travels. As he dies he lists his failures (Tsunade, Orochimaru, Minato, the Third Hokage), then thinks of Naruto, forces himself back to consciousness to carve a coded message on Fukasaku's back, and sinks into the sea at peace, naming the sequel to his story 'The Tale of Naruto Uzumaki'. His message and teachings help Naruto defeat Pain and bring Nagato back to his old ideals.",
+            "key_events": [
+              "Farewell drinks with Tsunade",
+              "Recognises Konan and Yahiko's body among Pain's forces",
+              "Loses an arm to the Asura Path",
+              "Realises every Pain is someone he met on his travels",
+              "Carves a coded message on Fukasaku's back",
+              "Dies at peace, naming the sequel 'The Tale of Naruto Uzumaki'"
+            ],
+            "got_right": "At the end he judges his life by what he gave others, and spends his last strength making sure his student has what he needs.",
+            "got_wrong": "He carried his regrets alone, never let Tsunade see how he really felt, and pressed on into danger rather than retreating to report what he had learned."
+          }
+        }
+      ]
+    },
+    {
+      "id": "char:naruto/tsunade",
+      "name": "Tsunade",
+      "role": "A legendary medical ninja and granddaughter of the village's founder who has walked away from her home and her calling, drifting from town to town gambling and drinking.",
+      "relations": [
+        {"target": "char:naruto/jiraiya", "relation": "friend"},
+        {"target": "char:naruto/sakura_haruno", "relation": "protege"},
+        {"target": "char:naruto/naruto_uzumaki", "relation": "friend"},
+        {"target": "char:naruto/kakashi_hatake", "relation": "colleague"},
+        {"target": "char:naruto/shikamaru_nara", "relation": "colleague"},
+        {"target": "char:naruto/gaara", "relation": "colleague"}
+      ],
+      "arcs": [
+        {
+          "id": "arc:naruto/tsunade/the_healer_who_stopped_believing",
+          "title": "The healer who stopped believing in dreams",
+          "literal_situation": "Years after losing her little brother and the man she loved, Tsunade wanders with her apprentice, gambling and drinking, when an old enemy offers her the one thing she wants most and an old teammate asks her to come home and lead.",
+          "pattern_label": "giving up on hope after repeated loss",
+          "pattern_text": "After losing the people they loved most while encouraging their dreams, a gifted person walked away from their calling, numbing the grief with drinking and gambling and a cynical belief that hoping is for fools. A stubborn young person who reminds them of those they lost forces them to decide whether to stay safely bitter or risk believing again.",
+          "hook": "She is the greatest healer alive but can't stand the sight of blood, mocks anyone who dreams of leading, and is being tempted by an offer to get her loved ones back.",
+          "why_relatable": "Is cynicism protecting you, or keeping you stuck? What would you trade to undo a loss? Can you care about something again after it has taken so much from you?",
+          "watch_for": [
+            "How does she react to the loud boy who reminds her of someone?",
+            "What does her gambling luck seem to mean to her?",
+            "How does she weigh what she's offered against what the people she lost would have wanted?"
+          ],
+          "start_at": "Naruto: Search for Tsunade arc",
+          "span": "Naruto: Search for Tsunade arc",
+          "situations": [
+            {"id": "grief_and_loss", "weight": 0.9},
+            {"id": "starting_over", "weight": 0.6},
+            {"id": "responsibility_you_didnt_ask_for", "weight": 0.6},
+            {"id": "addiction_and_recovery", "weight": 0.4}
+          ],
+          "conflicts": ["holding_on_vs_letting_go", "past_vs_future"],
+          "emotions": {"start": ["grief", "numbness", "resentment"], "middle": ["longing", "fear"], "end": ["hope", "determination"]},
+          "ending_tone": "hopeful",
+          "intensity": "moderate",
+          "warnings": ["death_of_loved_one", "grief", "addiction", "medical_trauma", "war_and_violence", "graphic_gore"],
+          "example_user_messages": [
+            "I lost my brother and then my partner, and I just stopped caring about anything. Now I drink and gamble and don't have a plan.",
+            "People keep asking me to come back to my old career but everyone I cared about there is gone.",
+            "I think wanting big things just gets people hurt. Why bother?",
+            "Someone offered me a way to get back what I lost, but the price feels wrong and I'm still tempted.",
+            "This kid I met reminds me so much of my little brother that it hurts to be around him."
+          ],
+          "spoiler": {
+            "summary": "Tsunade lost her brother Nawaki and her lover Dan in the war, each soon after she gave them the First Hokage's necklace to support their dream of becoming Hokage; Dan's death left her with a phobia of blood, and she left the village. Orochimaru offers to bring them back if she heals his arms. Jiraiya asks her to become the Fifth Hokage; she mocks the title as a fool's job and bets Naruto her necklace that he can't master the Rasengan in a week. She drugs Jiraiya and goes to Orochimaru, but tries to kill him instead, knowing Nawaki and Dan wouldn't want to return at the village's expense. Kabuto paralyses her with her fear of blood, but when Naruto nearly dies she saves him, throws her own body in front of Orochimaru's sword to protect him, overcomes her phobia, and accepts the role of Fifth Hokage, giving Naruto the necklace and kissing his forehead.",
+            "key_events": [
+              "Nawaki and Dan both died after she gave them the necklace",
+              "Orochimaru offers to resurrect them",
+              "Bets Naruto the necklace he can't master the Rasengan",
+              "Drugs Jiraiya, then attacks Orochimaru instead of healing him",
+              "Overcomes her fear of blood to protect Naruto",
+              "Becomes the Fifth Hokage and gives Naruto the necklace"
+            ],
+            "got_right": "Faced with a tempting shortcut back to the past, she chooses what her loved ones would have wanted and commits to the living.",
+            "got_wrong": "She spent years numbing grief with drink and gambling, and dismissed other people's dreams so she wouldn't have to feel hope again."
+          }
+        },
+        {
+          "id": "arc:naruto/tsunade/sending_loved_ones_into_danger",
+          "title": "Sending the people you love into danger",
+          "literal_situation": "Once the story puts her in charge, Tsunade juggles an understaffed village, a meddling council, a bottomless workload and a growing threat that is hunting Naruto, and she is the one who decides who goes on each dangerous mission.",
+          "pattern_label": "leading while afraid of losing people",
+          "pattern_text": "A leader who has already lost too many people now has to send the ones they love into danger and trust them to come back. They carry the weight of every decision, push back against those who want to wrap the young in cotton wool, and must eventually find out whether they can keep going for the living rather than the dead.",
+          "hook": "She is overworked, short-tempered and still reaching for the sake, fiercely protective of the young people she sends out, and her closest old friend keeps taking the most dangerous jobs.",
+          "why_relatable": "How do you let people you care about take risks? What does a leader owe the people who get hurt following their orders? When grief hits, can you keep showing up for everyone else?",
+          "watch_for": [
+            "How does she argue with the elders who want to keep Naruto hidden away?",
+            "What is she betting on, and why?",
+            "What does she do with her own grief when no one is watching?"
+          ],
+          "start_at": "Shippuden Ep 1",
+          "span": "Shippuden: from the first episode onward",
+          "situations": [
+            {"id": "becoming_a_manager", "weight": 0.8},
+            {"id": "grief_and_loss", "weight": 0.7},
+            {"id": "burnout_at_work", "weight": 0.5},
+            {"id": "mentor_and_protege", "weight": 0.5}
+          ],
+          "conflicts": ["control_vs_trust", "holding_on_vs_letting_go"],
+          "emotions": {"start": ["overwhelm", "anxiety"], "middle": ["dread", "grief"], "end": ["acceptance", "peace"]},
+          "ending_tone": "bittersweet",
+          "intensity": "heavy",
+          "warnings": ["death_of_loved_one", "grief", "war_and_violence", "graphic_gore", "addiction"],
+          "example_user_messages": [
+            "I manage a team and every time I send someone into a risky situation I lie awake worrying.",
+            "My oldest friend keeps volunteering for the hardest assignments and I can't bring myself to stop him.",
+            "My bosses want to keep the most talented young person on our team out of harm's way, but I think it's holding him back.",
+            "I lost someone important and had to keep working like nothing happened."
+          ],
+          "spoiler": {
+            "summary": "Tsunade trains Sakura, reforms Team 7 and repeatedly defends sending Naruto on missions against the council. After farewell drinks, Jiraiya leaves to investigate Akatsuki's leader; she bets he won't come back, hoping her bad luck will save him. He dies fighting Pain, and she cries alone. When Pain attacks Konoha she spreads Katsuyu through the village to heal everyone, pouring out all her chakra and falling into a coma. In the war she fights Madara alongside the other Kage, is cut in half, and is saved at the last moment by Dan's spirit, who tells her that she herself is his dream. Healed with Orochimaru's help, she notes that his change of heart might have saved Jiraiya had it come sooner.",
+            "key_events": [
+              "Defends sending Naruto on missions against the council",
+              "Bets Jiraiya won't come back; he dies fighting Pain",
+              "Cries alone for Jiraiya",
+              "Shields the whole village through Katsuyu during Pain's assault and falls into a coma",
+              "Cut in half fighting Madara; saved by Dan's spirit",
+              "Dan tells her she is his dream; reluctantly thanks Orochimaru"
+            ],
+            "got_right": "She trusts the next generation, fights for their right to take risks, and gives everything to protect her village.",
+            "got_wrong": "She leans on drink and on others to shoulder the dangerous work, and struggles to tell the people who matter what she feels until it's too late."
+          }
+        }
+      ]
+    }
+  ]
+}

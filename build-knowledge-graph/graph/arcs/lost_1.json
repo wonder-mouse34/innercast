@@ -1,0 +1,758 @@
+{
+  "show": "lost",
+  "characters": [
+    {
+      "id": "char:lost/jack_shephard",
+      "name": "Jack Shephard",
+      "role": "A spinal surgeon flying home with his father's coffin who becomes the reluctant leader of a group of plane-crash survivors.",
+      "relations": [
+        {"target": "char:lost/kate_austen", "relation": "partner"},
+        {"target": "char:lost/juliet_burke", "relation": "ex_partner"},
+        {"target": "char:lost/james_sawyer_ford", "relation": "rival"},
+        {"target": "char:lost/john_locke", "relation": "rival"},
+        {"target": "char:lost/claire_littleton", "relation": "sibling"},
+        {"target": "char:lost/hugo_hurley_reyes", "relation": "friend"},
+        {"target": "char:lost/sayid_jarrah", "relation": "friend"},
+        {"target": "char:lost/desmond_hume", "relation": "friend"},
+        {"target": "char:lost/benjamin_linus", "relation": "enemy"}
+      ],
+      "arcs": [
+        {
+          "id": "arc:lost/jack_shephard/the_man_who_has_to_fix_everything",
+          "title": "The man who has to fix everything",
+          "literal_situation": "Minutes after a plane crash on a remote island, a surgeon runs from victim to victim, and the other survivors start looking to him for every decision.",
+          "pattern_label": "a compulsive fixer thrust into leading others",
+          "pattern_text": "A person who copes by taking responsibility for everyone suddenly becomes the one everybody turns to. Their competence holds the group together, but their need to control every outcome, and their inability to accept failure, strains every relationship. The question is whether they can ever trust others, or trust the situation itself, and put the weight down.",
+          "hook": "Jack wakes up alone in the jungle, bleeding, and within minutes is saving strangers on a burning beach. He does not want to be in charge, yet he can't stop himself from stepping in.",
+          "why_relatable": "He is the person who says yes to every crisis and then resents the load. Can he lead without having to be right about everything? What happens to a leader who can't admit fear or let anyone else decide?",
+          "watch_for": [
+            "What does he do when a problem genuinely can't be fixed?",
+            "How does he react when someone else in the group challenges his authority?",
+            "Is he leading because the group needs it, or because he needs to be needed?"
+          ],
+          "start_at": "S1E1",
+          "span": "S1-S6",
+          "situations": [
+            {"id": "responsibility_you_didnt_ask_for", "weight": 0.95},
+            {"id": "becoming_a_manager", "weight": 0.6},
+            {"id": "burnout_at_work", "weight": 0.5},
+            {"id": "standing_up_to_authority", "weight": 0.3}
+          ],
+          "conflicts": ["control_vs_trust", "perfectionism_vs_good_enough"],
+          "emotions": {"start": ["overwhelm", "determination", "anxiety"], "middle": ["anger", "guilt", "inadequacy"], "end": ["acceptance", "peace"]},
+          "ending_tone": "bittersweet",
+          "intensity": "heavy",
+          "warnings": ["death_of_main_character", "death_of_loved_one", "war_and_violence", "medical_trauma", "betrayal", "grief"],
+          "example_user_messages": [
+            "Everyone at work comes to me with every problem and I can't say no, but I'm exhausted and kind of angry about it.",
+            "I got promoted to lead the team and now I feel like any mistake anyone makes is my fault.",
+            "I don't know how to let other people make decisions. I always think I can do it better and it's wrecking my relationships.",
+            "My partner says I treat her like a project to fix instead of a person."
+          ],
+          "spoiler": {
+            "summary": "Jack becomes the survivors' de facto leader, clashing constantly with Locke (faith vs. reason) and competing with Sawyer. He is captured by the Others, negotiates his own way home, and eventually gets six survivors off the Island. Off-island his guilt breaks him, and he returns believing it is his destiny. His plan to reset time with a bomb fails and costs Juliet her life. At his lowest he finally lets go of control, cedes decisions to Sawyer, accepts a faith-based purpose, volunteers to become the Island's protector, kills the Man in Black with Kate's help and sacrifices himself to restore the Heart of the Island, dying in the bamboo field where he woke up, not alone. In the flash-sideways he lets go and moves on with his friends.",
+            "key_events": [
+              "Leads survivors to the caves: 'If we can't live together, we're going to die alone'",
+              "Power struggle with Locke over the Hatch and the button",
+              "Captured by the Others; operates on Ben to save Kate and Sawyer",
+              "Calls the freighter and gets six survivors off the Island",
+              "Detonates the bomb to reset time; Juliet dies",
+              "Cedes decision-making to Sawyer and accepts he is a candidate",
+              "Becomes the Island's protector, kills the Man in Black",
+              "Dies restoring the Heart of the Island; hands protector role to Hurley"
+            ],
+            "got_right": "His courage, his willingness to act in a crisis and his eventual willingness to hand over control and trust something bigger than himself.",
+            "got_wrong": "Treating every outcome as his personal responsibility, refusing to admit fear, bulldozing others' choices and making reckless all-or-nothing plans (like the bomb) to undo his pain."
+          }
+        },
+        {
+          "id": "arc:lost/jack_shephard/living_in_a_fathers_shadow",
+          "title": "Living in his father's shadow",
+          "literal_situation": "Jack was on the plane escorting his father's body home after their relationship ended badly. On the island he keeps glimpsing a man who looks exactly like his father.",
+          "pattern_label": "grieving a parent you never made peace with",
+          "pattern_text": "A person loses a parent they had a painful, unfinished relationship with: a demanding figure who warned them they couldn't handle failure, and whom they finally hurt by telling the truth. The grief is tangled with guilt, resentment and a lifelong need to prove themselves. They have to figure out how to mourn someone they are still angry at, and stop repeating that parent's patterns.",
+          "hook": "Jack's father has just died after a bitter falling out, and Jack is carrying the coffin home. Now he is seeing his father walking through the jungle and chasing him without knowing why.",
+          "why_relatable": "How do you grieve someone who hurt you and whom you also hurt? Can you stop measuring yourself against a parent's approval once they're gone for good?",
+          "watch_for": [
+            "What did his father teach him about failure, and does he still believe it?",
+            "Notice the moments where he sounds exactly like the parent he resents.",
+            "What is he really looking for when he chases what he sees?"
+          ],
+          "start_at": "S1E5",
+          "span": "S1-S6",
+          "situations": [
+            {"id": "grief_and_loss", "weight": 0.9},
+            {"id": "difficult_parent", "weight": 0.9},
+            {"id": "family_expectations", "weight": 0.6},
+            {"id": "divorce", "weight": 0.3}
+          ],
+          "conflicts": ["holding_on_vs_letting_go", "self_vs_family_expectations"],
+          "emotions": {"start": ["grief", "guilt", "resentment"], "middle": ["inadequacy", "anger", "loneliness"], "end": ["acceptance", "peace", "love"]},
+          "ending_tone": "bittersweet",
+          "intensity": "heavy",
+          "warnings": ["death_of_loved_one", "grief", "addiction"],
+          "example_user_messages": [
+            "My dad died before we ever fixed things and I don't know if I'm allowed to still be angry at him.",
+            "I reported my own father for something he did and now he's gone and I feel like I killed him.",
+            "My whole life I've been trying to prove to my father that I'm good enough, and now there's nobody left to prove it to.",
+            "I caught myself saying the exact thing my dad used to say to me and it scared me."
+          ],
+          "spoiler": {
+            "summary": "Flashbacks reveal Jack's alcoholic father Christian told him he didn't have what it takes to cope with failure, that Jack's marriage fell apart, that he attacked his father believing he'd slept with his wife, and that he testified against him, costing him his medical license. Christian died drunk in Sydney. On the Island the 'visions' of Christian lead Jack to water but are later revealed to be the Man in Black. Jack learns Claire is his half-sister. Off-island he spirals into drinking and pills and compares himself to his father while raising Aaron. In the flash-sideways he imagines a son, David, and gets to repair with him what he never repaired with his own father; finally he meets Christian in the church, remembers everything and lets go.",
+            "key_events": [
+              "Father's drunken botched surgery; Jack testifies against him",
+              "Christian dies in Sydney; Jack escorts the coffin on Oceanic 815",
+              "The father's coffin on the Island is empty",
+              "Learns Claire is his half-sister",
+              "Drinking and pills off-island echo his father's addiction",
+              "Visions of Christian turn out to be the Man in Black",
+              "Flash-sideways son David; final reunion with Christian in the church"
+            ],
+            "got_right": "Telling the truth about his father's negligence despite the cost, and eventually choosing to repair rather than repeat the pattern with the next generation.",
+            "got_wrong": "Turning his grief into rage and self-destruction, drinking like his father, and refusing reconciliation until it was too late."
+          }
+        },
+        {
+          "id": "arc:lost/jack_shephard/rescued_but_still_lost",
+          "title": "Getting what he wanted and falling apart",
+          "literal_situation": "Later in the series, after a turning point he fought hard for, Jack is drinking, taking pills and becoming convinced he made the wrong choice.",
+          "pattern_label": "getting what you fought for and collapsing anyway",
+          "pattern_text": "After fighting desperately to get out of a situation and succeeding, a person finds their old life hollow. Guilt about the people they left behind, and a sense that they made the wrong choice, leads to drinking, pills and pushing away the one relationship that works. They have to face whether they are running from their purpose or towards it.",
+          "hook": "Jack is unravelling - bearded, drinking and taking pills - and desperate to undo a choice he once fought hard to make.",
+          "why_relatable": "What happens when the thing you worked for doesn't fix you? Is trying to undo the past a way of finding purpose, or just another escape? Can the people who love him reach him?",
+          "watch_for": [
+            "What is he actually feeling guilty about?",
+            "How does he treat the people trying to help him?",
+            "Is the thing he now believes in a real conviction or a lifeline?"
+          ],
+          "start_at": "S3E22",
+          "span": "S3-S5",
+          "situations": [
+            {"id": "addiction_and_recovery", "weight": 0.8},
+            {"id": "burnout_at_work", "weight": 0.5},
+            {"id": "midlife_reinvention", "weight": 0.5},
+            {"id": "breakup", "weight": 0.5}
+          ],
+          "conflicts": ["past_vs_future", "holding_on_vs_letting_go"],
+          "emotions": {"start": ["guilt", "numbness", "restlessness"], "middle": ["shame", "loneliness", "confusion"], "end": ["hope", "determination"]},
+          "ending_tone": "ambiguous",
+          "intensity": "heavy",
+          "warnings": ["addiction", "self_harm_or_suicide", "death_of_loved_one", "grief"],
+          "example_user_messages": [
+            "I finally got the life I wanted and I've never been more miserable. I'm drinking every night.",
+            "I left people behind to save myself and I can't stop thinking about them.",
+            "My fiancée left because of the pills and I know she was right.",
+            "I keep thinking I made the wrong choice years ago and the only way to fix it is to go back."
+          ],
+          "spoiler": {
+            "summary": "In the flash-forwards Jack is one of the 'Oceanic Six' who got off the Island and lied about what happened. He briefly builds a life with Kate and Aaron and proposes, but hallucinations of his father, guilt, drinking and painkillers destroy it. He is suspended from work, nearly jumps off a bridge and flies repeatedly hoping to crash. Locke's death and suicide note ('I wish you had believed me') convert him: he shaves, sobers up and leads the others back on Ajira 316, but on the Island his new faith leads him to a failed plan to reset time.",
+            "key_events": [
+              "'We have to go back!' reveal of the flash-forward",
+              "Proposes to Kate, then drives her away with drinking and jealousy",
+              "Suspended from the hospital; nearly jumps off a bridge",
+              "Attends Locke's funeral alone; reads his suicide note",
+              "Returns to the Island on Ajira 316"
+            ],
+            "got_right": "Eventually admitting he had lost his way and choosing to act rather than numb himself.",
+            "got_wrong": "Hiding his guilt behind a lie, self-medicating instead of reaching out, and taking out his pain on Kate."
+          }
+        }
+      ]
+    },
+    {
+      "id": "char:lost/kate_austen",
+      "name": "Kate Austen",
+      "role": "A resourceful, secretive plane-crash survivor who was traveling in handcuffs with a U.S. Marshal.",
+      "relations": [
+        {"target": "char:lost/jack_shephard", "relation": "partner"},
+        {"target": "char:lost/james_sawyer_ford", "relation": "ex_partner"},
+        {"target": "char:lost/juliet_burke", "relation": "rival"},
+        {"target": "char:lost/claire_littleton", "relation": "friend"},
+        {"target": "char:lost/sun_hwa_kwon", "relation": "friend"},
+        {"target": "char:lost/sayid_jarrah", "relation": "friend"},
+        {"target": "char:lost/hugo_hurley_reyes", "relation": "friend"},
+        {"target": "char:lost/benjamin_linus", "relation": "enemy"}
+      ],
+      "arcs": [
+        {
+          "id": "arc:lost/kate_austen/always_running",
+          "title": "Always running",
+          "literal_situation": "Kate was being extradited by a U.S. Marshal when the plane crashed. On the island, a stranded group offers her a clean slate, as long as nobody finds out who she is.",
+          "pattern_label": "someone who runs whenever life gets close",
+          "pattern_text": "A person has spent years escaping an abusive home and the drastic thing they did to get out of it. Leaving is how they survive, so they flee every time someone gets close or life gets settled. They get a chance at a fresh start, but they have to decide whether they can finally stay somewhere and let people see who they really are.",
+          "hook": "Kate has walked out of the crash alive and without her handcuffs. The group doesn't know her past, and the man who wants to hear it offers her a fresh start instead.",
+          "why_relatable": "Can you start over if you never tell anyone what you're running from? Is running freedom or a trap? What would it take for her to stay?",
+          "watch_for": [
+            "What does she do when she's asked to stay put and wait?",
+            "Notice who she lets in and who she lies to, and why.",
+            "Is she running from what she did or from what was done to her?"
+          ],
+          "start_at": "S1E3",
+          "span": "S1-S6",
+          "situations": [
+            {"id": "starting_over", "weight": 0.9},
+            {"id": "leaving_home", "weight": 0.6},
+            {"id": "redemption_after_mistakes", "weight": 0.6},
+            {"id": "difficult_parent", "weight": 0.5}
+          ],
+          "conflicts": ["independence_vs_connection", "past_vs_future"],
+          "emotions": {"start": ["fear", "shame", "restlessness"], "middle": ["guilt", "longing", "loneliness"], "end": ["acceptance", "love", "freedom"]},
+          "ending_tone": "bittersweet",
+          "intensity": "heavy",
+          "warnings": ["domestic_violence", "abuse", "death_of_loved_one", "war_and_violence", "betrayal"],
+          "example_user_messages": [
+            "Every time a relationship gets serious I pack a bag. I don't even know why anymore.",
+            "I got out of a really bad home and I did things I'm not proud of to get out.",
+            "I moved to a new city so nobody knows my history, but I'm terrified someone will find out.",
+            "I've never stayed anywhere long enough to have real friends."
+          ],
+          "spoiler": {
+            "summary": "Kate blew up the house of Wayne, her abusive stepfather, after learning he was her biological father, and has been on the run ever since: her childhood love Tom died helping her, she married a cop under a false name and fled him, and she was caught in Australia after choosing to save a farmer rather than escape. On the Island her fugitive status is exposed and she keeps running off on missions. Off-island she stands trial, gets probation, builds a home with Jack and Aaron, then gives Aaron back to his grandmother and returns to the Island to bring Claire home. In the end she stays loyal, helps kill the Man in Black, and leaves with Claire to help raise Aaron.",
+            "key_events": [
+              "Killed abusive stepfather Wayne, who was her real father",
+              "Tom dies during her hospital visit to her mother",
+              "Marries Kevin under an alias, then drugs him and leaves",
+              "Sawyer exposes her as a fugitive to the camp",
+              "Trial; mother declines to testify; ten years probation",
+              "Returns to the Island to bring Claire back to Aaron",
+              "Shoots the Man in Black; leaves on Ajira with Claire and Sawyer"
+            ],
+            "got_right": "Her loyalty, her refusal to abandon people in danger even at the cost of her freedom, and finally choosing to stay and take responsibility.",
+            "got_wrong": "Solving problems by fleeing, lying and manipulating the people who care about her, and refusing to let anyone make decisions for her even when they were right."
+          }
+        },
+        {
+          "id": "arc:lost/kate_austen/torn_between_two_men",
+          "title": "Torn between two very different men",
+          "literal_situation": "On the beach Kate is drawn to both the decent, controlling doctor who leads the camp and the sarcastic loner who sees her darker side.",
+          "pattern_label": "choosing between the person you want to be and the person you are",
+          "pattern_text": "A person is torn between two people: one who represents the responsible, better version of themselves, and one who reflects the reckless side they are ashamed of but feel understood by. They keep going back and forth, hurting both, because the real decision is about who they are and what kind of life they believe they deserve.",
+          "hook": "Kate's past is a secret, and two very different men on the beach both see something in her. One wants her to be good; the other seems to know she isn't.",
+          "why_relatable": "Do we pick partners for who we are or for who we wish we were? What happens when you use one relationship to escape the other? Can she choose without running?",
+          "watch_for": [
+            "Which of the two does she turn to when she's hurt or jealous?",
+            "What does each man seem to need her to be?",
+            "Does she ever say what she actually wants out loud?"
+          ],
+          "start_at": "S1E1",
+          "span": "S1-S6",
+          "situations": [
+            {"id": "falling_for_someone_unexpected", "weight": 0.9},
+            {"id": "breakup", "weight": 0.5},
+            {"id": "identity_and_self_acceptance", "weight": 0.5}
+          ],
+          "conflicts": ["independence_vs_connection", "safety_vs_growth"],
+          "emotions": {"start": ["curiosity", "longing", "confusion"], "middle": ["jealousy", "guilt", "self_doubt"], "end": ["love", "acceptance"]},
+          "ending_tone": "bittersweet",
+          "intensity": "moderate",
+          "warnings": ["death_of_main_character", "betrayal"],
+          "example_user_messages": [
+            "I have feelings for two people and they're complete opposites. One makes me feel safe and the other makes me feel seen.",
+            "I keep going back to my ex whenever my current relationship gets hard, and I hate myself for it.",
+            "The good guy wants me to be someone I'm not sure I am.",
+            "I don't know if I actually love him or if I just love who I am when I'm with him."
+          ],
+          "spoiler": {
+            "summary": "Kate bounces between Jack and Sawyer for years. She sleeps with Sawyer in the Others' cages and later in camp when jealous of Jack and Juliet; Sawyer jumps from the helicopter after kissing her goodbye. Off-island she and Jack get engaged but break up over his drinking and her secret errands for Sawyer's daughter. Back on the Island she finds Sawyer has moved on with Juliet. Ultimately she and Jack confess their love before he sacrifices himself; in the flash-sideways she wakes Jack and they move on together.",
+            "key_events": [
+              "First kiss with Jack in the jungle; flees back to Sawyer",
+              "Sleeps with Sawyer in the Others' cages",
+              "Jack says 'I love you' at the radio tower",
+              "Sawyer jumps from the helicopter after kissing her",
+              "Engaged to Jack off-island; engagement ends",
+              "Sawyer now with Juliet in 1977",
+              "Final goodbye kiss with Jack; reunited in the flash-sideways church"
+            ],
+            "got_right": "Eventually recognising that her love for Jack was about who she wanted to become, and caring for both men honestly.",
+            "got_wrong": "Using one man to soothe the hurt caused by the other, keeping secrets, and avoiding a clear choice for years."
+          }
+        },
+        {
+          "id": "arc:lost/kate_austen/raising_a_child_who_isnt_hers",
+          "title": "Learning to stay for someone who needs her",
+          "literal_situation": "Later in the series, after a turning point that changes her life, Kate is caring for a small child as her own while her past finally catches up with her.",
+          "pattern_label": "loving a child you were never meant to raise",
+          "pattern_text": "A person who never saw themselves as a parent ends up raising a child who isn't biologically theirs, and the child becomes the steadiest thing in their life. They know the child has another family with a claim to him, and they have to decide whether love means holding on or giving him back.",
+          "hook": "Kate, who never stayed anywhere, now has a small child who depends on her completely, and a past that is closing in.",
+          "why_relatable": "Is being a parent about blood or about showing up? Can someone who always ran become the stable one? What do you owe the other people who have a claim on the child you love?",
+          "watch_for": [
+            "What does she protect the child from, and what does she hide from him?",
+            "How does she react when someone questions her right to be raising him?",
+            "Is she staying for the child's sake or her own?"
+          ],
+          "start_at": "S4E4",
+          "span": "S4-S6",
+          "situations": [
+            {"id": "becoming_a_parent", "weight": 0.9},
+            {"id": "caring_for_family", "weight": 0.7},
+            {"id": "responsibility_you_didnt_ask_for", "weight": 0.6}
+          ],
+          "conflicts": ["holding_on_vs_letting_go", "truth_vs_protecting_others"],
+          "emotions": {"start": ["love", "fear", "determination"], "middle": ["guilt", "anxiety", "grief"], "end": ["acceptance", "hope"]},
+          "ending_tone": "hopeful",
+          "intensity": "moderate",
+          "warnings": ["child_endangerment", "grief"],
+          "example_user_messages": [
+            "I'm raising my partner's kid and I love him like my own, but I'm scared his real mom will come back.",
+            "I never wanted kids and now I can't imagine life without this little boy.",
+            "I've been lying about how I became his mother and it's getting harder.",
+            "I think the right thing is to give him back to his family, but it feels like losing a part of me."
+          ],
+          "spoiler": {
+            "summary": "Kate claims Claire's baby Aaron as her own after escaping the Island, and he becomes the reason she stays put. Her mother offers not to testify in exchange for seeing her 'grandson'. Jack's drinking and a lawyer's demand for a blood test threaten the family. After briefly losing Aaron in a supermarket, Kate tells Aaron's grandmother Carole the truth, leaves him with her, and returns to the Island to bring Claire back. She finds a feral, damaged Claire, and in the end convinces her to leave on the plane, promising to help raise Aaron together.",
+            "key_events": [
+              "Claims Aaron as her son at the press conference",
+              "Refuses her mother's deal involving Aaron",
+              "Jack's 'you're not even related to him' fight",
+              "Briefly loses Aaron at a supermarket",
+              "Leaves Aaron with his grandmother Carole",
+              "Finds Claire changed and hostile on the Island",
+              "Brings Claire home to raise Aaron together"
+            ],
+            "got_right": "Loving Aaron fiercely and finally choosing what was best for him and his mother over her own need.",
+            "got_wrong": "Building the family on a lie and taking Aaron partly to fill the hole left by Sawyer."
+          }
+        }
+      ]
+    },
+    {
+      "id": "char:lost/john_locke",
+      "name": "John Locke",
+      "role": "A mild-mannered plane-crash survivor with a hunter's skills and an unexplained, almost serene certainty that the island is where he belongs.",
+      "relations": [
+        {"target": "char:lost/jack_shephard", "relation": "rival"},
+        {"target": "char:lost/benjamin_linus", "relation": "rival"},
+        {"target": "char:lost/charlie_pace", "relation": "protege"},
+        {"target": "char:lost/claire_littleton", "relation": "friend"},
+        {"target": "char:lost/hugo_hurley_reyes", "relation": "friend"},
+        {"target": "char:lost/kate_austen", "relation": "friend"},
+        {"target": "char:lost/desmond_hume", "relation": "colleague"}
+      ],
+      "arcs": [
+        {
+          "id": "arc:lost/john_locke/dont_tell_me_what_i_cant_do",
+          "title": "Don't tell me what I can't do",
+          "literal_situation": "A man who spent years being overlooked, belittled and turned away finds himself, after the crash, capable of things no one ever believed he could do, and becomes convinced it happened for a reason.",
+          "pattern_label": "a lifelong underdog desperate to matter",
+          "pattern_text": "After a life of being overlooked, belittled by bosses and told what they can't do, a person gets a sudden second chance and believes it must mean they are meant for something. That faith gives them purpose and courage, but their hunger to feel special makes them easy to manipulate and willing to hurt others to prove they were chosen.",
+          "hook": "Before the crash, Locke was a humiliated office worker who was refused a place on a trip because of what people assumed he couldn't do. Now he's the one tracking boar and quietly telling everyone that everything happens for a reason.",
+          "why_relatable": "What happens when your need to matter becomes your whole identity? Is his faith a strength or a wound he's covering up? Who is he if it turns out he's not special?",
+          "watch_for": [
+            "Notice what he does when someone tells him he can't do something.",
+            "Who does he trust, and why do they have so much power over him?",
+            "Is he acting from faith, or from fear of being ordinary again?"
+          ],
+          "start_at": "S1E4",
+          "span": "S1-S6",
+          "situations": [
+            {"id": "starting_over", "weight": 0.8},
+            {"id": "confidence_struggle", "weight": 0.7},
+            {"id": "illness_or_injury", "weight": 0.6},
+            {"id": "midlife_reinvention", "weight": 0.7}
+          ],
+          "conflicts": ["control_vs_trust", "fitting_in_vs_standing_out"],
+          "emotions": {"start": ["rejection", "hope", "determination"], "middle": ["pride", "self_doubt", "betrayal"], "end": ["confusion", "acceptance", "peace"]},
+          "ending_tone": "tragic",
+          "intensity": "heavy",
+          "warnings": ["death_of_main_character", "self_harm_or_suicide", "betrayal", "abuse", "war_and_violence"],
+          "example_user_messages": [
+            "My whole life people have told me what I can't do, and I'm tired of being the guy nobody takes seriously.",
+            "I'm in my 40s and finally feel like I've found my calling, but everyone thinks I'm crazy.",
+            "My boss humiliates me and I keep telling myself I'm meant for something bigger.",
+            "I got a second chance after a really dark period and I'm scared that if it doesn't mean something, then nothing does."
+          ],
+          "spoiler": {
+            "summary": "Locke was paralysed after his con-man father pushed him out of a window; the crash miraculously lets him walk. He devotes himself to the Island, keeps the Hatch secret, gets Boone killed chasing a vision, pushes the button, loses faith, destroys the computer and later the Others' submarine. Ben repeatedly manipulates and humiliates him, even shooting him. He becomes leader of the Others, turns the frozen wheel and leaves the Island to bring the Oceanic Six back, but fails to convince anyone, tries to hang himself and is strangled by Ben. The Man in Black then wears his face. Only posthumously is he vindicated: Jack says Locke was right about almost everything, and in the flash-sideways Locke forgives Ben, accepts his limits, walks again and moves on.",
+            "key_events": [
+              "Was in a wheelchair before the crash; walks after it",
+              "Hides the Hatch; Boone dies on his quest",
+              "Loses faith after the Pearl; smashes the computer: 'I was wrong'",
+              "Blows up the Others' submarine",
+              "Shot by Ben and left in the mass grave",
+              "Turns the frozen wheel and leaves the Island",
+              "Strangled by Ben after failing to bring anyone back",
+              "The Man in Black impersonates him",
+              "Forgives Ben in the flash-sideways and walks into the church"
+            ],
+            "got_right": "His belief that people can change and deserve a second chance, his courage, and his mentoring of lost people like Charlie, Boone and Claire.",
+            "got_wrong": "Letting his need to feel chosen override honesty, lying and acting alone with deadly consequences, and handing his trust to manipulators who fed his ego."
+          }
+        },
+        {
+          "id": "arc:lost/john_locke/the_father_who_conned_him",
+          "title": "Hungry for a father's love",
+          "literal_situation": "Raised in foster care, Locke tracked down his biological father as an adult and was overjoyed when the man seemed to want a relationship.",
+          "pattern_label": "longing for love from a parent who uses you",
+          "pattern_text": "A person who grew up without parents finally finds their biological father and is so hungry for his love that they give him anything he asks for. The parent uses them and throws them away, but they keep going back, sacrificing their relationships and dignity for someone who will never love them. They have to decide whether to keep chasing him, get revenge, or let go.",
+          "hook": "Locke, a lonely foster kid grown up, has just met the father he never knew, and they're finally bonding.",
+          "why_relatable": "How much would you give for a parent who finally seems to want you? What does that hunger cost the people who actually love him? And what would closure with a parent even look like?",
+          "watch_for": [
+            "What does he give up each time he goes back to his father?",
+            "How does the woman who loves him react to his obsession?",
+            "Given the chance, what does he actually do?"
+          ],
+          "start_at": "S1E19",
+          "span": "S1-S3",
+          "situations": [
+            {"id": "difficult_parent", "weight": 0.95},
+            {"id": "breakup", "weight": 0.5},
+            {"id": "identity_and_self_acceptance", "weight": 0.5}
+          ],
+          "conflicts": ["revenge_vs_forgiveness", "holding_on_vs_letting_go"],
+          "emotions": {"start": ["longing", "hope", "loneliness"], "middle": ["betrayal", "anger", "rejection"], "end": ["numbness", "acceptance"]},
+          "ending_tone": "ambiguous",
+          "intensity": "heavy",
+          "warnings": ["abuse", "betrayal", "medical_trauma", "war_and_violence"],
+          "example_user_messages": [
+            "I found my birth father and he only wanted me for money. I still want him to love me.",
+            "My dad has lied to me my whole life and I keep going back to him anyway.",
+            "My girlfriend said it's her or my obsession with my father. I chose wrong.",
+            "I fantasize about getting revenge on my parent but I don't think I could actually do it."
+          ],
+          "spoiler": {
+            "summary": "Anthony Cooper stages a reunion to con Locke out of a kidney, then cuts him off. Locke stalks him, loses his girlfriend Helen by helping Cooper launder money, and when he confronts Cooper about another con, Cooper pushes him out of an eight-story window, paralysing him. On the Island, Ben produces Cooper as a captive and orders Locke to kill him; Locke can't. He manipulates Sawyer, whose parents Cooper also destroyed, into killing Cooper instead, and thanks him. In the flash-sideways Locke blames himself for putting his father into a vegetative state and accepts his paralysis as penance before letting go.",
+            "key_events": [
+              "Gives his father a kidney, then is abandoned",
+              "Helen rejects his proposal over his father",
+              "Father pushes him out of a window, paralysing him",
+              "Ben presents the captive Cooper and orders Locke to kill him",
+              "Can't do it; Sawyer strangles Cooper in the Black Rock"
+            ],
+            "got_right": "Refusing to become a murderer himself, and his capacity for love despite everything.",
+            "got_wrong": "Choosing a father who used him over a partner who loved him, and ultimately getting someone else to do his killing."
+          }
+        }
+      ]
+    },
+    {
+      "id": "char:lost/james_sawyer_ford",
+      "name": "James \"Sawyer\" Ford",
+      "role": "A sarcastic, self-serving con man among the crash survivors who hoards supplies and gives everyone nicknames.",
+      "relations": [
+        {"target": "char:lost/kate_austen", "relation": "ex_partner"},
+        {"target": "char:lost/juliet_burke", "relation": "partner"},
+        {"target": "char:lost/jack_shephard", "relation": "rival"},
+        {"target": "char:lost/hugo_hurley_reyes", "relation": "friend"},
+        {"target": "char:lost/claire_littleton", "relation": "friend"},
+        {"target": "char:lost/john_locke", "relation": "colleague"},
+        {"target": "char:lost/sayid_jarrah", "relation": "rival"},
+        {"target": "char:lost/benjamin_linus", "relation": "enemy"}
+      ],
+      "arcs": [
+        {
+          "id": "arc:lost/james_sawyer_ford/becoming_the_man_he_hunted",
+          "title": "Becoming the man he swore to find",
+          "literal_situation": "Sawyer carries a letter he wrote as a boy to the con man who destroyed his family, and he makes his living running the same con.",
+          "pattern_label": "becoming the person who hurt you",
+          "pattern_text": "After a childhood trauma caused by one person, someone vows revenge and spends their life hunting that person, while slowly turning into them. They push everyone away, act like they don't care, and let people hate them so no one can hurt them again. The question is whether revenge could ever bring peace, and who they are without the grudge.",
+          "hook": "Sawyer is the survivor nobody likes: looting the wreckage, sneering at everyone, and rereading a worn-out letter he won't explain.",
+          "why_relatable": "Why would someone want to be hated? Can you get justice for a childhood wound without it swallowing your whole life? What's under the attitude?",
+          "watch_for": [
+            "When does he do something kind and then hide it?",
+            "What would finally finding that man actually give him?",
+            "Notice where he draws his own moral line."
+          ],
+          "start_at": "S1E8",
+          "span": "S1-S3",
+          "situations": [
+            {"id": "grief_and_loss", "weight": 0.6},
+            {"id": "identity_and_self_acceptance", "weight": 0.7},
+            {"id": "redemption_after_mistakes", "weight": 0.7},
+            {"id": "loneliness", "weight": 0.6}
+          ],
+          "conflicts": ["revenge_vs_forgiveness", "independence_vs_connection"],
+          "emotions": {"start": ["resentment", "anger", "loneliness"], "middle": ["guilt", "shame", "grief"], "end": ["numbness", "self_doubt"]},
+          "ending_tone": "ambiguous",
+          "intensity": "heavy",
+          "warnings": ["self_harm_or_suicide", "death_of_loved_one", "torture", "war_and_violence", "betrayal"],
+          "example_user_messages": [
+            "I realized I've turned into exactly the kind of person who ruined my childhood.",
+            "I act like a jerk so people keep their distance. It's easier than letting anyone in.",
+            "I've been holding onto hatred for someone for twenty years and I don't know who I'd be without it.",
+            "I finally got the chance to confront the person who hurt my family and it didn't make me feel any better."
+          ],
+          "spoiler": {
+            "summary": "As a boy James watched his father kill his mother and then himself after a con man calling himself 'Sawyer' swindled them. He took the name, ran the same con, and in Sydney murdered an innocent man, Frank Duckett, after being tricked into believing he was Sawyer. On the Island he lets himself be hated and is tortured over an inhaler he never had. Locke traps him with Anthony Cooper, the real Sawyer, who is also Locke's father; Cooper tears up his letter and Sawyer strangles him. The revenge brings no peace, and he later shoots Tom in cold blood.",
+            "key_events": [
+              "Parents' murder-suicide after the con",
+              "Becomes 'Sawyer' himself",
+              "Shoots an innocent man in Sydney",
+              "Tortured by Sayid and Jack over the inhaler",
+              "Locke delivers Anthony Cooper; Sawyer strangles him",
+              "Shoots Tom after he surrenders"
+            ],
+            "got_right": "His hidden decency: calling off a con when he saw the victims' child, and secretly providing for his daughter.",
+            "got_wrong": "Letting a childhood wound define him, pushing people away, and believing killing the man would heal him."
+          }
+        },
+        {
+          "id": "arc:lost/james_sawyer_ford/lone_wolf_to_leader",
+          "title": "The lone wolf people keep leaning on",
+          "literal_situation": "A self-centered loner who only looks out for himself keeps getting pulled into caring for the group around him, even as he insists he's no hero.",
+          "pattern_label": "a loner who grows up and learns to lead",
+          "pattern_text": "A person who has always looked out only for themselves is slowly drawn into caring for others. Given time, a stable partner and real responsibility, they turn out to be a calm, capable leader and a devoted partner, but an old love and the weight of other people's choices test how much they've really changed.",
+          "hook": "Sawyer insists he's only in it for himself, hoards what he can, and wants no part of leading anyone. But people keep showing up at his tent needing something.",
+          "why_relatable": "Can someone who's always been selfish become the steady one? What happens when others start to depend on him? Does he believe he deserves anything good?",
+          "watch_for": [
+            "Notice the first times he puts someone else's safety ahead of his own.",
+            "How is he different from the man he's always competed with when people need help?",
+            "Does he believe he deserves the good things he gets?"
+          ],
+          "start_at": "S1E1",
+          "span": "S1-S6",
+          "situations": [
+            {"id": "responsibility_you_didnt_ask_for", "weight": 0.8},
+            {"id": "leading_former_peers", "weight": 0.6},
+            {"id": "falling_for_someone_unexpected", "weight": 0.7},
+            {"id": "coming_of_age", "weight": 0.5}
+          ],
+          "conflicts": ["independence_vs_connection", "past_vs_future"],
+          "emotions": {"start": ["loneliness", "resentment", "boredom"], "middle": ["belonging", "love", "confidence"], "end": ["grief", "guilt", "peace"]},
+          "ending_tone": "bittersweet",
+          "intensity": "heavy",
+          "warnings": ["death_of_loved_one", "grief", "death_of_main_character", "war_and_violence"],
+          "example_user_messages": [
+            "I've always been a lone wolf, but lately people at work keep coming to me for help and I kind of like it.",
+            "I used to be the screwup and now I'm the one in charge. I'm scared I'll blow it.",
+            "I'm happy with my partner, but my ex just came back into my life and I don't know what I feel.",
+            "For the first time I have a stable relationship and a real job and I'm scared it's all going to be taken away."
+          ],
+          "spoiler": {
+            "summary": "Sawyer slowly softens: he protects Kate in the cages, is conned by Hurley into being nice, protects Claire and Aaron, and jumps from the helicopter to save the others. Left on the time-skipping Island, he leads the remaining survivors, becomes DHARMA's head of security 'Jim LaFleur' and builds a loving three-year relationship with Juliet. When Kate and Jack return, his feelings for Kate resurface; Juliet dies in the Incident, and he blames Jack. Grief-stricken and reckless, he allies with the Man in Black, then Widmore, and pulls the wires on the submarine bomb, causing the deaths of Sayid, Jin and Sun. He escapes the Island with Kate and Claire, and in the flash-sideways reunites with Juliet.",
+            "key_events": [
+              "Hurley's fake banishment vote pushes him into leadership",
+              "Jumps from the helicopter to save the others",
+              "Becomes DHARMA head of security and Juliet's partner",
+              "Juliet falls into the Swan shaft and dies",
+              "Blames Jack; throws away the engagement ring",
+              "Pulls the wires on the sub bomb; Sayid, Jin and Sun die",
+              "Escapes on the Ajira plane; reunites with Juliet in the flash-sideways"
+            ],
+            "got_right": "Learning to think before acting, being a calm, fair leader, and loving Juliet wholeheartedly.",
+            "got_wrong": "Letting old feelings for Kate unsettle his relationship, persuading Juliet to stay for his own sake, and refusing to trust Jack at the worst possible moment."
+          }
+        }
+      ]
+    },
+    {
+      "id": "char:lost/hugo_hurley_reyes",
+      "name": "Hugo \"Hurley\" Reyes",
+      "role": "A friendly, funny crash survivor who keeps everyone's spirits up and quietly carries a secret about his past.",
+      "relations": [
+        {"target": "char:lost/charlie_pace", "relation": "friend"},
+        {"target": "char:lost/james_sawyer_ford", "relation": "friend"},
+        {"target": "char:lost/jack_shephard", "relation": "friend"},
+        {"target": "char:lost/sayid_jarrah", "relation": "friend"},
+        {"target": "char:lost/john_locke", "relation": "friend"},
+        {"target": "char:lost/claire_littleton", "relation": "friend"},
+        {"target": "char:lost/desmond_hume", "relation": "friend"},
+        {"target": "char:lost/sun_hwa_kwon", "relation": "friend"},
+        {"target": "char:lost/kate_austen", "relation": "friend"}
+      ],
+      "arcs": [
+        {
+          "id": "arc:lost/hugo_hurley_reyes/believing_youre_cursed",
+          "title": "Convinced he's cursed",
+          "literal_situation": "Hurley is secretly a lottery winner who believes the numbers he played brought disaster on everyone around him, and he has just spotted those same numbers on the island.",
+          "pattern_label": "believing you bring bad luck to everyone",
+          "pattern_text": "After a string of tragedies around them, a kind, self-deprecating person becomes convinced they are to blame and that they're cursed. They'd rather be everyone's supportive sidekick than trust themselves, but slowly they have to decide whether they are really the cause of the bad things, and whether they can step into responsibility when others need them.",
+          "hook": "Hurley's secret is that he's a millionaire, and he thinks the money made him bad luck for everyone near him. Now the same numbers keep turning up where they shouldn't.",
+          "why_relatable": "Why do we blame ourselves for things we couldn't control? Can the nice guy who always follows ever believe he's capable of leading? Is he cursed or just grieving?",
+          "watch_for": [
+            "Notice how he explains bad events and how quickly he blames himself.",
+            "What happens when he chooses to act instead of following?",
+            "Who believes in him before he believes in himself?"
+          ],
+          "start_at": "S1E18",
+          "span": "S1-S6",
+          "situations": [
+            {"id": "confidence_struggle", "weight": 0.9},
+            {"id": "identity_and_self_acceptance", "weight": 0.6},
+            {"id": "responsibility_you_didnt_ask_for", "weight": 0.6},
+            {"id": "difficult_parent", "weight": 0.3}
+          ],
+          "conflicts": ["control_vs_trust", "fitting_in_vs_standing_out"],
+          "emotions": {"start": ["guilt", "anxiety", "self_doubt"], "middle": ["grief", "fear", "hope"], "end": ["confidence", "self_respect", "peace"]},
+          "ending_tone": "hopeful",
+          "intensity": "moderate",
+          "warnings": ["death_of_loved_one", "grief", "death_of_main_character"],
+          "example_user_messages": [
+            "Every time something good happens to me, something terrible happens to someone I love. I feel like I'm cursed.",
+            "I'm the funny one everyone likes but nobody ever asks me to lead anything, and honestly I'm scared to.",
+            "I came into money and it wrecked my family and friendships. I wish I'd never had it.",
+            "My dad left when I was a kid and came back only when I had something he wanted."
+          ],
+          "spoiler": {
+            "summary": "Hurley won $114 million with numbers he heard from a psychiatric patient; his grandfather died, a meteor destroyed his restaurant, his friend and crush abandoned him and his estranged father returned for the money. On the Island the numbers are on the Hatch. He fixes an old DHARMA van and decides you make your own luck. After Charlie dies he follows Locke, leaves as one of the Oceanic Six, is haunted by the dead and recommitted to the mental institute. Jacob tells him he's blessed, not cursed, and sends him back. He talks to the dead, guides Jack, and when Jack dies Hurley becomes the Island's protector, with Ben as his advisor, doing what he does best: taking care of people.",
+            "key_events": [
+              "Wins the lottery; string of tragedies follows",
+              "Numbers engraved on the Hatch",
+              "Gets the DHARMA van running: 'you make your own luck'",
+              "Cons Sawyer into leadership",
+              "Charlie's death; follows Locke's group",
+              "Recommitted to Santa Rosa; visited by dead friends",
+              "Jacob tells him he's not crazy or cursed",
+              "Becomes the Island's protector with Ben as his number two"
+            ],
+            "got_right": "His kindness, honesty and emotional intelligence, including forgiving his father and seeing through people's pain.",
+            "got_wrong": "Blaming himself for everything, avoiding responsibility and doubting his judgment for far too long."
+          }
+        },
+        {
+          "id": "arc:lost/hugo_hurley_reyes/food_grief_and_his_own_mind",
+          "title": "Food, love and trusting his own mind",
+          "literal_situation": "Hurley is put in charge of a newly found food stockpile, secretly starts stashing food, and begins seeing someone from his past who shouldn't be there.",
+          "pattern_label": "emotional eating, self-worth and fear of your own mind",
+          "pattern_text": "Someone who has struggled with emotional eating, body shame and a past mental-health crisis is under stress again. Old coping habits return and they start doubting their own grip on reality, just as someone kind shows real interest in them. They have to decide whether they deserve love and can trust themselves.",
+          "hook": "Hurley has been given control of the food and doesn't want the responsibility, and then a familiar face appears in the crowd that he knows can't be real.",
+          "why_relatable": "What do you do when stress sends you back to old habits you thought you'd beaten? Can you believe someone likes you when you don't like yourself? How do you know if your own mind can be trusted?",
+          "watch_for": [
+            "What does he do with food when he's stressed or ashamed?",
+            "Who does he tell the truth to about his past, and when?",
+            "Notice how he responds when someone is kind to him."
+          ],
+          "start_at": "S2E4",
+          "span": "S2-S3",
+          "situations": [
+            {"id": "addiction_and_recovery", "weight": 0.6},
+            {"id": "identity_and_self_acceptance", "weight": 0.8},
+            {"id": "falling_for_someone_unexpected", "weight": 0.6},
+            {"id": "grief_and_loss", "weight": 0.6}
+          ],
+          "conflicts": ["holding_on_vs_letting_go", "control_vs_trust"],
+          "emotions": {"start": ["shame", "anxiety", "self_doubt"], "middle": ["hope", "love", "fear"], "end": ["grief", "acceptance"]},
+          "ending_tone": "bittersweet",
+          "intensity": "heavy",
+          "warnings": ["self_harm_or_suicide", "death_of_loved_one", "grief"],
+          "example_user_messages": [
+            "When things get bad I hide food and eat it alone. I thought I was past this.",
+            "I was hospitalized for my mental health once and now I'm scared it's happening again.",
+            "Someone finally likes me and I can't believe it's real. I keep waiting for the catch.",
+            "The girl I was falling for died and I keep going back to talk to her grave."
+          ],
+          "spoiler": {
+            "summary": "In charge of the Swan's food, Hurley secretly hoards, then destroys his stash with Libby's encouragement. The food drop triggers a relapse: his imaginary friend Dave from Santa Rosa reappears and tries to convince him the Island is a delusion and he should jump off a cliff. Libby stops him and they kiss. Just before their first date, Michael shoots Libby, who dies with Hurley holding her hand. He grieves at her grave; later it's revealed Libby had been a patient at Santa Rosa too, and in the flash-sideways they are reunited.",
+            "key_events": [
+              "Stashes food from the Swan pantry",
+              "Destroys the stash with Libby",
+              "Imaginary friend Dave reappears",
+              "Nearly jumps off a cliff; Libby stops him",
+              "Libby is shot by Michael and dies",
+              "Reunited with Libby in the flash-sideways"
+            ],
+            "got_right": "Admitting his struggle to someone he trusted and letting her help him; grieving openly.",
+            "got_wrong": "Hiding his relapse in shame and trusting the voice in his head over the people who cared about him."
+          }
+        }
+      ]
+    },
+    {
+      "id": "char:lost/sayid_jarrah",
+      "name": "Sayid Jarrah",
+      "role": "A former Iraqi Republican Guard soldier among the crash survivors whose technical skills make him indispensable, and whose past he keeps to himself.",
+      "relations": [
+        {"target": "char:lost/jack_shephard", "relation": "friend"},
+        {"target": "char:lost/kate_austen", "relation": "friend"},
+        {"target": "char:lost/hugo_hurley_reyes", "relation": "friend"},
+        {"target": "char:lost/desmond_hume", "relation": "friend"},
+        {"target": "char:lost/james_sawyer_ford", "relation": "rival"},
+        {"target": "char:lost/john_locke", "relation": "rival"},
+        {"target": "char:lost/benjamin_linus", "relation": "enemy"}
+      ],
+      "arcs": [
+        {
+          "id": "arc:lost/sayid_jarrah/washing_the_blood_off",
+          "title": "Trying to wash the blood off his hands",
+          "literal_situation": "Sayid once tortured prisoners for the Republican Guard. On the island he has just used those skills again on another survivor and walked away from the camp in shame.",
+          "pattern_label": "trying to become better than your worst past",
+          "pattern_text": "Someone who once did terrible things under orders is trying to be a good person. But whenever the people they love are threatened, the skills they are most ashamed of are the ones everyone needs. They keep wondering whether they can truly change, or whether that side of them is who they really are.",
+          "hook": "Sayid has just hurt someone again, and it turned out the man was innocent. He leaves the camp alone to figure out who he is.",
+          "why_relatable": "Can you ever outrun what you've done? What do you do when your darkest skill is also the most useful thing about you? Does atonement mean never doing it again, or doing it for the right reasons?",
+          "watch_for": [
+            "Who asks him to use his violence, and how does he feel afterward?",
+            "What does he say about himself when someone tries to forgive him?",
+            "Is he choosing violence, or is it being chosen for him?"
+          ],
+          "start_at": "S1E9",
+          "span": "S1-S6",
+          "situations": [
+            {"id": "redemption_after_mistakes", "weight": 0.95},
+            {"id": "identity_and_self_acceptance", "weight": 0.7},
+            {"id": "starting_over", "weight": 0.4}
+          ],
+          "conflicts": ["power_vs_morality", "past_vs_future"],
+          "emotions": {"start": ["guilt", "shame", "loneliness"], "middle": ["anger", "numbness", "self_doubt"], "end": ["self_respect", "peace"]},
+          "ending_tone": "bittersweet",
+          "intensity": "heavy",
+          "warnings": ["torture", "war_and_violence", "death_of_main_character", "death_of_loved_one", "graphic_gore"],
+          "example_user_messages": [
+            "I did things in my past that I'm deeply ashamed of, and I'm terrified that's who I really am.",
+            "Everyone relies on me for the hard stuff, but every time I do it I feel like I'm losing myself.",
+            "Someone I hurt years ago forgave me and I don't know how to accept that.",
+            "I keep promising myself I'm done with that life and then something happens and I'm right back in it."
+          ],
+          "spoiler": {
+            "summary": "Sayid tortured his own commanding officer for the Americans and later prisoners for the Republican Guard; he spared Nadia and was forgiven by a victim in Paris. On the Island he tortures Sawyer and Ben, and leads raids against the Others. After Nadia dies off-island he becomes Ben's hitman, then quits to build houses for charity. Back on the Island he shoots young Ben, dies, and is resurrected by the Temple spring 'infected', emotionally dead, and joins the Man in Black, killing Dogen. Desmond reminds him of what Nadia would think; Sayid spares him, and finally sacrifices himself by carrying the Man in Black's bomb away from his friends on the submarine. In the flash-sideways he tells himself he is 'not that man anymore' and is reunited with Shannon.",
+            "key_events": [
+              "Tortures his commanding officer and Republican Guard prisoners",
+              "Tortures Sawyer, then leaves the camp in shame",
+              "Interrogates 'Henry Gale' (Ben)",
+              "Becomes Ben's hitman off-island",
+              "Shoots young Ben in 1977",
+              "Dies and returns 'infected'; joins the Man in Black",
+              "Spares Desmond",
+              "Dies carrying the bomb away from his friends"
+            ],
+            "got_right": "His honesty about his guilt, his loyalty and his final self-sacrifice.",
+            "got_wrong": "Letting grief and other people's manipulation convince him that violence was his only nature and his only tool."
+          }
+        },
+        {
+          "id": "arc:lost/sayid_jarrah/love_that_keeps_slipping_away",
+          "title": "Searching for the woman he lost",
+          "literal_situation": "Sayid has spent years searching for Nadia, the woman he helped escape, carrying her photo everywhere, and now he is stranded and cut off from the world.",
+          "pattern_label": "loving someone you believe you don't deserve",
+          "pattern_text": "A person has spent years searching for the love they lost and believes they don't deserve happiness because of their past. They find new love when they least expect it, but loss keeps following them, and grief pushes them toward revenge. They have to decide whether love can survive their guilt and whether vengeance honors the person they lost.",
+          "hook": "Sayid keeps a photo of the woman he's been searching for all these years. He believes being separated from her is his own fault.",
+          "why_relatable": "Can you love again without betraying the person you lost? Does feeling unworthy of love make you push it away? What does grief do to someone who already struggles with anger?",
+          "watch_for": [
+            "How does he talk about the woman in the photograph?",
+            "Notice what he does when someone he cares about is hurt.",
+            "Does he believe he deserves to be happy?"
+          ],
+          "start_at": "S1E9",
+          "span": "S1-S6",
+          "situations": [
+            {"id": "long_distance", "weight": 0.6},
+            {"id": "grief_and_loss", "weight": 0.9},
+            {"id": "falling_for_someone_unexpected", "weight": 0.6}
+          ],
+          "conflicts": ["revenge_vs_forgiveness", "holding_on_vs_letting_go"],
+          "emotions": {"start": ["longing", "guilt", "hope"], "middle": ["love", "grief", "anger"], "end": ["numbness", "love", "peace"]},
+          "ending_tone": "tragic",
+          "intensity": "heavy",
+          "warnings": ["death_of_loved_one", "grief", "war_and_violence", "death_of_main_character"],
+          "example_user_messages": [
+            "I've been trying to find someone I lost years ago and I can't let it go.",
+            "I started seeing someone new and I feel like I'm betraying the person I really loved.",
+            "When my wife died I wanted to hurt whoever did it. I still do.",
+            "I don't think someone like me deserves to be happy."
+          ],
+          "spoiler": {
+            "summary": "Sayid falls for Shannon on the Island, but Ana Lucia shoots her by mistake and she dies in his arms. Off-island he finally finds and marries Nadia, spends the happiest nine months of his life with her, and then she's killed in a hit-and-run. Ben exploits his grief, turning him into an assassin. When he's resurrected on the Island, the Man in Black offers to bring Nadia back, but Desmond asks what she would think of him. In the flash-sideways he has pushed Nadia to his brother because he felt unworthy, and it's Shannon he awakens with and moves on with.",
+            "key_events": [
+              "Relationship with Shannon; she is shot by Ana Lucia",
+              "Finds and marries Nadia off-island",
+              "Nadia killed in a hit-and-run",
+              "Becomes Ben's hitman to avenge her",
+              "Man in Black promises to return what he lost",
+              "Awakens with Shannon in the flash-sideways"
+            ],
+            "got_right": "His deep devotion and the way he honored the people he loved.",
+            "got_wrong": "Turning grief into revenge, letting others use his pain, and believing he wasn't worthy of love."
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,844 @@
+{
+  "show": "money_heist",
+  "characters": [
+    {
+      "id": "char:money_heist/the_professor",
+      "name": "The Professor",
+      "role": "A shy, meticulous man who has spent years planning one perfect robbery and runs it from a hidden base outside, bound by strict rules: no real names, no personal relationships, no bloodshed.",
+      "relations": [
+        {"target": "char:money_heist/raquel_murillo", "relation": "partner"},
+        {"target": "char:money_heist/berlin", "relation": "sibling"},
+        {"target": "char:money_heist/tokyo", "relation": "protege"},
+        {"target": "char:money_heist/nairobi", "relation": "protege"},
+        {"target": "char:money_heist/rio", "relation": "protege"},
+        {"target": "char:money_heist/denver", "relation": "protege"},
+        {"target": "char:money_heist/helsinki", "relation": "protege"}
+      ],
+      "arcs": [
+        {
+          "id": "arc:money_heist/the_professor/the_plan_versus_the_heart",
+          "title": "The man who planned for everything except his own feelings",
+          "literal_situation": "The robbery he has rehearsed for years begins. From outside, he steers the police and his crew by phone, while under a fake name he gets close to the inspector leading the case.",
+          "pattern_label": "a meticulous planner undone by unplanned feelings",
+          "pattern_text": "A person who has made themselves safe through total preparation and strict rules finds that the one thing they cannot plan for is caring about someone. Every rule they wrote to protect the project starts to crack, starting with their own. They have to decide whether control or honesty is what actually keeps the people they love safe.",
+          "hook": "He has thought through every scenario for years. He wrote the rule against personal relationships himself, and then he starts spending time with the one person hunting his team.",
+          "why_relatable": "He is brilliant at systems and awkward with people, and he hides behind the plan. Can someone whose whole sense of safety comes from control let another person see who he really is? Is he using her, or falling for her, and does he even know the difference?",
+          "watch_for": [
+            "Watch how he reacts when events go off-script: does he adapt, or double down on control?",
+            "When is he lying to protect the plan, and when is he lying to protect himself?",
+            "Notice which of his own rules he is willing to bend, and for whom."
+          ],
+          "start_at": "Part 1 E1",
+          "span": "Part 1-Part 2",
+          "situations": [
+            {"id": "falling_for_someone_unexpected", "weight": 0.9},
+            {"id": "taking_a_big_risk", "weight": 0.7},
+            {"id": "confidence_struggle", "weight": 0.3}
+          ],
+          "conflicts": ["control_vs_trust", "truth_vs_protecting_others"],
+          "emotions": {"start": ["determination", "anxiety"], "middle": ["guilt", "love", "fear"], "end": ["hope", "love"]},
+          "ending_tone": "hopeful",
+          "intensity": "moderate",
+          "warnings": ["war_and_violence", "betrayal", "death_of_loved_one"],
+          "example_user_messages": [
+            "I plan everything down to the minute because that's the only way I feel safe, and now I've fallen for someone and I can't plan that.",
+            "I started seeing someone while keeping a huge part of my life hidden from them and I don't know how to tell them the truth.",
+            "I'm great at running projects and terrible at letting anyone close. Feelings just aren't in my spreadsheet.",
+            "I made a rule for myself not to get involved with anyone right now and I'm breaking it."
+          ],
+          "spoiler": {
+            "summary": "Posing as 'Salva', he seduces Inspector Raquel Murillo to gain inside information, but genuinely falls in love. Raquel uncovers who he is and tries to arrest him; he wins her over instead, and she lets him escape with the money. The heist succeeds but costs the lives of Moscow, Oslo and Berlin, who is revealed to be his brother. A year later Raquel finds him in Palawan, following the clues he left her.",
+            "key_events": [
+              "His 'Salva' identity is exposed to Raquel",
+              "Raquel tries to arrest him but ends up letting him go",
+              "Berlin is revealed to be his brother and dies covering the escape",
+              "Moscow and Oslo die during the heist",
+              "Reunites with Raquel on a Philippine island"
+            ],
+            "got_right": "He admits the truth to Raquel and trusts her with the choice instead of forcing it, and he keeps his no-bloodshed principle even when it costs him.",
+            "got_wrong": "He built a relationship on a lie and manipulated a woman already hurt by an abusive partner, using her vulnerabilities as part of the plan."
+          }
+        },
+        {
+          "id": "arc:money_heist/the_professor/responsible_for_everyone",
+          "title": "Carrying the weight of everyone he brought in",
+          "literal_situation": "Later in the series, after a turning point that forces the old crew back together, he has to lead a far bigger and riskier operation than the first, one he never meant to carry out.",
+          "pattern_label": "a leader carrying guilt for the people who followed him",
+          "pattern_text": "A person who brought others into a risky venture now feels responsible for every one of them. As things get worse, they must keep making calm decisions while privately absorbing guilt for every loss. The question is whether they can keep leading, admit they are out of their depth, and accept help instead of carrying everything alone.",
+          "hook": "Later in the series, after a turning point that pulls everyone back together, he takes on a plan that was never really his, knowing that every person who follows him is doing so because of him.",
+          "why_relatable": "He is the calm voice on the phone while things fall apart. How much responsibility does a leader really have for choices other adults made? What happens when the person everyone relies on runs out of answers?",
+          "watch_for": [
+            "How does he handle it when his plans stop working?",
+            "Who does he let help him, and who does he try to protect by keeping them in the dark?",
+            "Notice when his calm is real and when it is a performance for the team."
+          ],
+          "start_at": "Part 3 E1",
+          "span": "Part 3-Part 5",
+          "situations": [
+            {"id": "responsibility_you_didnt_ask_for", "weight": 0.9},
+            {"id": "becoming_a_manager", "weight": 0.5},
+            {"id": "grief_and_loss", "weight": 0.6},
+            {"id": "burnout_at_work", "weight": 0.4}
+          ],
+          "conflicts": ["control_vs_trust", "duty_vs_desire"],
+          "emotions": {"start": ["determination", "guilt"], "middle": ["overwhelm", "grief", "fear"], "end": ["relief", "acceptance"]},
+          "ending_tone": "bittersweet",
+          "intensity": "heavy",
+          "warnings": ["death_of_main_character", "death_of_loved_one", "grief", "torture", "war_and_violence", "betrayal"],
+          "example_user_messages": [
+            "I convinced my friends to join my business and now it's failing and I feel responsible for all of them.",
+            "Everyone expects me to stay calm and have a plan, but I'm falling apart inside.",
+            "Someone on my team got hurt because of a decision I made, and I don't know how to keep going.",
+            "I took on a project someone else dreamed up and I'm terrified of letting them down."
+          ],
+          "spoiler": {
+            "summary": "Rio's arrest by Interpol drives him to launch the Bank of Spain heist, originally planned by Berlin. Raquel (now 'Lisbon') is captured and he believes she has been executed, loses his composure and nearly breaks the plan; she is later rescued into the bank. Nairobi is murdered by Gandía. In Part 5 Alicia Sierra captures and tortures him; he ends up delivering her baby and working with her. Tokyo dies. He secretly swaps the gold for brass, surrenders, and negotiates with Colonel Tamayo so the crew is declared dead and allowed to disappear, ending free with Raquel.",
+            "key_events": [
+              "Launches the Bank of Spain heist to free Rio",
+              "Believes Raquel has been executed (it was faked)",
+              "Nairobi is killed by Gandía",
+              "Captured and tortured by Alicia Sierra, then helps deliver her baby",
+              "Tokyo dies in a grenade blast",
+              "Gold swapped for brass; he surrenders and wins a deal giving the crew new identities"
+            ],
+            "got_right": "He keeps adapting under pressure, refuses to abandon anyone, and in the end trades his own freedom as a bargaining chip to save the whole team.",
+            "got_wrong": "His secrecy and need for control leave the team exposed; he loses his judgment when Raquel is threatened and repeatedly puts the plan above people's emotional reality."
+          }
+        }
+      ]
+    },
+    {
+      "id": "char:money_heist/tokyo",
+      "name": "Tokyo",
+      "role": "The story's narrator: an impulsive young fugitive with nowhere left to go, recruited into a robbery crew on the day she was about to be caught.",
+      "relations": [
+        {"target": "char:money_heist/rio", "relation": "partner"},
+        {"target": "char:money_heist/the_professor", "relation": "mentor"},
+        {"target": "char:money_heist/nairobi", "relation": "friend"},
+        {"target": "char:money_heist/berlin", "relation": "rival"},
+        {"target": "char:money_heist/denver", "relation": "friend"},
+        {"target": "char:money_heist/helsinki", "relation": "friend"},
+        {"target": "char:money_heist/raquel_murillo", "relation": "colleague"}
+      ],
+      "arcs": [
+        {
+          "id": "arc:money_heist/tokyo/running_from_the_past",
+          "title": "A runaway who acts before she thinks",
+          "literal_situation": "After a robbery that went badly wrong and cost her boyfriend's life, she is a wanted fugitive. A stranger offers her a place in a crew that is planning a huge robbery.",
+          "pattern_label": "a reckless survivor learning to belong somewhere",
+          "pattern_text": "A person who has lost everything lives at full speed, acting on impulse because stopping to feel would be unbearable. When a group offers them a place, their volatility keeps putting that belonging at risk. The question is whether they can learn to trust others and choose their battles without losing the fire that keeps them alive.",
+          "hook": "She has no home, no plan and her face is on posters across the country. The only person who has offered her a way out asks her to follow his rules, and following rules is not something she does.",
+          "why_relatable": "She feels everything at maximum volume and acts on it right away. Is her recklessness courage or self-destruction? Can someone who is used to having nothing to lose learn to belong to a group and still be herself?",
+          "watch_for": [
+            "Notice what happens right before she makes an impulsive decision: what feeling is she running from?",
+            "How does she treat people who try to control her compared with people who try to protect her?",
+            "Does she change over the series, or does the group learn to make room for who she is?"
+          ],
+          "start_at": "Part 1 E1",
+          "span": "Part 1-Part 5",
+          "situations": [
+            {"id": "starting_over", "weight": 0.8},
+            {"id": "finding_your_people", "weight": 0.8},
+            {"id": "grief_and_loss", "weight": 0.5},
+            {"id": "standing_up_to_authority", "weight": 0.4}
+          ],
+          "conflicts": ["belonging_vs_integrity", "control_vs_trust"],
+          "emotions": {"start": ["grief", "restlessness", "anger"], "middle": ["belonging", "guilt", "determination"], "end": ["love", "self_respect"]},
+          "ending_tone": "tragic",
+          "intensity": "heavy",
+          "warnings": ["death_of_main_character", "death_of_loved_one", "war_and_violence", "grief"],
+          "example_user_messages": [
+            "I always act on impulse and then regret it, and I think I keep blowing up the good things in my life.",
+            "I lost the person I built my whole life around and now I just keep moving so I don't have to feel it.",
+            "For the first time I have a group of people who feel like family, and I'm scared I'll ruin it.",
+            "People tell me I'm too much and too intense. I don't know how to be any other way."
+          ],
+          "spoiler": {
+            "summary": "Tokyo repeatedly defies the rules and clashes violently with Berlin, who throws her out of the Mint; she rides back in on a motorcycle. She escapes with Rio, but her restlessness on their island leads indirectly to his capture, which triggers the second heist. In the Bank of Spain she grows into a steady, respected member of the crew, grieves her mother, Nairobi and her first love René, and in Part 5 is fatally wounded by soldiers. She blows herself up with grenades, killing Gandía and several soldiers so the others can survive.",
+            "key_events": [
+              "Berlin expels her from the Mint; she returns on a motorcycle",
+              "Her call-and-roam habit on the island lets Interpol trace Rio",
+              "Her mother dies",
+              "Flashbacks to first love René",
+              "Dies in Part 5 E5, detonating grenades to kill Gandía and the soldiers"
+            ],
+            "got_right": "She is fiercely loyal, brave, and learns to channel her intensity into protecting the people she loves.",
+            "got_wrong": "Her impulsiveness repeatedly endangers the plan and the people close to her, and she runs from feelings rather than facing them."
+          }
+        },
+        {
+          "id": "arc:money_heist/tokyo/love_versus_freedom",
+          "title": "Swearing off love, then falling anyway",
+          "literal_situation": "Still reeling from losing her boyfriend, she vows never to mix love with work again, then falls for the youngest member of the crew during the months of preparation.",
+          "pattern_label": "loving someone while fearing being tied down",
+          "pattern_text": "A person who has already lost someone they loved swears never to get attached again, then falls for someone gentler and younger who wants a settled future. They love the person but chafe against the quiet life, and their need for freedom collides with the other person's need for security. The question is whether love can survive when two people want different lives.",
+          "hook": "She promised herself love and danger would never mix again. Then a sweet, earnest young man offers her a devotion she isn't sure she can match.",
+          "why_relatable": "She wants love but hates feeling caged. Can you love someone and still need a life they can't give you? Is she protecting her heart or just avoiding responsibility for his?",
+          "watch_for": [
+            "What does she do when things become calm and safe?",
+            "How honest is she with him about what she needs?",
+            "Notice how guilt and love tangle together for her."
+          ],
+          "start_at": "Part 1 E1",
+          "span": "Part 1-Part 5",
+          "situations": [
+            {"id": "falling_for_someone_unexpected", "weight": 0.8},
+            {"id": "breakup", "weight": 0.6},
+            {"id": "grief_and_loss", "weight": 0.4}
+          ],
+          "conflicts": ["independence_vs_connection", "holding_on_vs_letting_go"],
+          "emotions": {"start": ["fear", "longing"], "middle": ["love", "restlessness", "guilt"], "end": ["acceptance", "love"]},
+          "ending_tone": "tragic",
+          "intensity": "heavy",
+          "warnings": ["death_of_main_character", "torture", "war_and_violence"],
+          "example_user_messages": [
+            "My partner is so sweet and wants to settle down, and I love him, but I feel like I'm suffocating.",
+            "After my last relationship ended in disaster I swore I wouldn't fall for anyone, and now I have.",
+            "I did something careless and it hurt my partner badly. I don't know if we can come back from it.",
+            "I love him but I think we want completely different lives."
+          ],
+          "spoiler": {
+            "summary": "Tokyo and Rio's secret romance breaks the Professor's rules and nearly wrecks the Mint heist. They escape together to a Caribbean island, but she gets bored and leaves; Rio's repeated calls to her phone let Interpol find and arrest him. Wracked with guilt she helps rescue him, but after his torture he breaks up with her in Part 4. They remain bonded; in Part 5 she dies protecting the crew, with Rio there.",
+            "key_events": [
+              "Secret romance during preparation; Rio gives her a dog tag and proposes",
+              "Rio is arrested after calling her phone from the island",
+              "Rio breaks up with her in Part 4",
+              "Brief flirtation with Denver",
+              "Dies in Part 5 while Rio watches"
+            ],
+            "got_right": "She owns her guilt, fights to save him, and keeps loving him honestly even when they are no longer together.",
+            "got_wrong": "She treats his need for stability as a cage rather than talking about it, and her carelessness has devastating consequences for him."
+          }
+        }
+      ]
+    },
+    {
+      "id": "char:money_heist/berlin",
+      "name": "Berlin",
+      "role": "The elegant, arrogant and cruelly charming second-in-command who runs the crew on the ground during the robbery.",
+      "relations": [
+        {"target": "char:money_heist/the_professor", "relation": "sibling"},
+        {"target": "char:money_heist/tokyo", "relation": "rival"},
+        {"target": "char:money_heist/nairobi", "relation": "rival"},
+        {"target": "char:money_heist/denver", "relation": "colleague"},
+        {"target": "char:money_heist/rio", "relation": "colleague"},
+        {"target": "char:money_heist/helsinki", "relation": "colleague"},
+        {"target": "char:money_heist/raquel_murillo", "relation": "enemy"}
+      ],
+      "arcs": [
+        {
+          "id": "arc:money_heist/berlin/nothing_left_to_lose",
+          "title": "A man who lives as if nothing can touch him",
+          "literal_situation": "He is put in charge inside the building during the robbery, and he rules with charm, mind games and a disturbing indifference to the people around him.",
+          "pattern_label": "living recklessly with time running out",
+          "pattern_text": "A person who knows their time is limited decides that ordinary rules and consequences no longer apply to them. They become magnetic and dangerous, craving admiration and control, and hurt people along the way. The question is whether facing the end can make someone find meaning in giving something back instead of just taking.",
+          "hook": "He is brilliant, theatrical and frighteningly calm. He treats the robbery like a performance and people like pieces on a board, and the crew can't tell whether he is loyal or dangerous.",
+          "why_relatable": "He needs to be admired and in control. What drives someone to act as if nothing can touch them? Is there real loyalty under the arrogance, and what would it take for him to show it?",
+          "watch_for": [
+            "Notice how he treats people who have power over him versus people who don't.",
+            "What does he seem to want most: control, admiration, or something he never says out loud?",
+            "Watch how the crew's view of him shifts as the pressure rises."
+          ],
+          "start_at": "Part 1 E1",
+          "span": "Part 1-Part 2",
+          "situations": [
+            {"id": "illness_or_injury", "weight": 0.7},
+            {"id": "becoming_a_manager", "weight": 0.5},
+            {"id": "redemption_after_mistakes", "weight": 0.5}
+          ],
+          "conflicts": ["power_vs_morality", "holding_on_vs_letting_go"],
+          "emotions": {"start": ["pride", "numbness"], "middle": ["anger", "loneliness", "dread"], "end": ["acceptance", "peace"]},
+          "ending_tone": "tragic",
+          "intensity": "heavy",
+          "warnings": ["death_of_main_character", "serious_illness", "sexual_violence", "self_harm_or_suicide", "war_and_violence"],
+          "example_user_messages": [
+            "I found out I don't have much time left and honestly I've stopped caring what anyone thinks of me.",
+            "I know I can be arrogant and cruel, and I'm starting to wonder if I'll be remembered for anything good.",
+            "Being in control is the only thing that makes me feel alive, and it's pushing everyone away.",
+            "I got a diagnosis with no cure and I don't want to spend what's left of my life in hospitals."
+          ],
+          "spoiler": {
+            "summary": "Berlin has Helmer's myopathy, a terminal degenerative disease. During the Mint heist he is cruel and manipulative, coerces the hostage Ariadna into a sexual relationship, ejects Tokyo from the building and briefly loses command to Nairobi before retaking it. He is revealed to be the Professor's brother. In Part 2 E9 he stays behind to guard the tunnel and is gunned down, deliberately sacrificing himself so the others can escape.",
+            "key_events": [
+              "Terminal diagnosis of Helmer's myopathy",
+              "Coercive sexual relationship with hostage Ariadna",
+              "Loses command to Nairobi's 'Matriarchy' and retakes it",
+              "Revealed as the Professor's brother",
+              "Sacrifices himself holding off the police in Part 2 E9"
+            ],
+            "got_right": "When it truly counts he chooses the crew over himself and dies protecting them.",
+            "got_wrong": "He treats people, especially women, as objects, abuses his power over hostages and uses his illness as licence for cruelty."
+          }
+        },
+        {
+          "id": "arc:money_heist/berlin/believing_in_love_again",
+          "title": "The romantic who keeps believing in love",
+          "literal_situation": "Later in the series, the story widens to show more of his private life before the first robbery: a man who has married again and again, and who shares a deep bond with an old friend and his younger brother.",
+          "pattern_label": "a serial romantic afraid of real intimacy",
+          "pattern_text": "A person who falls in love dramatically and often keeps chasing the thrill of new romance while avoiding the vulnerability of being truly known. Their deepest connection is one they are afraid to name, and the people closest to them end up hurt. The question is whether they can ever love someone without needing to be the center of the story.",
+          "hook": "Later in the series, we get to know the man behind the performance: several marriages, each one sincerely believed in, and a closeness with his oldest friend that neither of them can talk about.",
+          "why_relatable": "He says he believes in love every time. Is he in love with people, or with the feeling of falling? What does he lose by keeping his most honest feelings hidden?",
+          "watch_for": [
+            "Notice how he talks about love versus how he actually behaves with the people he loves.",
+            "Who does he let see him without the charm?",
+            "How does he react when someone he trusts hurts him?"
+          ],
+          "start_at": "Part 3 E1",
+          "span": "Part 3-Part 5",
+          "situations": [
+            {"id": "divorce", "weight": 0.6},
+            {"id": "identity_and_self_acceptance", "weight": 0.6},
+            {"id": "difficult_parent", "weight": 0.4},
+            {"id": "unrequited_love", "weight": 0.4}
+          ],
+          "conflicts": ["independence_vs_connection", "truth_vs_protecting_others"],
+          "emotions": {"start": ["longing", "pride"], "middle": ["love", "confusion"], "end": ["betrayal", "loneliness"]},
+          "ending_tone": "bittersweet",
+          "intensity": "moderate",
+          "warnings": ["betrayal", "serious_illness"],
+          "example_user_messages": [
+            "I've been married several times and every time I really believed it was forever.",
+            "My closest friend has feelings for me and I think I feel the same, but I'm too scared to admit it.",
+            "I love the start of relationships and then I get bored once things get real.",
+            "Someone I trusted completely went behind my back with someone in my own family."
+          ],
+          "spoiler": {
+            "summary": "Flashbacks in Italy show Berlin planning the Bank of Spain heist with Palermo, who has loved him for ten years. Berlin admits Palermo is his soulmate, they kiss, but he chooses to part ways and scrap the plan. He marries Tatiana, his fifth wife, at a wedding where he sings 'Ti Amo'. In Part 5 flashbacks he trains his estranged son Rafael on a heist in Denmark; Tatiana falls for Rafael and leaves Berlin, who is devastated, trashes a hotel bar, is arrested for the first time and cuts them out of his inheritance.",
+            "key_events": [
+              "Kisses Palermo and admits he is his soulmate, then walks away",
+              "Marries Tatiana, his fifth wife",
+              "Brings his son Rafael into a heist",
+              "Tatiana leaves him for Rafael",
+              "First arrest after smashing a hotel bar"
+            ],
+            "got_right": "He can be honest about his feelings in rare moments and tries to reach out to the son he neglected.",
+            "got_wrong": "He puts his own need to be adored above the people he loves, walks away from the one real bond he names, and treats partners as possessions."
+          }
+        }
+      ]
+    },
+    {
+      "id": "char:money_heist/nairobi",
+      "name": "Nairobi",
+      "role": "A warm, loud and fiercely capable counterfeiter in charge of the money printing, who joins the robbery hoping to change her life and her family's.",
+      "relations": [
+        {"target": "char:money_heist/tokyo", "relation": "friend"},
+        {"target": "char:money_heist/helsinki", "relation": "friend"},
+        {"target": "char:money_heist/berlin", "relation": "rival"},
+        {"target": "char:money_heist/the_professor", "relation": "mentor"},
+        {"target": "char:money_heist/denver", "relation": "friend"},
+        {"target": "char:money_heist/rio", "relation": "friend"},
+        {"target": "char:money_heist/raquel_murillo", "relation": "friend"}
+      ],
+      "arcs": [
+        {
+          "id": "arc:money_heist/nairobi/getting_her_son_back",
+          "title": "A mother trying to earn back her child",
+          "literal_situation": "Years ago child services took her young son away because she was dealing drugs. She joins the crew believing her share of the money is her chance to get him back.",
+          "pattern_label": "a parent fighting to repair a separation from their child",
+          "pattern_text": "A parent who lost custody of their child because of bad choices made in hard circumstances carries shame and longing every day. They throw themselves into one last chance to rebuild their life and be the parent they wanted to be. The question is how to live with the past, and whether hope for the future makes them stronger or more vulnerable.",
+          "hook": "She hides a scar and a son she hasn't seen in years. She believes that if this goes right she can finally be the mother she wanted to be, and that hope drives everything she does.",
+          "why_relatable": "She loves her child and failed him, and she knows it. Can you forgive yourself for a past you can't undo? What happens when the thing that gives you hope is also the thing that makes you most vulnerable?",
+          "watch_for": [
+            "Notice how her longing for her son shapes the way she cares for everyone else.",
+            "When does her hope make her strong, and when does it make her take risks?",
+            "How does she talk about her own past mistakes?"
+          ],
+          "start_at": "Part 1 E1",
+          "span": "Part 1-Part 4",
+          "situations": [
+            {"id": "redemption_after_mistakes", "weight": 0.8},
+            {"id": "becoming_a_parent", "weight": 0.5},
+            {"id": "caring_for_family", "weight": 0.6},
+            {"id": "starting_over", "weight": 0.5}
+          ],
+          "conflicts": ["past_vs_future", "holding_on_vs_letting_go"],
+          "emotions": {"start": ["shame", "longing", "hope"], "middle": ["determination", "grief"], "end": ["love", "acceptance"]},
+          "ending_tone": "tragic",
+          "intensity": "heavy",
+          "warnings": ["death_of_main_character", "grief", "medical_trauma", "war_and_violence", "child_endangerment"],
+          "example_user_messages": [
+            "I lost custody of my kid years ago because of the choices I made, and I'd do anything to get him back.",
+            "Every day I think about the parent I should have been.",
+            "I'm trying to rebuild my life so my child can be proud of me one day.",
+            "I want a family so badly, but I'm scared my past will always follow me."
+          ],
+          "spoiler": {
+            "summary": "Nairobi confides in Tokyo about her son Axel and plans to reclaim him after the Mint heist. She escapes with Helsinki and later dreams of having another child. During the Bank of Spain heist, Inspector Alicia Sierra lures her to a window by showing her Axel, and a police sniper shoots her in the chest. Tokyo and Helsinki operate on her under remote guidance; she survives, falls for Bogotá, and wants the Professor to father a child with her. In Part 4 E6 Gandía takes her hostage and shoots her in the head.",
+            "key_events": [
+              "Confides to Tokyo about her son Axel",
+              "Lured to a window with her son and shot by a sniper",
+              "Survives emergency surgery performed by Tokyo and Helsinki",
+              "Romance with Bogotá",
+              "Killed by Gandía in Part 4 E6"
+            ],
+            "got_right": "She never stops fighting for a better life and turns her maternal love into protecting everyone around her.",
+            "got_wrong": "Her longing for her son is used against her, and she lets hope override caution at the worst possible moment."
+          }
+        },
+        {
+          "id": "arc:money_heist/nairobi/taking_charge",
+          "title": "Stepping up when the man in charge won't listen",
+          "literal_situation": "Inside the building, the man running things is cruel and dismissive. She disagrees with his methods, and as tension grows the crew starts to look to her.",
+          "pattern_label": "a woman stepping up to lead where she was dismissed",
+          "pattern_text": "A person who has always been underestimated finds herself working under a leader whose choices she can't accept. She is warm, perceptive and good at getting the best out of people. The question is whether she can claim authority without becoming what she opposed, and what it costs to keep supporting everyone else.",
+          "hook": "She is the one keeping the crew's spirits up and the work moving, but the person in charge treats her opinions as noise.",
+          "why_relatable": "She is good with people and tired of being overruled by someone worse at it. When is it right to take charge? Can you lead with warmth in a group that respects only force?",
+          "watch_for": [
+            "How does she win people over compared with how he does?",
+            "What does leadership cost her personally?",
+            "Notice how she treats the most vulnerable people around her, including the hostages."
+          ],
+          "start_at": "Part 1 E1",
+          "span": "Part 1-Part 4",
+          "situations": [
+            {"id": "standing_up_to_authority", "weight": 0.8},
+            {"id": "leading_former_peers", "weight": 0.7},
+            {"id": "finding_your_people", "weight": 0.5}
+          ],
+          "conflicts": ["belonging_vs_integrity", "power_vs_morality"],
+          "emotions": {"start": ["anger", "determination"], "middle": ["pride", "self_doubt"], "end": ["self_respect", "belonging"]},
+          "ending_tone": "bittersweet",
+          "intensity": "moderate",
+          "warnings": ["war_and_violence", "sexual_violence", "death_of_main_character"],
+          "example_user_messages": [
+            "My manager is arrogant and everyone's miserable, and I'm the one who actually keeps the team going.",
+            "I finally stood up and took the lead at work and now I'm not sure I can handle it.",
+            "People always come to me when they're struggling, but nobody takes me seriously as a leader.",
+            "I'm tired of being the only one who calls out bad behaviour in my group."
+          ],
+          "spoiler": {
+            "summary": "Nairobi exposes Berlin's coercion of Ariadna and, during Part 2, overthrows him, declaring 'the Matriarchy'. Her leadership is short-lived and Berlin retakes command. In the Bank of Spain she leads the gold-melting crew, stands up for the bullied hostage Alison Parker, and repeatedly chooses to reassure others over protecting herself, until she is killed by Gandía.",
+            "key_events": [
+              "Reveals Berlin's relationship with Ariadna",
+              "Declares 'the Matriarchy' and briefly takes command",
+              "Berlin regains control",
+              "Leads the gold melting in the Bank of Spain",
+              "Killed by Gandía"
+            ],
+            "got_right": "She leads through empathy and courage and consistently stands up for the vulnerable.",
+            "got_wrong": "She sometimes acts impulsively and puts others' comfort ahead of her own safety."
+          }
+        }
+      ]
+    },
+    {
+      "id": "char:money_heist/denver",
+      "name": "Denver",
+      "role": "A hot-headed young man with an unforgettable laugh who joins the robbery alongside his father to escape a dangerous debt.",
+      "relations": [
+        {"target": "char:money_heist/the_professor", "relation": "mentor"},
+        {"target": "char:money_heist/berlin", "relation": "boss"},
+        {"target": "char:money_heist/tokyo", "relation": "friend"},
+        {"target": "char:money_heist/rio", "relation": "friend"},
+        {"target": "char:money_heist/nairobi", "relation": "friend"},
+        {"target": "char:money_heist/helsinki", "relation": "friend"},
+        {"target": "char:money_heist/raquel_murillo", "relation": "colleague"}
+      ],
+      "arcs": [
+        {
+          "id": "arc:money_heist/denver/his_fathers_son",
+          "title": "Working side by side with his father",
+          "literal_situation": "His father brought him into the crew to get him out of trouble with violent dealers. They have always been close, but his father has kept a painful family story from him.",
+          "pattern_label": "a son discovering the truth about his family",
+          "pattern_text": "A young adult who idolises the parent who raised them alone learns that the family story they grew up with isn't the whole truth. They have to reconcile love for an imperfect parent with anger at being lied to. The question is whether they can forgive, and what kind of person they want to be compared with the parent they looked up to.",
+          "hook": "He is loud, impulsive and deeply attached to his father, the one person who has always been there. He doesn't yet know how much his father has kept from him.",
+          "why_relatable": "He loves his dad and wants to prove himself to him. What do you do when the parent you trust has lied about something fundamental? Can you forgive someone for a lie they told to protect you?",
+          "watch_for": [
+            "How does he react when his father worries about the person he is becoming?",
+            "Notice the difference between his anger and his tenderness.",
+            "What does he take from his father, and what does he choose to leave behind?"
+          ],
+          "start_at": "Part 1 E1",
+          "span": "Part 1-Part 2",
+          "situations": [
+            {"id": "difficult_parent", "weight": 0.6},
+            {"id": "caring_for_family", "weight": 0.5},
+            {"id": "coming_of_age", "weight": 0.6},
+            {"id": "grief_and_loss", "weight": 0.6}
+          ],
+          "conflicts": ["revenge_vs_forgiveness", "self_vs_family_expectations"],
+          "emotions": {"start": ["pride", "anger"], "middle": ["betrayal", "confusion"], "end": ["grief", "acceptance"]},
+          "ending_tone": "bittersweet",
+          "intensity": "heavy",
+          "warnings": ["death_of_loved_one", "grief", "war_and_violence", "addiction"],
+          "example_user_messages": [
+            "My dad raised me alone and I just found out he lied to me my whole life about why my mom wasn't around.",
+            "I love my father but I'm so angry at him right now I can't look at him.",
+            "My dad keeps getting me out of trouble and I'm starting to feel like I'm just a disappointment to him.",
+            "I found out the family story I grew up with wasn't true."
+          ],
+          "spoiler": {
+            "summary": "Moscow reveals that Denver's mother didn't abandon him: Moscow left her at a roundabout because of her drug addiction and let Denver believe she had left. They argue, and Moscow is devastated believing Denver has killed a hostage, not knowing he secretly spared Mónica. They reconcile, and Moscow is shot by police while digging the escape tunnel, dying in Denver's arms.",
+            "key_events": [
+              "Moscow reveals the truth about Denver's mother",
+              "Moscow believes Denver killed a hostage",
+              "Father and son reconcile",
+              "Moscow is shot in the tunnel and dies"
+            ],
+            "got_right": "He forgives his father while there is still time and holds on to his father's gentleness.",
+            "got_wrong": "His temper and impulsiveness make things harder for himself and his father, and he keeps secrets of his own."
+          }
+        },
+        {
+          "id": "arc:money_heist/denver/unexpected_family",
+          "title": "Falling for the person he was told to hurt",
+          "literal_situation": "Ordered to get rid of a hostage who hid a phone, he can't bring himself to do it. Hiding and tending to her, he gets to know her, and her own complicated situation.",
+          "pattern_label": "building a family from the most unlikely start",
+          "pattern_text": "Two people meet in the worst possible circumstances and, against all odds, fall for each other. Building a life together means one of them stepping up for a child that isn't biologically theirs, and learning to handle jealousy, insecurity and honesty. The question is whether a love that started in chaos can grow into a stable, equal partnership.",
+          "hook": "He was supposed to be hard. Instead he's secretly caring for the woman he was ordered to get rid of, and he's falling for her.",
+          "why_relatable": "He has a big heart and a quick temper. Can a relationship that began in chaos be real? What does it take to become a steady partner when you were raised on impulse?",
+          "watch_for": [
+            "Notice what he does when he feels insecure or jealous.",
+            "How does he handle it when she wants to make her own choices?",
+            "Watch how he treats responsibilities he didn't plan for."
+          ],
+          "start_at": "Part 1",
+          "span": "Part 1-Part 5",
+          "situations": [
+            {"id": "falling_for_someone_unexpected", "weight": 0.9},
+            {"id": "becoming_a_parent", "weight": 0.6},
+            {"id": "responsibility_you_didnt_ask_for", "weight": 0.4}
+          ],
+          "conflicts": ["control_vs_trust", "independence_vs_connection"],
+          "emotions": {"start": ["fear", "curiosity"], "middle": ["love", "jealousy", "anxiety"], "end": ["love", "acceptance"]},
+          "ending_tone": "hopeful",
+          "intensity": "moderate",
+          "warnings": ["war_and_violence", "death_of_main_character"],
+          "example_user_messages": [
+            "My girlfriend is pregnant with another man's baby and I want to be there for both of them.",
+            "We met in the worst circumstances and everyone says our relationship can't be real.",
+            "I get jealous so easily and I know it's pushing my partner away.",
+            "My partner wants to take a risk I think is dangerous and she says I'm being controlling."
+          ],
+          "spoiler": {
+            "summary": "Denver shoots Mónica in the leg instead of killing her and hides her in a vault; they fall in love, she joins the crew and escapes with him. In Indonesia she has Arturo's baby, Cincinnati, and Denver becomes his stepfather. In the Bank of Spain heist she joins as 'Stockholm' against his wishes; they struggle with his aggression, his jealousy of her closeness to Rio, and later his attraction to Manila and his secret partying. They stay together and survive.",
+            "key_events": [
+              "Shoots Mónica in the leg instead of killing her",
+              "Mónica joins the crew as 'Stockholm'",
+              "Becomes stepfather to Cincinnati",
+              "Jealous of Mónica comforting Rio",
+              "Kisses Manila; confesses his partying to Mónica"
+            ],
+            "got_right": "He chooses compassion over orders and fully embraces a child who isn't his.",
+            "got_wrong": "He tries to control Mónica's choices, lets jealousy and temper drive him, and hides things from her."
+          }
+        }
+      ]
+    },
+    {
+      "id": "char:money_heist/rio",
+      "name": "Rio",
+      "role": "The youngest of the crew: a gifted, naive hacker from a normal family, in over his head and in love.",
+      "relations": [
+        {"target": "char:money_heist/tokyo", "relation": "partner"},
+        {"target": "char:money_heist/the_professor", "relation": "mentor"},
+        {"target": "char:money_heist/berlin", "relation": "boss"},
+        {"target": "char:money_heist/denver", "relation": "friend"},
+        {"target": "char:money_heist/nairobi", "relation": "friend"},
+        {"target": "char:money_heist/helsinki", "relation": "friend"},
+        {"target": "char:money_heist/raquel_murillo", "relation": "colleague"}
+      ],
+      "arcs": [
+        {
+          "id": "arc:money_heist/rio/all_in_on_first_love",
+          "title": "The youngest, all-in on first love",
+          "literal_situation": "During months of preparation he falls for an older, fiery crew member and starts a secret relationship against the rules, while his parents have no idea what he has got himself into.",
+          "pattern_label": "a young person giving everything to a first love",
+          "pattern_text": "A young adult, the youngest in a group and underestimated by everyone, pours their whole heart into a first serious relationship with someone more experienced and restless. They are desperate to be taken seriously and haunted by disappointing their family. The question is whether love and loyalty are enough when the other person needs something different.",
+          "hook": "He's talented, sweet and naive, and everyone sees him as the weak link. He is completely devoted to her, and already feels the weight of his parents' disappointment.",
+          "why_relatable": "He gives everything and fears it isn't enough. Can you love someone more than they can love you back? How do you grow up fast without losing your gentleness?",
+          "watch_for": [
+            "Notice how he reacts when she pulls away.",
+            "How does he handle being seen as the weakest link?",
+            "What does his family mean to him, even from a distance?"
+          ],
+          "start_at": "Part 1 E1",
+          "span": "Part 1-Part 4",
+          "situations": [
+            {"id": "coming_of_age", "weight": 0.8},
+            {"id": "falling_for_someone_unexpected", "weight": 0.6},
+            {"id": "breakup", "weight": 0.5},
+            {"id": "family_expectations", "weight": 0.4}
+          ],
+          "conflicts": ["independence_vs_connection", "self_vs_family_expectations"],
+          "emotions": {"start": ["love", "self_doubt"], "middle": ["anxiety", "jealousy"], "end": ["grief", "acceptance"]},
+          "ending_tone": "bittersweet",
+          "intensity": "moderate",
+          "warnings": ["torture", "war_and_violence"],
+          "example_user_messages": [
+            "My girlfriend is older and more experienced and I'm scared I'm just not enough for her.",
+            "I'm always the youngest in the room and nobody takes me seriously.",
+            "My parents are so disappointed in the choices I've made and it's eating at me.",
+            "I gave everything to my first relationship and I think she's getting bored of me."
+          ],
+          "spoiler": {
+            "summary": "Rio's romance with Tokyo breaks the rules and his exposure on camera nearly ruins the Mint heist; Berlin has him beaten. He escapes with Tokyo to a Caribbean island, but she leaves and his repeated calls let Interpol trace and arrest him. After his rescue and trauma, he breaks up with Tokyo in Part 4, though their bond survives until her death in Part 5.",
+            "key_events": [
+              "Proposes to Tokyo with a dog tag before the heist",
+              "Identified by police through Alison's phone",
+              "Arrested after calling Tokyo from the island",
+              "Breaks up with Tokyo in Part 4",
+              "Present at Tokyo's death"
+            ],
+            "got_right": "He loves openly and sincerely, and eventually stands up for what he needs.",
+            "got_wrong": "He loses himself in the relationship and ignores the danger of his own dependency."
+          }
+        },
+        {
+          "id": "arc:money_heist/rio/after_the_trauma",
+          "title": "Finding his way back to himself",
+          "literal_situation": "Later in the series, after a turning point that leaves him deeply shaken, he rejoins the crew in a new, dangerous operation while struggling with panic and flashbacks he can't talk about.",
+          "pattern_label": "rebuilding yourself after trauma",
+          "pattern_text": "A young person who went through something terrible tries to function again among people who love them but can't fully understand. Panic, numbness and anger surface at unexpected moments, and old relationships no longer fit. The question is how to heal, who to let in, and how to become someone new without pretending nothing happened.",
+          "hook": "Later in the series, after a turning point that shakes him to the core, he is back with the people he trusts most, but he is not the same person and everyone can see it.",
+          "why_relatable": "He looks like he's coping, then something small sets him off. How do you rebuild after trauma? Who can you open up to when the person closest to you is part of what hurts?",
+          "watch_for": [
+            "Who does he actually open up to, and why that person?",
+            "Notice the moments when his fear turns into anger.",
+            "What helps him, and what makes things worse?"
+          ],
+          "start_at": "Part 3 E1",
+          "span": "Part 3-Part 5",
+          "situations": [
+            {"id": "illness_or_injury", "weight": 0.7},
+            {"id": "breakup", "weight": 0.5},
+            {"id": "identity_and_self_acceptance", "weight": 0.5},
+            {"id": "grief_and_loss", "weight": 0.6}
+          ],
+          "conflicts": ["holding_on_vs_letting_go", "independence_vs_connection"],
+          "emotions": {"start": ["fear", "numbness"], "middle": ["anger", "anxiety", "loneliness"], "end": ["grief", "determination"]},
+          "ending_tone": "bittersweet",
+          "intensity": "heavy",
+          "warnings": ["torture", "death_of_loved_one", "grief", "war_and_violence", "betrayal"],
+          "example_user_messages": [
+            "Since what happened to me I get panic attacks out of nowhere and I can't explain it to anyone.",
+            "I went through something traumatic and my partner keeps trying to help, but I just feel angry around her.",
+            "I'm back with my friends but I don't feel like myself anymore.",
+            "The only person I can talk to about it is someone I barely know."
+          ],
+          "spoiler": {
+            "summary": "Rio was captured by Interpol and tortured by Alicia Sierra with sleep deprivation and psychological abuse. Freed during the Bank of Spain heist, he suffers PTSD and panic attacks, confides in Mónica rather than Tokyo, and breaks up with Tokyo. He becomes more hardened, fighting the army in Part 5. Tokyo dies before his eyes, leaving him grieving but surviving to the end with the crew.",
+            "key_events": [
+              "Captured by Interpol and tortured by Alicia Sierra",
+              "Rescued in exchange during the Bank of Spain heist",
+              "PTSD and panic attacks; confides in Mónica",
+              "Breaks up with Tokyo",
+              "Witnesses Tokyo's death in Part 5"
+            ],
+            "got_right": "He admits he isn't okay and lets someone support him instead of pretending.",
+            "got_wrong": "He shuts out the people closest to him and sometimes turns his pain into cruelty."
+          }
+        }
+      ]
+    },
+    {
+      "id": "char:money_heist/raquel_murillo",
+      "name": "Raquel Murillo",
+      "role": "A capable police inspector, recently out of an abusive marriage and caring for her young daughter and ageing mother, put in charge of negotiations when robbers take over the Royal Mint.",
+      "relations": [
+        {"target": "char:money_heist/the_professor", "relation": "partner"},
+        {"target": "char:money_heist/berlin", "relation": "enemy"},
+        {"target": "char:money_heist/tokyo", "relation": "colleague"},
+        {"target": "char:money_heist/nairobi", "relation": "friend"},
+        {"target": "char:money_heist/denver", "relation": "colleague"},
+        {"target": "char:money_heist/rio", "relation": "colleague"},
+        {"target": "char:money_heist/helsinki", "relation": "colleague"}
+      ],
+      "arcs": [
+        {
+          "id": "arc:money_heist/raquel_murillo/trusting_again",
+          "title": "Learning to trust again after an abusive marriage",
+          "literal_situation": "She is leading the biggest case of her career, doubted by male colleagues and even by her own family about her ex-husband's abuse, when a kind, awkward stranger at a café starts to become part of her life.",
+          "pattern_label": "rebuilding trust after an abusive relationship",
+          "pattern_text": "A person who survived an abusive relationship is trying to rebuild a life while family and coworkers doubt their story. When someone gentle appears, they must decide whether to let themselves hope again. The question is how to trust your own judgment after being manipulated, and how to know if new love is safe.",
+          "hook": "She is strong at work and exhausted at home. Her ex still works in her world, her family half-believes him, and a quiet man who seems to understand her appears exactly when she needs someone.",
+          "why_relatable": "She has been told she imagined or exaggerated what happened to her. How do you trust again after being hurt by someone you loved? How do you tell the difference between real care and charm?",
+          "watch_for": [
+            "Notice how she handles colleagues and family who question her.",
+            "What makes her let her guard down?",
+            "How does she respond when her instincts and her feelings disagree?"
+          ],
+          "start_at": "Part 1 E1",
+          "span": "Part 1-Part 2",
+          "situations": [
+            {"id": "divorce", "weight": 0.7},
+            {"id": "falling_for_someone_unexpected", "weight": 0.7},
+            {"id": "caring_for_family", "weight": 0.5},
+            {"id": "confidence_struggle", "weight": 0.4}
+          ],
+          "conflicts": ["control_vs_trust", "truth_vs_protecting_others"],
+          "emotions": {"start": ["loneliness", "self_doubt", "anger"], "middle": ["hope", "betrayal", "confusion"], "end": ["love", "freedom"]},
+          "ending_tone": "hopeful",
+          "intensity": "heavy",
+          "warnings": ["domestic_violence", "betrayal", "war_and_violence", "serious_illness"],
+          "example_user_messages": [
+            "I left an abusive marriage and my own family still thinks I made it up.",
+            "I've met someone kind and gentle, but after my ex I don't trust my own judgment anymore.",
+            "My coworkers undermine me because I'm a woman in charge, and my ex works in the same place.",
+            "I'm raising my daughter and looking after my mum who's getting forgetful, and I have nothing left for myself."
+          ],
+          "spoiler": {
+            "summary": "Raquel falls for 'Salva', not knowing he is the Professor. He manipulates her using her history of abuse. She discovers the truth in Part 2, confronts him and tries to arrest him, is removed from the case, and ultimately chooses him over the police, letting him escape. A year later she follows his clues to Palawan to join him.",
+            "key_events": [
+              "Discovers 'Salva' is the mastermind",
+              "Tries to arrest him, then lets him go",
+              "Suspended from the investigation",
+              "Reunites with him in Palawan"
+            ],
+            "got_right": "She trusts her instincts enough to see through the lie and stands up to colleagues and family who dismissed her.",
+            "got_wrong": "She falls for a man who deceived and manipulated her, repeating a pattern of being drawn to someone who controls the story."
+          }
+        },
+        {
+          "id": "arc:money_heist/raquel_murillo/choosing_a_new_life",
+          "title": "Walking away from the life she built",
+          "literal_situation": "Later in the series, after a turning point that upends her career and loyalties, she has to decide who she is when the job that defined her is no longer the center of her life.",
+          "pattern_label": "leaving a lifelong career for a riskier life",
+          "pattern_text": "A person who has defined themselves through a respectable, rule-bound career chooses a completely different life for love and freedom. Their old colleagues see it as betrayal, and they must prove to themselves and new companions that they belong. The question is whether starting over means losing yourself or finally becoming who you are.",
+          "hook": "Later in the series, after a turning point that changes everything about her career, she is living a life she never imagined, unsure whether the people around her fully trust her, or whether she trusts herself.",
+          "why_relatable": "She built her identity around doing the right thing by the rules. Who are you when you walk away from the career that defined you? Can you belong to a new group when your past makes them wary?",
+          "watch_for": [
+            "How does she use the skills from her old life in her new one?",
+            "Notice how she handles pressure from the people who once worked alongside her.",
+            "Does she follow the plan, or push to have her own voice in it?"
+          ],
+          "start_at": "Part 3 E1",
+          "span": "Part 3-Part 5",
+          "situations": [
+            {"id": "career_change", "weight": 0.8},
+            {"id": "starting_over", "weight": 0.7},
+            {"id": "midlife_reinvention", "weight": 0.6},
+            {"id": "finding_your_people", "weight": 0.4}
+          ],
+          "conflicts": ["duty_vs_desire", "belonging_vs_integrity"],
+          "emotions": {"start": ["freedom", "self_doubt"], "middle": ["fear", "determination"], "end": ["belonging", "self_respect"]},
+          "ending_tone": "hopeful",
+          "intensity": "heavy",
+          "warnings": ["torture", "death_of_main_character", "war_and_violence", "betrayal"],
+          "example_user_messages": [
+            "I quit a stable career I spent twenty years building to follow my heart, and I'm terrified I made a mistake.",
+            "My old colleagues think I betrayed them by leaving.",
+            "I'm starting over in my forties with a completely different life and I'm not sure I belong there.",
+            "I used to be the one in charge and now I'm the new person again."
+          ],
+          "spoiler": {
+            "summary": "Raquel joins the crew under the code name 'Lisbon' for the Bank of Spain heist and serves as the Professor's second. She is captured and interrogated by Alicia Sierra, and the crew are made to believe she has been executed. She is later handed over in a deal and gets into the Bank of Spain, where she takes command on the inside. In Part 5 she leads inside while the Professor is held, and survives to the end with him and the crew under new identities.",
+            "key_events": [
+              "Takes the code name 'Lisbon'",
+              "Captured and interrogated by Alicia Sierra",
+              "Staged fake execution",
+              "Enters the Bank of Spain and leads the crew inside",
+              "Ends free with the Professor"
+            ],
+            "got_right": "She owns her choice, brings her negotiating skill and steadiness to the new group, and holds firm under interrogation.",
+            "got_wrong": "She sometimes acts without the full plan, and her choice cost her relationships in her old life and put her family at risk."
+          }
+        }
+      ]
+    },
+    {
+      "id": "char:money_heist/helsinki",
+      "name": "Helsinki",
+      "role": "A huge, soft-spoken Serbian ex-soldier who joins the robbery with his cousin, guarding the hostages and sending whatever money he can to family back home.",
+      "relations": [
+        {"target": "char:money_heist/nairobi", "relation": "friend"},
+        {"target": "char:money_heist/the_professor", "relation": "mentor"},
+        {"target": "char:money_heist/berlin", "relation": "colleague"},
+        {"target": "char:money_heist/tokyo", "relation": "friend"},
+        {"target": "char:money_heist/denver", "relation": "friend"},
+        {"target": "char:money_heist/rio", "relation": "friend"},
+        {"target": "char:money_heist/raquel_murillo", "relation": "colleague"}
+      ],
+      "arcs": [
+        {
+          "id": "arc:money_heist/helsinki/the_gentle_giant",
+          "title": "A gentle giant carrying the war inside him",
+          "literal_situation": "He and his cousin, who fought side by side in a war, join the crew together. He looks intimidating, but he is quietly sweet and utterly loyal to the people he considers family.",
+          "pattern_label": "a quiet protector carrying old trauma",
+          "pattern_text": "A person who survived violence long ago now protects the people they love with total loyalty, while rarely speaking about what they carry. When someone close to them suffers, they face an impossible choice between love and letting go. The question is how to live with a decision made out of mercy, and how to grieve without words.",
+          "hook": "He is the biggest man in the room and one of the kindest. His cousin is his whole world, and neither of them talks much about the war they came from.",
+          "why_relatable": "He shows love through loyalty, not words. What do you owe the people you've been through everything with? How does someone who has seen so much violence stay tender?",
+          "watch_for": [
+            "Notice how he treats people weaker than him, including the hostages.",
+            "What does he keep to himself, and who does he let in?",
+            "Watch how he carries responsibility for someone he loves."
+          ],
+          "start_at": "Part 1 E1",
+          "span": "Part 1-Part 2",
+          "situations": [
+            {"id": "caring_for_family", "weight": 0.8},
+            {"id": "grief_and_loss", "weight": 0.8},
+            {"id": "illness_or_injury", "weight": 0.4}
+          ],
+          "conflicts": ["holding_on_vs_letting_go", "duty_vs_desire"],
+          "emotions": {"start": ["belonging", "numbness"], "middle": ["fear", "grief"], "end": ["grief", "acceptance"]},
+          "ending_tone": "bittersweet",
+          "intensity": "heavy",
+          "warnings": ["death_of_loved_one", "grief", "medical_trauma", "war_and_violence"],
+          "example_user_messages": [
+            "My cousin is basically my brother. We've been through everything together and I don't know who I am without him.",
+            "I had to make an end-of-life decision for someone I love and I can't stop thinking about it.",
+            "I went through things years ago that I never talk about, and I just try to protect everyone I care about.",
+            "People think I'm tough because of how I look but I'm really not."
+          ],
+          "spoiler": {
+            "summary": "Helsinki fought in the Yugoslav wars with his cousin Oslo. During the Mint heist Oslo is beaten into a vegetative state by hostages; honouring Oslo's wishes, Helsinki smothers him with a pillow in a mercy killing. He also secretly pockets the money meant to destroy the Professor's car and sends it to his family, forcing the Professor to act. He grieves quietly and forms a deep friendship with Nairobi.",
+            "key_events": [
+              "Keeps the money meant for destroying the car and sends it home",
+              "Oslo left in a vegetative state after a hostage attack",
+              "Mercy-kills Oslo at his wish",
+              "Deep friendship with Nairobi"
+            ],
+            "got_right": "He puts his cousin's dignity and wishes above his own need to hold on.",
+            "got_wrong": "He cuts corners for his family's sake, putting the whole crew at risk, and keeps his grief locked away."
+          }
+        },
+        {
+          "id": "arc:money_heist/helsinki/loving_a_guarded_heart",
+          "title": "Loving someone who keeps everyone at arm's length",
+          "literal_situation": "Later in the series, after a turning point that leaves him more alone, he is drawn to a new, sharp-tongued teammate who is nursing an old heartbreak and refuses to let anyone close.",
+          "pattern_label": "patiently loving someone closed off by old heartbreak",
+          "pattern_text": "A quiet, warm person falls for someone who is still hurting from an old, unreturned love and keeps everyone at a distance with sarcasm. They have to decide how long to wait, how honest to be about their own feelings, and how to protect themselves. The question is whether patience and tenderness can break through, and at what cost.",
+          "hook": "Later in the series, after a turning point that leaves him lonelier than before, he finds himself caring deeply for someone who insists he needs no one.",
+          "why_relatable": "He is patient and steady, loving someone who acts like he doesn't want love. How long do you wait for someone to open up? Can you love a person without trying to fix them?",
+          "watch_for": [
+            "Notice how he responds to cruelty from someone he cares about.",
+            "Does he ever ask for what he needs?",
+            "Watch how grief and new love sit side by side for him."
+          ],
+          "start_at": "Part 3 E1",
+          "span": "Part 3-Part 5",
+          "situations": [
+            {"id": "unrequited_love", "weight": 0.7},
+            {"id": "falling_for_someone_unexpected", "weight": 0.6},
+            {"id": "grief_and_loss", "weight": 0.6},
+            {"id": "identity_and_self_acceptance", "weight": 0.3}
+          ],
+          "conflicts": ["independence_vs_connection", "holding_on_vs_letting_go"],
+          "emotions": {"start": ["loneliness", "longing"], "middle": ["grief", "hope"], "end": ["love", "peace"]},
+          "ending_tone": "hopeful",
+          "intensity": "moderate",
+          "warnings": ["death_of_loved_one", "grief", "war_and_violence", "death_of_main_character"],
+          "example_user_messages": [
+            "I'm falling for someone who's still hung up on an old love and won't let anyone in.",
+            "The person I like is sarcastic and pushes me away, but I can see how much they're hurting.",
+            "I lost my best friend recently and I'm trying to open my heart to someone new.",
+            "How long do you wait for someone to be ready?"
+          ],
+          "spoiler": {
+            "summary": "During preparations for the Bank of Spain heist Helsinki begins a physical relationship with Palermo, who is still devastated by his love for Berlin and refuses emotional closeness. Helsinki, who is gay, falls for him and patiently breaks through his defences. He grieves Nairobi after Gandía kills her. By the end he and Palermo are together and survive the heist.",
+            "key_events": [
+              "Relationship with Palermo",
+              "Palermo still mourns Berlin",
+              "Helps save Nairobi in surgery, then loses her to Gandía",
+              "Ends together with Palermo"
+            ],
+            "got_right": "He stays kind and patient and honest about his feelings, never forcing them.",
+            "got_wrong": "He tolerates being pushed away and belittled for a long time without asking for what he deserves."
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,415 @@
+{
+ "_about": "Maps the app's tap buttons to the knowledge graph. Labels are matched case-insensitively (spaces and punctuation ignored). Situation buttons add graph terms (situations, emotions, conflicts, patterns, avoid_warnings), can set max_intensity (light / moderate / heavy) and can prefer_genres (a small score boost). A situation label that is not listed here still works: it is passed to the model as text. Genre buttons are a filter: only shows listed under the selected genres are recommended (none selected = every show). Edit freely, then restart the API.",
+ "situations": {
+  "Grief": {
+   "situations": [
+    "grief_and_loss"
+   ],
+   "emotions": [
+    "grief"
+   ],
+   "patterns": [
+    "stuck_in_grief"
+   ]
+  },
+  "Breakup": {
+   "situations": [
+    "breakup"
+   ],
+   "emotions": [
+    "rejection",
+    "longing"
+   ]
+  },
+  "Divorce": {
+   "situations": [
+    "divorce"
+   ],
+   "emotions": [
+    "grief",
+    "loneliness"
+   ],
+   "patterns": [
+    "rebuilding_after_being_left"
+   ]
+  },
+  "Burnout": {
+   "situations": [
+    "burnout_at_work"
+   ],
+   "emotions": [
+    "burnout",
+    "overwhelm"
+   ]
+  },
+  "Job loss": {
+   "situations": [
+    "losing_a_job"
+   ],
+   "emotions": [
+    "shame",
+    "anxiety"
+   ]
+  },
+  "Career drift": {
+   "situations": [
+    "career_change"
+   ],
+   "emotions": [
+    "restlessness",
+    "confusion"
+   ],
+   "patterns": [
+    "adrift_looking_for_a_calling"
+   ]
+  },
+  "New city": {
+   "situations": [
+    "moving_somewhere_new"
+   ],
+   "emotions": [
+    "loneliness"
+   ]
+  },
+  "Loneliness": {
+   "situations": [
+    "loneliness"
+   ],
+   "emotions": [
+    "loneliness"
+   ]
+  },
+  "Anxiety": {
+   "emotions": [
+    "anxiety",
+    "dread"
+   ]
+  },
+  "Low mood": {
+   "emotions": [
+    "numbness",
+    "inadequacy",
+    "loneliness"
+   ],
+   "patterns": [
+    "numb_after_collapse"
+   ]
+  },
+  "No momentum": {
+   "emotions": [
+    "numbness",
+    "restlessness"
+   ],
+   "patterns": [
+    "adrift_looking_for_a_calling"
+   ]
+  },
+  "Caregiving": {
+   "situations": [
+    "caring_for_family"
+   ],
+   "emotions": [
+    "overwhelm",
+    "burnout"
+   ]
+  },
+  "New parent": {
+   "situations": [
+    "becoming_a_parent"
+   ],
+   "emotions": [
+    "overwhelm",
+    "anxiety"
+   ],
+   "patterns": [
+    "unready_parent"
+   ]
+  },
+  "Family conflict": {
+   "situations": [
+    "family_expectations",
+    "difficult_parent"
+   ],
+   "conflicts": [
+    "self_vs_family_expectations"
+   ],
+   "emotions": [
+    "anger",
+    "resentment"
+   ]
+  },
+  "Who am I now": {
+   "situations": [
+    "identity_and_self_acceptance"
+   ],
+   "emotions": [
+    "confusion"
+   ],
+   "patterns": [
+    "reinvention_after_losing_role"
+   ]
+  },
+  "Coming out": {
+   "situations": [
+    "identity_and_self_acceptance"
+   ],
+   "emotions": [
+    "fear",
+    "hope"
+   ],
+   "patterns": [
+    "discovering_who_you_love"
+   ]
+  },
+  "Far from home": {
+   "situations": [
+    "moving_somewhere_new",
+    "leaving_home"
+   ],
+   "emotions": [
+    "loneliness",
+    "longing"
+   ],
+   "patterns": [
+    "between_two_worlds"
+   ]
+  },
+  "Illness": {
+   "situations": [
+    "illness_or_injury"
+   ],
+   "emotions": [
+    "fear",
+    "anxiety"
+   ],
+   "patterns": [
+    "body_blow"
+   ]
+  },
+  "Recovery": {
+   "situations": [
+    "addiction_and_recovery",
+    "illness_or_injury"
+   ],
+   "emotions": [
+    "determination",
+    "hope"
+   ]
+  },
+  "Money stress": {
+   "emotions": [
+    "anxiety",
+    "overwhelm",
+    "dread"
+   ],
+   "conflicts": [
+    "safety_vs_growth"
+   ]
+  },
+  "Creative block": {
+   "situations": [
+    "confidence_struggle"
+   ],
+   "emotions": [
+    "self_doubt",
+    "restlessness"
+   ],
+   "conflicts": [
+    "perfectionism_vs_good_enough"
+   ]
+  },
+  "Cannot sleep": {
+   "emotions": [
+    "anxiety",
+    "overwhelm",
+    "dread"
+   ]
+  },
+  "Teen years": {
+   "situations": [
+    "coming_of_age",
+    "identity_and_self_acceptance"
+   ],
+   "emotions": [
+    "confusion",
+    "loneliness"
+   ]
+  },
+  "Midlife reckoning": {
+   "situations": [
+    "midlife_reinvention"
+   ],
+   "emotions": [
+    "restlessness"
+   ],
+   "patterns": [
+    "taking_stock_of_a_life"
+   ]
+  },
+  "Friendship rupture": {
+   "situations": [
+    "friendship_ending"
+   ],
+   "emotions": [
+    "betrayal",
+    "loneliness"
+   ]
+  },
+  "Hard workplace": {
+   "situations": [
+    "burnout_at_work",
+    "standing_up_to_authority"
+   ],
+   "emotions": [
+    "resentment"
+   ],
+   "patterns": [
+    "complicit_in_bad_organisation"
+   ]
+  },
+  "Empty nest": {
+   "emotions": [
+    "loneliness",
+    "nostalgia"
+   ],
+   "conflicts": [
+    "holding_on_vs_letting_go"
+   ],
+   "patterns": [
+    "reinvention_after_losing_role"
+   ]
+  },
+  "Re-entry": {
+   "situations": [
+    "starting_over"
+   ],
+   "emotions": [
+    "anxiety",
+    "self_doubt"
+   ]
+  },
+  "Big questions": {
+   "situations": [
+    "identity_and_self_acceptance"
+   ],
+   "emotions": [
+    "confusion",
+    "curiosity"
+   ],
+   "patterns": [
+    "taking_stock_of_a_life"
+   ]
+  },
+  "Just need to laugh": {
+   "max_intensity": "light",
+   "prefer_genres": [
+    "Comedy",
+    "Dramedy"
+   ],
+   "emotions": [
+    "hope"
+   ]
+  }
+ },
+ "genres": {
+  "Drama": [
+   "greys_anatomy",
+   "game_of_thrones",
+   "walking_dead",
+   "breaking_bad",
+   "stranger_things",
+   "squid_game",
+   "money_heist",
+   "mad_men",
+   "succession",
+   "dark",
+   "buffy",
+   "doctor_who",
+   "attack_on_titan",
+   "arcane",
+   "fma"
+  ],
+  "Comedy": [
+   "the_office",
+   "friends",
+   "parks_and_rec",
+   "brooklyn_99",
+   "schitts_creek",
+   "the_good_place",
+   "ted_lasso"
+  ],
+  "Dramedy": [
+   "ted_lasso",
+   "bojack",
+   "sex_education",
+   "gilmore_girls"
+  ],
+  "Romance": [
+   "greys_anatomy",
+   "friends",
+   "gilmore_girls",
+   "sex_education",
+   "the_office",
+   "schitts_creek"
+  ],
+  "Thriller": [
+   "breaking_bad",
+   "squid_game",
+   "money_heist",
+   "dark",
+   "stranger_things"
+  ],
+  "Mystery": [
+   "dark",
+   "stranger_things"
+  ],
+  "Crime": [
+   "breaking_bad",
+   "money_heist",
+   "brooklyn_99"
+  ],
+  "Sci-Fi": [
+   "doctor_who",
+   "stranger_things",
+   "dark"
+  ],
+  "Fantasy": [
+   "avatar",
+   "game_of_thrones",
+   "buffy",
+   "naruto",
+   "fma",
+   "arcane",
+   "attack_on_titan",
+   "my_hero_academia",
+   "the_good_place"
+  ],
+  "Horror": [
+   "walking_dead",
+   "stranger_things",
+   "buffy"
+  ],
+  "Animation": [
+   "avatar",
+   "bojack",
+   "arcane",
+   "naruto",
+   "attack_on_titan",
+   "my_hero_academia",
+   "fma"
+  ],
+  "Documentary": [],
+  "Historical": [
+   "mad_men"
+  ],
+  "Family": [
+   "avatar",
+   "gilmore_girls",
+   "schitts_creek",
+   "parks_and_rec",
+   "the_good_place",
+   "brooklyn_99",
+   "my_hero_academia"
+  ]
+ }
+}

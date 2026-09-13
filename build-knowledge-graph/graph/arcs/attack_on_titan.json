@@ -1,0 +1,843 @@
+{
+  "show": "attack_on_titan",
+  "characters": [
+    {
+      "id": "char:attack_on_titan/eren_yeager",
+      "name": "Eren Yeager",
+      "role": "A hot-headed boy from a town on humanity's outermost wall who hates living caged in by the walls that keep out man-eating Titans and dreams of joining the soldiers who venture beyond them.",
+      "relations": [
+        {"target": "char:attack_on_titan/mikasa_ackerman", "relation": "sibling"},
+        {"target": "char:attack_on_titan/armin_arlert", "relation": "friend"},
+        {"target": "char:attack_on_titan/levi", "relation": "mentor"},
+        {"target": "char:attack_on_titan/levi", "relation": "boss"},
+        {"target": "char:attack_on_titan/hange_zoe", "relation": "boss"},
+        {"target": "char:attack_on_titan/erwin_smith", "relation": "boss"},
+        {"target": "char:attack_on_titan/reiner_braun", "relation": "friend"},
+        {"target": "char:attack_on_titan/reiner_braun", "relation": "enemy"},
+        {"target": "char:attack_on_titan/historia", "relation": "friend"}
+      ],
+      "arcs": [
+        {
+          "id": "arc:attack_on_titan/eren_yeager/channeling_helplessness_into_rage",
+          "title": "The boy who swore he'd never be helpless again",
+          "literal_situation": "Eren is a restless ten-year-old who argues with his mother about joining the Survey Corps and scorns the soldiers who insist the walls will never fall. Then a colossal Titan breaks through, his town is overrun, and he can only watch as a Titan devours his mother. Losing his home and his family in a single day, he vows to wipe out every last Titan and enlists as soon as he is old enough, even though he is far from the most talented trainee.",
+          "pattern_label": "turning helpless grief into a burning mission",
+          "pattern_text": "After a devastating loss they could do nothing to stop, a young person pours all their grief into fury and a vow to fight back, measuring their worth by whether they are strong enough. Driven, reckless and quick to anger, they keep pushing forward even when they fall short of the people around them, and must learn whether that fire is freeing them or consuming them.",
+          "hook": "A furious, grief-stricken kid who has just watched his world collapse and has decided that the only answer is to fight.",
+          "why_relatable": "What do you do with anger that has nowhere to go? Can a vow made on the worst day of your life become the whole of who you are? And what happens to your self-worth when determination alone isn't enough?",
+          "watch_for": [
+            "How does he react every time he feels powerless again?",
+            "Who manages to reach him when rage takes over, and how do they do it?",
+            "Is his anger the thing that keeps him going, or the thing that keeps him stuck?"
+          ],
+          "start_at": "S1E1",
+          "span": "S1-S3",
+          "situations": [
+            {"id": "grief_and_loss", "weight": 0.9},
+            {"id": "coming_of_age", "weight": 0.7},
+            {"id": "confidence_struggle", "weight": 0.6},
+            {"id": "starting_over", "weight": 0.4}
+          ],
+          "conflicts": ["revenge_vs_forgiveness", "safety_vs_growth"],
+          "emotions": {"start": ["grief", "anger"], "middle": ["determination", "self_doubt", "guilt"], "end": ["confusion", "determination"]},
+          "ending_tone": "ambiguous",
+          "intensity": "heavy",
+          "warnings": ["death_of_loved_one", "grief", "war_and_violence", "graphic_gore", "child_endangerment", "betrayal"],
+          "example_user_messages": [
+            "Ever since my dad died I've been angry all the time and I don't know where to put it.",
+            "I made a promise to myself after the worst day of my life and now it's the only thing driving me.",
+            "Everyone around me is more talented than I am, and I'm terrified that trying harder won't be enough.",
+            "My friends keep telling me to slow down, but if I stop moving I think I'll fall apart."
+          ],
+          "spoiler": {
+            "summary": "After his mother is eaten, his father Grisha injects Eren with a Titan serum and Eren (unknowingly) eats him, inheriting the Attack and Founding Titans. During the Battle of Trost Eren is swallowed saving Armin, bursts out as a Titan, and with Armin's help seals the breach; the Survey Corps takes custody of him after his trial. His decision to trust his squad instead of transforming gets Levi's squad killed by the Female Titan, who turns out to be his classmate Annie. His admired friends Reiner and Bertolt reveal they are the Armored and Colossus Titans who destroyed his home, kidnap him, and Hannes is eaten by the same Titan that ate his mother while Eren is still powerless, until he accidentally controls the Titans with the Coordinate. He learns he ate his own father, gains hardening, seals Wall Maria and, at terrible cost (Erwin and most of the Corps die), reaches his basement, which proves humanity lives beyond the walls and that the Titans are people. At the ocean he realises his real enemies are across the sea, and a future memory glimpsed at the medal ceremony horrifies him.",
+            "key_events": [
+              "Mother eaten by the Smiling Titan",
+              "Father injects him with Titan serum; he eats his father",
+              "Transforms into the Attack Titan in Trost",
+              "Levi's squad killed by the Female Titan (Annie)",
+              "Reiner and Bertolt revealed as Armored and Colossus Titans",
+              "Hannes eaten; Eren activates the Coordinate",
+              "Gains hardening and seals Wall Maria",
+              "Basement reveals humanity outside the walls",
+              "Sees the ocean and names the world across it as the enemy"
+            ],
+            "got_right": "Relentless perseverance, fierce loyalty to his friends, and the willingness to keep getting up after failure.",
+            "got_wrong": "Black-and-white thinking, reckless impulsiveness, and blaming himself (or others) so totally that anger crowds out empathy and reflection."
+          }
+        },
+        {
+          "id": "arc:attack_on_titan/eren_yeager/pushing_everyone_away",
+          "title": "Pulling away from everyone who loves him",
+          "literal_situation": "Later in the series, after a turning point that overturns what he believed about the world he dreamed of exploring, Eren is years older, calm where he used to be explosive, and unsettlingly hard to read. The friends who grew up with him feel him drifting out of reach and can't tell what he is thinking or what he wants.",
+          "pattern_label": "withdrawing from loved ones under an unshared burden",
+          "pattern_text": "Someone who was once open and passionate becomes distant and closed-off, carrying something heavy they feel they cannot share. The people who love them watch helplessly as they withdraw, and they themselves wrestle with whether their path is truly a free choice or something they feel trapped into. It is a story about isolation, being misunderstood, and what it costs to push away everyone who cares.",
+          "hook": "Later in the series, after a turning point that shatters his childhood picture of the world, a young man who used to wear his heart on his sleeve has gone quiet and unreadable, and is slipping away from the people who love him.",
+          "why_relatable": "What happens when you feel you can't tell anyone what's really going on inside you? Is keeping people at arm's length protecting them, or abandoning them? And how free are you, really, when you feel you have no other choice?",
+          "watch_for": [
+            "What does he seem to want, underneath the calm?",
+            "How do his oldest friends try to reach him, and how does he respond?",
+            "Does he ever seem at peace with the path he's on?"
+          ],
+          "start_at": "S4",
+          "span": "S4",
+          "situations": [
+            {"id": "loneliness", "weight": 0.8},
+            {"id": "friendship_ending", "weight": 0.7},
+            {"id": "responsibility_you_didnt_ask_for", "weight": 0.7},
+            {"id": "identity_and_self_acceptance", "weight": 0.5}
+          ],
+          "conflicts": ["independence_vs_connection", "power_vs_morality"],
+          "emotions": {"start": ["numbness", "loneliness"], "middle": ["dread", "anger", "guilt"], "end": ["grief", "longing"]},
+          "ending_tone": "tragic",
+          "intensity": "heavy",
+          "warnings": ["death_of_main_character", "death_of_loved_one", "war_and_violence", "graphic_gore", "betrayal", "child_endangerment", "bleak_ending"],
+          "example_user_messages": [
+            "I've shut everyone out and I don't even know how to explain why.",
+            "My friends keep asking what's wrong and I just can't tell them.",
+            "I feel like my life is on rails and every choice I make was decided long ago.",
+            "I've pushed away the people I love most, and part of me thinks they're better off.",
+            "I don't want to hurt anyone, but I feel like I've run out of other options."
+          ],
+          "spoiler": {
+            "summary": "Through the Attack Titan's power Eren glimpsed memories of his own future, including himself unleashing the Wall Titans on the world. He infiltrates Marley alone, manipulates the boy Falco, and launches the Raid on Liberio, killing Willy Tybur and many civilians; Sasha dies in the escape and he laughs at her last word. Back on Paradis he escapes prison, leads the Yeagerists, tells Mikasa he has always hated her and beats Armin. He pretends to go along with his half-brother Zeke's euthanasia plan to reach the Founder, then betrays him, wins over Ymir Fritz and starts the Rumbling, trampling 80% of humanity. In the Paths he admits to Armin he pushed everyone away so they could stop him and be seen as heroes, that he even steered events so his mother would die, that he does not want to die and does not want Mikasa to love anyone else. His friends and former enemies stop him; Mikasa kills him, the power of the Titans disappears, and she buries him under his favourite tree.",
+            "key_events": [
+              "Receives memories of his own future",
+              "Raid on Liberio; kills Willy Tybur and civilians",
+              "Sasha dies; Eren laughs",
+              "Tells Mikasa he always hated her and beats Armin",
+              "Betrays Zeke and starts the Rumbling",
+              "Rumbling kills 80% of humanity",
+              "Confesses his feelings for Mikasa to Armin",
+              "Killed by Mikasa; Titan powers vanish"
+            ],
+            "got_right": "He comes to see his enemies as people like himself, and he genuinely wants his friends to have long lives.",
+            "got_wrong": "He isolates himself, deceives and wounds the people who love him, and chooses mass destruction over trusting anyone to find another way."
+          }
+        }
+      ]
+    },
+    {
+      "id": "char:attack_on_titan/mikasa_ackerman",
+      "name": "Mikasa Ackerman",
+      "role": "Eren's quiet, fiercely protective adoptive sister, taken in by his family after she lost her parents, who follows him everywhere and is a prodigiously gifted fighter.",
+      "relations": [
+        {"target": "char:attack_on_titan/eren_yeager", "relation": "sibling"},
+        {"target": "char:attack_on_titan/armin_arlert", "relation": "friend"},
+        {"target": "char:attack_on_titan/levi", "relation": "boss"},
+        {"target": "char:attack_on_titan/hange_zoe", "relation": "boss"},
+        {"target": "char:attack_on_titan/erwin_smith", "relation": "boss"},
+        {"target": "char:attack_on_titan/reiner_braun", "relation": "enemy"},
+        {"target": "char:attack_on_titan/historia", "relation": "friend"}
+      ],
+      "arcs": [
+        {
+          "id": "arc:attack_on_titan/mikasa_ackerman/protecting_her_only_family",
+          "title": "Building a life around protecting one person",
+          "literal_situation": "Mikasa is a quiet girl living with Eren's family, who took her in after she lost her own parents. She shadows Eren everywhere, reins in his recklessness, and has made keeping him safe the purpose of her life. When their town is overrun and Eren's mother is lost, the family she has left grows smaller still, and she enlists alongside him, quickly becoming the most gifted trainee of her year.",
+          "pattern_label": "making protecting a loved one your whole identity",
+          "pattern_text": "After losing their first family, a person clings to the one person who gave them a reason to keep living and makes protecting them the center of everything. They are extraordinarily capable, but their devotion shapes every decision, sometimes to their own harm. Slowly they have to face whether they can have a self, and a future, that isn't defined by someone else.",
+          "hook": "A quiet, fiercely capable girl who has already lost one family and has decided she will never lose another.",
+          "why_relatable": "What happens when your whole sense of purpose is tied to one person? Is devotion the same as love, or can it become a cage? And who are you if you ever stop being their protector?",
+          "watch_for": [
+            "How does she behave when Eren is out of her sight?",
+            "What does she want for herself, if anything?",
+            "How does she respond when others question her devotion?"
+          ],
+          "start_at": "S1E1",
+          "span": "S1-S3",
+          "situations": [
+            {"id": "caring_for_family", "weight": 0.8},
+            {"id": "grief_and_loss", "weight": 0.7},
+            {"id": "identity_and_self_acceptance", "weight": 0.6},
+            {"id": "unrequited_love", "weight": 0.4}
+          ],
+          "conflicts": ["holding_on_vs_letting_go", "duty_vs_desire"],
+          "emotions": {"start": ["grief", "fear", "love"], "middle": ["anxiety", "determination"], "end": ["belonging", "dread"]},
+          "ending_tone": "bittersweet",
+          "intensity": "heavy",
+          "warnings": ["death_of_loved_one", "grief", "war_and_violence", "graphic_gore", "child_endangerment", "betrayal"],
+          "example_user_messages": [
+            "I've basically been my younger brother's parent since our mum died, and I don't know who I am without that role.",
+            "My partner is the only family I have left and I panic whenever I can't reach them.",
+            "Everyone says I'm really good at what I do, but the only reason I do any of it is to look after one person.",
+            "My friends say I'm too protective, but I've already lost everyone once."
+          ],
+          "spoiler": {
+            "summary": "As a child Mikasa watched traffickers murder her parents; Eren saved her, urged her to fight, and she killed her attacker, awakening the Ackerman power, then gave her his scarf. After Carla is eaten she follows Eren into the military. In Trost, believing Eren dead, she nearly gives up until memories of him push her on; she later rescues him from the Female Titan (Levi is injured saving her) and helps capture Annie. When Reiner and Bertolt kidnap Eren she despairs over breaking her promise to his mother; during the rescue Hannes is eaten and she thanks Eren for teaching her how to live, and he vows to wrap the scarf around her again. She learns she and Levi share the Ackerman bloodline. In Shiganshina she helps defeat Reiner, draws a blade on Levi to save Armin, and weeps when Armin is revived. She sinks into depression on learning Titan inheritors live only 13 years, then sees the ocean with Eren and Armin.",
+            "key_events": [
+              "Parents murdered by traffickers; Eren saves her",
+              "Awakens Ackerman power and receives Eren's scarf",
+              "Nearly gives up in Trost believing Eren is dead",
+              "Levi injured saving her from the Female Titan",
+              "Hannes eaten; Eren's scarf promise",
+              "Shares the Ackerman bloodline with Levi",
+              "Threatens Levi to save Armin",
+              "Learns of the 13-year curse"
+            ],
+            "got_right": "Unwavering loyalty, courage, and the ability to keep going through grief for the sake of the people she loves.",
+            "got_wrong": "Letting one relationship define her entire identity, which makes her reckless whenever Eren is threatened and leaves little room for her own wants."
+          }
+        },
+        {
+          "id": "arc:attack_on_titan/mikasa_ackerman/loving_someone_who_is_changing",
+          "title": "Loving someone you no longer recognise",
+          "literal_situation": "Later in the series, after a turning point that reshapes the world she knew, Mikasa watches the person she has devoted her life to grow colder, harder and more distant. While others around her start to lose faith in him, she keeps insisting that the boy she grew up with is still in there.",
+          "pattern_label": "holding on to someone who is becoming a stranger",
+          "pattern_text": "A person watches someone they love deeply change into someone harder and colder, and keeps defending them long after others have given up. Hurt, loyal and torn, they must decide what love asks of them when the person they love starts causing harm, and whether they can let go of the version of them they remember.",
+          "hook": "Later in the series, after a turning point, a young woman defined by her loyalty is watching the person she loves most drift somewhere she can't follow.",
+          "why_relatable": "How long do you keep believing in someone who keeps hurting you and others? Is loyalty always love? And can you grieve someone who is still standing in front of you?",
+          "watch_for": [
+            "What does she hold on to as proof that he hasn't changed?",
+            "How does she handle being told things she doesn't want to hear?",
+            "What does it cost her to keep hoping?"
+          ],
+          "start_at": "S4",
+          "span": "S4",
+          "situations": [
+            {"id": "unrequited_love", "weight": 0.8},
+            {"id": "grief_and_loss", "weight": 0.7},
+            {"id": "friendship_ending", "weight": 0.5},
+            {"id": "identity_and_self_acceptance", "weight": 0.4}
+          ],
+          "conflicts": ["holding_on_vs_letting_go", "duty_vs_desire"],
+          "emotions": {"start": ["love", "anxiety"], "middle": ["rejection", "betrayal", "confusion"], "end": ["grief", "acceptance", "love"]},
+          "ending_tone": "bittersweet",
+          "intensity": "heavy",
+          "warnings": ["death_of_main_character", "death_of_loved_one", "grief", "war_and_violence", "graphic_gore", "betrayal"],
+          "example_user_messages": [
+            "The person I love has changed so much this year that I barely recognise him, but I keep telling everyone he's still good.",
+            "Everyone's telling me to cut him off and I can't, because I remember who he used to be.",
+            "The person I care about most said something so cruel to me that I can't stop replaying it.",
+            "I think I have to make a choice that will break my heart either way."
+          ],
+          "spoiler": {
+            "summary": "After the Raid on Liberio Mikasa defends Eren while Connie and Jean turn against him over Sasha's death. When Eren joins the Yeagerists he tells her the Ackerman instinct is the only reason she follows him, that the real Mikasa died that day in the cabin, and that he has always hated her; she breaks down, instinctively slams Armin into a table, and later leaves the scarf behind. When Eren starts the Rumbling she wonders whether answering 'family' differently could have changed things. She joins the Warriors and the Survey Corps to stop him, refusing at first to say she would kill him. In a Paths vision Eren shows her a life where they ran away together and asks her to forget him. She puts the scarf back on, enters his Titan's mouth, kills him and kisses him goodbye, which frees Ymir Fritz and ends the power of the Titans. She buries him under his tree and visits his grave for decades, later with a family of her own, and is buried with the scarf.",
+            "key_events": [
+              "Eren says he always hated her and calls her a slave to Ackerman instinct",
+              "Leaves Eren's scarf behind",
+              "Eren starts the Rumbling",
+              "Paths life where she and Eren run away together",
+              "Kills Eren and kisses him goodbye",
+              "Her choice frees Ymir Fritz and ends the Titans",
+              "Buries Eren and visits his grave for decades"
+            ],
+            "got_right": "She keeps her compassion and ultimately chooses what is right over what she wants, loving Eren enough to stop him.",
+            "got_wrong": "She spends a long time clinging to a version of Eren that no longer exists and lets his words define her worth."
+          }
+        }
+      ]
+    },
+    {
+      "id": "char:attack_on_titan/armin_arlert",
+      "name": "Armin Arlert",
+      "role": "Eren's gentle, bookish childhood friend, bullied for dreaming about oceans and deserts beyond the walls and convinced he is too weak to be anything but a burden.",
+      "relations": [
+        {"target": "char:attack_on_titan/eren_yeager", "relation": "friend"},
+        {"target": "char:attack_on_titan/mikasa_ackerman", "relation": "friend"},
+        {"target": "char:attack_on_titan/erwin_smith", "relation": "boss"},
+        {"target": "char:attack_on_titan/hange_zoe", "relation": "mentor"},
+        {"target": "char:attack_on_titan/levi", "relation": "boss"},
+        {"target": "char:attack_on_titan/reiner_braun", "relation": "friend"},
+        {"target": "char:attack_on_titan/reiner_braun", "relation": "enemy"},
+        {"target": "char:attack_on_titan/historia", "relation": "friend"}
+      ],
+      "arcs": [
+        {
+          "id": "arc:attack_on_titan/armin_arlert/finding_his_worth",
+          "title": "The kid who thought he was dead weight",
+          "literal_situation": "Armin is a small, gentle boy who is bullied for reading a forbidden book about the world beyond the walls. He can't fight back and relies on Eren and Mikasa to rescue him, which quietly shames him. When his town falls he loses his home too, and later enlists with his friends, convinced he is the weakest one in the room and that he would rather die than hold them back.",
+          "pattern_label": "discovering your worth isn't where you looked",
+          "pattern_text": "Someone who has always felt like the weak link, dependent on stronger friends, carries deep shame about being a burden. Pushed into situations where they must contribute, they slowly discover that their real strength lies in how they think rather than in what they lack, while still wrestling with self-doubt and the belief that their life matters less than other people's.",
+          "hook": "A kind, anxious, bookish kid who believes he's a burden to his braver friends and would rather disappear than hold them back.",
+          "why_relatable": "What if the thing you're good at isn't the thing everyone around you values? How do you stop measuring yourself against people with different strengths? And why is it so easy to believe your life counts for less?",
+          "watch_for": [
+            "When does he start trusting his own judgment?",
+            "Who helps him see himself differently?",
+            "How does he talk about his own life compared to other people's?"
+          ],
+          "start_at": "S1E1",
+          "span": "S1-S3",
+          "situations": [
+            {"id": "confidence_struggle", "weight": 0.9},
+            {"id": "imposter_syndrome", "weight": 0.6},
+            {"id": "finding_your_people", "weight": 0.6},
+            {"id": "coming_of_age", "weight": 0.5}
+          ],
+          "conflicts": ["safety_vs_growth", "fitting_in_vs_standing_out"],
+          "emotions": {"start": ["inadequacy", "shame", "fear"], "middle": ["self_doubt", "determination", "hope"], "end": ["confidence", "guilt"]},
+          "ending_tone": "hopeful",
+          "intensity": "heavy",
+          "warnings": ["death_of_loved_one", "grief", "war_and_violence", "graphic_gore", "betrayal"],
+          "example_user_messages": [
+            "I've always been the one my friends have to look after, and I hate it.",
+            "I'm not strong or sporty, and everyone on my team seems more useful than me.",
+            "My ideas are good, but I freeze up whenever I have to speak in front of people.",
+            "Sometimes I think the group would be better off without me."
+          ],
+          "spoiler": {
+            "summary": "Armin's parents die in the government's suicidal attempt to retake Wall Maria. In Trost his squad is wiped out and Eren is swallowed saving him; broken with guilt, he still devises the plan to retake the supply depot, persuades Commander Pixis to spare Eren, and wakes Eren's Titan to seal the gate. He deduces the Female Titan is Annie and lures her into a trap, spots Reiner and Bertolt's weaknesses, and taunts Bertolt to help free Eren. He kills a man for the first time to save Jean and is shaken by it. In Shiganshina, out of ideas, he designs a plan in which he deliberately lets the Colossus Titan burn him alive so Eren can strike. Nearly dead, he is given the Titan serum instead of Erwin, eats Bertolt and inherits the Colossus Titan, feeling he did not deserve it. He finally reaches the ocean he dreamed of, only for Eren to point out the enemies across it.",
+            "key_events": [
+              "Parents die in the government's recovery operation",
+              "Eren is swallowed saving him in Trost",
+              "Convinces Pixis to spare Eren",
+              "Deduces Annie is the Female Titan",
+              "First kill to save Jean",
+              "Sacrifices himself against the Colossus Titan",
+              "Revived with the serum instead of Erwin; eats Bertolt",
+              "Reaches the ocean"
+            ],
+            "got_right": "He learns to trust his mind, speaks up when it matters, and puts his friends first with real courage.",
+            "got_wrong": "He values his own life far too little, repeatedly treating himself as the most expendable person present."
+          }
+        },
+        {
+          "id": "arc:attack_on_titan/armin_arlert/standing_in_a_greater_place",
+          "title": "Standing in a place meant for someone greater",
+          "literal_situation": "Later in the series, after a turning point that pushes him toward the front of the group, Armin feels he is standing in a place meant for someone greater. He second-guesses his own judgment, still hopes that talking can solve what fighting can't, and watches his closest friend become someone he no longer understands.",
+          "pattern_label": "stepping into a role you feel unworthy of",
+          "pattern_text": "Someone ends up carrying expectations and responsibilities they believe belonged to a more capable person. Haunted by comparison and a sense that they don't deserve their place, they second-guess every decision, while trying to stay kind and hold on to their ideals in a world that keeps demanding harder choices.",
+          "hook": "Later in the series, after a turning point, a thoughtful young man who still believes in talking things out is sure that someone else should be making the decisions he now has to make.",
+          "why_relatable": "How do you lead when you're sure someone else would do it better? Can you keep your ideals when every option costs something? And how do you stop comparing yourself to a person you admired?",
+          "watch_for": [
+            "How often does he compare himself to others, and to whom?",
+            "Where does he draw the line between being practical and staying kind?",
+            "When does he trust himself enough to act?"
+          ],
+          "start_at": "S4",
+          "span": "S4",
+          "situations": [
+            {"id": "imposter_syndrome", "weight": 0.9},
+            {"id": "responsibility_you_didnt_ask_for", "weight": 0.8},
+            {"id": "becoming_a_manager", "weight": 0.6},
+            {"id": "grief_and_loss", "weight": 0.5}
+          ],
+          "conflicts": ["power_vs_morality", "past_vs_future"],
+          "emotions": {"start": ["guilt", "inadequacy", "self_doubt"], "middle": ["overwhelm", "grief", "determination"], "end": ["grief", "hope", "self_respect"]},
+          "ending_tone": "bittersweet",
+          "intensity": "heavy",
+          "warnings": ["death_of_main_character", "death_of_loved_one", "grief", "war_and_violence", "graphic_gore", "betrayal"],
+          "example_user_messages": [
+            "I got promoted after my manager left, and I feel like a fraud every single day.",
+            "People keep saying the person before me would have handled this better, and honestly I agree.",
+            "I don't know how to make hard decisions without feeling like I'm betraying who I am.",
+            "I made it through something when someone I thought was better didn't, and I still feel it should have been them."
+          ],
+          "spoiler": {
+            "summary": "Armin never stops believing Erwin should have been saved instead of him. He uses the Colossus Titan to destroy Liberio's port and weeps over the carnage, visits Annie's crystal to confide in her, and loses touch with Eren, who beats him and calls him a pawn. Amid the Yeagerist chaos he lashes out and says Erwin would have done better. When the Rumbling begins he joins forces with the Warriors; Hange names him the 15th commander of the Survey Corps before dying to buy the group time. In the Paths Eren shows him the truth and wipes his memory. Swallowed by a Titan, Armin reaches Zeke with a memory of racing his friends and a leaf, arguing that small joys make life worth living, which turns past Titan inheritors against Eren. After Mikasa kills Eren, Armin talks down the Marleyan soldiers by introducing himself as the man who killed Eren Yeager, and becomes a peace ambassador.",
+            "key_events": [
+              "Destroys Liberio's harbor as the Colossus Titan",
+              "Beaten by Eren",
+              "Named 15th commander as Hange dies",
+              "Paths conversation with Eren, memory wiped",
+              "Convinces Zeke that life is worth living",
+              "Claims to be the man who killed Eren",
+              "Becomes a peace ambassador"
+            ],
+            "got_right": "He keeps choosing dialogue and empathy, and he finds a reason to live that isn't about being useful.",
+            "got_wrong": "He is paralysed by comparison with Erwin and by the hope of saving everyone, which delays hard decisions."
+          }
+        }
+      ]
+    },
+    {
+      "id": "char:attack_on_titan/levi",
+      "name": "Levi",
+      "role": "The Survey Corps captain known as humanity's strongest soldier: blunt, cold, obsessively clean, and fiercely protective of the squad that would follow him anywhere.",
+      "relations": [
+        {"target": "char:attack_on_titan/erwin_smith", "relation": "boss"},
+        {"target": "char:attack_on_titan/hange_zoe", "relation": "colleague"},
+        {"target": "char:attack_on_titan/eren_yeager", "relation": "protege"},
+        {"target": "char:attack_on_titan/armin_arlert", "relation": "protege"},
+        {"target": "char:attack_on_titan/mikasa_ackerman", "relation": "colleague"},
+        {"target": "char:attack_on_titan/historia", "relation": "colleague"},
+        {"target": "char:attack_on_titan/reiner_braun", "relation": "enemy"}
+      ],
+      "arcs": [
+        {
+          "id": "arc:attack_on_titan/levi/carrying_the_fallen",
+          "title": "Humanity's strongest, and what it costs him",
+          "literal_situation": "Levi is the Survey Corps' most feared soldier: ruthless with Titans, blunt to the point of rudeness, and fanatical about cleanliness. After Eren's trial he takes charge of him and leads a hand-picked squad that idolises him. He follows only one leader he truly trusts, and tells the people under him that nobody knows the right choice until after they've made it.",
+          "pattern_label": "the stoic protector who carries everyone's losses",
+          "pattern_text": "The most capable person in a high-stakes group seems cold and unshakeable, but quietly carries every loss of the people who trusted them. Loyal to one leader and responsible for younger people, they must keep making hard calls with no guarantee of being right, and learn to live with choices they can't take back.",
+          "hook": "An emotionally guarded, almost untouchable expert whose calm is holding up everyone around him.",
+          "why_relatable": "Who takes care of the person everyone depends on? How do you keep going after loss when showing grief feels like a luxury? And how do you make choices you'll have to live with forever?",
+          "watch_for": [
+            "What small moments show what he actually feels?",
+            "How does he advise others to make choices, and does he follow his own advice?",
+            "What is it about the people he chooses to follow?"
+          ],
+          "start_at": "S1E14",
+          "span": "S1-S4",
+          "situations": [
+            {"id": "grief_and_loss", "weight": 0.9},
+            {"id": "mentor_and_protege", "weight": 0.6},
+            {"id": "responsibility_you_didnt_ask_for", "weight": 0.6},
+            {"id": "burnout_at_work", "weight": 0.5}
+          ],
+          "conflicts": ["duty_vs_desire", "holding_on_vs_letting_go"],
+          "emotions": {"start": ["numbness", "determination"], "middle": ["grief", "guilt", "anger"], "end": ["acceptance", "peace", "grief"]},
+          "ending_tone": "bittersweet",
+          "intensity": "heavy",
+          "warnings": ["death_of_loved_one", "grief", "war_and_violence", "graphic_gore", "torture", "death_of_main_character"],
+          "example_user_messages": [
+            "I'm the person everyone at work leans on, and I can't remember the last time I let myself fall apart.",
+            "I've lost too many people I was responsible for, and I keep going because stopping isn't an option.",
+            "I made a decision that changed someone's life and I'll never know if it was the right one.",
+            "People think I don't care because I don't show it. I care too much."
+          ],
+          "spoiler": {
+            "summary": "Levi's original squad is slaughtered by the Female Titan, and Petra's father unknowingly talks to him about her; he injures himself saving Mikasa and Eren. He tortures Djel Sannes during the coup and bullies Historia into accepting the throne. In Shiganshina he tells Erwin to give up his dream and lead the recruits to their deaths while he takes down the Beast Titan, then must choose who gets the single Titan serum: he picks Armin over the dying Erwin, letting Erwin rest. He fails to finish Zeke and spends years fixated on keeping his promise to Erwin. Zeke's spiked wine turns Levi's own soldiers into Titans, which Levi kills; Zeke detonates a Thunder Spear, leaving Levi scarred and missing two fingers. He allies with former enemies to stop Eren, decides Eren must die, and finally decapitates Zeke. After Eren's death he sees his fallen comrades salute him. He ends up wheelchair-bound in Marley, cared for by Gabi and Falco.",
+            "key_events": [
+              "Original squad killed by the Female Titan",
+              "Tortures Sannes and forces Historia to accept the throne",
+              "Tells Erwin to give up his dream and die",
+              "Chooses Armin over Erwin for the serum",
+              "Kills his own soldiers after Zeke turns them into Titans",
+              "Maimed by a Thunder Spear blast",
+              "Decapitates Zeke",
+              "Fallen comrades salute him; ends in a wheelchair"
+            ],
+            "got_right": "He cares deeply for the people under him, respects others' freedom to choose, and keeps his promises.",
+            "got_wrong": "He buries his grief so deeply that it turns into cruelty toward enemies, and he rarely lets anyone care for him."
+          }
+        },
+        {
+          "id": "arc:attack_on_titan/levi/the_man_who_raised_him",
+          "title": "Facing the man who raised him",
+          "literal_situation": "Later in the series, after a turning point that forces the Survey Corps into a fight against people rather than Titans, Levi finds himself up against a dangerous figure from his childhood in the underground slums: the man he lived with as a boy and learned to survive from. He notices how much of his own way of fighting and thinking came from him.",
+          "pattern_label": "confronting the person who shaped you",
+          "pattern_text": "Someone who grew up in harsh circumstances meets again the older figure who half-raised them and taught them everything they know about survival. Seeing their own habits reflected in that person forces them to ask how much of who they are was learned, what they really were to that person, and whether they can become something different.",
+          "hook": "Later in the series, after a turning point, a man who never talks about his childhood is confronted by the person who shaped it.",
+          "why_relatable": "How much of you was shaped by the person who raised you, even if they weren't a good influence? What do you do with questions only they can answer? Can you recognise their habits in yourself without becoming them?",
+          "watch_for": [
+            "Notice what he says about his childhood, and what he leaves out.",
+            "How does he react when he sees his own methods used against him?",
+            "What does he want from this person: answers, justice, or something else?"
+          ],
+          "start_at": "S3",
+          "span": "S3",
+          "situations": [
+            {"id": "difficult_parent", "weight": 0.9},
+            {"id": "identity_and_self_acceptance", "weight": 0.6},
+            {"id": "standing_up_to_authority", "weight": 0.4},
+            {"id": "grief_and_loss", "weight": 0.4}
+          ],
+          "conflicts": ["past_vs_future", "independence_vs_connection"],
+          "emotions": {"start": ["resentment", "confusion"], "middle": ["anger", "curiosity"], "end": ["grief", "acceptance"]},
+          "ending_tone": "bittersweet",
+          "intensity": "heavy",
+          "warnings": ["war_and_violence", "graphic_gore", "torture", "death_of_loved_one", "child_endangerment"],
+          "example_user_messages": [
+            "The man who basically raised me disappeared when I was a teenager, and I've never gotten a straight answer about why.",
+            "I keep catching myself doing things exactly the way my dad did, and I hate it.",
+            "Someone from my rough childhood just came back into my life and I don't know if I want to see him.",
+            "I grew up with nothing and learned to survive from a person I'm not even sure cared about me."
+          ],
+          "spoiler": {
+            "summary": "Kenny Ackerman, now leading the Interior Police's anti-personnel squad, ambushes Levi's team, killing Nifa and others; Levi escapes him in a bar shootout and realises his own tactics come from Kenny. Levi learns the Ackerman bloodline explains his and Mikasa's awakened strength. After the battle at the Reiss chapel he finds Kenny dying under a tree. Kenny reveals he was the brother of Levi's mother Kuchel, making him Levi's uncle, and says he left Levi because he knew he was not fit to be a parent. He hands Levi the Titan serum and dies; Levi learns his own surname is Ackerman.",
+            "key_events": [
+              "Kenny ambushes Levi's squad; Nifa killed",
+              "Bar shootout with Kenny",
+              "Learns of the Ackerman bloodline",
+              "Kenny revealed as his uncle",
+              "Kenny says he left because he was unfit to be a parent",
+              "Kenny dies after giving Levi the serum"
+            ],
+            "got_right": "He faces his past directly and asks the questions he needs answered, without letting it derail his duty.",
+            "got_wrong": "He recognises Kenny's ruthlessness in himself but mostly keeps the pain bottled up."
+          }
+        }
+      ]
+    },
+    {
+      "id": "char:attack_on_titan/hange_zoe",
+      "name": "Hange Zoë",
+      "role": "An eccentric, endlessly curious Survey Corps squad leader who studies Titans with an enthusiasm that unnerves everyone around them.",
+      "relations": [
+        {"target": "char:attack_on_titan/erwin_smith", "relation": "boss"},
+        {"target": "char:attack_on_titan/levi", "relation": "colleague"},
+        {"target": "char:attack_on_titan/eren_yeager", "relation": "colleague"},
+        {"target": "char:attack_on_titan/armin_arlert", "relation": "protege"},
+        {"target": "char:attack_on_titan/mikasa_ackerman", "relation": "colleague"},
+        {"target": "char:attack_on_titan/historia", "relation": "colleague"},
+        {"target": "char:attack_on_titan/reiner_braun", "relation": "enemy"}
+      ],
+      "arcs": [
+        {
+          "id": "arc:attack_on_titan/hange_zoe/curiosity_over_hatred",
+          "title": "Choosing curiosity over hatred",
+          "literal_situation": "Hange is a Survey Corps squad leader who runs experiments on captured Titans and is thrilled at the chance to study Eren. Loud, tireless and oddly tender toward the creatures everyone else fears, they talk science until dawn and rush toward danger that makes others flinch, which leaves people unsure what to make of them.",
+          "pattern_label": "turning pain into passionate curiosity",
+          "pattern_text": "A person who once burned with hatred found a way through it by getting obsessively curious about the very thing that hurt them. Their enthusiasm makes them seem odd or reckless to others, but it is their way of facing fear and grief. They discover what their unconventional mind can offer, and what it costs to keep asking questions others would rather leave alone.",
+          "hook": "An eccentric, joyfully obsessive researcher in a grim profession, whose excitement about the unknown baffles the people around them.",
+          "why_relatable": "Is it okay to be fascinated by the thing everyone else just hates? What is curiosity protecting you from? And how far will you go for answers when people in power would rather you didn't ask?",
+          "watch_for": [
+            "What happens to their cheerful mood when things get serious?",
+            "Where does their compassion show up unexpectedly?",
+            "How do they treat people who withhold the truth?"
+          ],
+          "start_at": "S1",
+          "span": "S1-S3",
+          "situations": [
+            {"id": "identity_and_self_acceptance", "weight": 0.6},
+            {"id": "standing_up_to_authority", "weight": 0.6},
+            {"id": "grief_and_loss", "weight": 0.5},
+            {"id": "finding_your_people", "weight": 0.4}
+          ],
+          "conflicts": ["fitting_in_vs_standing_out", "truth_vs_protecting_others"],
+          "emotions": {"start": ["curiosity", "joy"], "middle": ["anger", "grief", "fear"], "end": ["curiosity", "grief"]},
+          "ending_tone": "hopeful",
+          "intensity": "heavy",
+          "warnings": ["war_and_violence", "graphic_gore", "torture", "death_of_loved_one", "grief"],
+          "example_user_messages": [
+            "I deal with stress by researching everything to death, and people think I'm weird for it.",
+            "Everyone in my field is burned out and cynical, but I still find this stuff fascinating.",
+            "I got really into studying the thing that hurt me the most, and weirdly it helped.",
+            "I keep getting told to stop asking questions at work, but I can't let it go."
+          ],
+          "spoiler": {
+            "summary": "Hange's Titan subjects Sonny and Bean are killed (by Annie), and Hange works out how Eren's transformations are triggered. They dangle Minister Nick over the wall to learn why Titans are inside it, discover that the walls are made of hardened Titans and that Titans are transformed humans, and find Nick tortured to death. During the coup they torture Djel Sannes alongside Levi and win the press over to the Survey Corps' side. They invent the Executioner from Hell and Thunder Spears. In Shiganshina Moblit dies pushing Hange into a well, and Hange loses an eye. After the battle Erwin is dead and Hange becomes the 14th commander, and the basement reveals the truth about the world outside.",
+            "key_events": [
+              "Sonny and Bean killed",
+              "Discovers Titans inside the walls and that Titans were human",
+              "Minister Nick tortured to death",
+              "Tortures Djel Sannes",
+              "Invents new anti-Titan weapons",
+              "Moblit dies saving Hange; loses an eye",
+              "Becomes 14th commander after Erwin's death"
+            ],
+            "got_right": "They turn fear and hatred into understanding, stay compassionate, and refuse to accept comfortable lies.",
+            "got_wrong": "Recklessness around danger and a dark streak when angry, which can slide into cruelty toward enemies."
+          }
+        },
+        {
+          "id": "arc:attack_on_titan/hange_zoe/leading_after_a_legend",
+          "title": "Filling the shoes of someone they admired",
+          "literal_situation": "Later in the series, after a turning point that leaves them carrying the responsibilities of someone they deeply admired, Hange is running an organisation through changes no one prepared them for. The playful researcher is now exhausted, second-guessing, and trying to hold together people who are starting to pull in different directions.",
+          "pattern_label": "inheriting leadership you never wanted",
+          "pattern_text": "Someone creative and hands-on is handed the top job after the person they looked up to, and finds leadership lonely and crushing. Stretched thin, blamed from every side and unsure their judgment is good enough, they must decide what they truly stand for when every option seems bad.",
+          "hook": "Later in the series, after a turning point, a brilliant, big-hearted oddball is carrying a weight they never asked for, and it's wearing them down.",
+          "why_relatable": "What happens when the person who always had the answers isn't there and you're the one people turn to? How do you keep your warmth when you're exhausted and doubted? And what do you stand for when every choice has a cost?",
+          "watch_for": [
+            "How do they compare themselves to the leader who came before?",
+            "When do they lose their temper, and what is underneath it?",
+            "What makes them decide where they stand?"
+          ],
+          "start_at": "S4",
+          "span": "S4",
+          "situations": [
+            {"id": "becoming_a_manager", "weight": 0.9},
+            {"id": "burnout_at_work", "weight": 0.8},
+            {"id": "imposter_syndrome", "weight": 0.7},
+            {"id": "responsibility_you_didnt_ask_for", "weight": 0.7}
+          ],
+          "conflicts": ["duty_vs_desire", "power_vs_morality"],
+          "emotions": {"start": ["overwhelm", "self_doubt", "burnout"], "middle": ["anger", "guilt", "loneliness"], "end": ["self_respect", "peace"]},
+          "ending_tone": "bittersweet",
+          "intensity": "heavy",
+          "warnings": ["death_of_main_character", "death_of_loved_one", "war_and_violence", "graphic_gore", "grief", "betrayal"],
+          "example_user_messages": [
+            "My boss left and now I'm running the team, and I feel completely out of my depth.",
+            "Everyone keeps comparing me to the person who had this job before me.",
+            "I used to love my work and now I'm so burned out I snap at people I care about.",
+            "I'm being pulled in every direction and I have to decide what I actually stand for."
+          ],
+          "spoiler": {
+            "summary": "As commander, Hange builds ties with the Anti-Marleyan Volunteers and Hizuru, but Eren's unauthorised Raid on Liberio makes Paradis a global target; Hange tells him he has lost the Corps' trust and later laments that being made commander was Erwin's only mistake. Eren escapes and the Yeagerists take over the military. Hange rescues the maimed Levi, allies with the Marleyan Warriors, and admits that their own inaction forced Eren's hand but that their fallen comrades would never accept saving one island at the cost of the world. At Odiha, when the Rumbling arrives, Hange names Armin the 15th commander, hears Levi tell them to 'dedicate your heart' for the first time, and stays behind to hold off the Colossal Titans so the flying boat can take off, dying in the flames. They wake among fallen comrades, where Erwin tells them the sacrifice worked.",
+            "key_events": [
+              "Eren's Raid on Liberio undermines Hange's command",
+              "Yeagerists seize the military",
+              "Allies with the Marleyan Warriors to stop the Rumbling",
+              "Names Armin 15th commander",
+              "Dies holding off the Titans at Odiha",
+              "Reunited with Erwin and fallen comrades in death"
+            ],
+            "got_right": "Hange keeps their conscience and chooses to act for everyone, even at the cost of their own life.",
+            "got_wrong": "They doubt themselves so much, and hesitate so long, that events overtake them."
+          }
+        }
+      ]
+    },
+    {
+      "id": "char:attack_on_titan/reiner_braun",
+      "name": "Reiner Braun",
+      "role": "A tall, dependable trainee in Eren's class and the natural big brother of the group, who takes his duty seriously and says he hopes to get back to the hometown he lost.",
+      "relations": [
+        {"target": "char:attack_on_titan/eren_yeager", "relation": "friend"},
+        {"target": "char:attack_on_titan/eren_yeager", "relation": "enemy"},
+        {"target": "char:attack_on_titan/armin_arlert", "relation": "friend"},
+        {"target": "char:attack_on_titan/mikasa_ackerman", "relation": "enemy"},
+        {"target": "char:attack_on_titan/historia", "relation": "friend"},
+        {"target": "char:attack_on_titan/levi", "relation": "enemy"},
+        {"target": "char:attack_on_titan/hange_zoe", "relation": "enemy"},
+        {"target": "char:attack_on_titan/erwin_smith", "relation": "enemy"}
+      ],
+      "arcs": [
+        {
+          "id": "arc:attack_on_titan/reiner_braun/the_dependable_one",
+          "title": "The big brother everyone leans on",
+          "literal_situation": "Reiner is one of the top trainees in Eren's class: strong, steady, and the natural big brother of the group. He carries classmates' packs when they fall behind, lectures others about a soldier's duty, and quietly encourages Eren to just keep moving forward. He talks about wanting to get back to the hometown he lost one day.",
+          "pattern_label": "the dependable one who is quietly falling apart",
+          "pattern_text": "Someone becomes the reliable, big-brother figure everyone leans on, playing that role so well that it starts to feel more real than their own life. Beneath it they carry obligations and guilt they feel unable to share with anyone, and the gap between the person they show and the person they are grows until it threatens to split them apart.",
+          "hook": "A steady, admired young man who always has an encouraging word for others, and never seems to need one himself.",
+          "why_relatable": "What does it cost to always be the strong one? Who looks after the person everyone else relies on? And what happens when the pressure to hold it together never lets up?",
+          "watch_for": [
+            "Notice how he talks about the home he wants to get back to.",
+            "What happens to him when he's exhausted and under strain?",
+            "Who does he let see him struggling?"
+          ],
+          "start_at": "S1E3",
+          "span": "S1-S3",
+          "situations": [
+            {"id": "identity_and_self_acceptance", "weight": 0.8},
+            {"id": "family_expectations", "weight": 0.5},
+            {"id": "loneliness", "weight": 0.5},
+            {"id": "finding_your_people", "weight": 0.5}
+          ],
+          "conflicts": ["belonging_vs_integrity", "truth_vs_protecting_others"],
+          "emotions": {"start": ["determination", "pride"], "middle": ["guilt", "confusion", "anxiety"], "end": ["grief", "shame"]},
+          "ending_tone": "tragic",
+          "intensity": "heavy",
+          "warnings": ["betrayal", "war_and_violence", "graphic_gore", "death_of_loved_one", "grief"],
+          "example_user_messages": [
+            "I'm the one everyone in my friend group comes to with their problems, and nobody asks how I'm doing.",
+            "I've been playing a role at work for so long I don't know which version of me is real anymore.",
+            "I feel like I'm living two lives and it's tearing me apart.",
+            "I keep telling everyone to push through, but I don't know how much longer I can."
+          ],
+          "spoiler": {
+            "summary": "Reiner is a Warrior from Marley and the Armored Titan; with Bertolt and Annie he broke Wall Maria to hunt the Founding Titan. Among the trainees he models himself on his dead friend Marcel and becomes so absorbed in his 'soldier' persona that his mind splits. When Marco overhears him in Trost, Reiner has him eaten. On the expedition he carves Eren's location into the Female Titan's hand. On the wall after Utgard he blurts out to Eren that he and Bertolt are the Armored and Colossus Titans, fights Eren and kidnaps him, then flips between personas until Bertolt reminds him they are warriors, not soldiers. The rescue fails him; he hurls Titans at the retreating soldiers. In Shiganshina he is blasted out of his Titan by Thunder Spears and nearly executed, then rescued by Zeke and Pieck, while Bertolt is captured and eaten by Armin.",
+            "key_events": [
+              "Reiner is the Armored Titan, a Marleyan Warrior",
+              "Helped breach Wall Maria",
+              "Has Marco eaten to protect his secret",
+              "Split personality from guilt",
+              "Reveals himself to Eren and kidnaps him",
+              "Defeated in Shiganshina; Bertolt eaten by Armin"
+            ],
+            "got_right": "His care for his comrades, on both sides, is real, and he genuinely protects people even at his own expense.",
+            "got_wrong": "He buries guilt instead of facing it, hides behind a role, and commits terrible acts out of obedience."
+          }
+        },
+        {
+          "id": "arc:attack_on_titan/reiner_braun/guilt_and_the_will_to_live",
+          "title": "Carrying guilt he can't put down",
+          "literal_situation": "Later in the series, after a turning point that leaves him scarred by what he has seen and done, Reiner is years older, thin and exhausted, haunted by nightmares and memories he can't talk about. His family proudly treats him as the hero they always imagined, and his young cousin can't wait to follow in his footsteps, which terrifies him.",
+          "pattern_label": "crushed by guilt and questioning whether to go on",
+          "pattern_text": "Someone who did terrible things out of duty and a desperate need for a parent's approval now lives with overwhelming guilt. Worn down, numb and quietly wishing they could disappear, they keep going mainly for the young people who depend on them, and must find out whether a person who caused so much harm can still choose to live and make amends.",
+          "hook": "Later in the series, after a turning point, a man everyone once saw as strong is barely holding himself together, and hiding it from the family who idolises him.",
+          "why_relatable": "How do you live with things you can't undo? What keeps you going when part of you wants to disappear? And can you ever stop trying to be the person your family needs you to be?",
+          "watch_for": [
+            "Who does he stay alive for?",
+            "How does he talk about the people he once lived among?",
+            "What does he want from the people he has hurt?"
+          ],
+          "start_at": "S4E1",
+          "span": "S4",
+          "situations": [
+            {"id": "redemption_after_mistakes", "weight": 0.9},
+            {"id": "family_expectations", "weight": 0.7},
+            {"id": "difficult_parent", "weight": 0.5},
+            {"id": "loneliness", "weight": 0.5}
+          ],
+          "conflicts": ["past_vs_future", "self_vs_family_expectations"],
+          "emotions": {"start": ["guilt", "numbness", "shame"], "middle": ["dread", "grief", "determination"], "end": ["acceptance", "hope"]},
+          "ending_tone": "bittersweet",
+          "intensity": "heavy",
+          "warnings": ["self_harm_or_suicide", "war_and_violence", "graphic_gore", "death_of_loved_one", "grief", "child_endangerment"],
+          "example_user_messages": [
+            "I did things I'm deeply ashamed of because I thought it would make my father proud, and now I can't live with myself.",
+            "Some nights the only reason I don't give up is my little cousin who looks up to me.",
+            "My family thinks I'm a hero and I feel like a fraud.",
+            "I want to apologise to the people I hurt, but I don't think I deserve forgiveness."
+          ],
+          "spoiler": {
+            "summary": "Flashbacks show Reiner became a Warrior hoping his Marleyan father would accept him; the father called him an Eldian devil and fled, and Marcel secretly got Reiner chosen before being eaten by Ymir. Back in Liberio Reiner puts a rifle in his mouth and stops only because he hears Falco outside. Eren confronts him in a basement during the Tybur festival; Reiner breaks down and begs to be killed, then survives Eren's attack shielding Falco. He fights Eren on Paradis, then joins the Survey Corps and remaining Warriors to stop the Rumbling, confesses Marco's death to Jean and is beaten, apologises to Annie, and admits he will never forgive himself. He holds back the Titan 'centipede' at Fort Salta. When the power of the Titans vanishes his mother embraces him, and three years later he sails to Paradis as a peace ambassador.",
+            "key_events": [
+              "Rejected by his Marleyan father",
+              "Suicide attempt stopped by Falco",
+              "Begs Eren to kill him in Liberio",
+              "Allies with the Survey Corps against the Rumbling",
+              "Confesses Marco's death to Jean",
+              "Loses his Titan power; mother embraces him",
+              "Becomes a peace ambassador"
+            ],
+            "got_right": "He finds reasons to live in protecting children, owns his crimes out loud, and works alongside those he wronged.",
+            "got_wrong": "He spent years chasing a parent's approval and hiding from guilt instead of facing it, which nearly destroyed him."
+          }
+        }
+      ]
+    },
+    {
+      "id": "char:attack_on_titan/erwin_smith",
+      "name": "Erwin Smith",
+      "role": "The composed, charismatic commander of the Survey Corps, who plans far ahead and asks his soldiers to risk everything for humanity.",
+      "relations": [
+        {"target": "char:attack_on_titan/levi", "relation": "colleague"},
+        {"target": "char:attack_on_titan/hange_zoe", "relation": "colleague"},
+        {"target": "char:attack_on_titan/armin_arlert", "relation": "protege"},
+        {"target": "char:attack_on_titan/eren_yeager", "relation": "colleague"},
+        {"target": "char:attack_on_titan/historia", "relation": "colleague"},
+        {"target": "char:attack_on_titan/reiner_braun", "relation": "enemy"}
+      ],
+      "arcs": [
+        {
+          "id": "arc:attack_on_titan/erwin_smith/a_dream_worth_the_cost",
+          "title": "Asking others to pay for his dream",
+          "literal_situation": "Erwin is the commander of the Survey Corps: calm, eloquent and always thinking several moves ahead. He argues to take Eren into his regiment, tells new recruits plainly that many of them will die, and leads missions that cost enormous numbers of lives in pursuit of humanity's future and the secrets he believes wait in Eren's old home.",
+          "pattern_label": "a driven leader questioning what the mission is really for",
+          "pattern_text": "A brilliant, charismatic leader asks the people who trust them to make enormous sacrifices, all for a goal that is partly about everyone and partly a deeply personal obsession rooted in their past. Carrying guilt for every life spent, they must face whether they are serving the cause or using it, and whether they can let go of the dream when it matters most.",
+          "hook": "A composed, inspiring commander who seems to have an answer for everything, and whose soldiers would follow him anywhere.",
+          "why_relatable": "How do you live with the cost your ambition puts on other people? Is your big mission really for everyone, or is some of it just for you? And could you give up the thing you've wanted your whole life if the moment demanded it?",
+          "watch_for": [
+            "Watch his face when he talks about what he's searching for.",
+            "How does he justify the sacrifices he asks of others?",
+            "Who is willing to tell him the truth, and how does he take it?"
+          ],
+          "start_at": "S1E14",
+          "span": "S1-S3",
+          "situations": [
+            {"id": "taking_a_big_risk", "weight": 0.8},
+            {"id": "burnout_at_work", "weight": 0.5},
+            {"id": "grief_and_loss", "weight": 0.5},
+            {"id": "standing_up_to_authority", "weight": 0.5}
+          ],
+          "conflicts": ["duty_vs_desire", "power_vs_morality"],
+          "emotions": {"start": ["determination", "curiosity"], "middle": ["guilt", "longing"], "end": ["relief", "peace"]},
+          "ending_tone": "bittersweet",
+          "intensity": "heavy",
+          "warnings": ["death_of_main_character", "war_and_violence", "graphic_gore", "grief"],
+          "example_user_messages": [
+            "I've built my whole career chasing one goal and I'm starting to wonder who I've sacrificed along the way.",
+            "My team works themselves to the bone because they believe in me, and I'm not sure I deserve it.",
+            "Part of why I'm so driven is to prove my father was right, and I don't know if that's healthy.",
+            "I'm afraid that if I give up this dream, I won't know who I am."
+          ],
+          "spoiler": {
+            "summary": "As a boy Erwin repeated his teacher-father's theory that the king had wiped humanity's memories; the Military Police killed his father for it, and Erwin's lifelong drive is to prove him right. He traps the Female Titan, loses his arm leading the charge to rescue Eren, and stages a coup that nearly gets him hanged before it succeeds; he admits to Zackly that his real reason is a childhood dream. In Shiganshina, with the Beast Titan crushing the Corps, he considers abandoning everyone to reach the basement; Levi tells him to give up the dream, and Erwin, relieved, leads the recruits on a suicide charge with a speech about giving meaning to the dead. Mortally wounded, he is carried back, but Levi gives the only serum to Armin, and Erwin dies without seeing the basement.",
+            "key_events": [
+              "Father killed after young Erwin shared his theory",
+              "Loses his arm rescuing Eren",
+              "Leads a successful coup against the crown",
+              "Admits his motive is a personal dream",
+              "Suicide charge against the Beast Titan",
+              "Levi gives the serum to Armin; Erwin dies"
+            ],
+            "got_right": "He owns the cost of his choices, inspires people to find meaning, and in the end lets go of his dream for others.",
+            "got_wrong": "He let a personal obsession, rooted in childhood guilt, justify sending countless people to their deaths."
+          }
+        }
+      ]
+    },
+    {
+      "id": "char:attack_on_titan/historia",
+      "name": "Historia (Krista Lenz)",
+      "role": "Krista Lenz, a petite, gentle trainee in Eren's class whom classmates call an angel for her endless kindness and willingness to help anyone.",
+      "relations": [
+        {"target": "char:attack_on_titan/eren_yeager", "relation": "friend"},
+        {"target": "char:attack_on_titan/mikasa_ackerman", "relation": "colleague"},
+        {"target": "char:attack_on_titan/armin_arlert", "relation": "friend"},
+        {"target": "char:attack_on_titan/levi", "relation": "boss"},
+        {"target": "char:attack_on_titan/erwin_smith", "relation": "boss"},
+        {"target": "char:attack_on_titan/hange_zoe", "relation": "colleague"},
+        {"target": "char:attack_on_titan/reiner_braun", "relation": "friend"}
+      ],
+      "arcs": [
+        {
+          "id": "arc:attack_on_titan/historia/the_girl_behind_the_kindness",
+          "title": "The girl who has to be good",
+          "literal_situation": "Krista Lenz is the smallest trainee in her class, gentle and selfless to the point that classmates call her an angel. She sneaks food to a punished trainee, volunteers for the hardest jobs and always puts others before herself. Her closest friend, the sharp-tongued Ymir, seems to be the only person who doesn't take her sweetness at face value.",
+          "pattern_label": "the people-pleaser learning who they really are",
+          "pattern_text": "Someone who grew up unwanted learned to survive by being endlessly nice, becoming the person others would approve of instead of a person of their own. Their kindness hides a quiet belief that they don't deserve to exist. With the help of one friend who refuses to accept the act, they have to find out who they are underneath, and whether they can live for themselves.",
+          "hook": "A sweet, universally liked young woman whose kindness is so relentless that one friend starts to wonder what it's covering up.",
+          "why_relatable": "Why does being liked matter so much to her? Is kindness still kindness if it comes from a fear of being unwanted? And who would she be if she stopped performing it?",
+          "watch_for": [
+            "Notice when she offers to take risks for others, and how willingly.",
+            "What does Ymir see in her that others don't?",
+            "How does she react when she's asked about herself rather than others?"
+          ],
+          "start_at": "S1E3",
+          "span": "S1-S2",
+          "situations": [
+            {"id": "identity_and_self_acceptance", "weight": 0.9},
+            {"id": "difficult_parent", "weight": 0.6},
+            {"id": "confidence_struggle", "weight": 0.5},
+            {"id": "finding_your_people", "weight": 0.5}
+          ],
+          "conflicts": ["fitting_in_vs_standing_out", "belonging_vs_integrity"],
+          "emotions": {"start": ["loneliness", "rejection"], "middle": ["confusion", "hope", "belonging"], "end": ["confusion", "longing"]},
+          "ending_tone": "bittersweet",
+          "intensity": "heavy",
+          "warnings": ["abuse", "self_harm_or_suicide", "war_and_violence", "graphic_gore", "child_endangerment"],
+          "example_user_messages": [
+            "I'm the nice one in every group, and lately I've realised I don't know what I actually want.",
+            "My mum never wanted me, and I've spent my whole life trying to make everyone else like me instead.",
+            "I say yes to everything because I'm scared of what people will think if I don't.",
+            "One friend told me my niceness feels like an act, and it's the most seen I've ever felt."
+          ],
+          "spoiler": {
+            "summary": "Krista is really Historia Reiss, the illegitimate daughter of the noble Rod Reiss; her mother ignored and hit her, and was murdered in front of her by Kenny's men, and Historia was spared only by taking a false name and joining the military. Her kindness masks a wish to die a death people will remember fondly; in a snowstorm Ymir calls this out, saves their comrade Daz, and makes Historia promise to live under her real name one day. At Utgard Castle Ymir turns into a Titan to save everyone and Krista tells her true name. Ymir later leaves with Reiner and Bertolt, partly to protect Historia, who is left heartbroken and declares she is done being Krista, feeling hollow underneath.",
+            "key_events": [
+              "Illegitimate daughter of Rod Reiss",
+              "Mother murdered; forced to take the name Krista Lenz",
+              "Seeks a heroic death in the snowstorm",
+              "Ymir makes her promise to live as herself",
+              "Ymir's Titan form at Utgard; Historia gives her true name",
+              "Ymir leaves with Reiner and Bertolt"
+            ],
+            "got_right": "She is genuinely kind, and she lets one honest friend challenge her.",
+            "got_wrong": "She hides behind a people-pleasing persona and quietly treats her own life as disposable."
+          }
+        },
+        {
+          "id": "arc:attack_on_titan/historia/choosing_her_own_path",
+          "title": "Refusing the future others planned for her",
+          "literal_situation": "Later in the series, after a turning point that brings her family background into the open, Historia feels hollow and unsure who she is without the kind persona she used to wear. The adults around her are pressuring her to step into a huge, public role she feels completely unfit for, and she has to work out what, if anything, she owes a family that never wanted her.",
+          "pattern_label": "rejecting the role a parent planned for you",
+          "pattern_text": "Someone who was rejected by a parent is pulled back into the family story and pressured to become what others need. Feeling empty and unsure of their own worth, they are tempted to accept any role that would make them wanted at last, and have to decide whether to live out someone else's plan or choose a path, and a purpose, of their own.",
+          "hook": "Later in the series, after a turning point, a young woman who has only just stopped pretending finds everyone suddenly wanting to decide who she should be.",
+          "why_relatable": "What do you owe a family that never claimed you? How do you make a huge decision when you're not sure you even have a self yet? And whose life is it, if everyone else is writing the script?",
+          "watch_for": [
+            "When is she doing what she's told, and when is she choosing?",
+            "What does she still want from her family?",
+            "Who helps her find her own voice?"
+          ],
+          "start_at": "S3",
+          "span": "S3",
+          "situations": [
+            {"id": "family_expectations", "weight": 0.9},
+            {"id": "difficult_parent", "weight": 0.8},
+            {"id": "responsibility_you_didnt_ask_for", "weight": 0.7},
+            {"id": "standing_up_to_authority", "weight": 0.5}
+          ],
+          "conflicts": ["self_vs_family_expectations", "duty_vs_desire"],
+          "emotions": {"start": ["numbness", "self_doubt"], "middle": ["longing", "confusion", "fear"], "end": ["self_respect", "confidence"]},
+          "ending_tone": "hopeful",
+          "intensity": "heavy",
+          "warnings": ["abuse", "war_and_violence", "graphic_gore", "death_of_loved_one", "child_endangerment"],
+          "example_user_messages": [
+            "My dad walked out when I was little and now he's acting like I matter to him, and part of me wants to believe it.",
+            "My family has my whole future planned and nobody has ever asked me what I want.",
+            "I've been offered a huge responsibility and I feel like an empty shell pretending to be a person.",
+            "I said no to my parents for the first time in my life and I'm still shaking."
+          ],
+          "spoiler": {
+            "summary": "Levi forces Historia to agree to become queen as part of the Survey Corps' coup. Handed over with Eren to Kenny, she is reunited with her father Rod Reiss, who apologises and asks her to inject herself with Titan serum and eat Eren to reclaim the Founding Titan; touching Eren restores her memories of her half-sister Frieda, whom Eren's father killed. Remembering Ymir's words about living with pride, she smashes the syringe, throws her father and frees Eren. Rod turns into a colossal abnormal Titan; Historia insists on fighting, delivers the killing blow herself, and declares herself the true ruler. She is crowned queen, opens an orphanage, and punches Levi, who thanks her. Later she agrees to inherit the Beast Titan and bear heirs, and gets pregnant partly to delay that; she gives birth during the Rumbling and later marries the father.",
+            "key_events": [
+              "Pressured by Levi to become queen",
+              "Rod Reiss wants her to eat Eren",
+              "Recovers memories of her sister Frieda",
+              "Smashes the serum and frees Eren",
+              "Kills her Titan father",
+              "Crowned queen; opens an orphanage",
+              "Later pregnant to delay inheriting the Beast Titan"
+            ],
+            "got_right": "She stops seeking a parent's love at any cost and makes a choice that is truly her own.",
+            "got_wrong": "She almost gives up her life to win approval from a father who only wanted her blood."
+          }
+        }
+      ]
+    }
+  ]
+}

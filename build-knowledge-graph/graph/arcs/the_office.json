@@ -1,0 +1,965 @@
+{
+  "show": "the_office",
+  "characters": [
+    {
+      "id": "char:the_office/michael_scott",
+      "name": "Michael Scott",
+      "role": "The attention-hungry, well-meaning regional manager of a small paper-company branch in Scranton who desperately wants his employees to be his friends.",
+      "relations": [
+        {"target": "char:the_office/dwight_schrute", "relation": "protege"},
+        {"target": "char:the_office/jim_halpert", "relation": "friend"},
+        {"target": "char:the_office/pam_beesly", "relation": "friend"},
+        {"target": "char:the_office/ryan_howard", "relation": "protege"},
+        {"target": "char:the_office/andy_bernard", "relation": "protege"},
+        {"target": "char:the_office/erin_hannon", "relation": "protege"},
+        {"target": "char:the_office/angela_martin", "relation": "colleague"}
+      ],
+      "arcs": [
+        {
+          "id": "arc:the_office/michael_scott/wanting_to_be_liked_by_his_team",
+          "title": "The boss who wants to be everyone's friend",
+          "literal_situation": "Michael runs a small paper-company branch in Scranton. He treats his employees as his family and best friends, stages jokes and events to get their attention, and can't understand why they mostly roll their eyes.",
+          "pattern_label": "a lonely leader who needs his team to love him",
+          "pattern_text": "A person put in charge of others confuses being liked with doing the job well. Their need for approval makes them overshare, overstep and dodge hard calls, and every sign of rejection lands as a personal wound. The story asks whether they can earn real respect and real closeness without making everyone else responsible for their loneliness.",
+          "hook": "Michael calls himself the world's best boss and bought the mug to prove it. His staff dodges his meetings, and a documentary crew is filming every awkward joke.",
+          "why_relatable": "He wants work to feel like family because he doesn't have much of one outside it. Can you be close to the people you manage, or does the wish to be liked keep getting in the way of leading them? What happens when your loudest need is the one you can't admit?",
+          "watch_for": [
+            "When does he choose being liked over doing the right thing, and when does he do the reverse?",
+            "Which coworkers start to see what's underneath the act, and what changes their minds?",
+            "What does he do when someone on his team is actually hurting?"
+          ],
+          "start_at": "S1E1",
+          "span": "S1-S7",
+          "situations": [
+            {"id": "becoming_a_manager", "weight": 0.8},
+            {"id": "loneliness", "weight": 0.8},
+            {"id": "finding_your_people", "weight": 0.6},
+            {"id": "confidence_struggle", "weight": 0.4}
+          ],
+          "conflicts": ["belonging_vs_integrity", "career_vs_relationships"],
+          "emotions": {"start": ["loneliness", "longing"], "middle": ["rejection", "shame", "hope"], "end": ["belonging", "joy", "acceptance"]},
+          "ending_tone": "bittersweet",
+          "intensity": "light",
+          "warnings": [],
+          "example_user_messages": [
+            "I just got put in charge of people I used to joke around with and I can't stand the thought of them not liking me.",
+            "My team never invites me to anything and honestly work is most of my social life.",
+            "I keep trying so hard to be fun at work and I can tell people find me exhausting.",
+            "I avoid giving hard feedback because I'm scared people will turn on me."
+          ],
+          "spoiler": {
+            "summary": "Across seven seasons Michael blunders through offensive meetings, pointless events and failed schemes, yet his branch keeps performing because he genuinely cares about his people. He sabotages Jim's shot at a promotion to protect his own job, clashes with corporate, quits to start a rival company, and slowly wins his staff's affection by showing up for them when it counts (buying Pam's painting, shielding the staff from layoff fears). When he falls in love with Holly and she has to move to Colorado to care for her parents, he chooses her over the job, secretly leaves a day early to avoid goodbyes, shares a tearful farewell with Jim, and Pam catches him at the airport. He returns in the finale as Dwight's best man, now a father.",
+            "key_events": [
+              "Outs Oscar to the office and runs a disastrous Diversity Day",
+              "Gives Jim a bad recommendation to keep his own job, then agrees to co-manage with him",
+              "Buys Pam's painting at her art show and tells her he's proud of her",
+              "Quits and founds the Michael Scott Paper Company",
+              "Leaves Scranton for Colorado with Holly a day early; Jim calls him the best boss he ever had",
+              "Pam says goodbye barefoot at the airport",
+              "Returns as Dwight's best man in the finale with children of his own"
+            ],
+            "got_right": "He genuinely loves his people and shows up for them when it matters; his warmth turns a dull workplace into something like a family.",
+            "got_wrong": "He makes his loneliness everyone else's problem, crosses boundaries constantly, and puts being liked ahead of fairness, professionalism and other people's ambitions."
+          }
+        },
+        {
+          "id": "arc:the_office/michael_scott/longing_for_someone_to_come_home_to",
+          "title": "Longing for someone to come home to",
+          "literal_situation": "Michael is a single man in his early forties who openly dreams of a wife and a houseful of kids. He throws himself into every crush and date, and keeps misreading who is actually interested.",
+          "pattern_label": "a lonely romantic looking for love in the wrong places",
+          "pattern_text": "Someone who has wanted a family of their own since childhood keeps throwing themselves at relationships that can't give it to them, including ones where they are belittled or have to shrink. The story is about telling the difference between being wanted and being loved, and whether they can leave what's familiar long enough to recognise the right person.",
+          "hook": "As a kid he said he wanted a hundred children so he'd have a hundred friends who couldn't say no. He's still waiting for the first one.",
+          "why_relatable": "Why does he keep choosing people who don't treat him well? Is he in love with a person, or with the idea of not being alone? What would he have to change to be ready for something real?",
+          "watch_for": [
+            "How does he act when a partner puts him down? Does he see it?",
+            "What does he give up of himself to keep a relationship going?",
+            "Who actually laughs at his jokes, and what does that tell him?"
+          ],
+          "start_at": "S1E1",
+          "span": "S1-S7",
+          "situations": [
+            {"id": "loneliness", "weight": 0.8},
+            {"id": "breakup", "weight": 0.6},
+            {"id": "unrequited_love", "weight": 0.5},
+            {"id": "falling_for_someone_unexpected", "weight": 0.5}
+          ],
+          "conflicts": ["holding_on_vs_letting_go", "independence_vs_connection"],
+          "emotions": {"start": ["longing", "loneliness"], "middle": ["rejection", "confusion", "shame"], "end": ["love", "joy", "peace"]},
+          "ending_tone": "hopeful",
+          "intensity": "light",
+          "warnings": [],
+          "example_user_messages": [
+            "I'm in my forties, I want a family so badly, and every relationship I get into ends with me feeling stupid.",
+            "My partner makes fun of me in front of people and spends my money, but I'm scared of being alone again.",
+            "I met someone who actually gets my weird sense of humor but the timing is terrible.",
+            "I keep falling for people who clearly aren't into me."
+          ],
+          "spoiler": {
+            "summary": "Michael starts an on-off relationship with his boss Jan that turns into a controlling, humiliating live-in relationship; it explodes at a dinner party and they break up, and Jan later has a baby without him. He dates Carol, Pam's mother Helene and a married woman, Donna, each a mismatch. He meets Holly, the new HR rep, who shares his goofy humor; she is transferred away and dates someone else, but she returns, they reunite, and he proposes in the office with the staff's help. He leaves Scranton to live with her in Colorado while she cares for her parents, and by the finale they have children.",
+            "key_events": [
+              "One-night stand with Jan after closing a deal at Chili's",
+              "The Dinner Party blowup ends the Jan relationship",
+              "Falls for Holly; she is transferred to Nashua",
+              "Dates Pam's mother and gets slapped by Pam",
+              "Discovers he is 'the mistress' of a married woman and ends it",
+              "Holly returns; he proposes with candles in the office",
+              "Moves to Colorado with Holly and later has children"
+            ],
+            "got_right": "He never stops believing in love and eventually recognises the person who accepts him exactly as he is.",
+            "got_wrong": "He clings to relationships that diminish him, ignores red flags, and treats partners as the cure for his loneliness rather than as people."
+          }
+        },
+        {
+          "id": "arc:the_office/michael_scott/walking_away_to_start_over",
+          "title": "Fifteen years of loyalty and no respect",
+          "literal_situation": "Later in the series, Michael has been with the company for fifteen years, and a new supervisor treats him like a relic. His anniversary party gets cancelled and the people upstairs stop returning his calls, and he starts wondering whether his loyalty was ever returned.",
+          "pattern_label": "walking away from a job that stopped valuing you",
+          "pattern_text": "After years of devotion to one employer, a person realises they are being taken for granted and quietly managed out. Walking away to bet on themselves means risking money, security and pride with little more than stubbornness for a plan. The story asks what self-respect is worth, and whether their scrappy instincts are enough to build something new.",
+          "hook": "He has given the company fifteen years, and nobody upstairs will even pick up the phone.",
+          "why_relatable": "Is it braver to stay and fight or to leave? Can he survive outside the only workplace he's ever known? Is his confidence real skill, or bluff?",
+          "watch_for": [
+            "What does he actually do well, once everything else is stripped away?",
+            "Who is willing to follow him, and why?",
+            "How does he negotiate when he has almost nothing left to lose?"
+          ],
+          "start_at": "S5",
+          "span": "S5",
+          "situations": [
+            {"id": "starting_a_business", "weight": 0.9},
+            {"id": "taking_a_big_risk", "weight": 0.8},
+            {"id": "standing_up_to_authority", "weight": 0.7},
+            {"id": "midlife_reinvention", "weight": 0.6}
+          ],
+          "conflicts": ["loyalty_vs_ambition", "safety_vs_growth"],
+          "emotions": {"start": ["resentment", "rejection"], "middle": ["determination", "anxiety", "overwhelm"], "end": ["pride", "self_respect", "relief"]},
+          "ending_tone": "hopeful",
+          "intensity": "moderate",
+          "warnings": [],
+          "example_user_messages": [
+            "I've been at my company for fifteen years and a new manager just walked in and treats me like dead weight.",
+            "I want to quit and start my own thing but I have no savings and I'm in my forties.",
+            "I gave everything to this job and they don't care whether I stay or go.",
+            "I started a business with a couple of friends and we're running out of money way faster than I expected."
+          ],
+          "spoiler": {
+            "summary": "When new VP Charles Miner arrives and cancels Michael's fifteenth-anniversary party, Michael drives to corporate, realises CFO David Wallace is only humoring him, and quits on the spot. He founds the Michael Scott Paper Company in a cramped office with Pam and Ryan, poaches clients with prices that turn out to be unsustainable, and soon realises they are going broke. Using the leverage of Dunder Mifflin's lost business, he bluffs his way into a buyout that brings all three of them back with full benefits instead of cash, and Charles is pushed out.",
+            "key_events": [
+              "Charles Miner cancels his anniversary party",
+              "Quits in David Wallace's office",
+              "Recruits Pam and Ryan to the Michael Scott Paper Company",
+              "Discovers their pricing is bankrupting them",
+              "Negotiates his, Pam's and Ryan's rehiring instead of a cash buyout"
+            ],
+            "got_right": "He finally stands up for his own worth, and his sales instincts and nerve at the negotiating table turn out to be real.",
+            "got_wrong": "He leaps without a business plan, drags two people into financial risk, and only escapes disaster through a well-timed bluff."
+          }
+        }
+      ]
+    },
+    {
+      "id": "char:the_office/jim_halpert",
+      "name": "Jim Halpert",
+      "role": "A laid-back, quick-witted salesman at the Scranton branch who treats the job as temporary, pranks his deskmate, and is quietly close to the receptionist.",
+      "relations": [
+        {"target": "char:the_office/pam_beesly", "relation": "partner"},
+        {"target": "char:the_office/dwight_schrute", "relation": "rival"},
+        {"target": "char:the_office/dwight_schrute", "relation": "friend"},
+        {"target": "char:the_office/michael_scott", "relation": "boss"},
+        {"target": "char:the_office/andy_bernard", "relation": "colleague"},
+        {"target": "char:the_office/ryan_howard", "relation": "rival"},
+        {"target": "char:the_office/erin_hannon", "relation": "colleague"},
+        {"target": "char:the_office/angela_martin", "relation": "colleague"}
+      ],
+      "arcs": [
+        {
+          "id": "arc:the_office/jim_halpert/in_love_with_a_friend_who_is_taken",
+          "title": "In love with a friend who's taken",
+          "literal_situation": "Jim is a salesman who treats his job as a placeholder and spends his days pranking the deskmate who drives him crazy. His best friend at work is the receptionist, Pam, and she has been engaged to someone else for three years.",
+          "pattern_label": "loving a close friend who is committed to someone else",
+          "pattern_text": "A person has quietly fallen for their closest friend, who is in a long relationship with someone else. Saying nothing keeps the friendship safe but slowly hollows out their own life; speaking up could cost them everything. The story is about how long you can wait for someone, and when protecting a friendship turns into hiding from your own life.",
+          "hook": "Jim's favorite part of the workday is making Pam laugh. Her fiancé works downstairs.",
+          "why_relatable": "Should he say how he feels, or would that be unfair to her? What is he putting on hold while he waits? Is the job he shrugs off really just a job, or a place to hide?",
+          "watch_for": [
+            "What does he do with his feelings when he can't act on them?",
+            "How does he treat the people he dates while his mind is elsewhere?",
+            "What would it take for him to risk the friendship?"
+          ],
+          "start_at": "S1E1",
+          "span": "S1-S3",
+          "situations": [
+            {"id": "unrequited_love", "weight": 0.95},
+            {"id": "taking_a_big_risk", "weight": 0.5},
+            {"id": "moving_somewhere_new", "weight": 0.3}
+          ],
+          "conflicts": ["holding_on_vs_letting_go", "truth_vs_protecting_others"],
+          "emotions": {"start": ["longing", "boredom", "restlessness"], "middle": ["rejection", "loneliness", "jealousy"], "end": ["hope", "love", "joy"]},
+          "ending_tone": "hopeful",
+          "intensity": "moderate",
+          "warnings": [],
+          "example_user_messages": [
+            "I'm in love with my best friend and she's engaged. I don't know if I should say anything.",
+            "I keep dating people just to distract myself from someone I can't have.",
+            "I told someone how I felt, they said no, and now I can't stand being in the same room.",
+            "My job is fine but I think the only reason I stay is one person."
+          ],
+          "spoiler": {
+            "summary": "Jim pines for Pam through two seasons, dates Katy, and at Casino Night confesses his love; Pam turns him down and he kisses her anyway. He transfers to Stamford and starts dating Karen. When the branches merge he returns with Karen as his girlfriend and keeps Pam at arm's length, even though Pam called off her wedding because of him. After Pam admits in front of everyone at Beach Games that she misses him, Jim interviews for a corporate job in New York, finds her note in his briefcase, withdraws, drives back and asks Pam out. They start dating, later marry and have two children.",
+            "key_events": [
+              "Confesses his love at Casino Night; Pam says no; they kiss",
+              "Transfers to Stamford and dates Karen",
+              "Pam calls off her wedding to Roy",
+              "Returns to Scranton in the merger with Karen",
+              "Withdraws from the corporate job and asks Pam on a date",
+              "Dumps Karen off-screen"
+            ],
+            "got_right": "In the end he is honest about what matters, choosing the person over the promotion.",
+            "got_wrong": "He hides behind jokes and indifference, runs away instead of facing rejection, and pulls Karen into a relationship while still in love with Pam."
+          }
+        },
+        {
+          "id": "arc:the_office/jim_halpert/betting_on_the_dream",
+          "title": "Betting on a dream while others depend on you",
+          "literal_situation": "Later in the series, after years in which his life has become settled and comfortable, Jim is restless. An old friend offers him a stake in a risky new business in another city, doing work he's genuinely excited about.",
+          "pattern_label": "chasing a late dream at a cost to the people at home",
+          "pattern_text": "Someone who has spent years being competent at a job they never loved gets a real shot at the work they dream of, but it means long absences, a big financial gamble and asking a lot of the people who share their life. The story is about whether ambition and a shared life can fit together, and what happens when you make a decision for two people on your own.",
+          "hook": "He's been coasting for years and knows it. Now someone is offering him the thing he gave up on, and saying yes isn't really his decision alone.",
+          "why_relatable": "Is it selfish to want more when your life is already good? How much risk is fair to take with money and time that aren't only yours? What does he owe the people who would carry the load while he's gone?",
+          "watch_for": [
+            "Who does he tell about the opportunity, and when?",
+            "What does he assume the people around him will be fine with?",
+            "How does each side define what counts as a sacrifice?"
+          ],
+          "start_at": "S9E1",
+          "span": "S9",
+          "situations": [
+            {"id": "career_change", "weight": 0.8},
+            {"id": "taking_a_big_risk", "weight": 0.8},
+            {"id": "long_distance", "weight": 0.6},
+            {"id": "starting_a_business", "weight": 0.5}
+          ],
+          "conflicts": ["career_vs_relationships", "safety_vs_growth"],
+          "emotions": {"start": ["restlessness", "curiosity", "hope"], "middle": ["guilt", "overwhelm", "anxiety"], "end": ["love", "peace", "joy"]},
+          "ending_tone": "hopeful",
+          "intensity": "moderate",
+          "warnings": [],
+          "example_user_messages": [
+            "I've been offered a job doing what I actually love, but it means being away from my wife and kids half the week.",
+            "I put a chunk of our savings into my friend's startup and didn't tell my partner first.",
+            "My partner and I have been fighting constantly since I started this new venture.",
+            "I'm scared that if I say no to this I'll secretly resent my family forever."
+          ],
+          "spoiler": {
+            "summary": "Jim secretly invests in and joins Athlead, a Philadelphia sports-marketing startup, telling Pam only later and alarming her with how much money he put in. He splits the week between Scranton and Philadelphia; the strain grows until he misses Cece's recital and snaps at Pam, who breaks down. He turns down a lucrative three-month roadshow to stay with her, and Pam fears he'll resent her for it. Jim has the documentary crew show her a montage of their history and finally gives her the teapot letter. In the finale Pam has secretly put their house on the market so they can move to Austin, where Jim rejoins the company.",
+            "key_events": [
+              "Secretly invests in Athlead and keeps it from Pam",
+              "Commutes to Philadelphia; marriage strains",
+              "Misses Cece's recital and blames Pam; Pam breaks down",
+              "Turns down the roadshow to stay with Pam",
+              "Gives Pam the teapot letter",
+              "Pam sells the house; they move to Austin"
+            ],
+            "got_right": "He finally takes his own ambitions seriously, and when it matters he chooses his marriage and listens.",
+            "got_wrong": "He makes a huge shared decision alone, keeps it secret, and leaves Pam carrying the family while telling himself she's fine."
+          }
+        }
+      ]
+    },
+    {
+      "id": "char:the_office/pam_beesly",
+      "name": "Pam Beesly",
+      "role": "The shy, artistic receptionist at the Scranton branch, long engaged to a warehouse worker, who keeps her own wishes to herself.",
+      "relations": [
+        {"target": "char:the_office/jim_halpert", "relation": "partner"},
+        {"target": "char:the_office/michael_scott", "relation": "boss"},
+        {"target": "char:the_office/michael_scott", "relation": "friend"},
+        {"target": "char:the_office/dwight_schrute", "relation": "friend"},
+        {"target": "char:the_office/erin_hannon", "relation": "protege"},
+        {"target": "char:the_office/andy_bernard", "relation": "friend"},
+        {"target": "char:the_office/ryan_howard", "relation": "colleague"},
+        {"target": "char:the_office/angela_martin", "relation": "colleague"}
+      ],
+      "arcs": [
+        {
+          "id": "arc:the_office/pam_beesly/finding_her_voice",
+          "title": "Finding her voice",
+          "literal_situation": "Pam answers the phones at a paper company, a job she took years ago as a stopgap. She has been engaged for three years to a fiancé who dismisses her art, and she answers most questions about her own life with a shrug.",
+          "pattern_label": "a quiet person learning to ask for what she wants",
+          "pattern_text": "Someone who has spent years going along with what everyone expects, a comfortable relationship, a job that was meant to be temporary, a talent they never pursue, slowly realises they are living a small, safe life by default. The story is about finding the courage to say what you want out loud, even when it disappoints people.",
+          "hook": "Pam's life is on hold: the wedding date keeps slipping, her drawings stay in a notebook, and the only person who seems to notice she's unhappy is her friend at the next desk over.",
+          "why_relatable": "What is she afraid will happen if she speaks up? Is safe the same as happy? Can someone who has always been the easygoing one start taking up space?",
+          "watch_for": [
+            "When does she almost say what she means, and what stops her?",
+            "Who in her life encourages her art, and who shrugs it off?",
+            "What does courage look like for someone who isn't naturally bold?"
+          ],
+          "start_at": "S1E1",
+          "span": "S1-S4",
+          "situations": [
+            {"id": "confidence_struggle", "weight": 0.95},
+            {"id": "identity_and_self_acceptance", "weight": 0.7},
+            {"id": "breakup", "weight": 0.6},
+            {"id": "falling_for_someone_unexpected", "weight": 0.5}
+          ],
+          "conflicts": ["safety_vs_growth", "truth_vs_protecting_others"],
+          "emotions": {"start": ["numbness", "boredom", "self_doubt"], "middle": ["confusion", "guilt", "determination"], "end": ["confidence", "self_respect", "love"]},
+          "ending_tone": "hopeful",
+          "intensity": "moderate",
+          "warnings": [],
+          "example_user_messages": [
+            "I've been engaged for years and I'm not even sure I want to get married anymore.",
+            "My boyfriend thinks my art is a waste of time and I've basically stopped doing it.",
+            "I'm the one who never makes a fuss, and I'm starting to feel invisible in my own life.",
+            "I have feelings for a friend and I'm scared to even admit it to myself."
+          ],
+          "spoiler": {
+            "summary": "Pam turns Jim down when he confesses at Casino Night, but calls off her wedding to Roy. With Jim gone to Stamford she gets her own apartment, a car and art classes. She briefly reunites with Roy, confesses the kiss, and ends it for good when he trashes a bar in a rage. Stung by overhearing that her art lacks courage, she walks across hot coals at Beach Games and tells Jim in front of everyone that he's the reason she called off the wedding. Jim asks her out, they start dating, and she is accepted to Pratt design school.",
+            "key_events": [
+              "Turns Jim down at Casino Night, then kisses him back",
+              "Calls off her wedding to Roy",
+              "Moves into her own place and takes art classes",
+              "Ends it with Roy after he smashes up a bar",
+              "Coal walk and public confession at Beach Games",
+              "Starts dating Jim; accepted to Pratt"
+            ],
+            "got_right": "She learns that small, honest acts of courage change everything, and she starts choosing her own life.",
+            "got_wrong": "For years she lets others decide for her, stays in a relationship out of inertia, and hides her feelings even from herself."
+          }
+        },
+        {
+          "id": "arc:the_office/pam_beesly/testing_the_dream_once_its_real",
+          "title": "Testing the dream once it's real",
+          "literal_situation": "Later in the series, after a turning point that gives her the confidence to take her ambitions seriously, Pam finally gets a real chance to train for a creative career and has to find out whether the dream holds up.",
+          "pattern_label": "discovering your dream career isn't what you pictured",
+          "pattern_text": "A person finally goes after the path they always said they wanted, only to find it doesn't fit the way they imagined. Stepping back feels like failure, and the next jobs they try are either not them or not something they're good at. The story is about separating what you're good at from what you think you should want, and shaping a role that fits.",
+          "hook": "She spent years saying 'someday.' Now someday is here, and she's terrified it won't be what she hoped.",
+          "why_relatable": "Does walking away from something you dreamed about make you a failure? What if you're bad at the sensible option too? Can you shape work around your real strengths instead of squeezing yourself into a job?",
+          "watch_for": [
+            "Is she leaving something because it's wrong for her, or because it's hard?",
+            "What skills does she have that nobody has ever named?",
+            "How does she handle being the worst at something in front of colleagues?"
+          ],
+          "start_at": "S5E1",
+          "span": "S5-S7",
+          "situations": [
+            {"id": "career_change", "weight": 0.9},
+            {"id": "imposter_syndrome", "weight": 0.6},
+            {"id": "taking_a_big_risk", "weight": 0.5},
+            {"id": "confidence_struggle", "weight": 0.5}
+          ],
+          "conflicts": ["perfectionism_vs_good_enough", "safety_vs_growth"],
+          "emotions": {"start": ["hope", "anxiety"], "middle": ["inadequacy", "self_doubt", "shame"], "end": ["confidence", "pride", "self_respect"]},
+          "ending_tone": "hopeful",
+          "intensity": "light",
+          "warnings": [],
+          "example_user_messages": [
+            "I finally went back to school for the thing I always wanted and I'm realising I don't actually like it.",
+            "I quit a program halfway through and I feel like everyone thinks I just gave up.",
+            "I switched careers and I'm the worst person on my team. Everyone else seems to know what they're doing.",
+            "I'm good at organizing people and reading a room, but that's not really a job, is it?"
+          ],
+          "spoiler": {
+            "summary": "Pam goes to Pratt in New York (Jim proposes at a rainy rest stop), fails a class and, realising she hates graphic design, comes home. She becomes the first salesperson at Michael's scrappy startup and is rehired into sales when it's bought out, but she's one of the worst sellers in the office. She tricks Gabe into creating a salaried 'office administrator' role for her, where her people skills and knowledge of her coworkers make her genuinely effective. Per NBC's site, she later starts a mural business in Austin.",
+            "key_events": [
+              "Starts at Pratt; Jim proposes at a rest stop",
+              "Fails a class and decides she hates graphic design",
+              "Joins the Michael Scott Paper Company as a saleswoman",
+              "Struggles as one of the worst salespeople",
+              "Invents the office administrator job and thrives"
+            ],
+            "got_right": "She is honest with herself about what doesn't fit and builds a role around her real strengths.",
+            "got_wrong": "She sometimes avoids the hard middle of learning something new, and she gets her new role through a con rather than by asking directly."
+          }
+        },
+        {
+          "id": "arc:the_office/pam_beesly/holding_it_together_alone",
+          "title": "Holding everything together while someone else chases a dream",
+          "literal_situation": "Later in the series, after years in which her life has settled into a steady routine, Pam learns that the person she shares her life with has quietly committed to a risky new venture in another city, leaving her to carry home and work on her own for long stretches.",
+          "pattern_label": "the partner left holding everything together",
+          "pattern_text": "When one partner goes after a big opportunity, the other absorbs the extra load at home, the loneliness and the worry, while trying hard to be supportive. Resentment and guilt build on both sides. The story is about saying what you need without crushing someone else's dream, and deciding together what a shared life should look like.",
+          "hook": "She wants to be the supportive one. She's also exhausted, and she found out about the plan after it was already made.",
+          "why_relatable": "How do you support someone's dream when it's costing you? Is it fair to ask them to give it up? What if you're afraid you'll never be enough to keep them happy?",
+          "watch_for": [
+            "Who does she confide in when she can't say it at home?",
+            "What does she want for herself, separate from what she wants for them?",
+            "How do they each define giving something up?"
+          ],
+          "start_at": "S9E1",
+          "span": "S9",
+          "situations": [
+            {"id": "long_distance", "weight": 0.8},
+            {"id": "responsibility_you_didnt_ask_for", "weight": 0.6},
+            {"id": "caring_for_family", "weight": 0.5},
+            {"id": "moving_somewhere_new", "weight": 0.4}
+          ],
+          "conflicts": ["career_vs_relationships", "independence_vs_connection"],
+          "emotions": {"start": ["anxiety", "betrayal"], "middle": ["loneliness", "overwhelm", "resentment"], "end": ["love", "hope", "freedom"]},
+          "ending_tone": "hopeful",
+          "intensity": "moderate",
+          "warnings": [],
+          "example_user_messages": [
+            "My husband took a job in another city without really asking me and now I'm doing everything with the kids by myself.",
+            "I want to support my partner's dream but I'm drowning and I feel guilty for even saying it.",
+            "I'm scared my partner will resent me forever if I ask him to stay.",
+            "We fight all the time since his new business started and I don't recognise us anymore."
+          ],
+          "spoiler": {
+            "summary": "Pam discovers Jim has secretly invested their money in Athlead in Philadelphia. While he commutes she handles work and two kids alone; after he misses Cece's recital and blames her, she breaks down and is comforted by Brian, the boom-mic operator. She interviews for a Philadelphia job but realises she doesn't want to move. When Jim turns down a big opportunity for her, she fears she isn't enough for him; he shows her a montage of their history and the teapot letter. In the finale she secretly sells their house so they can move to Austin together for his dream, and starts a mural business there.",
+            "key_events": [
+              "Learns Jim hid his Athlead investment",
+              "Breaks down after the missed recital; Brian comforts her",
+              "Interviews in Philadelphia, then admits she doesn't want to move",
+              "Jim shows her the documentary montage and teapot letter",
+              "Secretly puts the house on the market; they move to Austin"
+            ],
+            "got_right": "She eventually names her fear honestly and then makes a generous, active choice rather than a resentful sacrifice.",
+            "got_wrong": "For a long time she swallows her exhaustion to seem supportive, letting it build until it spills out."
+          }
+        }
+      ]
+    },
+    {
+      "id": "char:the_office/dwight_schrute",
+      "name": "Dwight Schrute",
+      "role": "The branch's intense, rule-obsessed top salesman and beet farmer, who craves authority and worships his boss.",
+      "relations": [
+        {"target": "char:the_office/michael_scott", "relation": "mentor"},
+        {"target": "char:the_office/michael_scott", "relation": "boss"},
+        {"target": "char:the_office/jim_halpert", "relation": "rival"},
+        {"target": "char:the_office/jim_halpert", "relation": "friend"},
+        {"target": "char:the_office/angela_martin", "relation": "partner"},
+        {"target": "char:the_office/andy_bernard", "relation": "rival"},
+        {"target": "char:the_office/pam_beesly", "relation": "friend"},
+        {"target": "char:the_office/ryan_howard", "relation": "colleague"},
+        {"target": "char:the_office/erin_hannon", "relation": "colleague"}
+      ],
+      "arcs": [
+        {
+          "id": "arc:the_office/dwight_schrute/craving_authority",
+          "title": "Desperate to be second in command",
+          "literal_situation": "Dwight is the top salesman at a small paper-company branch and insists he is 'Assistant Regional Manager' (the real title is Assistant to the Regional Manager). He worships his boss, runs a beet farm on the side, and takes rules, rank and his own dignity extremely seriously.",
+          "pattern_label": "craving authority before learning to lead",
+          "pattern_text": "A fiercely loyal, hard-working person wants power and recognition so badly that they treat colleagues as rivals and rules as weapons. Their intensity makes them great at the work and terrible with people. The story asks whether they can earn the role they crave, and whether leading means commanding people or caring about them.",
+          "hook": "Dwight would do anything his boss asked, and he keeps a mental list of everyone who might threaten his rank, starting with the prankster at the next desk.",
+          "why_relatable": "What is he really chasing: the title, or the respect he thinks it brings? Can loyalty and ambition coexist when the person you admire is also in your way? What would it take for him to trust the people he sees as competition?",
+          "watch_for": [
+            "What does he do when loyalty to his boss and his own ambition point in different directions?",
+            "When he gets a taste of power, how does he use it?",
+            "Who is quietly on his side even while he treats them as an enemy?"
+          ],
+          "start_at": "S1E1",
+          "span": "S1-S9",
+          "situations": [
+            {"id": "becoming_a_manager", "weight": 0.9},
+            {"id": "mentor_and_protege", "weight": 0.6},
+            {"id": "leading_former_peers", "weight": 0.5},
+            {"id": "finding_your_people", "weight": 0.4}
+          ],
+          "conflicts": ["loyalty_vs_ambition", "control_vs_trust"],
+          "emotions": {"start": ["determination", "pride", "envy"], "middle": ["rejection", "anger", "resentment"], "end": ["self_respect", "belonging", "joy"]},
+          "ending_tone": "hopeful",
+          "intensity": "light",
+          "warnings": [],
+          "example_user_messages": [
+            "I've wanted a management role for years and every time I get close someone else gets it.",
+            "People at work say I'm intense and hard to work with, but I'm just the only one taking the job seriously.",
+            "My mentor keeps passing me over and I'm starting to resent him.",
+            "I finally got some authority at work, it went to my head, and now my team can't stand me."
+          ],
+          "spoiler": {
+            "summary": "Dwight goes behind Michael's back to corporate, is forced to quit, and returns. His brief turns as acting manager are tyrannical ('Schrute Bucks'), and later he accidentally fires a gun in the office and loses the interim job. He schemes with Ryan to depose Jim as co-manager, buys the office building, and is set up to run the Sabre store in Florida, where Jim tackles him trying to warn him he's about to be cut, and Packer steals the promotion. Over the years his rivalry with Jim becomes a real, grudging friendship. In season nine, on Jim's recommendation, David Wallace makes Dwight Regional Manager; he appoints Jim his assistant, has Michael as best man at his wedding, and gives Jim and Pam generous severance.",
+            "key_events": [
+              "Goes over Michael's head to Jan and is forced to quit",
+              "Tyrannical stint as acting manager",
+              "Teams with Ryan to get Jim demoted from co-manager",
+              "Accidentally fires a gun in the office as acting manager",
+              "Jim tackles him to warn him about the Sabre store",
+              "Named permanent Regional Manager on Jim's recommendation",
+              "Michael returns as his best man"
+            ],
+            "got_right": "His loyalty, work ethic and love for the job are real, and he learns to value the people he once treated as obstacles.",
+            "got_wrong": "He confuses rank with respect, schemes against colleagues and bosses, and uses power to punish rather than to lead."
+          }
+        },
+        {
+          "id": "arc:the_office/dwight_schrute/a_love_he_cant_show",
+          "title": "A love he's not allowed to show",
+          "literal_situation": "Later in the series, Dwight is quietly involved with a coworker who insists that nobody at work can ever find out, and who sets every rule of the relationship.",
+          "pattern_label": "loving someone who keeps you hidden",
+          "pattern_text": "A person is devoted to a partner who wants the relationship kept secret and controls its terms. When things break down, both keep circling back through pride, jealousy and bad timing. The story asks whether two stubborn, guarded people can ever be honest enough to choose each other in public.",
+          "hook": "He is loyal to a fault. She keeps him a secret.",
+          "why_relatable": "What does it do to someone to be loved only in private? Is he being loyal, or just unable to let go? Can two people who both need to be in control ever meet in the middle?",
+          "watch_for": [
+            "Who sets the rules of the relationship, and who follows them?",
+            "What does he do when he feels replaced?",
+            "What would a real grand gesture look like for someone this guarded?"
+          ],
+          "start_at": "S2",
+          "span": "S2-S9",
+          "situations": [
+            {"id": "breakup", "weight": 0.8},
+            {"id": "unrequited_love", "weight": 0.5},
+            {"id": "falling_for_someone_unexpected", "weight": 0.4}
+          ],
+          "conflicts": ["control_vs_trust", "holding_on_vs_letting_go"],
+          "emotions": {"start": ["love", "pride"], "middle": ["betrayal", "jealousy", "anger"], "end": ["love", "joy", "peace"]},
+          "ending_tone": "hopeful",
+          "intensity": "moderate",
+          "warnings": ["betrayal"],
+          "example_user_messages": [
+            "My partner won't let me tell anyone we're together and it's starting to feel like I'm her dirty secret.",
+            "We broke up months ago but we keep ending up back together and I don't know what we are.",
+            "I found out the person I love was also seeing someone else the whole time.",
+            "I think I still want to marry my ex, but we're both too proud to say it first."
+          ],
+          "spoiler": {
+            "summary": "Dwight and Angela date in secret until he mercy-kills her sick cat Sprinkles and she dumps him. She starts dating Andy but keeps sleeping with Dwight, even after accepting Andy's proposal; Dwight tricks her into a real wedding ceremony at his farm, which she voids. Phyllis exposes the affair and, at the duel, both men learn she lied to each of them and walk away. Angela later negotiates a contract to have Dwight's baby; he backs out for Isabel, then settles for five 'sessions'. Angela marries the Senator and has a son, Phillip, whom she claims is premature. After the Senator comes out, Dwight, now dating Esther, bonds with Phillip and proposes; Angela admits Phillip is his, and they marry in the finale.",
+            "key_events": [
+              "Mercy-kills Angela's cat Sprinkles; she dumps him",
+              "Affair continues while Angela is engaged to Andy",
+              "Fake wedding at Schrute Farms turns out to be real; Angela voids it",
+              "The duel exposes Angela's lies; both men leave her",
+              "Baby contract and settlement",
+              "Angela has Phillip and claims he's the Senator's",
+              "Proposes; Angela admits Phillip is his son; they marry"
+            ],
+            "got_right": "He stays devoted and, in the end, makes a real, public, vulnerable choice.",
+            "got_wrong": "He accepts being hidden, joins in the deception of Andy, and settles for transactional 'deals' instead of saying what he feels."
+          }
+        }
+      ]
+    },
+    {
+      "id": "char:the_office/andy_bernard",
+      "name": "Andy Bernard",
+      "role": "A preppy, Cornell-obsessed salesman from another branch of the company who badly wants to be liked and hides a quick temper.",
+      "relations": [
+        {"target": "char:the_office/angela_martin", "relation": "ex_partner"},
+        {"target": "char:the_office/erin_hannon", "relation": "ex_partner"},
+        {"target": "char:the_office/dwight_schrute", "relation": "rival"},
+        {"target": "char:the_office/michael_scott", "relation": "boss"},
+        {"target": "char:the_office/jim_halpert", "relation": "colleague"},
+        {"target": "char:the_office/pam_beesly", "relation": "friend"},
+        {"target": "char:the_office/ryan_howard", "relation": "colleague"}
+      ],
+      "arcs": [
+        {
+          "id": "arc:the_office/andy_bernard/needing_everyone_to_like_him",
+          "title": "Needing everyone to like him",
+          "literal_situation": "Andy is a preppy salesman at another branch of the company who never stops mentioning Cornell and his a cappella group. He has a strategy for winning over any boss: mirror his personality, repeat his name, never break a handshake first. Under the confidence is a short fuse.",
+          "pattern_label": "the overlooked child still chasing approval",
+          "pattern_text": "Someone who grew up feeling second-best in their family has built a whole personality around being liked: bragging, people-pleasing, trying on whatever identity seems to impress. Beneath it is a temper and a fear of never being enough. The story asks whether they can stop performing for approval and discover who they are when nobody is clapping.",
+          "hook": "He'll sing, name-drop his college and agree with anything the boss says, and he has no idea why people find him exhausting.",
+          "why_relatable": "Why does he need everyone's approval so badly, and whose approval is he really after? What happens to the anger he keeps swallowing? Who is he when he stops trying to impress?",
+          "watch_for": [
+            "What do his family members say to him, and how does he respond?",
+            "When he gets angry, what was really hurting him?",
+            "Who likes him for who he actually is?"
+          ],
+          "start_at": "S3E1",
+          "span": "S3-S8",
+          "situations": [
+            {"id": "difficult_parent", "weight": 0.8},
+            {"id": "confidence_struggle", "weight": 0.8},
+            {"id": "family_expectations", "weight": 0.6},
+            {"id": "sibling_rivalry", "weight": 0.4}
+          ],
+          "conflicts": ["self_vs_family_expectations", "fitting_in_vs_standing_out"],
+          "emotions": {"start": ["inadequacy", "anxiety"], "middle": ["anger", "rejection", "shame"], "end": ["belonging", "hope"]},
+          "ending_tone": "bittersweet",
+          "intensity": "light",
+          "warnings": ["betrayal"],
+          "example_user_messages": [
+            "My parents always made it obvious my brother was the favorite and I'm still trying to impress them in my late thirties.",
+            "I overdo it at every new job trying to get people to like me and it always backfires.",
+            "I have a temper I'm ashamed of and it comes out whenever I feel humiliated.",
+            "I just want my dad to be proud of me once."
+          ],
+          "spoiler": {
+            "summary": "After the merger Andy sucks up to Michael, feuds with Dwight, and punches a hole in the wall when Jim hides his phone, landing in anger management. He falls for Angela, proposes and plans a lavish wedding while she keeps sleeping with Dwight; the duel exposes the affair and he is crushed. He dates Erin, loses her when she learns of the engagement, then loses her to Gabe and later rejects her out of hurt. Robert California makes him Regional Manager; at a garden party his father publicly belittles him in favor of his younger brother, who got Andy's original name, and his coworkers finally understand him and rally around him. He wins Erin back in Florida but returns to find Nellie in his job, refuses demotion and is fired, then gets David Wallace to buy the company and is reinstated.",
+            "key_events": [
+              "Punches a hole in the wall and goes to anger management",
+              "Engaged to Angela, who is cheating with Dwight",
+              "The duel with Dwight in the parking lot",
+              "Dates Erin; she leaves him after learning of the engagement",
+              "Made Regional Manager by Robert California",
+              "Father humiliates him at the garden party",
+              "Fired after Nellie takes his job; reinstated when David Wallace buys the company"
+            ],
+            "got_right": "Underneath the act he is kind, brave when it counts (blowing the whistle on the printers, defending the 'losers'), and loyal to his friends.",
+            "got_wrong": "He performs instead of connecting, lets anger and wounded pride drive his choices, and keeps seeking validation from people who can't give it."
+          }
+        },
+        {
+          "id": "arc:the_office/andy_bernard/chasing_a_dream_late",
+          "title": "Chasing a dream with nothing to fall back on",
+          "literal_situation": "Later in the series, after a stretch of upheaval in his family and at work, Andy feels increasingly disconnected from the job he's doing. The performing career he wanted since college is still calling, and he's starting to feel it's now or never.",
+          "pattern_label": "chasing a long-deferred dream at any cost",
+          "pattern_text": "A person who spent years in a stable career they never cared about decides to go all in on the dream they put off, burning bridges and neglecting relationships along the way while everyone warns them it's a mistake. The story asks what it means to fail at your dream in public, and what is left of you afterwards.",
+          "hook": "Everyone keeps telling him to be realistic. He's tired of being realistic.",
+          "why_relatable": "Is it courage or escape to walk away from security? What does he owe the people he leaves behind? What if the dream doesn't want him back?",
+          "watch_for": [
+            "How does he treat the people who care about him while his attention is elsewhere?",
+            "Is he running toward something, or away from something?",
+            "What does success mean to him by the end, compared to the start?"
+          ],
+          "start_at": "S9",
+          "span": "S9",
+          "situations": [
+            {"id": "taking_a_big_risk", "weight": 0.9},
+            {"id": "career_change", "weight": 0.8},
+            {"id": "midlife_reinvention", "weight": 0.8},
+            {"id": "breakup", "weight": 0.5}
+          ],
+          "conflicts": ["safety_vs_growth", "career_vs_relationships"],
+          "emotions": {"start": ["restlessness", "longing"], "middle": ["determination", "freedom", "shame"], "end": ["acceptance", "nostalgia", "peace"]},
+          "ending_tone": "bittersweet",
+          "intensity": "moderate",
+          "warnings": [],
+          "example_user_messages": [
+            "I'm almost 40 and thinking of quitting my job to act. Everyone thinks I'm insane.",
+            "I went away for months to figure myself out and came back to find my relationship was over.",
+            "I went after my dream and failed in front of everyone, and I'm too embarrassed to face anyone.",
+            "I can't tell if I'm being brave or just running away from my real life."
+          ],
+          "spoiler": {
+            "summary": "Andy returns from manager training cockier and meaner. His father abandons the family, and Andy sails the family boat to the Bahamas for three months, leaving Erin behind; she breaks up with him for Pete. Vengeful, he hires their exes to make them miserable. Inspired by the documentary promos, he pays a dubious agent, quits, and deliberately gets himself fired by David Wallace, then says goodbye with a moving song. His reality-show audition collapses into a viral meltdown ('Baby Wawa'), but a mocking invitation to speak at Cornell goes so well that he is hired in Cornell's admissions office. At the finale he reflects: 'I wish there was a way to know you're in the good old days before you've actually left them.'",
+            "key_events": [
+              "Father abandons the family; family boat must be sold",
+              "Sails to the Bahamas for three months, neglecting Erin and the job",
+              "Erin dumps him for Pete",
+              "Quits and gets himself fired to pursue acting",
+              "Viral audition meltdown",
+              "Hired by Cornell admissions after a successful speech"
+            ],
+            "got_right": "He finally stops living for other people's approval and finds a place where he genuinely fits.",
+            "got_wrong": "He treats his partner and his job as disposable on the way to the dream, and mistakes running from his problems for bravery."
+          }
+        }
+      ]
+    },
+    {
+      "id": "char:the_office/ryan_howard",
+      "name": "Ryan Howard",
+      "role": "A business-school student working as a temp at the Scranton branch, who sees the job as a stepping stone and is the object of his boss's embarrassing admiration.",
+      "relations": [
+        {"target": "char:the_office/michael_scott", "relation": "mentor"},
+        {"target": "char:the_office/michael_scott", "relation": "boss"},
+        {"target": "char:the_office/jim_halpert", "relation": "rival"},
+        {"target": "char:the_office/dwight_schrute", "relation": "colleague"},
+        {"target": "char:the_office/pam_beesly", "relation": "colleague"},
+        {"target": "char:the_office/erin_hannon", "relation": "colleague"},
+        {"target": "char:the_office/andy_bernard", "relation": "colleague"},
+        {"target": "char:the_office/angela_martin", "relation": "colleague"}
+      ],
+      "arcs": [
+        {
+          "id": "arc:the_office/ryan_howard/in_a_hurry_to_be_somebody",
+          "title": "The temp in a hurry to be somebody",
+          "literal_situation": "Ryan is a business-school student doing temp work at a paper company, sure it's just a stop on the way to something bigger. His boss has an embarrassing crush on him and keeps sending him on personal errands.",
+          "pattern_label": "ambition outrunning character",
+          "pattern_text": "A young person convinced they're meant for something bigger rushes up the ladder, taking credit and cutting corners. When success comes too fast, the pressure and the ego take over, and they cope in self-destructive ways. The story is about the gap between looking successful and being ready for it, and whether a hard fall teaches anything.",
+          "hook": "Ryan keeps nothing personal on his desk. He doesn't plan on staying long enough to need it.",
+          "why_relatable": "What is he actually good at, as opposed to what he looks good doing? Who does he step on to get ahead? What happens to someone who gets what they wanted before they're ready?",
+          "watch_for": [
+            "How does he treat the people who helped him once he no longer needs them?",
+            "What does he do when he's in over his head but can't admit it?",
+            "Who is still in his corner at his lowest point?"
+          ],
+          "start_at": "S1E1",
+          "span": "S1-S5",
+          "situations": [
+            {"id": "redemption_after_mistakes", "weight": 0.7},
+            {"id": "addiction_and_recovery", "weight": 0.6},
+            {"id": "becoming_a_manager", "weight": 0.5},
+            {"id": "new_job", "weight": 0.4}
+          ],
+          "conflicts": ["power_vs_morality", "loyalty_vs_ambition"],
+          "emotions": {"start": ["boredom", "restlessness", "pride"], "middle": ["overwhelm", "anxiety", "fear"], "end": ["shame", "acceptance", "hope"]},
+          "ending_tone": "ambiguous",
+          "intensity": "moderate",
+          "warnings": ["addiction"],
+          "example_user_messages": [
+            "I got promoted way above my experience level and I'm faking it every single day.",
+            "I've been using to keep up with the pressure at my new job and I know it's getting out of hand.",
+            "I burned a lot of bridges on the way up, crashed hard, and now I'm back where I started.",
+            "I've always felt too good for my job and it's making me miserable and hard to like."
+          ],
+          "spoiler": {
+            "summary": "Ryan earns his MBA, takes over a sales desk, and then leapfrogs to corporate as Vice President, becoming Michael's boss and immediately dumping Kelly. In New York he grows a beard, launches the Dunder Mifflin Infinity website, develops a cocaine problem, tries to get Jim fired, and is arrested for defrauding shareholders. Released with community service and sober, he returns as a fill-in temp thanks to Michael, joins the Michael Scott Paper Company, and briefly matures there before sliding back to scheming.",
+            "key_events": [
+              "Promoted to corporate VP and becomes Michael's boss",
+              "Dumps Kelly the moment he gets the job",
+              "Develops a drug problem under pressure",
+              "Targets Jim with a bogus warning",
+              "Arrested for fraud",
+              "Returns sober as a temp; joins the Michael Scott Paper Company"
+            ],
+            "got_right": "At the bottom he gets sober, accepts help, and briefly discovers the satisfaction of honest work.",
+            "got_wrong": "He treats people as rungs on a ladder, lies to cover his failures, and never takes responsibility for the damage."
+          }
+        },
+        {
+          "id": "arc:the_office/ryan_howard/reinventing_instead_of_growing_up",
+          "title": "Reinventing yourself instead of growing up",
+          "literal_situation": "Later in the series, after a turning point that knocks the shine off his big plans, Ryan is still at the branch in a vague role, cycling through trendy looks, hobbies and startup ideas while doing as little actual work as possible.",
+          "pattern_label": "endless reinvention as a way to avoid growing up",
+          "pattern_text": "Someone keeps trying on new identities, projects and looks, each one promising to be the thing that finally makes them special. Underneath is a person who has never committed to anything or anyone, and who leans on other people's goodwill to stay afloat. The story asks whether they will ever stop performing and take responsibility for a life.",
+          "hook": "Ryan has a new look, a new side project and a new pitch every few months. None of them involve doing his actual job.",
+          "why_relatable": "Why is committing to one thing so frightening to him? What does he take from the people who believe in him? What would it take for him to own his choices?",
+          "watch_for": [
+            "How does he treat the one person who keeps investing in him?",
+            "What does he want from relationships: love, or an audience?",
+            "Whose problem does it become when things go wrong?"
+          ],
+          "start_at": "S6",
+          "span": "S6-S9",
+          "situations": [
+            {"id": "identity_and_self_acceptance", "weight": 0.7},
+            {"id": "coming_of_age", "weight": 0.6},
+            {"id": "starting_a_business", "weight": 0.6}
+          ],
+          "conflicts": ["fitting_in_vs_standing_out", "independence_vs_connection"],
+          "emotions": {"start": ["restlessness", "boredom", "pride"], "middle": ["shame", "anxiety", "jealousy"], "end": ["longing", "restlessness"]},
+          "ending_tone": "ambiguous",
+          "intensity": "light",
+          "warnings": ["child_endangerment"],
+          "example_user_messages": [
+            "I've started like five businesses and dropped every one. I keep thinking the next idea is the one.",
+            "I'm nearly 30, I still live with my parents and borrow my mom's car.",
+            "I keep going back to the same on-off relationship because at least someone wants me.",
+            "A friend put money into my idea and I let him down, and I don't know how to face him."
+          ],
+          "spoiler": {
+            "summary": "Ryan adopts a hipster persona, helps Dwight get Jim demoted from co-manager, and launches WUPHF.com with Michael's money, exploiting Michael's loyalty until the company fails. He lies to Deangelo about his job, panics and flees on a bus during the Sabre store presentation, loses Kelly to Ravi and keeps chasing her, then follows her to Ohio. In the finale he appears with a baby son, Drake, whose mother left; he deliberately triggers the baby's strawberry allergy to get time alone with Kelly, and the two run off together, leaving Drake behind with Ravi. Nellie takes the baby.",
+            "key_events": [
+              "Helps Dwight get Jim demoted",
+              "Launches WUPHF.com with Michael's money; it collapses",
+              "Flees on a bus during the Sabre store presentation",
+              "Kelly leaves him for Ravi",
+              "Shows up at the finale with baby Drake",
+              "Runs off with Kelly, abandoning Drake; Nellie takes him"
+            ],
+            "got_right": "Very little; in rare moments he admits he got away with too much and wanted real guidance.",
+            "got_wrong": "He mistakes image for identity, exploits people who love him, and dodges every responsibility right up to abandoning his own child."
+          }
+        }
+      ]
+    },
+    {
+      "id": "char:the_office/erin_hannon",
+      "name": "Erin Hannon",
+      "role": "An upbeat, naive young woman raised in foster care who joins the Scranton branch later in the series and wants desperately to belong.",
+      "relations": [
+        {"target": "char:the_office/andy_bernard", "relation": "ex_partner"},
+        {"target": "char:the_office/michael_scott", "relation": "boss"},
+        {"target": "char:the_office/michael_scott", "relation": "mentor"},
+        {"target": "char:the_office/pam_beesly", "relation": "mentor"},
+        {"target": "char:the_office/dwight_schrute", "relation": "colleague"},
+        {"target": "char:the_office/jim_halpert", "relation": "colleague"},
+        {"target": "char:the_office/ryan_howard", "relation": "colleague"},
+        {"target": "char:the_office/angela_martin", "relation": "colleague"}
+      ],
+      "arcs": [
+        {
+          "id": "arc:the_office/erin_hannon/looking_for_family_at_work",
+          "title": "Looking for a family at work",
+          "literal_situation": "Later in the series, after a turning point that shakes up the staff, Erin arrives as the branch's cheerful new receptionist. She grew up in foster care, admires everyone around her, and badly wants the boss, who seems to resent her, to like her.",
+          "pattern_label": "a person without family building one where they can",
+          "pattern_text": "Someone who grew up without a stable family pours their warmth and loyalty into the people around them, desperate to belong and to be approved of. Their openness makes them easy to underestimate and easy to hurt. The story is about finding the people who choose you back, and learning that you can be loved without having to earn it.",
+          "hook": "She's thrilled to be here. The boss barely acknowledges her, and she can't figure out what she did wrong.",
+          "why_relatable": "What does a person who never had a family do with all that loyalty? Why does one person's approval matter so much to her? Can you belong somewhere without twisting yourself to fit?",
+          "watch_for": [
+            "Whose approval does she chase, and why that person?",
+            "Who starts treating her like family, and how?",
+            "What does she do with the anger she almost never shows?"
+          ],
+          "start_at": "S5",
+          "span": "S5-S9",
+          "situations": [
+            {"id": "finding_your_people", "weight": 0.9},
+            {"id": "loneliness", "weight": 0.6},
+            {"id": "new_job", "weight": 0.5},
+            {"id": "identity_and_self_acceptance", "weight": 0.4}
+          ],
+          "conflicts": ["independence_vs_connection", "fitting_in_vs_standing_out"],
+          "emotions": {"start": ["hope", "anxiety", "loneliness"], "middle": ["rejection", "longing", "belonging"], "end": ["belonging", "joy", "peace"]},
+          "ending_tone": "hopeful",
+          "intensity": "light",
+          "warnings": [],
+          "example_user_messages": [
+            "I grew up in foster care and I think I get way too attached to my coworkers.",
+            "My boss doesn't seem to like me and it ruins my whole week. I don't know why it matters so much.",
+            "I don't have family, so my friends at work are basically everything to me.",
+            "An older guy at work gave me advice like a dad would and I kind of cried."
+          ],
+          "spoiler": {
+            "summary": "Michael initially freezes Erin out because she was hired while he was gone, but she wins him over after Scott's Tots and happily indulges his odd routines. At the Glee viewing party he realises she sees him as a father figure and embraces it, and before he leaves for Colorado he promises she can always call him for advice. Phyllis takes a DNA test to see whether Erin is the daughter she gave up; it's negative, but Phyllis keeps mothering her. In the finale Erin's birth parents, who saw the documentary, meet her at the Q&A panel.",
+            "key_events": [
+              "Michael freezes her out, then warms to her after Scott's Tots",
+              "Michael realises she sees him as a father figure",
+              "Michael kisses her on the head and leaves his number before leaving",
+              "Phyllis DNA test comes back negative",
+              "Meets her birth parents in the finale"
+            ],
+            "got_right": "Her openness and loyalty eventually earn her a real, chosen family.",
+            "got_wrong": "She seeks approval so hard that she tolerates being dismissed and struggles to stand up for herself."
+          }
+        },
+        {
+          "id": "arc:the_office/erin_hannon/learning_she_deserves_better",
+          "title": "Learning she deserves better in love",
+          "literal_situation": "Later in the series, Erin has a sweet, awkward crush on Andy, a coworker who flirts back but never quite makes a move, and she has no idea how to ask for what she wants.",
+          "pattern_label": "moving from people-pleasing to self-respect in love",
+          "pattern_text": "An eager, forgiving person keeps waiting to be chosen: saying yes to whoever asks, staying through neglect, blaming themselves when something feels wrong. The story follows them learning to name what they need and to walk away when they are taken for granted, even when that means disappointing someone.",
+          "hook": "She thinks he likes her. He thinks it's her move. Neither of them says a word.",
+          "why_relatable": "Why does she say yes to people she doesn't really want? How long do you wait for someone to show up for you? Is kindness the same thing as putting up with anything?",
+          "watch_for": [
+            "Who actually asks her what she wants?",
+            "What does she tolerate that she shouldn't?",
+            "Who makes her feel like herself rather than an audience?"
+          ],
+          "start_at": "S6",
+          "span": "S6-S9",
+          "situations": [
+            {"id": "breakup", "weight": 0.8},
+            {"id": "confidence_struggle", "weight": 0.6},
+            {"id": "unrequited_love", "weight": 0.5},
+            {"id": "falling_for_someone_unexpected", "weight": 0.5}
+          ],
+          "conflicts": ["holding_on_vs_letting_go", "independence_vs_connection"],
+          "emotions": {"start": ["longing", "hope"], "middle": ["rejection", "jealousy", "loneliness"], "end": ["self_respect", "confidence", "love"]},
+          "ending_tone": "hopeful",
+          "intensity": "light",
+          "warnings": [],
+          "example_user_messages": [
+            "I said yes to a date with my manager because I didn't know how to say no, and now we're in a relationship.",
+            "My boyfriend left for three months without really asking me and now he acts like nothing changed.",
+            "I keep waiting for him to make the first move and it never happens.",
+            "Someone new actually listens to me and it made me realise how neglected I've been."
+          ],
+          "spoiler": {
+            "summary": "Andy and Erin miscommunicate for months before finally dating; she ends it when Michael lets slip that Andy was engaged to Angela. She dates Gabe mostly because he's her boss, breaks up with him publicly at the Dundies, confesses to Andy that she still likes him and is rejected. She drunkenly wishes Andy's girlfriend dead at Christmas, moves to Florida as a live-in maid, and Andy comes to win her back. When Andy leaves for three months on his boat trip she grows close to Pete, finally breaks up with Andy for good, and is still with Pete at the finale.",
+            "key_events": [
+              "First kiss with Andy at the landfill",
+              "Dumps Andy after learning about his engagement to Angela",
+              "Dates Gabe; breaks up with him at the Dundies",
+              "Andy rejects her; she wishes his girlfriend dead",
+              "Andy wins her back in Florida",
+              "Andy's boat trip; she chooses Pete"
+            ],
+            "got_right": "She eventually recognises neglect for what it is and chooses someone who simply wants her to be happy.",
+            "got_wrong": "She drifts into relationships out of politeness, stays too long, and struggles to say no until she's at breaking point."
+          }
+        }
+      ]
+    },
+    {
+      "id": "char:the_office/angela_martin",
+      "name": "Angela Martin",
+      "role": "The strict, judgmental head of accounting and ruler of the party planning committee, who loves her cats and hides her feelings.",
+      "relations": [
+        {"target": "char:the_office/dwight_schrute", "relation": "partner"},
+        {"target": "char:the_office/andy_bernard", "relation": "ex_partner"},
+        {"target": "char:the_office/michael_scott", "relation": "boss"},
+        {"target": "char:the_office/pam_beesly", "relation": "colleague"},
+        {"target": "char:the_office/jim_halpert", "relation": "colleague"},
+        {"target": "char:the_office/ryan_howard", "relation": "colleague"},
+        {"target": "char:the_office/erin_hannon", "relation": "colleague"}
+      ],
+      "arcs": [
+        {
+          "id": "arc:the_office/angela_martin/keeping_everything_under_control",
+          "title": "Keeping everything, and everyone, under control",
+          "literal_situation": "Angela is the tiny, rigid head of accounting and the iron-fisted ruler of the party planning committee. She judges everyone's morals and outfits, lives with her cats, and never lets anyone see what she feels.",
+          "pattern_label": "a rigid perfectionist hiding a messy heart",
+          "pattern_text": "A person keeps others at a distance with rules, judgment and impossible standards, while privately living a life that contradicts everything they preach. Control feels safer than vulnerability, so they manipulate, lie, and push away the person they actually love. The story asks whether they can drop the armor, admit what they want, and let someone see them.",
+          "hook": "Angela disapproves of nearly everything and everyone. Whatever she wants for herself, she keeps behind a locked door.",
+          "why_relatable": "What is she protecting by being so hard on everyone? Why is it easier to judge others than admit what she wants? What happens when the image she's built can't hold the truth?",
+          "watch_for": [
+            "How does she treat the people she looks down on, compared with the ones she quietly admires?",
+            "When her rules and her feelings collide, which one wins?",
+            "What does it cost her to apologise?"
+          ],
+          "start_at": "S1E1",
+          "span": "S1-S8",
+          "situations": [
+            {"id": "identity_and_self_acceptance", "weight": 0.7},
+            {"id": "breakup", "weight": 0.6},
+            {"id": "loneliness", "weight": 0.6},
+            {"id": "redemption_after_mistakes", "weight": 0.3}
+          ],
+          "conflicts": ["control_vs_trust", "duty_vs_desire"],
+          "emotions": {"start": ["pride", "resentment"], "middle": ["jealousy", "guilt", "loneliness"], "end": ["loneliness", "longing"]},
+          "ending_tone": "bittersweet",
+          "intensity": "moderate",
+          "warnings": ["betrayal"],
+          "example_user_messages": [
+            "People at work call me judgmental and cold, but I just have standards.",
+            "I'm seeing someone in secret and I refuse to let anyone at work find out.",
+            "I'm engaged to a nice man I don't love and I'm still seeing my ex behind his back.",
+            "I haven't spoken to my sister in years over something I can't even remember, and part of me is proud of that."
+          ],
+          "spoiler": {
+            "summary": "Angela rules the party planning committee tyrannically and secretly dates Dwight, then dumps him after he mercy-kills her cat Sprinkles. On the rebound she dates and gets engaged to Andy while continuing to sleep with Dwight, manipulating both. Phyllis blackmails her and then exposes the affair at the Christmas party, and after the duel both men leave her. She tries to get Dwight to father her child by contract, marries the closeted State Senator Robert Lipton, and gives birth to Phillip, lying that he's premature to hide that Dwight is the father.",
+            "key_events": [
+              "Secret relationship with Dwight",
+              "Dumps Dwight after Sprinkles dies",
+              "Engaged to Andy while cheating with Dwight",
+              "Phyllis blackmails her and exposes the affair",
+              "Both men leave her after the duel",
+              "Marries the Senator; has Phillip and lies about his conception"
+            ],
+            "got_right": "She is fiercely competent and, in rare moments (inviting Oscar to the committee, clearing Dwight's name), capable of real loyalty.",
+            "got_wrong": "She judges others for everything she does herself, lies to everyone including the men she's with, and chooses appearances over love."
+          }
+        },
+        {
+          "id": "arc:the_office/angela_martin/starting_over_from_the_bottom",
+          "title": "Starting over from the bottom",
+          "literal_situation": "Later in the series, after a turning point that humiliates her publicly and leaves her with nowhere to live, Angela has to accept help from a coworker she has treated badly for years.",
+          "pattern_label": "humbled into letting people help",
+          "pattern_text": "After a public humiliation strips away the respectable life they built, a proud person has to accept kindness from someone they once looked down on. Losing the image forces them to reckon with how they've treated people, and with the love they gave up for the sake of appearances. The story is about humility, second chances, and finally saying yes to what you actually want.",
+          "hook": "She has always been the one looking down on others. Now she's sleeping on someone else's couch.",
+          "why_relatable": "Can a proud person accept help without feeling destroyed? Is it too late to go back to a love you walked away from? Who shows up for you when your reputation is gone?",
+          "watch_for": [
+            "How does she respond to kindness she hasn't earned?",
+            "What does she finally admit out loud, and to whom?",
+            "Is she willing to be vulnerable when there's no guarantee?"
+          ],
+          "start_at": "S9",
+          "span": "S9",
+          "situations": [
+            {"id": "starting_over", "weight": 0.9},
+            {"id": "divorce", "weight": 0.6},
+            {"id": "redemption_after_mistakes", "weight": 0.6},
+            {"id": "finding_your_people", "weight": 0.5}
+          ],
+          "conflicts": ["revenge_vs_forgiveness", "past_vs_future"],
+          "emotions": {"start": ["betrayal", "shame", "anger"], "middle": ["loneliness", "hope"], "end": ["love", "joy", "belonging"]},
+          "ending_tone": "hopeful",
+          "intensity": "moderate",
+          "warnings": ["betrayal"],
+          "example_user_messages": [
+            "My husband cheated on me with someone I know, and I found out in the most public way possible.",
+            "I lost my apartment and I'm staying with a coworker I used to be awful to.",
+            "I'm a single mom now and my life looks nothing like what I planned.",
+            "I think I'm still in love with my ex, but he's with someone else now."
+          ],
+          "spoiler": {
+            "summary": "Angela learns the Senator is having an affair with Oscar, plots revenge and then drops it. When the documentary airs, the Senator comes out and publicly leaves her; she loses her money and apartment and moves in with Oscar, with baby Phillip and her cats, and they rebuild their friendship. She realises she still loves Dwight, who is dating Esther. Dwight bonds with Phillip and proposes; she admits Phillip is his son. A year later she reunites with her estranged sister at her bachelorette party and marries Dwight in a traditional Schrute wedding.",
+            "key_events": [
+              "Discovers the Senator's affair with Oscar",
+              "Senator comes out publicly and dumps her",
+              "Evicted; moves in with Oscar",
+              "Admits Phillip is Dwight's son",
+              "Reunites with her sister",
+              "Marries Dwight"
+            ],
+            "got_right": "She finally lets go of pride, accepts help, forgives, and tells the truth about what and whom she wants.",
+            "got_wrong": "It takes losing everything before she stops hiding behind image and judgment."
+          }
+        }
+      ]
+    }
+  ]
+}

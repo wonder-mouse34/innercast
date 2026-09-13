@@ -1,0 +1,840 @@
+{
+  "show": "game_of_thrones",
+  "characters": [
+    {
+      "id": "char:game_of_thrones/arya_stark",
+      "name": "Arya Stark",
+      "role": "The tomboyish younger daughter of a northern lord, who would rather learn to fight than learn to sew",
+      "relations": [
+        {"target": "char:game_of_thrones/sansa_stark", "relation": "sibling"},
+        {"target": "char:game_of_thrones/jon_snow", "relation": "sibling"},
+        {"target": "char:game_of_thrones/bran_stark", "relation": "sibling"},
+        {"target": "char:game_of_thrones/sandor_clegane", "relation": "mentor"},
+        {"target": "char:game_of_thrones/cersei_lannister", "relation": "enemy"}
+      ],
+      "arcs": [
+        {
+          "id": "arc:game_of_thrones/arya_stark/list_of_names",
+          "title": "Keeping a list of everyone who hurt her",
+          "literal_situation": "After a devastating loss, a young noble girl escapes the capital disguised as a boy, travelling through a war-torn country with strangers and trying to reach whatever family she has left.",
+          "pattern_label": "letting grief harden into a need for payback",
+          "pattern_text": "After losing the people who kept them safe, a young person survives by becoming tough, watchful and angry, rehearsing every injustice done to them. The anger keeps them going, but it slowly starts to define them. The question becomes whether they can ever set it down and choose a life that is about more than settling scores.",
+          "hook": "A child who has just lost the person who kept her safe, now alone and in disguise, with nothing but a small blade and her fury.",
+          "why_relatable": "How do you survive a loss so big that no one is left to protect you? Is holding on to anger a way of honoring the people you lost, or a way of losing yourself? What does it cost to become hard enough never to be hurt again?",
+          "watch_for": [
+            "What does repeating the names every night give her, and what does it take from her?",
+            "Notice who she lets close along the road, and how she treats them when they disappoint her.",
+            "When she finally gets a chance at what she wants, does it feel the way she imagined?"
+          ],
+          "start_at": "S1E10",
+          "span": "S1-S8",
+          "situations": [
+            {"id": "grief_and_loss", "weight": 0.9},
+            {"id": "coming_of_age", "weight": 0.7},
+            {"id": "loneliness", "weight": 0.5},
+            {"id": "identity_and_self_acceptance", "weight": 0.4}
+          ],
+          "conflicts": ["revenge_vs_forgiveness", "holding_on_vs_letting_go"],
+          "emotions": {"start": ["grief", "anger", "fear"], "middle": ["numbness", "determination", "resentment"], "end": ["freedom", "acceptance"]},
+          "ending_tone": "bittersweet",
+          "intensity": "heavy",
+          "warnings": ["death_of_loved_one", "grief", "war_and_violence", "graphic_gore", "child_endangerment", "torture", "betrayal"],
+          "example_user_messages": [
+            "Ever since my dad died I just feel angry all the time, and honestly the anger is the only thing getting me out of bed.",
+            "I keep a mental list of every person who wronged my family. I know it's not healthy but I can't stop.",
+            "I had to grow up way too fast and now I don't know how to be soft with anyone.",
+            "Part of me wants them to pay, and part of me is scared that if I let it go I'll have nothing left."
+          ],
+          "spoiler": {
+            "summary": "Arya flees King's Landing with Yoren, survives Harrenhal as Tywin's cupbearer and uses Jaqen H'ghar's three promised deaths. She is taken by the Brotherhood, then by the Hound, arrives at the Twins during the Red Wedding and makes her first deliberate kill. She trains with the Faceless Men, kills Meryn Trant, returns to Westeros and wipes out the Frey men in revenge for the Red Wedding. On hearing that Jon holds Winterfell she chooses home over revenge, reunites with Sansa and Bran, executes Littlefinger and kills the Night King at the Battle of Winterfell. She rides to King's Landing to kill Cersei, but the Hound persuades her not to end up like him; she survives Daenerys's destruction of the city, declines Gendry's proposal and finally sails west beyond the edge of the known maps.",
+            "key_events": [
+              "Kills a stableboy while escaping the Red Keep (S1E8)",
+              "Witnesses her father's execution (S1E9)",
+              "Begins nightly recitation of her kill list; Jaqen H'ghar owes her three deaths (S2)",
+              "Sees Robb's desecrated body at the Red Wedding (S3E9)",
+              "Kills Polliver with Needle (S4E1)",
+              "Leaves the wounded Hound to die (S4E10)",
+              "Kills Walder Frey and poisons the Frey men (S6E10-S7E1)",
+              "Chooses to go home to Winterfell instead of King's Landing (S7E2)",
+              "Kills the Night King (S8E3)",
+              "Abandons her revenge on Cersei at the Hound's urging (S8E5)",
+              "Sails west of Westeros (S8E6)"
+            ],
+            "got_right": "She never lets anyone else define her, keeps faith with her family, and in the end chooses to live for something beyond vengeance.",
+            "got_wrong": "She lets revenge make her cold and at times sadistic, and nearly throws her life away chasing the last names on a list."
+          }
+        },
+        {
+          "id": "arc:game_of_thrones/arya_stark/becoming_no_one",
+          "title": "Asked to give up her name",
+          "literal_situation": "Later in the series, after a turning point sends her far from home, a girl seeks out a secretive order of trained killers and is told that to join, she must stop being who she is.",
+          "pattern_label": "erasing yourself to be accepted by a demanding group",
+          "pattern_text": "Someone with nowhere else to go joins a closed, demanding community that promises strength and purpose, but only if they give up their past, their name and everything that made them who they are. They try hard to fit in while secretly holding on to one piece of themselves. Eventually they must decide whether belonging is worth disappearing.",
+          "hook": "She has come a long way with a single coin and a single contact, is turned away at the door, and waits outside with nowhere else to go.",
+          "why_relatable": "How much of yourself should you give up to be accepted? What do you hide from a group that demands total loyalty? Is the hunger for a new identity really a way to escape pain you haven't faced?",
+          "watch_for": [
+            "What does she refuse to throw away, and why?",
+            "Notice how she responds when someone tells her a sad story that might not be true.",
+            "What is she really training for, and do her teachers know?"
+          ],
+          "start_at": "S5E2",
+          "span": "S5-S6",
+          "situations": [
+            {"id": "identity_and_self_acceptance", "weight": 0.9},
+            {"id": "moving_somewhere_new", "weight": 0.6},
+            {"id": "starting_over", "weight": 0.5},
+            {"id": "finding_your_people", "weight": 0.4}
+          ],
+          "conflicts": ["belonging_vs_integrity", "past_vs_future"],
+          "emotions": {"start": ["loneliness", "determination"], "middle": ["confusion", "self_doubt", "fear"], "end": ["self_respect", "confidence"]},
+          "ending_tone": "hopeful",
+          "intensity": "heavy",
+          "warnings": ["abuse", "graphic_gore", "betrayal", "child_endangerment"],
+          "example_user_messages": [
+            "I joined this super intense program to start over and they basically want me to forget my whole past. Some days I think that's exactly what I need.",
+            "Everyone in my new group acts like they've erased who they used to be, and I'm pretending I have too.",
+            "I moved across the world to become a different person but I keep sneaking back to the old me.",
+            "They keep telling me I'm not committed enough. Maybe they're right, or maybe I just don't want to disappear."
+          ],
+          "spoiler": {
+            "summary": "Arya is admitted to the House of Black and White, throws away her belongings but hides Needle, washes corpses and learns to lie by persuading a sick girl to drink poison. Allowed to wear another face, she uses it to kill Meryn Trant, a name on her list, and is struck blind as punishment. She trains blind against the Waif and regains her sight, but refuses to poison the actress Lady Crane. Marked for death, she is stabbed by the Waif, shelters with Lady Crane, then kills the Waif in the dark, hangs her face in the Hall of Faces and tells Jaqen that she is Arya Stark of Winterfell and is going home.",
+            "key_events": [
+              "Throws her possessions into the water but hides Needle (S5E3)",
+              "Persuades the dying girl Ghita to drink from the well (S5E6)",
+              "Murders Meryn Trant wearing a stolen face (S5E10)",
+              "Struck blind as punishment (S5E10)",
+              "Regains her sight (S6E3)",
+              "Spares Lady Crane (S6E6)",
+              "Stabbed by the Waif (S6E7)",
+              "Kills the Waif and declares 'A girl is Arya Stark of Winterfell' (S6E8)"
+            ],
+            "got_right": "She keeps a core sense of self and refuses to kill an innocent woman just because she was told to.",
+            "got_wrong": "She uses the order's tools for private revenge and lies to her teachers, which nearly gets her killed."
+          }
+        },
+        {
+          "id": "arc:game_of_thrones/arya_stark/the_other_sister",
+          "title": "Never the daughter she was supposed to be",
+          "literal_situation": "The younger, wilder daughter of a northern lord is constantly compared to her graceful older sister, who excels at everything a young lady is expected to do.",
+          "pattern_label": "the misfit sibling and the perfect one",
+          "pattern_text": "A younger sibling who doesn't fit the family mould grows up next to one who fits it perfectly, and resents being measured against her. Years of hurt, misunderstanding and separate hardships pile up between them. When life throws them back together, they must decide whether they are rivals or each other's closest allies.",
+          "hook": "She is bored by needlework, outshoots her brothers with a bow, and is scolded at every turn while her sister is praised.",
+          "why_relatable": "What happens when your family values the very things you're bad at? Can you ever see a sibling you've resented as a whole person? How do you rebuild trust with family when you've each been through things the other can't imagine?",
+          "watch_for": [
+            "Notice the moment she stands up for her sister even while furious with her.",
+            "What does each sister assume about the other's life apart?",
+            "When someone tries to drive a wedge between them, who does each one trust?"
+          ],
+          "start_at": "S1E1",
+          "span": "S1-S7",
+          "situations": [
+            {"id": "sibling_rivalry", "weight": 0.9},
+            {"id": "family_expectations", "weight": 0.7},
+            {"id": "identity_and_self_acceptance", "weight": 0.5},
+            {"id": "grief_and_loss", "weight": 0.3}
+          ],
+          "conflicts": ["fitting_in_vs_standing_out", "self_vs_family_expectations"],
+          "emotions": {"start": ["resentment", "rejection", "restlessness"], "middle": ["loneliness", "longing", "betrayal"], "end": ["belonging", "love"]},
+          "ending_tone": "hopeful",
+          "intensity": "moderate",
+          "warnings": ["death_of_loved_one", "betrayal", "war_and_violence"],
+          "example_user_messages": [
+            "My older sister was always the perfect one and I was the problem child. We're adults now and I still feel like I'm competing with her.",
+            "My family always wanted me to be more like my sister. I never wanted her life and I'm tired of being compared.",
+            "My sister and I went through really hard stuff separately, and now that we're living in the same house again we barely know how to talk.",
+            "Someone keeps telling me things about my sister that make me not trust her, and I don't know who to believe."
+          ],
+          "spoiler": {
+            "summary": "Arya and Sansa clash from the start, especially after Sansa backs Joffrey's lie about Mycah and Lady is killed. They are separated after their father's arrest and survive very different ordeals. Reunited at Winterfell, their bond is tested when Littlefinger plants Sansa's old coerced letter for Arya to find; Arya accuses Sansa of betraying their father and toys with her using her bag of faces. Instead of turning on each other, the sisters unite, put Littlefinger on trial, and Arya executes him. They acknowledge each other's strengths and agree to survive as a pack, later standing together in their distrust of Daenerys.",
+            "key_events": [
+              "Sansa sides with Joffrey over the Mycah incident; Arya strikes her (S1E2)",
+              "The sisters are separated after Ned's arrest (S1E8)",
+              "Reunion in the Winterfell crypts (S7E4)",
+              "Arya finds the letter Littlefinger planted (S7E5)",
+              "Arya threatens Sansa with her bag of faces (S7E6)",
+              "Littlefinger's trial; Arya executes him on Sansa's order (S7E7)"
+            ],
+            "got_right": "She eventually recognises her sister's strength and chooses family over suspicion.",
+            "got_wrong": "She judges her sister harshly for choices made under coercion and is easily manipulated into thinking the worst of her."
+          }
+        }
+      ]
+    },
+    {
+      "id": "char:game_of_thrones/theon_greyjoy",
+      "name": "Theon Greyjoy",
+      "role": "The cocky heir of a defeated rebel house, raised as a hostage-ward by the family that beat his father",
+      "relations": [
+        {"target": "char:game_of_thrones/jon_snow", "relation": "rival"},
+        {"target": "char:game_of_thrones/sansa_stark", "relation": "friend"},
+        {"target": "char:game_of_thrones/bran_stark", "relation": "friend"},
+        {"target": "char:game_of_thrones/daenerys_targaryen", "relation": "boss"}
+      ],
+      "arcs": [
+        {
+          "id": "arc:game_of_thrones/theon_greyjoy/two_families",
+          "title": "Going home to a father he barely knows",
+          "literal_situation": "Raised since boyhood as a ward and hostage of the family that defeated his father, a young man is sent back to his birth family's islands as an envoy, expecting a hero's welcome.",
+          "pattern_label": "torn between the family that raised you and the one you were born to",
+          "pattern_text": "Someone raised by a family that was never quite theirs goes back to their birth parent, desperate to be recognised and respected. The parent is cold and contemptuous of who they have become. To prove they belong, they turn on the people who actually cared for them, and every attempt to look strong makes things worse.",
+          "hook": "He has been treated like a brother by his best friend yet reminded all his life that he is not family; now he sails home sure that his father will embrace him.",
+          "why_relatable": "Which family is really yours: the one you were born into, or the one that raised you? What would you do to win the approval of a parent who doesn't value you? How far can the need for respect push you from who you are?",
+          "watch_for": [
+            "Notice how he reacts when his father sneers at the clothes and manners he learned elsewhere.",
+            "Watch how he tries to earn respect from people who don't give it freely.",
+            "Who, if anyone, tells him the truth about himself?"
+          ],
+          "start_at": "S2E2",
+          "span": "S2",
+          "situations": [
+            {"id": "difficult_parent", "weight": 0.9},
+            {"id": "family_expectations", "weight": 0.8},
+            {"id": "identity_and_self_acceptance", "weight": 0.6},
+            {"id": "sibling_rivalry", "weight": 0.3}
+          ],
+          "conflicts": ["loyalty_vs_ambition", "self_vs_family_expectations"],
+          "emotions": {"start": ["longing", "pride", "hope"], "middle": ["inadequacy", "shame", "anger"], "end": ["dread", "guilt"]},
+          "ending_tone": "tragic",
+          "intensity": "heavy",
+          "warnings": ["betrayal", "war_and_violence", "graphic_gore", "child_endangerment"],
+          "example_user_messages": [
+            "I grew up with my aunt's family and just reconnected with my real dad. He acts like he's ashamed of who I turned out to be.",
+            "I've spent my whole life trying to impress a father who doesn't even like me.",
+            "I did something awful to people who were good to me because I wanted my family to finally respect me.",
+            "I never felt like I truly belonged anywhere, not with the people who raised me or the ones I'm related to."
+          ],
+          "spoiler": {
+            "summary": "Balon scorns Theon and rejects Robb's offer of alliance, favouring Yara. Given a single ship and a humiliating task, Theon chooses his blood family, betrays Robb and seizes Winterfell by trickery. He botches the execution of Ser Rodrik, and when Bran and Rickon escape he has two farm boys killed and burned to pass them off as the Stark boys. Besieged, he admits to Maester Luwin that he has gone too far to turn back, and is knocked out and handed over by his own men.",
+            "key_events": [
+              "Balon humiliates him and plans to invade the North (S2E2)",
+              "Baptised to the Drowned God, choosing the Greyjoys over Robb (S2E3)",
+              "Seizes Winterfell (S2E6)",
+              "Beheads Ser Rodrik in a botched execution (S2E6)",
+              "Displays two burned farm boys as Bran and Rickon (S2E7)",
+              "Refuses Yara's plea to flee (S2E8)",
+              "Betrayed and captured by his own men (S2E10)"
+            ],
+            "got_right": "Deep down he knows it is wrong, and later admits his real father was Ned Stark.",
+            "got_wrong": "He betrays the people who loved him to win the approval of a father who never gave it, and commits atrocities to avoid looking weak."
+          }
+        },
+        {
+          "id": "arc:game_of_thrones/theon_greyjoy/losing_his_name",
+          "title": "When someone sets out to break you",
+          "literal_situation": "Later in the series, after a turning point leaves him at the mercy of others, a young man is tormented by people whose identity he doesn't know, while a mysterious servant boy offers to help him.",
+          "pattern_label": "losing yourself under an abuser's control",
+          "pattern_text": "Someone falls under the control of a person who alternates cruelty with false kindness until they no longer trust their own mind. Their name, pride and sense of self are stripped away and replaced with the role the abuser assigns them. Slowly the question becomes whether any part of who they were survives, and what it would take to reclaim it.",
+          "hook": "Frightened, disoriented and powerless, he clings to the one person who seems kind.",
+          "why_relatable": "How does someone get so controlled that they defend the person hurting them? What part of you survives when you've been told for years that you're worthless? What would it take to act for yourself again?",
+          "watch_for": [
+            "Notice who he trusts when he has nothing left, and why.",
+            "Watch his face when someone from his past recognises him.",
+            "What finally matters more to him than his own fear?"
+          ],
+          "start_at": "S3E2",
+          "span": "S3-S5",
+          "situations": [
+            {"id": "identity_and_self_acceptance", "weight": 0.9},
+            {"id": "standing_up_to_authority", "weight": 0.5},
+            {"id": "loneliness", "weight": 0.5},
+            {"id": "redemption_after_mistakes", "weight": 0.4}
+          ],
+          "conflicts": ["control_vs_trust", "safety_vs_growth"],
+          "emotions": {"start": ["fear", "confusion", "hope"], "middle": ["numbness", "shame", "fear"], "end": ["guilt", "determination"]},
+          "ending_tone": "hopeful",
+          "intensity": "heavy",
+          "warnings": ["torture", "abuse", "sexual_violence", "domestic_violence", "graphic_gore", "self_harm_or_suicide", "betrayal"],
+          "example_user_messages": [
+            "I was with someone who'd be sweet one day and cruel the next, and by the end I didn't even know who I was anymore.",
+            "Even though I got out, I still hear his voice telling me what I am.",
+            "I used to be so confident and cocky. Now I flinch at everything and I hate it.",
+            "Part of me thinks I deserved what happened because of the things I did before, and maybe that's why I never fought back."
+          ],
+          "spoiler": {
+            "summary": "Ramsay Snow poses as a rescuer, then returns Theon to the Dreadfort, flays him, castrates him and renames him Reek until Theon denies his own name. Reek refuses Yara's rescue attempt, helps Ramsay take Moat Cailin by posing as Theon, and serves Ramsay at Winterfell, where he is forced to give Sansa away at her wedding and watch Ramsay rape her. He betrays Sansa's first escape plan to protect her from punishment, then confesses he never killed Bran and Rickon. Finally, when Myranda threatens Sansa, he throws Myranda off the walls, becomes Theon again, and escapes with Sansa by leaping from the battlements.",
+            "key_events": [
+              "Ramsay's fake rescue ends back in the torture chamber (S3E5)",
+              "Castrated by Ramsay (S3E7)",
+              "Forced to accept the name Reek (S3E10)",
+              "Refuses Yara's rescue (S4E6)",
+              "Tricks the Ironborn at Moat Cailin into surrendering; they are flayed (S4E8)",
+              "Forced to watch Ramsay rape Sansa (S5E6)",
+              "Confesses the burned boys were not Bran and Rickon (S5E8)",
+              "Kills Myranda and escapes with Sansa (S5E10)"
+            ],
+            "got_right": "He keeps a buried loyalty to the Starks and, at the decisive moment, acts to protect Sansa despite his terror.",
+            "got_wrong": "Paralysed by fear, he rejects rescue, betrays Sansa's first escape attempt and helps his abuser deceive and massacre others."
+          }
+        },
+        {
+          "id": "arc:game_of_thrones/theon_greyjoy/earning_forgiveness",
+          "title": "Believing he is beyond forgiveness",
+          "literal_situation": "Later in the series, after a long ordeal, a man scarred inside and out believes no one could forgive what he has done, and goes home to face his furious sister.",
+          "pattern_label": "rebuilding self-respect after doing harm and being harmed",
+          "pattern_text": "A person who has both done terrible harm and survived terrible harm tries to find a way to live with themselves. Rather than asking for forgiveness, they try to be useful, backing someone more capable and slowly facing the people they wronged. The journey is about whether a person can be defined by what they do next rather than by what they did.",
+          "hook": "Broken and convinced he deserves no forgiveness, he returns to his birth family's islands to find his sister still angry with him.",
+          "why_relatable": "Can you make up for something unforgivable, or only live differently from now on? How do you rebuild confidence when your worst moments are known to everyone? What does it mean to stand up for someone else instead of yourself?",
+          "watch_for": [
+            "Notice who he chooses to champion instead of himself.",
+            "Watch how he responds when someone publicly calls him a coward.",
+            "What does he think he owes the people he wronged?"
+          ],
+          "start_at": "S6E4",
+          "span": "S6-S8",
+          "situations": [
+            {"id": "redemption_after_mistakes", "weight": 0.9},
+            {"id": "confidence_struggle", "weight": 0.7},
+            {"id": "starting_over", "weight": 0.5},
+            {"id": "caring_for_family", "weight": 0.4}
+          ],
+          "conflicts": ["past_vs_future", "duty_vs_desire"],
+          "emotions": {"start": ["shame", "guilt", "self_doubt"], "middle": ["fear", "determination", "hope"], "end": ["self_respect", "peace", "acceptance"]},
+          "ending_tone": "bittersweet",
+          "intensity": "heavy",
+          "warnings": ["death_of_main_character", "war_and_violence", "graphic_gore", "grief"],
+          "example_user_messages": [
+            "I hurt people who were like family to me, and even though I've changed I don't think I deserve their forgiveness.",
+            "After everything I went through I can barely look people in the eye, but my sister needs me to step up.",
+            "I froze and abandoned someone I love when it counted. I want to make it right.",
+            "I'm trying to be the person who shows up now, instead of the person everyone remembers."
+          ],
+          "spoiler": {
+            "summary": "Theon backs Yara's claim at the kingsmoot, flees with her when Euron wins, and helps secure an alliance with Daenerys, declaring himself unfit to rule. When Euron ambushes their fleet he freezes and jumps overboard, abandoning Yara. Jon tells him he is both a Greyjoy and a Stark. Theon wins over the Ironborn by refusing to stay down in a brutal fight with Harrag, rescues Yara, then returns to Winterfell to guard Bran in the godswood during the Long Night. Bran tells him he is a good man; Theon charges the Night King and dies, buying the moment Arya needs. Sansa pins the Stark sigil on his body.",
+            "key_events": [
+              "Backs Yara as queen at the kingsmoot (S6E5)",
+              "Pledges the Iron Fleet to Daenerys (S6E9)",
+              "Leaps overboard as Euron takes Yara (S7E2)",
+              "Jon tells him he is both a Stark and a Greyjoy (S7E7)",
+              "Beats Harrag and rallies the Ironborn (S7E7)",
+              "Rescues Yara from Euron (S8E1)",
+              "Dies defending Bran from the Night King (S8E3)"
+            ],
+            "got_right": "He stops chasing status, backs his sister, faces his cowardice and ends by protecting the family he once betrayed.",
+            "got_wrong": "Trauma still gets the better of him at the worst possible moment, when he abandons Yara in the sea battle."
+          }
+        }
+      ]
+    },
+    {
+      "id": "char:game_of_thrones/brienne_of_tarth",
+      "name": "Brienne of Tarth",
+      "role": "An unusually tall, strong noblewoman who dreams of knighthood and fights in the guard of a claimant king",
+      "relations": [
+        {"target": "char:game_of_thrones/jaime_lannister", "relation": "friend"},
+        {"target": "char:game_of_thrones/sansa_stark", "relation": "boss"},
+        {"target": "char:game_of_thrones/sandor_clegane", "relation": "rival"},
+        {"target": "char:game_of_thrones/arya_stark", "relation": "friend"}
+      ],
+      "arcs": [
+        {
+          "id": "arc:game_of_thrones/brienne_of_tarth/proving_herself",
+          "title": "A woman who wants to fight in a world that laughs at her",
+          "literal_situation": "An unusually tall, strong noblewoman wins a tournament to earn a place in a would-be king's personal guard, even though most men mock her and custom says she can never be made a knight.",
+          "pattern_label": "earning respect where you were never meant to belong",
+          "pattern_text": "Someone who has been mocked all their life for not fitting what people expect pours everything into a demanding path usually closed to people like them. They are fiercely capable, but awkward, guarded and quick to expect ridicule. Their story asks whether outside recognition matters, and what happens when it finally comes.",
+          "hook": "She has just beaten the best fighter in the camp and asked for her reward, but even her victory is met with sneers.",
+          "why_relatable": "How do you keep going when your skill is never enough to earn acceptance? Do you need an official title to be what you already are? How do you open up to people after a lifetime of being laughed at?",
+          "watch_for": [
+            "Notice how she reacts whenever someone calls her 'my lady'.",
+            "Watch who treats her with simple courtesy, and what that does to her.",
+            "What does she believe she needs from others to feel legitimate?"
+          ],
+          "start_at": "S2E3",
+          "span": "S2-S8",
+          "situations": [
+            {"id": "identity_and_self_acceptance", "weight": 0.8},
+            {"id": "finding_your_people", "weight": 0.6},
+            {"id": "confidence_struggle", "weight": 0.5}
+          ],
+          "conflicts": ["fitting_in_vs_standing_out", "belonging_vs_integrity"],
+          "emotions": {"start": ["rejection", "determination", "pride"], "middle": ["loneliness", "self_doubt"], "end": ["belonging", "self_respect", "joy"]},
+          "ending_tone": "hopeful",
+          "intensity": "moderate",
+          "warnings": ["war_and_violence", "sexual_violence", "death_of_loved_one", "graphic_gore"],
+          "example_user_messages": [
+            "I'm the only woman on my team and no matter how good my work is, I still get treated like a joke.",
+            "I was mocked so much growing up that now I assume everyone's laughing at me, even when they're not.",
+            "I've been doing this job better than half the people with the title, but I'll never officially get it.",
+            "Someone was genuinely kind to me for once and I didn't know how to handle it."
+          ],
+          "spoiler": {
+            "summary": "Brienne joins Renly's Kingsguard, sees him murdered by a shadow and, blamed for it, flees and swears herself to Catelyn. Mocked throughout her journeys, she proves herself repeatedly: beating Jaime to a standstill, defeating the Hound, executing Stannis for Renly's murder, and finally protecting Sansa. At Winterfell before the Long Night, Tormund says he would knight her ten times over and Jaime knights her in front of friends who applaud. After the war she becomes Lady Commander of the Kingsguard under King Bran.",
+            "key_events": [
+              "Wins Renly's tournament and a Kingsguard place (S2E3)",
+              "Renly is killed in her arms; she is blamed (S2E5)",
+              "Defeats the Hound in single combat (S4E10)",
+              "Executes Stannis (S5E10)",
+              "Knighted by Jaime (S8E2)",
+              "Named Lady Commander of the Kingsguard (S8E6)"
+            ],
+            "got_right": "She holds to her own standard of honour regardless of how others see her, and in the end lets herself enjoy being recognised.",
+            "got_wrong": "Expecting ridicule, she keeps most people at arm's length and pours her loyalty into a few lords who could not hold it."
+          }
+        },
+        {
+          "id": "arc:game_of_thrones/brienne_of_tarth/keeping_the_promise",
+          "title": "A promise to a desperate mother",
+          "literal_situation": "After a shocking loss she could not prevent, and an accusation she cannot shake, a woman pledges herself to a mother desperate to get her daughters back.",
+          "pattern_label": "keeping a promise long after it stopped making sense",
+          "pattern_text": "After failing to protect someone they loved, a person makes a solemn promise to someone else and builds their whole purpose around it. Circumstances change, the person they promised is no longer there, and the people they are meant to help don't even want them. They must work out whether faithfulness means sticking to the letter of a promise or to its spirit.",
+          "hook": "Reeling from a loss she blames herself for, she flees and pledges herself to a noblewoman who showed faith in her.",
+          "why_relatable": "What do you owe someone who put their faith in you? How do you live with having failed to protect someone? When the people you want to help keep turning you away, when do you stop?",
+          "watch_for": [
+            "Notice how she handles being turned away by the very people she swore to help.",
+            "Watch which choice she makes when two duties pull in opposite directions.",
+            "Is she keeping the promise for them, or for herself?"
+          ],
+          "start_at": "S2E5",
+          "span": "S2-S7",
+          "situations": [
+            {"id": "grief_and_loss", "weight": 0.7},
+            {"id": "redemption_after_mistakes", "weight": 0.6},
+            {"id": "unrequited_love", "weight": 0.4},
+            {"id": "mentor_and_protege", "weight": 0.3}
+          ],
+          "conflicts": ["duty_vs_desire", "holding_on_vs_letting_go"],
+          "emotions": {"start": ["grief", "guilt", "determination"], "middle": ["rejection", "self_doubt", "anger"], "end": ["relief", "pride"]},
+          "ending_tone": "hopeful",
+          "intensity": "heavy",
+          "warnings": ["death_of_loved_one", "grief", "war_and_violence", "graphic_gore", "sexual_violence"],
+          "example_user_messages": [
+            "I promised my friend before she died that I'd look out for her kids, but they don't even want my help.",
+            "The person I cared about most died and I couldn't protect them. I think I've been trying to make up for it ever since.",
+            "I made a commitment that doesn't really apply anymore, but letting it go feels like betraying someone.",
+            "I was in love with someone who could never love me back, and I'm still loyal to him."
+          ],
+          "spoiler": {
+            "summary": "Brienne swears to Catelyn after Renly's death and is sent to trade Jaime for the Stark girls. Catelyn dies at the Red Wedding, but Brienne holds to her vow; Jaime gives her Oathkeeper and sends her after Sansa. She finds Arya with the Hound but Arya slips away after their fight. Sansa, under Littlefinger's influence, refuses her. Waiting outside Winterfell for Sansa's signal, she leaves to kill Stannis for Renly and misses the candle by moments. She finally rescues Sansa from Bolton men and is accepted into her service, tries to win the Blackfish to Sansa's cause at Riverrun, and later sees Catelyn's three surviving children reunited at Winterfell.",
+            "key_events": [
+              "Swears fealty to Catelyn (S2E5)",
+              "Catelyn is killed at the Red Wedding (S3E9)",
+              "Receives Oathkeeper from Jaime (S4E4)",
+              "Loses Arya after fighting the Hound (S4E10)",
+              "Rejected by Sansa (S5E1)",
+              "Leaves her post to kill Stannis, missing Sansa's signal (S5E10)",
+              "Rescues Sansa and is accepted into her service (S6E1)",
+              "Sees the Stark children reunited; Pod says Catelyn would be proud (S7E4)"
+            ],
+            "got_right": "Her persistence and honesty eventually earn Sansa's trust, and she keeps the promise in spirit rather than just in word.",
+            "got_wrong": "At a crucial moment she chooses personal vengeance for Renly over watching for Sansa's signal."
+          }
+        },
+        {
+          "id": "arc:game_of_thrones/brienne_of_tarth/unlikely_bond",
+          "title": "Escorting a man she despises",
+          "literal_situation": "Later in the series, ordered to escort a notorious, arrogant man across a war zone, a woman endures his constant taunts about her looks and her loyalties.",
+          "pattern_label": "an enemy who becomes the one who truly sees you",
+          "pattern_text": "Two people forced together dislike each other on sight: one proud and cutting, the other earnest and guarded. Hardship strips away their defences and they come to respect, protect and understand each other in a way no one else does. The bond becomes something neither can name, and one of them must decide whether it is enough when the other keeps being pulled back to their past.",
+          "hook": "She has a difficult charge, a rowboat and a long road ahead, and he has already started mocking her.",
+          "why_relatable": "Can someone you judged completely turn out to be the person who understands you best? What do you do when someone you've come to respect is still tied to a past that pulls at him? How do you know if someone's change is real?",
+          "watch_for": [
+            "Notice when their insults start to turn into something else.",
+            "Watch what each of them is willing to risk for the other.",
+            "What does she believe about who he really is, and is she right?"
+          ],
+          "start_at": "S2E10",
+          "span": "S2-S8",
+          "situations": [
+            {"id": "falling_for_someone_unexpected", "weight": 0.9},
+            {"id": "breakup", "weight": 0.4}
+          ],
+          "conflicts": ["independence_vs_connection", "holding_on_vs_letting_go"],
+          "emotions": {"start": ["anger", "resentment"], "middle": ["curiosity", "longing", "love"], "end": ["grief", "love", "acceptance"]},
+          "ending_tone": "bittersweet",
+          "intensity": "moderate",
+          "warnings": ["sexual_violence", "graphic_gore", "war_and_violence", "death_of_loved_one"],
+          "example_user_messages": [
+            "The coworker I couldn't stand is somehow the only person who actually gets me now.",
+            "I fell for someone who still can't let go of his ex, even though she's terrible for him.",
+            "He finally treated me like I mattered, then went back to his old life anyway.",
+            "I used to think he was the worst person I'd ever met. Now I'd defend him to anyone."
+          ],
+          "spoiler": {
+            "summary": "Jaime taunts Brienne on the road until they are captured by Bolton men; he saves her from rape by lying about her ransom value and loses his sword hand. He confesses the truth about killing the Mad King to her, then comes back to jump into a bear pit to save her. He gives her Oathkeeper and sends her to protect Sansa; they part at Riverrun with a wave. Brienne vouches for him at Winterfell, fights beside him, and is knighted by him. After the Long Night they sleep together, but when news comes about Cersei he leaves her for King's Landing despite her pleas. He dies with Cersei, and Brienne writes his entry in the Book of Brothers, praising him.",
+            "key_events": [
+              "Jaime saves her from rape and loses his hand (S3E3)",
+              "Jaime's bathhouse confession about the Mad King (S3E5)",
+              "Jaime rescues her from the bear pit (S3E7)",
+              "Jaime gives her Oathkeeper (S4E4)",
+              "Riverrun farewell (S6E8)",
+              "She vouches for him at Winterfell; he knights her (S8E2)",
+              "They sleep together; he leaves for Cersei (S8E4)",
+              "She completes his page in the Book of Brothers (S8E6)"
+            ],
+            "got_right": "She sees the good in him before anyone else, tells him so, and speaks up for him when it counts.",
+            "got_wrong": "She cannot make him stay, and may believe his change was more complete than it was."
+          }
+        }
+      ]
+    },
+    {
+      "id": "char:game_of_thrones/samwell_tarly",
+      "name": "Samwell Tarly",
+      "role": "The bookish, gentle eldest son of a warrior lord, forced by his father to join a remote military order at the Wall",
+      "relations": [
+        {"target": "char:game_of_thrones/jon_snow", "relation": "friend"},
+        {"target": "char:game_of_thrones/bran_stark", "relation": "friend"}
+      ],
+      "arcs": [
+        {
+          "id": "arc:game_of_thrones/samwell_tarly/courage_his_own_way",
+          "title": "Sent away by a father who's ashamed of him",
+          "literal_situation": "Heir to a powerful military house, a bookish, overweight young man is forced by his father to give up his inheritance and join a remote order guarding the frontier, where he is bullied from the first day.",
+          "pattern_label": "finding your own kind of courage after a parent's rejection",
+          "pattern_text": "A gentle, studious person is rejected by a harsh parent who only values toughness, and ends up somewhere hostile where they are mocked as weak. A single loyal friend changes everything. Over time they discover that their courage looks different from what they were taught to admire, and that their mind is their real strength.",
+          "hook": "Called a coward by his father and a pig by his new comrades, he admits to the one young man who defends him that he is afraid of everything.",
+          "why_relatable": "How do you believe in yourself when the parent who should champion you thinks you're a failure? What does courage look like for someone who hates fighting? Can you ever stand up to the person whose approval you still want?",
+          "watch_for": [
+            "Notice what gives him courage when he is terrified.",
+            "Watch how he behaves whenever he has to face his father.",
+            "What does he believe he is worth, and who changes his mind?"
+          ],
+          "start_at": "S1E4",
+          "span": "S1-S8",
+          "situations": [
+            {"id": "difficult_parent", "weight": 0.9},
+            {"id": "confidence_struggle", "weight": 0.8},
+            {"id": "finding_your_people", "weight": 0.7},
+            {"id": "falling_for_someone_unexpected", "weight": 0.4}
+          ],
+          "conflicts": ["self_vs_family_expectations", "safety_vs_growth"],
+          "emotions": {"start": ["inadequacy", "fear", "shame"], "middle": ["hope", "love", "determination"], "end": ["confidence", "self_respect"]},
+          "ending_tone": "hopeful",
+          "intensity": "moderate",
+          "warnings": ["abuse", "war_and_violence", "graphic_gore", "child_endangerment", "sexual_violence", "death_of_loved_one"],
+          "example_user_messages": [
+            "My dad always wanted a tough, sporty son and I'm the opposite. He made it very clear I was a disappointment.",
+            "I got pushed into a path my parents chose and everyone there thinks I'm soft.",
+            "I'm a total nerd and kind of a coward, but I just made my first real friend and it's changing everything.",
+            "Went home for the holidays and my father tore me apart at dinner again. This time I just packed up and left."
+          ],
+          "spoiler": {
+            "summary": "Protected by Jon, Sam survives training and becomes Maester Aemon's steward. He falls for Gilly, rescues her and her son from Craster's Keep and kills a White Walker with dragonglass to protect them. He fights in the battle for the Wall, gets Jon elected Lord Commander, and leaves for Oldtown with Gilly. At Horn Hill his father humiliates him again; Sam leaves with Gilly and the baby and takes the family sword Heartsbane. He later learns Daenerys executed his father and brother, tells Jon the truth of his parentage, survives the Long Night, and becomes Grand Maester under King Bran.",
+            "key_events": [
+              "Jon defends him from the other recruits (S1E4)",
+              "Kills a White Walker to protect Gilly and her baby (S3E8)",
+              "Kills a Thenn warg at the battle for the Wall (S4E9)",
+              "Nominates Jon for Lord Commander (S5E2)",
+              "Stands up to his father and takes Heartsbane (S6E6)",
+              "Learns Daenerys executed his father and brother (S8E1)",
+              "Tells Jon he is Aegon Targaryen (S8E2)",
+              "Becomes Grand Maester (S8E6)"
+            ],
+            "got_right": "He chooses the people who love him over the father who never did, and trusts his mind as his real weapon.",
+            "got_wrong": "He sometimes makes decisions for Gilly 'for her protection' without asking her, and still struggles to hold his ground face to face with his father."
+          }
+        },
+        {
+          "id": "arc:game_of_thrones/samwell_tarly/dream_institution",
+          "title": "Finally at the place he always dreamed of",
+          "literal_situation": "Later in the series, once the story takes him somewhere new, a young man with urgent first-hand knowledge finally reaches the great scholarly institution he always wanted to join, only to be stuck emptying chamber pots and shelving books while his superiors dismiss his warnings.",
+          "pattern_label": "when your dream workplace won't listen",
+          "pattern_text": "Someone finally gets into the prestigious institution they always idolised, only to be given menial work and told to wait their turn. They have real, urgent knowledge that the people in charge brush aside. They must decide whether to follow the rules, bend them to do what is right, or walk away from the place they wanted so badly.",
+          "hook": "Surrounded by the books he always longed for, he spends his days on latrine duty while the one danger he knows is real is treated as a fairy tale.",
+          "why_relatable": "What do you do when your dream job turns out to be mostly drudgery? When is it right to break the rules to help someone? How long should you wait for the people in charge to take you seriously?",
+          "watch_for": [
+            "Notice how his mentor reacts when he breaks the rules and succeeds.",
+            "What does he do when his warnings are laughed at?",
+            "Watch what he overlooks while he is caught up in his frustration."
+          ],
+          "start_at": "S7E1",
+          "span": "S7",
+          "situations": [
+            {"id": "new_job", "weight": 0.8},
+            {"id": "standing_up_to_authority", "weight": 0.8},
+            {"id": "taking_a_big_risk", "weight": 0.6}
+          ],
+          "conflicts": ["belonging_vs_integrity", "safety_vs_growth"],
+          "emotions": {"start": ["boredom", "restlessness", "hope"], "middle": ["determination", "anxiety"], "end": ["confidence", "freedom"]},
+          "ending_tone": "hopeful",
+          "intensity": "moderate",
+          "warnings": ["serious_illness", "medical_trauma"],
+          "example_user_messages": [
+            "I finally got into the program I dreamed about for years and all they have me doing is filing and cleaning up.",
+            "I have actual experience with this problem and my bosses keep laughing it off because I'm the new guy.",
+            "I broke protocol to help someone and it worked, and now I don't know if I'm in trouble or about to get praised.",
+            "I'm starting to think I'll learn more by leaving this place than by staying."
+          ],
+          "spoiler": {
+            "summary": "At the Citadel Sam does menial chores while Archmaester Ebrose dismisses the threat of the White Walkers. He steals books from the restricted section and discovers the dragonglass under Dragonstone. Against orders he secretly cures Jorah Mormont's greyscale; Ebrose praises him but 'rewards' him with copying scrolls. When the Archmaesters laugh at Bran's warning, Sam brushes off Gilly just as she reads out that Rhaegar's first marriage was annulled, then leaves Oldtown with stolen books. At Winterfell he and Bran realise Jon is the legitimate heir.",
+            "key_events": [
+              "Latrine duty and menial chores at the Citadel (S7E1)",
+              "Finds that Dragonstone sits on a mountain of dragonglass (S7E1)",
+              "Secretly cures Jorah's greyscale (S7E2-S7E3)",
+              "The Archmaesters laugh off Bran's warning (S7E5)",
+              "Ignores Gilly's discovery of the annulment (S7E5)",
+              "Leaves the Citadel with stolen books (S7E5)",
+              "Confirms Jon's legitimacy with Bran (S7E7)"
+            ],
+            "got_right": "He trusts his first-hand knowledge, takes a calculated risk to save a life, and leaves when the institution won't act.",
+            "got_wrong": "Caught up in his frustration, he talks over Gilly just as she reads out one of the most important secrets in the realm."
+          }
+        }
+      ]
+    },
+    {
+      "id": "char:game_of_thrones/sandor_clegane",
+      "name": "Sandor Clegane",
+      "role": "A scarred, feared bodyguard to the crown prince who scorns knights and their ideals",
+      "relations": [
+        {"target": "char:game_of_thrones/arya_stark", "relation": "protege"},
+        {"target": "char:game_of_thrones/sansa_stark", "relation": "friend"},
+        {"target": "char:game_of_thrones/cersei_lannister", "relation": "boss"},
+        {"target": "char:game_of_thrones/brienne_of_tarth", "relation": "rival"}
+      ],
+      "arcs": [
+        {
+          "id": "arc:game_of_thrones/sandor_clegane/cruel_boss",
+          "title": "The attack dog of a cruel young prince",
+          "literal_situation": "A scarred, feared bodyguard serves a spoiled, sadistic prince and his powerful family, carrying out their violence without asking questions.",
+          "pattern_label": "doing dirty work for someone you despise",
+          "pattern_text": "A person hardened by early cruelty works for a powerful, vicious boss, telling themselves that everyone is just as bad underneath and ideals are lies. They carry out ugly orders, but small acts of decency slip through, especially towards someone vulnerable in the boss's grip. Eventually the job asks more than they can give, and they must decide whether to stay.",
+          "hook": "He sneers at honour, keeps his burned face half hidden, and does whatever the prince tells him.",
+          "why_relatable": "Can you do a job you find disgusting without becoming part of it? Is cynicism protecting you, or just a way to avoid feeling? What finally makes someone walk away from a powerful employer?",
+          "watch_for": [
+            "Notice how he treats the prince's young fiancée when no one else is looking.",
+            "Watch what he says about knights, and why.",
+            "What is the one thing he truly fears?"
+          ],
+          "start_at": "S1E1",
+          "span": "S1-S2",
+          "situations": [
+            {"id": "standing_up_to_authority", "weight": 0.7},
+            {"id": "burnout_at_work", "weight": 0.6},
+            {"id": "losing_a_job", "weight": 0.4}
+          ],
+          "conflicts": ["power_vs_morality", "safety_vs_growth"],
+          "emotions": {"start": ["numbness", "resentment", "anger"], "middle": ["restlessness", "fear"], "end": ["freedom", "fear"]},
+          "ending_tone": "ambiguous",
+          "intensity": "heavy",
+          "warnings": ["child_endangerment", "abuse", "war_and_violence", "graphic_gore", "sexual_violence"],
+          "example_user_messages": [
+            "I work for a boss who's genuinely cruel and I've gotten really good at not feeling anything about it.",
+            "Everyone at work thinks I'm the heartless one, but I'm the only one who ever quietly looks out for the new girl.",
+            "I've stopped believing anyone is actually good. People who talk about honor are just better at hiding it.",
+            "Today I finally told my boss where to shove it and walked out. I have no plan."
+          ],
+          "spoiler": {
+            "summary": "Sandor rides down and kills the butcher's boy Mycah on Joffrey's word and helps the Lannisters seize Ned. As Joffrey's cruelty grows he quietly shields Sansa: he stops her pushing Joffrey off a walkway, covers her with his cloak after a beating, and rescues her from would-be rapists during the riot. At the Battle of the Blackwater, wildfire freezes him with fear; he tells Tyrion 'fuck the King', deserts the Kingsguard, and offers to take Sansa north. She refuses and he leaves the city alone.",
+            "key_events": [
+              "Kills Mycah (S1E2)",
+              "Saves Loras from his brother Gregor (S1E5)",
+              "Named to the Kingsguard but refuses knighthood (S1E8)",
+              "Covers Sansa after a public beating (S2E4)",
+              "Rescues Sansa during the riot (S2E6)",
+              "Freezes in the wildfire and deserts at the Blackwater (S2E9)"
+            ],
+            "got_right": "He refuses to join in the worst cruelty and tries to get Sansa out.",
+            "got_wrong": "He murders a child without question and hides behind 'following orders'."
+          }
+        },
+        {
+          "id": "arc:game_of_thrones/sandor_clegane/reluctant_guardian",
+          "title": "Stuck with a girl who wants him dead",
+          "literal_situation": "Later in the series, after he has walked away from his old life, a man on the run grabs a runaway noble girl, planning to ransom her to her family, while she openly plots to kill him.",
+          "pattern_label": "a bitter loner reluctantly raising someone",
+          "pattern_text": "A loner scarred by family cruelty ends up responsible for a furious young person who hates them. Travelling together through hard times, they trade insults, teach each other hard lessons and slowly build a rough kind of care neither will admit to. The bond tests whether a hardened person can let someone in, and what they end up passing on.",
+          "hook": "He has grabbed her as she tried to get away, and she has already considered caving his skull in with a rock.",
+          "why_relatable": "Can you care for someone without ever saying so? Which harsh lessons are worth passing on, and which should a young person be protected from? What happens when you finally tell someone about the wound you carry?",
+          "watch_for": [
+            "Notice what he is actually protecting her from.",
+            "Watch what happens when he finally talks about how he got his scars.",
+            "Is the lesson he's teaching her one he would want her to learn?"
+          ],
+          "start_at": "S3E7",
+          "span": "S3-S4",
+          "situations": [
+            {"id": "mentor_and_protege", "weight": 0.9},
+            {"id": "responsibility_you_didnt_ask_for", "weight": 0.7},
+            {"id": "loneliness", "weight": 0.4},
+            {"id": "sibling_rivalry", "weight": 0.3}
+          ],
+          "conflicts": ["independence_vs_connection", "revenge_vs_forgiveness"],
+          "emotions": {"start": ["resentment", "anger"], "middle": ["grief", "shame", "belonging"], "end": ["rejection", "loneliness"]},
+          "ending_tone": "bittersweet",
+          "intensity": "heavy",
+          "warnings": ["death_of_loved_one", "war_and_violence", "graphic_gore", "child_endangerment", "abuse"],
+          "example_user_messages": [
+            "I ended up looking after my teenage niece and she can't stand me. Honestly I can't stand her either, but I'd fight anyone who hurt her.",
+            "My older brother did something horrible to me as a kid and my dad covered it up. I never told anyone until recently.",
+            "I'm teaching this kid how the world really works, but sometimes I wonder if I'm just making her as bitter as me.",
+            "I let someone get close for the first time in years, and then she just walked away."
+          ],
+          "spoiler": {
+            "summary": "The Hound takes Arya to the Twins to ransom her, but they arrive during the Red Wedding; he knocks her out and carries her to safety. Travelling towards the Vale, he kills Polliver's men with her, robs a kind farmer, and tells her that his brother burned his face while their father covered it up; Arya cleans his festering wound. Lysa Arryn turns out to be dead. Brienne tries to take Arya, and the Hound is beaten and thrown from a cliff. He begs Arya to kill him, taunting her about Mycah and Sansa; she takes his silver and leaves him to die, though she later admits she had already taken him off her list.",
+            "key_events": [
+              "Captures Arya (S3E7)",
+              "Drags Arya away from the Red Wedding (S3E9)",
+              "Robs the farmer who sheltered them (S4E3)",
+              "Tells Arya the story of his burned face (S4E7)",
+              "Lysa Arryn is dead; the ransom plan fails (S4E8)",
+              "Loses to Brienne and is left to die by Arya (S4E10)"
+            ],
+            "got_right": "He keeps Arya alive, pulls her from the Red Wedding, and gives her real survival skills.",
+            "got_wrong": "He teaches her that cruelty is practical, shuts down every sign of care, and goads her to kill him."
+          }
+        },
+        {
+          "id": "arc:game_of_thrones/sandor_clegane/second_chance",
+          "title": "A quiet life he never expected",
+          "literal_situation": "Later in the series, after a turning point takes him out of the fight, a notorious killer lives quietly in a peaceful community led by a former soldier turned preacher, helping them build a place of worship.",
+          "pattern_label": "trying to start over after a life of violence",
+          "pattern_text": "Someone with a long history of harm is given a second chance by a stranger who believes people can change, and tries a quiet, useful life. When that fragile peace is destroyed, they must decide whether to go back to what they know or fight for something bigger than themselves. Underneath it all sits an old wound and a grudge they have never let go.",
+          "hook": "Chopping wood with a group of peaceful villagers, he is told that it's never too late to come back.",
+          "why_relatable": "Can someone with a violent past really start again? Is fighting for a cause different from fighting for yourself? What do you do with a lifelong grudge against your own family?",
+          "watch_for": [
+            "Notice what he does when the peace is threatened.",
+            "Watch how he reacts to people who talk about gods and destiny.",
+            "What does he tell the young person he cares about when it matters most?"
+          ],
+          "start_at": "S6E7",
+          "span": "S6-S8",
+          "situations": [
+            {"id": "starting_over", "weight": 0.9},
+            {"id": "redemption_after_mistakes", "weight": 0.8},
+            {"id": "finding_your_people", "weight": 0.5},
+            {"id": "sibling_rivalry", "weight": 0.5}
+          ],
+          "conflicts": ["revenge_vs_forgiveness", "past_vs_future"],
+          "emotions": {"start": ["numbness", "guilt", "curiosity"], "middle": ["anger", "grief", "belonging"], "end": ["determination", "acceptance"]},
+          "ending_tone": "tragic",
+          "intensity": "heavy",
+          "warnings": ["death_of_main_character", "war_and_violence", "graphic_gore", "grief", "self_harm_or_suicide", "bleak_ending"],
+          "example_user_messages": [
+            "I've done a lot of damage in my life and someone finally gave me a chance to be different. I really don't want to blow it.",
+            "The one place I ever felt at peace got taken away, and now all I want is to hurt the people responsible.",
+            "I've hated my older brother my whole life and I don't know who I'd be without that.",
+            "I always only looked out for myself. For once I'm part of something bigger and it's weird."
+          ],
+          "spoiler": {
+            "summary": "Septon Ray's community is massacred by Brotherhood deserters; the Hound hunts them down, hangs Lem himself, and joins Beric and Thoros to fight the dead. He buries the farmer and daughter he once robbed, sees a vision in the flames, joins the wight hunt beyond the Wall, and confronts his undead brother Gregor at the Dragonpit. At the Battle of Winterfell fire paralyses him until he sees Arya in danger and saves her. He rides to King's Landing with Arya, persuades her to give up revenge and live, then fights Gregor in the collapsing Red Keep and drags them both off the tower into the flames.",
+            "key_events": [
+              "Found and nursed by Septon Ray (S6E7)",
+              "Ray and the villagers are massacred (S6E7)",
+              "Joins the Brotherhood Without Banners (S6E8)",
+              "Buries the farmer and his daughter (S7E1)",
+              "Fights beyond the Wall (S7E6)",
+              "Threatens Gregor at the Dragonpit (S7E7)",
+              "Saves Arya during the Long Night (S8E3)",
+              "Urges Arya to abandon revenge, then dies killing Gregor (S8E5)"
+            ],
+            "got_right": "He makes amends in small ways, fights for the living, and warns Arya not to waste her life on revenge.",
+            "got_wrong": "He never frees himself from his own hatred and dies inside it."
+          }
+        }
+      ]
+    },
+    {
+      "id": "char:game_of_thrones/bran_stark",
+      "name": "Bran Stark",
+      "role": "The adventurous young son of a northern lord, who loves climbing the walls of his family's castle",
+      "relations": [
+        {"target": "char:game_of_thrones/jon_snow", "relation": "sibling"},
+        {"target": "char:game_of_thrones/sansa_stark", "relation": "sibling"},
+        {"target": "char:game_of_thrones/arya_stark", "relation": "sibling"},
+        {"target": "char:game_of_thrones/jaime_lannister", "relation": "enemy"},
+        {"target": "char:game_of_thrones/theon_greyjoy", "relation": "friend"},
+        {"target": "char:game_of_thrones/samwell_tarly", "relation": "friend"}
+      ],
+      "arcs": [
+        {
+          "id": "arc:game_of_thrones/bran_stark/after_the_fall",
+          "title": "Waking up unable to walk",
+          "literal_situation": "A young boy who loved climbing wakes from a coma after a mysterious fall, unable to use his legs and with no memory of what happened, just as his family scatters.",
+          "pattern_label": "rebuilding a life after a disabling injury",
+          "pattern_text": "A lively, adventurous young person suffers an injury that takes away the life they imagined. They pass through despair and bitterness while the people around them leave or pity them. Slowly they discover new abilities and a different sense of purpose, but have to face the hardest truth: the old life is not coming back.",
+          "hook": "He says he'd rather be dead than never walk again, and everyone he relies on is leaving.",
+          "why_relatable": "Who are you when the thing you loved doing most is gone? How do you find purpose after an injury that changes everything? Is accepting a new path giving up, or growing up?",
+          "watch_for": [
+            "Notice what gives him back a sense of freedom.",
+            "Watch how he reacts when others make decisions for him.",
+            "What is he really hoping to find at the end of his journey?"
+          ],
+          "start_at": "S1E2",
+          "span": "S1-S4",
+          "situations": [
+            {"id": "illness_or_injury", "weight": 1.0},
+            {"id": "coming_of_age", "weight": 0.7},
+            {"id": "identity_and_self_acceptance", "weight": 0.6},
+            {"id": "leaving_home", "weight": 0.5}
+          ],
+          "conflicts": ["holding_on_vs_letting_go", "safety_vs_growth"],
+          "emotions": {"start": ["grief", "anger", "loneliness"], "middle": ["curiosity", "determination", "fear"], "end": ["acceptance", "hope"]},
+          "ending_tone": "bittersweet",
+          "intensity": "moderate",
+          "warnings": ["child_endangerment", "death_of_loved_one", "war_and_violence", "betrayal"],
+          "example_user_messages": [
+            "I was really athletic until my accident, and now I use a wheelchair. I don't know who I am without sports.",
+            "Everyone keeps telling me I'll adjust, but honestly some days I wish I hadn't survived.",
+            "Since my injury I've gotten into things I never cared about before, and I'm weirdly good at them.",
+            "My family all went off to deal with their own lives right when I needed them, and I'm stuck at home."
+          ],
+          "spoiler": {
+            "summary": "Bran was pushed from the tower by Jaime after seeing him with Cersei. Paralysed, he rides again with Tyrion's saddle and begins dreaming of a three-eyed raven and seeing through his direwolf Summer's eyes. When Theon seizes Winterfell, Bran surrenders the castle to protect his people, escapes, and hides in the crypts while Theon passes off two burned farm boys as him and Rickon. Guided by Jojen and Meera Reed he learns he is a warg, sends Rickon to safety, wargs into Hodor, passes the Wall and reaches the Three-Eyed Raven after Jojen is killed. The Raven tells him he will never walk again, but he will fly.",
+            "key_events": [
+              "Pushed from the tower by Jaime (S1E1)",
+              "Rides again with Tyrion's saddle (S1E4)",
+              "Learns his father has been executed (S1E9)",
+              "Yields Winterfell to Theon (S2E6)",
+              "Parts ways with Rickon and discovers he can warg into Hodor (S3E9)",
+              "Kills Locke through Hodor (S4E5)",
+              "Jojen dies; Bran meets the Three-Eyed Raven (S4E10)"
+            ],
+            "got_right": "He holds on to his curiosity and courage and chooses a hard journey because he believes in it.",
+            "got_wrong": "He uses other people's bodies and loyalty without fully weighing the cost to them."
+          }
+        },
+        {
+          "id": "arc:game_of_thrones/bran_stark/the_burden",
+          "title": "Apprenticed to something far bigger than himself",
+          "literal_situation": "Later in the series, after a long journey, a disabled boy trains under a mysterious teacher to see into the past, longing to stay in visions where he can walk and see his family again.",
+          "pattern_label": "a role so big it swallows who you were",
+          "pattern_text": "A young person is chosen for an overwhelming responsibility that asks them to carry the memories and knowledge of many others. The more they grow into it, the less they feel like themselves, and the people who love them feel them slipping away. Their story asks what you lose when you become what everyone needs, and whether the person you were can survive it.",
+          "hook": "Deep in his training, he keeps slipping back into visions of his childhood home, and his teacher warns that he could drown in the past.",
+          "why_relatable": "What happens to your relationships when a huge role takes over your life? Can you carry a heavy burden without becoming distant? What do you owe the people who sacrificed for you?",
+          "watch_for": [
+            "Notice what he does after being warned not to go somewhere.",
+            "Watch how the people who helped him get here react to the way he talks now.",
+            "Does he still want the things he wanted before?"
+          ],
+          "start_at": "S6E2",
+          "span": "S6-S8",
+          "situations": [
+            {"id": "responsibility_you_didnt_ask_for", "weight": 0.9},
+            {"id": "identity_and_self_acceptance", "weight": 0.7},
+            {"id": "mentor_and_protege", "weight": 0.5},
+            {"id": "grief_and_loss", "weight": 0.5}
+          ],
+          "conflicts": ["duty_vs_desire", "past_vs_future"],
+          "emotions": {"start": ["longing", "curiosity", "restlessness"], "middle": ["guilt", "grief", "overwhelm"], "end": ["numbness", "acceptance"]},
+          "ending_tone": "ambiguous",
+          "intensity": "heavy",
+          "warnings": ["death_of_loved_one", "grief", "graphic_gore", "war_and_violence"],
+          "example_user_messages": [
+            "Since I took on this huge responsibility I feel like I've lost who I was. My friends say I've gone cold.",
+            "A friend gave up so much to help me get here, and I don't know how to thank her or even how to feel things properly anymore.",
+            "I keep getting lost in memories of how things used to be instead of dealing with right now.",
+            "I made a mistake that permanently hurt someone who trusted me, and I have to live with it."
+          ],
+          "spoiler": {
+            "summary": "Bran watches his father's youth, the Tower of Joy and the Children of the Forest creating the first White Walker. Disobeying the Three-Eyed Raven, he touches the Night King in a vision, which lets the dead break into the cave; the Raven, Leaf and Summer die, and while warging Hodor across time Bran breaks young Wylis's mind, creating 'Hodor' as Hodor holds the door. Rescued by Benjen, he sees Jon's birth to Lyanna. Back at Winterfell he is detached and tells Meera he is no longer really Bran; she says he died in that cave. He helps expose Littlefinger, learns with Sam that Jon is Aegon Targaryen, is guarded by Theon during the Long Night while Arya kills the Night King, and is chosen king of the Six Kingdoms as Bran the Broken.",
+            "key_events": [
+              "Sees the Tower of Joy (S6E3)",
+              "Sees the Children create the White Walkers (S6E5)",
+              "The Night King marks him (S6E5)",
+              "Hodor, Summer, Leaf and the Three-Eyed Raven die; the origin of 'Hodor' (S6E5)",
+              "Sees Jon's birth (S6E10)",
+              "Tells Meera he is no longer Bran Stark (S7E4)",
+              "Helps convict Littlefinger (S7E7)",
+              "Jon's true parentage confirmed (S7E7)",
+              "Guarded by Theon as the Night King comes for him (S8E3)",
+              "Elected king (S8E6)"
+            ],
+            "got_right": "He accepts his duty and uses what he knows to protect the living and expose Littlefinger.",
+            "got_wrong": "He becomes so detached that he wounds those who sacrificed for him, and his disobedience in the cave costs Hodor his mind and others their lives."
+          }
+        }
+      ]
+    }
+  ]
+}

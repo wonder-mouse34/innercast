@@ -1,0 +1,1339 @@
+{
+  "show": "parks_and_rec",
+  "characters": [
+    {
+      "id": "char:parks_and_rec/leslie_knope",
+      "name": "Leslie Knope",
+      "role": "The relentlessly optimistic deputy director of the parks department in small-town Pawnee, Indiana, who dreams of high office and believes government can genuinely make people's lives better.",
+      "relations": [
+        {
+          "target": "char:parks_and_rec/ron_swanson",
+          "relation": "mentor"
+        },
+        {
+          "target": "char:parks_and_rec/ben_wyatt",
+          "relation": "partner"
+        },
+        {
+          "target": "char:parks_and_rec/ann_perkins",
+          "relation": "friend"
+        },
+        {
+          "target": "char:parks_and_rec/april_ludgate",
+          "relation": "colleague"
+        },
+        {
+          "target": "char:parks_and_rec/andy_dwyer",
+          "relation": "friend"
+        },
+        {
+          "target": "char:parks_and_rec/tom_haverford",
+          "relation": "colleague"
+        },
+        {
+          "target": "char:parks_and_rec/chris_traeger",
+          "relation": "boss"
+        }
+      ],
+      "arcs": [
+        {
+          "id": "arc:parks_and_rec/leslie_knope/dreaming_big_from_the_bottom_rung",
+          "title": "Dreaming big from the bottom rung",
+          "literal_situation": "Leslie is the deputy director of the parks department in Pawnee, Indiana. She dreams of becoming the first female president, but right now she is trying to turn a dangerous construction pit into a park, while her boss wants government to do as little as possible and the public mostly yells at her.",
+          "pattern_label": "an over-eager idealist fighting to be taken seriously",
+          "pattern_text": "A person with enormous ambition and a sincere wish to help others is stuck in a small role where nobody takes their passion seriously. They overwork, overplan and overcommit, and their intensity both inspires and exhausts the people around them. The story asks whether relentless drive can become real progress without steamrolling the people who love you.",
+          "hook": "Leslie has binders, a wall of portraits of female politicians and a plan to fill in a pit that just broke a local man's legs. She also has a boss who wants to dismantle government from within, a department that doesn't share her enthusiasm, and a documentary crew filming her every earnest speech.",
+          "why_relatable": "She believes in her work more than anyone around her does. Is caring this much a strength, or a burden to everyone else? What do you do when the people you want to help treat you like a nuisance, and how much of yourself should you pour into a job that rarely says thank you?",
+          "watch_for": [
+            "Notice when her enthusiasm wins people over and when it pushes them away.",
+            "How does she handle it when a friend tells her she's asking too much?",
+            "What does she take from a boss whose worldview is the opposite of hers?"
+          ],
+          "start_at": "S1E1",
+          "span": "S1-S7",
+          "situations": [
+            {
+              "id": "burnout_at_work",
+              "weight": 0.6
+            },
+            {
+              "id": "finding_your_people",
+              "weight": 0.7
+            },
+            {
+              "id": "taking_a_big_risk",
+              "weight": 0.5
+            },
+            {
+              "id": "standing_up_to_authority",
+              "weight": 0.4
+            }
+          ],
+          "conflicts": [
+            "perfectionism_vs_good_enough",
+            "career_vs_relationships"
+          ],
+          "emotions": {
+            "start": [
+              "determination",
+              "hope"
+            ],
+            "middle": [
+              "rejection",
+              "burnout",
+              "self_doubt"
+            ],
+            "end": [
+              "pride",
+              "belonging",
+              "joy"
+            ]
+          },
+          "ending_tone": "hopeful",
+          "intensity": "light",
+          "warnings": [],
+          "example_user_messages": [
+            "I care way more about my job than anyone else on my team and it's starting to feel lonely.",
+            "Everyone at work treats my ideas like a joke but I know I could actually make a difference.",
+            "I've been told I'm 'a lot' my whole life. I just want things to be good.",
+            "I put my heart into a project for months and people are still complaining. Why do I even bother?",
+            "I have huge dreams but right now I'm stuck at the bottom trying to get one small thing approved."
+          ],
+          "spoiler": {
+            "summary": "The pit project stalls for years. After a government shutdown, Leslie saves the parks department by reviving the Harvest Festival. She runs for city council; her professional campaign staff abandon her after the scandal over her relationship with Ben, and her coworkers become her campaign team instead. She loses on election night, then wins by a narrow margin after a recount. As a councilwoman she fights unpopular battles, is recalled in Season 6, and still gets the Pawnee Commons park approved on the old pit lot before her term ends. She becomes Regional Director of the National Parks Service Midwest office, keeping it in Pawnee on the third floor. By 2017 she is feuding with Ron after the 'Morningstar' incident, then reconciles with him. She takes a federal job in Washington, and flash-forwards show her serving two terms as Governor of Indiana, with a hint that she or Ben later becomes President.",
+            "key_events": [
+              "Revives the Harvest Festival and saves the department's budget",
+              "Professional campaign staff quit; the parks crew runs her campaign",
+              "Wins the city council seat after a recount",
+              "Recalled from city council in Season 6",
+              "Gets the Pawnee Commons approved on the old pit lot",
+              "Becomes Regional Director of the National Parks Service, based in Pawnee",
+              "Feuds with Ron over 'Morningstar', then reconciles",
+              "Flash-forward: two-term Governor of Indiana; hinted presidency"
+            ],
+            "got_right": "She never stops believing public service matters, and her loyalty, gifts and faith in her friends turn a group of coworkers into a family.",
+            "got_wrong": "She steamrolls people, struggles to delegate, treats every setback as a catastrophe, and sometimes puts her plans ahead of listening, even to Ann and Ron."
+          }
+        },
+        {
+          "id": "arc:parks_and_rec/leslie_knope/when_the_heart_and_the_dream_collide",
+          "title": "When the heart and the dream want different things",
+          "literal_situation": "Later in the series, Leslie develops feelings for someone she works closely with, at a time when her workplace forbids office romance, and just as her long-held political ambitions start to feel within reach.",
+          "pattern_label": "choosing between a new love and a lifelong goal",
+          "pattern_text": "A person who has spent their whole life working toward one big goal finally falls for someone, just when the rules around them say they can't have both. Keeping the relationship secret feels thrilling and wrong at the same time. The story asks whether you have to sacrifice love for ambition, or ambition for love, and what hiding what matters costs you.",
+          "hook": "Later in the series, after years of putting work first, Leslie finds herself falling for a colleague. There is a strict rule against it, and her career dreams suddenly look closer than ever.",
+          "why_relatable": "She has always known exactly what she wants, until now. Can you chase a big goal and a relationship at the same time? Is hiding something to protect your future worth what the secrecy does to your integrity and to the other person?",
+          "watch_for": [
+            "How does she weigh her own dream against someone else's feelings?",
+            "Who does she confide in, and who does she hide from?",
+            "What is each of them risking by keeping quiet?"
+          ],
+          "start_at": "S3",
+          "span": "S3-S4",
+          "situations": [
+            {
+              "id": "falling_for_someone_unexpected",
+              "weight": 0.8
+            },
+            {
+              "id": "taking_a_big_risk",
+              "weight": 0.6
+            }
+          ],
+          "conflicts": [
+            "career_vs_relationships",
+            "duty_vs_desire"
+          ],
+          "emotions": {
+            "start": [
+              "longing",
+              "hope"
+            ],
+            "middle": [
+              "anxiety",
+              "guilt",
+              "loneliness"
+            ],
+            "end": [
+              "love",
+              "confidence",
+              "relief"
+            ]
+          },
+          "ending_tone": "hopeful",
+          "intensity": "light",
+          "warnings": [],
+          "example_user_messages": [
+            "I finally met someone I really like and it's a coworker, which is technically not allowed.",
+            "I've worked toward this goal my whole life and now I'm scared a relationship will ruin it.",
+            "We're keeping things secret at work and it's fun, but I feel like I'm lying to everyone.",
+            "Do I really have to choose between my career and the person I love?"
+          ],
+          "spoiler": {
+            "summary": "Leslie and Ben kiss after 'Road Trip' and date secretly despite Chris's no-dating rule. When political scouts ask her to run for city council, she leaves the relationship out of her list of potential scandals. Early in Season 4 they break up so she can run, but neither can let go, and they get back together in 'Smallest Park'. At the ethics hearing Ben resigns to save her job and says on the record that he loves her. She later makes him her campaign manager, wins, and supports his move to Washington for a campaign job. He comes back and proposes, and they marry in a spontaneous ceremony at City Hall.",
+            "key_events": [
+              "Secret relationship with Ben despite the dating rule",
+              "Breaks up with Ben to run for office",
+              "Reunites with Ben in 'Smallest Park'",
+              "Ben resigns at the ethics hearing to save her job, declaring his love",
+              "Ben becomes her campaign manager",
+              "Engagement, then a surprise City Hall wedding in Season 5",
+              "Pregnant with triplets in Season 6"
+            ],
+            "got_right": "She comes to see that love isn't a scandal, tells the truth, and chooses a partner who champions her ambitions instead of competing with them.",
+            "got_wrong": "She keeps secrets that put both their jobs at risk, and she assumes she has to give up love to succeed instead of trusting the people around her."
+          }
+        }
+      ]
+    },
+    {
+      "id": "char:parks_and_rec/ron_swanson",
+      "name": "Ron Swanson",
+      "role": "The mustachioed, fiercely private director of Pawnee's parks department, who believes government should barely exist and mainly wants to be left alone with his steak and his woodworking.",
+      "relations": [
+        {
+          "target": "char:parks_and_rec/leslie_knope",
+          "relation": "protege"
+        },
+        {
+          "target": "char:parks_and_rec/april_ludgate",
+          "relation": "protege"
+        },
+        {
+          "target": "char:parks_and_rec/andy_dwyer",
+          "relation": "friend"
+        },
+        {
+          "target": "char:parks_and_rec/tom_haverford",
+          "relation": "colleague"
+        },
+        {
+          "target": "char:parks_and_rec/ben_wyatt",
+          "relation": "colleague"
+        },
+        {
+          "target": "char:parks_and_rec/ann_perkins",
+          "relation": "friend"
+        },
+        {
+          "target": "char:parks_and_rec/chris_traeger",
+          "relation": "boss"
+        }
+      ],
+      "arcs": [
+        {
+          "id": "arc:parks_and_rec/ron_swanson/the_man_who_wants_to_be_left_alone",
+          "title": "The man who just wants to be left alone",
+          "literal_situation": "Ron directs Pawnee's parks department and is a proud libertarian who thinks government should barely exist. He guards his privacy above almost everything, avoids the public, and quietly lets his hyper-motivated deputy do most of the work.",
+          "pattern_label": "a fiercely private person slowly letting people in",
+          "pattern_text": "A self-reliant, emotionally guarded person has arranged life so nobody can get too close: few words, firm principles, and a door that stays shut. Over the years the people around them keep showing up anyway, and they have to decide how much of themselves to share. The story asks whether fierce independence and deep connection can live in the same person.",
+          "hook": "Ron keeps his personal life a fortress, thinks the parks department should close most parks, and considers talking to citizens his personal hell. He hired an endlessly earnest deputy partly so he would never have to deal with anyone.",
+          "why_relatable": "He values his independence more than almost anything. Is keeping people at arm's length strength, or self-protection? What happens when colleagues you never meant to care about start to matter?",
+          "watch_for": [
+            "Notice the small moments when he bends his own rules for someone else.",
+            "Which of his secrets does he guard hardest, and why?",
+            "How does he react when someone gives him something truly thoughtful?"
+          ],
+          "start_at": "S1E1",
+          "span": "S1-S7",
+          "situations": [
+            {
+              "id": "finding_your_people",
+              "weight": 0.8
+            },
+            {
+              "id": "mentor_and_protege",
+              "weight": 0.7
+            },
+            {
+              "id": "loneliness",
+              "weight": 0.5
+            },
+            {
+              "id": "midlife_reinvention",
+              "weight": 0.4
+            }
+          ],
+          "conflicts": [
+            "independence_vs_connection",
+            "control_vs_trust"
+          ],
+          "emotions": {
+            "start": [
+              "boredom",
+              "loneliness"
+            ],
+            "middle": [
+              "anxiety",
+              "hope"
+            ],
+            "end": [
+              "love",
+              "peace",
+              "belonging"
+            ]
+          },
+          "ending_tone": "hopeful",
+          "intensity": "light",
+          "warnings": [],
+          "example_user_messages": [
+            "I've always been a private person and I don't know how to let people get close.",
+            "Somehow my coworkers have become more like family than I ever intended.",
+            "I'm fine on my own. At least that's what I keep telling myself.",
+            "People think I'm cold, but I just don't like sharing things about myself.",
+            "I'm in my fifties and I've realised the thing I built my life around doesn't feel useful anymore."
+          ],
+          "spoiler": {
+            "summary": "Ron secretly performs as jazz saxophonist Duke Silver, and his coworkers discover it bit by bit. He becomes a gruff mentor and father figure to April and a steadfast friend to Leslie, repaying her thoughtful gifts with a hand-built model and the department's help running her campaign. He falls in love with Diane Lewis, marries her quickly when she becomes pregnant, becomes stepfather to her two daughters and has a son, John, and finally plays as Duke Silver in public at the Unity Concert. Around 2015 he leaves the parks department to start Very Good Building Company. His company builds the Morningstar apartments on the lot where Ann's house stood, and he and Leslie feud bitterly until Ben locks them in the old office together. There he admits he felt left behind when his friends moved on, and that Leslie stood him up at the lunch where he meant to ask her for a job. They make up. In the finale, restless and wanting to feel useful, he asks Leslie for help, and she makes him superintendent of Pawnee National Park.",
+            "key_events": [
+              "Secret identity as jazz saxophonist Duke Silver",
+              "Mentors April; becomes Leslie's quiet protector",
+              "Marries Diane; stepdaughters and a son, John",
+              "Performs publicly as Duke Silver at the Unity Concert",
+              "Leaves the parks department to start his own building company",
+              "Feud with Leslie over 'Morningstar'; they reconcile after being locked in the office",
+              "Becomes superintendent of Pawnee National Park"
+            ],
+            "got_right": "He is honest, loyal and quietly generous, and he respects people enough to let them make their own choices.",
+            "got_wrong": "He hides his needs so completely that even his closest friends can't tell when he's hurting, and he walks away instead of saying he feels left behind."
+          }
+        },
+        {
+          "id": "arc:parks_and_rec/ron_swanson/the_ex_he_cant_stay_away_from",
+          "title": "The ex he can't stay away from",
+          "literal_situation": "Ron's second ex-wife Tammy, a librarian he openly despises, is on the other side of a dispute with the parks department over a lot, and the moment she's back in his life, his carefully controlled self starts to crack.",
+          "pattern_label": "being pulled back into a toxic relationship",
+          "pattern_text": "A person who prides themselves on self-control keeps getting drawn back to an ex who brings out their worst: chaos, impulsive decisions, and a version of themselves their friends barely recognise. Everyone around them sees the pattern long before they do. The story asks why we return to people who are bad for us, and what it takes to finally break the pull.",
+          "hook": "Ron is a man of iron discipline, except when it comes to his second ex-wife. When she turns up in a work dispute, he knows he should stay far away.",
+          "why_relatable": "He knows exactly how bad this person is for him, so why doesn't knowing help? How do you stop reaching for someone who makes you lose yourself? What do friends owe you when they watch you slipping?",
+          "watch_for": [
+            "How do his friends react when he starts changing around her?",
+            "What does he tell himself to justify going back?",
+            "What would a calm, healthy relationship even look like for someone this guarded?"
+          ],
+          "start_at": "S2E8",
+          "span": "S2-S6",
+          "situations": [
+            {
+              "id": "divorce",
+              "weight": 0.6
+            },
+            {
+              "id": "breakup",
+              "weight": 0.6
+            },
+            {
+              "id": "identity_and_self_acceptance",
+              "weight": 0.3
+            },
+            {
+              "id": "falling_for_someone_unexpected",
+              "weight": 0.3
+            }
+          ],
+          "conflicts": [
+            "holding_on_vs_letting_go",
+            "control_vs_trust"
+          ],
+          "emotions": {
+            "start": [
+              "dread",
+              "longing"
+            ],
+            "middle": [
+              "shame",
+              "confusion"
+            ],
+            "end": [
+              "relief",
+              "love",
+              "peace"
+            ]
+          },
+          "ending_tone": "hopeful",
+          "intensity": "light",
+          "warnings": [],
+          "example_user_messages": [
+            "Every time I see my ex I swear I won't fall back in, and then I do.",
+            "My friends say I become a totally different person when I'm with her, and honestly they're right.",
+            "I know this relationship is terrible for me but there's something about it I can't let go of.",
+            "After all the chaos in my past I'm scared I'll never have a calm, normal relationship."
+          ],
+          "spoiler": {
+            "summary": "Tammy 2 seduces Ron back into a wild on-again phase, and then in Season 3 Tom brings her as a date to spite Ron. The night ends with Ron and Tammy drunk, arrested and remarried, with Ron in cornrows. He only snaps out of it when Tammy starts beating up Tom. At the end of Season 3 his first ex-wife, Tammy 1, arrives; Ron flees to his cabin in the woods. She audits him, then manipulates him into a docile, clean-shaven, government-loving man, until Leslie brings in Ron's mother for a drink-off and Ron breaks free. In Season 5 he meets Diane Lewis over a pothole complaint and builds a calm, grounded relationship with her. They marry in Season 6.",
+            "key_events": [
+              "Relapse with Tammy 2, including a drunken remarriage",
+              "Snaps out of it when Tammy attacks Tom",
+              "Hides in his cabin when Tammy 1 appears",
+              "Tammy 1 turns him into a clean-shaven, obedient version of himself",
+              "Drink-off with his mother breaks the spell",
+              "Meets Diane; marries her in Season 6"
+            ],
+            "got_right": "He eventually sees the pattern and, with Diane, chooses a relationship built on mutual respect instead of chaos.",
+            "got_wrong": "He lets his exes override his judgment, brushes off his friends' warnings, and runs away (literally, to a cabin) instead of facing the problem."
+          }
+        }
+      ]
+    },
+    {
+      "id": "char:parks_and_rec/ben_wyatt",
+      "name": "Ben Wyatt",
+      "role": "A buttoned-up state auditor who arrives in Pawnee to cut its budget, still haunted by a disastrous stint as teenage mayor of his Minnesota hometown.",
+      "relations": [
+        {
+          "target": "char:parks_and_rec/leslie_knope",
+          "relation": "partner"
+        },
+        {
+          "target": "char:parks_and_rec/chris_traeger",
+          "relation": "friend"
+        },
+        {
+          "target": "char:parks_and_rec/andy_dwyer",
+          "relation": "friend"
+        },
+        {
+          "target": "char:parks_and_rec/april_ludgate",
+          "relation": "friend"
+        },
+        {
+          "target": "char:parks_and_rec/tom_haverford",
+          "relation": "friend"
+        },
+        {
+          "target": "char:parks_and_rec/ron_swanson",
+          "relation": "colleague"
+        },
+        {
+          "target": "char:parks_and_rec/ann_perkins",
+          "relation": "friend"
+        }
+      ],
+      "arcs": [
+        {
+          "id": "arc:parks_and_rec/ben_wyatt/living_down_a_youthful_failure",
+          "title": "Living down the biggest mistake of your youth",
+          "literal_situation": "Ben is a state auditor who arrives in Pawnee with his upbeat colleague to slash the broke town's budget. Everyone resents him for the cuts, and he carries a well-known embarrassment: at 18 he was elected mayor of his Minnesota hometown and bankrupted it within two months.",
+          "pattern_label": "trying to outrun a very public early failure",
+          "pattern_text": "A person who failed spectacularly when they were young has rebuilt themselves around being careful, responsible and never getting attached to any one place. People still see them through that old mistake, and part of them believes it too. The story asks whether you can risk caring about something again after being publicly humiliated for trying.",
+          "hook": "Ben shows up as the guy with the spreadsheet and the layoffs. He has lived out of motel rooms for years, bouncing from town to town, and people who hear his name still remember the teenage mayor who bankrupted a city.",
+          "why_relatable": "He wants to prove he is more than his worst moment. Can you ever stop being defined by something you did at eighteen? What happens when a new place starts to feel like home to someone who trained himself never to stay?",
+          "watch_for": [
+            "How does he react when someone brings up his past?",
+            "When does he choose caution, and when does he let himself care?",
+            "How does his view of the town he came to cut begin to shift?"
+          ],
+          "start_at": "S2E23",
+          "span": "S2-S7",
+          "situations": [
+            {
+              "id": "redemption_after_mistakes",
+              "weight": 0.9
+            },
+            {
+              "id": "moving_somewhere_new",
+              "weight": 0.6
+            },
+            {
+              "id": "finding_your_people",
+              "weight": 0.6
+            },
+            {
+              "id": "confidence_struggle",
+              "weight": 0.5
+            }
+          ],
+          "conflicts": [
+            "past_vs_future",
+            "safety_vs_growth"
+          ],
+          "emotions": {
+            "start": [
+              "shame",
+              "loneliness"
+            ],
+            "middle": [
+              "self_doubt",
+              "hope"
+            ],
+            "end": [
+              "belonging",
+              "confidence",
+              "love"
+            ]
+          },
+          "ending_tone": "hopeful",
+          "intensity": "light",
+          "warnings": [],
+          "example_user_messages": [
+            "I made a huge mistake when I was younger and it still follows me everywhere.",
+            "I've moved around so much for work that nowhere feels like home.",
+            "I'm the one at work who has to deliver bad news, and everyone hates me for it.",
+            "I'm scared to try anything big again because the last time I failed so publicly.",
+            "People still bring up something I did at 18 and I just want to be seen as who I am now."
+          ],
+          "spoiler": {
+            "summary": "Ben softens toward Pawnee, helps with the Harvest Festival, turns down a job in Indianapolis to stay, and falls for Leslie. At her ethics hearing he resigns to save her job. Unemployed, he flounders (a claymation film, the Low-Cal Calzone Zone) until she makes him her campaign manager, and she wins. He runs a congressional campaign in Washington, returns to propose, and they marry. He works for the Sweetums Foundation, loses that job after Leslie publicly criticises the company, invents 'The Cones of Dunshire', and becomes Pawnee's City Manager. He and Leslie have triplets. By 2017 he has revived Pawnee's economy; he runs for Congress and wins, and years later steps aside so Leslie can run for governor.",
+            "key_events": [
+              "Chooses to stay in Pawnee instead of moving on",
+              "Resigns his job to save Leslie's at the ethics hearing",
+              "Directionless unemployment: claymation and the Low-Cal Calzone Zone",
+              "Becomes Leslie's campaign manager; she wins",
+              "Proposes to and marries Leslie",
+              "Invents 'The Cones of Dunshire'",
+              "Becomes City Manager; father of triplets",
+              "Elected to Congress; later steps aside so Leslie can run for governor"
+            ],
+            "got_right": "He learns to take real risks for the things he loves (a person, a town, even his nerdy passions) instead of only playing it safe.",
+            "got_wrong": "He can be rigid and passive-aggressive, and he spirals into self-doubt whenever something reminds him of his past failure."
+          }
+        }
+      ]
+    },
+    {
+      "id": "char:parks_and_rec/april_ludgate",
+      "name": "April Ludgate",
+      "role": "A deadpan, deeply unenthusiastic college intern in the Pawnee parks department who seems determined to care about nothing and no one.",
+      "relations": [
+        {
+          "target": "char:parks_and_rec/ron_swanson",
+          "relation": "mentor"
+        },
+        {
+          "target": "char:parks_and_rec/andy_dwyer",
+          "relation": "partner"
+        },
+        {
+          "target": "char:parks_and_rec/leslie_knope",
+          "relation": "boss"
+        },
+        {
+          "target": "char:parks_and_rec/ann_perkins",
+          "relation": "friend"
+        },
+        {
+          "target": "char:parks_and_rec/tom_haverford",
+          "relation": "friend"
+        },
+        {
+          "target": "char:parks_and_rec/ben_wyatt",
+          "relation": "friend"
+        },
+        {
+          "target": "char:parks_and_rec/chris_traeger",
+          "relation": "colleague"
+        }
+      ],
+      "arcs": [
+        {
+          "id": "arc:parks_and_rec/april_ludgate/pretending_not_to_care",
+          "title": "Pretending not to care about anything",
+          "literal_situation": "April is a college student stuck interning in the parks department because she overslept on sign-up day. She is deadpan, sarcastic and bored by everything and everyone, and she seems determined to do as little as possible.",
+          "pattern_label": "hiding real feelings behind total indifference",
+          "pattern_text": "A young person uses sarcasm and boredom as a shield, acting as if nothing matters so nobody can see what actually does. Underneath, they are hungry for people who get them and afraid of being too much or not enough. The story asks what happens when someone who has perfected not caring starts to care, about people and about what they do.",
+          "hook": "April rolls her eyes at her job, her coworkers and most of the human race. Her boyfriend is openly gay and also dating another guy, and she seems to enjoy making the adults around her uncomfortable.",
+          "why_relatable": "She acts like she doesn't care, but the act takes energy. Is her indifference protecting her or keeping her lonely? What happens when someone makes her laugh despite herself, or when a boss sees something in her she can't see yet?",
+          "watch_for": [
+            "Notice the moments when her mask slips.",
+            "Who does she let in first, and what do they have in common?",
+            "How does she show affection without ever admitting to it?"
+          ],
+          "start_at": "S1E1",
+          "span": "S1-S4",
+          "situations": [
+            {
+              "id": "coming_of_age",
+              "weight": 0.8
+            },
+            {
+              "id": "identity_and_self_acceptance",
+              "weight": 0.7
+            },
+            {
+              "id": "finding_your_people",
+              "weight": 0.7
+            },
+            {
+              "id": "falling_for_someone_unexpected",
+              "weight": 0.5
+            }
+          ],
+          "conflicts": [
+            "fitting_in_vs_standing_out",
+            "independence_vs_connection"
+          ],
+          "emotions": {
+            "start": [
+              "boredom",
+              "numbness"
+            ],
+            "middle": [
+              "longing",
+              "jealousy",
+              "hope"
+            ],
+            "end": [
+              "love",
+              "belonging"
+            ]
+          },
+          "ending_tone": "hopeful",
+          "intensity": "light",
+          "warnings": [],
+          "example_user_messages": [
+            "I act like I don't care about anything because it's easier than admitting I do.",
+            "I'm stuck in an internship I didn't even want and everyone there is so annoyingly cheerful.",
+            "People think I'm mean but I'm just bad at showing that I like them.",
+            "I have a crush on someone and I'd honestly rather die than tell them."
+          ],
+          "spoiler": {
+            "summary": "April becomes Ron's assistant and finds a kindred spirit and mentor in him. She falls for Andy, Ann's ex, and breaks up with Derek. She agrees to date Andy, then storms off when she learns Ann kissed him; spends the shutdown in Venezuela and returns with a boyfriend to make Andy jealous; then forgives him. After dating for a few weeks they marry at a surprise 'fancy party'. Ben moves in and tries to teach them to be adults. Over time she softens toward her coworkers and even Ann, and during Leslie's campaign she takes over much of Leslie's work and turns out to be good at it.",
+            "key_events": [
+              "Becomes Ron's assistant and protege",
+              "Falls for Andy",
+              "Leaves for Venezuela after Ann kisses Andy",
+              "Returns with Eduardo to make Andy jealous",
+              "Marries Andy at a surprise 'fancy party' after a few weeks of dating",
+              "Takes over Leslie's parks duties during the campaign"
+            ],
+            "got_right": "She stays fiercely herself and shows her loyalty through actions, and she gradually lets the people who love her in.",
+            "got_wrong": "She uses cruelty and jealousy games, like freezing Andy out and parading a new boyfriend, instead of saying what she feels."
+          }
+        },
+        {
+          "id": "arc:parks_and_rec/april_ludgate/what_do_you_want_to_do_with_your_life",
+          "title": "What do you want to do with your life?",
+          "literal_situation": "Later in the series, April has become more capable at work than anyone expected, but she still has no idea what she actually wants to do, and none of the jobs in front of her feel like hers.",
+          "pattern_label": "searching for work that feels like your own",
+          "pattern_text": "A young adult who fell into their first jobs by accident realises they're good at things they don't care about and unsure what they do care about. Every obvious path feels wrong, and admitting that to the people who helped them feels like betrayal. The story asks how you find a calling after years of pretending not to want anything.",
+          "hook": "Later in the series, after years of drifting through jobs she stumbled into, April starts to wonder whether she should be doing something that means something to her, and whether she even knows what that is.",
+          "why_relatable": "She is capable but not fulfilled. How do you choose a direction when nothing clearly calls to you? Is it okay to walk away from a plan you worked hard for, or from a mentor who believes in you?",
+          "watch_for": [
+            "What is she drawn to when nobody is watching?",
+            "How does she tell the people who helped her that she wants something different?",
+            "What role do the people closest to her play in her choices?"
+          ],
+          "start_at": "S4",
+          "span": "S4-S7",
+          "situations": [
+            {
+              "id": "career_change",
+              "weight": 0.9
+            },
+            {
+              "id": "identity_and_self_acceptance",
+              "weight": 0.6
+            },
+            {
+              "id": "coming_of_age",
+              "weight": 0.5
+            }
+          ],
+          "conflicts": [
+            "safety_vs_growth",
+            "loyalty_vs_ambition"
+          ],
+          "emotions": {
+            "start": [
+              "restlessness",
+              "confusion"
+            ],
+            "middle": [
+              "self_doubt",
+              "guilt"
+            ],
+            "end": [
+              "self_respect",
+              "hope"
+            ]
+          },
+          "ending_tone": "hopeful",
+          "intensity": "light",
+          "warnings": [],
+          "example_user_messages": [
+            "I'm good at my job but I feel nothing about it.",
+            "I'm in my mid-twenties and I still have no idea what I want to be.",
+            "I got into the program I applied for and now I realise I don't actually want to go.",
+            "My boss has done so much for me. How do I tell her I want to leave?",
+            "Everyone else seems to have a calling and I just have a vague feeling that this isn't it."
+          ],
+          "spoiler": {
+            "summary": "April helps Andy find his own direction, works on Ben's campaign in Washington, and becomes deputy director of Pawnee Animal Control. She is accepted to veterinary school but realises at orientation that she doesn't want it. She works for Leslie at the National Parks Service, and by 2017 she wants out but is afraid to tell Leslie. When she finally does, Leslie helps her explore. April finds her fit at the American Service Foundation and moves to Washington, and later she and Andy become parents.",
+            "key_events": [
+              "Deputy director of Animal Control",
+              "Accepted to vet school, then walks away at orientation",
+              "Works for Leslie at the National Parks Service",
+              "Confesses she wants to leave; Leslie helps her search",
+              "Chooses a job at the American Service Foundation in Washington",
+              "Becomes a mother"
+            ],
+            "got_right": "She eventually trusts her own discomfort, tells the truth to people she loves, and chooses a path that is hers.",
+            "got_wrong": "She hides her doubts for a long time out of fear of disappointing others, and she sometimes dismisses options before really exploring them."
+          }
+        }
+      ]
+    },
+    {
+      "id": "char:parks_and_rec/andy_dwyer",
+      "name": "Andy Dwyer",
+      "role": "Ann's sweet, lazy, unemployed boyfriend and the frontman of a going-nowhere band, recovering from breaking both legs in a construction pit.",
+      "relations": [
+        {
+          "target": "char:parks_and_rec/ann_perkins",
+          "relation": "ex_partner"
+        },
+        {
+          "target": "char:parks_and_rec/april_ludgate",
+          "relation": "partner"
+        },
+        {
+          "target": "char:parks_and_rec/leslie_knope",
+          "relation": "friend"
+        },
+        {
+          "target": "char:parks_and_rec/ron_swanson",
+          "relation": "friend"
+        },
+        {
+          "target": "char:parks_and_rec/tom_haverford",
+          "relation": "friend"
+        },
+        {
+          "target": "char:parks_and_rec/ben_wyatt",
+          "relation": "friend"
+        },
+        {
+          "target": "char:parks_and_rec/chris_traeger",
+          "relation": "friend"
+        }
+      ],
+      "arcs": [
+        {
+          "id": "arc:parks_and_rec/andy_dwyer/growing_up_after_being_left",
+          "title": "Growing up after being left",
+          "literal_situation": "Andy is Ann's easygoing, unemployed boyfriend and the frontman of a garage band. He broke both legs falling into the pit behind her house and is happily letting her wait on him while he plays video games.",
+          "pattern_label": "a lovable slacker forced to grow up",
+          "pattern_text": "A warm, fun-loving person has let someone else carry every adult responsibility in their relationship for years. When that partner finally runs out of patience, they have to learn to stand on their own. The story asks whether you can grow up without losing the joy that made people love you in the first place.",
+          "hook": "Andy has two broken legs, a band that keeps changing its name, and a girlfriend doing everything for him. He's thrilled with this arrangement. She is starting to be a lot less thrilled.",
+          "why_relatable": "He's sweet, but he's been coasting. What happens when the person who's been taking care of you stops? Can someone who has never had to try learn to show up for himself and for others?",
+          "watch_for": [
+            "Who treats him like a kid, and who treats him like an adult?",
+            "What does he do when he really wants someone to take him seriously?",
+            "Which parts of his playfulness turn out to be strengths?"
+          ],
+          "start_at": "S1E1",
+          "span": "S1-S3",
+          "situations": [
+            {
+              "id": "breakup",
+              "weight": 0.8
+            },
+            {
+              "id": "coming_of_age",
+              "weight": 0.7
+            },
+            {
+              "id": "redemption_after_mistakes",
+              "weight": 0.5
+            },
+            {
+              "id": "falling_for_someone_unexpected",
+              "weight": 0.4
+            }
+          ],
+          "conflicts": [
+            "safety_vs_growth",
+            "holding_on_vs_letting_go"
+          ],
+          "emotions": {
+            "start": [
+              "joy"
+            ],
+            "middle": [
+              "rejection",
+              "loneliness",
+              "hope"
+            ],
+            "end": [
+              "love",
+              "belonging",
+              "pride"
+            ]
+          },
+          "ending_tone": "hopeful",
+          "intensity": "light",
+          "warnings": [],
+          "example_user_messages": [
+            "My girlfriend dumped me and said I act like a child. She's probably right.",
+            "I've never had a real job and I'm starting to feel embarrassed about it.",
+            "I let my partner take care of everything and now she's gone and I don't know how to do anything.",
+            "I keep trying to win my ex back, but maybe I need to fix myself first."
+          ],
+          "spoiler": {
+            "summary": "Ann learns Andy delayed getting his casts off by two weeks so she would keep waiting on him, and she throws him out. He lives in a tent in the pit to stay near her and is hurt again when it is filled in; his settlement gets him a job running the City Hall shoeshine stand. He bonds with April, eventually lets Ann go, and falls for April. When Ann kisses him in the hospital April storms off, but he wins her back, and they marry in a surprise ceremony after a few weeks of dating. Ben moves in and tries to teach them how to be adults.",
+            "key_events": [
+              "Ann dumps him after learning he delayed his cast removal",
+              "Lives in a tent in the pit",
+              "Gets the City Hall shoeshine job as part of a settlement",
+              "Lets Ann go; falls for April",
+              "Marries April at a surprise 'fancy party'"
+            ],
+            "got_right": "He never loses his kindness, and he eventually accepts the breakup gracefully and starts growing up in real ways.",
+            "got_wrong": "He manipulates Ann by faking a longer recovery, camps outside her house instead of accepting the breakup, and for too long expects others to take care of him."
+          }
+        },
+        {
+          "id": "arc:parks_and_rec/andy_dwyer/looking_for_what_hes_good_at",
+          "title": "Looking for the thing you're actually good at",
+          "literal_situation": "Later in the series, Andy is working a humble job at City Hall with little education and no real career, and the rock-star dream he has had forever isn't paying off.",
+          "pattern_label": "a late bloomer searching for their calling",
+          "pattern_text": "A good-hearted person who never took school or work seriously starts wanting a real career but has no idea where they'd fit. They chase a childhood dream, run into rejection, and have to decide which dreams to keep and which to let go. The story asks how you find work that uses who you really are, not who you think you should be.",
+          "hook": "Later in the series, after years of odd jobs and a band that never breaks out, Andy starts to wonder what he's supposed to do with his life, and whether someone like him can have a real career at all.",
+          "why_relatable": "He wants more but doesn't know how to get it. What do you do when the dream you picked doesn't pick you back? Can the qualities people dismiss as childish become the very thing you're good at?",
+          "watch_for": [
+            "What is he doing when he seems happiest?",
+            "How does he handle it when a plan falls through?",
+            "Who helps him see his strengths, and how?"
+          ],
+          "start_at": "S4",
+          "span": "S4-S7",
+          "situations": [
+            {
+              "id": "career_change",
+              "weight": 0.9
+            },
+            {
+              "id": "confidence_struggle",
+              "weight": 0.6
+            },
+            {
+              "id": "identity_and_self_acceptance",
+              "weight": 0.5
+            },
+            {
+              "id": "imposter_syndrome",
+              "weight": 0.3
+            }
+          ],
+          "conflicts": [
+            "holding_on_vs_letting_go",
+            "safety_vs_growth"
+          ],
+          "emotions": {
+            "start": [
+              "restlessness",
+              "inadequacy"
+            ],
+            "middle": [
+              "rejection",
+              "determination"
+            ],
+            "end": [
+              "pride",
+              "joy",
+              "confidence"
+            ]
+          },
+          "ending_tone": "hopeful",
+          "intensity": "light",
+          "warnings": [],
+          "example_user_messages": [
+            "I'm almost thirty with no degree and I have no clue what I'd even be good at.",
+            "I failed the test for the one job I've always dreamed about and I feel crushed.",
+            "People always say I'm like a big kid. Can that ever be a good thing at work?",
+            "I've held on to my music dream forever and I'm scared letting it go means I failed."
+          ],
+          "spoiler": {
+            "summary": "Andy takes a college class (Intro to Women's Studies) and passes. April notices that all his dream jobs involve law enforcement, and he trains hard for the police academy with Chris's help. He aces the written exam but fails the personality test. Ben hires him as an assistant at the Sweetums Foundation, sending him to London, where he gives up beer. Back home, a gig at a child's birthday party reveals a gift for children's entertainment; April becomes his manager and he becomes 'Johnny Karate', later hosting a local kids' TV show and being knighted by Lord Covington. He moves to Washington with April and eventually becomes a father.",
+            "key_events": [
+              "Passes a college Women's Studies class",
+              "Aces the police written exam but fails the personality test",
+              "Becomes Ben's assistant at the Sweetums Foundation; works in London",
+              "Discovers a talent for children's entertainment",
+              "Becomes 'Johnny Karate' with his own kids' TV show",
+              "Knighted by Lord Covington"
+            ],
+            "got_right": "He stays open and keeps trying after rejection, and he lets the people who love him point out strengths he couldn't see.",
+            "got_wrong": "He clings to fantasy versions of success and sometimes waits for others to hand him a direction instead of looking for one himself."
+          }
+        }
+      ]
+    },
+    {
+      "id": "char:parks_and_rec/tom_haverford",
+      "name": "Tom Haverford",
+      "role": "Leslie's sharp-dressed, scheming subordinate in the parks department, who cares far more about becoming a rich, famous mogul than about his government job.",
+      "relations": [
+        {
+          "target": "char:parks_and_rec/leslie_knope",
+          "relation": "boss"
+        },
+        {
+          "target": "char:parks_and_rec/ron_swanson",
+          "relation": "boss"
+        },
+        {
+          "target": "char:parks_and_rec/ann_perkins",
+          "relation": "ex_partner"
+        },
+        {
+          "target": "char:parks_and_rec/andy_dwyer",
+          "relation": "friend"
+        },
+        {
+          "target": "char:parks_and_rec/ben_wyatt",
+          "relation": "friend"
+        },
+        {
+          "target": "char:parks_and_rec/april_ludgate",
+          "relation": "friend"
+        },
+        {
+          "target": "char:parks_and_rec/chris_traeger",
+          "relation": "colleague"
+        }
+      ],
+      "arcs": [
+        {
+          "id": "arc:parks_and_rec/tom_haverford/the_mogul_in_waiting",
+          "title": "The mogul in waiting",
+          "literal_situation": "Tom works in the Pawnee parks department but has zero interest in government. He dreams of being a rich, famous entrepreneur, puts his energy into style, schemes and catchphrases, and uses his small bit of official power for perks.",
+          "pattern_label": "a dreamer who loves the image more than the work",
+          "pattern_text": "A person with big ambitions and endless ideas is more in love with the image of success than with the slow work it takes. They chase quick wins, flashy branding and the approval of cool people, while quietly doubting they're good enough. The story asks what it takes to turn hype into something real, and whether failure can teach them who they are.",
+          "hook": "Tom has a thousand business ideas, a wardrobe his salary can't support, and a boss who praises him for doing no work. He's sure he's destined for greatness; he just hasn't started yet.",
+          "why_relatable": "He wants to be somebody, and fast. Is ambition without follow-through still ambition? What happens when the persona you've built starts to crack, and what would it take to believe in yourself without the show?",
+          "watch_for": [
+            "When is he performing, and when is he being himself?",
+            "How does he react when someone criticises his ideas?",
+            "Who believes in him, and does he listen to them?"
+          ],
+          "start_at": "S1E1",
+          "span": "S1-S7",
+          "situations": [
+            {
+              "id": "starting_a_business",
+              "weight": 0.9
+            },
+            {
+              "id": "taking_a_big_risk",
+              "weight": 0.7
+            },
+            {
+              "id": "confidence_struggle",
+              "weight": 0.5
+            },
+            {
+              "id": "identity_and_self_acceptance",
+              "weight": 0.4
+            }
+          ],
+          "conflicts": [
+            "safety_vs_growth",
+            "fitting_in_vs_standing_out"
+          ],
+          "emotions": {
+            "start": [
+              "restlessness",
+              "envy"
+            ],
+            "middle": [
+              "shame",
+              "determination"
+            ],
+            "end": [
+              "pride",
+              "confidence",
+              "self_respect"
+            ]
+          },
+          "ending_tone": "hopeful",
+          "intensity": "light",
+          "warnings": [],
+          "example_user_messages": [
+            "I have so many business ideas but I never actually finish any of them.",
+            "I spend way more money on looking successful than I actually make.",
+            "My side hustle just failed and now I have to crawl back to the boring job I quit.",
+            "I'm scared that if I stop acting confident, people will see I have no idea what I'm doing."
+          ],
+          "spoiler": {
+            "summary": "During the shutdown Tom works at Lady Foot Locker. He launches 'Snake Juice' at the Snakehole Lounge but is forced to sell his shares, and his cologne 'Tommy Fresh' is rejected. He quits the city to start Entertainment 720 with Jean-Ralphio; it burns through its money doing almost nothing and goes bankrupt, and Ron helps him return to his old job. His next idea, Rent-A-Swag, succeeds until Dr. Saperstein opens a copycat store and kills it. His friends help him launch Tom's Bistro, which becomes one of Pawnee's most successful businesses. In the flash-forward, an over-ambitious expansion fails, he turns that failure into bestselling self-help books, and he reacquires his bistros.",
+            "key_events": [
+              "Forced to sell his Snakehole Lounge shares",
+              "Quits to found Entertainment 720, which goes bankrupt",
+              "Returns to the parks department",
+              "Rent-A-Swag succeeds, then is crushed by a copycat",
+              "Opens Tom's Bistro, a big success",
+              "Flash-forward: expansion fails; turns the failure into bestselling books"
+            ],
+            "got_right": "He keeps getting back up, and eventually learns that consistency, humility and accepting help from friends matter more than swagger.",
+            "got_wrong": "He burns money on image, avoids hard work, and lets hype and unreliable partners steer his decisions."
+          }
+        },
+        {
+          "id": "arc:parks_and_rec/tom_haverford/playing_the_field_to_avoid_getting_hurt",
+          "title": "Playing the field to avoid getting hurt",
+          "literal_situation": "Tom is married but constantly hits on women, studies pickup-artist tactics like 'peacocking', and treats dating as a performance.",
+          "pattern_label": "chasing attention instead of intimacy",
+          "pattern_text": "A person who flirts with everyone and treats romance like a game keeps things shallow so nobody can really reject them. When real feelings show up, they have no idea what to do with them. The story asks what it takes for someone who performs confidence to let another person see them honestly.",
+          "hook": "Tom is technically married, yet he flirts with every woman he meets and swears by pickup-artist tricks. The results are mostly embarrassing, and he acts like none of it bothers him.",
+          "why_relatable": "He wants to be wanted, but only on his terms. Is all the flirting confidence or fear? What happens when someone he actually cares about isn't impressed by the act?",
+          "watch_for": [
+            "What does he say about love when he thinks no one is taking him seriously?",
+            "How does he act around someone he genuinely likes compared with someone he's trying to impress?",
+            "What does he do when he's hurt?"
+          ],
+          "start_at": "S1",
+          "span": "S1-S7",
+          "situations": [
+            {
+              "id": "divorce",
+              "weight": 0.5
+            },
+            {
+              "id": "breakup",
+              "weight": 0.5
+            },
+            {
+              "id": "loneliness",
+              "weight": 0.5
+            },
+            {
+              "id": "identity_and_self_acceptance",
+              "weight": 0.3
+            }
+          ],
+          "conflicts": [
+            "independence_vs_connection"
+          ],
+          "emotions": {
+            "start": [
+              "loneliness",
+              "longing"
+            ],
+            "middle": [
+              "rejection",
+              "jealousy"
+            ],
+            "end": [
+              "love",
+              "hope"
+            ]
+          },
+          "ending_tone": "hopeful",
+          "intensity": "light",
+          "warnings": [],
+          "example_user_messages": [
+            "I flirt with everyone but I've never actually let anyone really know me.",
+            "I realised too late that I had real feelings for someone I was only supposed to be friends with.",
+            "I keep dating people I have nothing in common with because it's easier than getting serious.",
+            "My ex has moved on with someone I know and I can't stop thinking about it."
+          ],
+          "spoiler": {
+            "summary": "Tom's marriage to Wendy is a green-card arrangement. They divorce once she gets citizenship, and he realises he really had feelings for her. When Wendy dates Ron he gets jealous and brings Ron's ex Tammy as revenge, which backfires. He loses his girlfriend Lucy by talking about Wendy constantly. He has an on-and-off fling with Ann, a chaotic relationship with Mona-Lisa Saperstein, and a crush on Dr. Nadia Stasky. In 2017 he reconnects with Lucy, awkwardly hires her at his bistro rather than admit his feelings, finally tells her the truth, and proposes with a card trick at the Snakehole Lounge where they met. They marry.",
+            "key_events": [
+              "His marriage to Wendy is a green-card arrangement; divorce leaves him heartbroken",
+              "Brings Tammy 2 to spite Ron, and it backfires",
+              "Loses Lucy by obsessing over Wendy",
+              "Short, messy relationship with Ann",
+              "Chaotic relationship with Mona-Lisa",
+              "Reconnects with Lucy and proposes with a card trick"
+            ],
+            "got_right": "He finally drops the act, admits what he wants, and builds a relationship on honesty and shared history.",
+            "got_wrong": "For years he uses flirting and bravado to avoid vulnerability, and he chases people who feed his ego instead of those who know him."
+          }
+        }
+      ]
+    },
+    {
+      "id": "char:parks_and_rec/ann_perkins",
+      "name": "Ann Perkins",
+      "role": "A level-headed nurse who gets pulled into the parks department's world after demanding that something be done about the dangerous pit behind her house.",
+      "relations": [
+        {
+          "target": "char:parks_and_rec/leslie_knope",
+          "relation": "friend"
+        },
+        {
+          "target": "char:parks_and_rec/andy_dwyer",
+          "relation": "ex_partner"
+        },
+        {
+          "target": "char:parks_and_rec/chris_traeger",
+          "relation": "partner"
+        },
+        {
+          "target": "char:parks_and_rec/tom_haverford",
+          "relation": "ex_partner"
+        },
+        {
+          "target": "char:parks_and_rec/april_ludgate",
+          "relation": "friend"
+        },
+        {
+          "target": "char:parks_and_rec/ron_swanson",
+          "relation": "friend"
+        },
+        {
+          "target": "char:parks_and_rec/ben_wyatt",
+          "relation": "friend"
+        }
+      ],
+      "arcs": [
+        {
+          "id": "arc:parks_and_rec/ann_perkins/finding_herself_outside_a_relationship",
+          "title": "Finding herself outside a relationship",
+          "literal_situation": "Ann is a nurse living with her long-term boyfriend, who broke both legs falling into the construction pit behind her house. She does all the caretaking at home, and her frustration with the pit brings her to a public forum where she meets the parks department's deputy director.",
+          "pattern_label": "discovering who you are outside a relationship",
+          "pattern_text": "A capable, caring person has spent years looking after a partner who never grew up. When they finally step away, they aren't sure who they are on their own, and they tend to absorb the tastes and lives of whoever they date next. The story asks how you build an identity that belongs to you rather than to whoever you're with.",
+          "hook": "Ann is the responsible one in her relationship: she works hard, pays the bills and nurses her boyfriend while he plays video games. A chance meeting with an endlessly enthusiastic city employee opens up a friendship she never expected.",
+          "why_relatable": "She is used to taking care of people. What happens when she starts asking what she wants? Why do some people lose themselves in each new relationship, and how do you find the person underneath?",
+          "watch_for": [
+            "How does she change depending on who she's dating?",
+            "What does her new friendship give her that romance doesn't?",
+            "When does she stand up for her own needs?"
+          ],
+          "start_at": "S1E1",
+          "span": "S1-S4",
+          "situations": [
+            {
+              "id": "breakup",
+              "weight": 0.8
+            },
+            {
+              "id": "identity_and_self_acceptance",
+              "weight": 0.8
+            },
+            {
+              "id": "finding_your_people",
+              "weight": 0.6
+            }
+          ],
+          "conflicts": [
+            "independence_vs_connection",
+            "holding_on_vs_letting_go"
+          ],
+          "emotions": {
+            "start": [
+              "resentment",
+              "burnout"
+            ],
+            "middle": [
+              "loneliness",
+              "confusion"
+            ],
+            "end": [
+              "self_respect",
+              "belonging"
+            ]
+          },
+          "ending_tone": "hopeful",
+          "intensity": "light",
+          "warnings": [],
+          "example_user_messages": [
+            "I've been taking care of my boyfriend for years and I'm exhausted.",
+            "Every time I date someone new I kind of turn into a version of them.",
+            "I just got out of a long relationship and I don't even know what I like anymore.",
+            "My best friend is the most intense person I know and somehow she's the one who makes me feel most like myself."
+          ],
+          "spoiler": {
+            "summary": "Ann dumps Andy after learning he delayed removing his casts to keep being pampered. She dates Mark but finds the healthy relationship boring and ends it. She kisses Chris, dates him, and then discovers he broke up with her so kindly she never noticed. She goes on a dating spree, dyes her hair, has her first big (drunken) fight with Leslie, reconciles, and takes a part-time job as the Health Department's public relations director. She has a short, mismatched relationship with Tom and briefly runs Leslie's campaign.",
+            "key_events": [
+              "Dumps Andy over the cast deception",
+              "Dates Mark, then ends it out of boredom",
+              "Chris breaks up with her so gently she doesn't notice",
+              "Big drunken fight with Leslie, then reconciliation",
+              "Takes the Health Department PR job",
+              "Brief relationship with Tom"
+            ],
+            "got_right": "She has the courage to leave a relationship that isn't working, and she invests deeply in her friendship with Leslie.",
+            "got_wrong": "She goes from partner to partner without asking what she wants, taking on each person's life instead of building her own."
+          }
+        },
+        {
+          "id": "arc:parks_and_rec/ann_perkins/building_a_family_on_her_own_terms",
+          "title": "Building a family on her own terms",
+          "literal_situation": "Later in the series, after years of relationships that never quite settled, Ann realises she badly wants a child and is tired of waiting for the right person to arrive first.",
+          "pattern_label": "choosing parenthood without waiting for the one",
+          "pattern_text": "A person in their thirties realises they want to be a parent and that waiting for the perfect partner could mean waiting forever. They decide to take matters into their own hands, which raises hard questions about who to ask for help, what might change, and what kind of life they really want. The story asks how you build a family on your own terms.",
+          "hook": "Later in the series, after a string of short, unsatisfying relationships, Ann decides she doesn't want to wait for a perfect partner to start the life she wants.",
+          "why_relatable": "She is ready for the next chapter, even without the traditional order of events. Is going it alone brave or reckless? How do you ask someone for help with something this big, and what if the answer changes things between you?",
+          "watch_for": [
+            "How does she decide who to ask for help?",
+            "How do her friends react to her plan?",
+            "What does she want her whole life to look like, not just her family?"
+          ],
+          "start_at": "S5",
+          "span": "S5-S6",
+          "situations": [
+            {
+              "id": "becoming_a_parent",
+              "weight": 0.9
+            },
+            {
+              "id": "taking_a_big_risk",
+              "weight": 0.6
+            },
+            {
+              "id": "identity_and_self_acceptance",
+              "weight": 0.3
+            }
+          ],
+          "conflicts": [
+            "independence_vs_connection",
+            "holding_on_vs_letting_go"
+          ],
+          "emotions": {
+            "start": [
+              "longing",
+              "restlessness"
+            ],
+            "middle": [
+              "anxiety",
+              "hope"
+            ],
+            "end": [
+              "joy",
+              "love"
+            ]
+          },
+          "ending_tone": "hopeful",
+          "intensity": "light",
+          "warnings": [],
+          "example_user_messages": [
+            "I'm 35 and I want a baby but I'm not with anyone. Should I just do it myself?",
+            "I'm thinking of asking a friend to be a donor and I'm terrified it'll make things weird.",
+            "I'm done waiting for the perfect partner to start my life.",
+            "I have a gut feeling I need to move somewhere new to raise a family, but my best friend is here."
+          ],
+          "spoiler": {
+            "summary": "After babysitting Diane's daughters, Ann decides to have a baby on her own. She searches for a donor and asks Chris, who agrees; they take parenting-compatibility tests and then get back together romantically. She becomes pregnant, gets a strong gut feeling that she wants to raise the child away from Pawnee, and she and Chris move to Ann Arbor, Michigan, after a tearful farewell with Leslie. Their son Oliver is born, and years later they have a daughter named Leslie.",
+            "key_events": [
+              "Decides to have a child without a partner",
+              "Asks Chris to be the donor",
+              "She and Chris get back together",
+              "Pregnant; decides to leave Pawnee",
+              "Moves to Michigan; tearful goodbye with Leslie",
+              "Son Oliver born; later a daughter named Leslie"
+            ],
+            "got_right": "She stops waiting for permission and acts on what she wants, and she is honest with Chris about her needs.",
+            "got_wrong": "Her impulsive search for a donor (considering a string of acquaintances) is chaotic, and leaving means stepping away from the friendship that defined her."
+          }
+        }
+      ]
+    },
+    {
+      "id": "char:parks_and_rec/chris_traeger",
+      "name": "Chris Traeger",
+      "role": "An endlessly upbeat, fitness-obsessed state auditor who arrives in Pawnee with his more serious partner to fix the town's broken budget.",
+      "relations": [
+        {
+          "target": "char:parks_and_rec/ann_perkins",
+          "relation": "partner"
+        },
+        {
+          "target": "char:parks_and_rec/ben_wyatt",
+          "relation": "friend"
+        },
+        {
+          "target": "char:parks_and_rec/leslie_knope",
+          "relation": "colleague"
+        },
+        {
+          "target": "char:parks_and_rec/ron_swanson",
+          "relation": "colleague"
+        },
+        {
+          "target": "char:parks_and_rec/tom_haverford",
+          "relation": "colleague"
+        },
+        {
+          "target": "char:parks_and_rec/april_ludgate",
+          "relation": "colleague"
+        },
+        {
+          "target": "char:parks_and_rec/andy_dwyer",
+          "relation": "friend"
+        }
+      ],
+      "arcs": [
+        {
+          "id": "arc:parks_and_rec/chris_traeger/positivity_as_a_shield",
+          "title": "Literally the most positive person alive",
+          "literal_situation": "Chris is a relentlessly upbeat state auditor who comes to Pawnee with his more serious colleague to cut the town's budget. He runs ten miles a day, eats only the healthiest food, calls everything 'literally' the best, and seems unable to say anything negative.",
+          "pattern_label": "relentless positivity hiding real fragility",
+          "pattern_text": "A person who has built their whole identity around being cheerful, healthy and in control can't admit when something is wrong, even to themselves. Small setbacks threaten to topple everything, and their niceness sometimes leaves others unsure where they stand. The story asks whether someone who treats their body like a machine can learn to care for their mind and let people see them struggle.",
+          "hook": "Chris greets people by pointing at them and saying their full name. He was born with a rare blood disorder and wasn't expected to live three weeks, so he treats every day as a gift and seems to have no bad days at all.",
+          "why_relatable": "He's everyone's biggest cheerleader, but who cheers for him? What happens when constant positivity stops working? Can you be kind without being fully honest?",
+          "watch_for": [
+            "What happens when something small goes wrong for him?",
+            "How do people around him figure out what he's really feeling?",
+            "When does his niceness help, and when does it cause confusion?"
+          ],
+          "start_at": "S2E23",
+          "span": "S2-S6",
+          "situations": [
+            {
+              "id": "identity_and_self_acceptance",
+              "weight": 0.7
+            },
+            {
+              "id": "loneliness",
+              "weight": 0.5
+            },
+            {
+              "id": "illness_or_injury",
+              "weight": 0.4
+            },
+            {
+              "id": "finding_your_people",
+              "weight": 0.4
+            }
+          ],
+          "conflicts": [
+            "control_vs_trust",
+            "perfectionism_vs_good_enough"
+          ],
+          "emotions": {
+            "start": [
+              "joy",
+              "determination"
+            ],
+            "middle": [
+              "anxiety",
+              "loneliness",
+              "rejection"
+            ],
+            "end": [
+              "peace",
+              "love",
+              "acceptance"
+            ]
+          },
+          "ending_tone": "hopeful",
+          "intensity": "moderate",
+          "warnings": [],
+          "example_user_messages": [
+            "Everyone thinks I'm the happiest person they know, but lately I'm falling apart inside.",
+            "I'm obsessed with being healthy and in control, and one small injury sent me spiralling.",
+            "I'm so afraid of being negative that I never tell people how I really feel.",
+            "I tried to end a relationship so gently that the other person didn't even realise it had happened.",
+            "I've always taken care of my body, but I've never taken care of my mind."
+          ],
+          "spoiler": {
+            "summary": "Chris dates Ann, then breaks up with her so gently that she doesn't realise it. He returns to Pawnee as interim, then permanent, City Manager. A flu and a tendonitis diagnosis send him into existential crises. After Jerry's daughter Millicent dumps him, he spirals into depression; he starts seeing a therapist, Dr. Richard Nygard, and learns that working on his mind matters as much as his body. Ann asks him to father her child; they fall back in love, have a son, Oliver, and move to Michigan, with Chris handing his job to Ben. Years later they have a daughter.",
+            "key_events": [
+              "Breaks up with Ann so kindly she doesn't notice",
+              "Becomes Pawnee's City Manager",
+              "Tendonitis triggers an existential crisis",
+              "Dumped by Millicent Gergich; falls into depression",
+              "Starts therapy with Dr. Nygard",
+              "Agrees to father Ann's child; they reunite and move to Michigan"
+            ],
+            "got_right": "He eventually admits he needs help, goes to therapy, and learns emotional health is part of health.",
+            "got_wrong": "He hides behind cheerfulness, avoids hard truths (leaving them to Ben), and pushes his lifestyle on others instead of listening to them."
+          }
+        }
+      ]
+    }
+  ]
+}

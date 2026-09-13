@@ -1,0 +1,961 @@
+{
+  "show": "sex_education",
+  "characters": [
+    {
+      "id": "char:sex_education/otis_milburn",
+      "name": "Otis Milburn",
+      "role": "An anxious, awkward sixteen-year-old whose mother is a famous sex therapist, and who knows everything about sex in theory and nothing in practice.",
+      "relations": [
+        {"target": "char:sex_education/jean_milburn", "relation": "parent"},
+        {"target": "char:sex_education/eric_effiong", "relation": "friend"},
+        {"target": "char:sex_education/maeve_wiley", "relation": "partner"},
+        {"target": "char:sex_education/ruby_matthews", "relation": "ex_partner"},
+        {"target": "char:sex_education/adam_groff", "relation": "friend"},
+        {"target": "char:sex_education/aimee_gibbs", "relation": "friend"},
+        {"target": "char:sex_education/jackson_marchetti", "relation": "rival"}
+      ],
+      "arcs": [
+        {
+          "id": "arc:sex_education/otis_milburn/the_advice_giver",
+          "title": "The one who fixes everyone else",
+          "literal_situation": "Otis has absorbed years of his therapist mother's language and can read people's intimate problems with uncanny accuracy, yet he is terrified of his own body and of getting close to anyone. When he accidentally talks a classmate through a crisis, the sharp, broke Maeve Wiley proposes they run a secret, paid sex-advice clinic for the whole school.",
+          "pattern_label": "helping everyone while avoiding your own wounds",
+          "pattern_text": "A person who is naturally gifted at listening and giving advice becomes the go-to helper for everyone around them, while quietly avoiding their own fears about intimacy and an old family hurt they have never processed. Being needed feels safer than being vulnerable. The question is whether they can take their own advice, and what happens to their relationships when helping others becomes a way of hiding.",
+          "hook": "Otis is the kid nobody notices, carrying a secret: he is so anxious about intimacy that he cannot even touch himself. Suddenly his advice is in demand, he is earning money, and the girl he admires is his business partner. For the first time he feels useful and seen, as long as nobody looks too closely at him.",
+          "why_relatable": "Why is it so much easier to understand other people's problems than your own? Can you be good at helping and still be bad at being honest about yourself? What does it cost the people closest to you when you are always the counsellor and never the one who needs help?",
+          "watch_for": [
+            "What happens in Otis's body when things get close to intimate, and what might sit underneath it?",
+            "How does he behave when someone asks him for help versus when someone asks him how he feels?",
+            "Notice how he treats his best friend when the clinic starts going well."
+          ],
+          "start_at": "S1E1",
+          "span": "S1-S4",
+          "situations": [
+            {"id": "coming_of_age", "weight": 0.8},
+            {"id": "confidence_struggle", "weight": 0.8},
+            {"id": "imposter_syndrome", "weight": 0.5},
+            {"id": "starting_a_business", "weight": 0.4}
+          ],
+          "conflicts": ["independence_vs_connection", "fitting_in_vs_standing_out"],
+          "emotions": {"start": ["anxiety", "shame", "inadequacy"], "middle": ["pride", "confusion", "guilt"], "end": ["self_respect", "acceptance"]},
+          "ending_tone": "bittersweet",
+          "intensity": "moderate",
+          "warnings": ["betrayal"],
+          "example_user_messages": [
+            "Everyone comes to me for advice but I can't sort out my own life at all.",
+            "I get panic attacks whenever things get physical with someone and I don't know why.",
+            "I'm really good at helping my friends but I never let anyone help me.",
+            "Something I saw as a kid with my parents still messes with how I feel about relationships.",
+            "I started something on the side that people love, but I feel like a fraud because I've never actually done what I'm advising on."
+          ],
+          "spoiler": {
+            "summary": "Otis's anxiety traces back to catching his father Remi having sex with a client as a child, and Jean's blunt explanation that sex can ruin lives. The clinic makes him popular and brings him close to Maeve, but it also feeds his arrogance: he neglects Eric, steals his mother's confidential notes to find out why Ola dumped him (leaking clients' secrets across the school), and drunkenly humiliates Ola and Maeve at a party he throws. He loses his virginity to Ruby that night. A frank talk with his father about not repeating his mistakes helps him own his behaviour. At Cavendish College he starts a new clinic and gets into a petty election war with rival therapist O, loses the support of students, and finally makes peace with her so they can run a clinic together.",
+            "key_events": [
+              "Childhood memory of his father's affair revealed as the root of his anxiety",
+              "Steals Jean's therapy notebook; clients' secrets spread through the school",
+              "Drunken house party where he insults Ola and Maeve",
+              "Loses his virginity to Ruby after the party",
+              "Confronts his absent father and gets honest advice from him",
+              "Rivalry and election with O at Cavendish, ending in a partnership"
+            ],
+            "got_right": "Genuine, non-judgemental listening; he really does help people, and he keeps coming back to apologise properly when he gets things wrong.",
+            "got_wrong": "Using the clinic as a place to hide and as a source of status, prying into private information, and treating his best friend and his mother as afterthoughts."
+          }
+        },
+        {
+          "id": "arc:sex_education/otis_milburn/growing_up_under_a_parent_who_knows_too_much",
+          "title": "Needing space from a parent who analyses everything",
+          "literal_situation": "Otis lives alone with his mother Jean, a brilliant, glamorous sex therapist who fills the house with anatomical art, brings home a string of one-night stands and cannot stop analysing her son. His father left years ago for America and mostly exists on video calls.",
+          "pattern_label": "separating from a loving but intrusive parent",
+          "pattern_text": "A teenager raised by a single parent who is warm, clever and utterly boundary-less feels smothered and exposed, while also being the person that parent leans on most. As the family changes shape around them, they have to work out how to become their own person without shutting out the parent who loves them. It is a story about boundaries, resentment and discovering that you still need each other.",
+          "hook": "Otis wants one thing from his mother: privacy. She reads his moods like case files, talks openly about his development, and he suspects she is more interested in understanding him than in simply knowing him. He loves her and is quietly furious with her.",
+          "why_relatable": "How do you set boundaries with a parent who thinks openness is always healthy? When is a parent's curiosity care, and when is it control? How do you stay close to someone while needing to pull away to grow up?",
+          "watch_for": [
+            "What does Jean do with the things Otis tells her, and what does he stop telling her as a result?",
+            "How does Otis talk about his absent father compared with the parent who stayed?",
+            "Notice who looks after whom in this house when things get hard."
+          ],
+          "start_at": "S1E1",
+          "span": "S1-S4",
+          "situations": [
+            {"id": "difficult_parent", "weight": 0.8},
+            {"id": "coming_of_age", "weight": 0.6},
+            {"id": "caring_for_family", "weight": 0.5},
+            {"id": "responsibility_you_didnt_ask_for", "weight": 0.4}
+          ],
+          "conflicts": ["independence_vs_connection", "control_vs_trust"],
+          "emotions": {"start": ["resentment", "shame", "anger"], "middle": ["fear", "guilt"], "end": ["love", "acceptance"]},
+          "ending_tone": "hopeful",
+          "intensity": "moderate",
+          "warnings": ["medical_trauma", "betrayal"],
+          "example_user_messages": [
+            "My mum wants to talk about everything and I just want her to stay out of my business.",
+            "I found out my parent was writing about my private life without asking me.",
+            "My dad left when I was little and still acts like a fun uncle instead of a father.",
+            "We said awful things to each other and then she ended up in hospital, and I can't stop thinking about it.",
+            "My mum's struggling after having a baby and I've become the one holding the house together."
+          ],
+          "spoiler": {
+            "summary": "Otis discovers Jean has been writing a book about his sexual development and later that she has been secretly dating Jakob, the father of his girlfriend Ola. Jean's work at Moordale threatens his clinic, and he betrays her professionally by stealing her notes. When Jean becomes pregnant, Jakob and Ola move in and Otis struggles with a blended household. After a bitter fight, Jean goes into premature labour and nearly dies from a haemorrhage; Otis tells her he still needs her. The baby, Joy, turns out not to be Jakob's, and Jakob and Ola leave. In the final season Otis ends up parenting his mother as she battles postnatal depression, calls in her estranged sister Joanna, and by the end tells Jean he is proud of her.",
+            "key_events": [
+              "Discovers Jean's book about him",
+              "Jean and Jakob's relationship revealed while he is dating Ola",
+              "Otis leaks Jean's confidential notes",
+              "Jean's pregnancy; Jakob and Ola move in",
+              "Premature birth and near-fatal haemorrhage",
+              "Paternity test shows Jakob is not the father; Jakob and Ola move out",
+              "Jean's postnatal depression; aunt Joanna arrives"
+            ],
+            "got_right": "Eventually saying the vulnerable thing out loud, stepping up for his mother and baby sister, and letting a new father figure in.",
+            "got_wrong": "Punishing Jean with coldness and cruelty instead of stating his boundaries, and assuming there would always be time to make up."
+          }
+        },
+        {
+          "id": "arc:sex_education/otis_milburn/falling_for_his_business_partner",
+          "title": "Falling for the girl he works with",
+          "literal_situation": "Otis starts running the clinic with Maeve Wiley, the sharp-tongued outsider everyone gossips about. She is dating the most popular boy in school, she seems out of his league, and he is falling for her anyway.",
+          "pattern_label": "loving someone but never saying it in time",
+          "pattern_text": "Two people who work closely together fall for each other, but fear, pride, bad timing and other relationships keep either of them from saying it at the right moment. Every missed chance creates new hurt and new partners caught in the middle. It asks what it really takes to be honest about your feelings, and whether loving someone is the same as being right for each other right now.",
+          "hook": "Otis is quietly in love with his business partner and has no idea how to say it. He is also asked, for money, to help her boyfriend win her over.",
+          "why_relatable": "What do you do when you have feelings for someone you work closely with? Is it more loyal to hide what you feel or to say it and risk everything? How many chances do you get to say the important thing?",
+          "watch_for": [
+            "How does Otis handle being asked to help a rival with the person he likes?",
+            "Notice how often the important conversation almost happens, and what interrupts it.",
+            "How honest is Otis with the other people he dates about where his heart is?"
+          ],
+          "start_at": "S1E1",
+          "span": "S1-S4",
+          "situations": [
+            {"id": "unrequited_love", "weight": 0.8},
+            {"id": "falling_for_someone_unexpected", "weight": 0.6},
+            {"id": "long_distance", "weight": 0.4},
+            {"id": "breakup", "weight": 0.4}
+          ],
+          "conflicts": ["truth_vs_protecting_others", "holding_on_vs_letting_go"],
+          "emotions": {"start": ["longing", "self_doubt"], "middle": ["jealousy", "guilt", "hope"], "end": ["love", "grief", "acceptance"]},
+          "ending_tone": "bittersweet",
+          "intensity": "moderate",
+          "warnings": ["betrayal", "grief"],
+          "example_user_messages": [
+            "I'm in love with my best friend and colleague and I keep missing the moment to tell her.",
+            "I'm dating someone lovely but I think I'm still hung up on someone else.",
+            "Every time we get close one of us is with someone else.",
+            "We finally got together and now we're in a long-distance thing and I'm jealous of everyone she meets.",
+            "Is it possible to love someone and still not be right for each other yet?"
+          ],
+          "spoiler": {
+            "summary": "Otis sabotages-by-advice Jackson's pursuit of Maeve, which backfires and makes them a couple; when Maeve learns he shared her private details with Jackson she freezes him out. By the time she is ready to confess, she sees him kissing Ola. He stays with Ola out of fear of becoming a cheater like his father, is dumped, humiliates Maeve at his party and sleeps with Ruby. His voicemail declaring love is deleted by Isaac. He dates Ruby but cannot say he loves her and they break up. On the France trip he tells Maeve what the voicemail said and they kiss; they finally get together, but Maeve leaves for a study programme in America. Long distance breeds jealousy, a night spent (platonically) in Ruby's bed becomes a secret, and when Maeve returns for her mother's funeral they finally sleep together but agree to break up so she can pursue her future. The creator has said she imagines them together about ten years later.",
+            "key_events": [
+              "Otis's advice helps Jackson win Maeve",
+              "Maeve sees Otis kissing Ola just as she comes to confess",
+              "Isaac deletes Otis's love voicemail",
+              "Otis and Ruby date; he can't say 'I love you' back",
+              "Otis and Maeve kiss in France and become a couple",
+              "Maeve goes to America; long-distance strain",
+              "Otis and Maeve break up so she can chase her dreams"
+            ],
+            "got_right": "He learns to say how he feels plainly and, in the end, to love someone enough to let them go.",
+            "got_wrong": "Manipulating a rival, staying in relationships he wasn't committed to, lashing out when hurt, and keeping secrets that eroded trust."
+          }
+        }
+      ]
+    },
+    {
+      "id": "char:sex_education/maeve_wiley",
+      "name": "Maeve Wiley",
+      "role": "A fiercely intelligent, sarcastic loner who lives alone in a caravan, writes other students' essays for rent money and carries a cruel nickname from an old rumour.",
+      "relations": [
+        {"target": "char:sex_education/otis_milburn", "relation": "partner"},
+        {"target": "char:sex_education/aimee_gibbs", "relation": "friend"},
+        {"target": "char:sex_education/jackson_marchetti", "relation": "ex_partner"},
+        {"target": "char:sex_education/eric_effiong", "relation": "friend"},
+        {"target": "char:sex_education/jean_milburn", "relation": "friend"},
+        {"target": "char:sex_education/ruby_matthews", "relation": "rival"}
+      ],
+      "arcs": [
+        {
+          "id": "arc:sex_education/maeve_wiley/raising_herself",
+          "title": "The girl who raised herself",
+          "literal_situation": "Maeve's father walked out, her mother struggled with drugs, and the older brother who raised her has disappeared. At sixteen she pays her own rent on a caravan by selling essays and keeps everyone at a distance.",
+          "pattern_label": "the child who had to parent herself",
+          "pattern_text": "A young person who was let down by every adult in their family has built a hard shell of self-reliance: paying their own way, trusting no one, expecting to be left. When an unreliable parent reappears asking for another chance, they have to decide how much to give, how to protect a younger sibling, and whether they can grieve a parent they never really had. It is a story about loyalty, painful boundaries and letting a chosen family in.",
+          "hook": "Maeve is alone, broke and determined never to need anyone. The school sees a 'bad girl'; the reality is a teenager doing an adult's job with no safety net, and a family that keeps leaving.",
+          "why_relatable": "What do you owe a parent who wasn't there? How do you protect a younger sibling when the adults around them aren't safe? Can you let people help you without feeling weak? And what happens to someone who has learned that everyone leaves?",
+          "watch_for": [
+            "How does Maeve react when someone does something kind for her without being asked?",
+            "What does she want from her mother, and does she ever say it?",
+            "Notice the moments she chooses responsibility over what she wants."
+          ],
+          "start_at": "S1E1",
+          "span": "S1-S4",
+          "situations": [
+            {"id": "difficult_parent", "weight": 0.9},
+            {"id": "responsibility_you_didnt_ask_for", "weight": 0.8},
+            {"id": "caring_for_family", "weight": 0.6},
+            {"id": "grief_and_loss", "weight": 0.5}
+          ],
+          "conflicts": ["independence_vs_connection", "self_vs_family_expectations"],
+          "emotions": {"start": ["loneliness", "anger", "resentment"], "middle": ["hope", "betrayal", "guilt"], "end": ["grief", "belonging", "peace"]},
+          "ending_tone": "bittersweet",
+          "intensity": "heavy",
+          "warnings": ["addiction", "child_endangerment", "death_of_loved_one", "grief", "betrayal"],
+          "example_user_messages": [
+            "My mum was never really there and now she wants back into my life and I don't know if I can trust her.",
+            "I've been looking after myself since I was a teenager and I don't know how to let anyone help.",
+            "I had to report my own parent to protect my little sister and I feel like a traitor.",
+            "My brother keeps disappearing whenever things get hard.",
+            "My mum died of an overdose and I don't know how to grieve someone who hurt me so much."
+          ],
+          "spoiler": {
+            "summary": "Maeve takes the fall for her brother Sean when he deals drugs at the school dance and is expelled; Sean leaves again. Her mother Erin returns claiming to be clean, with a toddler, Elsie. When Isaac helps prove Erin is using again, Maeve reports her to social services; Elsie goes into foster care with Anna and Erin says she'll never forgive her. Maeve moves in with Anna, later tracks down Erin after she takes Elsie, and the two reach a fragile reconciliation; Erin pays for Maeve's study trip. In the final season Erin overdoses and dies. Sean returns, fears becoming like her, and leaves again during the funeral, so Maeve organises it with Aimee and Otis and scatters the ashes with Aimee and Isaac over the caravan park.",
+            "key_events": [
+              "Expelled after covering for Sean",
+              "Erin returns with half-sister Elsie",
+              "Maeve reports Erin to social services; Elsie fostered",
+              "Moves in with foster carer Anna",
+              "Erin's overdose and death",
+              "Sean leaves again; Maeve organises the funeral"
+            ],
+            "got_right": "Protecting Elsie even when it cost her her mother, and eventually letting friends hold her up.",
+            "got_wrong": "Pushing away people who love her and assuming help always comes with strings."
+          }
+        },
+        {
+          "id": "arc:sex_education/maeve_wiley/the_gifted_outsider",
+          "title": "Believing she's allowed to aim high",
+          "literal_situation": "Maeve is the most talented writer at school, but she spends it ghost-writing other people's award-winning essays for cash. She acts as if school doesn't matter because wanting something that badly feels dangerous.",
+          "pattern_label": "a gifted outsider afraid to want more",
+          "pattern_text": "A brilliant person from a hard background has learned to hide their talent and pretend not to care, because hoping for more has only ever led to disappointment. When a mentor pushes them toward real opportunities, they face impostor feelings among more privileged peers, harsh criticism and the pull of the people who need them at home. The question is whether they can believe they deserve the future their talent could buy.",
+          "hook": "Maeve reads feminist literature, writes brilliantly and tells herself the future is for other people. She is wasting her gift to survive, and part of her knows it.",
+          "why_relatable": "Is it safer not to try than to try and fail? What does it feel like to be the only one in the room who had to fight to get there? When a mentor believes in you more than you do, do you trust them? And how do you choose between your ambitions and the people you love?",
+          "watch_for": [
+            "What does Maeve do when a teacher tells her she could go somewhere?",
+            "How does she react to people who have had things easier than her?",
+            "Whose voice does she listen to when she's about to give up?"
+          ],
+          "start_at": "S1E1",
+          "span": "S1-S4",
+          "situations": [
+            {"id": "imposter_syndrome", "weight": 0.8},
+            {"id": "mentor_and_protege", "weight": 0.6},
+            {"id": "taking_a_big_risk", "weight": 0.6},
+            {"id": "confidence_struggle", "weight": 0.5}
+          ],
+          "conflicts": ["career_vs_relationships", "safety_vs_growth"],
+          "emotions": {"start": ["self_doubt", "restlessness"], "middle": ["determination", "inadequacy", "burnout"], "end": ["confidence", "self_respect"]},
+          "ending_tone": "hopeful",
+          "intensity": "moderate",
+          "warnings": [],
+          "example_user_messages": [
+            "I come from nothing and I keep sabotaging opportunities because I don't think I deserve them.",
+            "Everyone on my course has money and connections and I feel like a fraud.",
+            "A teacher told me my writing wasn't good enough and I want to quit.",
+            "I got an amazing opportunity abroad but it means leaving the person I love.",
+            "I'm scared that if I try properly and fail, it'll prove everyone right about me."
+          ],
+          "spoiler": {
+            "summary": "Maeve forces her way back into school by exposing who she wrote essays for, joins the Aptitude Scheme and the quiz team under Ms Sands, and learns to work with others. She is accepted onto a gifted study programme in America, nearly turns it down for Otis, and goes after Aimee (as her 'mum') talks her into it. At Wallace University she feels out of place among wealthy students, burns out, and is crushed when her tutor Molloy dismisses her novel. After her mother's death she almost drops out and enrols locally, but a heart-to-heart with Jean convinces her not to let one teacher decide her future. She returns to America, a publisher asks to read more of her novel, and Molloy apologises.",
+            "key_events": [
+              "Re-enrols by exposing essay clients",
+              "Joins the quiz team and Aptitude Scheme with Ms Sands",
+              "Accepted to the US study programme",
+              "Molloy tears down her writing",
+              "Jean encourages her to go back",
+              "Publisher interest in her novel"
+            ],
+            "got_right": "Fighting for her place and ultimately choosing her own future.",
+            "got_wrong": "Letting a single harsh critic almost end her dream, and shutting teammates out out of pride."
+          }
+        },
+        {
+          "id": "arc:sex_education/maeve_wiley/letting_her_guard_down",
+          "title": "Letting someone in",
+          "literal_situation": "Since an ugly rumour at fourteen, Maeve has been the school's favourite target. She sleeps with the popular swimmer but refuses to call him her boyfriend, and her only real friend won't be seen with her in public. Then she starts a business with Otis, who listens to her like no one else does.",
+          "pattern_label": "learning to trust after being shamed",
+          "pattern_text": "Someone who has been judged and gossiped about for years protects herself by keeping romance casual and everyone at arm's length. When a kind, attentive person gets under her defences, and a thoughtful partner is also on offer, she has to weigh safety against real feeling, and learn to forgive people who hurt her out of fear. It is about trust, reputation and choosing love without losing yourself.",
+          "hook": "Maeve doesn't do boyfriends, doesn't do feelings and doesn't expect anyone to see past her reputation. Working beside a boy who genuinely respects her is starting to make that harder.",
+          "why_relatable": "How do you trust anyone after being publicly shamed? Why can it feel easier to be with someone who doesn't really know you? What do you do when the person you like has hurt you, or when a safe option is right in front of you?",
+          "watch_for": [
+            "How does Maeve respond to grand gestures compared with small, quiet acts of care?",
+            "Notice who shows up for her on the hardest day of the first season.",
+            "When she feels hurt, does she tell people, or does she disappear?"
+          ],
+          "start_at": "S1E1",
+          "span": "S1-S4",
+          "situations": [
+            {"id": "falling_for_someone_unexpected", "weight": 0.7},
+            {"id": "identity_and_self_acceptance", "weight": 0.5},
+            {"id": "long_distance", "weight": 0.3},
+            {"id": "breakup", "weight": 0.4}
+          ],
+          "conflicts": ["independence_vs_connection", "career_vs_relationships"],
+          "emotions": {"start": ["shame", "loneliness"], "middle": ["longing", "betrayal", "jealousy"], "end": ["love", "grief", "self_respect"]},
+          "ending_tone": "bittersweet",
+          "intensity": "moderate",
+          "warnings": ["betrayal"],
+          "example_user_messages": [
+            "There's been a rumour about me since I was fourteen and I don't trust anyone anymore.",
+            "I only do casual because if it's serious someone ends up leaving.",
+            "A nice guy is into me but I've got feelings for someone who keeps getting it wrong.",
+            "I told someone I liked them and they chose someone else.",
+            "I love him but I think staying would mean giving up on myself."
+          ],
+          "spoiler": {
+            "summary": "Maeve gets pregnant by Jackson and has an abortion; Otis waiting for her afterwards is a turning point. She dates Jackson after his grand gesture but falls for Otis; Jackson breaks up with her and tells her Otis coached him. She goes to confess to Otis and sees him kissing Ola. In season 2 she tells Otis she likes him; he stays with Ola, then humiliates her drunk and sleeps with Ruby. Her neighbour Isaac deletes Otis's love voicemail; she later forgives him and they get together. In France she learns the truth, kisses Otis, and eventually chooses him; Isaac steps aside. She leaves for America; in the final season she and Otis sleep together after her mother's funeral but break up so she can pursue her future, and she blesses Aimee and Isaac's relationship. The creator imagines Otis and Maeve reuniting a decade later.",
+            "key_events": [
+              "Abortion, with Otis waiting outside",
+              "Dates Jackson; he ends it seeing her feelings for Otis",
+              "Sees Otis kissing Ola",
+              "Isaac deletes the voicemail; she later dates Isaac",
+              "Kiss with Otis in France; they get together",
+              "Breaks up with Otis to return to America"
+            ],
+            "got_right": "Choosing people who show up in small ways, and refusing to shrink her life for a relationship.",
+            "got_wrong": "Assuming the worst instead of asking, and staying silent about her feelings until it was too late."
+          }
+        }
+      ]
+    },
+    {
+      "id": "char:sex_education/eric_effiong",
+      "name": "Eric Effiong",
+      "role": "Otis's flamboyant, joyful best friend: gay, out, a horn player in the school band, and the son of a devout Nigerian-Ghanaian church-going family.",
+      "relations": [
+        {"target": "char:sex_education/otis_milburn", "relation": "friend"},
+        {"target": "char:sex_education/adam_groff", "relation": "ex_partner"},
+        {"target": "char:sex_education/maeve_wiley", "relation": "friend"},
+        {"target": "char:sex_education/aimee_gibbs", "relation": "friend"}
+      ],
+      "arcs": [
+        {
+          "id": "arc:sex_education/eric_effiong/being_himself_out_loud",
+          "title": "Being himself out loud",
+          "literal_situation": "Eric is already out, dresses in bold colours and makes everyone laugh, but he is bullied at school, his father wishes he would 'toughen up', and his faith and family are woven into a church that isn't sure what to do with him. His best friend is suddenly busy with a new secret business.",
+          "pattern_label": "staying true to yourself when the world pushes back",
+          "pattern_text": "A person who has bravely chosen to live openly as who they are finds that the world does not always make it safe. After being hurt, they are tempted to shrink, hide and blend in, while also longing to belong to a family, a faith and a culture that may not fully accept them. It is about reclaiming joy, finding people who celebrate you and discovering that you don't have to choose between parts of yourself.",
+          "hook": "Eric is loud, loyal and fabulous, and it takes more courage than anyone notices. He is also a little lonely: the most popular boy he likes barely sees him, his best friend keeps forgetting him, and his father's love feels conditional on him being less.",
+          "why_relatable": "What do you do when being yourself makes you a target? Can you belong to a family, culture or faith that doesn't fully accept who you are? What happens to a friendship when one person starts to change?",
+          "watch_for": [
+            "How does Eric's appearance change after something frightening happens to him, and what brings his colour back?",
+            "Watch the way his father looks at him across the series.",
+            "What does church give Eric that nothing else does?"
+          ],
+          "start_at": "S1E1",
+          "span": "S1-S4",
+          "situations": [
+            {"id": "identity_and_self_acceptance", "weight": 0.9},
+            {"id": "family_expectations", "weight": 0.7},
+            {"id": "finding_your_people", "weight": 0.6},
+            {"id": "friendship_ending", "weight": 0.3}
+          ],
+          "conflicts": ["fitting_in_vs_standing_out", "self_vs_family_expectations"],
+          "emotions": {"start": ["joy", "loneliness"], "middle": ["fear", "shame", "belonging"], "end": ["pride", "peace", "acceptance"]},
+          "ending_tone": "hopeful",
+          "intensity": "moderate",
+          "warnings": ["abuse"],
+          "example_user_messages": [
+            "I'm gay and religious and I feel like I have to choose between my faith and myself.",
+            "After someone attacked me for how I looked I started dressing to blend in, and I hate it.",
+            "My dad always wanted me to be more 'manly' and I've never felt good enough for him.",
+            "When I visit family abroad I have to hide who I am.",
+            "My best friend and I are drifting apart since we started at a new place."
+          ],
+          "spoiler": {
+            "summary": "Ditched by Otis on his birthday, Eric is beaten up in a homophobic attack while dressed in drag; he retreats into drab clothes until church, a kind stranger and his father's newly spoken pride help him reclaim his style. In Nigeria he must hide his sexuality from extended family but discovers a hidden queer community. At Cavendish he is welcomed by the queer friend group 'the Coven', drifts from Otis and has a blowout with him about always coming second to Maeve, then reconciles. At his baptism he comes out publicly to his congregation, is embraced, and through visions of God comes to feel called to become a pastor.",
+            "key_events": [
+              "Homophobic assault after Otis stands him up",
+              "Father Abeo tells him he is proud of him",
+              "Trip to Nigeria and a secret queer club",
+              "Joins the Coven at Cavendish",
+              "Comes out at his baptism and is accepted",
+              "Decides to become a pastor"
+            ],
+            "got_right": "Refusing in the end to hide, and holding on to faith, culture and queerness together.",
+            "got_wrong": "Letting fear make him smaller for a while, and bottling up years of hurt at his best friend instead of saying it."
+          }
+        },
+        {
+          "id": "arc:sex_education/eric_effiong/what_he_deserves_in_love",
+          "title": "Wanting to be loved out loud",
+          "literal_situation": "Eric has a hopeless crush on Anwar, one of the school's popular clique, and no real romantic experience. Meanwhile Adam, the headmaster's hulking son, has made Eric his favourite target for insults and shoves.",
+          "pattern_label": "choosing a love that doesn't make you smaller",
+          "pattern_text": "A person who has been shamed and overlooked finally experiences romantic attention, including an intense, confusing pull toward someone with whom they share a painful history, while a kinder, more openly proud option also appears. They have to learn the difference between chemistry and being treated well, what they need from a partner who is still ashamed of themselves, and when to put their own growth first.",
+          "hook": "Eric wants what the straight kids seem to get easily: to be wanted, openly. The boy he likes laughs at him, and the boy who torments him seems to have it in for him more than anyone.",
+          "why_relatable": "What do you believe you deserve from someone who likes you? Can a relationship grow out of a painful history? Is it fair to wait for someone who isn't ready to be seen with you, and what do you owe yourself as you stop shrinking?",
+          "watch_for": [
+            "What does Eric want from a partner, and what does he settle for?",
+            "How does he tell the difference between excitement and being treated well?",
+            "Notice what Eric says he needs when he stops apologising for himself."
+          ],
+          "start_at": "S1E1",
+          "span": "S1-S4",
+          "situations": [
+            {"id": "falling_for_someone_unexpected", "weight": 0.8},
+            {"id": "unrequited_love", "weight": 0.4},
+            {"id": "breakup", "weight": 0.5},
+            {"id": "identity_and_self_acceptance", "weight": 0.5}
+          ],
+          "conflicts": ["holding_on_vs_letting_go", "independence_vs_connection"],
+          "emotions": {"start": ["longing", "loneliness"], "middle": ["confusion", "love", "guilt"], "end": ["freedom", "self_respect"]},
+          "ending_tone": "bittersweet",
+          "intensity": "moderate",
+          "warnings": ["abuse", "betrayal"],
+          "example_user_messages": [
+            "I have feelings for someone who treated me really badly in the past and I don't know if that's okay.",
+            "My boyfriend won't tell his family about us and it makes me feel like a secret.",
+            "There's a guy who's sweet and proud to be with me, but I can't stop thinking about someone else.",
+            "I cheated and I'm not even sure I regret it, and I hate that.",
+            "I think I've outgrown my relationship and want to be free for a while."
+          ],
+          "spoiler": {
+            "summary": "In a detention fight at the end of season 1, Adam kisses Eric and they secretly hook up before Adam is sent to military school. In season 2 Eric dates the confident, openly affectionate Rahim, while sneaking late-night junkyard walks and kisses with the returned Adam; he tells Adam he can't be with someone who doesn't like himself. Adam declares his love publicly during the school musical and Eric dumps Rahim for him. In season 3 their relationship grows but Adam can't come out to his mother; in Nigeria Eric kisses Oba, a photographer, tells Adam, admits he doesn't regret it and ends things because he wants to 'fly'. At Erin's funeral they meet as friends and part with a hug.",
+            "key_events": [
+              "Adam, his bully, kisses him in detention",
+              "Dates Rahim while seeing Adam secretly",
+              "Adam's public declaration at the school play",
+              "Chooses Adam and leaves Rahim",
+              "Kisses Oba in Nigeria",
+              "Breaks up with Adam"
+            ],
+            "got_right": "Naming what he needs and refusing a relationship where he has to hide.",
+            "got_wrong": "Two-timing Rahim and later cheating on Adam instead of speaking up earlier."
+          }
+        }
+      ]
+    },
+    {
+      "id": "char:sex_education/jean_milburn",
+      "name": "Jean Milburn",
+      "role": "A celebrated sex and relationship therapist and author, single mother to Otis, who is uninhibited in every area of life except commitment.",
+      "relations": [
+        {"target": "char:sex_education/otis_milburn", "relation": "child"},
+        {"target": "char:sex_education/aimee_gibbs", "relation": "protege"},
+        {"target": "char:sex_education/maeve_wiley", "relation": "friend"}
+      ],
+      "arcs": [
+        {
+          "id": "arc:sex_education/jean_milburn/the_expert_who_cant_fix_her_own_home",
+          "title": "The expert who can't fix her own home",
+          "literal_situation": "Jean helps couples talk about intimacy for a living, but after her husband's betrayal years ago she only allows herself one-night stands. She treats her teenage son as a fascinating case study, and a steady, blunt tradesman who comes to fix her pipes doesn't fit any of her rules.",
+          "pattern_label": "the helper who can't let love in",
+          "pattern_text": "A person who is an expert at understanding other people's relationships has protected themselves since a painful betrayal by keeping romance casual and pouring everything into their child and career. When someone steady and uncomplicated appears, and their child begins pulling away, they have to face their own need for control, their fear of dependence and the difference between understanding people and actually letting them close.",
+          "hook": "Jean has an answer for everyone else's problems. She is also a woman in midlife who hasn't let anyone stay the night in years, and whose son is starting to shut the door on her.",
+          "why_relatable": "Why are the people who understand relationships best sometimes worst at their own? How do you parent a teenager without prying? Can you love someone while fiercely protecting your independence? What did an old betrayal teach you that is no longer true?",
+          "watch_for": [
+            "What does Jean do when a man she's slept with wants to see her again?",
+            "Notice when her professional curiosity crosses into her son's privacy.",
+            "How does she cope when someone who cares about her takes up space in her house?"
+          ],
+          "start_at": "S1E1",
+          "span": "S1-S3",
+          "situations": [
+            {"id": "falling_for_someone_unexpected", "weight": 0.7},
+            {"id": "midlife_reinvention", "weight": 0.5},
+            {"id": "caring_for_family", "weight": 0.5},
+            {"id": "breakup", "weight": 0.4}
+          ],
+          "conflicts": ["control_vs_trust", "independence_vs_connection"],
+          "emotions": {"start": ["confidence", "loneliness"], "middle": ["love", "fear", "guilt"], "end": ["grief", "acceptance"]},
+          "ending_tone": "bittersweet",
+          "intensity": "moderate",
+          "warnings": ["betrayal"],
+          "example_user_messages": [
+            "Since my divorce I only do casual flings because I can't bear to be let down again.",
+            "I help people with their relationships at work but mine are a mess.",
+            "My teenage son says I'm too involved in his life and I don't know where the line is.",
+            "I finally met someone good and now I feel suffocated when he's around too much.",
+            "I kissed my ex and it blew up the relationship I actually wanted."
+          ],
+          "spoiler": {
+            "summary": "Jean secretly writes a book about Otis's sexual development, then falls for Jakob, a Swedish plumber and widower, while their children Otis and Ola are dating each other. Taking a job running sex education at Moordale, she has her confidential notebook stolen and leaked (by Otis, and later misused by headmaster Groff). Jakob's growing presence makes her feel crowded; she kisses her ex-husband Remi and Jakob leaves. She discovers she is pregnant and perimenopausal. In season 3 they try again and blend households, but Jakob's doubts about her past lead him to request a paternity test, which after the birth shows he is not the father, and he leaves.",
+            "key_events": [
+              "Writes a book about Otis without his consent",
+              "Relationship with Jakob while Otis dates Ola",
+              "Confidential notes leaked; loses school job",
+              "Kisses Remi; Jakob leaves",
+              "Pregnancy; reunites with Jakob",
+              "Paternity test: Jakob is not the father"
+            ],
+            "got_right": "Real warmth and wisdom with clients, and eventually admitting her fear of dependence.",
+            "got_wrong": "Violating Otis's privacy and sabotaging a good relationship rather than risk needing someone."
+          }
+        },
+        {
+          "id": "arc:sex_education/jean_milburn/when_the_helper_needs_help",
+          "title": "When the helper needs help",
+          "literal_situation": "Later in the series, after a turning point that upends the independent life Jean has built, she finds herself facing a huge life change in her mid-forties, trying to keep her career, her household and her sense of herself together while insisting she can handle it all alone.",
+          "pattern_label": "a strong person learning to accept help",
+          "pattern_text": "A capable, independent person in midlife is hit by an overwhelming change in their family and their body, and slides into exhaustion and depression while insisting they are coping. Their teenage child quietly becomes the caregiver, and an estranged sibling from a painful shared childhood re-enters their life. It is about admitting you are not okay, accepting help and healing old family wounds.",
+          "hook": "Jean has always been the one others call for help. Now her life is changing faster than she can manage, and the one thing she has never been good at is asking for support.",
+          "why_relatable": "What happens when the strong one in the family can't cope? How do you ask for help when you've built your identity on not needing it? Can you rebuild a relationship with a sibling who reminds you of the hardest years of your life?",
+          "watch_for": [
+            "How does Jean describe how she is doing, compared with what the people around her can see?",
+            "Notice who does the caring in the house.",
+            "What old family story explains the tension with her sister?"
+          ],
+          "start_at": "S3E1",
+          "span": "S3-S4",
+          "situations": [
+            {"id": "becoming_a_parent", "weight": 0.8},
+            {"id": "midlife_reinvention", "weight": 0.6},
+            {"id": "burnout_at_work", "weight": 0.4},
+            {"id": "caring_for_family", "weight": 0.5}
+          ],
+          "conflicts": ["independence_vs_connection", "past_vs_future"],
+          "emotions": {"start": ["anxiety", "determination"], "middle": ["fear", "overwhelm", "numbness"], "end": ["relief", "love", "acceptance"]},
+          "ending_tone": "hopeful",
+          "intensity": "heavy",
+          "warnings": ["medical_trauma", "abuse"],
+          "example_user_messages": [
+            "I had a baby in my forties and I'm drowning but I keep telling everyone I'm fine.",
+            "I think I have postnatal depression but I feel like I should be able to handle it.",
+            "My teenager has basically become my carer since the baby and I feel so guilty.",
+            "My sister and I haven't been close since a horrible childhood and now she's living with me.",
+            "I nearly died giving birth and I can't talk about it."
+          ],
+          "spoiler": {
+            "summary": "Pregnant at 45, Jean tells Jakob and they move in together with Otis and Ola, but clashing styles and Jakob's distrust strain things. She goes into labour eight weeks early and suffers a life-threatening haemorrhage; she survives and baby Joy is healthy, but the paternity test shows Jakob isn't the father and he leaves. In season 4, suffering postnatal depression, she takes a radio host job just eight weeks after the birth and brings Joy to work. Otis calls in her sister Joanna, who turns out to be in debt and homeless. Old wounds surface, including Jean protecting Joanna from their abusive stepfather Pierre. Jean pays off Joanna's debts, reconciles with her, and tells Dan, a former lover, that he is Joy's father. Otis tells her he's proud of her.",
+            "key_events": [
+              "Tells Jakob about the pregnancy; blended household",
+              "Premature labour and near-fatal haemorrhage",
+              "Paternity result; Jakob leaves",
+              "Postnatal depression and new radio job",
+              "Sister Joanna moves in; stepfather's abuse revealed in their backstory",
+              "Tells Dan he is Joy's father"
+            ],
+            "got_right": "Finally letting her sister and son help, and owning the truth about Joy's father.",
+            "got_wrong": "Pushing through depression alone and leaning on her teenage son as a co-parent."
+          }
+        }
+      ]
+    },
+    {
+      "id": "char:sex_education/adam_groff",
+      "name": "Adam Groff",
+      "role": "The headmaster's sullen, underachieving son and the school's most feared bully, who can't live up to his strict father's expectations.",
+      "relations": [
+        {"target": "char:sex_education/eric_effiong", "relation": "ex_partner"},
+        {"target": "char:sex_education/aimee_gibbs", "relation": "ex_partner"},
+        {"target": "char:sex_education/otis_milburn", "relation": "friend"},
+        {"target": "char:sex_education/ruby_matthews", "relation": "friend"}
+      ],
+      "arcs": [
+        {
+          "id": "arc:sex_education/adam_groff/the_bully_who_hates_himself",
+          "title": "The bully who can't say what he feels",
+          "literal_situation": "Adam throws his weight around at school, targets Eric relentlessly, and is failing his classes. At home his headmaster father treats him as a constant disappointment, and in private he is struggling in his relationship with his girlfriend Aimee.",
+          "pattern_label": "a bully unlearning shame and anger",
+          "pattern_text": "A young man raised by a cold, critical parent has only ever learned one emotion he is allowed to show: anger. He lashes out at others, especially those who seem free to be themselves, while hiding confusion about who he is and deep feelings of worthlessness. Slowly, through a few people who see his soft side, he has to learn to name his feelings, take responsibility for the harm he caused and accept who he really is.",
+          "hook": "Adam is angry at everyone and seems not to care about anything. Underneath, he is lonely, ashamed and convinced everybody hates him, and he has no words for any of it.",
+          "why_relatable": "Where does cruelty come from, and can someone who hurt others change? What happens to boys who are never taught to talk about feelings? How do you become yourself when your father only sees what you're not?",
+          "watch_for": [
+            "How does Adam's body language change around his father versus his mother?",
+            "Notice how he reacts when someone is simply kind to him.",
+            "What healthier outlets does he find for his anger?"
+          ],
+          "start_at": "S1E1",
+          "span": "S1-S3",
+          "situations": [
+            {"id": "identity_and_self_acceptance", "weight": 0.9},
+            {"id": "difficult_parent", "weight": 0.8},
+            {"id": "redemption_after_mistakes", "weight": 0.6},
+            {"id": "confidence_struggle", "weight": 0.5}
+          ],
+          "conflicts": ["self_vs_family_expectations", "fitting_in_vs_standing_out"],
+          "emotions": {"start": ["anger", "shame", "inadequacy"], "middle": ["confusion", "fear", "longing"], "end": ["acceptance", "self_respect"]},
+          "ending_tone": "bittersweet",
+          "intensity": "moderate",
+          "warnings": ["abuse"],
+          "example_user_messages": [
+            "I used to bully people and I want to change but I don't know how to make it right.",
+            "My dad has never said he's proud of me once, and I just get angry at everyone.",
+            "I think I might be bi but I've spent my whole life acting like the opposite.",
+            "I can't say how I feel out loud, it just comes out as rage.",
+            "I haven't told my mum who I'm dating because I'm scared of what it makes me."
+          ],
+          "spoiler": {
+            "summary": "Adam's Viagra overdose kick-starts the clinic; he later flashes the canteen, is dumped by Aimee, smashes her grandmother's urn at a party, and tells his father he hates him at the school dance. In detention he kisses Eric, revealing his attraction, and is sent to military school. Expelled after taking the blame for drugs planted by boys he caught together, he returns, works at a shop where Ola becomes his first real friend, and secretly meets Eric at night. After his mother leaves his father and tells him to say 'I love you' to the people he loves, he declares his feelings for Eric in front of the whole school at the musical. In season 3 he dates Eric, learns to express emotions (punching pillows with Ola, poetry with former rival Rahim), identifies as bisexual, excels at dog agility with Madam and finally comes out to his mum, but Eric ends the relationship after kissing someone in Nigeria.",
+            "key_events": [
+              "Bullies Eric, then kisses him in detention",
+              "Sent to military school, then expelled",
+              "Ola calls him her friend",
+              "Public declaration of love for Eric",
+              "Comes out as bisexual; dog agility success",
+              "Comes out to his mother; Eric breaks up with him"
+            ],
+            "got_right": "Apologising, doing the slow work of change, and finally speaking his feelings publicly.",
+            "got_wrong": "Years of cruelty to Eric and others, and keeping his partner a secret because of his own shame."
+          }
+        },
+        {
+          "id": "arc:sex_education/adam_groff/finding_what_hes_good_at",
+          "title": "Finding something he's good at",
+          "literal_situation": "Later in the series, after a turning point that leaves Adam heartsore and without school or a plan, he spends his days on the sofa eating cereal while his mother slips job leaflets under his nose.",
+          "pattern_label": "finding purpose after feeling like a failure",
+          "pattern_text": "A young man who was always told he was the disappointing one drifts after everything familiar falls away, convinced he isn't good at anything. A modest opportunity doing hands-on, patient work turns out to suit him, and a supportive colleague helps him believe in himself. Along the way he gets a chance to rebuild a relationship with the parent who made him feel like a failure.",
+          "hook": "Adam has no qualifications, no plan and a broken heart. He has never been told he's good at anything, and he is not sure there is anything to find.",
+          "why_relatable": "What do you do when you're not academic and everyone treats that as failure? How do you start when you have no idea what you want? Can a parent who hurt you really change, and do you let them try?",
+          "watch_for": [
+            "What does Adam say when asked if he has experience, and what does that tell you about his fear?",
+            "Notice how he is with animals compared with people.",
+            "How does his father try to reach him, and what does Adam need before he can respond?"
+          ],
+          "start_at": "S4E1",
+          "span": "S4",
+          "situations": [
+            {"id": "new_job", "weight": 0.8},
+            {"id": "confidence_struggle", "weight": 0.7},
+            {"id": "starting_over", "weight": 0.6},
+            {"id": "difficult_parent", "weight": 0.5}
+          ],
+          "conflicts": ["past_vs_future", "safety_vs_growth"],
+          "emotions": {"start": ["numbness", "inadequacy", "grief"], "middle": ["curiosity", "fear"], "end": ["pride", "confidence", "hope"]},
+          "ending_tone": "hopeful",
+          "intensity": "light",
+          "warnings": [],
+          "example_user_messages": [
+            "I dropped out and now I just sit at home and feel useless.",
+            "I've never been good at anything and I don't know where to even start.",
+            "I lied in an interview about having experience and now I'm terrified of being found out.",
+            "My dad was always hard on me and now he suddenly wants to spend time together.",
+            "I think I might finally have found something I'm good at, and it's not what anyone expected."
+          ],
+          "spoiler": {
+            "summary": "After Moordale closes and Eric ends their relationship, Adam drops out and mopes, still looking at their photos. His mother pushes him into an internship at a horse farm, where he lies about being able to ride. His coworker Jem teaches him, he discovers he's gifted with the horses and with teaching children, and becomes more comfortable with being bisexual, eventually telling Jem about Eric; she asks him out. At Erin's funeral he meets Eric as a friend and lets go. His reformed father Michael bonds with him through driving lessons; they hug before Adam's first riding lesson, which Michael joins, and Adam hopes his parents can be a family again.",
+            "key_events": [
+              "Drops out after Moordale closes",
+              "Horse farm internship; lies about riding",
+              "Jem teaches him and becomes a love interest",
+              "Makes peace with Eric at the funeral",
+              "Reconciles with his father"
+            ],
+            "got_right": "Showing up, learning patiently, and letting his father back in on new terms.",
+            "got_wrong": "Hiding behind a lie out of fear of being seen as useless."
+          }
+        }
+      ]
+    },
+    {
+      "id": "char:sex_education/aimee_gibbs",
+      "name": "Aimee Gibbs",
+      "role": "A sweet, bubbly, people-pleasing girl in the school's popular clique who is secretly best friends with the outcast Maeve and dreams of baking.",
+      "relations": [
+        {"target": "char:sex_education/maeve_wiley", "relation": "friend"},
+        {"target": "char:sex_education/adam_groff", "relation": "ex_partner"},
+        {"target": "char:sex_education/otis_milburn", "relation": "friend"},
+        {"target": "char:sex_education/eric_effiong", "relation": "friend"},
+        {"target": "char:sex_education/jean_milburn", "relation": "mentor"},
+        {"target": "char:sex_education/ruby_matthews", "relation": "rival"},
+        {"target": "char:sex_education/jackson_marchetti", "relation": "friend"}
+      ],
+      "arcs": [
+        {
+          "id": "arc:sex_education/aimee_gibbs/finding_out_what_she_wants",
+          "title": "Finding out what she actually wants",
+          "literal_situation": "Aimee hosts the popular crowd's parties and puts up with their digs, dates the headmaster's son because it's expected, and hides her friendship with Maeve in public. If anyone asked her what she likes, she wouldn't have an answer.",
+          "pattern_label": "a people-pleaser discovering her own wants",
+          "pattern_text": "A warm, eager-to-please person has spent their life going along with what friends and partners want, tolerating being used because belonging feels safer than speaking up. When they're asked what they actually want, they have to discover it for the first time, choose real friendship over status, and learn that they are clever and worthy in their own way.",
+          "hook": "Aimee is lovely to everyone and has never been asked what she wants: not in bed, not in friendship, not in life. Her 'friends' treat her like a free house and a punchline.",
+          "why_relatable": "Do you know what you like, or only what other people like about you? Why do we stay in groups that make us feel small? How do you say no, or end something, when you hate disappointing people?",
+          "watch_for": [
+            "What happens when Aimee has to choose between the popular crowd and her real friend?",
+            "Notice how she describes herself, especially the word 'stupid'.",
+            "How does she handle ending something with someone who has done nothing wrong?"
+          ],
+          "start_at": "S1E1",
+          "span": "S1-S4",
+          "situations": [
+            {"id": "identity_and_self_acceptance", "weight": 0.8},
+            {"id": "finding_your_people", "weight": 0.7},
+            {"id": "confidence_struggle", "weight": 0.6},
+            {"id": "breakup", "weight": 0.3}
+          ],
+          "conflicts": ["belonging_vs_integrity", "fitting_in_vs_standing_out"],
+          "emotions": {"start": ["self_doubt", "confusion"], "middle": ["curiosity", "guilt"], "end": ["confidence", "self_respect", "joy"]},
+          "ending_tone": "hopeful",
+          "intensity": "light",
+          "warnings": ["sexual_violence"],
+          "example_user_messages": [
+            "I realised I have no idea what I actually like, I've always just gone along with whoever I'm with.",
+            "My friend group treats me like a doormat but I'm scared to lose them.",
+            "I want to break up with my boyfriend but he's so nice and I hate letting people down.",
+            "Everyone treats me like I'm a bit dim and I've started believing it.",
+            "I left the popular crowd for my real friend and now they've turned on me."
+          ],
+          "spoiler": {
+            "summary": "Aimee breaks up with Adam under pressure from Ruby, then leaves the Untouchables to be openly friends with Maeve. Otis advises her to masturbate to discover what she likes, and she falls for gentle Steve. She decides to become a baker. After her assault she stays with Steve out of guilt, buys a 'commitment goat', and finally breaks up with him in season 3. She secretly pays for Maeve's school trip, they fight and make up, and they become each other's 'mums'; she convinces Maeve to take the America opportunity. At Cavendish she takes Art, where Isaac helps her see she isn't stupid but original; they fall for each other, and after Maeve gives her blessing they kiss on Aimee's terms. By the end she is even open to Ruby again.",
+            "key_events": [
+              "Leaves the Untouchables for Maeve",
+              "Discovers what she likes; dates Steve",
+              "Breaks up with Steve",
+              "Talks Maeve into going to America",
+              "Art class and romance with Isaac",
+              "Maeve blesses Aimee and Isaac"
+            ],
+            "got_right": "Choosing real friendship over status and, eventually, choosing herself.",
+            "got_wrong": "Staying in situations out of guilt and trying to fix friends' problems with money without asking."
+          }
+        },
+        {
+          "id": "arc:sex_education/aimee_gibbs/feeling_safe_in_her_body_again",
+          "title": "Feeling safe in her own body again",
+          "literal_situation": "Later in the series, after a turning point that shatters Aimee's sense of safety on an ordinary morning, she laughs it off and insists she's fine. But she stops wanting to take her usual route, flinches when her loving boyfriend gets close, and can't bear to be looked at.",
+          "pattern_label": "healing after a stranger's sexual assault",
+          "pattern_text": "After being sexually assaulted by a stranger in a public place, a cheerful person downplays it, telling herself it wasn't serious. Slowly the aftermath surfaces: avoiding the place it happened, recoiling from a gentle partner, feeling disgusted by her own body. With friends who show up, a therapist and a lot of patience, she works toward trusting her body, setting her own pace in intimacy and reclaiming the everyday spaces that were taken from her.",
+          "hook": "Aimee keeps saying 'it's fine' and genuinely wants to believe it. She doesn't understand why she suddenly can't do things that used to be easy.",
+          "why_relatable": "Why do we tell ourselves something 'wasn't that bad'? How do you explain to a loving partner that you can't be touched right now? Can friends really help you face something that you feel you have to carry alone? How long is healing supposed to take?",
+          "watch_for": [
+            "Notice the gap between what Aimee says and what she avoids.",
+            "Notice who she tells, and who she keeps it from.",
+            "How do the people who care about her respect her pace, or fail to?"
+          ],
+          "start_at": "S2",
+          "span": "S2-S4",
+          "situations": [
+            {"id": "identity_and_self_acceptance", "weight": 0.6},
+            {"id": "finding_your_people", "weight": 0.6},
+            {"id": "confidence_struggle", "weight": 0.5},
+            {"id": "breakup", "weight": 0.3}
+          ],
+          "conflicts": ["safety_vs_growth", "independence_vs_connection"],
+          "emotions": {"start": ["numbness", "confusion", "fear"], "middle": ["shame", "anxiety", "belonging"], "end": ["relief", "self_respect", "peace"]},
+          "ending_tone": "hopeful",
+          "intensity": "heavy",
+          "warnings": ["sexual_violence"],
+          "example_user_messages": [
+            "A man did something sexual to me on the bus and I keep saying it's no big deal but I can't get on a bus anymore.",
+            "Since the assault I can't let my boyfriend touch me and I feel terrible for him.",
+            "I feel disgusting in my own body and I don't know how to stop.",
+            "I'm in a new relationship and I need to go really slowly, but I'm scared that's too much to ask.",
+            "It happened ages ago and I thought I was over it, so why does it still hit me?"
+          ],
+          "spoiler": {
+            "summary": "On her way to school with a cake, a man on the bus masturbates and ejaculates on her jeans. She initially finds it almost funny, but with Maeve she reports it to the police and then starts walking everywhere, avoiding Steve's touch and her own body. In detention with Maeve, Viv, Lily, Olivia and Ola, the girls realise they've all experienced harassment; the next morning they ride the bus together with her. In season 3 she has therapy with Jean, learns about her body and feminism, and breaks up with Steve to be on her own. In season 4 she forms a slow, respectful bond with Isaac through art; she isn't ready to kiss at first, and in the finale she burns the jeans at the bus stop and kisses Isaac, who promises they'll go at her pace.",
+            "key_events": [
+              "Assaulted on the bus",
+              "Reports it to police with Maeve",
+              "Girls in detention share experiences and ride the bus with her",
+              "Therapy with Jean",
+              "Burns the jeans at the bus stop",
+              "Kisses Isaac on her own terms"
+            ],
+            "got_right": "Eventually letting friends and a therapist in, and insisting on her own pace.",
+            "got_wrong": "Minimising what happened and trying to carry it alone for too long."
+          }
+        }
+      ]
+    },
+    {
+      "id": "char:sex_education/jackson_marchetti",
+      "name": "Jackson Marchetti",
+      "role": "The school's head boy and star swimmer, raised by two mothers, who seems to have it all and is falling apart with anxiety underneath.",
+      "relations": [
+        {"target": "char:sex_education/maeve_wiley", "relation": "ex_partner"},
+        {"target": "char:sex_education/otis_milburn", "relation": "rival"},
+        {"target": "char:sex_education/aimee_gibbs", "relation": "friend"}
+      ],
+      "arcs": [
+        {
+          "id": "arc:sex_education/jackson_marchetti/the_golden_boy_under_pressure",
+          "title": "The golden boy under pressure",
+          "literal_situation": "Jackson is head boy, a swimming champion and the most popular guy at school. He is also on anxiety medication, throws up before races and assemblies, and trains under a mother who pours her own unfinished dreams into his career.",
+          "pattern_label": "the high achiever who can't say he wants out",
+          "pattern_text": "A person everyone admires for their talent is quietly crumbling under the expectations of a parent who has invested their own dreams in them. Unable to say they want to stop, they turn the pressure on themselves in dangerous ways. It is about the courage to disappoint people you love, accepting help and discovering who you are when you are not performing.",
+          "hook": "Jackson has the life everyone else wants, and he's terrified of it. He can't imagine telling his mother that the thing she loves most about him is the thing that's breaking him.",
+          "why_relatable": "What happens when your talent becomes someone else's dream? How do you tell a parent you want to quit the thing they've sacrificed for? Why do high achievers hide how badly they're struggling? Who do you let see the cracks?",
+          "watch_for": [
+            "What does Jackson do with his body right before he has to perform?",
+            "Notice who first sees through his image, and how he reacts to being seen.",
+            "How do his two mothers differ in what they want for him?"
+          ],
+          "start_at": "S1E1",
+          "span": "S1-S2",
+          "situations": [
+            {"id": "family_expectations", "weight": 0.9},
+            {"id": "burnout_at_work", "weight": 0.5},
+            {"id": "career_change", "weight": 0.5},
+            {"id": "identity_and_self_acceptance", "weight": 0.5}
+          ],
+          "conflicts": ["self_vs_family_expectations", "perfectionism_vs_good_enough"],
+          "emotions": {"start": ["anxiety", "dread"], "middle": ["overwhelm", "shame", "anger"], "end": ["relief", "freedom"]},
+          "ending_tone": "hopeful",
+          "intensity": "heavy",
+          "warnings": ["self_harm_or_suicide"],
+          "example_user_messages": [
+            "Everyone thinks I've got it all together but I'm throwing up before every competition.",
+            "My mum lives through my sport and I don't want to do it anymore but I can't tell her.",
+            "I hurt myself on purpose so I'd have an excuse to stop.",
+            "I've been on anxiety meds for years and I still feel like I'm drowning.",
+            "My friend told my parents I was self-harming and I'm furious but maybe she was right."
+          ],
+          "spoiler": {
+            "summary": "Jackson wins Maeve with a grand gesture Otis suggested, confides his anxiety to her, and ends it when he sees she loves Otis, then sleeps around to numb the heartbreak. Crushed by swimming pressure from his mother Sofia, he deliberately breaks his hand under gym weights and claims it was an accident. His maths tutor Viv becomes his best friend and pushes him toward the school play, where he's cast as Romeo. As his hand heals, Viv catches him about to punch a mirror to injure it again and tells his mothers. Furious at first, he goes back to therapy, tells his mothers he wants to quit swimming, and they accept it.",
+            "key_events": [
+              "Dates Maeve; breaks up when he sees her feelings for Otis",
+              "Deliberately breaks his hand",
+              "Friendship with Viv; cast as Romeo",
+              "Viv tells his mothers about the self-harm",
+              "Quits swimming; returns to therapy"
+            ],
+            "got_right": "Finally telling the truth to his mothers and accepting professional help.",
+            "got_wrong": "Hurting himself rather than saying no, and pushing away the friend who protected him."
+          }
+        },
+        {
+          "id": "arc:sex_education/jackson_marchetti/who_he_is_beyond_the_image",
+          "title": "Figuring out who he is beyond the image",
+          "literal_situation": "Later in the series, after a turning point that leaves Jackson unsure who he is outside the image everyone had of him, he is drawn to Cal, a new non-binary student who challenges the school's rules, and finds himself asking questions about attraction and identity he never expected to ask.",
+          "pattern_label": "questioning your identity and where you come from",
+          "pattern_text": "A person who always fitted a clear, admired image finds themselves attracted to someone who doesn't fit their idea of who they're 'supposed' to like, and has to confront their own assumptions and confusion. At the same time, questions about the parent they never knew resurface. It is about sitting with uncertainty, respecting someone else's identity while working out your own, and recognising which family really shows up for you.",
+          "hook": "For the first time Jackson doesn't have a clear label for himself, and he's falling for someone who asks to be seen exactly as they are. He isn't sure he can do that yet.",
+          "why_relatable": "What do you do when your feelings don't match the label you've always worn? Is caring for someone enough if you can't fully see them as they are? Does knowing where you come from change who you are? Who counts as your real family?",
+          "watch_for": [
+            "How does Jackson talk about his feelings to his mums, and what does he ask them?",
+            "What does Cal need from him, and can he give it?",
+            "Notice how he treats someone he can't get over."
+          ],
+          "start_at": "S3E1",
+          "span": "S3-S4",
+          "situations": [
+            {"id": "identity_and_self_acceptance", "weight": 0.8},
+            {"id": "falling_for_someone_unexpected", "weight": 0.7},
+            {"id": "unrequited_love", "weight": 0.4},
+            {"id": "difficult_parent", "weight": 0.4}
+          ],
+          "conflicts": ["holding_on_vs_letting_go", "past_vs_future"],
+          "emotions": {"start": ["confusion", "curiosity"], "middle": ["longing", "rejection", "anger"], "end": ["acceptance", "belonging", "hope"]},
+          "ending_tone": "hopeful",
+          "intensity": "moderate",
+          "warnings": ["abuse"],
+          "example_user_messages": [
+            "I've always thought I was straight but I'm falling for someone who's non-binary and I'm confused.",
+            "They said I still don't really see them for who they are, and I think they might be right.",
+            "I found out my biological father didn't want to know me.",
+            "I can't get over them so I've started ignoring them and being mean, and I hate myself for it.",
+            "I went looking for my real dad and realised my real family was the one who raised me."
+          ],
+          "spoiler": {
+            "summary": "Jackson loses the head boy title to Viv, straining their friendship, and bonds with Cal over anxiety. They kiss, but Cal says Jackson still sees them as a girl, and they agree to stay friends; Sofia comforts him. He and Viv team up to bring down headteacher Hope. At Cavendish he freezes Cal out, has a casual fling with Anabelle, who finds a testicular lump (benign), and asks former rival Otis for advice about sexuality. The health scare pushes him to find his biological father Jerome, who turns him away; he apologises to his mothers and embraces them as his family. He supports Viv as she leaves her controlling boyfriend Beau, and finds Cal when they go missing, opening the door to rebuilding their relationship.",
+            "key_events": [
+              "Loses head boy to Viv",
+              "Kisses Cal; they stay friends",
+              "Testicular lump scare (benign)",
+              "Biological father Jerome rejects him",
+              "Reconciles with his mothers",
+              "Finds Cal when they go missing"
+            ],
+            "got_right": "Asking honest questions, supporting Viv, and choosing the family that raised him.",
+            "got_wrong": "Freezing Cal out when he was hurt and blaming his mothers for protecting him."
+          }
+        }
+      ]
+    },
+    {
+      "id": "char:sex_education/ruby_matthews",
+      "name": "Ruby Matthews",
+      "role": "The school's queen bee and ruthless leader of the popular clique, who polices everyone's status and seems to have no weaknesses.",
+      "relations": [
+        {"target": "char:sex_education/otis_milburn", "relation": "ex_partner"},
+        {"target": "char:sex_education/adam_groff", "relation": "friend"},
+        {"target": "char:sex_education/aimee_gibbs", "relation": "rival"},
+        {"target": "char:sex_education/maeve_wiley", "relation": "rival"}
+      ],
+      "arcs": [
+        {
+          "id": "arc:sex_education/ruby_matthews/the_queen_bee_armour",
+          "title": "The armour of the queen bee",
+          "literal_situation": "Ruby rules the school's popular clique with cutting remarks, mocks Maeve for being poor and treats even her friends as accessories. Nobody at school, not even her closest friends, knows much about her life outside it.",
+          "pattern_label": "a mean exterior hiding a painful home",
+          "pattern_text": "Someone who was bullied and humiliated as a child reinvents themselves as untouchable, using control, sharp judgements and status to make sure no one can hurt them again. Behind the image is a home they're ashamed of and a parent who is seriously ill. When someone unexpected gets close and sees the real them, they have to risk vulnerability, and face what happens when you say 'I love you' first.",
+          "hook": "Ruby seems to have everything and to care about no one. She never invites anyone home, and nobody at school knows why.",
+          "why_relatable": "Why do people who were hurt sometimes become the ones who hurt? What are you protecting when you never let anyone see where you live? What does it cost to be vulnerable with someone, and what if they can't give the same back?",
+          "watch_for": [
+            "What does Ruby do when she feels out of control?",
+            "Notice how she talks about her family, and how quickly she changes the subject.",
+            "Who does she let into her home, and what does it cost her?"
+          ],
+          "start_at": "S1E1",
+          "span": "S1-S3",
+          "situations": [
+            {"id": "identity_and_self_acceptance", "weight": 0.7},
+            {"id": "caring_for_family", "weight": 0.6},
+            {"id": "falling_for_someone_unexpected", "weight": 0.7},
+            {"id": "breakup", "weight": 0.5}
+          ],
+          "conflicts": ["fitting_in_vs_standing_out", "control_vs_trust"],
+          "emotions": {"start": ["pride", "fear"], "middle": ["shame", "love"], "end": ["rejection", "grief"]},
+          "ending_tone": "bittersweet",
+          "intensity": "moderate",
+          "warnings": ["serious_illness", "betrayal"],
+          "example_user_messages": [
+            "I act like I don't care about anyone because I was bullied so badly as a kid.",
+            "My dad is seriously ill and I've never told any of my friends.",
+            "I'm embarrassed to bring anyone home because we don't have much money.",
+            "I told him I loved him and he said 'that's nice'.",
+            "I only hook up with people when I'm sad, it makes me feel wanted for a bit."
+          ],
+          "spoiler": {
+            "summary": "Ruby's nude photo is leaked by her friend Olivia, whom she has been belittling; the whole school, led by Maeve and Olivia, claims the photo as theirs to protect her, yet she stays cold to Maeve. After Otis's party she sleeps with him (his first time); at the pharmacy for a morning-after pill she reveals her father has multiple sclerosis and that she sleeps with 'nerdy boys' when she's sad. They hook up all summer, she tries to keep it secret and remake him, then they date openly. She brings him home, the first person ever, revealing her modest family and caring for her father, and tells him she loves him; he replies 'that's nice' because he still loves Maeve, and she ends it. She is heartbroken seeing Otis and Maeve kiss in France, but still fights off headteacher Hope to help the students' protest.",
+            "key_events": [
+              "Nude photo leaked by Olivia",
+              "Sleeps with Otis after the party",
+              "Reveals her father's MS",
+              "Dates Otis openly; brings him home",
+              "Says 'I love you'; Otis can't say it back; breakup",
+              "Sees Otis and Maeve kiss"
+            ],
+            "got_right": "Taking the risk of letting someone see her home and saying how she felt.",
+            "got_wrong": "Cruelty toward others as a shield, and trying to control her partner rather than trusting him."
+          }
+        },
+        {
+          "id": "arc:sex_education/ruby_matthews/starting_over_without_a_crown",
+          "title": "Starting over without a crown",
+          "literal_situation": "Later in the series, after a turning point that scatters her old crowd, Ruby lands at a new school where kindness and eco-friendliness are cool, her old tricks don't work, nobody wants her at their lunch table, and a face from her humiliating childhood reappears.",
+          "pattern_label": "losing your status and learning to be kind",
+          "pattern_text": "A person whose whole identity was built on social power finds themselves somewhere new where none of it counts, lonely and drifting from old friends who have moved on. When the person who humiliated them as a child shows up, they are torn between revenge and something harder. It is about rebuilding belonging from scratch, forgiveness, and discovering that kindness can be a strength.",
+          "hook": "Ruby has never had to try to make friends before. Now she eats alone, her old best friends reply less and less, and the rules of popularity have flipped against her.",
+          "why_relatable": "Who are you when the status you worked so hard for disappears? What do you do when friends drift away after a move? Do you take revenge on someone who hurt you as a child, or give them the second chance you wish you'd had?",
+          "watch_for": [
+            "How does Ruby try to get into the new popular group, and what does she learn about why it isn't working?",
+            "What does she do with the power to hurt her old bully?",
+            "Notice how she responds when someone only comes to her because they need something."
+          ],
+          "start_at": "S4E1",
+          "span": "S4",
+          "situations": [
+            {"id": "starting_over", "weight": 0.8},
+            {"id": "loneliness", "weight": 0.8},
+            {"id": "friendship_ending", "weight": 0.6},
+            {"id": "finding_your_people", "weight": 0.6}
+          ],
+          "conflicts": ["revenge_vs_forgiveness", "belonging_vs_integrity"],
+          "emotions": {"start": ["loneliness", "rejection"], "middle": ["resentment", "betrayal"], "end": ["belonging", "self_respect"]},
+          "ending_tone": "hopeful",
+          "intensity": "light",
+          "warnings": ["betrayal"],
+          "example_user_messages": [
+            "I was really popular at my old school and now at my new one I'm completely invisible.",
+            "My best friends went to a different college and slowly stopped replying.",
+            "The girl who bullied me in primary school is here and acts like she doesn't remember.",
+            "Someone I care about only texts me when he needs a favour.",
+            "I used to be mean and I'm trying to be a better person, but no one believes me."
+          ],
+          "spoiler": {
+            "summary": "At Cavendish Ruby is rejected by the Coven and discovers that Anwar and Olivia have moved on. Her childhood friend-turned-betrayer Sarah 'O' Owen, who exposed her bed-wetting at camp, now runs the rival sex clinic, so Ruby becomes Otis's campaign manager for revenge. Otis spends a night platonically in her bed after she admits her loneliness, then ignores her when Maeve returns and only approaches her to make sure she won't tell Maeve; Ruby ends the friendship in tears but never tells Maeve. She manages Connor to victory, O apologises to her, and at the fundraiser Ruby defends O from the crowd, saying Cavendish taught her to be nice and everyone deserves a second chance. She earns respect and friends, turns down Otis's offer of friendship, and even Aimee looks at her with new respect.",
+            "key_events": [
+              "Rejected by the Coven; old friends drift away",
+              "Childhood bully O reappears",
+              "Becomes Otis's campaign manager; night in the same bed",
+              "Otis uses her; she ends their friendship",
+              "O apologises",
+              "Defends O publicly and finds acceptance"
+            ],
+            "got_right": "Choosing grace over revenge and keeping a secret that wasn't hers to weaponise.",
+            "got_wrong": "Trying to regain status through the same cutthroat tactics, and pinning her loneliness on one person."
+          }
+        }
+      ]
+    }
+  ]
+}

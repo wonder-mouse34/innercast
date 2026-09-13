@@ -1,0 +1,1116 @@
+{
+  "show": "brooklyn_99",
+  "characters": [
+    {
+      "id": "char:brooklyn_99/jake_peralta",
+      "name": "Jake Peralta",
+      "role": "A brilliant but wildly immature Brooklyn detective with the best arrest record in the precinct, who treats everything except his cases as a joke.",
+      "relations": [
+        {
+          "target": "char:brooklyn_99/raymond_holt",
+          "relation": "mentor"
+        },
+        {
+          "target": "char:brooklyn_99/amy_santiago",
+          "relation": "partner"
+        },
+        {
+          "target": "char:brooklyn_99/rosa_diaz",
+          "relation": "friend"
+        },
+        {
+          "target": "char:brooklyn_99/terry_jeffords",
+          "relation": "boss"
+        },
+        {
+          "target": "char:brooklyn_99/charles_boyle",
+          "relation": "friend"
+        },
+        {
+          "target": "char:brooklyn_99/gina_linetti",
+          "relation": "friend"
+        }
+      ],
+      "arcs": [
+        {
+          "id": "arc:brooklyn_99/jake_peralta/the_case_of_growing_up",
+          "title": "The one case he can't crack: growing up",
+          "literal_situation": "Jake is the precinct's star detective, used to being indulged because he gets results. Then a new, strict, by-the-book captain arrives who is unimpressed by his antics and orders him to wear a tie and respect the badge.",
+          "pattern_label": "a gifted kid-at-heart learning to grow up",
+          "pattern_text": "A talented person has coasted on charm and results, using jokes to dodge every feeling and every rule. When a demanding authority figure refuses to be charmed, they have to decide whether to keep rebelling or let someone actually shape them. Underneath is an old wound from a parent who never showed up, and the question of whether they can become the reliable adult they never had.",
+          "hook": "On the new captain's first day, Jake gets told the only case he's never solved is how to grow up. He's funny, beloved, broke, and sure he doesn't need anyone's approval, least of all this stone-faced new boss.",
+          "why_relatable": "What happens when being good at your job has let you skip being a grown-up everywhere else? Can you accept guidance from someone you're determined to resent? And when the father you had never showed up, how do you learn what a good one looks like?",
+          "watch_for": [
+            "When does Jake use a joke to escape a feeling, and when does he stay in the moment?",
+            "What changes in how he talks to the captain from the first episode to the end of each season?",
+            "How does he react when someone tells him they are proud of him?"
+          ],
+          "start_at": "S1E1",
+          "span": "S1-S8",
+          "situations": [
+            {
+              "id": "coming_of_age",
+              "weight": 0.9
+            },
+            {
+              "id": "mentor_and_protege",
+              "weight": 0.8
+            },
+            {
+              "id": "difficult_parent",
+              "weight": 0.6
+            },
+            {
+              "id": "standing_up_to_authority",
+              "weight": 0.4
+            }
+          ],
+          "conflicts": [
+            "independence_vs_connection",
+            "past_vs_future"
+          ],
+          "emotions": {
+            "start": [
+              "confidence",
+              "restlessness"
+            ],
+            "middle": [
+              "self_doubt",
+              "rejection",
+              "determination"
+            ],
+            "end": [
+              "self_respect",
+              "love",
+              "peace"
+            ]
+          },
+          "ending_tone": "hopeful",
+          "intensity": "light",
+          "warnings": [],
+          "example_user_messages": [
+            "I'm really good at my job but everyone says I act like a teenager and honestly they're not wrong.",
+            "My new boss doesn't laugh at any of my jokes and I can't tell if I hate him or just want him to like me.",
+            "My dad bailed when I was a kid and now I'm scared I don't know how to be a responsible adult.",
+            "I deflect everything with humor and I don't know how to just say how I feel."
+          ],
+          "spoiler": {
+            "summary": "Jake clashes with Holt at first but Holt becomes the father figure he never had, and Jake slowly matures under his guidance. He goes undercover in the mob for the FBI, is forced into witness protection in Florida with Holt, and is framed alongside Rosa and sent to prison before being freed. His absent father Roger keeps resurfacing and disappointing him, including the discovery that Roger has another family; Jake learns he has a half-sister. Terrified of repeating his father's failures, he becomes a devoted dad when his son Mac is born, and in the series finale he retires from the NYPD to be a stay-at-home father so Amy can pursue her career, with Holt telling him he finally solved the case of growing up.",
+            "key_events": [
+              "Holt becomes Jake's surrogate father ('Captain Dad')",
+              "Goes undercover with the mob at the end of Season 1",
+              "Witness protection in Florida with Holt",
+              "Framed with Rosa and sent to prison, then exonerated",
+              "Discovers his father Roger has another family and a half-sister",
+              "Marries Amy and becomes a father to Mac",
+              "Retires from the force to be a stay-at-home dad in the finale"
+            ],
+            "got_right": "He never lost his loyalty or his joy, and he learned to let people in, take responsibility, and choose his family over his ego.",
+            "got_wrong": "For years he used jokes and recklessness to avoid feelings, dodged accountability, and kept seeking approval from a father who couldn't give it."
+          }
+        },
+        {
+          "id": "arc:brooklyn_99/jake_peralta/falling_for_his_rival",
+          "title": "Falling for the rival at the next desk",
+          "literal_situation": "Jake and fellow detective Amy Santiago sit at adjacent desks and compete constantly. In the first episode they bet on who can make the most arrests that year, with humiliating stakes for the loser.",
+          "pattern_label": "a competitive friendship slowly turning into love",
+          "pattern_text": "Two people who are total opposites spend every day trying to outdo each other, and the teasing slowly turns into respect and something deeper. One of them has never taken a relationship seriously and has to learn to be honest about what he wants and to show up consistently. It's about daring to be vulnerable with someone who already knows all your flaws.",
+          "hook": "Jake has a bet running with Amy, the rule-loving detective next to him, and he is absolutely determined to win it. He'd never admit she's anything more than a rival.",
+          "why_relatable": "What do you do when the person who drives you craziest is the one you most want to impress? Can a commitment-shy joker become someone a partner can rely on? What does it cost to admit feelings to a coworker?",
+          "watch_for": [
+            "What does Jake do when he suspects the feelings might be real?",
+            "How do the two handle it when their competitiveness gets in the way of kindness?",
+            "What does he have to give up to be a good partner?"
+          ],
+          "start_at": "S1E1",
+          "span": "S1-S8",
+          "situations": [
+            {
+              "id": "falling_for_someone_unexpected",
+              "weight": 0.9
+            },
+            {
+              "id": "coming_of_age",
+              "weight": 0.4
+            },
+            {
+              "id": "becoming_a_parent",
+              "weight": 0.3
+            }
+          ],
+          "conflicts": [
+            "independence_vs_connection",
+            "career_vs_relationships"
+          ],
+          "emotions": {
+            "start": [
+              "confidence",
+              "curiosity"
+            ],
+            "middle": [
+              "longing",
+              "anxiety",
+              "hope"
+            ],
+            "end": [
+              "love",
+              "joy",
+              "belonging"
+            ]
+          },
+          "ending_tone": "hopeful",
+          "intensity": "light",
+          "warnings": [],
+          "example_user_messages": [
+            "I think I'm falling for my coworker who I've been competing with for years.",
+            "I've never been good at serious relationships and now I finally met someone worth it and I'm terrified I'll mess it up.",
+            "We tease each other constantly and I can't tell if it's flirting or if she actually can't stand me.",
+            "I'm scared I'll be a bad parent because I never had a good example."
+          ],
+          "spoiler": {
+            "summary": "Jake develops feelings for Amy during Season 1, confesses before going undercover, and they kiss in the Season 2 finale. They start dating in Season 3, move in together, and Jake proposes during the Halloween Heist in Season 5. They marry at the end of Season 5 after a chaotic wedding day, and in Season 7 they have a son, Mac. Jake ultimately becomes a stay-at-home dad so Amy can take a major new role.",
+            "key_events": [
+              "Confesses feelings to Amy before going undercover",
+              "First kiss in the Season 2 finale",
+              "They start dating in Season 3",
+              "Proposes during the Season 5 Halloween Heist",
+              "Wedding at the end of Season 5",
+              "Son Mac born in the Season 7 finale"
+            ],
+            "got_right": "He learned to be emotionally honest, supported Amy's ambition, and made sacrifices for their family.",
+            "got_wrong": "Early on he hid behind teasing and avoided saying what he felt, and sometimes let the competition win over kindness."
+          }
+        }
+      ]
+    },
+    {
+      "id": "char:brooklyn_99/raymond_holt",
+      "name": "Raymond Holt",
+      "role": "The stoic, rule-bound new captain of the 99th Precinct, a Black, openly gay officer who has fought decades of prejudice to finally get a command of his own.",
+      "relations": [
+        {
+          "target": "char:brooklyn_99/jake_peralta",
+          "relation": "protege"
+        },
+        {
+          "target": "char:brooklyn_99/amy_santiago",
+          "relation": "protege"
+        },
+        {
+          "target": "char:brooklyn_99/rosa_diaz",
+          "relation": "colleague"
+        },
+        {
+          "target": "char:brooklyn_99/terry_jeffords",
+          "relation": "colleague"
+        },
+        {
+          "target": "char:brooklyn_99/charles_boyle",
+          "relation": "colleague"
+        },
+        {
+          "target": "char:brooklyn_99/gina_linetti",
+          "relation": "colleague"
+        }
+      ],
+      "arcs": [
+        {
+          "id": "arc:brooklyn_99/raymond_holt/earning_the_command",
+          "title": "Finally in charge after years of being held back",
+          "literal_situation": "After decades of discrimination and eight unhappy years stuck in public affairs, Holt is finally given his own precinct. He sees it as his chance to prove himself, and he arrives determined to turn a loose, joking squad into a professional one.",
+          "pattern_label": "an outsider finally given the chance to lead",
+          "pattern_text": "After years of being overlooked and underestimated because of who they are, a person finally gets the leadership role they fought for. They feel they cannot afford a single mistake, so they lead with rigid rules and total self-control. The story asks whether they can build a team that respects them without becoming as closed-off as the system that held them back, and how far ambition should go.",
+          "hook": "It's Holt's first day with a command of his own, and he means to make it count. His new squad is talented but chaotic, and his star detective thinks rules are optional.",
+          "why_relatable": "When you've had to be twice as good to get half as far, can you ever relax? Is strictness a sign of leadership or of fear? How do you lead people who are nothing like you, and what are you willing to risk for the next step up?",
+          "watch_for": [
+            "What does Holt protect most fiercely when his authority is challenged?",
+            "How does he respond when a subordinate does something reckless but right?",
+            "Notice the rare moments his composure cracks. What causes them?"
+          ],
+          "start_at": "S1E1",
+          "span": "S1-S8",
+          "situations": [
+            {
+              "id": "becoming_a_manager",
+              "weight": 0.9
+            },
+            {
+              "id": "mentor_and_protege",
+              "weight": 0.7
+            },
+            {
+              "id": "standing_up_to_authority",
+              "weight": 0.5
+            },
+            {
+              "id": "identity_and_self_acceptance",
+              "weight": 0.4
+            }
+          ],
+          "conflicts": [
+            "loyalty_vs_ambition",
+            "control_vs_trust"
+          ],
+          "emotions": {
+            "start": [
+              "determination",
+              "pride"
+            ],
+            "middle": [
+              "anger",
+              "self_doubt",
+              "belonging"
+            ],
+            "end": [
+              "self_respect",
+              "belonging",
+              "pride"
+            ]
+          },
+          "ending_tone": "hopeful",
+          "intensity": "light",
+          "warnings": [],
+          "example_user_messages": [
+            "I finally got the promotion I've been fighting for for years and I feel like I can't make a single mistake.",
+            "I've always had to work twice as hard as everyone else to be taken seriously, and now I'm the boss and I don't know how to loosen up.",
+            "My team is talented but chaotic and I don't know how to lead them without being the strict one everyone resents.",
+            "I have a rival at work who has blocked me at every turn and it's eating me up."
+          ],
+          "spoiler": {
+            "summary": "Holt earns his squad's deep loyalty while waging a years-long feud with his nemesis Madeline Wuntch. At the end of Season 2 he is forced into a public relations post, but returns to the 99 in Season 3. He goes into witness protection with Jake after a mob boss threatens them, is later demoted to the night shift, and makes a secret deal with a gangster to free Jake and Rosa from prison. He loses his bid to become Police Commissioner, is temporarily demoted to patrolman under Wuntch, and is reinstated after her death. At the end of the series he becomes Deputy Commissioner of Police Reform, running the program he built with Amy.",
+            "key_events": [
+              "Forced into a PR role at the end of Season 2, returns in Season 3",
+              "Witness protection in Florida with Jake",
+              "Secret deal with gangster Seamus Murphy to free Jake and Rosa",
+              "Loses the Police Commissioner bid",
+              "Temporarily demoted to patrolman in Season 7",
+              "Wuntch dies and he is reinstated as captain",
+              "Appointed Deputy Commissioner of Police Reform in the finale"
+            ],
+            "got_right": "He held onto his integrity against prejudice, protected and developed his people, and let his squad become his family.",
+            "got_wrong": "His ambition and pride sometimes pushed him into petty feuds and risky compromises, and he could be too rigid to see what his people needed."
+          }
+        },
+        {
+          "id": "arc:brooklyn_99/raymond_holt/letting_feelings_show",
+          "title": "The man who never shows a feeling",
+          "literal_situation": "Holt speaks without contractions, rarely changes expression, and keeps his emotions locked down. His squad jokes that he's a robot, and he has no interest in becoming friends with his subordinates.",
+          "pattern_label": "a reserved person learning to let people in",
+          "pattern_text": "A person has survived by keeping every emotion under tight control, and it has made them respected but distant. When a group of messy, warm people start treating them as family, they have to learn to show affection, admit hurt and ask for help. It's about discovering that vulnerability doesn't cancel strength, even late in life, and even with the person you love most.",
+          "hook": "Holt keeps work and feelings in strictly separate boxes. He has a devoted husband and a beloved dog at home, but at the office nobody can read him.",
+          "why_relatable": "What does it cost to keep your guard up for decades? Can you care about people deeply if you never let them see it? How do you open up when composure has been your armour?",
+          "watch_for": [
+            "How does Holt show love when he can't say it directly?",
+            "Which member of the squad breaks through first, and how?",
+            "What does he do when someone he's responsible for is in danger?"
+          ],
+          "start_at": "S1E1",
+          "span": "S1-S8",
+          "situations": [
+            {
+              "id": "finding_your_people",
+              "weight": 0.8
+            },
+            {
+              "id": "identity_and_self_acceptance",
+              "weight": 0.5
+            },
+            {
+              "id": "mentor_and_protege",
+              "weight": 0.5
+            }
+          ],
+          "conflicts": [
+            "independence_vs_connection",
+            "control_vs_trust"
+          ],
+          "emotions": {
+            "start": [
+              "numbness",
+              "pride"
+            ],
+            "middle": [
+              "loneliness",
+              "grief",
+              "hope"
+            ],
+            "end": [
+              "belonging",
+              "love",
+              "joy"
+            ]
+          },
+          "ending_tone": "hopeful",
+          "intensity": "light",
+          "warnings": [],
+          "example_user_messages": [
+            "People at work think I'm cold but I actually care about them a lot, I just can't show it.",
+            "I've kept my emotions locked away my whole life and now my partner says it's pushing him away.",
+            "I don't know how to tell the people I mentor that I'm proud of them.",
+            "I'm older and set in my ways and I don't know how to let new people in."
+          ],
+          "spoiler": {
+            "summary": "Over eight seasons Holt goes from icy authority to the squad's beloved father figure, playing along in the Halloween Heist, calling Jake and Amy family, and throwing competitions to comfort Rosa. He admits a past gambling addiction that hurt Kevin. In Season 8 it emerges that he and Kevin separated during 2020 because his emotional distance and workaholism left Kevin lonely; he works to change, they reconcile, and they renew their vows.",
+            "key_events": [
+              "Becomes 'Captain Dad' to Jake and Amy",
+              "Past gambling addiction resurfaces",
+              "Separation from Kevin revealed in Season 8",
+              "Reconciles with Kevin and they renew their vows"
+            ],
+            "got_right": "He learned to show love in his own way and to put his marriage and his people ahead of work.",
+            "got_wrong": "His emotional reserve and devotion to work nearly cost him his marriage."
+          }
+        }
+      ]
+    },
+    {
+      "id": "char:brooklyn_99/amy_santiago",
+      "name": "Amy Santiago",
+      "role": "A hyper-organised, rule-loving detective at the 99th Precinct who dreams of becoming the youngest captain in the NYPD and desperately wants her new captain's approval.",
+      "relations": [
+        {
+          "target": "char:brooklyn_99/jake_peralta",
+          "relation": "partner"
+        },
+        {
+          "target": "char:brooklyn_99/raymond_holt",
+          "relation": "mentor"
+        },
+        {
+          "target": "char:brooklyn_99/rosa_diaz",
+          "relation": "friend"
+        },
+        {
+          "target": "char:brooklyn_99/terry_jeffords",
+          "relation": "boss"
+        },
+        {
+          "target": "char:brooklyn_99/charles_boyle",
+          "relation": "colleague"
+        },
+        {
+          "target": "char:brooklyn_99/gina_linetti",
+          "relation": "friend"
+        }
+      ],
+      "arcs": [
+        {
+          "id": "arc:brooklyn_99/amy_santiago/chasing_approval_and_the_top_job",
+          "title": "The overachiever who needs her mentor's approval",
+          "literal_situation": "Amy is a sharp, ambitious detective who loves binders, rules and plans. The only girl among seven brothers and the daughter of a cop, she's desperate to impress the new captain, and keeps embarrassing herself trying.",
+          "pattern_label": "a perfectionist chasing approval to feel worthy",
+          "pattern_text": "A driven, anxious overachiever measures their worth by grades, rankings and a mentor's praise. Growing up competing with siblings for attention, they've never felt good enough, and every mistake feels catastrophic. The story follows whether they can build a career on their own terms, trust their own judgement, and balance ambition with a life outside work.",
+          "hook": "Amy has a five-year plan, a laminated schedule and one burning goal: to impress her new captain. So far he mostly finds her attempts awkward.",
+          "why_relatable": "What happens when your self-worth depends on someone else's approval? How do you handle anxiety when life won't follow the plan? Can you be ambitious and still be kind to yourself?",
+          "watch_for": [
+            "How does Amy handle it when her mentor criticises her?",
+            "What does she do when a plan falls apart?",
+            "When does she stand up for herself instead of seeking permission?"
+          ],
+          "start_at": "S1E1",
+          "span": "S1-S8",
+          "situations": [
+            {
+              "id": "mentor_and_protege",
+              "weight": 0.8
+            },
+            {
+              "id": "confidence_struggle",
+              "weight": 0.6
+            },
+            {
+              "id": "family_expectations",
+              "weight": 0.5
+            },
+            {
+              "id": "becoming_a_manager",
+              "weight": 0.4
+            }
+          ],
+          "conflicts": [
+            "perfectionism_vs_good_enough",
+            "career_vs_relationships"
+          ],
+          "emotions": {
+            "start": [
+              "anxiety",
+              "determination"
+            ],
+            "middle": [
+              "self_doubt",
+              "overwhelm",
+              "pride"
+            ],
+            "end": [
+              "confidence",
+              "self_respect",
+              "pride"
+            ]
+          },
+          "ending_tone": "hopeful",
+          "intensity": "light",
+          "warnings": [
+            "sexual_violence"
+          ],
+          "example_user_messages": [
+            "I need my boss to tell me I'm doing well or I spiral.",
+            "I grew up with a bunch of siblings and always had to compete to be noticed, and I still can't stop.",
+            "I plan everything and when something goes off script I have a total meltdown.",
+            "I want to get to the top of my field but I'm scared of what it will cost me.",
+            "How do you balance having a baby with a career you've been building for years?"
+          ],
+          "spoiler": {
+            "summary": "Holt formally accepts Amy as his protégé and she grows from nervous approval-seeker into a confident leader. She passes the sergeant's exam, becomes the first female sergeant in her district, and commands the precinct's uniformed officers. In Season 5 she reveals that her first captain sexually harassed her and that she transferred rather than report it. She struggles to balance motherhood and her career after having Mac, and at the end of the series she is promoted to Chief, running the police reform program she built with Holt while Jake stays home with their son.",
+            "key_events": [
+              "Holt officially becomes her mentor",
+              "Passes the sergeant's exam and becomes a sergeant",
+              "Reveals past sexual harassment by her former captain",
+              "Balances new motherhood with her career",
+              "Promoted to Chief to lead police reform in the finale"
+            ],
+            "got_right": "She turned her drive into real leadership, advocated for others, and learned to trust her own judgement.",
+            "got_wrong": "She often tied her worth to others' approval, let anxiety run her, and held herself and others to impossible standards."
+          }
+        }
+      ]
+    },
+    {
+      "id": "char:brooklyn_99/rosa_diaz",
+      "name": "Rosa Diaz",
+      "role": "A tough, intimidating and fiercely private detective at the 99th Precinct who reveals almost nothing about her personal life.",
+      "relations": [
+        {
+          "target": "char:brooklyn_99/jake_peralta",
+          "relation": "friend"
+        },
+        {
+          "target": "char:brooklyn_99/raymond_holt",
+          "relation": "boss"
+        },
+        {
+          "target": "char:brooklyn_99/amy_santiago",
+          "relation": "friend"
+        },
+        {
+          "target": "char:brooklyn_99/terry_jeffords",
+          "relation": "boss"
+        },
+        {
+          "target": "char:brooklyn_99/charles_boyle",
+          "relation": "friend"
+        },
+        {
+          "target": "char:brooklyn_99/gina_linetti",
+          "relation": "friend"
+        }
+      ],
+      "arcs": [
+        {
+          "id": "arc:brooklyn_99/rosa_diaz/walls_up",
+          "title": "The toughest person in the room",
+          "literal_situation": "Rosa is the precinct's scariest detective: blunt, secretive and allergic to feelings. None of her coworkers have seen her apartment or know anything about her family or love life, and she likes it that way.",
+          "pattern_label": "a guarded person slowly letting others in",
+          "pattern_text": "Someone who learned early that they had to handle everything alone keeps the world at arm's length with toughness and secrecy. Friends who keep showing up test whether they can risk being known. It's about the difference between strength and armour, and learning that vulnerability doesn't mean weakness.",
+          "hook": "Rosa won't tell anyone where she lives, and she wants to keep it that way. A coworker has a crush on her, and her squad is a little afraid of her.",
+          "why_relatable": "Why is it so hard to let people see the soft parts of you? What if the toughness that protected you is now keeping you lonely? Can you accept help without feeling weak?",
+          "watch_for": [
+            "Which friend does Rosa trust first, and why?",
+            "How does she react when someone tries to comfort her?",
+            "What small signs show she cares when she won't say it?"
+          ],
+          "start_at": "S1E1",
+          "span": "S1-S8",
+          "situations": [
+            {
+              "id": "finding_your_people",
+              "weight": 0.8
+            },
+            {
+              "id": "loneliness",
+              "weight": 0.5
+            },
+            {
+              "id": "breakup",
+              "weight": 0.4
+            },
+            {
+              "id": "career_change",
+              "weight": 0.3
+            }
+          ],
+          "conflicts": [
+            "independence_vs_connection",
+            "belonging_vs_integrity"
+          ],
+          "emotions": {
+            "start": [
+              "anger",
+              "loneliness"
+            ],
+            "middle": [
+              "grief",
+              "fear",
+              "belonging"
+            ],
+            "end": [
+              "belonging",
+              "self_respect",
+              "peace"
+            ]
+          },
+          "ending_tone": "hopeful",
+          "intensity": "moderate",
+          "warnings": [],
+          "example_user_messages": [
+            "Everyone thinks I'm cold but I just don't know how to let people in.",
+            "I don't tell anyone anything about my private life and it's starting to feel lonely.",
+            "I always handle everything on my own because nobody was there for me growing up.",
+            "I cried in front of a coworker for the first time and I'm mortified."
+          ],
+          "spoiler": {
+            "summary": "Rosa slowly opens up to her friends while going through several relationships: she breaks up with Marcus, gets engaged to the unstable Adrian Pimento, who later calls it off, and later dates Jocelyn before breaking up with her. She is framed along with Jake and sent to prison before being exonerated. She comes out as bisexual and fights for her parents' acceptance. In Season 8, disillusioned with policing after the 2020 protests, she quits the force and becomes a private investigator helping victims of police brutality, while staying close to the squad.",
+            "key_events": [
+              "Engaged to Adrian Pimento, who calls it off",
+              "Framed with Jake and sent to prison, then exonerated",
+              "Comes out as bisexual",
+              "Breaks up with Jocelyn",
+              "Quits the NYPD to become a private investigator in Season 8"
+            ],
+            "got_right": "She kept her integrity, protected her friends fiercely, and learned to let the squad see her vulnerable side.",
+            "got_wrong": "Her secrecy and anger pushed people away and made her carry pain alone for too long."
+          }
+        },
+        {
+          "id": "arc:brooklyn_99/rosa_diaz/telling_her_family_who_she_is",
+          "title": "Telling the people closest to her who she really is",
+          "literal_situation": "Later in the series, Rosa, the most private person in the squad, decides she's tired of hiding an important part of who she is. Telling her coworkers is hard; telling her traditional, religious parents is much harder.",
+          "pattern_label": "coming out to a family that may not understand",
+          "pattern_text": "A deeply private person decides to come out as bisexual, first to a trusted friend, then to their community, then to traditional parents who have had trouble accepting them before. They have to face the fear of rejection by the people whose approval matters most, and decide what they need from family and what they'll build without it.",
+          "hook": "Later in the series, Rosa is carrying something she has never said out loud at work. Keeping everything secret has always felt safer, but it is starting to feel like hiding.",
+          "why_relatable": "How do you tell the people who raised you something they may not want to hear? What do you do when one parent can meet you halfway and another can't? Can you accept yourself fully while waiting for others to catch up?",
+          "watch_for": [
+            "Who does Rosa choose to tell first, and why that person?",
+            "How do her friends try to support her, and which attempts help?",
+            "What does she need from her parents, and what does she decide she can live without?"
+          ],
+          "start_at": "S5E9",
+          "span": "S5-S6",
+          "situations": [
+            {
+              "id": "identity_and_self_acceptance",
+              "weight": 1.0
+            },
+            {
+              "id": "family_expectations",
+              "weight": 0.8
+            },
+            {
+              "id": "difficult_parent",
+              "weight": 0.5
+            }
+          ],
+          "conflicts": [
+            "self_vs_family_expectations",
+            "belonging_vs_integrity"
+          ],
+          "emotions": {
+            "start": [
+              "fear",
+              "anxiety"
+            ],
+            "middle": [
+              "rejection",
+              "grief",
+              "anger"
+            ],
+            "end": [
+              "acceptance",
+              "self_respect",
+              "hope"
+            ]
+          },
+          "ending_tone": "hopeful",
+          "intensity": "moderate",
+          "warnings": [],
+          "example_user_messages": [
+            "I'm bisexual and I've never told anyone at work because I'm such a private person.",
+            "I came out to my parents and my dad is trying but my mom won't even talk about it.",
+            "My family is really religious and traditional and I'm terrified to tell them who I date.",
+            "I want my parents to accept me but I'm tired of waiting for them to change."
+          ],
+          "spoiler": {
+            "summary": "Rosa comes out as bisexual to Charles first, then to the whole squad, and then to her parents. At a tense game night, her father starts to come around, while her mother struggles far longer to accept it. Rosa learns she can rely on the squad as family while giving her parents room to catch up.",
+            "key_events": [
+              "Comes out as bisexual to Charles",
+              "Comes out to the squad and her parents at game night",
+              "Her father starts to accept her while her mother struggles"
+            ],
+            "got_right": "She chose honesty about herself on her own timeline and let her friends support her.",
+            "got_wrong": "At first she tried to push through alone, and her anger at her parents sometimes made reconnecting harder."
+          }
+        }
+      ]
+    },
+    {
+      "id": "char:brooklyn_99/terry_jeffords",
+      "name": "Terry Jeffords",
+      "role": "The huge, warm-hearted sergeant who supervises the detective squad, a devoted new father of twin girls who has been stuck on desk duty since they were born.",
+      "relations": [
+        {
+          "target": "char:brooklyn_99/jake_peralta",
+          "relation": "colleague"
+        },
+        {
+          "target": "char:brooklyn_99/raymond_holt",
+          "relation": "boss"
+        },
+        {
+          "target": "char:brooklyn_99/amy_santiago",
+          "relation": "colleague"
+        },
+        {
+          "target": "char:brooklyn_99/rosa_diaz",
+          "relation": "colleague"
+        },
+        {
+          "target": "char:brooklyn_99/charles_boyle",
+          "relation": "colleague"
+        },
+        {
+          "target": "char:brooklyn_99/gina_linetti",
+          "relation": "colleague"
+        }
+      ],
+      "arcs": [
+        {
+          "id": "arc:brooklyn_99/terry_jeffords/afraid_to_get_hurt",
+          "title": "Too scared to get hurt now that he's a dad",
+          "literal_situation": "Terry is a former linebacker and looks invincible, but since his twin daughters were born he's been too afraid of getting hurt to go back into the field. He's on desk duty, and the new captain wants him back in action.",
+          "pattern_label": "new parenthood making a strong person afraid",
+          "pattern_text": "Becoming a parent suddenly makes a strong, capable person terrified of the risks they used to take in stride. They freeze up, retreat to safety, and feel ashamed that people who depend on them see it. The story asks how to honour that fear for your family without letting it shrink your life.",
+          "hook": "Terry can bench-press a colleague, but he hasn't gone out on a case since his twins arrived. The new captain has noticed.",
+          "why_relatable": "What happens when loving someone makes you afraid of everything? How do you admit fear when everyone assumes you're the strong one? Can you protect your family and still be brave?",
+          "watch_for": [
+            "What pulls Terry toward the field, and what keeps pulling him back to the desk?",
+            "How do his coworkers respond when they see him struggling?",
+            "Notice how his love for his daughters shapes his choices on the job."
+          ],
+          "start_at": "S1E1",
+          "span": "S1",
+          "situations": [
+            {
+              "id": "becoming_a_parent",
+              "weight": 0.9
+            },
+            {
+              "id": "confidence_struggle",
+              "weight": 0.7
+            },
+            {
+              "id": "caring_for_family",
+              "weight": 0.5
+            }
+          ],
+          "conflicts": [
+            "safety_vs_growth",
+            "duty_vs_desire"
+          ],
+          "emotions": {
+            "start": [
+              "fear",
+              "shame"
+            ],
+            "middle": [
+              "anxiety",
+              "determination"
+            ],
+            "end": [
+              "confidence",
+              "pride",
+              "love"
+            ]
+          },
+          "ending_tone": "hopeful",
+          "intensity": "light",
+          "warnings": [],
+          "example_user_messages": [
+            "Ever since my baby was born I'm scared of doing anything even slightly risky.",
+            "Everyone thinks I'm the tough one but I'm quietly terrified.",
+            "I used to be fearless at work and now I freeze because I keep thinking about my kids.",
+            "I'm ashamed that I asked for the safe assignment."
+          ],
+          "spoiler": {
+            "summary": "With support from Holt and the squad, Terry gradually returns to the field, and he later charges armed criminals to protect Holt and defies orders to save his friends. He turns his protectiveness into courage. He goes on to have a third daughter, Ava, is later promoted to lieutenant, and in the series finale becomes captain of the 99th Precinct.",
+            "key_events": [
+              "Returns to field work in Season 1",
+              "Charges an armed criminal to save Holt",
+              "Third daughter Ava born in Season 3",
+              "Promoted to lieutenant in Season 6",
+              "Becomes captain of the 99 in the finale"
+            ],
+            "got_right": "He was honest about his fear and turned his love for his family into protective courage.",
+            "got_wrong": "At first he hid behind safety and let fear make his decisions."
+          }
+        },
+        {
+          "id": "arc:brooklyn_99/terry_jeffords/speaking_up_at_a_cost",
+          "title": "Stopped on his own street",
+          "literal_situation": "Later in the series, while off duty searching for his daughter's lost blanket in his own neighbourhood, Terry is stopped and treated as a suspect by a white officer. He wants to file a complaint, but he is up for a promotion and is warned it could hurt his career.",
+          "pattern_label": "speaking up against injustice when it may cost you",
+          "pattern_text": "A person who has done everything right is profiled and humiliated because of their race. Reporting it could damage the future they've worked for, and even allies urge caution. They must decide between protecting their career and standing up for what's right, while figuring out how to explain it to their young children.",
+          "hook": "Later in the series, Terry is a respected sergeant with a lieutenant's post in reach. One ordinary night in his own neighbourhood changes how he sees the job.",
+          "why_relatable": "Do you speak up about unfair treatment when it could cost you your career? What do you tell your kids about a world that may judge them unfairly? Can someone you admire advise caution and still be on your side?",
+          "watch_for": [
+            "How do Terry and his captain differ in how they think change happens?",
+            "What does Terry decide to tell his daughters?",
+            "Notice what the people around him risk to support him."
+          ],
+          "start_at": "S4E16",
+          "span": "S4",
+          "situations": [
+            {
+              "id": "standing_up_to_authority",
+              "weight": 0.9
+            },
+            {
+              "id": "identity_and_self_acceptance",
+              "weight": 0.5
+            },
+            {
+              "id": "caring_for_family",
+              "weight": 0.4
+            }
+          ],
+          "conflicts": [
+            "power_vs_morality",
+            "loyalty_vs_ambition"
+          ],
+          "emotions": {
+            "start": [
+              "anger",
+              "shame"
+            ],
+            "middle": [
+              "fear",
+              "resentment",
+              "determination"
+            ],
+            "end": [
+              "self_respect",
+              "hope"
+            ]
+          },
+          "ending_tone": "bittersweet",
+          "intensity": "moderate",
+          "warnings": [],
+          "example_user_messages": [
+            "I was treated like a criminal in my own neighbourhood because of my race and I don't know if I should report it.",
+            "If I complain about this, it could ruin my shot at a promotion.",
+            "My mentor told me to stay quiet and play the long game and I'm furious.",
+            "How do I explain racism to my kids without scaring them?"
+          ],
+          "spoiler": {
+            "summary": "Terry is racially profiled by Officer Maldack while looking for his daughter's blankey. Holt initially advises him not to file a complaint because it could hurt his promotion, and they argue about how to fight racism from inside the system. Holt ultimately supports him, and they file the complaint together. Terry explains to his daughters what happened.",
+            "key_events": [
+              "Racially profiled by Officer Maldack while off duty",
+              "Holt initially advises against filing a complaint",
+              "Holt changes his mind and they file it together"
+            ],
+            "got_right": "He refused to stay silent and still thought carefully about the consequences.",
+            "got_wrong": "Early in his anger he assumed his mentor didn't understand, when their disagreement was about strategy, not values."
+          }
+        }
+      ]
+    },
+    {
+      "id": "char:brooklyn_99/charles_boyle",
+      "name": "Charles Boyle",
+      "role": "A hardworking, eccentric, food-obsessed detective at the 99th Precinct, a divorcé with an unrequited crush on Rosa and an intense devotion to his best friend Jake.",
+      "relations": [
+        {
+          "target": "char:brooklyn_99/jake_peralta",
+          "relation": "friend"
+        },
+        {
+          "target": "char:brooklyn_99/rosa_diaz",
+          "relation": "friend"
+        },
+        {
+          "target": "char:brooklyn_99/raymond_holt",
+          "relation": "boss"
+        },
+        {
+          "target": "char:brooklyn_99/amy_santiago",
+          "relation": "colleague"
+        },
+        {
+          "target": "char:brooklyn_99/terry_jeffords",
+          "relation": "boss"
+        },
+        {
+          "target": "char:brooklyn_99/gina_linetti",
+          "relation": "sibling"
+        },
+        {
+          "target": "char:brooklyn_99/gina_linetti",
+          "relation": "ex_partner"
+        }
+      ],
+      "arcs": [
+        {
+          "id": "arc:brooklyn_99/charles_boyle/loving_too_hard",
+          "title": "The man who loves too much, too fast",
+          "literal_situation": "Charles is a sweet, loyal detective recovering from a divorce, and he is hopelessly in love with Rosa, who has no interest. He goes 'Full Boyle' whenever he likes someone, getting too intense too quickly, and he clings to Jake as his best friend.",
+          "pattern_label": "an over-eager heart learning healthy love",
+          "pattern_text": "After a painful divorce, a deeply kind but awkward person pours everything into crushes and friendships, getting intense so fast that it scares people off. They fear being alone and being replaced. The story follows whether they can learn to love without clinging, and find someone who welcomes their devotion.",
+          "hook": "Charles is divorced, a little lonely, and determined to win over a coworker who clearly isn't interested. His best friend is the one person he'd do anything for.",
+          "why_relatable": "What happens when your best quality, loving intensely, is also what pushes people away? How do you move on from an unrequited crush? Can a friendship be close without one person depending on it too much?",
+          "watch_for": [
+            "What does Charles do when a crush clearly doesn't feel the same?",
+            "How does he react when his best friend spends time with someone else?",
+            "When does his intensity turn into genuine courage?"
+          ],
+          "start_at": "S1E1",
+          "span": "S1-S8",
+          "situations": [
+            {
+              "id": "unrequited_love",
+              "weight": 0.8
+            },
+            {
+              "id": "divorce",
+              "weight": 0.5
+            },
+            {
+              "id": "loneliness",
+              "weight": 0.5
+            },
+            {
+              "id": "falling_for_someone_unexpected",
+              "weight": 0.4
+            }
+          ],
+          "conflicts": [
+            "independence_vs_connection",
+            "holding_on_vs_letting_go"
+          ],
+          "emotions": {
+            "start": [
+              "longing",
+              "loneliness"
+            ],
+            "middle": [
+              "rejection",
+              "jealousy",
+              "hope"
+            ],
+            "end": [
+              "love",
+              "belonging",
+              "joy"
+            ]
+          },
+          "ending_tone": "hopeful",
+          "intensity": "light",
+          "warnings": [],
+          "example_user_messages": [
+            "I always come on way too strong when I like someone and they end up running away.",
+            "I've had a crush on my coworker forever and she's clearly not interested.",
+            "Since my divorce I feel like I'm desperate for someone to love me.",
+            "I get jealous when my best friend makes other friends and I know it's not healthy."
+          ],
+          "spoiler": {
+            "summary": "Charles takes a bullet for Rosa in Season 1, then moves on from his crush and gets engaged to Vivian, but the engagement ends when she wants to move to Canada. He has a secret fling with Gina, whose mother later marries his father, making them step-siblings. In Season 3 he falls for Genevieve, an art gallery owner he helps clear of suspicion, and they build a lasting relationship, adopting a son, Nikolaj. His friendship with Jake remains the steady centre of his life.",
+            "key_events": [
+              "Takes a bullet for Rosa in Season 1",
+              "Engaged to Vivian, which ends when she moves to Canada",
+              "Secret fling with Gina, whose mom marries his dad",
+              "Falls for Genevieve and builds a lasting relationship",
+              "Adopts Nikolaj with Genevieve"
+            ],
+            "got_right": "He stayed generous, loyal and brave, and learned to let love grow at a healthy pace.",
+            "got_wrong": "He often smothered crushes and friends and ignored clear signals that his feelings weren't returned."
+          }
+        },
+        {
+          "id": "arc:brooklyn_99/charles_boyle/becoming_a_father",
+          "title": "Longing to be a dad",
+          "literal_situation": "Later in the series, after a turning point that shifts what he wants most, Charles realises that more than anything he wants to be a father, even though for him that path won't be the conventional one.",
+          "pattern_label": "longing to be a parent through an unconventional path",
+          "pattern_text": "A person who has always poured their heart into others badly wants to be a parent, but can't have children biologically. They pursue adoption, face bureaucratic delays and the fear that the child won't bond with them, and have to learn that being a good parent means meeting the child as they are rather than as they imagined.",
+          "hook": "Later in the series, Charles's lifelong dream of fatherhood suddenly feels within reach, and he is almost too excited to handle it.",
+          "why_relatable": "What if you've always pictured being a parent and your path there is harder than most? How do you cope when a child doesn't instantly love you back? Can you let go of the parent you imagined being?",
+          "watch_for": [
+            "How does Charles cope with waiting and uncertainty?",
+            "What does he do when his parenting ideas clash with what the child actually needs?",
+            "Who helps him when he feels like he's failing?"
+          ],
+          "start_at": "S3",
+          "span": "S3-S8",
+          "situations": [
+            {
+              "id": "becoming_a_parent",
+              "weight": 1.0
+            },
+            {
+              "id": "caring_for_family",
+              "weight": 0.5
+            }
+          ],
+          "conflicts": [
+            "control_vs_trust",
+            "perfectionism_vs_good_enough"
+          ],
+          "emotions": {
+            "start": [
+              "longing",
+              "hope"
+            ],
+            "middle": [
+              "anxiety",
+              "inadequacy",
+              "rejection"
+            ],
+            "end": [
+              "love",
+              "joy",
+              "belonging"
+            ]
+          },
+          "ending_tone": "hopeful",
+          "intensity": "light",
+          "warnings": [],
+          "example_user_messages": [
+            "I can't have kids biologically and I've always wanted to be a dad.",
+            "We're adopting and the paperwork keeps stalling and I'm losing my mind.",
+            "My adopted son doesn't seem attached to me yet and I feel like a failure.",
+            "I had this perfect picture of being a parent and reality is nothing like it."
+          ],
+          "spoiler": {
+            "summary": "Charles and Genevieve adopt Nikolaj from Latvia, with Charles travelling there to finalise the adoption. Charles worries about being a good father, clashes over his intense parenting style, and faces Nikolaj's own needs and moments of distance, but grows into a devoted, loving dad.",
+            "key_events": [
+              "Adopts Nikolaj with Genevieve",
+              "Trip to Latvia to finalise the adoption",
+              "Struggles to connect with Nikolaj and grows as a father"
+            ],
+            "got_right": "He was endlessly devoted and willing to learn what his son actually needed.",
+            "got_wrong": "His intensity and fixed ideas about parenting sometimes overwhelmed his son."
+          }
+        }
+      ]
+    },
+    {
+      "id": "char:brooklyn_99/gina_linetti",
+      "name": "Gina Linetti",
+      "role": "The precinct's sardonic, supremely self-confident civilian administrator and Jake's childhood friend, who seems to spend more time on her phone than on her job.",
+      "relations": [
+        {
+          "target": "char:brooklyn_99/jake_peralta",
+          "relation": "friend"
+        },
+        {
+          "target": "char:brooklyn_99/raymond_holt",
+          "relation": "boss"
+        },
+        {
+          "target": "char:brooklyn_99/amy_santiago",
+          "relation": "colleague"
+        },
+        {
+          "target": "char:brooklyn_99/rosa_diaz",
+          "relation": "friend"
+        },
+        {
+          "target": "char:brooklyn_99/terry_jeffords",
+          "relation": "colleague"
+        },
+        {
+          "target": "char:brooklyn_99/charles_boyle",
+          "relation": "sibling"
+        },
+        {
+          "target": "char:brooklyn_99/charles_boyle",
+          "relation": "ex_partner"
+        }
+      ],
+      "arcs": [
+        {
+          "id": "arc:brooklyn_99/gina_linetti/meant_for_more",
+          "title": "Too big for the job she's in",
+          "literal_situation": "Gina is the precinct's administrator, a job Jake got her. She's brash, dramatic and apparently indifferent, dancing, predicting things and mocking everyone, but she's far sharper than she lets on, and the new captain notices.",
+          "pattern_label": "a sharp mind underestimated in the wrong job",
+          "pattern_text": "A clever, flamboyant person has settled into a job beneath their abilities, using sarcasm and bravado to seem like they don't care. When a mentor spots their potential, they have to decide whether to keep coasting or chase a bigger, riskier dream, even if it means leaving the people who've become family.",
+          "hook": "Gina treats her desk job like a stage for her own greatness, and nobody quite takes her seriously. The new captain, oddly, seems to see potential in her.",
+          "why_relatable": "What if everyone underestimates you because you pretend not to care? How do you know when you've outgrown the place that feels like home? Can you chase a big dream without abandoning your oldest friends?",
+          "watch_for": [
+            "When does Gina's 'I don't care' act slip, and what shows through?",
+            "How does she respond when someone recognises her talent?",
+            "What does she value more, her comfort or her ambitions?"
+          ],
+          "start_at": "S1E1",
+          "span": "S1-S6",
+          "situations": [
+            {
+              "id": "career_change",
+              "weight": 0.8
+            },
+            {
+              "id": "taking_a_big_risk",
+              "weight": 0.6
+            },
+            {
+              "id": "mentor_and_protege",
+              "weight": 0.4
+            },
+            {
+              "id": "becoming_a_parent",
+              "weight": 0.3
+            }
+          ],
+          "conflicts": [
+            "safety_vs_growth",
+            "fitting_in_vs_standing_out"
+          ],
+          "emotions": {
+            "start": [
+              "boredom",
+              "confidence"
+            ],
+            "middle": [
+              "restlessness",
+              "curiosity",
+              "self_doubt"
+            ],
+            "end": [
+              "freedom",
+              "confidence",
+              "hope"
+            ]
+          },
+          "ending_tone": "hopeful",
+          "intensity": "light",
+          "warnings": [],
+          "example_user_messages": [
+            "I'm way smarter than my job requires and I've gotten comfortable pretending I don't care.",
+            "Everyone at work thinks I'm just the funny one and nobody takes me seriously.",
+            "I want to quit and chase something much bigger but my friends are all here.",
+            "My boss thinks I have potential and honestly that scares me more than being ignored."
+          ],
+          "spoiler": {
+            "summary": "Holt makes Gina his personal assistant and she proves insightful and effective. She has a fling with Charles, and her mother marries his father. She follows Holt to his public relations post and returns with him. At the end of Season 3 she is hit by a bus while texting, and she later becomes a mother to her daughter, Enigma. It is revealed she was the real 'Tattler' who got Jake blamed in high school. Early in Season 6 she leaves the precinct to become a social-media influencer, returning later to help with a case and for the finale.",
+            "key_events": [
+              "Becomes Holt's personal assistant",
+              "Fling with Charles; their parents marry",
+              "Hit by a bus at the end of Season 3",
+              "Has a daughter, Enigma",
+              "Revealed as the real 'Tattler' from Jake's high school",
+              "Quits the 99 to become an internet influencer in Season 6"
+            ],
+            "got_right": "She believed in herself and took a big risk to build a life that fit her.",
+            "got_wrong": "Her self-absorption sometimes hurt friends, and she let Jake take the blame for her in high school."
+          }
+        }
+      ]
+    }
+  ]
+}

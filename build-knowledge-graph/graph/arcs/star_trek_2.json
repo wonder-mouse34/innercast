@@ -1,0 +1,774 @@
+{
+  "show": "star_trek",
+  "characters": [
+    {
+      "id": "char:star_trek/worf",
+      "name": "Worf",
+      "role": "A Klingon orphan raised by adoptive human parents, serving as the first Klingon officer in Starfleet aboard the Enterprise.",
+      "relations": [
+        {"target": "char:star_trek/jean_luc_picard", "relation": "boss"},
+        {"target": "char:star_trek/benjamin_sisko", "relation": "mentor"},
+        {"target": "char:star_trek/data", "relation": "friend"},
+        {"target": "char:star_trek/kira_nerys", "relation": "colleague"},
+        {"target": "char:star_trek/odo", "relation": "colleague"},
+        {"target": "char:star_trek/julian_bashir", "relation": "colleague"}
+      ],
+      "arcs": [
+        {
+          "id": "arc:star_trek/worf/torn_between_two_worlds",
+          "title": "Living up to a heritage you never grew up in",
+          "literal_situation": "The only Klingon aboard a Federation starship, raised by human foster parents, Worf holds to a strict, idealized version of Klingon honor, while the Klingons he meets treat him as an outsider softened by his human upbringing.",
+          "pattern_label": "idealizing a homeland that doesn't accept you",
+          "pattern_text": "A person raised far from their birth culture holds tightly to an idealized version of it, trying to prove they belong to people who see them as an outsider. When the real community turns out to be more flawed and political than the one they imagined, they must decide which values are actually theirs, and what they are willing to lose to keep them.",
+          "hook": "Orphaned as a small child and raised by loving human parents, Worf is fiercely loyal both to his adoptive home and to a warrior culture he knows mostly from stories, and neither side quite feels like his.",
+          "why_relatable": "How do you honor where you come from when you've never really lived there? What happens when the people you idealize don't live up to their own ideals? Can you be loyal to two families at once?",
+          "watch_for": [
+            "How does he react when other Klingons question whether he is 'really' one of them?",
+            "What does honor mean to him, compared with the Klingons he meets?",
+            "When his two loyalties pull in opposite directions, which does he choose, and why?"
+          ],
+          "start_at": "TNG S1E20",
+          "span": "TNG S1 - DS9 S7",
+          "situations": [
+            {"id": "identity_and_self_acceptance", "weight": 0.9},
+            {"id": "finding_your_people", "weight": 0.6},
+            {"id": "family_expectations", "weight": 0.6},
+            {"id": "standing_up_to_authority", "weight": 0.5}
+          ],
+          "conflicts": ["belonging_vs_integrity", "self_vs_family_expectations"],
+          "emotions": {"start": ["longing", "loneliness", "pride"], "middle": ["shame", "betrayal", "anger"], "end": ["self_respect", "acceptance"]},
+          "ending_tone": "hopeful",
+          "intensity": "moderate",
+          "warnings": ["war_and_violence", "death_of_loved_one", "betrayal", "self_harm_or_suicide"],
+          "example_user_messages": [
+            "I'm the kid of immigrants and I feel like I'm not enough of either culture.",
+            "I was adopted and I've tried so hard to connect with my birth culture, but when I finally met people from there they treated me like a fake.",
+            "I always idolized where my family came from, and now that I've seen it up close it's so much messier than I imagined.",
+            "I took the blame for something my dad didn't do because fighting it would have torn everyone apart. Now I don't know if that was noble or cowardly."
+          ],
+          "spoiler": {
+            "summary": "Worf's brother Kurn reveals that their late father Mogh has been falsely branded the traitor behind the Khitomer massacre. The real traitor's family, the House of Duras, is too powerful to expose without civil war, so Worf accepts discommendation (public dishonor) to protect the Empire. After Duras murders K'Ehleyr, Worf kills him, then helps Gowron win the Klingon civil war and gets his family's honor back. He finds Klingon prisoners living peacefully with Romulans and questions his own faith. When the returned Kahless turns out to be a clone, he still backs him as a symbolic emperor. On DS9 he refuses to support the Klingon invasion of Cardassia, and Gowron strips his house of everything. The ruined Kurn begs Worf to kill him; instead Worf has Kurn's memory wiped so he can start a new life. Joining Martok's house gives Worf a true Klingon family. Finally he sees Gowron sabotaging the war for political gain, kills him in combat, and hands the chancellorship to Martok, accepting that the Empire must change. He then becomes Federation ambassador to the Klingons.",
+            "key_events": [
+              "Father falsely accused of treason; Worf accepts discommendation to prevent civil war",
+              "Kills Duras after Duras murders K'Ehleyr",
+              "Resigns from Starfleet to fight in the Klingon civil war; family honor restored",
+              "Learns the returned Kahless is a clone but supports him as emperor",
+              "Refuses to back the invasion of Cardassia; Gowron strips the House of Mogh",
+              "Kurn asks to be killed; Worf has his memory wiped instead",
+              "Adopted into the House of Martok",
+              "Kills Gowron and gives the chancellorship to Martok; becomes ambassador"
+            ],
+            "got_right": "He keeps choosing principle over belonging, accepting dishonor to stop a war and refusing to join an unjust invasion. Eventually he sees that his ideals are worth more than any institution's approval.",
+            "got_wrong": "He clings to a romanticized rulebook and judges others and himself harshly. For years he defers to corrupt leaders because challenging them feels dishonorable."
+          }
+        },
+        {
+          "id": "arc:star_trek/worf/unprepared_father",
+          "title": "A father learning on the job",
+          "literal_situation": "An old flame, the half-Klingon envoy K'Ehleyr, returns and introduces Worf to a son he never knew he had. It happens just as Worf is carrying a private family burden he doesn't want to pass on to the boy.",
+          "pattern_label": "an unprepared parent imposing their own ideals",
+          "pattern_text": "A person suddenly becomes responsible for a child they didn't plan for, while carrying heavy burdens of their own. They try to raise the child in the traditions that shaped them, only to find the child is a different person with different dreams, and the harder they push, the further apart they grow.",
+          "hook": "Worf discovers he is a father at the worst possible moment: his family's standing is in question, his duties are demanding, and he has no idea how to talk to a young boy.",
+          "why_relatable": "How do you become a parent when you don't feel ready? Is wanting your child to follow in your footsteps love or control? What do you do when your child doesn't want the life you planned for them?",
+          "watch_for": [
+            "How does he talk to his son when the boy doesn't share his interests?",
+            "When does duty come first, and how does his son feel about that?",
+            "Does he ever ask his son what he actually wants?"
+          ],
+          "start_at": "TNG S4E7",
+          "span": "TNG S4 - DS9 S6",
+          "situations": [
+            {"id": "becoming_a_parent", "weight": 0.9},
+            {"id": "family_expectations", "weight": 0.6},
+            {"id": "grief_and_loss", "weight": 0.5},
+            {"id": "caring_for_family", "weight": 0.5}
+          ],
+          "conflicts": ["control_vs_trust", "career_vs_relationships"],
+          "emotions": {"start": ["fear", "inadequacy"], "middle": ["grief", "guilt", "anger"], "end": ["love", "acceptance"]},
+          "ending_tone": "bittersweet",
+          "intensity": "moderate",
+          "warnings": ["death_of_loved_one", "grief", "war_and_violence"],
+          "example_user_messages": [
+            "I just found out I have a kid and I have no idea how to be a dad.",
+            "My son doesn't care about any of the things that matter to me and every conversation turns into a fight.",
+            "I sent my kid to live with my parents because I thought it was best, and now he says I never wanted him.",
+            "I'm raising my child alone after his mom died and I feel like I'm failing at all of it."
+          ],
+          "spoiler": {
+            "summary": "Soon after introducing their son Alexander, K'Ehleyr is murdered by Duras. Worf makes the boy look at his dying mother, avenges her, and sends Alexander to live with his foster parents. When Alexander comes back, Worf is a strict, awkward single father to a son who lies, acts out, and does not want to be a warrior. A visitor turns out to be an adult Alexander from a possible future, and what he shows Worf leads him to stop forcing the warrior path on the boy. After the Enterprise-D is destroyed, Alexander goes back to his grandparents. Years later he enlists on Martok's ship, where he tells Worf he always felt like the son Worf wanted to get rid of. Worf admits he failed him as a father, the two begin to rebuild, and Alexander is welcomed into the House of Martok.",
+            "key_events": [
+              "K'Ehleyr introduces Alexander and is killed by Duras",
+              "Worf sends Alexander to his foster parents, then takes him back",
+              "Alexander rejects the warrior path; an adult Alexander from the future intervenes",
+              "Alexander enlists on the Rotarran and confronts Worf about feeling unwanted",
+              "Father and son reconcile; Alexander joins the House of Martok"
+            ],
+            "got_right": "He eventually owns his absence, stops trying to turn Alexander into a copy of himself, and accepts him as he is.",
+            "got_wrong": "He repeatedly puts duty ahead of his son, sends him away when things get hard, and confuses discipline and tradition with connection."
+          }
+        },
+        {
+          "id": "arc:star_trek/worf/letting_love_in",
+          "title": "Letting someone in",
+          "literal_situation": "Later in his career, reassigned to Deep Space 9, the stern, private Worf finds himself drawn to Jadzia Dax, a playful science officer who enjoys Klingon culture with an ease he never feels.",
+          "pattern_label": "a guarded person risking love and facing loss",
+          "pattern_text": "A serious, emotionally guarded person falls for someone warm and spontaneous who loosens them up. Learning to trust, compromise and enjoy life together is its own struggle. When loss comes, they must grieve without shutting everyone out, including the people who remind them of what they lost.",
+          "hook": "Newly transferred to a station where he feels out of place, Worf keeps everyone at arm's length until a confident, fun-loving colleague decides he is worth pursuing.",
+          "why_relatable": "Can a rigid, private person make room for someone who does things differently? How much should you change for a relationship? How do you handle jealousy and old insecurities with a partner who has a long past?",
+          "watch_for": [
+            "Where does his jealousy come from, and how does his partner respond to it?",
+            "When love and duty clash, which does he choose?",
+            "How does he treat the people around him when he is hurting?"
+          ],
+          "start_at": "DS9 S5E3",
+          "span": "DS9 S5 - S7",
+          "situations": [
+            {"id": "falling_for_someone_unexpected", "weight": 0.8},
+            {"id": "grief_and_loss", "weight": 0.8},
+            {"id": "moving_somewhere_new", "weight": 0.3}
+          ],
+          "conflicts": ["duty_vs_desire", "holding_on_vs_letting_go"],
+          "emotions": {"start": ["loneliness", "curiosity"], "middle": ["love", "jealousy", "joy"], "end": ["grief", "anger", "acceptance"]},
+          "ending_tone": "bittersweet",
+          "intensity": "heavy",
+          "warnings": ["death_of_main_character", "death_of_loved_one", "grief", "war_and_violence"],
+          "example_user_messages": [
+            "I'm a really private person and I just started dating someone who is my complete opposite. I don't know how to loosen up.",
+            "My partner has a lot of exes and I can't stop feeling jealous even though I know it's irrational.",
+            "My wife died and I've been angry at everyone, especially the friends who seem to be moving on.",
+            "I risked my job to protect the person I love and I'd do it again."
+          ],
+          "spoiler": {
+            "summary": "Worf and Jadzia become lovers while he is helping Quark win Grilka. A vacation on Risa exposes his jealousy and rigidity, but they work through it. The Dominion War separates them, then they marry despite opposition from Martok's wife Sirella. On an intelligence mission Worf abandons his objective to save a badly wounded Jadzia, knowing it may cost him any future command. While they are trying to conceive, Jadzia is killed by Dukat. Grieving, Worf becomes convinced she cannot enter Sto-vo-kor unless he wins a glorious battle in her name, and he takes on a dangerous mission with Martok and O'Brien to do it. He is cold and hostile toward Ezri, the new host who carries Jadzia's memories, and toward Bashir when Bashir falls for her. Only gradually does he make peace. His old friend Kor sacrifices himself in Worf's place, promising to tell Jadzia of Worf's love.",
+            "key_events": [
+              "Worf and Jadzia become a couple",
+              "Jealousy nearly derails their vacation on Risa",
+              "They marry despite Sirella's objections",
+              "Worf abandons a mission to save Jadzia's life",
+              "Jadzia is killed by Dukat",
+              "Worf undertakes a battle in her honor so she can reach Sto-vo-kor",
+              "Hostility toward Ezri Dax, then reconciliation",
+              "Kor sacrifices himself in Worf's place"
+            ],
+            "got_right": "He learns to bend, apologize, and put the person he loves above protocol. In the end he honors his grief without letting it destroy his friendships.",
+            "got_wrong": "His jealousy and need for everything to be done 'properly' strain the relationship, and in grief he lashes out at the people who remind him of his wife."
+          }
+        }
+      ]
+    },
+    {
+      "id": "char:star_trek/kira_nerys",
+      "name": "Kira Nerys",
+      "role": "A former resistance fighter from Bajor, a world just freed from occupation, now serving as Bajoran liaison officer on a space station run by a Federation she distrusts.",
+      "relations": [
+        {"target": "char:star_trek/benjamin_sisko", "relation": "boss"},
+        {"target": "char:star_trek/odo", "relation": "friend"},
+        {"target": "char:star_trek/julian_bashir", "relation": "colleague"},
+        {"target": "char:star_trek/worf", "relation": "colleague"}
+      ],
+      "arcs": [
+        {
+          "id": "arc:star_trek/kira_nerys/laying_down_the_fight",
+          "title": "Laying down the fight",
+          "literal_situation": "After years in the Bajoran resistance against the Cardassian occupation, Major Kira is posted to Deep Space 9 as her government's liaison. She has to work beside Starfleet officers she doesn't trust, on behalf of a provisional government she thinks is squandering the freedom she fought for.",
+          "pattern_label": "a fighter learning to build instead of resist",
+          "pattern_text": "Someone who spent their formative years in a hard, all-consuming struggle suddenly finds the fight is over, and now has to work inside a system they used to oppose. The instincts that kept them alive, like anger, suspicion and going it alone, now get in the way. They have to work out who they are when they're no longer fighting.",
+          "hook": "The occupation has just ended, and Kira, who has known nothing but violence since childhood, is expected to cooperate with outsiders and politicians she openly resents.",
+          "why_relatable": "What do you do with all that fire when the war you were built for is over? Can you work with people you don't trust without betraying yourself? Is compromise a form of surrender?",
+          "watch_for": [
+            "How does she react when someone she respects asks her to follow the rules?",
+            "When do her old instincts help her, and when do they hurt her?",
+            "How does her relationship with her commanding officer change over time?"
+          ],
+          "start_at": "DS9 S1E1",
+          "span": "DS9 S1 - S7",
+          "situations": [
+            {"id": "new_job", "weight": 0.7},
+            {"id": "starting_over", "weight": 0.7},
+            {"id": "standing_up_to_authority", "weight": 0.6},
+            {"id": "identity_and_self_acceptance", "weight": 0.6}
+          ],
+          "conflicts": ["past_vs_future", "control_vs_trust"],
+          "emotions": {"start": ["anger", "resentment", "restlessness"], "middle": ["confusion", "guilt", "determination"], "end": ["self_respect", "confidence", "peace"]},
+          "ending_tone": "hopeful",
+          "intensity": "heavy",
+          "warnings": ["war_and_violence", "torture", "death_of_loved_one", "self_harm_or_suicide"],
+          "example_user_messages": [
+            "I spent years fighting for a cause, and now that we've won I feel lost and angry all the time.",
+            "I left the military and I don't know how to function in an office where everyone is so polite.",
+            "My new boss represents everything I used to fight against, and I'm supposed to be his right hand.",
+            "Everyone says I'm too intense, but being intense is what kept me going for so long."
+          ],
+          "spoiler": {
+            "summary": "Kira clashes with Sisko early on and even goes over his head, but becomes his trusted first officer and friend. She confronts extremists from her own resistance past, fights the Circle and is tortured by them, and it comes out that years earlier she killed a collaborator, with Odo quietly covering for her. When the Dominion takes the station she cooperates at first. Then a vedek accuses her of collaboration and kills himself in protest, and she starts a new resistance cell. Along the way she loses her lover Bareil, carries the O'Briens' baby as a surrogate, and exposes Dukat's Pah-wraith cult. She is promoted to colonel and takes command of the station. In the last months of the war she trains Cardassian rebels under Damar, the man who killed Ziyal, and helps storm Dominion headquarters on Cardassia. She ends the series commanding Deep Space 9.",
+            "key_events": [
+              "Early clashes with Sisko; grows into his first officer and friend",
+              "Tortured by the Circle; helps stop a coup on Bajor",
+              "Revealed to have killed a collaborator during the occupation",
+              "Cooperates with the Dominion occupiers, then leads a new resistance after Vedek Yassim's suicide",
+              "Bareil dies; she carries the O'Briens' son as a surrogate",
+              "Promoted to colonel and given command of the station",
+              "Trains Cardassian rebels with Damar and helps end the war",
+              "Commands Deep Space 9 after the war"
+            ],
+            "got_right": "She channels her conviction into protecting people instead of fighting enemies, learns to trust allies, and grows into a steady leader.",
+            "got_wrong": "Her anger and certainty make her quick to judge and quick to go over her superior's head. She also cooperates with an occupier until someone forces her to see what she is doing."
+          }
+        },
+        {
+          "id": "arc:star_trek/kira_nerys/seeing_enemies_as_people",
+          "title": "Seeing the enemy as people",
+          "literal_situation": "A Cardassian with ties to a notorious Bajoran labor camp arrives on the station, and Kira wants him tried as a war criminal. Confronting him forces her to face her hatred of all Cardassians, and her own past in the resistance.",
+          "pattern_label": "letting go of hatred for those who hurt you",
+          "pattern_text": "A person who survived years of cruelty at the hands of one group has built their identity around hating them. Meeting individuals from that group who are remorseful, kind or simply human forces them to separate justice from blanket blame, and to look honestly at the harm they caused along the way.",
+          "hook": "Kira has every reason to hate Cardassians, who occupied her world for her entire life, and she sees no reason to treat any of them as individuals.",
+          "why_relatable": "Can you hold people accountable without hating everyone like them? What do you owe the people who hurt you, and the people you hurt? Can you grow past a grudge without betraying the people you lost?",
+          "watch_for": [
+            "What does she feel when she has to deal with an enemy face to face, as a person?",
+            "How does she talk about the violence she committed herself?",
+            "How does she treat the family and friends of someone she hates?"
+          ],
+          "start_at": "DS9 S1E19",
+          "span": "DS9 S1 - S7",
+          "situations": [
+            {"id": "identity_and_self_acceptance", "weight": 0.6},
+            {"id": "redemption_after_mistakes", "weight": 0.5},
+            {"id": "grief_and_loss", "weight": 0.4},
+            {"id": "difficult_parent", "weight": 0.4}
+          ],
+          "conflicts": ["revenge_vs_forgiveness", "past_vs_future"],
+          "emotions": {"start": ["anger", "resentment"], "middle": ["confusion", "guilt", "grief"], "end": ["acceptance", "peace"]},
+          "ending_tone": "bittersweet",
+          "intensity": "heavy",
+          "warnings": ["war_and_violence", "death_of_loved_one", "sexual_violence", "betrayal", "grief"],
+          "example_user_messages": [
+            "I've hated my ex's whole family for years, and now one of them is being kind to me and I don't know what to do with that.",
+            "Something terrible happened to my community and I've been angry at an entire group of people ever since.",
+            "I found out my mother made choices I've always condemned, and I don't know how to feel about her now.",
+            "I did things I'm not proud of when I was fighting for what I believed in, and I'm starting to see the other side."
+          ],
+          "spoiler": {
+            "summary": "The Cardassian turns out to be Aamin Marritza, a file clerk who disguised himself as the camp's commander so that Cardassia would be forced to face its crimes. Kira lets him go, but a Bajoran murders him, and she admits that being Cardassian is not reason enough to condemn someone. Later she is kidnapped and surgically altered to pass as Iliana Ghemor, and Iliana's father Tekeny becomes a father figure to her. She nurses him through his death, even after he confesses to a massacre of Bajoran civilians. She takes Dukat's half-Bajoran daughter Ziyal under her wing, and Ziyal is later killed by Damar. Traveling back in time, she discovers her mother became Dukat's consort as a comfort woman to keep her family alive. Kira joins a plot to kill them both, then warns her mother in time. Finally she fights alongside Damar to free Cardassia from the Dominion and honors him after his death.",
+            "key_events": [
+              "The suspected war criminal is really a remorseful clerk; he is murdered",
+              "Surgically disguised as a Cardassian; bonds with Tekeny Ghemor",
+              "Stays with Ghemor as he dies despite his confession",
+              "Becomes guardian to Ziyal, who is later killed by Damar",
+              "Learns her mother was Dukat's consort and nearly lets her die",
+              "Fights beside Damar to liberate Cardassia"
+            ],
+            "got_right": "She lets individuals change her mind, shows compassion even to people tied to her people's oppressors, and faces her own capacity for violence.",
+            "got_wrong": "Her instinct is to judge whole groups, including her own mother, before trying to understand them, and she never fully reckons with the civilians her cell killed."
+          }
+        }
+      ]
+    },
+    {
+      "id": "char:star_trek/odo",
+      "name": "Odo",
+      "role": "The station's gruff, fiercely independent security chief, a shapeshifter found alone with no memory of where he came from or whether anyone else like him exists.",
+      "relations": [
+        {"target": "char:star_trek/kira_nerys", "relation": "friend"},
+        {"target": "char:star_trek/benjamin_sisko", "relation": "boss"},
+        {"target": "char:star_trek/worf", "relation": "colleague"},
+        {"target": "char:star_trek/julian_bashir", "relation": "colleague"}
+      ],
+      "arcs": [
+        {
+          "id": "arc:star_trek/odo/searching_for_his_people",
+          "title": "Searching for where you come from",
+          "literal_situation": "Found drifting with no memory and studied as a lab specimen by a Bajoran scientist, Odo has spent his life passing as humanoid, the only shapeshifter he knows of. The newly discovered wormhole may lead to his origins.",
+          "pattern_label": "an outsider discovering their origins and choosing their family",
+          "pattern_text": "A person who never knew where they came from has spent their life feeling different and hiding their true nature to fit in. When they finally find their birth family, it isn't what they hoped for. They must choose between the pull of blood and the imperfect chosen family that actually knows and loves them.",
+          "hook": "Odo keeps everyone at a distance, enforces order with gruff precision, and privately wonders whether anyone else in the universe is like him.",
+          "why_relatable": "What would it mean to finally find 'your people'? Do you owe family loyalty just because you share their origins? How much of yourself have you hidden to be accepted?",
+          "watch_for": [
+            "How does he talk about the scientist who raised him?",
+            "What does he hide from others, and who gets to see it?",
+            "If he ever found where he came from, what might belonging there cost him?"
+          ],
+          "start_at": "DS9 S1E1",
+          "span": "DS9 S1 - S7",
+          "situations": [
+            {"id": "identity_and_self_acceptance", "weight": 0.9},
+            {"id": "finding_your_people", "weight": 0.8},
+            {"id": "loneliness", "weight": 0.7},
+            {"id": "difficult_parent", "weight": 0.4}
+          ],
+          "conflicts": ["belonging_vs_integrity", "independence_vs_connection"],
+          "emotions": {"start": ["loneliness", "curiosity", "longing"], "middle": ["betrayal", "grief", "shame"], "end": ["belonging", "acceptance", "love"]},
+          "ending_tone": "bittersweet",
+          "intensity": "moderate",
+          "warnings": ["medical_trauma", "war_and_violence", "betrayal", "serious_illness"],
+          "example_user_messages": [
+            "I was adopted and I finally found my birth family, but they're nothing like I hoped.",
+            "I've spent my whole life hiding how different I am so other people won't be uncomfortable.",
+            "My biological relatives want me to come home, but they look down on everything about the life I built.",
+            "The person who raised me treated me more like a project than a kid, and I'm still angry about it."
+          ],
+          "spoiler": {
+            "summary": "Odo finds his people: they are the Founders, the shapeshifting rulers of the Dominion, and they despise 'solids'. He rejects them for his friends. After he kills another Changeling to protect the Alpha Quadrant, the Great Link judges him and takes away his ability to shapeshift, leaving him stuck in humanoid form and depressed. He gets the ability back when a dying infant Changeling merges with him, and that experience finally lets him reconcile with Dr. Mora. During the Dominion occupation of the station he links with the Female Changeling and nearly abandons his friends before breaking free. It turns out Section 31 used him to infect the Founders with a deadly virus, and Bashir finds a cure. At the war's end Odo links with the Female Changeling, cures her, and persuades her to surrender. He then leaves Kira to return to the Great Link, to heal his people and teach them to see solids differently.",
+            "key_events": [
+              "Discovers his people are the Founders who lead the Dominion",
+              "Rejects the Great Link to stay with his friends",
+              "Kills another Changeling; punished by being made solid",
+              "Abilities restored by a dying infant Changeling; reconciles with Dr. Mora",
+              "Nearly betrays his friends after linking with the Female Changeling",
+              "Learns he unknowingly carried Section 31's virus to his people",
+              "Ends the war by curing the Female Changeling; returns to the Great Link"
+            ],
+            "got_right": "He chooses his values and his chosen family over blood, and in the end uses his place between two worlds to bring peace.",
+            "got_wrong": "He hides his hurt behind rules and sarcasm, and his hunger to belong makes him vulnerable to being manipulated by his own people."
+          }
+        },
+        {
+          "id": "arc:star_trek/odo/loving_in_silence",
+          "title": "Loving someone in silence",
+          "literal_situation": "Odo has quietly fallen in love with his closest friend, Major Kira. He hides it behind his gruff manner, convinced she could never feel the same, while she is involved with someone else.",
+          "pattern_label": "hiding love for a close friend",
+          "pattern_text": "A reserved person falls for a close friend and hides it for years, watching them date others while telling themselves silence is safer. When they finally risk honesty, the hardest part is letting love change them, and later deciding between that love and a larger responsibility they feel called to.",
+          "hook": "Odo guards his feelings for Kira more carefully than any secret, and she has no idea.",
+          "why_relatable": "Is it better to stay close as friends than to risk rejection? How long can you keep your feelings secret before they shape everything? What do you do with jealousy you feel you have no right to?",
+          "watch_for": [
+            "Who figures out his feelings, and how does he respond when confronted?",
+            "How does he act when she's with someone else?",
+            "What would it take for him to risk saying something?"
+          ],
+          "start_at": "DS9 S3E14",
+          "span": "DS9 S3 - S7",
+          "situations": [
+            {"id": "unrequited_love", "weight": 0.9},
+            {"id": "confidence_struggle", "weight": 0.6},
+            {"id": "loneliness", "weight": 0.5}
+          ],
+          "conflicts": ["independence_vs_connection", "holding_on_vs_letting_go"],
+          "emotions": {"start": ["longing", "loneliness", "self_doubt"], "middle": ["jealousy", "fear", "hope"], "end": ["love", "grief", "peace"]},
+          "ending_tone": "bittersweet",
+          "intensity": "moderate",
+          "warnings": ["betrayal", "war_and_violence"],
+          "example_user_messages": [
+            "I've been in love with my best friend for years and never said anything because I'm sure she doesn't feel the same.",
+            "I have to watch the person I love date other people and pretend I'm fine.",
+            "I finally told her how I felt and she feels the same, and now I'm terrified of messing it up.",
+            "I love her, but there's something I have to do that means leaving."
+          ],
+          "spoiler": {
+            "summary": "Odo sees through a Changeling impersonating Kira because 'she' says she returns his love. Quark calls out his feelings, and Odo withdraws when Kira starts dating Shakaar. An alternate-future Odo confesses on his behalf and erases a timeline of 8,000 people to save her life, which strains things between them. During the Dominion occupation, Odo's link with the Female Changeling leaves him passive while Kira is in danger, a betrayal she struggles to forgive. With Vic Fontaine's help he finally tells her how he feels, and they become a couple. After the war he chooses to return to the Great Link to cure his people. Kira goes with him to the Changeling homeworld, and they say goodbye.",
+            "key_events": [
+              "Admits his love to a Changeling posing as Kira",
+              "Quark confronts him about his feelings",
+              "Alternate-future Odo reveals his love and erases a colony to save Kira",
+              "Betrays Kira's trust while linked with the Female Changeling",
+              "Confesses with Vic Fontaine's help; Odo and Kira become a couple",
+              "Leaves Kira to rejoin the Great Link"
+            ],
+            "got_right": "He finally takes the risk of honesty, and later puts something bigger than his own happiness first without pretending it doesn't hurt.",
+            "got_wrong": "Years of silence and pride cost him time, and a moment of seeking comfort elsewhere badly hurts the person he loves."
+          }
+        }
+      ]
+    },
+    {
+      "id": "char:star_trek/seven_of_nine",
+      "name": "Seven of Nine",
+      "role": "A human woman assimilated by the Borg as a child, forcibly cut off from the Collective and kept aboard Voyager, far from anywhere she has ever called home.",
+      "relations": [
+        {"target": "char:star_trek/kathryn_janeway", "relation": "mentor"},
+        {"target": "char:star_trek/the_doctor", "relation": "friend"}
+      ],
+      "arcs": [
+        {
+          "id": "arc:star_trek/seven_of_nine/becoming_a_person_again",
+          "title": "Becoming a person again",
+          "literal_situation": "Severed from the Borg Collective against her will, Seven is kept aboard Voyager by Captain Janeway. She has lost the hive voices she has known since she was six and is expected to become an individual human.",
+          "pattern_label": "rebuilding a self after leaving a controlling group",
+          "pattern_text": "Someone absorbed into an all-controlling group as a child, who knew nothing else, is pulled out of it against their will. They are angry, disoriented and still loyal to the old ways. Slowly they have to learn what they actually think, feel and want, face the harm they took part in, and trust the people who insist they deserve a life of their own.",
+          "hook": "Seven didn't ask to be rescued. She is blunt, arrogant, frightened, and still thinks of herself as part of something bigger, while the captain who freed her insists she can be more.",
+          "why_relatable": "Who are you once the group that defined you is gone? Can you trust the people who took you away from everything you knew? How do you live with what you did when you felt you had no choice?",
+          "watch_for": [
+            "How does she respond when someone asks what she wants, rather than what is efficient?",
+            "How does her relationship with the captain move between obedience, defiance and trust?",
+            "Which small human pleasures does she let herself enjoy, and when?"
+          ],
+          "start_at": "VOY S4E1",
+          "span": "VOY S4 - S7",
+          "situations": [
+            {"id": "identity_and_self_acceptance", "weight": 0.95},
+            {"id": "starting_over", "weight": 0.8},
+            {"id": "finding_your_people", "weight": 0.6},
+            {"id": "mentor_and_protege", "weight": 0.5}
+          ],
+          "conflicts": ["independence_vs_connection", "past_vs_future"],
+          "emotions": {"start": ["anger", "fear", "confusion"], "middle": ["loneliness", "guilt", "curiosity"], "end": ["belonging", "acceptance", "hope"]},
+          "ending_tone": "hopeful",
+          "intensity": "moderate",
+          "warnings": ["medical_trauma", "child_endangerment", "war_and_violence"],
+          "example_user_messages": [
+            "I left a really controlling religious group and I don't know how to make my own decisions.",
+            "I was raised to believe the group mattered more than me, and now I don't even know what I like.",
+            "People keep telling me I'm free now, but honestly I miss having someone tell me what to do.",
+            "I did things I'm ashamed of when I was part of that community, and I don't know if I deserve a fresh start.",
+            "I'm so blunt people think I'm cold, but I just don't know the rules everyone else seems to know."
+          ],
+          "spoiler": {
+            "summary": "At first Seven tries to contact the Collective and fights Janeway at every turn. Slowly she recovers her past as Annika Hansen through the wreck of her parents' ship and their journals. She says she doesn't want to go back to Earth, then admits fear of the unknown is the real reason and that she does value her individuality. The Borg Queen reveals that Seven's liberation was allowed as part of a plan; Seven faces her assimilated father and chooses Voyager. She meets drones she once kept linked together, and chooses a short free life for them over reassimilation. Her guilt comes back when a murderer is executed for one killing while she was never punished for the countless people she helped assimilate. After a violent forced fight she fears she has lost her humanity, and Tuvok tells her that her remorse proves she hasn't. She learns the Borg built in a fail-safe that shuts her down under strong emotion, eventually has it removed, and starts dating Chakotay before Voyager reaches home.",
+            "key_events": [
+              "Severed from the Collective; initially tries to return",
+              "Recovers memories of her assimilation as a child",
+              "Confronts the Borg Queen and her assimilated father",
+              "Frees former drones and faces her guilt over the past",
+              "Helps the Unimatrix Zero drones begin a Borg resistance",
+              "Removes an implant that blocked strong emotion; dates Chakotay",
+              "Voyager returns home"
+            ],
+            "got_right": "She stays honest and curious. She questions authority when she thinks it's wrong, takes responsibility for her past, and gradually lets people become her family.",
+            "got_wrong": "She hides behind efficiency and perfectionism, pushes people away with bluntness, and avoids emotional risks until her own body forces the issue."
+          }
+        },
+        {
+          "id": "arc:star_trek/seven_of_nine/suddenly_a_parent",
+          "title": "Suddenly responsible for children",
+          "literal_situation": "Voyager rescues a group of young former Borg drones from a derelict cube. Seven is left to care for them and responds the only way she knows: with rigid schedules and strict discipline.",
+          "pattern_label": "a rigid caregiver learning to let kids be kids",
+          "pattern_text": "A person still working out their own life suddenly becomes responsible for children. They lean on control, rules and efficiency because that is all they know, and they're hurt and baffled when the kids push back. They have to learn that care means flexibility and play, and sometimes letting children go when that's best for them.",
+          "hook": "Barely out of the Collective herself, Seven is the obvious choice to look after a group of frightened, stubborn children who were once drones, and the least prepared.",
+          "why_relatable": "How do you care for kids when nobody ever showed you how? Is strictness love or fear? What do you do when a child you've grown attached to needs something you can't give?",
+          "watch_for": [
+            "What does she do when the children break her rules?",
+            "Who helps her see things differently, and does she listen?",
+            "How does she react when a child's needs conflict with her own wishes?"
+          ],
+          "start_at": "VOY S6E16",
+          "span": "VOY S6 - S7",
+          "situations": [
+            {"id": "becoming_a_parent", "weight": 0.9},
+            {"id": "responsibility_you_didnt_ask_for", "weight": 0.8},
+            {"id": "mentor_and_protege", "weight": 0.5}
+          ],
+          "conflicts": ["control_vs_trust", "holding_on_vs_letting_go"],
+          "emotions": {"start": ["overwhelm", "inadequacy"], "middle": ["confusion", "fear", "love"], "end": ["acceptance", "love"]},
+          "ending_tone": "bittersweet",
+          "intensity": "moderate",
+          "warnings": ["child_endangerment", "grief"],
+          "example_user_messages": [
+            "I became my niece's guardian overnight and I keep running the house like a boot camp.",
+            "I'm a new stepparent and the kids hate my rules, but I don't know how else to do this.",
+            "I finally got close to the kid I've been looking after, and now his family wants him back.",
+            "Nobody ever showed me how to be warm with kids, and I'm scared I'm repeating that."
+          ],
+          "spoiler": {
+            "summary": "A year earlier Seven had grown attached to One, a drone created in a transporter accident, who chose to die rather than draw the Borg to Voyager; she mourned him like a son. With the children, her rigid regimen and punishments backfire until Chakotay points out that children need spontaneity as well as structure. Three of the children eventually leave to rejoin their people. Icheb stays. When his family is found, Seven reluctantly helps return him, then discovers his parents engineered him as a weapon against the Borg, and Voyager rescues him. When Seven's cortical node fails, Icheb insists on giving her his. She refuses to put him at risk at first but finally accepts, and she supports his dream of joining Starfleet.",
+            "key_events": [
+              "Earlier: mourns One, a drone she mentored, after his sacrifice",
+              "Takes charge of the former Borg children with strict rules",
+              "Learns from Chakotay to allow play and spontaneity",
+              "Three children return to their people",
+              "Icheb's parents turn out to have engineered him as a weapon; he is rescued",
+              "Icheb donates his cortical node to save Seven"
+            ],
+            "got_right": "She is fiercely protective, admits when her approach isn't working, and puts the children's wellbeing ahead of her own attachment.",
+            "got_wrong": "She mistakes control for care, treating the children like a project to optimize, and she struggles to accept help from them."
+          }
+        }
+      ]
+    },
+    {
+      "id": "char:star_trek/julian_bashir",
+      "name": "Julian Bashir",
+      "role": "A brilliant, eager and somewhat arrogant young doctor fresh out of medical school, who picked the most remote posting he could find.",
+      "relations": [
+        {"target": "char:star_trek/benjamin_sisko", "relation": "boss"},
+        {"target": "char:star_trek/kira_nerys", "relation": "colleague"},
+        {"target": "char:star_trek/odo", "relation": "colleague"},
+        {"target": "char:star_trek/worf", "relation": "colleague"}
+      ],
+      "arcs": [
+        {
+          "id": "arc:star_trek/julian_bashir/golden_boy_grows_up",
+          "title": "The golden boy growing up",
+          "literal_situation": "Fresh out of Starfleet Medical as salutatorian, Dr. Bashir requests Deep Space 9 to practice 'frontier medicine', and meets a skeptical crew who find him naive, boastful and tactless.",
+          "pattern_label": "a cocky high achiever earning real respect",
+          "pattern_text": "A gifted young person starts their first real job convinced it will be a grand adventure, and their eagerness comes across as arrogance, so colleagues keep them at arm's length. Through failures, hard experiences and unlikely friendships, they learn humility, the limits of talent, and what it means to be part of a team.",
+          "hook": "Julian is sure he's in for adventure and romance. His new colleagues mostly roll their eyes.",
+          "why_relatable": "How do you prove yourself when your enthusiasm annoys people? What happens when being the smartest person in the room isn't enough? How do real friendships form between people who don't like each other at first?",
+          "watch_for": [
+            "How do the people who find him irritating come to see him, or do they?",
+            "What happens when his skill can't fix a problem?",
+            "How does his idea of adventure change as things get serious?"
+          ],
+          "start_at": "DS9 S1E1",
+          "span": "DS9 S1 - S7",
+          "situations": [
+            {"id": "new_job", "weight": 0.9},
+            {"id": "coming_of_age", "weight": 0.7},
+            {"id": "finding_your_people", "weight": 0.6},
+            {"id": "leaving_home", "weight": 0.3}
+          ],
+          "conflicts": ["fitting_in_vs_standing_out", "safety_vs_growth"],
+          "emotions": {"start": ["pride", "curiosity", "hope"], "middle": ["rejection", "inadequacy", "determination"], "end": ["belonging", "self_respect"]},
+          "ending_tone": "hopeful",
+          "intensity": "moderate",
+          "warnings": ["war_and_violence", "self_harm_or_suicide", "grief"],
+          "example_user_messages": [
+            "I just started my first job out of school and I think my coworkers find me annoying.",
+            "I was top of my class and I thought that would matter more than it does.",
+            "My coworker and I couldn't stand each other at first, and now he's my best friend.",
+            "I wanted something exciting and meaningful, and now that it's getting real I'm not sure I'm ready."
+          ],
+          "spoiler": {
+            "summary": "Bashir's persistence wins over O'Brien, who becomes his best friend after the two are marked for assassination together. He builds a sparring, literary friendship with Garak and saves his life. He fails to free a Jem'Hadar from his addiction, and his first attempt to treat the Teplan blight kills patients, which humbles him. He is secretly held in a Dominion prison camp while a Changeling impersonates him. When O'Brien, traumatized by false prison memories, tries to kill himself, Bashir talks him down and gets him help. In the war he treats soldiers at AR-558 and sees how war grinds down idealism. He ends the series in a relationship with Ezri Dax and saying goodbye to O'Brien, who leaves for Earth.",
+            "key_events": [
+              "Friendship with O'Brien forms after they're targeted together",
+              "Friendship with Garak; saves him from a lethal implant",
+              "Fails to cure Jem'Hadar addiction; Teplan blight treatment ends in deaths",
+              "Imprisoned by the Dominion and replaced by a Changeling",
+              "Talks O'Brien out of suicide",
+              "Serves in the siege of AR-558",
+              "Begins a relationship with Ezri Dax; O'Brien leaves the station"
+            ],
+            "got_right": "He keeps showing up with warmth and enthusiasm, learns from failure, and invests deeply in friendships until they become the core of his life.",
+            "got_wrong": "Early on he treats the job as a romantic adventure and his intelligence as a credential, and he often misreads people and situations."
+          }
+        },
+        {
+          "id": "arc:star_trek/julian_bashir/hidden_origins",
+          "title": "The secret he's been hiding",
+          "literal_situation": "Chosen as the model for a new long-term medical hologram, Bashir grows uneasy when the program's designer starts interviewing his parents, whom he rarely sees.",
+          "pattern_label": "a hidden family secret behind your success",
+          "pattern_text": "A high achiever keeps their parents at a distance and guards a secret about their childhood that makes them feel like a fraud. When it comes out, they have to face their anger at the parents who shaped them, the fear of being seen as unnatural or undeserving, and the possibility of understanding why their parents did it.",
+          "hook": "Julian dodges his parents, avoids talking about his childhood, and grows visibly tense when someone starts digging into his past.",
+          "why_relatable": "What if your achievements never feel like they were really yours? Can you forgive parents who made a huge choice for you out of fear? What happens when the secret you've built your life around gets out?",
+          "watch_for": [
+            "How does he behave around his father compared with his mother?",
+            "What does he fear people will think of him?",
+            "Who stands by him, and how does he respond?"
+          ],
+          "start_at": "DS9 S5E16",
+          "span": "DS9 S5 - S7",
+          "situations": [
+            {"id": "difficult_parent", "weight": 0.8},
+            {"id": "identity_and_self_acceptance", "weight": 0.8},
+            {"id": "imposter_syndrome", "weight": 0.7},
+            {"id": "family_expectations", "weight": 0.6}
+          ],
+          "conflicts": ["self_vs_family_expectations", "truth_vs_protecting_others"],
+          "emotions": {"start": ["anxiety", "shame", "resentment"], "middle": ["anger", "fear", "guilt"], "end": ["acceptance", "relief", "self_respect"]},
+          "ending_tone": "hopeful",
+          "intensity": "moderate",
+          "warnings": [],
+          "example_user_messages": [
+            "My parents pushed me into everything and now I don't know which of my achievements are actually mine.",
+            "I've been hiding something about my past for years and I'm terrified it'll come out at work.",
+            "I always thought my parents were disappointed in who I was as a kid.",
+            "My dad made a huge decision about my life without asking me, and I can't forgive him even though I know he meant well."
+          ],
+          "spoiler": {
+            "summary": "At six, Bashir was slow and struggling in school, and his parents had him illegally genetically enhanced. He has hidden it ever since, believing they saw him as defective. When the secret comes out, he faces being thrown out of Starfleet and medicine. His father agrees to serve a prison sentence so Julian can keep his career, and father and son finally begin to understand each other. Bashir then works with other enhanced people who couldn't fit into society. He falls for one of them, Sarina, and helps her come out of her isolation, but has to let her go when his love starts to overwhelm her.",
+            "key_events": [
+              "Revealed as genetically enhanced as a child, which is illegal",
+              "Nearly expelled from Starfleet",
+              "His father accepts prison so Julian can stay in service",
+              "Reconciliation with his parents",
+              "Works with other enhanced people; falls for Sarina and lets her go"
+            ],
+            "got_right": "When the truth comes out he stops running, faces his parents honestly, and accepts help instead of carrying the secret alone.",
+            "got_wrong": "For years he blames his parents without trying to understand them, and he lets shame about his past shape his whole life."
+          }
+        },
+        {
+          "id": "arc:star_trek/julian_bashir/institutions_dark_side",
+          "title": "Discovering your institution's dirty secrets",
+          "literal_situation": "On his way to a supposed medical conference, Bashir is abducted and interrogated by shadowy officials who claim to act in the Federation's name and seem to suspect him of treason.",
+          "pattern_label": "an idealist uncovering corruption at work",
+          "pattern_text": "An idealistic person believes deeply in the organization they serve, until a secret faction inside it, one that bends every rule in the name of security, tries to recruit them. Pressured to play along, they must decide how far to go and whom to trust, and what to do when they learn the faction has harmed someone they love.",
+          "hook": "Julian believes the organization he serves stands for everything good, until people claiming to act on its behalf start deciding whether he is a traitor or a recruit.",
+          "why_relatable": "What do you do when an organization you believe in turns out to have a hidden dark side? Can you fight wrongdoing from the inside without becoming part of it? When does loyalty to an institution become complicity?",
+          "watch_for": [
+            "Whom does he confide in, and whom does he keep in the dark?",
+            "How does he respond when his superiors ask him to play along?",
+            "Which lines does he refuse to cross, and which does he cross anyway?"
+          ],
+          "start_at": "DS9 S6E18",
+          "span": "DS9 S6 - S7",
+          "situations": [
+            {"id": "standing_up_to_authority", "weight": 0.9},
+            {"id": "responsibility_you_didnt_ask_for", "weight": 0.5},
+            {"id": "identity_and_self_acceptance", "weight": 0.3}
+          ],
+          "conflicts": ["power_vs_morality", "belonging_vs_integrity"],
+          "emotions": {"start": ["fear", "confusion", "anger"], "middle": ["determination", "betrayal", "anxiety"], "end": ["self_respect", "relief"]},
+          "ending_tone": "bittersweet",
+          "intensity": "heavy",
+          "warnings": ["betrayal", "serious_illness", "war_and_violence", "self_harm_or_suicide"],
+          "example_user_messages": [
+            "I found out my company has a secret team doing illegal things, and they want me to join.",
+            "I reported something shady and my boss told me to go along with it so we could gather evidence.",
+            "I always believed in the place I work, and now I don't know if any of it was real.",
+            "The people who hurt my friend work for the same organization I've given my life to."
+          ],
+          "spoiler": {
+            "summary": "The interrogators are Section 31, a secret intelligence group; after a simulated interrogation, their agent Luther Sloan offers Bashir a job. He refuses, but Sisko orders him to accept as a double agent. On Romulus, Sloan tricks Bashir into helping an operation he thinks he is stopping, one really aimed at keeping the Federation-friendly Senator Cretak off the Continuing Committee. Bashir and O'Brien then discover that Section 31 infected Odo with the virus killing the Founders. Bashir lures Sloan to the station. When Sloan kills himself rather than reveal the cure, Bashir and O'Brien enter his dying mind and pull it out, saving Odo. Section 31 itself stays hidden.",
+            "key_events": [
+              "Abducted and tested by Section 31",
+              "Refuses recruitment; ordered by Sisko to act as a double agent",
+              "Manipulated by Sloan during a mission on Romulus",
+              "Learns Section 31 infected Odo with a genocidal virus",
+              "Extracts the cure from Sloan's dying mind and saves Odo"
+            ],
+            "got_right": "He refuses to accept 'the ends justify the means', keeps the people he trusts informed, and uses his skills to save a friend.",
+            "got_wrong": "His need to prove himself makes him easy to manipulate at first, and in the end he has to use the same ruthless tactics he condemns."
+          }
+        }
+      ]
+    },
+    {
+      "id": "char:star_trek/the_doctor",
+      "name": "The Doctor",
+      "role": "Voyager's Emergency Medical Hologram, a short-term backup program pressed into service as the ship's full-time physician after the medical staff are killed.",
+      "relations": [
+        {"target": "char:star_trek/kathryn_janeway", "relation": "boss"},
+        {"target": "char:star_trek/seven_of_nine", "relation": "friend"}
+      ],
+      "arcs": [
+        {
+          "id": "arc:star_trek/the_doctor/demanding_personhood",
+          "title": "Demanding to be seen as a person",
+          "literal_situation": "Activated as an emergency program and suddenly the only physician on a ship stranded far from home, the EMH is switched on and off at will and talked about as if he isn't there. He doesn't even have a name.",
+          "pattern_label": "fighting to be treated as a whole person",
+          "pattern_text": "Someone brought in as a stopgap is treated like a tool: useful, replaceable, and not really part of the team. Prickly and defensive at first, they gradually claim a voice, interests and relationships of their own, and have to prove to others and to themselves that they are more than the role they were hired to fill.",
+          "hook": "He was designed to run for a few hours in an emergency. Now he's indispensable, overworked and ignored, and his bedside manner shows it.",
+          "why_relatable": "What happens when people only see you for your function? How do you ask for respect without becoming bitter? Can you grow beyond what you were 'designed' for?",
+          "watch_for": [
+            "Who is the first to treat him as a person, and how does that change him?",
+            "What does he want for himself beyond his job?",
+            "How does he react when others make decisions about him without asking?"
+          ],
+          "start_at": "VOY S1E1",
+          "span": "VOY S1 - S7",
+          "situations": [
+            {"id": "identity_and_self_acceptance", "weight": 0.9},
+            {"id": "new_job", "weight": 0.6},
+            {"id": "responsibility_you_didnt_ask_for", "weight": 0.6},
+            {"id": "standing_up_to_authority", "weight": 0.5}
+          ],
+          "conflicts": ["fitting_in_vs_standing_out", "belonging_vs_integrity"],
+          "emotions": {"start": ["resentment", "loneliness", "pride"], "middle": ["self_doubt", "curiosity", "joy"], "end": ["self_respect", "belonging", "confidence"]},
+          "ending_tone": "hopeful",
+          "intensity": "moderate",
+          "warnings": ["grief"],
+          "example_user_messages": [
+            "At work I'm treated like a machine. Nobody says hello, they just tell me what they need.",
+            "I was brought in as temporary help and somehow I'm doing the job of three people with none of the respect.",
+            "I want to be more than my job, but I don't even know what I'd be into.",
+            "People act like my opinions don't count because of what I am on paper."
+          ],
+          "spoiler": {
+            "summary": "Kes champions him, and Janeway gives him control over his own activation. He falls for Danara Pel, nearly loses his memories when his program starts to degrade, and gains a mobile emitter that frees him from sickbay. He creates a holographic family, and when his daughter dies he learns to accept pain as part of life. He becomes a trusted crew member, an opera lover and an author. When his holonovel is published without his consent, an arbitration rules that he has the rights of an artist, though not yet legal personhood, and urges him to keep fighting. He meets his creator Zimmerman, who at first sees him as a failure, and the two reach a father-son understanding. He gets the crew home, delivering Tom and B'Elanna's daughter on the way.",
+            "key_events": [
+              "Kes advocates for him; he gains control of his own program",
+              "Falls in love with Danara Pel",
+              "Memory degradation nearly erases his personality",
+              "Gains the mobile emitter",
+              "His holographic daughter dies",
+              "Wins the right to control his holonovel",
+              "Reconciles with his creator Zimmerman",
+              "Delivers Miral Paris as Voyager returns home"
+            ],
+            "got_right": "He keeps expanding himself through art, relationships and responsibility, and he asks for respect even when it's uncomfortable.",
+            "got_wrong": "He can be vain, prickly and self-pitying, and he sometimes chases recognition at the expense of the people around him."
+          }
+        },
+        {
+          "id": "arc:star_trek/the_doctor/impossible_choices",
+          "title": "Living with an impossible choice",
+          "literal_situation": "The EMH discovers a gap in his memory: files about a young ensign have been deleted, and the crew seems reluctant to tell him why.",
+          "pattern_label": "guilt over a split-second life-or-death call",
+          "pattern_text": "A caregiver who prides themselves on being objective could only save one of two people, and chose the one who was their friend. The guilt loops endlessly. They have to learn that being a feeling person means making imperfect choices and living with them, rather than erasing them or being defined by them.",
+          "hook": "The EMH has a nagging gap in his records and a feeling that the people he trusts most are hiding something important from him.",
+          "why_relatable": "What do you do when you can't forgive yourself for a decision made under pressure? Is it kinder to forget or to remember? Should friends help you carry guilt, or protect you from it?",
+          "watch_for": [
+            "How does the crew's attempt to protect him affect his trust in them?",
+            "What does he believe he 'should' have done differently?",
+            "Who helps him, and how?"
+          ],
+          "start_at": "VOY S5E11",
+          "span": "VOY S5 - S7",
+          "situations": [
+            {"id": "grief_and_loss", "weight": 0.6},
+            {"id": "burnout_at_work", "weight": 0.5},
+            {"id": "redemption_after_mistakes", "weight": 0.5}
+          ],
+          "conflicts": ["truth_vs_protecting_others", "perfectionism_vs_good_enough"],
+          "emotions": {"start": ["confusion", "anxiety"], "middle": ["guilt", "overwhelm", "grief"], "end": ["acceptance", "peace"]},
+          "ending_tone": "hopeful",
+          "intensity": "moderate",
+          "warnings": ["grief", "medical_trauma", "war_and_violence"],
+          "example_user_messages": [
+            "I had to choose who to help first in an emergency and the other person died. I can't stop replaying it.",
+            "My friends hid something painful from me to protect me, and now I don't know if I can trust them.",
+            "I'm supposed to be objective at work, but I saved the person I cared about and I feel like a fraud.",
+            "I keep second-guessing every decision until I can't function."
+          ],
+          "spoiler": {
+            "summary": "He learns that Harry Kim and Ensign Jetal were equally badly injured and that he chose to save Kim, his friend, while Jetal died. The ethical loop that followed broke his program, and Janeway had the memory erased. When it resurfaces, Seven argues he should be treated as an individual rather than repaired like equipment. Janeway decides to stay with him through the crisis instead of deleting it again, and he learns to live with the decision. Later he faces more no-win choices. He deliberately infects a hospital administrator to force fairer treatment of patients in a rationed system, and then struggles with what he did. He sides with rebel holograms, then has to stop their violent leader, after which Janeway assures him no one blames him for an honest mistake in judgment.",
+            "key_events": [
+              "Discovers his memories of Ensign Jetal were erased",
+              "Learns he chose to save his friend Harry Kim while Jetal died",
+              "His program breaks down in an ethical loop",
+              "Janeway chooses to support him instead of wiping the memory again",
+              "Infects an administrator to force fair medical care",
+              "Stops the rebel hologram leader Iden and is forgiven by the crew"
+            ],
+            "got_right": "He faces his guilt instead of hiding from it, and learns that imperfect choices made with care are part of being a person.",
+            "got_wrong": "His demand for perfect objectivity turns grief into self-punishment, and later he sometimes acts rashly on his convictions without considering the cost."
+          }
+        },
+        {
+          "id": "arc:star_trek/the_doctor/falling_for_a_friend",
+          "title": "Falling for the friend you're coaching",
+          "literal_situation": "The EMH takes on teaching Seven of Nine social skills and dating etiquette, partly because of a bet with Tom Paris, and starts to find the lessons mean more to him than to her.",
+          "pattern_label": "quietly falling for someone you're helping",
+          "pattern_text": "A person mentors a friend through learning to connect with others, and gradually falls for them. Too proud and uncertain to say anything, they watch the friend move on, and must decide whether to confess, how to keep the friendship, and how to find meaning in their own life beyond one person's affection.",
+          "hook": "Proud of his social expertise, the EMH volunteers to teach Seven how to date, without noticing what is happening to his own feelings.",
+          "why_relatable": "What do you do when you've fallen for a friend who only sees you as a friend? Is it worth saying out loud? How do you keep your dignity when the feelings aren't mutual?",
+          "watch_for": [
+            "How does he behave when she talks about other people?",
+            "Does he tell her how he feels, and if so, when?",
+            "What else does he pour his heart into?"
+          ],
+          "start_at": "VOY S5E22",
+          "span": "VOY S5 - S7",
+          "situations": [
+            {"id": "unrequited_love", "weight": 0.9},
+            {"id": "confidence_struggle", "weight": 0.5},
+            {"id": "loneliness", "weight": 0.4}
+          ],
+          "conflicts": ["independence_vs_connection", "holding_on_vs_letting_go"],
+          "emotions": {"start": ["curiosity", "joy"], "middle": ["longing", "jealousy", "rejection"], "end": ["acceptance", "self_respect"]},
+          "ending_tone": "bittersweet",
+          "intensity": "light",
+          "warnings": [],
+          "example_user_messages": [
+            "I've been helping my friend get back into dating and I think I've fallen for her myself.",
+            "She told me there's no one around here she'd ever date, which obviously includes me.",
+            "I blurted out that I love her at the worst possible moment and now I want to hide forever.",
+            "My friend just started seeing someone and I'm happy for her, but it really hurts."
+          ],
+          "spoiler": {
+            "summary": "Seven is hurt to learn about the bet. He apologizes, but before he can say anything more she tells him there are no suitable partners aboard, and he sings 'Someone to Watch Over Me' alone. His daydreaming program exposes his crush, and Seven kisses him but makes it clear the kiss is platonic. His singing wins him adoring fans among the Qomar, and he considers leaving Voyager for a career there, only to be replaced by a hologram with a wider vocal range; a fan letter from Seven consoles him. Believing he is dying, he confesses his love for her, then survives and hides in sickbay from embarrassment. He is crestfallen when she starts dating Chakotay.",
+            "key_events": [
+              "Coaches Seven in dating on a bet with Paris",
+              "Realizes he loves her; she says there are no suitable mates aboard",
+              "Daydreams reveal his feelings; a platonic kiss",
+              "Nearly leaves Voyager for a singing career, then is replaced",
+              "Confesses his love when he believes he is dying",
+              "Seven begins dating Chakotay"
+            ],
+            "got_right": "He stays a loyal friend, apologizes when he is wrong, and pours his feelings into art and work instead of resentment.",
+            "got_wrong": "He hides behind lessons and bravado instead of being honest, and lets pride and embarrassment keep him from saying what he feels."
+          }
+        }
+      ]
+    }
+  ]
+}

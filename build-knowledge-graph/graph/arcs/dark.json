@@ -1,0 +1,906 @@
+{
+  "show": "dark",
+  "characters": [
+    {
+      "id": "char:dark/jonas_kahnwald",
+      "name": "Jonas Kahnwald",
+      "role": "A withdrawn teenager in the small German town of Winden, going back to school after months away following his father's suicide, still haunted by the question of why.",
+      "relations": [
+        {"target": "char:dark/hannah_kahnwald", "relation": "parent"},
+        {"target": "char:dark/martha_nielsen", "relation": "partner"}
+      ],
+      "arcs": [
+        {
+          "id": "arc:dark/jonas_kahnwald/searching_for_why",
+          "title": "Searching for the reason his father left",
+          "literal_situation": "Months after his father took his own life without explanation, Jonas returns to school in Winden after time away for psychiatric treatment. He is on medication, plagued by nightmares and visions of his father, and his best friend Bartosz has told everyone he was on an exchange in France. On his first night back, Ulrich and Katharina's youngest son Mikkel vanishes in the woods while the teenagers are out together.",
+          "pattern_label": "searching for answers after a parent's unexplained suicide",
+          "pattern_text": "After a parent dies by suicide without a word of explanation, a young person tries to return to normal life while carrying nightmares, guilt and a question nobody can answer. Convinced the parent was hiding something, they start digging into the past, hoping the truth will make the pain make sense. What they find forces them to ask whether some truths are too heavy to carry, and what they owe the living once they know.",
+          "hook": "Jonas is back at school, medicated and barely holding together, sure his father was trying to tell him something. His mother is distant, the girl he likes is with his best friend, and on his first night out a child goes missing in the dark.",
+          "why_relatable": "How do you grieve someone who left without saying why? Is it better to keep digging for answers or to learn to live without them? And how much guilt can one person carry for things they could not control?",
+          "watch_for": [
+            "What does Jonas do with the questions he can't bring himself to ask his mother?",
+            "Notice how he treats the people who try to help him: his therapist, his mother, his friends.",
+            "When he finds something that might explain his father, does he share it or keep it to himself?"
+          ],
+          "start_at": "S1E1",
+          "span": "S1",
+          "situations": [
+            {"id": "grief_and_loss", "weight": 0.95},
+            {"id": "coming_of_age", "weight": 0.5},
+            {"id": "identity_and_self_acceptance", "weight": 0.4},
+            {"id": "difficult_parent", "weight": 0.3}
+          ],
+          "conflicts": ["truth_vs_protecting_others", "holding_on_vs_letting_go"],
+          "emotions": {"start": ["grief", "guilt", "confusion"], "middle": ["curiosity", "dread", "loneliness"], "end": ["overwhelm", "grief", "determination"]},
+          "ending_tone": "tragic",
+          "intensity": "heavy",
+          "warnings": ["self_harm_or_suicide", "death_of_loved_one", "grief", "child_endangerment"],
+          "example_user_messages": [
+            "My dad killed himself last year and he didn't leave a note. I keep thinking if I find out why it will stop hurting.",
+            "I just came back after a stay in a psychiatric clinic and everyone at school looks at me like I'm a freak.",
+            "I keep having nightmares about my father and it feels like he's trying to tell me something.",
+            "I found out my parent was hiding something huge and I don't know if I should tell the rest of the family.",
+            "Something happened to a kid I was supposed to look out for and I can't stop blaming myself."
+          ],
+          "spoiler": {
+            "summary": "Jonas returns to school in November 2019 after his father Michael's suicide. After Mikkel Nielsen vanishes near the Winden caves, Jonas finds a cave map hidden in his father's attic and, via a package delivered on behalf of the mysterious Stranger, Michael's suicide letter: Michael was Mikkel, who travelled from 2019 to 1986 and grew up as Michael Kahnwald. Jonas goes through the cave passage to 1986, sees Mikkel with Ines, and is warned by the Stranger that taking him back would erase his own existence. He burns the letter, coldly pushes Martha away because she is his aunt, fights Bartosz, then decides to bring Mikkel home anyway at the cost of his existence. In 1986 he is drugged by Helge, delivered by Noah, and locked in the bunker, where the Stranger reveals he is Jonas's adult self; Jonas is flung into post-apocalyptic 2052.",
+            "key_events": [
+              "Michael's suicide letter reveals he is Mikkel Nielsen",
+              "Jonas travels to 1986 through the cave passage",
+              "The Stranger stops him taking Mikkel home",
+              "Burns the letter; realises Martha is his aunt",
+              "Fistfight with Bartosz",
+              "Captured by Noah and Helge",
+              "The Stranger is revealed as adult Jonas",
+              "Thrown forward into 2052"
+            ],
+            "got_right": "He refuses to stop asking questions, and once he knows the truth he is willing to give up his own existence to bring a lost child home to his family.",
+            "got_wrong": "He carries everything alone, shutting out his mother, lying to his best friend and cutting Martha off without explanation, so the people around him are hurt by his silence and he has no one to lean on."
+          }
+        },
+        {
+          "id": "arc:dark/jonas_kahnwald/first_love_and_best_friend",
+          "title": "Coming back to find his first love with his best friend",
+          "literal_situation": "Jonas and Martha kissed at her parents' party the summer before, but while he was away after his father's death she started dating his best friend Bartosz. Jonas walks back into school to find them a couple, and Bartosz never knew how Jonas felt.",
+          "pattern_label": "a love that keeps being pulled apart",
+          "pattern_text": "Someone comes back from a painful time away to find the person they love with their closest friend. The feelings never went away, and every attempt to get close collides with loyalty, bad timing and forces far bigger than either of them. It is a story about a love that keeps being torn apart, and about whether a connection can survive everything standing in its way.",
+          "hook": "Jonas walks into the school assembly and watches Martha kiss Bartosz. She was his summer; now she is his best friend's girlfriend, and he can't even tell her where he has been.",
+          "why_relatable": "What do you do when your feelings for someone don't fit your friendships? Do you tell the truth and risk losing both people, or stay quiet? And can love survive when everything seems to pull two people apart?",
+          "watch_for": [
+            "Notice who Martha reaches out to when things go wrong, and how Jonas responds.",
+            "How does Jonas weigh loyalty to his best friend against what he feels?",
+            "Pay attention to the words Jonas and Martha say to each other: which ones keep coming back?"
+          ],
+          "start_at": "S1E1",
+          "span": "S1-S3",
+          "situations": [
+            {"id": "unrequited_love", "weight": 0.6},
+            {"id": "friendship_ending", "weight": 0.5},
+            {"id": "coming_of_age", "weight": 0.5},
+            {"id": "breakup", "weight": 0.4}
+          ],
+          "conflicts": ["duty_vs_desire", "holding_on_vs_letting_go"],
+          "emotions": {"start": ["jealousy", "longing", "loneliness"], "middle": ["love", "guilt", "confusion"], "end": ["love", "grief", "acceptance"]},
+          "ending_tone": "bittersweet",
+          "intensity": "heavy",
+          "warnings": ["betrayal", "death_of_loved_one", "death_of_main_character", "war_and_violence"],
+          "example_user_messages": [
+            "I came back after a really hard few months and the girl I liked is now dating my best friend.",
+            "We kissed once and it meant everything to me, and now she acts like it was nothing.",
+            "I love someone but there's a reason we can't be together that I can't even explain to them.",
+            "I keep pushing away the person I care about most because I think I'm protecting them.",
+            "Every time we finally get close, something tears us apart again."
+          ],
+          "spoiler": {
+            "summary": "Jonas and Martha rekindle their feelings when she kisses him after her rehearsal, but after learning Mikkel is his father, making Martha his aunt, Jonas coldly rejects her and she returns to Bartosz. Months later she meets the adult Jonas and is dragged away by Katharina, who tells her he is her nephew; on the day of the apocalypse she is shot by Adam in front of teenage Jonas. A Martha from another world rescues Jonas, and in her world they fall for each other and sleep together, conceiving the child who links the two worlds; her middle-aged self later shoots Jonas in front of her. Finally Adam, guided by Claudia, sends a Jonas and a Martha into the origin world, where they stop the car accident that drove Tannhaus to build a time machine; holding hands and repeating 'You and I are perfect for each other', they vanish together as the knot is undone.",
+            "key_events": [
+              "Martha kisses Jonas after her rehearsal",
+              "Jonas learns Martha is his aunt and rejects her",
+              "Katharina tells Martha the adult Jonas is her nephew",
+              "Adam kills Martha during the apocalypse",
+              "Rescued by a Martha from another world",
+              "Jonas and the other Martha conceive a child",
+              "Middle-aged Martha shoots Jonas",
+              "Jonas and Martha prevent the Tannhaus accident and vanish together"
+            ],
+            "got_right": "Their love is real and stubborn, and in the end they use it to undo everyone's suffering rather than to save only themselves.",
+            "got_wrong": "Jonas keeps deciding for Martha instead of telling her the truth, leaving her confused and hurt, and both of them let other people use their love as a tool."
+          }
+        },
+        {
+          "id": "arc:dark/jonas_kahnwald/taking_it_on_himself",
+          "title": "Taking it on himself to fix everything",
+          "literal_situation": "Later in the series, after a turning point that leaves him cut off from everyone he loves, Jonas becomes convinced that it is up to him alone to undo the chain of tragedies that has hit his family and his town.",
+          "pattern_label": "believing you alone must fix what broke",
+          "pattern_text": "A young person decides the tragedies around them are theirs to fix, and throws every choice into undoing the past. The harder they fight, the more they wonder whether their choices matter at all, or whether they are walking a path laid down long before them. It is a story about responsibility, fate and free will, and about the difference between accepting what happened and giving up.",
+          "hook": "Later in the series, after a turning point that strands him far from home, Jonas is alone, injured and determined: he believes that if he can just make the right choice, the people he loves can still be saved.",
+          "why_relatable": "Is it your job to fix everything that went wrong in your family? Do our choices really change anything, or do we keep repeating the same patterns? And what happens to a person who gives up everything to control an outcome?",
+          "watch_for": [
+            "Notice how Jonas reacts when people tell him what he must do: who does he trust, and why?",
+            "Does he believe his choices matter? Watch how that belief shifts.",
+            "What does he have to give up to keep going, and is it worth it?"
+          ],
+          "start_at": "S2E1",
+          "span": "S2-S3",
+          "situations": [
+            {"id": "responsibility_you_didnt_ask_for", "weight": 0.9},
+            {"id": "identity_and_self_acceptance", "weight": 0.5},
+            {"id": "redemption_after_mistakes", "weight": 0.4},
+            {"id": "coming_of_age", "weight": 0.4}
+          ],
+          "conflicts": ["past_vs_future", "control_vs_trust"],
+          "emotions": {"start": ["determination", "loneliness", "fear"], "middle": ["anger", "confusion", "overwhelm"], "end": ["acceptance", "love", "peace"]},
+          "ending_tone": "bittersweet",
+          "intensity": "heavy",
+          "warnings": ["war_and_violence", "death_of_loved_one", "death_of_main_character", "self_harm_or_suicide", "betrayal"],
+          "example_user_messages": [
+            "I feel like it's my job to fix everything that went wrong in my family, and it's crushing me.",
+            "No matter what I do, I end up repeating the exact mistakes my parents made.",
+            "People keep telling me who I'm going to become and I'm scared they're right.",
+            "I tried so hard to stop something bad from happening and I think I actually caused it.",
+            "I've given up everything to make things right and I don't recognise myself anymore."
+          ],
+          "spoiler": {
+            "summary": "Stranded in 2052, Jonas survives Elisabeth Doppler's regime and a hanging, then passes through the God Particle to 1921, where he learns that Adam, leader of Sic Mundus, is his own elderly self. Sent to the day before his father's suicide to stop it, he instead triggers it. As the Stranger, adult Jonas tries to close the wormhole in 2019 but creates it, and teenage Jonas, returning with the young Claudia, fails to save Martha from Adam on the day of the apocalypse. Rescued by Eva's Martha, he learns two worlds are bound in a knot by Adam and Eva, turns against Eva and is shot. Finally Adam, told by Claudia about the origin world, saves a Jonas at the moment of the apocalypse and sends him with Martha to 1971, where they prevent the accident that led Tannhaus to build his time machine; both worlds, and Jonas himself, cease to exist while the origin world goes on.",
+            "key_events": [
+              "Stranded in post-apocalyptic 2052",
+              "Survives a hanging by Elisabeth's soldiers",
+              "Meets Adam, his elderly self, in 1921",
+              "Accidentally triggers his father's suicide",
+              "The Stranger's attempt to close the wormhole creates it",
+              "Fails to save Martha on the day of the apocalypse",
+              "Discovers Eva's world and is shot",
+              "Prevents the Tannhaus accident in the origin world and vanishes"
+            ],
+            "got_right": "He never stops caring about the people he loves, and he finally accepts that the answer is not to control the past but to let it go, choosing to end the cycle even though it means he will never have existed.",
+            "got_wrong": "For years he trusts whoever claims to know the way out, hardening into the very man he feared, and his fight to change the past keeps causing the tragedies he meant to prevent."
+          }
+        }
+      ]
+    },
+    {
+      "id": "char:dark/martha_nielsen",
+      "name": "Martha Nielsen",
+      "role": "Ulrich and Katharina's sensitive, outspoken teenage daughter, a budding actress and activist who has been dating Jonas's best friend Bartosz, and whose little brother Mikkel vanishes.",
+      "relations": [
+        {"target": "char:dark/ulrich_nielsen", "relation": "parent"},
+        {"target": "char:dark/katharina_nielsen", "relation": "parent"},
+        {"target": "char:dark/jonas_kahnwald", "relation": "partner"}
+      ],
+      "arcs": [
+        {
+          "id": "arc:dark/martha_nielsen/torn_between_two_boys",
+          "title": "Torn between her boyfriend and her first love",
+          "literal_situation": "Martha has been dating Bartosz while Jonas was away, but the kiss she and Jonas shared in the summer still matters to her. When her little brother Mikkel disappears on a night out with her friends, she is left frightened and grieving, pulled between the two boys while her parents fall apart.",
+          "pattern_label": "torn between a steady partner and a first love",
+          "pattern_text": "A young person in a comfortable relationship is unsettled when an old flame returns, carrying feelings neither of them resolved. Just as they try to choose, a family crisis hits, and the person they reach for keeps pulling away without explanation. It's a story about choosing honestly, and about not letting other people's silence decide who you are.",
+          "hook": "Martha is with Bartosz, Jonas is back, and she has written him messages she never sent. Then her little brother vanishes on the night they all went into the woods together.",
+          "why_relatable": "How do you choose between the person who stayed and the person you can't stop thinking about? What do you do when someone kisses you and then goes silent? And how do you hold yourself together when your family is falling apart?",
+          "watch_for": [
+            "Who does Martha reach for first when she's frightened, and why?",
+            "Notice how she reacts when Jonas won't explain himself.",
+            "How honest is she with Bartosz, and with herself?"
+          ],
+          "start_at": "S1E1",
+          "span": "S1-S2",
+          "situations": [
+            {"id": "breakup", "weight": 0.6},
+            {"id": "grief_and_loss", "weight": 0.6},
+            {"id": "coming_of_age", "weight": 0.5},
+            {"id": "falling_for_someone_unexpected", "weight": 0.3}
+          ],
+          "conflicts": ["duty_vs_desire", "holding_on_vs_letting_go"],
+          "emotions": {"start": ["longing", "guilt", "confusion"], "middle": ["rejection", "anger", "grief"], "end": ["hope", "love", "fear"]},
+          "ending_tone": "tragic",
+          "intensity": "heavy",
+          "warnings": ["child_endangerment", "grief", "betrayal", "death_of_main_character"],
+          "example_user_messages": [
+            "I've been with my boyfriend for a few months and now the guy I actually had feelings for is back.",
+            "He kissed me and then just stopped answering my calls. I don't understand what I did wrong.",
+            "My little brother is missing and my parents barely look at me anymore.",
+            "I feel like I'm always choosing wrong between the person who's loyal to me and the one I really want.",
+            "My mom acts like I don't exist since everything happened."
+          ],
+          "spoiler": {
+            "summary": "Martha kisses Jonas in the dressing room after her rehearsal, but he suddenly rejects her in the rain (having learned she is his aunt), and she goes back to Bartosz. After Jonas and Ulrich vanish, her mother withdraws and Martha ends things with Bartosz, sensing he is hiding something; she, Magnus and Franziska tie him up in the caves until he reveals the time machine, and they briefly find themselves in 1987. She recognises the adult Jonas at Hannah's house, but Katharina drags her away, telling her he is her nephew. On 27 June 2020, as the apocalypse begins, she is shot by Adam in front of teenage Jonas.",
+            "key_events": [
+              "Kisses Jonas after her rehearsal",
+              "Jonas coldly rejects her in the rain",
+              "Returns to Bartosz, then ends it",
+              "Forces Bartosz to reveal the time machine",
+              "Recognises the adult Jonas",
+              "Katharina tells her Jonas is her nephew",
+              "Killed by Adam on the day of the apocalypse"
+            ],
+            "got_right": "She demands honesty from the people around her and trusts her own sense that something is wrong, even when others dismiss her.",
+            "got_wrong": "Hurt and lonely, she drifts back to Bartosz for comfort rather than conviction, and lashes out at her grieving mother instead of saying how abandoned she feels."
+          }
+        },
+        {
+          "id": "arc:dark/martha_nielsen/choosing_her_own_path",
+          "title": "Deciding whose plan for her life to follow",
+          "literal_situation": "Later in the series, after a turning point that throws her into a struggle far bigger than her own life, Martha is surrounded by people with their own agendas who tell her what she must do and who she must become.",
+          "pattern_label": "refusing to become who others planned",
+          "pattern_text": "A young woman discovers that powerful people have mapped out her life and expect her to play her part. She is torn between trusting those who seem to know more than she does and following her own instincts. It is a story about manipulation, about growing up too fast, and about claiming the right to choose your own path.",
+          "hook": "Later in the series, after a turning point that changes everything she thought she knew, Martha is surrounded by people who claim to know what's best for her, and she has to decide whom to believe.",
+          "why_relatable": "What do you do when the people guiding you might be using you? Can you trust someone who says they only want to protect you? And how do you find your own voice when everyone already has a script for you?",
+          "watch_for": [
+            "Notice who Martha trusts at first, and what makes her start to doubt them.",
+            "What does she do when she's told something is 'meant to be'?",
+            "Watch for the moments when she makes a choice nobody told her to make."
+          ],
+          "start_at": "S3E1",
+          "span": "S3",
+          "situations": [
+            {"id": "identity_and_self_acceptance", "weight": 0.8},
+            {"id": "standing_up_to_authority", "weight": 0.6},
+            {"id": "coming_of_age", "weight": 0.5},
+            {"id": "responsibility_you_didnt_ask_for", "weight": 0.4}
+          ],
+          "conflicts": ["control_vs_trust", "self_vs_family_expectations"],
+          "emotions": {"start": ["confusion", "fear", "curiosity"], "middle": ["love", "betrayal", "anger"], "end": ["determination", "acceptance", "peace"]},
+          "ending_tone": "bittersweet",
+          "intensity": "heavy",
+          "warnings": ["death_of_loved_one", "death_of_main_character", "betrayal", "war_and_violence"],
+          "example_user_messages": [
+            "Everyone in my life seems to have a plan for me and nobody has asked what I want.",
+            "I just found out someone I trusted has been steering my decisions for years.",
+            "I'm scared I'm turning into the person I swore I'd never become.",
+            "I feel like a pawn in somebody else's fight.",
+            "I want to make one choice in my life that is actually mine."
+          ],
+          "spoiler": {
+            "summary": "In Eva's world, Martha meets the Jonas from Adam's world, who was rescued from his apocalypse by a slightly older Martha. Guided by her own older selves, the middle-aged Martha and the elderly Eva, who wants the knot preserved, she travels with Jonas, falls for him and becomes pregnant with the child who binds the two worlds. When Jonas turns against Eva, her middle-aged self shoots him in front of her. Grieving, she cuts her hair and goes to rescue Jonas at his world's apocalypse, closing the loop Eva planned. Adam later kills a pregnant Martha while trying to erase the origin, but Claudia shows him the real way out: at the moment of the apocalypse Martha and Jonas are sent to the origin world, where they stop the Tannhaus car accident and vanish together, undoing both worlds.",
+            "key_events": [
+              "Meets Adam's-world Jonas in her own world",
+              "Manipulated by her middle-aged self and Eva",
+              "Becomes pregnant by Jonas",
+              "Her middle-aged self shoots Jonas in front of her",
+              "Cuts her hair and rescues Jonas from the apocalypse",
+              "Adam kills a pregnant Martha",
+              "Prevents the Tannhaus accident with Jonas and vanishes"
+            ],
+            "got_right": "She eventually sees that her 'destiny' is someone else's design, and chooses to use her love for Jonas to end the cycle rather than preserve it.",
+            "got_wrong": "For too long she trusts older people who claim to protect her, and grief pushes her into exactly the role she was manipulated into."
+          }
+        }
+      ]
+    },
+    {
+      "id": "char:dark/ulrich_nielsen",
+      "name": "Ulrich Nielsen",
+      "role": "A hot-headed Winden police officer, husband of school principal Katharina and father of three, whose own younger brother Mads vanished without a trace when Ulrich was a teenager.",
+      "relations": [
+        {"target": "char:dark/katharina_nielsen", "relation": "partner"},
+        {"target": "char:dark/martha_nielsen", "relation": "child"},
+        {"target": "char:dark/hannah_kahnwald", "relation": "partner"},
+        {"target": "char:dark/charlotte_doppler", "relation": "boss"},
+        {"target": "char:dark/regina_tiedemann", "relation": "enemy"}
+      ],
+      "arcs": [
+        {
+          "id": "arc:dark/ulrich_nielsen/a_father_who_wont_stop_searching",
+          "title": "A father who will not stop searching",
+          "literal_situation": "When his youngest son Mikkel vanishes in the woods near the caves, Ulrich is thrown back into the worst memory of his life: his brother Mads disappeared the same way when Ulrich was a teenager and was never found. As a police officer, he throws himself into the search and starts crossing every line to get answers.",
+          "pattern_label": "an old unhealed loss reopened by a new one",
+          "pattern_text": "When a parent's child goes missing, it rips open a wound from their own youth, when a sibling vanished and no one ever found out why. Driven by guilt and a lifelong distrust of the people who failed the first time, they throw themselves into the search, pushing away their family and breaking every rule. It is a story about how unprocessed grief can turn love into obsession.",
+          "hook": "Ulrich spent his youth furious that the police never found his brother. Now he is the police, his own son is missing, and every clue seems to lead back to that old case.",
+          "why_relatable": "What happens when a new loss tears open an old one? How far would you go for your child, and where does determination turn into something darker? And who do you become when you stop trusting anyone to help?",
+          "watch_for": [
+            "Notice how often Ulrich acts alone instead of with his colleagues or his wife.",
+            "How does the old case of his brother change the way he sees the people around him?",
+            "Where is the line between determination and obsession for him?"
+          ],
+          "start_at": "S1E1",
+          "span": "S1-S3",
+          "situations": [
+            {"id": "grief_and_loss", "weight": 0.9},
+            {"id": "caring_for_family", "weight": 0.5},
+            {"id": "standing_up_to_authority", "weight": 0.5}
+          ],
+          "conflicts": ["holding_on_vs_letting_go", "revenge_vs_forgiveness"],
+          "emotions": {"start": ["fear", "anger", "dread"], "middle": ["determination", "anger", "loneliness"], "end": ["grief", "loneliness", "longing"]},
+          "ending_tone": "tragic",
+          "intensity": "heavy",
+          "warnings": ["child_endangerment", "war_and_violence", "grief", "death_of_loved_one"],
+          "example_user_messages": [
+            "My kid has been missing for days and I feel like I'm the only one actually looking.",
+            "My brother disappeared when we were teenagers and now it's like the whole nightmare is happening again.",
+            "I've become so obsessed with finding answers that my family says they don't recognise me.",
+            "I don't trust anyone in charge because they failed us the first time.",
+            "I did something terrible because I thought it would fix everything."
+          ],
+          "spoiler": {
+            "summary": "Ulrich searches for Mikkel, is suspended after forcing his way onto the power plant grounds, and links the case to Mads after Mads's body is found in the forest. Suspecting the elderly Helge Doppler, he follows him into the caves and ends up in 1953, where he beats the young Helge to stop the future abductions but fails to kill him, instead helping create the damaged Helge who later serves Noah. Arrested by the young Egon Tiedemann, he is committed to the psychiatric asylum and spends 34 years there without giving his name. Hannah visits him in 1954 and abandons him. In 1987 the old Ulrich escapes and finds Mikkel, but is caught before reaching the caves. Katharina finds him in September 1987 and promises to free him, but she never arrives, murdered by her own mother, and he is left waiting by the door. He is erased when the knot is destroyed.",
+            "key_events": [
+              "Suspended for intruding on the power plant",
+              "Mads's body is found",
+              "Travels to 1953 following Helge",
+              "Brutally attacks the child Helge",
+              "Committed to the asylum for 34 years",
+              "Hannah abandons him in 1954",
+              "Escapes in 1987 and briefly reunites with Mikkel",
+              "Katharina never comes to free him"
+            ],
+            "got_right": "His love for his son is fierce, he refuses to accept official failure, and he sees the link between the two disappearances long before anyone else.",
+            "got_wrong": "He lets rage and guilt make his choices, attacking a child to rewrite the past and becoming part of the very harm he wanted to stop."
+          }
+        },
+        {
+          "id": "arc:dark/ulrich_nielsen/living_a_double_life",
+          "title": "A family man living a double life",
+          "literal_situation": "On the surface Ulrich is a joking husband and father, but he is having an affair with Hannah, his friend since their teens and the recently widowed mother of Jonas. When his son disappears, the affair becomes a weight he can no longer carry.",
+          "pattern_label": "an affair colliding with a family crisis",
+          "pattern_text": "A married parent has been having an affair with an old friend, treating it as something separate from their real life. When a crisis hits their family, the double life suddenly becomes unbearable, and ending it proves much harder than starting it. It's a story about guilt, about the people we hurt when we're careless, and about how the past can come back to claim us.",
+          "hook": "Ulrich slips out of Hannah's window on the morning of his family's worst day. By nightfall his son is missing, and the affair he treated as harmless is a secret he can't live with.",
+          "why_relatable": "Can you keep two lives separate forever? What do you owe the person you had an affair with, and what do you owe your family? And what happens when you see someone you thought you knew in a new light?",
+          "watch_for": [
+            "Notice how Ulrich treats Hannah once his son is missing.",
+            "How honest is he with Katharina, and what does he avoid?",
+            "Watch how he reacts when he learns something new about someone from his past."
+          ],
+          "start_at": "S1E1",
+          "span": "S1",
+          "situations": [
+            {"id": "breakup", "weight": 0.6},
+            {"id": "redemption_after_mistakes", "weight": 0.4},
+            {"id": "caring_for_family", "weight": 0.3}
+          ],
+          "conflicts": ["duty_vs_desire", "truth_vs_protecting_others"],
+          "emotions": {"start": ["guilt", "restlessness"], "middle": ["guilt", "anger", "betrayal"], "end": ["anger", "loneliness"]},
+          "ending_tone": "tragic",
+          "intensity": "moderate",
+          "warnings": ["betrayal", "domestic_violence"],
+          "example_user_messages": [
+            "I've been seeing someone behind my wife's back and now that our family is in crisis I just want it to be over.",
+            "I tried to end an affair and she won't let me walk away.",
+            "I just found out someone I've known since I was a teenager did something awful to me back then.",
+            "I think my wife would be better off never knowing.",
+            "I can't look at my kids knowing what I've been doing."
+          ],
+          "spoiler": {
+            "summary": "After Mikkel's disappearance Ulrich tries to end the affair with Hannah, who refuses to let go. Talking to Regina, he realises that Hannah, not Regina, was the witness whose false rape accusation got him jailed as a teenager in 1986; he storms into Hannah's house, grabs her by the throat and calls her poison. Hannah retaliates by lying to Katharina that he planned to leave her and by blackmailing Aleksander to ruin him. Ulrich vanishes into 1953 before any of it plays out, and his marriage is left in ruins; years later Hannah finds him in the asylum and walks away because he still loves Katharina.",
+            "key_events": [
+              "Ends the affair with Hannah",
+              "Learns Hannah made the false rape accusation",
+              "Violent confrontation with Hannah",
+              "Hannah lies to Katharina about him leaving",
+              "Hannah blackmails Aleksander to ruin him",
+              "Hannah abandons him in the asylum"
+            ],
+            "got_right": "When his family is in crisis he recognises the affair was wrong and tries to end it.",
+            "got_wrong": "He treats the affair as harmless and Hannah as disposable, never comes clean to Katharina, and answers betrayal with violence."
+          }
+        }
+      ]
+    },
+    {
+      "id": "char:dark/charlotte_doppler",
+      "name": "Charlotte Doppler",
+      "role": "Winden's composed, all-business chief of police, married to therapist Peter Doppler with two daughters, now facing a string of missing children.",
+      "relations": [
+        {"target": "char:dark/ulrich_nielsen", "relation": "colleague"},
+        {"target": "char:dark/hannah_kahnwald", "relation": "friend"},
+        {"target": "char:dark/katharina_nielsen", "relation": "friend"}
+      ],
+      "arcs": [
+        {
+          "id": "arc:dark/charlotte_doppler/keeping_order_when_nothing_makes_sense",
+          "title": "Keeping order when nothing makes sense",
+          "literal_situation": "Charlotte leads the Winden police as one missing teenager is followed by another missing child. At home, her marriage to Peter has gone quiet and cold, her older daughter Franziska resents the family's silence, and her father-in-law Helge keeps insisting it is all happening again.",
+          "pattern_label": "the steady one whose own house is cracking",
+          "pattern_text": "A person everyone relies on to stay calm is leading their community through a crisis nobody understands. At home, their marriage has gone silent, their teenager is angry and the family avoids every real conversation. It's a story about the cost of always being the composed one, and about what gets missed when you stop asking the people closest to you what's wrong.",
+          "hook": "Charlotte faces a hall of frightened parents with statistics and a straight face. At home, her husband keeps disappearing for hours and nobody asks where he goes.",
+          "why_relatable": "What happens when the person holding everyone together has no one holding them? Can you be good at your job and a stranger in your own home? And how long can a family survive on not talking?",
+          "watch_for": [
+            "Notice what Charlotte asks at work compared with what she asks at home.",
+            "How does she handle clues that don't fit any rational explanation?",
+            "What does she do when she senses her husband is hiding something?"
+          ],
+          "start_at": "S1E1",
+          "span": "S1-S2",
+          "situations": [
+            {"id": "burnout_at_work", "weight": 0.6},
+            {"id": "caring_for_family", "weight": 0.5},
+            {"id": "loneliness", "weight": 0.5}
+          ],
+          "conflicts": ["career_vs_relationships", "truth_vs_protecting_others"],
+          "emotions": {"start": ["anxiety", "loneliness", "numbness"], "middle": ["confusion", "determination", "betrayal"], "end": ["curiosity", "dread", "grief"]},
+          "ending_tone": "ambiguous",
+          "intensity": "moderate",
+          "warnings": ["child_endangerment", "betrayal", "grief"],
+          "example_user_messages": [
+            "Everyone at work sees me as the calm one, but at home my marriage has basically gone silent.",
+            "My husband keeps disappearing for hours and I'm afraid to ask where he goes.",
+            "My teenage daughter is furious with us and I don't know how to talk to her.",
+            "I'm responsible for handling a crisis nobody understands and I'm starting to doubt everything I know.",
+            "I've spent so long holding it together that I don't know how to fall apart."
+          ],
+          "spoiler": {
+            "summary": "Charlotte investigates the disappearances of Erik, Mikkel and Yasin while Helge rants about the past and Peter secretly visits Benni, a trans sex worker, and hides his involvement with Claudia's notes in the bunker. The recurring dead birds she first sketched as a teenager trouble her, and near the end of season 1 she finds Ulrich's face in a 1953 newspaper and begins to realise people are travelling through time. In season 2 she researches Sic Mundus, finds time machine blueprints in Tannhaus's shop, joins Peter, Hannah and the adult Jonas in the bunker, and fails to stop Clausen from opening the radioactive barrels that trigger the apocalypse.",
+            "key_events": [
+              "Peter's secret visits to Benni",
+              "Finds Ulrich's picture in a 1953 newspaper",
+              "Discovers time machine blueprints in Tannhaus's shop",
+              "Learns the truth from the adult Jonas in the bunker",
+              "Fails to stop Clausen opening the barrels"
+            ],
+            "got_right": "She keeps an open, methodical mind and eventually accepts evidence that defies everything she believed.",
+            "got_wrong": "She lets her marriage and her relationship with Franziska wither in silence, never asking the questions at home she asks at work."
+          }
+        },
+        {
+          "id": "arc:dark/charlotte_doppler/where_she_comes_from",
+          "title": "Needing to know where she comes from",
+          "literal_situation": "Later in the series, after a turning point that shakes the story she was always told about her own childhood, Charlotte starts asking the question she has avoided all her life: who she really is and where she comes from.",
+          "pattern_label": "searching for the truth about your origins",
+          "pattern_text": "Someone who has built a controlled, sensible life has always carried a quiet gap where their origins should be. When that gap is suddenly torn open, they must decide whether to chase the truth, and how to live with answers that may upend everyone they love. It's a story about identity and the ache of not knowing the people who made you.",
+          "hook": "Later in the series, after a turning point that unsettles everything she believed about her family, the woman who always relied on facts has to face a question with no rational answer.",
+          "why_relatable": "Does knowing where you come from change who you are? What do you do with the people who raised you when their story has gaps? And can you love a family that was never quite what it seemed?",
+          "watch_for": [
+            "Notice how Charlotte reacts when someone offers her answers she didn't ask for.",
+            "What does she want more: the truth, or the family she already has?",
+            "How well does her composure hold when the question becomes personal?"
+          ],
+          "start_at": "S2",
+          "span": "S2-S3",
+          "situations": [
+            {"id": "identity_and_self_acceptance", "weight": 0.9},
+            {"id": "grief_and_loss", "weight": 0.4},
+            {"id": "difficult_parent", "weight": 0.3}
+          ],
+          "conflicts": ["past_vs_future", "truth_vs_protecting_others"],
+          "emotions": {"start": ["confusion", "longing", "anxiety"], "middle": ["grief", "betrayal", "curiosity"], "end": ["acceptance", "love", "grief"]},
+          "ending_tone": "tragic",
+          "intensity": "heavy",
+          "warnings": ["child_endangerment", "war_and_violence", "death_of_loved_one"],
+          "example_user_messages": [
+            "I just found out the story I was told about my family isn't true and I don't know who I am anymore.",
+            "The person who raised me isn't who I thought, and I still love them.",
+            "I've always felt a hole where my real parents should be.",
+            "The one person who has answers about where I come from is someone I despise.",
+            "I'm the rational one in my family, but nothing about my own origins makes sense."
+          ],
+          "spoiler": {
+            "summary": "Charlotte admits Tannhaus was not her real grandfather and never knew her parents. Noah, the child-killer she is hunting, visits her in the clock shop, shows her a photo of himself holding her as a baby and tells her her mother always loved her, revealing he is her father. On the day of the apocalypse she meets her daughter Elisabeth through a portal from 2053, and learns Elisabeth is also her mother. In 2053 she joins Adam and, with Elisabeth, takes her own infant self from Noah and Elisabeth in 2041 and delivers the baby to Tannhaus in 1971, closing the loop. She is erased when the knot is broken.",
+            "key_events": [
+              "Learns Tannhaus is not her real grandfather",
+              "Noah reveals he is her father",
+              "Reunites with Elisabeth across time",
+              "Elisabeth is also her mother",
+              "Joins Adam in 2053",
+              "Kidnaps her own infant self and gives her to Tannhaus"
+            ],
+            "got_right": "She faces the truth about her origins with courage and never stops loving her daughters.",
+            "got_wrong": "Desperate for answers, she allies with Adam and helps repeat the very loss that scarred her, taking a baby from her parents."
+          }
+        }
+      ]
+    },
+    {
+      "id": "char:dark/hannah_kahnwald",
+      "name": "Hannah Kahnwald",
+      "role": "Jonas's mother, a physiotherapist recently widowed by her husband Michael's suicide, who is secretly having an affair with her old school friend Ulrich, the married police officer.",
+      "relations": [
+        {"target": "char:dark/jonas_kahnwald", "relation": "child"},
+        {"target": "char:dark/ulrich_nielsen", "relation": "partner"},
+        {"target": "char:dark/katharina_nielsen", "relation": "rival"},
+        {"target": "char:dark/charlotte_doppler", "relation": "friend"}
+      ],
+      "arcs": [
+        {
+          "id": "arc:dark/hannah_kahnwald/wanting_what_isnt_hers",
+          "title": "Wanting a man who belongs to someone else",
+          "literal_situation": "Months after her husband Michael's suicide, Hannah is struggling with unpaid bills, a withdrawn son and a mother-in-law she resents. Her one escape is her affair with Ulrich, whom she has loved since they were teenagers, even though he is married to Katharina, who treats Hannah as a friend.",
+          "pattern_label": "an obsessive love for someone unavailable",
+          "pattern_text": "A person has loved the same unavailable someone since their teens and, after a loss, finally has them in secret. When the other person pulls away, the fear of being left again turns into jealousy and a willingness to hurt people to keep what they want. It's a story about longing, loneliness and how the need to be chosen can bring out the worst in us.",
+          "hook": "Hannah finally has the man she has wanted her whole life, just not in the open. Then his son disappears, and she can feel him slipping away.",
+          "why_relatable": "What would you do to be chosen by the person you've always loved? When does longing turn into something you'd be ashamed of? And how do you cope when it feels like everyone eventually leaves?",
+          "watch_for": [
+            "Notice how Hannah reacts when Ulrich tries to set a boundary.",
+            "Watch how she speaks to Katharina, and compare it with how she speaks about her.",
+            "What does Hannah want more: to be loved, or to not be left?"
+          ],
+          "start_at": "S1E1",
+          "span": "S1-S2",
+          "situations": [
+            {"id": "unrequited_love", "weight": 0.8},
+            {"id": "grief_and_loss", "weight": 0.5},
+            {"id": "loneliness", "weight": 0.5},
+            {"id": "breakup", "weight": 0.4}
+          ],
+          "conflicts": ["duty_vs_desire", "revenge_vs_forgiveness"],
+          "emotions": {"start": ["longing", "loneliness", "grief"], "middle": ["jealousy", "rejection", "anger"], "end": ["loneliness", "resentment", "grief"]},
+          "ending_tone": "tragic",
+          "intensity": "heavy",
+          "warnings": ["self_harm_or_suicide", "betrayal", "domestic_violence", "grief"],
+          "example_user_messages": [
+            "I've been in love with the same married man since we were teenagers, and we finally started something.",
+            "He says he wants to end it and I feel like I'm being abandoned all over again.",
+            "I'm so jealous of his wife that I've done things I'm not proud of.",
+            "Every man in my life has left me somehow.",
+            "My husband died and the only thing that makes me feel alive is someone I shouldn't be with."
+          ],
+          "spoiler": {
+            "summary": "Hannah continues her affair with Ulrich after Michael's death; when Mikkel disappears, Ulrich ends it. Furious, she remembers how at 14 she falsely accused Ulrich of raping Katharina out of jealousy, and when Ulrich learns this he confronts her violently. She lies to Katharina that Ulrich planned to leave her and blackmails Aleksander, secretly the fugitive Boris Niewald whose gun and passport she took in 1986, to ruin Ulrich. After Jonas and Ulrich vanish, she nearly shoots herself on the anniversary of Michael's death but is interrupted by the adult Jonas, learns that Michael was Mikkel, and alienates her son when he learns of the affair. She takes his time machine, finds Ulrich in the 1954 asylum, and walks away when he says he loves her only so she will free him.",
+            "key_events": [
+              "Ulrich ends the affair",
+              "Her false rape accusation from 1986 is exposed",
+              "Lies to Katharina that Ulrich was leaving her",
+              "Blackmails Aleksander with his old passport and gun",
+              "Nearly takes her own life; the adult Jonas returns",
+              "Learns Michael was Mikkel",
+              "Abandons Ulrich in the 1954 asylum"
+            ],
+            "got_right": "Beneath the manipulation is real love for her son and a deep longing to be chosen, and she eventually admits she has been clinging to things she doesn't need.",
+            "got_wrong": "She lies, manipulates and wrecks lives, falsely accusing Ulrich, deceiving Katharina and blackmailing Aleksander, because she cannot bear to lose."
+          }
+        },
+        {
+          "id": "arc:dark/hannah_kahnwald/starting_over_alone",
+          "title": "Starting over with nothing left",
+          "literal_situation": "Later in the series, after a turning point that leaves her with no one she can count on, Hannah decides to leave everything behind and begin a completely new life where nobody knows her.",
+          "pattern_label": "starting over and repeating old patterns",
+          "pattern_text": "After losing everyone, a person walks away from their old life to start fresh where no one knows them. The new beginning soon brings the same kind of relationship and the same disappointments, plus an unplanned pregnancy that forces them to decide what kind of person they want to be. It is a story about fresh starts, the patterns we carry with us, and regret for the people we leave behind.",
+          "hook": "Later in the series, after a turning point that leaves her alone, Hannah packs a suitcase and chooses a fresh start, convinced she no longer needs anyone.",
+          "why_relatable": "Can you really start over, or do you bring your old self with you? What do you owe the people you walk away from? And when life hands you something you didn't plan, how do you decide who to become?",
+          "watch_for": [
+            "Notice whether Hannah's new relationships look any different from her old ones.",
+            "What changes in her when she meets someone who reminds her of her past?",
+            "Does she ever look back, and what does she do about it?"
+          ],
+          "start_at": "S2",
+          "span": "S2-S3",
+          "situations": [
+            {"id": "starting_over", "weight": 0.9},
+            {"id": "becoming_a_parent", "weight": 0.6},
+            {"id": "moving_somewhere_new", "weight": 0.5},
+            {"id": "redemption_after_mistakes", "weight": 0.4}
+          ],
+          "conflicts": ["independence_vs_connection", "past_vs_future"],
+          "emotions": {"start": ["loneliness", "resentment", "freedom"], "middle": ["hope", "rejection", "fear"], "end": ["guilt", "love", "acceptance"]},
+          "ending_tone": "tragic",
+          "intensity": "heavy",
+          "warnings": ["death_of_main_character", "child_endangerment", "betrayal"],
+          "example_user_messages": [
+            "I left my whole life behind to start fresh and I'm already making the same mistakes.",
+            "I just found out I'm pregnant and the man asked if it's even his.",
+            "I walked away from my family and now I can't stop thinking about my son.",
+            "I told myself I don't need anyone anymore, but I'm not sure that's true.",
+            "I'm older and scared, and this pregnancy wasn't supposed to happen."
+          ],
+          "spoiler": {
+            "summary": "Hannah stays in 1954 under the name Katharina Nielsen and begins an affair with the married Egon Tiedemann. Pregnant, and wounded when Egon asks whether the child is his, she goes to an abortionist but meets the young Helene Albers in the waiting room, leaves her St. Christopher medal on the girl's chair and walks out, keeping the baby. She raises her daughter Silja alone, and years later, regretting abandoning Jonas, is led by Eva to 1911, where she finds Jonas as a man turning into Adam and apologises. He does not forgive her; to send Silja to the future, he smothers Hannah in her sleep and takes the girl.",
+            "key_events": [
+              "Lives in 1954 as 'Katharina Nielsen'",
+              "Affair with Egon Tiedemann",
+              "Pregnant; Egon asks if it is his",
+              "Meets young Helene at the abortionist and keeps the baby",
+              "Gives birth to Silja, Jonas's half-sister",
+              "Reunites with Jonas in 1911 and apologises",
+              "Killed by Jonas, who takes Silja"
+            ],
+            "got_right": "She chooses to keep her child after a small encounter reminds her what a mother can mean, and she finally tries to make amends with the son she left.",
+            "got_wrong": "Her fresh start repeats the old pattern of chasing unavailable men, and she abandons Jonas when he most needed a parent."
+          }
+        }
+      ]
+    },
+    {
+      "id": "char:dark/claudia_tiedemann",
+      "name": "Claudia Tiedemann",
+      "role": "The ambitious, hard-driving new director of Winden's nuclear power plant, a single mother who is openly impatient with her shy daughter Regina.",
+      "relations": [
+        {"target": "char:dark/regina_tiedemann", "relation": "child"}
+      ],
+      "arcs": [
+        {
+          "id": "arc:dark/claudia_tiedemann/career_before_family",
+          "title": "Proving herself at work, failing at home",
+          "literal_situation": "Claudia has just become the first woman to run the town's nuclear power plant. On her first day she finds the numbers don't add up and learns her predecessor has been hiding something on the grounds. Her career consumes her, and her lonely daughter Regina gets criticism and a note to heat up a pizza.",
+          "pattern_label": "a driven career parent losing their child",
+          "pattern_text": "A brilliant, ambitious parent finally reaches the top of their field and throws everything into proving they deserve it. At home, their child is lonely and struggling, and gets criticism instead of warmth. When the parent begins to see what their choices are costing, the question is whether it's too late to make up for years of distance.",
+          "hook": "On her first day in charge, Claudia rehearses her big speech in the car while telling her daughter she looks like a limp dish rag. At work, she's found a secret her predecessor wanted to stay buried.",
+          "why_relatable": "Can you be a great success and a good parent at the same time? What do you owe your child when your work finally recognises you? And how do you repair a distance you created without meaning to?",
+          "watch_for": [
+            "Notice how Claudia speaks to Regina compared with how she speaks to colleagues.",
+            "What does she do when she finds a secret at work: expose it or keep it?",
+            "Watch for the first moment she softens, and what prompts it."
+          ],
+          "start_at": "S1E3",
+          "span": "S1-S2",
+          "situations": [
+            {"id": "becoming_a_manager", "weight": 0.6},
+            {"id": "redemption_after_mistakes", "weight": 0.5},
+            {"id": "caring_for_family", "weight": 0.4},
+            {"id": "burnout_at_work", "weight": 0.3}
+          ],
+          "conflicts": ["career_vs_relationships", "power_vs_morality"],
+          "emotions": {"start": ["pride", "determination", "restlessness"], "middle": ["curiosity", "guilt", "fear"], "end": ["guilt", "grief", "determination"]},
+          "ending_tone": "tragic",
+          "intensity": "heavy",
+          "warnings": ["death_of_loved_one", "serious_illness", "self_harm_or_suicide"],
+          "example_user_messages": [
+            "I finally got the promotion I've worked for my whole life and my kid barely talks to me.",
+            "I've been so hard on my daughter that she's stopped telling me anything.",
+            "At work everyone respects me; at home I feel like a stranger.",
+            "I just discovered my company has been hiding something serious and I don't know whether to speak up.",
+            "I want to make up for the years I wasn't there but I don't know how."
+          ],
+          "spoiler": {
+            "summary": "In 1986 Claudia takes over the plant from Bernd Doppler, who shows her the radioactive barrels hidden in the caves; she finds her dog Gretchen, lost 33 years earlier, and starts reading Tannhaus's book. In 1987 her elderly self visits her, reveals time travel and promises Regina will live if she stops Adam. After travelling to 2020 and seeing her adult daughter bald from chemotherapy, she clumsily tries to reconnect with Regina and her father Egon, who has cancer. When Egon pieces together the time travel and moves to call the police to the caves, they struggle, he hits his head, and she lets him die as her older self said she must; his last words call her 'the White Devil'. She then leaves with teenage Jonas, disappearing from Regina's life.",
+            "key_events": [
+              "Bernd shows her the hidden barrels",
+              "Finds Gretchen, lost 33 years earlier",
+              "Her elderly self reveals time travel",
+              "Sees Regina ill with cancer in 2020",
+              "Lets her father Egon die",
+              "Called 'the White Devil'",
+              "Leaves with Jonas and vanishes from Regina's life"
+            ],
+            "got_right": "When she finally understands what she stands to lose, she genuinely tries to reconnect with her father and daughter.",
+            "got_wrong": "She lets work and secrecy come before the people she loves, and when forced to choose she sacrifices her own father to a plan she barely understands."
+          }
+        },
+        {
+          "id": "arc:dark/claudia_tiedemann/whatever_it_takes_for_her_daughter",
+          "title": "Doing whatever it takes for her daughter",
+          "literal_situation": "Later in the series, after a turning point that shows her what her daughter's life will cost if nothing changes, Claudia commits herself completely to protecting Regina, no matter what that asks of her or of anyone else.",
+          "pattern_label": "a parent sacrificing everything for their child",
+          "pattern_text": "A parent who was distant for years suddenly sees their child's suffering clearly and vows to make up for it. The devotion becomes all-consuming: they lie, manipulate and make terrible sacrifices, telling themselves it's all for love. It's a story about the lengths we go to for our children, and the moral cost of a love that justifies any means.",
+          "hook": "Later in the series, after a turning point that frightens her more than anything at work ever has, Claudia makes one promise to herself: her daughter will be okay.",
+          "why_relatable": "How far would you go for your child? Can love justify hurting other people? And what happens to a person who decides the end justifies every means?",
+          "watch_for": [
+            "Notice what Claudia is willing to sacrifice, and what she never will.",
+            "How honest is she with the people she asks for help?",
+            "Does the love behind her choices change how you judge them?"
+          ],
+          "start_at": "S2",
+          "span": "S2-S3",
+          "situations": [
+            {"id": "caring_for_family", "weight": 0.8},
+            {"id": "redemption_after_mistakes", "weight": 0.7},
+            {"id": "responsibility_you_didnt_ask_for", "weight": 0.4}
+          ],
+          "conflicts": ["power_vs_morality", "truth_vs_protecting_others"],
+          "emotions": {"start": ["fear", "guilt", "determination"], "middle": ["grief", "loneliness", "determination"], "end": ["acceptance", "peace", "love"]},
+          "ending_tone": "bittersweet",
+          "intensity": "heavy",
+          "warnings": ["death_of_loved_one", "death_of_main_character", "serious_illness", "war_and_violence"],
+          "example_user_messages": [
+            "I wasn't there for my daughter when she was growing up and now I'd do anything to protect her.",
+            "I've started lying to people to get what my kid needs and I don't know where to stop.",
+            "My child is seriously ill and I feel it's my fault for all the years I was distant.",
+            "I've made choices for my family that I could never explain to anyone.",
+            "People think I'm cold and calculating, but everything I do is for my child."
+          ],
+          "spoiler": {
+            "summary": "After the apocalypse Claudia nurses Regina, dying of cancer, until Tronte smothers her on the orders of an older Claudia. Grieving, she works with Jonas and Noah on the God Particle, is recruited by her counterpart from Eva's world, later realises she is being manipulated, kills her other self and spends decades as 'the White Devil', secretly steering Jonas, Tannhaus, Peter, Tronte and others while opposing Adam. Before Noah shoots her in 1954, the elderly Claudia has found the real answer: the two worlds grew out of a third, origin world. She tells Adam that Jonas and Martha must go there and stop Tannhaus's mistake, which erases both worlds and lets Regina live in the origin world. Her middle-aged self fades away looking at Regina's photo, knowing it worked.",
+            "key_events": [
+              "Regina is smothered by Tronte on the older Claudia's orders",
+              "Recruited by her counterpart from Eva's world",
+              "Kills her other self",
+              "Becomes 'the White Devil', manipulating events for decades",
+              "Shot by Noah in 1954",
+              "Reveals the origin world to Adam",
+              "Regina lives in the origin world"
+            ],
+            "got_right": "Her love is fierce and patient, and she alone finds a way out that saves not only Regina but everyone, by understanding the whole system instead of fighting one side.",
+            "got_wrong": "She treats people as pieces in her plan, lying to Jonas, Adam and Eva and even arranging her own daughter's death, so her love leaves a trail of suffering."
+          }
+        }
+      ]
+    },
+    {
+      "id": "char:dark/katharina_nielsen",
+      "name": "Katharina Nielsen",
+      "role": "The tough, no-nonsense principal of Winden's high school, married to police officer Ulrich and mother of Magnus, Martha and Mikkel, unaware that her husband is having an affair with her friend Hannah.",
+      "relations": [
+        {"target": "char:dark/ulrich_nielsen", "relation": "partner"},
+        {"target": "char:dark/martha_nielsen", "relation": "child"},
+        {"target": "char:dark/hannah_kahnwald", "relation": "friend"},
+        {"target": "char:dark/charlotte_doppler", "relation": "friend"},
+        {"target": "char:dark/regina_tiedemann", "relation": "enemy"}
+      ],
+      "arcs": [
+        {
+          "id": "arc:dark/katharina_nielsen/holding_the_family_together",
+          "title": "Holding the family together as it falls apart",
+          "literal_situation": "Katharina is leading the school's response to a missing teenager when her own youngest son Mikkel vanishes. As the search drags on, she senses her husband Ulrich is hiding something, and her friend Hannah keeps turning up at her door.",
+          "pattern_label": "a missing child and a hidden affair",
+          "pattern_text": "A capable, hard-edged parent is hit by two blows at once: their child goes missing, and they discover their spouse has been having an affair with a friend. Keeping a public face while privately falling apart, they pour everything into the lost child and lose sight of the children still at home. It's a story about betrayal, grief and how to keep loving the people who are still there.",
+          "hook": "Katharina is the one telling students not to be afraid. That night her own son doesn't come home, and she senses her husband is keeping something from her.",
+          "why_relatable": "How do you stay strong for your family when you're the one breaking? Can a marriage survive betrayal in the middle of a crisis? And how do you keep seeing the children still at home when all you can think about is the one who is missing?",
+          "watch_for": [
+            "Notice how Katharina treats Hannah before and after she learns something new.",
+            "Where does she let her grief show: in public, at home, or only alone?",
+            "Watch how she treats Martha and Magnus as the search goes on."
+          ],
+          "start_at": "S1E1",
+          "span": "S1-S2",
+          "situations": [
+            {"id": "grief_and_loss", "weight": 0.8},
+            {"id": "caring_for_family", "weight": 0.5},
+            {"id": "breakup", "weight": 0.4}
+          ],
+          "conflicts": ["holding_on_vs_letting_go", "revenge_vs_forgiveness"],
+          "emotions": {"start": ["fear", "dread", "anxiety"], "middle": ["betrayal", "anger", "grief"], "end": ["numbness", "grief", "determination"]},
+          "ending_tone": "tragic",
+          "intensity": "heavy",
+          "warnings": ["child_endangerment", "betrayal", "grief", "war_and_violence"],
+          "example_user_messages": [
+            "My son has been missing for weeks and I just found out my husband was cheating with my friend.",
+            "I'm so consumed by the child I lost that I'm neglecting the ones I still have.",
+            "Everyone sees me as the strong one but I'm falling apart.",
+            "My friend has been sleeping with my husband and smiling to my face.",
+            "My daughter says I've ignored her for months and she's right."
+          ],
+          "spoiler": {
+            "summary": "After Mikkel vanishes, Katharina discovers Ulrich's many calls to Hannah; Hannah lies that Ulrich was planning to leave her, which his disappearance seems to confirm. When Regina provokes her after a school play, Katharina beats her in front of her children. Over the following months she searches the caves, neglects Martha and Magnus, and dismisses Charlotte and the adult Jonas when they tell her Ulrich and Mikkel are in the past, until she finds Mikkel in Michael Kahnwald's 1986 class photo. She calls Hannah a parasite, drags Martha away from the adult Jonas, and resolves to use the time machine to bring Mikkel home.",
+            "key_events": [
+              "Discovers Ulrich's affair with Hannah",
+              "Hannah lies that Ulrich was leaving her",
+              "Beats Regina after a school play",
+              "Neglects Martha and Magnus",
+              "Finds Mikkel in Michael's 1986 class photo",
+              "Confronts Hannah and pulls Martha away from Jonas"
+            ],
+            "got_right": "Her love for her missing son and her husband never wavers, and she faces the impossible truth once she sees the proof.",
+            "got_wrong": "She lets grief and rage consume her, lashing out at Regina and Hannah and effectively abandoning Martha and Magnus when they needed her most."
+          }
+        },
+        {
+          "id": "arc:dark/katharina_nielsen/going_back_for_her_family",
+          "title": "Going after the ones she lost",
+          "literal_situation": "Later in the series, after a turning point that shows her there may be a way to reach her missing son and husband, Katharina sets out alone, determined to bring them home whatever it takes. The journey forces her to face pain from her own past.",
+          "pattern_label": "facing an abusive parent to save your family",
+          "pattern_text": "A parent risks everything on a desperate attempt to bring their family back together. The path leads straight back into their own painful childhood and the parent who hurt them, whom they have spent a lifetime escaping. It's a story about how the wounds we inherit shape our fiercest love, and about confronting the person who taught us fear.",
+          "hook": "Later in the series, after a turning point that offers her a way to reach Mikkel and Ulrich, Katharina stops waiting for answers and goes after them herself.",
+          "why_relatable": "How far would you go to bring your family back? What happens when saving the people you love means facing the person who hurt you most? And can you ever really outrun your childhood?",
+          "watch_for": [
+            "Notice what Katharina is willing to risk, and what she refuses to wait for.",
+            "How does she act around people who don't believe her?",
+            "Pay attention to the small objects she carries with her."
+          ],
+          "start_at": "S3",
+          "span": "S3",
+          "situations": [
+            {"id": "caring_for_family", "weight": 0.8},
+            {"id": "difficult_parent", "weight": 0.7},
+            {"id": "taking_a_big_risk", "weight": 0.6}
+          ],
+          "conflicts": ["past_vs_future", "holding_on_vs_letting_go"],
+          "emotions": {"start": ["determination", "hope", "fear"], "middle": ["longing", "anger", "fear"], "end": ["fear", "love", "grief"]},
+          "ending_tone": "tragic",
+          "intensity": "heavy",
+          "warnings": ["abuse", "domestic_violence", "death_of_main_character", "graphic_gore"],
+          "example_user_messages": [
+            "I'm going to do whatever it takes to bring my family back together, even if everyone thinks I'm crazy.",
+            "My mother hit me when I was a kid and I still can't be around her.",
+            "To help my husband I'd have to go back to the place where my abusive parent lives.",
+            "Everyone tells me to accept the loss but I can't stop fighting for my son.",
+            "No matter how old I get, around my mom I'm still that scared kid."
+          ],
+          "spoiler": {
+            "summary": "Using Jonas's cave map and orb light, Katharina goes through the caves and arrives in 1987, where the town treats her as a stranger and the police threaten her. She finds the elderly Ulrich in the psychiatric ward where her mother Helene works and promises to take him and Mikkel home. When she tries to take Helene's key card at knifepoint, they fight; Katharina calls her 'mama', and Helene, not recognising her, beats her to death with a rock and sinks her body in the lake, the body the teenagers joked about at the lake in 2019. Ulrich waits by the door, and she never comes.",
+            "key_events": [
+              "Travels to 1987 through the caves",
+              "Finds the elderly Ulrich in the asylum",
+              "Promises to free him and bring Mikkel home",
+              "Fights her mother Helene for the key card",
+              "Killed by Helene and sunk in the lake"
+            ],
+            "got_right": "She refuses to give up on her husband and son, and her love for Ulrich survives decades and betrayal.",
+            "got_wrong": "Driven by desperation, she walks into danger alone and turns to violence against the one person she has never been able to face."
+          }
+        }
+      ]
+    },
+    {
+      "id": "char:dark/regina_tiedemann",
+      "name": "Regina Tiedemann",
+      "role": "The anxious, embattled owner of the newly opened Waldhotel Winden, married to power plant director Aleksander with a teenage son, Bartosz, who still bristles around Katharina and Ulrich.",
+      "relations": [
+        {"target": "char:dark/claudia_tiedemann", "relation": "parent"},
+        {"target": "char:dark/katharina_nielsen", "relation": "enemy"},
+        {"target": "char:dark/ulrich_nielsen", "relation": "enemy"}
+      ],
+      "arcs": [
+        {
+          "id": "arc:dark/regina_tiedemann/old_wounds_that_never_healed",
+          "title": "Still carrying the hurts of her youth",
+          "literal_situation": "Regina has never forgiven Katharina and Ulrich for how they treated her at school, and neither has ever apologised. She grew up with a demanding, distant mother who never said she loved her, and even as a wife and mother herself she still feels like the outsider.",
+          "pattern_label": "an adult still wounded by childhood cruelty",
+          "pattern_text": "A grown adult is still shaped by the bullying they suffered as a teenager and by a parent who gave criticism instead of love. The people who hurt them live nearby and have never apologised, and the old resentment flares whenever their paths cross. It's a story about whether old wounds can heal without an apology, and what it means to finally feel loved by a parent.",
+          "hook": "At the town meeting Regina smiles thinly and tells Katharina to worry about her own problems. The two women have history, and Regina has never forgotten it.",
+          "why_relatable": "Can you move on from people who hurt you if they never admit it? How much of who you are was shaped by a parent's criticism? And what would it take to finally let an old grudge go?",
+          "watch_for": [
+            "Notice how Regina behaves when someone from her school years is in the room.",
+            "What does she want from Ulrich and Katharina: an apology, revenge, or something else?",
+            "Watch how she talks about her mother."
+          ],
+          "start_at": "S1E1",
+          "span": "S1-S2",
+          "situations": [
+            {"id": "difficult_parent", "weight": 0.7},
+            {"id": "loneliness", "weight": 0.5},
+            {"id": "identity_and_self_acceptance", "weight": 0.4},
+            {"id": "confidence_struggle", "weight": 0.4}
+          ],
+          "conflicts": ["revenge_vs_forgiveness", "past_vs_future"],
+          "emotions": {"start": ["resentment", "loneliness", "inadequacy"], "middle": ["anger", "longing", "shame"], "end": ["relief", "love", "acceptance"]},
+          "ending_tone": "bittersweet",
+          "intensity": "moderate",
+          "warnings": ["abuse", "self_harm_or_suicide"],
+          "example_user_messages": [
+            "The people who bullied me at school still live in my town and act like nothing happened.",
+            "My mother never once told me she loved me and I'm still waiting for it at forty-something.",
+            "I can't let go of what someone did to me as a teenager, even though it was decades ago.",
+            "I always feel like the outsider, even as an adult with my own family.",
+            "My mom criticised everything about me and I still hear her voice when I look in the mirror."
+          ],
+          "spoiler": {
+            "summary": "As a self-harming teenager in 1986, Regina was bullied by Ulrich and Katharina, who once tied her to a tree in the forest, and neglected by her mother Claudia; she was the last person to see Mads Nielsen alive. When the adult Ulrich accuses her of making the false rape report against him, she realises Hannah lied and tells him so; after a school play Katharina beats her in front of her children. Claudia vanished from her life in 1987. In 2020 Bartosz gives her a photo and an apology from Claudia, and on the day of the apocalypse the young Claudia appears at her door, apologises and embraces her, and takes her to the bunker, where they are finally together.",
+            "key_events": [
+              "Bullied and tied to a tree by Ulrich and Katharina",
+              "Last to see Mads alive",
+              "Exposes Hannah as the false accuser",
+              "Beaten by Katharina after the school play",
+              "Claudia vanished in 1987",
+              "Claudia returns, apologises and takes her to the bunker"
+            ],
+            "got_right": "She survives a lonely youth to build a family and a business of her own, and when her mother returns she lets herself be loved.",
+            "got_wrong": "She keeps the old grudges burning and provokes her former bullies instead of speaking honestly about what they did to her."
+          }
+        },
+        {
+          "id": "arc:dark/regina_tiedemann/holding_on_while_everything_slips",
+          "title": "Holding on when everything slips away",
+          "literal_situation": "Regina has sunk everything into turning an old mansion into a hotel, but since the disappearances the guests have stopped coming and the bank refuses to give her more time on the loans. Her husband is often out of reach, and she is carrying the pressure largely alone.",
+          "pattern_label": "facing illness while your life's work collapses",
+          "pattern_text": "A person who poured everything into building something of their own watches it fail through no fault of their own, while debts mount and their partner seems far away. Then a frightening diagnosis arrives, and they must decide who to lean on and how to face their own mortality. It's a story about fear, dependence and learning to let others care for you.",
+          "hook": "The hotel should have been her fresh start, but guests have stopped coming, the bank won't wait and her husband isn't answering his phone.",
+          "why_relatable": "What do you do when everything you've built starts collapsing at once? How do you ask for help when you've always been the one holding things together? And who shows up for you when things get really hard?",
+          "watch_for": [
+            "Notice who Regina tells when she gets bad news, and who she doesn't.",
+            "How does she treat her husband and son while under pressure?",
+            "Watch what she clings to when she can no longer control what's happening."
+          ],
+          "start_at": "S1E1",
+          "span": "S1-S3",
+          "situations": [
+            {"id": "illness_or_injury", "weight": 0.9},
+            {"id": "starting_a_business", "weight": 0.5},
+            {"id": "caring_for_family", "weight": 0.3}
+          ],
+          "conflicts": ["control_vs_trust", "independence_vs_connection"],
+          "emotions": {"start": ["anxiety", "overwhelm", "loneliness"], "middle": ["fear", "dread", "hope"], "end": ["fear", "loneliness", "love"]},
+          "ending_tone": "tragic",
+          "intensity": "heavy",
+          "warnings": ["serious_illness", "medical_trauma", "death_of_main_character", "betrayal"],
+          "example_user_messages": [
+            "I put all my savings into my business and now it's failing and the bank won't give me more time.",
+            "I just got diagnosed with cancer and I don't know how to tell my family.",
+            "My husband keeps saying he's there for me, but I feel so alone in this.",
+            "I'm too sick to keep running things but I refuse to go to the hospital.",
+            "I've always been independent and now I have to let people take care of me."
+          ],
+          "spoiler": {
+            "summary": "Regina's new Waldhotel stalls after the disappearances and the bank refuses an extension. In November 2019 a mammography letter tells her she has breast cancer; by June 2020 she has lost her hair to chemotherapy and refuses hospital admission. Her husband Aleksander, secretly the fugitive Boris Niewald, is arrested, and she cannot even visit him. On the day of the apocalypse the young Claudia takes her to the bunker. Three months later, sick in the ruined police station, she is smothered by Tronte Nielsen on the orders of an older Claudia, who knows Regina will only live in the origin world once the knot is broken. In the origin world, Regina is alive and celebrating with friends.",
+            "key_events": [
+              "Bank refuses to extend the hotel loans",
+              "Diagnosed with breast cancer",
+              "Aleksander is revealed as Boris Niewald and arrested",
+              "Rescued by the young Claudia during the apocalypse",
+              "Smothered by Tronte on Claudia's orders",
+              "Alive in the origin world"
+            ],
+            "got_right": "She keeps her dignity and her love for her family through illness, debt and her husband's arrest, and lets her mother back in when she returns.",
+            "got_wrong": "She tries to carry everything alone, refusing the hospital and keeping her fear to herself, and never learns the truth about the people closest to her."
+          }
+        }
+      ]
+    }
+  ]
+}

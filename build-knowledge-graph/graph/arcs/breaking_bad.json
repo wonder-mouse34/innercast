@@ -1,0 +1,1410 @@
+{
+  "show": "breaking_bad",
+  "characters": [
+    {
+      "id": "char:breaking_bad/walter_white",
+      "name": "Walter White",
+      "role": "A brilliant but underpaid high school chemistry teacher in Albuquerque who, on his 50th birthday, learns he has terminal lung cancer.",
+      "relations": [
+        {
+          "target": "char:breaking_bad/jesse_pinkman",
+          "relation": "protege"
+        },
+        {
+          "target": "char:breaking_bad/skyler_white",
+          "relation": "partner"
+        },
+        {
+          "target": "char:breaking_bad/walter_white_jr",
+          "relation": "child"
+        },
+        {
+          "target": "char:breaking_bad/hank_schrader",
+          "relation": "enemy"
+        },
+        {
+          "target": "char:breaking_bad/jimmy_mcgill",
+          "relation": "colleague"
+        },
+        {
+          "target": "char:breaking_bad/mike_ehrmantraut",
+          "relation": "rival"
+        }
+      ],
+      "arcs": [
+        {
+          "id": "arc:breaking_bad/walter_white/the_overlooked_man_wants_his_due",
+          "title": "The overlooked man who wants his due",
+          "literal_situation": "A gifted chemist who left a company that went on to make millions now teaches bored teenagers and works a second job at a car wash. A terminal cancer diagnosis makes him decide to use his chemistry to cook methamphetamine and leave money for his family.",
+          "pattern_label": "a passed-over person finally claiming their worth",
+          "pattern_text": "A talented person who spent decades being underestimated, underpaid and quietly humiliated gets a sudden deadline on their life. Using their gifts on their own terms makes them feel alive and respected for the first time in years. The question is whether the new confidence is healing an old wound or feeding a hunger for recognition that nothing will ever satisfy.",
+          "hook": "Walt turns 50, washes his own students' cars for extra money, and learns he may have months to live. He decides to do something drastic and dangerous so his family won't be left with nothing.",
+          "why_relatable": "He has spent his life being the reasonable, overlooked one while others took the credit. How much of what he does is really for his family, and how much is for the man who was never respected? Is feeling powerful the same as feeling whole?",
+          "watch_for": [
+            "Notice how he reacts when someone offers him help he didn't earn himself.",
+            "What does he tell himself about why he is doing this, and does it change?",
+            "How does he respond when someone else gets credit for his work?"
+          ],
+          "start_at": "BB S1E1",
+          "span": "S1-S5",
+          "situations": [
+            {
+              "id": "midlife_reinvention",
+              "weight": 0.95
+            },
+            {
+              "id": "illness_or_injury",
+              "weight": 0.7
+            },
+            {
+              "id": "taking_a_big_risk",
+              "weight": 0.6
+            },
+            {
+              "id": "confidence_struggle",
+              "weight": 0.5
+            }
+          ],
+          "conflicts": [
+            "power_vs_morality",
+            "loyalty_vs_ambition"
+          ],
+          "emotions": {
+            "start": [
+              "shame",
+              "inadequacy",
+              "resentment"
+            ],
+            "middle": [
+              "pride",
+              "confidence",
+              "anger"
+            ],
+            "end": [
+              "loneliness",
+              "acceptance"
+            ]
+          },
+          "ending_tone": "tragic",
+          "intensity": "heavy",
+          "warnings": [
+            "death_of_main_character",
+            "death_of_loved_one",
+            "serious_illness",
+            "addiction",
+            "war_and_violence",
+            "child_endangerment",
+            "betrayal",
+            "graphic_gore",
+            "bleak_ending"
+          ],
+          "example_user_messages": [
+            "I'm 50, I was the smartest person in my class, and somehow everyone I graduated with is rich and I'm scraping by.",
+            "I got some bad health news and it made me realise I've wasted my whole life playing it safe.",
+            "For the first time in years I feel respected, and I don't want to give that up even though it's costing me.",
+            "My old business partner made a fortune off an idea I helped build and I still can't let it go."
+          ],
+          "spoiler": {
+            "summary": "Walt partners with his ex-student Jesse to cook exceptionally pure blue meth, adopting the alias Heisenberg. What begins as providing for his family becomes a hunger for power: he lets Jane die, orders Gale's murder, poisons Brock and kills Gus Fring with a bomb, then kills Mike in a fit of wounded pride and builds an empire. His brother-in-law Hank discovers he is Heisenberg; Walt's deal with Jack's neo-Nazi gang leads to Hank's murder and the loss of nearly all his money. His family rejects him and he goes into hiding in New Hampshire. He returns to Albuquerque, arranges for his money to reach his son, admits to Skyler that he did it all for himself because he liked it and was good at it, frees Jesse, kills Jack's gang and dies in the meth lab.",
+            "key_events": [
+              "Terminal lung cancer diagnosis on his 50th birthday",
+              "Becomes the meth cook 'Heisenberg' with Jesse",
+              "Watches Jane choke to death without helping",
+              "Kills Gus Fring with a bomb in the nursing home",
+              "Kills Mike Ehrmantraut",
+              "Hank discovers he is Heisenberg and is murdered by Jack's gang",
+              "Admits to Skyler 'I did it for me. I liked it.'",
+              "Frees Jesse and dies in the lab after killing the gang"
+            ],
+            "got_right": "He finally stops lying to himself about his motives, admits the truth to Skyler, and uses his last act to free Jesse and secure something for his children.",
+            "got_wrong": "He mistook recognition and control for self-worth, blamed others for choices he made out of pride, and destroyed the family he claimed to be protecting."
+          }
+        },
+        {
+          "id": "arc:breaking_bad/walter_white/the_double_life_at_home",
+          "title": "Living a double life at home",
+          "literal_situation": "A husband and father starts disappearing for hours, inventing excuses and hiding money and injuries from a pregnant wife, a teenage son and a DEA-agent brother-in-law.",
+          "pattern_label": "keeping a secret life from your family",
+          "pattern_text": "A person starts hiding a whole part of their life from the people closest to them, telling themselves it's to protect them. Each lie requires another, and the family begins to feel the distance without knowing its cause. The question is how long someone can live split in two, and what the secrecy does to the trust and love they say they are protecting.",
+          "hook": "Walt comes home late, distracted, with stories that don't add up. His wife notices; his son adores him; his brother-in-law is a narcotics agent who talks shop at every barbecue.",
+          "why_relatable": "He believes that if his family knew, it would hurt them, so he manages what they know. When does protecting someone become controlling them? Can you keep a secret this big and still be close to anyone?",
+          "watch_for": [
+            "How does he explain his absences, and how do the stories grow?",
+            "Notice how he treats his wife when she starts asking questions.",
+            "Who does he confide in, if anyone?"
+          ],
+          "start_at": "BB S1E1",
+          "span": "S1-S5",
+          "situations": [
+            {
+              "id": "caring_for_family",
+              "weight": 0.7
+            },
+            {
+              "id": "family_expectations",
+              "weight": 0.6
+            },
+            {
+              "id": "divorce",
+              "weight": 0.5
+            }
+          ],
+          "conflicts": [
+            "truth_vs_protecting_others",
+            "control_vs_trust"
+          ],
+          "emotions": {
+            "start": [
+              "fear",
+              "determination"
+            ],
+            "middle": [
+              "anger",
+              "resentment",
+              "pride"
+            ],
+            "end": [
+              "loneliness",
+              "grief"
+            ]
+          },
+          "ending_tone": "tragic",
+          "intensity": "heavy",
+          "warnings": [
+            "domestic_violence",
+            "death_of_loved_one",
+            "betrayal",
+            "child_endangerment",
+            "bleak_ending"
+          ],
+          "example_user_messages": [
+            "I've been hiding something big from my wife for months and I tell myself it's for her own good.",
+            "Every time I lie to my family I have to tell another lie to cover it and I'm losing track.",
+            "My partner keeps asking where I go and I get angry at her for asking instead of just telling her.",
+            "I think I'm doing all this for my kids but they barely know who I am anymore."
+          ],
+          "spoiler": {
+            "summary": "Walt's lies about fugue states, a second cell phone and gambling winnings pile up until Skyler figures out the truth, asks for a divorce and later becomes his reluctant money launderer. He grows controlling and menacing toward her ('I am the one who knocks'), and she stages a breakdown in the pool to get the kids out of the house. When Hank dies because of Walt, Skyler pulls a knife on him and Walt Jr. calls the police; Walt abducts Holly, then returns her and fakes a threatening phone call to clear Skyler. Flynn rejects him on the phone. In his last visit he finally tells Skyler the truth about why he did it and says goodbye to Holly, while only watching his son from a distance.",
+            "key_events": [
+              "Skyler asks for a divorce after figuring out his secret",
+              "'I am the one who knocks' confrontation",
+              "Skyler walks into the pool to get the kids away",
+              "Knife fight at home; Walt Jr. calls the police",
+              "Abducts Holly, then leaves her to be found safely",
+              "Flynn tells him to die on the phone",
+              "Final honest goodbye to Skyler"
+            ],
+            "got_right": "In the end he stops performing the devoted provider and tells Skyler the truth, giving her something she can use to protect herself.",
+            "got_wrong": "He used his family as the excuse for every lie, turned his home into a place of fear, and treated his wife's questions as disloyalty."
+          }
+        }
+      ]
+    },
+    {
+      "id": "char:breaking_bad/jesse_pinkman",
+      "name": "Jesse Pinkman",
+      "role": "A small-time drug dealer and burnout in his twenties, kicked out by his parents, who is recruited by his former high school chemistry teacher.",
+      "relations": [
+        {
+          "target": "char:breaking_bad/walter_white",
+          "relation": "mentor"
+        },
+        {
+          "target": "char:breaking_bad/mike_ehrmantraut",
+          "relation": "mentor"
+        },
+        {
+          "target": "char:breaking_bad/hank_schrader",
+          "relation": "enemy"
+        },
+        {
+          "target": "char:breaking_bad/jimmy_mcgill",
+          "relation": "colleague"
+        }
+      ],
+      "arcs": [
+        {
+          "id": "arc:breaking_bad/jesse_pinkman/proving_hes_more_than_a_screwup",
+          "title": "Proving he's more than a screw-up",
+          "literal_situation": "A young dealer written off by his parents and teachers is pulled into a partnership with his old chemistry teacher, who is brilliant, demanding and constantly calls him an idiot.",
+          "pattern_label": "a written-off young person under a controlling mentor",
+          "pattern_text": "A young person everyone has written off finds an older mentor who sees talent in them and pushes them hard. The approval they've never had from their own family feels like a lifeline, even when the mentor belittles and uses them. The question is whether they can recognise their own worth without needing it granted by someone who benefits from keeping them small.",
+          "hook": "Jesse's parents have thrown him out and his old teacher remembers him as a failing student. Now that same teacher shows up wanting to be his partner, and Jesse has no idea what he's getting into.",
+          "why_relatable": "He is funny, impulsive and far more capable than anyone gives him credit for, including himself. Why does he keep going back to someone who treats him badly? Is being needed the same as being valued?",
+          "watch_for": [
+            "Notice what happens when his mentor praises him versus when he criticises him.",
+            "How does he treat kids and people weaker than him?",
+            "When does he start trusting his own judgement over his mentor's?"
+          ],
+          "start_at": "BB S1E1",
+          "span": "S1-S5",
+          "situations": [
+            {
+              "id": "mentor_and_protege",
+              "weight": 0.95
+            },
+            {
+              "id": "confidence_struggle",
+              "weight": 0.7
+            },
+            {
+              "id": "difficult_parent",
+              "weight": 0.5
+            },
+            {
+              "id": "coming_of_age",
+              "weight": 0.5
+            }
+          ],
+          "conflicts": [
+            "control_vs_trust",
+            "belonging_vs_integrity"
+          ],
+          "emotions": {
+            "start": [
+              "rejection",
+              "inadequacy",
+              "restlessness"
+            ],
+            "middle": [
+              "belonging",
+              "betrayal",
+              "anger"
+            ],
+            "end": [
+              "freedom",
+              "relief"
+            ]
+          },
+          "ending_tone": "bittersweet",
+          "intensity": "heavy",
+          "warnings": [
+            "abuse",
+            "addiction",
+            "death_of_loved_one",
+            "torture",
+            "war_and_violence",
+            "child_endangerment",
+            "betrayal",
+            "grief"
+          ],
+          "example_user_messages": [
+            "My parents gave up on me years ago and honestly I kind of gave up on myself too.",
+            "My boss is the only person who ever told me I was good at something, but he also treats me like garbage.",
+            "I keep going back to someone who manipulates me because without him I don't know who I am.",
+            "Everyone treats me like the family disappointment even when I'm actually trying."
+          ],
+          "spoiler": {
+            "summary": "Jesse becomes Walt's partner and grows into a skilled cook. Walt repeatedly manipulates him: he lets Jesse's girlfriend Jane die, pushes Jesse to kill Gale, and secretly poisons Brock to turn Jesse against Gus, while Mike becomes a gentler mentor figure. Jesse realises the truth about Brock and Jane, turns against Walt and tries to help Hank, but Walt has him captured by Jack's gang, who enslave him to cook and murder Andrea. In the finale Walt frees him; Jesse refuses to kill Walt, strangles Todd and escapes screaming. In El Camino he gets the money he needs and starts a new life in Alaska.",
+            "key_events": [
+              "Partners with Walt; becomes 'Cap'n Cook'",
+              "Jane dies of an overdose while Walt watches",
+              "Kills Gale on Walt's orders",
+              "Discovers Walt poisoned Brock",
+              "Enslaved by Jack's gang; Andrea murdered",
+              "Refuses to kill Walt and escapes",
+              "Starts a new life in Alaska (El Camino)"
+            ],
+            "got_right": "He never loses his conscience, refuses to be Walt's weapon at the end, and chooses a life of his own.",
+            "got_wrong": "He kept seeking approval from a man who used him, and blamed himself for harm others had engineered."
+          }
+        },
+        {
+          "id": "arc:breaking_bad/jesse_pinkman/carrying_guilt_he_cant_put_down",
+          "title": "Carrying guilt he can't put down",
+          "literal_situation": "Later in the series, after a turning point that leaves him devastated and blaming himself, Jesse goes to rehab and tries to stay clean while still tangled up in the business that hurt him.",
+          "pattern_label": "trying to recover while drowning in guilt",
+          "pattern_text": "A young person who has been through something terrible tries to get sober and move on, but the guilt keeps coming back. They swing between numbing themselves, punishing themselves and trying to make amends to people they have hurt. The question is whether they can accept what they did without letting it define them forever.",
+          "hook": "Later in the series, after a turning point that leaves Jesse grieving and convinced he is a bad person, he checks into rehab and hears that he should accept himself as he is. He isn't sure he can.",
+          "why_relatable": "He feels responsible for pain he can't undo, and every attempt to feel better seems to cost him something. Is self-acceptance just letting yourself off the hook? What does it take to forgive yourself when you can't ask the people you hurt?",
+          "watch_for": [
+            "What does he do to avoid being alone with his thoughts?",
+            "Notice who he tries to protect, and why.",
+            "Does he think he deserves to be happy?"
+          ],
+          "start_at": "BB S3E1",
+          "span": "S3-S5",
+          "situations": [
+            {
+              "id": "addiction_and_recovery",
+              "weight": 0.9
+            },
+            {
+              "id": "redemption_after_mistakes",
+              "weight": 0.8
+            },
+            {
+              "id": "grief_and_loss",
+              "weight": 0.7
+            }
+          ],
+          "conflicts": [
+            "past_vs_future",
+            "holding_on_vs_letting_go"
+          ],
+          "emotions": {
+            "start": [
+              "guilt",
+              "grief",
+              "numbness"
+            ],
+            "middle": [
+              "shame",
+              "loneliness",
+              "anger"
+            ],
+            "end": [
+              "relief",
+              "freedom"
+            ]
+          },
+          "ending_tone": "bittersweet",
+          "intensity": "heavy",
+          "warnings": [
+            "addiction",
+            "grief",
+            "death_of_loved_one",
+            "war_and_violence",
+            "torture",
+            "child_endangerment",
+            "betrayal"
+          ],
+          "example_user_messages": [
+            "I'm sober now but I did things when I was using that I can't stop thinking about.",
+            "Someone I loved died and I'm sure it's my fault, and nobody can talk me out of it.",
+            "I throw parties every night so I never have to be alone with my own head.",
+            "People keep telling me to forgive myself but that feels like getting away with it."
+          ],
+          "spoiler": {
+            "summary": "After Jane's overdose death Jesse goes to rehab, then declares himself 'the bad guy' and sells to his fellow addicts before guilt stops him. He falls for Andrea and bonds with her son Brock. Killing Gale shatters him; he fills his house with non-stop parties to avoid feeling. Drew Sharp's murder during the train heist pushes him out of the business; he tries to give his money away, throwing bundles of cash out of his car. Captured and enslaved by Jack's gang, he loses Andrea. He escapes and in El Camino starts over in Alaska, recalling Jane's advice that he decides his own path.",
+            "key_events": [
+              "Rehab after Jane's death",
+              "Kills Gale and spirals into non-stop parties",
+              "Leaves the business after a boy is shot during the train heist",
+              "Throws his drug money out of his car",
+              "Andrea murdered in front of him",
+              "Escapes and starts over in Alaska"
+            ],
+            "got_right": "He kept feeling the weight of what he had done instead of rationalising it, and tried to protect children and give back what he had taken.",
+            "got_wrong": "He punished himself for things other people had caused and kept numbing instead of letting anyone help."
+          }
+        }
+      ]
+    },
+    {
+      "id": "char:breaking_bad/skyler_white",
+      "name": "Skyler White",
+      "role": "Walter White's pregnant wife, a sharp, organised homemaker with a background in bookkeeping who holds the family's finances together.",
+      "relations": [
+        {
+          "target": "char:breaking_bad/walter_white",
+          "relation": "partner"
+        },
+        {
+          "target": "char:breaking_bad/walter_white_jr",
+          "relation": "child"
+        },
+        {
+          "target": "char:breaking_bad/jimmy_mcgill",
+          "relation": "colleague"
+        }
+      ],
+      "arcs": [
+        {
+          "id": "arc:breaking_bad/skyler_white/the_wife_who_notices",
+          "title": "The wife who notices",
+          "literal_situation": "Pregnant, caring for a teenage son and worried about her husband's cancer, Skyler sees him start disappearing, lying and acting like a stranger.",
+          "pattern_label": "sensing your partner is lying to you",
+          "pattern_text": "A person holding a family together notices their partner becoming secretive and distant at the worst possible time. Everyone around them treats their worry as nagging or paranoia, and they begin to doubt their own instincts. The question is whether they trust what they see, and what they will do once they can no longer pretend not to know.",
+          "hook": "Skyler is expecting a baby, her husband has just been diagnosed with cancer, and his stories about where he's been don't add up. She's the only one who seems to notice.",
+          "why_relatable": "She is expected to be supportive and patient, yet she's the one being lied to. How do you push for the truth when everyone says you're being unfair to a sick man? What do you owe a partner who won't let you in?",
+          "watch_for": [
+            "Notice how others react when she voices her suspicions.",
+            "How does she try to take back some control of her own life?",
+            "What does she protect first: the marriage, the kids, or herself?"
+          ],
+          "start_at": "BB S1E1",
+          "span": "S1-S2",
+          "situations": [
+            {
+              "id": "caring_for_family",
+              "weight": 0.7
+            },
+            {
+              "id": "becoming_a_parent",
+              "weight": 0.5
+            },
+            {
+              "id": "divorce",
+              "weight": 0.6
+            },
+            {
+              "id": "identity_and_self_acceptance",
+              "weight": 0.3
+            }
+          ],
+          "conflicts": [
+            "control_vs_trust",
+            "truth_vs_protecting_others"
+          ],
+          "emotions": {
+            "start": [
+              "anxiety",
+              "loneliness",
+              "confusion"
+            ],
+            "middle": [
+              "anger",
+              "betrayal"
+            ],
+            "end": [
+              "determination",
+              "grief"
+            ]
+          },
+          "ending_tone": "bittersweet",
+          "intensity": "moderate",
+          "warnings": [
+            "serious_illness",
+            "betrayal"
+          ],
+          "example_user_messages": [
+            "My husband keeps disappearing and giving me excuses that don't make sense, and everyone tells me I'm overreacting.",
+            "I'm pregnant and I feel like I'm the only adult in this marriage.",
+            "He's sick, so I feel like a monster for being angry that he keeps lying to me.",
+            "I know something is wrong but I can't prove it and I'm starting to doubt myself."
+          ],
+          "spoiler": {
+            "summary": "Skyler pushes Walt to accept treatment and grows increasingly suspicious of his absences, a second phone and his fugue-state story. She takes a bookkeeping job with her old boss Ted Beneke, figures out the lie on the day Holly is born, and after Walt's surgery demands he move out. She then learns he is a meth cook and asks for a divorce.",
+            "key_events": [
+              "Organises a family intervention about Walt's treatment",
+              "Discovers the second cell phone",
+              "Holly is born while Walt is missing",
+              "Asks Walt to leave and asks for a divorce",
+              "Learns Walt is a meth manufacturer"
+            ],
+            "got_right": "She trusted her instincts and refused to keep pretending when the lies stopped making sense.",
+            "got_wrong": "She tried to manage the crisis alone and kept her own reactions secret, which pushed her toward choices she didn't really want."
+          }
+        },
+        {
+          "id": "arc:breaking_bad/skyler_white/complicit_to_protect_her_kids",
+          "title": "Getting her hands dirty to protect her kids",
+          "literal_situation": "Later in the series, after a turning point that forces Skyler to choose between walking away and getting involved, she uses her bookkeeping skills to keep her family's lives from collapsing.",
+          "pattern_label": "compromising yourself to shield your children",
+          "pattern_text": "A parent is trapped in a situation someone else created, where every option risks hurting the children. They decide to take control by becoming part of the thing they hate, telling themselves it's the lesser evil. The question is how much of themselves they can give up for their family before there is nothing left.",
+          "hook": "Later in the series, after a turning point that leaves Skyler with no good options, she decides that if she can't escape the situation, she will at least be the one managing it.",
+          "why_relatable": "She is practical, capable and furious, and she knows her choices are becoming harder to justify. When does protecting your family turn into protecting a lie? Can you stay in a situation for your kids without disappearing yourself?",
+          "watch_for": [
+            "Notice how her competence changes the way her husband treats her.",
+            "What lines does she refuse to cross, and do they hold?",
+            "How does she cope when she feels trapped?"
+          ],
+          "start_at": "BB S3",
+          "span": "S3-S5",
+          "situations": [
+            {
+              "id": "caring_for_family",
+              "weight": 0.9
+            },
+            {
+              "id": "responsibility_you_didnt_ask_for",
+              "weight": 0.8
+            },
+            {
+              "id": "starting_a_business",
+              "weight": 0.4
+            }
+          ],
+          "conflicts": [
+            "power_vs_morality",
+            "truth_vs_protecting_others"
+          ],
+          "emotions": {
+            "start": [
+              "anger",
+              "resentment",
+              "determination"
+            ],
+            "middle": [
+              "fear",
+              "dread",
+              "guilt"
+            ],
+            "end": [
+              "numbness",
+              "relief"
+            ]
+          },
+          "ending_tone": "bittersweet",
+          "intensity": "heavy",
+          "warnings": [
+            "domestic_violence",
+            "death_of_loved_one",
+            "child_endangerment",
+            "betrayal",
+            "grief"
+          ],
+          "example_user_messages": [
+            "My ex got us into a mess and the only way I can protect my kids is to go along with it.",
+            "I'm good at fixing things, so somehow I ended up covering for someone I can't stand.",
+            "I'm scared of my own husband and I'm trying to hold it together for the kids.",
+            "I made a choice to protect my family and now I don't recognise myself."
+          ],
+          "spoiler": {
+            "summary": "Skyler sleeps with Ted to hurt Walt, then decides to launder Walt's money, invents a gambling cover story and buys the car wash. She gives Ted $600k, which leads to his crippling accident and leaves Walt without escape money. After Gus's murder she becomes terrified of Walt, walks into the pool to get the kids away and tells him she is waiting for his cancer to come back. She shows him the pile of cash and he retires. When Hank discovers the truth she stays silent to protect the kids and even suggests killing Jesse. After Hank's death she pulls a knife on Walt. Left with nothing, she works as a taxi dispatcher; Walt's last visit gives her the coordinates of Hank's grave, which she uses for a deal with prosecutors.",
+            "key_events": [
+              "Affair with Ted Beneke",
+              "Becomes Walt's money launderer via the car wash",
+              "Ted's accident after she gives him money",
+              "Walks into the pool to get the kids out",
+              "Pulls a knife on Walt after Hank's death",
+              "Gets a deal using the coordinates Walt gives her"
+            ],
+            "got_right": "She faced the reality of what was happening, kept her children as her first priority and finally broke free.",
+            "got_wrong": "She convinced herself she could control the damage, and her schemes hurt other people and tied her more tightly to Walt."
+          }
+        }
+      ]
+    },
+    {
+      "id": "char:breaking_bad/hank_schrader",
+      "name": "Hank Schrader",
+      "role": "Walter White's loud, confident brother-in-law, a DEA agent in Albuquerque who loves his job, his home-brewed beer and his nephew.",
+      "relations": [
+        {
+          "target": "char:breaking_bad/walter_white",
+          "relation": "enemy"
+        },
+        {
+          "target": "char:breaking_bad/walter_white_jr",
+          "relation": "friend"
+        },
+        {
+          "target": "char:breaking_bad/jesse_pinkman",
+          "relation": "enemy"
+        },
+        {
+          "target": "char:breaking_bad/mike_ehrmantraut",
+          "relation": "enemy"
+        }
+      ],
+      "arcs": [
+        {
+          "id": "arc:breaking_bad/hank_schrader/the_tough_guy_who_cant_admit_fear",
+          "title": "The tough guy who can't admit he's scared",
+          "literal_situation": "After seeing violence up close on the job, a macho DEA agent starts having panic attacks he hides from his colleagues and his wife.",
+          "pattern_label": "a tough person secretly falling apart",
+          "pattern_text": "Someone whose whole identity is being strong and unbothered is shaken by something they can't joke away. They hide their panic behind bravado, snap at the people who love them, and refuse to call it what it is. The question is whether they can admit they are struggling and rebuild a sense of themselves that isn't only toughness.",
+          "hook": "Hank is the guy who tells the war stories at every family party. After a brutal case, his hands start shaking, and he doesn't want anyone to know.",
+          "why_relatable": "He has always been the strong one, so showing fear feels like losing himself. What does a person do when their coping style stops working? Can he let his partner see him weak?",
+          "watch_for": [
+            "Notice how he uses humour when something scares him.",
+            "How does he treat his wife when she tries to help?",
+            "What new interests does he reach for when his old life feels out of reach?"
+          ],
+          "start_at": "BB S2",
+          "span": "S2-S4",
+          "situations": [
+            {
+              "id": "burnout_at_work",
+              "weight": 0.7
+            },
+            {
+              "id": "illness_or_injury",
+              "weight": 0.7
+            },
+            {
+              "id": "confidence_struggle",
+              "weight": 0.6
+            },
+            {
+              "id": "new_job",
+              "weight": 0.3
+            }
+          ],
+          "conflicts": [
+            "safety_vs_growth",
+            "duty_vs_desire"
+          ],
+          "emotions": {
+            "start": [
+              "anxiety",
+              "fear",
+              "shame"
+            ],
+            "middle": [
+              "anger",
+              "inadequacy",
+              "resentment"
+            ],
+            "end": [
+              "determination",
+              "self_respect"
+            ]
+          },
+          "ending_tone": "bittersweet",
+          "intensity": "heavy",
+          "warnings": [
+            "war_and_violence",
+            "medical_trauma",
+            "graphic_gore"
+          ],
+          "example_user_messages": [
+            "I've always been the tough guy in my family and now I'm having panic attacks I can't tell anyone about.",
+            "Something happened at work that I can't shake and I keep taking it out on my wife.",
+            "I got hurt and now I can't do the things that made me feel like me.",
+            "I was offered a big promotion and secretly I'm terrified to take it."
+          ],
+          "spoiler": {
+            "summary": "After killing Tuco and witnessing the Tortuga head explosion in El Paso, Hank has panic attacks and turns down the promotion. He beats Jesse and is suspended, then is ambushed by the Salamanca cousins and shot, killing both. Partly paralysed, he takes out his rage on Marie during a grinding recovery, collects minerals, and slowly regains his drive by quietly working the Heisenberg case from home, leading him to Gale's notes and Gus Fring.",
+            "key_events": [
+              "Kills Tuco in a shootout",
+              "Witnesses the Tortuga bomb in El Paso",
+              "Beats Jesse and is suspended",
+              "Shot by the Salamanca cousins; kills both",
+              "Long, bitter recovery and the mineral collection",
+              "Rediscovers purpose working the case from his bed"
+            ],
+            "got_right": "He finds a way back to purpose through his own intelligence and persistence, and eventually lets Marie support him.",
+            "got_wrong": "He hid his trauma behind bravado and lashed out at the person caring for him instead of admitting he was afraid."
+          }
+        },
+        {
+          "id": "arc:breaking_bad/hank_schrader/the_case_he_cant_let_go",
+          "title": "The case he can't let go",
+          "literal_situation": "A new, unusually pure product is flooding Albuquerque, and Hank throws himself into hunting down the mysterious cook behind it.",
+          "pattern_label": "a relentless pursuit that tests family loyalty",
+          "pattern_text": "A person who is very good at their work becomes obsessed with one problem that others have given up on. The pursuit gives them purpose and pride, but the closer they get, the more it threatens the people they love. The question is what they will do when doing their duty and protecting their family point in opposite directions.",
+          "hook": "Hank is thrilled by a new challenge: someone out there is making a product better than anything he's seen. He is sure he'll crack it, and he loves telling the family about it over dinner.",
+          "why_relatable": "He is underestimated as a loudmouth, but he is sharp and dogged. What happens when the thing you're best at puts you at odds with your family? How far do you go when everyone else says to let it go?",
+          "watch_for": [
+            "Notice the small details he picks up that others miss.",
+            "How does he react when colleagues doubt his hunches?",
+            "What does he talk about with his family, and what does he leave out?"
+          ],
+          "start_at": "BB S1E1",
+          "span": "S1-S5",
+          "situations": [
+            {
+              "id": "family_expectations",
+              "weight": 0.4
+            },
+            {
+              "id": "standing_up_to_authority",
+              "weight": 0.5
+            },
+            {
+              "id": "caring_for_family",
+              "weight": 0.5
+            },
+            {
+              "id": "taking_a_big_risk",
+              "weight": 0.6
+            }
+          ],
+          "conflicts": [
+            "duty_vs_desire",
+            "truth_vs_protecting_others"
+          ],
+          "emotions": {
+            "start": [
+              "pride",
+              "curiosity",
+              "determination"
+            ],
+            "middle": [
+              "restlessness",
+              "anger"
+            ],
+            "end": [
+              "betrayal",
+              "self_respect"
+            ]
+          },
+          "ending_tone": "tragic",
+          "intensity": "heavy",
+          "warnings": [
+            "death_of_main_character",
+            "war_and_violence",
+            "betrayal",
+            "bleak_ending"
+          ],
+          "example_user_messages": [
+            "I've been chasing the same problem at work for years and nobody believes me that I'm close.",
+            "I found out something about a family member that I can't unsee, and doing the right thing will blow up the whole family.",
+            "My boss wants me to drop it but I know I'm right.",
+            "Everyone thinks I'm just the loud guy, but I'm better at my job than they realise."
+          ],
+          "spoiler": {
+            "summary": "Hank pursues the blue meth and 'Heisenberg' for two years, never suspecting Walt. He links Gale to Gus Fring and eventually, after Gus's death and his promotion to ASAC, finds Walt's inscribed copy of Leaves of Grass on the toilet and realises his brother-in-law is Heisenberg. He confronts Walt, is blackmailed with a fake confession video, turns Jesse into an informant and captures Walt in the desert, only to be ambushed by Jack's gang. Hank refuses to beg and is executed; he and Gomez are buried in the desert.",
+            "key_events": [
+              "Leads the hunt for Heisenberg",
+              "Connects Gale to Gus Fring",
+              "Finds Leaves of Grass and realises Walt is Heisenberg",
+              "Blackmailed with Walt's false confession video",
+              "Arrests Walt in the desert",
+              "Executed by Jack's gang: 'My name is ASAC Schrader, and you can go f*** yourself'"
+            ],
+            "got_right": "He was right all along, kept his integrity, and faced his death without begging.",
+            "got_wrong": "His need to be the one who cracked the case made him keep it secret from his own agency, leaving him without backup."
+          }
+        }
+      ]
+    },
+    {
+      "id": "char:breaking_bad/jimmy_mcgill",
+      "name": "Jimmy McGill (Saul Goodman)",
+      "role": "A struggling, fast-talking public defender in Albuquerque, a former small-time con man from Chicago trying to go straight in the shadow of his brilliant older brother.",
+      "relations": [
+        {
+          "target": "char:breaking_bad/kim_wexler",
+          "relation": "ex_partner"
+        },
+        {
+          "target": "char:breaking_bad/mike_ehrmantraut",
+          "relation": "colleague"
+        },
+        {
+          "target": "char:breaking_bad/walter_white",
+          "relation": "colleague"
+        },
+        {
+          "target": "char:breaking_bad/jesse_pinkman",
+          "relation": "colleague"
+        },
+        {
+          "target": "char:breaking_bad/skyler_white",
+          "relation": "colleague"
+        }
+      ],
+      "arcs": [
+        {
+          "id": "arc:breaking_bad/jimmy_mcgill/the_little_brother_never_good_enough",
+          "title": "The little brother who is never good enough",
+          "literal_situation": "Jimmy earned his law degree by correspondence while working in the mailroom of his older brother Chuck's prestigious firm. Now he takes low-paying cases and cares for Chuck, who is housebound by a mysterious condition.",
+          "pattern_label": "craving a sibling's respect that never comes",
+          "pattern_text": "A younger sibling with a messy past works hard to earn the respect of an accomplished older sibling they idolise. However much they change or care for them, they are still seen as the family screw-up. The question is whether they can stop measuring themselves by that one person's approval, and what the resentment does to them if they can't.",
+          "hook": "Jimmy brings groceries and ice to his ill brother, calls him his hero, and scrambles for clients out of a tiny office behind a nail salon. He wants to be a real lawyer in Chuck's eyes.",
+          "why_relatable": "He has genuinely changed, but the people who knew him before don't seem to believe it. Can you earn someone's respect if they've already decided who you are? Is he trying to become better, or just trying to be seen?",
+          "watch_for": [
+            "Notice how his brother talks about him when he isn't in the room.",
+            "What does he do with his talent for bending the rules when he's rejected?",
+            "Is caring for his brother love, duty, or a bid for approval?"
+          ],
+          "start_at": "BCS S1E1",
+          "span": "BCS S1-S3",
+          "situations": [
+            {
+              "id": "sibling_rivalry",
+              "weight": 0.95
+            },
+            {
+              "id": "family_expectations",
+              "weight": 0.7
+            },
+            {
+              "id": "imposter_syndrome",
+              "weight": 0.6
+            },
+            {
+              "id": "caring_for_family",
+              "weight": 0.5
+            }
+          ],
+          "conflicts": [
+            "self_vs_family_expectations",
+            "belonging_vs_integrity"
+          ],
+          "emotions": {
+            "start": [
+              "longing",
+              "inadequacy",
+              "determination"
+            ],
+            "middle": [
+              "betrayal",
+              "anger",
+              "resentment"
+            ],
+            "end": [
+              "guilt",
+              "grief",
+              "numbness"
+            ]
+          },
+          "ending_tone": "tragic",
+          "intensity": "heavy",
+          "warnings": [
+            "death_of_loved_one",
+            "self_harm_or_suicide",
+            "betrayal",
+            "grief"
+          ],
+          "example_user_messages": [
+            "My older brother is the successful one and no matter what I do he still sees me as the kid who messed up.",
+            "I turned my life around years ago but my family still acts like I'm going to screw it up.",
+            "I take care of my sibling every week and he still doesn't respect me.",
+            "I got my qualifications the hard way and I feel like a fraud next to people who went to real schools."
+          ],
+          "spoiler": {
+            "summary": "Jimmy learns that Chuck secretly blocked HHM from hiring him because he believes 'Slippin' Jimmy with a law degree is like a chimp with a machine gun.' Their rivalry escalates: Jimmy doctors Mesa Verde documents to help Kim, Chuck tricks him into a taped confession, and Jimmy is exposed at the bar hearing where Chuck has a public meltdown. Chuck says Jimmy never mattered to him; Jimmy is suspended, Chuck relapses and dies in a house fire that is implied to be suicide. Jimmy represses his guilt, which Howard and Kim see as coldness.",
+            "key_events": [
+              "Discovers Chuck blocked him from being hired at HHM",
+              "Swaps Mesa Verde addresses to sabotage Chuck",
+              "Chuck records his confession",
+              "Bar hearing: Chuck's meltdown on the stand",
+              "Chuck: 'You never mattered all that much to me'",
+              "Chuck dies in a fire he set himself"
+            ],
+            "got_right": "He cared for his brother for years and genuinely tried to become someone better.",
+            "got_wrong": "He let his brother's contempt define his worth and fought back with the very tricks that proved Chuck's point."
+          }
+        },
+        {
+          "id": "arc:breaking_bad/jimmy_mcgill/the_mask_that_becomes_the_man",
+          "title": "The persona that takes over",
+          "literal_situation": "A former scam artist trying to build an honest career keeps discovering that cutting corners, putting on a show and bending the rules gets him further than playing it straight.",
+          "pattern_label": "a persona slowly replacing who you are",
+          "pattern_text": "A person with a past they are ashamed of tries to build a respectable life, but they keep getting rewarded for the shortcuts they swore off. They start playing a louder, flashier version of themselves because it works and it hurts less. The question is whether the persona is protecting who they really are or replacing them.",
+          "hook": "Jimmy has promised himself he is done with cons. But he is broke, clients won't take him seriously, and he has a gift for talking people into things.",
+          "why_relatable": "He is clever, warm and funny, and the honest path keeps punishing him. How much do you compromise to succeed? When do you stop being someone who plays a role and become the role?",
+          "watch_for": [
+            "Notice when he chooses the shortcut, and what pushes him to it.",
+            "How does he react when someone sees the good person underneath?",
+            "What does he stop feeling as the act gets bigger?"
+          ],
+          "start_at": "BCS S1E1",
+          "span": "BCS S1-S6, BB S2-S5",
+          "situations": [
+            {
+              "id": "identity_and_self_acceptance",
+              "weight": 0.9
+            },
+            {
+              "id": "redemption_after_mistakes",
+              "weight": 0.7
+            },
+            {
+              "id": "starting_a_business",
+              "weight": 0.5
+            },
+            {
+              "id": "career_change",
+              "weight": 0.4
+            }
+          ],
+          "conflicts": [
+            "power_vs_morality",
+            "past_vs_future"
+          ],
+          "emotions": {
+            "start": [
+              "hope",
+              "determination",
+              "self_doubt"
+            ],
+            "middle": [
+              "pride",
+              "numbness",
+              "guilt"
+            ],
+            "end": [
+              "shame",
+              "self_respect",
+              "acceptance"
+            ]
+          },
+          "ending_tone": "bittersweet",
+          "intensity": "heavy",
+          "warnings": [
+            "war_and_violence",
+            "betrayal",
+            "death_of_loved_one",
+            "grief"
+          ],
+          "example_user_messages": [
+            "I used to be a bit of a hustler and I've tried so hard to go straight, but it feels like honesty just gets me nowhere.",
+            "I've built this confident, flashy version of myself for work and I don't know where it ends and I begin.",
+            "Every time I bend the rules it pays off, and that's what scares me.",
+            "I think I became someone I would have hated years ago, and I'm not sure I can come back."
+          ],
+          "spoiler": {
+            "summary": "Jimmy starts as an earnest elder-law attorney but is repeatedly drawn back to scams. After Chuck's death he rebrands as 'Saul Goodman', becomes a cartel lawyer, survives the desert with Mike, and helps Kim ruin Howard, which ends with Lalo killing Howard and Kim leaving him. As Saul he becomes Walt's criminal lawyer in Breaking Bad and flees as 'Gene Takavic', managing a Cinnabon in Omaha. Gene relapses into cons and is caught. He first negotiates a sweetheart deal, then, learning Kim confessed, publicly admits everything in court, reclaims the name Jimmy McGill, and accepts an 86-year sentence. Kim visits him in prison and they share a cigarette.",
+            "key_events": [
+              "Adopts the name Saul Goodman",
+              "Becomes the cartel's lawyer; stranded in the desert with Mike",
+              "Scheme against Howard ends with Lalo killing Howard",
+              "Kim leaves him",
+              "Hides as Gene Takavic in Omaha",
+              "Confesses in court and reclaims the name Jimmy McGill",
+              "Sentenced to 86 years; Kim visits him in prison"
+            ],
+            "got_right": "At the end he stops performing, tells the truth about himself and takes responsibility for what he did.",
+            "got_wrong": "He used charm and cons to avoid grief and accountability, and let the persona grow until it hurt everyone he loved."
+          }
+        }
+      ]
+    },
+    {
+      "id": "char:breaking_bad/mike_ehrmantraut",
+      "name": "Mike Ehrmantraut",
+      "role": "A taciturn ex-Philadelphia cop working as a courthouse parking booth attendant in Albuquerque, living near his daughter-in-law and granddaughter.",
+      "relations": [
+        {
+          "target": "char:breaking_bad/jimmy_mcgill",
+          "relation": "colleague"
+        },
+        {
+          "target": "char:breaking_bad/jesse_pinkman",
+          "relation": "protege"
+        },
+        {
+          "target": "char:breaking_bad/walter_white",
+          "relation": "rival"
+        },
+        {
+          "target": "char:breaking_bad/hank_schrader",
+          "relation": "enemy"
+        }
+      ],
+      "arcs": [
+        {
+          "id": "arc:breaking_bad/mike_ehrmantraut/living_for_his_granddaughter",
+          "title": "Living for his granddaughter",
+          "literal_situation": "A quiet, grim former cop who moved across the country to be near his daughter-in-law and granddaughter spends his days in a parking booth, carrying a private grief about his family's past.",
+          "pattern_label": "a grieving parent carrying secret guilt",
+          "pattern_text": "An older person carries grief and guilt about a loss in the family that they feel responsible for. They put all their love into caring for the ones who are left, while keeping the truth locked away. The question is whether providing for the family can make up for what happened, and whether they will ever let themselves be forgiven.",
+          "hook": "Mike is gruff, precise and nearly silent. He takes his granddaughter to the park, lives alone, and there are people from his old life asking questions he doesn't want to answer.",
+          "why_relatable": "He shows love by doing, not talking, and he carries something he has told no one. Can you move forward while believing you caused a loss? What do we owe the family members left behind?",
+          "watch_for": [
+            "Notice what he's willing to do for his granddaughter.",
+            "How does he react when someone asks about his past?",
+            "Does he ever let anyone comfort him?"
+          ],
+          "start_at": "BCS S1E1",
+          "span": "BCS S1-S6, BB S2-S5",
+          "situations": [
+            {
+              "id": "grief_and_loss",
+              "weight": 0.9
+            },
+            {
+              "id": "caring_for_family",
+              "weight": 0.85
+            },
+            {
+              "id": "redemption_after_mistakes",
+              "weight": 0.5
+            },
+            {
+              "id": "starting_over",
+              "weight": 0.3
+            }
+          ],
+          "conflicts": [
+            "truth_vs_protecting_others",
+            "holding_on_vs_letting_go"
+          ],
+          "emotions": {
+            "start": [
+              "numbness",
+              "grief",
+              "guilt"
+            ],
+            "middle": [
+              "determination",
+              "loneliness"
+            ],
+            "end": [
+              "acceptance",
+              "peace"
+            ]
+          },
+          "ending_tone": "tragic",
+          "intensity": "heavy",
+          "warnings": [
+            "death_of_main_character",
+            "death_of_loved_one",
+            "grief",
+            "war_and_violence",
+            "self_harm_or_suicide"
+          ],
+          "example_user_messages": [
+            "My son died and I think it was my fault, and I've never told anyone why.",
+            "I moved to be near my grandkid because she's the only thing that still matters to me.",
+            "I'm not good with words. I just try to take care of the family I have left.",
+            "People keep asking how I'm doing and I just shut down."
+          ],
+          "spoiler": {
+            "summary": "Mike reveals to Stacey that he was a dirty cop who pressured his son Matt to take a bribe; Matt hesitated and was murdered by his corrupt colleagues, and Mike then killed both of them. He works odd jobs to provide money for Stacey and Kaylee, which draws him into Gus Fring's organisation; he feels his soul darken after killing Werner Ziegler. He sets aside money for Kaylee's future. After Gus's death his hidden funds are seized by the DEA; while fleeing, he is shot by Walt near the Rio Grande and dies quietly by the river.",
+            "key_events": [
+              "Confesses to Stacey that he broke Matt and got him killed",
+              "Kills the two corrupt cops who murdered Matt",
+              "Works for Gus to provide for Kaylee",
+              "Kills Werner Ziegler and struggles with it",
+              "His offshore money for Kaylee is seized",
+              "Shot by Walt: 'Shut up and let me die in peace'"
+            ],
+            "got_right": "He finally told the truth to Stacey and dedicated himself to his granddaughter.",
+            "got_wrong": "He believed he could protect his family by working for violent men, which cost him the chance to be with them."
+          }
+        },
+        {
+          "id": "arc:breaking_bad/mike_ehrmantraut/the_professional_with_a_code",
+          "title": "The professional with a code",
+          "literal_situation": "Needing money for his family, Mike takes side jobs for dangerous people, trying to do them his way: no unnecessary harm, no loose ends, no one hurt who doesn't have to be.",
+          "pattern_label": "keeping your principles while working for bad people",
+          "pattern_text": "A highly competent person takes work from people whose values they don't share because they need the money. They try to keep their own code: do the job right, protect the innocent, look after the younger people who look up to them. The question is how long a personal code can survive inside a system built on the opposite.",
+          "hook": "Mike is offered money for a job he doesn't like by people he doesn't trust. He's clear-eyed, careful, and sure he can do it without losing himself.",
+          "why_relatable": "He thinks having rules makes him different from the people he works for. Can you do questionable work well and still be a decent person? Who does he end up protecting, and at what cost?",
+          "watch_for": [
+            "Notice the rules he sets for others and for himself.",
+            "How does he treat younger people who are in over their heads?",
+            "When the job and his conscience collide, which one gives?"
+          ],
+          "start_at": "BCS S2",
+          "span": "BCS S2-S6, BB S3-S5",
+          "situations": [
+            {
+              "id": "mentor_and_protege",
+              "weight": 0.6
+            },
+            {
+              "id": "new_job",
+              "weight": 0.5
+            },
+            {
+              "id": "responsibility_you_didnt_ask_for",
+              "weight": 0.5
+            }
+          ],
+          "conflicts": [
+            "power_vs_morality",
+            "loyalty_vs_ambition"
+          ],
+          "emotions": {
+            "start": [
+              "determination",
+              "numbness"
+            ],
+            "middle": [
+              "guilt",
+              "anger",
+              "pride"
+            ],
+            "end": [
+              "acceptance"
+            ]
+          },
+          "ending_tone": "tragic",
+          "intensity": "heavy",
+          "warnings": [
+            "death_of_main_character",
+            "war_and_violence",
+            "betrayal",
+            "graphic_gore"
+          ],
+          "example_user_messages": [
+            "I work for a company I don't respect but I tell myself I'm one of the good ones.",
+            "I keep ending up looking out for the young guys at work who are in way over their heads.",
+            "I have rules about what I'll do and won't do, but the jobs keep asking me to bend them.",
+            "I'm really good at what I do, I just hate who I'm doing it for."
+          ],
+          "spoiler": {
+            "summary": "Mike gets Tuco arrested instead of killing him, clashes with Hector, and is recruited by Gus Fring, becoming his head of security. He oversees the superlab construction and bonds with engineer Werner, then has to kill him when Werner escapes. In Breaking Bad he cleans up for Gus, mentors Jesse and becomes a reluctant partner with Walt after Gus's death, paying off his imprisoned men out of loyalty. He refuses to let Walt kill them, quits, and is shot by Walt in anger.",
+            "key_events": [
+              "Gets Tuco arrested instead of killing him",
+              "Recruited by Gus as head of security",
+              "Kills Werner Ziegler",
+              "Mentors Jesse; 'no half measures' speech",
+              "Protects his men in prison and quits Walt",
+              "Shot by Walt by the river"
+            ],
+            "got_right": "He protected the vulnerable where he could, mentored Jesse with care, and stayed loyal to the people who depended on him.",
+            "got_wrong": "He thought his code made the work clean, and underestimated how dangerous a prideful partner could be."
+          }
+        }
+      ]
+    },
+    {
+      "id": "char:breaking_bad/kim_wexler",
+      "name": "Kim Wexler",
+      "role": "A talented, hard-working associate at a prestigious Albuquerque law firm, who put herself through law school after working in its mailroom, and Jimmy McGill's closest friend.",
+      "relations": [
+        {
+          "target": "char:breaking_bad/jimmy_mcgill",
+          "relation": "ex_partner"
+        }
+      ],
+      "arcs": [
+        {
+          "id": "arc:breaking_bad/kim_wexler/climbing_on_her_own_terms",
+          "title": "Climbing on her own terms",
+          "literal_situation": "Kim is a skilled associate at HHM who worked her way up from the mailroom, but the partners can sideline her in an instant, and she has to decide how much to sacrifice to rise.",
+          "pattern_label": "a self-made striver deciding what success means",
+          "pattern_text": "A person from a hard background has built a career through sheer discipline, but the people at the top can take it away at any moment. They work relentlessly to prove themselves, then start to wonder whether the career they fought for is even the one they want. The question is what success means once they stop chasing other people's approval.",
+          "hook": "Kim is precise, ambitious and loyal. She owes her career to a firm whose bosses can bury her in the basement if she steps out of line.",
+          "why_relatable": "She did everything right and still isn't safe. Should she keep climbing inside a system that doesn't value her, or bet on herself? What would she do if she stopped trying to prove something?",
+          "watch_for": [
+            "Notice how she reacts when she's punished for something that wasn't her fault.",
+            "What kind of work actually makes her light up?",
+            "How much of her drive is ambition, and how much is fear?"
+          ],
+          "start_at": "BCS S1E1",
+          "span": "BCS S1-S6",
+          "situations": [
+            {
+              "id": "standing_up_to_authority",
+              "weight": 0.7
+            },
+            {
+              "id": "starting_a_business",
+              "weight": 0.6
+            },
+            {
+              "id": "burnout_at_work",
+              "weight": 0.6
+            },
+            {
+              "id": "career_change",
+              "weight": 0.5
+            }
+          ],
+          "conflicts": [
+            "loyalty_vs_ambition",
+            "career_vs_relationships"
+          ],
+          "emotions": {
+            "start": [
+              "determination",
+              "self_doubt",
+              "pride"
+            ],
+            "middle": [
+              "burnout",
+              "restlessness",
+              "confidence"
+            ],
+            "end": [
+              "guilt",
+              "acceptance"
+            ]
+          },
+          "ending_tone": "bittersweet",
+          "intensity": "moderate",
+          "warnings": [
+            "war_and_violence",
+            "betrayal"
+          ],
+          "example_user_messages": [
+            "I worked my way up from nothing and I still feel like my bosses could throw me away any day.",
+            "I got punished at work for something I didn't do and I'm not sure whether to stay and grind or leave.",
+            "I'm thinking about starting my own practice but it terrifies me.",
+            "I'm burned out chasing a career I'm not even sure I want anymore."
+          ],
+          "spoiler": {
+            "summary": "Kim is exiled to document review by Howard for refusing to push Jimmy into Davis & Main's offer, wins back Mesa Verde through sheer effort and leaves HHM to co-found Wexler McGill. Overwork leads to a car crash. At Schweikart & Cokely she becomes head of banking, then realises she prefers pro bono criminal defense, quits and drops Mesa Verde. After her schemes with Jimmy end in Howard's murder, she quits law entirely, moves to Florida and takes a dull job at a sprinkler company, before finally confessing to Howard's widow and starting to volunteer at a legal aid clinic.",
+            "key_events": [
+              "Sent to document review by Howard",
+              "Wins back Mesa Verde and leaves HHM",
+              "Car crash from exhaustion",
+              "Quits Schweikart & Cokely for pro bono work",
+              "Gives up law and moves to Florida",
+              "Volunteers at a legal aid clinic"
+            ],
+            "got_right": "She recognised that the work that meant most to her was helping people who couldn't pay, and she found her way back to it.",
+            "got_wrong": "She drove herself to exhaustion proving herself to others, and let the thrill of bending rules undermine the career she built."
+          }
+        },
+        {
+          "id": "arc:breaking_bad/kim_wexler/loving_someone_who_brings_out_your_wild_side",
+          "title": "Loving someone who brings out her wild side",
+          "literal_situation": "Kim is close to Jimmy, a charming colleague with a history of cons. She is the responsible one, yet part of her is thrilled by his schemes.",
+          "pattern_label": "a rule-follower drawn to someone who breaks rules",
+          "pattern_text": "A disciplined, responsible person loves someone reckless and charming, and discovers a thrilling side of themselves that enjoys breaking the rules too. The relationship makes them feel alive and understood, but it keeps pulling them toward choices they'd never make alone. The question is whether this love is bringing out their true self or their worst self.",
+          "hook": "Kim is buttoned-up, principled and very good at her job. Around Jimmy she laughs, shares a cigarette in the parking garage, and sometimes plays along with his games.",
+          "why_relatable": "She loves him partly because he lets her be someone she hides at work. Where is the line between being playful and doing harm? Is she protecting him, or is he enabling a side of her she's never faced?",
+          "watch_for": [
+            "Notice who suggests the next scheme as time goes on.",
+            "How does she react when he goes too far, and when she does?",
+            "What does she keep from him, and why?"
+          ],
+          "start_at": "BCS S1E1",
+          "span": "BCS S1-S6",
+          "situations": [
+            {
+              "id": "identity_and_self_acceptance",
+              "weight": 0.8
+            },
+            {
+              "id": "falling_for_someone_unexpected",
+              "weight": 0.5
+            },
+            {
+              "id": "redemption_after_mistakes",
+              "weight": 0.6
+            },
+            {
+              "id": "divorce",
+              "weight": 0.4
+            }
+          ],
+          "conflicts": [
+            "belonging_vs_integrity",
+            "independence_vs_connection"
+          ],
+          "emotions": {
+            "start": [
+              "love",
+              "curiosity",
+              "self_doubt"
+            ],
+            "middle": [
+              "joy",
+              "freedom",
+              "dread"
+            ],
+            "end": [
+              "guilt",
+              "grief",
+              "acceptance"
+            ]
+          },
+          "ending_tone": "bittersweet",
+          "intensity": "heavy",
+          "warnings": [
+            "war_and_violence",
+            "betrayal",
+            "graphic_gore",
+            "grief"
+          ],
+          "example_user_messages": [
+            "I'm usually the responsible one, but my partner brings out this reckless side of me and I kind of love it.",
+            "We have so much fun bending the rules together that I'm scared of what it says about me.",
+            "I keep covering for the person I love even when I know he's in the wrong.",
+            "I think we might be bad for each other, but I don't know who I am without him."
+          ],
+          "spoiler": {
+            "summary": "Kim joins Jimmy's cons against arrogant men in bars and helps him fight Chuck, marries him in part for spousal privilege, and faces down Lalo. She escalates the plot to discredit Howard; the scheme succeeds, but Lalo arrives and shoots Howard in front of them. Devastated, Kim decides they are poison together, leaves Jimmy and quits law. Years later in Florida she confesses to Howard's widow and to the DA, then visits Jimmy in prison after he confesses, and they share a final cigarette.",
+            "key_events": [
+              "Cons with Jimmy in bars ('Giselle' and 'Viktor')",
+              "Marries Jimmy",
+              "Confronts Lalo",
+              "Scheme against Howard ends with Lalo killing him",
+              "Leaves Jimmy and quits law",
+              "Confesses to Howard's widow",
+              "Visits Jimmy in prison; they share a cigarette"
+            ],
+            "got_right": "She took responsibility, walked away when she saw the harm they were doing, and eventually told the truth.",
+            "got_wrong": "She told herself the schemes were harmless fun and pushed them further than Jimmy would have, and then punished herself by shutting down her whole life."
+          }
+        }
+      ]
+    },
+    {
+      "id": "char:breaking_bad/walter_white_jr",
+      "name": "Walter White Jr. (Flynn)",
+      "role": "Walter and Skyler's teenage son, a funny, breakfast-loving high schooler with cerebral palsy who idolises his DEA-agent uncle.",
+      "relations": [
+        {
+          "target": "char:breaking_bad/walter_white",
+          "relation": "parent"
+        },
+        {
+          "target": "char:breaking_bad/skyler_white",
+          "relation": "parent"
+        },
+        {
+          "target": "char:breaking_bad/hank_schrader",
+          "relation": "friend"
+        }
+      ],
+      "arcs": [
+        {
+          "id": "arc:breaking_bad/walter_white_jr/the_kid_left_out_of_the_family_secret",
+          "title": "The kid left out of the family secret",
+          "literal_situation": "A teenager with cerebral palsy whose father has cancer and whose parents keep fighting behind closed doors tries to figure out who he is and whose side to be on, while nobody tells him what is going on.",
+          "pattern_label": "a teenager kept in the dark at home",
+          "pattern_text": "A teenager senses their family is falling apart but nobody tells them why. They try on new identities, take sides based on half the story, and cling to the adults who seem simplest to trust. The question is what happens to their loyalty and sense of self when they finally learn the truth about the people they love.",
+          "hook": "Walter Jr. is a normal teen: he wants to drive, be cool, and be taken seriously. His father is sick, his parents are acting strangely, and he is always the last one to find out anything.",
+          "why_relatable": "He loves both parents and feels shut out by both. How do you figure out who you are when your family won't be honest with you? Is taking sides a way of feeling in control?",
+          "watch_for": [
+            "Notice what name he asks people to call him, and when it changes.",
+            "Who does he go to when he feels lost?",
+            "How does he read his parents' fights without knowing the full story?"
+          ],
+          "start_at": "BB S1E1",
+          "span": "S1-S5",
+          "situations": [
+            {
+              "id": "coming_of_age",
+              "weight": 0.9
+            },
+            {
+              "id": "identity_and_self_acceptance",
+              "weight": 0.7
+            },
+            {
+              "id": "difficult_parent",
+              "weight": 0.6
+            },
+            {
+              "id": "illness_or_injury",
+              "weight": 0.4
+            }
+          ],
+          "conflicts": [
+            "independence_vs_connection",
+            "truth_vs_protecting_others"
+          ],
+          "emotions": {
+            "start": [
+              "restlessness",
+              "longing",
+              "confusion"
+            ],
+            "middle": [
+              "anger",
+              "loneliness",
+              "confusion"
+            ],
+            "end": [
+              "betrayal",
+              "grief",
+              "anger"
+            ]
+          },
+          "ending_tone": "tragic",
+          "intensity": "moderate",
+          "warnings": [
+            "serious_illness",
+            "death_of_loved_one",
+            "domestic_violence",
+            "betrayal",
+            "grief"
+          ],
+          "example_user_messages": [
+            "My parents are obviously going through something but they keep telling me everything's fine.",
+            "My dad is sick and I don't know how to talk to him about it.",
+            "I sided with my dad when my parents split up and now I'm not sure I got the full story.",
+            "I feel like I'm always the last person in my family to know anything."
+          ],
+          "spoiler": {
+            "summary": "Walt Jr. is angry at his father for refusing chemo, starts calling himself Flynn when his parents fight, and sets up SaveWalterWhite.com, which Saul uses to launder money. When Skyler throws Walt out he sides with his father, and he is hit hard by Hank's shooting. Walt gives him a new car and, drunk, calls him Hank. Late in the series Marie forces Skyler to tell him the truth; he turns on both parents, stops Walt from hurting Skyler in the knife fight and calls 911 on him. When Walt calls from hiding, Flynn screams that he killed Uncle Hank and tells him to die. Walt watches him from afar one last time and arranges for his money to reach him through Gretchen and Elliott.",
+            "key_events": [
+              "Calls himself Flynn during his parents' conflict",
+              "Sets up SaveWalterWhite.com",
+              "Sides with Walt when Skyler throws him out",
+              "Learns the truth about his parents' crimes",
+              "Calls 911 on his father after the knife fight",
+              "Tells Walt to die on the phone after Hank's death"
+            ],
+            "got_right": "He stood up for his mother and refused to take money tied to the harm his father caused.",
+            "got_wrong": "Kept in the dark, he took sides on half the story and put all his faith in whoever seemed strongest."
+          }
+        }
+      ]
+    }
+  ]
+}

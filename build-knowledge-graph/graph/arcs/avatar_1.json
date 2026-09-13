@@ -1,0 +1,751 @@
+{
+  "show": "avatar",
+  "characters": [
+    {
+      "id": "char:avatar/aang",
+      "name": "Aang",
+      "role": "A playful twelve-year-old monk who wakes from a century frozen in ice to learn he is the Avatar, the one person expected to bring peace to a world at war.",
+      "relations": [
+        {"target": "char:avatar/katara", "relation": "partner"},
+        {"target": "char:avatar/katara", "relation": "mentor"},
+        {"target": "char:avatar/sokka", "relation": "friend"},
+        {"target": "char:avatar/toph_beifong", "relation": "mentor"},
+        {"target": "char:avatar/toph_beifong", "relation": "friend"},
+        {"target": "char:avatar/zuko", "relation": "enemy"},
+        {"target": "char:avatar/zuko", "relation": "mentor"},
+        {"target": "char:avatar/zuko", "relation": "friend"},
+        {"target": "char:avatar/iroh", "relation": "friend"},
+        {"target": "char:avatar/azula", "relation": "enemy"},
+        {"target": "char:avatar/tenzin", "relation": "child"}
+      ],
+      "arcs": [
+        {
+          "id": "arc:avatar/aang/reluctant_chosen_one",
+          "title": "The kid who ran from his destiny",
+          "literal_situation": "A young monk who fled when told he was the Avatar wakes up a hundred years later. The world has been at war the whole time he was gone, and everyone now expects him to master all four elements and end it.",
+          "pattern_label": "a young person handed a responsibility far too big",
+          "pattern_text": "Someone is told, far too young, that everyone is counting on them, and their first instinct is to run. When they come back, the fallout from being gone is waiting for them, and they have to decide whether to carry the weight or keep dodging it. The real question is whether they can take responsibility without losing the joy and gentleness that make them who they are.",
+          "hook": "Freshly thawed and still goofy, he would rather ride animals and see old friends than train. Under the jokes he is carrying guilt about running away and dread about what people now expect of him.",
+          "why_relatable": "He keeps asking whether he can be a normal kid and still meet what everyone needs from him. He wonders if running away made things worse, and whether he has to face it all alone.",
+          "watch_for": [
+            "How does he react when people treat him as a symbol instead of a person?",
+            "When he makes a costly mistake, does he pull away from his friends or let them in?",
+            "Which parts of his playfulness does he protect, and which does he give up?"
+          ],
+          "start_at": "ATLA S1E1",
+          "span": "ATLA S1-S3",
+          "situations": [
+            {"id": "responsibility_you_didnt_ask_for", "weight": 0.95},
+            {"id": "coming_of_age", "weight": 0.6},
+            {"id": "imposter_syndrome", "weight": 0.4},
+            {"id": "grief_and_loss", "weight": 0.4}
+          ],
+          "conflicts": ["duty_vs_desire"],
+          "emotions": {"start": ["guilt", "restlessness", "fear"], "middle": ["overwhelm", "self_doubt", "anxiety"], "end": ["confidence", "peace", "relief"]},
+          "ending_tone": "hopeful",
+          "intensity": "moderate",
+          "warnings": ["war_and_violence", "death_of_loved_one", "child_endangerment", "grief"],
+          "example_user_messages": [
+            "Everyone keeps telling me I'm the only one who can fix this and I just want to disappear for a while.",
+            "I ran away from a big responsibility once and things fell apart while I was gone. I can't stop feeling like it's my fault.",
+            "I'm 22 and suddenly I'm the one my whole family depends on. I don't feel ready at all.",
+            "How do I take on something huge without turning into a stressed, joyless version of myself?"
+          ],
+          "spoiler": {
+            "summary": "Aang ran away when the monks planned to separate him from his mentor Gyatso, got frozen in an iceberg, and woke to find the Fire Nation had wiped out his people during his absence. Roku gives him a deadline, the arrival of Sozin's Comet, to master all four elements. He learns water from Katara and Pakku, earth from Toph, and eventually fire from Zuko. Along the way he burns Katara by rushing firebending and swears off the element. In Ba Sing Se, Azula kills him with lightning mid-Avatar State and Katara revives him. Afterward he blames himself for the city's fall and tries to fight alone, until Roku and Yue's spirits remind him to accept help. The eclipse invasion fails, and the team regroups with Zuko as his teacher. He finally faces Ozai, masters the Avatar State in battle, and ends the war by taking Ozai's bending away instead of killing him.",
+            "key_events": [
+              "Frozen for 100 years after running away",
+              "Learns Air Nomads were wiped out",
+              "Burns Katara while rushing firebending",
+              "Killed by Azula's lightning, revived by Katara",
+              "Blames himself for fall of Ba Sing Se",
+              "Eclipse invasion fails",
+              "Accepts Zuko as firebending teacher",
+              "Defeats Ozai and ends the war"
+            ],
+            "got_right": "He kept his compassion and humor under enormous pressure. In the end he learned to lean on his friends and teachers instead of carrying everything alone.",
+            "got_wrong": "He ran from responsibility at first. He lied to keep the group together, hiding the map to Katara and Sokka's father, and he rushed training in ways that hurt people he loved."
+          }
+        },
+        {
+          "id": "arc:avatar/aang/last_of_his_people",
+          "title": "Last of his kind",
+          "literal_situation": "He returns to the temple where he grew up, expecting to find his mentor and his community. What he finds is that he may be the only one left.",
+          "pattern_label": "grieving a whole world you came from",
+          "pattern_text": "Someone loses not just one person but the entire community and way of life that made them who they are. They carry survivor's guilt, bursts of rage they don't recognize in themselves, and a desperate grip on the few people they have left. The question is how to honor what's gone without letting grief swallow them or the relationships that remain.",
+          "hook": "Cheerful and eager, he takes his new friends to his old home and is sure some of his people must still be there.",
+          "why_relatable": "How do you grieve something no one around you can fully understand? He also has to figure out whether holding tightly to the people you have left is love or fear.",
+          "watch_for": [
+            "What happens to him when grief finally catches up with him?",
+            "Who is able to reach him when he is overwhelmed by grief?",
+            "Is he asked to let go of attachments, and how does he feel about that request?"
+          ],
+          "start_at": "ATLA S1E3",
+          "span": "ATLA S1-S2",
+          "situations": [
+            {"id": "grief_and_loss", "weight": 0.95},
+            {"id": "loneliness", "weight": 0.7},
+            {"id": "identity_and_self_acceptance", "weight": 0.4},
+            {"id": "finding_your_people", "weight": 0.4}
+          ],
+          "conflicts": ["holding_on_vs_letting_go", "past_vs_future"],
+          "emotions": {"start": ["hope", "grief", "guilt"], "middle": ["anger", "loneliness", "numbness"], "end": ["acceptance", "love"]},
+          "ending_tone": "bittersweet",
+          "intensity": "heavy",
+          "warnings": ["death_of_loved_one", "grief", "war_and_violence"],
+          "example_user_messages": [
+            "My whole family is gone and I'm the only one left who remembers how things used to be.",
+            "I lost my community and my culture in one go. Nobody around me gets what that feels like.",
+            "Since the loss I get these bursts of rage that scare me. That isn't who I am.",
+            "I'm terrified of losing the few people I have left, so I cling to them way too hard."
+          ],
+          "spoiler": {
+            "summary": "At the Southern Air Temple, Aang finds the remains of his mentor Gyatso and realizes his people were exterminated. The discovery triggers an uncontrolled Avatar State that only Katara can calm. His grief resurfaces as rage when Appa is stolen in the desert, where he nearly lashes out at the sandbenders before Katara holds him back. Then he goes numb. Guru Pathik explains that his love for his friends, especially Katara, is where his love for his lost people went, and asks him to let that attachment go to master the Avatar State. Aang refuses and rushes to save Katara instead. He never gets his people back. Over time, and in later stories, he rebuilds meaning through the family and friends around him and by passing on his culture's values.",
+            "key_events": [
+              "Finds Gyatso's remains at the Southern Air Temple",
+              "Uncontrolled Avatar State from grief",
+              "Appa kidnapped; rage in the desert",
+              "Guru asks him to let go of Katara; he refuses",
+              "Later rebuilds his culture through values, not bloodlines"
+            ],
+            "got_right": "He let his friends become his new family and stayed open to love despite the loss.",
+            "got_wrong": "He sometimes turned grief into destructive anger or shut down emotionally. His fear of loss made him controlling with the people he loved."
+          }
+        },
+        {
+          "id": "arc:avatar/aang/values_under_pressure",
+          "title": "When everyone says there's only one way",
+          "literal_situation": "The final confrontation is days away. Everyone he trusts, friends and past mentors alike, tells him that to protect the world he must take a life, something his upbringing taught him never to do.",
+          "pattern_label": "pressured to betray your deepest values",
+          "pattern_text": "Someone faces a decision where everyone they respect agrees on the 'necessary' choice, and it is the one thing their conscience forbids. They are torn between being responsible to others and staying true to who they are. The story asks whether there is always a third option, and what it costs to go looking for one.",
+          "hook": "Anxious and sleepless before the biggest test of his life, he asks for advice from everyone, and every answer points the same way.",
+          "why_relatable": "What do you do when doing your job seems to require becoming someone you don't want to be? Can you trust your own conscience when every wise voice around you disagrees?",
+          "watch_for": [
+            "How does each person he asks for advice justify their answer?",
+            "Does he feel he has to hide his doubts from his friends?",
+            "What does he decide 'responsibility' actually means?"
+          ],
+          "start_at": "ATLA S3E18",
+          "span": "ATLA S3E18-S3E21",
+          "situations": [
+            {"id": "responsibility_you_didnt_ask_for", "weight": 0.8},
+            {"id": "identity_and_self_acceptance", "weight": 0.6},
+            {"id": "standing_up_to_authority", "weight": 0.4}
+          ],
+          "conflicts": ["power_vs_morality", "duty_vs_desire"],
+          "emotions": {"start": ["anxiety", "dread"], "middle": ["loneliness", "confusion"], "end": ["self_respect", "peace"]},
+          "ending_tone": "hopeful",
+          "intensity": "heavy",
+          "warnings": ["war_and_violence"],
+          "example_user_messages": [
+            "My boss and every mentor I have say I have to do something I think is wrong. I'm starting to wonder if I'm the naive one.",
+            "Everyone says there's only one realistic option and it goes against everything I believe.",
+            "I'm scared that doing what's 'necessary' will turn me into someone I don't respect.",
+            "How do you trust your own conscience when everyone you respect disagrees?"
+          ],
+          "spoiler": {
+            "summary": "Zuko reveals that Ozai plans to burn the Earth Kingdom using the comet, so Aang has to face him early. His friends, then his past lives Roku, Kyoshi, Kuruk and Yangchen, all tell him he must be decisive and kill Ozai. Yangchen says his spiritual needs must come second to the world's. Sleepwalking, Aang is carried to a lion turtle, which teaches him energybending. In the battle he refuses to kill Ozai even when he has the chance. He masters the Avatar State when a rock hits his old wound, then strips Ozai of his bending instead of taking his life. The war ends.",
+            "key_events": [
+              "Learns Ozai's plan to burn the Earth Kingdom",
+              "Every past Avatar advises killing",
+              "Disappears to a lion turtle island",
+              "Learns energybending",
+              "Spares Ozai, takes his bending",
+              "War ends"
+            ],
+            "got_right": "He kept looking for an answer that fit his values instead of accepting a false choice, and he held firm when the moment came.",
+            "got_wrong": "He avoided the problem and put off talking about it for a long time, which left his friends in the dark and made his anxiety worse."
+          }
+        }
+      ]
+    },
+    {
+      "id": "char:avatar/katara",
+      "name": "Katara",
+      "role": "A fourteen-year-old girl from a small, struggling village at the South Pole, the only person there with water powers. She has kept her family running since her mother died.",
+      "relations": [
+        {"target": "char:avatar/sokka", "relation": "sibling"},
+        {"target": "char:avatar/aang", "relation": "partner"},
+        {"target": "char:avatar/aang", "relation": "protege"},
+        {"target": "char:avatar/toph_beifong", "relation": "friend"},
+        {"target": "char:avatar/zuko", "relation": "enemy"},
+        {"target": "char:avatar/zuko", "relation": "friend"},
+        {"target": "char:avatar/azula", "relation": "enemy"},
+        {"target": "char:avatar/tenzin", "relation": "child"},
+        {"target": "char:avatar/korra", "relation": "protege"}
+      ],
+      "arcs": [
+        {
+          "id": "arc:avatar/katara/parentified_caretaker",
+          "title": "The girl who became everyone's mother",
+          "literal_situation": "Her mother was killed in a raid and her father has gone off to fight, so she cooks, mends and worries for her brother, her village, and soon a group of travelling friends.",
+          "pattern_label": "a child forced to become the parent",
+          "pattern_text": "After losing a parent, someone steps into the caretaker role long before they are ready, and they keep everyone else afloat while never quite getting looked after themselves. Their care is real, but so is the hidden resentment toward the parent who left and the exhaustion of always being the responsible one. The journey is about letting themselves have needs and admitting that anger.",
+          "hook": "She is capable, bossy and warm. She holds her family together and hopes for more than her small village can offer her.",
+          "why_relatable": "What happens to your own needs when you have always been the one looking after everyone? Is it OK to be angry at a parent who left for a good reason?",
+          "watch_for": [
+            "When do her friends push back on her mothering, and how does she take it?",
+            "How does she feel when she hears news of her father?",
+            "Who, if anyone, takes care of her?"
+          ],
+          "start_at": "ATLA S1E1",
+          "span": "ATLA S1-S3",
+          "situations": [
+            {"id": "caring_for_family", "weight": 0.9},
+            {"id": "grief_and_loss", "weight": 0.6},
+            {"id": "difficult_parent", "weight": 0.4},
+            {"id": "coming_of_age", "weight": 0.4}
+          ],
+          "conflicts": ["duty_vs_desire", "independence_vs_connection"],
+          "emotions": {"start": ["grief", "loneliness", "determination"], "middle": ["resentment", "overwhelm"], "end": ["acceptance", "love", "belonging"]},
+          "ending_tone": "hopeful",
+          "intensity": "moderate",
+          "warnings": ["death_of_loved_one", "grief", "war_and_violence"],
+          "example_user_messages": [
+            "Ever since my mom died I've basically been raising my siblings, and nobody ever asks how I'm doing.",
+            "My dad left for work abroad when I was a kid and I'm still angry, even though I know he had reasons.",
+            "My friends say I'm too controlling and 'motherly' but someone has to keep everything together.",
+            "I don't know how to stop being the responsible one long enough to take care of myself."
+          ],
+          "spoiler": {
+            "summary": "Katara's mother Kya gave herself up in a raid to protect her, and was killed. Katara took over the household, and her father Hakoda later left to fight. When Hakoda's friend Bato offers a way to reunite with him, she chooses to stay with Aang. Her mothering causes friction, especially with the independent Toph. After Ba Sing Se falls she is reunited with her father and admits she felt abandoned and resentful. They reconcile. By the end she finds a chosen family in Team Avatar and begins a relationship with Aang. Later in life she becomes a mother, the world's best healer, and Korra's teacher.",
+            "key_events": [
+              "Mother killed protecting her",
+              "Father leaves for the war",
+              "Chooses Aang's mission over reuniting with Dad",
+              "Clashes with Toph over mothering",
+              "Confronts Hakoda about feeling abandoned; reconciles",
+              "Begins relationship with Aang"
+            ],
+            "got_right": "Her compassion and steadiness held the group together through its worst moments. She eventually said out loud how hurt she was instead of just swallowing it.",
+            "got_wrong": "She could be controlling and self-righteous, and for a long time she buried her own pain and needs under caretaking."
+          }
+        },
+        {
+          "id": "arc:avatar/katara/fighting_to_be_taught",
+          "title": "Fighting for the right to learn",
+          "literal_situation": "She is the only waterbender left in her tribe and has been teaching herself from nothing, hoping to find a master in the far north who can train her properly.",
+          "pattern_label": "demanding a seat you were told isn't yours",
+          "pattern_text": "Someone with real talent and hunger has had no teacher, no role models and no path forward, so they have scraped together their skills alone. When they finally reach the place where real training happens, they are told people like them aren't allowed in. They have to decide whether to accept the limits others set or fight gatekeepers who hold all the power.",
+          "hook": "Frustrated by how little she knows and a bit envious of how fast others pick things up, she sets out full of hope that the far north will finally offer her a teacher.",
+          "why_relatable": "What do you do when your ambition runs into a rule that has nothing to do with your ability? How do you cope with jealousy when someone else seems to learn effortlessly?",
+          "watch_for": [
+            "How does she handle it when a friend learns her skill faster than she did?",
+            "What lines is she willing to cross to get the training she wants?",
+            "How does she respond when someone in authority talks down to her?"
+          ],
+          "start_at": "ATLA S1E1",
+          "span": "ATLA S1",
+          "situations": [
+            {"id": "standing_up_to_authority", "weight": 0.85},
+            {"id": "mentor_and_protege", "weight": 0.5},
+            {"id": "confidence_struggle", "weight": 0.5},
+            {"id": "identity_and_self_acceptance", "weight": 0.4}
+          ],
+          "conflicts": ["fitting_in_vs_standing_out", "belonging_vs_integrity"],
+          "emotions": {"start": ["longing", "envy", "self_doubt"], "middle": ["anger", "determination"], "end": ["pride", "confidence"]},
+          "ending_tone": "hopeful",
+          "intensity": "light",
+          "warnings": ["war_and_violence"],
+          "example_user_messages": [
+            "I taught myself everything because nobody around me could, and now the one program that could train me says I'm not the 'right fit'.",
+            "The people in charge of my field made it clear women aren't taken seriously here. Do I push or give up?",
+            "My friend picked up in a week what took me years to learn and I feel awful about how jealous I am.",
+            "I'm tired of being told to stay in my lane when I know I could be great at this."
+          ],
+          "spoiler": {
+            "summary": "Katara has practiced alone for years and is jealous when Aang masters her moves in minutes. She steals a waterbending scroll from pirates, which puts the group in danger, but she improves quickly. At the Northern Water Tribe, Master Pakku refuses to teach her combat because she is a girl and sends her to learn healing. She challenges him to a duel and loses, but fights fiercely. He realizes she is the granddaughter of his former fiancée Kanna and accepts her as a student. She progresses faster than anyone he has trained, becomes a master by the end of the siege, and becomes Aang's teacher.",
+            "key_events": [
+              "Envies Aang's instant progress",
+              "Steals the waterbending scroll",
+              "Pakku refuses to teach girls combat",
+              "Duels Pakku and loses but earns respect",
+              "Declared a master, becomes Aang's teacher"
+            ],
+            "got_right": "She refused to accept an unjust rule and backed up her demand with relentless hard work.",
+            "got_wrong": "Her jealousy and impatience led her to steal the scroll and put her friends at risk, and her temper sometimes got the better of her."
+          }
+        },
+        {
+          "id": "arc:avatar/katara/revenge_or_release",
+          "title": "The grudge she can't put down",
+          "literal_situation": "Later in the series, someone she has every reason to distrust asks to join her group. Everyone else starts to accept him, and she can't. Meanwhile her mother's killer is still out there somewhere.",
+          "pattern_label": "deciding whether to forgive or get even",
+          "pattern_text": "Someone who has been deeply hurt, first by an old loss and then by a fresh betrayal, holds onto anger when everyone else has moved on. When they get the chance to confront the source of their oldest wound, they have to decide what they actually want: revenge, an apology, or just to be free of it. The story separates forgiving someone from letting go of the pain.",
+          "hook": "Wary and cold, she refuses to trust a newcomer everyone else is warming to, and her mother's death still weighs on her.",
+          "why_relatable": "Is holding a grudge protecting you, or keeping you stuck? And is it possible to move on without forgiving the person who hurt you?",
+          "watch_for": [
+            "Why does she resist trust when others have already given it?",
+            "What does she expect to feel when she faces the person she blames most?",
+            "How do her brother and friends respond to her anger?"
+          ],
+          "start_at": "ATLA S3E12",
+          "span": "ATLA S3E12-S3E16",
+          "situations": [
+            {"id": "grief_and_loss", "weight": 0.9},
+            {"id": "identity_and_self_acceptance", "weight": 0.4},
+            {"id": "friendship_ending", "weight": 0.2}
+          ],
+          "conflicts": ["revenge_vs_forgiveness", "holding_on_vs_letting_go"],
+          "emotions": {"start": ["resentment", "betrayal", "anger"], "middle": ["anger", "grief"], "end": ["peace", "acceptance"]},
+          "ending_tone": "hopeful",
+          "intensity": "heavy",
+          "warnings": ["death_of_loved_one", "grief", "war_and_violence"],
+          "example_user_messages": [
+            "Everyone has forgiven him except me and they act like I'm the problem.",
+            "I finally found out where the person who hurt my family lives and I don't know what I'll do if I see them.",
+            "I'm scared of how much anger I have inside me. Sometimes I think it'd be easier if I could just get even.",
+            "Do I have to forgive someone to finally move on?"
+          ],
+          "spoiler": {
+            "summary": "Katara refuses to trust Zuko after he sided with Azula in Ba Sing Se. She threatens to end him if he hurts Aang, and stays cold even after the others accept him. Zuko offers to help her find the man who killed her mother. Against Aang's advice to forgive, she hunts down the Southern Raiders and uses bloodbending in rage on a man who turns out to be the wrong target. When she finds Yon Rha, a pathetic old man, she nearly kills him but chooses not to. She also explicitly does not forgive him. Freed of that pain, she forgives Zuko and embraces him as a friend. The arc echoes her earlier horror at Hama's bloodbending.",
+            "key_events": [
+              "Threatens Zuko at the Western Air Temple",
+              "Hunts the Southern Raiders with Zuko",
+              "Bloodbends the wrong man in anger",
+              "Spares Yon Rha but refuses to forgive him",
+              "Forgives Zuko"
+            ],
+            "got_right": "She saw that mercy and forgiveness are different things. She chose not to become cruel, and she let go of a grudge against someone who had truly changed.",
+            "got_wrong": "She kept punishing someone who was sincerely trying to make amends, and she let rage push her into using a power she found morally horrifying."
+          }
+        }
+      ]
+    },
+    {
+      "id": "char:avatar/zuko",
+      "name": "Zuko",
+      "role": "A banished teenage prince with a scarred face, obsessively hunting the Avatar across the world because his father said capturing him is the only way to come home.",
+      "relations": [
+        {"target": "char:avatar/iroh", "relation": "mentor"},
+        {"target": "char:avatar/azula", "relation": "sibling"},
+        {"target": "char:avatar/azula", "relation": "rival"},
+        {"target": "char:avatar/aang", "relation": "enemy"},
+        {"target": "char:avatar/aang", "relation": "protege"},
+        {"target": "char:avatar/aang", "relation": "friend"},
+        {"target": "char:avatar/katara", "relation": "friend"},
+        {"target": "char:avatar/sokka", "relation": "friend"},
+        {"target": "char:avatar/toph_beifong", "relation": "friend"}
+      ],
+      "arcs": [
+        {
+          "id": "arc:avatar/zuko/fathers_approval",
+          "title": "Chasing a father's approval",
+          "literal_situation": "Exiled and scarred, he spends every waking moment on a nearly hopeless mission his father gave him, convinced that completing it will restore his honor and his father's love.",
+          "pattern_label": "earning the love of a parent who withholds it",
+          "pattern_text": "A young person has built their whole identity around winning back the approval of a harsh parent who rejected them. They chase that goal with an intensity that pushes away the people who actually care about them. The journey is about realizing the approval they crave may never be worth what it costs, and working out who they are without it.",
+          "hook": "Angry, proud and impatient, he treats his gentle uncle as a nuisance. He believes one success will fix everything.",
+          "why_relatable": "What if the person whose love you most want is the one hurting you? Who are you if you stop chasing their approval?",
+          "watch_for": [
+            "How does he treat the people who care about him, versus the ones he is trying to impress?",
+            "What does he do when he gets a real chance at a normal life?",
+            "What does he imagine winning his father's approval will feel like?"
+          ],
+          "start_at": "ATLA S1E1",
+          "span": "ATLA S1-S3",
+          "situations": [
+            {"id": "difficult_parent", "weight": 1.0},
+            {"id": "family_expectations", "weight": 0.8},
+            {"id": "identity_and_self_acceptance", "weight": 0.7},
+            {"id": "sibling_rivalry", "weight": 0.4}
+          ],
+          "conflicts": ["self_vs_family_expectations", "belonging_vs_integrity"],
+          "emotions": {"start": ["shame", "anger", "rejection"], "middle": ["confusion", "loneliness", "guilt"], "end": ["self_respect", "freedom"]},
+          "ending_tone": "hopeful",
+          "intensity": "heavy",
+          "warnings": ["abuse", "war_and_violence", "betrayal", "child_endangerment"],
+          "example_user_messages": [
+            "My dad has never once said he's proud of me. I've spent my whole life trying to change that.",
+            "I got the promotion my family always wanted for me and I feel emptier than before.",
+            "My uncle is the only one who's ever been kind to me and I keep pushing him away.",
+            "My younger sister is the golden child and I'm the disappointment. I keep thinking one big win will fix it."
+          ],
+          "spoiler": {
+            "summary": "As a boy Zuko spoke out of turn in a war meeting to defend soldiers who were about to be sacrificed. His father Ozai burned his face in a duel and banished him until he captured the Avatar. After years of hunting, Zuko loses his ship to Zhao's assassination attempt and fails at the North Pole. Azula lures him home with a false pardon, and he becomes a fugitive branded a traitor. Living as a refugee in Ba Sing Se with Iroh, he frees Appa, suffers a fever that marks an inner change, and starts to find peace. Then Azula offers him his honor back, and he betrays Iroh and helps her conquer the city. Back home as a hero, he feels empty and angry. He learns his great-grandfather was Avatar Roku. On the Day of Black Sun he confronts Ozai, names the abuse, redirects his father's lightning and leaves to join the Avatar.",
+            "key_events": [
+              "Scarred and banished by his father as a boy",
+              "Nearly killed by Zhao",
+              "Branded traitor, lives as a refugee",
+              "Frees Appa, goes through a fever transformation",
+              "Betrays Iroh to side with Azula in Ba Sing Se",
+              "Hires an assassin to kill Aang",
+              "Feels empty after returning home",
+              "Confronts Ozai during the eclipse and leaves"
+            ],
+            "got_right": "He finally saw what his father had done as abuse rather than a punishment he deserved, and found the courage to walk away and choose his own values.",
+            "got_wrong": "He hurt and betrayed the uncle who loved him unconditionally, and he pursued approval so hard that he harmed innocent people along the way."
+          }
+        },
+        {
+          "id": "arc:avatar/zuko/earning_trust_back",
+          "title": "Asking for a chance",
+          "literal_situation": "Later in the series, after a major turning point, he has to ask people who have every reason to doubt him to give him a chance.",
+          "pattern_label": "earning back trust after doing real harm",
+          "pattern_text": "Someone who has seriously hurt others finally sees it and wants to make it right, but the people they wronged have every reason to keep them out. They have to prove themselves through actions, put up with suspicion, and rebuild their sense of purpose on something healthier than anger. The story is about the awkward, humbling work of redemption.",
+          "hook": "Nervous, awkward and sincere, he is almost completely alone, and he has no idea if he will be accepted.",
+          "why_relatable": "How do you apologize for things that can't be undone? What keeps you going when people don't believe you? He also has to find out what could drive him, if not anger.",
+          "watch_for": [
+            "Who is hardest for him to win over, and why?",
+            "Where does his strength really come from?",
+            "What does he find hardest to say out loud?"
+          ],
+          "start_at": "ATLA S3E12",
+          "span": "ATLA S3E12-S3E21",
+          "situations": [
+            {"id": "redemption_after_mistakes", "weight": 1.0},
+            {"id": "finding_your_people", "weight": 0.7},
+            {"id": "mentor_and_protege", "weight": 0.4},
+            {"id": "starting_over", "weight": 0.4}
+          ],
+          "conflicts": ["past_vs_future", "belonging_vs_integrity"],
+          "emotions": {"start": ["guilt", "shame", "loneliness"], "middle": ["rejection", "determination"], "end": ["belonging", "self_respect"]},
+          "ending_tone": "hopeful",
+          "intensity": "moderate",
+          "warnings": ["war_and_violence"],
+          "example_user_messages": [
+            "I treated people really badly in the past and now I want to make it right, but they don't believe me.",
+            "I quit the toxic group I was part of and now I'm trying to join people I used to work against. It's so awkward.",
+            "I used to be driven by anger and now that I'm calmer I feel like I've lost my edge.",
+            "How do I apologize to someone who was always good to me when I betrayed them?"
+          ],
+          "spoiler": {
+            "summary": "Zuko is rejected by Team Avatar at first and accidentally burns Toph's feet. He earns a place by fighting off the assassin he himself had hired. When he tries to teach Aang, his firebending fails, because anger was its source. At the Sun Warriors' ruins he and Aang learn from the dragons that fire can come from life and energy instead. He helps Sokka break Suki and Hakoda out of the Boiling Rock and helps Katara track down her mother's killer, which finally earns her forgiveness. He tearfully apologizes to Iroh, who embraces him and says he was never angry. In the comet-enhanced Agni Kai he takes Azula's lightning to protect Katara, and after the war he is crowned Fire Lord.",
+            "key_events": [
+              "Rejected, then accepted after fighting Combustion Man",
+              "Loses his firebending without anger",
+              "Sun Warriors reveal fire's true source",
+              "Boiling Rock rescue with Sokka",
+              "Helps Katara confront Yon Rha, earns her forgiveness",
+              "Tearful reconciliation with Iroh",
+              "Takes lightning for Katara",
+              "Crowned Fire Lord"
+            ],
+            "got_right": "He owned his wrongs without excuses, accepted that trust had to be earned through action, and humbled himself to apologize.",
+            "got_wrong": "He was sometimes impatient to be forgiven and clumsy with people. Old habits of intensity occasionally resurfaced."
+          }
+        }
+      ]
+    },
+    {
+      "id": "char:avatar/sokka",
+      "name": "Sokka",
+      "role": "A fifteen-year-old boy left as the 'man' of his village after all the adult men went off to fight. He has no special powers and a lot to prove.",
+      "relations": [
+        {"target": "char:avatar/katara", "relation": "sibling"},
+        {"target": "char:avatar/aang", "relation": "friend"},
+        {"target": "char:avatar/toph_beifong", "relation": "friend"},
+        {"target": "char:avatar/zuko", "relation": "enemy"},
+        {"target": "char:avatar/zuko", "relation": "friend"},
+        {"target": "char:avatar/azula", "relation": "enemy"}
+      ],
+      "arcs": [
+        {
+          "id": "arc:avatar/sokka/ordinary_among_gifted",
+          "title": "The ordinary guy on an extraordinary team",
+          "literal_situation": "His sister and new friend have spectacular powers. He has a boomerang, a lot of plans, and a burning need to live up to the warrior father who left him in charge.",
+          "pattern_label": "proving your worth among naturally gifted people",
+          "pattern_text": "Someone surrounded by people with obvious talents feels they bring nothing special, so they overcompensate with bravado, jokes and a need to be in charge. As they get knocked down again and again, they have to work out what they actually contribute. The story is about swapping ego for real confidence and learning that your own strengths are enough.",
+          "hook": "Loud, sarcastic and a bit sexist, he acts as the group's self-appointed leader. Underneath he is quietly worried he is the least useful person there.",
+          "why_relatable": "What do you have to offer when everyone around you seems more gifted? Is his confidence real, or a mask? And how do you live up to a parent you look up to?",
+          "watch_for": [
+            "How does he react when someone he underestimated beats him?",
+            "When does he admit he feels useless, and who does he tell?",
+            "What happens to him when one of his big plans fails?"
+          ],
+          "start_at": "ATLA S1E1",
+          "span": "ATLA S1-S3",
+          "situations": [
+            {"id": "confidence_struggle", "weight": 0.9},
+            {"id": "imposter_syndrome", "weight": 0.7},
+            {"id": "responsibility_you_didnt_ask_for", "weight": 0.5},
+            {"id": "coming_of_age", "weight": 0.5}
+          ],
+          "conflicts": ["self_vs_family_expectations", "fitting_in_vs_standing_out"],
+          "emotions": {"start": ["inadequacy", "pride", "self_doubt"], "middle": ["envy", "self_doubt", "determination"], "end": ["confidence", "self_respect", "belonging"]},
+          "ending_tone": "hopeful",
+          "intensity": "moderate",
+          "warnings": ["war_and_violence"],
+          "example_user_messages": [
+            "Everyone on my team is brilliant and I'm just the guy who makes jokes and plans. I feel like dead weight.",
+            "My dad's a legend in our town and I'm terrified I'll never measure up.",
+            "I got humbled hard by someone I underestimated and honestly I deserved it.",
+            "I led a big project that failed and people got hurt by it. I don't know if I should ever lead again."
+          ],
+          "spoiler": {
+            "summary": "Sokka leads the village's 'defense' with more swagger than skill. He is humbled by Suki and the Kyoshi Warriors, apologizes for his sexism, and asks them to train him. He becomes the group's strategist, discovering the solar eclipse in Wan Shi Tong's library and later planning the invasion. Feeling useless as a nonbender, he trains with swordmaster Piandao, who praises his creativity over raw skill. The Day of Black Sun invasion he planned fails, and many adults are captured, which crushes him. He then rescues Suki and his father from the Boiling Rock, defeats Combustion Man with his boomerang, and during the comet brings down the airship fleet with Suki and Toph. As an adult he becomes chairman of the Republic City council and chief of his tribe.",
+            "key_events": [
+              "Humbled by Suki, apologizes for sexism",
+              "Discovers the eclipse",
+              "Trains with Piandao, forges a meteorite sword",
+              "Plans the invasion, which fails",
+              "Boiling Rock rescue of Suki and Hakoda",
+              "Downs Combustion Man with his boomerang",
+              "Destroys the airship fleet during the comet"
+            ],
+            "got_right": "He admitted when he was wrong, turned humiliation into learning, and discovered that his creativity and strategy were real gifts.",
+            "got_wrong": "Early on he hid insecurity behind arrogance, sexism and bossiness, and he took failures as proof he was worthless."
+          }
+        },
+        {
+          "id": "arc:avatar/sokka/love_you_cant_keep",
+          "title": "Falling for someone who is spoken for",
+          "literal_situation": "In a grand northern city he meets a gentle princess and falls hard. She likes him back, but she is already promised to someone else by her family's arrangement.",
+          "pattern_label": "first love that circumstances won't allow",
+          "pattern_text": "Someone falls deeply for a person who returns the feeling but is bound by duties and expectations beyond either of their control. When the relationship ends in a painful loss, they are left believing it was their job to protect the person and they failed. The journey is about grieving a first love and learning to let someone in again without being paralyzed by fear.",
+          "hook": "Goofy and smitten, he is trying to win over a girl he knows he probably can't have.",
+          "why_relatable": "Can you love someone knowing it might not last? And what do you do with your feelings when the things that matter are out of your hands?",
+          "watch_for": [
+            "How does he react when he learns about the arrangement she is bound by?",
+            "What promise does he make to her, and why does it matter so much to him?",
+            "How does this first love shape the way he thinks about love?"
+          ],
+          "start_at": "ATLA S1E18",
+          "span": "ATLA S1E18-S3",
+          "situations": [
+            {"id": "grief_and_loss", "weight": 0.85},
+            {"id": "falling_for_someone_unexpected", "weight": 0.6},
+            {"id": "coming_of_age", "weight": 0.4}
+          ],
+          "conflicts": ["duty_vs_desire", "holding_on_vs_letting_go"],
+          "emotions": {"start": ["longing", "hope"], "middle": ["grief", "guilt", "inadequacy"], "end": ["acceptance", "love"]},
+          "ending_tone": "bittersweet",
+          "intensity": "moderate",
+          "warnings": ["death_of_loved_one", "grief", "war_and_violence"],
+          "example_user_messages": [
+            "I fell for someone who was already engaged and we both knew it couldn't work.",
+            "My first love died and I still feel like I should have been able to protect her.",
+            "I'm with someone great now but I'm terrified of losing them the way I lost my ex.",
+            "How do you get over someone when it ended because of things neither of you could control?"
+          ],
+          "spoiler": {
+            "summary": "Sokka and Princess Yue fall for each other, but she is betrothed to Hahn. During the siege Chief Arnook asks Sokka to protect her. When Zhao kills the Moon Spirit, Yue, who was given life by that spirit as a baby, gives her life to restore it and becomes the moon, kissing Sokka goodbye. Sokka feels he failed to protect her and sees her in the Foggy Swamp's visions. He later falls for Suki and is overjoyed to find her at the Boiling Rock. Afterward he admits he is afraid of losing her too, and they end up together.",
+            "key_events": [
+              "Yue is betrothed to Hahn",
+              "Sokka tasked with protecting her",
+              "Yue sacrifices herself to become the Moon Spirit",
+              "Sokka blames himself",
+              "Reunites with Suki at the Boiling Rock; they end up together"
+            ],
+            "got_right": "He loved openly and eventually let himself love again instead of shutting down.",
+            "got_wrong": "He blamed himself for a loss he couldn't have prevented, and he became anxiously overprotective afterward."
+          }
+        }
+      ]
+    },
+    {
+      "id": "char:avatar/toph_beifong",
+      "name": "Toph Beifong",
+      "role": "A blind twelve-year-old from a rich family whose parents treat her as fragile and hide her from the world. Secretly she is an undefeated underground fighter.",
+      "relations": [
+        {"target": "char:avatar/aang", "relation": "protege"},
+        {"target": "char:avatar/aang", "relation": "friend"},
+        {"target": "char:avatar/katara", "relation": "friend"},
+        {"target": "char:avatar/sokka", "relation": "friend"},
+        {"target": "char:avatar/zuko", "relation": "friend"},
+        {"target": "char:avatar/iroh", "relation": "friend"},
+        {"target": "char:avatar/lin_beifong", "relation": "child"},
+        {"target": "char:avatar/korra", "relation": "protege"}
+      ],
+      "arcs": [
+        {
+          "id": "arc:avatar/toph_beifong/breaking_out_of_the_cage",
+          "title": "Breaking out of a gilded cage",
+          "literal_situation": "Her wealthy parents think blindness makes her helpless, so they keep her at home in a sheltered, proper life. They have no idea she is secretly the best fighter around.",
+          "pattern_label": "escaping overprotective parents to live your own life",
+          "pattern_text": "Someone whose family sees them as fragile has quietly become far more capable than anyone at home knows. When a chance comes to leave, they take it and fiercely defend their independence. Along the way they discover that refusing all help and caring for people are different things. The journey is about freedom, guilt toward the family left behind, and letting yourself be cared for without feeling pitied.",
+          "hook": "Tough, sarcastic and brilliant, she is sick of being treated like a porcelain doll and is looking for a way out.",
+          "why_relatable": "How do you leave a family that loves you but won't let you grow up? And how do you tell the difference between help and pity?",
+          "watch_for": [
+            "How does she respond when someone offers help she didn't ask for?",
+            "What does she really feel about her parents?",
+            "When does she let her guard down, and with whom?"
+          ],
+          "start_at": "ATLA S2E6",
+          "span": "ATLA S2-S3",
+          "situations": [
+            {"id": "leaving_home", "weight": 0.9},
+            {"id": "family_expectations", "weight": 0.8},
+            {"id": "difficult_parent", "weight": 0.6},
+            {"id": "finding_your_people", "weight": 0.6}
+          ],
+          "conflicts": ["independence_vs_connection", "self_vs_family_expectations"],
+          "emotions": {"start": ["resentment", "restlessness", "pride"], "middle": ["loneliness", "guilt"], "end": ["freedom", "belonging"]},
+          "ending_tone": "bittersweet",
+          "intensity": "moderate",
+          "warnings": ["betrayal", "child_endangerment", "war_and_violence"],
+          "example_user_messages": [
+            "My parents treat me like I'm made of glass because of my disability. They don't know half of what I can do.",
+            "I moved out without my family's blessing and now I feel guilty and free at the same time.",
+            "Whenever someone offers me help I get defensive because it feels like pity.",
+            "My parents love me but their idea of protecting me is basically a cage."
+          ],
+          "spoiler": {
+            "summary": "Toph reveals her abilities to her parents while protecting Aang. Her father insists she stay home under guard, so she runs away to teach Aang earthbending. At first she refuses any help and clashes with Katara. After tea with Iroh she understands her friends care about her and aren't pitying her. A letter claiming her mother wants to reconcile turns out to be a trap: her father's hired men kidnap her in a metal cage. She escapes by inventing metalbending. In the Fire Nation she runs scams that deepen her rift with Katara, then admits her guilt about her parents and writes to them. She finds a real family in Team Avatar. In the later comics her father first disowns her in public and only slowly begins to reconcile.",
+            "key_events": [
+              "Reveals her power to her parents",
+              "Runs away to join Team Avatar",
+              "Iroh's advice about accepting care",
+              "Kidnapped in a trap set by her father",
+              "Invents metalbending to escape",
+              "Scamming rift with Katara; writes to her parents"
+            ],
+            "got_right": "She trusted her own abilities, claimed her independence, and found people who saw her for who she was.",
+            "got_wrong": "She pushed people away, mistook kindness for pity, and sometimes put her friends at risk to prove she didn't need anyone."
+          }
+        },
+        {
+          "id": "arc:avatar/toph_beifong/making_amends_as_a_parent",
+          "title": "The parent who swore she'd do it differently",
+          "literal_situation": "Decades later, now an old woman living far from her family, she has been out of touch with her grown daughters for years. When a family crisis hits, the three of them have to work together.",
+          "pattern_label": "a parent facing the damage of their own parenting",
+          "pattern_text": "A parent who was determined not to repeat their own parents' control gave their children total freedom, and in practice that meant absence. Years later, a crisis forces them together with an adult child who is still angry. They have to hear how they hurt their kids and decide whether to get defensive or finally apologize.",
+          "hook": "Gruff and blunt, she seems content to be left alone. Her eldest daughter clearly is not.",
+          "why_relatable": "Can you make up for years of distance with a single conversation? How do you hear your grown child's anger without getting defensive? And is it ever too late to apologize?",
+          "watch_for": [
+            "How does she react when her daughter's old resentment comes out?",
+            "What has she never told her children, and why?",
+            "Does she see her own parents in herself?"
+          ],
+          "start_at": "Korra S4E10",
+          "span": "Korra S4",
+          "situations": [
+            {"id": "redemption_after_mistakes", "weight": 0.7},
+            {"id": "caring_for_family", "weight": 0.5},
+            {"id": "sibling_rivalry", "weight": 0.4},
+            {"id": "difficult_parent", "weight": 0.3}
+          ],
+          "conflicts": ["independence_vs_connection", "past_vs_future"],
+          "emotions": {"start": ["guilt", "pride"], "middle": ["anger", "guilt"], "end": ["acceptance", "love"]},
+          "ending_tone": "hopeful",
+          "intensity": "moderate",
+          "warnings": ["war_and_violence"],
+          "example_user_messages": [
+            "My adult daughter hasn't spoken to me in years and I'm starting to realize it might be my fault.",
+            "I swore I'd never be controlling like my parents, so I let my kids do whatever they wanted. Now they say I just wasn't there.",
+            "My kids resent each other and I think the way I handled them growing up caused it.",
+            "How do I apologize to my grown children without making it about me?"
+          ],
+          "spoiler": {
+            "summary": "Toph gave her daughters Lin and Suyin total freedom and was often absent. She covered up Suyin's crime and sent her away, which deepened the sisters' rift, and she never told Lin who her father was. Estranged from Lin for twenty years, she leaves the swamp to help rescue Suyin's family from Kuvira. Lin is openly hostile, and when Toph mentions Lin's father Kanto they argue bitterly. After the rescue, Toph admits she wasn't the best parent, says she is proud of the women her daughters became, and apologizes. She and Lin part on much better terms, and she chooses to step back and let the next generation take over.",
+            "key_events": [
+              "Twenty-year estrangement from Lin",
+              "Leaves the swamp to rescue Suyin's family",
+              "Fight with Lin about Lin's father",
+              "Apologizes to both daughters",
+              "Parts with Lin on better terms"
+            ],
+            "got_right": "She finally apologized plainly and told her daughters she was proud of them, instead of hiding behind toughness.",
+            "got_wrong": "She mistook absence for freedom, kept secrets, and made choices that set her daughters against each other."
+          }
+        }
+      ]
+    },
+    {
+      "id": "char:avatar/iroh",
+      "name": "Iroh",
+      "role": "A retired general and former heir to the throne. He is the easygoing, tea-loving uncle travelling with his banished nephew on a hunt across the world.",
+      "relations": [
+        {"target": "char:avatar/zuko", "relation": "protege"},
+        {"target": "char:avatar/azula", "relation": "enemy"},
+        {"target": "char:avatar/aang", "relation": "friend"},
+        {"target": "char:avatar/toph_beifong", "relation": "friend"},
+        {"target": "char:avatar/korra", "relation": "friend"}
+      ],
+      "arcs": [
+        {
+          "id": "arc:avatar/iroh/loving_someone_who_pushes_you_away",
+          "title": "Standing by someone who keeps pushing you away",
+          "literal_situation": "He has chosen to go into exile alongside his angry, impatient nephew. He offers advice, tea and patience, and gets mostly dismissed for it.",
+          "pattern_label": "loving a struggling young person who rejects you",
+          "pattern_text": "An older person who carries a private grief has made themselves a steady, loving presence for a troubled young person who treats them as a nuisance. They keep offering guidance without forcing it, and they have to face the chance that the young person will make terrible choices anyway. The story is about unconditional love, how painful it is to let someone find their own way, and what it takes to forgive.",
+          "hook": "Jolly, relaxed and seemingly unbothered, he spends his days on tea and games while his nephew rages. There are hints that his calm was hard-won.",
+          "why_relatable": "How do you guide someone who won't listen? When should you step in, and when should you let them fall? He also wonders how much patience love can ask of you.",
+          "watch_for": [
+            "What grief does he carry under the jokes, and when does it show?",
+            "When does he speak bluntly instead of in proverbs?",
+            "How does he respond when his nephew ignores his advice?"
+          ],
+          "start_at": "ATLA S1E1",
+          "span": "ATLA S1-S3",
+          "situations": [
+            {"id": "mentor_and_protege", "weight": 1.0},
+            {"id": "grief_and_loss", "weight": 0.7},
+            {"id": "caring_for_family", "weight": 0.6}
+          ],
+          "conflicts": ["control_vs_trust", "holding_on_vs_letting_go"],
+          "emotions": {"start": ["grief", "hope"], "middle": ["betrayal", "grief"], "end": ["joy", "love", "peace"]},
+          "ending_tone": "hopeful",
+          "intensity": "moderate",
+          "warnings": ["death_of_loved_one", "grief", "betrayal", "war_and_violence", "abuse"],
+          "example_user_messages": [
+            "My nephew is going down a bad path and he won't listen to a word I say, but I refuse to give up on him.",
+            "I lost my son years ago and now I'm pouring everything into helping this kid who barely tolerates me.",
+            "Someone I treated like my own child betrayed me. I'm heartbroken but I still love him.",
+            "How do I support someone without trying to control their choices?"
+          ],
+          "spoiler": {
+            "summary": "Iroh's son Lu Ten died at the Siege of Ba Sing Se, and Iroh abandoned the siege in grief. He later came to see Zuko as a son. He was present when Ozai scarred Zuko and did not intervene. Throughout the exile he patiently teaches and protects Zuko, even after Zuko abandons him, and he is badly wounded by Azula. In Ba Sing Se he holds a private memorial for Lu Ten and helps Zuko begin a peaceful life. Then Zuko betrays him to side with Azula, and Iroh is imprisoned. He refuses to speak to Zuko in prison, but eventually tells him that Roku was his great-grandfather. He escapes during the eclipse. When Zuko tearfully apologizes, Iroh embraces him at once and says he was never angry, only sad that Zuko had lost his way. He then insists Zuko, not he, should become Fire Lord.",
+            "key_events": [
+              "Son Lu Ten died; abandoned the siege",
+              "Present at Zuko's scarring",
+              "Wounded by Azula's lightning",
+              "Memorial for Lu Ten in Ba Sing Se",
+              "Betrayed by Zuko, imprisoned",
+              "Silent treatment in prison, then reveals Roku lineage",
+              "Escapes during the eclipse",
+              "Instantly forgives Zuko"
+            ],
+            "got_right": "He never gave up on Zuko, respected his right to choose, and forgave fully and without conditions when Zuko returned.",
+            "got_wrong": "He didn't stand up to Ozai when Zuko was being abused, and at times he spoke in riddles when Zuko needed plain words."
+          }
+        },
+        {
+          "id": "arc:avatar/iroh/from_power_to_peace",
+          "title": "From powerful man to humble tea maker",
+          "literal_situation": "He was once his country's most celebrated general and next in line to rule. Later, when events turn against them, he and his nephew end up penniless and on the road, sleeping rough and begging.",
+          "pattern_label": "finding meaning after giving up status and ambition",
+          "pattern_text": "Someone who spent decades climbing toward prestige and power has lost it all, partly by choice after a devastating loss. Starting over with nothing, they have to decide whether this is a humiliation or a second chance to live by values that finally matter to them. The story is about redefining success, finding joy in simple work, and facing the harm done during their ambitious years.",
+          "hook": "Suddenly homeless and hunted, he seems strangely at peace, and he is more interested in a good cup of tea than in regaining anything he lost.",
+          "why_relatable": "Who are you once the title and status are gone? Can a quieter life feel like success, not failure? He also has to reckon with the harm he did in his ambitious years.",
+          "watch_for": [
+            "How does he adapt to poverty compared to his nephew?",
+            "What does he say about his own past ambitions?",
+            "When power is offered to him again, what does he do?"
+          ],
+          "start_at": "ATLA S2E1",
+          "span": "ATLA S2-S3",
+          "situations": [
+            {"id": "midlife_reinvention", "weight": 0.9},
+            {"id": "career_change", "weight": 0.6},
+            {"id": "starting_over", "weight": 0.6},
+            {"id": "redemption_after_mistakes", "weight": 0.4}
+          ],
+          "conflicts": ["career_vs_relationships", "past_vs_future"],
+          "emotions": {"start": ["guilt", "hope"], "middle": ["joy", "peace"], "end": ["peace", "self_respect"]},
+          "ending_tone": "hopeful",
+          "intensity": "light",
+          "warnings": ["war_and_violence", "betrayal"],
+          "example_user_messages": [
+            "I spent 30 years climbing the ladder and now I'm starting over with nothing, and I'm oddly okay with it.",
+            "After losing my kid, the career I sacrificed everything for suddenly felt meaningless.",
+            "I want to open a small café and people think I've lost my mind after the job I had.",
+            "I did things in my ambitious years that I'm not proud of. How do I live with that now?"
+          ],
+          "spoiler": {
+            "summary": "Iroh lost the throne to his younger brother Ozai after his son's death and his retreat from Ba Sing Se, and he chose not to fight for it. He came to believe losing power was a gift. As a fugitive he adapts to poverty with grace, finds joy working at a tea shop in Ba Sing Se, and opens his own shop, the Jasmine Dragon. After escaping prison he leads the Order of the White Lotus to liberate Ba Sing Se. He refuses to face Ozai himself, saying history would see it as a brother killing a brother for the throne, and declines to rule, naming Zuko instead. He reopens the Jasmine Dragon for a happy retirement. In the later comics he faces a former soldier harmed by his retreat orders, takes full responsibility, and refuses to die for 'honor'.",
+            "key_events": [
+              "Lost the throne to Ozai and didn't fight for it",
+              "Becomes a fugitive and beggar",
+              "Opens the Jasmine Dragon tea shop",
+              "Leads the White Lotus to free Ba Sing Se",
+              "Declines to face Ozai or become Fire Lord",
+              "Retires to serve tea"
+            ],
+            "got_right": "He redefined success around peace, relationships and simple joy, and he refused to let ambition drive him back to violence.",
+            "got_wrong": "For decades he pursued conquest and power, causing great harm, and it took personal tragedy for him to see it."
+          }
+        }
+      ]
+    }
+  ]
+}

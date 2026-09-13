@@ -1,0 +1,15 @@
+# Raw wiki downloads (~880 MB, full CC BY-SA text) - re-create with download_articles.py
+articles/
+# Full cleaned character articles (CC BY-SA text) - re-create with prepare_characters.py
+characters/text/
+logs/
+
+__pycache__/
+*.pyc
+.~lock.*#
+.DS_Store
+node_modules/
+
+# Qwen server credentials (API key) - never commit
+qwen_credentials.env
+**/qwen_credentials.env

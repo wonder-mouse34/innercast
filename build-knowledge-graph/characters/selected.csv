@@ -1,0 +1,238 @@
+show,character,inbound_links,clean_text_chars
+Avatar: The Last Airbender,Aang,1183,61961
+Avatar: The Last Airbender,Katara,810,58239
+Avatar: The Last Airbender,Zuko,797,63182
+Avatar: The Last Airbender,Sokka,784,41599
+Avatar: The Last Airbender,Toph Beifong,592,49794
+Avatar: The Last Airbender,Iroh,482,64231
+Avatar: The Last Airbender,Azula,413,68702
+Avatar: The Last Airbender,Korra,616,75353
+Avatar: The Last Airbender,Tenzin,347,61211
+Avatar: The Last Airbender,Asami Sato,298,35265
+Avatar: The Last Airbender,Lin Beifong,253,75113
+Avatar: The Last Airbender,Bolin,376,49512
+Grey's Anatomy,Meredith Grey,1069,208456
+Grey's Anatomy,Miranda Bailey,1003,84341
+Grey's Anatomy,Richard Webber,917,89690
+Grey's Anatomy,Alex Karev,811,86753
+Grey's Anatomy,Owen Hunt,809,105838
+Grey's Anatomy,Derek Shepherd,701,46041
+Grey's Anatomy,Cristina Yang,615,112872
+Grey's Anatomy,Amelia Shepherd,613,154675
+Grey's Anatomy,Callie Torres,590,82263
+Grey's Anatomy,Jackson Avery,578,65020
+Grey's Anatomy,Jo Wilson,545,98908
+Grey's Anatomy,Arizona Robbins,543,87678
+Buffy the Vampire Slayer,Buffy Summers,2343,101985
+Buffy the Vampire Slayer,Angel,1935,108919
+Buffy the Vampire Slayer,Willow Rosenberg,1388,65378
+Buffy the Vampire Slayer,Spike,1300,104640
+Buffy the Vampire Slayer,Rupert Giles,1221,37051
+Buffy the Vampire Slayer,Alexander Harris,1136,42152
+Buffy the Vampire Slayer,Cordelia Chase,911,29089
+Buffy the Vampire Slayer,Faith Lehane,670,47170
+Buffy the Vampire Slayer,Dawn Summers,647,25698
+Buffy the Vampire Slayer,Wesley Wyndam-Pryce,596,29627
+Buffy the Vampire Slayer,Anya Jenkins,492,38083
+Buffy the Vampire Slayer,Winifred Burkle,448,26544
+Game of Thrones,Daenerys Targaryen,754,136446
+Game of Thrones,Tyrion Lannister,735,105506
+Game of Thrones,Jon Snow,640,106823
+Game of Thrones,Jaime Lannister,631,86834
+Game of Thrones,Cersei Lannister,602,87718
+Game of Thrones,Sansa Stark,545,87759
+Game of Thrones,Arya Stark,529,83158
+Game of Thrones,Theon Greyjoy,399,52601
+Game of Thrones,Brienne of Tarth,340,42275
+Game of Thrones,Samwell Tarly,388,54306
+Game of Thrones,Sandor Clegane,326,40754
+Game of Thrones,Bran Stark,489,36600
+Naruto,Naruto Uzumaki,916,213547
+Naruto,Sasuke Uchiha,630,182586
+Naruto,Sakura Haruno,346,125977
+Naruto,Kakashi Hatake,477,122219
+Naruto,Hinata Hyūga,210,68408
+Naruto,Rock Lee,310,53013
+Naruto,Gaara,617,75294
+Naruto,Shikamaru Nara,316,136261
+Naruto,Itachi Uchiha,261,55731
+Naruto,Neji Hyūga,192,40120
+Naruto,Jiraiya,564,60696
+Naruto,Tsunade,637,65686
+Doctor Who,Tenth Doctor,7331,57042
+Doctor Who,Twelfth Doctor,4334,68185
+Doctor Who,Rose Tyler,2951,115752
+Doctor Who,Martha Jones,1663,39598
+Doctor Who,Donna Noble,1848,54748
+Doctor Who,Amy Pond,2478,68365
+Doctor Who,Rory Williams,1645,56648
+Doctor Who,Clara Oswald,2223,148254
+The Walking Dead,Rick Grimes (TV Universe),1235,35595
+The Walking Dead,Daryl Dixon (TV Universe),1378,31127
+The Walking Dead,Carol Peletier (TV Universe),915,19583
+The Walking Dead,Glenn Rhee (TV Series),595,7781
+The Walking Dead,Maggie Rhee (TV Universe),891,17249
+The Walking Dead,Michonne Grimes (TV Universe),827,11686
+The Walking Dead,Carl Grimes (TV Series),596,17601
+The Walking Dead,Eugene Porter (TV Series),516,15064
+Breaking Bad,Walter White,612,105030
+Breaking Bad,Jesse Pinkman,515,82876
+Breaking Bad,Skyler White,220,27288
+Breaking Bad,Hank Schrader,348,66331
+Breaking Bad,Jimmy McGill,522,151049
+Breaking Bad,Mike Ehrmantraut,483,72799
+Breaking Bad,Kim Wexler,286,66020
+Breaking Bad,Walter White Jr.,161,15699
+Stranger Things,Eleven,396,136537
+Stranger Things,Mike Wheeler,301,137492
+Stranger Things,Will Byers,348,179549
+Stranger Things,Dustin Henderson,296,102204
+Stranger Things,Max Mayfield,240,123693
+Stranger Things,Jim Hopper,270,94164
+Stranger Things,Joyce Byers,251,63517
+Stranger Things,Steve Harrington,214,96937
+The Office,Michael Scott,527,54501
+The Office,Jim Halpert,515,27710
+The Office,Pam Beesly,459,30141
+The Office,Dwight Schrute,563,35034
+The Office,Andy Bernard,378,68719
+The Office,Ryan Howard,342,35548
+The Office,Erin Hannon,227,21798
+The Office,Angela Martin,369,39330
+Friends,Rachel Greene,530,70009
+Friends,Monica Geller,496,58664
+Friends,Phoebe Buffay,473,40552
+Friends,Joey Tribbiani,579,46330
+Friends,Chandler Bing,482,61876
+Friends,Ross Geller,541,55600
+Attack on Titan,Eren Yeager,400,125312
+Attack on Titan,Mikasa Ackerman,263,93129
+Attack on Titan,Armin Arlert,262,93399
+Attack on Titan,Levi Ackerman,243,77353
+Attack on Titan,Hange Zoë,214,58230
+Attack on Titan,Reiner Braun,220,88172
+Attack on Titan,Erwin Smith,189,38482
+Attack on Titan,Historia Reiss,222,41913
+My Hero Academia,Izuku Midoriya,1418,70766
+My Hero Academia,Katsuki Bakugo,1075,50096
+My Hero Academia,Shoto Todoroki,913,36639
+My Hero Academia,Ochaco Uraraka,756,27057
+My Hero Academia,Toshinori Yagi,1155,35724
+My Hero Academia,Shota Aizawa,922,17422
+My Hero Academia,Tenya Ida,696,19482
+My Hero Academia,Enji Todoroki,700,27552
+Squid Game,Seong Gi-hun,738,52698
+Squid Game,Cho Sang-woo,190,8147
+Squid Game,Kang Sae-byeok,228,2968
+Squid Game,Oh Il-nam,208,15381
+Squid Game,Ali Abdul,88,7622
+Squid Game,Hwang Jun-ho,129,15285
+Squid Game,Ji-yeong,57,5418
+Squid Game,Jang Deok-su,246,6166
+Ted Lasso,Ted Lasso,192,20798
+Ted Lasso,Rebecca Welton,127,27293
+Ted Lasso,Roy Kent,130,21974
+Ted Lasso,Keeley Jones,113,20119
+Ted Lasso,Jamie Tartt,132,21413
+Ted Lasso,Nathan Shelley,86,12571
+Ted Lasso,Leslie Higgins,95,12041
+Ted Lasso,Sam Obisanya,94,12966
+Schitt's Creek,Johnny Rose,146,7217
+Schitt's Creek,Moira Rose,156,6964
+Schitt's Creek,David Rose,155,6468
+Schitt's Creek,Alexis Rose,148,6308
+Schitt's Creek,Stevie Budd,137,4120
+Schitt's Creek,Patrick Brewer,76,3811
+Schitt's Creek,Roland Schitt,125,2702
+Schitt's Creek,Twyla Sands,95,3283
+BoJack Horseman,BoJack Horseman,391,257146
+BoJack Horseman,Diane Nguyen,254,119656
+BoJack Horseman,Princess Carolyn,254,126434
+BoJack Horseman,Todd Chavez,221,96857
+BoJack Horseman,Mr. Peanutbutter,244,111983
+BoJack Horseman,Hollyhock Manheim-Mannheim-Guerrero-Robinson-Zilberschlag-Hsung-Fonzerelli-McQuack,80,58938
+Money Heist,The Professor,106,7619
+Money Heist,Tokyo,99,5233
+Money Heist,Berlin,118,8192
+Money Heist,Nairobi,86,6791
+Money Heist,Denver,88,4464
+Money Heist,Rio,83,4605
+Money Heist,Raquel Murillo,78,4388
+Money Heist,Helsinki,86,3571
+Mad Men,Don Draper,166,20540
+Mad Men,Peggy Olson,124,11205
+Mad Men,Joan Holloway,117,43052
+Mad Men,Pete Campbell,122,11326
+Mad Men,Roger Sterling,133,12499
+Mad Men,Betty Hofstadt,109,13688
+Mad Men,Sally Draper,98,10934
+Mad Men,Megan Calvet,59,5146
+Succession,Logan Roy,101,43209
+Succession,Kendall Roy,97,33311
+Succession,Siobhan Roy,73,26171
+Succession,Roman Roy,87,20418
+Succession,Connor Roy,71,9739
+Succession,Tom Wambsgans,70,19747
+Succession,Greg Hirsch,79,19285
+Succession,Gerri Kellman,61,7889
+Parks and Recreation,Leslie Knope,345,22726
+Parks and Recreation,Ron Swanson,222,25205
+Parks and Recreation,Ben Wyatt,194,12173
+Parks and Recreation,April Ludgate,185,7438
+Parks and Recreation,Andy Dwyer,194,14659
+Parks and Recreation,Tom Haverford,196,11521
+Parks and Recreation,Ann Perkins,166,6674
+Parks and Recreation,Chris Traeger,133,10758
+Brooklyn Nine-Nine,Jake Peralta,740,12285
+Brooklyn Nine-Nine,Raymond Holt,420,15649
+Brooklyn Nine-Nine,Amy Santiago,462,19883
+Brooklyn Nine-Nine,Rosa Diaz,428,9486
+Brooklyn Nine-Nine,Terry Jeffords,413,10896
+Brooklyn Nine-Nine,Charles Boyle,491,7059
+Brooklyn Nine-Nine,Gina Linetti,307,8915
+Gilmore Girls,Lorelai Gilmore,263,20851
+Gilmore Girls,Rory Gilmore,277,20383
+Gilmore Girls,Emily Gilmore,169,4987
+Gilmore Girls,Richard Gilmore,139,2802
+Gilmore Girls,Luke Danes,215,10159
+Gilmore Girls,Lane Kim,153,18316
+Gilmore Girls,Paris Geller,135,10002
+Gilmore Girls,Sookie St. James,167,5302
+The Good Place,Eleanor Shellstrop,157,34165
+The Good Place,Chidi Anagonye,116,17630
+The Good Place,Tahani Al-Jamil,116,17527
+The Good Place,Jason Mendoza,110,15160
+The Good Place,Michael,143,22997
+The Good Place,Janet,116,18883
+Fullmetal Alchemist,Edward Elric,324,26169
+Fullmetal Alchemist,Alphonse Elric,289,18552
+Fullmetal Alchemist,Roy Mustang,248,15685
+Fullmetal Alchemist,Riza Hawkeye,146,11866
+Fullmetal Alchemist,Winry Rockbell,158,10181
+Fullmetal Alchemist,Scar,212,17686
+Fullmetal Alchemist,Ling Yao,81,54633
+Fullmetal Alchemist,Izumi Curtis,111,20505
+Arcane,Vi,108,19186
+Arcane,Jinx,126,24715
+Arcane,Jayce Talis,103,19850
+Arcane,Viktor,91,17391
+Arcane,Caitlyn Kiramman,93,10431
+Arcane,Silco,84,9087
+Arcane,Vander,79,19634
+Arcane,Ekko,61,7709
+Dark,Jonas Kahnwald,140,119143
+Dark,Martha Nielsen,69,9514
+Dark,Ulrich Nielsen,102,9983
+Dark,Charlotte Doppler,91,10521
+Dark,Hannah Kahnwald,72,37720
+Dark,Claudia Tiedemann,105,26089
+Dark,Katharina Nielsen,66,15927
+Dark,Regina Tiedemann,72,14736
+Sex Education,Otis Milburn,144,41062
+Sex Education,Maeve Wiley,136,41088
+Sex Education,Eric Effiong,115,15945
+Sex Education,Jean Milburn,107,13892
+Sex Education,Adam Groff,111,19891
+Sex Education,Aimee Gibbs,105,19689
+Sex Education,Jackson Marchetti,91,21275
+Sex Education,Ruby Matthews,81,31929

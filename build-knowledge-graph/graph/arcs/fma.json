@@ -1,0 +1,823 @@
+{
+  "show": "fma",
+  "characters": [
+    {
+      "id": "char:fma/edward_elric",
+      "name": "Edward Elric",
+      "role": "A brash fifteen-year-old alchemy prodigy with a steel arm and leg, the youngest State Alchemist in history, travelling with his armour-bound younger brother in search of a way to restore both their bodies.",
+      "relations": [
+        {"target": "char:fma/alphonse_elric", "relation": "sibling"},
+        {"target": "char:fma/winry_rockbell", "relation": "friend"},
+        {"target": "char:fma/winry_rockbell", "relation": "partner"},
+        {"target": "char:fma/roy_mustang", "relation": "boss"},
+        {"target": "char:fma/riza_hawkeye", "relation": "colleague"},
+        {"target": "char:fma/izumi_curtis", "relation": "mentor"},
+        {"target": "char:fma/scar", "relation": "enemy"},
+        {"target": "char:fma/ling_yao", "relation": "friend"}
+      ],
+      "arcs": [
+        {
+          "id": "arc:fma/edward_elric/carrying_the_blame_alone",
+          "title": "The brother who blames himself for everything",
+          "literal_situation": "As children, Ed and his younger brother Al tried to bring their dead mother back with forbidden alchemy. It went horribly wrong: Ed lost his leg, then gave his arm to bind Al's soul to a suit of armour after Al's whole body was taken. Now fifteen, Ed has joined the military as a State Alchemist to get access to research, burned down his childhood home so there is no going back, and is hunting for the legendary Philosopher's Stone, convinced that it was his idea and so it is his job alone to fix it.",
+          "pattern_label": "trying to single-handedly undo a mistake that hurt someone you love",
+          "pattern_text": "A young person made a terrible choice that permanently hurt the person closest to them, and has decided that repairing the damage is their job alone. They push themselves relentlessly, refuse help, and quietly suspect the person they hurt secretly resents them. The journey is about whether guilt can become responsibility instead of self-punishment, and whether they can let other people carry some of the weight.",
+          "hook": "A cocky, short-tempered teenager whose bravado hides a crushing sense of guilt: he has cut off every route home and staked everything on finding one miracle cure for the damage he did to his brother.",
+          "why_relatable": "Can you make up for a mistake that changed someone else's life forever? Is it strength or stubbornness to refuse every offer of help? And what is he afraid he will hear if he ever asks his brother how he really feels about it?",
+          "watch_for": [
+            "How does he react when someone offers to share the load?",
+            "What does he assume his brother thinks of him, and has he ever actually asked?",
+            "When a shortcut to his goal appears, what is he willing to pay for it?"
+          ],
+          "start_at": "FMAB Ep 1",
+          "span": "FMAB Ep 1-64",
+          "situations": [
+            {"id": "redemption_after_mistakes", "weight": 0.9},
+            {"id": "caring_for_family", "weight": 0.7},
+            {"id": "coming_of_age", "weight": 0.6},
+            {"id": "responsibility_you_didnt_ask_for", "weight": 0.4}
+          ],
+          "conflicts": ["independence_vs_connection", "holding_on_vs_letting_go"],
+          "emotions": {"start": ["guilt", "determination"], "middle": ["anger", "self_doubt", "overwhelm"], "end": ["acceptance", "peace", "love"]},
+          "ending_tone": "hopeful",
+          "intensity": "heavy",
+          "warnings": ["death_of_loved_one", "grief", "medical_trauma", "child_endangerment", "war_and_violence", "graphic_gore"],
+          "example_user_messages": [
+            "I made a decision years ago that hurt my little brother for life and I feel like fixing it is the only thing I'm allowed to care about.",
+            "Everyone keeps offering to help but it's my mess, so it feels wrong to let them.",
+            "I'm scared to ask my sibling if they blame me, because I think I already know the answer.",
+            "I'll do anything to make things right, but I'm starting to wonder what that 'anything' will cost."
+          ],
+          "spoiler": {
+            "summary": "Ed learns early that Philosopher's Stones are made from sacrificed human lives, refuses to use one, and gradually uncovers that the homunculi and their creator, Father, have steered the country's history and wars to carve a nationwide transmutation circle and turn the whole population into a Stone. He witnesses Nina Tucker turned into a chimera and loses Maes Hughes, learns from Al that his brother never blamed him (Al blamed himself too), and slowly accepts help from Winry, Mustang, Ling/Greed, Scar and even his hated father. Refusing to kill, he fights through the Promised Day; Al gives up his own soul to restore Ed's arm so Ed can beat Father, and Ed then trades away his own Gate of Truth — his ability to use alchemy — to bring Al back in his real body. He ends ordinary, whole enough, proposes to Winry and later marries her.",
+            "key_events": [
+              "Nina Tucker is turned into a chimera by her father",
+              "Learns Philosopher's Stones are made of human souls",
+              "Al reveals he never blamed Ed",
+              "Father and the homunculi control the military; Bradley is the homunculus Wrath",
+              "Al sacrifices his soul to restore Ed's arm",
+              "Ed defeats Father with his real arm",
+              "Ed gives up alchemy forever to retrieve Al's body",
+              "Keeps his automail leg; proposes to and marries Winry"
+            ],
+            "got_right": "He takes responsibility instead of running from it, holds onto his refusal to kill or to buy his goal with other people's lives, and eventually learns that accepting help is not weakness.",
+            "got_wrong": "For a long time he treats his guilt as a one-man job, shuts people out, assumes what his brother feels without asking, and lashes out at anyone who reminds him he can't control everything."
+          }
+        },
+        {
+          "id": "arc:fma/edward_elric/anger_at_an_absent_father",
+          "title": "Refusing to forgive the father who walked out",
+          "literal_situation": "Ed's father, the alchemist Hohenheim, left the family when Ed was small and never came back. Ed watched his mother wait for him, grow lonely and die of illness, and he blames his father for it. He refuses to call him 'Dad', wants nothing from him, and has built much of his identity on being nothing like him.",
+          "pattern_label": "resenting the parent who abandoned the family",
+          "pattern_text": "A young person grew up watching one parent wait in vain for the other, who simply left. They blame the absent parent for the family's pain and have defined themselves in opposition to them. When contact becomes possible, they have to decide whether to keep the door shut or hear the other side of a story they thought they already knew.",
+          "hook": "A son who holds his missing father responsible for his mother's heartbreak and wants nothing to do with him — even the family resemblance makes him angry.",
+          "why_relatable": "What do you owe a parent who left? Can you understand someone's reasons without excusing what they did? And how much of who he is has been shaped by trying not to be his father?",
+          "watch_for": [
+            "Notice how he talks about his father compared with how his brother does.",
+            "What is it about his father that he actually can't stand?",
+            "If he learned something that complicated the story, would he want to hear it?"
+          ],
+          "start_at": "FMAB Ep 2",
+          "span": "FMAB Ep 2-64",
+          "situations": [
+            {"id": "difficult_parent", "weight": 0.9},
+            {"id": "grief_and_loss", "weight": 0.5},
+            {"id": "identity_and_self_acceptance", "weight": 0.4}
+          ],
+          "conflicts": ["revenge_vs_forgiveness", "past_vs_future"],
+          "emotions": {"start": ["resentment", "anger"], "middle": ["confusion", "rejection"], "end": ["acceptance", "grief"]},
+          "ending_tone": "bittersweet",
+          "intensity": "moderate",
+          "warnings": ["death_of_loved_one", "grief"],
+          "example_user_messages": [
+            "My dad left when I was little and my mom never got over it. I don't want anything from him.",
+            "He's trying to be part of my life now and I just feel furious every time he shows up.",
+            "People say I look and act just like my father and I hate it.",
+            "My sibling has forgiven our dad and I don't understand how."
+          ],
+          "spoiler": {
+            "summary": "Ed meets Hohenheim again at their mother's grave and rebuffs him. Hohenheim turns out to be a centuries-old living Philosopher's Stone, a survivor of Xerxes whose blood made Father, and he left to stop Father's plan and to find a way to age and die alongside Trisha. Ed learns his father loved his mother, grudgingly works with him on the Promised Day, even calls him 'the old man' with something like trust. Hohenheim offers his own life to restore Al, which Ed refuses, and after Father is defeated Hohenheim dies peacefully at Trisha's grave, having finally become human.",
+            "key_events": [
+              "Hohenheim is revealed to be an immortal human Philosopher's Stone",
+              "Father was created from Hohenheim's blood",
+              "Hohenheim left to stop Father and find a way to die with Trisha",
+              "Ed and Hohenheim fight side by side",
+              "Hohenheim dies at Trisha's grave"
+            ],
+            "got_right": "He eventually lets his father be a person rather than a symbol, and accepts help from him when it matters.",
+            "got_wrong": "He refuses to listen for years, assumes the worst, and nearly lets pride cost him the chance to know his father at all."
+          }
+        },
+        {
+          "id": "arc:fma/edward_elric/working_for_a_system_you_distrust",
+          "title": "The kid who signed up with the establishment for his own reasons",
+          "literal_situation": "To get access to restricted research, twelve-year-old Ed became a State Alchemist, a licensed 'dog of the military'. He flouts orders, mocks his superior officer and gives away state privileges to help ordinary people, but he still wears the watch, takes the salary and is technically a soldier in an army with a bloody recent war behind it. He has sworn he will never kill.",
+          "pattern_label": "keeping your principles inside an organisation you distrust",
+          "pattern_text": "A young person joined a powerful institution purely because it offered the resources they needed, not because they believe in it. They bend rules, defy authority and try to stay true to their own ethics while benefiting from a system with a dark record. Over time they must decide how far they can compromise, and what they will do when the institution demands something they refuse to give.",
+          "hook": "A rebellious teen who took the establishment's badge as a means to an end, and insists he can use the system without letting it use him.",
+          "why_relatable": "Can you work inside something you don't trust without becoming part of it? Where is the line between being pragmatic and selling out? And what happens to a personal rule like 'I will never hurt anyone' when the people in charge expect otherwise?",
+          "watch_for": [
+            "How does he treat orders he disagrees with?",
+            "Who inside the system does he come to trust, and why?",
+            "What does his refusal to kill cost him, and does he ever waver?"
+          ],
+          "start_at": "FMAB Ep 1",
+          "span": "FMAB Ep 1-64",
+          "situations": [
+            {"id": "standing_up_to_authority", "weight": 0.8},
+            {"id": "new_job", "weight": 0.4},
+            {"id": "coming_of_age", "weight": 0.5}
+          ],
+          "conflicts": ["power_vs_morality", "belonging_vs_integrity"],
+          "emotions": {"start": ["pride", "restlessness"], "middle": ["anger", "betrayal", "determination"], "end": ["self_respect", "freedom"]},
+          "ending_tone": "hopeful",
+          "intensity": "heavy",
+          "warnings": ["war_and_violence", "betrayal", "graphic_gore", "child_endangerment"],
+          "example_user_messages": [
+            "I only took this job for the access it gives me, and I feel like a hypocrite every day.",
+            "My boss drives me crazy but I'm starting to think he's one of the few decent people there.",
+            "I told myself I'd never do anything unethical for work, and now I'm being pushed right up to that line.",
+            "How do I stay myself inside an organisation whose history I'm ashamed of?"
+          ],
+          "spoiler": {
+            "summary": "Ed discovers the military's leadership is controlled by the homunculi: Führer King Bradley is the homunculus Wrath, the top brass serve Father, and the country's wars (including the Ishval genocide) were engineered to draw a nationwide transmutation circle. He is blackmailed into obedience with threats against Winry, then breaks away, allying with Mustang, Hawkeye, Armstrong, Briggs and even Scar and Greed. He keeps his vow not to kill, including sparing Envy and Kimblee's goading, and helps bring down the conspiracy on the Promised Day before leaving the military behind.",
+            "key_events": [
+              "The military's top brass are working for Father",
+              "Führer Bradley is the homunculus Wrath",
+              "Ed is blackmailed with threats to Winry",
+              "Ed teams up with former enemies against the state",
+              "The Promised Day coup succeeds"
+            ],
+            "got_right": "He never lets the institution decide his morals, and builds real alliances with the people inside it who share his values.",
+            "got_wrong": "His contempt for authority makes him reckless and leaves the people he loves exposed to retaliation he didn't anticipate."
+          }
+        }
+      ]
+    },
+    {
+      "id": "char:fma/alphonse_elric",
+      "name": "Alphonse Elric",
+      "role": "Ed's gentle fourteen-year-old younger brother, whose soul is bound to a huge, empty suit of armour after the failed attempt to bring back their mother; he cannot eat, sleep or feel touch.",
+      "relations": [
+        {"target": "char:fma/edward_elric", "relation": "sibling"},
+        {"target": "char:fma/winry_rockbell", "relation": "friend"},
+        {"target": "char:fma/izumi_curtis", "relation": "mentor"},
+        {"target": "char:fma/ling_yao", "relation": "friend"},
+        {"target": "char:fma/scar", "relation": "enemy"},
+        {"target": "char:fma/riza_hawkeye", "relation": "friend"}
+      ],
+      "arcs": [
+        {
+          "id": "arc:fma/alphonse_elric/am_i_still_real",
+          "title": "Wondering if he is still a real person",
+          "literal_situation": "Al lives inside a suit of armour. He cannot eat, sleep, smell or feel anything, spends every night awake and alone while others sleep, and strangers mistake him for a hulking adult or a monster. He keeps a list of foods he'll eat once he gets his body back and dreams of Winry's apple pie, but under his cheerfulness sits a quiet fear that he is no longer human at all.",
+          "pattern_label": "feeling cut off from your own body and humanity",
+          "pattern_text": "A young person lives in a body that no longer lets them feel, rest or connect the way others do, and the world sees only their outside. They stay kind and upbeat for everyone else, but in lonely hours they wonder whether they are still the same person, or even a person at all. The journey is about holding onto a sense of self when your own existence feels uncertain.",
+          "hook": "A sweet, patient boy trapped in an unfeeling metal shell, cheerfully supporting his brother while privately afraid of what he has become.",
+          "why_relatable": "What makes you 'you' when your body no longer feels like yours? How do you ask for comfort when people only see the outside? And what do those long, sleepless nights do to a person who never lets anyone see him struggle?",
+          "watch_for": [
+            "What does he miss most, and who notices?",
+            "How does he react when someone suggests he isn't really human?",
+            "Does he ever tell his brother what he is afraid of?"
+          ],
+          "start_at": "FMAB Ep 1",
+          "span": "FMAB Ep 1-64",
+          "situations": [
+            {"id": "identity_and_self_acceptance", "weight": 0.9},
+            {"id": "illness_or_injury", "weight": 0.8},
+            {"id": "loneliness", "weight": 0.6}
+          ],
+          "conflicts": ["truth_vs_protecting_others", "safety_vs_growth"],
+          "emotions": {"start": ["loneliness", "longing"], "middle": ["fear", "confusion", "anxiety"], "end": ["acceptance", "joy", "belonging"]},
+          "ending_tone": "hopeful",
+          "intensity": "heavy",
+          "warnings": ["medical_trauma", "child_endangerment", "war_and_violence", "death_of_loved_one"],
+          "example_user_messages": [
+            "Since my injury I can't feel most of my body and some days I don't feel like a real person anymore.",
+            "I can't sleep and the nights alone with my thoughts are the worst part.",
+            "People see how I look and assume I'm someone I'm not.",
+            "I keep smiling for my family because they already feel guilty enough about what happened to me."
+          ],
+          "spoiler": {
+            "summary": "Barry the Chopper convinces Al that his memories might have been fabricated by Ed, causing a painful rift until Winry makes him see that Ed was afraid Al hated him; the brothers reconcile. Al learns his real body still exists, emaciated, beyond the Gate, and he regains his lost memories of seeing the Truth. His soul's bond to the armour weakens over time. On the Promised Day, Al trades his own soul to restore Ed's arm so Ed can defeat Father, and Ed in turn gives up his alchemy to bring Al back in his real, frail human body. Al recovers, eats at last, and later travels to Xing to study alkahestry with May Chang.",
+            "key_events": [
+              "Barry makes Al doubt his memories and his existence",
+              "Al and Ed reconcile after a fight over it",
+              "Al's body is alive but wasting away beyond the Gate",
+              "Al's soul begins rejecting the armour",
+              "Al sacrifices himself to restore Ed's arm",
+              "Ed gives up alchemy to return Al's body"
+            ],
+            "got_right": "He never loses his compassion, refuses to be the only one restored, and chooses his values over any shortcut.",
+            "got_wrong": "He hides his fears behind cheerfulness and lets doubt fester instead of saying it out loud to the person who could reassure him."
+          }
+        },
+        {
+          "id": "arc:fma/alphonse_elric/the_steady_younger_sibling",
+          "title": "The calm one who keeps his brother grounded",
+          "literal_situation": "Though he is the younger brother, Al is the one who holds Ed back from fights, softens his bluntness, makes friends, rescues stray kittens and reminds him why they are doing all this. He refuses to accept his body back unless Ed gets his arm and leg too, and he quietly carries his own share of blame for what happened, even though everyone assumes the guilt is Ed's.",
+          "pattern_label": "being the steady one in a family crisis",
+          "pattern_text": "In a family shaken by a shared disaster, the quieter sibling becomes the emotional anchor: calming the other's temper, putting everyone else first and refusing to be helped unless everyone is helped. Everyone assumes they are fine because they seem fine. The journey is about compassion that doesn't erase your own needs, and choosing mercy when anger would be easier.",
+          "hook": "A kind, even-tempered boy who is more of a parent to his reckless older brother than a little brother, and who rarely lets anyone look after him.",
+          "why_relatable": "What happens to the person who is always the calm one? Is refusing help unless everyone is helped loyalty or self-denial? And when he meets people who chose hatred after losing everything, what makes him choose differently?",
+          "watch_for": [
+            "Who takes care of him, and how does he respond when they try?",
+            "How does he treat people who have hurt others?",
+            "What does he do when he has to act without his brother?"
+          ],
+          "start_at": "FMAB Ep 1",
+          "span": "FMAB Ep 1-64",
+          "situations": [
+            {"id": "caring_for_family", "weight": 0.8},
+            {"id": "responsibility_you_didnt_ask_for", "weight": 0.5},
+            {"id": "coming_of_age", "weight": 0.5}
+          ],
+          "conflicts": ["revenge_vs_forgiveness", "independence_vs_connection"],
+          "emotions": {"start": ["hope", "guilt"], "middle": ["self_doubt", "determination"], "end": ["self_respect", "love", "peace"]},
+          "ending_tone": "hopeful",
+          "intensity": "moderate",
+          "warnings": ["war_and_violence", "child_endangerment", "grief"],
+          "example_user_messages": [
+            "I'm the younger one but I've always been the one keeping my brother out of trouble.",
+            "Everyone assumes I'm fine because I'm the calm one, but I blame myself too.",
+            "I don't want anything good to happen to me unless it happens for my sibling as well.",
+            "Someone hurt people I care about and part of me wants to hate them, but I don't want to become like that."
+          ],
+          "spoiler": {
+            "summary": "Al proves the moral centre of the story: he protects Scar's victims and Scar alike, sees in Scar the brother-less version of himself and rejects revenge, bonds with May Chang, and operates effectively apart from Ed (in Briggs and on the Promised Day, where he is captured by Pride and later fights Pride and Kimblee using a Stone's souls only with their consent). He admits he always blamed himself for the transmutation. In the end he gives his own soul to restore Ed's arm, is saved by Ed's sacrifice, and goes on to study alkahestry in Xing.",
+            "key_events": [
+              "Al admits he blamed himself for the transmutation too",
+              "Chooses not to follow Scar's path of revenge",
+              "Separates from Ed and holds his own in the North",
+              "Trades his soul to restore Ed's arm",
+              "Restored to his human body; later goes to Xing with May"
+            ],
+            "got_right": "He stays merciful without being naive and shows that selflessness can be a strength rather than a disappearing act.",
+            "got_wrong": "He puts himself last so consistently that he risks throwing his own life away and lets others underestimate what he is carrying."
+          }
+        }
+      ]
+    },
+    {
+      "id": "char:fma/roy_mustang",
+      "name": "Roy Mustang",
+      "role": "The 'Flame Alchemist', a young colonel and decorated war veteran who is Ed's commanding officer, famous for lazing around and flirting while openly angling to become the country's Führer.",
+      "relations": [
+        {"target": "char:fma/riza_hawkeye", "relation": "colleague"},
+        {"target": "char:fma/edward_elric", "relation": "protege"},
+        {"target": "char:fma/edward_elric", "relation": "colleague"},
+        {"target": "char:fma/scar", "relation": "enemy"}
+      ],
+      "arcs": [
+        {
+          "id": "arc:fma/roy_mustang/climbing_to_change_the_system",
+          "title": "Climbing to the top to fix what he helped break",
+          "literal_situation": "Roy is a colonel in the East, a celebrated 'hero' of a brutal civil war, who hides a sharp mind behind a reputation as a slacker and womaniser. He has gathered a small team of loyal subordinates and makes no secret of his ambition to become Führer, playing the game of politics and favours inside a military he doesn't fully trust.",
+          "pattern_label": "chasing power to atone for past harm",
+          "pattern_text": "An ambitious rising leader is haunted by things they did while following orders earlier in their career. They play the political game, charm and manipulate, and push for the top job, telling themselves that reaching it is the only way to make sure no one repeats what they did. The journey is about whether ambition can serve atonement, and whether the people who trust them can keep them honest.",
+          "hook": "A smug, ambitious officer who plays the lazy flirt while quietly building a team and a plan to take the country's top position.",
+          "why_relatable": "Can you seek power for good reasons without power changing you? What does it mean to take responsibility for something you did under orders? And how much can he ask of the people who follow him?",
+          "watch_for": [
+            "What is he hiding behind his carefree act?",
+            "How does he talk about the war when he thinks no one important is listening?",
+            "What does he ask of his team, and what does he give back?"
+          ],
+          "start_at": "FMAB Ep 1",
+          "span": "FMAB Ep 1-64",
+          "situations": [
+            {"id": "becoming_a_manager", "weight": 0.7},
+            {"id": "redemption_after_mistakes", "weight": 0.8},
+            {"id": "standing_up_to_authority", "weight": 0.5}
+          ],
+          "conflicts": ["power_vs_morality", "loyalty_vs_ambition"],
+          "emotions": {"start": ["determination", "guilt"], "middle": ["anger", "dread"], "end": ["self_respect", "hope"]},
+          "ending_tone": "hopeful",
+          "intensity": "heavy",
+          "warnings": ["war_and_violence", "death_of_loved_one", "graphic_gore", "medical_trauma", "betrayal"],
+          "example_user_messages": [
+            "I want the top job, partly because I think it's the only way to fix the damage I helped cause.",
+            "I did things early in my career because I was told to, and I can't stop thinking about it.",
+            "I act like I don't care at work so nobody sees how seriously I'm playing the game.",
+            "My team would follow me anywhere and that scares me more than anything."
+          ],
+          "spoiler": {
+            "summary": "Roy served as a State Alchemist in the Ishval extermination, which he considers a war crime, and wants to become Führer to reform the military and bring war criminals, himself included, to justice. He discovers the Führer is a homunculus and the country's leadership serves Father; Bradley scatters his team as hostages, but Roy stages a coup on the Promised Day with Briggs, Armstrong and Grumman's backing. Father forces him to perform human transmutation, costing him his sight; after Father's defeat, Marcoh offers a Philosopher's Stone to restore it, and Roy accepts on condition of helping rebuild Ishval, taking responsibility for its restoration as a Brigadier General.",
+            "key_events": [
+              "Roy's role in the Ishval extermination",
+              "Führer Bradley is a homunculus",
+              "Bradley scatters Roy's team as hostages",
+              "Roy leads the Promised Day coup",
+              "Forced human transmutation blinds him",
+              "Sight restored with a Stone in exchange for rebuilding Ishval"
+            ],
+            "got_right": "He turns guilt into a concrete plan, earns genuine loyalty, and in the end chooses restitution to the people he harmed over personal glory.",
+            "got_wrong": "His secrecy and pride sometimes leave his people exposed, and he risks letting the ends justify the means."
+          }
+        },
+        {
+          "id": "arc:fma/roy_mustang/when_grief_becomes_vengeance",
+          "title": "The score he can't stop wanting to settle",
+          "literal_situation": "Later in the series, after a turning point that shakes his inner circle, Roy becomes fixated on finding out who is responsible and making them pay. He pours himself into a private investigation, keeps his feelings behind a calm face at work, and the fire that normally drives his ambition starts to burn toward something much more personal.",
+          "pattern_label": "grief hardening into a hunger for revenge",
+          "pattern_text": "After someone they rely on is harmed, a composed, capable person turns their grief into a single-minded quest to punish whoever is responsible. They look controlled on the outside while the anger quietly takes over their priorities. The journey is about what happens when the chance for revenge finally arrives, and who is there to remind them of the person they wanted to be.",
+          "hook": "A man who handles everything with a smirk, now quietly consumed by the need to hold someone accountable.",
+          "why_relatable": "Where does justice end and revenge begin? What does anger do to someone's larger goals? And who in his life has the right to tell him to stop?",
+          "watch_for": [
+            "How does he hide his grief from the people around him?",
+            "Who does he let see what he's really feeling?",
+            "What does he believe justice would look like here?"
+          ],
+          "start_at": "FMAB Ep 10",
+          "span": "FMAB Ep 10-54",
+          "situations": [
+            {"id": "grief_and_loss", "weight": 0.9},
+            {"id": "friendship_ending", "weight": 0.3}
+          ],
+          "conflicts": ["revenge_vs_forgiveness", "duty_vs_desire"],
+          "emotions": {"start": ["grief", "anger"], "middle": ["resentment", "determination"], "end": ["acceptance", "self_respect"]},
+          "ending_tone": "bittersweet",
+          "intensity": "heavy",
+          "warnings": ["death_of_loved_one", "grief", "torture", "war_and_violence", "graphic_gore"],
+          "example_user_messages": [
+            "My best friend was taken from me and all I can think about is making the person responsible pay.",
+            "I'm holding it together at work but inside I'm completely consumed by anger.",
+            "I don't know if what I want is justice or just revenge anymore.",
+            "The people closest to me are worried about what I'll do and honestly so am I."
+          ],
+          "spoiler": {
+            "summary": "Roy's best friend Maes Hughes is murdered after uncovering the conspiracy, by the shapeshifting homunculus Envy disguised as Hughes's wife. Roy kills Lust in a brutal fight, then on the Promised Day learns Envy was the killer and slowly burns Envy alive, refusing to stop. Ed, Scar and Riza — who points her gun at him, ready to keep her promise to shoot him if he strays — pull him back; Riza threatens to kill herself if he makes her shoot him. Roy lets go, and Envy, exposed as envying humans, kills itself. Roy returns to his larger purpose.",
+            "key_events": [
+              "Maes Hughes is murdered",
+              "Envy disguised as Gracia killed Hughes",
+              "Roy incinerates Lust",
+              "Roy tortures Envy with flame",
+              "Riza, Ed and Scar stop him from killing Envy",
+              "Envy commits suicide"
+            ],
+            "got_right": "At the brink he listens to the people who hold him accountable and chooses the future over vengeance.",
+            "got_wrong": "He lets grief turn into cruelty and nearly throws away his principles and his team's trust."
+          }
+        }
+      ]
+    },
+    {
+      "id": "char:fma/riza_hawkeye",
+      "name": "Riza Hawkeye",
+      "role": "A first lieutenant and expert sharpshooter who serves as Colonel Mustang's calm, no-nonsense adjutant and bodyguard, keeping him and the rest of his team in line.",
+      "relations": [
+        {"target": "char:fma/roy_mustang", "relation": "boss"},
+        {"target": "char:fma/edward_elric", "relation": "colleague"},
+        {"target": "char:fma/winry_rockbell", "relation": "friend"},
+        {"target": "char:fma/alphonse_elric", "relation": "friend"}
+      ],
+      "arcs": [
+        {
+          "id": "arc:fma/riza_hawkeye/living_with_what_she_has_done",
+          "title": "Carrying what her job has asked of her",
+          "literal_situation": "Riza is a disciplined soldier who fought in the same war as Mustang and never talks about it. She is a superb marksman who dislikes the killing her work requires, keeps her feelings private, and has chosen to stay in the military and stand beside Mustang on the belief that his plans might make sure nothing like that war happens again.",
+          "pattern_label": "shouldering guilt by committing to a better future",
+          "pattern_text": "A composed, highly competent person carries private guilt from things they did in the line of duty. Rather than walk away, they stay in the hard job and dedicate themselves to supporting a leader they believe can prevent the same harm from happening to others. The journey is about living with your past without letting it define you, and about how much of yourself you give to someone else's cause.",
+          "hook": "A stern, reliable professional with a hidden past, who has decided her life's purpose is to protect one ambitious man and the future he promises.",
+          "why_relatable": "How do you live with things you did because it was your job? Is devoting yourself to someone else's mission purpose or self-erasure? And what does she allow herself to want?",
+          "watch_for": [
+            "What does she reveal about herself, and to whom?",
+            "Notice the difference between how she treats her team and how she treats young people.",
+            "What does she believe she owes, and to whom?"
+          ],
+          "start_at": "FMAB Ep 1",
+          "span": "FMAB Ep 1-64",
+          "situations": [
+            {"id": "redemption_after_mistakes", "weight": 0.8},
+            {"id": "mentor_and_protege", "weight": 0.3},
+            {"id": "responsibility_you_didnt_ask_for", "weight": 0.5}
+          ],
+          "conflicts": ["duty_vs_desire", "past_vs_future"],
+          "emotions": {"start": ["guilt", "determination"], "middle": ["dread", "fear"], "end": ["acceptance", "hope"]},
+          "ending_tone": "hopeful",
+          "intensity": "heavy",
+          "warnings": ["war_and_violence", "abuse", "graphic_gore", "medical_trauma"],
+          "example_user_messages": [
+            "I did things in my old job that I'll never talk about, and staying to make things better is the only way I can live with it.",
+            "I've given everything to supporting my boss's vision and sometimes I wonder where I went.",
+            "People think I'm cold but I'm just carrying a lot.",
+            "I grew up with a father who cared more about his work than me, and I still carry his expectations."
+          ],
+          "spoiler": {
+            "summary": "Riza's father Berthold Hawkeye tattooed the secret of flame alchemy on her back; she entrusted it to his apprentice Roy, then saw it used to burn Ishvalans while she served there as a sniper. Traumatised, she asked Roy to burn the tattoo off and vowed to follow him and shoot him if he strays. Bradley makes her his personal assistant as a hostage and she learns the Führer's son Selim is the homunculus Pride. On the Promised Day she stops Roy from murdering Envy, and later her throat is cut to force Roy into human transmutation; she survives thanks to May and Al. She remains at Roy's side for the reconstruction of Ishval.",
+            "key_events": [
+              "Her father's flame alchemy research is tattooed on her back",
+              "She served as a sniper in the Ishval extermination",
+              "Roy burns the tattoo away at her request",
+              "Made Bradley's assistant as a hostage",
+              "Discovers Selim Bradley is Pride",
+              "Stops Roy from killing Envy",
+              "Throat cut to force Roy's transmutation; she survives"
+            ],
+            "got_right": "She owns her past, holds others (and Roy) to account, and never lets her loyalty become blind.",
+            "got_wrong": "She sacrifices so much of her own life and feelings to duty that she treats herself as expendable."
+          }
+        }
+      ]
+    },
+    {
+      "id": "char:fma/winry_rockbell",
+      "name": "Winry Rockbell",
+      "role": "Ed and Al's childhood friend from their village, a gifted young automail mechanic who built Ed's prosthetic arm and leg and who lost her surgeon parents to a war.",
+      "relations": [
+        {"target": "char:fma/edward_elric", "relation": "friend"},
+        {"target": "char:fma/edward_elric", "relation": "partner"},
+        {"target": "char:fma/alphonse_elric", "relation": "friend"},
+        {"target": "char:fma/riza_hawkeye", "relation": "friend"}
+      ],
+      "arcs": [
+        {
+          "id": "arc:fma/winry_rockbell/the_one_who_waits_at_home",
+          "title": "The friend who is always left behind",
+          "literal_situation": "Winry lives in the brothers' home village with her grandmother, running an automail shop. She built Ed's limbs when she was eleven, and now he only turns up when something is broken. The brothers keep her in the dark about the dangers they face 'to protect her', while she fixes Ed's arm, worries, and wonders where her own life is going.",
+          "pattern_label": "loving people who keep you at arm's length",
+          "pattern_text": "A young person has spent years supporting friends who keep leaving for something bigger and won't tell them what is really going on. They pour their worry into their work, get angry at being shut out, and quietly wonder what they want for themselves. The journey is about finding their own path and value while still caring for people who keep walking into danger.",
+          "hook": "A cheerful, hot-tempered, fiercely talented mechanic who is tired of waving goodbye and being the last to know.",
+          "why_relatable": "What is your role in someone's life when they keep shutting you out 'for your own good'? How do you build your own dream when you have always been the one at home? And when does caring turn into waiting?",
+          "watch_for": [
+            "How does she react when she finds out what the brothers have been hiding?",
+            "What does her work mean to her beyond fixing Ed's arm?",
+            "When does she decide to go somewhere for herself?"
+          ],
+          "start_at": "FMAB Ep 6",
+          "span": "FMAB Ep 6-64",
+          "situations": [
+            {"id": "long_distance", "weight": 0.6},
+            {"id": "career_change", "weight": 0.5},
+            {"id": "leaving_home", "weight": 0.5},
+            {"id": "falling_for_someone_unexpected", "weight": 0.4}
+          ],
+          "conflicts": ["independence_vs_connection", "truth_vs_protecting_others"],
+          "emotions": {"start": ["anxiety", "loneliness"], "middle": ["anger", "determination"], "end": ["confidence", "love", "joy"]},
+          "ending_tone": "hopeful",
+          "intensity": "moderate",
+          "warnings": ["war_and_violence", "grief"],
+          "example_user_messages": [
+            "My closest friends only call when they need something fixed, and they never tell me what's really going on.",
+            "I've spent years worrying about someone who keeps running into danger and won't let me in.",
+            "I'm really good at what I do, but I've never done it anywhere except home.",
+            "I think I have feelings for my oldest friend and he's too stubborn to notice anything."
+          ],
+          "spoiler": {
+            "summary": "Winry travels to Central and Rush Valley, delivers a baby in a storm and decides to apprentice at Garfiel's atelier, becoming a respected mechanic in her own right. She admits to herself she loves Ed. When the military uses her as a hostage to keep Ed obedient, she insists on being told the truth and chooses to stay involved on her own terms. After the Promised Day, Ed proposes with an 'equivalent exchange' confession; she counters that she'll give him all of herself, and they marry and have children.",
+            "key_events": [
+              "Delivers a baby in Rush Valley",
+              "Apprentices at Garfiel's automail shop",
+              "Used as a hostage to control Ed",
+              "Learns the truth about the conspiracy",
+              "Ed proposes; they marry and have two children"
+            ],
+            "got_right": "She insists on the truth, builds a career that is hers, and supports others without disappearing.",
+            "got_wrong": "She sometimes lets worry and temper speak for her, and waits too long for others to include her rather than claiming a place."
+          }
+        },
+        {
+          "id": "arc:fma/winry_rockbell/choosing_not_to_pull_the_trigger",
+          "title": "Facing an old wound face to face",
+          "literal_situation": "Later in the series, after a turning point that tears open the old wound of losing her parents in the war, Winry is suddenly overwhelmed by a kind of anger she has never felt before. She has to decide, in a single moment and then over and over again, what she is going to do with it.",
+          "pattern_label": "deciding what to do with rage toward someone who hurt your family",
+          "pattern_text": "A warm, caring person is suddenly confronted with the person responsible for their family's greatest loss. The anger is overwhelming and the chance to hurt them back is real. The journey is about whether you can refuse to become cruel without pretending to forgive, and what it takes to help someone you will never excuse.",
+          "hook": "A kind young woman who has never wanted to hurt anyone, suddenly facing a rage she doesn't recognise in herself.",
+          "why_relatable": "Is it possible to not forgive someone and still refuse revenge? What would her parents want her to do? And what does she need from the people around her in that moment?",
+          "watch_for": [
+            "What stops her, and is it her own choice?",
+            "How does she talk about forgiveness afterwards?",
+            "Notice how she treats this person when their paths cross again."
+          ],
+          "start_at": "FMAB Ep 21",
+          "span": "FMAB Ep 21-45",
+          "situations": [
+            {"id": "grief_and_loss", "weight": 0.8},
+            {"id": "identity_and_self_acceptance", "weight": 0.3}
+          ],
+          "conflicts": ["revenge_vs_forgiveness"],
+          "emotions": {"start": ["anger", "grief"], "middle": ["confusion", "fear"], "end": ["self_respect", "acceptance"]},
+          "ending_tone": "bittersweet",
+          "intensity": "heavy",
+          "warnings": ["death_of_loved_one", "grief", "war_and_violence"],
+          "example_user_messages": [
+            "I just found out who is responsible for my parents' death and I'm shaking with anger.",
+            "I don't think I can ever forgive them, but I don't want hating them to turn me into someone else.",
+            "People keep telling me I should let it go, but they don't understand what was taken from me.",
+            "I had the chance to hurt the person who hurt my family and I didn't, and I don't know how I feel."
+          ],
+          "spoiler": {
+            "summary": "Winry learns that Scar killed her parents, the doctors who had just saved his life, during his rampage in Ishval. She picks up a gun and points it at him but cannot shoot; Ed and Al protect her and Scar. Later in the North, Scar 'kidnaps' her to free her from being a military hostage, and she treats his wounds, telling him she will never forgive him but that her parents would have wanted her to help. Seeing her pain helps Scar abandon his cycle of revenge.",
+            "key_events": [
+              "Scar murdered her parents after they saved his life",
+              "Winry aims a gun at Scar but cannot shoot",
+              "Scar fakes her kidnapping to free her",
+              "She helps Scar without forgiving him"
+            ],
+            "got_right": "She refuses to become a killer and makes a clear distinction between not forgiving and choosing to help.",
+            "got_wrong": "In the moment she nearly lets rage decide, and for a while carries it silently rather than letting others help her with it."
+          }
+        }
+      ]
+    },
+    {
+      "id": "char:fma/scar",
+      "name": "Scar",
+      "role": "A nameless Ishvalan survivor with an X-shaped scar on his face and a tattooed arm that destroys whatever it touches, who is hunting and killing State Alchemists to avenge his people.",
+      "relations": [
+        {"target": "char:fma/edward_elric", "relation": "enemy"},
+        {"target": "char:fma/alphonse_elric", "relation": "enemy"},
+        {"target": "char:fma/roy_mustang", "relation": "enemy"}
+      ],
+      "arcs": [
+        {
+          "id": "arc:fma/scar/consumed_by_revenge",
+          "title": "A survivor who became his own weapon",
+          "literal_situation": "Scar survived the war in which the State's alchemists wiped out his people. He has thrown away his name, sees himself as the instrument of divine punishment, and roams the country killing State Alchemists one by one — even though his own faith forbids both killing and the alchemy he uses to do it.",
+          "pattern_label": "letting a righteous grievance become your whole identity",
+          "pattern_text": "A person whose community was destroyed by those in power carries a justified grievance that has swallowed everything else about them. They have abandoned their old self and even the values they were raised with to pursue retribution. The journey is about whether anger that began in real injustice can be turned toward rebuilding instead of destruction.",
+          "hook": "A grim, devout man who has lost everything and decided that punishing the people he blames is all that is left of him.",
+          "why_relatable": "What do you do with anger that was caused by real injustice? Can you hold on to your values while breaking them in their name? And who is he, if he isn't his revenge?",
+          "watch_for": [
+            "How does he justify breaking his own faith's rules?",
+            "Notice the moments where compassion slips through.",
+            "What happens when he sees his own anger reflected in someone else?"
+          ],
+          "start_at": "FMAB Ep 5",
+          "span": "FMAB Ep 5-64",
+          "situations": [
+            {"id": "grief_and_loss", "weight": 0.8},
+            {"id": "redemption_after_mistakes", "weight": 0.7},
+            {"id": "identity_and_self_acceptance", "weight": 0.5}
+          ],
+          "conflicts": ["revenge_vs_forgiveness", "power_vs_morality"],
+          "emotions": {"start": ["anger", "grief"], "middle": ["confusion", "guilt"], "end": ["acceptance", "peace"]},
+          "ending_tone": "bittersweet",
+          "intensity": "heavy",
+          "warnings": ["war_and_violence", "graphic_gore", "death_of_loved_one", "grief", "child_endangerment"],
+          "example_user_messages": [
+            "The people who destroyed my community were never punished, and my anger is the only thing that feels real.",
+            "I've done things that go against everything I was raised to believe, and I tell myself they're justified.",
+            "I don't even feel like the person I used to be anymore.",
+            "Someone told me I'm becoming the thing I hate and I can't stop thinking about it."
+          ],
+          "spoiler": {
+            "summary": "Scar's older brother, an alchemy researcher, died protecting him from Kimblee in Ishval and grafted his tattooed arm onto Scar to save his life; in his pain Scar killed Winry's parents, who had treated him. After years of killing State Alchemists, he confronts Winry's grief, Al's refusal to hate, and fellow Ishvalan Miles, and learns the homunculi engineered the war. He decides to change the country rather than destroy it, deciphers his brother's notes to create the reverse transmutation circle that neutralises Father's plan, and kills Bradley (Wrath). He survives, keeps no name, and helps rebuild Ishval with Miles.",
+            "key_events": [
+              "His brother gave him his tattooed arm and died",
+              "Scar killed Winry's parents",
+              "Learns the homunculi caused the Ishval war",
+              "Allies with Ed, Mustang and Briggs",
+              "Activates the reverse transmutation circle",
+              "Kills King Bradley",
+              "Helps rebuild Ishval"
+            ],
+            "got_right": "He eventually faces what his anger did to innocent people and turns it into protecting and rebuilding.",
+            "got_wrong": "He killed indiscriminately for years, harming people who had nothing to do with the crimes against his people."
+          }
+        },
+        {
+          "id": "arc:fma/scar/facing_the_harm_he_caused",
+          "title": "Seeing his own pain in someone else's eyes",
+          "literal_situation": "Later in the series, after a turning point that forces him to look at the damage his own rampage caused, Scar can no longer tell himself he is only a victim. As he travels with unlikely companions, he has to reckon with the idea that his anger has created new grieving people just like him.",
+          "pattern_label": "realising you became someone else's source of pain",
+          "pattern_text": "A person who has long seen themselves as the wronged party comes face to face with someone they hurt, and recognises their own grief in them. The certainty that justified everything starts to crack. The journey is about taking responsibility without collapsing into self-hatred, and choosing a different way to honour those they lost.",
+          "hook": "A man who always saw himself as the injured party, now forced to see himself through the eyes of someone he wronged.",
+          "why_relatable": "Can you be both a victim and someone who hurt others? What do you owe the people your pain spilled onto? And how do you honour the dead without continuing the cycle?",
+          "watch_for": [
+            "How does he respond to people who refuse to hate him back?",
+            "Who does he start protecting, and why?",
+            "What does he decide to do with what his brother left behind?"
+          ],
+          "start_at": "FMAB Ep 22",
+          "span": "FMAB Ep 22-64",
+          "situations": [
+            {"id": "redemption_after_mistakes", "weight": 0.9},
+            {"id": "finding_your_people", "weight": 0.4}
+          ],
+          "conflicts": ["revenge_vs_forgiveness", "past_vs_future"],
+          "emotions": {"start": ["guilt", "confusion"], "middle": ["grief", "determination"], "end": ["acceptance", "hope"]},
+          "ending_tone": "hopeful",
+          "intensity": "heavy",
+          "warnings": ["war_and_violence", "death_of_loved_one", "grief"],
+          "example_user_messages": [
+            "I spent years angry at the people who hurt me and just realised I've hurt someone in exactly the same way.",
+            "I've always seen myself as the victim and I don't know what to do with the fact that I'm not only that.",
+            "Someone I wronged is being kinder to me than I deserve.",
+            "I want to honour the family I lost by building something instead of tearing things down."
+          ],
+          "spoiler": {
+            "summary": "Seeing Winry unable to shoot him for murdering her parents, Scar recognises the cycle of hatred. He protects May Chang, frees Winry from military custody in the North, is urged by Miles to help change Amestris for Ishvalans, studies his brother's research to complete the reverse circle and learns reconstruction as well as destruction. After defeating Bradley and helping on the Promised Day, he chooses life and joins Ishval's rebuilding, declining to reclaim his name.",
+            "key_events": [
+              "Winry cannot bring herself to kill him",
+              "Frees Winry from the military's hold",
+              "Miles persuades him to change the country instead of destroying it",
+              "Learns to reconstruct with his brother's research",
+              "Survives and works to rebuild Ishval"
+            ],
+            "got_right": "He lets other people's grief change him and redirects his strength toward protection and repair.",
+            "got_wrong": "Accepting responsibility comes late and only after irreparable harm; he never fully allows himself peace."
+          }
+        }
+      ]
+    },
+    {
+      "id": "char:fma/ling_yao",
+      "name": "Ling Yao",
+      "role": "The easygoing, perpetually hungry twelfth prince of the eastern empire of Xing, who has crossed the desert with two bodyguards to find the secret of immortality and win his dying father's throne for his clan.",
+      "relations": [
+        {"target": "char:fma/edward_elric", "relation": "friend"},
+        {"target": "char:fma/alphonse_elric", "relation": "friend"},
+        {"target": "char:fma/winry_rockbell", "relation": "friend"}
+      ],
+      "arcs": [
+        {
+          "id": "arc:fma/ling_yao/carrying_a_clans_hopes",
+          "title": "Carrying his whole family's future on his back",
+          "literal_situation": "Ling is one of dozens of heirs competing for the throne of Xing, where rival clans try to assassinate each other's princes. His small, struggling clan is counting on him. He has travelled to a foreign country with two loyal retainers to find the Philosopher's Stone and present immortality to the Emperor, hiding a razor-sharp strategic mind behind goofy charm and constant freeloading.",
+          "pattern_label": "the heir expected to save the family",
+          "pattern_text": "A young person from a family under pressure has been given one overwhelming task: succeed, or everyone who depends on them loses out. They hide the weight behind humour and charm, take enormous risks far from home, and are willing to make almost any deal to win. The journey is about ambition in service of others, and how far you should go for the people counting on you.",
+          "hook": "A cheerful, freeloading prince who seems to take nothing seriously, until you realise he is carrying the survival of his entire clan.",
+          "why_relatable": "How much of your life belongs to the people who depend on you? What bargains would you make to keep them safe? And how do you tell healthy ambition from a willingness to trade away yourself?",
+          "watch_for": [
+            "What is behind his jokes and his squinty grin?",
+            "How far is he willing to go when a path to his goal appears?",
+            "What does he actually want for himself?"
+          ],
+          "start_at": "FMAB Ep 15",
+          "span": "FMAB Ep 15-64",
+          "situations": [
+            {"id": "family_expectations", "weight": 0.9},
+            {"id": "taking_a_big_risk", "weight": 0.7},
+            {"id": "moving_somewhere_new", "weight": 0.4}
+          ],
+          "conflicts": ["self_vs_family_expectations", "loyalty_vs_ambition"],
+          "emotions": {"start": ["determination", "curiosity"], "middle": ["guilt", "grief", "determination"], "end": ["pride", "hope"]},
+          "ending_tone": "hopeful",
+          "intensity": "heavy",
+          "warnings": ["war_and_violence", "graphic_gore", "death_of_loved_one", "medical_trauma"],
+          "example_user_messages": [
+            "My whole family is depending on me to succeed and I can't let them see how scared I am.",
+            "I joke around so nobody notices how much pressure I'm under.",
+            "I moved to another country for an opportunity that's supposed to save my family's future.",
+            "I'm willing to make almost any deal to get where I need to be, and that scares me a little."
+          ],
+          "spoiler": {
+            "summary": "Ling joins the Elrics, learns Bradley is a homunculus, and is swallowed by Gluttony along with Ed and Envy. To get immortality he willingly accepts Greed's Philosopher's Stone, becoming the host of the homunculus Greed and sharing his body with him. His retainer Fu dies at Bradley's hands and Lan Fan cuts off her own arm for him. Ling and Greed become an odd partnership; Greed ultimately sacrifices himself to weaken Father, and Ling, given a Philosopher's Stone by Lan Fan, returns to Xing to become Emperor, vowing to protect all fifty clans.",
+            "key_events": [
+              "Swallowed by Gluttony with Ed",
+              "Voluntarily becomes the host of the homunculus Greed",
+              "Fu is killed by Bradley",
+              "Greed and Ling share one body and cooperate",
+              "Greed dies defeating Father",
+              "Ling becomes Emperor of Xing"
+            ],
+            "got_right": "He never forgets that his ambition exists to serve his people and he honours their sacrifices.",
+            "got_wrong": "He gambles his own body and identity on a dangerous bargain and repeatedly treats his own safety as disposable."
+          }
+        },
+        {
+          "id": "arc:fma/ling_yao/what_makes_a_true_leader",
+          "title": "Learning what kind of leader to be",
+          "literal_situation": "Ling's two bodyguards would die for him without hesitation, and they expect him to put his own survival first for the clan's sake. Ling insists on the opposite: that a real king exists for his people, not the other way round. He is about to meet powerful men who see their subordinates as tools to be spent, and have to prove whether his ideals survive real danger.",
+          "pattern_label": "leading people who would sacrifice everything for you",
+          "pattern_text": "A young leader believes that leadership means serving the people who follow you, but those people keep putting themselves in harm's way for him. When they pay a price for his ambitions, he has to decide how to carry that debt. The journey is about what you owe the people who trust you, and what kind of leader you choose to be when others lead by using people up.",
+          "hook": "A prince with an old-fashioned belief that a leader belongs to his people, surrounded by retainers ready to throw themselves in front of a blade for him.",
+          "why_relatable": "What do you owe the people who take risks for you? How do you accept loyalty without exploiting it? And how do you stay true to your idea of leadership when the people at the top play by different rules?",
+          "watch_for": [
+            "How does he respond when a subordinate is hurt because of him?",
+            "What does he think of leaders who spend their people freely?",
+            "Who does he consider 'his people', and does that circle grow?"
+          ],
+          "start_at": "FMAB Ep 15",
+          "span": "FMAB Ep 15-64",
+          "situations": [
+            {"id": "becoming_a_manager", "weight": 0.7},
+            {"id": "responsibility_you_didnt_ask_for", "weight": 0.6},
+            {"id": "finding_your_people", "weight": 0.4}
+          ],
+          "conflicts": ["duty_vs_desire", "power_vs_morality"],
+          "emotions": {"start": ["confidence", "pride"], "middle": ["guilt", "anger", "grief"], "end": ["self_respect", "belonging"]},
+          "ending_tone": "hopeful",
+          "intensity": "heavy",
+          "warnings": ["war_and_violence", "graphic_gore", "death_of_loved_one"],
+          "example_user_messages": [
+            "My team would do anything for me and it terrifies me that someone could get hurt because of my goals.",
+            "I believe a good leader works for their people, but everyone around me leads by using people up.",
+            "Someone who works for me paid a huge price for a decision I made and I don't know how to repay it.",
+            "I want to lead differently from the people above me, but I'm not sure my ideals will survive."
+          ],
+          "spoiler": {
+            "summary": "When Bradley wounds Lan Fan, Ling refuses to abandon her and she cuts off her own arm to buy him time; Ling vows to make her sacrifice worth it. He clashes with Bradley over what a king is. Fu is killed by Bradley, and Ling, sharing a body with Greed, comes to see Greed's desire for friends as the treasure he truly wanted, and gains Greed's loyalty. He becomes Emperor promising to protect every clan in Xing.",
+            "key_events": [
+              "Lan Fan cuts off her own arm to save him",
+              "Ling confronts Bradley's view of rulers",
+              "Fu dies defending the cause",
+              "Ling and Greed recognise each other as comrades",
+              "Becomes Emperor, pledging to protect all clans"
+            ],
+            "got_right": "He treats loyalty as a debt he owes back, and extends his care from his own clan to everyone.",
+            "got_wrong": "His refusal to protect himself forces his people into desperate sacrifices on his behalf."
+          }
+        }
+      ]
+    },
+    {
+      "id": "char:fma/izumi_curtis",
+      "name": "Izumi Curtis",
+      "role": "Ed and Al's fearsome former alchemy teacher, a self-described 'simple housewife' who runs a butcher shop with her husband and whose fits of coughing blood hint at an old injury.",
+      "relations": [
+        {"target": "char:fma/edward_elric", "relation": "protege"},
+        {"target": "char:fma/alphonse_elric", "relation": "protege"}
+      ],
+      "arcs": [
+        {
+          "id": "arc:fma/izumi_curtis/a_grief_she_never_speaks_of",
+          "title": "The teacher with a private grief",
+          "literal_situation": "When the brothers come to visit, Izumi is as intimidating as ever: she beats them up in greeting, scolds them for joining the military, and is visibly ill. She carries a private loss she rarely talks about, and she is about to discover that the two boys she trained have done exactly what she once warned them never to do.",
+          "pattern_label": "living with a desperate choice made in grief",
+          "pattern_text": "A strong, capable person carries a loss from years ago and the lasting damage from something desperate they did in the rawest days of grief. They have built a life around it without ever quite forgiving themselves. When people they love repeat their mistake, they must face it again, and perhaps finally understand it differently.",
+          "hook": "A tough, warm mentor whose strength hides a hidden grief and a body that keeps reminding her of it.",
+          "why_relatable": "How do you live with something you did when grief made you desperate? What happens when people you love make the same mistake? And is there any way to put down guilt you've carried for years?",
+          "watch_for": [
+            "How does she react when she learns what the boys did?",
+            "Notice what she says about punishment and whether it was deserved.",
+            "What would it take for her to forgive herself?"
+          ],
+          "start_at": "FMAB Ep 12",
+          "span": "FMAB Ep 12-26",
+          "situations": [
+            {"id": "grief_and_loss", "weight": 0.9},
+            {"id": "illness_or_injury", "weight": 0.5},
+            {"id": "redemption_after_mistakes", "weight": 0.5}
+          ],
+          "conflicts": ["holding_on_vs_letting_go"],
+          "emotions": {"start": ["grief", "guilt"], "middle": ["shame", "longing"], "end": ["relief", "peace"]},
+          "ending_tone": "hopeful",
+          "intensity": "moderate",
+          "warnings": ["death_of_loved_one", "grief", "medical_trauma", "serious_illness"],
+          "example_user_messages": [
+            "I lost a baby years ago and I did something in my grief that I've never forgiven myself for.",
+            "People think I'm the strong one, but I'm still carrying a loss nobody talks about.",
+            "I can't have children anymore and I still feel like it was my punishment.",
+            "Someone I love just made the same mistake I did, and it's bringing everything back."
+          ],
+          "spoiler": {
+            "summary": "Izumi's baby died at birth and in her grief she attempted human transmutation, which cost her some internal organs and her ability to have children. She expels the Elrics for making the same mistake, which frees them to work with her as equals. Later Ed calls to tell her that what they created was never truly their mother, and she realises the being she made was not her child either; she weeps with relief that she didn't make her baby suffer twice. Hohenheim later rearranges her organs to ease her illness, and she fights on the Promised Day as one of the five human sacrifices.",
+            "key_events": [
+              "Her child died at birth",
+              "Her human transmutation cost her organs and fertility",
+              "She expels the Elrics from her tutelage",
+              "Learns the transmuted being was not her child",
+              "Hohenheim partially heals her",
+              "Serves as one of Father's human sacrifices"
+            ],
+            "got_right": "She tells her students the truth about her own failure and meets theirs with compassion as well as honesty.",
+            "got_wrong": "She treated her suffering as a deserved punishment and carried the guilt alone for years."
+          }
+        },
+        {
+          "id": "arc:fma/izumi_curtis/tough_love_for_kids_not_her_own",
+          "title": "Tough love for children who aren't hers",
+          "literal_situation": "Years ago Izumi reluctantly took two orphaned boys as apprentices, abandoning them on an island for a month as a test before teaching them alchemy and martial arts. Now they come back as teenagers with a dangerous quest, and she has to decide what kind of teacher — and what kind of stand-in parent — they need from her now.",
+          "pattern_label": "being a parent figure to someone else's children",
+          "pattern_text": "A demanding mentor has become a stand-in parent to young people who lost their own. They show love through high standards and hard lessons, and struggle to know when to protect, when to punish and when to let go. The journey is about the moment a mentor has to treat those they raised as equals.",
+          "hook": "A terrifying, loving teacher who sees her former students heading into danger and has to figure out what they need from her.",
+          "why_relatable": "What do you owe young people who aren't yours but who you've come to love? Is tough love still love? And when do you stop being their teacher and start trusting them as equals?",
+          "watch_for": [
+            "How does she show affection without saying it?",
+            "What does she do when the boys disobey her?",
+            "How does their relationship change after they're no longer her students?"
+          ],
+          "start_at": "FMAB Ep 12",
+          "span": "FMAB Ep 12-64",
+          "situations": [
+            {"id": "mentor_and_protege", "weight": 0.9},
+            {"id": "becoming_a_parent", "weight": 0.4}
+          ],
+          "conflicts": ["control_vs_trust"],
+          "emotions": {"start": ["pride", "anger"], "middle": ["fear", "love"], "end": ["acceptance", "pride"]},
+          "ending_tone": "hopeful",
+          "intensity": "light",
+          "warnings": ["child_endangerment"],
+          "example_user_messages": [
+            "I've been like a second mom to my friend's kids and now they're making choices that terrify me.",
+            "I'm known for being strict with the people I mentor, but it's because I care about them.",
+            "The young people I trained ignored the one rule I gave them and I don't know whether to be angry or heartbroken.",
+            "How do I stop treating the people I raised like kids and start trusting them as adults?"
+          ],
+          "spoiler": {
+            "summary": "Izumi discovers the brothers' human transmutation, comforts them, then formally expels them from her tutelage, which makes them colleagues she can advise as equals. She rescues Al from Greed's gang, turns down the Führer's offer to become a State Alchemist, and later travels north to pass on warnings about the Promised Day. She fights alongside the brothers against Father, survives, and is there to welcome Al back into his restored body.",
+            "key_events": [
+              "Expels the Elrics, turning them into colleagues",
+              "Rescues Al from Greed's gang",
+              "Refuses Bradley's offer to join the State Alchemists",
+              "Fights beside the brothers on the Promised Day"
+            ],
+            "got_right": "She balances honesty and warmth, and knows when to let her students become her equals.",
+            "got_wrong": "Her methods are harsh and sometimes put her young apprentices in real danger."
+          }
+        }
+      ]
+    }
+  ]
+}
