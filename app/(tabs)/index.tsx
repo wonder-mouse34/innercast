@@ -10,7 +10,6 @@ import { PillarsSection } from '@/components/PillarsSection';
 import { SituationChips } from '@/components/SituationChips';
 import { bilt } from '@/lib/bilt';
 import { situationLabel } from '@/lib/data/situations';
-import { SHOWS } from '@/lib/data/shows';
 import type { GenreFilter } from '@/lib/genres';
 import { useProfileHydrated } from '@/lib/store/hydration';
 import { useProfileStore } from '@/lib/store/profile';
@@ -153,8 +152,8 @@ export default function DiscoverScreen() {
               {name ? `, ${name}` : ''}
             </Typography>
             <Typography type="body-sm" color="muted" className="mt-1.5 leading-6">
-              Describe what you are carrying tonight. {SHOWS.length} shows are on the shelf, each
-              filed by what it helps with.
+              Describe what you are carrying tonight. 28 shows are on the shelf, each filed by what
+              it helps with.
             </Typography>
           </View>
           <Pressable
