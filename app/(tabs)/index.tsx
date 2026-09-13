@@ -5,6 +5,7 @@ import { Cpu, Search } from 'lucide-react-native';
 import { Redirect, router } from 'expo-router';
 
 import { GenreFilterChips } from '@/components/GenreFilterChips';
+import { MarkdownAnswer } from '@/components/MarkdownAnswer';
 import { PillarsSection } from '@/components/PillarsSection';
 import { SectionHeading } from '@/components/SectionHeading';
 import { SituationChips } from '@/components/SituationChips';
@@ -241,9 +242,7 @@ export default function DiscoverScreen() {
             <>
               <SectionHeading title="For tonight" className="mb-0" />
               <Surface variant="secondary" className="rounded-3xl p-4">
-                <Typography type="body-sm" className="leading-6" selectable>
-                  {answer}
-                </Typography>
+                <MarkdownAnswer>{answer}</MarkdownAnswer>
               </Surface>
             </>
           ) : error && failedRequest ? (
