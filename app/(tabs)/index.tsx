@@ -1,26 +1,34 @@
-import { useCallback, useMemo, useRef, useState } from 'react';
+import { useCallback, useRef, useState } from 'react';
 import { KeyboardAvoidingView, Platform, Pressable, ScrollView, View } from 'react-native';
 import { Button, Label, Spinner, Surface, TextArea, TextField, Typography } from 'heroui-native';
 import { Cpu, Search } from 'lucide-react-native';
 import { Redirect, router } from 'expo-router';
 
-import { EngineBadge } from '@/components/EngineBadge';
 import { GenreFilterChips } from '@/components/GenreFilterChips';
-import { MatchCard } from '@/components/MatchCard';
 import { PillarsSection } from '@/components/PillarsSection';
-import { RetrievalTrace } from '@/components/RetrievalTrace';
 import { SectionHeading } from '@/components/SectionHeading';
 import { SituationChips } from '@/components/SituationChips';
-import { buildSession, runMatch, type MatchOutcome } from '@/lib/rag/recommend';
-import { getShow, SHOWS } from '@/lib/data/shows';
+import { bilt } from '@/lib/bilt';
+import { SHOWS } from '@/lib/data/shows';
 import type { GenreFilter } from '@/lib/genres';
-import { situationLabel } from '@/lib/data/situations';
 import { useNativeThemeColor } from '@/lib/theme';
 import { useProfileHydrated } from '@/lib/store/hydration';
 import { useProfileStore } from '@/lib/store/profile';
-import { useSessionStore } from '@/lib/store/sessions';
 import { useSettingsStore } from '@/lib/store/settings';
-import type { RetrievedShow, SituationId } from '@/lib/types';
+import type { SituationId } from '@/lib/types';
+
+type ConversationHistory = unknown[];
+
+type AskInnerCastResponse =
+  | { answer: string; history: ConversationHistory; seconds: number }
+  | { error: string };
+
+type FailedRequest = {
+  message: string;
+  history: ConversationHistory;
+};
+
+const GENERIC_ERROR = "InnerCast couldn't answer right now. Please try again.";
 
 function greeting(): string {
   const hour = new Date().getHours();
@@ -34,12 +42,8 @@ export default function DiscoverScreen() {
   const hydrated = useProfileHydrated();
   const hasOnboarded = useProfileStore((state) => state.hasOnboarded);
   const name = useProfileStore((state) => state.name);
-  const profileTraits = useProfileStore((state) => state.traits);
-  const personaTags = useProfileStore((state) => state.personaTags);
   const avoidTopics = useProfileStore((state) => state.avoidTopics);
   const settings = useSettingsStore((state) => state.model);
-  const sessions = useSessionStore((state) => state.sessions);
-  const addSession = useSessionStore((state) => state.addSession);
   const [accent, muted, accentForeground] = useNativeThemeColor([
     'accent',
     'muted',
@@ -51,8 +55,9 @@ export default function DiscoverScreen() {
   const [selectedGenres, setSelectedGenres] = useState<GenreFilter[]>([]);
   const [isMatching, setIsMatching] = useState(false);
   const [error, setError] = useState<string | null>(null);
-  const [outcome, setOutcome] = useState<MatchOutcome | null>(null);
-  const [sessionId, setSessionId] = useState<string | undefined>(undefined);
+  const [answer, setAnswer] = useState<string | null>(null);
+  const [history, setHistory] = useState<ConversationHistory>([]);
+  const [failedRequest, setFailedRequest] = useState<FailedRequest | null>(null);
 
   const scrollRef = useRef<ScrollView>(null);
   const resultsY = useRef(0);
@@ -69,77 +74,58 @@ export default function DiscoverScreen() {
     );
   }, []);
 
-  const handleMatch = useCallback(async () => {
-    const trimmed = text.trim();
-    if (trimmed.length < 4 && selected.length === 0) {
-      setError('Tell me a little about tonight, or tap a situation below.');
-      return;
-    }
-
+  const sendMessage = useCallback(async (request: FailedRequest) => {
     setError(null);
+    setFailedRequest(null);
+    setAnswer(null);
     setIsMatching(true);
-    // Drop the previous answer now: leaving it on screen under a spinner reads
-    // as if those picks belong to the situation just typed.
-    setOutcome(null);
-    setSessionId(undefined);
-    const request = {
-      text: trimmed,
-      selectedSituations: selected,
-      personaTags,
-      traits: profileTraits,
-      avoidTopics,
-      selectedGenres,
-      settings,
-    };
 
     try {
-      const result = await runMatch(request);
-      const session = buildSession(request, result);
-      addSession(session);
-      setOutcome(result);
-      setSessionId(session.id);
+      const { data, error: invokeError } = await bilt.functions.invoke<AskInnerCastResponse>(
+        'askinnercast',
+        {
+          body: {
+            message: request.message,
+            history: request.history,
+          },
+        },
+      );
+
+      if (invokeError || !data) {
+        setError(GENERIC_ERROR);
+        setFailedRequest(request);
+        return;
+      }
+
+      if ('error' in data) {
+        setError(data.error);
+        setFailedRequest(request);
+        return;
+      }
+
+      setAnswer(data.answer);
+      setHistory(data.history);
+    } catch {
+      setError(GENERIC_ERROR);
+      setFailedRequest(request);
+    } finally {
+      setIsMatching(false);
       requestAnimationFrame(() => {
         scrollRef.current?.scrollTo({ y: Math.max(0, resultsY.current - 12), animated: true });
       });
-    } catch {
-      setError('Something went wrong while reading the library. Try again.');
-    } finally {
-      setIsMatching(false);
     }
-  }, [
-    addSession,
-    avoidTopics,
-    personaTags,
-    profileTraits,
-    selected,
-    selectedGenres,
-    settings,
-    text,
-  ]);
+  }, []);
 
-  const candidateByShow = useMemo(() => {
-    const map = new Map<string, RetrievedShow>();
-    for (const candidate of outcome?.retrieval.candidates ?? [])
-      map.set(candidate.show.id, candidate);
-    return map;
-  }, [outcome]);
+  const handleMatch = useCallback(() => {
+    const message = text.trim();
+    if (message.length < 4) {
+      setFailedRequest(null);
+      setError('Tell me a little about what you are going through.');
+      return;
+    }
 
-  const traceRows = useMemo(
-    () =>
-      (outcome?.retrieval.candidates ?? []).map((candidate) => ({
-        showId: candidate.show.id,
-        score: candidate.score,
-        matchedTerms: candidate.matchedTerms,
-        matchedSituations: candidate.matchedSituations,
-        chunkKinds: candidate.matchedChunks.map((chunk) => chunk.kind),
-        matchedCharacters: candidate.matchedCharacters,
-        graphPath: candidate.graphPath,
-      })),
-    [outcome],
-  );
-
-  const detected = outcome?.retrieval.detectedSituations ?? [];
-  const recent = sessions.slice(0, 3);
+    void sendMessage({ message, history });
+  }, [history, sendMessage, text]);
 
   if (!hydrated) {
     return (
@@ -218,7 +204,7 @@ export default function DiscoverScreen() {
             </Typography>
           ) : null}
 
-          {error ? (
+          {error && !failedRequest ? (
             <Typography type="body-sm" className="text-danger">
               {error}
             </Typography>
@@ -227,12 +213,14 @@ export default function DiscoverScreen() {
           <Button
             variant="primary"
             onPress={() => {
-              void handleMatch();
+              handleMatch();
             }}
             isDisabled={isMatching}
           >
             {isMatching ? <Spinner size="sm" /> : <Search color={accentForeground} size={17} />}
-            <Button.Label>{isMatching ? 'Reading the library…' : 'Find something'}</Button.Label>
+            <Button.Label>
+              {isMatching ? 'Finding characters for you…' : 'Find something'}
+            </Button.Label>
           </Button>
         </Surface>
 
@@ -242,89 +230,46 @@ export default function DiscoverScreen() {
             resultsY.current = event.nativeEvent.layout.y;
           }}
         >
-          {outcome ? (
+          {isMatching ? (
+            <Surface variant="secondary" className="flex-row items-center gap-3 rounded-3xl p-4">
+              <Spinner size="sm" />
+              <Typography type="body-sm" weight="medium">
+                Finding characters for you…
+              </Typography>
+            </Surface>
+          ) : answer ? (
             <>
-              <SectionHeading
-                title={
-                  outcome.recommendations.length > 0
-                    ? 'For tonight'
-                    : 'Nothing cleared your filters'
-                }
-                caption={
-                  detected.length > 0
-                    ? `Read as ${detected.map((hit) => situationLabel(hit.id)).join(', ')}`
-                    : undefined
-                }
-                className="mb-0"
-              />
-
-              <EngineBadge
-                engine={outcome.engine}
-                modelName={outcome.modelName}
-                note={outcome.engineNote}
-              />
-
-              {outcome.recommendations.map((recommendation, index) => {
-                const show = getShow(recommendation.showId);
-                if (!show) return null;
-                const candidate = candidateByShow.get(show.id);
-                return (
-                  <MatchCard
-                    key={recommendation.showId}
-                    recommendation={recommendation}
-                    show={show}
-                    rank={index + 1}
-                    sessionId={sessionId}
-                    alignedAxes={candidate?.alignedAxes}
-                    matchedSituations={candidate?.matchedSituations}
-                  />
-                );
-              })}
-
-              {traceRows.length > 0 ? (
-                <RetrievalTrace
-                  rows={traceRows}
-                  queryTokens={outcome.retrieval.queryTokens}
-                  filteredOut={outcome.retrieval.filteredOut}
-                />
-              ) : null}
-            </>
-          ) : recent.length > 0 ? (
-            <>
-              <SectionHeading title="Where you were before" className="mb-0" />
-              <Surface variant="secondary" className="rounded-3xl px-4 py-1">
-                {recent.map((session, index) => (
-                  <Pressable
-                    key={session.id}
-                    onPress={() =>
-                      router.push({ pathname: '/session/[id]', params: { id: session.id } })
-                    }
-                    accessibilityRole="button"
-                    className={index === 0 ? 'py-3.5' : 'border-border/50 border-t py-3.5'}
-                    style={({ pressed }) => ({ opacity: pressed ? 0.75 : 1 })}
-                  >
-                    <Typography type="body-sm" numberOfLines={2} className="leading-5">
-                      {session.situationText ||
-                        session.selectedSituations.map(situationLabel).join(', ') ||
-                        'Untitled evening'}
-                    </Typography>
-                    <Typography type="body-xs" color="muted" className="mt-1">
-                      {new Date(session.createdAt).toLocaleDateString()} ·{' '}
-                      {session.recommendations.length} suggestions
-                    </Typography>
-                  </Pressable>
-                ))}
+              <SectionHeading title="For tonight" className="mb-0" />
+              <Surface variant="secondary" className="rounded-3xl p-4">
+                <Typography type="body-sm" className="leading-6" selectable>
+                  {answer}
+                </Typography>
               </Surface>
             </>
+          ) : error && failedRequest ? (
+            <Surface variant="secondary" className="gap-3 rounded-3xl p-4">
+              <Typography type="body-sm" className="text-danger leading-6">
+                {error}
+              </Typography>
+              <Button
+                variant="secondary"
+                className="self-start"
+                onPress={() => {
+                  void sendMessage(failedRequest);
+                }}
+                isDisabled={isMatching}
+              >
+                <Button.Label>Try again</Button.Label>
+              </Button>
+            </Surface>
           ) : (
             <Surface variant="default" className="gap-2 rounded-3xl p-4">
               <Typography type="body-sm" weight="semibold">
                 How this works
               </Typography>
               <Typography type="body-sm" color="muted" className="leading-6">
-                Your words are matched against a hand-written library of shows — what each one is
-                about, who it helps and what it leaves behind. Only the shows that come back from
-                that search are ever suggested, and you can open the search itself to see why.
+                Tell Inner Cast what you are going through. Its answer will appear here, and your
+                next message will continue the same conversation.
               </Typography>
             </Surface>
           )}
