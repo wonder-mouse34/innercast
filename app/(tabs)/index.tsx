@@ -330,6 +330,7 @@ export default function DiscoverScreen() {
                   rank={index + 1}
                   matchedCharacterIds={match.characterIds}
                   compact
+                  showJourneyActions={false}
                 />
               ))}
             </View>

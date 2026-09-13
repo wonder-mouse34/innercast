@@ -32,6 +32,7 @@ type Props = {
   matchedSituations?: SituationId[];
   matchedCharacterIds?: string[];
   compact?: boolean;
+  showJourneyActions?: boolean;
 };
 
 function endingLabel(show: Show): string {
@@ -52,6 +53,7 @@ export function MatchCard({
   matchedSituations = [],
   matchedCharacterIds = [],
   compact = false,
+  showJourneyActions = true,
 }: Props) {
   const [spoilersVisible, setSpoilersVisible] = useState(false);
   const [accent, warning, muted, accentForeground] = useNativeThemeColor([
@@ -270,29 +272,31 @@ export function MatchCard({
         </>
       ) : null}
 
-      <View className="border-border/70 gap-2 border-t pt-3">
-        <Typography type="body-sm" weight="semibold">
-          Started watching?
-        </Typography>
-        <View className="flex-row gap-2">
-          <Button
-            variant={startedWatching === true ? 'primary' : 'secondary'}
-            size="sm"
-            className="flex-1"
-            onPress={() => setStartedWatching(show.id, true)}
-          >
-            <Button.Label>Yes</Button.Label>
-          </Button>
-          <Button
-            variant={startedWatching === false ? 'primary' : 'secondary'}
-            size="sm"
-            className="flex-1"
-            onPress={() => setStartedWatching(show.id, false)}
-          >
-            <Button.Label>No</Button.Label>
-          </Button>
+      {showJourneyActions ? (
+        <View className="border-border/70 gap-2 border-t pt-3">
+          <Typography type="body-sm" weight="semibold">
+            Started watching?
+          </Typography>
+          <View className="flex-row gap-2">
+            <Button
+              variant={startedWatching === true ? 'primary' : 'secondary'}
+              size="sm"
+              className="flex-1"
+              onPress={() => setStartedWatching(show.id, true)}
+            >
+              <Button.Label>Yes</Button.Label>
+            </Button>
+            <Button
+              variant={startedWatching === false ? 'primary' : 'secondary'}
+              size="sm"
+              className="flex-1"
+              onPress={() => setStartedWatching(show.id, false)}
+            >
+              <Button.Label>No</Button.Label>
+            </Button>
+          </View>
         </View>
-      </View>
+      ) : null}
 
       <View className="flex-row gap-2">
         <Button variant="secondary" size="sm" className="flex-1" onPress={toggleSave}>
@@ -303,15 +307,19 @@ export function MatchCard({
           )}
           <Button.Label>{isSaved ? 'On your list' : 'Save'}</Button.Label>
         </Button>
-        <Button variant="primary" size="sm" className="flex-1" onPress={openReflection}>
-          <PenLine size={16} color={accentForeground} />
-          <Button.Label>Reflect</Button.Label>
-        </Button>
+        {showJourneyActions ? (
+          <Button variant="primary" size="sm" className="flex-1" onPress={openReflection}>
+            <PenLine size={16} color={accentForeground} />
+            <Button.Label>Reflect</Button.Label>
+          </Button>
+        ) : null}
       </View>
-      <Button variant="secondary" size="sm" onPress={openConnect}>
-        <Users color={accent} size={16} />
-        <Button.Label>Connect</Button.Label>
-      </Button>
+      {showJourneyActions ? (
+        <Button variant="secondary" size="sm" onPress={openConnect}>
+          <Users color={accent} size={16} />
+          <Button.Label>Connect</Button.Label>
+        </Button>
+      ) : null}
     </Surface>
   );
 }
