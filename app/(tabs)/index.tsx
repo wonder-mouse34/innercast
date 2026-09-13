@@ -17,6 +17,13 @@ import { useSettingsStore } from '@/lib/store/settings';
 import { useNativeThemeColor } from '@/lib/theme';
 import type { SituationId } from '@/lib/types';
 
+type AskInnerCastRequest = {
+  message: string;
+  history: unknown[];
+  situations: string[];
+  genres: string[];
+};
+
 type AskInnerCastSuccess = {
   answer: string;
   history: unknown[];
@@ -63,6 +70,7 @@ export default function DiscoverScreen() {
 
   const scrollRef = useRef<ScrollView>(null);
   const resultsY = useRef(0);
+  const lastRequestRef = useRef<AskInnerCastRequest | null>(null);
 
   const toggleSituation = useCallback((id: SituationId) => {
     setSelected((current) =>
@@ -76,27 +84,15 @@ export default function DiscoverScreen() {
     );
   }, []);
 
-  const handleMatch = useCallback(async () => {
-    const message = text.trim();
-    if (!message && selected.length === 0) {
-      setError('Tell me a little about what you are going through, or pick what fits.');
-      return;
-    }
-
+  const sendRequest = useCallback(async (request: AskInnerCastRequest) => {
+    lastRequestRef.current = request;
     setError(null);
     setIsMatching(true);
 
     try {
       const { data, error: functionError } = await bilt.functions.invoke<AskInnerCastResponse>(
         'askinnercast',
-        {
-          body: {
-            message,
-            history,
-            situations: selected.map(situationLabel),
-            genres: selectedGenres,
-          },
-        },
+        { body: request },
       );
 
       if (functionError || !data || !isAskInnerCastSuccess(data)) {
@@ -118,7 +114,26 @@ export default function DiscoverScreen() {
         scrollRef.current?.scrollTo({ y: Math.max(0, resultsY.current - 12), animated: true });
       });
     }
-  }, [history, selected, selectedGenres, text]);
+  }, []);
+
+  const handleMatch = useCallback(() => {
+    const message = text.trim();
+    if (!message && selected.length === 0) {
+      setError('Tell me a little about what you are going through, or pick what fits.');
+      return;
+    }
+
+    void sendRequest({
+      message,
+      history,
+      situations: selected.map(situationLabel),
+      genres: selectedGenres,
+    });
+  }, [history, selected, selectedGenres, sendRequest, text]);
+
+  const handleRetry = useCallback(() => {
+    if (lastRequestRef.current) void sendRequest(lastRequestRef.current);
+  }, [sendRequest]);
 
   if (!hydrated) {
     return (
@@ -159,7 +174,7 @@ export default function DiscoverScreen() {
           <Pressable
             onPress={() => router.push('/settings/model')}
             accessibilityRole="button"
-            accessibilityLabel="Local model settings"
+            accessibilityLabel="InnerCast matching details"
             className="border-border/70 rounded-2xl border p-2.5"
             style={({ pressed }) => ({ opacity: pressed ? 0.7 : 1 })}
           >
@@ -223,7 +238,7 @@ export default function DiscoverScreen() {
               <Typography type="body-sm" className="text-danger leading-6">
                 {error}
               </Typography>
-              <Button variant="secondary" className="self-start" onPress={handleMatch}>
+              <Button variant="secondary" className="self-start" onPress={handleRetry}>
                 <Button.Label>Try again</Button.Label>
               </Button>
             </Surface>

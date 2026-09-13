@@ -26,9 +26,9 @@ export const MODEL_PRESETS: { label: string; baseUrl: string; hint: string }[] =
 ];
 
 export const DEFAULT_MODEL_SETTINGS: ModelSettings = {
-  enabled: true,
-  baseUrl: process.env.EXPO_PUBLIC_LLM_BASE_URL ?? 'http://localhost:11434/v1',
-  model: process.env.EXPO_PUBLIC_LLM_MODEL ?? 'llama3.1:8b',
+  enabled: false,
+  baseUrl: '',
+  model: '',
   apiKey: '',
   temperature: 0.4,
   jsonMode: true,

@@ -84,7 +84,7 @@ function RootNavigator() {
         }}
       />
       <Stack.Screen name="session/[id]" options={{ title: 'Past matches' }} />
-      <Stack.Screen name="settings/model" options={{ title: 'Local model' }} />
+      <Stack.Screen name="settings/model" options={{ title: 'Matching' }} />
       <Stack.Screen name="settings/graph" options={{ title: 'Knowledge graph' }} />
     </Stack>
   );

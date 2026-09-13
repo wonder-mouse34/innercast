@@ -1,16 +1,7 @@
 import { useCallback, useMemo, useState } from 'react';
 import { KeyboardAvoidingView, Platform, Pressable, ScrollView, View } from 'react-native';
 import { Button, Input, Surface, TextField, Typography } from 'heroui-native';
-import {
-  ChevronRight,
-  Cpu,
-  Network,
-  Plus,
-  Smartphone,
-  Sparkles,
-  Trash2,
-  X,
-} from 'lucide-react-native';
+import { ChevronRight, Network, Plus, Sparkles, Trash2, X } from 'lucide-react-native';
 import { router } from 'expo-router';
 
 import { SectionHeading } from '@/components/SectionHeading';
@@ -24,7 +15,6 @@ import { useNativeThemeColor } from '@/lib/theme';
 import { useProfileStore } from '@/lib/store/profile';
 import { useReflectionStore } from '@/lib/store/reflections';
 import { useSessionStore } from '@/lib/store/sessions';
-import { useSettingsStore } from '@/lib/store/settings';
 import { useWatchlistStore } from '@/lib/store/watchlist';
 import { type Show, type WatchEntry, type WatchStatus } from '@/lib/types';
 
@@ -61,8 +51,6 @@ export default function YouScreen() {
   const watchEntries = useWatchlistStore((state) => state.entries);
   const removeShow = useWatchlistStore((state) => state.removeShow);
   const joinedIds = useCircleStore((state) => state.joinedIds);
-  const model = useSettingsStore((state) => state.model);
-  const lastTestOk = useSettingsStore((state) => state.lastTestOk);
 
   const [accent, muted] = useNativeThemeColor(['accent', 'muted']);
   const [avoidDraft, setAvoidDraft] = useState('');
@@ -257,25 +245,13 @@ export default function YouScreen() {
             style={({ pressed }) => ({ opacity: pressed ? 0.8 : 1 })}
           >
             <Surface variant="secondary" className="flex-row items-center gap-3 rounded-3xl p-4">
-              {model.enabled ? (
-                <Cpu color={accent} size={20} />
-              ) : (
-                <Smartphone color={muted} size={20} />
-              )}
+              <Sparkles color={accent} size={20} />
               <View className="flex-1">
                 <Typography type="body" weight="medium">
-                  Local model
+                  InnerCast matching
                 </Typography>
                 <Typography type="body-xs" color="muted" className="mt-1 leading-5">
-                  {model.enabled
-                    ? `${model.model || 'no model name'} at ${model.baseUrl}${
-                        lastTestOk === undefined
-                          ? ''
-                          : lastTestOk
-                            ? ' · reachable'
-                            : ' · unreachable'
-                      }`
-                    : 'Off — matches are ranked on this device'}
+                  Character matches run through the private server automation
                 </Typography>
               </View>
               <ChevronRight color={muted} size={18} />

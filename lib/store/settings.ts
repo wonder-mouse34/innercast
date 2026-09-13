@@ -33,13 +33,17 @@ export const useSettingsStore = create<SettingsState>()(
     {
       name: 'lantern-model-settings',
       storage: createJSONStorage(() => AsyncStorage),
-      version: 1,
+      version: 2,
       merge: (persisted, current) => {
         const saved = (persisted ?? {}) as Partial<SettingsState>;
         return {
           ...current,
           ...saved,
-          model: { ...DEFAULT_MODEL_SETTINGS, ...saved.model },
+          model: { ...DEFAULT_MODEL_SETTINGS },
+          discoveredModels: [],
+          lastTestedAt: undefined,
+          lastTestOk: undefined,
+          lastTestMessage: undefined,
         };
       },
     },
