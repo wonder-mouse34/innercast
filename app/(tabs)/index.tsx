@@ -6,19 +6,16 @@ import { Redirect, router } from 'expo-router';
 
 import { GenreFilterChips } from '@/components/GenreFilterChips';
 import { MarkdownAnswer } from '@/components/MarkdownAnswer';
-import { MatchCard } from '@/components/MatchCard';
 import { PillarsSection } from '@/components/PillarsSection';
 import { SituationChips } from '@/components/SituationChips';
 import { bilt } from '@/lib/bilt';
-import { CHARACTERS, charactersForShow } from '@/lib/data/characters';
-import { SHOWS } from '@/lib/data/shows';
 import { situationLabel } from '@/lib/data/situations';
 import type { GenreFilter } from '@/lib/genres';
 import { useProfileHydrated } from '@/lib/store/hydration';
 import { useProfileStore } from '@/lib/store/profile';
 import { useSettingsStore } from '@/lib/store/settings';
 import { useNativeThemeColor } from '@/lib/theme';
-import type { Recommendation, Show, SituationId } from '@/lib/types';
+import type { SituationId } from '@/lib/types';
 
 type AskInnerCastRequest = {
   message: string;
@@ -41,72 +38,6 @@ type AskInnerCastResponse = AskInnerCastSuccess | AskInnerCastFailure;
 
 function isAskInnerCastSuccess(value: AskInnerCastResponse): value is AskInnerCastSuccess {
   return 'answer' in value;
-}
-
-type InteractiveMatch = {
-  show: Show;
-  recommendation: Recommendation;
-  characterIds: string[];
-};
-
-function searchable(value: string): string {
-  return ` ${value
-    .normalize('NFKD')
-    .replace(/[\u0300-\u036f]/g, '')
-    .toLowerCase()
-    .replace(/[^a-z0-9]+/g, ' ')
-    .trim()} `;
-}
-
-function mentionIndex(answer: string, label: string): number {
-  const normalizedLabel = searchable(label).trim();
-  return normalizedLabel ? searchable(answer).indexOf(` ${normalizedLabel} `) : -1;
-}
-
-function interactiveMatches(answer: string): InteractiveMatch[] {
-  const characterMentions = CHARACTERS.map((character) => ({
-    character,
-    index: mentionIndex(answer, character.name),
-  })).filter((entry) => entry.index >= 0);
-
-  const charactersByShow = new Map<string, typeof characterMentions>();
-  for (const entry of characterMentions) {
-    const current = charactersByShow.get(entry.character.showId) ?? [];
-    current.push(entry);
-    charactersByShow.set(entry.character.showId, current);
-  }
-
-  const matches: (InteractiveMatch & { index: number })[] = [];
-  for (const show of SHOWS) {
-    const mentionedCharacters = (charactersByShow.get(show.id) ?? []).sort(
-      (left, right) => left.index - right.index,
-    );
-    const showIndex =
-      searchable(show.title).trim().length >= 5 ? mentionIndex(answer, show.title) : -1;
-    if (mentionedCharacters.length === 0 && showIndex < 0) continue;
-
-    const availableCharacters =
-      mentionedCharacters.length > 0
-        ? mentionedCharacters.map((entry) => entry.character)
-        : charactersForShow(show.id);
-    const primaryCharacter = availableCharacters[0];
-    if (!primaryCharacter) continue;
-
-    matches.push({
-      show,
-      characterIds: availableCharacters.map((character) => character.id),
-      index: mentionedCharacters[0]?.index ?? showIndex,
-      recommendation: {
-        showId: show.id,
-        reason: '',
-        characterId: primaryCharacter.id,
-        characterName: primaryCharacter.name,
-        fit: 0,
-      },
-    });
-  }
-
-  return matches.sort((left, right) => left.index - right.index);
 }
 
 function greeting(): string {
@@ -203,8 +134,6 @@ export default function DiscoverScreen() {
   const handleRetry = useCallback(() => {
     if (lastRequestRef.current) void sendRequest(lastRequestRef.current);
   }, [sendRequest]);
-
-  const matches = answer ? interactiveMatches(answer) : [];
 
   if (!hydrated) {
     return (
@@ -321,18 +250,6 @@ export default function DiscoverScreen() {
                 </Typography>
                 <MarkdownAnswer>{answer}</MarkdownAnswer>
               </Surface>
-
-              {matches.map((match, index) => (
-                <MatchCard
-                  key={`${match.show.id}:${match.characterIds.join(',')}`}
-                  recommendation={match.recommendation}
-                  show={match.show}
-                  rank={index + 1}
-                  matchedCharacterIds={match.characterIds}
-                  compact
-                  showJourneyActions={false}
-                />
-              ))}
             </View>
           ) : (
             <Surface variant="default" className="gap-2 rounded-3xl p-4">
