@@ -2,7 +2,7 @@ import { graphCorpus } from '@/lib/graph/corpus';
 import type { Show } from '@/lib/types';
 
 /**
- * The hand-authored Inner Cast corpus.
+ * The hand-authored InnerCast corpus.
  *
  * Nothing here is generated at runtime and the language model is never allowed
  * to recommend a title that is not in the active corpus — it only ranks and

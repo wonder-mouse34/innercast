@@ -55,7 +55,7 @@ export function PillarsSection({ onDiscoverPress }: Props) {
     <View>
       <SectionHeading
         title="Discover, Reflect, Connect"
-        caption="The three things Inner Cast is for."
+        caption="The three things InnerCast is for."
       />
       <Surface variant="secondary" className="rounded-3xl px-4 py-1">
         {pillars.map((pillar, index) => {

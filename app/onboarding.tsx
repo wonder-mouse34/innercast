@@ -17,13 +17,13 @@ export default function OnboardingScreen() {
       <View className="gap-6">
         <View className="gap-3">
           <Typography type="body-xs" color="muted" className="tracking-widest uppercase">
-            Inner Cast
+            InnerCast
           </Typography>
           <Typography type="h1" weight="bold" className="leading-tight">
             Find the character who meets you where you are.
           </Typography>
           <Typography type="body" color="muted" className="leading-7">
-            Describe what is going on, choose a genre if you want, and Inner Cast will look for a
+            Describe what is going on, choose a genre if you want, and InnerCast will look for a
             person on screen whose experience speaks to yours.
           </Typography>
         </View>

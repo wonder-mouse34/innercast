@@ -1,5 +1,5 @@
 /**
- * Knowledge-graph format for Inner Cast.
+ * Knowledge-graph format for InnerCast.
  *
  * The graph is the corpus. Retrieval walks it, the prompt is built from the
  * subgraph the walk returned, and the language model only ever sees records

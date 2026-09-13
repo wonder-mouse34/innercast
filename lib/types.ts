@@ -1,5 +1,5 @@
 /**
- * Domain types for Inner Cast.
+ * Domain types for InnerCast.
  *
  * The show corpus in `lib/data/shows.ts` is the retrieval database: every field
  * that appears here is either indexed for lexical search, used for trait

@@ -93,7 +93,7 @@ export default function ModelSettingsScreen() {
                 Use my own model
               </Typography>
               <Typography type="body-xs" color="muted" className="mt-1 leading-5">
-                Inner Cast sends your situation and the shows it retrieved to a server you run.
+                InnerCast sends your situation and the shows it retrieved to a server you run.
                 Nothing goes anywhere else.
               </Typography>
             </View>

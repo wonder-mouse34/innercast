@@ -90,7 +90,7 @@ function RootNavigator() {
   );
 }
 
-// Inner Cast uses a light, Scandinavian palette: light theme only.
+// InnerCast uses a light, Scandinavian palette: light theme only.
 Uniwind.setTheme('light');
 
 void SplashScreen.preventAutoHideAsync();

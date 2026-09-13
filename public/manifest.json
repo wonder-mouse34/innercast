@@ -1,6 +1,6 @@
 {
-  "name": "Inner Cast",
-  "short_name": "Inner Cast",
+  "name": "InnerCast",
+  "short_name": "InnerCast",
   "description": "Find the character who is going through what you are going through.",
   "start_url": "/",
   "scope": "/",

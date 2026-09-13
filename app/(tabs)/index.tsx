@@ -153,7 +153,7 @@ export default function DiscoverScreen() {
         <View className="flex-row items-start justify-between gap-3">
           <View className="flex-1">
             <Typography type="body-xs" color="muted" className="tracking-widest uppercase">
-              Inner Cast
+              InnerCast
             </Typography>
             <Typography type="h3" weight="semibold" className="mt-1.5">
               {greeting()}
@@ -267,7 +267,7 @@ export default function DiscoverScreen() {
                 How this works
               </Typography>
               <Typography type="body-sm" color="muted" className="leading-6">
-                Tell Inner Cast what you are going through. Its answer will appear here, and your
+                Tell InnerCast what you are going through. Its answer will appear here, and your
                 next message will continue the same conversation.
               </Typography>
             </Surface>
