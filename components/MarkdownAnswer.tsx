@@ -108,7 +108,7 @@ export function MarkdownAnswer({ children }: MarkdownAnswerProps) {
       }
       blocks.push(
         <View key={`quote-${start}`} className="border-accent/40 border-l-2 py-0.5 pl-3">
-          <Typography type="body-sm" color="muted" className="italic leading-6" selectable>
+          <Typography type="body-sm" color="muted" className="leading-6 italic" selectable>
             {renderInline(quoteLines.join('\n'), `quote-${start}`)}
           </Typography>
         </View>,
@@ -117,23 +117,23 @@ export function MarkdownAnswer({ children }: MarkdownAnswerProps) {
     }
 
     if (BULLET.test(line)) {
-      const items: string[] = [];
+      const items: { content: string; lineIndex: number }[] = [];
       const start = index;
       while (index < lines.length) {
         const bullet = lines[index].match(BULLET);
         if (!bullet) break;
-        items.push(bullet[1]);
+        items.push({ content: bullet[1], lineIndex: index });
         index += 1;
       }
       blocks.push(
         <View key={`list-${start}`} className="gap-2">
-          {items.map((item, itemIndex) => (
-            <View key={`item-${start}-${itemIndex}`} className="flex-row items-start gap-2.5">
-              <Typography type="body-sm" color="accent" className="leading-6">
+          {items.map((item) => (
+            <View key={`item-${item.lineIndex}`} className="flex-row items-start gap-2.5">
+              <Typography type="body-sm" className="text-accent leading-6">
                 •
               </Typography>
               <Typography type="body-sm" className="flex-1 leading-6" selectable>
-                {renderInline(item, `item-${start}-${itemIndex}`)}
+                {renderInline(item.content, `item-${item.lineIndex}`)}
               </Typography>
             </View>
           ))}
