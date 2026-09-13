@@ -7,6 +7,7 @@ import {
   EyeOff,
   PenLine,
   UserRound,
+  Users,
 } from 'lucide-react-native';
 import { Button, Surface, Typography } from 'heroui-native';
 import { Pressable, View } from 'react-native';
@@ -29,11 +30,16 @@ type Props = {
   sessionId?: string;
   alignedAxes?: TraitAxis[];
   matchedSituations?: SituationId[];
+  matchedCharacterIds?: string[];
 };
 
 function endingLabel(show: Show): string {
   if (!show.endingTone) return 'Not classified in this library record';
   return `${show.endingTone.charAt(0).toUpperCase()}${show.endingTone.slice(1)}`;
+}
+
+function openConnect() {
+  router.push('/circles');
 }
 
 export function MatchCard({
@@ -43,6 +49,7 @@ export function MatchCard({
   sessionId,
   alignedAxes = [],
   matchedSituations = [],
+  matchedCharacterIds = [],
 }: Props) {
   const [spoilersVisible, setSpoilersVisible] = useState(false);
   const [accent, warning, muted, accentForeground] = useNativeThemeColor([
@@ -52,12 +59,27 @@ export function MatchCard({
     'accent-foreground',
   ]);
   const entries = useWatchlistStore((state) => state.entries);
+  const startedWatching = useWatchlistStore((state) => state.startedWatchingByShow[show.id]);
+  const setStartedWatching = useWatchlistStore((state) => state.setStartedWatching);
   const setStatus = useWatchlistStore((state) => state.setStatus);
   const removeShow = useWatchlistStore((state) => state.removeShow);
 
-  const character = recommendation.characterId
+  const availableCharacters = matchedCharacterIds
+    .map((id) => getCharacter(id))
+    .filter((item): item is NonNullable<typeof item> => item?.showId === show.id);
+  const fallbackCharacter = recommendation.characterId
     ? getCharacter(recommendation.characterId)
     : undefined;
+  if (
+    fallbackCharacter?.showId === show.id &&
+    !availableCharacters.some((item) => item?.id === fallbackCharacter.id)
+  ) {
+    availableCharacters.unshift(fallbackCharacter);
+  }
+  const [selectedCharacterId, setSelectedCharacterId] = useState(
+    recommendation.characterId ?? availableCharacters[0]?.id,
+  );
+  const character = selectedCharacterId ? getCharacter(selectedCharacterId) : fallbackCharacter;
   const entry = entries.find((item) => item.showId === show.id);
   const isSaved = entry?.status === 'saved' || entry?.status === 'watching';
 
@@ -67,7 +89,7 @@ export function MatchCard({
       params: { id: show.id, ...(sessionId ? { sessionId } : {}) },
     });
 
-  const openReflection = () => router.push(reflectHref(show.id, recommendation.characterId));
+  const openReflection = () => router.push(reflectHref(show.id, selectedCharacterId));
 
   const toggleSave = () => {
     if (isSaved) removeShow(show.id);
@@ -96,7 +118,7 @@ export function MatchCard({
             </Typography>
             <UserRound color={accent} size={14} />
             <Typography type="h5" weight="semibold" className="flex-1" numberOfLines={2}>
-              {recommendation.characterName ?? show.title}
+              {character?.name ?? recommendation.characterName ?? show.title}
             </Typography>
           </View>
           {character?.role ? (
@@ -120,6 +142,40 @@ export function MatchCard({
           </Typography>
         </View>
       </Pressable>
+
+      {availableCharacters.length > 1 ? (
+        <View className="gap-2">
+          <Typography type="body-xs" weight="semibold">
+            Who are you going with?
+          </Typography>
+          <View className="flex-row flex-wrap gap-2">
+            {availableCharacters.map((item) => {
+              const isSelected = item.id === selectedCharacterId;
+              return (
+                <Pressable
+                  key={item.id}
+                  onPress={() => setSelectedCharacterId(item.id)}
+                  accessibilityRole="button"
+                  accessibilityLabel={`Choose ${item.name}`}
+                  accessibilityState={{ selected: isSelected }}
+                  className={`rounded-full border px-3 py-2 ${
+                    isSelected ? 'border-accent bg-accent-soft' : 'border-border bg-background'
+                  }`}
+                  style={({ pressed }) => ({ opacity: pressed ? 0.75 : 1 })}
+                >
+                  <Typography
+                    type="body-sm"
+                    weight={isSelected ? 'semibold' : 'normal'}
+                    className={isSelected ? 'text-accent-soft-foreground' : ''}
+                  >
+                    {item.name}
+                  </Typography>
+                </Pressable>
+              );
+            })}
+          </View>
+        </View>
+      ) : null}
 
       {character?.appearanceNote ? (
         <Typography type="body-xs" weight="semibold" className="text-accent">
@@ -206,6 +262,30 @@ export function MatchCard({
         </Surface>
       ) : null}
 
+      <View className="border-border/70 gap-2 border-t pt-3">
+        <Typography type="body-sm" weight="semibold">
+          Started watching?
+        </Typography>
+        <View className="flex-row gap-2">
+          <Button
+            variant={startedWatching === true ? 'primary' : 'secondary'}
+            size="sm"
+            className="flex-1"
+            onPress={() => setStartedWatching(show.id, true)}
+          >
+            <Button.Label>Yes</Button.Label>
+          </Button>
+          <Button
+            variant={startedWatching === false ? 'primary' : 'secondary'}
+            size="sm"
+            className="flex-1"
+            onPress={() => setStartedWatching(show.id, false)}
+          >
+            <Button.Label>No</Button.Label>
+          </Button>
+        </View>
+      </View>
+
       <View className="flex-row gap-2">
         <Button variant="secondary" size="sm" className="flex-1" onPress={toggleSave}>
           {isSaved ? (
@@ -220,6 +300,10 @@ export function MatchCard({
           <Button.Label>Reflect</Button.Label>
         </Button>
       </View>
+      <Button variant="secondary" size="sm" onPress={openConnect}>
+        <Users color={accent} size={16} />
+        <Button.Label>Connect</Button.Label>
+      </Button>
     </Surface>
   );
 }

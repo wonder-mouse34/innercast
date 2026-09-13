@@ -4,32 +4,21 @@ import { Button, Label, Spinner, Surface, TextArea, TextField, Typography } from
 import { Cpu, Search } from 'lucide-react-native';
 import { Redirect, router } from 'expo-router';
 
+import { EngineBadge } from '@/components/EngineBadge';
 import { GenreFilterChips } from '@/components/GenreFilterChips';
-import { MarkdownAnswer } from '@/components/MarkdownAnswer';
+import { MatchCard } from '@/components/MatchCard';
 import { PillarsSection } from '@/components/PillarsSection';
 import { SectionHeading } from '@/components/SectionHeading';
 import { SituationChips } from '@/components/SituationChips';
-import { bilt } from '@/lib/bilt';
-import { SHOWS } from '@/lib/data/shows';
+import { getShow, SHOWS } from '@/lib/data/shows';
 import type { GenreFilter } from '@/lib/genres';
-import { useNativeThemeColor } from '@/lib/theme';
+import { buildSession, runMatch } from '@/lib/rag/recommend';
 import { useProfileHydrated } from '@/lib/store/hydration';
 import { useProfileStore } from '@/lib/store/profile';
+import { useSessionStore } from '@/lib/store/sessions';
 import { useSettingsStore } from '@/lib/store/settings';
-import type { SituationId } from '@/lib/types';
-
-type ConversationHistory = unknown[];
-
-type AskInnerCastResponse =
-  | { answer: string; history: ConversationHistory; seconds: number }
-  | { error: string };
-
-type FailedRequest = {
-  message: string;
-  history: ConversationHistory;
-};
-
-const GENERIC_ERROR = "InnerCast couldn't answer right now. Please try again.";
+import { useNativeThemeColor } from '@/lib/theme';
+import type { MatchSession, SituationId } from '@/lib/types';
 
 function greeting(): string {
   const hour = new Date().getHours();
@@ -44,7 +33,10 @@ export default function DiscoverScreen() {
   const hasOnboarded = useProfileStore((state) => state.hasOnboarded);
   const name = useProfileStore((state) => state.name);
   const avoidTopics = useProfileStore((state) => state.avoidTopics);
+  const traits = useProfileStore((state) => state.traits);
+  const personaTags = useProfileStore((state) => state.personaTags);
   const settings = useSettingsStore((state) => state.model);
+  const addSession = useSessionStore((state) => state.addSession);
   const [accent, muted, accentForeground] = useNativeThemeColor([
     'accent',
     'muted',
@@ -56,9 +48,7 @@ export default function DiscoverScreen() {
   const [selectedGenres, setSelectedGenres] = useState<GenreFilter[]>([]);
   const [isMatching, setIsMatching] = useState(false);
   const [error, setError] = useState<string | null>(null);
-  const [answer, setAnswer] = useState<string | null>(null);
-  const [history, setHistory] = useState<ConversationHistory>([]);
-  const [failedRequest, setFailedRequest] = useState<FailedRequest | null>(null);
+  const [session, setSession] = useState<MatchSession | null>(null);
 
   const scrollRef = useRef<ScrollView>(null);
   const resultsY = useRef(0);
@@ -75,58 +65,45 @@ export default function DiscoverScreen() {
     );
   }, []);
 
-  const sendMessage = useCallback(async (request: FailedRequest) => {
+  const handleMatch = useCallback(async () => {
+    const message = text.trim();
+    if (message.length < 4 && selected.length === 0) {
+      setError('Tell me a little about what you are going through, or pick what fits.');
+      return;
+    }
+
     setError(null);
-    setFailedRequest(null);
-    setAnswer(null);
     setIsMatching(true);
 
     try {
-      const { data, error: invokeError } = await bilt.functions.invoke<AskInnerCastResponse>(
-        'askinnercast',
-        {
-          body: {
-            message: request.message,
-            history: request.history,
-          },
-        },
-      );
-
-      if (invokeError || !data) {
-        setError(GENERIC_ERROR);
-        setFailedRequest(request);
+      const request = {
+        text: message,
+        selectedSituations: selected,
+        personaTags,
+        traits,
+        avoidTopics,
+        selectedGenres,
+        settings,
+      };
+      const outcome = await runMatch(request);
+      if (outcome.recommendations.length === 0) {
+        setSession(null);
+        setError(outcome.engineNote ?? 'No matches cleared your preferences. Try changing them.');
         return;
       }
 
-      if ('error' in data) {
-        setError(data.error);
-        setFailedRequest(request);
-        return;
-      }
-
-      setAnswer(data.answer);
-      setHistory(data.history);
+      const nextSession = buildSession(request, outcome);
+      addSession(nextSession);
+      setSession(nextSession);
     } catch {
-      setError(GENERIC_ERROR);
-      setFailedRequest(request);
+      setError("InnerCast couldn't find a match right now. Please try again.");
     } finally {
       setIsMatching(false);
       requestAnimationFrame(() => {
         scrollRef.current?.scrollTo({ y: Math.max(0, resultsY.current - 12), animated: true });
       });
     }
-  }, []);
-
-  const handleMatch = useCallback(() => {
-    const message = text.trim();
-    if (message.length < 4) {
-      setFailedRequest(null);
-      setError('Tell me a little about what you are going through.');
-      return;
-    }
-
-    void sendMessage({ message, history });
-  }, [history, sendMessage, text]);
+  }, [addSession, avoidTopics, personaTags, selected, selectedGenres, settings, text, traits]);
 
   if (!hydrated) {
     return (
@@ -205,19 +182,7 @@ export default function DiscoverScreen() {
             </Typography>
           ) : null}
 
-          {error && !failedRequest ? (
-            <Typography type="body-sm" className="text-danger">
-              {error}
-            </Typography>
-          ) : null}
-
-          <Button
-            variant="primary"
-            onPress={() => {
-              handleMatch();
-            }}
-            isDisabled={isMatching}
-          >
+          <Button variant="primary" onPress={handleMatch} isDisabled={isMatching}>
             {isMatching ? <Spinner size="sm" /> : <Search color={accentForeground} size={17} />}
             <Button.Label>
               {isMatching ? 'Finding characters for you…' : 'Find something'}
@@ -238,37 +203,50 @@ export default function DiscoverScreen() {
                 Finding characters for you…
               </Typography>
             </Surface>
-          ) : answer ? (
-            <>
-              <SectionHeading title="For tonight" className="mb-0" />
-              <Surface variant="secondary" className="rounded-3xl p-4">
-                <MarkdownAnswer>{answer}</MarkdownAnswer>
-              </Surface>
-            </>
-          ) : error && failedRequest ? (
+          ) : error ? (
             <Surface variant="secondary" className="gap-3 rounded-3xl p-4">
               <Typography type="body-sm" className="text-danger leading-6">
                 {error}
               </Typography>
-              <Button
-                variant="secondary"
-                className="self-start"
-                onPress={() => {
-                  void sendMessage(failedRequest);
-                }}
-                isDisabled={isMatching}
-              >
+              <Button variant="secondary" className="self-start" onPress={handleMatch}>
                 <Button.Label>Try again</Button.Label>
               </Button>
             </Surface>
+          ) : session ? (
+            <>
+              <SectionHeading title="For tonight" className="mb-0" />
+              <EngineBadge
+                engine={session.engine}
+                modelName={session.modelName}
+                note={session.engineNote}
+              />
+              {session.recommendations.map((recommendation, index) => {
+                const show = getShow(recommendation.showId);
+                const trace = session.retrieval.find(
+                  (item) => item.showId === recommendation.showId,
+                );
+                if (!show) return null;
+                return (
+                  <MatchCard
+                    key={recommendation.showId}
+                    recommendation={recommendation}
+                    show={show}
+                    rank={index + 1}
+                    sessionId={session.id}
+                    matchedSituations={trace?.matchedSituations}
+                    matchedCharacterIds={trace?.characterIds}
+                  />
+                );
+              })}
+            </>
           ) : (
             <Surface variant="default" className="gap-2 rounded-3xl p-4">
               <Typography type="body-sm" weight="semibold">
                 How this works
               </Typography>
               <Typography type="body-sm" color="muted" className="leading-6">
-                Tell InnerCast what you are going through. Its answer will appear here, and your
-                next message will continue the same conversation.
+                Tell InnerCast what you are going through. It will match you with characters whose
+                stories may meet you there.
               </Typography>
             </Surface>
           )}

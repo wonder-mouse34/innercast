@@ -94,6 +94,7 @@ export default function SessionScreen() {
             rank={index + 1}
             sessionId={session.id}
             matchedSituations={traceBySituation.get(show.id)?.matchedSituations}
+            matchedCharacterIds={traceBySituation.get(show.id)?.characterIds}
           />
         );
       })}
