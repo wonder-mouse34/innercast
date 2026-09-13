@@ -6,14 +6,14 @@
       "name": "Lorelai Gilmore",
       "role": "A fast-talking, coffee-obsessed single mother in her early thirties who ran away from her wealthy Hartford parents as a teenager and built an independent life managing an inn in a quirky small town, raising her daughter as her best friend.",
       "relations": [
-        {"target": "char:gilmore_girls/rory_gilmore", "relation": "child"},
-        {"target": "char:gilmore_girls/emily_gilmore", "relation": "parent"},
-        {"target": "char:gilmore_girls/richard_gilmore", "relation": "parent"},
-        {"target": "char:gilmore_girls/luke_danes", "relation": "friend"},
-        {"target": "char:gilmore_girls/luke_danes", "relation": "partner"},
-        {"target": "char:gilmore_girls/sookie_st_james", "relation": "friend"},
-        {"target": "char:gilmore_girls/sookie_st_james", "relation": "colleague"},
-        {"target": "char:gilmore_girls/lane_kim", "relation": "friend"}
+        { "target": "char:gilmore_girls/rory_gilmore", "relation": "child" },
+        { "target": "char:gilmore_girls/emily_gilmore", "relation": "parent" },
+        { "target": "char:gilmore_girls/richard_gilmore", "relation": "parent" },
+        { "target": "char:gilmore_girls/luke_danes", "relation": "friend" },
+        { "target": "char:gilmore_girls/luke_danes", "relation": "partner" },
+        { "target": "char:gilmore_girls/sookie_st_james", "relation": "friend" },
+        { "target": "char:gilmore_girls/sookie_st_james", "relation": "colleague" },
+        { "target": "char:gilmore_girls/lane_kim", "relation": "friend" }
       ],
       "arcs": [
         {
@@ -32,12 +32,16 @@
           "start_at": "S1E1",
           "span": "S1-Revival",
           "situations": [
-            {"id": "difficult_parent", "weight": 0.95},
-            {"id": "family_expectations", "weight": 0.8},
-            {"id": "caring_for_family", "weight": 0.3}
+            { "id": "difficult_parent", "weight": 0.95 },
+            { "id": "family_expectations", "weight": 0.8 },
+            { "id": "caring_for_family", "weight": 0.3 }
           ],
           "conflicts": ["independence_vs_connection", "self_vs_family_expectations"],
-          "emotions": {"start": ["resentment", "shame", "anxiety"], "middle": ["anger", "guilt", "longing"], "end": ["acceptance", "grief", "love"]},
+          "emotions": {
+            "start": ["resentment", "shame", "anxiety"],
+            "middle": ["anger", "guilt", "longing"],
+            "end": ["acceptance", "grief", "love"]
+          },
           "ending_tone": "bittersweet",
           "intensity": "moderate",
           "warnings": ["death_of_loved_one", "grief", "serious_illness"],
@@ -80,12 +84,16 @@
           "start_at": "S1E1",
           "span": "S1-S4",
           "situations": [
-            {"id": "starting_a_business", "weight": 0.95},
-            {"id": "taking_a_big_risk", "weight": 0.7},
-            {"id": "career_change", "weight": 0.4}
+            { "id": "starting_a_business", "weight": 0.95 },
+            { "id": "taking_a_big_risk", "weight": 0.7 },
+            { "id": "career_change", "weight": 0.4 }
           ],
           "conflicts": ["safety_vs_growth", "loyalty_vs_ambition"],
-          "emotions": {"start": ["longing", "hope"], "middle": ["anxiety", "overwhelm", "determination"], "end": ["pride", "joy"]},
+          "emotions": {
+            "start": ["longing", "hope"],
+            "middle": ["anxiety", "overwhelm", "determination"],
+            "end": ["pride", "joy"]
+          },
           "ending_tone": "hopeful",
           "intensity": "light",
           "warnings": [],
@@ -125,13 +133,17 @@
           "start_at": "S1E1",
           "span": "S1-Revival",
           "situations": [
-            {"id": "falling_for_someone_unexpected", "weight": 0.7},
-            {"id": "breakup", "weight": 0.6},
-            {"id": "divorce", "weight": 0.3},
-            {"id": "identity_and_self_acceptance", "weight": 0.4}
+            { "id": "falling_for_someone_unexpected", "weight": 0.7 },
+            { "id": "breakup", "weight": 0.6 },
+            { "id": "divorce", "weight": 0.3 },
+            { "id": "identity_and_self_acceptance", "weight": 0.4 }
           ],
           "conflicts": ["independence_vs_connection", "holding_on_vs_letting_go"],
-          "emotions": {"start": ["longing", "fear"], "middle": ["confusion", "guilt", "loneliness"], "end": ["love", "peace", "acceptance"]},
+          "emotions": {
+            "start": ["longing", "fear"],
+            "middle": ["confusion", "guilt", "loneliness"],
+            "end": ["love", "peace", "acceptance"]
+          },
           "ending_tone": "hopeful",
           "intensity": "moderate",
           "warnings": ["betrayal"],
@@ -165,14 +177,14 @@
       "name": "Rory Gilmore",
       "role": "A bookish, shy sixteen-year-old who has always done everything right, dreams of Harvard and journalism, and is best friends with her young single mother in a close-knit small town.",
       "relations": [
-        {"target": "char:gilmore_girls/lorelai_gilmore", "relation": "parent"},
-        {"target": "char:gilmore_girls/richard_gilmore", "relation": "mentor"},
-        {"target": "char:gilmore_girls/emily_gilmore", "relation": "mentor"},
-        {"target": "char:gilmore_girls/lane_kim", "relation": "friend"},
-        {"target": "char:gilmore_girls/paris_geller", "relation": "rival"},
-        {"target": "char:gilmore_girls/paris_geller", "relation": "friend"},
-        {"target": "char:gilmore_girls/luke_danes", "relation": "friend"},
-        {"target": "char:gilmore_girls/sookie_st_james", "relation": "friend"}
+        { "target": "char:gilmore_girls/lorelai_gilmore", "relation": "parent" },
+        { "target": "char:gilmore_girls/richard_gilmore", "relation": "mentor" },
+        { "target": "char:gilmore_girls/emily_gilmore", "relation": "mentor" },
+        { "target": "char:gilmore_girls/lane_kim", "relation": "friend" },
+        { "target": "char:gilmore_girls/paris_geller", "relation": "rival" },
+        { "target": "char:gilmore_girls/paris_geller", "relation": "friend" },
+        { "target": "char:gilmore_girls/luke_danes", "relation": "friend" },
+        { "target": "char:gilmore_girls/sookie_st_james", "relation": "friend" }
       ],
       "arcs": [
         {
@@ -191,13 +203,17 @@
           "start_at": "S1E1",
           "span": "S1-S7",
           "situations": [
-            {"id": "coming_of_age", "weight": 0.9},
-            {"id": "family_expectations", "weight": 0.7},
-            {"id": "confidence_struggle", "weight": 0.6},
-            {"id": "identity_and_self_acceptance", "weight": 0.6}
+            { "id": "coming_of_age", "weight": 0.9 },
+            { "id": "family_expectations", "weight": 0.7 },
+            { "id": "confidence_struggle", "weight": 0.6 },
+            { "id": "identity_and_self_acceptance", "weight": 0.6 }
           ],
           "conflicts": ["perfectionism_vs_good_enough", "self_vs_family_expectations"],
-          "emotions": {"start": ["anxiety", "hope", "inadequacy"], "middle": ["shame", "confusion", "self_doubt"], "end": ["determination", "hope", "freedom"]},
+          "emotions": {
+            "start": ["anxiety", "hope", "inadequacy"],
+            "middle": ["shame", "confusion", "self_doubt"],
+            "end": ["determination", "hope", "freedom"]
+          },
           "ending_tone": "hopeful",
           "intensity": "moderate",
           "warnings": [],
@@ -242,13 +258,17 @@
           "start_at": "Revival E1",
           "span": "Revival E1-E4",
           "situations": [
-            {"id": "starting_over", "weight": 0.7},
-            {"id": "identity_and_self_acceptance", "weight": 0.7},
-            {"id": "career_change", "weight": 0.6},
-            {"id": "imposter_syndrome", "weight": 0.4}
+            { "id": "starting_over", "weight": 0.7 },
+            { "id": "identity_and_self_acceptance", "weight": 0.7 },
+            { "id": "career_change", "weight": 0.6 },
+            { "id": "imposter_syndrome", "weight": 0.4 }
           ],
           "conflicts": ["past_vs_future", "holding_on_vs_letting_go"],
-          "emotions": {"start": ["restlessness", "self_doubt", "anxiety"], "middle": ["shame", "confusion"], "end": ["determination", "dread"]},
+          "emotions": {
+            "start": ["restlessness", "self_doubt", "anxiety"],
+            "middle": ["shame", "confusion"],
+            "end": ["determination", "dread"]
+          },
           "ending_tone": "ambiguous",
           "intensity": "moderate",
           "warnings": ["betrayal"],
@@ -281,9 +301,9 @@
       "name": "Emily Gilmore",
       "role": "A formidable Hartford society matriarch, exacting with her staff and devoted to her charities, whose only daughter left home as a teenager with a baby and has kept her at arm's length ever since.",
       "relations": [
-        {"target": "char:gilmore_girls/richard_gilmore", "relation": "partner"},
-        {"target": "char:gilmore_girls/lorelai_gilmore", "relation": "child"},
-        {"target": "char:gilmore_girls/rory_gilmore", "relation": "protege"}
+        { "target": "char:gilmore_girls/richard_gilmore", "relation": "partner" },
+        { "target": "char:gilmore_girls/lorelai_gilmore", "relation": "child" },
+        { "target": "char:gilmore_girls/rory_gilmore", "relation": "protege" }
       ],
       "arcs": [
         {
@@ -302,12 +322,16 @@
           "start_at": "S1E1",
           "span": "S1-S7",
           "situations": [
-            {"id": "family_expectations", "weight": 0.8},
-            {"id": "loneliness", "weight": 0.5},
-            {"id": "caring_for_family", "weight": 0.5}
+            { "id": "family_expectations", "weight": 0.8 },
+            { "id": "loneliness", "weight": 0.5 },
+            { "id": "caring_for_family", "weight": 0.5 }
           ],
           "conflicts": ["control_vs_trust", "holding_on_vs_letting_go"],
-          "emotions": {"start": ["rejection", "resentment", "hope"], "middle": ["anger", "betrayal", "loneliness"], "end": ["acceptance", "love"]},
+          "emotions": {
+            "start": ["rejection", "resentment", "hope"],
+            "middle": ["anger", "betrayal", "loneliness"],
+            "end": ["acceptance", "love"]
+          },
           "ending_tone": "bittersweet",
           "intensity": "moderate",
           "warnings": ["serious_illness"],
@@ -347,12 +371,16 @@
           "start_at": "S4",
           "span": "S4-S5",
           "situations": [
-            {"id": "divorce", "weight": 0.7},
-            {"id": "midlife_reinvention", "weight": 0.5},
-            {"id": "loneliness", "weight": 0.5}
+            { "id": "divorce", "weight": 0.7 },
+            { "id": "midlife_reinvention", "weight": 0.5 },
+            { "id": "loneliness", "weight": 0.5 }
           ],
           "conflicts": ["holding_on_vs_letting_go", "control_vs_trust"],
-          "emotions": {"start": ["betrayal", "anger"], "middle": ["loneliness", "confusion"], "end": ["love", "relief"]},
+          "emotions": {
+            "start": ["betrayal", "anger"],
+            "middle": ["loneliness", "confusion"],
+            "end": ["love", "relief"]
+          },
           "ending_tone": "hopeful",
           "intensity": "moderate",
           "warnings": ["betrayal"],
@@ -391,13 +419,17 @@
           "start_at": "Revival E1",
           "span": "Revival E1-E4",
           "situations": [
-            {"id": "grief_and_loss", "weight": 0.9},
-            {"id": "starting_over", "weight": 0.8},
-            {"id": "midlife_reinvention", "weight": 0.6},
-            {"id": "moving_somewhere_new", "weight": 0.5}
+            { "id": "grief_and_loss", "weight": 0.9 },
+            { "id": "starting_over", "weight": 0.8 },
+            { "id": "midlife_reinvention", "weight": 0.6 },
+            { "id": "moving_somewhere_new", "weight": 0.5 }
           ],
           "conflicts": ["past_vs_future", "holding_on_vs_letting_go"],
-          "emotions": {"start": ["grief", "numbness", "loneliness"], "middle": ["anger", "confusion"], "end": ["freedom", "peace"]},
+          "emotions": {
+            "start": ["grief", "numbness", "loneliness"],
+            "middle": ["anger", "confusion"],
+            "end": ["freedom", "peace"]
+          },
           "ending_tone": "hopeful",
           "intensity": "moderate",
           "warnings": ["death_of_loved_one", "grief"],
@@ -428,9 +460,9 @@
       "name": "Richard Gilmore",
       "role": "A formal, old-fashioned insurance executive in Hartford who loves cigars, golf and his granddaughter's love of books, but has never really forgiven his daughter for leaving home.",
       "relations": [
-        {"target": "char:gilmore_girls/emily_gilmore", "relation": "partner"},
-        {"target": "char:gilmore_girls/lorelai_gilmore", "relation": "child"},
-        {"target": "char:gilmore_girls/rory_gilmore", "relation": "protege"}
+        { "target": "char:gilmore_girls/emily_gilmore", "relation": "partner" },
+        { "target": "char:gilmore_girls/lorelai_gilmore", "relation": "child" },
+        { "target": "char:gilmore_girls/rory_gilmore", "relation": "protege" }
       ],
       "arcs": [
         {
@@ -449,12 +481,16 @@
           "start_at": "S1E1",
           "span": "S1-S7",
           "situations": [
-            {"id": "family_expectations", "weight": 0.8},
-            {"id": "caring_for_family", "weight": 0.5},
-            {"id": "illness_or_injury", "weight": 0.4}
+            { "id": "family_expectations", "weight": 0.8 },
+            { "id": "caring_for_family", "weight": 0.5 },
+            { "id": "illness_or_injury", "weight": 0.4 }
           ],
           "conflicts": ["career_vs_relationships", "self_vs_family_expectations"],
-          "emotions": {"start": ["resentment", "pride"], "middle": ["fear", "longing"], "end": ["love", "acceptance"]},
+          "emotions": {
+            "start": ["resentment", "pride"],
+            "middle": ["fear", "longing"],
+            "end": ["love", "acceptance"]
+          },
           "ending_tone": "bittersweet",
           "intensity": "moderate",
           "warnings": ["serious_illness", "death_of_main_character"],
@@ -494,12 +530,16 @@
           "start_at": "S2",
           "span": "S2-S5",
           "situations": [
-            {"id": "losing_a_job", "weight": 0.9},
-            {"id": "midlife_reinvention", "weight": 0.7},
-            {"id": "starting_a_business", "weight": 0.5}
+            { "id": "losing_a_job", "weight": 0.9 },
+            { "id": "midlife_reinvention", "weight": 0.7 },
+            { "id": "starting_a_business", "weight": 0.5 }
           ],
           "conflicts": ["loyalty_vs_ambition", "past_vs_future"],
-          "emotions": {"start": ["shame", "boredom", "restlessness"], "middle": ["determination", "pride"], "end": ["self_respect", "guilt"]},
+          "emotions": {
+            "start": ["shame", "boredom", "restlessness"],
+            "middle": ["determination", "pride"],
+            "end": ["self_respect", "guilt"]
+          },
           "ending_tone": "bittersweet",
           "intensity": "light",
           "warnings": [],
@@ -529,11 +569,11 @@
       "name": "Luke Danes",
       "role": "The flannel-wearing, grumpy owner of the town diner, who has lived in the same small town all his life, hates town events, and serves the Gilmore girls coffee every morning while complaining about it.",
       "relations": [
-        {"target": "char:gilmore_girls/lorelai_gilmore", "relation": "friend"},
-        {"target": "char:gilmore_girls/lorelai_gilmore", "relation": "partner"},
-        {"target": "char:gilmore_girls/rory_gilmore", "relation": "friend"},
-        {"target": "char:gilmore_girls/lane_kim", "relation": "colleague"},
-        {"target": "char:gilmore_girls/sookie_st_james", "relation": "friend"}
+        { "target": "char:gilmore_girls/lorelai_gilmore", "relation": "friend" },
+        { "target": "char:gilmore_girls/lorelai_gilmore", "relation": "partner" },
+        { "target": "char:gilmore_girls/rory_gilmore", "relation": "friend" },
+        { "target": "char:gilmore_girls/lane_kim", "relation": "colleague" },
+        { "target": "char:gilmore_girls/sookie_st_james", "relation": "friend" }
       ],
       "arcs": [
         {
@@ -552,13 +592,17 @@
           "start_at": "S1E1",
           "span": "S1-Revival",
           "situations": [
-            {"id": "unrequited_love", "weight": 0.7},
-            {"id": "falling_for_someone_unexpected", "weight": 0.5},
-            {"id": "breakup", "weight": 0.5},
-            {"id": "divorce", "weight": 0.3}
+            { "id": "unrequited_love", "weight": 0.7 },
+            { "id": "falling_for_someone_unexpected", "weight": 0.5 },
+            { "id": "breakup", "weight": 0.5 },
+            { "id": "divorce", "weight": 0.3 }
           ],
           "conflicts": ["independence_vs_connection", "safety_vs_growth"],
-          "emotions": {"start": ["longing", "loneliness"], "middle": ["jealousy", "betrayal", "hope"], "end": ["love", "peace"]},
+          "emotions": {
+            "start": ["longing", "loneliness"],
+            "middle": ["jealousy", "betrayal", "hope"],
+            "end": ["love", "peace"]
+          },
           "ending_tone": "hopeful",
           "intensity": "moderate",
           "warnings": ["betrayal"],
@@ -599,12 +643,16 @@
           "start_at": "S2E5",
           "span": "S2-S7",
           "situations": [
-            {"id": "responsibility_you_didnt_ask_for", "weight": 0.9},
-            {"id": "becoming_a_parent", "weight": 0.6},
-            {"id": "caring_for_family", "weight": 0.6}
+            { "id": "responsibility_you_didnt_ask_for", "weight": 0.9 },
+            { "id": "becoming_a_parent", "weight": 0.6 },
+            { "id": "caring_for_family", "weight": 0.6 }
           ],
           "conflicts": ["control_vs_trust", "duty_vs_desire"],
-          "emotions": {"start": ["overwhelm", "anger"], "middle": ["guilt", "determination"], "end": ["love", "pride"]},
+          "emotions": {
+            "start": ["overwhelm", "anger"],
+            "middle": ["guilt", "determination"],
+            "end": ["love", "pride"]
+          },
           "ending_tone": "hopeful",
           "intensity": "moderate",
           "warnings": [],
@@ -634,9 +682,9 @@
       "name": "Lane Kim",
       "role": "Rory's rock-obsessed best friend, a sixteen-year-old whose strict religious mother forbids pop music, dating and make-up, so she hides CDs under her floorboards and leads a double life.",
       "relations": [
-        {"target": "char:gilmore_girls/rory_gilmore", "relation": "friend"},
-        {"target": "char:gilmore_girls/lorelai_gilmore", "relation": "mentor"},
-        {"target": "char:gilmore_girls/luke_danes", "relation": "boss"}
+        { "target": "char:gilmore_girls/rory_gilmore", "relation": "friend" },
+        { "target": "char:gilmore_girls/lorelai_gilmore", "relation": "mentor" },
+        { "target": "char:gilmore_girls/luke_danes", "relation": "boss" }
       ],
       "arcs": [
         {
@@ -655,13 +703,17 @@
           "start_at": "S1E1",
           "span": "S1-S6",
           "situations": [
-            {"id": "family_expectations", "weight": 0.9},
-            {"id": "identity_and_self_acceptance", "weight": 0.8},
-            {"id": "difficult_parent", "weight": 0.7},
-            {"id": "leaving_home", "weight": 0.5}
+            { "id": "family_expectations", "weight": 0.9 },
+            { "id": "identity_and_self_acceptance", "weight": 0.8 },
+            { "id": "difficult_parent", "weight": 0.7 },
+            { "id": "leaving_home", "weight": 0.5 }
           ],
           "conflicts": ["self_vs_family_expectations", "belonging_vs_integrity"],
-          "emotions": {"start": ["anxiety", "longing", "guilt"], "middle": ["fear", "loneliness", "determination"], "end": ["freedom", "self_respect", "acceptance"]},
+          "emotions": {
+            "start": ["anxiety", "longing", "guilt"],
+            "middle": ["fear", "loneliness", "determination"],
+            "end": ["freedom", "self_respect", "acceptance"]
+          },
           "ending_tone": "hopeful",
           "intensity": "light",
           "warnings": [],
@@ -704,12 +756,16 @@
           "start_at": "S7",
           "span": "S7-Revival",
           "situations": [
-            {"id": "becoming_a_parent", "weight": 0.9},
-            {"id": "responsibility_you_didnt_ask_for", "weight": 0.6},
-            {"id": "coming_of_age", "weight": 0.4}
+            { "id": "becoming_a_parent", "weight": 0.9 },
+            { "id": "responsibility_you_didnt_ask_for", "weight": 0.6 },
+            { "id": "coming_of_age", "weight": 0.4 }
           ],
           "conflicts": ["duty_vs_desire", "career_vs_relationships"],
-          "emotions": {"start": ["overwhelm", "fear", "grief"], "middle": ["burnout", "love"], "end": ["acceptance", "joy"]},
+          "emotions": {
+            "start": ["overwhelm", "fear", "grief"],
+            "middle": ["burnout", "love"],
+            "end": ["acceptance", "joy"]
+          },
           "ending_tone": "hopeful",
           "intensity": "light",
           "warnings": [],
@@ -740,8 +796,8 @@
       "name": "Paris Geller",
       "role": "The fiercely competitive, abrasive star student at Chilton who edits the school paper, runs for everything, and sees the new girl as a threat to her place at the top.",
       "relations": [
-        {"target": "char:gilmore_girls/rory_gilmore", "relation": "rival"},
-        {"target": "char:gilmore_girls/rory_gilmore", "relation": "friend"}
+        { "target": "char:gilmore_girls/rory_gilmore", "relation": "rival" },
+        { "target": "char:gilmore_girls/rory_gilmore", "relation": "friend" }
       ],
       "arcs": [
         {
@@ -760,13 +816,17 @@
           "start_at": "S1E2",
           "span": "S1-S3",
           "situations": [
-            {"id": "confidence_struggle", "weight": 0.7},
-            {"id": "coming_of_age", "weight": 0.7},
-            {"id": "loneliness", "weight": 0.5},
-            {"id": "finding_your_people", "weight": 0.5}
+            { "id": "confidence_struggle", "weight": 0.7 },
+            { "id": "coming_of_age", "weight": 0.7 },
+            { "id": "loneliness", "weight": 0.5 },
+            { "id": "finding_your_people", "weight": 0.5 }
           ],
           "conflicts": ["perfectionism_vs_good_enough", "independence_vs_connection"],
-          "emotions": {"start": ["anxiety", "envy", "loneliness"], "middle": ["jealousy", "inadequacy", "hope"], "end": ["acceptance", "belonging"]},
+          "emotions": {
+            "start": ["anxiety", "envy", "loneliness"],
+            "middle": ["jealousy", "inadequacy", "hope"],
+            "end": ["acceptance", "belonging"]
+          },
           "ending_tone": "hopeful",
           "intensity": "light",
           "warnings": [],
@@ -806,12 +866,16 @@
           "start_at": "S4E1",
           "span": "S4-S7",
           "situations": [
-            {"id": "becoming_a_manager", "weight": 0.8},
-            {"id": "leading_former_peers", "weight": 0.6},
-            {"id": "grief_and_loss", "weight": 0.4}
+            { "id": "becoming_a_manager", "weight": 0.8 },
+            { "id": "leading_former_peers", "weight": 0.6 },
+            { "id": "grief_and_loss", "weight": 0.4 }
           ],
           "conflicts": ["control_vs_trust", "perfectionism_vs_good_enough"],
-          "emotions": {"start": ["determination", "anxiety"], "middle": ["grief", "anger", "rejection"], "end": ["acceptance", "self_respect"]},
+          "emotions": {
+            "start": ["determination", "anxiety"],
+            "middle": ["grief", "anger", "rejection"],
+            "end": ["acceptance", "self_respect"]
+          },
           "ending_tone": "hopeful",
           "intensity": "moderate",
           "warnings": ["death_of_loved_one", "grief"],
@@ -843,11 +907,11 @@
       "name": "Sookie St. James",
       "role": "The bubbly, accident-prone, brilliant head chef at the Independence Inn and Lorelai's best friend, whose kitchen is her kingdom and whose love life is non-existent.",
       "relations": [
-        {"target": "char:gilmore_girls/lorelai_gilmore", "relation": "friend"},
-        {"target": "char:gilmore_girls/lorelai_gilmore", "relation": "colleague"},
-        {"target": "char:gilmore_girls/luke_danes", "relation": "friend"},
-        {"target": "char:gilmore_girls/luke_danes", "relation": "rival"},
-        {"target": "char:gilmore_girls/rory_gilmore", "relation": "friend"}
+        { "target": "char:gilmore_girls/lorelai_gilmore", "relation": "friend" },
+        { "target": "char:gilmore_girls/lorelai_gilmore", "relation": "colleague" },
+        { "target": "char:gilmore_girls/luke_danes", "relation": "friend" },
+        { "target": "char:gilmore_girls/luke_danes", "relation": "rival" },
+        { "target": "char:gilmore_girls/rory_gilmore", "relation": "friend" }
       ],
       "arcs": [
         {
@@ -866,12 +930,16 @@
           "start_at": "S1E1",
           "span": "S1-S7",
           "situations": [
-            {"id": "falling_for_someone_unexpected", "weight": 0.6},
-            {"id": "becoming_a_parent", "weight": 0.6},
-            {"id": "confidence_struggle", "weight": 0.4}
+            { "id": "falling_for_someone_unexpected", "weight": 0.6 },
+            { "id": "becoming_a_parent", "weight": 0.6 },
+            { "id": "confidence_struggle", "weight": 0.4 }
           ],
           "conflicts": ["control_vs_trust", "safety_vs_growth"],
-          "emotions": {"start": ["loneliness", "self_doubt"], "middle": ["anxiety", "overwhelm"], "end": ["love", "joy"]},
+          "emotions": {
+            "start": ["loneliness", "self_doubt"],
+            "middle": ["anxiety", "overwhelm"],
+            "end": ["love", "joy"]
+          },
           "ending_tone": "hopeful",
           "intensity": "light",
           "warnings": [],
@@ -911,11 +979,15 @@
           "start_at": "S2",
           "span": "S2-S4",
           "situations": [
-            {"id": "starting_a_business", "weight": 0.9},
-            {"id": "taking_a_big_risk", "weight": 0.6}
+            { "id": "starting_a_business", "weight": 0.9 },
+            { "id": "taking_a_big_risk", "weight": 0.6 }
           ],
           "conflicts": ["safety_vs_growth", "career_vs_relationships"],
-          "emotions": {"start": ["hope", "anxiety"], "middle": ["overwhelm", "determination"], "end": ["pride", "joy"]},
+          "emotions": {
+            "start": ["hope", "anxiety"],
+            "middle": ["overwhelm", "determination"],
+            "end": ["pride", "joy"]
+          },
           "ending_tone": "hopeful",
           "intensity": "light",
           "warnings": [],

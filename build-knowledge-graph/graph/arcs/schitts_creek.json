@@ -6,16 +6,16 @@
       "name": "Johnny Rose",
       "role": "A self-made video-store tycoon whose family loses its entire fortune overnight, leaving them with nothing but a tiny rural town he once bought as a joke, where they move into two adjoining motel rooms.",
       "relations": [
-        {"target": "char:schitts_creek/moira_rose", "relation": "partner"},
-        {"target": "char:schitts_creek/david_rose", "relation": "child"},
-        {"target": "char:schitts_creek/alexis_rose", "relation": "child"},
-        {"target": "char:schitts_creek/stevie_budd", "relation": "colleague"},
-        {"target": "char:schitts_creek/stevie_budd", "relation": "friend"},
-        {"target": "char:schitts_creek/stevie_budd", "relation": "protege"},
-        {"target": "char:schitts_creek/roland_schitt", "relation": "rival"},
-        {"target": "char:schitts_creek/roland_schitt", "relation": "friend"},
-        {"target": "char:schitts_creek/roland_schitt", "relation": "colleague"},
-        {"target": "char:schitts_creek/patrick_brewer", "relation": "friend"}
+        { "target": "char:schitts_creek/moira_rose", "relation": "partner" },
+        { "target": "char:schitts_creek/david_rose", "relation": "child" },
+        { "target": "char:schitts_creek/alexis_rose", "relation": "child" },
+        { "target": "char:schitts_creek/stevie_budd", "relation": "colleague" },
+        { "target": "char:schitts_creek/stevie_budd", "relation": "friend" },
+        { "target": "char:schitts_creek/stevie_budd", "relation": "protege" },
+        { "target": "char:schitts_creek/roland_schitt", "relation": "rival" },
+        { "target": "char:schitts_creek/roland_schitt", "relation": "friend" },
+        { "target": "char:schitts_creek/roland_schitt", "relation": "colleague" },
+        { "target": "char:schitts_creek/patrick_brewer", "relation": "friend" }
       ],
       "arcs": [
         {
@@ -34,13 +34,17 @@
           "start_at": "S1E1",
           "span": "S1-S6",
           "situations": [
-            {"id": "starting_over", "weight": 0.95},
-            {"id": "losing_a_job", "weight": 0.7},
-            {"id": "midlife_reinvention", "weight": 0.8},
-            {"id": "starting_a_business", "weight": 0.5}
+            { "id": "starting_over", "weight": 0.95 },
+            { "id": "losing_a_job", "weight": 0.7 },
+            { "id": "midlife_reinvention", "weight": 0.8 },
+            { "id": "starting_a_business", "weight": 0.5 }
           ],
           "conflicts": ["past_vs_future", "holding_on_vs_letting_go"],
-          "emotions": {"start": ["shame", "anxiety", "determination"], "middle": ["inadequacy", "hope"], "end": ["pride", "self_respect", "belonging"]},
+          "emotions": {
+            "start": ["shame", "anxiety", "determination"],
+            "middle": ["inadequacy", "hope"],
+            "end": ["pride", "self_respect", "belonging"]
+          },
           "ending_tone": "hopeful",
           "intensity": "light",
           "warnings": [],
@@ -82,12 +86,16 @@
           "start_at": "S1E1",
           "span": "S1-S6",
           "situations": [
-            {"id": "caring_for_family", "weight": 0.8},
-            {"id": "family_expectations", "weight": 0.5},
-            {"id": "responsibility_you_didnt_ask_for", "weight": 0.5}
+            { "id": "caring_for_family", "weight": 0.8 },
+            { "id": "family_expectations", "weight": 0.5 },
+            { "id": "responsibility_you_didnt_ask_for", "weight": 0.5 }
           ],
           "conflicts": ["career_vs_relationships", "control_vs_trust"],
-          "emotions": {"start": ["overwhelm", "guilt", "anxiety"], "middle": ["hope", "love"], "end": ["pride", "joy", "peace"]},
+          "emotions": {
+            "start": ["overwhelm", "guilt", "anxiety"],
+            "middle": ["hope", "love"],
+            "end": ["pride", "joy", "peace"]
+          },
           "ending_tone": "hopeful",
           "intensity": "light",
           "warnings": [],
@@ -117,13 +125,13 @@
       "name": "Moira Rose",
       "role": "A dramatic former soap-opera star with an unplaceable accent and a closet of wigs, who is devastated to find herself stripped of her fortune and living in a small-town motel.",
       "relations": [
-        {"target": "char:schitts_creek/johnny_rose", "relation": "partner"},
-        {"target": "char:schitts_creek/david_rose", "relation": "child"},
-        {"target": "char:schitts_creek/alexis_rose", "relation": "child"},
-        {"target": "char:schitts_creek/roland_schitt", "relation": "colleague"},
-        {"target": "char:schitts_creek/twyla_sands", "relation": "friend"},
-        {"target": "char:schitts_creek/stevie_budd", "relation": "protege"},
-        {"target": "char:schitts_creek/patrick_brewer", "relation": "protege"}
+        { "target": "char:schitts_creek/johnny_rose", "relation": "partner" },
+        { "target": "char:schitts_creek/david_rose", "relation": "child" },
+        { "target": "char:schitts_creek/alexis_rose", "relation": "child" },
+        { "target": "char:schitts_creek/roland_schitt", "relation": "colleague" },
+        { "target": "char:schitts_creek/twyla_sands", "relation": "friend" },
+        { "target": "char:schitts_creek/stevie_budd", "relation": "protege" },
+        { "target": "char:schitts_creek/patrick_brewer", "relation": "protege" }
       ],
       "arcs": [
         {
@@ -142,13 +150,17 @@
           "start_at": "S1E1",
           "span": "S1-S6",
           "situations": [
-            {"id": "identity_and_self_acceptance", "weight": 0.85},
-            {"id": "starting_over", "weight": 0.7},
-            {"id": "midlife_reinvention", "weight": 0.7},
-            {"id": "finding_your_people", "weight": 0.4}
+            { "id": "identity_and_self_acceptance", "weight": 0.85 },
+            { "id": "starting_over", "weight": 0.7 },
+            { "id": "midlife_reinvention", "weight": 0.7 },
+            { "id": "finding_your_people", "weight": 0.4 }
           ],
           "conflicts": ["past_vs_future", "holding_on_vs_letting_go"],
-          "emotions": {"start": ["grief", "shame", "loneliness"], "middle": ["determination", "hope", "self_doubt"], "end": ["pride", "confidence", "belonging"]},
+          "emotions": {
+            "start": ["grief", "shame", "loneliness"],
+            "middle": ["determination", "hope", "self_doubt"],
+            "end": ["pride", "confidence", "belonging"]
+          },
           "ending_tone": "hopeful",
           "intensity": "light",
           "warnings": [],
@@ -187,12 +199,16 @@
           "start_at": "S1E1",
           "span": "S1-S6",
           "situations": [
-            {"id": "difficult_parent", "weight": 0.6},
-            {"id": "caring_for_family", "weight": 0.6},
-            {"id": "redemption_after_mistakes", "weight": 0.5}
+            { "id": "difficult_parent", "weight": 0.6 },
+            { "id": "caring_for_family", "weight": 0.6 },
+            { "id": "redemption_after_mistakes", "weight": 0.5 }
           ],
           "conflicts": ["independence_vs_connection"],
-          "emotions": {"start": ["guilt", "inadequacy"], "middle": ["confusion", "love"], "end": ["pride", "love", "acceptance"]},
+          "emotions": {
+            "start": ["guilt", "inadequacy"],
+            "middle": ["confusion", "love"],
+            "end": ["pride", "love", "acceptance"]
+          },
           "ending_tone": "hopeful",
           "intensity": "light",
           "warnings": [],
@@ -222,13 +238,13 @@
       "name": "David Rose",
       "role": "The anxious, sarcastic, fashion-obsessed adult son of a formerly wealthy family, a former New York gallerist forced to move into a small-town motel with his parents and sister.",
       "relations": [
-        {"target": "char:schitts_creek/johnny_rose", "relation": "parent"},
-        {"target": "char:schitts_creek/moira_rose", "relation": "parent"},
-        {"target": "char:schitts_creek/alexis_rose", "relation": "sibling"},
-        {"target": "char:schitts_creek/stevie_budd", "relation": "friend"},
-        {"target": "char:schitts_creek/stevie_budd", "relation": "ex_partner"},
-        {"target": "char:schitts_creek/patrick_brewer", "relation": "partner"},
-        {"target": "char:schitts_creek/patrick_brewer", "relation": "colleague"}
+        { "target": "char:schitts_creek/johnny_rose", "relation": "parent" },
+        { "target": "char:schitts_creek/moira_rose", "relation": "parent" },
+        { "target": "char:schitts_creek/alexis_rose", "relation": "sibling" },
+        { "target": "char:schitts_creek/stevie_budd", "relation": "friend" },
+        { "target": "char:schitts_creek/stevie_budd", "relation": "ex_partner" },
+        { "target": "char:schitts_creek/patrick_brewer", "relation": "partner" },
+        { "target": "char:schitts_creek/patrick_brewer", "relation": "colleague" }
       ],
       "arcs": [
         {
@@ -247,13 +263,17 @@
           "start_at": "S1E1",
           "span": "S1-S6",
           "situations": [
-            {"id": "falling_for_someone_unexpected", "weight": 0.8},
-            {"id": "finding_your_people", "weight": 0.7},
-            {"id": "loneliness", "weight": 0.5},
-            {"id": "identity_and_self_acceptance", "weight": 0.5}
+            { "id": "falling_for_someone_unexpected", "weight": 0.8 },
+            { "id": "finding_your_people", "weight": 0.7 },
+            { "id": "loneliness", "weight": 0.5 },
+            { "id": "identity_and_self_acceptance", "weight": 0.5 }
           ],
           "conflicts": ["control_vs_trust", "independence_vs_connection"],
-          "emotions": {"start": ["loneliness", "anxiety", "self_doubt"], "middle": ["hope", "fear", "love"], "end": ["love", "belonging", "peace"]},
+          "emotions": {
+            "start": ["loneliness", "anxiety", "self_doubt"],
+            "middle": ["hope", "fear", "love"],
+            "end": ["love", "belonging", "peace"]
+          },
           "ending_tone": "hopeful",
           "intensity": "light",
           "warnings": [],
@@ -295,13 +315,17 @@
           "start_at": "S2",
           "span": "S2-S5",
           "situations": [
-            {"id": "starting_a_business", "weight": 0.85},
-            {"id": "new_job", "weight": 0.5},
-            {"id": "confidence_struggle", "weight": 0.6},
-            {"id": "taking_a_big_risk", "weight": 0.5}
+            { "id": "starting_a_business", "weight": 0.85 },
+            { "id": "new_job", "weight": 0.5 },
+            { "id": "confidence_struggle", "weight": 0.6 },
+            { "id": "taking_a_big_risk", "weight": 0.5 }
           ],
           "conflicts": ["perfectionism_vs_good_enough", "control_vs_trust"],
-          "emotions": {"start": ["inadequacy", "self_doubt"], "middle": ["determination", "anxiety"], "end": ["pride", "confidence"]},
+          "emotions": {
+            "start": ["inadequacy", "self_doubt"],
+            "middle": ["determination", "anxiety"],
+            "end": ["pride", "confidence"]
+          },
           "ending_tone": "hopeful",
           "intensity": "light",
           "warnings": [],
@@ -330,12 +354,12 @@
       "name": "Alexis Rose",
       "role": "A globe-trotting socialite who has partied with celebrities and escaped absurd scrapes abroad, and who never finished high school, now broke and stuck with her family in a small-town motel.",
       "relations": [
-        {"target": "char:schitts_creek/johnny_rose", "relation": "parent"},
-        {"target": "char:schitts_creek/moira_rose", "relation": "parent"},
-        {"target": "char:schitts_creek/david_rose", "relation": "sibling"},
-        {"target": "char:schitts_creek/twyla_sands", "relation": "friend"},
-        {"target": "char:schitts_creek/stevie_budd", "relation": "friend"},
-        {"target": "char:schitts_creek/patrick_brewer", "relation": "friend"}
+        { "target": "char:schitts_creek/johnny_rose", "relation": "parent" },
+        { "target": "char:schitts_creek/moira_rose", "relation": "parent" },
+        { "target": "char:schitts_creek/david_rose", "relation": "sibling" },
+        { "target": "char:schitts_creek/twyla_sands", "relation": "friend" },
+        { "target": "char:schitts_creek/stevie_budd", "relation": "friend" },
+        { "target": "char:schitts_creek/patrick_brewer", "relation": "friend" }
       ],
       "arcs": [
         {
@@ -354,13 +378,17 @@
           "start_at": "S1E1",
           "span": "S1-S6",
           "situations": [
-            {"id": "coming_of_age", "weight": 0.7},
-            {"id": "starting_over", "weight": 0.6},
-            {"id": "career_change", "weight": 0.6},
-            {"id": "confidence_struggle", "weight": 0.5}
+            { "id": "coming_of_age", "weight": 0.7 },
+            { "id": "starting_over", "weight": 0.6 },
+            { "id": "career_change", "weight": 0.6 },
+            { "id": "confidence_struggle", "weight": 0.5 }
           ],
           "conflicts": ["independence_vs_connection", "safety_vs_growth"],
-          "emotions": {"start": ["boredom", "restlessness", "inadequacy"], "middle": ["determination", "self_doubt"], "end": ["confidence", "self_respect", "pride"]},
+          "emotions": {
+            "start": ["boredom", "restlessness", "inadequacy"],
+            "middle": ["determination", "self_doubt"],
+            "end": ["confidence", "self_respect", "pride"]
+          },
           "ending_tone": "hopeful",
           "intensity": "light",
           "warnings": [],
@@ -400,13 +428,17 @@
           "start_at": "S1E1",
           "span": "S1-S6",
           "situations": [
-            {"id": "breakup", "weight": 0.6},
-            {"id": "long_distance", "weight": 0.5},
-            {"id": "coming_of_age", "weight": 0.5},
-            {"id": "identity_and_self_acceptance", "weight": 0.4}
+            { "id": "breakup", "weight": 0.6 },
+            { "id": "long_distance", "weight": 0.5 },
+            { "id": "coming_of_age", "weight": 0.5 },
+            { "id": "identity_and_self_acceptance", "weight": 0.4 }
           ],
           "conflicts": ["career_vs_relationships", "holding_on_vs_letting_go"],
-          "emotions": {"start": ["restlessness", "curiosity"], "middle": ["confusion", "love", "longing"], "end": ["grief", "acceptance", "self_respect"]},
+          "emotions": {
+            "start": ["restlessness", "curiosity"],
+            "middle": ["confusion", "love", "longing"],
+            "end": ["grief", "acceptance", "self_respect"]
+          },
           "ending_tone": "bittersweet",
           "intensity": "light",
           "warnings": [],
@@ -437,15 +469,15 @@
       "name": "Stevie Budd",
       "role": "The deadpan, cynical clerk at the town's run-down motel, a local who has never left and keeps most people at arm's length.",
       "relations": [
-        {"target": "char:schitts_creek/david_rose", "relation": "friend"},
-        {"target": "char:schitts_creek/david_rose", "relation": "ex_partner"},
-        {"target": "char:schitts_creek/johnny_rose", "relation": "colleague"},
-        {"target": "char:schitts_creek/johnny_rose", "relation": "mentor"},
-        {"target": "char:schitts_creek/johnny_rose", "relation": "friend"},
-        {"target": "char:schitts_creek/roland_schitt", "relation": "colleague"},
-        {"target": "char:schitts_creek/moira_rose", "relation": "mentor"},
-        {"target": "char:schitts_creek/patrick_brewer", "relation": "friend"},
-        {"target": "char:schitts_creek/alexis_rose", "relation": "friend"}
+        { "target": "char:schitts_creek/david_rose", "relation": "friend" },
+        { "target": "char:schitts_creek/david_rose", "relation": "ex_partner" },
+        { "target": "char:schitts_creek/johnny_rose", "relation": "colleague" },
+        { "target": "char:schitts_creek/johnny_rose", "relation": "mentor" },
+        { "target": "char:schitts_creek/johnny_rose", "relation": "friend" },
+        { "target": "char:schitts_creek/roland_schitt", "relation": "colleague" },
+        { "target": "char:schitts_creek/moira_rose", "relation": "mentor" },
+        { "target": "char:schitts_creek/patrick_brewer", "relation": "friend" },
+        { "target": "char:schitts_creek/alexis_rose", "relation": "friend" }
       ],
       "arcs": [
         {
@@ -464,13 +496,17 @@
           "start_at": "S1E1",
           "span": "S1-S4",
           "situations": [
-            {"id": "finding_your_people", "weight": 0.8},
-            {"id": "responsibility_you_didnt_ask_for", "weight": 0.7},
-            {"id": "confidence_struggle", "weight": 0.6},
-            {"id": "loneliness", "weight": 0.5}
+            { "id": "finding_your_people", "weight": 0.8 },
+            { "id": "responsibility_you_didnt_ask_for", "weight": 0.7 },
+            { "id": "confidence_struggle", "weight": 0.6 },
+            { "id": "loneliness", "weight": 0.5 }
           ],
           "conflicts": ["safety_vs_growth", "independence_vs_connection"],
-          "emotions": {"start": ["boredom", "loneliness", "self_doubt"], "middle": ["belonging", "anxiety", "determination"], "end": ["confidence", "belonging"]},
+          "emotions": {
+            "start": ["boredom", "loneliness", "self_doubt"],
+            "middle": ["belonging", "anxiety", "determination"],
+            "end": ["confidence", "belonging"]
+          },
           "ending_tone": "hopeful",
           "intensity": "light",
           "warnings": ["death_of_loved_one"],
@@ -508,13 +544,17 @@
           "start_at": "S5",
           "span": "S5-S6",
           "situations": [
-            {"id": "taking_a_big_risk", "weight": 0.7},
-            {"id": "confidence_struggle", "weight": 0.6},
-            {"id": "career_change", "weight": 0.5},
-            {"id": "identity_and_self_acceptance", "weight": 0.5}
+            { "id": "taking_a_big_risk", "weight": 0.7 },
+            { "id": "confidence_struggle", "weight": 0.6 },
+            { "id": "career_change", "weight": 0.5 },
+            { "id": "identity_and_self_acceptance", "weight": 0.5 }
           ],
           "conflicts": ["safety_vs_growth", "past_vs_future"],
-          "emotions": {"start": ["restlessness", "envy", "self_doubt"], "middle": ["fear", "curiosity"], "end": ["confidence", "peace", "self_respect"]},
+          "emotions": {
+            "start": ["restlessness", "envy", "self_doubt"],
+            "middle": ["fear", "curiosity"],
+            "end": ["confidence", "peace", "self_respect"]
+          },
           "ending_tone": "hopeful",
           "intensity": "light",
           "warnings": [],
@@ -543,12 +583,12 @@
       "name": "Patrick Brewer",
       "role": "An earnest, practical, business-minded newcomer to town who helps with local business registrations and takes an interest in a new shop opening up.",
       "relations": [
-        {"target": "char:schitts_creek/david_rose", "relation": "partner"},
-        {"target": "char:schitts_creek/david_rose", "relation": "colleague"},
-        {"target": "char:schitts_creek/stevie_budd", "relation": "friend"},
-        {"target": "char:schitts_creek/alexis_rose", "relation": "friend"},
-        {"target": "char:schitts_creek/johnny_rose", "relation": "friend"},
-        {"target": "char:schitts_creek/moira_rose", "relation": "mentor"}
+        { "target": "char:schitts_creek/david_rose", "relation": "partner" },
+        { "target": "char:schitts_creek/david_rose", "relation": "colleague" },
+        { "target": "char:schitts_creek/stevie_budd", "relation": "friend" },
+        { "target": "char:schitts_creek/alexis_rose", "relation": "friend" },
+        { "target": "char:schitts_creek/johnny_rose", "relation": "friend" },
+        { "target": "char:schitts_creek/moira_rose", "relation": "mentor" }
       ],
       "arcs": [
         {
@@ -567,13 +607,17 @@
           "start_at": "S3",
           "span": "S3-S6",
           "situations": [
-            {"id": "identity_and_self_acceptance", "weight": 0.9},
-            {"id": "falling_for_someone_unexpected", "weight": 0.8},
-            {"id": "starting_over", "weight": 0.5},
-            {"id": "family_expectations", "weight": 0.5}
+            { "id": "identity_and_self_acceptance", "weight": 0.9 },
+            { "id": "falling_for_someone_unexpected", "weight": 0.8 },
+            { "id": "starting_over", "weight": 0.5 },
+            { "id": "family_expectations", "weight": 0.5 }
           ],
           "conflicts": ["truth_vs_protecting_others", "self_vs_family_expectations"],
-          "emotions": {"start": ["confusion", "hope", "curiosity"], "middle": ["fear", "love", "anxiety"], "end": ["love", "freedom", "acceptance"]},
+          "emotions": {
+            "start": ["confusion", "hope", "curiosity"],
+            "middle": ["fear", "love", "anxiety"],
+            "end": ["love", "freedom", "acceptance"]
+          },
           "ending_tone": "hopeful",
           "intensity": "light",
           "warnings": [],
@@ -606,11 +650,11 @@
       "name": "Roland Schitt",
       "role": "The nosy, loud, fourth-generation mayor of the small town, who enjoys lording his local power over the newly broke family that just arrived.",
       "relations": [
-        {"target": "char:schitts_creek/johnny_rose", "relation": "rival"},
-        {"target": "char:schitts_creek/johnny_rose", "relation": "friend"},
-        {"target": "char:schitts_creek/johnny_rose", "relation": "colleague"},
-        {"target": "char:schitts_creek/moira_rose", "relation": "colleague"},
-        {"target": "char:schitts_creek/stevie_budd", "relation": "colleague"}
+        { "target": "char:schitts_creek/johnny_rose", "relation": "rival" },
+        { "target": "char:schitts_creek/johnny_rose", "relation": "friend" },
+        { "target": "char:schitts_creek/johnny_rose", "relation": "colleague" },
+        { "target": "char:schitts_creek/moira_rose", "relation": "colleague" },
+        { "target": "char:schitts_creek/stevie_budd", "relation": "colleague" }
       ],
       "arcs": [
         {
@@ -629,12 +673,16 @@
           "start_at": "S1E1",
           "span": "S1-S6",
           "situations": [
-            {"id": "redemption_after_mistakes", "weight": 0.5},
-            {"id": "becoming_a_parent", "weight": 0.6},
-            {"id": "midlife_reinvention", "weight": 0.4}
+            { "id": "redemption_after_mistakes", "weight": 0.5 },
+            { "id": "becoming_a_parent", "weight": 0.6 },
+            { "id": "midlife_reinvention", "weight": 0.4 }
           ],
           "conflicts": ["power_vs_morality", "fitting_in_vs_standing_out"],
-          "emotions": {"start": ["pride", "envy"], "middle": ["inadequacy", "hope"], "end": ["belonging", "joy"]},
+          "emotions": {
+            "start": ["pride", "envy"],
+            "middle": ["inadequacy", "hope"],
+            "end": ["belonging", "joy"]
+          },
           "ending_tone": "hopeful",
           "intensity": "light",
           "warnings": [],
@@ -665,8 +713,8 @@
       "name": "Twyla Sands",
       "role": "The endlessly cheerful waitress at the town cafe, who offers kindness to every newcomer and casually tells alarming stories about her chaotic family.",
       "relations": [
-        {"target": "char:schitts_creek/alexis_rose", "relation": "friend"},
-        {"target": "char:schitts_creek/moira_rose", "relation": "friend"}
+        { "target": "char:schitts_creek/alexis_rose", "relation": "friend" },
+        { "target": "char:schitts_creek/moira_rose", "relation": "friend" }
       ],
       "arcs": [
         {
@@ -685,12 +733,16 @@
           "start_at": "S1E1",
           "span": "S1-S6",
           "situations": [
-            {"id": "difficult_parent", "weight": 0.6},
-            {"id": "finding_your_people", "weight": 0.6},
-            {"id": "identity_and_self_acceptance", "weight": 0.5}
+            { "id": "difficult_parent", "weight": 0.6 },
+            { "id": "finding_your_people", "weight": 0.6 },
+            { "id": "identity_and_self_acceptance", "weight": 0.5 }
           ],
           "conflicts": ["fitting_in_vs_standing_out"],
-          "emotions": {"start": ["hope", "loneliness"], "middle": ["belonging", "joy"], "end": ["peace", "self_respect", "joy"]},
+          "emotions": {
+            "start": ["hope", "loneliness"],
+            "middle": ["belonging", "joy"],
+            "end": ["peace", "self_respect", "joy"]
+          },
           "ending_tone": "hopeful",
           "intensity": "light",
           "warnings": [],

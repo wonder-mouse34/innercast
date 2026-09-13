@@ -2,7 +2,7 @@
 
 **Find the character you need to watch right now.**
 
-InnerCast is a mobile app that recommends not only *what* to watch, but *who*. You describe what you are going
+InnerCast is a mobile app that recommends not only _what_ to watch, but _who_. You describe what you are going
 through — a new job, a breakup, grief, moving to a new city — in your own words or with a few taps, and InnerCast
 finds TV characters whose journey mirrors yours, explains why they might speak to you and what to watch for,
 and never spoils how their story ends.
@@ -11,11 +11,11 @@ and never spoils how their story ends.
 
 ## What is in this repository
 
-| folder | what it is |
-|---|---|
-| repository root (`app/`, `components/`, `lib/`, …) | **the mobile app** — React Native / Expo, built with [Bilt](https://bilt.me) |
+| folder                                             | what it is                                                                                                                                                                                                                                        |
+| -------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| repository root (`app/`, `components/`, `lib/`, …) | **the mobile app** — React Native / Expo, built with [Bilt](https://bilt.me)                                                                                                                                                                      |
 | [`build-knowledge-graph/`](build-knowledge-graph/) | **data preprocessing** — downloads fan-wiki articles, has LLM agents write each character's story arcs, checks them for spoilers, groups them into story patterns and cross-show links, and builds the knowledge graph (`qwen_server/graph.json`) |
-| [`innercast-api/`](innercast-api/) | **the API** — an HTTP service that turns a user's message into spoiler-free recommendations from the graph, using a self-hosted Qwen model; plus its deployment scripts and tests |
+| [`innercast-api/`](innercast-api/)                 | **the API** — an HTTP service that turns a user's message into spoiler-free recommendations from the graph, using a self-hosted Qwen model; plus its deployment scripts and tests                                                                 |
 
 Each folder has its own detailed README.
 
@@ -34,11 +34,11 @@ flowchart LR
 ```
 
 **The idea: GraphRAG with a self-hosted open-weight model.** The language model never answers from memory. Code
-first searches the *InnerCast Story Graph* — a curated knowledge graph of character journeys — and the model only
+first searches the _InnerCast Story Graph_ — a curated knowledge graph of character journeys — and the model only
 interprets the user's message, picks among the matches the graph returned, and writes the answer from
 spoiler-safe "cards".
 
-1. **The graph** ([`build-knowledge-graph/`](build-knowledge-graph/)). Every character journey (*arc*) is stored at
+1. **The graph** ([`build-knowledge-graph/`](build-knowledge-graph/)). Every character journey (_arc_) is stored at
    several levels: what happens on screen, a setting-free version with no names or places, the feelings at the
    start / middle / end and the inner conflict, a story pattern shared with other shows, and a universal theme.
    That is what lets a newly promoted manager, a young prince and a hospital surgeon match the same real-life
@@ -50,7 +50,7 @@ spoiler-safe "cards".
    (only given characters, no ending phrases, questions stay questions, right language) and asks for a rewrite if
    needed.
 3. **The app** (this repository's root). The Discover screen sends the typed text, the selected situation chips
-   (30, e.g. *Grief*, *Burnout*, *Just need to laugh*) and genre chips (14) plus the conversation history to the
+   (30, e.g. _Grief_, _Burnout_, _Just need to laugh_) and genre chips (14) plus the conversation history to the
    `askInnerCast` automation in Bilt Cloud, which holds the API address and key as backend secrets, and renders the
    Markdown answer. The app itself never talks to a language model and contains no keys.
 
@@ -74,15 +74,15 @@ conversations.)
 
 ## In numbers
 
-| | |
-|---|---|
-| shows | 28 (live-action, animated, anime; US, UK, Canada, Japan, South Korea, Spain, Germany, France) |
-| characters · story arcs | 237 · 489 |
-| story patterns · themes | 75 · 13 |
-| cross-show links | ~610, each with a one-sentence explanation |
-| tap buttons | 30 situations · 14 genres |
-| answer time | typically 7–9 s; up to about 30 s when an answer needs a rewrite |
-| tests | all 13 test messages pass (recommendations, filters, spoiler question, crisis, German, buttons) |
+|                         |                                                                                                 |
+| ----------------------- | ----------------------------------------------------------------------------------------------- |
+| shows                   | 28 (live-action, animated, anime; US, UK, Canada, Japan, South Korea, Spain, Germany, France)   |
+| characters · story arcs | 237 · 489                                                                                       |
+| story patterns · themes | 75 · 13                                                                                         |
+| cross-show links        | ~610, each with a one-sentence explanation                                                      |
+| tap buttons             | 30 situations · 14 genres                                                                       |
+| answer time             | typically 7–9 s; up to about 30 s when an answer needs a rewrite                                |
+| tests                   | all 13 test messages pass (recommendations, filters, spoiler question, crisis, German, buttons) |
 
 ## Quick start
 

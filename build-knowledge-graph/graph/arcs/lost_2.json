@@ -6,13 +6,13 @@
       "name": "Benjamin Linus",
       "role": "A soft-spoken stranger the survivors catch in the jungle in season 2, who says he is a balloonist stranded on the island.",
       "relations": [
-        {"target": "char:lost/john_locke", "relation": "rival"},
-        {"target": "char:lost/jack_shephard", "relation": "enemy"},
-        {"target": "char:lost/juliet_burke", "relation": "colleague"},
-        {"target": "char:lost/sayid_jarrah", "relation": "enemy"},
-        {"target": "char:lost/desmond_hume", "relation": "enemy"},
-        {"target": "char:lost/james_sawyer_ford", "relation": "enemy"},
-        {"target": "char:lost/hugo_hurley_reyes", "relation": "boss"}
+        { "target": "char:lost/john_locke", "relation": "rival" },
+        { "target": "char:lost/jack_shephard", "relation": "enemy" },
+        { "target": "char:lost/juliet_burke", "relation": "colleague" },
+        { "target": "char:lost/sayid_jarrah", "relation": "enemy" },
+        { "target": "char:lost/desmond_hume", "relation": "enemy" },
+        { "target": "char:lost/james_sawyer_ford", "relation": "enemy" },
+        { "target": "char:lost/hugo_hurley_reyes", "relation": "boss" }
       ],
       "arcs": [
         {
@@ -31,16 +31,26 @@
           "start_at": "S3E1",
           "span": "S3-S6",
           "situations": [
-            {"id": "imposter_syndrome", "weight": 0.7},
-            {"id": "identity_and_self_acceptance", "weight": 0.7},
-            {"id": "redemption_after_mistakes", "weight": 0.7},
-            {"id": "difficult_parent", "weight": 0.4}
+            { "id": "imposter_syndrome", "weight": 0.7 },
+            { "id": "identity_and_self_acceptance", "weight": 0.7 },
+            { "id": "redemption_after_mistakes", "weight": 0.7 },
+            { "id": "difficult_parent", "weight": 0.4 }
           ],
           "conflicts": ["power_vs_morality", "control_vs_trust"],
-          "emotions": {"start": ["pride", "envy"], "middle": ["jealousy", "rejection", "anger"], "end": ["guilt", "acceptance"]},
+          "emotions": {
+            "start": ["pride", "envy"],
+            "middle": ["jealousy", "rejection", "anger"],
+            "end": ["guilt", "acceptance"]
+          },
           "ending_tone": "bittersweet",
           "intensity": "heavy",
-          "warnings": ["abuse", "war_and_violence", "betrayal", "death_of_main_character", "death_of_loved_one"],
+          "warnings": [
+            "abuse",
+            "war_and_violence",
+            "betrayal",
+            "death_of_main_character",
+            "death_of_loved_one"
+          ],
           "example_user_messages": [
             "I've spent years making myself indispensable at work, and a new hire just got the recognition I never got. I hate how jealous I feel.",
             "My dad blamed me for my mom's death my whole childhood. Now I manage people and I realise I control everything because I'm scared of not mattering.",
@@ -80,12 +90,16 @@
           "start_at": "S3",
           "span": "S3-S6",
           "situations": [
-            {"id": "caring_for_family", "weight": 0.8},
-            {"id": "grief_and_loss", "weight": 0.7},
-            {"id": "redemption_after_mistakes", "weight": 0.5}
+            { "id": "caring_for_family", "weight": 0.8 },
+            { "id": "grief_and_loss", "weight": 0.7 },
+            { "id": "redemption_after_mistakes", "weight": 0.5 }
           ],
           "conflicts": ["control_vs_trust", "loyalty_vs_ambition"],
-          "emotions": {"start": ["fear", "love"], "middle": ["anger", "dread", "grief"], "end": ["guilt", "love"]},
+          "emotions": {
+            "start": ["fear", "love"],
+            "middle": ["anger", "dread", "grief"],
+            "end": ["guilt", "love"]
+          },
           "ending_tone": "bittersweet",
           "intensity": "heavy",
           "warnings": ["death_of_loved_one", "child_endangerment", "grief", "war_and_violence"],
@@ -118,11 +132,11 @@
       "name": "Charlie Pace",
       "role": "A cheeky English bassist from a band that had one hit, who survives the crash carrying a secret habit he is trying to hide.",
       "relations": [
-        {"target": "char:lost/claire_littleton", "relation": "partner"},
-        {"target": "char:lost/hugo_hurley_reyes", "relation": "friend"},
-        {"target": "char:lost/desmond_hume", "relation": "friend"},
-        {"target": "char:lost/john_locke", "relation": "mentor"},
-        {"target": "char:lost/sayid_jarrah", "relation": "friend"}
+        { "target": "char:lost/claire_littleton", "relation": "partner" },
+        { "target": "char:lost/hugo_hurley_reyes", "relation": "friend" },
+        { "target": "char:lost/desmond_hume", "relation": "friend" },
+        { "target": "char:lost/john_locke", "relation": "mentor" },
+        { "target": "char:lost/sayid_jarrah", "relation": "friend" }
       ],
       "arcs": [
         {
@@ -141,13 +155,17 @@
           "start_at": "S1E1",
           "span": "S1-S2",
           "situations": [
-            {"id": "addiction_and_recovery", "weight": 1.0},
-            {"id": "confidence_struggle", "weight": 0.6},
-            {"id": "redemption_after_mistakes", "weight": 0.7},
-            {"id": "falling_for_someone_unexpected", "weight": 0.4}
+            { "id": "addiction_and_recovery", "weight": 1.0 },
+            { "id": "confidence_struggle", "weight": 0.6 },
+            { "id": "redemption_after_mistakes", "weight": 0.7 },
+            { "id": "falling_for_someone_unexpected", "weight": 0.4 }
           ],
           "conflicts": ["holding_on_vs_letting_go", "truth_vs_protecting_others"],
-          "emotions": {"start": ["shame", "self_doubt", "inadequacy"], "middle": ["rejection", "loneliness", "guilt"], "end": ["self_respect", "hope", "love"]},
+          "emotions": {
+            "start": ["shame", "self_doubt", "inadequacy"],
+            "middle": ["rejection", "loneliness", "guilt"],
+            "end": ["self_respect", "hope", "love"]
+          },
           "ending_tone": "hopeful",
           "intensity": "moderate",
           "warnings": ["addiction", "child_endangerment", "war_and_violence", "betrayal"],
@@ -189,13 +207,17 @@
           "start_at": "S3E8",
           "span": "S3",
           "situations": [
-            {"id": "taking_a_big_risk", "weight": 0.8},
-            {"id": "redemption_after_mistakes", "weight": 0.6},
-            {"id": "confidence_struggle", "weight": 0.5},
-            {"id": "grief_and_loss", "weight": 0.5}
+            { "id": "taking_a_big_risk", "weight": 0.8 },
+            { "id": "redemption_after_mistakes", "weight": 0.6 },
+            { "id": "confidence_struggle", "weight": 0.5 },
+            { "id": "grief_and_loss", "weight": 0.5 }
           ],
           "conflicts": ["holding_on_vs_letting_go", "truth_vs_protecting_others"],
-          "emotions": {"start": ["dread", "fear", "self_doubt"], "middle": ["anger", "love", "determination"], "end": ["acceptance", "love", "self_respect"]},
+          "emotions": {
+            "start": ["dread", "fear", "self_doubt"],
+            "middle": ["anger", "love", "determination"],
+            "end": ["acceptance", "love", "self_respect"]
+          },
           "ending_tone": "bittersweet",
           "intensity": "heavy",
           "warnings": ["death_of_main_character", "war_and_violence", "grief"],
@@ -228,13 +250,13 @@
       "name": "Claire Littleton",
       "role": "A young, heavily pregnant Australian woman who was flying to Los Angeles to give her baby up for adoption.",
       "relations": [
-        {"target": "char:lost/charlie_pace", "relation": "partner"},
-        {"target": "char:lost/jack_shephard", "relation": "sibling"},
-        {"target": "char:lost/kate_austen", "relation": "friend"},
-        {"target": "char:lost/john_locke", "relation": "friend"},
-        {"target": "char:lost/james_sawyer_ford", "relation": "friend"},
-        {"target": "char:lost/sun_hwa_kwon", "relation": "friend"},
-        {"target": "char:lost/desmond_hume", "relation": "friend"}
+        { "target": "char:lost/charlie_pace", "relation": "partner" },
+        { "target": "char:lost/jack_shephard", "relation": "sibling" },
+        { "target": "char:lost/kate_austen", "relation": "friend" },
+        { "target": "char:lost/john_locke", "relation": "friend" },
+        { "target": "char:lost/james_sawyer_ford", "relation": "friend" },
+        { "target": "char:lost/sun_hwa_kwon", "relation": "friend" },
+        { "target": "char:lost/desmond_hume", "relation": "friend" }
       ],
       "arcs": [
         {
@@ -253,16 +275,26 @@
           "start_at": "S1E1",
           "span": "S1-S3",
           "situations": [
-            {"id": "becoming_a_parent", "weight": 1.0},
-            {"id": "responsibility_you_didnt_ask_for", "weight": 0.7},
-            {"id": "breakup", "weight": 0.4},
-            {"id": "starting_over", "weight": 0.4}
+            { "id": "becoming_a_parent", "weight": 1.0 },
+            { "id": "responsibility_you_didnt_ask_for", "weight": 0.7 },
+            { "id": "breakup", "weight": 0.4 },
+            { "id": "starting_over", "weight": 0.4 }
           ],
           "conflicts": ["control_vs_trust", "independence_vs_connection"],
-          "emotions": {"start": ["fear", "loneliness", "self_doubt"], "middle": ["anxiety", "betrayal", "determination"], "end": ["love", "confidence", "hope"]},
+          "emotions": {
+            "start": ["fear", "loneliness", "self_doubt"],
+            "middle": ["anxiety", "betrayal", "determination"],
+            "end": ["love", "confidence", "hope"]
+          },
           "ending_tone": "hopeful",
           "intensity": "moderate",
-          "warnings": ["child_endangerment", "medical_trauma", "addiction", "war_and_violence", "betrayal"],
+          "warnings": [
+            "child_endangerment",
+            "medical_trauma",
+            "addiction",
+            "war_and_violence",
+            "betrayal"
+          ],
           "example_user_messages": [
             "I'm pregnant, my boyfriend just walked out, and I honestly don't know if I can raise this baby on my own.",
             "I was going to give my baby up for adoption, and now I can't imagine it. Am I being selfish?",
@@ -301,16 +333,26 @@
           "start_at": "S4E1",
           "span": "S4-S6",
           "situations": [
-            {"id": "grief_and_loss", "weight": 0.8},
-            {"id": "loneliness", "weight": 0.9},
-            {"id": "identity_and_self_acceptance", "weight": 0.5},
-            {"id": "caring_for_family", "weight": 0.5}
+            { "id": "grief_and_loss", "weight": 0.8 },
+            { "id": "loneliness", "weight": 0.9 },
+            { "id": "identity_and_self_acceptance", "weight": 0.5 },
+            { "id": "caring_for_family", "weight": 0.5 }
           ],
           "conflicts": ["holding_on_vs_letting_go", "control_vs_trust"],
-          "emotions": {"start": ["grief", "loneliness", "confusion"], "middle": ["anger", "resentment", "rejection"], "end": ["shame", "acceptance", "hope"]},
+          "emotions": {
+            "start": ["grief", "loneliness", "confusion"],
+            "middle": ["anger", "resentment", "rejection"],
+            "end": ["shame", "acceptance", "hope"]
+          },
           "ending_tone": "bittersweet",
           "intensity": "heavy",
-          "warnings": ["death_of_loved_one", "grief", "war_and_violence", "child_endangerment", "betrayal"],
+          "warnings": [
+            "death_of_loved_one",
+            "grief",
+            "war_and_violence",
+            "child_endangerment",
+            "betrayal"
+          ],
           "example_user_messages": [
             "After my partner died I shut everyone out, and now I barely recognise the person I've become.",
             "I've been so isolated for so long that I don't know how to be around people anymore.",
@@ -340,12 +382,12 @@
       "name": "Desmond Hume",
       "role": "A Scotsman the survivors find living alone in an underground station on the island, where he has been pushing a button every 108 minutes for years.",
       "relations": [
-        {"target": "char:lost/charlie_pace", "relation": "friend"},
-        {"target": "char:lost/john_locke", "relation": "friend"},
-        {"target": "char:lost/jack_shephard", "relation": "friend"},
-        {"target": "char:lost/sayid_jarrah", "relation": "friend"},
-        {"target": "char:lost/hugo_hurley_reyes", "relation": "friend"},
-        {"target": "char:lost/benjamin_linus", "relation": "enemy"}
+        { "target": "char:lost/charlie_pace", "relation": "friend" },
+        { "target": "char:lost/john_locke", "relation": "friend" },
+        { "target": "char:lost/jack_shephard", "relation": "friend" },
+        { "target": "char:lost/sayid_jarrah", "relation": "friend" },
+        { "target": "char:lost/hugo_hurley_reyes", "relation": "friend" },
+        { "target": "char:lost/benjamin_linus", "relation": "enemy" }
       ],
       "arcs": [
         {
@@ -364,13 +406,17 @@
           "start_at": "S2E1",
           "span": "S2-S4",
           "situations": [
-            {"id": "confidence_struggle", "weight": 0.9},
-            {"id": "long_distance", "weight": 0.7},
-            {"id": "loneliness", "weight": 0.6},
-            {"id": "family_expectations", "weight": 0.5}
+            { "id": "confidence_struggle", "weight": 0.9 },
+            { "id": "long_distance", "weight": 0.7 },
+            { "id": "loneliness", "weight": 0.6 },
+            { "id": "family_expectations", "weight": 0.5 }
           ],
           "conflicts": ["safety_vs_growth", "self_vs_family_expectations"],
-          "emotions": {"start": ["loneliness", "inadequacy", "fear"], "middle": ["guilt", "longing", "determination"], "end": ["love", "relief", "self_respect"]},
+          "emotions": {
+            "start": ["loneliness", "inadequacy", "fear"],
+            "middle": ["guilt", "longing", "determination"],
+            "end": ["love", "relief", "self_respect"]
+          },
           "ending_tone": "hopeful",
           "intensity": "moderate",
           "warnings": ["self_harm_or_suicide", "war_and_violence", "death_of_loved_one", "grief"],
@@ -412,14 +458,23 @@
           "start_at": "S3E8",
           "span": "S3",
           "situations": [
-            {"id": "responsibility_you_didnt_ask_for", "weight": 0.9},
-            {"id": "grief_and_loss", "weight": 0.7}
+            { "id": "responsibility_you_didnt_ask_for", "weight": 0.9 },
+            { "id": "grief_and_loss", "weight": 0.7 }
           ],
           "conflicts": ["truth_vs_protecting_others", "holding_on_vs_letting_go"],
-          "emotions": {"start": ["dread", "confusion", "guilt"], "middle": ["anxiety", "determination"], "end": ["grief", "hope"]},
+          "emotions": {
+            "start": ["dread", "confusion", "guilt"],
+            "middle": ["anxiety", "determination"],
+            "end": ["grief", "hope"]
+          },
           "ending_tone": "bittersweet",
           "intensity": "heavy",
-          "warnings": ["death_of_loved_one", "death_of_main_character", "grief", "war_and_violence"],
+          "warnings": [
+            "death_of_loved_one",
+            "death_of_main_character",
+            "grief",
+            "war_and_violence"
+          ],
           "example_user_messages": [
             "I can see my friend heading toward something terrible and nobody believes me.",
             "Should I tell my friend what I know, even if it scares him, or keep it to myself and try to fix it?",
@@ -448,13 +503,13 @@
       "name": "Sun-Hwa Kwon",
       "role": "The quiet, sheltered daughter of a powerful Korean businessman, stranded on the island with her controlling husband and apparently speaking no English.",
       "relations": [
-        {"target": "char:lost/kate_austen", "relation": "friend"},
-        {"target": "char:lost/hugo_hurley_reyes", "relation": "friend"},
-        {"target": "char:lost/jack_shephard", "relation": "friend"},
-        {"target": "char:lost/claire_littleton", "relation": "friend"},
-        {"target": "char:lost/sayid_jarrah", "relation": "friend"},
-        {"target": "char:lost/juliet_burke", "relation": "rival"},
-        {"target": "char:lost/benjamin_linus", "relation": "enemy"}
+        { "target": "char:lost/kate_austen", "relation": "friend" },
+        { "target": "char:lost/hugo_hurley_reyes", "relation": "friend" },
+        { "target": "char:lost/jack_shephard", "relation": "friend" },
+        { "target": "char:lost/claire_littleton", "relation": "friend" },
+        { "target": "char:lost/sayid_jarrah", "relation": "friend" },
+        { "target": "char:lost/juliet_burke", "relation": "rival" },
+        { "target": "char:lost/benjamin_linus", "relation": "enemy" }
       ],
       "arcs": [
         {
@@ -473,13 +528,17 @@
           "start_at": "S1E1",
           "span": "S1-S4",
           "situations": [
-            {"id": "identity_and_self_acceptance", "weight": 0.8},
-            {"id": "family_expectations", "weight": 0.7},
-            {"id": "divorce", "weight": 0.5},
-            {"id": "standing_up_to_authority", "weight": 0.5}
+            { "id": "identity_and_self_acceptance", "weight": 0.8 },
+            { "id": "family_expectations", "weight": 0.7 },
+            { "id": "divorce", "weight": 0.5 },
+            { "id": "standing_up_to_authority", "weight": 0.5 }
           ],
           "conflicts": ["duty_vs_desire", "independence_vs_connection"],
-          "emotions": {"start": ["loneliness", "fear", "guilt"], "middle": ["determination", "shame", "hope"], "end": ["confidence", "love", "relief"]},
+          "emotions": {
+            "start": ["loneliness", "fear", "guilt"],
+            "middle": ["determination", "shame", "hope"],
+            "end": ["confidence", "love", "relief"]
+          },
           "ending_tone": "hopeful",
           "intensity": "moderate",
           "warnings": ["self_harm_or_suicide", "betrayal", "war_and_violence"],
@@ -521,16 +580,26 @@
           "start_at": "S4",
           "span": "S4-S6",
           "situations": [
-            {"id": "grief_and_loss", "weight": 1.0},
-            {"id": "difficult_parent", "weight": 0.6},
-            {"id": "becoming_a_parent", "weight": 0.5},
-            {"id": "standing_up_to_authority", "weight": 0.4}
+            { "id": "grief_and_loss", "weight": 1.0 },
+            { "id": "difficult_parent", "weight": 0.6 },
+            { "id": "becoming_a_parent", "weight": 0.5 },
+            { "id": "standing_up_to_authority", "weight": 0.4 }
           ],
           "conflicts": ["revenge_vs_forgiveness", "duty_vs_desire"],
-          "emotions": {"start": ["grief", "anger", "resentment"], "middle": ["determination", "longing", "hope"], "end": ["love", "joy", "grief"]},
+          "emotions": {
+            "start": ["grief", "anger", "resentment"],
+            "middle": ["determination", "longing", "hope"],
+            "end": ["love", "joy", "grief"]
+          },
           "ending_tone": "tragic",
           "intensity": "heavy",
-          "warnings": ["death_of_loved_one", "death_of_main_character", "grief", "war_and_violence", "bleak_ending"],
+          "warnings": [
+            "death_of_loved_one",
+            "death_of_main_character",
+            "grief",
+            "war_and_violence",
+            "bleak_ending"
+          ],
           "example_user_messages": [
             "Since my husband died all I can feel is anger, and I want the people responsible to pay.",
             "I finally took control of my father's business away from him. I thought I'd feel better.",
@@ -560,11 +629,11 @@
       "name": "Juliet Burke",
       "role": "A poised fertility doctor introduced in season 3, living far from home in a secluded community that keeps to itself.",
       "relations": [
-        {"target": "char:lost/benjamin_linus", "relation": "boss"},
-        {"target": "char:lost/jack_shephard", "relation": "friend"},
-        {"target": "char:lost/james_sawyer_ford", "relation": "partner"},
-        {"target": "char:lost/kate_austen", "relation": "rival"},
-        {"target": "char:lost/sun_hwa_kwon", "relation": "colleague"}
+        { "target": "char:lost/benjamin_linus", "relation": "boss" },
+        { "target": "char:lost/jack_shephard", "relation": "friend" },
+        { "target": "char:lost/james_sawyer_ford", "relation": "partner" },
+        { "target": "char:lost/kate_austen", "relation": "rival" },
+        { "target": "char:lost/sun_hwa_kwon", "relation": "colleague" }
       ],
       "arcs": [
         {
@@ -583,16 +652,26 @@
           "start_at": "S3E1",
           "span": "S3-S4",
           "situations": [
-            {"id": "standing_up_to_authority", "weight": 0.9},
-            {"id": "finding_your_people", "weight": 0.7},
-            {"id": "burnout_at_work", "weight": 0.5},
-            {"id": "starting_over", "weight": 0.4}
+            { "id": "standing_up_to_authority", "weight": 0.9 },
+            { "id": "finding_your_people", "weight": 0.7 },
+            { "id": "burnout_at_work", "weight": 0.5 },
+            { "id": "starting_over", "weight": 0.4 }
           ],
           "conflicts": ["belonging_vs_integrity", "control_vs_trust"],
-          "emotions": {"start": ["loneliness", "resentment", "fear"], "middle": ["guilt", "anxiety", "determination"], "end": ["belonging", "relief", "loneliness"]},
+          "emotions": {
+            "start": ["loneliness", "resentment", "fear"],
+            "middle": ["guilt", "anxiety", "determination"],
+            "end": ["belonging", "relief", "loneliness"]
+          },
           "ending_tone": "bittersweet",
           "intensity": "heavy",
-          "warnings": ["abuse", "death_of_loved_one", "betrayal", "war_and_violence", "medical_trauma"],
+          "warnings": [
+            "abuse",
+            "death_of_loved_one",
+            "betrayal",
+            "war_and_violence",
+            "medical_trauma"
+          ],
           "example_user_messages": [
             "My boss won't let me leave. Every time I ask, there's another reason I have to stay.",
             "I took this job to get away from my ex, and now my manager is obsessed with me and it's worse.",
@@ -631,13 +710,17 @@
           "start_at": "S5E8",
           "span": "S5-S6",
           "situations": [
-            {"id": "falling_for_someone_unexpected", "weight": 0.8},
-            {"id": "starting_over", "weight": 0.8},
-            {"id": "moving_somewhere_new", "weight": 0.4},
-            {"id": "divorce", "weight": 0.3}
+            { "id": "falling_for_someone_unexpected", "weight": 0.8 },
+            { "id": "starting_over", "weight": 0.8 },
+            { "id": "moving_somewhere_new", "weight": 0.4 },
+            { "id": "divorce", "weight": 0.3 }
           ],
           "conflicts": ["holding_on_vs_letting_go", "past_vs_future"],
-          "emotions": {"start": ["restlessness", "loneliness"], "middle": ["love", "joy", "jealousy"], "end": ["fear", "love", "acceptance"]},
+          "emotions": {
+            "start": ["restlessness", "loneliness"],
+            "middle": ["love", "joy", "jealousy"],
+            "end": ["fear", "love", "acceptance"]
+          },
           "ending_tone": "bittersweet",
           "intensity": "heavy",
           "warnings": ["death_of_main_character", "grief", "war_and_violence"],

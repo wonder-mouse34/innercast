@@ -61,30 +61,15 @@
               "weight": 0.6
             }
           ],
-          "conflicts": [
-            "belonging_vs_integrity",
-            "truth_vs_protecting_others"
-          ],
+          "conflicts": ["belonging_vs_integrity", "truth_vs_protecting_others"],
           "emotions": {
-            "start": [
-              "fear",
-              "shame"
-            ],
-            "middle": [
-              "confusion",
-              "determination"
-            ],
-            "end": [
-              "self_respect",
-              "peace"
-            ]
+            "start": ["fear", "shame"],
+            "middle": ["confusion", "determination"],
+            "end": ["self_respect", "peace"]
           },
           "ending_tone": "bittersweet",
           "intensity": "light",
-          "warnings": [
-            "betrayal",
-            "death_of_main_character"
-          ],
+          "warnings": ["betrayal", "death_of_main_character"],
           "example_user_messages": [
             "I've been a pretty selfish person my whole life and I'm only now realising it. Is it too late to change?",
             "Everyone around me seems so genuinely good and I feel like a fraud who's going to get found out.",
@@ -139,32 +124,15 @@
               "weight": 0.6
             }
           ],
-          "conflicts": [
-            "independence_vs_connection",
-            "holding_on_vs_letting_go"
-          ],
+          "conflicts": ["independence_vs_connection", "holding_on_vs_letting_go"],
           "emotions": {
-            "start": [
-              "loneliness",
-              "resentment"
-            ],
-            "middle": [
-              "longing",
-              "fear"
-            ],
-            "end": [
-              "love",
-              "belonging",
-              "acceptance"
-            ]
+            "start": ["loneliness", "resentment"],
+            "middle": ["longing", "fear"],
+            "end": ["love", "belonging", "acceptance"]
           },
           "ending_tone": "bittersweet",
           "intensity": "moderate",
-          "warnings": [
-            "grief",
-            "addiction",
-            "death_of_main_character"
-          ],
+          "warnings": ["grief", "addiction", "death_of_main_character"],
           "example_user_messages": [
             "I grew up basically raising myself and now I don't know how to let anyone get close.",
             "Whenever someone is nice to me I get suspicious and push them away.",
@@ -213,29 +181,15 @@
               "weight": 0.6
             }
           ],
-          "conflicts": [
-            "duty_vs_desire",
-            "control_vs_trust"
-          ],
+          "conflicts": ["duty_vs_desire", "control_vs_trust"],
           "emotions": {
-            "start": [
-              "overwhelm",
-              "self_doubt"
-            ],
-            "middle": [
-              "burnout",
-              "determination"
-            ],
-            "end": [
-              "confidence",
-              "peace"
-            ]
+            "start": ["overwhelm", "self_doubt"],
+            "middle": ["burnout", "determination"],
+            "end": ["confidence", "peace"]
           },
           "ending_tone": "bittersweet",
           "intensity": "moderate",
-          "warnings": [
-            "grief"
-          ],
+          "warnings": ["grief"],
           "example_user_messages": [
             "I just got put in charge of a team and I feel like the least qualified person there.",
             "I've always been a lone wolf and now people are relying on me. I'm freaking out.",
@@ -316,29 +270,15 @@
               "weight": 0.5
             }
           ],
-          "conflicts": [
-            "perfectionism_vs_good_enough",
-            "control_vs_trust"
-          ],
+          "conflicts": ["perfectionism_vs_good_enough", "control_vs_trust"],
           "emotions": {
-            "start": [
-              "anxiety",
-              "self_doubt"
-            ],
-            "middle": [
-              "overwhelm",
-              "confusion"
-            ],
-            "end": [
-              "peace",
-              "acceptance"
-            ]
+            "start": ["anxiety", "self_doubt"],
+            "middle": ["overwhelm", "confusion"],
+            "end": ["peace", "acceptance"]
           },
           "ending_tone": "bittersweet",
           "intensity": "light",
-          "warnings": [
-            "death_of_main_character"
-          ],
+          "warnings": ["death_of_main_character"],
           "example_user_messages": [
             "I overthink every single decision to the point where I literally feel sick.",
             "I'm so scared of choosing wrong that I end up not choosing at all, and people are getting frustrated with me.",
@@ -388,30 +328,15 @@
               "weight": 0.4
             }
           ],
-          "conflicts": [
-            "holding_on_vs_letting_go",
-            "independence_vs_connection"
-          ],
+          "conflicts": ["holding_on_vs_letting_go", "independence_vs_connection"],
           "emotions": {
-            "start": [
-              "anxiety",
-              "confusion"
-            ],
-            "middle": [
-              "love",
-              "longing"
-            ],
-            "end": [
-              "peace",
-              "acceptance"
-            ]
+            "start": ["anxiety", "confusion"],
+            "middle": ["love", "longing"],
+            "end": ["peace", "acceptance"]
           },
           "ending_tone": "bittersweet",
           "intensity": "moderate",
-          "warnings": [
-            "grief",
-            "death_of_main_character"
-          ],
+          "warnings": ["grief", "death_of_main_character"],
           "example_user_messages": [
             "I'm falling for someone who is my total opposite and I don't know if it can work.",
             "My partner pushes me out of my comfort zone and I love it and hate it at the same time.",
@@ -493,29 +418,15 @@
               "weight": 0.6
             }
           ],
-          "conflicts": [
-            "self_vs_family_expectations",
-            "fitting_in_vs_standing_out"
-          ],
+          "conflicts": ["self_vs_family_expectations", "fitting_in_vs_standing_out"],
           "emotions": {
-            "start": [
-              "inadequacy",
-              "envy"
-            ],
-            "middle": [
-              "rejection",
-              "self_doubt"
-            ],
-            "end": [
-              "self_respect",
-              "acceptance"
-            ]
+            "start": ["inadequacy", "envy"],
+            "middle": ["rejection", "self_doubt"],
+            "end": ["self_respect", "acceptance"]
           },
           "ending_tone": "hopeful",
           "intensity": "light",
-          "warnings": [
-            "death_of_main_character"
-          ],
+          "warnings": ["death_of_main_character"],
           "example_user_messages": [
             "My parents always loved my sister more and I've spent my whole life trying to prove myself.",
             "I do a lot of good things but honestly I think I mostly want people to notice.",
@@ -564,23 +475,11 @@
               "weight": 0.7
             }
           ],
-          "conflicts": [
-            "past_vs_future",
-            "self_vs_family_expectations"
-          ],
+          "conflicts": ["past_vs_future", "self_vs_family_expectations"],
           "emotions": {
-            "start": [
-              "confusion",
-              "inadequacy"
-            ],
-            "middle": [
-              "determination",
-              "curiosity"
-            ],
-            "end": [
-              "pride",
-              "confidence"
-            ]
+            "start": ["confusion", "inadequacy"],
+            "middle": ["determination", "curiosity"],
+            "end": ["pride", "confidence"]
           },
           "ending_tone": "hopeful",
           "intensity": "light",
@@ -661,23 +560,11 @@
               "weight": 0.5
             }
           ],
-          "conflicts": [
-            "fitting_in_vs_standing_out",
-            "belonging_vs_integrity"
-          ],
+          "conflicts": ["fitting_in_vs_standing_out", "belonging_vs_integrity"],
           "emotions": {
-            "start": [
-              "fear",
-              "loneliness"
-            ],
-            "middle": [
-              "anxiety",
-              "relief"
-            ],
-            "end": [
-              "belonging",
-              "acceptance"
-            ]
+            "start": ["fear", "loneliness"],
+            "middle": ["anxiety", "relief"],
+            "end": ["belonging", "acceptance"]
           },
           "ending_tone": "hopeful",
           "intensity": "light",
@@ -733,30 +620,15 @@
               "weight": 0.6
             }
           ],
-          "conflicts": [
-            "duty_vs_desire",
-            "past_vs_future"
-          ],
+          "conflicts": ["duty_vs_desire", "past_vs_future"],
           "emotions": {
-            "start": [
-              "restlessness",
-              "self_doubt"
-            ],
-            "middle": [
-              "love",
-              "determination"
-            ],
-            "end": [
-              "peace",
-              "belonging"
-            ]
+            "start": ["restlessness", "self_doubt"],
+            "middle": ["love", "determination"],
+            "end": ["peace", "belonging"]
           },
           "ending_tone": "bittersweet",
           "intensity": "light",
-          "warnings": [
-            "death_of_main_character",
-            "grief"
-          ],
+          "warnings": ["death_of_main_character", "grief"],
           "example_user_messages": [
             "I always act on impulse and then regret it, and I'm starting to think I need to grow up.",
             "My dad was kind of a mess and I'm scared I'm turning into him.",
@@ -834,29 +706,15 @@
               "weight": 0.6
             }
           ],
-          "conflicts": [
-            "power_vs_morality",
-            "loyalty_vs_ambition"
-          ],
+          "conflicts": ["power_vs_morality", "loyalty_vs_ambition"],
           "emotions": {
-            "start": [
-              "pride",
-              "anxiety"
-            ],
-            "middle": [
-              "confusion",
-              "curiosity"
-            ],
-            "end": [
-              "belonging",
-              "self_respect"
-            ]
+            "start": ["pride", "anxiety"],
+            "middle": ["confusion", "curiosity"],
+            "end": ["belonging", "self_respect"]
           },
           "ending_tone": "hopeful",
           "intensity": "light",
-          "warnings": [
-            "betrayal"
-          ],
+          "warnings": ["betrayal"],
           "example_user_messages": [
             "My whole career is riding on this project and everything keeps going wrong.",
             "I've started to wonder if the work I've been doing all these years actually hurts people.",
@@ -905,29 +763,15 @@
               "weight": 0.7
             }
           ],
-          "conflicts": [
-            "power_vs_morality",
-            "holding_on_vs_letting_go"
-          ],
+          "conflicts": ["power_vs_morality", "holding_on_vs_letting_go"],
           "emotions": {
-            "start": [
-              "curiosity",
-              "dread"
-            ],
-            "middle": [
-              "determination",
-              "love"
-            ],
-            "end": [
-              "joy",
-              "peace"
-            ]
+            "start": ["curiosity", "dread"],
+            "middle": ["determination", "love"],
+            "end": ["joy", "peace"]
           },
           "ending_tone": "hopeful",
           "intensity": "moderate",
-          "warnings": [
-            "betrayal"
-          ],
+          "warnings": ["betrayal"],
           "example_user_messages": [
             "I've done the same thing for decades and I'm only now questioning if it means anything.",
             "I'm realising I've never really had real friends until now.",
@@ -1005,23 +849,11 @@
               "weight": 0.6
             }
           ],
-          "conflicts": [
-            "duty_vs_desire",
-            "fitting_in_vs_standing_out"
-          ],
+          "conflicts": ["duty_vs_desire", "fitting_in_vs_standing_out"],
           "emotions": {
-            "start": [
-              "numbness",
-              "curiosity"
-            ],
-            "middle": [
-              "confusion",
-              "longing"
-            ],
-            "end": [
-              "self_respect",
-              "belonging"
-            ]
+            "start": ["numbness", "curiosity"],
+            "middle": ["confusion", "longing"],
+            "end": ["self_respect", "belonging"]
           },
           "ending_tone": "hopeful",
           "intensity": "light",
@@ -1074,30 +906,15 @@
               "weight": 0.5
             }
           ],
-          "conflicts": [
-            "holding_on_vs_letting_go",
-            "control_vs_trust"
-          ],
+          "conflicts": ["holding_on_vs_letting_go", "control_vs_trust"],
           "emotions": {
-            "start": [
-              "confusion",
-              "love"
-            ],
-            "middle": [
-              "jealousy",
-              "grief"
-            ],
-            "end": [
-              "acceptance",
-              "peace"
-            ]
+            "start": ["confusion", "love"],
+            "middle": ["jealousy", "grief"],
+            "end": ["acceptance", "peace"]
           },
           "ending_tone": "bittersweet",
           "intensity": "moderate",
-          "warnings": [
-            "grief",
-            "death_of_main_character"
-          ],
+          "warnings": ["grief", "death_of_main_character"],
           "example_user_messages": [
             "I've never felt this way about anyone before and it's scaring me.",
             "I'm so jealous of the person my crush likes and I hate feeling like this.",

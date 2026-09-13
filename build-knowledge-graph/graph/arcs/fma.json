@@ -6,14 +6,14 @@
       "name": "Edward Elric",
       "role": "A brash fifteen-year-old alchemy prodigy with a steel arm and leg, the youngest State Alchemist in history, travelling with his armour-bound younger brother in search of a way to restore both their bodies.",
       "relations": [
-        {"target": "char:fma/alphonse_elric", "relation": "sibling"},
-        {"target": "char:fma/winry_rockbell", "relation": "friend"},
-        {"target": "char:fma/winry_rockbell", "relation": "partner"},
-        {"target": "char:fma/roy_mustang", "relation": "boss"},
-        {"target": "char:fma/riza_hawkeye", "relation": "colleague"},
-        {"target": "char:fma/izumi_curtis", "relation": "mentor"},
-        {"target": "char:fma/scar", "relation": "enemy"},
-        {"target": "char:fma/ling_yao", "relation": "friend"}
+        { "target": "char:fma/alphonse_elric", "relation": "sibling" },
+        { "target": "char:fma/winry_rockbell", "relation": "friend" },
+        { "target": "char:fma/winry_rockbell", "relation": "partner" },
+        { "target": "char:fma/roy_mustang", "relation": "boss" },
+        { "target": "char:fma/riza_hawkeye", "relation": "colleague" },
+        { "target": "char:fma/izumi_curtis", "relation": "mentor" },
+        { "target": "char:fma/scar", "relation": "enemy" },
+        { "target": "char:fma/ling_yao", "relation": "friend" }
       ],
       "arcs": [
         {
@@ -32,16 +32,27 @@
           "start_at": "FMAB Ep 1",
           "span": "FMAB Ep 1-64",
           "situations": [
-            {"id": "redemption_after_mistakes", "weight": 0.9},
-            {"id": "caring_for_family", "weight": 0.7},
-            {"id": "coming_of_age", "weight": 0.6},
-            {"id": "responsibility_you_didnt_ask_for", "weight": 0.4}
+            { "id": "redemption_after_mistakes", "weight": 0.9 },
+            { "id": "caring_for_family", "weight": 0.7 },
+            { "id": "coming_of_age", "weight": 0.6 },
+            { "id": "responsibility_you_didnt_ask_for", "weight": 0.4 }
           ],
           "conflicts": ["independence_vs_connection", "holding_on_vs_letting_go"],
-          "emotions": {"start": ["guilt", "determination"], "middle": ["anger", "self_doubt", "overwhelm"], "end": ["acceptance", "peace", "love"]},
+          "emotions": {
+            "start": ["guilt", "determination"],
+            "middle": ["anger", "self_doubt", "overwhelm"],
+            "end": ["acceptance", "peace", "love"]
+          },
           "ending_tone": "hopeful",
           "intensity": "heavy",
-          "warnings": ["death_of_loved_one", "grief", "medical_trauma", "child_endangerment", "war_and_violence", "graphic_gore"],
+          "warnings": [
+            "death_of_loved_one",
+            "grief",
+            "medical_trauma",
+            "child_endangerment",
+            "war_and_violence",
+            "graphic_gore"
+          ],
           "example_user_messages": [
             "I made a decision years ago that hurt my little brother for life and I feel like fixing it is the only thing I'm allowed to care about.",
             "Everyone keeps offering to help but it's my mess, so it feels wrong to let them.",
@@ -80,12 +91,16 @@
           "start_at": "FMAB Ep 2",
           "span": "FMAB Ep 2-64",
           "situations": [
-            {"id": "difficult_parent", "weight": 0.9},
-            {"id": "grief_and_loss", "weight": 0.5},
-            {"id": "identity_and_self_acceptance", "weight": 0.4}
+            { "id": "difficult_parent", "weight": 0.9 },
+            { "id": "grief_and_loss", "weight": 0.5 },
+            { "id": "identity_and_self_acceptance", "weight": 0.4 }
           ],
           "conflicts": ["revenge_vs_forgiveness", "past_vs_future"],
-          "emotions": {"start": ["resentment", "anger"], "middle": ["confusion", "rejection"], "end": ["acceptance", "grief"]},
+          "emotions": {
+            "start": ["resentment", "anger"],
+            "middle": ["confusion", "rejection"],
+            "end": ["acceptance", "grief"]
+          },
           "ending_tone": "bittersweet",
           "intensity": "moderate",
           "warnings": ["death_of_loved_one", "grief"],
@@ -124,12 +139,16 @@
           "start_at": "FMAB Ep 1",
           "span": "FMAB Ep 1-64",
           "situations": [
-            {"id": "standing_up_to_authority", "weight": 0.8},
-            {"id": "new_job", "weight": 0.4},
-            {"id": "coming_of_age", "weight": 0.5}
+            { "id": "standing_up_to_authority", "weight": 0.8 },
+            { "id": "new_job", "weight": 0.4 },
+            { "id": "coming_of_age", "weight": 0.5 }
           ],
           "conflicts": ["power_vs_morality", "belonging_vs_integrity"],
-          "emotions": {"start": ["pride", "restlessness"], "middle": ["anger", "betrayal", "determination"], "end": ["self_respect", "freedom"]},
+          "emotions": {
+            "start": ["pride", "restlessness"],
+            "middle": ["anger", "betrayal", "determination"],
+            "end": ["self_respect", "freedom"]
+          },
           "ending_tone": "hopeful",
           "intensity": "heavy",
           "warnings": ["war_and_violence", "betrayal", "graphic_gore", "child_endangerment"],
@@ -159,12 +178,12 @@
       "name": "Alphonse Elric",
       "role": "Ed's gentle fourteen-year-old younger brother, whose soul is bound to a huge, empty suit of armour after the failed attempt to bring back their mother; he cannot eat, sleep or feel touch.",
       "relations": [
-        {"target": "char:fma/edward_elric", "relation": "sibling"},
-        {"target": "char:fma/winry_rockbell", "relation": "friend"},
-        {"target": "char:fma/izumi_curtis", "relation": "mentor"},
-        {"target": "char:fma/ling_yao", "relation": "friend"},
-        {"target": "char:fma/scar", "relation": "enemy"},
-        {"target": "char:fma/riza_hawkeye", "relation": "friend"}
+        { "target": "char:fma/edward_elric", "relation": "sibling" },
+        { "target": "char:fma/winry_rockbell", "relation": "friend" },
+        { "target": "char:fma/izumi_curtis", "relation": "mentor" },
+        { "target": "char:fma/ling_yao", "relation": "friend" },
+        { "target": "char:fma/scar", "relation": "enemy" },
+        { "target": "char:fma/riza_hawkeye", "relation": "friend" }
       ],
       "arcs": [
         {
@@ -183,15 +202,24 @@
           "start_at": "FMAB Ep 1",
           "span": "FMAB Ep 1-64",
           "situations": [
-            {"id": "identity_and_self_acceptance", "weight": 0.9},
-            {"id": "illness_or_injury", "weight": 0.8},
-            {"id": "loneliness", "weight": 0.6}
+            { "id": "identity_and_self_acceptance", "weight": 0.9 },
+            { "id": "illness_or_injury", "weight": 0.8 },
+            { "id": "loneliness", "weight": 0.6 }
           ],
           "conflicts": ["truth_vs_protecting_others", "safety_vs_growth"],
-          "emotions": {"start": ["loneliness", "longing"], "middle": ["fear", "confusion", "anxiety"], "end": ["acceptance", "joy", "belonging"]},
+          "emotions": {
+            "start": ["loneliness", "longing"],
+            "middle": ["fear", "confusion", "anxiety"],
+            "end": ["acceptance", "joy", "belonging"]
+          },
           "ending_tone": "hopeful",
           "intensity": "heavy",
-          "warnings": ["medical_trauma", "child_endangerment", "war_and_violence", "death_of_loved_one"],
+          "warnings": [
+            "medical_trauma",
+            "child_endangerment",
+            "war_and_violence",
+            "death_of_loved_one"
+          ],
           "example_user_messages": [
             "Since my injury I can't feel most of my body and some days I don't feel like a real person anymore.",
             "I can't sleep and the nights alone with my thoughts are the worst part.",
@@ -228,12 +256,16 @@
           "start_at": "FMAB Ep 1",
           "span": "FMAB Ep 1-64",
           "situations": [
-            {"id": "caring_for_family", "weight": 0.8},
-            {"id": "responsibility_you_didnt_ask_for", "weight": 0.5},
-            {"id": "coming_of_age", "weight": 0.5}
+            { "id": "caring_for_family", "weight": 0.8 },
+            { "id": "responsibility_you_didnt_ask_for", "weight": 0.5 },
+            { "id": "coming_of_age", "weight": 0.5 }
           ],
           "conflicts": ["revenge_vs_forgiveness", "independence_vs_connection"],
-          "emotions": {"start": ["hope", "guilt"], "middle": ["self_doubt", "determination"], "end": ["self_respect", "love", "peace"]},
+          "emotions": {
+            "start": ["hope", "guilt"],
+            "middle": ["self_doubt", "determination"],
+            "end": ["self_respect", "love", "peace"]
+          },
           "ending_tone": "hopeful",
           "intensity": "moderate",
           "warnings": ["war_and_violence", "child_endangerment", "grief"],
@@ -263,10 +295,10 @@
       "name": "Roy Mustang",
       "role": "The 'Flame Alchemist', a young colonel and decorated war veteran who is Ed's commanding officer, famous for lazing around and flirting while openly angling to become the country's Führer.",
       "relations": [
-        {"target": "char:fma/riza_hawkeye", "relation": "colleague"},
-        {"target": "char:fma/edward_elric", "relation": "protege"},
-        {"target": "char:fma/edward_elric", "relation": "colleague"},
-        {"target": "char:fma/scar", "relation": "enemy"}
+        { "target": "char:fma/riza_hawkeye", "relation": "colleague" },
+        { "target": "char:fma/edward_elric", "relation": "protege" },
+        { "target": "char:fma/edward_elric", "relation": "colleague" },
+        { "target": "char:fma/scar", "relation": "enemy" }
       ],
       "arcs": [
         {
@@ -285,15 +317,25 @@
           "start_at": "FMAB Ep 1",
           "span": "FMAB Ep 1-64",
           "situations": [
-            {"id": "becoming_a_manager", "weight": 0.7},
-            {"id": "redemption_after_mistakes", "weight": 0.8},
-            {"id": "standing_up_to_authority", "weight": 0.5}
+            { "id": "becoming_a_manager", "weight": 0.7 },
+            { "id": "redemption_after_mistakes", "weight": 0.8 },
+            { "id": "standing_up_to_authority", "weight": 0.5 }
           ],
           "conflicts": ["power_vs_morality", "loyalty_vs_ambition"],
-          "emotions": {"start": ["determination", "guilt"], "middle": ["anger", "dread"], "end": ["self_respect", "hope"]},
+          "emotions": {
+            "start": ["determination", "guilt"],
+            "middle": ["anger", "dread"],
+            "end": ["self_respect", "hope"]
+          },
           "ending_tone": "hopeful",
           "intensity": "heavy",
-          "warnings": ["war_and_violence", "death_of_loved_one", "graphic_gore", "medical_trauma", "betrayal"],
+          "warnings": [
+            "war_and_violence",
+            "death_of_loved_one",
+            "graphic_gore",
+            "medical_trauma",
+            "betrayal"
+          ],
           "example_user_messages": [
             "I want the top job, partly because I think it's the only way to fix the damage I helped cause.",
             "I did things early in my career because I was told to, and I can't stop thinking about it.",
@@ -330,14 +372,24 @@
           "start_at": "FMAB Ep 10",
           "span": "FMAB Ep 10-54",
           "situations": [
-            {"id": "grief_and_loss", "weight": 0.9},
-            {"id": "friendship_ending", "weight": 0.3}
+            { "id": "grief_and_loss", "weight": 0.9 },
+            { "id": "friendship_ending", "weight": 0.3 }
           ],
           "conflicts": ["revenge_vs_forgiveness", "duty_vs_desire"],
-          "emotions": {"start": ["grief", "anger"], "middle": ["resentment", "determination"], "end": ["acceptance", "self_respect"]},
+          "emotions": {
+            "start": ["grief", "anger"],
+            "middle": ["resentment", "determination"],
+            "end": ["acceptance", "self_respect"]
+          },
           "ending_tone": "bittersweet",
           "intensity": "heavy",
-          "warnings": ["death_of_loved_one", "grief", "torture", "war_and_violence", "graphic_gore"],
+          "warnings": [
+            "death_of_loved_one",
+            "grief",
+            "torture",
+            "war_and_violence",
+            "graphic_gore"
+          ],
           "example_user_messages": [
             "My best friend was taken from me and all I can think about is making the person responsible pay.",
             "I'm holding it together at work but inside I'm completely consumed by anger.",
@@ -365,10 +417,10 @@
       "name": "Riza Hawkeye",
       "role": "A first lieutenant and expert sharpshooter who serves as Colonel Mustang's calm, no-nonsense adjutant and bodyguard, keeping him and the rest of his team in line.",
       "relations": [
-        {"target": "char:fma/roy_mustang", "relation": "boss"},
-        {"target": "char:fma/edward_elric", "relation": "colleague"},
-        {"target": "char:fma/winry_rockbell", "relation": "friend"},
-        {"target": "char:fma/alphonse_elric", "relation": "friend"}
+        { "target": "char:fma/roy_mustang", "relation": "boss" },
+        { "target": "char:fma/edward_elric", "relation": "colleague" },
+        { "target": "char:fma/winry_rockbell", "relation": "friend" },
+        { "target": "char:fma/alphonse_elric", "relation": "friend" }
       ],
       "arcs": [
         {
@@ -387,12 +439,16 @@
           "start_at": "FMAB Ep 1",
           "span": "FMAB Ep 1-64",
           "situations": [
-            {"id": "redemption_after_mistakes", "weight": 0.8},
-            {"id": "mentor_and_protege", "weight": 0.3},
-            {"id": "responsibility_you_didnt_ask_for", "weight": 0.5}
+            { "id": "redemption_after_mistakes", "weight": 0.8 },
+            { "id": "mentor_and_protege", "weight": 0.3 },
+            { "id": "responsibility_you_didnt_ask_for", "weight": 0.5 }
           ],
           "conflicts": ["duty_vs_desire", "past_vs_future"],
-          "emotions": {"start": ["guilt", "determination"], "middle": ["dread", "fear"], "end": ["acceptance", "hope"]},
+          "emotions": {
+            "start": ["guilt", "determination"],
+            "middle": ["dread", "fear"],
+            "end": ["acceptance", "hope"]
+          },
           "ending_tone": "hopeful",
           "intensity": "heavy",
           "warnings": ["war_and_violence", "abuse", "graphic_gore", "medical_trauma"],
@@ -424,10 +480,10 @@
       "name": "Winry Rockbell",
       "role": "Ed and Al's childhood friend from their village, a gifted young automail mechanic who built Ed's prosthetic arm and leg and who lost her surgeon parents to a war.",
       "relations": [
-        {"target": "char:fma/edward_elric", "relation": "friend"},
-        {"target": "char:fma/edward_elric", "relation": "partner"},
-        {"target": "char:fma/alphonse_elric", "relation": "friend"},
-        {"target": "char:fma/riza_hawkeye", "relation": "friend"}
+        { "target": "char:fma/edward_elric", "relation": "friend" },
+        { "target": "char:fma/edward_elric", "relation": "partner" },
+        { "target": "char:fma/alphonse_elric", "relation": "friend" },
+        { "target": "char:fma/riza_hawkeye", "relation": "friend" }
       ],
       "arcs": [
         {
@@ -446,13 +502,17 @@
           "start_at": "FMAB Ep 6",
           "span": "FMAB Ep 6-64",
           "situations": [
-            {"id": "long_distance", "weight": 0.6},
-            {"id": "career_change", "weight": 0.5},
-            {"id": "leaving_home", "weight": 0.5},
-            {"id": "falling_for_someone_unexpected", "weight": 0.4}
+            { "id": "long_distance", "weight": 0.6 },
+            { "id": "career_change", "weight": 0.5 },
+            { "id": "leaving_home", "weight": 0.5 },
+            { "id": "falling_for_someone_unexpected", "weight": 0.4 }
           ],
           "conflicts": ["independence_vs_connection", "truth_vs_protecting_others"],
-          "emotions": {"start": ["anxiety", "loneliness"], "middle": ["anger", "determination"], "end": ["confidence", "love", "joy"]},
+          "emotions": {
+            "start": ["anxiety", "loneliness"],
+            "middle": ["anger", "determination"],
+            "end": ["confidence", "love", "joy"]
+          },
           "ending_tone": "hopeful",
           "intensity": "moderate",
           "warnings": ["war_and_violence", "grief"],
@@ -491,11 +551,15 @@
           "start_at": "FMAB Ep 21",
           "span": "FMAB Ep 21-45",
           "situations": [
-            {"id": "grief_and_loss", "weight": 0.8},
-            {"id": "identity_and_self_acceptance", "weight": 0.3}
+            { "id": "grief_and_loss", "weight": 0.8 },
+            { "id": "identity_and_self_acceptance", "weight": 0.3 }
           ],
           "conflicts": ["revenge_vs_forgiveness"],
-          "emotions": {"start": ["anger", "grief"], "middle": ["confusion", "fear"], "end": ["self_respect", "acceptance"]},
+          "emotions": {
+            "start": ["anger", "grief"],
+            "middle": ["confusion", "fear"],
+            "end": ["self_respect", "acceptance"]
+          },
           "ending_tone": "bittersweet",
           "intensity": "heavy",
           "warnings": ["death_of_loved_one", "grief", "war_and_violence"],
@@ -524,9 +588,9 @@
       "name": "Scar",
       "role": "A nameless Ishvalan survivor with an X-shaped scar on his face and a tattooed arm that destroys whatever it touches, who is hunting and killing State Alchemists to avenge his people.",
       "relations": [
-        {"target": "char:fma/edward_elric", "relation": "enemy"},
-        {"target": "char:fma/alphonse_elric", "relation": "enemy"},
-        {"target": "char:fma/roy_mustang", "relation": "enemy"}
+        { "target": "char:fma/edward_elric", "relation": "enemy" },
+        { "target": "char:fma/alphonse_elric", "relation": "enemy" },
+        { "target": "char:fma/roy_mustang", "relation": "enemy" }
       ],
       "arcs": [
         {
@@ -545,15 +609,25 @@
           "start_at": "FMAB Ep 5",
           "span": "FMAB Ep 5-64",
           "situations": [
-            {"id": "grief_and_loss", "weight": 0.8},
-            {"id": "redemption_after_mistakes", "weight": 0.7},
-            {"id": "identity_and_self_acceptance", "weight": 0.5}
+            { "id": "grief_and_loss", "weight": 0.8 },
+            { "id": "redemption_after_mistakes", "weight": 0.7 },
+            { "id": "identity_and_self_acceptance", "weight": 0.5 }
           ],
           "conflicts": ["revenge_vs_forgiveness", "power_vs_morality"],
-          "emotions": {"start": ["anger", "grief"], "middle": ["confusion", "guilt"], "end": ["acceptance", "peace"]},
+          "emotions": {
+            "start": ["anger", "grief"],
+            "middle": ["confusion", "guilt"],
+            "end": ["acceptance", "peace"]
+          },
           "ending_tone": "bittersweet",
           "intensity": "heavy",
-          "warnings": ["war_and_violence", "graphic_gore", "death_of_loved_one", "grief", "child_endangerment"],
+          "warnings": [
+            "war_and_violence",
+            "graphic_gore",
+            "death_of_loved_one",
+            "grief",
+            "child_endangerment"
+          ],
           "example_user_messages": [
             "The people who destroyed my community were never punished, and my anger is the only thing that feels real.",
             "I've done things that go against everything I was raised to believe, and I tell myself they're justified.",
@@ -591,11 +665,15 @@
           "start_at": "FMAB Ep 22",
           "span": "FMAB Ep 22-64",
           "situations": [
-            {"id": "redemption_after_mistakes", "weight": 0.9},
-            {"id": "finding_your_people", "weight": 0.4}
+            { "id": "redemption_after_mistakes", "weight": 0.9 },
+            { "id": "finding_your_people", "weight": 0.4 }
           ],
           "conflicts": ["revenge_vs_forgiveness", "past_vs_future"],
-          "emotions": {"start": ["guilt", "confusion"], "middle": ["grief", "determination"], "end": ["acceptance", "hope"]},
+          "emotions": {
+            "start": ["guilt", "confusion"],
+            "middle": ["grief", "determination"],
+            "end": ["acceptance", "hope"]
+          },
           "ending_tone": "hopeful",
           "intensity": "heavy",
           "warnings": ["war_and_violence", "death_of_loved_one", "grief"],
@@ -625,9 +703,9 @@
       "name": "Ling Yao",
       "role": "The easygoing, perpetually hungry twelfth prince of the eastern empire of Xing, who has crossed the desert with two bodyguards to find the secret of immortality and win his dying father's throne for his clan.",
       "relations": [
-        {"target": "char:fma/edward_elric", "relation": "friend"},
-        {"target": "char:fma/alphonse_elric", "relation": "friend"},
-        {"target": "char:fma/winry_rockbell", "relation": "friend"}
+        { "target": "char:fma/edward_elric", "relation": "friend" },
+        { "target": "char:fma/alphonse_elric", "relation": "friend" },
+        { "target": "char:fma/winry_rockbell", "relation": "friend" }
       ],
       "arcs": [
         {
@@ -646,12 +724,16 @@
           "start_at": "FMAB Ep 15",
           "span": "FMAB Ep 15-64",
           "situations": [
-            {"id": "family_expectations", "weight": 0.9},
-            {"id": "taking_a_big_risk", "weight": 0.7},
-            {"id": "moving_somewhere_new", "weight": 0.4}
+            { "id": "family_expectations", "weight": 0.9 },
+            { "id": "taking_a_big_risk", "weight": 0.7 },
+            { "id": "moving_somewhere_new", "weight": 0.4 }
           ],
           "conflicts": ["self_vs_family_expectations", "loyalty_vs_ambition"],
-          "emotions": {"start": ["determination", "curiosity"], "middle": ["guilt", "grief", "determination"], "end": ["pride", "hope"]},
+          "emotions": {
+            "start": ["determination", "curiosity"],
+            "middle": ["guilt", "grief", "determination"],
+            "end": ["pride", "hope"]
+          },
           "ending_tone": "hopeful",
           "intensity": "heavy",
           "warnings": ["war_and_violence", "graphic_gore", "death_of_loved_one", "medical_trauma"],
@@ -691,12 +773,16 @@
           "start_at": "FMAB Ep 15",
           "span": "FMAB Ep 15-64",
           "situations": [
-            {"id": "becoming_a_manager", "weight": 0.7},
-            {"id": "responsibility_you_didnt_ask_for", "weight": 0.6},
-            {"id": "finding_your_people", "weight": 0.4}
+            { "id": "becoming_a_manager", "weight": 0.7 },
+            { "id": "responsibility_you_didnt_ask_for", "weight": 0.6 },
+            { "id": "finding_your_people", "weight": 0.4 }
           ],
           "conflicts": ["duty_vs_desire", "power_vs_morality"],
-          "emotions": {"start": ["confidence", "pride"], "middle": ["guilt", "anger", "grief"], "end": ["self_respect", "belonging"]},
+          "emotions": {
+            "start": ["confidence", "pride"],
+            "middle": ["guilt", "anger", "grief"],
+            "end": ["self_respect", "belonging"]
+          },
           "ending_tone": "hopeful",
           "intensity": "heavy",
           "warnings": ["war_and_violence", "graphic_gore", "death_of_loved_one"],
@@ -726,8 +812,8 @@
       "name": "Izumi Curtis",
       "role": "Ed and Al's fearsome former alchemy teacher, a self-described 'simple housewife' who runs a butcher shop with her husband and whose fits of coughing blood hint at an old injury.",
       "relations": [
-        {"target": "char:fma/edward_elric", "relation": "protege"},
-        {"target": "char:fma/alphonse_elric", "relation": "protege"}
+        { "target": "char:fma/edward_elric", "relation": "protege" },
+        { "target": "char:fma/alphonse_elric", "relation": "protege" }
       ],
       "arcs": [
         {
@@ -746,12 +832,16 @@
           "start_at": "FMAB Ep 12",
           "span": "FMAB Ep 12-26",
           "situations": [
-            {"id": "grief_and_loss", "weight": 0.9},
-            {"id": "illness_or_injury", "weight": 0.5},
-            {"id": "redemption_after_mistakes", "weight": 0.5}
+            { "id": "grief_and_loss", "weight": 0.9 },
+            { "id": "illness_or_injury", "weight": 0.5 },
+            { "id": "redemption_after_mistakes", "weight": 0.5 }
           ],
           "conflicts": ["holding_on_vs_letting_go"],
-          "emotions": {"start": ["grief", "guilt"], "middle": ["shame", "longing"], "end": ["relief", "peace"]},
+          "emotions": {
+            "start": ["grief", "guilt"],
+            "middle": ["shame", "longing"],
+            "end": ["relief", "peace"]
+          },
           "ending_tone": "hopeful",
           "intensity": "moderate",
           "warnings": ["death_of_loved_one", "grief", "medical_trauma", "serious_illness"],
@@ -791,11 +881,15 @@
           "start_at": "FMAB Ep 12",
           "span": "FMAB Ep 12-64",
           "situations": [
-            {"id": "mentor_and_protege", "weight": 0.9},
-            {"id": "becoming_a_parent", "weight": 0.4}
+            { "id": "mentor_and_protege", "weight": 0.9 },
+            { "id": "becoming_a_parent", "weight": 0.4 }
           ],
           "conflicts": ["control_vs_trust"],
-          "emotions": {"start": ["pride", "anger"], "middle": ["fear", "love"], "end": ["acceptance", "pride"]},
+          "emotions": {
+            "start": ["pride", "anger"],
+            "middle": ["fear", "love"],
+            "end": ["acceptance", "pride"]
+          },
           "ending_tone": "hopeful",
           "intensity": "light",
           "warnings": ["child_endangerment"],

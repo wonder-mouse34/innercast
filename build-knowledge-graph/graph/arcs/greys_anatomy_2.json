@@ -6,15 +6,15 @@
       "name": "Cristina Yang",
       "role": "A fiercely brilliant, blunt surgical intern who cares about becoming a great cardiothoracic surgeon more than anything else, and who has little patience for feelings or people.",
       "relations": [
-        {"target": "char:greys_anatomy/meredith_grey", "relation": "friend"},
-        {"target": "char:greys_anatomy/owen_hunt", "relation": "ex_partner"},
-        {"target": "char:greys_anatomy/alex_karev", "relation": "friend"},
-        {"target": "char:greys_anatomy/callie_torres", "relation": "friend"},
-        {"target": "char:greys_anatomy/derek_shepherd", "relation": "friend"},
-        {"target": "char:greys_anatomy/miranda_bailey", "relation": "mentor"},
-        {"target": "char:greys_anatomy/richard_webber", "relation": "mentor"},
-        {"target": "char:greys_anatomy/jackson_avery", "relation": "colleague"},
-        {"target": "char:greys_anatomy/arizona_robbins", "relation": "colleague"}
+        { "target": "char:greys_anatomy/meredith_grey", "relation": "friend" },
+        { "target": "char:greys_anatomy/owen_hunt", "relation": "ex_partner" },
+        { "target": "char:greys_anatomy/alex_karev", "relation": "friend" },
+        { "target": "char:greys_anatomy/callie_torres", "relation": "friend" },
+        { "target": "char:greys_anatomy/derek_shepherd", "relation": "friend" },
+        { "target": "char:greys_anatomy/miranda_bailey", "relation": "mentor" },
+        { "target": "char:greys_anatomy/richard_webber", "relation": "mentor" },
+        { "target": "char:greys_anatomy/jackson_avery", "relation": "colleague" },
+        { "target": "char:greys_anatomy/arizona_robbins", "relation": "colleague" }
       ],
       "arcs": [
         {
@@ -25,20 +25,34 @@
           "pattern_text": "A driven person knows exactly what they want from life, and it is not the marriage-and-children path everyone assumes they will eventually want. Each time they fall in love, the relationship quietly asks them to become someone smaller or different. They must decide whether loving someone means giving up the thing that makes them who they are.",
           "hook": "She is an intensely competitive intern who hides every feeling behind sarcasm, and she has just slept with one of her bosses.",
           "why_relatable": "Can you love someone deeply and still refuse to reorganise your life around them? What do you owe a partner who wants a future you do not want? Is it selfish to put your work first, or is it simply honest?",
-          "watch_for": ["How does she react when someone she loves asks her to compromise on her ambitions?", "When does her bluntness protect her, and when does it cost her?", "Who are the people she lets see her fall apart, and why them?"],
+          "watch_for": [
+            "How does she react when someone she loves asks her to compromise on her ambitions?",
+            "When does her bluntness protect her, and when does it cost her?",
+            "Who are the people she lets see her fall apart, and why them?"
+          ],
           "start_at": "S1E1",
           "span": "S1-S10",
           "situations": [
-            {"id": "career_change", "weight": 0.3},
-            {"id": "breakup", "weight": 0.8},
-            {"id": "family_expectations", "weight": 0.5},
-            {"id": "identity_and_self_acceptance", "weight": 0.8}
+            { "id": "career_change", "weight": 0.3 },
+            { "id": "breakup", "weight": 0.8 },
+            { "id": "family_expectations", "weight": 0.5 },
+            { "id": "identity_and_self_acceptance", "weight": 0.8 }
           ],
           "conflicts": ["career_vs_relationships", "independence_vs_connection"],
-          "emotions": {"start": ["determination", "pride"], "middle": ["grief", "betrayal", "loneliness"], "end": ["self_respect", "acceptance"]},
+          "emotions": {
+            "start": ["determination", "pride"],
+            "middle": ["grief", "betrayal", "loneliness"],
+            "end": ["self_respect", "acceptance"]
+          },
           "ending_tone": "bittersweet",
           "intensity": "heavy",
-          "warnings": ["betrayal", "medical_trauma", "death_of_main_character", "grief", "domestic_violence"],
+          "warnings": [
+            "betrayal",
+            "medical_trauma",
+            "death_of_main_character",
+            "grief",
+            "domestic_violence"
+          ],
           "example_user_messages": [
             "I don't want kids and my partner does, and I'm tired of everyone telling me I'll change my mind.",
             "Every relationship I've been in eventually asks me to care less about my work, and I can't do that.",
@@ -48,7 +62,18 @@
           ],
           "spoiler": {
             "summary": "She has an ectopic pregnancy, then builds a serious relationship with Burke, covering for his hand tremor and eventually getting engaged; he leaves her at the altar. She later falls for Owen, a traumatised army surgeon; after his PTSD leads him to choke her in his sleep, they reconcile and marry. When she gets pregnant she has an abortion, which fractures the marriage; Owen cheats and they divorce after the plane crash for lawsuit reasons. She realises he will always want children and she never will, so she ends it for good. After losing the Harper Avery, Burke offers her his hospital in Zurich; she accepts, says goodbye to Meredith by dancing it out, and leaves Seattle to run a research hospital.",
-            "key_events": ["Ectopic pregnancy collapse in the OR", "Burke leaves her at the altar", "Owen chokes her during a PTSD episode", "Marries Owen", "Chooses an abortion over Owen's objections", "Owen's one-night stand", "Divorce tied to the plane crash lawsuit", "Breaks up with Owen because he wants children", "Loses the Harper Avery on a technicality", "Takes over Burke's hospital in Zurich and leaves Seattle"],
+            "key_events": [
+              "Ectopic pregnancy collapse in the OR",
+              "Burke leaves her at the altar",
+              "Owen chokes her during a PTSD episode",
+              "Marries Owen",
+              "Chooses an abortion over Owen's objections",
+              "Owen's one-night stand",
+              "Divorce tied to the plane crash lawsuit",
+              "Breaks up with Owen because he wants children",
+              "Loses the Harper Avery on a technicality",
+              "Takes over Burke's hospital in Zurich and leaves Seattle"
+            ],
             "got_right": "She stays honest about what she wants, even when it hurts, and she refuses to trap a partner (or herself) in a life that would make them resentful. Being left at the altar ultimately teaches her to stand on her own.",
             "got_wrong": "She hides pain behind coldness, lies to partners to avoid vulnerability (like keeping her old apartment), and repeatedly returns to Owen even after both know they want incompatible futures."
           }
@@ -61,20 +86,34 @@
           "pattern_text": "A person whose whole identity is built on being the most capable one in the room survives a terrifying event by doing exactly what they were trained to do. Afterwards, the skill that defined them triggers panic, and the calm, competent self they knew seems gone. They have to find a way back to their passion without pretending the trauma never happened.",
           "hook": "She is deeply shaken, insisting she is fine, and freezing every time she enters an operating room.",
           "why_relatable": "What do you do when the thing you love starts to feel dangerous? How much of your worth is tied to being the strong one? Can people who love you help, or do their attempts to fix you make things worse?",
-          "watch_for": ["Who pushes her to get back to work, and who lets her move at her own pace?", "How does she treat friends who seem to recover faster than she does?", "What small moments help her more than the big interventions?"],
+          "watch_for": [
+            "Who pushes her to get back to work, and who lets her move at her own pace?",
+            "How does she treat friends who seem to recover faster than she does?",
+            "What small moments help her more than the big interventions?"
+          ],
           "start_at": "S7E1",
           "span": "S7-S9",
           "situations": [
-            {"id": "burnout_at_work", "weight": 0.6},
-            {"id": "grief_and_loss", "weight": 0.6},
-            {"id": "confidence_struggle", "weight": 0.8},
-            {"id": "starting_over", "weight": 0.7}
+            { "id": "burnout_at_work", "weight": 0.6 },
+            { "id": "grief_and_loss", "weight": 0.6 },
+            { "id": "confidence_struggle", "weight": 0.8 },
+            { "id": "starting_over", "weight": 0.7 }
           ],
           "conflicts": ["holding_on_vs_letting_go", "past_vs_future"],
-          "emotions": {"start": ["numbness", "fear", "anxiety"], "middle": ["grief", "loneliness", "restlessness"], "end": ["determination", "hope"]},
+          "emotions": {
+            "start": ["numbness", "fear", "anxiety"],
+            "middle": ["grief", "loneliness", "restlessness"],
+            "end": ["determination", "hope"]
+          },
           "ending_tone": "hopeful",
           "intensity": "heavy",
-          "warnings": ["war_and_violence", "medical_trauma", "death_of_main_character", "death_of_loved_one", "grief"],
+          "warnings": [
+            "war_and_violence",
+            "medical_trauma",
+            "death_of_main_character",
+            "death_of_loved_one",
+            "grief"
+          ],
           "example_user_messages": [
             "Ever since the accident I can't do the one thing I was always great at, and I don't know who I am without it.",
             "Everyone keeps telling me to just get back out there, but my body won't let me.",
@@ -83,7 +122,16 @@
           ],
           "spoiler": {
             "summary": "PTSD from the shooting leads her to quit residency, tend bar and drift until a fishing trip with Derek finally lets her cry; she returns to surgery. Then she survives the plane crash in the woods, keeps the others alive for days, and falls into reactive psychosis. Owen brings her home and she begins to talk again. She flees to a fellowship in Minnesota, where she forms a deep bond with an old-school mentor, Dr. Thomas, who dies mid-surgery; she finishes the operation, flies back to Seattle and reunites with Meredith.",
-            "key_events": ["Operates on Derek at gunpoint", "PTSD episode in the OR", "Quits the residency and works as a bartender", "Survives the plane crash; Lexie dies in front of her", "Reactive psychosis after the rescue", "Leaves for the Mayo Clinic after a fight with Meredith", "Mentor Craig Thomas dies during surgery", "Returns to Seattle"],
+            "key_events": [
+              "Operates on Derek at gunpoint",
+              "PTSD episode in the OR",
+              "Quits the residency and works as a bartender",
+              "Survives the plane crash; Lexie dies in front of her",
+              "Reactive psychosis after the rescue",
+              "Leaves for the Mayo Clinic after a fight with Meredith",
+              "Mentor Craig Thomas dies during surgery",
+              "Returns to Seattle"
+            ],
             "got_right": "She eventually lets herself grieve and stops forcing a timeline; she finds a mentor who respects her and lets herself be taught.",
             "got_wrong": "She lashes out at Meredith for recovering faster, isolates herself, and runs away from Seattle rather than facing what happened there."
           }
@@ -96,17 +144,25 @@
           "pattern_text": "A talented person returns to the familiar place and people that shaped them, only to feel their ambitions stifled by obligations, politics and other people's needs. They are torn between loyalty to the community that raised them and the growth that would require leaving it. They have to decide whether staying is devotion or a slow way of giving up.",
           "hook": "She is surrounded by her closest friends, carrying more responsibility for the hospital than she wants, and increasingly frustrated that she is doing paperwork instead of groundbreaking work.",
           "why_relatable": "When does loyalty become a cage? How do you leave people who were your family without feeling like you are abandoning them? Is wanting more a betrayal of what you already have?",
-          "watch_for": ["How does she feel when others are recognised for work she wants to be doing?", "Who is willing to let her go, and who tries to make her stay?", "What does she need to say before she can leave?"],
+          "watch_for": [
+            "How does she feel when others are recognised for work she wants to be doing?",
+            "Who is willing to let her go, and who tries to make her stay?",
+            "What does she need to say before she can leave?"
+          ],
           "start_at": "S9",
           "span": "S9-S10",
           "situations": [
-            {"id": "career_change", "weight": 0.8},
-            {"id": "moving_somewhere_new", "weight": 0.8},
-            {"id": "friendship_ending", "weight": 0.4},
-            {"id": "taking_a_big_risk", "weight": 0.7}
+            { "id": "career_change", "weight": 0.8 },
+            { "id": "moving_somewhere_new", "weight": 0.8 },
+            { "id": "friendship_ending", "weight": 0.4 },
+            { "id": "taking_a_big_risk", "weight": 0.7 }
           ],
           "conflicts": ["loyalty_vs_ambition", "safety_vs_growth"],
-          "emotions": {"start": ["restlessness", "envy"], "middle": ["resentment", "determination"], "end": ["freedom", "nostalgia"]},
+          "emotions": {
+            "start": ["restlessness", "envy"],
+            "middle": ["resentment", "determination"],
+            "end": ["freedom", "nostalgia"]
+          },
           "ending_tone": "bittersweet",
           "intensity": "moderate",
           "warnings": [],
@@ -118,7 +174,14 @@
           ],
           "spoiler": {
             "summary": "She takes on board duties, fights with Meredith over their diverging lives, builds a 3D-printed conduit trial and is nominated for the Harper Avery, then loses because the hospital is tied to the Foundation. A lecture trip to Zurich turns out to be arranged by Burke, who offers her his entire hospital. She accepts, leaves her shares to Alex, dances it out with Meredith one last time, tells her she is the sun, and moves to Switzerland.",
-            "key_events": ["Joins the board that buys the hospital", "Major fight with Meredith about their different paths", "Loses the Harper Avery despite having the votes", "Burke offers her his Zurich hospital", "Leaves her hospital shares to Alex", "Final dance-it-out with Meredith"],
+            "key_events": [
+              "Joins the board that buys the hospital",
+              "Major fight with Meredith about their different paths",
+              "Loses the Harper Avery despite having the votes",
+              "Burke offers her his Zurich hospital",
+              "Leaves her hospital shares to Alex",
+              "Final dance-it-out with Meredith"
+            ],
             "got_right": "She recognises that her ambition is real and worth honouring, and she leaves with love rather than bitterness, making sure her friends know what they mean to her.",
             "got_wrong": "She sometimes belittles friends whose priorities differ from hers, implying Meredith's choice to be a parent makes her a lesser surgeon."
           }
@@ -130,16 +193,16 @@
       "name": "Amelia Shepherd",
       "role": "A gifted, impulsive neurosurgeon and recovering addict who is the youngest sister of a famous surgeon, arriving in Seattle unsure whether she can have the stable life her brother has.",
       "relations": [
-        {"target": "char:greys_anatomy/derek_shepherd", "relation": "sibling"},
-        {"target": "char:greys_anatomy/meredith_grey", "relation": "friend"},
-        {"target": "char:greys_anatomy/owen_hunt", "relation": "ex_partner"},
-        {"target": "char:greys_anatomy/richard_webber", "relation": "mentor"},
-        {"target": "char:greys_anatomy/alex_karev", "relation": "friend"},
-        {"target": "char:greys_anatomy/jo_wilson", "relation": "friend"},
-        {"target": "char:greys_anatomy/callie_torres", "relation": "colleague"},
-        {"target": "char:greys_anatomy/jackson_avery", "relation": "colleague"},
-        {"target": "char:greys_anatomy/arizona_robbins", "relation": "colleague"},
-        {"target": "char:greys_anatomy/cristina_yang", "relation": "colleague"}
+        { "target": "char:greys_anatomy/derek_shepherd", "relation": "sibling" },
+        { "target": "char:greys_anatomy/meredith_grey", "relation": "friend" },
+        { "target": "char:greys_anatomy/owen_hunt", "relation": "ex_partner" },
+        { "target": "char:greys_anatomy/richard_webber", "relation": "mentor" },
+        { "target": "char:greys_anatomy/alex_karev", "relation": "friend" },
+        { "target": "char:greys_anatomy/jo_wilson", "relation": "friend" },
+        { "target": "char:greys_anatomy/callie_torres", "relation": "colleague" },
+        { "target": "char:greys_anatomy/jackson_avery", "relation": "colleague" },
+        { "target": "char:greys_anatomy/arizona_robbins", "relation": "colleague" },
+        { "target": "char:greys_anatomy/cristina_yang", "relation": "colleague" }
       ],
       "arcs": [
         {
@@ -150,17 +213,25 @@
           "pattern_text": "The youngest in a family, long seen as the troubled one, tries to build a respectable life next to the sibling everyone admires. Just as they begin to prove themselves, the relationship that defined them is thrown into upheaval, and old coping habits start calling. They must decide who they are when they are no longer measured against someone else.",
           "hook": "She is newly single by choice, living in her brother's house, working alongside him, and fiercely guarding her sobriety.",
           "why_relatable": "How do you earn respect from a family that still sees your worst years? What happens to your identity when the person you measured yourself against changes? How do you handle grief without numbing it?",
-          "watch_for": ["How does she respond when her brother second-guesses her competence?", "What does she do when people at work learn about her past?", "Who does she let in when she is struggling, and who does she push away?"],
+          "watch_for": [
+            "How does she respond when her brother second-guesses her competence?",
+            "What does she do when people at work learn about her past?",
+            "Who does she let in when she is struggling, and who does she push away?"
+          ],
           "start_at": "S10",
           "span": "S10-S12",
           "situations": [
-            {"id": "sibling_rivalry", "weight": 0.7},
-            {"id": "new_job", "weight": 0.5},
-            {"id": "grief_and_loss", "weight": 0.8},
-            {"id": "addiction_and_recovery", "weight": 0.8}
+            { "id": "sibling_rivalry", "weight": 0.7 },
+            { "id": "new_job", "weight": 0.5 },
+            { "id": "grief_and_loss", "weight": 0.8 },
+            { "id": "addiction_and_recovery", "weight": 0.8 }
           ],
           "conflicts": ["past_vs_future", "self_vs_family_expectations"],
-          "emotions": {"start": ["hope", "self_doubt", "determination"], "middle": ["grief", "anger", "numbness"], "end": ["acceptance", "belonging"]},
+          "emotions": {
+            "start": ["hope", "self_doubt", "determination"],
+            "middle": ["grief", "anger", "numbness"],
+            "end": ["acceptance", "belonging"]
+          },
           "ending_tone": "bittersweet",
           "intensity": "heavy",
           "warnings": ["death_of_main_character", "grief", "addiction"],
@@ -172,7 +243,15 @@
           ],
           "spoiler": {
             "summary": "She breaks off her engagement to James, settles in Seattle and takes over Derek's department when he plans to move to D.C. Derek then stays and undermines her; her NA history is exposed at work. Derek dies after a car accident and Meredith withdraws life support without calling her. Amelia buries her grief in dark jokes and work until she buys oxycodone after 1,321 days sober; Owen talks her down and she finally cries. She confronts Meredith for robbing her of a goodbye, then forgives her after hearing Derek's last voicemail.",
-            "key_events": ["Ends engagement to James", "Becomes Head of Neurosurgery", "Addiction history exposed at work", "Derek dies; she is told only after her surgery", "Buys oxy and nearly relapses; Owen stops her", "Blames Meredith for not calling her before Derek's life support was withdrawn", "Hears Derek's final voicemail and reconciles with Meredith"],
+            "key_events": [
+              "Ends engagement to James",
+              "Becomes Head of Neurosurgery",
+              "Addiction history exposed at work",
+              "Derek dies; she is told only after her surgery",
+              "Buys oxy and nearly relapses; Owen stops her",
+              "Blames Meredith for not calling her before Derek's life support was withdrawn",
+              "Hears Derek's final voicemail and reconciles with Meredith"
+            ],
             "got_right": "She stands up for her competence and right to privacy, and when she hits bottom she hands over the drugs and lets herself feel the grief.",
             "got_wrong": "She masks pain with humour and overwork, lashes out at colleagues and at Meredith, and comes very close to throwing away years of recovery."
           }
@@ -185,17 +264,25 @@
           "pattern_text": "A person who has survived loss throws themselves wholeheartedly into a new marriage, hoping commitment will finally bring stability. Soon the partner wants a family, and old grief they never shared makes them freeze, avoid and run. They have to face what they actually want, and whether the person making their choices is really them.",
           "hook": "She is newly married, secretly relieved when a pregnancy test comes back negative, and unable to tell her husband why.",
           "why_relatable": "What do you do when your partner wants children and you are terrified? How do you tell someone you love about a loss you have never spoken about? When your behaviour has been erratic for years, how do you know which choices were truly yours?",
-          "watch_for": ["What does she avoid saying out loud, and to whom does she finally say it?", "How does she react when people suggest something might be wrong with her?", "What does her family's absence at the wedding stir up in her?"],
+          "watch_for": [
+            "What does she avoid saying out loud, and to whom does she finally say it?",
+            "How does she react when people suggest something might be wrong with her?",
+            "What does her family's absence at the wedding stir up in her?"
+          ],
           "start_at": "S12",
           "span": "S12-S14",
           "situations": [
-            {"id": "divorce", "weight": 0.7},
-            {"id": "becoming_a_parent", "weight": 0.5},
-            {"id": "illness_or_injury", "weight": 0.7},
-            {"id": "difficult_parent", "weight": 0.4}
+            { "id": "divorce", "weight": 0.7 },
+            { "id": "becoming_a_parent", "weight": 0.5 },
+            { "id": "illness_or_injury", "weight": 0.7 },
+            { "id": "difficult_parent", "weight": 0.4 }
           ],
           "conflicts": ["truth_vs_protecting_others", "independence_vs_connection"],
-          "emotions": {"start": ["love", "hope", "anxiety"], "middle": ["fear", "guilt", "overwhelm"], "end": ["relief", "acceptance", "confusion"]},
+          "emotions": {
+            "start": ["love", "hope", "anxiety"],
+            "middle": ["fear", "guilt", "overwhelm"],
+            "end": ["relief", "acceptance", "confusion"]
+          },
           "ending_tone": "bittersweet",
           "intensity": "heavy",
           "warnings": ["serious_illness", "death_of_loved_one", "grief", "betrayal"],
@@ -207,7 +294,15 @@
           ],
           "spoiler": {
             "summary": "Her mother and sisters skip her wedding; she runs, then returns and marries Owen. When he wants children she hides at work, finally admits she doesn't want a baby, and moves out after telling Alex about her son Christopher, born without a brain. A 10-centimetre tumor is discovered in her frontal lobe; her mentor Tom Koracick suggests it has impaired her judgment for years. After successful surgery she briefly speaks only French and forgets Derek's death; she recovers, and she and Owen agree to divorce, blaming the bad on the tumor and staying close friends.",
-            "key_events": ["Family refuses to attend her wedding", "Runs from her wedding and returns", "Reveals she doesn't want children", "Confides the story of her son Christopher", "Discovers a large frontal lobe meningioma", "Wakes up after surgery speaking only French", "Divorces Owen amicably"],
+            "key_events": [
+              "Family refuses to attend her wedding",
+              "Runs from her wedding and returns",
+              "Reveals she doesn't want children",
+              "Confides the story of her son Christopher",
+              "Discovers a large frontal lobe meningioma",
+              "Wakes up after surgery speaking only French",
+              "Divorces Owen amicably"
+            ],
             "got_right": "She eventually tells the truth about her grief and her fears, and learns to let loved ones be there for her during illness.",
             "got_wrong": "She marries impulsively, avoids hard conversations by disappearing, and lashes out at people who worry about her."
           }
@@ -220,17 +315,25 @@
           "pattern_text": "Someone who has always loved too fast and too hard tries to build something steadier: caring for people who need them, starting over with a gentler partner, and becoming a parent in unexpected circumstances. Everyone around them has an idea of what a happy ending should look like. They must work out whether they want the same things, and admit it even when the answer disappoints someone they love.",
           "hook": "She is single again, sharing a house to care for a baby and a struggling teenager, and wary of anything permanent.",
           "why_relatable": "Can you be a good parent while still wanting space to be yourself? What do you do when your partner wants marriage and more children and you are not sure you do? Is your hesitation wisdom or self-sabotage?",
-          "watch_for": ["How does her own recovery shape how she treats the teenager in her care?", "What makes her keep a new relationship at arm's length?", "How does she tell the difference between old fears and genuine wants?"],
+          "watch_for": [
+            "How does her own recovery shape how she treats the teenager in her care?",
+            "What makes her keep a new relationship at arm's length?",
+            "How does she tell the difference between old fears and genuine wants?"
+          ],
           "start_at": "S15",
           "span": "S15-S17",
           "situations": [
-            {"id": "becoming_a_parent", "weight": 0.8},
-            {"id": "addiction_and_recovery", "weight": 0.6},
-            {"id": "falling_for_someone_unexpected", "weight": 0.6},
-            {"id": "identity_and_self_acceptance", "weight": 0.7}
+            { "id": "becoming_a_parent", "weight": 0.8 },
+            { "id": "addiction_and_recovery", "weight": 0.6 },
+            { "id": "falling_for_someone_unexpected", "weight": 0.6 },
+            { "id": "identity_and_self_acceptance", "weight": 0.7 }
           ],
           "conflicts": ["independence_vs_connection", "duty_vs_desire"],
-          "emotions": {"start": ["hope", "anxiety"], "middle": ["fear", "overwhelm", "love"], "end": ["self_respect", "acceptance"]},
+          "emotions": {
+            "start": ["hope", "anxiety"],
+            "middle": ["fear", "overwhelm", "love"],
+            "end": ["self_respect", "acceptance"]
+          },
           "ending_tone": "ambiguous",
           "intensity": "moderate",
           "warnings": ["addiction", "death_of_loved_one", "serious_illness"],
@@ -242,7 +345,16 @@
           ],
           "spoiler": {
             "summary": "She helps Owen foster Leo and takes in his birth mother Betty, who relapses and whose friend Linus dies of an overdose; Betty's parents take Leo, then return him to Owen. Amelia and Owen reunite, then split when Teddy is revealed to be pregnant with his child. She starts sleeping with Link, gets pregnant, and briefly fears the baby could be Owen's before breaking up with Link over his hesitation; he returns, and the baby is his. They have Scout, and she holds the family together during COVID while Meredith is on a ventilator. Realising she doesn't want marriage or more children, she turns down Link's proposal at Maggie's wedding.",
-            "key_events": ["Takes in Betty and helps her through withdrawal", "Linus dies in the mass overdose", "Leo returned to Owen", "Breaks up with Owen over Teddy's pregnancy", "Pregnant; paternity doubt between Owen and Link", "Scout is born", "Cares for Meredith's kids during COVID", "Turns down Link's proposal"],
+            "key_events": [
+              "Takes in Betty and helps her through withdrawal",
+              "Linus dies in the mass overdose",
+              "Leo returned to Owen",
+              "Breaks up with Owen over Teddy's pregnancy",
+              "Pregnant; paternity doubt between Owen and Link",
+              "Scout is born",
+              "Cares for Meredith's kids during COVID",
+              "Turns down Link's proposal"
+            ],
             "got_right": "She uses her own history to help an addict with compassion and honesty, and ultimately refuses to say yes to a life she doesn't want just to please someone.",
             "got_wrong": "She hides pregnancy timing from Link, avoids difficult conversations, and lets fear drive her to push people away."
           }
@@ -254,17 +366,17 @@
       "name": "Callie Torres",
       "role": "A warm, confident orthopedic surgery resident who lives in the hospital basement and falls quickly and hard for a nervous intern.",
       "relations": [
-        {"target": "char:greys_anatomy/arizona_robbins", "relation": "partner"},
-        {"target": "char:greys_anatomy/cristina_yang", "relation": "friend"},
-        {"target": "char:greys_anatomy/miranda_bailey", "relation": "friend"},
-        {"target": "char:greys_anatomy/meredith_grey", "relation": "friend"},
-        {"target": "char:greys_anatomy/owen_hunt", "relation": "friend"},
-        {"target": "char:greys_anatomy/richard_webber", "relation": "boss"},
-        {"target": "char:greys_anatomy/derek_shepherd", "relation": "colleague"},
-        {"target": "char:greys_anatomy/alex_karev", "relation": "colleague"},
-        {"target": "char:greys_anatomy/jo_wilson", "relation": "protege"},
-        {"target": "char:greys_anatomy/jackson_avery", "relation": "colleague"},
-        {"target": "char:greys_anatomy/amelia_shepherd", "relation": "colleague"}
+        { "target": "char:greys_anatomy/arizona_robbins", "relation": "partner" },
+        { "target": "char:greys_anatomy/cristina_yang", "relation": "friend" },
+        { "target": "char:greys_anatomy/miranda_bailey", "relation": "friend" },
+        { "target": "char:greys_anatomy/meredith_grey", "relation": "friend" },
+        { "target": "char:greys_anatomy/owen_hunt", "relation": "friend" },
+        { "target": "char:greys_anatomy/richard_webber", "relation": "boss" },
+        { "target": "char:greys_anatomy/derek_shepherd", "relation": "colleague" },
+        { "target": "char:greys_anatomy/alex_karev", "relation": "colleague" },
+        { "target": "char:greys_anatomy/jo_wilson", "relation": "protege" },
+        { "target": "char:greys_anatomy/jackson_avery", "relation": "colleague" },
+        { "target": "char:greys_anatomy/amelia_shepherd", "relation": "colleague" }
       ],
       "arcs": [
         {
@@ -275,17 +387,25 @@
           "pattern_text": "A person gives their whole heart to a partner who is kind but half-committed, and whose closest friends treat them as an outsider. They rush into commitment hoping it will secure their place, while also chasing a big promotion at work. They must face whether they are truly chosen, and what they are willing to accept.",
           "hook": "She is bold, funny and openly in love, dating a man who hasn't said he loves her back and whose best friend can't stand her.",
           "why_relatable": "How long do you wait for someone to put you first? Does rushing into commitment make a relationship safer or more fragile? How do you keep your dignity when you suspect the truth but aren't ready to hear it?",
-          "watch_for": ["What does she notice but choose not to confront?", "How does she handle being treated as an outsider by his friends?", "How does pressure at home affect her work?"],
+          "watch_for": [
+            "What does she notice but choose not to confront?",
+            "How does she handle being treated as an outsider by his friends?",
+            "How does pressure at home affect her work?"
+          ],
           "start_at": "S2E19",
           "span": "S2-S4",
           "situations": [
-            {"id": "unrequited_love", "weight": 0.7},
-            {"id": "divorce", "weight": 0.8},
-            {"id": "becoming_a_manager", "weight": 0.5},
-            {"id": "finding_your_people", "weight": 0.4}
+            { "id": "unrequited_love", "weight": 0.7 },
+            { "id": "divorce", "weight": 0.8 },
+            { "id": "becoming_a_manager", "weight": 0.5 },
+            { "id": "finding_your_people", "weight": 0.4 }
           ],
           "conflicts": ["belonging_vs_integrity", "holding_on_vs_letting_go"],
-          "emotions": {"start": ["love", "hope"], "middle": ["jealousy", "inadequacy", "betrayal"], "end": ["self_respect", "relief"]},
+          "emotions": {
+            "start": ["love", "hope"],
+            "middle": ["jealousy", "inadequacy", "betrayal"],
+            "end": ["self_respect", "relief"]
+          },
           "ending_tone": "bittersweet",
           "intensity": "moderate",
           "warnings": ["betrayal", "death_of_loved_one"],
@@ -297,7 +417,15 @@
           ],
           "spoiler": {
             "summary": "She and George break up; she sleeps with Mark, then supports George when his father dies, and George impulsively proposes. They marry in Vegas. She reveals her family wealth; George sleeps with Izzie. Callie becomes Chief Resident but struggles, and Bailey undermines her. George confesses the affair; she is humiliated in the cafeteria, is fired as Chief Resident and replaced by Bailey, and the marriage ends. She lets go and finds relief in returning to surgery.",
-            "key_events": ["Sleeps with Mark while broken up with George", "Marries George in Vegas", "George sleeps with Izzie", "Named Chief Resident, then fired and replaced by Bailey", "George confesses the affair", "Cafeteria humiliation", "Divorce"],
+            "key_events": [
+              "Sleeps with Mark while broken up with George",
+              "Marries George in Vegas",
+              "George sleeps with Izzie",
+              "Named Chief Resident, then fired and replaced by Bailey",
+              "George confesses the affair",
+              "Cafeteria humiliation",
+              "Divorce"
+            ],
             "got_right": "She stands up for herself with Izzie and George's friends and ultimately refuses to pretend forgiveness she doesn't feel.",
             "got_wrong": "She rushes into marriage to feel secure, hides her wealth, and ignores clear warning signs because she's afraid of the answer."
           }
@@ -310,17 +438,25 @@
           "pattern_text": "An adult who always assumed they knew who they were starts developing feelings they have no framework for. They swing between denial, curiosity and fear of being 'not enough' in a new identity, and then face a parent who may withdraw love and money over it. They must decide whether to live honestly even if their family never accepts them.",
           "hook": "She is single again, sleeping with a male friend to avoid thinking about the new friend she can't stop smiling at.",
           "why_relatable": "What if you realise something fundamental about yourself later than everyone else seems to? Is it fair for a new partner to expect you to be sure right away? What does it cost to be honest with a family whose love feels conditional?",
-          "watch_for": ["How does she react the first time someone suggests she might be attracted to women?", "How does she handle feeling like a beginner?", "What does she decide when a parent's approval is on the line?"],
+          "watch_for": [
+            "How does she react the first time someone suggests she might be attracted to women?",
+            "How does she handle feeling like a beginner?",
+            "What does she decide when a parent's approval is on the line?"
+          ],
           "start_at": "S4",
           "span": "S4-S7",
           "situations": [
-            {"id": "identity_and_self_acceptance", "weight": 1.0},
-            {"id": "falling_for_someone_unexpected", "weight": 0.8},
-            {"id": "difficult_parent", "weight": 0.7},
-            {"id": "family_expectations", "weight": 0.6}
+            { "id": "identity_and_self_acceptance", "weight": 1.0 },
+            { "id": "falling_for_someone_unexpected", "weight": 0.8 },
+            { "id": "difficult_parent", "weight": 0.7 },
+            { "id": "family_expectations", "weight": 0.6 }
           ],
           "conflicts": ["self_vs_family_expectations", "belonging_vs_integrity"],
-          "emotions": {"start": ["confusion", "curiosity"], "middle": ["fear", "self_doubt", "rejection"], "end": ["self_respect", "love", "belonging"]},
+          "emotions": {
+            "start": ["confusion", "curiosity"],
+            "middle": ["fear", "self_doubt", "rejection"],
+            "end": ["self_respect", "love", "belonging"]
+          },
           "ending_tone": "hopeful",
           "intensity": "moderate",
           "warnings": ["death_of_main_character", "grief", "war_and_violence"],
@@ -332,7 +468,17 @@
           ],
           "spoiler": {
             "summary": "Erica Hahn kisses her; their relationship ends when Erica accuses her of only 'kind of' being a lesbian and leaves Seattle. Arizona kisses her in a bar bathroom, initially rejects her as a 'newborn', then they date. Her father cuts her off financially and tries to pray it away, but she refuses to lie. George dies; she and Arizona split over wanting children, reunite after the hospital shooting, and break up again at the airport when Arizona leaves for Africa. Callie gets pregnant by Mark; Arizona returns, they're in a crash, Callie survives, gives birth to Sofia and marries Arizona. Her mother boycotts the wedding, but her father arrives for the father-daughter dance.",
-            "key_events": ["Erica Hahn kisses her in the elevator", "Erica leaves after their fight", "Meets Arizona in a bar bathroom", "Father cuts her off financially", "George dies", "Breaks up with Arizona over children", "Pregnant with Mark's baby", "Car crash and premature birth of Sofia", "Marries Arizona; father arrives for the dance"],
+            "key_events": [
+              "Erica Hahn kisses her in the elevator",
+              "Erica leaves after their fight",
+              "Meets Arizona in a bar bathroom",
+              "Father cuts her off financially",
+              "George dies",
+              "Breaks up with Arizona over children",
+              "Pregnant with Mark's baby",
+              "Car crash and premature birth of Sofia",
+              "Marries Arizona; father arrives for the dance"
+            ],
             "got_right": "She refuses to lie about who she loves even when it costs her money and family approval, and she keeps learning without shame.",
             "got_wrong": "At first she uses a male friend for sex to avoid her feelings and sometimes lets fear make her half-committed."
           }
@@ -345,17 +491,25 @@
           "pattern_text": "A person makes an agonising decision to save the one they love, and the partner survives but can't forgive them for it. They become caretaker, breadwinner and punching bag, trying to fix everything while swallowing their own grief. Over time they must ask whether the relationship is still nourishing either of them.",
           "hook": "She has just broken a promise in order to save her partner's life, she is grieving a loss of her own, and she is trying to hold her family together.",
           "why_relatable": "What do you do when doing the right thing makes someone you love hate you? How long can you be someone's caretaker before you lose yourself? When do you keep fighting for a relationship, and when do you let it go?",
-          "watch_for": ["How does her urge to fix things land with her partner?", "What does she need that she never asks for?", "How does she react when she finally has time apart?"],
+          "watch_for": [
+            "How does her urge to fix things land with her partner?",
+            "What does she need that she never asks for?",
+            "How does she react when she finally has time apart?"
+          ],
           "start_at": "S9E1",
           "span": "S9-S12",
           "situations": [
-            {"id": "caring_for_family", "weight": 0.9},
-            {"id": "grief_and_loss", "weight": 0.6},
-            {"id": "divorce", "weight": 0.7},
-            {"id": "illness_or_injury", "weight": 0.5}
+            { "id": "caring_for_family", "weight": 0.9 },
+            { "id": "grief_and_loss", "weight": 0.6 },
+            { "id": "divorce", "weight": 0.7 },
+            { "id": "illness_or_injury", "weight": 0.5 }
           ],
           "conflicts": ["holding_on_vs_letting_go", "control_vs_trust"],
-          "emotions": {"start": ["guilt", "grief", "overwhelm"], "middle": ["betrayal", "anger", "resentment"], "end": ["freedom", "acceptance"]},
+          "emotions": {
+            "start": ["guilt", "grief", "overwhelm"],
+            "middle": ["betrayal", "anger", "resentment"],
+            "end": ["freedom", "acceptance"]
+          },
           "ending_tone": "bittersweet",
           "intensity": "heavy",
           "warnings": ["medical_trauma", "death_of_main_character", "grief", "betrayal"],
@@ -367,7 +521,16 @@
           ],
           "spoiler": {
             "summary": "Arizona blames her for the amputation; Mark dies. Callie gets her through recovery, and Arizona slowly returns to work and intimacy. Arizona miscarries, then cheats with Lauren Boswell during a superstorm; Callie outs her and kicks her out, then asks her to come home after winning a malpractice suit. They try surrogacy and counselling, but during a 30-day break Callie realises she feels freer without Arizona and ends the marriage. Later she dates Penny, loses a custody battle for Sofia when she tries to move to New York, but Arizona lets her take Sofia part-time.",
-            "key_events": ["Orders Arizona's leg amputated", "Mark dies", "Arizona's miscarriage", "Arizona cheats with Lauren Boswell", "Wins the Travis Reed malpractice case", "Ends the marriage after a 30-day break", "Dates Penny", "Loses the custody battle over Sofia"],
+            "key_events": [
+              "Orders Arizona's leg amputated",
+              "Mark dies",
+              "Arizona's miscarriage",
+              "Arizona cheats with Lauren Boswell",
+              "Wins the Travis Reed malpractice case",
+              "Ends the marriage after a 30-day break",
+              "Dates Penny",
+              "Loses the custody battle over Sofia"
+            ],
             "got_right": "She makes the life-saving call, stays through the worst of her wife's anger, and eventually honours her own happiness.",
             "got_wrong": "She tries to fix Arizona instead of accepting her, publicly shames her, and later decides to move Sofia across the country without consulting her."
           }
@@ -379,16 +542,16 @@
       "name": "Jackson Avery",
       "role": "A confident surgical resident from a rival hospital, grandson of a legendary surgeon, who arrives after a merger determined to succeed without using his family name.",
       "relations": [
-        {"target": "char:greys_anatomy/richard_webber", "relation": "parent"},
-        {"target": "char:greys_anatomy/meredith_grey", "relation": "friend"},
-        {"target": "char:greys_anatomy/jo_wilson", "relation": "friend"},
-        {"target": "char:greys_anatomy/owen_hunt", "relation": "boss"},
-        {"target": "char:greys_anatomy/miranda_bailey", "relation": "boss"},
-        {"target": "char:greys_anatomy/cristina_yang", "relation": "colleague"},
-        {"target": "char:greys_anatomy/amelia_shepherd", "relation": "colleague"},
-        {"target": "char:greys_anatomy/callie_torres", "relation": "colleague"},
-        {"target": "char:greys_anatomy/arizona_robbins", "relation": "colleague"},
-        {"target": "char:greys_anatomy/alex_karev", "relation": "colleague"}
+        { "target": "char:greys_anatomy/richard_webber", "relation": "parent" },
+        { "target": "char:greys_anatomy/meredith_grey", "relation": "friend" },
+        { "target": "char:greys_anatomy/jo_wilson", "relation": "friend" },
+        { "target": "char:greys_anatomy/owen_hunt", "relation": "boss" },
+        { "target": "char:greys_anatomy/miranda_bailey", "relation": "boss" },
+        { "target": "char:greys_anatomy/cristina_yang", "relation": "colleague" },
+        { "target": "char:greys_anatomy/amelia_shepherd", "relation": "colleague" },
+        { "target": "char:greys_anatomy/callie_torres", "relation": "colleague" },
+        { "target": "char:greys_anatomy/arizona_robbins", "relation": "colleague" },
+        { "target": "char:greys_anatomy/alex_karev", "relation": "colleague" }
       ],
       "arcs": [
         {
@@ -399,17 +562,25 @@
           "pattern_text": "Someone born into a famous, wealthy family wants desperately to be judged on their own merit, yet the family name keeps opening doors and casting shadows. A domineering parent meddles, and an absent parent is a question they avoid. They must decide how to use the power they inherited without letting it define them.",
           "hook": "He is a talented resident who hates being compared to his grandfather and keeps his mother at arm's length.",
           "why_relatable": "How do you know if you earned something or were handed it? What do you do with a parent who loves you by controlling you? Can you ever stop needing something from a parent who was never there?",
-          "watch_for": ["How does he react when others assume his success comes from his name?", "How does he handle his mother's interference?", "What does he want from the parent who wasn't there?"],
+          "watch_for": [
+            "How does he react when others assume his success comes from his name?",
+            "How does he handle his mother's interference?",
+            "What does he want from the parent who wasn't there?"
+          ],
           "start_at": "S6",
           "span": "S6-S17",
           "situations": [
-            {"id": "family_expectations", "weight": 0.9},
-            {"id": "difficult_parent", "weight": 0.7},
-            {"id": "responsibility_you_didnt_ask_for", "weight": 0.6},
-            {"id": "career_change", "weight": 0.5}
+            { "id": "family_expectations", "weight": 0.9 },
+            { "id": "difficult_parent", "weight": 0.7 },
+            { "id": "responsibility_you_didnt_ask_for", "weight": 0.6 },
+            { "id": "career_change", "weight": 0.5 }
           ],
           "conflicts": ["self_vs_family_expectations", "power_vs_morality"],
-          "emotions": {"start": ["pride", "resentment"], "middle": ["rejection", "confusion", "determination"], "end": ["self_respect", "peace"]},
+          "emotions": {
+            "start": ["pride", "resentment"],
+            "middle": ["rejection", "confusion", "determination"],
+            "end": ["self_respect", "peace"]
+          },
           "ending_tone": "hopeful",
           "intensity": "moderate",
           "warnings": ["war_and_violence", "serious_illness"],
@@ -421,7 +592,15 @@
           ],
           "spoiler": {
             "summary": "He survives the hospital shooting, becomes Mark Sloan's protégé in plastics, and takes the Harper Avery Foundation's seat on the board, where he renames the hospital Grey Sloan Memorial. He tracks down his father in Montana, only to reject him for walking out. After his grandfather's death and Catherine's cancer, he looks for meaning, then after COVID confronts racial inequity in medicine, gives up his surgical career to run the Catherine Fox Foundation in Boston, and brings April and Harriet with him.",
-            "key_events": ["Survives the hospital shooting and helps save Derek", "Mark Sloan becomes his mentor", "Appointed to the hospital board by his mother", "Renames the hospital Grey Sloan Memorial", "Meets his father and rejects him", "Catherine's cancer", "Leaves surgery to run the Foundation in Boston"],
+            "key_events": [
+              "Survives the hospital shooting and helps save Derek",
+              "Mark Sloan becomes his mentor",
+              "Appointed to the hospital board by his mother",
+              "Renames the hospital Grey Sloan Memorial",
+              "Meets his father and rejects him",
+              "Catherine's cancer",
+              "Leaves surgery to run the Foundation in Boston"
+            ],
             "got_right": "He uses his inherited power to fight for equity and refuses to abandon his daughter the way his father abandoned him.",
             "got_wrong": "He can be arrogant and dismissive, and he wields his authority as majority shareholder when it suits him."
           }
@@ -434,16 +613,24 @@
           "pattern_text": "Two best friends take a leap and marry on impulse, only to find they see the world very differently. When they suffer a devastating loss together, each grieves in a way the other can't reach, and one of them leaves to cope. They must decide whether love is enough when grief has made them strangers.",
           "hook": "He is about to watch the woman he has always loved marry someone else, and has to decide whether to say something.",
           "why_relatable": "What happens when two people grieve the same loss in opposite ways? Can a relationship survive one person pulling away when the other needs them most? How do you respect a faith you don't share?",
-          "watch_for": ["How does he respond when she leans on faith and he can't?", "What does he need from her after the loss, and does he say it?", "How does he handle feeling abandoned?"],
+          "watch_for": [
+            "How does he respond when she leans on faith and he can't?",
+            "What does he need from her after the loss, and does he say it?",
+            "How does he handle feeling abandoned?"
+          ],
           "start_at": "S10",
           "span": "S10-S12",
           "situations": [
-            {"id": "grief_and_loss", "weight": 0.9},
-            {"id": "divorce", "weight": 0.8},
-            {"id": "becoming_a_parent", "weight": 0.6}
+            { "id": "grief_and_loss", "weight": 0.9 },
+            { "id": "divorce", "weight": 0.8 },
+            { "id": "becoming_a_parent", "weight": 0.6 }
           ],
           "conflicts": ["independence_vs_connection", "holding_on_vs_letting_go"],
-          "emotions": {"start": ["love", "hope"], "middle": ["grief", "loneliness", "resentment"], "end": ["acceptance", "betrayal"]},
+          "emotions": {
+            "start": ["love", "hope"],
+            "middle": ["grief", "loneliness", "resentment"],
+            "end": ["acceptance", "betrayal"]
+          },
           "ending_tone": "bittersweet",
           "intensity": "heavy",
           "warnings": ["death_of_loved_one", "grief", "medical_trauma", "betrayal"],
@@ -455,7 +642,15 @@
           ],
           "spoiler": {
             "summary": "April leaves Matthew at the altar and marries Jackson. They fight about religion; she's pregnant, and the baby, Samuel, has fatal osteogenesis imperfecta type II. They induce labour, baptise him and hold him until he dies. April copes by joining the Army and deploying to Jordan, extending her tour; Jackson feels abandoned and asks for a divorce. April secretly discovers she's pregnant again before signing the papers and hides it until Arizona tells him. They share custody of Harriet and later rekindle their relationship in Boston.",
-            "key_events": ["Interrupts April's wedding to declare his love", "Marries April", "Son Samuel diagnosed with lethal OI type II", "Samuel dies in their arms", "April deploys with the Army", "Asks for a divorce", "April hides her second pregnancy; Harriet is born"],
+            "key_events": [
+              "Interrupts April's wedding to declare his love",
+              "Marries April",
+              "Son Samuel diagnosed with lethal OI type II",
+              "Samuel dies in their arms",
+              "April deploys with the Army",
+              "Asks for a divorce",
+              "April hides her second pregnancy; Harriet is born"
+            ],
             "got_right": "He shows up for April through the loss, prays for her despite not believing, and becomes a devoted father.",
             "got_wrong": "He sometimes mocks her faith, and his resentment over feeling abandoned hardens into issuing ultimatums instead of talking."
           }
@@ -467,16 +662,16 @@
       "name": "Jo Wilson",
       "role": "A sharp, guarded new surgical intern who grew up in foster care and lived in her car as a teenager, and who keeps the rest of her past to herself.",
       "relations": [
-        {"target": "char:greys_anatomy/alex_karev", "relation": "ex_partner"},
-        {"target": "char:greys_anatomy/meredith_grey", "relation": "mentor"},
-        {"target": "char:greys_anatomy/jackson_avery", "relation": "friend"},
-        {"target": "char:greys_anatomy/miranda_bailey", "relation": "boss"},
-        {"target": "char:greys_anatomy/callie_torres", "relation": "mentor"},
-        {"target": "char:greys_anatomy/arizona_robbins", "relation": "colleague"},
-        {"target": "char:greys_anatomy/owen_hunt", "relation": "colleague"},
-        {"target": "char:greys_anatomy/amelia_shepherd", "relation": "friend"},
-        {"target": "char:greys_anatomy/richard_webber", "relation": "mentor"},
-        {"target": "char:greys_anatomy/cristina_yang", "relation": "colleague"}
+        { "target": "char:greys_anatomy/alex_karev", "relation": "ex_partner" },
+        { "target": "char:greys_anatomy/meredith_grey", "relation": "mentor" },
+        { "target": "char:greys_anatomy/jackson_avery", "relation": "friend" },
+        { "target": "char:greys_anatomy/miranda_bailey", "relation": "boss" },
+        { "target": "char:greys_anatomy/callie_torres", "relation": "mentor" },
+        { "target": "char:greys_anatomy/arizona_robbins", "relation": "colleague" },
+        { "target": "char:greys_anatomy/owen_hunt", "relation": "colleague" },
+        { "target": "char:greys_anatomy/amelia_shepherd", "relation": "friend" },
+        { "target": "char:greys_anatomy/richard_webber", "relation": "mentor" },
+        { "target": "char:greys_anatomy/cristina_yang", "relation": "colleague" }
       ],
       "arcs": [
         {
@@ -487,17 +682,25 @@
           "pattern_text": "A person who has survived neglect and violence rebuilds their life under a new identity, succeeding through sheer grit while trusting nobody. Love starts to grow, but closeness feels dangerous and the past threatens to catch up with them. They must learn whether it is safe to be known.",
           "hook": "She is a new intern with a secret past, determined to be good at her job and deeply suspicious of anyone who is kind to her.",
           "why_relatable": "How do you let someone love you when every past experience taught you people hurt you? When you've built a new life, how much of your old one do you owe anyone? Can you be angry without becoming the person who hurt you?",
-          "watch_for": ["How does she react when someone tries to help her?", "What does she keep from the people closest to her, and why?", "How does she respond when she meets someone in danger the way she once was?"],
+          "watch_for": [
+            "How does she react when someone tries to help her?",
+            "What does she keep from the people closest to her, and why?",
+            "How does she respond when she meets someone in danger the way she once was?"
+          ],
           "start_at": "S9E1",
           "span": "S9-S14",
           "situations": [
-            {"id": "starting_over", "weight": 0.8},
-            {"id": "identity_and_self_acceptance", "weight": 0.6},
-            {"id": "falling_for_someone_unexpected", "weight": 0.6},
-            {"id": "finding_your_people", "weight": 0.5}
+            { "id": "starting_over", "weight": 0.8 },
+            { "id": "identity_and_self_acceptance", "weight": 0.6 },
+            { "id": "falling_for_someone_unexpected", "weight": 0.6 },
+            { "id": "finding_your_people", "weight": 0.5 }
           ],
           "conflicts": ["control_vs_trust", "truth_vs_protecting_others"],
-          "emotions": {"start": ["fear", "determination"], "middle": ["anxiety", "shame", "love"], "end": ["relief", "belonging", "self_respect"]},
+          "emotions": {
+            "start": ["fear", "determination"],
+            "middle": ["anxiety", "shame", "love"],
+            "end": ["relief", "belonging", "self_respect"]
+          },
           "ending_tone": "hopeful",
           "intensity": "heavy",
           "warnings": ["domestic_violence", "abuse", "death_of_main_character"],
@@ -509,7 +712,16 @@
           ],
           "spoiler": {
             "summary": "She fights back when her boyfriend Jason hits her, falls in love with Alex, and turns down his proposals because she is secretly still married to an abusive husband, Paul, having fled under a new name. Alex nearly kills DeLuca after misreading a situation, scaring her away, but they reconcile. Paul finds her in Seattle; they divorce, she warns his fiancée, and Paul dies of a head injury after lunging at her. Jo donates his organs and proposes to Alex herself; they marry on a ferry.",
-            "key_events": ["Jason hits her and she fights back", "Alex confesses his love during the superstorm", "Refuses Alex's proposal", "Reveals she is legally married to an abusive husband", "Alex beats DeLuca", "Paul finds her in Seattle", "Paul dies; she donates his organs", "Proposes to Alex and marries him on a ferry"],
+            "key_events": [
+              "Jason hits her and she fights back",
+              "Alex confesses his love during the superstorm",
+              "Refuses Alex's proposal",
+              "Reveals she is legally married to an abusive husband",
+              "Alex beats DeLuca",
+              "Paul finds her in Seattle",
+              "Paul dies; she donates his organs",
+              "Proposes to Alex and marries him on a ferry"
+            ],
             "got_right": "She protects herself and warns another woman in danger, and she lets herself be known by the people who earn it.",
             "got_wrong": "She keeps secrets that hurt her relationships and sometimes pushes away the people trying to help."
           }
@@ -522,17 +734,25 @@
           "pattern_text": "A person who was abandoned as a baby finally tracks down the parent who left, hoping for an apology or at least an explanation. The truth is darker than they imagined and reframes how they see themselves. They must find a way back from depression and shame, and learn to accept help from the people who love them.",
           "hook": "She has a steady relationship, an exciting research fellowship and a genetic test result that gives her a name to look for.",
           "why_relatable": "Would you want to meet a parent who left you? What if the answer to 'why' is something you can't un-know? How do you ask for help when you have always survived alone?",
-          "watch_for": ["What is she hoping to get from the meeting?", "How does she treat her partner when she's hurting?", "What finally helps her say she's not okay?"],
+          "watch_for": [
+            "What is she hoping to get from the meeting?",
+            "How does she treat her partner when she's hurting?",
+            "What finally helps her say she's not okay?"
+          ],
           "start_at": "S15",
           "span": "S15-S16",
           "situations": [
-            {"id": "difficult_parent", "weight": 1.0},
-            {"id": "identity_and_self_acceptance", "weight": 0.7},
-            {"id": "grief_and_loss", "weight": 0.4},
-            {"id": "loneliness", "weight": 0.5}
+            { "id": "difficult_parent", "weight": 1.0 },
+            { "id": "identity_and_self_acceptance", "weight": 0.7 },
+            { "id": "grief_and_loss", "weight": 0.4 },
+            { "id": "loneliness", "weight": 0.5 }
           ],
           "conflicts": ["past_vs_future", "independence_vs_connection"],
-          "emotions": {"start": ["curiosity", "hope", "anxiety"], "middle": ["rejection", "shame", "numbness"], "end": ["acceptance", "love", "hope"]},
+          "emotions": {
+            "start": ["curiosity", "hope", "anxiety"],
+            "middle": ["rejection", "shame", "numbness"],
+            "end": ["acceptance", "love", "hope"]
+          },
           "ending_tone": "hopeful",
           "intensity": "heavy",
           "warnings": ["sexual_violence", "abuse", "domestic_violence", "addiction"],
@@ -544,7 +764,16 @@
           ],
           "spoiler": {
             "summary": "She travels to Pittsburgh and meets her birth mother Vicki, who reveals Jo was conceived when Vicki was raped and that Jo looks like her father; Vicki pulls away from her touch. Jo confides that she once had an abortion because of Paul's abuse. Jo spirals into depression, drinks at work, and shuts Alex out. After a crisis over a patient, Meredith gets through to her; she checks into a psychiatric facility, does EMDR with therapist Carly and learns healthy anger. Alex asks her to marry him again; she returns to work as an attending.",
-            "key_events": ["Meets her birth mother, Vicki", "Learns she was conceived through rape", "Vicki pulls away from her hand", "Helps a sexual assault survivor with a wall of women", "Clinical depression and drinking at work", "Checks into a psychiatric facility", "EMDR and learning healthy anger", "Alex proposes again; they remarry on Halloween"],
+            "key_events": [
+              "Meets her birth mother, Vicki",
+              "Learns she was conceived through rape",
+              "Vicki pulls away from her hand",
+              "Helps a sexual assault survivor with a wall of women",
+              "Clinical depression and drinking at work",
+              "Checks into a psychiatric facility",
+              "EMDR and learning healthy anger",
+              "Alex proposes again; they remarry on Halloween"
+            ],
             "got_right": "She finally asks for help and does the hard therapeutic work, and she channels her pain into fiercely compassionate care for survivors.",
             "got_wrong": "She hides her pain from her husband, drinks to cope, and threatens to leave anyone who pushes her to talk."
           }
@@ -557,17 +786,25 @@
           "pattern_text": "Just as a person has finally healed enough to trust love, their partner disappears and ends things from a distance. They must grieve, find new footing, lean on friends, and rediscover what brings them joy, even if that means changing direction entirely. The question is whether they can believe they are still worthy of love.",
           "hook": "She is a surgeon in what feels like a strong relationship, and her partner has suddenly gone silent.",
           "why_relatable": "How do you move on when someone leaves without facing you? Can you hate someone and still be grateful they changed you? What if the career you fought for no longer makes you happy?",
-          "watch_for": ["Who does she let take care of her?", "How does she describe what the relationship gave her?", "What surprises her about what brings her joy now?"],
+          "watch_for": [
+            "Who does she let take care of her?",
+            "How does she describe what the relationship gave her?",
+            "What surprises her about what brings her joy now?"
+          ],
           "start_at": "S16",
           "span": "S16-S17",
           "situations": [
-            {"id": "divorce", "weight": 0.8},
-            {"id": "starting_over", "weight": 0.8},
-            {"id": "career_change", "weight": 0.6},
-            {"id": "becoming_a_parent", "weight": 0.5}
+            { "id": "divorce", "weight": 0.8 },
+            { "id": "starting_over", "weight": 0.8 },
+            { "id": "career_change", "weight": 0.6 },
+            { "id": "becoming_a_parent", "weight": 0.5 }
           ],
           "conflicts": ["holding_on_vs_letting_go", "past_vs_future"],
-          "emotions": {"start": ["anxiety", "dread"], "middle": ["betrayal", "grief", "loneliness"], "end": ["self_respect", "hope", "joy"]},
+          "emotions": {
+            "start": ["anxiety", "dread"],
+            "middle": ["betrayal", "grief", "loneliness"],
+            "end": ["self_respect", "hope", "joy"]
+          },
           "ending_tone": "hopeful",
           "intensity": "moderate",
           "warnings": ["betrayal", "grief", "serious_illness"],
@@ -579,7 +816,15 @@
           ],
           "spoiler": {
             "summary": "She learns Alex never went to Iowa; his letter reveals he's gone back to Izzie and their twins, leaving Jo everything including his shares. With Link and Levi's support she grieves, decides Alex taught her she's worthy of love, and starts going by 'Dr. Jo'. A failed attempt at sex with Jackson ends in tears; during COVID they become friends-with-benefits. She discovers joy in delivering babies and switches to OB/GYN, and later fosters baby Luna.",
-            "key_events": ["Alex secretly returns to Izzie", "Divorce letter leaves her his hospital shares", "Takes off her ring and becomes 'Dr. Jo'", "Levi moves in", "Friends-with-benefits with Jackson during COVID", "Switches to an OB/GYN residency", "Fosters baby Luna"],
+            "key_events": [
+              "Alex secretly returns to Izzie",
+              "Divorce letter leaves her his hospital shares",
+              "Takes off her ring and becomes 'Dr. Jo'",
+              "Levi moves in",
+              "Friends-with-benefits with Jackson during COVID",
+              "Switches to an OB/GYN residency",
+              "Fosters baby Luna"
+            ],
             "got_right": "She refuses to let the betrayal erase what she learned about her worth, and she's brave enough to change careers to follow joy.",
             "got_wrong": "She lashes out at others (Teddy, Andrew) while hurting, and throws herself into casual sex before she's ready."
           }
@@ -591,16 +836,16 @@
       "name": "Arizona Robbins",
       "role": "A relentlessly cheerful, fiercely competent pediatric surgeon who skates around the hospital in wheeled sneakers, raised in a military family to be 'a good man in a storm'.",
       "relations": [
-        {"target": "char:greys_anatomy/callie_torres", "relation": "partner"},
-        {"target": "char:greys_anatomy/alex_karev", "relation": "protege"},
-        {"target": "char:greys_anatomy/richard_webber", "relation": "friend"},
-        {"target": "char:greys_anatomy/miranda_bailey", "relation": "friend"},
-        {"target": "char:greys_anatomy/owen_hunt", "relation": "colleague"},
-        {"target": "char:greys_anatomy/cristina_yang", "relation": "colleague"},
-        {"target": "char:greys_anatomy/meredith_grey", "relation": "colleague"},
-        {"target": "char:greys_anatomy/jackson_avery", "relation": "colleague"},
-        {"target": "char:greys_anatomy/amelia_shepherd", "relation": "colleague"},
-        {"target": "char:greys_anatomy/jo_wilson", "relation": "colleague"}
+        { "target": "char:greys_anatomy/callie_torres", "relation": "partner" },
+        { "target": "char:greys_anatomy/alex_karev", "relation": "protege" },
+        { "target": "char:greys_anatomy/richard_webber", "relation": "friend" },
+        { "target": "char:greys_anatomy/miranda_bailey", "relation": "friend" },
+        { "target": "char:greys_anatomy/owen_hunt", "relation": "colleague" },
+        { "target": "char:greys_anatomy/cristina_yang", "relation": "colleague" },
+        { "target": "char:greys_anatomy/meredith_grey", "relation": "colleague" },
+        { "target": "char:greys_anatomy/jackson_avery", "relation": "colleague" },
+        { "target": "char:greys_anatomy/amelia_shepherd", "relation": "colleague" },
+        { "target": "char:greys_anatomy/jo_wilson", "relation": "colleague" }
       ],
       "arcs": [
         {
@@ -611,17 +856,25 @@
           "pattern_text": "An upbeat, capable person suffers a traumatic injury that changes their body forever, and the person they trusted most made the decision that caused it. Depression, anger and the feeling of being seen as broken push them to withdraw. They must learn to live in their new body, and discover that the people trying hardest to help can make them feel least whole.",
           "hook": "She is recovering from a devastating accident, depressed and furious, unable to forgive her partner for a decision that saved her life.",
           "why_relatable": "How do you get your confidence back when your body has changed? Can you forgive someone for saving you in a way you didn't choose? Why does it sometimes feel easier to be seen by a stranger than by the person who knew you before?",
-          "watch_for": ["What small victories help her feel like herself again?", "How does her anger toward her partner show up in unexpected ways?", "Who makes her feel whole, and why?"],
+          "watch_for": [
+            "What small victories help her feel like herself again?",
+            "How does her anger toward her partner show up in unexpected ways?",
+            "Who makes her feel whole, and why?"
+          ],
           "start_at": "S9E1",
           "span": "S9-S11",
           "situations": [
-            {"id": "illness_or_injury", "weight": 1.0},
-            {"id": "confidence_struggle", "weight": 0.7},
-            {"id": "redemption_after_mistakes", "weight": 0.5},
-            {"id": "divorce", "weight": 0.6}
+            { "id": "illness_or_injury", "weight": 1.0 },
+            { "id": "confidence_struggle", "weight": 0.7 },
+            { "id": "redemption_after_mistakes", "weight": 0.5 },
+            { "id": "divorce", "weight": 0.6 }
           ],
           "conflicts": ["revenge_vs_forgiveness", "holding_on_vs_letting_go"],
-          "emotions": {"start": ["anger", "grief", "numbness"], "middle": ["shame", "longing", "guilt"], "end": ["acceptance", "self_respect"]},
+          "emotions": {
+            "start": ["anger", "grief", "numbness"],
+            "middle": ["shame", "longing", "guilt"],
+            "end": ["acceptance", "self_respect"]
+          },
           "ending_tone": "bittersweet",
           "intensity": "heavy",
           "warnings": ["medical_trauma", "death_of_main_character", "grief", "betrayal"],
@@ -633,7 +886,16 @@
           ],
           "spoiler": {
             "summary": "Mark and Lexie die after the crash; Callie has Alex amputate Arizona's leg while she's crashing. Arizona sinks into depression and blames Callie, then slowly learns to walk with a prosthesis and returns to work. She miscarries after she and Callie try for a second baby, then cheats with visiting surgeon Lauren Boswell during a superstorm; Callie finds out when she sees Arizona's ring on Lauren's scrubs. She has an affair with Leah while separated, returns home, but realises Callie makes her feel she's not enough as she is. Counselling and a 30-day break end with Callie choosing divorce.",
-            "key_events": ["Plane crash; Mark and Lexie die", "Leg amputated after she nearly dies of infection", "Blames Callie and withdraws", "Returns to work with a prosthetic", "Miscarriage", "Cheats with Lauren Boswell", "Separation and fling with Leah Murphy", "Divorce"],
+            "key_events": [
+              "Plane crash; Mark and Lexie die",
+              "Leg amputated after she nearly dies of infection",
+              "Blames Callie and withdraws",
+              "Returns to work with a prosthetic",
+              "Miscarriage",
+              "Cheats with Lauren Boswell",
+              "Separation and fling with Leah Murphy",
+              "Divorce"
+            ],
             "got_right": "She fights her way back to work and self-confidence, and eventually recognises what she needs from a partner.",
             "got_wrong": "She punishes Callie for a life-saving decision, and cheats instead of saying how disconnected she feels."
           }
@@ -646,17 +908,25 @@
           "pattern_text": "After a long marriage ends, a person has to rediscover confidence, fun and even their own appeal while co-parenting with someone they still care about. When the ex makes a unilateral decision about their child, they must choose between protecting the child's stability and preserving the peace. They learn what it means to put a child's happiness above their own plans.",
           "hook": "She is newly single, a little jealous of her ex's glowing new girlfriend, and unsure how to date again.",
           "why_relatable": "How do you start dating again when you think you ruined your great love? What do you do when your co-parent makes a life-changing decision without you? How do you know when to fight and when to let go for your child's sake?",
-          "watch_for": ["Who helps her rediscover her confidence, and how?", "How does she react when her ex plans to move their child?", "Where does she draw the line between fighting for her daughter and doing what makes her daughter happy?"],
+          "watch_for": [
+            "Who helps her rediscover her confidence, and how?",
+            "How does she react when her ex plans to move their child?",
+            "Where does she draw the line between fighting for her daughter and doing what makes her daughter happy?"
+          ],
           "start_at": "S12",
           "span": "S12-S14",
           "situations": [
-            {"id": "divorce", "weight": 0.7},
-            {"id": "starting_over", "weight": 0.8},
-            {"id": "caring_for_family", "weight": 0.6},
-            {"id": "moving_somewhere_new", "weight": 0.4}
+            { "id": "divorce", "weight": 0.7 },
+            { "id": "starting_over", "weight": 0.8 },
+            { "id": "caring_for_family", "weight": 0.6 },
+            { "id": "moving_somewhere_new", "weight": 0.4 }
           ],
           "conflicts": ["holding_on_vs_letting_go", "control_vs_trust"],
-          "emotions": {"start": ["loneliness", "envy"], "middle": ["confidence", "anger", "fear"], "end": ["love", "peace"]},
+          "emotions": {
+            "start": ["loneliness", "envy"],
+            "middle": ["confidence", "anger", "fear"],
+            "end": ["love", "peace"]
+          },
           "ending_tone": "hopeful",
           "intensity": "moderate",
           "warnings": [],
@@ -668,7 +938,15 @@
           ],
           "spoiler": {
             "summary": "With Richard as her wingman, she regains confidence dating women. Callie decides to move Sofia to New York with Penny; Arizona sues and wins sole custody, then agrees to share. She dates Eliza Minnick, who ghosts her after being fired, and later Carina DeLuca. Sofia comes back to Seattle but is unhappy, even stealing money for a plane ticket to New York; Arizona decides they will both move to New York so Sofia can be near both parents, and later rekindles her romance with Callie.",
-            "key_events": ["Richard becomes her dating wingman", "Tells Jackson about April's pregnancy behind April's back", "Sues Callie for custody of Sofia and wins", "Relationship with Eliza Minnick, who ghosts her", "Relationship with Carina DeLuca", "Sofia steals money to fly back to New York", "Moves to New York for Sofia"],
+            "key_events": [
+              "Richard becomes her dating wingman",
+              "Tells Jackson about April's pregnancy behind April's back",
+              "Sues Callie for custody of Sofia and wins",
+              "Relationship with Eliza Minnick, who ghosts her",
+              "Relationship with Carina DeLuca",
+              "Sofia steals money to fly back to New York",
+              "Moves to New York for Sofia"
+            ],
             "got_right": "She fights for her daughter and then sets aside her own life to give Sofia both parents.",
             "got_wrong": "She escalates to lawyers quickly, and oversteps in friends' lives, like revealing April's pregnancy."
           }

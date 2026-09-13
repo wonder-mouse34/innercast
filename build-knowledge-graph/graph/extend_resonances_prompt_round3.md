@@ -5,6 +5,7 @@ cultures and genres ("different world, same knot"). 593 links already exist betw
 `resonances_extra.json` — do not edit them). 10 more shows were just added (round 3).
 
 Files (all in graph/):
+
 - `arc_index_new_round3.txt` — the NEW arcs (one per line:
   `arc_id | character | pattern_label | pattern_text | conflicts | situations | tone`). Read all of it.
 - `arc_index.txt` — ALL arcs, old and new. Read all of it: links can go to any show.
@@ -25,8 +26,10 @@ Output: write `graph/resonances_extra_round3.json` — a JSON list of
 as in arc_index.txt. Undirected: each pair once; don't repeat pairs already in resonances.json or resonances_extra.json.
 
 Validate and fix until it prints OK:
+
 ```
 cd graph && python3 validate_resonances_extra.py resonances_extra_round3.json arc_index_new_round3.txt
 ```
+
 Report: number of pairs, coverage per new arc (min/median), how many pairs go to the original 7 shows
 vs. other new shows, and 3 of the most surprising cross-culture bridges.

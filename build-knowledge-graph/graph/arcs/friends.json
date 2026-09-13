@@ -6,12 +6,12 @@
       "name": "Rachel Green",
       "role": "A sheltered young woman from a wealthy family who runs out on her own wedding and turns up, soaked and in her wedding dress, looking for her childhood best friend.",
       "relations": [
-        {"target": "char:friends/monica_geller", "relation": "friend"},
-        {"target": "char:friends/phoebe_buffay", "relation": "friend"},
-        {"target": "char:friends/chandler_bing", "relation": "friend"},
-        {"target": "char:friends/joey_tribbiani", "relation": "friend"},
-        {"target": "char:friends/joey_tribbiani", "relation": "ex_partner"},
-        {"target": "char:friends/ross_geller", "relation": "partner"}
+        { "target": "char:friends/monica_geller", "relation": "friend" },
+        { "target": "char:friends/phoebe_buffay", "relation": "friend" },
+        { "target": "char:friends/chandler_bing", "relation": "friend" },
+        { "target": "char:friends/joey_tribbiani", "relation": "friend" },
+        { "target": "char:friends/joey_tribbiani", "relation": "ex_partner" },
+        { "target": "char:friends/ross_geller", "relation": "partner" }
       ],
       "arcs": [
         {
@@ -30,13 +30,17 @@
           "start_at": "S1E1",
           "span": "S1-S10",
           "situations": [
-            {"id": "starting_over", "weight": 0.9},
-            {"id": "leaving_home", "weight": 0.7},
-            {"id": "career_change", "weight": 0.6},
-            {"id": "family_expectations", "weight": 0.5}
+            { "id": "starting_over", "weight": 0.9 },
+            { "id": "leaving_home", "weight": 0.7 },
+            { "id": "career_change", "weight": 0.6 },
+            { "id": "family_expectations", "weight": 0.5 }
           ],
           "conflicts": ["self_vs_family_expectations", "safety_vs_growth"],
-          "emotions": {"start": ["fear", "self_doubt", "freedom"], "middle": ["determination", "inadequacy"], "end": ["confidence", "pride", "self_respect"]},
+          "emotions": {
+            "start": ["fear", "self_doubt", "freedom"],
+            "middle": ["determination", "inadequacy"],
+            "end": ["confidence", "pride", "self_respect"]
+          },
           "ending_tone": "hopeful",
           "intensity": "light",
           "warnings": ["betrayal"],
@@ -79,12 +83,16 @@
           "start_at": "S1E1",
           "span": "S1-S10",
           "situations": [
-            {"id": "falling_for_someone_unexpected", "weight": 0.8},
-            {"id": "breakup", "weight": 0.7},
-            {"id": "unrequited_love", "weight": 0.5}
+            { "id": "falling_for_someone_unexpected", "weight": 0.8 },
+            { "id": "breakup", "weight": 0.7 },
+            { "id": "unrequited_love", "weight": 0.5 }
           ],
           "conflicts": ["holding_on_vs_letting_go", "control_vs_trust"],
-          "emotions": {"start": ["curiosity", "longing"], "middle": ["betrayal", "jealousy", "anger"], "end": ["love", "acceptance", "hope"]},
+          "emotions": {
+            "start": ["curiosity", "longing"],
+            "middle": ["betrayal", "jealousy", "anger"],
+            "end": ["love", "acceptance", "hope"]
+          },
           "ending_tone": "hopeful",
           "intensity": "moderate",
           "warnings": ["betrayal"],
@@ -118,11 +126,11 @@
       "name": "Monica Geller",
       "role": "A driven, tidy, fiercely competitive chef whose apartment is the group's home base; she mothers everyone while still trying to win her critical mother's approval.",
       "relations": [
-        {"target": "char:friends/ross_geller", "relation": "sibling"},
-        {"target": "char:friends/rachel_green", "relation": "friend"},
-        {"target": "char:friends/phoebe_buffay", "relation": "friend"},
-        {"target": "char:friends/joey_tribbiani", "relation": "friend"},
-        {"target": "char:friends/chandler_bing", "relation": "partner"}
+        { "target": "char:friends/ross_geller", "relation": "sibling" },
+        { "target": "char:friends/rachel_green", "relation": "friend" },
+        { "target": "char:friends/phoebe_buffay", "relation": "friend" },
+        { "target": "char:friends/joey_tribbiani", "relation": "friend" },
+        { "target": "char:friends/chandler_bing", "relation": "partner" }
       ],
       "arcs": [
         {
@@ -141,13 +149,17 @@
           "start_at": "S1E1",
           "span": "S1-S10",
           "situations": [
-            {"id": "becoming_a_parent", "weight": 0.7},
-            {"id": "breakup", "weight": 0.6},
-            {"id": "falling_for_someone_unexpected", "weight": 0.6},
-            {"id": "family_expectations", "weight": 0.4}
+            { "id": "becoming_a_parent", "weight": 0.7 },
+            { "id": "breakup", "weight": 0.6 },
+            { "id": "falling_for_someone_unexpected", "weight": 0.6 },
+            { "id": "family_expectations", "weight": 0.4 }
           ],
           "conflicts": ["holding_on_vs_letting_go", "perfectionism_vs_good_enough"],
-          "emotions": {"start": ["longing", "loneliness", "anxiety"], "middle": ["grief", "love", "hope"], "end": ["joy", "belonging", "love"]},
+          "emotions": {
+            "start": ["longing", "loneliness", "anxiety"],
+            "middle": ["grief", "love", "hope"],
+            "end": ["joy", "belonging", "love"]
+          },
           "ending_tone": "hopeful",
           "intensity": "moderate",
           "warnings": [],
@@ -188,12 +200,16 @@
           "start_at": "S1E1",
           "span": "S1-S10",
           "situations": [
-            {"id": "difficult_parent", "weight": 0.9},
-            {"id": "sibling_rivalry", "weight": 0.7},
-            {"id": "confidence_struggle", "weight": 0.5}
+            { "id": "difficult_parent", "weight": 0.9 },
+            { "id": "sibling_rivalry", "weight": 0.7 },
+            { "id": "confidence_struggle", "weight": 0.5 }
           ],
           "conflicts": ["perfectionism_vs_good_enough", "control_vs_trust"],
-          "emotions": {"start": ["inadequacy", "resentment", "anxiety"], "middle": ["anger", "rejection"], "end": ["self_respect", "acceptance"]},
+          "emotions": {
+            "start": ["inadequacy", "resentment", "anxiety"],
+            "middle": ["anger", "rejection"],
+            "end": ["self_respect", "acceptance"]
+          },
           "ending_tone": "hopeful",
           "intensity": "light",
           "warnings": [],
@@ -232,13 +248,17 @@
           "start_at": "S2",
           "span": "S2-S4",
           "situations": [
-            {"id": "becoming_a_manager", "weight": 0.8},
-            {"id": "losing_a_job", "weight": 0.7},
-            {"id": "new_job", "weight": 0.5},
-            {"id": "confidence_struggle", "weight": 0.4}
+            { "id": "becoming_a_manager", "weight": 0.8 },
+            { "id": "losing_a_job", "weight": 0.7 },
+            { "id": "new_job", "weight": 0.5 },
+            { "id": "confidence_struggle", "weight": 0.4 }
           ],
           "conflicts": ["belonging_vs_integrity", "safety_vs_growth"],
-          "emotions": {"start": ["shame", "inadequacy"], "middle": ["anxiety", "rejection", "determination"], "end": ["confidence", "pride"]},
+          "emotions": {
+            "start": ["shame", "inadequacy"],
+            "middle": ["anxiety", "rejection", "determination"],
+            "end": ["confidence", "pride"]
+          },
           "ending_tone": "hopeful",
           "intensity": "light",
           "warnings": [],
@@ -269,11 +289,11 @@
       "name": "Phoebe Buffay",
       "role": "An eccentric masseuse and coffee-house folk singer who survived a rough childhood and teenage years on the streets, and now lives cheerfully by her own offbeat rules.",
       "relations": [
-        {"target": "char:friends/monica_geller", "relation": "friend"},
-        {"target": "char:friends/rachel_green", "relation": "friend"},
-        {"target": "char:friends/joey_tribbiani", "relation": "friend"},
-        {"target": "char:friends/chandler_bing", "relation": "friend"},
-        {"target": "char:friends/ross_geller", "relation": "friend"}
+        { "target": "char:friends/monica_geller", "relation": "friend" },
+        { "target": "char:friends/rachel_green", "relation": "friend" },
+        { "target": "char:friends/joey_tribbiani", "relation": "friend" },
+        { "target": "char:friends/chandler_bing", "relation": "friend" },
+        { "target": "char:friends/ross_geller", "relation": "friend" }
       ],
       "arcs": [
         {
@@ -292,13 +312,17 @@
           "start_at": "S1E1",
           "span": "S1-S5",
           "situations": [
-            {"id": "finding_your_people", "weight": 0.8},
-            {"id": "difficult_parent", "weight": 0.7},
-            {"id": "grief_and_loss", "weight": 0.6},
-            {"id": "sibling_rivalry", "weight": 0.4}
+            { "id": "finding_your_people", "weight": 0.8 },
+            { "id": "difficult_parent", "weight": 0.7 },
+            { "id": "grief_and_loss", "weight": 0.6 },
+            { "id": "sibling_rivalry", "weight": 0.4 }
           ],
           "conflicts": ["past_vs_future", "revenge_vs_forgiveness"],
-          "emotions": {"start": ["loneliness", "longing"], "middle": ["rejection", "grief", "curiosity"], "end": ["belonging", "acceptance", "peace"]},
+          "emotions": {
+            "start": ["loneliness", "longing"],
+            "middle": ["rejection", "grief", "curiosity"],
+            "end": ["belonging", "acceptance", "peace"]
+          },
           "ending_tone": "bittersweet",
           "intensity": "moderate",
           "warnings": ["self_harm_or_suicide", "death_of_loved_one", "grief"],
@@ -338,12 +362,16 @@
           "start_at": "S4E11",
           "span": "S4-S5",
           "situations": [
-            {"id": "caring_for_family", "weight": 0.9},
-            {"id": "taking_a_big_risk", "weight": 0.6},
-            {"id": "becoming_a_parent", "weight": 0.4}
+            { "id": "caring_for_family", "weight": 0.9 },
+            { "id": "taking_a_big_risk", "weight": 0.6 },
+            { "id": "becoming_a_parent", "weight": 0.4 }
           ],
           "conflicts": ["holding_on_vs_letting_go", "duty_vs_desire"],
-          "emotions": {"start": ["hope", "anxiety"], "middle": ["love", "belonging", "overwhelm"], "end": ["grief", "pride", "acceptance"]},
+          "emotions": {
+            "start": ["hope", "anxiety"],
+            "middle": ["love", "belonging", "overwhelm"],
+            "end": ["grief", "pride", "acceptance"]
+          },
           "ending_tone": "bittersweet",
           "intensity": "moderate",
           "warnings": [],
@@ -381,12 +409,16 @@
           "start_at": "S9",
           "span": "S9-S10",
           "situations": [
-            {"id": "falling_for_someone_unexpected", "weight": 0.6},
-            {"id": "breakup", "weight": 0.6},
-            {"id": "identity_and_self_acceptance", "weight": 0.4}
+            { "id": "falling_for_someone_unexpected", "weight": 0.6 },
+            { "id": "breakup", "weight": 0.6 },
+            { "id": "identity_and_self_acceptance", "weight": 0.4 }
           ],
           "conflicts": ["independence_vs_connection", "holding_on_vs_letting_go"],
-          "emotions": {"start": ["hope", "joy"], "middle": ["confusion", "grief", "longing"], "end": ["love", "peace", "joy"]},
+          "emotions": {
+            "start": ["hope", "joy"],
+            "middle": ["confusion", "grief", "longing"],
+            "end": ["love", "peace", "joy"]
+          },
           "ending_tone": "hopeful",
           "intensity": "light",
           "warnings": [],
@@ -417,12 +449,12 @@
       "name": "Joey Tribbiani",
       "role": "A good-hearted, not-so-bright struggling actor who shares an apartment with his best friend, auditions for anything, and dates everyone.",
       "relations": [
-        {"target": "char:friends/chandler_bing", "relation": "friend"},
-        {"target": "char:friends/ross_geller", "relation": "friend"},
-        {"target": "char:friends/monica_geller", "relation": "friend"},
-        {"target": "char:friends/phoebe_buffay", "relation": "friend"},
-        {"target": "char:friends/rachel_green", "relation": "friend"},
-        {"target": "char:friends/rachel_green", "relation": "ex_partner"}
+        { "target": "char:friends/chandler_bing", "relation": "friend" },
+        { "target": "char:friends/ross_geller", "relation": "friend" },
+        { "target": "char:friends/monica_geller", "relation": "friend" },
+        { "target": "char:friends/phoebe_buffay", "relation": "friend" },
+        { "target": "char:friends/rachel_green", "relation": "friend" },
+        { "target": "char:friends/rachel_green", "relation": "ex_partner" }
       ],
       "arcs": [
         {
@@ -441,13 +473,17 @@
           "start_at": "S1E1",
           "span": "S1-S10",
           "situations": [
-            {"id": "taking_a_big_risk", "weight": 0.7},
-            {"id": "confidence_struggle", "weight": 0.6},
-            {"id": "losing_a_job", "weight": 0.6},
-            {"id": "family_expectations", "weight": 0.3}
+            { "id": "taking_a_big_risk", "weight": 0.7 },
+            { "id": "confidence_struggle", "weight": 0.6 },
+            { "id": "losing_a_job", "weight": 0.6 },
+            { "id": "family_expectations", "weight": 0.3 }
           ],
           "conflicts": ["self_vs_family_expectations", "safety_vs_growth"],
-          "emotions": {"start": ["hope", "determination"], "middle": ["rejection", "shame", "self_doubt"], "end": ["pride", "confidence", "hope"]},
+          "emotions": {
+            "start": ["hope", "determination"],
+            "middle": ["rejection", "shame", "self_doubt"],
+            "end": ["pride", "confidence", "hope"]
+          },
           "ending_tone": "hopeful",
           "intensity": "light",
           "warnings": [],
@@ -487,12 +523,16 @@
           "start_at": "S8",
           "span": "S8-S10",
           "situations": [
-            {"id": "unrequited_love", "weight": 0.8},
-            {"id": "falling_for_someone_unexpected", "weight": 0.7},
-            {"id": "friendship_ending", "weight": 0.3}
+            { "id": "unrequited_love", "weight": 0.8 },
+            { "id": "falling_for_someone_unexpected", "weight": 0.7 },
+            { "id": "friendship_ending", "weight": 0.3 }
           ],
           "conflicts": ["duty_vs_desire", "truth_vs_protecting_others"],
-          "emotions": {"start": ["confusion", "longing"], "middle": ["rejection", "guilt", "loneliness"], "end": ["acceptance", "belonging", "love"]},
+          "emotions": {
+            "start": ["confusion", "longing"],
+            "middle": ["rejection", "guilt", "loneliness"],
+            "end": ["acceptance", "belonging", "love"]
+          },
           "ending_tone": "bittersweet",
           "intensity": "light",
           "warnings": [],
@@ -522,11 +562,11 @@
       "name": "Chandler Bing",
       "role": "A sarcastic office worker in a job nobody can explain, who jokes his way out of every serious moment and panics at the first sign of commitment.",
       "relations": [
-        {"target": "char:friends/joey_tribbiani", "relation": "friend"},
-        {"target": "char:friends/ross_geller", "relation": "friend"},
-        {"target": "char:friends/monica_geller", "relation": "partner"},
-        {"target": "char:friends/rachel_green", "relation": "friend"},
-        {"target": "char:friends/phoebe_buffay", "relation": "friend"}
+        { "target": "char:friends/joey_tribbiani", "relation": "friend" },
+        { "target": "char:friends/ross_geller", "relation": "friend" },
+        { "target": "char:friends/monica_geller", "relation": "partner" },
+        { "target": "char:friends/rachel_green", "relation": "friend" },
+        { "target": "char:friends/phoebe_buffay", "relation": "friend" }
       ],
       "arcs": [
         {
@@ -545,13 +585,17 @@
           "start_at": "S1E1",
           "span": "S1-S7",
           "situations": [
-            {"id": "difficult_parent", "weight": 0.7},
-            {"id": "falling_for_someone_unexpected", "weight": 0.6},
-            {"id": "identity_and_self_acceptance", "weight": 0.5},
-            {"id": "confidence_struggle", "weight": 0.5}
+            { "id": "difficult_parent", "weight": 0.7 },
+            { "id": "falling_for_someone_unexpected", "weight": 0.6 },
+            { "id": "identity_and_self_acceptance", "weight": 0.5 },
+            { "id": "confidence_struggle", "weight": 0.5 }
           ],
           "conflicts": ["independence_vs_connection", "past_vs_future"],
-          "emotions": {"start": ["anxiety", "loneliness", "self_doubt"], "middle": ["fear", "jealousy", "love"], "end": ["love", "belonging", "confidence"]},
+          "emotions": {
+            "start": ["anxiety", "loneliness", "self_doubt"],
+            "middle": ["fear", "jealousy", "love"],
+            "end": ["love", "belonging", "confidence"]
+          },
           "ending_tone": "hopeful",
           "intensity": "light",
           "warnings": ["betrayal"],
@@ -591,13 +635,17 @@
           "start_at": "S1E15",
           "span": "S1-S9",
           "situations": [
-            {"id": "career_change", "weight": 0.9},
-            {"id": "burnout_at_work", "weight": 0.6},
-            {"id": "midlife_reinvention", "weight": 0.5},
-            {"id": "starting_over", "weight": 0.4}
+            { "id": "career_change", "weight": 0.9 },
+            { "id": "burnout_at_work", "weight": 0.6 },
+            { "id": "midlife_reinvention", "weight": 0.5 },
+            { "id": "starting_over", "weight": 0.4 }
           ],
           "conflicts": ["safety_vs_growth", "career_vs_relationships"],
-          "emotions": {"start": ["boredom", "restlessness", "self_doubt"], "middle": ["resentment", "loneliness"], "end": ["freedom", "hope", "pride"]},
+          "emotions": {
+            "start": ["boredom", "restlessness", "self_doubt"],
+            "middle": ["resentment", "loneliness"],
+            "end": ["freedom", "hope", "pride"]
+          },
           "ending_tone": "hopeful",
           "intensity": "light",
           "warnings": [],
@@ -628,11 +676,11 @@
       "name": "Ross Geller",
       "role": "An earnest, nerdy museum paleontologist whose wife has just left him for a woman while pregnant with his child, and who has never quite got over his high-school crush.",
       "relations": [
-        {"target": "char:friends/monica_geller", "relation": "sibling"},
-        {"target": "char:friends/chandler_bing", "relation": "friend"},
-        {"target": "char:friends/joey_tribbiani", "relation": "friend"},
-        {"target": "char:friends/phoebe_buffay", "relation": "friend"},
-        {"target": "char:friends/rachel_green", "relation": "partner"}
+        { "target": "char:friends/monica_geller", "relation": "sibling" },
+        { "target": "char:friends/chandler_bing", "relation": "friend" },
+        { "target": "char:friends/joey_tribbiani", "relation": "friend" },
+        { "target": "char:friends/phoebe_buffay", "relation": "friend" },
+        { "target": "char:friends/rachel_green", "relation": "partner" }
       ],
       "arcs": [
         {
@@ -651,13 +699,17 @@
           "start_at": "S1E1",
           "span": "S1-S3",
           "situations": [
-            {"id": "divorce", "weight": 0.9},
-            {"id": "starting_over", "weight": 0.7},
-            {"id": "becoming_a_parent", "weight": 0.6},
-            {"id": "falling_for_someone_unexpected", "weight": 0.5}
+            { "id": "divorce", "weight": 0.9 },
+            { "id": "starting_over", "weight": 0.7 },
+            { "id": "becoming_a_parent", "weight": 0.6 },
+            { "id": "falling_for_someone_unexpected", "weight": 0.5 }
           ],
           "conflicts": ["past_vs_future", "control_vs_trust"],
-          "emotions": {"start": ["grief", "rejection", "loneliness"], "middle": ["hope", "longing", "jealousy"], "end": ["love", "guilt", "acceptance"]},
+          "emotions": {
+            "start": ["grief", "rejection", "loneliness"],
+            "middle": ["hope", "longing", "jealousy"],
+            "end": ["love", "guilt", "acceptance"]
+          },
           "ending_tone": "bittersweet",
           "intensity": "moderate",
           "warnings": ["betrayal"],
@@ -697,13 +749,17 @@
           "start_at": "S3E12",
           "span": "S3-S10",
           "situations": [
-            {"id": "breakup", "weight": 0.7},
-            {"id": "redemption_after_mistakes", "weight": 0.6},
-            {"id": "divorce", "weight": 0.5},
-            {"id": "confidence_struggle", "weight": 0.4}
+            { "id": "breakup", "weight": 0.7 },
+            { "id": "redemption_after_mistakes", "weight": 0.6 },
+            { "id": "divorce", "weight": 0.5 },
+            { "id": "confidence_struggle", "weight": 0.4 }
           ],
           "conflicts": ["control_vs_trust", "holding_on_vs_letting_go"],
-          "emotions": {"start": ["jealousy", "anxiety", "fear"], "middle": ["guilt", "anger", "shame"], "end": ["acceptance", "love", "hope"]},
+          "emotions": {
+            "start": ["jealousy", "anxiety", "fear"],
+            "middle": ["guilt", "anger", "shame"],
+            "end": ["acceptance", "love", "hope"]
+          },
           "ending_tone": "hopeful",
           "intensity": "moderate",
           "warnings": ["betrayal"],

@@ -1,1379 +1,1144 @@
 {
- "show": "succession",
- "characters": [
-  {
-   "id": "char:succession/logan_roy",
-   "name": "Logan Roy",
-   "role": "The 80-year-old founder and CEO of a global media and entertainment empire, a self-made tyrant who treats his four adult children as both heirs and rivals and has no intention of stepping aside.",
-   "relations": [
+  "show": "succession",
+  "characters": [
     {
-     "target": "char:succession/kendall_roy",
-     "relation": "child"
-    },
-    {
-     "target": "char:succession/shiv_roy",
-     "relation": "child"
-    },
-    {
-     "target": "char:succession/roman_roy",
-     "relation": "child"
-    },
-    {
-     "target": "char:succession/connor_roy",
-     "relation": "child"
-    },
-    {
-     "target": "char:succession/tom_wambsgans",
-     "relation": "colleague"
-    },
-    {
-     "target": "char:succession/gerri_kellman",
-     "relation": "colleague"
-    },
-    {
-     "target": "char:succession/greg_hirsch",
-     "relation": "colleague"
-    }
-   ],
-   "arcs": [
-    {
-     "id": "arc:succession/logan_roy/refusing_to_let_go",
-     "title": "Refusing to let go of what he built",
-     "literal_situation": "On his 80th birthday Logan was expected to name his son Kendall as his successor. Instead he announces he is staying on as CEO, asks his children to sign papers giving his wife a bigger say, and treats every question about the future as a challenge to his authority. His health is starting to slip.",
-     "pattern_label": "an aging founder who cannot hand over control",
-     "pattern_text": "A person who built everything from nothing reaches the age when they should pass it on, but cannot imagine anyone being good enough, least of all their own children. They keep their heirs competing for approval they never quite give, because deciding would mean admitting their own time is ending. Love and control have become so tangled that they no longer know the difference.",
-     "hook": "Logan is powerful, feared and physically fading. He dangles the future in front of his children, then snatches it away whenever one of them reaches for it.",
-     "why_relatable": "How do you step back from the thing that defines you? Is testing the people who will replace you a way of protecting what you built, or a way of never having to leave? Can a parent who only knows how to be tough show love in any other language?",
-     "watch_for": [
-      "Does he ever tell any of his children plainly what he thinks of them?",
-      "When one of his children succeeds, does he seem proud or threatened?",
-      "What does he talk about when he is alone with someone who works for him rather than his family?"
-     ],
-     "start_at": "S1E1",
-     "span": "S1-S4",
-     "situations": [
-      {
-       "id": "family_expectations",
-       "weight": 0.8
-      },
-      {
-       "id": "illness_or_injury",
-       "weight": 0.6
-      },
-      {
-       "id": "mentor_and_protege",
-       "weight": 0.5
-      },
-      {
-       "id": "sibling_rivalry",
-       "weight": 0.4
-      }
-     ],
-     "conflicts": [
-      "holding_on_vs_letting_go",
-      "control_vs_trust"
-     ],
-     "emotions": {
-      "start": [
-       "pride",
-       "anger",
-       "fear"
+      "id": "char:succession/logan_roy",
+      "name": "Logan Roy",
+      "role": "The 80-year-old founder and CEO of a global media and entertainment empire, a self-made tyrant who treats his four adult children as both heirs and rivals and has no intention of stepping aside.",
+      "relations": [
+        {
+          "target": "char:succession/kendall_roy",
+          "relation": "child"
+        },
+        {
+          "target": "char:succession/shiv_roy",
+          "relation": "child"
+        },
+        {
+          "target": "char:succession/roman_roy",
+          "relation": "child"
+        },
+        {
+          "target": "char:succession/connor_roy",
+          "relation": "child"
+        },
+        {
+          "target": "char:succession/tom_wambsgans",
+          "relation": "colleague"
+        },
+        {
+          "target": "char:succession/gerri_kellman",
+          "relation": "colleague"
+        },
+        {
+          "target": "char:succession/greg_hirsch",
+          "relation": "colleague"
+        }
       ],
-      "middle": [
-       "resentment",
-       "loneliness",
-       "determination"
-      ],
-      "end": [
-       "loneliness",
-       "dread"
+      "arcs": [
+        {
+          "id": "arc:succession/logan_roy/refusing_to_let_go",
+          "title": "Refusing to let go of what he built",
+          "literal_situation": "On his 80th birthday Logan was expected to name his son Kendall as his successor. Instead he announces he is staying on as CEO, asks his children to sign papers giving his wife a bigger say, and treats every question about the future as a challenge to his authority. His health is starting to slip.",
+          "pattern_label": "an aging founder who cannot hand over control",
+          "pattern_text": "A person who built everything from nothing reaches the age when they should pass it on, but cannot imagine anyone being good enough, least of all their own children. They keep their heirs competing for approval they never quite give, because deciding would mean admitting their own time is ending. Love and control have become so tangled that they no longer know the difference.",
+          "hook": "Logan is powerful, feared and physically fading. He dangles the future in front of his children, then snatches it away whenever one of them reaches for it.",
+          "why_relatable": "How do you step back from the thing that defines you? Is testing the people who will replace you a way of protecting what you built, or a way of never having to leave? Can a parent who only knows how to be tough show love in any other language?",
+          "watch_for": [
+            "Does he ever tell any of his children plainly what he thinks of them?",
+            "When one of his children succeeds, does he seem proud or threatened?",
+            "What does he talk about when he is alone with someone who works for him rather than his family?"
+          ],
+          "start_at": "S1E1",
+          "span": "S1-S4",
+          "situations": [
+            {
+              "id": "family_expectations",
+              "weight": 0.8
+            },
+            {
+              "id": "illness_or_injury",
+              "weight": 0.6
+            },
+            {
+              "id": "mentor_and_protege",
+              "weight": 0.5
+            },
+            {
+              "id": "sibling_rivalry",
+              "weight": 0.4
+            }
+          ],
+          "conflicts": ["holding_on_vs_letting_go", "control_vs_trust"],
+          "emotions": {
+            "start": ["pride", "anger", "fear"],
+            "middle": ["resentment", "loneliness", "determination"],
+            "end": ["loneliness", "dread"]
+          },
+          "ending_tone": "tragic",
+          "intensity": "heavy",
+          "warnings": ["serious_illness", "abuse", "betrayal", "death_of_main_character", "grief"],
+          "example_user_messages": [
+            "I built my business from nothing and I honestly don't trust any of my kids to run it.",
+            "Everyone keeps asking when I'm going to retire and it makes me furious.",
+            "My health scared me this year but I'm not ready to hand anything over.",
+            "I push my children hard because nobody ever went easy on me, and now none of them talk to me.",
+            "I don't know how to tell my family I'm proud of them without feeling like I'm losing control."
+          ],
+          "spoiler": {
+            "summary": "Logan survives a stroke on his birthday, crushes Kendall's vote of no confidence and fires him, then uses Kendall's role in a fatal car crash to bring him back as an obedient instrument. He dangles the top job to Shiv, then to outsider Rhea, hits Roman, humiliates his executives, and when the cruise scandal needs a scapegoat he chooses Kendall, who turns on him live at a press conference. Through Season 3 he wins the public war with Kendall and, tipped off by Tom, strips his children of their veto power as he sells the company to GoJo. In Season 4, after the children outbid him for Pierce and he calls them 'not serious people', he dies of a pulmonary embolism on his plane on the day of Connor's wedding, never having named a successor. The company is sold and Tom, not any of his children, ends up as CEO.",
+            "key_events": [
+              "Has a stroke on his 80th birthday",
+              "Defeats Kendall's no-confidence vote and fires him",
+              "Covers up the waiter's death to control Kendall",
+              "Names Rhea as successor, then loses her",
+              "Chooses Kendall as the blood sacrifice; Kendall denounces him publicly",
+              "Tom tips him off; he rewrites the divorce deal to strip the children's veto",
+              "Dies on his plane on Connor's wedding day (S4E3)",
+              "Company sold to GoJo; Tom made CEO"
+            ],
+            "got_right": "He never stopped fighting for what he built, he saw his children's weaknesses clearly, and he was often right that the world was more ruthless than they were ready for.",
+            "got_wrong": "He mistook fear for respect and testing for parenting, kept his heirs at war instead of preparing any of them, and died leaving his children broken and his company to a stranger."
+          }
+        },
+        {
+          "id": "arc:succession/logan_roy/the_childhood_he_never_mentions",
+          "title": "The childhood he never talks about",
+          "literal_situation": "At a family Thanksgiving, Logan's estranged older brother Ewan comes to dinner for the first time in years. The brothers share a hard childhood as poor boys sent abroad during the war, and a family tragedy Logan has carried silently all his life. They can barely be in the same room.",
+          "pattern_label": "an old wound shaping a hard, guarded person",
+          "pattern_text": "A person who survived a harsh, frightening childhood built a life in which nobody is allowed to see weakness. Their only surviving sibling is the one person who remembers who they were before, and every meeting turns into an argument. The past is never discussed, but it shows up in every choice they make.",
+          "hook": "Logan refuses to look back. His brother's visit and a few careless reminders of home stir up guilt and grief he has spent a lifetime locking away.",
+          "why_relatable": "Can you be close to the one person who shared your worst years if you both remember them differently? Does refusing to talk about the past protect you, or just pass the damage on? What would it cost a proud person to say sorry first?",
+          "watch_for": [
+            "How does he react when someone mentions the family members he lost as a boy?",
+            "Who reaches out first between the two brothers, and who refuses?",
+            "Where do you see his childhood repeating in how he treats his own children?"
+          ],
+          "start_at": "S1E5",
+          "span": "S1-S2",
+          "situations": [
+            {
+              "id": "grief_and_loss",
+              "weight": 0.6
+            },
+            {
+              "id": "sibling_rivalry",
+              "weight": 0.7
+            },
+            {
+              "id": "identity_and_self_acceptance",
+              "weight": 0.3
+            }
+          ],
+          "conflicts": ["past_vs_future", "revenge_vs_forgiveness"],
+          "emotions": {
+            "start": ["resentment", "guilt"],
+            "middle": ["grief", "anger"],
+            "end": ["loneliness", "numbness"]
+          },
+          "ending_tone": "tragic",
+          "intensity": "moderate",
+          "warnings": ["abuse", "grief", "death_of_loved_one"],
+          "example_user_messages": [
+            "My brother and I haven't spoken properly in years and every family dinner turns into a fight.",
+            "I had a rough childhood and I just don't talk about it. I don't see the point.",
+            "I still feel responsible for something that happened when I was a kid, even though everyone says it wasn't my fault.",
+            "People tell me I'm hard, but nobody ever went easy on me either."
+          ],
+          "spoiler": {
+            "summary": "Logan and Ewan clash at Thanksgiving over Logan's news network, yet Ewan still votes with his brother against Kendall. In Season 2, on a trip back to Dundee, Shiv's speech about his dead mother and sister wounds him, and he and Ewan trade childhood accusations; Ewan later tells him he cannot wait for his empire to crumble and pressures Greg to quit. Logan carries lifelong guilt that he gave his little sister Rose the polio that killed her. The brothers never reconcile; Ewan delivers a complicated eulogy at Logan's funeral in Season 4.",
+            "key_events": [
+              "Thanksgiving fight with Ewan",
+              "Ewan still backs Logan in the no-confidence vote",
+              "Visits his Dundee hometown and old house in silence",
+              "Guilt over his sister Rose's death from polio",
+              "Ewan confronts him at his 50th anniversary gala",
+              "Never reconciles with Ewan before dying"
+            ],
+            "got_right": "He survived something terrible and built a life out of it.",
+            "got_wrong": "He never let anyone, least of all his brother, reach the grief underneath, and recreated his own harsh upbringing for his children."
+          }
+        }
       ]
-     },
-     "ending_tone": "tragic",
-     "intensity": "heavy",
-     "warnings": [
-      "serious_illness",
-      "abuse",
-      "betrayal",
-      "death_of_main_character",
-      "grief"
-     ],
-     "example_user_messages": [
-      "I built my business from nothing and I honestly don't trust any of my kids to run it.",
-      "Everyone keeps asking when I'm going to retire and it makes me furious.",
-      "My health scared me this year but I'm not ready to hand anything over.",
-      "I push my children hard because nobody ever went easy on me, and now none of them talk to me.",
-      "I don't know how to tell my family I'm proud of them without feeling like I'm losing control."
-     ],
-     "spoiler": {
-      "summary": "Logan survives a stroke on his birthday, crushes Kendall's vote of no confidence and fires him, then uses Kendall's role in a fatal car crash to bring him back as an obedient instrument. He dangles the top job to Shiv, then to outsider Rhea, hits Roman, humiliates his executives, and when the cruise scandal needs a scapegoat he chooses Kendall, who turns on him live at a press conference. Through Season 3 he wins the public war with Kendall and, tipped off by Tom, strips his children of their veto power as he sells the company to GoJo. In Season 4, after the children outbid him for Pierce and he calls them 'not serious people', he dies of a pulmonary embolism on his plane on the day of Connor's wedding, never having named a successor. The company is sold and Tom, not any of his children, ends up as CEO.",
-      "key_events": [
-       "Has a stroke on his 80th birthday",
-       "Defeats Kendall's no-confidence vote and fires him",
-       "Covers up the waiter's death to control Kendall",
-       "Names Rhea as successor, then loses her",
-       "Chooses Kendall as the blood sacrifice; Kendall denounces him publicly",
-       "Tom tips him off; he rewrites the divorce deal to strip the children's veto",
-       "Dies on his plane on Connor's wedding day (S4E3)",
-       "Company sold to GoJo; Tom made CEO"
-      ],
-      "got_right": "He never stopped fighting for what he built, he saw his children's weaknesses clearly, and he was often right that the world was more ruthless than they were ready for.",
-      "got_wrong": "He mistook fear for respect and testing for parenting, kept his heirs at war instead of preparing any of them, and died leaving his children broken and his company to a stranger."
-     }
     },
     {
-     "id": "arc:succession/logan_roy/the_childhood_he_never_mentions",
-     "title": "The childhood he never talks about",
-     "literal_situation": "At a family Thanksgiving, Logan's estranged older brother Ewan comes to dinner for the first time in years. The brothers share a hard childhood as poor boys sent abroad during the war, and a family tragedy Logan has carried silently all his life. They can barely be in the same room.",
-     "pattern_label": "an old wound shaping a hard, guarded person",
-     "pattern_text": "A person who survived a harsh, frightening childhood built a life in which nobody is allowed to see weakness. Their only surviving sibling is the one person who remembers who they were before, and every meeting turns into an argument. The past is never discussed, but it shows up in every choice they make.",
-     "hook": "Logan refuses to look back. His brother's visit and a few careless reminders of home stir up guilt and grief he has spent a lifetime locking away.",
-     "why_relatable": "Can you be close to the one person who shared your worst years if you both remember them differently? Does refusing to talk about the past protect you, or just pass the damage on? What would it cost a proud person to say sorry first?",
-     "watch_for": [
-      "How does he react when someone mentions the family members he lost as a boy?",
-      "Who reaches out first between the two brothers, and who refuses?",
-      "Where do you see his childhood repeating in how he treats his own children?"
-     ],
-     "start_at": "S1E5",
-     "span": "S1-S2",
-     "situations": [
-      {
-       "id": "grief_and_loss",
-       "weight": 0.6
-      },
-      {
-       "id": "sibling_rivalry",
-       "weight": 0.7
-      },
-      {
-       "id": "identity_and_self_acceptance",
-       "weight": 0.3
-      }
-     ],
-     "conflicts": [
-      "past_vs_future",
-      "revenge_vs_forgiveness"
-     ],
-     "emotions": {
-      "start": [
-       "resentment",
-       "guilt"
+      "id": "char:succession/kendall_roy",
+      "name": "Kendall Roy",
+      "role": "Logan Roy's second son and heir apparent, a recovering addict separated from his wife, who has spent his whole life preparing to take over his father's media empire.",
+      "relations": [
+        {
+          "target": "char:succession/logan_roy",
+          "relation": "parent"
+        },
+        {
+          "target": "char:succession/shiv_roy",
+          "relation": "sibling"
+        },
+        {
+          "target": "char:succession/roman_roy",
+          "relation": "sibling"
+        },
+        {
+          "target": "char:succession/connor_roy",
+          "relation": "sibling"
+        },
+        {
+          "target": "char:succession/gerri_kellman",
+          "relation": "colleague"
+        },
+        {
+          "target": "char:succession/greg_hirsch",
+          "relation": "colleague"
+        },
+        {
+          "target": "char:succession/tom_wambsgans",
+          "relation": "colleague"
+        }
       ],
-      "middle": [
-       "grief",
-       "anger"
-      ],
-      "end": [
-       "loneliness",
-       "numbness"
+      "arcs": [
+        {
+          "id": "arc:succession/kendall_roy/chasing_his_fathers_chair",
+          "title": "Chasing a father's approval and his chair",
+          "literal_situation": "Kendall has been told for years he will run the family company and is closing a big acquisition to prove it. On his father's 80th birthday he expects to be named successor, but Logan changes his mind, tells him he isn't ready, and stays on as CEO.",
+          "pattern_label": "the heir who can't win a parent's approval",
+          "pattern_text": "A person raised from childhood to take over a parent's life's work does everything to prove they deserve it, but the parent keeps moving the finish line. They swing between desperate loyalty and open rebellion, never sure whether they want the parent's love or their place. Underneath the confidence is the fear that without that role they are nothing.",
+          "hook": "Kendall is polished, ambitious and fragile. The job he was promised has just been pulled away in front of his whole family, and he has to decide whether to wait, beg, or fight.",
+          "why_relatable": "What do you do when the future you were promised is withdrawn by the person who promised it? Is standing up to a domineering parent courage, or just another way of needing their attention? Who are you if you are not the heir?",
+          "watch_for": [
+            "When he stands up to his father, who is he really trying to impress?",
+            "Notice how he talks to his siblings when he needs them compared with when he doesn't.",
+            "Does he ever describe what he would do with the company, or only that he should have it?"
+          ],
+          "start_at": "S1E1",
+          "span": "S1-S4",
+          "situations": [
+            {
+              "id": "difficult_parent",
+              "weight": 0.9
+            },
+            {
+              "id": "family_expectations",
+              "weight": 0.9
+            },
+            {
+              "id": "sibling_rivalry",
+              "weight": 0.6
+            },
+            {
+              "id": "standing_up_to_authority",
+              "weight": 0.6
+            }
+          ],
+          "conflicts": ["self_vs_family_expectations", "loyalty_vs_ambition"],
+          "emotions": {
+            "start": ["determination", "inadequacy", "rejection"],
+            "middle": ["shame", "betrayal", "anger"],
+            "end": ["grief", "numbness", "loneliness"]
+          },
+          "ending_tone": "tragic",
+          "intensity": "heavy",
+          "warnings": [
+            "abuse",
+            "addiction",
+            "betrayal",
+            "death_of_main_character",
+            "grief",
+            "self_harm_or_suicide",
+            "bleak_ending"
+          ],
+          "example_user_messages": [
+            "My dad always said I'd take over the family business and now he's acting like I'm not good enough.",
+            "I've spent my whole life trying to prove myself to my father and it's never enough.",
+            "I don't know if I actually want this job or if I just want him to finally say I earned it.",
+            "Part of me wants to beat him at his own game, part of me just wants him to hug me.",
+            "If I'm not the one who takes over, I honestly don't know who I am."
+          ],
+          "spoiler": {
+            "summary": "Kendall launches a vote of no confidence against Logan and loses; he is fired, relapses, and joins a hostile takeover bid. On the night of Shiv's wedding he crashes a car and a young waiter drowns; Logan covers it up and Kendall returns as his father's hollowed-out enforcer. Chosen as the blood sacrifice for the cruise scandal, he instead denounces his father at a press conference. His Season 3 war on Logan collapses, he nearly drowns in a pool in Italy, and confesses the crash to his siblings; the three unite against the GoJo sale but Tom betrays them to Logan. In Season 4 Logan dies suddenly; Kendall becomes co-CEO with Roman and fights to keep the company, but at the final board vote Shiv turns against him, the company is sold to GoJo, and Tom is named CEO. Kendall ends the series walking alone by the water with nothing.",
+            "key_events": [
+              "Loses the no-confidence vote and is fired",
+              "Joins a hostile takeover against his father",
+              "Car crash kills a waiter at Shiv's wedding; Logan covers it up",
+              "Denounces Logan at the press conference instead of taking the fall",
+              "Nearly drowns in Italy and confesses the crash to his siblings",
+              "Siblings' coup betrayed by Tom",
+              "Logan dies; he becomes co-CEO with Roman",
+              "Shiv votes against him; company sold to GoJo; he ends with nothing"
+            ],
+            "got_right": "He saw that the company needed to change, and he was capable of real tenderness toward his siblings and of telling the truth about his father's crimes.",
+            "got_wrong": "He tied his whole worth to one title, lied about what he had done, and kept confusing winning his father's game with finally being loved."
+          }
+        },
+        {
+          "id": "arc:succession/kendall_roy/staying_sober_under_pressure",
+          "title": "Trying to stay sober under enormous pressure",
+          "literal_situation": "Kendall has recently come out of rehab. His wife Rava has separated from him because of his drug use, he sees his two children rarely, and he is trying to hold his sobriety together while carrying a huge deal and his father's expectations.",
+          "pattern_label": "holding onto recovery while everything falls apart",
+          "pattern_text": "A person in early recovery is still trying to win back a partner and children they hurt, while the pressure in the rest of their life keeps climbing. Every setback feels like a reason to use again, and the people around them either enable them or use their past against them. Carrying guilt they cannot talk about, they wonder whether being clean is even enough to make them a good person.",
+          "hook": "Kendall is sober for now, estranged from his family and under constant stress. He badly wants his wife back and to be the father he hasn't been.",
+          "why_relatable": "How do you stay clean when your whole world is built around the thing that hurts you? Can you rebuild trust with a partner and children while you're still in the middle of chaos? What happens to a person who has something they can never tell anyone?",
+          "watch_for": [
+            "Who in his life makes it easier for him to use, and who makes it harder?",
+            "How does he behave with his children compared to how he talks about them?",
+            "What does he do with guilt he can't say out loud?"
+          ],
+          "start_at": "S1E1",
+          "span": "S1-S3",
+          "situations": [
+            {
+              "id": "addiction_and_recovery",
+              "weight": 0.9
+            },
+            {
+              "id": "redemption_after_mistakes",
+              "weight": 0.6
+            },
+            {
+              "id": "divorce",
+              "weight": 0.4
+            },
+            {
+              "id": "caring_for_family",
+              "weight": 0.3
+            }
+          ],
+          "conflicts": ["past_vs_future", "truth_vs_protecting_others"],
+          "emotions": {
+            "start": ["hope", "anxiety", "longing"],
+            "middle": ["shame", "guilt", "numbness"],
+            "end": ["guilt", "loneliness"]
+          },
+          "ending_tone": "tragic",
+          "intensity": "heavy",
+          "warnings": [
+            "addiction",
+            "death_of_loved_one",
+            "self_harm_or_suicide",
+            "abuse",
+            "betrayal"
+          ],
+          "example_user_messages": [
+            "I just got out of rehab and my wife still won't take me back.",
+            "Work is so stressful that I can feel myself wanting to use again.",
+            "I miss my kids but every time I see them I feel like I let them down.",
+            "I did something terrible that nobody knows about and it's eating me alive.",
+            "Everyone around me either feeds my habit or throws it in my face."
+          ],
+          "spoiler": {
+            "summary": "Kendall relapses after he is fired, binges in New Mexico, and on the eve of his takeover bid drives high with a young waiter who drowns when the car goes into a pond. Logan covers it up and uses it to control him; Kendall goes back to rehab, then drifts through Season 2 numb and using again, secretly paying the waiter's family. After denouncing his father he gets sober for his public war in Season 3, but collapses into depression, nearly drowns in a pool, and finally confesses the crash to Shiv and Roman. In the finale of the series he flatly denies the crash ever happened, and Rava remains distant.",
+            "key_events": [
+              "Relapses on a meth and cocaine binge in New Mexico",
+              "Car crash kills the waiter Andrew Dodds",
+              "Logan covers up the crash and sends him to rehab",
+              "Secretly drops cash into the Dodds family's mail slot",
+              "Nearly drowns face-down in a pool in Italy",
+              "Confesses the crash to his siblings",
+              "Later denies the crash to Shiv in the final episode"
+            ],
+            "got_right": "He genuinely tried to get clean more than once and, for a moment, let his siblings see his guilt.",
+            "got_wrong": "He treated recovery as a tool for winning rather than healing, and let his secret keep him trapped under his father's power."
+          }
+        }
       ]
-     },
-     "ending_tone": "tragic",
-     "intensity": "moderate",
-     "warnings": [
-      "abuse",
-      "grief",
-      "death_of_loved_one"
-     ],
-     "example_user_messages": [
-      "My brother and I haven't spoken properly in years and every family dinner turns into a fight.",
-      "I had a rough childhood and I just don't talk about it. I don't see the point.",
-      "I still feel responsible for something that happened when I was a kid, even though everyone says it wasn't my fault.",
-      "People tell me I'm hard, but nobody ever went easy on me either."
-     ],
-     "spoiler": {
-      "summary": "Logan and Ewan clash at Thanksgiving over Logan's news network, yet Ewan still votes with his brother against Kendall. In Season 2, on a trip back to Dundee, Shiv's speech about his dead mother and sister wounds him, and he and Ewan trade childhood accusations; Ewan later tells him he cannot wait for his empire to crumble and pressures Greg to quit. Logan carries lifelong guilt that he gave his little sister Rose the polio that killed her. The brothers never reconcile; Ewan delivers a complicated eulogy at Logan's funeral in Season 4.",
-      "key_events": [
-       "Thanksgiving fight with Ewan",
-       "Ewan still backs Logan in the no-confidence vote",
-       "Visits his Dundee hometown and old house in silence",
-       "Guilt over his sister Rose's death from polio",
-       "Ewan confronts him at his 50th anniversary gala",
-       "Never reconciles with Ewan before dying"
+    },
+    {
+      "id": "char:succession/shiv_roy",
+      "name": "Shiv Roy",
+      "role": "Logan Roy's youngest child and only daughter, a sharp political strategist who has built her career outside the family's right-wing media empire, and the girlfriend of company executive Tom Wambsgans.",
+      "relations": [
+        {
+          "target": "char:succession/logan_roy",
+          "relation": "parent"
+        },
+        {
+          "target": "char:succession/kendall_roy",
+          "relation": "sibling"
+        },
+        {
+          "target": "char:succession/roman_roy",
+          "relation": "sibling"
+        },
+        {
+          "target": "char:succession/connor_roy",
+          "relation": "sibling"
+        },
+        {
+          "target": "char:succession/tom_wambsgans",
+          "relation": "partner"
+        },
+        {
+          "target": "char:succession/gerri_kellman",
+          "relation": "colleague"
+        }
       ],
-      "got_right": "He survived something terrible and built a life out of it.",
-      "got_wrong": "He never let anyone, least of all his brother, reach the grief underneath, and recreated his own harsh upbringing for his children."
-     }
-    }
-   ]
-  },
-  {
-   "id": "char:succession/kendall_roy",
-   "name": "Kendall Roy",
-   "role": "Logan Roy's second son and heir apparent, a recovering addict separated from his wife, who has spent his whole life preparing to take over his father's media empire.",
-   "relations": [
-    {
-     "target": "char:succession/logan_roy",
-     "relation": "parent"
-    },
-    {
-     "target": "char:succession/shiv_roy",
-     "relation": "sibling"
-    },
-    {
-     "target": "char:succession/roman_roy",
-     "relation": "sibling"
-    },
-    {
-     "target": "char:succession/connor_roy",
-     "relation": "sibling"
-    },
-    {
-     "target": "char:succession/gerri_kellman",
-     "relation": "colleague"
-    },
-    {
-     "target": "char:succession/greg_hirsch",
-     "relation": "colleague"
-    },
-    {
-     "target": "char:succession/tom_wambsgans",
-     "relation": "colleague"
-    }
-   ],
-   "arcs": [
-    {
-     "id": "arc:succession/kendall_roy/chasing_his_fathers_chair",
-     "title": "Chasing a father's approval and his chair",
-     "literal_situation": "Kendall has been told for years he will run the family company and is closing a big acquisition to prove it. On his father's 80th birthday he expects to be named successor, but Logan changes his mind, tells him he isn't ready, and stays on as CEO.",
-     "pattern_label": "the heir who can't win a parent's approval",
-     "pattern_text": "A person raised from childhood to take over a parent's life's work does everything to prove they deserve it, but the parent keeps moving the finish line. They swing between desperate loyalty and open rebellion, never sure whether they want the parent's love or their place. Underneath the confidence is the fear that without that role they are nothing.",
-     "hook": "Kendall is polished, ambitious and fragile. The job he was promised has just been pulled away in front of his whole family, and he has to decide whether to wait, beg, or fight.",
-     "why_relatable": "What do you do when the future you were promised is withdrawn by the person who promised it? Is standing up to a domineering parent courage, or just another way of needing their attention? Who are you if you are not the heir?",
-     "watch_for": [
-      "When he stands up to his father, who is he really trying to impress?",
-      "Notice how he talks to his siblings when he needs them compared with when he doesn't.",
-      "Does he ever describe what he would do with the company, or only that he should have it?"
-     ],
-     "start_at": "S1E1",
-     "span": "S1-S4",
-     "situations": [
-      {
-       "id": "difficult_parent",
-       "weight": 0.9
-      },
-      {
-       "id": "family_expectations",
-       "weight": 0.9
-      },
-      {
-       "id": "sibling_rivalry",
-       "weight": 0.6
-      },
-      {
-       "id": "standing_up_to_authority",
-       "weight": 0.6
-      }
-     ],
-     "conflicts": [
-      "self_vs_family_expectations",
-      "loyalty_vs_ambition"
-     ],
-     "emotions": {
-      "start": [
-       "determination",
-       "inadequacy",
-       "rejection"
-      ],
-      "middle": [
-       "shame",
-       "betrayal",
-       "anger"
-      ],
-      "end": [
-       "grief",
-       "numbness",
-       "loneliness"
+      "arcs": [
+        {
+          "id": "arc:succession/shiv_roy/claiming_a_seat_at_the_table",
+          "title": "Claiming a seat at her father's table",
+          "literal_situation": "Shiv works in progressive politics and has kept her distance from her father's company, whose values she opposes. At his 80th birthday Logan asks her to drop politics and come work for him; she declines, while her brothers scramble over the succession she claims not to want.",
+          "pattern_label": "the daughter tempted back into the family fold",
+          "pattern_text": "A person who built an independent career away from a powerful family is offered the thing they secretly always wanted: to be taken seriously by the parent who overlooked them. Accepting means giving up the life and values that made them their own person. They have to compete with siblings who were always assumed to be the heirs, in a world that doesn't take them as seriously.",
+          "hook": "Shiv is confident and politically savvy, and she insists she's above the family scramble. But her father is dangling a role that could mean more to her than she admits.",
+          "why_relatable": "Is it selling out to take an opportunity from someone whose values you reject? Can you ever be seen as an equal in a family that treats you as the baby, or as the girl? How much of yourself are you willing to trade for a parent's approval?",
+          "watch_for": [
+            "When she says she doesn't want the job, does her behaviour agree?",
+            "Notice how her brothers talk about her when she isn't in the room.",
+            "Does she trust anyone fully, even the people she loves?"
+          ],
+          "start_at": "S1E1",
+          "span": "S1-S4",
+          "situations": [
+            {
+              "id": "family_expectations",
+              "weight": 0.8
+            },
+            {
+              "id": "career_change",
+              "weight": 0.6
+            },
+            {
+              "id": "difficult_parent",
+              "weight": 0.7
+            },
+            {
+              "id": "sibling_rivalry",
+              "weight": 0.7
+            }
+          ],
+          "conflicts": ["loyalty_vs_ambition", "belonging_vs_integrity"],
+          "emotions": {
+            "start": ["confidence", "pride", "longing"],
+            "middle": ["rejection", "anger", "self_doubt"],
+            "end": ["resentment", "acceptance"]
+          },
+          "ending_tone": "bittersweet",
+          "intensity": "heavy",
+          "warnings": ["abuse", "betrayal", "sexual_violence", "death_of_main_character", "grief"],
+          "example_user_messages": [
+            "I left the family business years ago and now my dad is finally offering me a real role. I don't know if I should take it.",
+            "My brothers always get taken seriously and I have to fight twice as hard.",
+            "I don't agree with what my family's company stands for, but I still want to be the one in charge.",
+            "Every time I think I've earned my father's trust he pulls it away."
+          ],
+          "spoiler": {
+            "summary": "Shiv secretly accepts Logan's offer to make her his successor at the start of Season 2, abandoning her political career, but he strings her along with a three-year plan, then humiliates her by naming Rhea Jarrell. She pressures a cruise-scandal survivor into not testifying. In Season 3 she is given an empty 'President' title and sidelined; when she and her brothers unite against the GoJo sale, Tom betrays them to Logan. In Season 4, after Logan's death, she secretly allies with Lukas Matsson to become his American CEO, only for Matsson to pick Tom instead. At the decisive board vote she refuses to back Kendall, the company is sold, and she ends the series pregnant, beside Tom, as the wife of the new CEO.",
+            "key_events": [
+              "Secretly promised the top job by Logan",
+              "Logan names Rhea as successor instead",
+              "Talks a cruise-scandal witness out of testifying",
+              "Given a hollow 'President' title in Season 3",
+              "Tom betrays the siblings' plan to Logan",
+              "Allies with Matsson, who then chooses Tom",
+              "Votes against Kendall at the final board meeting",
+              "Ends pregnant, standing beside Tom as CEO's wife"
+            ],
+            "got_right": "She saw through much of her family's nonsense and knew she was as capable as her brothers.",
+            "got_wrong": "She gave up her own values and career for her father's approval, and her refusal to be vulnerable left her outmanoeuvred by the people she underestimated."
+          }
+        },
+        {
+          "id": "arc:succession/shiv_roy/love_on_her_own_terms",
+          "title": "Love on her own terms",
+          "literal_situation": "Shiv's boyfriend Tom adores her and wants badly to be accepted by her family. As things between them get more serious she is still drawn to an ex, uneasy with commitment, and used to having the upper hand.",
+          "pattern_label": "keeping the upper hand in love",
+          "pattern_text": "A person who learned early that vulnerability is dangerous chooses a partner who loves them more than they love back, because it feels safe. They want commitment and freedom at the same time, and keep testing how much the other person will put up with. The question is what happens when the partner they took for granted stops accepting it.",
+          "hook": "Shiv holds all the power in her relationship with Tom and seems to like it that way, even as he moves toward proposing.",
+          "why_relatable": "Is it unfair to commit to someone you're not sure you love as much as they love you? Can a relationship survive when one person always keeps one foot out the door? Why is it so hard to let someone see you when you're weak?",
+          "watch_for": [
+            "What does she want from Tom that she never asks for directly?",
+            "Notice who apologises in their fights, and who changes.",
+            "Does she treat him differently in front of her family than in private?"
+          ],
+          "start_at": "S1E1",
+          "span": "S1-S4",
+          "situations": [
+            {
+              "id": "identity_and_self_acceptance",
+              "weight": 0.5
+            },
+            {
+              "id": "breakup",
+              "weight": 0.4
+            },
+            {
+              "id": "loneliness",
+              "weight": 0.3
+            }
+          ],
+          "conflicts": ["independence_vs_connection", "control_vs_trust"],
+          "emotions": {
+            "start": ["confidence", "restlessness"],
+            "middle": ["guilt", "betrayal", "loneliness"],
+            "end": ["acceptance", "resentment"]
+          },
+          "ending_tone": "ambiguous",
+          "intensity": "moderate",
+          "warnings": ["betrayal"],
+          "example_user_messages": [
+            "My partner loves me more than I love him and honestly that's how I like it. Is that bad?",
+            "I asked for an open relationship right after our wedding and I'm not sure why.",
+            "I keep my guard up with everyone, even the person I'm marrying.",
+            "I think I pushed my husband too far and now I can't tell if I've lost him."
+          ],
+          "spoiler": {
+            "summary": "Shiv sleeps with her ex Nate before her wedding, confesses on the wedding night and asks Tom for an open marriage. Tom grows quietly miserable, admits he isn't sure the marriage was a good idea, and she saves him from being the scapegoat. In the Season 3 finale Tom betrays the siblings' plan to Logan, and in Season 4 the couple separate and trade vicious fights. Shiv hides that she is pregnant, then tells Tom. When Tom is named CEO, she ends the show riding beside him, their hands touching coldly, in a marriage of mutual convenience.",
+            "key_events": [
+              "Affair with Nate before the wedding",
+              "Asks for an open marriage on her wedding night",
+              "Protects Tom from being the scapegoat",
+              "Tom betrays her to Logan",
+              "Brutal separation fight on election night",
+              "Pregnant with Tom's child",
+              "Ends beside Tom after he is named CEO"
+            ],
+            "got_right": "She was, at times, honest with Tom about what she wanted, and she fought to save him when it counted.",
+            "got_wrong": "She treated his love as something she could count on without returning, and taught him that the only way to be taken seriously by her was to hurt her."
+          }
+        }
       ]
-     },
-     "ending_tone": "tragic",
-     "intensity": "heavy",
-     "warnings": [
-      "abuse",
-      "addiction",
-      "betrayal",
-      "death_of_main_character",
-      "grief",
-      "self_harm_or_suicide",
-      "bleak_ending"
-     ],
-     "example_user_messages": [
-      "My dad always said I'd take over the family business and now he's acting like I'm not good enough.",
-      "I've spent my whole life trying to prove myself to my father and it's never enough.",
-      "I don't know if I actually want this job or if I just want him to finally say I earned it.",
-      "Part of me wants to beat him at his own game, part of me just wants him to hug me.",
-      "If I'm not the one who takes over, I honestly don't know who I am."
-     ],
-     "spoiler": {
-      "summary": "Kendall launches a vote of no confidence against Logan and loses; he is fired, relapses, and joins a hostile takeover bid. On the night of Shiv's wedding he crashes a car and a young waiter drowns; Logan covers it up and Kendall returns as his father's hollowed-out enforcer. Chosen as the blood sacrifice for the cruise scandal, he instead denounces his father at a press conference. His Season 3 war on Logan collapses, he nearly drowns in a pool in Italy, and confesses the crash to his siblings; the three unite against the GoJo sale but Tom betrays them to Logan. In Season 4 Logan dies suddenly; Kendall becomes co-CEO with Roman and fights to keep the company, but at the final board vote Shiv turns against him, the company is sold to GoJo, and Tom is named CEO. Kendall ends the series walking alone by the water with nothing.",
-      "key_events": [
-       "Loses the no-confidence vote and is fired",
-       "Joins a hostile takeover against his father",
-       "Car crash kills a waiter at Shiv's wedding; Logan covers it up",
-       "Denounces Logan at the press conference instead of taking the fall",
-       "Nearly drowns in Italy and confesses the crash to his siblings",
-       "Siblings' coup betrayed by Tom",
-       "Logan dies; he becomes co-CEO with Roman",
-       "Shiv votes against him; company sold to GoJo; he ends with nothing"
-      ],
-      "got_right": "He saw that the company needed to change, and he was capable of real tenderness toward his siblings and of telling the truth about his father's crimes.",
-      "got_wrong": "He tied his whole worth to one title, lied about what he had done, and kept confusing winning his father's game with finally being loved."
-     }
     },
     {
-     "id": "arc:succession/kendall_roy/staying_sober_under_pressure",
-     "title": "Trying to stay sober under enormous pressure",
-     "literal_situation": "Kendall has recently come out of rehab. His wife Rava has separated from him because of his drug use, he sees his two children rarely, and he is trying to hold his sobriety together while carrying a huge deal and his father's expectations.",
-     "pattern_label": "holding onto recovery while everything falls apart",
-     "pattern_text": "A person in early recovery is still trying to win back a partner and children they hurt, while the pressure in the rest of their life keeps climbing. Every setback feels like a reason to use again, and the people around them either enable them or use their past against them. Carrying guilt they cannot talk about, they wonder whether being clean is even enough to make them a good person.",
-     "hook": "Kendall is sober for now, estranged from his family and under constant stress. He badly wants his wife back and to be the father he hasn't been.",
-     "why_relatable": "How do you stay clean when your whole world is built around the thing that hurts you? Can you rebuild trust with a partner and children while you're still in the middle of chaos? What happens to a person who has something they can never tell anyone?",
-     "watch_for": [
-      "Who in his life makes it easier for him to use, and who makes it harder?",
-      "How does he behave with his children compared to how he talks about them?",
-      "What does he do with guilt he can't say out loud?"
-     ],
-     "start_at": "S1E1",
-     "span": "S1-S3",
-     "situations": [
-      {
-       "id": "addiction_and_recovery",
-       "weight": 0.9
-      },
-      {
-       "id": "redemption_after_mistakes",
-       "weight": 0.6
-      },
-      {
-       "id": "divorce",
-       "weight": 0.4
-      },
-      {
-       "id": "caring_for_family",
-       "weight": 0.3
-      }
-     ],
-     "conflicts": [
-      "past_vs_future",
-      "truth_vs_protecting_others"
-     ],
-     "emotions": {
-      "start": [
-       "hope",
-       "anxiety",
-       "longing"
+      "id": "char:succession/roman_roy",
+      "name": "Roman Roy",
+      "role": "Logan Roy's youngest son, a sarcastic, provocative wisecracker who mocks everything and everyone and is newly back at his father's company in New York.",
+      "relations": [
+        {
+          "target": "char:succession/logan_roy",
+          "relation": "parent"
+        },
+        {
+          "target": "char:succession/kendall_roy",
+          "relation": "sibling"
+        },
+        {
+          "target": "char:succession/shiv_roy",
+          "relation": "sibling"
+        },
+        {
+          "target": "char:succession/connor_roy",
+          "relation": "sibling"
+        },
+        {
+          "target": "char:succession/gerri_kellman",
+          "relation": "mentor"
+        },
+        {
+          "target": "char:succession/tom_wambsgans",
+          "relation": "colleague"
+        },
+        {
+          "target": "char:succession/greg_hirsch",
+          "relation": "colleague"
+        }
       ],
-      "middle": [
-       "shame",
-       "guilt",
-       "numbness"
-      ],
-      "end": [
-       "guilt",
-       "loneliness"
+      "arcs": [
+        {
+          "id": "arc:succession/roman_roy/the_joker_who_wants_to_be_taken_seriously",
+          "title": "The joker who wants to be taken seriously",
+          "literal_situation": "Roman has a big title and little experience at his father's company. He hides behind crude jokes, bargains his signature for a promotion, and has always been treated as the family's weakest child, the one sent away to military school.",
+          "pattern_label": "hiding insecurity behind jokes and cruelty",
+          "pattern_text": "A person who was always treated as the family's weak link protects themselves by making everything a joke, especially their own failures. They crave the approval of the harsh parent who belittled them, and are secretly afraid they really are as useless as everyone assumes. Getting a chance to prove themselves means dropping the act and risking real failure.",
+          "hook": "Roman is funny, cruel and clearly scared. He has just been handed more responsibility than he has earned and has no idea if he can handle it.",
+          "why_relatable": "What do you do when everyone, including you, assumes you're the least capable one? Can you stop making jokes long enough to find out what you're actually good at? Why do we keep seeking the approval of the person who hurts us most?",
+          "watch_for": [
+            "When does he stop joking, and what makes him do it?",
+            "How does he behave when his father praises him compared to when he's ignored?",
+            "Notice who he protects, and who he sacrifices, to get closer to his father."
+          ],
+          "start_at": "S1E1",
+          "span": "S1-S4",
+          "situations": [
+            {
+              "id": "difficult_parent",
+              "weight": 0.9
+            },
+            {
+              "id": "confidence_struggle",
+              "weight": 0.8
+            },
+            {
+              "id": "imposter_syndrome",
+              "weight": 0.7
+            },
+            {
+              "id": "sibling_rivalry",
+              "weight": 0.5
+            }
+          ],
+          "conflicts": ["self_vs_family_expectations", "loyalty_vs_ambition"],
+          "emotions": {
+            "start": ["inadequacy", "self_doubt", "envy"],
+            "middle": ["longing", "pride", "fear"],
+            "end": ["grief", "numbness", "relief"]
+          },
+          "ending_tone": "bittersweet",
+          "intensity": "heavy",
+          "warnings": ["abuse", "war_and_violence", "death_of_main_character", "grief", "betrayal"],
+          "example_user_messages": [
+            "Everyone in my family thinks I'm the screw-up, and I kind of play along.",
+            "I make jokes about everything because if I take it seriously and fail, that's worse.",
+            "I got a big promotion and I'm terrified people will realise I have no idea what I'm doing.",
+            "My dad used to hit me and I still want him to be proud of me. How messed up is that?"
+          ],
+          "spoiler": {
+            "summary": "Roman becomes COO, then hides a satellite launch explosion he rushed to coincide with Shiv's wedding. In Season 2 he quietly outperforms Kendall, sails through a management course, survives being held at gunpoint in Turkey while brokering a deal, and has a tooth knocked out by his father. In Season 3 he becomes Logan's favourite for a while, until he accidentally sends his father an explicit photo meant for Gerri and is demoted; he joins his siblings' failed coup. In Season 4 he is on the phone as his father dies, becomes co-CEO with Kendall, fires Gerri, cheers a far-right candidate's victory, breaks down and cannot deliver his father's eulogy, and is pushed into the crowd outside. In the finale he admits the company and they are 'bullshit' and ends alone with a drink, faintly smiling, finally out of the race.",
+            "key_events": [
+              "Promoted to COO",
+              "Hides the satellite explosion he rushed",
+              "Held hostage at gunpoint in Turkey",
+              "Logan knocks out his tooth",
+              "Sends explicit photo to Logan by mistake and is demoted",
+              "On the phone as Logan dies",
+              "Becomes co-CEO and fires Gerri",
+              "Breaks down at the funeral",
+              "Ends out of the company, alone with a martini"
+            ],
+            "got_right": "He was sharper and more perceptive than anyone gave him credit for, and in the end he was the one who could say out loud that none of it mattered.",
+            "got_wrong": "He copied his father's cruelty to earn his love, and never let himself be seen as someone who needed care."
+          }
+        },
+        {
+          "id": "arc:succession/roman_roy/closeness_only_as_a_joke",
+          "title": "Closeness that only feels safe as a joke",
+          "literal_situation": "Roman makes sex the punchline of every conversation, yet shies away from real intimacy with the women he dates. The only person who seems to reach him is Gerri, his father's long-time general counsel and his godmother.",
+          "pattern_label": "fearing intimacy while craving to be known",
+          "pattern_text": "A person who grew up with humiliation instead of tenderness can only approach closeness sideways, through teasing, shock and games. Ordinary intimacy feels unbearable, while the one relationship that works is strange, unequal and hard to explain. They want to be known, but letting someone in feels like handing them a weapon.",
+          "hook": "Roman is crude and constantly sexual in his talk, but awkward and avoidant when things become real. He keeps drifting back to the one person who calls him on his nonsense.",
+          "why_relatable": "Why is it easier to joke about what we need than to ask for it? Is a relationship less real because it doesn't look like other people's? What does it take to trust someone with the part of you that you're most ashamed of?",
+          "watch_for": [
+            "What changes in him when he is talking to Gerri?",
+            "Notice how he reacts when someone is simply kind to him.",
+            "Is he looking for a partner, a parent, or someone who will tell him the truth?"
+          ],
+          "start_at": "S1",
+          "span": "S1-S4",
+          "situations": [
+            {
+              "id": "identity_and_self_acceptance",
+              "weight": 0.7
+            },
+            {
+              "id": "loneliness",
+              "weight": 0.6
+            },
+            {
+              "id": "falling_for_someone_unexpected",
+              "weight": 0.5
+            }
+          ],
+          "conflicts": ["independence_vs_connection", "fitting_in_vs_standing_out"],
+          "emotions": {
+            "start": ["shame", "anxiety"],
+            "middle": ["longing", "belonging", "confusion"],
+            "end": ["loneliness", "numbness"]
+          },
+          "ending_tone": "ambiguous",
+          "intensity": "moderate",
+          "warnings": ["abuse"],
+          "example_user_messages": [
+            "I joke about sex constantly but when it actually gets close with someone I freeze.",
+            "The only person I really open up to is way older than me and it's hard to explain to anyone.",
+            "I think I push people away by being gross before they can see how scared I am.",
+            "Real intimacy makes me want to crawl out of my skin."
+          ],
+          "spoiler": {
+            "summary": "Roman struggles to be intimate with his girlfriend Tabitha and they drift apart. He develops a charged, verbally dominant relationship with Gerri that he half-jokingly calls a marriage proposal and a business partnership. When Gerri becomes interim CEO she tries to end it; Roman then accidentally sends his father the explicit photo meant for her, damaging them both. After Logan's death, Roman fires Gerri to prove he is not dependent on her, and she threatens to sue. He ends the series alone.",
+            "key_events": [
+              "Tension with Tabitha over sex",
+              "Erotic, humiliating dynamic with Gerri",
+              "Half-proposes to Gerri",
+              "Accidentally sends Logan an explicit photo meant for Gerri",
+              "Fires Gerri after Logan's death"
+            ],
+            "got_right": "He found, with Gerri, one person who saw him clearly and whom he actually listened to.",
+            "got_wrong": "He could never let the closeness be real, and hurt the one person who had his back when it threatened his image."
+          }
+        }
       ]
-     },
-     "ending_tone": "tragic",
-     "intensity": "heavy",
-     "warnings": [
-      "addiction",
-      "death_of_loved_one",
-      "self_harm_or_suicide",
-      "abuse",
-      "betrayal"
-     ],
-     "example_user_messages": [
-      "I just got out of rehab and my wife still won't take me back.",
-      "Work is so stressful that I can feel myself wanting to use again.",
-      "I miss my kids but every time I see them I feel like I let them down.",
-      "I did something terrible that nobody knows about and it's eating me alive.",
-      "Everyone around me either feeds my habit or throws it in my face."
-     ],
-     "spoiler": {
-      "summary": "Kendall relapses after he is fired, binges in New Mexico, and on the eve of his takeover bid drives high with a young waiter who drowns when the car goes into a pond. Logan covers it up and uses it to control him; Kendall goes back to rehab, then drifts through Season 2 numb and using again, secretly paying the waiter's family. After denouncing his father he gets sober for his public war in Season 3, but collapses into depression, nearly drowns in a pool, and finally confesses the crash to Shiv and Roman. In the finale of the series he flatly denies the crash ever happened, and Rava remains distant.",
-      "key_events": [
-       "Relapses on a meth and cocaine binge in New Mexico",
-       "Car crash kills the waiter Andrew Dodds",
-       "Logan covers up the crash and sends him to rehab",
-       "Secretly drops cash into the Dodds family's mail slot",
-       "Nearly drowns face-down in a pool in Italy",
-       "Confesses the crash to his siblings",
-       "Later denies the crash to Shiv in the final episode"
+    },
+    {
+      "id": "char:succession/connor_roy",
+      "name": "Connor Roy",
+      "role": "Logan Roy's eldest son from his first marriage, a gentle, self-important man of leisure living on a ranch in New Mexico, with political dreams and no role in the family company.",
+      "relations": [
+        {
+          "target": "char:succession/logan_roy",
+          "relation": "parent"
+        },
+        {
+          "target": "char:succession/kendall_roy",
+          "relation": "sibling"
+        },
+        {
+          "target": "char:succession/shiv_roy",
+          "relation": "sibling"
+        },
+        {
+          "target": "char:succession/roman_roy",
+          "relation": "sibling"
+        }
       ],
-      "got_right": "He genuinely tried to get clean more than once and, for a moment, let his siblings see his guilt.",
-      "got_wrong": "He treated recovery as a tool for winning rather than healing, and let his secret keep him trapped under his father's power."
-     }
-    }
-   ]
-  },
-  {
-   "id": "char:succession/shiv_roy",
-   "name": "Shiv Roy",
-   "role": "Logan Roy's youngest child and only daughter, a sharp political strategist who has built her career outside the family's right-wing media empire, and the girlfriend of company executive Tom Wambsgans.",
-   "relations": [
-    {
-     "target": "char:succession/logan_roy",
-     "relation": "parent"
-    },
-    {
-     "target": "char:succession/kendall_roy",
-     "relation": "sibling"
-    },
-    {
-     "target": "char:succession/roman_roy",
-     "relation": "sibling"
-    },
-    {
-     "target": "char:succession/connor_roy",
-     "relation": "sibling"
-    },
-    {
-     "target": "char:succession/tom_wambsgans",
-     "relation": "partner"
-    },
-    {
-     "target": "char:succession/gerri_kellman",
-     "relation": "colleague"
-    }
-   ],
-   "arcs": [
-    {
-     "id": "arc:succession/shiv_roy/claiming_a_seat_at_the_table",
-     "title": "Claiming a seat at her father's table",
-     "literal_situation": "Shiv works in progressive politics and has kept her distance from her father's company, whose values she opposes. At his 80th birthday Logan asks her to drop politics and come work for him; she declines, while her brothers scramble over the succession she claims not to want.",
-     "pattern_label": "the daughter tempted back into the family fold",
-     "pattern_text": "A person who built an independent career away from a powerful family is offered the thing they secretly always wanted: to be taken seriously by the parent who overlooked them. Accepting means giving up the life and values that made them their own person. They have to compete with siblings who were always assumed to be the heirs, in a world that doesn't take them as seriously.",
-     "hook": "Shiv is confident and politically savvy, and she insists she's above the family scramble. But her father is dangling a role that could mean more to her than she admits.",
-     "why_relatable": "Is it selling out to take an opportunity from someone whose values you reject? Can you ever be seen as an equal in a family that treats you as the baby, or as the girl? How much of yourself are you willing to trade for a parent's approval?",
-     "watch_for": [
-      "When she says she doesn't want the job, does her behaviour agree?",
-      "Notice how her brothers talk about her when she isn't in the room.",
-      "Does she trust anyone fully, even the people she loves?"
-     ],
-     "start_at": "S1E1",
-     "span": "S1-S4",
-     "situations": [
-      {
-       "id": "family_expectations",
-       "weight": 0.8
-      },
-      {
-       "id": "career_change",
-       "weight": 0.6
-      },
-      {
-       "id": "difficult_parent",
-       "weight": 0.7
-      },
-      {
-       "id": "sibling_rivalry",
-       "weight": 0.7
-      }
-     ],
-     "conflicts": [
-      "loyalty_vs_ambition",
-      "belonging_vs_integrity"
-     ],
-     "emotions": {
-      "start": [
-       "confidence",
-       "pride",
-       "longing"
-      ],
-      "middle": [
-       "rejection",
-       "anger",
-       "self_doubt"
-      ],
-      "end": [
-       "resentment",
-       "acceptance"
+      "arcs": [
+        {
+          "id": "arc:succession/connor_roy/the_forgotten_eldest",
+          "title": "The forgotten eldest looking for his place",
+          "literal_situation": "Connor is the oldest Roy child but the one nobody takes seriously. His father ignores his birthday gift, his half-siblings mock him, and he fills his days with hobbies at his ranch while talking about a future in politics.",
+          "pattern_label": "the overlooked child who wants to matter",
+          "pattern_text": "The eldest child of a first family grew up largely ignored, and learned to act as though they are above the family drama rather than admit how much it hurts. Now middle-aged and without a real purpose, they latch onto grand plans nobody believes in, hoping that one of them will finally make people pay attention. Underneath it is a simple wish to be loved.",
+          "hook": "Connor seems cheerfully oblivious, but every snub from his father lands. He wants to be part of the family story, and nobody will give him a line.",
+          "why_relatable": "What do you do when your family has already decided you don't count? Is a big dream a real ambition or a way to be noticed at last? Can you stop waiting for a parent's love and find it somewhere else?",
+          "watch_for": [
+            "How does he respond when his father dismisses him?",
+            "Notice the moments when he tells his siblings a painful truth about their childhood.",
+            "Is his ambition about what he wants to do, or about who he wants to be seen as?"
+          ],
+          "start_at": "S1E1",
+          "span": "S1-S4",
+          "situations": [
+            {
+              "id": "difficult_parent",
+              "weight": 0.7
+            },
+            {
+              "id": "loneliness",
+              "weight": 0.6
+            },
+            {
+              "id": "midlife_reinvention",
+              "weight": 0.6
+            },
+            {
+              "id": "confidence_struggle",
+              "weight": 0.4
+            }
+          ],
+          "conflicts": ["fitting_in_vs_standing_out", "self_vs_family_expectations"],
+          "emotions": {
+            "start": ["rejection", "loneliness", "hope"],
+            "middle": ["determination", "self_doubt"],
+            "end": ["acceptance", "grief"]
+          },
+          "ending_tone": "bittersweet",
+          "intensity": "moderate",
+          "warnings": ["death_of_main_character", "grief", "abuse"],
+          "example_user_messages": [
+            "I'm the oldest but my younger siblings get all the attention and respect.",
+            "My father has never once acted interested in anything I've done.",
+            "I've got this big plan and everyone laughs at me, but I have to try.",
+            "I'm middle-aged and I still feel like the kid nobody invited."
+          ],
+          "spoiler": {
+            "summary": "Connor announces a doomed presidential run, spends his fortune, and trades suspending it for a family bailout, then relaunches it. In Season 4 his father dies on the day of his wedding to Willa; he tells his siblings he was the one Logan never loved. He keeps his campaign going at 1 percent, then negotiates his withdrawal for an ambassadorship to Slovenia from the incoming president-elect. He ends the series married and with a modest post, the only sibling who gets something he asked for.",
+            "key_events": [
+              "Launches a presidential campaign",
+              "Suspends it in exchange for money from Logan",
+              "Logan dies on Connor's wedding day",
+              "Tells his siblings their father never loved him",
+              "Polls at 1 percent",
+              "Secures an ambassadorship to Slovenia"
+            ],
+            "got_right": "He was the most honest about wanting love, and he built a life with someone rather than chasing the company.",
+            "got_wrong": "He spent years and a fortune seeking attention from a father who was never going to give it."
+          }
+        },
+        {
+          "id": "arc:succession/connor_roy/paying_for_love",
+          "title": "Hoping a paid arrangement becomes love",
+          "literal_situation": "Connor's much younger girlfriend Willa began as an escort he paid, and she is still ambivalent about him. He offers to fund her playwriting and asks her to make things exclusive, hoping money and patience will turn into real affection.",
+          "pattern_label": "hoping someone will stay for love",
+          "pattern_text": "A lonely person enters a relationship that is openly unequal, with one providing money and the other providing company. They sincerely want it to become real love but can never be sure whether the other person would stay without the security. The question is whether a relationship that started as a deal can grow into something both people choose.",
+          "hook": "Connor is devoted to Willa and knows full well she might not feel the same. He keeps offering more, hoping she will one day want to stay.",
+          "why_relatable": "Can you trust love when you're the one with all the money? Is it wrong to want someone even if you suspect they're with you for security? What does commitment look like when both people know the terms?",
+          "watch_for": [
+            "What does Willa do when she has a chance to leave?",
+            "Does Connor ever ask directly how she feels?",
+            "Notice when the relationship looks like a deal and when it looks like a partnership."
+          ],
+          "start_at": "S1E2",
+          "span": "S1-S4",
+          "situations": [
+            {
+              "id": "unrequited_love",
+              "weight": 0.6
+            },
+            {
+              "id": "loneliness",
+              "weight": 0.6
+            },
+            {
+              "id": "falling_for_someone_unexpected",
+              "weight": 0.4
+            }
+          ],
+          "conflicts": ["independence_vs_connection", "control_vs_trust"],
+          "emotions": {
+            "start": ["loneliness", "longing"],
+            "middle": ["hope", "anxiety"],
+            "end": ["acceptance", "belonging"]
+          },
+          "ending_tone": "bittersweet",
+          "intensity": "light",
+          "warnings": [],
+          "example_user_messages": [
+            "I think my girlfriend is with me mostly because I pay for everything.",
+            "I'm older and she's much younger and I can't tell if she actually loves me.",
+            "I keep offering more to keep her around and I hate that about myself.",
+            "Can a relationship that started out as a transaction ever become real?"
+          ],
+          "spoiler": {
+            "summary": "Willa agrees to exclusivity, and Connor bankrolls her disastrous play. She hesitates about marriage and nearly flees on the eve of their wedding, but goes through with it on the day Logan dies. By the end they are married and she seems to have settled, with a kind of affection, into the life with him.",
+            "key_events": [
+              "Willa agrees to an exclusive arrangement",
+              "Connor bankrolls her play, which flops",
+              "Willa nearly backs out of the wedding",
+              "They marry on the day of Logan's death"
+            ],
+            "got_right": "He was upfront and kind, and let Willa choose him rather than forcing her.",
+            "got_wrong": "He leaned on money to hold on to her instead of trusting that he could be loved for himself."
+          }
+        }
       ]
-     },
-     "ending_tone": "bittersweet",
-     "intensity": "heavy",
-     "warnings": [
-      "abuse",
-      "betrayal",
-      "sexual_violence",
-      "death_of_main_character",
-      "grief"
-     ],
-     "example_user_messages": [
-      "I left the family business years ago and now my dad is finally offering me a real role. I don't know if I should take it.",
-      "My brothers always get taken seriously and I have to fight twice as hard.",
-      "I don't agree with what my family's company stands for, but I still want to be the one in charge.",
-      "Every time I think I've earned my father's trust he pulls it away."
-     ],
-     "spoiler": {
-      "summary": "Shiv secretly accepts Logan's offer to make her his successor at the start of Season 2, abandoning her political career, but he strings her along with a three-year plan, then humiliates her by naming Rhea Jarrell. She pressures a cruise-scandal survivor into not testifying. In Season 3 she is given an empty 'President' title and sidelined; when she and her brothers unite against the GoJo sale, Tom betrays them to Logan. In Season 4, after Logan's death, she secretly allies with Lukas Matsson to become his American CEO, only for Matsson to pick Tom instead. At the decisive board vote she refuses to back Kendall, the company is sold, and she ends the series pregnant, beside Tom, as the wife of the new CEO.",
-      "key_events": [
-       "Secretly promised the top job by Logan",
-       "Logan names Rhea as successor instead",
-       "Talks a cruise-scandal witness out of testifying",
-       "Given a hollow 'President' title in Season 3",
-       "Tom betrays the siblings' plan to Logan",
-       "Allies with Matsson, who then chooses Tom",
-       "Votes against Kendall at the final board meeting",
-       "Ends pregnant, standing beside Tom as CEO's wife"
-      ],
-      "got_right": "She saw through much of her family's nonsense and knew she was as capable as her brothers.",
-      "got_wrong": "She gave up her own values and career for her father's approval, and her refusal to be vulnerable left her outmanoeuvred by the people she underestimated."
-     }
     },
     {
-     "id": "arc:succession/shiv_roy/love_on_her_own_terms",
-     "title": "Love on her own terms",
-     "literal_situation": "Shiv's boyfriend Tom adores her and wants badly to be accepted by her family. As things between them get more serious she is still drawn to an ex, uneasy with commitment, and used to having the upper hand.",
-     "pattern_label": "keeping the upper hand in love",
-     "pattern_text": "A person who learned early that vulnerability is dangerous chooses a partner who loves them more than they love back, because it feels safe. They want commitment and freedom at the same time, and keep testing how much the other person will put up with. The question is what happens when the partner they took for granted stops accepting it.",
-     "hook": "Shiv holds all the power in her relationship with Tom and seems to like it that way, even as he moves toward proposing.",
-     "why_relatable": "Is it unfair to commit to someone you're not sure you love as much as they love you? Can a relationship survive when one person always keeps one foot out the door? Why is it so hard to let someone see you when you're weak?",
-     "watch_for": [
-      "What does she want from Tom that she never asks for directly?",
-      "Notice who apologises in their fights, and who changes.",
-      "Does she treat him differently in front of her family than in private?"
-     ],
-     "start_at": "S1E1",
-     "span": "S1-S4",
-     "situations": [
-      {
-       "id": "identity_and_self_acceptance",
-       "weight": 0.5
-      },
-      {
-       "id": "breakup",
-       "weight": 0.4
-      },
-      {
-       "id": "loneliness",
-       "weight": 0.3
-      }
-     ],
-     "conflicts": [
-      "independence_vs_connection",
-      "control_vs_trust"
-     ],
-     "emotions": {
-      "start": [
-       "confidence",
-       "restlessness"
+      "id": "char:succession/tom_wambsgans",
+      "name": "Tom Wambsgans",
+      "role": "Shiv Roy's boyfriend, a Midwestern executive in the Roy family company who is desperate to be accepted by her powerful father and her mocking brothers.",
+      "relations": [
+        {
+          "target": "char:succession/shiv_roy",
+          "relation": "partner"
+        },
+        {
+          "target": "char:succession/logan_roy",
+          "relation": "boss"
+        },
+        {
+          "target": "char:succession/greg_hirsch",
+          "relation": "protege"
+        },
+        {
+          "target": "char:succession/gerri_kellman",
+          "relation": "colleague"
+        },
+        {
+          "target": "char:succession/kendall_roy",
+          "relation": "colleague"
+        },
+        {
+          "target": "char:succession/roman_roy",
+          "relation": "colleague"
+        }
       ],
-      "middle": [
-       "guilt",
-       "betrayal",
-       "loneliness"
-      ],
-      "end": [
-       "acceptance",
-       "resentment"
+      "arcs": [
+        {
+          "id": "arc:succession/tom_wambsgans/the_outsider_who_wants_in",
+          "title": "The outsider desperate to belong",
+          "literal_situation": "Tom is from a modest Midwestern background and dating into one of the richest families in the world. He tries too hard with gifts and jokes, is openly mocked by Shiv's brothers, and is about to take over a division of the family company that hides ugly secrets.",
+          "pattern_label": "an outsider who will do anything to belong",
+          "pattern_text": "A person marrying into a powerful, closed world is tolerated but never truly accepted. They swallow humiliation from above while taking it out on anyone below them, and slowly learn that loyalty is only rewarded if you pick the right side. The question is how much of themselves they will trade for a seat at the table.",
+          "hook": "Tom is eager, awkward and constantly belittled. He wants the family's approval so much that he says yes to things he knows he shouldn't.",
+          "why_relatable": "How far would you go to be accepted by a family or a workplace that looks down on you? Why is it so tempting to bully the one person below you when you're being bullied from above? When does going along to get along turn into giving away your soul?",
+          "watch_for": [
+            "Notice how he treats the people below him compared to the people above him.",
+            "When he is humiliated in public, what does he do with it afterwards?",
+            "Who is he really loyal to?"
+          ],
+          "start_at": "S1E1",
+          "span": "S1-S4",
+          "situations": [
+            {
+              "id": "finding_your_people",
+              "weight": 0.6
+            },
+            {
+              "id": "family_expectations",
+              "weight": 0.6
+            },
+            {
+              "id": "confidence_struggle",
+              "weight": 0.5
+            },
+            {
+              "id": "becoming_a_manager",
+              "weight": 0.5
+            }
+          ],
+          "conflicts": ["belonging_vs_integrity", "loyalty_vs_ambition"],
+          "emotions": {
+            "start": ["inadequacy", "hope", "anxiety"],
+            "middle": ["resentment", "fear", "determination"],
+            "end": ["pride", "loneliness"]
+          },
+          "ending_tone": "ambiguous",
+          "intensity": "heavy",
+          "warnings": ["sexual_violence", "abuse", "betrayal", "death_of_main_character"],
+          "example_user_messages": [
+            "I'm marrying into a wealthy family and they treat me like a joke.",
+            "My boss humiliates me in front of everyone and I just smile and take it.",
+            "I know I'm hard on the new guy at work and I think it's because of how I'm treated.",
+            "I did something shady for the company because I was scared to say no.",
+            "I'd do almost anything to finally be taken seriously by these people."
+          ],
+          "spoiler": {
+            "summary": "Tom inherits the cruise division and learns of decades of covered-up crimes; he has Greg shred the documents. He is humiliated by Logan ('boar on the floor'), is nearly sacrificed for the scandal, and testifies badly before Congress, while becoming head of the news network. Resentful of Shiv, in the Season 3 finale he tells Logan about the siblings' plan and joins Logan's side, bringing Greg with him. In Season 4 he becomes Logan's confidant, and after Logan's death he positions himself with Lukas Matsson, who chooses him as the American CEO of the sold company precisely because he is a pliable 'pain sponge'. He ends the series as CEO, back with a pregnant Shiv in a cold arrangement.",
+            "key_events": [
+              "Learns of the cruise-line cover-up and has Greg shred documents",
+              "Humiliated at 'boar on the floor'",
+              "Nearly made the scapegoat",
+              "Betrays the siblings' plan to Logan",
+              "Becomes Logan's right-hand man",
+              "Named CEO by Matsson after the sale"
+            ],
+            "got_right": "He understood power better than anyone in the family and was patient enough to outlast them.",
+            "got_wrong": "He traded his dignity, his friendships and his marriage for a job in which he is still, in the end, a servant."
+          }
+        },
+        {
+          "id": "arc:succession/tom_wambsgans/loving_someone_who_holds_the_power",
+          "title": "Loving someone who holds all the power",
+          "literal_situation": "Tom is in love with Shiv and wants to make things permanent, even though she keeps him at arm's length, treats his devotion as a given and holds every advantage in the relationship.",
+          "pattern_label": "loving more than you're loved back",
+          "pattern_text": "A person devoted to a partner who is richer, more powerful and less committed accepts one condition after another to keep the relationship. They tell themselves they're happy while resentment quietly builds. The question is what happens when the partner who always gave in finally stops.",
+          "hook": "Tom adores Shiv and will agree to almost anything to keep her, even when it clearly hurts him.",
+          "why_relatable": "How much can you give up to keep someone before you lose yourself? Is it love if one person always sets the terms? What happens to the hurt you never say out loud?",
+          "watch_for": [
+            "When he says 'yes' to Shiv, does he mean it?",
+            "Notice where he takes out the anger he doesn't show her.",
+            "Does he want her, or what being with her gives him?"
+          ],
+          "start_at": "S1E1",
+          "span": "S1-S4",
+          "situations": [
+            {
+              "id": "unrequited_love",
+              "weight": 0.7
+            },
+            {
+              "id": "confidence_struggle",
+              "weight": 0.4
+            },
+            {
+              "id": "breakup",
+              "weight": 0.4
+            }
+          ],
+          "conflicts": ["independence_vs_connection", "control_vs_trust"],
+          "emotions": {
+            "start": ["love", "hope", "anxiety"],
+            "middle": ["jealousy", "resentment", "betrayal"],
+            "end": ["acceptance", "loneliness"]
+          },
+          "ending_tone": "ambiguous",
+          "intensity": "moderate",
+          "warnings": ["betrayal"],
+          "example_user_messages": [
+            "I love my fiancée way more than she seems to love me.",
+            "She asked for an open relationship and I said yes because I was scared to lose her.",
+            "I keep swallowing my feelings in this relationship and it's making me bitter.",
+            "My partner's family has all the money and all the power and I feel like a guest in my own marriage."
+          ],
+          "spoiler": {
+            "summary": "Shiv confesses an affair on their wedding night and asks for an open marriage; Tom agrees but grows miserable, admits he isn't sure the marriage was a good idea, and quietly wants children she doesn't. In the Season 3 finale he betrays Shiv to Logan. In Season 4 they separate and have a brutal fight on election night, then learn she is pregnant. When he becomes CEO, she stays with him, hand in hand but emotionally distant.",
+            "key_events": [
+              "Proposes at the hospital",
+              "Shiv confesses her affair on the wedding night",
+              "Agrees to an open marriage",
+              "Tells Shiv he's unhappy",
+              "Betrays Shiv to Logan",
+              "Separation and election-night fight",
+              "Shiv's pregnancy; they stay together as he becomes CEO"
+            ],
+            "got_right": "He eventually admitted he was unhappy instead of pretending forever.",
+            "got_wrong": "He let resentment turn into revenge instead of honest conversation, choosing power over repairing the relationship."
+          }
+        }
       ]
-     },
-     "ending_tone": "ambiguous",
-     "intensity": "moderate",
-     "warnings": [
-      "betrayal"
-     ],
-     "example_user_messages": [
-      "My partner loves me more than I love him and honestly that's how I like it. Is that bad?",
-      "I asked for an open relationship right after our wedding and I'm not sure why.",
-      "I keep my guard up with everyone, even the person I'm marrying.",
-      "I think I pushed my husband too far and now I can't tell if I've lost him."
-     ],
-     "spoiler": {
-      "summary": "Shiv sleeps with her ex Nate before her wedding, confesses on the wedding night and asks Tom for an open marriage. Tom grows quietly miserable, admits he isn't sure the marriage was a good idea, and she saves him from being the scapegoat. In the Season 3 finale Tom betrays the siblings' plan to Logan, and in Season 4 the couple separate and trade vicious fights. Shiv hides that she is pregnant, then tells Tom. When Tom is named CEO, she ends the show riding beside him, their hands touching coldly, in a marriage of mutual convenience.",
-      "key_events": [
-       "Affair with Nate before the wedding",
-       "Asks for an open marriage on her wedding night",
-       "Protects Tom from being the scapegoat",
-       "Tom betrays her to Logan",
-       "Brutal separation fight on election night",
-       "Pregnant with Tom's child",
-       "Ends beside Tom after he is named CEO"
+    },
+    {
+      "id": "char:succession/greg_hirsch",
+      "name": "Cousin Greg",
+      "role": "Logan Roy's gangly, awkward great-nephew, freshly fired from a theme-park job, who turns up at the family's birthday party asking for work.",
+      "relations": [
+        {
+          "target": "char:succession/tom_wambsgans",
+          "relation": "mentor"
+        },
+        {
+          "target": "char:succession/logan_roy",
+          "relation": "boss"
+        },
+        {
+          "target": "char:succession/kendall_roy",
+          "relation": "colleague"
+        },
+        {
+          "target": "char:succession/roman_roy",
+          "relation": "colleague"
+        },
+        {
+          "target": "char:succession/shiv_roy",
+          "relation": "colleague"
+        }
       ],
-      "got_right": "She was, at times, honest with Tom about what she wanted, and she fought to save him when it counted.",
-      "got_wrong": "She treated his love as something she could count on without returning, and taught him that the only way to be taken seriously by her was to hurt her."
-     }
-    }
-   ]
-  },
-  {
-   "id": "char:succession/roman_roy",
-   "name": "Roman Roy",
-   "role": "Logan Roy's youngest son, a sarcastic, provocative wisecracker who mocks everything and everyone and is newly back at his father's company in New York.",
-   "relations": [
-    {
-     "target": "char:succession/logan_roy",
-     "relation": "parent"
-    },
-    {
-     "target": "char:succession/kendall_roy",
-     "relation": "sibling"
-    },
-    {
-     "target": "char:succession/shiv_roy",
-     "relation": "sibling"
-    },
-    {
-     "target": "char:succession/connor_roy",
-     "relation": "sibling"
-    },
-    {
-     "target": "char:succession/gerri_kellman",
-     "relation": "mentor"
-    },
-    {
-     "target": "char:succession/tom_wambsgans",
-     "relation": "colleague"
-    },
-    {
-     "target": "char:succession/greg_hirsch",
-     "relation": "colleague"
-    }
-   ],
-   "arcs": [
-    {
-     "id": "arc:succession/roman_roy/the_joker_who_wants_to_be_taken_seriously",
-     "title": "The joker who wants to be taken seriously",
-     "literal_situation": "Roman has a big title and little experience at his father's company. He hides behind crude jokes, bargains his signature for a promotion, and has always been treated as the family's weakest child, the one sent away to military school.",
-     "pattern_label": "hiding insecurity behind jokes and cruelty",
-     "pattern_text": "A person who was always treated as the family's weak link protects themselves by making everything a joke, especially their own failures. They crave the approval of the harsh parent who belittled them, and are secretly afraid they really are as useless as everyone assumes. Getting a chance to prove themselves means dropping the act and risking real failure.",
-     "hook": "Roman is funny, cruel and clearly scared. He has just been handed more responsibility than he has earned and has no idea if he can handle it.",
-     "why_relatable": "What do you do when everyone, including you, assumes you're the least capable one? Can you stop making jokes long enough to find out what you're actually good at? Why do we keep seeking the approval of the person who hurts us most?",
-     "watch_for": [
-      "When does he stop joking, and what makes him do it?",
-      "How does he behave when his father praises him compared to when he's ignored?",
-      "Notice who he protects, and who he sacrifices, to get closer to his father."
-     ],
-     "start_at": "S1E1",
-     "span": "S1-S4",
-     "situations": [
-      {
-       "id": "difficult_parent",
-       "weight": 0.9
-      },
-      {
-       "id": "confidence_struggle",
-       "weight": 0.8
-      },
-      {
-       "id": "imposter_syndrome",
-       "weight": 0.7
-      },
-      {
-       "id": "sibling_rivalry",
-       "weight": 0.5
-      }
-     ],
-     "conflicts": [
-      "self_vs_family_expectations",
-      "loyalty_vs_ambition"
-     ],
-     "emotions": {
-      "start": [
-       "inadequacy",
-       "self_doubt",
-       "envy"
-      ],
-      "middle": [
-       "longing",
-       "pride",
-       "fear"
-      ],
-      "end": [
-       "grief",
-       "numbness",
-       "relief"
+      "arcs": [
+        {
+          "id": "arc:succession/greg_hirsch/learning_the_price_of_getting_ahead",
+          "title": "A nobody learning the price of getting ahead",
+          "literal_situation": "Greg gets fired on his first day as a theme-park mascot, and his mother sends him to his rich great-uncle's birthday to beg for a job. He lands one at the company, is taken under Tom's wing, and is quickly asked to do things that feel wrong.",
+          "pattern_label": "a naive newcomer slowly losing their scruples",
+          "pattern_text": "A broke, awkward young person gets a foot in the door of a wealthy, ruthless world through family connections. At first they're out of their depth and uneasy with what is asked of them, but they learn fast that keeping quiet, keeping copies and choosing the right patron pays. The question is how much of their conscience they'll trade for security.",
+          "hook": "Greg is sweet, clumsy and broke, with no idea how any of this works. He wants to keep his job and stay out of trouble, and he's being asked to help hide something.",
+          "why_relatable": "What do you do when your first real job asks you to do something shady? Is protecting yourself the same as being a bad person? How do you tell a mentor from someone who just needs you to take the blame?",
+          "watch_for": [
+            "Notice how Greg reacts when he's asked to do something he suspects is wrong.",
+            "When he has to choose a side, what is he actually weighing?",
+            "Does he become more like the people he works for, or does he stay himself?"
+          ],
+          "start_at": "S1E1",
+          "span": "S1-S4",
+          "situations": [
+            {
+              "id": "new_job",
+              "weight": 0.8
+            },
+            {
+              "id": "coming_of_age",
+              "weight": 0.7
+            },
+            {
+              "id": "mentor_and_protege",
+              "weight": 0.6
+            },
+            {
+              "id": "imposter_syndrome",
+              "weight": 0.4
+            }
+          ],
+          "conflicts": ["power_vs_morality", "belonging_vs_integrity"],
+          "emotions": {
+            "start": ["anxiety", "inadequacy", "hope"],
+            "middle": ["fear", "guilt", "curiosity"],
+            "end": ["confidence", "numbness"]
+          },
+          "ending_tone": "ambiguous",
+          "intensity": "moderate",
+          "warnings": ["sexual_violence", "addiction", "betrayal", "death_of_main_character"],
+          "example_user_messages": [
+            "I got a job through a relative and I have no idea what I'm doing.",
+            "My manager asked me to delete some files and I'm pretty sure it's not legal.",
+            "I'm the poor relative in a rich family and I don't know how to act around them.",
+            "My mentor is kind of a bully but he's the only one looking out for me.",
+            "I think I'm starting to care more about getting ahead than about doing the right thing."
+          ],
+          "spoiler": {
+            "summary": "Greg shreds cruise documents for Tom but secretly keeps copies, which he trades to Kendall for a better job and later uses at Kendall's press conference against Logan. He testifies clumsily before Congress, is briefly disinherited by his grandfather Ewan, who gives his inheritance to Greenpeace, and fumbles into social climbing. In the Season 3 finale he sides with Tom and helps him betray the siblings ('Who needs a soul anyway?'). In Season 4 he serves as Tom's right hand, while leaking useful secrets to Kendall, and survives the sale by staying at Tom's side.",
+            "key_events": [
+              "Fired as a theme-park mascot",
+              "Shreds cruise documents but keeps copies",
+              "Gives the documents to Kendall",
+              "Testifies before Congress",
+              "Ewan donates his inheritance to Greenpeace",
+              "Sides with Tom in the betrayal of the siblings",
+              "Leaks information to Kendall in the endgame",
+              "Ends as Tom's aide under the new owner"
+            ],
+            "got_right": "He was quicker and more self-protective than anyone assumed, and kept the evidence that gave him leverage.",
+            "got_wrong": "He let fear and ambition wear away his decency until he was willing to betray anyone who got in his way."
+          }
+        }
       ]
-     },
-     "ending_tone": "bittersweet",
-     "intensity": "heavy",
-     "warnings": [
-      "abuse",
-      "war_and_violence",
-      "death_of_main_character",
-      "grief",
-      "betrayal"
-     ],
-     "example_user_messages": [
-      "Everyone in my family thinks I'm the screw-up, and I kind of play along.",
-      "I make jokes about everything because if I take it seriously and fail, that's worse.",
-      "I got a big promotion and I'm terrified people will realise I have no idea what I'm doing.",
-      "My dad used to hit me and I still want him to be proud of me. How messed up is that?"
-     ],
-     "spoiler": {
-      "summary": "Roman becomes COO, then hides a satellite launch explosion he rushed to coincide with Shiv's wedding. In Season 2 he quietly outperforms Kendall, sails through a management course, survives being held at gunpoint in Turkey while brokering a deal, and has a tooth knocked out by his father. In Season 3 he becomes Logan's favourite for a while, until he accidentally sends his father an explicit photo meant for Gerri and is demoted; he joins his siblings' failed coup. In Season 4 he is on the phone as his father dies, becomes co-CEO with Kendall, fires Gerri, cheers a far-right candidate's victory, breaks down and cannot deliver his father's eulogy, and is pushed into the crowd outside. In the finale he admits the company and they are 'bullshit' and ends alone with a drink, faintly smiling, finally out of the race.",
-      "key_events": [
-       "Promoted to COO",
-       "Hides the satellite explosion he rushed",
-       "Held hostage at gunpoint in Turkey",
-       "Logan knocks out his tooth",
-       "Sends explicit photo to Logan by mistake and is demoted",
-       "On the phone as Logan dies",
-       "Becomes co-CEO and fires Gerri",
-       "Breaks down at the funeral",
-       "Ends out of the company, alone with a martini"
-      ],
-      "got_right": "He was sharper and more perceptive than anyone gave him credit for, and in the end he was the one who could say out loud that none of it mattered.",
-      "got_wrong": "He copied his father's cruelty to earn his love, and never let himself be seen as someone who needed care."
-     }
     },
     {
-     "id": "arc:succession/roman_roy/closeness_only_as_a_joke",
-     "title": "Closeness that only feels safe as a joke",
-     "literal_situation": "Roman makes sex the punchline of every conversation, yet shies away from real intimacy with the women he dates. The only person who seems to reach him is Gerri, his father's long-time general counsel and his godmother.",
-     "pattern_label": "fearing intimacy while craving to be known",
-     "pattern_text": "A person who grew up with humiliation instead of tenderness can only approach closeness sideways, through teasing, shock and games. Ordinary intimacy feels unbearable, while the one relationship that works is strange, unequal and hard to explain. They want to be known, but letting someone in feels like handing them a weapon.",
-     "hook": "Roman is crude and constantly sexual in his talk, but awkward and avoidant when things become real. He keeps drifting back to the one person who calls him on his nonsense.",
-     "why_relatable": "Why is it easier to joke about what we need than to ask for it? Is a relationship less real because it doesn't look like other people's? What does it take to trust someone with the part of you that you're most ashamed of?",
-     "watch_for": [
-      "What changes in him when he is talking to Gerri?",
-      "Notice how he reacts when someone is simply kind to him.",
-      "Is he looking for a partner, a parent, or someone who will tell him the truth?"
-     ],
-     "start_at": "S1",
-     "span": "S1-S4",
-     "situations": [
-      {
-       "id": "identity_and_self_acceptance",
-       "weight": 0.7
-      },
-      {
-       "id": "loneliness",
-       "weight": 0.6
-      },
-      {
-       "id": "falling_for_someone_unexpected",
-       "weight": 0.5
-      }
-     ],
-     "conflicts": [
-      "independence_vs_connection",
-      "fitting_in_vs_standing_out"
-     ],
-     "emotions": {
-      "start": [
-       "shame",
-       "anxiety"
+      "id": "char:succession/gerri_kellman",
+      "name": "Gerri Kellman",
+      "role": "The Roy family company's long-serving general counsel, a calm, dry-witted insider who has quietly held things together for Logan for decades, and Roman's godmother.",
+      "relations": [
+        {
+          "target": "char:succession/logan_roy",
+          "relation": "boss"
+        },
+        {
+          "target": "char:succession/roman_roy",
+          "relation": "protege"
+        },
+        {
+          "target": "char:succession/kendall_roy",
+          "relation": "colleague"
+        },
+        {
+          "target": "char:succession/shiv_roy",
+          "relation": "colleague"
+        },
+        {
+          "target": "char:succession/tom_wambsgans",
+          "relation": "colleague"
+        }
       ],
-      "middle": [
-       "longing",
-       "belonging",
-       "confusion"
-      ],
-      "end": [
-       "loneliness",
-       "numbness"
+      "arcs": [
+        {
+          "id": "arc:succession/gerri_kellman/competent_and_overlooked",
+          "title": "Competent, overlooked and surviving",
+          "literal_situation": "Gerri knows every secret in the company, including the huge debt Logan has hidden. When Logan falls ill and the family scrambles for power, she is the steady adult in the room, but nobody seriously considers her as more than the help.",
+          "pattern_label": "the capable insider nobody considers for the top",
+          "pattern_text": "An experienced, highly competent person has spent decades making a powerful family's problems disappear. Everyone relies on them and nobody sees them as a leader. When the family's infighting threatens everything, they have to decide how far to protect others, how far to protect themselves, and whether they want a turn at the top.",
+          "hook": "Gerri is calm, careful and indispensable. As the family turns on itself she needs to keep her own position while everyone around her panics.",
+          "why_relatable": "How do you survive in a workplace where power belongs to a family you'll never be part of? Is staying neutral wise or cowardly? Would you even want to lead, if everyone has already decided you're just the safe pair of hands?",
+          "watch_for": [
+            "When she stays silent in a crisis, whose interests is she protecting?",
+            "Notice how she handles the young man who keeps testing her.",
+            "Does she want the top job, or just not to lose everything?"
+          ],
+          "start_at": "S1E1",
+          "span": "S1-S4",
+          "situations": [
+            {
+              "id": "responsibility_you_didnt_ask_for",
+              "weight": 0.6
+            },
+            {
+              "id": "mentor_and_protege",
+              "weight": 0.6
+            },
+            {
+              "id": "becoming_a_manager",
+              "weight": 0.4
+            },
+            {
+              "id": "burnout_at_work",
+              "weight": 0.3
+            }
+          ],
+          "conflicts": ["loyalty_vs_ambition", "power_vs_morality"],
+          "emotions": {
+            "start": ["determination", "anxiety"],
+            "middle": ["confidence", "fear"],
+            "end": ["self_respect", "resentment"]
+          },
+          "ending_tone": "bittersweet",
+          "intensity": "moderate",
+          "warnings": ["sexual_violence", "betrayal", "death_of_main_character"],
+          "example_user_messages": [
+            "I've been with this company thirty years and I'm still treated like the help.",
+            "I'm the one who cleans up everyone's messes and nobody thinks of me as leadership material.",
+            "The owners are fighting each other and I'm just trying not to get caught in the middle.",
+            "A younger guy at work keeps crossing lines with me and part of me enjoys the power."
+          ],
+          "spoiler": {
+            "summary": "Gerri reveals the company's hidden debt to Kendall, abstains in the no-confidence vote, and develops a strange, verbally dominant bond with Roman while mentoring him. She is named among those exposed by the cruise scandal but survives, and in Season 3 Logan makes her interim CEO. Roman then accidentally sends Logan an explicit photo meant for her, which undermines her position. Logan plans to fire her, and after his death Roman does fire her; she fights back with the threat of a harassment lawsuit and keeps her leverage through the sale.",
+            "key_events": [
+              "Reveals the hidden debt to Kendall",
+              "Abstains from the no-confidence vote",
+              "Charged relationship with Roman",
+              "Named in the cruise scandal but survives",
+              "Becomes interim CEO in Season 3",
+              "Roman's explicit photo reaches Logan",
+              "Fired by Roman after Logan's death; threatens to sue"
+            ],
+            "got_right": "She stayed level-headed, gave honest counsel, and protected herself when the family would not.",
+            "got_wrong": "She entangled herself with the boss's son and spent decades protecting a company whose crimes she knew about."
+          }
+        }
       ]
-     },
-     "ending_tone": "ambiguous",
-     "intensity": "moderate",
-     "warnings": [
-      "abuse"
-     ],
-     "example_user_messages": [
-      "I joke about sex constantly but when it actually gets close with someone I freeze.",
-      "The only person I really open up to is way older than me and it's hard to explain to anyone.",
-      "I think I push people away by being gross before they can see how scared I am.",
-      "Real intimacy makes me want to crawl out of my skin."
-     ],
-     "spoiler": {
-      "summary": "Roman struggles to be intimate with his girlfriend Tabitha and they drift apart. He develops a charged, verbally dominant relationship with Gerri that he half-jokingly calls a marriage proposal and a business partnership. When Gerri becomes interim CEO she tries to end it; Roman then accidentally sends his father the explicit photo meant for her, damaging them both. After Logan's death, Roman fires Gerri to prove he is not dependent on her, and she threatens to sue. He ends the series alone.",
-      "key_events": [
-       "Tension with Tabitha over sex",
-       "Erotic, humiliating dynamic with Gerri",
-       "Half-proposes to Gerri",
-       "Accidentally sends Logan an explicit photo meant for Gerri",
-       "Fires Gerri after Logan's death"
-      ],
-      "got_right": "He found, with Gerri, one person who saw him clearly and whom he actually listened to.",
-      "got_wrong": "He could never let the closeness be real, and hurt the one person who had his back when it threatened his image."
-     }
     }
-   ]
-  },
-  {
-   "id": "char:succession/connor_roy",
-   "name": "Connor Roy",
-   "role": "Logan Roy's eldest son from his first marriage, a gentle, self-important man of leisure living on a ranch in New Mexico, with political dreams and no role in the family company.",
-   "relations": [
-    {
-     "target": "char:succession/logan_roy",
-     "relation": "parent"
-    },
-    {
-     "target": "char:succession/kendall_roy",
-     "relation": "sibling"
-    },
-    {
-     "target": "char:succession/shiv_roy",
-     "relation": "sibling"
-    },
-    {
-     "target": "char:succession/roman_roy",
-     "relation": "sibling"
-    }
-   ],
-   "arcs": [
-    {
-     "id": "arc:succession/connor_roy/the_forgotten_eldest",
-     "title": "The forgotten eldest looking for his place",
-     "literal_situation": "Connor is the oldest Roy child but the one nobody takes seriously. His father ignores his birthday gift, his half-siblings mock him, and he fills his days with hobbies at his ranch while talking about a future in politics.",
-     "pattern_label": "the overlooked child who wants to matter",
-     "pattern_text": "The eldest child of a first family grew up largely ignored, and learned to act as though they are above the family drama rather than admit how much it hurts. Now middle-aged and without a real purpose, they latch onto grand plans nobody believes in, hoping that one of them will finally make people pay attention. Underneath it is a simple wish to be loved.",
-     "hook": "Connor seems cheerfully oblivious, but every snub from his father lands. He wants to be part of the family story, and nobody will give him a line.",
-     "why_relatable": "What do you do when your family has already decided you don't count? Is a big dream a real ambition or a way to be noticed at last? Can you stop waiting for a parent's love and find it somewhere else?",
-     "watch_for": [
-      "How does he respond when his father dismisses him?",
-      "Notice the moments when he tells his siblings a painful truth about their childhood.",
-      "Is his ambition about what he wants to do, or about who he wants to be seen as?"
-     ],
-     "start_at": "S1E1",
-     "span": "S1-S4",
-     "situations": [
-      {
-       "id": "difficult_parent",
-       "weight": 0.7
-      },
-      {
-       "id": "loneliness",
-       "weight": 0.6
-      },
-      {
-       "id": "midlife_reinvention",
-       "weight": 0.6
-      },
-      {
-       "id": "confidence_struggle",
-       "weight": 0.4
-      }
-     ],
-     "conflicts": [
-      "fitting_in_vs_standing_out",
-      "self_vs_family_expectations"
-     ],
-     "emotions": {
-      "start": [
-       "rejection",
-       "loneliness",
-       "hope"
-      ],
-      "middle": [
-       "determination",
-       "self_doubt"
-      ],
-      "end": [
-       "acceptance",
-       "grief"
-      ]
-     },
-     "ending_tone": "bittersweet",
-     "intensity": "moderate",
-     "warnings": [
-      "death_of_main_character",
-      "grief",
-      "abuse"
-     ],
-     "example_user_messages": [
-      "I'm the oldest but my younger siblings get all the attention and respect.",
-      "My father has never once acted interested in anything I've done.",
-      "I've got this big plan and everyone laughs at me, but I have to try.",
-      "I'm middle-aged and I still feel like the kid nobody invited."
-     ],
-     "spoiler": {
-      "summary": "Connor announces a doomed presidential run, spends his fortune, and trades suspending it for a family bailout, then relaunches it. In Season 4 his father dies on the day of his wedding to Willa; he tells his siblings he was the one Logan never loved. He keeps his campaign going at 1 percent, then negotiates his withdrawal for an ambassadorship to Slovenia from the incoming president-elect. He ends the series married and with a modest post, the only sibling who gets something he asked for.",
-      "key_events": [
-       "Launches a presidential campaign",
-       "Suspends it in exchange for money from Logan",
-       "Logan dies on Connor's wedding day",
-       "Tells his siblings their father never loved him",
-       "Polls at 1 percent",
-       "Secures an ambassadorship to Slovenia"
-      ],
-      "got_right": "He was the most honest about wanting love, and he built a life with someone rather than chasing the company.",
-      "got_wrong": "He spent years and a fortune seeking attention from a father who was never going to give it."
-     }
-    },
-    {
-     "id": "arc:succession/connor_roy/paying_for_love",
-     "title": "Hoping a paid arrangement becomes love",
-     "literal_situation": "Connor's much younger girlfriend Willa began as an escort he paid, and she is still ambivalent about him. He offers to fund her playwriting and asks her to make things exclusive, hoping money and patience will turn into real affection.",
-     "pattern_label": "hoping someone will stay for love",
-     "pattern_text": "A lonely person enters a relationship that is openly unequal, with one providing money and the other providing company. They sincerely want it to become real love but can never be sure whether the other person would stay without the security. The question is whether a relationship that started as a deal can grow into something both people choose.",
-     "hook": "Connor is devoted to Willa and knows full well she might not feel the same. He keeps offering more, hoping she will one day want to stay.",
-     "why_relatable": "Can you trust love when you're the one with all the money? Is it wrong to want someone even if you suspect they're with you for security? What does commitment look like when both people know the terms?",
-     "watch_for": [
-      "What does Willa do when she has a chance to leave?",
-      "Does Connor ever ask directly how she feels?",
-      "Notice when the relationship looks like a deal and when it looks like a partnership."
-     ],
-     "start_at": "S1E2",
-     "span": "S1-S4",
-     "situations": [
-      {
-       "id": "unrequited_love",
-       "weight": 0.6
-      },
-      {
-       "id": "loneliness",
-       "weight": 0.6
-      },
-      {
-       "id": "falling_for_someone_unexpected",
-       "weight": 0.4
-      }
-     ],
-     "conflicts": [
-      "independence_vs_connection",
-      "control_vs_trust"
-     ],
-     "emotions": {
-      "start": [
-       "loneliness",
-       "longing"
-      ],
-      "middle": [
-       "hope",
-       "anxiety"
-      ],
-      "end": [
-       "acceptance",
-       "belonging"
-      ]
-     },
-     "ending_tone": "bittersweet",
-     "intensity": "light",
-     "warnings": [],
-     "example_user_messages": [
-      "I think my girlfriend is with me mostly because I pay for everything.",
-      "I'm older and she's much younger and I can't tell if she actually loves me.",
-      "I keep offering more to keep her around and I hate that about myself.",
-      "Can a relationship that started out as a transaction ever become real?"
-     ],
-     "spoiler": {
-      "summary": "Willa agrees to exclusivity, and Connor bankrolls her disastrous play. She hesitates about marriage and nearly flees on the eve of their wedding, but goes through with it on the day Logan dies. By the end they are married and she seems to have settled, with a kind of affection, into the life with him.",
-      "key_events": [
-       "Willa agrees to an exclusive arrangement",
-       "Connor bankrolls her play, which flops",
-       "Willa nearly backs out of the wedding",
-       "They marry on the day of Logan's death"
-      ],
-      "got_right": "He was upfront and kind, and let Willa choose him rather than forcing her.",
-      "got_wrong": "He leaned on money to hold on to her instead of trusting that he could be loved for himself."
-     }
-    }
-   ]
-  },
-  {
-   "id": "char:succession/tom_wambsgans",
-   "name": "Tom Wambsgans",
-   "role": "Shiv Roy's boyfriend, a Midwestern executive in the Roy family company who is desperate to be accepted by her powerful father and her mocking brothers.",
-   "relations": [
-    {
-     "target": "char:succession/shiv_roy",
-     "relation": "partner"
-    },
-    {
-     "target": "char:succession/logan_roy",
-     "relation": "boss"
-    },
-    {
-     "target": "char:succession/greg_hirsch",
-     "relation": "protege"
-    },
-    {
-     "target": "char:succession/gerri_kellman",
-     "relation": "colleague"
-    },
-    {
-     "target": "char:succession/kendall_roy",
-     "relation": "colleague"
-    },
-    {
-     "target": "char:succession/roman_roy",
-     "relation": "colleague"
-    }
-   ],
-   "arcs": [
-    {
-     "id": "arc:succession/tom_wambsgans/the_outsider_who_wants_in",
-     "title": "The outsider desperate to belong",
-     "literal_situation": "Tom is from a modest Midwestern background and dating into one of the richest families in the world. He tries too hard with gifts and jokes, is openly mocked by Shiv's brothers, and is about to take over a division of the family company that hides ugly secrets.",
-     "pattern_label": "an outsider who will do anything to belong",
-     "pattern_text": "A person marrying into a powerful, closed world is tolerated but never truly accepted. They swallow humiliation from above while taking it out on anyone below them, and slowly learn that loyalty is only rewarded if you pick the right side. The question is how much of themselves they will trade for a seat at the table.",
-     "hook": "Tom is eager, awkward and constantly belittled. He wants the family's approval so much that he says yes to things he knows he shouldn't.",
-     "why_relatable": "How far would you go to be accepted by a family or a workplace that looks down on you? Why is it so tempting to bully the one person below you when you're being bullied from above? When does going along to get along turn into giving away your soul?",
-     "watch_for": [
-      "Notice how he treats the people below him compared to the people above him.",
-      "When he is humiliated in public, what does he do with it afterwards?",
-      "Who is he really loyal to?"
-     ],
-     "start_at": "S1E1",
-     "span": "S1-S4",
-     "situations": [
-      {
-       "id": "finding_your_people",
-       "weight": 0.6
-      },
-      {
-       "id": "family_expectations",
-       "weight": 0.6
-      },
-      {
-       "id": "confidence_struggle",
-       "weight": 0.5
-      },
-      {
-       "id": "becoming_a_manager",
-       "weight": 0.5
-      }
-     ],
-     "conflicts": [
-      "belonging_vs_integrity",
-      "loyalty_vs_ambition"
-     ],
-     "emotions": {
-      "start": [
-       "inadequacy",
-       "hope",
-       "anxiety"
-      ],
-      "middle": [
-       "resentment",
-       "fear",
-       "determination"
-      ],
-      "end": [
-       "pride",
-       "loneliness"
-      ]
-     },
-     "ending_tone": "ambiguous",
-     "intensity": "heavy",
-     "warnings": [
-      "sexual_violence",
-      "abuse",
-      "betrayal",
-      "death_of_main_character"
-     ],
-     "example_user_messages": [
-      "I'm marrying into a wealthy family and they treat me like a joke.",
-      "My boss humiliates me in front of everyone and I just smile and take it.",
-      "I know I'm hard on the new guy at work and I think it's because of how I'm treated.",
-      "I did something shady for the company because I was scared to say no.",
-      "I'd do almost anything to finally be taken seriously by these people."
-     ],
-     "spoiler": {
-      "summary": "Tom inherits the cruise division and learns of decades of covered-up crimes; he has Greg shred the documents. He is humiliated by Logan ('boar on the floor'), is nearly sacrificed for the scandal, and testifies badly before Congress, while becoming head of the news network. Resentful of Shiv, in the Season 3 finale he tells Logan about the siblings' plan and joins Logan's side, bringing Greg with him. In Season 4 he becomes Logan's confidant, and after Logan's death he positions himself with Lukas Matsson, who chooses him as the American CEO of the sold company precisely because he is a pliable 'pain sponge'. He ends the series as CEO, back with a pregnant Shiv in a cold arrangement.",
-      "key_events": [
-       "Learns of the cruise-line cover-up and has Greg shred documents",
-       "Humiliated at 'boar on the floor'",
-       "Nearly made the scapegoat",
-       "Betrays the siblings' plan to Logan",
-       "Becomes Logan's right-hand man",
-       "Named CEO by Matsson after the sale"
-      ],
-      "got_right": "He understood power better than anyone in the family and was patient enough to outlast them.",
-      "got_wrong": "He traded his dignity, his friendships and his marriage for a job in which he is still, in the end, a servant."
-     }
-    },
-    {
-     "id": "arc:succession/tom_wambsgans/loving_someone_who_holds_the_power",
-     "title": "Loving someone who holds all the power",
-     "literal_situation": "Tom is in love with Shiv and wants to make things permanent, even though she keeps him at arm's length, treats his devotion as a given and holds every advantage in the relationship.",
-     "pattern_label": "loving more than you're loved back",
-     "pattern_text": "A person devoted to a partner who is richer, more powerful and less committed accepts one condition after another to keep the relationship. They tell themselves they're happy while resentment quietly builds. The question is what happens when the partner who always gave in finally stops.",
-     "hook": "Tom adores Shiv and will agree to almost anything to keep her, even when it clearly hurts him.",
-     "why_relatable": "How much can you give up to keep someone before you lose yourself? Is it love if one person always sets the terms? What happens to the hurt you never say out loud?",
-     "watch_for": [
-      "When he says 'yes' to Shiv, does he mean it?",
-      "Notice where he takes out the anger he doesn't show her.",
-      "Does he want her, or what being with her gives him?"
-     ],
-     "start_at": "S1E1",
-     "span": "S1-S4",
-     "situations": [
-      {
-       "id": "unrequited_love",
-       "weight": 0.7
-      },
-      {
-       "id": "confidence_struggle",
-       "weight": 0.4
-      },
-      {
-       "id": "breakup",
-       "weight": 0.4
-      }
-     ],
-     "conflicts": [
-      "independence_vs_connection",
-      "control_vs_trust"
-     ],
-     "emotions": {
-      "start": [
-       "love",
-       "hope",
-       "anxiety"
-      ],
-      "middle": [
-       "jealousy",
-       "resentment",
-       "betrayal"
-      ],
-      "end": [
-       "acceptance",
-       "loneliness"
-      ]
-     },
-     "ending_tone": "ambiguous",
-     "intensity": "moderate",
-     "warnings": [
-      "betrayal"
-     ],
-     "example_user_messages": [
-      "I love my fiancée way more than she seems to love me.",
-      "She asked for an open relationship and I said yes because I was scared to lose her.",
-      "I keep swallowing my feelings in this relationship and it's making me bitter.",
-      "My partner's family has all the money and all the power and I feel like a guest in my own marriage."
-     ],
-     "spoiler": {
-      "summary": "Shiv confesses an affair on their wedding night and asks for an open marriage; Tom agrees but grows miserable, admits he isn't sure the marriage was a good idea, and quietly wants children she doesn't. In the Season 3 finale he betrays Shiv to Logan. In Season 4 they separate and have a brutal fight on election night, then learn she is pregnant. When he becomes CEO, she stays with him, hand in hand but emotionally distant.",
-      "key_events": [
-       "Proposes at the hospital",
-       "Shiv confesses her affair on the wedding night",
-       "Agrees to an open marriage",
-       "Tells Shiv he's unhappy",
-       "Betrays Shiv to Logan",
-       "Separation and election-night fight",
-       "Shiv's pregnancy; they stay together as he becomes CEO"
-      ],
-      "got_right": "He eventually admitted he was unhappy instead of pretending forever.",
-      "got_wrong": "He let resentment turn into revenge instead of honest conversation, choosing power over repairing the relationship."
-     }
-    }
-   ]
-  },
-  {
-   "id": "char:succession/greg_hirsch",
-   "name": "Cousin Greg",
-   "role": "Logan Roy's gangly, awkward great-nephew, freshly fired from a theme-park job, who turns up at the family's birthday party asking for work.",
-   "relations": [
-    {
-     "target": "char:succession/tom_wambsgans",
-     "relation": "mentor"
-    },
-    {
-     "target": "char:succession/logan_roy",
-     "relation": "boss"
-    },
-    {
-     "target": "char:succession/kendall_roy",
-     "relation": "colleague"
-    },
-    {
-     "target": "char:succession/roman_roy",
-     "relation": "colleague"
-    },
-    {
-     "target": "char:succession/shiv_roy",
-     "relation": "colleague"
-    }
-   ],
-   "arcs": [
-    {
-     "id": "arc:succession/greg_hirsch/learning_the_price_of_getting_ahead",
-     "title": "A nobody learning the price of getting ahead",
-     "literal_situation": "Greg gets fired on his first day as a theme-park mascot, and his mother sends him to his rich great-uncle's birthday to beg for a job. He lands one at the company, is taken under Tom's wing, and is quickly asked to do things that feel wrong.",
-     "pattern_label": "a naive newcomer slowly losing their scruples",
-     "pattern_text": "A broke, awkward young person gets a foot in the door of a wealthy, ruthless world through family connections. At first they're out of their depth and uneasy with what is asked of them, but they learn fast that keeping quiet, keeping copies and choosing the right patron pays. The question is how much of their conscience they'll trade for security.",
-     "hook": "Greg is sweet, clumsy and broke, with no idea how any of this works. He wants to keep his job and stay out of trouble, and he's being asked to help hide something.",
-     "why_relatable": "What do you do when your first real job asks you to do something shady? Is protecting yourself the same as being a bad person? How do you tell a mentor from someone who just needs you to take the blame?",
-     "watch_for": [
-      "Notice how Greg reacts when he's asked to do something he suspects is wrong.",
-      "When he has to choose a side, what is he actually weighing?",
-      "Does he become more like the people he works for, or does he stay himself?"
-     ],
-     "start_at": "S1E1",
-     "span": "S1-S4",
-     "situations": [
-      {
-       "id": "new_job",
-       "weight": 0.8
-      },
-      {
-       "id": "coming_of_age",
-       "weight": 0.7
-      },
-      {
-       "id": "mentor_and_protege",
-       "weight": 0.6
-      },
-      {
-       "id": "imposter_syndrome",
-       "weight": 0.4
-      }
-     ],
-     "conflicts": [
-      "power_vs_morality",
-      "belonging_vs_integrity"
-     ],
-     "emotions": {
-      "start": [
-       "anxiety",
-       "inadequacy",
-       "hope"
-      ],
-      "middle": [
-       "fear",
-       "guilt",
-       "curiosity"
-      ],
-      "end": [
-       "confidence",
-       "numbness"
-      ]
-     },
-     "ending_tone": "ambiguous",
-     "intensity": "moderate",
-     "warnings": [
-      "sexual_violence",
-      "addiction",
-      "betrayal",
-      "death_of_main_character"
-     ],
-     "example_user_messages": [
-      "I got a job through a relative and I have no idea what I'm doing.",
-      "My manager asked me to delete some files and I'm pretty sure it's not legal.",
-      "I'm the poor relative in a rich family and I don't know how to act around them.",
-      "My mentor is kind of a bully but he's the only one looking out for me.",
-      "I think I'm starting to care more about getting ahead than about doing the right thing."
-     ],
-     "spoiler": {
-      "summary": "Greg shreds cruise documents for Tom but secretly keeps copies, which he trades to Kendall for a better job and later uses at Kendall's press conference against Logan. He testifies clumsily before Congress, is briefly disinherited by his grandfather Ewan, who gives his inheritance to Greenpeace, and fumbles into social climbing. In the Season 3 finale he sides with Tom and helps him betray the siblings ('Who needs a soul anyway?'). In Season 4 he serves as Tom's right hand, while leaking useful secrets to Kendall, and survives the sale by staying at Tom's side.",
-      "key_events": [
-       "Fired as a theme-park mascot",
-       "Shreds cruise documents but keeps copies",
-       "Gives the documents to Kendall",
-       "Testifies before Congress",
-       "Ewan donates his inheritance to Greenpeace",
-       "Sides with Tom in the betrayal of the siblings",
-       "Leaks information to Kendall in the endgame",
-       "Ends as Tom's aide under the new owner"
-      ],
-      "got_right": "He was quicker and more self-protective than anyone assumed, and kept the evidence that gave him leverage.",
-      "got_wrong": "He let fear and ambition wear away his decency until he was willing to betray anyone who got in his way."
-     }
-    }
-   ]
-  },
-  {
-   "id": "char:succession/gerri_kellman",
-   "name": "Gerri Kellman",
-   "role": "The Roy family company's long-serving general counsel, a calm, dry-witted insider who has quietly held things together for Logan for decades, and Roman's godmother.",
-   "relations": [
-    {
-     "target": "char:succession/logan_roy",
-     "relation": "boss"
-    },
-    {
-     "target": "char:succession/roman_roy",
-     "relation": "protege"
-    },
-    {
-     "target": "char:succession/kendall_roy",
-     "relation": "colleague"
-    },
-    {
-     "target": "char:succession/shiv_roy",
-     "relation": "colleague"
-    },
-    {
-     "target": "char:succession/tom_wambsgans",
-     "relation": "colleague"
-    }
-   ],
-   "arcs": [
-    {
-     "id": "arc:succession/gerri_kellman/competent_and_overlooked",
-     "title": "Competent, overlooked and surviving",
-     "literal_situation": "Gerri knows every secret in the company, including the huge debt Logan has hidden. When Logan falls ill and the family scrambles for power, she is the steady adult in the room, but nobody seriously considers her as more than the help.",
-     "pattern_label": "the capable insider nobody considers for the top",
-     "pattern_text": "An experienced, highly competent person has spent decades making a powerful family's problems disappear. Everyone relies on them and nobody sees them as a leader. When the family's infighting threatens everything, they have to decide how far to protect others, how far to protect themselves, and whether they want a turn at the top.",
-     "hook": "Gerri is calm, careful and indispensable. As the family turns on itself she needs to keep her own position while everyone around her panics.",
-     "why_relatable": "How do you survive in a workplace where power belongs to a family you'll never be part of? Is staying neutral wise or cowardly? Would you even want to lead, if everyone has already decided you're just the safe pair of hands?",
-     "watch_for": [
-      "When she stays silent in a crisis, whose interests is she protecting?",
-      "Notice how she handles the young man who keeps testing her.",
-      "Does she want the top job, or just not to lose everything?"
-     ],
-     "start_at": "S1E1",
-     "span": "S1-S4",
-     "situations": [
-      {
-       "id": "responsibility_you_didnt_ask_for",
-       "weight": 0.6
-      },
-      {
-       "id": "mentor_and_protege",
-       "weight": 0.6
-      },
-      {
-       "id": "becoming_a_manager",
-       "weight": 0.4
-      },
-      {
-       "id": "burnout_at_work",
-       "weight": 0.3
-      }
-     ],
-     "conflicts": [
-      "loyalty_vs_ambition",
-      "power_vs_morality"
-     ],
-     "emotions": {
-      "start": [
-       "determination",
-       "anxiety"
-      ],
-      "middle": [
-       "confidence",
-       "fear"
-      ],
-      "end": [
-       "self_respect",
-       "resentment"
-      ]
-     },
-     "ending_tone": "bittersweet",
-     "intensity": "moderate",
-     "warnings": [
-      "sexual_violence",
-      "betrayal",
-      "death_of_main_character"
-     ],
-     "example_user_messages": [
-      "I've been with this company thirty years and I'm still treated like the help.",
-      "I'm the one who cleans up everyone's messes and nobody thinks of me as leadership material.",
-      "The owners are fighting each other and I'm just trying not to get caught in the middle.",
-      "A younger guy at work keeps crossing lines with me and part of me enjoys the power."
-     ],
-     "spoiler": {
-      "summary": "Gerri reveals the company's hidden debt to Kendall, abstains in the no-confidence vote, and develops a strange, verbally dominant bond with Roman while mentoring him. She is named among those exposed by the cruise scandal but survives, and in Season 3 Logan makes her interim CEO. Roman then accidentally sends Logan an explicit photo meant for her, which undermines her position. Logan plans to fire her, and after his death Roman does fire her; she fights back with the threat of a harassment lawsuit and keeps her leverage through the sale.",
-      "key_events": [
-       "Reveals the hidden debt to Kendall",
-       "Abstains from the no-confidence vote",
-       "Charged relationship with Roman",
-       "Named in the cruise scandal but survives",
-       "Becomes interim CEO in Season 3",
-       "Roman's explicit photo reaches Logan",
-       "Fired by Roman after Logan's death; threatens to sue"
-      ],
-      "got_right": "She stayed level-headed, gave honest counsel, and protected herself when the family would not.",
-      "got_wrong": "She entangled herself with the boss's son and spent decades protecting a company whose crimes she knew about."
-     }
-    }
-   ]
-  }
- ]
+  ]
 }

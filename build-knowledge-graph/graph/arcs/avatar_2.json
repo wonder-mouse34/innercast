@@ -6,12 +6,12 @@
       "name": "Azula",
       "role": "The Fire Nation's brilliant, ruthless princess and her father's favourite, sent to hunt down her exiled brother and the Avatar",
       "relations": [
-        {"target": "char:avatar/zuko", "relation": "sibling"},
-        {"target": "char:avatar/iroh", "relation": "enemy"},
-        {"target": "char:avatar/aang", "relation": "enemy"},
-        {"target": "char:avatar/katara", "relation": "enemy"},
-        {"target": "char:avatar/sokka", "relation": "enemy"},
-        {"target": "char:avatar/toph_beifong", "relation": "enemy"}
+        { "target": "char:avatar/zuko", "relation": "sibling" },
+        { "target": "char:avatar/iroh", "relation": "enemy" },
+        { "target": "char:avatar/aang", "relation": "enemy" },
+        { "target": "char:avatar/katara", "relation": "enemy" },
+        { "target": "char:avatar/sokka", "relation": "enemy" },
+        { "target": "char:avatar/toph_beifong", "relation": "enemy" }
       ],
       "arcs": [
         {
@@ -30,13 +30,17 @@
           "start_at": "ATLA S2E1",
           "span": "ATLA S2-S3",
           "situations": [
-            {"id": "difficult_parent", "weight": 0.9},
-            {"id": "family_expectations", "weight": 0.9},
-            {"id": "sibling_rivalry", "weight": 0.6},
-            {"id": "burnout_at_work", "weight": 0.4}
+            { "id": "difficult_parent", "weight": 0.9 },
+            { "id": "family_expectations", "weight": 0.9 },
+            { "id": "sibling_rivalry", "weight": 0.6 },
+            { "id": "burnout_at_work", "weight": 0.4 }
           ],
           "conflicts": ["perfectionism_vs_good_enough", "self_vs_family_expectations"],
-          "emotions": {"start": ["pride", "confidence"], "middle": ["anxiety", "rejection"], "end": ["overwhelm", "loneliness", "grief"]},
+          "emotions": {
+            "start": ["pride", "confidence"],
+            "middle": ["anxiety", "rejection"],
+            "end": ["overwhelm", "loneliness", "grief"]
+          },
           "ending_tone": "tragic",
           "intensity": "heavy",
           "warnings": ["abuse", "war_and_violence", "betrayal", "bleak_ending"],
@@ -78,12 +82,16 @@
           "start_at": "ATLA S2E3",
           "span": "ATLA S2-S3",
           "situations": [
-            {"id": "friendship_ending", "weight": 0.9},
-            {"id": "loneliness", "weight": 0.7},
-            {"id": "becoming_a_manager", "weight": 0.4}
+            { "id": "friendship_ending", "weight": 0.9 },
+            { "id": "loneliness", "weight": 0.7 },
+            { "id": "becoming_a_manager", "weight": 0.4 }
           ],
           "conflicts": ["control_vs_trust", "independence_vs_connection"],
-          "emotions": {"start": ["confidence", "pride"], "middle": ["jealousy", "betrayal", "anger"], "end": ["loneliness", "dread", "rejection"]},
+          "emotions": {
+            "start": ["confidence", "pride"],
+            "middle": ["jealousy", "betrayal", "anger"],
+            "end": ["loneliness", "dread", "rejection"]
+          },
           "ending_tone": "tragic",
           "intensity": "heavy",
           "warnings": ["betrayal", "war_and_violence", "abuse", "bleak_ending"],
@@ -114,15 +122,15 @@
       "name": "Korra",
       "role": "A headstrong, fiercely physical teenage Avatar from the Southern Water Tribe who has mastered three elements but struggles with airbending and the spiritual side of her role",
       "relations": [
-        {"target": "char:avatar/tenzin", "relation": "mentor"},
-        {"target": "char:avatar/katara", "relation": "mentor"},
-        {"target": "char:avatar/aang", "relation": "mentor"},
-        {"target": "char:avatar/toph_beifong", "relation": "mentor"},
-        {"target": "char:avatar/iroh", "relation": "mentor"},
-        {"target": "char:avatar/asami_sato", "relation": "partner"},
-        {"target": "char:avatar/bolin", "relation": "friend"},
-        {"target": "char:avatar/lin_beifong", "relation": "friend"},
-        {"target": "char:avatar/zuko", "relation": "friend"}
+        { "target": "char:avatar/tenzin", "relation": "mentor" },
+        { "target": "char:avatar/katara", "relation": "mentor" },
+        { "target": "char:avatar/aang", "relation": "mentor" },
+        { "target": "char:avatar/toph_beifong", "relation": "mentor" },
+        { "target": "char:avatar/iroh", "relation": "mentor" },
+        { "target": "char:avatar/asami_sato", "relation": "partner" },
+        { "target": "char:avatar/bolin", "relation": "friend" },
+        { "target": "char:avatar/lin_beifong", "relation": "friend" },
+        { "target": "char:avatar/zuko", "relation": "friend" }
       ],
       "arcs": [
         {
@@ -141,13 +149,17 @@
           "start_at": "Korra S1E1",
           "span": "Korra S1-S2",
           "situations": [
-            {"id": "coming_of_age", "weight": 0.9},
-            {"id": "identity_and_self_acceptance", "weight": 0.8},
-            {"id": "mentor_and_protege", "weight": 0.7},
-            {"id": "leaving_home", "weight": 0.5}
+            { "id": "coming_of_age", "weight": 0.9 },
+            { "id": "identity_and_self_acceptance", "weight": 0.8 },
+            { "id": "mentor_and_protege", "weight": 0.7 },
+            { "id": "leaving_home", "weight": 0.5 }
           ],
           "conflicts": ["safety_vs_growth", "independence_vs_connection"],
-          "emotions": {"start": ["confidence", "restlessness"], "middle": ["fear", "self_doubt", "anger"], "end": ["acceptance", "determination"]},
+          "emotions": {
+            "start": ["confidence", "restlessness"],
+            "middle": ["fear", "self_doubt", "anger"],
+            "end": ["acceptance", "determination"]
+          },
           "ending_tone": "hopeful",
           "intensity": "moderate",
           "warnings": ["war_and_violence", "betrayal"],
@@ -190,13 +202,17 @@
           "start_at": "Korra S4E2",
           "span": "Korra S4",
           "situations": [
-            {"id": "illness_or_injury", "weight": 0.9},
-            {"id": "confidence_struggle", "weight": 0.7},
-            {"id": "starting_over", "weight": 0.6},
-            {"id": "loneliness", "weight": 0.5}
+            { "id": "illness_or_injury", "weight": 0.9 },
+            { "id": "confidence_struggle", "weight": 0.7 },
+            { "id": "starting_over", "weight": 0.6 },
+            { "id": "loneliness", "weight": 0.5 }
           ],
           "conflicts": ["holding_on_vs_letting_go", "past_vs_future"],
-          "emotions": {"start": ["fear", "inadequacy", "shame"], "middle": ["loneliness", "self_doubt", "determination"], "end": ["acceptance", "peace", "self_respect"]},
+          "emotions": {
+            "start": ["fear", "inadequacy", "shame"],
+            "middle": ["loneliness", "self_doubt", "determination"],
+            "end": ["acceptance", "peace", "self_respect"]
+          },
           "ending_tone": "hopeful",
           "intensity": "heavy",
           "warnings": ["medical_trauma", "war_and_violence", "death_of_loved_one"],
@@ -231,12 +247,12 @@
       "name": "Tenzin",
       "role": "The serious, traditional airbending master, son of Avatar Aang and council member, who becomes the teenage Avatar's reluctant teacher while raising a lively young family",
       "relations": [
-        {"target": "char:avatar/aang", "relation": "parent"},
-        {"target": "char:avatar/katara", "relation": "parent"},
-        {"target": "char:avatar/korra", "relation": "protege"},
-        {"target": "char:avatar/lin_beifong", "relation": "ex_partner"},
-        {"target": "char:avatar/asami_sato", "relation": "friend"},
-        {"target": "char:avatar/bolin", "relation": "friend"}
+        { "target": "char:avatar/aang", "relation": "parent" },
+        { "target": "char:avatar/katara", "relation": "parent" },
+        { "target": "char:avatar/korra", "relation": "protege" },
+        { "target": "char:avatar/lin_beifong", "relation": "ex_partner" },
+        { "target": "char:avatar/asami_sato", "relation": "friend" },
+        { "target": "char:avatar/bolin", "relation": "friend" }
       ],
       "arcs": [
         {
@@ -255,12 +271,16 @@
           "start_at": "Korra S1E1",
           "span": "Korra S1-S4",
           "situations": [
-            {"id": "mentor_and_protege", "weight": 0.9},
-            {"id": "responsibility_you_didnt_ask_for", "weight": 0.5},
-            {"id": "caring_for_family", "weight": 0.4}
+            { "id": "mentor_and_protege", "weight": 0.9 },
+            { "id": "responsibility_you_didnt_ask_for", "weight": 0.5 },
+            { "id": "caring_for_family", "weight": 0.4 }
           ],
           "conflicts": ["control_vs_trust", "safety_vs_growth"],
-          "emotions": {"start": ["anxiety", "restlessness"], "middle": ["rejection", "self_doubt"], "end": ["pride", "love", "acceptance"]},
+          "emotions": {
+            "start": ["anxiety", "restlessness"],
+            "middle": ["rejection", "self_doubt"],
+            "end": ["pride", "love", "acceptance"]
+          },
           "ending_tone": "hopeful",
           "intensity": "light",
           "warnings": ["war_and_violence"],
@@ -300,13 +320,17 @@
           "start_at": "Korra S2E1",
           "span": "Korra S2-S3",
           "situations": [
-            {"id": "family_expectations", "weight": 0.9},
-            {"id": "sibling_rivalry", "weight": 0.5},
-            {"id": "becoming_a_manager", "weight": 0.5},
-            {"id": "becoming_a_parent", "weight": 0.4}
+            { "id": "family_expectations", "weight": 0.9 },
+            { "id": "sibling_rivalry", "weight": 0.5 },
+            { "id": "becoming_a_manager", "weight": 0.5 },
+            { "id": "becoming_a_parent", "weight": 0.4 }
           ],
           "conflicts": ["self_vs_family_expectations", "perfectionism_vs_good_enough"],
-          "emotions": {"start": ["inadequacy", "anxiety"], "middle": ["envy", "self_doubt", "fear"], "end": ["acceptance", "confidence", "peace"]},
+          "emotions": {
+            "start": ["inadequacy", "anxiety"],
+            "middle": ["envy", "self_doubt", "fear"],
+            "end": ["acceptance", "confidence", "peace"]
+          },
           "ending_tone": "hopeful",
           "intensity": "moderate",
           "warnings": ["child_endangerment", "war_and_violence"],
@@ -339,10 +363,10 @@
       "name": "Asami Sato",
       "role": "The capable, warm-hearted heiress of a famous inventor and industrialist, a skilled driver and fighter who lost her mother as a child",
       "relations": [
-        {"target": "char:avatar/korra", "relation": "partner"},
-        {"target": "char:avatar/bolin", "relation": "friend"},
-        {"target": "char:avatar/tenzin", "relation": "friend"},
-        {"target": "char:avatar/lin_beifong", "relation": "friend"}
+        { "target": "char:avatar/korra", "relation": "partner" },
+        { "target": "char:avatar/bolin", "relation": "friend" },
+        { "target": "char:avatar/tenzin", "relation": "friend" },
+        { "target": "char:avatar/lin_beifong", "relation": "friend" }
       ],
       "arcs": [
         {
@@ -361,13 +385,17 @@
           "start_at": "Korra S1E7",
           "span": "Korra S1-S4",
           "situations": [
-            {"id": "difficult_parent", "weight": 0.9},
-            {"id": "responsibility_you_didnt_ask_for", "weight": 0.6},
-            {"id": "grief_and_loss", "weight": 0.6},
-            {"id": "starting_over", "weight": 0.4}
+            { "id": "difficult_parent", "weight": 0.9 },
+            { "id": "responsibility_you_didnt_ask_for", "weight": 0.6 },
+            { "id": "grief_and_loss", "weight": 0.6 },
+            { "id": "starting_over", "weight": 0.4 }
           ],
           "conflicts": ["belonging_vs_integrity", "revenge_vs_forgiveness"],
-          "emotions": {"start": ["betrayal", "confusion"], "middle": ["anger", "resentment", "loneliness"], "end": ["grief", "acceptance", "peace"]},
+          "emotions": {
+            "start": ["betrayal", "confusion"],
+            "middle": ["anger", "resentment", "loneliness"],
+            "end": ["grief", "acceptance", "peace"]
+          },
           "ending_tone": "bittersweet",
           "intensity": "heavy",
           "warnings": ["betrayal", "death_of_loved_one", "grief", "war_and_violence"],
@@ -407,13 +435,17 @@
           "start_at": "Korra S1E4",
           "span": "Korra S1-S4",
           "situations": [
-            {"id": "falling_for_someone_unexpected", "weight": 0.8},
-            {"id": "finding_your_people", "weight": 0.7},
-            {"id": "breakup", "weight": 0.4},
-            {"id": "long_distance", "weight": 0.4}
+            { "id": "falling_for_someone_unexpected", "weight": 0.8 },
+            { "id": "finding_your_people", "weight": 0.7 },
+            { "id": "breakup", "weight": 0.4 },
+            { "id": "long_distance", "weight": 0.4 }
           ],
           "conflicts": ["independence_vs_connection", "truth_vs_protecting_others"],
-          "emotions": {"start": ["jealousy", "confusion"], "middle": ["longing", "loneliness", "hope"], "end": ["love", "joy", "belonging"]},
+          "emotions": {
+            "start": ["jealousy", "confusion"],
+            "middle": ["longing", "loneliness", "hope"],
+            "end": ["love", "joy", "belonging"]
+          },
           "ending_tone": "hopeful",
           "intensity": "light",
           "warnings": ["war_and_violence", "death_of_loved_one"],
@@ -444,11 +476,11 @@
       "name": "Lin Beifong",
       "role": "Republic City's tough, no-nonsense Chief of Police and daughter of Toph Beifong, who has no patience for the new Avatar and an awkward history with Tenzin",
       "relations": [
-        {"target": "char:avatar/toph_beifong", "relation": "parent"},
-        {"target": "char:avatar/tenzin", "relation": "ex_partner"},
-        {"target": "char:avatar/korra", "relation": "friend"},
-        {"target": "char:avatar/bolin", "relation": "colleague"},
-        {"target": "char:avatar/asami_sato", "relation": "friend"}
+        { "target": "char:avatar/toph_beifong", "relation": "parent" },
+        { "target": "char:avatar/tenzin", "relation": "ex_partner" },
+        { "target": "char:avatar/korra", "relation": "friend" },
+        { "target": "char:avatar/bolin", "relation": "colleague" },
+        { "target": "char:avatar/asami_sato", "relation": "friend" }
       ],
       "arcs": [
         {
@@ -467,13 +499,17 @@
           "start_at": "Korra S1E1",
           "span": "Korra S1",
           "situations": [
-            {"id": "burnout_at_work", "weight": 0.6},
-            {"id": "losing_a_job", "weight": 0.6},
-            {"id": "standing_up_to_authority", "weight": 0.4},
-            {"id": "breakup", "weight": 0.3}
+            { "id": "burnout_at_work", "weight": 0.6 },
+            { "id": "losing_a_job", "weight": 0.6 },
+            { "id": "standing_up_to_authority", "weight": 0.4 },
+            { "id": "breakup", "weight": 0.3 }
           ],
           "conflicts": ["duty_vs_desire", "independence_vs_connection"],
-          "emotions": {"start": ["pride", "resentment"], "middle": ["shame", "guilt"], "end": ["self_respect", "belonging"]},
+          "emotions": {
+            "start": ["pride", "resentment"],
+            "middle": ["shame", "guilt"],
+            "end": ["self_respect", "belonging"]
+          },
           "ending_tone": "hopeful",
           "intensity": "moderate",
           "warnings": ["war_and_violence"],
@@ -513,13 +549,17 @@
           "start_at": "Korra S3E5",
           "span": "Korra S3-S4",
           "situations": [
-            {"id": "sibling_rivalry", "weight": 0.9},
-            {"id": "difficult_parent", "weight": 0.7},
-            {"id": "loneliness", "weight": 0.7},
-            {"id": "midlife_reinvention", "weight": 0.3}
+            { "id": "sibling_rivalry", "weight": 0.9 },
+            { "id": "difficult_parent", "weight": 0.7 },
+            { "id": "loneliness", "weight": 0.7 },
+            { "id": "midlife_reinvention", "weight": 0.3 }
           ],
           "conflicts": ["holding_on_vs_letting_go", "revenge_vs_forgiveness"],
-          "emotions": {"start": ["resentment", "anger", "loneliness"], "middle": ["grief", "shame"], "end": ["relief", "belonging", "acceptance"]},
+          "emotions": {
+            "start": ["resentment", "anger", "loneliness"],
+            "middle": ["grief", "shame"],
+            "end": ["relief", "belonging", "acceptance"]
+          },
           "ending_tone": "hopeful",
           "intensity": "moderate",
           "warnings": ["war_and_violence"],
@@ -551,10 +591,10 @@
       "name": "Bolin",
       "role": "A goofy, big-hearted pro-bending earthbender who grew up on the streets under his older brother Mako's protection after their parents were killed",
       "relations": [
-        {"target": "char:avatar/korra", "relation": "friend"},
-        {"target": "char:avatar/asami_sato", "relation": "friend"},
-        {"target": "char:avatar/lin_beifong", "relation": "boss"},
-        {"target": "char:avatar/tenzin", "relation": "friend"}
+        { "target": "char:avatar/korra", "relation": "friend" },
+        { "target": "char:avatar/asami_sato", "relation": "friend" },
+        { "target": "char:avatar/lin_beifong", "relation": "boss" },
+        { "target": "char:avatar/tenzin", "relation": "friend" }
       ],
       "arcs": [
         {
@@ -573,13 +613,17 @@
           "start_at": "Korra S1E1",
           "span": "Korra S1-S3",
           "situations": [
-            {"id": "confidence_struggle", "weight": 0.8},
-            {"id": "finding_your_people", "weight": 0.6},
-            {"id": "unrequited_love", "weight": 0.5},
-            {"id": "sibling_rivalry", "weight": 0.4}
+            { "id": "confidence_struggle", "weight": 0.8 },
+            { "id": "finding_your_people", "weight": 0.6 },
+            { "id": "unrequited_love", "weight": 0.5 },
+            { "id": "sibling_rivalry", "weight": 0.4 }
           ],
           "conflicts": ["fitting_in_vs_standing_out", "independence_vs_connection"],
-          "emotions": {"start": ["joy", "self_doubt"], "middle": ["rejection", "loneliness", "inadequacy"], "end": ["confidence", "pride", "belonging"]},
+          "emotions": {
+            "start": ["joy", "self_doubt"],
+            "middle": ["rejection", "loneliness", "inadequacy"],
+            "end": ["confidence", "pride", "belonging"]
+          },
           "ending_tone": "hopeful",
           "intensity": "light",
           "warnings": ["war_and_violence"],
@@ -619,13 +663,17 @@
           "start_at": "Korra S4E1",
           "span": "Korra S4",
           "situations": [
-            {"id": "redemption_after_mistakes", "weight": 0.8},
-            {"id": "standing_up_to_authority", "weight": 0.7},
-            {"id": "new_job", "weight": 0.5},
-            {"id": "long_distance", "weight": 0.4}
+            { "id": "redemption_after_mistakes", "weight": 0.8 },
+            { "id": "standing_up_to_authority", "weight": 0.7 },
+            { "id": "new_job", "weight": 0.5 },
+            { "id": "long_distance", "weight": 0.4 }
           ],
           "conflicts": ["belonging_vs_integrity", "loyalty_vs_ambition"],
-          "emotions": {"start": ["pride", "hope"], "middle": ["confusion", "anxiety", "guilt"], "end": ["relief", "self_respect", "belonging"]},
+          "emotions": {
+            "start": ["pride", "hope"],
+            "middle": ["confusion", "anxiety", "guilt"],
+            "end": ["relief", "self_respect", "belonging"]
+          },
           "ending_tone": "hopeful",
           "intensity": "moderate",
           "warnings": ["war_and_violence", "betrayal", "death_of_loved_one"],

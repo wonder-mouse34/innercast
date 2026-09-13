@@ -6,13 +6,13 @@
       "name": "Rick Grimes",
       "role": "A small-town sheriff's deputy who wakes from a coma into a collapsed world and sets out to find his wife and son.",
       "relations": [
-        {"target": "char:walking_dead/carl_grimes", "relation": "child"},
-        {"target": "char:walking_dead/michonne", "relation": "partner"},
-        {"target": "char:walking_dead/daryl_dixon", "relation": "friend"},
-        {"target": "char:walking_dead/glenn_rhee", "relation": "friend"},
-        {"target": "char:walking_dead/maggie_greene", "relation": "friend"},
-        {"target": "char:walking_dead/carol_peletier", "relation": "friend"},
-        {"target": "char:walking_dead/eugene_porter", "relation": "friend"}
+        { "target": "char:walking_dead/carl_grimes", "relation": "child" },
+        { "target": "char:walking_dead/michonne", "relation": "partner" },
+        { "target": "char:walking_dead/daryl_dixon", "relation": "friend" },
+        { "target": "char:walking_dead/glenn_rhee", "relation": "friend" },
+        { "target": "char:walking_dead/maggie_greene", "relation": "friend" },
+        { "target": "char:walking_dead/carol_peletier", "relation": "friend" },
+        { "target": "char:walking_dead/eugene_porter", "relation": "friend" }
       ],
       "arcs": [
         {
@@ -31,16 +31,28 @@
           "start_at": "S1E1",
           "span": "S1-S9",
           "situations": [
-            {"id": "responsibility_you_didnt_ask_for", "weight": 0.95},
-            {"id": "becoming_a_manager", "weight": 0.5},
-            {"id": "caring_for_family", "weight": 0.6},
-            {"id": "burnout_at_work", "weight": 0.4}
+            { "id": "responsibility_you_didnt_ask_for", "weight": 0.95 },
+            { "id": "becoming_a_manager", "weight": 0.5 },
+            { "id": "caring_for_family", "weight": 0.6 },
+            { "id": "burnout_at_work", "weight": 0.4 }
           ],
           "conflicts": ["power_vs_morality", "control_vs_trust"],
-          "emotions": {"start": ["fear", "determination", "hope"], "middle": ["guilt", "anger", "numbness"], "end": ["grief", "acceptance", "peace"]},
+          "emotions": {
+            "start": ["fear", "determination", "hope"],
+            "middle": ["guilt", "anger", "numbness"],
+            "end": ["grief", "acceptance", "peace"]
+          },
           "ending_tone": "bittersweet",
           "intensity": "heavy",
-          "warnings": ["death_of_loved_one", "war_and_violence", "graphic_gore", "child_endangerment", "betrayal", "torture", "grief"],
+          "warnings": [
+            "death_of_loved_one",
+            "war_and_violence",
+            "graphic_gore",
+            "child_endangerment",
+            "betrayal",
+            "torture",
+            "grief"
+          ],
           "example_user_messages": [
             "I became the person everyone relies on and I don't know how to put it down. Every mistake feels like it's mine.",
             "I've had to make so many harsh calls at work that I barely recognise myself anymore.",
@@ -79,16 +91,27 @@
           "start_at": "S1E3",
           "span": "S1-S3",
           "situations": [
-            {"id": "friendship_ending", "weight": 0.8},
-            {"id": "divorce", "weight": 0.4},
-            {"id": "caring_for_family", "weight": 0.6},
-            {"id": "grief_and_loss", "weight": 0.6}
+            { "id": "friendship_ending", "weight": 0.8 },
+            { "id": "divorce", "weight": 0.4 },
+            { "id": "caring_for_family", "weight": 0.6 },
+            { "id": "grief_and_loss", "weight": 0.6 }
           ],
           "conflicts": ["truth_vs_protecting_others", "holding_on_vs_letting_go"],
-          "emotions": {"start": ["relief", "joy", "confusion"], "middle": ["jealousy", "betrayal", "anger"], "end": ["grief", "guilt"]},
+          "emotions": {
+            "start": ["relief", "joy", "confusion"],
+            "middle": ["jealousy", "betrayal", "anger"],
+            "end": ["grief", "guilt"]
+          },
           "ending_tone": "tragic",
           "intensity": "heavy",
-          "warnings": ["betrayal", "death_of_loved_one", "grief", "war_and_violence", "medical_trauma", "graphic_gore"],
+          "warnings": [
+            "betrayal",
+            "death_of_loved_one",
+            "grief",
+            "war_and_violence",
+            "medical_trauma",
+            "graphic_gore"
+          ],
           "example_user_messages": [
             "I was away for a long time and when I came back my family had their own routines without me. I feel like a guest in my own home.",
             "I think my best friend has feelings for my wife and I don't know how to bring it up.",
@@ -125,15 +148,25 @@
           "start_at": "S8",
           "span": "S8-S9",
           "situations": [
-            {"id": "grief_and_loss", "weight": 0.9},
-            {"id": "responsibility_you_didnt_ask_for", "weight": 0.6},
-            {"id": "redemption_after_mistakes", "weight": 0.5}
+            { "id": "grief_and_loss", "weight": 0.9 },
+            { "id": "responsibility_you_didnt_ask_for", "weight": 0.6 },
+            { "id": "redemption_after_mistakes", "weight": 0.5 }
           ],
           "conflicts": ["revenge_vs_forgiveness", "past_vs_future"],
-          "emotions": {"start": ["grief", "anger"], "middle": ["guilt", "determination"], "end": ["hope", "peace"]},
+          "emotions": {
+            "start": ["grief", "anger"],
+            "middle": ["guilt", "determination"],
+            "end": ["hope", "peace"]
+          },
           "ending_tone": "bittersweet",
           "intensity": "heavy",
-          "warnings": ["death_of_loved_one", "grief", "war_and_violence", "graphic_gore", "betrayal"],
+          "warnings": [
+            "death_of_loved_one",
+            "grief",
+            "war_and_violence",
+            "graphic_gore",
+            "betrayal"
+          ],
           "example_user_messages": [
             "Someone took something from me I can never get back, and everyone expects me to want revenge. Part of me does.",
             "My son always believed people could change. I'm trying to live up to that, but it's so hard.",
@@ -161,12 +194,12 @@
       "name": "Daryl Dixon",
       "role": "A surly, gifted hunter living in the shadow of his volatile older brother on the edge of a survivor camp outside Atlanta.",
       "relations": [
-        {"target": "char:walking_dead/rick_grimes", "relation": "friend"},
-        {"target": "char:walking_dead/carol_peletier", "relation": "friend"},
-        {"target": "char:walking_dead/glenn_rhee", "relation": "friend"},
-        {"target": "char:walking_dead/maggie_greene", "relation": "friend"},
-        {"target": "char:walking_dead/michonne", "relation": "friend"},
-        {"target": "char:walking_dead/carl_grimes", "relation": "friend"}
+        { "target": "char:walking_dead/rick_grimes", "relation": "friend" },
+        { "target": "char:walking_dead/carol_peletier", "relation": "friend" },
+        { "target": "char:walking_dead/glenn_rhee", "relation": "friend" },
+        { "target": "char:walking_dead/maggie_greene", "relation": "friend" },
+        { "target": "char:walking_dead/michonne", "relation": "friend" },
+        { "target": "char:walking_dead/carl_grimes", "relation": "friend" }
       ],
       "arcs": [
         {
@@ -185,16 +218,27 @@
           "start_at": "S1E3",
           "span": "S1-S5",
           "situations": [
-            {"id": "finding_your_people", "weight": 0.9},
-            {"id": "confidence_struggle", "weight": 0.6},
-            {"id": "difficult_parent", "weight": 0.4},
-            {"id": "sibling_rivalry", "weight": 0.5}
+            { "id": "finding_your_people", "weight": 0.9 },
+            { "id": "confidence_struggle", "weight": 0.6 },
+            { "id": "difficult_parent", "weight": 0.4 },
+            { "id": "sibling_rivalry", "weight": 0.5 }
           ],
           "conflicts": ["self_vs_family_expectations", "independence_vs_connection"],
-          "emotions": {"start": ["loneliness", "anger", "inadequacy"], "middle": ["confusion", "belonging", "grief"], "end": ["belonging", "self_respect", "love"]},
+          "emotions": {
+            "start": ["loneliness", "anger", "inadequacy"],
+            "middle": ["confusion", "belonging", "grief"],
+            "end": ["belonging", "self_respect", "love"]
+          },
           "ending_tone": "bittersweet",
           "intensity": "heavy",
-          "warnings": ["abuse", "death_of_loved_one", "grief", "war_and_violence", "graphic_gore", "child_endangerment"],
+          "warnings": [
+            "abuse",
+            "death_of_loved_one",
+            "grief",
+            "war_and_violence",
+            "graphic_gore",
+            "child_endangerment"
+          ],
           "example_user_messages": [
             "I grew up being told I was worthless and I still kind of believe it, even though people at my new job keep saying I'm good at what I do.",
             "My older brother is a mess and he drags me into it, but he's the only family I've got.",
@@ -231,16 +275,27 @@
           "start_at": "S9E6",
           "span": "S9-S11",
           "situations": [
-            {"id": "responsibility_you_didnt_ask_for", "weight": 0.7},
-            {"id": "becoming_a_parent", "weight": 0.6},
-            {"id": "loneliness", "weight": 0.6},
-            {"id": "friendship_ending", "weight": 0.3}
+            { "id": "responsibility_you_didnt_ask_for", "weight": 0.7 },
+            { "id": "becoming_a_parent", "weight": 0.6 },
+            { "id": "loneliness", "weight": 0.6 },
+            { "id": "friendship_ending", "weight": 0.3 }
           ],
           "conflicts": ["independence_vs_connection", "holding_on_vs_letting_go"],
-          "emotions": {"start": ["loneliness", "restlessness", "grief"], "middle": ["anger", "betrayal", "love"], "end": ["belonging", "acceptance", "hope"]},
+          "emotions": {
+            "start": ["loneliness", "restlessness", "grief"],
+            "middle": ["anger", "betrayal", "love"],
+            "end": ["belonging", "acceptance", "hope"]
+          },
           "ending_tone": "hopeful",
           "intensity": "heavy",
-          "warnings": ["abuse", "death_of_loved_one", "grief", "war_and_violence", "graphic_gore", "betrayal"],
+          "warnings": [
+            "abuse",
+            "death_of_loved_one",
+            "grief",
+            "war_and_violence",
+            "graphic_gore",
+            "betrayal"
+          ],
           "example_user_messages": [
             "Every time my life gets stable I get this urge to leave. I don't know why I can't just settle down.",
             "My partner's kid has started treating me like a dad, and I'm terrified of letting them down.",
@@ -268,10 +323,10 @@
       "name": "Carol Peletier",
       "role": "A quiet, timid housewife at a survivor camp, trying to shield her young daughter from her controlling, abusive husband.",
       "relations": [
-        {"target": "char:walking_dead/daryl_dixon", "relation": "friend"},
-        {"target": "char:walking_dead/rick_grimes", "relation": "friend"},
-        {"target": "char:walking_dead/maggie_greene", "relation": "friend"},
-        {"target": "char:walking_dead/carl_grimes", "relation": "friend"}
+        { "target": "char:walking_dead/daryl_dixon", "relation": "friend" },
+        { "target": "char:walking_dead/rick_grimes", "relation": "friend" },
+        { "target": "char:walking_dead/maggie_greene", "relation": "friend" },
+        { "target": "char:walking_dead/carl_grimes", "relation": "friend" }
       ],
       "arcs": [
         {
@@ -290,16 +345,28 @@
           "start_at": "S1",
           "span": "S1-S4",
           "situations": [
-            {"id": "starting_over", "weight": 0.8},
-            {"id": "identity_and_self_acceptance", "weight": 0.7},
-            {"id": "grief_and_loss", "weight": 0.7},
-            {"id": "confidence_struggle", "weight": 0.6}
+            { "id": "starting_over", "weight": 0.8 },
+            { "id": "identity_and_self_acceptance", "weight": 0.7 },
+            { "id": "grief_and_loss", "weight": 0.7 },
+            { "id": "confidence_struggle", "weight": 0.6 }
           ],
           "conflicts": ["safety_vs_growth", "power_vs_morality"],
-          "emotions": {"start": ["fear", "shame", "numbness"], "middle": ["grief", "determination"], "end": ["confidence", "self_respect", "guilt"]},
+          "emotions": {
+            "start": ["fear", "shame", "numbness"],
+            "middle": ["grief", "determination"],
+            "end": ["confidence", "self_respect", "guilt"]
+          },
           "ending_tone": "bittersweet",
           "intensity": "heavy",
-          "warnings": ["domestic_violence", "abuse", "death_of_loved_one", "child_endangerment", "grief", "graphic_gore", "war_and_violence"],
+          "warnings": [
+            "domestic_violence",
+            "abuse",
+            "death_of_loved_one",
+            "child_endangerment",
+            "grief",
+            "graphic_gore",
+            "war_and_violence"
+          ],
           "example_user_messages": [
             "I left an abusive marriage and I don't even know who I am on my own.",
             "For years I made myself small to keep the peace. Now I'm realising I'm actually really capable.",
@@ -336,13 +403,17 @@
           "start_at": "S6",
           "span": "S6-S7",
           "situations": [
-            {"id": "burnout_at_work", "weight": 0.8},
-            {"id": "loneliness", "weight": 0.6},
-            {"id": "redemption_after_mistakes", "weight": 0.4},
-            {"id": "starting_over", "weight": 0.5}
+            { "id": "burnout_at_work", "weight": 0.8 },
+            { "id": "loneliness", "weight": 0.6 },
+            { "id": "redemption_after_mistakes", "weight": 0.4 },
+            { "id": "starting_over", "weight": 0.5 }
           ],
           "conflicts": ["duty_vs_desire", "independence_vs_connection"],
-          "emotions": {"start": ["guilt", "numbness", "overwhelm"], "middle": ["burnout", "loneliness"], "end": ["acceptance", "belonging"]},
+          "emotions": {
+            "start": ["guilt", "numbness", "overwhelm"],
+            "middle": ["burnout", "loneliness"],
+            "end": ["acceptance", "belonging"]
+          },
           "ending_tone": "hopeful",
           "intensity": "heavy",
           "warnings": ["war_and_violence", "death_of_loved_one", "graphic_gore", "grief"],
@@ -381,15 +452,26 @@
           "start_at": "S10E1",
           "span": "S10-S11",
           "situations": [
-            {"id": "grief_and_loss", "weight": 0.9},
-            {"id": "redemption_after_mistakes", "weight": 0.6},
-            {"id": "friendship_ending", "weight": 0.4}
+            { "id": "grief_and_loss", "weight": 0.9 },
+            { "id": "redemption_after_mistakes", "weight": 0.6 },
+            { "id": "friendship_ending", "weight": 0.4 }
           ],
           "conflicts": ["revenge_vs_forgiveness", "holding_on_vs_letting_go"],
-          "emotions": {"start": ["grief", "anger", "resentment"], "middle": ["guilt", "betrayal"], "end": ["acceptance", "relief"]},
+          "emotions": {
+            "start": ["grief", "anger", "resentment"],
+            "middle": ["guilt", "betrayal"],
+            "end": ["acceptance", "relief"]
+          },
           "ending_tone": "bittersweet",
           "intensity": "heavy",
-          "warnings": ["death_of_loved_one", "grief", "torture", "war_and_violence", "graphic_gore", "betrayal"],
+          "warnings": [
+            "death_of_loved_one",
+            "grief",
+            "torture",
+            "war_and_violence",
+            "graphic_gore",
+            "betrayal"
+          ],
           "example_user_messages": [
             "Someone took my child from me and all I can think about is making them suffer.",
             "My grief made me do something reckless, and a friend got hurt because of it.",
@@ -417,11 +499,11 @@
       "name": "Glenn Rhee",
       "role": "A quick-witted former pizza delivery guy who works as his survivor group's nimble, fearless supply runner.",
       "relations": [
-        {"target": "char:walking_dead/maggie_greene", "relation": "partner"},
-        {"target": "char:walking_dead/rick_grimes", "relation": "friend"},
-        {"target": "char:walking_dead/daryl_dixon", "relation": "friend"},
-        {"target": "char:walking_dead/carl_grimes", "relation": "friend"},
-        {"target": "char:walking_dead/eugene_porter", "relation": "friend"}
+        { "target": "char:walking_dead/maggie_greene", "relation": "partner" },
+        { "target": "char:walking_dead/rick_grimes", "relation": "friend" },
+        { "target": "char:walking_dead/daryl_dixon", "relation": "friend" },
+        { "target": "char:walking_dead/carl_grimes", "relation": "friend" },
+        { "target": "char:walking_dead/eugene_porter", "relation": "friend" }
       ],
       "arcs": [
         {
@@ -440,16 +522,26 @@
           "start_at": "S1E2",
           "span": "S1-S6",
           "situations": [
-            {"id": "confidence_struggle", "weight": 0.7},
-            {"id": "coming_of_age", "weight": 0.6},
-            {"id": "finding_your_people", "weight": 0.6},
-            {"id": "imposter_syndrome", "weight": 0.3}
+            { "id": "confidence_struggle", "weight": 0.7 },
+            { "id": "coming_of_age", "weight": 0.6 },
+            { "id": "finding_your_people", "weight": 0.6 },
+            { "id": "imposter_syndrome", "weight": 0.3 }
           ],
           "conflicts": ["belonging_vs_integrity", "safety_vs_growth"],
-          "emotions": {"start": ["self_doubt", "determination"], "middle": ["confidence", "grief", "anger"], "end": ["self_respect", "hope"]},
+          "emotions": {
+            "start": ["self_doubt", "determination"],
+            "middle": ["confidence", "grief", "anger"],
+            "end": ["self_respect", "hope"]
+          },
           "ending_tone": "bittersweet",
           "intensity": "heavy",
-          "warnings": ["torture", "war_and_violence", "graphic_gore", "death_of_loved_one", "grief"],
+          "warnings": [
+            "torture",
+            "war_and_violence",
+            "graphic_gore",
+            "death_of_loved_one",
+            "grief"
+          ],
           "example_user_messages": [
             "I've been in the same job for years doing whatever I'm told, and I'm realising I have opinions nobody ever asks for.",
             "Everyone treats me like the young one who runs errands. I want them to take me seriously.",
@@ -486,15 +578,26 @@
           "start_at": "S2E2",
           "span": "S2-S7",
           "situations": [
-            {"id": "falling_for_someone_unexpected", "weight": 0.9},
-            {"id": "becoming_a_parent", "weight": 0.4},
-            {"id": "family_expectations", "weight": 0.3}
+            { "id": "falling_for_someone_unexpected", "weight": 0.9 },
+            { "id": "becoming_a_parent", "weight": 0.4 },
+            { "id": "family_expectations", "weight": 0.3 }
           ],
           "conflicts": ["duty_vs_desire", "safety_vs_growth"],
-          "emotions": {"start": ["curiosity", "self_doubt", "joy"], "middle": ["love", "fear", "determination"], "end": ["love", "hope"]},
+          "emotions": {
+            "start": ["curiosity", "self_doubt", "joy"],
+            "middle": ["love", "fear", "determination"],
+            "end": ["love", "hope"]
+          },
           "ending_tone": "tragic",
           "intensity": "heavy",
-          "warnings": ["death_of_main_character", "sexual_violence", "torture", "graphic_gore", "war_and_violence", "grief"],
+          "warnings": [
+            "death_of_main_character",
+            "sexual_violence",
+            "torture",
+            "graphic_gore",
+            "war_and_violence",
+            "grief"
+          ],
           "example_user_messages": [
             "I started seeing someone right when my life was falling apart. Is it real or just the stress?",
             "I've never been good with relationships and suddenly I'm in a serious one. I don't know what I'm doing.",
@@ -522,11 +625,11 @@
       "name": "Maggie Greene",
       "role": "The headstrong elder daughter of a devout farmer whose family has sheltered from the collapse on their isolated farm.",
       "relations": [
-        {"target": "char:walking_dead/glenn_rhee", "relation": "partner"},
-        {"target": "char:walking_dead/rick_grimes", "relation": "friend"},
-        {"target": "char:walking_dead/carol_peletier", "relation": "friend"},
-        {"target": "char:walking_dead/daryl_dixon", "relation": "friend"},
-        {"target": "char:walking_dead/michonne", "relation": "friend"}
+        { "target": "char:walking_dead/glenn_rhee", "relation": "partner" },
+        { "target": "char:walking_dead/rick_grimes", "relation": "friend" },
+        { "target": "char:walking_dead/carol_peletier", "relation": "friend" },
+        { "target": "char:walking_dead/daryl_dixon", "relation": "friend" },
+        { "target": "char:walking_dead/michonne", "relation": "friend" }
       ],
       "arcs": [
         {
@@ -545,16 +648,27 @@
           "start_at": "S2E2",
           "span": "S2-S4",
           "situations": [
-            {"id": "family_expectations", "weight": 0.7},
-            {"id": "falling_for_someone_unexpected", "weight": 0.7},
-            {"id": "coming_of_age", "weight": 0.5},
-            {"id": "leaving_home", "weight": 0.5}
+            { "id": "family_expectations", "weight": 0.7 },
+            { "id": "falling_for_someone_unexpected", "weight": 0.7 },
+            { "id": "coming_of_age", "weight": 0.5 },
+            { "id": "leaving_home", "weight": 0.5 }
           ],
           "conflicts": ["self_vs_family_expectations", "safety_vs_growth"],
-          "emotions": {"start": ["restlessness", "curiosity", "anxiety"], "middle": ["love", "fear", "determination"], "end": ["grief", "confidence"]},
+          "emotions": {
+            "start": ["restlessness", "curiosity", "anxiety"],
+            "middle": ["love", "fear", "determination"],
+            "end": ["grief", "confidence"]
+          },
           "ending_tone": "bittersweet",
           "intensity": "heavy",
-          "warnings": ["death_of_loved_one", "sexual_violence", "medical_trauma", "war_and_violence", "graphic_gore", "grief"],
+          "warnings": [
+            "death_of_loved_one",
+            "sexual_violence",
+            "medical_trauma",
+            "war_and_violence",
+            "graphic_gore",
+            "grief"
+          ],
           "example_user_messages": [
             "My dad and I have always been close but I'm starting to think he's wrong about a lot of things.",
             "I'm dating someone my family doesn't approve of and I don't want to choose.",
@@ -591,16 +705,26 @@
           "start_at": "S7",
           "span": "S7-S11",
           "situations": [
-            {"id": "grief_and_loss", "weight": 0.9},
-            {"id": "becoming_a_manager", "weight": 0.6},
-            {"id": "becoming_a_parent", "weight": 0.5},
-            {"id": "responsibility_you_didnt_ask_for", "weight": 0.5}
+            { "id": "grief_and_loss", "weight": 0.9 },
+            { "id": "becoming_a_manager", "weight": 0.6 },
+            { "id": "becoming_a_parent", "weight": 0.5 },
+            { "id": "responsibility_you_didnt_ask_for", "weight": 0.5 }
           ],
           "conflicts": ["revenge_vs_forgiveness", "duty_vs_desire"],
-          "emotions": {"start": ["grief", "anger", "determination"], "middle": ["resentment", "confidence", "betrayal"], "end": ["acceptance", "self_respect"]},
+          "emotions": {
+            "start": ["grief", "anger", "determination"],
+            "middle": ["resentment", "confidence", "betrayal"],
+            "end": ["acceptance", "self_respect"]
+          },
           "ending_tone": "bittersweet",
           "intensity": "heavy",
-          "warnings": ["death_of_loved_one", "grief", "war_and_violence", "graphic_gore", "betrayal"],
+          "warnings": [
+            "death_of_loved_one",
+            "grief",
+            "war_and_violence",
+            "graphic_gore",
+            "betrayal"
+          ],
           "example_user_messages": [
             "I became a single mom and got promoted in the same year, and I'm running on pure anger.",
             "The person who hurt my family is now part of my social circle and everyone expects me to be okay with it.",
@@ -629,11 +753,11 @@
       "name": "Michonne",
       "role": "A silent, sword-wielding loner who has survived for months on her own, trusting no one and revealing nothing about her past.",
       "relations": [
-        {"target": "char:walking_dead/rick_grimes", "relation": "partner"},
-        {"target": "char:walking_dead/carl_grimes", "relation": "child"},
-        {"target": "char:walking_dead/daryl_dixon", "relation": "friend"},
-        {"target": "char:walking_dead/maggie_greene", "relation": "friend"},
-        {"target": "char:walking_dead/carol_peletier", "relation": "friend"}
+        { "target": "char:walking_dead/rick_grimes", "relation": "partner" },
+        { "target": "char:walking_dead/carl_grimes", "relation": "child" },
+        { "target": "char:walking_dead/daryl_dixon", "relation": "friend" },
+        { "target": "char:walking_dead/maggie_greene", "relation": "friend" },
+        { "target": "char:walking_dead/carol_peletier", "relation": "friend" }
       ],
       "arcs": [
         {
@@ -652,16 +776,26 @@
           "start_at": "S3E1",
           "span": "S3-S5",
           "situations": [
-            {"id": "grief_and_loss", "weight": 0.8},
-            {"id": "finding_your_people", "weight": 0.8},
-            {"id": "loneliness", "weight": 0.7},
-            {"id": "starting_over", "weight": 0.5}
+            { "id": "grief_and_loss", "weight": 0.8 },
+            { "id": "finding_your_people", "weight": 0.8 },
+            { "id": "loneliness", "weight": 0.7 },
+            { "id": "starting_over", "weight": 0.5 }
           ],
           "conflicts": ["independence_vs_connection", "past_vs_future"],
-          "emotions": {"start": ["numbness", "loneliness", "anger"], "middle": ["guilt", "longing", "belonging"], "end": ["belonging", "love", "hope"]},
+          "emotions": {
+            "start": ["numbness", "loneliness", "anger"],
+            "middle": ["guilt", "longing", "belonging"],
+            "end": ["belonging", "love", "hope"]
+          },
           "ending_tone": "hopeful",
           "intensity": "heavy",
-          "warnings": ["death_of_loved_one", "grief", "addiction", "war_and_violence", "graphic_gore"],
+          "warnings": [
+            "death_of_loved_one",
+            "grief",
+            "addiction",
+            "war_and_violence",
+            "graphic_gore"
+          ],
           "example_user_messages": [
             "After I lost my family I shut everyone out. Now people are trying to get close and I don't know if I can let them.",
             "I'm so used to handling everything alone that accepting help feels like weakness.",
@@ -697,16 +831,26 @@
           "start_at": "S9E6",
           "span": "S9-S10",
           "situations": [
-            {"id": "caring_for_family", "weight": 0.8},
-            {"id": "becoming_a_manager", "weight": 0.5},
-            {"id": "loneliness", "weight": 0.5},
-            {"id": "friendship_ending", "weight": 0.4}
+            { "id": "caring_for_family", "weight": 0.8 },
+            { "id": "becoming_a_manager", "weight": 0.5 },
+            { "id": "loneliness", "weight": 0.5 },
+            { "id": "friendship_ending", "weight": 0.4 }
           ],
           "conflicts": ["control_vs_trust", "safety_vs_growth"],
-          "emotions": {"start": ["fear", "resentment", "loneliness"], "middle": ["guilt", "anxiety"], "end": ["hope", "belonging"]},
+          "emotions": {
+            "start": ["fear", "resentment", "loneliness"],
+            "middle": ["guilt", "anxiety"],
+            "end": ["hope", "belonging"]
+          },
           "ending_tone": "hopeful",
           "intensity": "heavy",
-          "warnings": ["betrayal", "child_endangerment", "war_and_violence", "graphic_gore", "grief"],
+          "warnings": [
+            "betrayal",
+            "child_endangerment",
+            "war_and_violence",
+            "graphic_gore",
+            "grief"
+          ],
           "example_user_messages": [
             "Someone I trusted betrayed my family, and since then I don't let anyone new in.",
             "My daughter says I'm too overprotective and that I'm cutting us off from everyone.",
@@ -734,11 +878,11 @@
       "name": "Carl Grimes",
       "role": "A shy young boy who has fled with his mother to a survivor camp, believing his father is dead.",
       "relations": [
-        {"target": "char:walking_dead/rick_grimes", "relation": "parent"},
-        {"target": "char:walking_dead/michonne", "relation": "parent"},
-        {"target": "char:walking_dead/glenn_rhee", "relation": "friend"},
-        {"target": "char:walking_dead/daryl_dixon", "relation": "friend"},
-        {"target": "char:walking_dead/carol_peletier", "relation": "friend"}
+        { "target": "char:walking_dead/rick_grimes", "relation": "parent" },
+        { "target": "char:walking_dead/michonne", "relation": "parent" },
+        { "target": "char:walking_dead/glenn_rhee", "relation": "friend" },
+        { "target": "char:walking_dead/daryl_dixon", "relation": "friend" },
+        { "target": "char:walking_dead/carol_peletier", "relation": "friend" }
       ],
       "arcs": [
         {
@@ -757,16 +901,27 @@
           "start_at": "S1E1",
           "span": "S1-S4",
           "situations": [
-            {"id": "coming_of_age", "weight": 0.95},
-            {"id": "grief_and_loss", "weight": 0.6},
-            {"id": "family_expectations", "weight": 0.4},
-            {"id": "identity_and_self_acceptance", "weight": 0.4}
+            { "id": "coming_of_age", "weight": 0.95 },
+            { "id": "grief_and_loss", "weight": 0.6 },
+            { "id": "family_expectations", "weight": 0.4 },
+            { "id": "identity_and_self_acceptance", "weight": 0.4 }
           ],
           "conflicts": ["safety_vs_growth", "power_vs_morality"],
-          "emotions": {"start": ["fear", "curiosity"], "middle": ["anger", "guilt", "numbness"], "end": ["self_doubt", "hope"]},
+          "emotions": {
+            "start": ["fear", "curiosity"],
+            "middle": ["anger", "guilt", "numbness"],
+            "end": ["self_doubt", "hope"]
+          },
           "ending_tone": "bittersweet",
           "intensity": "heavy",
-          "warnings": ["death_of_loved_one", "child_endangerment", "medical_trauma", "graphic_gore", "war_and_violence", "grief"],
+          "warnings": [
+            "death_of_loved_one",
+            "child_endangerment",
+            "medical_trauma",
+            "graphic_gore",
+            "war_and_violence",
+            "grief"
+          ],
           "example_user_messages": [
             "I had to grow up fast when my family fell apart and I never really got to be a kid.",
             "I'm 15 and I feel like I have to hold everything together at home.",
@@ -803,16 +958,28 @@
           "start_at": "S5",
           "span": "S5-S8",
           "situations": [
-            {"id": "standing_up_to_authority", "weight": 0.7},
-            {"id": "coming_of_age", "weight": 0.6},
-            {"id": "illness_or_injury", "weight": 0.4},
-            {"id": "identity_and_self_acceptance", "weight": 0.4}
+            { "id": "standing_up_to_authority", "weight": 0.7 },
+            { "id": "coming_of_age", "weight": 0.6 },
+            { "id": "illness_or_injury", "weight": 0.4 },
+            { "id": "identity_and_self_acceptance", "weight": 0.4 }
           ],
           "conflicts": ["revenge_vs_forgiveness", "belonging_vs_integrity"],
-          "emotions": {"start": ["hope", "determination"], "middle": ["anger", "self_doubt", "loneliness"], "end": ["peace", "love"]},
+          "emotions": {
+            "start": ["hope", "determination"],
+            "middle": ["anger", "self_doubt", "loneliness"],
+            "end": ["peace", "love"]
+          },
           "ending_tone": "tragic",
           "intensity": "heavy",
-          "warnings": ["death_of_main_character", "self_harm_or_suicide", "medical_trauma", "child_endangerment", "war_and_violence", "graphic_gore", "grief"],
+          "warnings": [
+            "death_of_main_character",
+            "self_harm_or_suicide",
+            "medical_trauma",
+            "child_endangerment",
+            "war_and_violence",
+            "graphic_gore",
+            "grief"
+          ],
           "example_user_messages": [
             "Everyone around me thinks the only way to deal with people who hurt us is to hurt them back. I don't believe that.",
             "I was seriously injured and I pretend I'm fine but I hate how I look now.",
@@ -840,9 +1007,9 @@
       "name": "Eugene Porter",
       "role": "A socially awkward, mullet-sporting man who says he holds the key to ending the outbreak and is being escorted to Washington, D.C. by a soldier.",
       "relations": [
-        {"target": "char:walking_dead/rick_grimes", "relation": "friend"},
-        {"target": "char:walking_dead/glenn_rhee", "relation": "friend"},
-        {"target": "char:walking_dead/maggie_greene", "relation": "colleague"}
+        { "target": "char:walking_dead/rick_grimes", "relation": "friend" },
+        { "target": "char:walking_dead/glenn_rhee", "relation": "friend" },
+        { "target": "char:walking_dead/maggie_greene", "relation": "colleague" }
       ],
       "arcs": [
         {
@@ -861,13 +1028,17 @@
           "start_at": "S4E11",
           "span": "S4-S6",
           "situations": [
-            {"id": "imposter_syndrome", "weight": 0.9},
-            {"id": "confidence_struggle", "weight": 0.8},
-            {"id": "finding_your_people", "weight": 0.5},
-            {"id": "redemption_after_mistakes", "weight": 0.5}
+            { "id": "imposter_syndrome", "weight": 0.9 },
+            { "id": "confidence_struggle", "weight": 0.8 },
+            { "id": "finding_your_people", "weight": 0.5 },
+            { "id": "redemption_after_mistakes", "weight": 0.5 }
           ],
           "conflicts": ["truth_vs_protecting_others", "safety_vs_growth"],
-          "emotions": {"start": ["fear", "inadequacy", "anxiety"], "middle": ["shame", "guilt"], "end": ["confidence", "belonging", "self_respect"]},
+          "emotions": {
+            "start": ["fear", "inadequacy", "anxiety"],
+            "middle": ["shame", "guilt"],
+            "end": ["confidence", "belonging", "self_respect"]
+          },
           "ending_tone": "hopeful",
           "intensity": "moderate",
           "warnings": ["death_of_loved_one", "war_and_violence", "graphic_gore", "betrayal"],
@@ -907,16 +1078,26 @@
           "start_at": "S7",
           "span": "S7-S8",
           "situations": [
-            {"id": "new_job", "weight": 0.6},
-            {"id": "redemption_after_mistakes", "weight": 0.7},
-            {"id": "standing_up_to_authority", "weight": 0.6},
-            {"id": "confidence_struggle", "weight": 0.4}
+            { "id": "new_job", "weight": 0.6 },
+            { "id": "redemption_after_mistakes", "weight": 0.7 },
+            { "id": "standing_up_to_authority", "weight": 0.6 },
+            { "id": "confidence_struggle", "weight": 0.4 }
           ],
           "conflicts": ["power_vs_morality", "loyalty_vs_ambition"],
-          "emotions": {"start": ["fear", "relief", "pride"], "middle": ["guilt", "shame", "anxiety"], "end": ["self_respect", "relief", "belonging"]},
+          "emotions": {
+            "start": ["fear", "relief", "pride"],
+            "middle": ["guilt", "shame", "anxiety"],
+            "end": ["self_respect", "relief", "belonging"]
+          },
           "ending_tone": "hopeful",
           "intensity": "heavy",
-          "warnings": ["death_of_loved_one", "war_and_violence", "graphic_gore", "betrayal", "addiction"],
+          "warnings": [
+            "death_of_loved_one",
+            "war_and_violence",
+            "graphic_gore",
+            "betrayal",
+            "addiction"
+          ],
           "example_user_messages": [
             "My new boss treats me like a genius, but I know the company is doing shady things and I'm helping.",
             "I took the safe option and now I feel like I sold out the people who believed in me.",

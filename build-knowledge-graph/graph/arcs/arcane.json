@@ -6,12 +6,12 @@
       "name": "Vi",
       "role": "The fierce, protective eldest of four orphaned kids being raised by a bar owner in the city's poor undercity, leading her little sister and adopted brothers on risky jobs.",
       "relations": [
-        {"target": "char:arcane/powder", "relation": "sibling"},
-        {"target": "char:arcane/vander", "relation": "parent"},
-        {"target": "char:arcane/caitlyn_kiramman", "relation": "partner"},
-        {"target": "char:arcane/ekko", "relation": "friend"},
-        {"target": "char:arcane/silco", "relation": "enemy"},
-        {"target": "char:arcane/jayce_talis", "relation": "colleague"}
+        { "target": "char:arcane/powder", "relation": "sibling" },
+        { "target": "char:arcane/vander", "relation": "parent" },
+        { "target": "char:arcane/caitlyn_kiramman", "relation": "partner" },
+        { "target": "char:arcane/ekko", "relation": "friend" },
+        { "target": "char:arcane/silco", "relation": "enemy" },
+        { "target": "char:arcane/jayce_talis", "relation": "colleague" }
       ],
       "arcs": [
         {
@@ -30,13 +30,17 @@
           "start_at": "S1E1",
           "span": "S1",
           "situations": [
-            {"id": "responsibility_you_didnt_ask_for", "weight": 0.9},
-            {"id": "caring_for_family", "weight": 0.8},
-            {"id": "standing_up_to_authority", "weight": 0.6},
-            {"id": "coming_of_age", "weight": 0.5}
+            { "id": "responsibility_you_didnt_ask_for", "weight": 0.9 },
+            { "id": "caring_for_family", "weight": 0.8 },
+            { "id": "standing_up_to_authority", "weight": 0.6 },
+            { "id": "coming_of_age", "weight": 0.5 }
           ],
           "conflicts": ["control_vs_trust", "duty_vs_desire"],
-          "emotions": {"start": ["determination", "anger"], "middle": ["fear", "anxiety"], "end": ["grief", "guilt"]},
+          "emotions": {
+            "start": ["determination", "anger"],
+            "middle": ["fear", "anxiety"],
+            "end": ["grief", "guilt"]
+          },
           "ending_tone": "tragic",
           "intensity": "heavy",
           "warnings": ["death_of_loved_one", "child_endangerment", "war_and_violence", "grief"],
@@ -76,16 +80,27 @@
           "start_at": "S1E4",
           "span": "S1-S2",
           "situations": [
-            {"id": "redemption_after_mistakes", "weight": 0.8},
-            {"id": "falling_for_someone_unexpected", "weight": 0.6},
-            {"id": "grief_and_loss", "weight": 0.6},
-            {"id": "caring_for_family", "weight": 0.7}
+            { "id": "redemption_after_mistakes", "weight": 0.8 },
+            { "id": "falling_for_someone_unexpected", "weight": 0.6 },
+            { "id": "grief_and_loss", "weight": 0.6 },
+            { "id": "caring_for_family", "weight": 0.7 }
           ],
           "conflicts": ["holding_on_vs_letting_go", "past_vs_future"],
-          "emotions": {"start": ["guilt", "longing", "anger"], "middle": ["love", "betrayal", "grief"], "end": ["grief", "love", "acceptance"]},
+          "emotions": {
+            "start": ["guilt", "longing", "anger"],
+            "middle": ["love", "betrayal", "grief"],
+            "end": ["grief", "love", "acceptance"]
+          },
           "ending_tone": "bittersweet",
           "intensity": "heavy",
-          "warnings": ["death_of_loved_one", "death_of_main_character", "war_and_violence", "grief", "addiction", "betrayal"],
+          "warnings": [
+            "death_of_loved_one",
+            "death_of_main_character",
+            "war_and_violence",
+            "grief",
+            "addiction",
+            "betrayal"
+          ],
           "example_user_messages": [
             "I haven't spoken to my younger brother in years and I feel like it's my fault he turned out the way he did.",
             "I reached out to my sister after a long estrangement and she's so angry at me I don't know how to get through to her.",
@@ -113,11 +128,11 @@
       "name": "Powder (Jinx)",
       "role": "Vi's little sister Powder, the youngest of four orphans in the undercity: a clever, jittery tinkerer desperate to be useful to her family.",
       "relations": [
-        {"target": "char:arcane/vi", "relation": "sibling"},
-        {"target": "char:arcane/vander", "relation": "parent"},
-        {"target": "char:arcane/silco", "relation": "parent"},
-        {"target": "char:arcane/ekko", "relation": "friend"},
-        {"target": "char:arcane/caitlyn_kiramman", "relation": "enemy"}
+        { "target": "char:arcane/vi", "relation": "sibling" },
+        { "target": "char:arcane/vander", "relation": "parent" },
+        { "target": "char:arcane/silco", "relation": "parent" },
+        { "target": "char:arcane/ekko", "relation": "friend" },
+        { "target": "char:arcane/caitlyn_kiramman", "relation": "enemy" }
       ],
       "arcs": [
         {
@@ -136,16 +151,29 @@
           "start_at": "S1E1",
           "span": "S1-S2",
           "situations": [
-            {"id": "confidence_struggle", "weight": 0.8},
-            {"id": "identity_and_self_acceptance", "weight": 0.7},
-            {"id": "grief_and_loss", "weight": 0.6},
-            {"id": "sibling_rivalry", "weight": 0.4}
+            { "id": "confidence_struggle", "weight": 0.8 },
+            { "id": "identity_and_self_acceptance", "weight": 0.7 },
+            { "id": "grief_and_loss", "weight": 0.6 },
+            { "id": "sibling_rivalry", "weight": 0.4 }
           ],
           "conflicts": ["self_vs_family_expectations", "holding_on_vs_letting_go"],
-          "emotions": {"start": ["inadequacy", "fear", "longing"], "middle": ["guilt", "rejection", "anger"], "end": ["grief", "love", "acceptance"]},
+          "emotions": {
+            "start": ["inadequacy", "fear", "longing"],
+            "middle": ["guilt", "rejection", "anger"],
+            "end": ["grief", "love", "acceptance"]
+          },
           "ending_tone": "bittersweet",
           "intensity": "heavy",
-          "warnings": ["death_of_loved_one", "death_of_main_character", "child_endangerment", "war_and_violence", "grief", "self_harm_or_suicide", "abuse", "betrayal"],
+          "warnings": [
+            "death_of_loved_one",
+            "death_of_main_character",
+            "child_endangerment",
+            "war_and_violence",
+            "grief",
+            "self_harm_or_suicide",
+            "abuse",
+            "betrayal"
+          ],
           "example_user_messages": [
             "I'm the youngest and everyone treats me like I'm going to screw things up, so I try twice as hard and it still goes wrong.",
             "My older sister is my whole world and I'm terrified she'll leave me behind.",
@@ -176,10 +204,10 @@
       "name": "Jayce Talis",
       "role": "An ambitious young scholar in the wealthy city of Piltover, obsessed with harnessing magic through science, whose unauthorised research has just blown up in his face.",
       "relations": [
-        {"target": "char:arcane/viktor", "relation": "friend"},
-        {"target": "char:arcane/caitlyn_kiramman", "relation": "friend"},
-        {"target": "char:arcane/vi", "relation": "colleague"},
-        {"target": "char:arcane/silco", "relation": "enemy"}
+        { "target": "char:arcane/viktor", "relation": "friend" },
+        { "target": "char:arcane/caitlyn_kiramman", "relation": "friend" },
+        { "target": "char:arcane/vi", "relation": "colleague" },
+        { "target": "char:arcane/silco", "relation": "enemy" }
       ],
       "arcs": [
         {
@@ -198,13 +226,17 @@
           "start_at": "S1E1",
           "span": "S1",
           "situations": [
-            {"id": "taking_a_big_risk", "weight": 0.8},
-            {"id": "losing_a_job", "weight": 0.6},
-            {"id": "starting_over", "weight": 0.6},
-            {"id": "mentor_and_protege", "weight": 0.5}
+            { "id": "taking_a_big_risk", "weight": 0.8 },
+            { "id": "losing_a_job", "weight": 0.6 },
+            { "id": "starting_over", "weight": 0.6 },
+            { "id": "mentor_and_protege", "weight": 0.5 }
           ],
           "conflicts": ["safety_vs_growth", "self_vs_family_expectations"],
-          "emotions": {"start": ["shame", "rejection", "self_doubt"], "middle": ["hope", "curiosity", "determination"], "end": ["pride", "joy"]},
+          "emotions": {
+            "start": ["shame", "rejection", "self_doubt"],
+            "middle": ["hope", "curiosity", "determination"],
+            "end": ["pride", "joy"]
+          },
           "ending_tone": "hopeful",
           "intensity": "moderate",
           "warnings": ["self_harm_or_suicide"],
@@ -243,16 +275,27 @@
           "start_at": "S1E4",
           "span": "S1-S2",
           "situations": [
-            {"id": "becoming_a_manager", "weight": 0.6},
-            {"id": "friendship_ending", "weight": 0.6},
-            {"id": "redemption_after_mistakes", "weight": 0.6},
-            {"id": "responsibility_you_didnt_ask_for", "weight": 0.5}
+            { "id": "becoming_a_manager", "weight": 0.6 },
+            { "id": "friendship_ending", "weight": 0.6 },
+            { "id": "redemption_after_mistakes", "weight": 0.6 },
+            { "id": "responsibility_you_didnt_ask_for", "weight": 0.5 }
           ],
           "conflicts": ["power_vs_morality", "career_vs_relationships"],
-          "emotions": {"start": ["pride", "determination"], "middle": ["guilt", "anxiety", "overwhelm"], "end": ["grief", "love", "acceptance"]},
+          "emotions": {
+            "start": ["pride", "determination"],
+            "middle": ["guilt", "anxiety", "overwhelm"],
+            "end": ["grief", "love", "acceptance"]
+          },
           "ending_tone": "tragic",
           "intensity": "heavy",
-          "warnings": ["war_and_violence", "child_endangerment", "death_of_loved_one", "death_of_main_character", "betrayal", "grief"],
+          "warnings": [
+            "war_and_violence",
+            "child_endangerment",
+            "death_of_loved_one",
+            "death_of_main_character",
+            "betrayal",
+            "grief"
+          ],
           "example_user_messages": [
             "I got the promotion I always wanted and now I'm making compromises I would have been disgusted by five years ago.",
             "My best friend and I built something together, but since I moved into leadership we barely talk and I think I've let him down.",
@@ -281,9 +324,7 @@
       "id": "char:arcane/viktor",
       "name": "Viktor",
       "role": "A brilliant, soft-spoken assistant to the Academy's dean who grew up in the poor undercity and walks with a cane, quietly determined that science should help people like the ones he came from.",
-      "relations": [
-        {"target": "char:arcane/jayce_talis", "relation": "friend"}
-      ],
+      "relations": [{ "target": "char:arcane/jayce_talis", "relation": "friend" }],
       "arcs": [
         {
           "id": "arc:arcane/viktor/overlooked_genius_finds_a_partner",
@@ -301,13 +342,17 @@
           "start_at": "S1E2",
           "span": "S1",
           "situations": [
-            {"id": "finding_your_people", "weight": 0.8},
-            {"id": "taking_a_big_risk", "weight": 0.6},
-            {"id": "identity_and_self_acceptance", "weight": 0.5},
-            {"id": "imposter_syndrome", "weight": 0.4}
+            { "id": "finding_your_people", "weight": 0.8 },
+            { "id": "taking_a_big_risk", "weight": 0.6 },
+            { "id": "identity_and_self_acceptance", "weight": 0.5 },
+            { "id": "imposter_syndrome", "weight": 0.4 }
           ],
           "conflicts": ["safety_vs_growth", "fitting_in_vs_standing_out"],
-          "emotions": {"start": ["loneliness", "curiosity"], "middle": ["hope", "joy"], "end": ["pride", "belonging"]},
+          "emotions": {
+            "start": ["loneliness", "curiosity"],
+            "middle": ["hope", "joy"],
+            "end": ["pride", "belonging"]
+          },
           "ending_tone": "hopeful",
           "intensity": "moderate",
           "warnings": [],
@@ -345,16 +390,27 @@
           "start_at": "S1E4",
           "span": "S1-S2",
           "situations": [
-            {"id": "illness_or_injury", "weight": 0.9},
-            {"id": "grief_and_loss", "weight": 0.5},
-            {"id": "burnout_at_work", "weight": 0.5},
-            {"id": "identity_and_self_acceptance", "weight": 0.4}
+            { "id": "illness_or_injury", "weight": 0.9 },
+            { "id": "grief_and_loss", "weight": 0.5 },
+            { "id": "burnout_at_work", "weight": 0.5 },
+            { "id": "identity_and_self_acceptance", "weight": 0.4 }
           ],
           "conflicts": ["power_vs_morality", "holding_on_vs_letting_go"],
-          "emotions": {"start": ["fear", "determination", "dread"], "middle": ["guilt", "grief", "hope"], "end": ["peace", "acceptance", "love"]},
+          "emotions": {
+            "start": ["fear", "determination", "dread"],
+            "middle": ["guilt", "grief", "hope"],
+            "end": ["peace", "acceptance", "love"]
+          },
           "ending_tone": "tragic",
           "intensity": "heavy",
-          "warnings": ["serious_illness", "medical_trauma", "death_of_loved_one", "death_of_main_character", "self_harm_or_suicide", "war_and_violence"],
+          "warnings": [
+            "serious_illness",
+            "medical_trauma",
+            "death_of_loved_one",
+            "death_of_main_character",
+            "self_harm_or_suicide",
+            "war_and_violence"
+          ],
           "example_user_messages": [
             "I've been diagnosed with something serious and all I can think about is finishing my work before I run out of time.",
             "I pushed so hard on my own goals that someone who cared about me got hurt.",
@@ -383,10 +439,10 @@
       "name": "Caitlyn Kiramman",
       "role": "The sharp, sheltered daughter of one of Piltover's most powerful families, who grows into a sharpshooting young enforcer determined to do real good.",
       "relations": [
-        {"target": "char:arcane/vi", "relation": "partner"},
-        {"target": "char:arcane/jayce_talis", "relation": "friend"},
-        {"target": "char:arcane/powder", "relation": "enemy"},
-        {"target": "char:arcane/silco", "relation": "enemy"}
+        { "target": "char:arcane/vi", "relation": "partner" },
+        { "target": "char:arcane/jayce_talis", "relation": "friend" },
+        { "target": "char:arcane/powder", "relation": "enemy" },
+        { "target": "char:arcane/silco", "relation": "enemy" }
       ],
       "arcs": [
         {
@@ -405,13 +461,17 @@
           "start_at": "S1E4",
           "span": "S1",
           "situations": [
-            {"id": "family_expectations", "weight": 0.7},
-            {"id": "falling_for_someone_unexpected", "weight": 0.7},
-            {"id": "standing_up_to_authority", "weight": 0.6},
-            {"id": "imposter_syndrome", "weight": 0.4}
+            { "id": "family_expectations", "weight": 0.7 },
+            { "id": "falling_for_someone_unexpected", "weight": 0.7 },
+            { "id": "standing_up_to_authority", "weight": 0.6 },
+            { "id": "imposter_syndrome", "weight": 0.4 }
           ],
           "conflicts": ["self_vs_family_expectations", "belonging_vs_integrity"],
-          "emotions": {"start": ["determination", "restlessness", "self_doubt"], "middle": ["curiosity", "anger", "love"], "end": ["love", "self_respect", "grief"]},
+          "emotions": {
+            "start": ["determination", "restlessness", "self_doubt"],
+            "middle": ["curiosity", "anger", "love"],
+            "end": ["love", "self_respect", "grief"]
+          },
           "ending_tone": "bittersweet",
           "intensity": "moderate",
           "warnings": ["war_and_violence", "death_of_loved_one", "addiction"],
@@ -450,13 +510,17 @@
           "start_at": "S2E1",
           "span": "S2",
           "situations": [
-            {"id": "grief_and_loss", "weight": 0.9},
-            {"id": "redemption_after_mistakes", "weight": 0.6},
-            {"id": "becoming_a_manager", "weight": 0.5},
-            {"id": "breakup", "weight": 0.4}
+            { "id": "grief_and_loss", "weight": 0.9 },
+            { "id": "redemption_after_mistakes", "weight": 0.6 },
+            { "id": "becoming_a_manager", "weight": 0.5 },
+            { "id": "breakup", "weight": 0.4 }
           ],
           "conflicts": ["revenge_vs_forgiveness", "power_vs_morality"],
-          "emotions": {"start": ["grief", "anger"], "middle": ["resentment", "loneliness", "guilt"], "end": ["acceptance", "love", "self_respect"]},
+          "emotions": {
+            "start": ["grief", "anger"],
+            "middle": ["resentment", "loneliness", "guilt"],
+            "end": ["acceptance", "love", "self_respect"]
+          },
           "ending_tone": "bittersweet",
           "intensity": "heavy",
           "warnings": ["grief", "death_of_loved_one", "war_and_violence", "betrayal"],
@@ -486,12 +550,12 @@
       "name": "Silco",
       "role": "A soft-spoken, scarred schemer in the undercity who works from the shadows, determined that the undercity will one day be free of the city above.",
       "relations": [
-        {"target": "char:arcane/vander", "relation": "enemy"},
-        {"target": "char:arcane/powder", "relation": "child"},
-        {"target": "char:arcane/vi", "relation": "enemy"},
-        {"target": "char:arcane/caitlyn_kiramman", "relation": "enemy"},
-        {"target": "char:arcane/jayce_talis", "relation": "rival"},
-        {"target": "char:arcane/ekko", "relation": "enemy"}
+        { "target": "char:arcane/vander", "relation": "enemy" },
+        { "target": "char:arcane/powder", "relation": "child" },
+        { "target": "char:arcane/vi", "relation": "enemy" },
+        { "target": "char:arcane/caitlyn_kiramman", "relation": "enemy" },
+        { "target": "char:arcane/jayce_talis", "relation": "rival" },
+        { "target": "char:arcane/ekko", "relation": "enemy" }
       ],
       "arcs": [
         {
@@ -510,15 +574,25 @@
           "start_at": "S1E1",
           "span": "S1",
           "situations": [
-            {"id": "friendship_ending", "weight": 0.7},
-            {"id": "standing_up_to_authority", "weight": 0.6},
-            {"id": "taking_a_big_risk", "weight": 0.5}
+            { "id": "friendship_ending", "weight": 0.7 },
+            { "id": "standing_up_to_authority", "weight": 0.6 },
+            { "id": "taking_a_big_risk", "weight": 0.5 }
           ],
           "conflicts": ["revenge_vs_forgiveness", "power_vs_morality"],
-          "emotions": {"start": ["resentment", "determination"], "middle": ["anger", "pride"], "end": ["pride", "loneliness"]},
+          "emotions": {
+            "start": ["resentment", "determination"],
+            "middle": ["anger", "pride"],
+            "end": ["pride", "loneliness"]
+          },
           "ending_tone": "ambiguous",
           "intensity": "heavy",
-          "warnings": ["war_and_violence", "addiction", "child_endangerment", "death_of_loved_one", "betrayal"],
+          "warnings": [
+            "war_and_violence",
+            "addiction",
+            "child_endangerment",
+            "death_of_loved_one",
+            "betrayal"
+          ],
           "example_user_messages": [
             "My closest friend turned on me years ago and honestly I've built my whole life around proving him wrong.",
             "I'm fighting for something I believe in, but I've started to wonder if it's really about getting even.",
@@ -554,15 +628,25 @@
           "start_at": "S1E4",
           "span": "S1",
           "situations": [
-            {"id": "becoming_a_parent", "weight": 0.8},
-            {"id": "caring_for_family", "weight": 0.6},
-            {"id": "responsibility_you_didnt_ask_for", "weight": 0.6}
+            { "id": "becoming_a_parent", "weight": 0.8 },
+            { "id": "caring_for_family", "weight": 0.6 },
+            { "id": "responsibility_you_didnt_ask_for", "weight": 0.6 }
           ],
           "conflicts": ["career_vs_relationships", "control_vs_trust"],
-          "emotions": {"start": ["love", "pride", "anxiety"], "middle": ["fear", "dread", "confusion"], "end": ["love", "acceptance"]},
+          "emotions": {
+            "start": ["love", "pride", "anxiety"],
+            "middle": ["fear", "dread", "confusion"],
+            "end": ["love", "acceptance"]
+          },
           "ending_tone": "tragic",
           "intensity": "heavy",
-          "warnings": ["death_of_main_character", "war_and_violence", "addiction", "abuse", "betrayal"],
+          "warnings": [
+            "death_of_main_character",
+            "war_and_violence",
+            "addiction",
+            "abuse",
+            "betrayal"
+          ],
           "example_user_messages": [
             "I became a parent later than I expected and I love my kid more than anything, but I don't think I know how to love without trying to control.",
             "My career has always come first and now I'm facing a choice where my child would pay the price.",
@@ -589,10 +673,10 @@
       "name": "Vander",
       "role": "The big-hearted bar owner who keeps the peace in the undercity and is raising four orphaned kids, including the sisters Vi and Powder, as his own.",
       "relations": [
-        {"target": "char:arcane/vi", "relation": "child"},
-        {"target": "char:arcane/powder", "relation": "child"},
-        {"target": "char:arcane/silco", "relation": "enemy"},
-        {"target": "char:arcane/ekko", "relation": "friend"}
+        { "target": "char:arcane/vi", "relation": "child" },
+        { "target": "char:arcane/powder", "relation": "child" },
+        { "target": "char:arcane/silco", "relation": "enemy" },
+        { "target": "char:arcane/ekko", "relation": "friend" }
       ],
       "arcs": [
         {
@@ -611,16 +695,27 @@
           "start_at": "S1E1",
           "span": "S1-S2",
           "situations": [
-            {"id": "caring_for_family", "weight": 0.9},
-            {"id": "redemption_after_mistakes", "weight": 0.7},
-            {"id": "becoming_a_parent", "weight": 0.6},
-            {"id": "responsibility_you_didnt_ask_for", "weight": 0.5}
+            { "id": "caring_for_family", "weight": 0.9 },
+            { "id": "redemption_after_mistakes", "weight": 0.7 },
+            { "id": "becoming_a_parent", "weight": 0.6 },
+            { "id": "responsibility_you_didnt_ask_for", "weight": 0.5 }
           ],
           "conflicts": ["truth_vs_protecting_others", "safety_vs_growth"],
-          "emotions": {"start": ["guilt", "love", "anxiety"], "middle": ["fear", "determination"], "end": ["love", "acceptance"]},
+          "emotions": {
+            "start": ["guilt", "love", "anxiety"],
+            "middle": ["fear", "determination"],
+            "end": ["love", "acceptance"]
+          },
           "ending_tone": "tragic",
           "intensity": "heavy",
-          "warnings": ["death_of_main_character", "war_and_violence", "child_endangerment", "medical_trauma", "torture", "grief"],
+          "warnings": [
+            "death_of_main_character",
+            "war_and_violence",
+            "child_endangerment",
+            "medical_trauma",
+            "torture",
+            "grief"
+          ],
           "example_user_messages": [
             "I did things I'm not proud of when I was younger and now I'm trying to raise kids who won't end up like me.",
             "My teenager thinks I'm weak because I don't fight back, but they don't know what fighting cost me.",
@@ -648,10 +743,10 @@
       "name": "Ekko",
       "role": "A quick, cheeky undercity kid who works at a local shop, idolises Vi and is Powder's best friend.",
       "relations": [
-        {"target": "char:arcane/vi", "relation": "friend"},
-        {"target": "char:arcane/powder", "relation": "friend"},
-        {"target": "char:arcane/vander", "relation": "friend"},
-        {"target": "char:arcane/silco", "relation": "enemy"}
+        { "target": "char:arcane/vi", "relation": "friend" },
+        { "target": "char:arcane/powder", "relation": "friend" },
+        { "target": "char:arcane/vander", "relation": "friend" },
+        { "target": "char:arcane/silco", "relation": "enemy" }
       ],
       "arcs": [
         {
@@ -670,16 +765,26 @@
           "start_at": "S1E1",
           "span": "S1-S2",
           "situations": [
-            {"id": "responsibility_you_didnt_ask_for", "weight": 0.9},
-            {"id": "coming_of_age", "weight": 0.7},
-            {"id": "friendship_ending", "weight": 0.6},
-            {"id": "grief_and_loss", "weight": 0.5}
+            { "id": "responsibility_you_didnt_ask_for", "weight": 0.9 },
+            { "id": "coming_of_age", "weight": 0.7 },
+            { "id": "friendship_ending", "weight": 0.6 },
+            { "id": "grief_and_loss", "weight": 0.5 }
           ],
           "conflicts": ["revenge_vs_forgiveness", "duty_vs_desire"],
-          "emotions": {"start": ["joy", "curiosity"], "middle": ["grief", "loneliness", "determination"], "end": ["hope", "love"]},
+          "emotions": {
+            "start": ["joy", "curiosity"],
+            "middle": ["grief", "loneliness", "determination"],
+            "end": ["hope", "love"]
+          },
           "ending_tone": "bittersweet",
           "intensity": "heavy",
-          "warnings": ["death_of_loved_one", "war_and_violence", "child_endangerment", "addiction", "grief"],
+          "warnings": [
+            "death_of_loved_one",
+            "war_and_violence",
+            "child_endangerment",
+            "addiction",
+            "grief"
+          ],
           "example_user_messages": [
             "I had to become an adult way too early after my family fell apart, and I don't really know how to ask for help.",
             "Everyone in my friend group depends on me to hold things together and I'm tired.",
@@ -716,13 +821,17 @@
           "start_at": "S2E7",
           "span": "S2",
           "situations": [
-            {"id": "responsibility_you_didnt_ask_for", "weight": 0.8},
-            {"id": "moving_somewhere_new", "weight": 0.5},
-            {"id": "falling_for_someone_unexpected", "weight": 0.5},
-            {"id": "starting_over", "weight": 0.4}
+            { "id": "responsibility_you_didnt_ask_for", "weight": 0.8 },
+            { "id": "moving_somewhere_new", "weight": 0.5 },
+            { "id": "falling_for_someone_unexpected", "weight": 0.5 },
+            { "id": "starting_over", "weight": 0.4 }
           ],
           "conflicts": ["duty_vs_desire", "holding_on_vs_letting_go"],
-          "emotions": {"start": ["confusion", "longing"], "middle": ["joy", "love", "belonging"], "end": ["grief", "determination", "hope"]},
+          "emotions": {
+            "start": ["confusion", "longing"],
+            "middle": ["joy", "love", "belonging"],
+            "end": ["grief", "determination", "hope"]
+          },
           "ending_tone": "bittersweet",
           "intensity": "moderate",
           "warnings": ["death_of_loved_one", "war_and_violence", "grief"],

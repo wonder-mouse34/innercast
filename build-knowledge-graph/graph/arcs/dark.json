@@ -6,8 +6,8 @@
       "name": "Jonas Kahnwald",
       "role": "A withdrawn teenager in the small German town of Winden, going back to school after months away following his father's suicide, still haunted by the question of why.",
       "relations": [
-        {"target": "char:dark/hannah_kahnwald", "relation": "parent"},
-        {"target": "char:dark/martha_nielsen", "relation": "partner"}
+        { "target": "char:dark/hannah_kahnwald", "relation": "parent" },
+        { "target": "char:dark/martha_nielsen", "relation": "partner" }
       ],
       "arcs": [
         {
@@ -26,13 +26,17 @@
           "start_at": "S1E1",
           "span": "S1",
           "situations": [
-            {"id": "grief_and_loss", "weight": 0.95},
-            {"id": "coming_of_age", "weight": 0.5},
-            {"id": "identity_and_self_acceptance", "weight": 0.4},
-            {"id": "difficult_parent", "weight": 0.3}
+            { "id": "grief_and_loss", "weight": 0.95 },
+            { "id": "coming_of_age", "weight": 0.5 },
+            { "id": "identity_and_self_acceptance", "weight": 0.4 },
+            { "id": "difficult_parent", "weight": 0.3 }
           ],
           "conflicts": ["truth_vs_protecting_others", "holding_on_vs_letting_go"],
-          "emotions": {"start": ["grief", "guilt", "confusion"], "middle": ["curiosity", "dread", "loneliness"], "end": ["overwhelm", "grief", "determination"]},
+          "emotions": {
+            "start": ["grief", "guilt", "confusion"],
+            "middle": ["curiosity", "dread", "loneliness"],
+            "end": ["overwhelm", "grief", "determination"]
+          },
           "ending_tone": "tragic",
           "intensity": "heavy",
           "warnings": ["self_harm_or_suicide", "death_of_loved_one", "grief", "child_endangerment"],
@@ -75,16 +79,25 @@
           "start_at": "S1E1",
           "span": "S1-S3",
           "situations": [
-            {"id": "unrequited_love", "weight": 0.6},
-            {"id": "friendship_ending", "weight": 0.5},
-            {"id": "coming_of_age", "weight": 0.5},
-            {"id": "breakup", "weight": 0.4}
+            { "id": "unrequited_love", "weight": 0.6 },
+            { "id": "friendship_ending", "weight": 0.5 },
+            { "id": "coming_of_age", "weight": 0.5 },
+            { "id": "breakup", "weight": 0.4 }
           ],
           "conflicts": ["duty_vs_desire", "holding_on_vs_letting_go"],
-          "emotions": {"start": ["jealousy", "longing", "loneliness"], "middle": ["love", "guilt", "confusion"], "end": ["love", "grief", "acceptance"]},
+          "emotions": {
+            "start": ["jealousy", "longing", "loneliness"],
+            "middle": ["love", "guilt", "confusion"],
+            "end": ["love", "grief", "acceptance"]
+          },
           "ending_tone": "bittersweet",
           "intensity": "heavy",
-          "warnings": ["betrayal", "death_of_loved_one", "death_of_main_character", "war_and_violence"],
+          "warnings": [
+            "betrayal",
+            "death_of_loved_one",
+            "death_of_main_character",
+            "war_and_violence"
+          ],
           "example_user_messages": [
             "I came back after a really hard few months and the girl I liked is now dating my best friend.",
             "We kissed once and it meant everything to me, and now she acts like it was nothing.",
@@ -124,16 +137,26 @@
           "start_at": "S2E1",
           "span": "S2-S3",
           "situations": [
-            {"id": "responsibility_you_didnt_ask_for", "weight": 0.9},
-            {"id": "identity_and_self_acceptance", "weight": 0.5},
-            {"id": "redemption_after_mistakes", "weight": 0.4},
-            {"id": "coming_of_age", "weight": 0.4}
+            { "id": "responsibility_you_didnt_ask_for", "weight": 0.9 },
+            { "id": "identity_and_self_acceptance", "weight": 0.5 },
+            { "id": "redemption_after_mistakes", "weight": 0.4 },
+            { "id": "coming_of_age", "weight": 0.4 }
           ],
           "conflicts": ["past_vs_future", "control_vs_trust"],
-          "emotions": {"start": ["determination", "loneliness", "fear"], "middle": ["anger", "confusion", "overwhelm"], "end": ["acceptance", "love", "peace"]},
+          "emotions": {
+            "start": ["determination", "loneliness", "fear"],
+            "middle": ["anger", "confusion", "overwhelm"],
+            "end": ["acceptance", "love", "peace"]
+          },
           "ending_tone": "bittersweet",
           "intensity": "heavy",
-          "warnings": ["war_and_violence", "death_of_loved_one", "death_of_main_character", "self_harm_or_suicide", "betrayal"],
+          "warnings": [
+            "war_and_violence",
+            "death_of_loved_one",
+            "death_of_main_character",
+            "self_harm_or_suicide",
+            "betrayal"
+          ],
           "example_user_messages": [
             "I feel like it's my job to fix everything that went wrong in my family, and it's crushing me.",
             "No matter what I do, I end up repeating the exact mistakes my parents made.",
@@ -164,9 +187,9 @@
       "name": "Martha Nielsen",
       "role": "Ulrich and Katharina's sensitive, outspoken teenage daughter, a budding actress and activist who has been dating Jonas's best friend Bartosz, and whose little brother Mikkel vanishes.",
       "relations": [
-        {"target": "char:dark/ulrich_nielsen", "relation": "parent"},
-        {"target": "char:dark/katharina_nielsen", "relation": "parent"},
-        {"target": "char:dark/jonas_kahnwald", "relation": "partner"}
+        { "target": "char:dark/ulrich_nielsen", "relation": "parent" },
+        { "target": "char:dark/katharina_nielsen", "relation": "parent" },
+        { "target": "char:dark/jonas_kahnwald", "relation": "partner" }
       ],
       "arcs": [
         {
@@ -185,13 +208,17 @@
           "start_at": "S1E1",
           "span": "S1-S2",
           "situations": [
-            {"id": "breakup", "weight": 0.6},
-            {"id": "grief_and_loss", "weight": 0.6},
-            {"id": "coming_of_age", "weight": 0.5},
-            {"id": "falling_for_someone_unexpected", "weight": 0.3}
+            { "id": "breakup", "weight": 0.6 },
+            { "id": "grief_and_loss", "weight": 0.6 },
+            { "id": "coming_of_age", "weight": 0.5 },
+            { "id": "falling_for_someone_unexpected", "weight": 0.3 }
           ],
           "conflicts": ["duty_vs_desire", "holding_on_vs_letting_go"],
-          "emotions": {"start": ["longing", "guilt", "confusion"], "middle": ["rejection", "anger", "grief"], "end": ["hope", "love", "fear"]},
+          "emotions": {
+            "start": ["longing", "guilt", "confusion"],
+            "middle": ["rejection", "anger", "grief"],
+            "end": ["hope", "love", "fear"]
+          },
           "ending_tone": "tragic",
           "intensity": "heavy",
           "warnings": ["child_endangerment", "grief", "betrayal", "death_of_main_character"],
@@ -233,16 +260,25 @@
           "start_at": "S3E1",
           "span": "S3",
           "situations": [
-            {"id": "identity_and_self_acceptance", "weight": 0.8},
-            {"id": "standing_up_to_authority", "weight": 0.6},
-            {"id": "coming_of_age", "weight": 0.5},
-            {"id": "responsibility_you_didnt_ask_for", "weight": 0.4}
+            { "id": "identity_and_self_acceptance", "weight": 0.8 },
+            { "id": "standing_up_to_authority", "weight": 0.6 },
+            { "id": "coming_of_age", "weight": 0.5 },
+            { "id": "responsibility_you_didnt_ask_for", "weight": 0.4 }
           ],
           "conflicts": ["control_vs_trust", "self_vs_family_expectations"],
-          "emotions": {"start": ["confusion", "fear", "curiosity"], "middle": ["love", "betrayal", "anger"], "end": ["determination", "acceptance", "peace"]},
+          "emotions": {
+            "start": ["confusion", "fear", "curiosity"],
+            "middle": ["love", "betrayal", "anger"],
+            "end": ["determination", "acceptance", "peace"]
+          },
           "ending_tone": "bittersweet",
           "intensity": "heavy",
-          "warnings": ["death_of_loved_one", "death_of_main_character", "betrayal", "war_and_violence"],
+          "warnings": [
+            "death_of_loved_one",
+            "death_of_main_character",
+            "betrayal",
+            "war_and_violence"
+          ],
           "example_user_messages": [
             "Everyone in my life seems to have a plan for me and nobody has asked what I want.",
             "I just found out someone I trusted has been steering my decisions for years.",
@@ -272,11 +308,11 @@
       "name": "Ulrich Nielsen",
       "role": "A hot-headed Winden police officer, husband of school principal Katharina and father of three, whose own younger brother Mads vanished without a trace when Ulrich was a teenager.",
       "relations": [
-        {"target": "char:dark/katharina_nielsen", "relation": "partner"},
-        {"target": "char:dark/martha_nielsen", "relation": "child"},
-        {"target": "char:dark/hannah_kahnwald", "relation": "partner"},
-        {"target": "char:dark/charlotte_doppler", "relation": "boss"},
-        {"target": "char:dark/regina_tiedemann", "relation": "enemy"}
+        { "target": "char:dark/katharina_nielsen", "relation": "partner" },
+        { "target": "char:dark/martha_nielsen", "relation": "child" },
+        { "target": "char:dark/hannah_kahnwald", "relation": "partner" },
+        { "target": "char:dark/charlotte_doppler", "relation": "boss" },
+        { "target": "char:dark/regina_tiedemann", "relation": "enemy" }
       ],
       "arcs": [
         {
@@ -295,12 +331,16 @@
           "start_at": "S1E1",
           "span": "S1-S3",
           "situations": [
-            {"id": "grief_and_loss", "weight": 0.9},
-            {"id": "caring_for_family", "weight": 0.5},
-            {"id": "standing_up_to_authority", "weight": 0.5}
+            { "id": "grief_and_loss", "weight": 0.9 },
+            { "id": "caring_for_family", "weight": 0.5 },
+            { "id": "standing_up_to_authority", "weight": 0.5 }
           ],
           "conflicts": ["holding_on_vs_letting_go", "revenge_vs_forgiveness"],
-          "emotions": {"start": ["fear", "anger", "dread"], "middle": ["determination", "anger", "loneliness"], "end": ["grief", "loneliness", "longing"]},
+          "emotions": {
+            "start": ["fear", "anger", "dread"],
+            "middle": ["determination", "anger", "loneliness"],
+            "end": ["grief", "loneliness", "longing"]
+          },
           "ending_tone": "tragic",
           "intensity": "heavy",
           "warnings": ["child_endangerment", "war_and_violence", "grief", "death_of_loved_one"],
@@ -343,12 +383,16 @@
           "start_at": "S1E1",
           "span": "S1",
           "situations": [
-            {"id": "breakup", "weight": 0.6},
-            {"id": "redemption_after_mistakes", "weight": 0.4},
-            {"id": "caring_for_family", "weight": 0.3}
+            { "id": "breakup", "weight": 0.6 },
+            { "id": "redemption_after_mistakes", "weight": 0.4 },
+            { "id": "caring_for_family", "weight": 0.3 }
           ],
           "conflicts": ["duty_vs_desire", "truth_vs_protecting_others"],
-          "emotions": {"start": ["guilt", "restlessness"], "middle": ["guilt", "anger", "betrayal"], "end": ["anger", "loneliness"]},
+          "emotions": {
+            "start": ["guilt", "restlessness"],
+            "middle": ["guilt", "anger", "betrayal"],
+            "end": ["anger", "loneliness"]
+          },
           "ending_tone": "tragic",
           "intensity": "moderate",
           "warnings": ["betrayal", "domestic_violence"],
@@ -380,9 +424,9 @@
       "name": "Charlotte Doppler",
       "role": "Winden's composed, all-business chief of police, married to therapist Peter Doppler with two daughters, now facing a string of missing children.",
       "relations": [
-        {"target": "char:dark/ulrich_nielsen", "relation": "colleague"},
-        {"target": "char:dark/hannah_kahnwald", "relation": "friend"},
-        {"target": "char:dark/katharina_nielsen", "relation": "friend"}
+        { "target": "char:dark/ulrich_nielsen", "relation": "colleague" },
+        { "target": "char:dark/hannah_kahnwald", "relation": "friend" },
+        { "target": "char:dark/katharina_nielsen", "relation": "friend" }
       ],
       "arcs": [
         {
@@ -401,12 +445,16 @@
           "start_at": "S1E1",
           "span": "S1-S2",
           "situations": [
-            {"id": "burnout_at_work", "weight": 0.6},
-            {"id": "caring_for_family", "weight": 0.5},
-            {"id": "loneliness", "weight": 0.5}
+            { "id": "burnout_at_work", "weight": 0.6 },
+            { "id": "caring_for_family", "weight": 0.5 },
+            { "id": "loneliness", "weight": 0.5 }
           ],
           "conflicts": ["career_vs_relationships", "truth_vs_protecting_others"],
-          "emotions": {"start": ["anxiety", "loneliness", "numbness"], "middle": ["confusion", "determination", "betrayal"], "end": ["curiosity", "dread", "grief"]},
+          "emotions": {
+            "start": ["anxiety", "loneliness", "numbness"],
+            "middle": ["confusion", "determination", "betrayal"],
+            "end": ["curiosity", "dread", "grief"]
+          },
           "ending_tone": "ambiguous",
           "intensity": "moderate",
           "warnings": ["child_endangerment", "betrayal", "grief"],
@@ -446,12 +494,16 @@
           "start_at": "S2",
           "span": "S2-S3",
           "situations": [
-            {"id": "identity_and_self_acceptance", "weight": 0.9},
-            {"id": "grief_and_loss", "weight": 0.4},
-            {"id": "difficult_parent", "weight": 0.3}
+            { "id": "identity_and_self_acceptance", "weight": 0.9 },
+            { "id": "grief_and_loss", "weight": 0.4 },
+            { "id": "difficult_parent", "weight": 0.3 }
           ],
           "conflicts": ["past_vs_future", "truth_vs_protecting_others"],
-          "emotions": {"start": ["confusion", "longing", "anxiety"], "middle": ["grief", "betrayal", "curiosity"], "end": ["acceptance", "love", "grief"]},
+          "emotions": {
+            "start": ["confusion", "longing", "anxiety"],
+            "middle": ["grief", "betrayal", "curiosity"],
+            "end": ["acceptance", "love", "grief"]
+          },
           "ending_tone": "tragic",
           "intensity": "heavy",
           "warnings": ["child_endangerment", "war_and_violence", "death_of_loved_one"],
@@ -483,10 +535,10 @@
       "name": "Hannah Kahnwald",
       "role": "Jonas's mother, a physiotherapist recently widowed by her husband Michael's suicide, who is secretly having an affair with her old school friend Ulrich, the married police officer.",
       "relations": [
-        {"target": "char:dark/jonas_kahnwald", "relation": "child"},
-        {"target": "char:dark/ulrich_nielsen", "relation": "partner"},
-        {"target": "char:dark/katharina_nielsen", "relation": "rival"},
-        {"target": "char:dark/charlotte_doppler", "relation": "friend"}
+        { "target": "char:dark/jonas_kahnwald", "relation": "child" },
+        { "target": "char:dark/ulrich_nielsen", "relation": "partner" },
+        { "target": "char:dark/katharina_nielsen", "relation": "rival" },
+        { "target": "char:dark/charlotte_doppler", "relation": "friend" }
       ],
       "arcs": [
         {
@@ -505,13 +557,17 @@
           "start_at": "S1E1",
           "span": "S1-S2",
           "situations": [
-            {"id": "unrequited_love", "weight": 0.8},
-            {"id": "grief_and_loss", "weight": 0.5},
-            {"id": "loneliness", "weight": 0.5},
-            {"id": "breakup", "weight": 0.4}
+            { "id": "unrequited_love", "weight": 0.8 },
+            { "id": "grief_and_loss", "weight": 0.5 },
+            { "id": "loneliness", "weight": 0.5 },
+            { "id": "breakup", "weight": 0.4 }
           ],
           "conflicts": ["duty_vs_desire", "revenge_vs_forgiveness"],
-          "emotions": {"start": ["longing", "loneliness", "grief"], "middle": ["jealousy", "rejection", "anger"], "end": ["loneliness", "resentment", "grief"]},
+          "emotions": {
+            "start": ["longing", "loneliness", "grief"],
+            "middle": ["jealousy", "rejection", "anger"],
+            "end": ["loneliness", "resentment", "grief"]
+          },
           "ending_tone": "tragic",
           "intensity": "heavy",
           "warnings": ["self_harm_or_suicide", "betrayal", "domestic_violence", "grief"],
@@ -553,13 +609,17 @@
           "start_at": "S2",
           "span": "S2-S3",
           "situations": [
-            {"id": "starting_over", "weight": 0.9},
-            {"id": "becoming_a_parent", "weight": 0.6},
-            {"id": "moving_somewhere_new", "weight": 0.5},
-            {"id": "redemption_after_mistakes", "weight": 0.4}
+            { "id": "starting_over", "weight": 0.9 },
+            { "id": "becoming_a_parent", "weight": 0.6 },
+            { "id": "moving_somewhere_new", "weight": 0.5 },
+            { "id": "redemption_after_mistakes", "weight": 0.4 }
           ],
           "conflicts": ["independence_vs_connection", "past_vs_future"],
-          "emotions": {"start": ["loneliness", "resentment", "freedom"], "middle": ["hope", "rejection", "fear"], "end": ["guilt", "love", "acceptance"]},
+          "emotions": {
+            "start": ["loneliness", "resentment", "freedom"],
+            "middle": ["hope", "rejection", "fear"],
+            "end": ["guilt", "love", "acceptance"]
+          },
           "ending_tone": "tragic",
           "intensity": "heavy",
           "warnings": ["death_of_main_character", "child_endangerment", "betrayal"],
@@ -591,9 +651,7 @@
       "id": "char:dark/claudia_tiedemann",
       "name": "Claudia Tiedemann",
       "role": "The ambitious, hard-driving new director of Winden's nuclear power plant, a single mother who is openly impatient with her shy daughter Regina.",
-      "relations": [
-        {"target": "char:dark/regina_tiedemann", "relation": "child"}
-      ],
+      "relations": [{ "target": "char:dark/regina_tiedemann", "relation": "child" }],
       "arcs": [
         {
           "id": "arc:dark/claudia_tiedemann/career_before_family",
@@ -611,13 +669,17 @@
           "start_at": "S1E3",
           "span": "S1-S2",
           "situations": [
-            {"id": "becoming_a_manager", "weight": 0.6},
-            {"id": "redemption_after_mistakes", "weight": 0.5},
-            {"id": "caring_for_family", "weight": 0.4},
-            {"id": "burnout_at_work", "weight": 0.3}
+            { "id": "becoming_a_manager", "weight": 0.6 },
+            { "id": "redemption_after_mistakes", "weight": 0.5 },
+            { "id": "caring_for_family", "weight": 0.4 },
+            { "id": "burnout_at_work", "weight": 0.3 }
           ],
           "conflicts": ["career_vs_relationships", "power_vs_morality"],
-          "emotions": {"start": ["pride", "determination", "restlessness"], "middle": ["curiosity", "guilt", "fear"], "end": ["guilt", "grief", "determination"]},
+          "emotions": {
+            "start": ["pride", "determination", "restlessness"],
+            "middle": ["curiosity", "guilt", "fear"],
+            "end": ["guilt", "grief", "determination"]
+          },
           "ending_tone": "tragic",
           "intensity": "heavy",
           "warnings": ["death_of_loved_one", "serious_illness", "self_harm_or_suicide"],
@@ -659,15 +721,24 @@
           "start_at": "S2",
           "span": "S2-S3",
           "situations": [
-            {"id": "caring_for_family", "weight": 0.8},
-            {"id": "redemption_after_mistakes", "weight": 0.7},
-            {"id": "responsibility_you_didnt_ask_for", "weight": 0.4}
+            { "id": "caring_for_family", "weight": 0.8 },
+            { "id": "redemption_after_mistakes", "weight": 0.7 },
+            { "id": "responsibility_you_didnt_ask_for", "weight": 0.4 }
           ],
           "conflicts": ["power_vs_morality", "truth_vs_protecting_others"],
-          "emotions": {"start": ["fear", "guilt", "determination"], "middle": ["grief", "loneliness", "determination"], "end": ["acceptance", "peace", "love"]},
+          "emotions": {
+            "start": ["fear", "guilt", "determination"],
+            "middle": ["grief", "loneliness", "determination"],
+            "end": ["acceptance", "peace", "love"]
+          },
           "ending_tone": "bittersweet",
           "intensity": "heavy",
-          "warnings": ["death_of_loved_one", "death_of_main_character", "serious_illness", "war_and_violence"],
+          "warnings": [
+            "death_of_loved_one",
+            "death_of_main_character",
+            "serious_illness",
+            "war_and_violence"
+          ],
           "example_user_messages": [
             "I wasn't there for my daughter when she was growing up and now I'd do anything to protect her.",
             "I've started lying to people to get what my kid needs and I don't know where to stop.",
@@ -697,11 +768,11 @@
       "name": "Katharina Nielsen",
       "role": "The tough, no-nonsense principal of Winden's high school, married to police officer Ulrich and mother of Magnus, Martha and Mikkel, unaware that her husband is having an affair with her friend Hannah.",
       "relations": [
-        {"target": "char:dark/ulrich_nielsen", "relation": "partner"},
-        {"target": "char:dark/martha_nielsen", "relation": "child"},
-        {"target": "char:dark/hannah_kahnwald", "relation": "friend"},
-        {"target": "char:dark/charlotte_doppler", "relation": "friend"},
-        {"target": "char:dark/regina_tiedemann", "relation": "enemy"}
+        { "target": "char:dark/ulrich_nielsen", "relation": "partner" },
+        { "target": "char:dark/martha_nielsen", "relation": "child" },
+        { "target": "char:dark/hannah_kahnwald", "relation": "friend" },
+        { "target": "char:dark/charlotte_doppler", "relation": "friend" },
+        { "target": "char:dark/regina_tiedemann", "relation": "enemy" }
       ],
       "arcs": [
         {
@@ -720,12 +791,16 @@
           "start_at": "S1E1",
           "span": "S1-S2",
           "situations": [
-            {"id": "grief_and_loss", "weight": 0.8},
-            {"id": "caring_for_family", "weight": 0.5},
-            {"id": "breakup", "weight": 0.4}
+            { "id": "grief_and_loss", "weight": 0.8 },
+            { "id": "caring_for_family", "weight": 0.5 },
+            { "id": "breakup", "weight": 0.4 }
           ],
           "conflicts": ["holding_on_vs_letting_go", "revenge_vs_forgiveness"],
-          "emotions": {"start": ["fear", "dread", "anxiety"], "middle": ["betrayal", "anger", "grief"], "end": ["numbness", "grief", "determination"]},
+          "emotions": {
+            "start": ["fear", "dread", "anxiety"],
+            "middle": ["betrayal", "anger", "grief"],
+            "end": ["numbness", "grief", "determination"]
+          },
           "ending_tone": "tragic",
           "intensity": "heavy",
           "warnings": ["child_endangerment", "betrayal", "grief", "war_and_violence"],
@@ -766,12 +841,16 @@
           "start_at": "S3",
           "span": "S3",
           "situations": [
-            {"id": "caring_for_family", "weight": 0.8},
-            {"id": "difficult_parent", "weight": 0.7},
-            {"id": "taking_a_big_risk", "weight": 0.6}
+            { "id": "caring_for_family", "weight": 0.8 },
+            { "id": "difficult_parent", "weight": 0.7 },
+            { "id": "taking_a_big_risk", "weight": 0.6 }
           ],
           "conflicts": ["past_vs_future", "holding_on_vs_letting_go"],
-          "emotions": {"start": ["determination", "hope", "fear"], "middle": ["longing", "anger", "fear"], "end": ["fear", "love", "grief"]},
+          "emotions": {
+            "start": ["determination", "hope", "fear"],
+            "middle": ["longing", "anger", "fear"],
+            "end": ["fear", "love", "grief"]
+          },
           "ending_tone": "tragic",
           "intensity": "heavy",
           "warnings": ["abuse", "domestic_violence", "death_of_main_character", "graphic_gore"],
@@ -802,9 +881,9 @@
       "name": "Regina Tiedemann",
       "role": "The anxious, embattled owner of the newly opened Waldhotel Winden, married to power plant director Aleksander with a teenage son, Bartosz, who still bristles around Katharina and Ulrich.",
       "relations": [
-        {"target": "char:dark/claudia_tiedemann", "relation": "parent"},
-        {"target": "char:dark/katharina_nielsen", "relation": "enemy"},
-        {"target": "char:dark/ulrich_nielsen", "relation": "enemy"}
+        { "target": "char:dark/claudia_tiedemann", "relation": "parent" },
+        { "target": "char:dark/katharina_nielsen", "relation": "enemy" },
+        { "target": "char:dark/ulrich_nielsen", "relation": "enemy" }
       ],
       "arcs": [
         {
@@ -823,13 +902,17 @@
           "start_at": "S1E1",
           "span": "S1-S2",
           "situations": [
-            {"id": "difficult_parent", "weight": 0.7},
-            {"id": "loneliness", "weight": 0.5},
-            {"id": "identity_and_self_acceptance", "weight": 0.4},
-            {"id": "confidence_struggle", "weight": 0.4}
+            { "id": "difficult_parent", "weight": 0.7 },
+            { "id": "loneliness", "weight": 0.5 },
+            { "id": "identity_and_self_acceptance", "weight": 0.4 },
+            { "id": "confidence_struggle", "weight": 0.4 }
           ],
           "conflicts": ["revenge_vs_forgiveness", "past_vs_future"],
-          "emotions": {"start": ["resentment", "loneliness", "inadequacy"], "middle": ["anger", "longing", "shame"], "end": ["relief", "love", "acceptance"]},
+          "emotions": {
+            "start": ["resentment", "loneliness", "inadequacy"],
+            "middle": ["anger", "longing", "shame"],
+            "end": ["relief", "love", "acceptance"]
+          },
           "ending_tone": "bittersweet",
           "intensity": "moderate",
           "warnings": ["abuse", "self_harm_or_suicide"],
@@ -870,12 +953,16 @@
           "start_at": "S1E1",
           "span": "S1-S3",
           "situations": [
-            {"id": "illness_or_injury", "weight": 0.9},
-            {"id": "starting_a_business", "weight": 0.5},
-            {"id": "caring_for_family", "weight": 0.3}
+            { "id": "illness_or_injury", "weight": 0.9 },
+            { "id": "starting_a_business", "weight": 0.5 },
+            { "id": "caring_for_family", "weight": 0.3 }
           ],
           "conflicts": ["control_vs_trust", "independence_vs_connection"],
-          "emotions": {"start": ["anxiety", "overwhelm", "loneliness"], "middle": ["fear", "dread", "hope"], "end": ["fear", "loneliness", "love"]},
+          "emotions": {
+            "start": ["anxiety", "overwhelm", "loneliness"],
+            "middle": ["fear", "dread", "hope"],
+            "end": ["fear", "loneliness", "love"]
+          },
           "ending_tone": "tragic",
           "intensity": "heavy",
           "warnings": ["serious_illness", "medical_trauma", "death_of_main_character", "betrayal"],

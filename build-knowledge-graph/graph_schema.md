@@ -5,60 +5,62 @@ One bundled JSON file: `qwen_server/graph.json`. Every node has `id` + `type`; e
 
 ```json
 {
-  "meta": {"version": "0.1", "generated": "2026-09-12", "counts": {"nodes": 0, "edges": 0}},
-  "nodes": [ {"id": "arc:avatar/zuko/2", "type": "arc", "...": "..."} ],
-  "edges": [ {"source": "arc:avatar/zuko/2", "target": "conflict:belonging_vs_integrity", "type": "FACES"} ]
+  "meta": { "version": "0.1", "generated": "2026-09-12", "counts": { "nodes": 0, "edges": 0 } },
+  "nodes": [{ "id": "arc:avatar/zuko/2", "type": "arc", "...": "..." }],
+  "edges": [
+    { "source": "arc:avatar/zuko/2", "target": "conflict:belonging_vs_integrity", "type": "FACES" }
+  ]
 }
 ```
 
 ## Node types
 
-| type | id pattern | fields |
-|---|---|---|
-| `show` | `show:<slug>` | `name`, `format` (live-action / animated / anime), `genres[]`, `setting`, `culture`, `era`, `tone`, `seasons` |
-| `character` | `char:<show>/<slug>` | `name`, `show`, `role` (spoiler-safe one-liner) |
-| `arc` | `arc:<show>/<char>/<n>` (neutral number — ids never describe the plot) | see below |
-| `pattern` | `pattern:<slug>` | `label`, `description` — setting-free story pattern, e.g. "outgrowing the role your family assigned you" |
-| `emotion` | `emotion:<slug>` | `label` (fixed vocabulary) |
-| `conflict` | `conflict:<slug>` | `label` (fixed vocabulary, e.g. "belonging vs integrity") |
-| `situation` | `situation:<slug>` | `label` (real-life situation, e.g. "becoming a manager") |
-| `warning` | `warning:<slug>` | `label` (content warning, e.g. "death of a main character") |
+| type        | id pattern                                                             | fields                                                                                                        |
+| ----------- | ---------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------- |
+| `show`      | `show:<slug>`                                                          | `name`, `format` (live-action / animated / anime), `genres[]`, `setting`, `culture`, `era`, `tone`, `seasons` |
+| `character` | `char:<show>/<slug>`                                                   | `name`, `show`, `role` (spoiler-safe one-liner)                                                               |
+| `arc`       | `arc:<show>/<char>/<n>` (neutral number — ids never describe the plot) | see below                                                                                                     |
+| `pattern`   | `pattern:<slug>`                                                       | `label`, `description` — setting-free story pattern, e.g. "outgrowing the role your family assigned you"      |
+| `emotion`   | `emotion:<slug>`                                                       | `label` (fixed vocabulary)                                                                                    |
+| `conflict`  | `conflict:<slug>`                                                      | `label` (fixed vocabulary, e.g. "belonging vs integrity")                                                     |
+| `situation` | `situation:<slug>`                                                     | `label` (real-life situation, e.g. "becoming a manager")                                                      |
+| `warning`   | `warning:<slug>`                                                       | `label` (content warning, e.g. "death of a main character")                                                   |
 
 ### Arc node fields
 
 Everything outside `spoiler` is safe to show the user. **`spoiler` must never be passed to the
 LLM step that writes the user-facing answer** — only to the step that chooses characters.
 
-| field | meaning |
-|---|---|
-| `title` | spoiler-safe arc name, e.g. "Chasing a father's approval" |
-| `character`, `show` | ids |
-| `pattern_text` | setting-free description (no names, places, era, tech) — the main text for matching |
-| `hook` | the character's situation at the *start* of the arc |
-| `why_relatable` | the questions they face (never the answers) |
-| `watch_for` | 2–3 open questions to notice while watching |
-| `start_at` / `span` | where to start watching (e.g. "S1E1"), which seasons the arc covers |
-| `ending_tone` | `hopeful` / `bittersweet` / `tragic` / `ambiguous` |
-| `intensity` | `light` / `moderate` / `heavy` |
-| `example_user_messages` | 3–5 first-person messages a user in this situation might write |
-| `spoiler.summary` | full arc summary incl. outcome |
-| `spoiler.key_events` | reveals, deaths, betrayals — used to check the answer for leaks |
-| `spoiler.got_right` / `spoiler.got_wrong` | what the character gets right and wrong |
+| field                                     | meaning                                                                             |
+| ----------------------------------------- | ----------------------------------------------------------------------------------- |
+| `title`                                   | spoiler-safe arc name, e.g. "Chasing a father's approval"                           |
+| `character`, `show`                       | ids                                                                                 |
+| `pattern_text`                            | setting-free description (no names, places, era, tech) — the main text for matching |
+| `hook`                                    | the character's situation at the _start_ of the arc                                 |
+| `why_relatable`                           | the questions they face (never the answers)                                         |
+| `watch_for`                               | 2–3 open questions to notice while watching                                         |
+| `start_at` / `span`                       | where to start watching (e.g. "S1E1"), which seasons the arc covers                 |
+| `ending_tone`                             | `hopeful` / `bittersweet` / `tragic` / `ambiguous`                                  |
+| `intensity`                               | `light` / `moderate` / `heavy`                                                      |
+| `example_user_messages`                   | 3–5 first-person messages a user in this situation might write                      |
+| `spoiler.summary`                         | full arc summary incl. outcome                                                      |
+| `spoiler.key_events`                      | reveals, deaths, betrayals — used to check the answer for leaks                     |
+| `spoiler.got_right` / `spoiler.got_wrong` | what the character gets right and wrong                                             |
 
 ## Edge types
 
-| type | from → to | props |
-|---|---|---|
-| `IN_SHOW` | character → show | |
-| `HAS_ARC` | character → arc | |
-| `INSTANCE_OF` | arc → pattern | |
-| `BROADER` | pattern → pattern | (child → more abstract parent) |
-| `ABOUT` | arc → situation | `weight` 0–1 |
-| `FACES` | arc → conflict | |
-| `FEELS` | arc → emotion | `phase`: `start` / `middle` / `end` |
-| `HAS_WARNING` | arc → warning | |
-| `RELATES_TO` | character → character | `relation` (mentor, parent, rival, partner, friend…) |
-| `RESONATES_WITH` | arc → arc | `bridge`: why two arcs from different worlds share a vibe |
+| type             | from → to             | props                                                     |
+| ---------------- | --------------------- | --------------------------------------------------------- |
+| `IN_SHOW`        | character → show      |                                                           |
+| `HAS_ARC`        | character → arc       |                                                           |
+| `INSTANCE_OF`    | arc → pattern         |                                                           |
+| `BROADER`        | pattern → pattern     | (child → more abstract parent)                            |
+| `ABOUT`          | arc → situation       | `weight` 0–1                                              |
+| `FACES`          | arc → conflict        |                                                           |
+| `FEELS`          | arc → emotion         | `phase`: `start` / `middle` / `end`                       |
+| `HAS_WARNING`    | arc → warning         |                                                           |
+| `RELATES_TO`     | character → character | `relation` (mentor, parent, rival, partner, friend…)      |
+| `RESONATES_WITH` | arc → arc             | `bridge`: why two arcs from different worlds share a vibe |
 
 ### Spoiler flags on edges
 

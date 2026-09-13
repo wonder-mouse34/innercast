@@ -6,12 +6,12 @@
       "name": "Worf",
       "role": "A Klingon orphan raised by adoptive human parents, serving as the first Klingon officer in Starfleet aboard the Enterprise.",
       "relations": [
-        {"target": "char:star_trek/jean_luc_picard", "relation": "boss"},
-        {"target": "char:star_trek/benjamin_sisko", "relation": "mentor"},
-        {"target": "char:star_trek/data", "relation": "friend"},
-        {"target": "char:star_trek/kira_nerys", "relation": "colleague"},
-        {"target": "char:star_trek/odo", "relation": "colleague"},
-        {"target": "char:star_trek/julian_bashir", "relation": "colleague"}
+        { "target": "char:star_trek/jean_luc_picard", "relation": "boss" },
+        { "target": "char:star_trek/benjamin_sisko", "relation": "mentor" },
+        { "target": "char:star_trek/data", "relation": "friend" },
+        { "target": "char:star_trek/kira_nerys", "relation": "colleague" },
+        { "target": "char:star_trek/odo", "relation": "colleague" },
+        { "target": "char:star_trek/julian_bashir", "relation": "colleague" }
       ],
       "arcs": [
         {
@@ -30,16 +30,25 @@
           "start_at": "TNG S1E20",
           "span": "TNG S1 - DS9 S7",
           "situations": [
-            {"id": "identity_and_self_acceptance", "weight": 0.9},
-            {"id": "finding_your_people", "weight": 0.6},
-            {"id": "family_expectations", "weight": 0.6},
-            {"id": "standing_up_to_authority", "weight": 0.5}
+            { "id": "identity_and_self_acceptance", "weight": 0.9 },
+            { "id": "finding_your_people", "weight": 0.6 },
+            { "id": "family_expectations", "weight": 0.6 },
+            { "id": "standing_up_to_authority", "weight": 0.5 }
           ],
           "conflicts": ["belonging_vs_integrity", "self_vs_family_expectations"],
-          "emotions": {"start": ["longing", "loneliness", "pride"], "middle": ["shame", "betrayal", "anger"], "end": ["self_respect", "acceptance"]},
+          "emotions": {
+            "start": ["longing", "loneliness", "pride"],
+            "middle": ["shame", "betrayal", "anger"],
+            "end": ["self_respect", "acceptance"]
+          },
           "ending_tone": "hopeful",
           "intensity": "moderate",
-          "warnings": ["war_and_violence", "death_of_loved_one", "betrayal", "self_harm_or_suicide"],
+          "warnings": [
+            "war_and_violence",
+            "death_of_loved_one",
+            "betrayal",
+            "self_harm_or_suicide"
+          ],
           "example_user_messages": [
             "I'm the kid of immigrants and I feel like I'm not enough of either culture.",
             "I was adopted and I've tried so hard to connect with my birth culture, but when I finally met people from there they treated me like a fake.",
@@ -78,13 +87,17 @@
           "start_at": "TNG S4E7",
           "span": "TNG S4 - DS9 S6",
           "situations": [
-            {"id": "becoming_a_parent", "weight": 0.9},
-            {"id": "family_expectations", "weight": 0.6},
-            {"id": "grief_and_loss", "weight": 0.5},
-            {"id": "caring_for_family", "weight": 0.5}
+            { "id": "becoming_a_parent", "weight": 0.9 },
+            { "id": "family_expectations", "weight": 0.6 },
+            { "id": "grief_and_loss", "weight": 0.5 },
+            { "id": "caring_for_family", "weight": 0.5 }
           ],
           "conflicts": ["control_vs_trust", "career_vs_relationships"],
-          "emotions": {"start": ["fear", "inadequacy"], "middle": ["grief", "guilt", "anger"], "end": ["love", "acceptance"]},
+          "emotions": {
+            "start": ["fear", "inadequacy"],
+            "middle": ["grief", "guilt", "anger"],
+            "end": ["love", "acceptance"]
+          },
           "ending_tone": "bittersweet",
           "intensity": "moderate",
           "warnings": ["death_of_loved_one", "grief", "war_and_violence"],
@@ -123,15 +136,24 @@
           "start_at": "DS9 S5E3",
           "span": "DS9 S5 - S7",
           "situations": [
-            {"id": "falling_for_someone_unexpected", "weight": 0.8},
-            {"id": "grief_and_loss", "weight": 0.8},
-            {"id": "moving_somewhere_new", "weight": 0.3}
+            { "id": "falling_for_someone_unexpected", "weight": 0.8 },
+            { "id": "grief_and_loss", "weight": 0.8 },
+            { "id": "moving_somewhere_new", "weight": 0.3 }
           ],
           "conflicts": ["duty_vs_desire", "holding_on_vs_letting_go"],
-          "emotions": {"start": ["loneliness", "curiosity"], "middle": ["love", "jealousy", "joy"], "end": ["grief", "anger", "acceptance"]},
+          "emotions": {
+            "start": ["loneliness", "curiosity"],
+            "middle": ["love", "jealousy", "joy"],
+            "end": ["grief", "anger", "acceptance"]
+          },
           "ending_tone": "bittersweet",
           "intensity": "heavy",
-          "warnings": ["death_of_main_character", "death_of_loved_one", "grief", "war_and_violence"],
+          "warnings": [
+            "death_of_main_character",
+            "death_of_loved_one",
+            "grief",
+            "war_and_violence"
+          ],
           "example_user_messages": [
             "I'm a really private person and I just started dating someone who is my complete opposite. I don't know how to loosen up.",
             "My partner has a lot of exes and I can't stop feeling jealous even though I know it's irrational.",
@@ -161,10 +183,10 @@
       "name": "Kira Nerys",
       "role": "A former resistance fighter from Bajor, a world just freed from occupation, now serving as Bajoran liaison officer on a space station run by a Federation she distrusts.",
       "relations": [
-        {"target": "char:star_trek/benjamin_sisko", "relation": "boss"},
-        {"target": "char:star_trek/odo", "relation": "friend"},
-        {"target": "char:star_trek/julian_bashir", "relation": "colleague"},
-        {"target": "char:star_trek/worf", "relation": "colleague"}
+        { "target": "char:star_trek/benjamin_sisko", "relation": "boss" },
+        { "target": "char:star_trek/odo", "relation": "friend" },
+        { "target": "char:star_trek/julian_bashir", "relation": "colleague" },
+        { "target": "char:star_trek/worf", "relation": "colleague" }
       ],
       "arcs": [
         {
@@ -183,13 +205,17 @@
           "start_at": "DS9 S1E1",
           "span": "DS9 S1 - S7",
           "situations": [
-            {"id": "new_job", "weight": 0.7},
-            {"id": "starting_over", "weight": 0.7},
-            {"id": "standing_up_to_authority", "weight": 0.6},
-            {"id": "identity_and_self_acceptance", "weight": 0.6}
+            { "id": "new_job", "weight": 0.7 },
+            { "id": "starting_over", "weight": 0.7 },
+            { "id": "standing_up_to_authority", "weight": 0.6 },
+            { "id": "identity_and_self_acceptance", "weight": 0.6 }
           ],
           "conflicts": ["past_vs_future", "control_vs_trust"],
-          "emotions": {"start": ["anger", "resentment", "restlessness"], "middle": ["confusion", "guilt", "determination"], "end": ["self_respect", "confidence", "peace"]},
+          "emotions": {
+            "start": ["anger", "resentment", "restlessness"],
+            "middle": ["confusion", "guilt", "determination"],
+            "end": ["self_respect", "confidence", "peace"]
+          },
           "ending_tone": "hopeful",
           "intensity": "heavy",
           "warnings": ["war_and_violence", "torture", "death_of_loved_one", "self_harm_or_suicide"],
@@ -231,16 +257,26 @@
           "start_at": "DS9 S1E19",
           "span": "DS9 S1 - S7",
           "situations": [
-            {"id": "identity_and_self_acceptance", "weight": 0.6},
-            {"id": "redemption_after_mistakes", "weight": 0.5},
-            {"id": "grief_and_loss", "weight": 0.4},
-            {"id": "difficult_parent", "weight": 0.4}
+            { "id": "identity_and_self_acceptance", "weight": 0.6 },
+            { "id": "redemption_after_mistakes", "weight": 0.5 },
+            { "id": "grief_and_loss", "weight": 0.4 },
+            { "id": "difficult_parent", "weight": 0.4 }
           ],
           "conflicts": ["revenge_vs_forgiveness", "past_vs_future"],
-          "emotions": {"start": ["anger", "resentment"], "middle": ["confusion", "guilt", "grief"], "end": ["acceptance", "peace"]},
+          "emotions": {
+            "start": ["anger", "resentment"],
+            "middle": ["confusion", "guilt", "grief"],
+            "end": ["acceptance", "peace"]
+          },
           "ending_tone": "bittersweet",
           "intensity": "heavy",
-          "warnings": ["war_and_violence", "death_of_loved_one", "sexual_violence", "betrayal", "grief"],
+          "warnings": [
+            "war_and_violence",
+            "death_of_loved_one",
+            "sexual_violence",
+            "betrayal",
+            "grief"
+          ],
           "example_user_messages": [
             "I've hated my ex's whole family for years, and now one of them is being kind to me and I don't know what to do with that.",
             "Something terrible happened to my community and I've been angry at an entire group of people ever since.",
@@ -268,10 +304,10 @@
       "name": "Odo",
       "role": "The station's gruff, fiercely independent security chief, a shapeshifter found alone with no memory of where he came from or whether anyone else like him exists.",
       "relations": [
-        {"target": "char:star_trek/kira_nerys", "relation": "friend"},
-        {"target": "char:star_trek/benjamin_sisko", "relation": "boss"},
-        {"target": "char:star_trek/worf", "relation": "colleague"},
-        {"target": "char:star_trek/julian_bashir", "relation": "colleague"}
+        { "target": "char:star_trek/kira_nerys", "relation": "friend" },
+        { "target": "char:star_trek/benjamin_sisko", "relation": "boss" },
+        { "target": "char:star_trek/worf", "relation": "colleague" },
+        { "target": "char:star_trek/julian_bashir", "relation": "colleague" }
       ],
       "arcs": [
         {
@@ -290,13 +326,17 @@
           "start_at": "DS9 S1E1",
           "span": "DS9 S1 - S7",
           "situations": [
-            {"id": "identity_and_self_acceptance", "weight": 0.9},
-            {"id": "finding_your_people", "weight": 0.8},
-            {"id": "loneliness", "weight": 0.7},
-            {"id": "difficult_parent", "weight": 0.4}
+            { "id": "identity_and_self_acceptance", "weight": 0.9 },
+            { "id": "finding_your_people", "weight": 0.8 },
+            { "id": "loneliness", "weight": 0.7 },
+            { "id": "difficult_parent", "weight": 0.4 }
           ],
           "conflicts": ["belonging_vs_integrity", "independence_vs_connection"],
-          "emotions": {"start": ["loneliness", "curiosity", "longing"], "middle": ["betrayal", "grief", "shame"], "end": ["belonging", "acceptance", "love"]},
+          "emotions": {
+            "start": ["loneliness", "curiosity", "longing"],
+            "middle": ["betrayal", "grief", "shame"],
+            "end": ["belonging", "acceptance", "love"]
+          },
           "ending_tone": "bittersweet",
           "intensity": "moderate",
           "warnings": ["medical_trauma", "war_and_violence", "betrayal", "serious_illness"],
@@ -337,12 +377,16 @@
           "start_at": "DS9 S3E14",
           "span": "DS9 S3 - S7",
           "situations": [
-            {"id": "unrequited_love", "weight": 0.9},
-            {"id": "confidence_struggle", "weight": 0.6},
-            {"id": "loneliness", "weight": 0.5}
+            { "id": "unrequited_love", "weight": 0.9 },
+            { "id": "confidence_struggle", "weight": 0.6 },
+            { "id": "loneliness", "weight": 0.5 }
           ],
           "conflicts": ["independence_vs_connection", "holding_on_vs_letting_go"],
-          "emotions": {"start": ["longing", "loneliness", "self_doubt"], "middle": ["jealousy", "fear", "hope"], "end": ["love", "grief", "peace"]},
+          "emotions": {
+            "start": ["longing", "loneliness", "self_doubt"],
+            "middle": ["jealousy", "fear", "hope"],
+            "end": ["love", "grief", "peace"]
+          },
           "ending_tone": "bittersweet",
           "intensity": "moderate",
           "warnings": ["betrayal", "war_and_violence"],
@@ -373,8 +417,8 @@
       "name": "Seven of Nine",
       "role": "A human woman assimilated by the Borg as a child, forcibly cut off from the Collective and kept aboard Voyager, far from anywhere she has ever called home.",
       "relations": [
-        {"target": "char:star_trek/kathryn_janeway", "relation": "mentor"},
-        {"target": "char:star_trek/the_doctor", "relation": "friend"}
+        { "target": "char:star_trek/kathryn_janeway", "relation": "mentor" },
+        { "target": "char:star_trek/the_doctor", "relation": "friend" }
       ],
       "arcs": [
         {
@@ -393,13 +437,17 @@
           "start_at": "VOY S4E1",
           "span": "VOY S4 - S7",
           "situations": [
-            {"id": "identity_and_self_acceptance", "weight": 0.95},
-            {"id": "starting_over", "weight": 0.8},
-            {"id": "finding_your_people", "weight": 0.6},
-            {"id": "mentor_and_protege", "weight": 0.5}
+            { "id": "identity_and_self_acceptance", "weight": 0.95 },
+            { "id": "starting_over", "weight": 0.8 },
+            { "id": "finding_your_people", "weight": 0.6 },
+            { "id": "mentor_and_protege", "weight": 0.5 }
           ],
           "conflicts": ["independence_vs_connection", "past_vs_future"],
-          "emotions": {"start": ["anger", "fear", "confusion"], "middle": ["loneliness", "guilt", "curiosity"], "end": ["belonging", "acceptance", "hope"]},
+          "emotions": {
+            "start": ["anger", "fear", "confusion"],
+            "middle": ["loneliness", "guilt", "curiosity"],
+            "end": ["belonging", "acceptance", "hope"]
+          },
           "ending_tone": "hopeful",
           "intensity": "moderate",
           "warnings": ["medical_trauma", "child_endangerment", "war_and_violence"],
@@ -441,12 +489,16 @@
           "start_at": "VOY S6E16",
           "span": "VOY S6 - S7",
           "situations": [
-            {"id": "becoming_a_parent", "weight": 0.9},
-            {"id": "responsibility_you_didnt_ask_for", "weight": 0.8},
-            {"id": "mentor_and_protege", "weight": 0.5}
+            { "id": "becoming_a_parent", "weight": 0.9 },
+            { "id": "responsibility_you_didnt_ask_for", "weight": 0.8 },
+            { "id": "mentor_and_protege", "weight": 0.5 }
           ],
           "conflicts": ["control_vs_trust", "holding_on_vs_letting_go"],
-          "emotions": {"start": ["overwhelm", "inadequacy"], "middle": ["confusion", "fear", "love"], "end": ["acceptance", "love"]},
+          "emotions": {
+            "start": ["overwhelm", "inadequacy"],
+            "middle": ["confusion", "fear", "love"],
+            "end": ["acceptance", "love"]
+          },
           "ending_tone": "bittersweet",
           "intensity": "moderate",
           "warnings": ["child_endangerment", "grief"],
@@ -477,10 +529,10 @@
       "name": "Julian Bashir",
       "role": "A brilliant, eager and somewhat arrogant young doctor fresh out of medical school, who picked the most remote posting he could find.",
       "relations": [
-        {"target": "char:star_trek/benjamin_sisko", "relation": "boss"},
-        {"target": "char:star_trek/kira_nerys", "relation": "colleague"},
-        {"target": "char:star_trek/odo", "relation": "colleague"},
-        {"target": "char:star_trek/worf", "relation": "colleague"}
+        { "target": "char:star_trek/benjamin_sisko", "relation": "boss" },
+        { "target": "char:star_trek/kira_nerys", "relation": "colleague" },
+        { "target": "char:star_trek/odo", "relation": "colleague" },
+        { "target": "char:star_trek/worf", "relation": "colleague" }
       ],
       "arcs": [
         {
@@ -499,13 +551,17 @@
           "start_at": "DS9 S1E1",
           "span": "DS9 S1 - S7",
           "situations": [
-            {"id": "new_job", "weight": 0.9},
-            {"id": "coming_of_age", "weight": 0.7},
-            {"id": "finding_your_people", "weight": 0.6},
-            {"id": "leaving_home", "weight": 0.3}
+            { "id": "new_job", "weight": 0.9 },
+            { "id": "coming_of_age", "weight": 0.7 },
+            { "id": "finding_your_people", "weight": 0.6 },
+            { "id": "leaving_home", "weight": 0.3 }
           ],
           "conflicts": ["fitting_in_vs_standing_out", "safety_vs_growth"],
-          "emotions": {"start": ["pride", "curiosity", "hope"], "middle": ["rejection", "inadequacy", "determination"], "end": ["belonging", "self_respect"]},
+          "emotions": {
+            "start": ["pride", "curiosity", "hope"],
+            "middle": ["rejection", "inadequacy", "determination"],
+            "end": ["belonging", "self_respect"]
+          },
           "ending_tone": "hopeful",
           "intensity": "moderate",
           "warnings": ["war_and_violence", "self_harm_or_suicide", "grief"],
@@ -546,13 +602,17 @@
           "start_at": "DS9 S5E16",
           "span": "DS9 S5 - S7",
           "situations": [
-            {"id": "difficult_parent", "weight": 0.8},
-            {"id": "identity_and_self_acceptance", "weight": 0.8},
-            {"id": "imposter_syndrome", "weight": 0.7},
-            {"id": "family_expectations", "weight": 0.6}
+            { "id": "difficult_parent", "weight": 0.8 },
+            { "id": "identity_and_self_acceptance", "weight": 0.8 },
+            { "id": "imposter_syndrome", "weight": 0.7 },
+            { "id": "family_expectations", "weight": 0.6 }
           ],
           "conflicts": ["self_vs_family_expectations", "truth_vs_protecting_others"],
-          "emotions": {"start": ["anxiety", "shame", "resentment"], "middle": ["anger", "fear", "guilt"], "end": ["acceptance", "relief", "self_respect"]},
+          "emotions": {
+            "start": ["anxiety", "shame", "resentment"],
+            "middle": ["anger", "fear", "guilt"],
+            "end": ["acceptance", "relief", "self_respect"]
+          },
           "ending_tone": "hopeful",
           "intensity": "moderate",
           "warnings": [],
@@ -591,12 +651,16 @@
           "start_at": "DS9 S6E18",
           "span": "DS9 S6 - S7",
           "situations": [
-            {"id": "standing_up_to_authority", "weight": 0.9},
-            {"id": "responsibility_you_didnt_ask_for", "weight": 0.5},
-            {"id": "identity_and_self_acceptance", "weight": 0.3}
+            { "id": "standing_up_to_authority", "weight": 0.9 },
+            { "id": "responsibility_you_didnt_ask_for", "weight": 0.5 },
+            { "id": "identity_and_self_acceptance", "weight": 0.3 }
           ],
           "conflicts": ["power_vs_morality", "belonging_vs_integrity"],
-          "emotions": {"start": ["fear", "confusion", "anger"], "middle": ["determination", "betrayal", "anxiety"], "end": ["self_respect", "relief"]},
+          "emotions": {
+            "start": ["fear", "confusion", "anger"],
+            "middle": ["determination", "betrayal", "anxiety"],
+            "end": ["self_respect", "relief"]
+          },
           "ending_tone": "bittersweet",
           "intensity": "heavy",
           "warnings": ["betrayal", "serious_illness", "war_and_violence", "self_harm_or_suicide"],
@@ -626,8 +690,8 @@
       "name": "The Doctor",
       "role": "Voyager's Emergency Medical Hologram, a short-term backup program pressed into service as the ship's full-time physician after the medical staff are killed.",
       "relations": [
-        {"target": "char:star_trek/kathryn_janeway", "relation": "boss"},
-        {"target": "char:star_trek/seven_of_nine", "relation": "friend"}
+        { "target": "char:star_trek/kathryn_janeway", "relation": "boss" },
+        { "target": "char:star_trek/seven_of_nine", "relation": "friend" }
       ],
       "arcs": [
         {
@@ -646,13 +710,17 @@
           "start_at": "VOY S1E1",
           "span": "VOY S1 - S7",
           "situations": [
-            {"id": "identity_and_self_acceptance", "weight": 0.9},
-            {"id": "new_job", "weight": 0.6},
-            {"id": "responsibility_you_didnt_ask_for", "weight": 0.6},
-            {"id": "standing_up_to_authority", "weight": 0.5}
+            { "id": "identity_and_self_acceptance", "weight": 0.9 },
+            { "id": "new_job", "weight": 0.6 },
+            { "id": "responsibility_you_didnt_ask_for", "weight": 0.6 },
+            { "id": "standing_up_to_authority", "weight": 0.5 }
           ],
           "conflicts": ["fitting_in_vs_standing_out", "belonging_vs_integrity"],
-          "emotions": {"start": ["resentment", "loneliness", "pride"], "middle": ["self_doubt", "curiosity", "joy"], "end": ["self_respect", "belonging", "confidence"]},
+          "emotions": {
+            "start": ["resentment", "loneliness", "pride"],
+            "middle": ["self_doubt", "curiosity", "joy"],
+            "end": ["self_respect", "belonging", "confidence"]
+          },
           "ending_tone": "hopeful",
           "intensity": "moderate",
           "warnings": ["grief"],
@@ -694,12 +762,16 @@
           "start_at": "VOY S5E11",
           "span": "VOY S5 - S7",
           "situations": [
-            {"id": "grief_and_loss", "weight": 0.6},
-            {"id": "burnout_at_work", "weight": 0.5},
-            {"id": "redemption_after_mistakes", "weight": 0.5}
+            { "id": "grief_and_loss", "weight": 0.6 },
+            { "id": "burnout_at_work", "weight": 0.5 },
+            { "id": "redemption_after_mistakes", "weight": 0.5 }
           ],
           "conflicts": ["truth_vs_protecting_others", "perfectionism_vs_good_enough"],
-          "emotions": {"start": ["confusion", "anxiety"], "middle": ["guilt", "overwhelm", "grief"], "end": ["acceptance", "peace"]},
+          "emotions": {
+            "start": ["confusion", "anxiety"],
+            "middle": ["guilt", "overwhelm", "grief"],
+            "end": ["acceptance", "peace"]
+          },
           "ending_tone": "hopeful",
           "intensity": "moderate",
           "warnings": ["grief", "medical_trauma", "war_and_violence"],
@@ -739,12 +811,16 @@
           "start_at": "VOY S5E22",
           "span": "VOY S5 - S7",
           "situations": [
-            {"id": "unrequited_love", "weight": 0.9},
-            {"id": "confidence_struggle", "weight": 0.5},
-            {"id": "loneliness", "weight": 0.4}
+            { "id": "unrequited_love", "weight": 0.9 },
+            { "id": "confidence_struggle", "weight": 0.5 },
+            { "id": "loneliness", "weight": 0.4 }
           ],
           "conflicts": ["independence_vs_connection", "holding_on_vs_letting_go"],
-          "emotions": {"start": ["curiosity", "joy"], "middle": ["longing", "jealousy", "rejection"], "end": ["acceptance", "self_respect"]},
+          "emotions": {
+            "start": ["curiosity", "joy"],
+            "middle": ["longing", "jealousy", "rejection"],
+            "end": ["acceptance", "self_respect"]
+          },
           "ending_tone": "bittersweet",
           "intensity": "light",
           "warnings": [],

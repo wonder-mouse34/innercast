@@ -6,15 +6,15 @@
       "name": "Eren Yeager",
       "role": "A hot-headed boy from a town on humanity's outermost wall who hates living caged in by the walls that keep out man-eating Titans and dreams of joining the soldiers who venture beyond them.",
       "relations": [
-        {"target": "char:attack_on_titan/mikasa_ackerman", "relation": "sibling"},
-        {"target": "char:attack_on_titan/armin_arlert", "relation": "friend"},
-        {"target": "char:attack_on_titan/levi", "relation": "mentor"},
-        {"target": "char:attack_on_titan/levi", "relation": "boss"},
-        {"target": "char:attack_on_titan/hange_zoe", "relation": "boss"},
-        {"target": "char:attack_on_titan/erwin_smith", "relation": "boss"},
-        {"target": "char:attack_on_titan/reiner_braun", "relation": "friend"},
-        {"target": "char:attack_on_titan/reiner_braun", "relation": "enemy"},
-        {"target": "char:attack_on_titan/historia", "relation": "friend"}
+        { "target": "char:attack_on_titan/mikasa_ackerman", "relation": "sibling" },
+        { "target": "char:attack_on_titan/armin_arlert", "relation": "friend" },
+        { "target": "char:attack_on_titan/levi", "relation": "mentor" },
+        { "target": "char:attack_on_titan/levi", "relation": "boss" },
+        { "target": "char:attack_on_titan/hange_zoe", "relation": "boss" },
+        { "target": "char:attack_on_titan/erwin_smith", "relation": "boss" },
+        { "target": "char:attack_on_titan/reiner_braun", "relation": "friend" },
+        { "target": "char:attack_on_titan/reiner_braun", "relation": "enemy" },
+        { "target": "char:attack_on_titan/historia", "relation": "friend" }
       ],
       "arcs": [
         {
@@ -33,16 +33,27 @@
           "start_at": "S1E1",
           "span": "S1-S3",
           "situations": [
-            {"id": "grief_and_loss", "weight": 0.9},
-            {"id": "coming_of_age", "weight": 0.7},
-            {"id": "confidence_struggle", "weight": 0.6},
-            {"id": "starting_over", "weight": 0.4}
+            { "id": "grief_and_loss", "weight": 0.9 },
+            { "id": "coming_of_age", "weight": 0.7 },
+            { "id": "confidence_struggle", "weight": 0.6 },
+            { "id": "starting_over", "weight": 0.4 }
           ],
           "conflicts": ["revenge_vs_forgiveness", "safety_vs_growth"],
-          "emotions": {"start": ["grief", "anger"], "middle": ["determination", "self_doubt", "guilt"], "end": ["confusion", "determination"]},
+          "emotions": {
+            "start": ["grief", "anger"],
+            "middle": ["determination", "self_doubt", "guilt"],
+            "end": ["confusion", "determination"]
+          },
           "ending_tone": "ambiguous",
           "intensity": "heavy",
-          "warnings": ["death_of_loved_one", "grief", "war_and_violence", "graphic_gore", "child_endangerment", "betrayal"],
+          "warnings": [
+            "death_of_loved_one",
+            "grief",
+            "war_and_violence",
+            "graphic_gore",
+            "child_endangerment",
+            "betrayal"
+          ],
           "example_user_messages": [
             "Ever since my dad died I've been angry all the time and I don't know where to put it.",
             "I made a promise to myself after the worst day of my life and now it's the only thing driving me.",
@@ -82,16 +93,28 @@
           "start_at": "S4",
           "span": "S4",
           "situations": [
-            {"id": "loneliness", "weight": 0.8},
-            {"id": "friendship_ending", "weight": 0.7},
-            {"id": "responsibility_you_didnt_ask_for", "weight": 0.7},
-            {"id": "identity_and_self_acceptance", "weight": 0.5}
+            { "id": "loneliness", "weight": 0.8 },
+            { "id": "friendship_ending", "weight": 0.7 },
+            { "id": "responsibility_you_didnt_ask_for", "weight": 0.7 },
+            { "id": "identity_and_self_acceptance", "weight": 0.5 }
           ],
           "conflicts": ["independence_vs_connection", "power_vs_morality"],
-          "emotions": {"start": ["numbness", "loneliness"], "middle": ["dread", "anger", "guilt"], "end": ["grief", "longing"]},
+          "emotions": {
+            "start": ["numbness", "loneliness"],
+            "middle": ["dread", "anger", "guilt"],
+            "end": ["grief", "longing"]
+          },
           "ending_tone": "tragic",
           "intensity": "heavy",
-          "warnings": ["death_of_main_character", "death_of_loved_one", "war_and_violence", "graphic_gore", "betrayal", "child_endangerment", "bleak_ending"],
+          "warnings": [
+            "death_of_main_character",
+            "death_of_loved_one",
+            "war_and_violence",
+            "graphic_gore",
+            "betrayal",
+            "child_endangerment",
+            "bleak_ending"
+          ],
           "example_user_messages": [
             "I've shut everyone out and I don't even know how to explain why.",
             "My friends keep asking what's wrong and I just can't tell them.",
@@ -122,13 +145,13 @@
       "name": "Mikasa Ackerman",
       "role": "Eren's quiet, fiercely protective adoptive sister, taken in by his family after she lost her parents, who follows him everywhere and is a prodigiously gifted fighter.",
       "relations": [
-        {"target": "char:attack_on_titan/eren_yeager", "relation": "sibling"},
-        {"target": "char:attack_on_titan/armin_arlert", "relation": "friend"},
-        {"target": "char:attack_on_titan/levi", "relation": "boss"},
-        {"target": "char:attack_on_titan/hange_zoe", "relation": "boss"},
-        {"target": "char:attack_on_titan/erwin_smith", "relation": "boss"},
-        {"target": "char:attack_on_titan/reiner_braun", "relation": "enemy"},
-        {"target": "char:attack_on_titan/historia", "relation": "friend"}
+        { "target": "char:attack_on_titan/eren_yeager", "relation": "sibling" },
+        { "target": "char:attack_on_titan/armin_arlert", "relation": "friend" },
+        { "target": "char:attack_on_titan/levi", "relation": "boss" },
+        { "target": "char:attack_on_titan/hange_zoe", "relation": "boss" },
+        { "target": "char:attack_on_titan/erwin_smith", "relation": "boss" },
+        { "target": "char:attack_on_titan/reiner_braun", "relation": "enemy" },
+        { "target": "char:attack_on_titan/historia", "relation": "friend" }
       ],
       "arcs": [
         {
@@ -147,16 +170,27 @@
           "start_at": "S1E1",
           "span": "S1-S3",
           "situations": [
-            {"id": "caring_for_family", "weight": 0.8},
-            {"id": "grief_and_loss", "weight": 0.7},
-            {"id": "identity_and_self_acceptance", "weight": 0.6},
-            {"id": "unrequited_love", "weight": 0.4}
+            { "id": "caring_for_family", "weight": 0.8 },
+            { "id": "grief_and_loss", "weight": 0.7 },
+            { "id": "identity_and_self_acceptance", "weight": 0.6 },
+            { "id": "unrequited_love", "weight": 0.4 }
           ],
           "conflicts": ["holding_on_vs_letting_go", "duty_vs_desire"],
-          "emotions": {"start": ["grief", "fear", "love"], "middle": ["anxiety", "determination"], "end": ["belonging", "dread"]},
+          "emotions": {
+            "start": ["grief", "fear", "love"],
+            "middle": ["anxiety", "determination"],
+            "end": ["belonging", "dread"]
+          },
           "ending_tone": "bittersweet",
           "intensity": "heavy",
-          "warnings": ["death_of_loved_one", "grief", "war_and_violence", "graphic_gore", "child_endangerment", "betrayal"],
+          "warnings": [
+            "death_of_loved_one",
+            "grief",
+            "war_and_violence",
+            "graphic_gore",
+            "child_endangerment",
+            "betrayal"
+          ],
           "example_user_messages": [
             "I've basically been my younger brother's parent since our mum died, and I don't know who I am without that role.",
             "My partner is the only family I have left and I panic whenever I can't reach them.",
@@ -195,16 +229,27 @@
           "start_at": "S4",
           "span": "S4",
           "situations": [
-            {"id": "unrequited_love", "weight": 0.8},
-            {"id": "grief_and_loss", "weight": 0.7},
-            {"id": "friendship_ending", "weight": 0.5},
-            {"id": "identity_and_self_acceptance", "weight": 0.4}
+            { "id": "unrequited_love", "weight": 0.8 },
+            { "id": "grief_and_loss", "weight": 0.7 },
+            { "id": "friendship_ending", "weight": 0.5 },
+            { "id": "identity_and_self_acceptance", "weight": 0.4 }
           ],
           "conflicts": ["holding_on_vs_letting_go", "duty_vs_desire"],
-          "emotions": {"start": ["love", "anxiety"], "middle": ["rejection", "betrayal", "confusion"], "end": ["grief", "acceptance", "love"]},
+          "emotions": {
+            "start": ["love", "anxiety"],
+            "middle": ["rejection", "betrayal", "confusion"],
+            "end": ["grief", "acceptance", "love"]
+          },
           "ending_tone": "bittersweet",
           "intensity": "heavy",
-          "warnings": ["death_of_main_character", "death_of_loved_one", "grief", "war_and_violence", "graphic_gore", "betrayal"],
+          "warnings": [
+            "death_of_main_character",
+            "death_of_loved_one",
+            "grief",
+            "war_and_violence",
+            "graphic_gore",
+            "betrayal"
+          ],
           "example_user_messages": [
             "The person I love has changed so much this year that I barely recognise him, but I keep telling everyone he's still good.",
             "Everyone's telling me to cut him off and I can't, because I remember who he used to be.",
@@ -233,14 +278,14 @@
       "name": "Armin Arlert",
       "role": "Eren's gentle, bookish childhood friend, bullied for dreaming about oceans and deserts beyond the walls and convinced he is too weak to be anything but a burden.",
       "relations": [
-        {"target": "char:attack_on_titan/eren_yeager", "relation": "friend"},
-        {"target": "char:attack_on_titan/mikasa_ackerman", "relation": "friend"},
-        {"target": "char:attack_on_titan/erwin_smith", "relation": "boss"},
-        {"target": "char:attack_on_titan/hange_zoe", "relation": "mentor"},
-        {"target": "char:attack_on_titan/levi", "relation": "boss"},
-        {"target": "char:attack_on_titan/reiner_braun", "relation": "friend"},
-        {"target": "char:attack_on_titan/reiner_braun", "relation": "enemy"},
-        {"target": "char:attack_on_titan/historia", "relation": "friend"}
+        { "target": "char:attack_on_titan/eren_yeager", "relation": "friend" },
+        { "target": "char:attack_on_titan/mikasa_ackerman", "relation": "friend" },
+        { "target": "char:attack_on_titan/erwin_smith", "relation": "boss" },
+        { "target": "char:attack_on_titan/hange_zoe", "relation": "mentor" },
+        { "target": "char:attack_on_titan/levi", "relation": "boss" },
+        { "target": "char:attack_on_titan/reiner_braun", "relation": "friend" },
+        { "target": "char:attack_on_titan/reiner_braun", "relation": "enemy" },
+        { "target": "char:attack_on_titan/historia", "relation": "friend" }
       ],
       "arcs": [
         {
@@ -259,16 +304,26 @@
           "start_at": "S1E1",
           "span": "S1-S3",
           "situations": [
-            {"id": "confidence_struggle", "weight": 0.9},
-            {"id": "imposter_syndrome", "weight": 0.6},
-            {"id": "finding_your_people", "weight": 0.6},
-            {"id": "coming_of_age", "weight": 0.5}
+            { "id": "confidence_struggle", "weight": 0.9 },
+            { "id": "imposter_syndrome", "weight": 0.6 },
+            { "id": "finding_your_people", "weight": 0.6 },
+            { "id": "coming_of_age", "weight": 0.5 }
           ],
           "conflicts": ["safety_vs_growth", "fitting_in_vs_standing_out"],
-          "emotions": {"start": ["inadequacy", "shame", "fear"], "middle": ["self_doubt", "determination", "hope"], "end": ["confidence", "guilt"]},
+          "emotions": {
+            "start": ["inadequacy", "shame", "fear"],
+            "middle": ["self_doubt", "determination", "hope"],
+            "end": ["confidence", "guilt"]
+          },
           "ending_tone": "hopeful",
           "intensity": "heavy",
-          "warnings": ["death_of_loved_one", "grief", "war_and_violence", "graphic_gore", "betrayal"],
+          "warnings": [
+            "death_of_loved_one",
+            "grief",
+            "war_and_violence",
+            "graphic_gore",
+            "betrayal"
+          ],
           "example_user_messages": [
             "I've always been the one my friends have to look after, and I hate it.",
             "I'm not strong or sporty, and everyone on my team seems more useful than me.",
@@ -307,16 +362,27 @@
           "start_at": "S4",
           "span": "S4",
           "situations": [
-            {"id": "imposter_syndrome", "weight": 0.9},
-            {"id": "responsibility_you_didnt_ask_for", "weight": 0.8},
-            {"id": "becoming_a_manager", "weight": 0.6},
-            {"id": "grief_and_loss", "weight": 0.5}
+            { "id": "imposter_syndrome", "weight": 0.9 },
+            { "id": "responsibility_you_didnt_ask_for", "weight": 0.8 },
+            { "id": "becoming_a_manager", "weight": 0.6 },
+            { "id": "grief_and_loss", "weight": 0.5 }
           ],
           "conflicts": ["power_vs_morality", "past_vs_future"],
-          "emotions": {"start": ["guilt", "inadequacy", "self_doubt"], "middle": ["overwhelm", "grief", "determination"], "end": ["grief", "hope", "self_respect"]},
+          "emotions": {
+            "start": ["guilt", "inadequacy", "self_doubt"],
+            "middle": ["overwhelm", "grief", "determination"],
+            "end": ["grief", "hope", "self_respect"]
+          },
           "ending_tone": "bittersweet",
           "intensity": "heavy",
-          "warnings": ["death_of_main_character", "death_of_loved_one", "grief", "war_and_violence", "graphic_gore", "betrayal"],
+          "warnings": [
+            "death_of_main_character",
+            "death_of_loved_one",
+            "grief",
+            "war_and_violence",
+            "graphic_gore",
+            "betrayal"
+          ],
           "example_user_messages": [
             "I got promoted after my manager left, and I feel like a fraud every single day.",
             "People keep saying the person before me would have handled this better, and honestly I agree.",
@@ -345,13 +411,13 @@
       "name": "Levi",
       "role": "The Survey Corps captain known as humanity's strongest soldier: blunt, cold, obsessively clean, and fiercely protective of the squad that would follow him anywhere.",
       "relations": [
-        {"target": "char:attack_on_titan/erwin_smith", "relation": "boss"},
-        {"target": "char:attack_on_titan/hange_zoe", "relation": "colleague"},
-        {"target": "char:attack_on_titan/eren_yeager", "relation": "protege"},
-        {"target": "char:attack_on_titan/armin_arlert", "relation": "protege"},
-        {"target": "char:attack_on_titan/mikasa_ackerman", "relation": "colleague"},
-        {"target": "char:attack_on_titan/historia", "relation": "colleague"},
-        {"target": "char:attack_on_titan/reiner_braun", "relation": "enemy"}
+        { "target": "char:attack_on_titan/erwin_smith", "relation": "boss" },
+        { "target": "char:attack_on_titan/hange_zoe", "relation": "colleague" },
+        { "target": "char:attack_on_titan/eren_yeager", "relation": "protege" },
+        { "target": "char:attack_on_titan/armin_arlert", "relation": "protege" },
+        { "target": "char:attack_on_titan/mikasa_ackerman", "relation": "colleague" },
+        { "target": "char:attack_on_titan/historia", "relation": "colleague" },
+        { "target": "char:attack_on_titan/reiner_braun", "relation": "enemy" }
       ],
       "arcs": [
         {
@@ -370,16 +436,27 @@
           "start_at": "S1E14",
           "span": "S1-S4",
           "situations": [
-            {"id": "grief_and_loss", "weight": 0.9},
-            {"id": "mentor_and_protege", "weight": 0.6},
-            {"id": "responsibility_you_didnt_ask_for", "weight": 0.6},
-            {"id": "burnout_at_work", "weight": 0.5}
+            { "id": "grief_and_loss", "weight": 0.9 },
+            { "id": "mentor_and_protege", "weight": 0.6 },
+            { "id": "responsibility_you_didnt_ask_for", "weight": 0.6 },
+            { "id": "burnout_at_work", "weight": 0.5 }
           ],
           "conflicts": ["duty_vs_desire", "holding_on_vs_letting_go"],
-          "emotions": {"start": ["numbness", "determination"], "middle": ["grief", "guilt", "anger"], "end": ["acceptance", "peace", "grief"]},
+          "emotions": {
+            "start": ["numbness", "determination"],
+            "middle": ["grief", "guilt", "anger"],
+            "end": ["acceptance", "peace", "grief"]
+          },
           "ending_tone": "bittersweet",
           "intensity": "heavy",
-          "warnings": ["death_of_loved_one", "grief", "war_and_violence", "graphic_gore", "torture", "death_of_main_character"],
+          "warnings": [
+            "death_of_loved_one",
+            "grief",
+            "war_and_violence",
+            "graphic_gore",
+            "torture",
+            "death_of_main_character"
+          ],
           "example_user_messages": [
             "I'm the person everyone at work leans on, and I can't remember the last time I let myself fall apart.",
             "I've lost too many people I was responsible for, and I keep going because stopping isn't an option.",
@@ -418,16 +495,26 @@
           "start_at": "S3",
           "span": "S3",
           "situations": [
-            {"id": "difficult_parent", "weight": 0.9},
-            {"id": "identity_and_self_acceptance", "weight": 0.6},
-            {"id": "standing_up_to_authority", "weight": 0.4},
-            {"id": "grief_and_loss", "weight": 0.4}
+            { "id": "difficult_parent", "weight": 0.9 },
+            { "id": "identity_and_self_acceptance", "weight": 0.6 },
+            { "id": "standing_up_to_authority", "weight": 0.4 },
+            { "id": "grief_and_loss", "weight": 0.4 }
           ],
           "conflicts": ["past_vs_future", "independence_vs_connection"],
-          "emotions": {"start": ["resentment", "confusion"], "middle": ["anger", "curiosity"], "end": ["grief", "acceptance"]},
+          "emotions": {
+            "start": ["resentment", "confusion"],
+            "middle": ["anger", "curiosity"],
+            "end": ["grief", "acceptance"]
+          },
           "ending_tone": "bittersweet",
           "intensity": "heavy",
-          "warnings": ["war_and_violence", "graphic_gore", "torture", "death_of_loved_one", "child_endangerment"],
+          "warnings": [
+            "war_and_violence",
+            "graphic_gore",
+            "torture",
+            "death_of_loved_one",
+            "child_endangerment"
+          ],
           "example_user_messages": [
             "The man who basically raised me disappeared when I was a teenager, and I've never gotten a straight answer about why.",
             "I keep catching myself doing things exactly the way my dad did, and I hate it.",
@@ -455,13 +542,13 @@
       "name": "Hange Zoë",
       "role": "An eccentric, endlessly curious Survey Corps squad leader who studies Titans with an enthusiasm that unnerves everyone around them.",
       "relations": [
-        {"target": "char:attack_on_titan/erwin_smith", "relation": "boss"},
-        {"target": "char:attack_on_titan/levi", "relation": "colleague"},
-        {"target": "char:attack_on_titan/eren_yeager", "relation": "colleague"},
-        {"target": "char:attack_on_titan/armin_arlert", "relation": "protege"},
-        {"target": "char:attack_on_titan/mikasa_ackerman", "relation": "colleague"},
-        {"target": "char:attack_on_titan/historia", "relation": "colleague"},
-        {"target": "char:attack_on_titan/reiner_braun", "relation": "enemy"}
+        { "target": "char:attack_on_titan/erwin_smith", "relation": "boss" },
+        { "target": "char:attack_on_titan/levi", "relation": "colleague" },
+        { "target": "char:attack_on_titan/eren_yeager", "relation": "colleague" },
+        { "target": "char:attack_on_titan/armin_arlert", "relation": "protege" },
+        { "target": "char:attack_on_titan/mikasa_ackerman", "relation": "colleague" },
+        { "target": "char:attack_on_titan/historia", "relation": "colleague" },
+        { "target": "char:attack_on_titan/reiner_braun", "relation": "enemy" }
       ],
       "arcs": [
         {
@@ -480,16 +567,26 @@
           "start_at": "S1",
           "span": "S1-S3",
           "situations": [
-            {"id": "identity_and_self_acceptance", "weight": 0.6},
-            {"id": "standing_up_to_authority", "weight": 0.6},
-            {"id": "grief_and_loss", "weight": 0.5},
-            {"id": "finding_your_people", "weight": 0.4}
+            { "id": "identity_and_self_acceptance", "weight": 0.6 },
+            { "id": "standing_up_to_authority", "weight": 0.6 },
+            { "id": "grief_and_loss", "weight": 0.5 },
+            { "id": "finding_your_people", "weight": 0.4 }
           ],
           "conflicts": ["fitting_in_vs_standing_out", "truth_vs_protecting_others"],
-          "emotions": {"start": ["curiosity", "joy"], "middle": ["anger", "grief", "fear"], "end": ["curiosity", "grief"]},
+          "emotions": {
+            "start": ["curiosity", "joy"],
+            "middle": ["anger", "grief", "fear"],
+            "end": ["curiosity", "grief"]
+          },
           "ending_tone": "hopeful",
           "intensity": "heavy",
-          "warnings": ["war_and_violence", "graphic_gore", "torture", "death_of_loved_one", "grief"],
+          "warnings": [
+            "war_and_violence",
+            "graphic_gore",
+            "torture",
+            "death_of_loved_one",
+            "grief"
+          ],
           "example_user_messages": [
             "I deal with stress by researching everything to death, and people think I'm weird for it.",
             "Everyone in my field is burned out and cynical, but I still find this stuff fascinating.",
@@ -527,16 +624,27 @@
           "start_at": "S4",
           "span": "S4",
           "situations": [
-            {"id": "becoming_a_manager", "weight": 0.9},
-            {"id": "burnout_at_work", "weight": 0.8},
-            {"id": "imposter_syndrome", "weight": 0.7},
-            {"id": "responsibility_you_didnt_ask_for", "weight": 0.7}
+            { "id": "becoming_a_manager", "weight": 0.9 },
+            { "id": "burnout_at_work", "weight": 0.8 },
+            { "id": "imposter_syndrome", "weight": 0.7 },
+            { "id": "responsibility_you_didnt_ask_for", "weight": 0.7 }
           ],
           "conflicts": ["duty_vs_desire", "power_vs_morality"],
-          "emotions": {"start": ["overwhelm", "self_doubt", "burnout"], "middle": ["anger", "guilt", "loneliness"], "end": ["self_respect", "peace"]},
+          "emotions": {
+            "start": ["overwhelm", "self_doubt", "burnout"],
+            "middle": ["anger", "guilt", "loneliness"],
+            "end": ["self_respect", "peace"]
+          },
           "ending_tone": "bittersweet",
           "intensity": "heavy",
-          "warnings": ["death_of_main_character", "death_of_loved_one", "war_and_violence", "graphic_gore", "grief", "betrayal"],
+          "warnings": [
+            "death_of_main_character",
+            "death_of_loved_one",
+            "war_and_violence",
+            "graphic_gore",
+            "grief",
+            "betrayal"
+          ],
           "example_user_messages": [
             "My boss left and now I'm running the team, and I feel completely out of my depth.",
             "Everyone keeps comparing me to the person who had this job before me.",
@@ -564,14 +672,14 @@
       "name": "Reiner Braun",
       "role": "A tall, dependable trainee in Eren's class and the natural big brother of the group, who takes his duty seriously and says he hopes to get back to the hometown he lost.",
       "relations": [
-        {"target": "char:attack_on_titan/eren_yeager", "relation": "friend"},
-        {"target": "char:attack_on_titan/eren_yeager", "relation": "enemy"},
-        {"target": "char:attack_on_titan/armin_arlert", "relation": "friend"},
-        {"target": "char:attack_on_titan/mikasa_ackerman", "relation": "enemy"},
-        {"target": "char:attack_on_titan/historia", "relation": "friend"},
-        {"target": "char:attack_on_titan/levi", "relation": "enemy"},
-        {"target": "char:attack_on_titan/hange_zoe", "relation": "enemy"},
-        {"target": "char:attack_on_titan/erwin_smith", "relation": "enemy"}
+        { "target": "char:attack_on_titan/eren_yeager", "relation": "friend" },
+        { "target": "char:attack_on_titan/eren_yeager", "relation": "enemy" },
+        { "target": "char:attack_on_titan/armin_arlert", "relation": "friend" },
+        { "target": "char:attack_on_titan/mikasa_ackerman", "relation": "enemy" },
+        { "target": "char:attack_on_titan/historia", "relation": "friend" },
+        { "target": "char:attack_on_titan/levi", "relation": "enemy" },
+        { "target": "char:attack_on_titan/hange_zoe", "relation": "enemy" },
+        { "target": "char:attack_on_titan/erwin_smith", "relation": "enemy" }
       ],
       "arcs": [
         {
@@ -590,16 +698,26 @@
           "start_at": "S1E3",
           "span": "S1-S3",
           "situations": [
-            {"id": "identity_and_self_acceptance", "weight": 0.8},
-            {"id": "family_expectations", "weight": 0.5},
-            {"id": "loneliness", "weight": 0.5},
-            {"id": "finding_your_people", "weight": 0.5}
+            { "id": "identity_and_self_acceptance", "weight": 0.8 },
+            { "id": "family_expectations", "weight": 0.5 },
+            { "id": "loneliness", "weight": 0.5 },
+            { "id": "finding_your_people", "weight": 0.5 }
           ],
           "conflicts": ["belonging_vs_integrity", "truth_vs_protecting_others"],
-          "emotions": {"start": ["determination", "pride"], "middle": ["guilt", "confusion", "anxiety"], "end": ["grief", "shame"]},
+          "emotions": {
+            "start": ["determination", "pride"],
+            "middle": ["guilt", "confusion", "anxiety"],
+            "end": ["grief", "shame"]
+          },
           "ending_tone": "tragic",
           "intensity": "heavy",
-          "warnings": ["betrayal", "war_and_violence", "graphic_gore", "death_of_loved_one", "grief"],
+          "warnings": [
+            "betrayal",
+            "war_and_violence",
+            "graphic_gore",
+            "death_of_loved_one",
+            "grief"
+          ],
           "example_user_messages": [
             "I'm the one everyone in my friend group comes to with their problems, and nobody asks how I'm doing.",
             "I've been playing a role at work for so long I don't know which version of me is real anymore.",
@@ -636,16 +754,27 @@
           "start_at": "S4E1",
           "span": "S4",
           "situations": [
-            {"id": "redemption_after_mistakes", "weight": 0.9},
-            {"id": "family_expectations", "weight": 0.7},
-            {"id": "difficult_parent", "weight": 0.5},
-            {"id": "loneliness", "weight": 0.5}
+            { "id": "redemption_after_mistakes", "weight": 0.9 },
+            { "id": "family_expectations", "weight": 0.7 },
+            { "id": "difficult_parent", "weight": 0.5 },
+            { "id": "loneliness", "weight": 0.5 }
           ],
           "conflicts": ["past_vs_future", "self_vs_family_expectations"],
-          "emotions": {"start": ["guilt", "numbness", "shame"], "middle": ["dread", "grief", "determination"], "end": ["acceptance", "hope"]},
+          "emotions": {
+            "start": ["guilt", "numbness", "shame"],
+            "middle": ["dread", "grief", "determination"],
+            "end": ["acceptance", "hope"]
+          },
           "ending_tone": "bittersweet",
           "intensity": "heavy",
-          "warnings": ["self_harm_or_suicide", "war_and_violence", "graphic_gore", "death_of_loved_one", "grief", "child_endangerment"],
+          "warnings": [
+            "self_harm_or_suicide",
+            "war_and_violence",
+            "graphic_gore",
+            "death_of_loved_one",
+            "grief",
+            "child_endangerment"
+          ],
           "example_user_messages": [
             "I did things I'm deeply ashamed of because I thought it would make my father proud, and now I can't live with myself.",
             "Some nights the only reason I don't give up is my little cousin who looks up to me.",
@@ -674,12 +803,12 @@
       "name": "Erwin Smith",
       "role": "The composed, charismatic commander of the Survey Corps, who plans far ahead and asks his soldiers to risk everything for humanity.",
       "relations": [
-        {"target": "char:attack_on_titan/levi", "relation": "colleague"},
-        {"target": "char:attack_on_titan/hange_zoe", "relation": "colleague"},
-        {"target": "char:attack_on_titan/armin_arlert", "relation": "protege"},
-        {"target": "char:attack_on_titan/eren_yeager", "relation": "colleague"},
-        {"target": "char:attack_on_titan/historia", "relation": "colleague"},
-        {"target": "char:attack_on_titan/reiner_braun", "relation": "enemy"}
+        { "target": "char:attack_on_titan/levi", "relation": "colleague" },
+        { "target": "char:attack_on_titan/hange_zoe", "relation": "colleague" },
+        { "target": "char:attack_on_titan/armin_arlert", "relation": "protege" },
+        { "target": "char:attack_on_titan/eren_yeager", "relation": "colleague" },
+        { "target": "char:attack_on_titan/historia", "relation": "colleague" },
+        { "target": "char:attack_on_titan/reiner_braun", "relation": "enemy" }
       ],
       "arcs": [
         {
@@ -698,13 +827,17 @@
           "start_at": "S1E14",
           "span": "S1-S3",
           "situations": [
-            {"id": "taking_a_big_risk", "weight": 0.8},
-            {"id": "burnout_at_work", "weight": 0.5},
-            {"id": "grief_and_loss", "weight": 0.5},
-            {"id": "standing_up_to_authority", "weight": 0.5}
+            { "id": "taking_a_big_risk", "weight": 0.8 },
+            { "id": "burnout_at_work", "weight": 0.5 },
+            { "id": "grief_and_loss", "weight": 0.5 },
+            { "id": "standing_up_to_authority", "weight": 0.5 }
           ],
           "conflicts": ["duty_vs_desire", "power_vs_morality"],
-          "emotions": {"start": ["determination", "curiosity"], "middle": ["guilt", "longing"], "end": ["relief", "peace"]},
+          "emotions": {
+            "start": ["determination", "curiosity"],
+            "middle": ["guilt", "longing"],
+            "end": ["relief", "peace"]
+          },
           "ending_tone": "bittersweet",
           "intensity": "heavy",
           "warnings": ["death_of_main_character", "war_and_violence", "graphic_gore", "grief"],
@@ -735,13 +868,13 @@
       "name": "Historia (Krista Lenz)",
       "role": "Krista Lenz, a petite, gentle trainee in Eren's class whom classmates call an angel for her endless kindness and willingness to help anyone.",
       "relations": [
-        {"target": "char:attack_on_titan/eren_yeager", "relation": "friend"},
-        {"target": "char:attack_on_titan/mikasa_ackerman", "relation": "colleague"},
-        {"target": "char:attack_on_titan/armin_arlert", "relation": "friend"},
-        {"target": "char:attack_on_titan/levi", "relation": "boss"},
-        {"target": "char:attack_on_titan/erwin_smith", "relation": "boss"},
-        {"target": "char:attack_on_titan/hange_zoe", "relation": "colleague"},
-        {"target": "char:attack_on_titan/reiner_braun", "relation": "friend"}
+        { "target": "char:attack_on_titan/eren_yeager", "relation": "friend" },
+        { "target": "char:attack_on_titan/mikasa_ackerman", "relation": "colleague" },
+        { "target": "char:attack_on_titan/armin_arlert", "relation": "friend" },
+        { "target": "char:attack_on_titan/levi", "relation": "boss" },
+        { "target": "char:attack_on_titan/erwin_smith", "relation": "boss" },
+        { "target": "char:attack_on_titan/hange_zoe", "relation": "colleague" },
+        { "target": "char:attack_on_titan/reiner_braun", "relation": "friend" }
       ],
       "arcs": [
         {
@@ -760,16 +893,26 @@
           "start_at": "S1E3",
           "span": "S1-S2",
           "situations": [
-            {"id": "identity_and_self_acceptance", "weight": 0.9},
-            {"id": "difficult_parent", "weight": 0.6},
-            {"id": "confidence_struggle", "weight": 0.5},
-            {"id": "finding_your_people", "weight": 0.5}
+            { "id": "identity_and_self_acceptance", "weight": 0.9 },
+            { "id": "difficult_parent", "weight": 0.6 },
+            { "id": "confidence_struggle", "weight": 0.5 },
+            { "id": "finding_your_people", "weight": 0.5 }
           ],
           "conflicts": ["fitting_in_vs_standing_out", "belonging_vs_integrity"],
-          "emotions": {"start": ["loneliness", "rejection"], "middle": ["confusion", "hope", "belonging"], "end": ["confusion", "longing"]},
+          "emotions": {
+            "start": ["loneliness", "rejection"],
+            "middle": ["confusion", "hope", "belonging"],
+            "end": ["confusion", "longing"]
+          },
           "ending_tone": "bittersweet",
           "intensity": "heavy",
-          "warnings": ["abuse", "self_harm_or_suicide", "war_and_violence", "graphic_gore", "child_endangerment"],
+          "warnings": [
+            "abuse",
+            "self_harm_or_suicide",
+            "war_and_violence",
+            "graphic_gore",
+            "child_endangerment"
+          ],
           "example_user_messages": [
             "I'm the nice one in every group, and lately I've realised I don't know what I actually want.",
             "My mum never wanted me, and I've spent my whole life trying to make everyone else like me instead.",
@@ -806,16 +949,26 @@
           "start_at": "S3",
           "span": "S3",
           "situations": [
-            {"id": "family_expectations", "weight": 0.9},
-            {"id": "difficult_parent", "weight": 0.8},
-            {"id": "responsibility_you_didnt_ask_for", "weight": 0.7},
-            {"id": "standing_up_to_authority", "weight": 0.5}
+            { "id": "family_expectations", "weight": 0.9 },
+            { "id": "difficult_parent", "weight": 0.8 },
+            { "id": "responsibility_you_didnt_ask_for", "weight": 0.7 },
+            { "id": "standing_up_to_authority", "weight": 0.5 }
           ],
           "conflicts": ["self_vs_family_expectations", "duty_vs_desire"],
-          "emotions": {"start": ["numbness", "self_doubt"], "middle": ["longing", "confusion", "fear"], "end": ["self_respect", "confidence"]},
+          "emotions": {
+            "start": ["numbness", "self_doubt"],
+            "middle": ["longing", "confusion", "fear"],
+            "end": ["self_respect", "confidence"]
+          },
           "ending_tone": "hopeful",
           "intensity": "heavy",
-          "warnings": ["abuse", "war_and_violence", "graphic_gore", "death_of_loved_one", "child_endangerment"],
+          "warnings": [
+            "abuse",
+            "war_and_violence",
+            "graphic_gore",
+            "death_of_loved_one",
+            "child_endangerment"
+          ],
           "example_user_messages": [
             "My dad walked out when I was little and now he's acting like I matter to him, and part of me wants to believe it.",
             "My family has my whole future planned and nobody has ever asked me what I want.",

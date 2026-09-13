@@ -6,13 +6,13 @@
       "name": "Michael Scott",
       "role": "The attention-hungry, well-meaning regional manager of a small paper-company branch in Scranton who desperately wants his employees to be his friends.",
       "relations": [
-        {"target": "char:the_office/dwight_schrute", "relation": "protege"},
-        {"target": "char:the_office/jim_halpert", "relation": "friend"},
-        {"target": "char:the_office/pam_beesly", "relation": "friend"},
-        {"target": "char:the_office/ryan_howard", "relation": "protege"},
-        {"target": "char:the_office/andy_bernard", "relation": "protege"},
-        {"target": "char:the_office/erin_hannon", "relation": "protege"},
-        {"target": "char:the_office/angela_martin", "relation": "colleague"}
+        { "target": "char:the_office/dwight_schrute", "relation": "protege" },
+        { "target": "char:the_office/jim_halpert", "relation": "friend" },
+        { "target": "char:the_office/pam_beesly", "relation": "friend" },
+        { "target": "char:the_office/ryan_howard", "relation": "protege" },
+        { "target": "char:the_office/andy_bernard", "relation": "protege" },
+        { "target": "char:the_office/erin_hannon", "relation": "protege" },
+        { "target": "char:the_office/angela_martin", "relation": "colleague" }
       ],
       "arcs": [
         {
@@ -31,13 +31,17 @@
           "start_at": "S1E1",
           "span": "S1-S7",
           "situations": [
-            {"id": "becoming_a_manager", "weight": 0.8},
-            {"id": "loneliness", "weight": 0.8},
-            {"id": "finding_your_people", "weight": 0.6},
-            {"id": "confidence_struggle", "weight": 0.4}
+            { "id": "becoming_a_manager", "weight": 0.8 },
+            { "id": "loneliness", "weight": 0.8 },
+            { "id": "finding_your_people", "weight": 0.6 },
+            { "id": "confidence_struggle", "weight": 0.4 }
           ],
           "conflicts": ["belonging_vs_integrity", "career_vs_relationships"],
-          "emotions": {"start": ["loneliness", "longing"], "middle": ["rejection", "shame", "hope"], "end": ["belonging", "joy", "acceptance"]},
+          "emotions": {
+            "start": ["loneliness", "longing"],
+            "middle": ["rejection", "shame", "hope"],
+            "end": ["belonging", "joy", "acceptance"]
+          },
           "ending_tone": "bittersweet",
           "intensity": "light",
           "warnings": [],
@@ -78,13 +82,17 @@
           "start_at": "S1E1",
           "span": "S1-S7",
           "situations": [
-            {"id": "loneliness", "weight": 0.8},
-            {"id": "breakup", "weight": 0.6},
-            {"id": "unrequited_love", "weight": 0.5},
-            {"id": "falling_for_someone_unexpected", "weight": 0.5}
+            { "id": "loneliness", "weight": 0.8 },
+            { "id": "breakup", "weight": 0.6 },
+            { "id": "unrequited_love", "weight": 0.5 },
+            { "id": "falling_for_someone_unexpected", "weight": 0.5 }
           ],
           "conflicts": ["holding_on_vs_letting_go", "independence_vs_connection"],
-          "emotions": {"start": ["longing", "loneliness"], "middle": ["rejection", "confusion", "shame"], "end": ["love", "joy", "peace"]},
+          "emotions": {
+            "start": ["longing", "loneliness"],
+            "middle": ["rejection", "confusion", "shame"],
+            "end": ["love", "joy", "peace"]
+          },
           "ending_tone": "hopeful",
           "intensity": "light",
           "warnings": [],
@@ -125,13 +133,17 @@
           "start_at": "S5",
           "span": "S5",
           "situations": [
-            {"id": "starting_a_business", "weight": 0.9},
-            {"id": "taking_a_big_risk", "weight": 0.8},
-            {"id": "standing_up_to_authority", "weight": 0.7},
-            {"id": "midlife_reinvention", "weight": 0.6}
+            { "id": "starting_a_business", "weight": 0.9 },
+            { "id": "taking_a_big_risk", "weight": 0.8 },
+            { "id": "standing_up_to_authority", "weight": 0.7 },
+            { "id": "midlife_reinvention", "weight": 0.6 }
           ],
           "conflicts": ["loyalty_vs_ambition", "safety_vs_growth"],
-          "emotions": {"start": ["resentment", "rejection"], "middle": ["determination", "anxiety", "overwhelm"], "end": ["pride", "self_respect", "relief"]},
+          "emotions": {
+            "start": ["resentment", "rejection"],
+            "middle": ["determination", "anxiety", "overwhelm"],
+            "end": ["pride", "self_respect", "relief"]
+          },
           "ending_tone": "hopeful",
           "intensity": "moderate",
           "warnings": [],
@@ -161,14 +173,14 @@
       "name": "Jim Halpert",
       "role": "A laid-back, quick-witted salesman at the Scranton branch who treats the job as temporary, pranks his deskmate, and is quietly close to the receptionist.",
       "relations": [
-        {"target": "char:the_office/pam_beesly", "relation": "partner"},
-        {"target": "char:the_office/dwight_schrute", "relation": "rival"},
-        {"target": "char:the_office/dwight_schrute", "relation": "friend"},
-        {"target": "char:the_office/michael_scott", "relation": "boss"},
-        {"target": "char:the_office/andy_bernard", "relation": "colleague"},
-        {"target": "char:the_office/ryan_howard", "relation": "rival"},
-        {"target": "char:the_office/erin_hannon", "relation": "colleague"},
-        {"target": "char:the_office/angela_martin", "relation": "colleague"}
+        { "target": "char:the_office/pam_beesly", "relation": "partner" },
+        { "target": "char:the_office/dwight_schrute", "relation": "rival" },
+        { "target": "char:the_office/dwight_schrute", "relation": "friend" },
+        { "target": "char:the_office/michael_scott", "relation": "boss" },
+        { "target": "char:the_office/andy_bernard", "relation": "colleague" },
+        { "target": "char:the_office/ryan_howard", "relation": "rival" },
+        { "target": "char:the_office/erin_hannon", "relation": "colleague" },
+        { "target": "char:the_office/angela_martin", "relation": "colleague" }
       ],
       "arcs": [
         {
@@ -187,12 +199,16 @@
           "start_at": "S1E1",
           "span": "S1-S3",
           "situations": [
-            {"id": "unrequited_love", "weight": 0.95},
-            {"id": "taking_a_big_risk", "weight": 0.5},
-            {"id": "moving_somewhere_new", "weight": 0.3}
+            { "id": "unrequited_love", "weight": 0.95 },
+            { "id": "taking_a_big_risk", "weight": 0.5 },
+            { "id": "moving_somewhere_new", "weight": 0.3 }
           ],
           "conflicts": ["holding_on_vs_letting_go", "truth_vs_protecting_others"],
-          "emotions": {"start": ["longing", "boredom", "restlessness"], "middle": ["rejection", "loneliness", "jealousy"], "end": ["hope", "love", "joy"]},
+          "emotions": {
+            "start": ["longing", "boredom", "restlessness"],
+            "middle": ["rejection", "loneliness", "jealousy"],
+            "end": ["hope", "love", "joy"]
+          },
           "ending_tone": "hopeful",
           "intensity": "moderate",
           "warnings": [],
@@ -232,13 +248,17 @@
           "start_at": "S9E1",
           "span": "S9",
           "situations": [
-            {"id": "career_change", "weight": 0.8},
-            {"id": "taking_a_big_risk", "weight": 0.8},
-            {"id": "long_distance", "weight": 0.6},
-            {"id": "starting_a_business", "weight": 0.5}
+            { "id": "career_change", "weight": 0.8 },
+            { "id": "taking_a_big_risk", "weight": 0.8 },
+            { "id": "long_distance", "weight": 0.6 },
+            { "id": "starting_a_business", "weight": 0.5 }
           ],
           "conflicts": ["career_vs_relationships", "safety_vs_growth"],
-          "emotions": {"start": ["restlessness", "curiosity", "hope"], "middle": ["guilt", "overwhelm", "anxiety"], "end": ["love", "peace", "joy"]},
+          "emotions": {
+            "start": ["restlessness", "curiosity", "hope"],
+            "middle": ["guilt", "overwhelm", "anxiety"],
+            "end": ["love", "peace", "joy"]
+          },
           "ending_tone": "hopeful",
           "intensity": "moderate",
           "warnings": [],
@@ -269,14 +289,14 @@
       "name": "Pam Beesly",
       "role": "The shy, artistic receptionist at the Scranton branch, long engaged to a warehouse worker, who keeps her own wishes to herself.",
       "relations": [
-        {"target": "char:the_office/jim_halpert", "relation": "partner"},
-        {"target": "char:the_office/michael_scott", "relation": "boss"},
-        {"target": "char:the_office/michael_scott", "relation": "friend"},
-        {"target": "char:the_office/dwight_schrute", "relation": "friend"},
-        {"target": "char:the_office/erin_hannon", "relation": "protege"},
-        {"target": "char:the_office/andy_bernard", "relation": "friend"},
-        {"target": "char:the_office/ryan_howard", "relation": "colleague"},
-        {"target": "char:the_office/angela_martin", "relation": "colleague"}
+        { "target": "char:the_office/jim_halpert", "relation": "partner" },
+        { "target": "char:the_office/michael_scott", "relation": "boss" },
+        { "target": "char:the_office/michael_scott", "relation": "friend" },
+        { "target": "char:the_office/dwight_schrute", "relation": "friend" },
+        { "target": "char:the_office/erin_hannon", "relation": "protege" },
+        { "target": "char:the_office/andy_bernard", "relation": "friend" },
+        { "target": "char:the_office/ryan_howard", "relation": "colleague" },
+        { "target": "char:the_office/angela_martin", "relation": "colleague" }
       ],
       "arcs": [
         {
@@ -295,13 +315,17 @@
           "start_at": "S1E1",
           "span": "S1-S4",
           "situations": [
-            {"id": "confidence_struggle", "weight": 0.95},
-            {"id": "identity_and_self_acceptance", "weight": 0.7},
-            {"id": "breakup", "weight": 0.6},
-            {"id": "falling_for_someone_unexpected", "weight": 0.5}
+            { "id": "confidence_struggle", "weight": 0.95 },
+            { "id": "identity_and_self_acceptance", "weight": 0.7 },
+            { "id": "breakup", "weight": 0.6 },
+            { "id": "falling_for_someone_unexpected", "weight": 0.5 }
           ],
           "conflicts": ["safety_vs_growth", "truth_vs_protecting_others"],
-          "emotions": {"start": ["numbness", "boredom", "self_doubt"], "middle": ["confusion", "guilt", "determination"], "end": ["confidence", "self_respect", "love"]},
+          "emotions": {
+            "start": ["numbness", "boredom", "self_doubt"],
+            "middle": ["confusion", "guilt", "determination"],
+            "end": ["confidence", "self_respect", "love"]
+          },
           "ending_tone": "hopeful",
           "intensity": "moderate",
           "warnings": [],
@@ -341,13 +365,17 @@
           "start_at": "S5E1",
           "span": "S5-S7",
           "situations": [
-            {"id": "career_change", "weight": 0.9},
-            {"id": "imposter_syndrome", "weight": 0.6},
-            {"id": "taking_a_big_risk", "weight": 0.5},
-            {"id": "confidence_struggle", "weight": 0.5}
+            { "id": "career_change", "weight": 0.9 },
+            { "id": "imposter_syndrome", "weight": 0.6 },
+            { "id": "taking_a_big_risk", "weight": 0.5 },
+            { "id": "confidence_struggle", "weight": 0.5 }
           ],
           "conflicts": ["perfectionism_vs_good_enough", "safety_vs_growth"],
-          "emotions": {"start": ["hope", "anxiety"], "middle": ["inadequacy", "self_doubt", "shame"], "end": ["confidence", "pride", "self_respect"]},
+          "emotions": {
+            "start": ["hope", "anxiety"],
+            "middle": ["inadequacy", "self_doubt", "shame"],
+            "end": ["confidence", "pride", "self_respect"]
+          },
           "ending_tone": "hopeful",
           "intensity": "light",
           "warnings": [],
@@ -386,13 +414,17 @@
           "start_at": "S9E1",
           "span": "S9",
           "situations": [
-            {"id": "long_distance", "weight": 0.8},
-            {"id": "responsibility_you_didnt_ask_for", "weight": 0.6},
-            {"id": "caring_for_family", "weight": 0.5},
-            {"id": "moving_somewhere_new", "weight": 0.4}
+            { "id": "long_distance", "weight": 0.8 },
+            { "id": "responsibility_you_didnt_ask_for", "weight": 0.6 },
+            { "id": "caring_for_family", "weight": 0.5 },
+            { "id": "moving_somewhere_new", "weight": 0.4 }
           ],
           "conflicts": ["career_vs_relationships", "independence_vs_connection"],
-          "emotions": {"start": ["anxiety", "betrayal"], "middle": ["loneliness", "overwhelm", "resentment"], "end": ["love", "hope", "freedom"]},
+          "emotions": {
+            "start": ["anxiety", "betrayal"],
+            "middle": ["loneliness", "overwhelm", "resentment"],
+            "end": ["love", "hope", "freedom"]
+          },
           "ending_tone": "hopeful",
           "intensity": "moderate",
           "warnings": [],
@@ -422,15 +454,15 @@
       "name": "Dwight Schrute",
       "role": "The branch's intense, rule-obsessed top salesman and beet farmer, who craves authority and worships his boss.",
       "relations": [
-        {"target": "char:the_office/michael_scott", "relation": "mentor"},
-        {"target": "char:the_office/michael_scott", "relation": "boss"},
-        {"target": "char:the_office/jim_halpert", "relation": "rival"},
-        {"target": "char:the_office/jim_halpert", "relation": "friend"},
-        {"target": "char:the_office/angela_martin", "relation": "partner"},
-        {"target": "char:the_office/andy_bernard", "relation": "rival"},
-        {"target": "char:the_office/pam_beesly", "relation": "friend"},
-        {"target": "char:the_office/ryan_howard", "relation": "colleague"},
-        {"target": "char:the_office/erin_hannon", "relation": "colleague"}
+        { "target": "char:the_office/michael_scott", "relation": "mentor" },
+        { "target": "char:the_office/michael_scott", "relation": "boss" },
+        { "target": "char:the_office/jim_halpert", "relation": "rival" },
+        { "target": "char:the_office/jim_halpert", "relation": "friend" },
+        { "target": "char:the_office/angela_martin", "relation": "partner" },
+        { "target": "char:the_office/andy_bernard", "relation": "rival" },
+        { "target": "char:the_office/pam_beesly", "relation": "friend" },
+        { "target": "char:the_office/ryan_howard", "relation": "colleague" },
+        { "target": "char:the_office/erin_hannon", "relation": "colleague" }
       ],
       "arcs": [
         {
@@ -449,13 +481,17 @@
           "start_at": "S1E1",
           "span": "S1-S9",
           "situations": [
-            {"id": "becoming_a_manager", "weight": 0.9},
-            {"id": "mentor_and_protege", "weight": 0.6},
-            {"id": "leading_former_peers", "weight": 0.5},
-            {"id": "finding_your_people", "weight": 0.4}
+            { "id": "becoming_a_manager", "weight": 0.9 },
+            { "id": "mentor_and_protege", "weight": 0.6 },
+            { "id": "leading_former_peers", "weight": 0.5 },
+            { "id": "finding_your_people", "weight": 0.4 }
           ],
           "conflicts": ["loyalty_vs_ambition", "control_vs_trust"],
-          "emotions": {"start": ["determination", "pride", "envy"], "middle": ["rejection", "anger", "resentment"], "end": ["self_respect", "belonging", "joy"]},
+          "emotions": {
+            "start": ["determination", "pride", "envy"],
+            "middle": ["rejection", "anger", "resentment"],
+            "end": ["self_respect", "belonging", "joy"]
+          },
           "ending_tone": "hopeful",
           "intensity": "light",
           "warnings": [],
@@ -496,12 +532,16 @@
           "start_at": "S2",
           "span": "S2-S9",
           "situations": [
-            {"id": "breakup", "weight": 0.8},
-            {"id": "unrequited_love", "weight": 0.5},
-            {"id": "falling_for_someone_unexpected", "weight": 0.4}
+            { "id": "breakup", "weight": 0.8 },
+            { "id": "unrequited_love", "weight": 0.5 },
+            { "id": "falling_for_someone_unexpected", "weight": 0.4 }
           ],
           "conflicts": ["control_vs_trust", "holding_on_vs_letting_go"],
-          "emotions": {"start": ["love", "pride"], "middle": ["betrayal", "jealousy", "anger"], "end": ["love", "joy", "peace"]},
+          "emotions": {
+            "start": ["love", "pride"],
+            "middle": ["betrayal", "jealousy", "anger"],
+            "end": ["love", "joy", "peace"]
+          },
           "ending_tone": "hopeful",
           "intensity": "moderate",
           "warnings": ["betrayal"],
@@ -533,13 +573,13 @@
       "name": "Andy Bernard",
       "role": "A preppy, Cornell-obsessed salesman from another branch of the company who badly wants to be liked and hides a quick temper.",
       "relations": [
-        {"target": "char:the_office/angela_martin", "relation": "ex_partner"},
-        {"target": "char:the_office/erin_hannon", "relation": "ex_partner"},
-        {"target": "char:the_office/dwight_schrute", "relation": "rival"},
-        {"target": "char:the_office/michael_scott", "relation": "boss"},
-        {"target": "char:the_office/jim_halpert", "relation": "colleague"},
-        {"target": "char:the_office/pam_beesly", "relation": "friend"},
-        {"target": "char:the_office/ryan_howard", "relation": "colleague"}
+        { "target": "char:the_office/angela_martin", "relation": "ex_partner" },
+        { "target": "char:the_office/erin_hannon", "relation": "ex_partner" },
+        { "target": "char:the_office/dwight_schrute", "relation": "rival" },
+        { "target": "char:the_office/michael_scott", "relation": "boss" },
+        { "target": "char:the_office/jim_halpert", "relation": "colleague" },
+        { "target": "char:the_office/pam_beesly", "relation": "friend" },
+        { "target": "char:the_office/ryan_howard", "relation": "colleague" }
       ],
       "arcs": [
         {
@@ -558,13 +598,17 @@
           "start_at": "S3E1",
           "span": "S3-S8",
           "situations": [
-            {"id": "difficult_parent", "weight": 0.8},
-            {"id": "confidence_struggle", "weight": 0.8},
-            {"id": "family_expectations", "weight": 0.6},
-            {"id": "sibling_rivalry", "weight": 0.4}
+            { "id": "difficult_parent", "weight": 0.8 },
+            { "id": "confidence_struggle", "weight": 0.8 },
+            { "id": "family_expectations", "weight": 0.6 },
+            { "id": "sibling_rivalry", "weight": 0.4 }
           ],
           "conflicts": ["self_vs_family_expectations", "fitting_in_vs_standing_out"],
-          "emotions": {"start": ["inadequacy", "anxiety"], "middle": ["anger", "rejection", "shame"], "end": ["belonging", "hope"]},
+          "emotions": {
+            "start": ["inadequacy", "anxiety"],
+            "middle": ["anger", "rejection", "shame"],
+            "end": ["belonging", "hope"]
+          },
           "ending_tone": "bittersweet",
           "intensity": "light",
           "warnings": ["betrayal"],
@@ -605,13 +649,17 @@
           "start_at": "S9",
           "span": "S9",
           "situations": [
-            {"id": "taking_a_big_risk", "weight": 0.9},
-            {"id": "career_change", "weight": 0.8},
-            {"id": "midlife_reinvention", "weight": 0.8},
-            {"id": "breakup", "weight": 0.5}
+            { "id": "taking_a_big_risk", "weight": 0.9 },
+            { "id": "career_change", "weight": 0.8 },
+            { "id": "midlife_reinvention", "weight": 0.8 },
+            { "id": "breakup", "weight": 0.5 }
           ],
           "conflicts": ["safety_vs_growth", "career_vs_relationships"],
-          "emotions": {"start": ["restlessness", "longing"], "middle": ["determination", "freedom", "shame"], "end": ["acceptance", "nostalgia", "peace"]},
+          "emotions": {
+            "start": ["restlessness", "longing"],
+            "middle": ["determination", "freedom", "shame"],
+            "end": ["acceptance", "nostalgia", "peace"]
+          },
           "ending_tone": "bittersweet",
           "intensity": "moderate",
           "warnings": [],
@@ -642,14 +690,14 @@
       "name": "Ryan Howard",
       "role": "A business-school student working as a temp at the Scranton branch, who sees the job as a stepping stone and is the object of his boss's embarrassing admiration.",
       "relations": [
-        {"target": "char:the_office/michael_scott", "relation": "mentor"},
-        {"target": "char:the_office/michael_scott", "relation": "boss"},
-        {"target": "char:the_office/jim_halpert", "relation": "rival"},
-        {"target": "char:the_office/dwight_schrute", "relation": "colleague"},
-        {"target": "char:the_office/pam_beesly", "relation": "colleague"},
-        {"target": "char:the_office/erin_hannon", "relation": "colleague"},
-        {"target": "char:the_office/andy_bernard", "relation": "colleague"},
-        {"target": "char:the_office/angela_martin", "relation": "colleague"}
+        { "target": "char:the_office/michael_scott", "relation": "mentor" },
+        { "target": "char:the_office/michael_scott", "relation": "boss" },
+        { "target": "char:the_office/jim_halpert", "relation": "rival" },
+        { "target": "char:the_office/dwight_schrute", "relation": "colleague" },
+        { "target": "char:the_office/pam_beesly", "relation": "colleague" },
+        { "target": "char:the_office/erin_hannon", "relation": "colleague" },
+        { "target": "char:the_office/andy_bernard", "relation": "colleague" },
+        { "target": "char:the_office/angela_martin", "relation": "colleague" }
       ],
       "arcs": [
         {
@@ -668,13 +716,17 @@
           "start_at": "S1E1",
           "span": "S1-S5",
           "situations": [
-            {"id": "redemption_after_mistakes", "weight": 0.7},
-            {"id": "addiction_and_recovery", "weight": 0.6},
-            {"id": "becoming_a_manager", "weight": 0.5},
-            {"id": "new_job", "weight": 0.4}
+            { "id": "redemption_after_mistakes", "weight": 0.7 },
+            { "id": "addiction_and_recovery", "weight": 0.6 },
+            { "id": "becoming_a_manager", "weight": 0.5 },
+            { "id": "new_job", "weight": 0.4 }
           ],
           "conflicts": ["power_vs_morality", "loyalty_vs_ambition"],
-          "emotions": {"start": ["boredom", "restlessness", "pride"], "middle": ["overwhelm", "anxiety", "fear"], "end": ["shame", "acceptance", "hope"]},
+          "emotions": {
+            "start": ["boredom", "restlessness", "pride"],
+            "middle": ["overwhelm", "anxiety", "fear"],
+            "end": ["shame", "acceptance", "hope"]
+          },
           "ending_tone": "ambiguous",
           "intensity": "moderate",
           "warnings": ["addiction"],
@@ -714,12 +766,16 @@
           "start_at": "S6",
           "span": "S6-S9",
           "situations": [
-            {"id": "identity_and_self_acceptance", "weight": 0.7},
-            {"id": "coming_of_age", "weight": 0.6},
-            {"id": "starting_a_business", "weight": 0.6}
+            { "id": "identity_and_self_acceptance", "weight": 0.7 },
+            { "id": "coming_of_age", "weight": 0.6 },
+            { "id": "starting_a_business", "weight": 0.6 }
           ],
           "conflicts": ["fitting_in_vs_standing_out", "independence_vs_connection"],
-          "emotions": {"start": ["restlessness", "boredom", "pride"], "middle": ["shame", "anxiety", "jealousy"], "end": ["longing", "restlessness"]},
+          "emotions": {
+            "start": ["restlessness", "boredom", "pride"],
+            "middle": ["shame", "anxiety", "jealousy"],
+            "end": ["longing", "restlessness"]
+          },
           "ending_tone": "ambiguous",
           "intensity": "light",
           "warnings": ["child_endangerment"],
@@ -750,14 +806,14 @@
       "name": "Erin Hannon",
       "role": "An upbeat, naive young woman raised in foster care who joins the Scranton branch later in the series and wants desperately to belong.",
       "relations": [
-        {"target": "char:the_office/andy_bernard", "relation": "ex_partner"},
-        {"target": "char:the_office/michael_scott", "relation": "boss"},
-        {"target": "char:the_office/michael_scott", "relation": "mentor"},
-        {"target": "char:the_office/pam_beesly", "relation": "mentor"},
-        {"target": "char:the_office/dwight_schrute", "relation": "colleague"},
-        {"target": "char:the_office/jim_halpert", "relation": "colleague"},
-        {"target": "char:the_office/ryan_howard", "relation": "colleague"},
-        {"target": "char:the_office/angela_martin", "relation": "colleague"}
+        { "target": "char:the_office/andy_bernard", "relation": "ex_partner" },
+        { "target": "char:the_office/michael_scott", "relation": "boss" },
+        { "target": "char:the_office/michael_scott", "relation": "mentor" },
+        { "target": "char:the_office/pam_beesly", "relation": "mentor" },
+        { "target": "char:the_office/dwight_schrute", "relation": "colleague" },
+        { "target": "char:the_office/jim_halpert", "relation": "colleague" },
+        { "target": "char:the_office/ryan_howard", "relation": "colleague" },
+        { "target": "char:the_office/angela_martin", "relation": "colleague" }
       ],
       "arcs": [
         {
@@ -776,13 +832,17 @@
           "start_at": "S5",
           "span": "S5-S9",
           "situations": [
-            {"id": "finding_your_people", "weight": 0.9},
-            {"id": "loneliness", "weight": 0.6},
-            {"id": "new_job", "weight": 0.5},
-            {"id": "identity_and_self_acceptance", "weight": 0.4}
+            { "id": "finding_your_people", "weight": 0.9 },
+            { "id": "loneliness", "weight": 0.6 },
+            { "id": "new_job", "weight": 0.5 },
+            { "id": "identity_and_self_acceptance", "weight": 0.4 }
           ],
           "conflicts": ["independence_vs_connection", "fitting_in_vs_standing_out"],
-          "emotions": {"start": ["hope", "anxiety", "loneliness"], "middle": ["rejection", "longing", "belonging"], "end": ["belonging", "joy", "peace"]},
+          "emotions": {
+            "start": ["hope", "anxiety", "loneliness"],
+            "middle": ["rejection", "longing", "belonging"],
+            "end": ["belonging", "joy", "peace"]
+          },
           "ending_tone": "hopeful",
           "intensity": "light",
           "warnings": [],
@@ -821,13 +881,17 @@
           "start_at": "S6",
           "span": "S6-S9",
           "situations": [
-            {"id": "breakup", "weight": 0.8},
-            {"id": "confidence_struggle", "weight": 0.6},
-            {"id": "unrequited_love", "weight": 0.5},
-            {"id": "falling_for_someone_unexpected", "weight": 0.5}
+            { "id": "breakup", "weight": 0.8 },
+            { "id": "confidence_struggle", "weight": 0.6 },
+            { "id": "unrequited_love", "weight": 0.5 },
+            { "id": "falling_for_someone_unexpected", "weight": 0.5 }
           ],
           "conflicts": ["holding_on_vs_letting_go", "independence_vs_connection"],
-          "emotions": {"start": ["longing", "hope"], "middle": ["rejection", "jealousy", "loneliness"], "end": ["self_respect", "confidence", "love"]},
+          "emotions": {
+            "start": ["longing", "hope"],
+            "middle": ["rejection", "jealousy", "loneliness"],
+            "end": ["self_respect", "confidence", "love"]
+          },
           "ending_tone": "hopeful",
           "intensity": "light",
           "warnings": [],
@@ -858,13 +922,13 @@
       "name": "Angela Martin",
       "role": "The strict, judgmental head of accounting and ruler of the party planning committee, who loves her cats and hides her feelings.",
       "relations": [
-        {"target": "char:the_office/dwight_schrute", "relation": "partner"},
-        {"target": "char:the_office/andy_bernard", "relation": "ex_partner"},
-        {"target": "char:the_office/michael_scott", "relation": "boss"},
-        {"target": "char:the_office/pam_beesly", "relation": "colleague"},
-        {"target": "char:the_office/jim_halpert", "relation": "colleague"},
-        {"target": "char:the_office/ryan_howard", "relation": "colleague"},
-        {"target": "char:the_office/erin_hannon", "relation": "colleague"}
+        { "target": "char:the_office/dwight_schrute", "relation": "partner" },
+        { "target": "char:the_office/andy_bernard", "relation": "ex_partner" },
+        { "target": "char:the_office/michael_scott", "relation": "boss" },
+        { "target": "char:the_office/pam_beesly", "relation": "colleague" },
+        { "target": "char:the_office/jim_halpert", "relation": "colleague" },
+        { "target": "char:the_office/ryan_howard", "relation": "colleague" },
+        { "target": "char:the_office/erin_hannon", "relation": "colleague" }
       ],
       "arcs": [
         {
@@ -883,13 +947,17 @@
           "start_at": "S1E1",
           "span": "S1-S8",
           "situations": [
-            {"id": "identity_and_self_acceptance", "weight": 0.7},
-            {"id": "breakup", "weight": 0.6},
-            {"id": "loneliness", "weight": 0.6},
-            {"id": "redemption_after_mistakes", "weight": 0.3}
+            { "id": "identity_and_self_acceptance", "weight": 0.7 },
+            { "id": "breakup", "weight": 0.6 },
+            { "id": "loneliness", "weight": 0.6 },
+            { "id": "redemption_after_mistakes", "weight": 0.3 }
           ],
           "conflicts": ["control_vs_trust", "duty_vs_desire"],
-          "emotions": {"start": ["pride", "resentment"], "middle": ["jealousy", "guilt", "loneliness"], "end": ["loneliness", "longing"]},
+          "emotions": {
+            "start": ["pride", "resentment"],
+            "middle": ["jealousy", "guilt", "loneliness"],
+            "end": ["loneliness", "longing"]
+          },
           "ending_tone": "bittersweet",
           "intensity": "moderate",
           "warnings": ["betrayal"],
@@ -929,13 +997,17 @@
           "start_at": "S9",
           "span": "S9",
           "situations": [
-            {"id": "starting_over", "weight": 0.9},
-            {"id": "divorce", "weight": 0.6},
-            {"id": "redemption_after_mistakes", "weight": 0.6},
-            {"id": "finding_your_people", "weight": 0.5}
+            { "id": "starting_over", "weight": 0.9 },
+            { "id": "divorce", "weight": 0.6 },
+            { "id": "redemption_after_mistakes", "weight": 0.6 },
+            { "id": "finding_your_people", "weight": 0.5 }
           ],
           "conflicts": ["revenge_vs_forgiveness", "past_vs_future"],
-          "emotions": {"start": ["betrayal", "shame", "anger"], "middle": ["loneliness", "hope"], "end": ["love", "joy", "belonging"]},
+          "emotions": {
+            "start": ["betrayal", "shame", "anger"],
+            "middle": ["loneliness", "hope"],
+            "end": ["love", "joy", "belonging"]
+          },
           "ending_tone": "hopeful",
           "intensity": "moderate",
           "warnings": ["betrayal"],

@@ -6,17 +6,17 @@
       "name": "Meredith Grey",
       "role": "A new surgical intern starting at the hospital where her famous surgeon mother made her name, while secretly caring for that mother, who has early-onset Alzheimer's.",
       "relations": [
-        {"target": "char:greys_anatomy/derek_shepherd", "relation": "partner"},
-        {"target": "char:greys_anatomy/cristina_yang", "relation": "friend"},
-        {"target": "char:greys_anatomy/alex_karev", "relation": "friend"},
-        {"target": "char:greys_anatomy/miranda_bailey", "relation": "mentor"},
-        {"target": "char:greys_anatomy/richard_webber", "relation": "mentor"},
-        {"target": "char:greys_anatomy/amelia_shepherd", "relation": "sibling"},
-        {"target": "char:greys_anatomy/owen_hunt", "relation": "friend"},
-        {"target": "char:greys_anatomy/jo_wilson", "relation": "protege"},
-        {"target": "char:greys_anatomy/jackson_avery", "relation": "friend"},
-        {"target": "char:greys_anatomy/callie_torres", "relation": "friend"},
-        {"target": "char:greys_anatomy/arizona_robbins", "relation": "colleague"}
+        { "target": "char:greys_anatomy/derek_shepherd", "relation": "partner" },
+        { "target": "char:greys_anatomy/cristina_yang", "relation": "friend" },
+        { "target": "char:greys_anatomy/alex_karev", "relation": "friend" },
+        { "target": "char:greys_anatomy/miranda_bailey", "relation": "mentor" },
+        { "target": "char:greys_anatomy/richard_webber", "relation": "mentor" },
+        { "target": "char:greys_anatomy/amelia_shepherd", "relation": "sibling" },
+        { "target": "char:greys_anatomy/owen_hunt", "relation": "friend" },
+        { "target": "char:greys_anatomy/jo_wilson", "relation": "protege" },
+        { "target": "char:greys_anatomy/jackson_avery", "relation": "friend" },
+        { "target": "char:greys_anatomy/callie_torres", "relation": "friend" },
+        { "target": "char:greys_anatomy/arizona_robbins", "relation": "colleague" }
       ],
       "arcs": [
         {
@@ -35,16 +35,28 @@
           "start_at": "S1E1",
           "span": "S1-S5",
           "situations": [
-            {"id": "difficult_parent", "weight": 0.9},
-            {"id": "identity_and_self_acceptance", "weight": 0.7},
-            {"id": "falling_for_someone_unexpected", "weight": 0.6},
-            {"id": "finding_your_people", "weight": 0.6}
+            { "id": "difficult_parent", "weight": 0.9 },
+            { "id": "identity_and_self_acceptance", "weight": 0.7 },
+            { "id": "falling_for_someone_unexpected", "weight": 0.6 },
+            { "id": "finding_your_people", "weight": 0.6 }
           ],
           "conflicts": ["independence_vs_connection", "past_vs_future"],
-          "emotions": {"start": ["loneliness", "rejection", "self_doubt"], "middle": ["confusion", "grief", "longing"], "end": ["acceptance", "love", "hope"]},
+          "emotions": {
+            "start": ["loneliness", "rejection", "self_doubt"],
+            "middle": ["confusion", "grief", "longing"],
+            "end": ["acceptance", "love", "hope"]
+          },
           "ending_tone": "hopeful",
           "intensity": "heavy",
-          "warnings": ["serious_illness", "death_of_loved_one", "grief", "medical_trauma", "betrayal", "abuse", "self_harm_or_suicide"],
+          "warnings": [
+            "serious_illness",
+            "death_of_loved_one",
+            "grief",
+            "medical_trauma",
+            "betrayal",
+            "abuse",
+            "self_harm_or_suicide"
+          ],
           "example_user_messages": [
             "My mom always cared more about her career than about me and now I can't let anyone get close.",
             "Every time a relationship gets serious I find a reason to run.",
@@ -86,13 +98,17 @@
           "start_at": "S12E1",
           "span": "S12-S15",
           "situations": [
-            {"id": "grief_and_loss", "weight": 0.9},
-            {"id": "starting_over", "weight": 0.8},
-            {"id": "caring_for_family", "weight": 0.5},
-            {"id": "falling_for_someone_unexpected", "weight": 0.5}
+            { "id": "grief_and_loss", "weight": 0.9 },
+            { "id": "starting_over", "weight": 0.8 },
+            { "id": "caring_for_family", "weight": 0.5 },
+            { "id": "falling_for_someone_unexpected", "weight": 0.5 }
           ],
           "conflicts": ["holding_on_vs_letting_go", "past_vs_future"],
-          "emotions": {"start": ["grief", "numbness", "loneliness"], "middle": ["guilt", "confusion", "hope"], "end": ["joy", "love", "acceptance"]},
+          "emotions": {
+            "start": ["grief", "numbness", "loneliness"],
+            "middle": ["guilt", "confusion", "hope"],
+            "end": ["joy", "love", "acceptance"]
+          },
           "ending_tone": "hopeful",
           "intensity": "moderate",
           "warnings": ["grief", "death_of_loved_one", "war_and_violence", "medical_trauma"],
@@ -134,13 +150,17 @@
           "start_at": "S15",
           "span": "S15-S16",
           "situations": [
-            {"id": "standing_up_to_authority", "weight": 0.9},
-            {"id": "losing_a_job", "weight": 0.8},
-            {"id": "taking_a_big_risk", "weight": 0.6},
-            {"id": "redemption_after_mistakes", "weight": 0.4}
+            { "id": "standing_up_to_authority", "weight": 0.9 },
+            { "id": "losing_a_job", "weight": 0.8 },
+            { "id": "taking_a_big_risk", "weight": 0.6 },
+            { "id": "redemption_after_mistakes", "weight": 0.4 }
           ],
           "conflicts": ["belonging_vs_integrity", "truth_vs_protecting_others"],
-          "emotions": {"start": ["determination", "anger"], "middle": ["guilt", "fear", "anger"], "end": ["self_respect", "relief", "belonging"]},
+          "emotions": {
+            "start": ["determination", "anger"],
+            "middle": ["guilt", "fear", "anger"],
+            "end": ["self_respect", "relief", "belonging"]
+          },
           "ending_tone": "hopeful",
           "intensity": "moderate",
           "warnings": ["serious_illness", "betrayal"],
@@ -173,17 +193,17 @@
       "name": "Miranda Bailey",
       "role": "A formidable, no-nonsense surgical resident nicknamed 'The Nazi', put in charge of a new group of interns she has no intention of coddling.",
       "relations": [
-        {"target": "char:greys_anatomy/richard_webber", "relation": "mentor"},
-        {"target": "char:greys_anatomy/meredith_grey", "relation": "protege"},
-        {"target": "char:greys_anatomy/alex_karev", "relation": "protege"},
-        {"target": "char:greys_anatomy/cristina_yang", "relation": "protege"},
-        {"target": "char:greys_anatomy/jo_wilson", "relation": "protege"},
-        {"target": "char:greys_anatomy/owen_hunt", "relation": "colleague"},
-        {"target": "char:greys_anatomy/derek_shepherd", "relation": "colleague"},
-        {"target": "char:greys_anatomy/callie_torres", "relation": "colleague"},
-        {"target": "char:greys_anatomy/arizona_robbins", "relation": "colleague"},
-        {"target": "char:greys_anatomy/jackson_avery", "relation": "colleague"},
-        {"target": "char:greys_anatomy/amelia_shepherd", "relation": "colleague"}
+        { "target": "char:greys_anatomy/richard_webber", "relation": "mentor" },
+        { "target": "char:greys_anatomy/meredith_grey", "relation": "protege" },
+        { "target": "char:greys_anatomy/alex_karev", "relation": "protege" },
+        { "target": "char:greys_anatomy/cristina_yang", "relation": "protege" },
+        { "target": "char:greys_anatomy/jo_wilson", "relation": "protege" },
+        { "target": "char:greys_anatomy/owen_hunt", "relation": "colleague" },
+        { "target": "char:greys_anatomy/derek_shepherd", "relation": "colleague" },
+        { "target": "char:greys_anatomy/callie_torres", "relation": "colleague" },
+        { "target": "char:greys_anatomy/arizona_robbins", "relation": "colleague" },
+        { "target": "char:greys_anatomy/jackson_avery", "relation": "colleague" },
+        { "target": "char:greys_anatomy/amelia_shepherd", "relation": "colleague" }
       ],
       "arcs": [
         {
@@ -202,13 +222,17 @@
           "start_at": "S2",
           "span": "S2-S5",
           "situations": [
-            {"id": "becoming_a_parent", "weight": 0.9},
-            {"id": "divorce", "weight": 0.6},
-            {"id": "family_expectations", "weight": 0.5},
-            {"id": "burnout_at_work", "weight": 0.4}
+            { "id": "becoming_a_parent", "weight": 0.9 },
+            { "id": "divorce", "weight": 0.6 },
+            { "id": "family_expectations", "weight": 0.5 },
+            { "id": "burnout_at_work", "weight": 0.4 }
           ],
           "conflicts": ["career_vs_relationships", "self_vs_family_expectations"],
-          "emotions": {"start": ["pride", "anxiety"], "middle": ["guilt", "inadequacy", "resentment"], "end": ["self_respect", "determination", "grief"]},
+          "emotions": {
+            "start": ["pride", "anxiety"],
+            "middle": ["guilt", "inadequacy", "resentment"],
+            "end": ["self_respect", "determination", "grief"]
+          },
           "ending_tone": "bittersweet",
           "intensity": "moderate",
           "warnings": ["medical_trauma", "child_endangerment", "death_of_loved_one", "grief"],
@@ -250,13 +274,17 @@
           "start_at": "S12E1",
           "span": "S12-S13",
           "situations": [
-            {"id": "becoming_a_manager", "weight": 0.9},
-            {"id": "leading_former_peers", "weight": 0.8},
-            {"id": "mentor_and_protege", "weight": 0.6},
-            {"id": "imposter_syndrome", "weight": 0.4}
+            { "id": "becoming_a_manager", "weight": 0.9 },
+            { "id": "leading_former_peers", "weight": 0.8 },
+            { "id": "mentor_and_protege", "weight": 0.6 },
+            { "id": "imposter_syndrome", "weight": 0.4 }
           ],
           "conflicts": ["loyalty_vs_ambition", "control_vs_trust"],
-          "emotions": {"start": ["determination", "self_doubt"], "middle": ["overwhelm", "anger", "guilt"], "end": ["confidence", "self_respect"]},
+          "emotions": {
+            "start": ["determination", "self_doubt"],
+            "middle": ["overwhelm", "anger", "guilt"],
+            "end": ["confidence", "self_respect"]
+          },
           "ending_tone": "hopeful",
           "intensity": "moderate",
           "warnings": ["betrayal", "sexual_violence"],
@@ -296,13 +324,17 @@
           "start_at": "S10",
           "span": "S10-S15",
           "situations": [
-            {"id": "burnout_at_work", "weight": 0.8},
-            {"id": "illness_or_injury", "weight": 0.8},
-            {"id": "identity_and_self_acceptance", "weight": 0.5},
-            {"id": "confidence_struggle", "weight": 0.4}
+            { "id": "burnout_at_work", "weight": 0.8 },
+            { "id": "illness_or_injury", "weight": 0.8 },
+            { "id": "identity_and_self_acceptance", "weight": 0.5 },
+            { "id": "confidence_struggle", "weight": 0.4 }
           ],
           "conflicts": ["control_vs_trust", "perfectionism_vs_good_enough"],
-          "emotions": {"start": ["fear", "anxiety", "shame"], "middle": ["overwhelm", "burnout", "loneliness"], "end": ["acceptance", "peace", "relief"]},
+          "emotions": {
+            "start": ["fear", "anxiety", "shame"],
+            "middle": ["overwhelm", "burnout", "loneliness"],
+            "end": ["acceptance", "peace", "relief"]
+          },
           "ending_tone": "hopeful",
           "intensity": "moderate",
           "warnings": ["serious_illness", "medical_trauma"],
@@ -336,17 +368,17 @@
       "name": "Richard Webber",
       "role": "The long-serving Chief of Surgery and mentor to generations of surgeons, with a personal history at the hospital that he rarely talks about.",
       "relations": [
-        {"target": "char:greys_anatomy/meredith_grey", "relation": "protege"},
-        {"target": "char:greys_anatomy/miranda_bailey", "relation": "protege"},
-        {"target": "char:greys_anatomy/derek_shepherd", "relation": "protege"},
-        {"target": "char:greys_anatomy/alex_karev", "relation": "protege"},
-        {"target": "char:greys_anatomy/cristina_yang", "relation": "protege"},
-        {"target": "char:greys_anatomy/jackson_avery", "relation": "child"},
-        {"target": "char:greys_anatomy/owen_hunt", "relation": "friend"},
-        {"target": "char:greys_anatomy/arizona_robbins", "relation": "friend"},
-        {"target": "char:greys_anatomy/amelia_shepherd", "relation": "friend"},
-        {"target": "char:greys_anatomy/callie_torres", "relation": "colleague"},
-        {"target": "char:greys_anatomy/jo_wilson", "relation": "colleague"}
+        { "target": "char:greys_anatomy/meredith_grey", "relation": "protege" },
+        { "target": "char:greys_anatomy/miranda_bailey", "relation": "protege" },
+        { "target": "char:greys_anatomy/derek_shepherd", "relation": "protege" },
+        { "target": "char:greys_anatomy/alex_karev", "relation": "protege" },
+        { "target": "char:greys_anatomy/cristina_yang", "relation": "protege" },
+        { "target": "char:greys_anatomy/jackson_avery", "relation": "child" },
+        { "target": "char:greys_anatomy/owen_hunt", "relation": "friend" },
+        { "target": "char:greys_anatomy/arizona_robbins", "relation": "friend" },
+        { "target": "char:greys_anatomy/amelia_shepherd", "relation": "friend" },
+        { "target": "char:greys_anatomy/callie_torres", "relation": "colleague" },
+        { "target": "char:greys_anatomy/jo_wilson", "relation": "colleague" }
       ],
       "arcs": [
         {
@@ -365,13 +397,17 @@
           "start_at": "S6",
           "span": "S6-S15",
           "situations": [
-            {"id": "addiction_and_recovery", "weight": 1.0},
-            {"id": "burnout_at_work", "weight": 0.5},
-            {"id": "grief_and_loss", "weight": 0.5},
-            {"id": "losing_a_job", "weight": 0.3}
+            { "id": "addiction_and_recovery", "weight": 1.0 },
+            { "id": "burnout_at_work", "weight": 0.5 },
+            { "id": "grief_and_loss", "weight": 0.5 },
+            { "id": "losing_a_job", "weight": 0.3 }
           ],
           "conflicts": ["control_vs_trust", "holding_on_vs_letting_go"],
-          "emotions": {"start": ["shame", "overwhelm", "anxiety"], "middle": ["guilt", "grief", "anger"], "end": ["acceptance", "self_respect", "belonging"]},
+          "emotions": {
+            "start": ["shame", "overwhelm", "anxiety"],
+            "middle": ["guilt", "grief", "anger"],
+            "end": ["acceptance", "self_respect", "belonging"]
+          },
           "ending_tone": "hopeful",
           "intensity": "heavy",
           "warnings": ["addiction", "death_of_loved_one", "grief", "war_and_violence"],
@@ -412,12 +448,16 @@
           "start_at": "S7",
           "span": "S7-S9",
           "situations": [
-            {"id": "caring_for_family", "weight": 0.9},
-            {"id": "grief_and_loss", "weight": 0.8},
-            {"id": "losing_a_job", "weight": 0.4}
+            { "id": "caring_for_family", "weight": 0.9 },
+            { "id": "grief_and_loss", "weight": 0.8 },
+            { "id": "losing_a_job", "weight": 0.4 }
           ],
           "conflicts": ["holding_on_vs_letting_go", "duty_vs_desire"],
-          "emotions": {"start": ["dread", "guilt"], "middle": ["grief", "jealousy", "loneliness"], "end": ["acceptance", "love", "grief"]},
+          "emotions": {
+            "start": ["dread", "guilt"],
+            "middle": ["grief", "jealousy", "loneliness"],
+            "end": ["acceptance", "love", "grief"]
+          },
           "ending_tone": "bittersweet",
           "intensity": "moderate",
           "warnings": ["serious_illness", "death_of_loved_one", "grief"],
@@ -458,14 +498,18 @@
           "start_at": "S13",
           "span": "S13-S16",
           "situations": [
-            {"id": "losing_a_job", "weight": 0.8},
-            {"id": "midlife_reinvention", "weight": 0.8},
-            {"id": "mentor_and_protege", "weight": 0.6},
-            {"id": "divorce", "weight": 0.4},
-            {"id": "illness_or_injury", "weight": 0.4}
+            { "id": "losing_a_job", "weight": 0.8 },
+            { "id": "midlife_reinvention", "weight": 0.8 },
+            { "id": "mentor_and_protege", "weight": 0.6 },
+            { "id": "divorce", "weight": 0.4 },
+            { "id": "illness_or_injury", "weight": 0.4 }
           ],
           "conflicts": ["past_vs_future", "loyalty_vs_ambition"],
-          "emotions": {"start": ["resentment", "betrayal"], "middle": ["anger", "loneliness", "grief"], "end": ["relief", "self_respect"]},
+          "emotions": {
+            "start": ["resentment", "betrayal"],
+            "middle": ["anger", "loneliness", "grief"],
+            "end": ["relief", "self_respect"]
+          },
           "ending_tone": "bittersweet",
           "intensity": "moderate",
           "warnings": ["serious_illness", "death_of_loved_one", "betrayal"],
@@ -498,17 +542,17 @@
       "name": "Alex Karev",
       "role": "A cocky, abrasive surgical intern with a chip on his shoulder who pushes people away with insults and hides a hard upbringing.",
       "relations": [
-        {"target": "char:greys_anatomy/meredith_grey", "relation": "friend"},
-        {"target": "char:greys_anatomy/cristina_yang", "relation": "friend"},
-        {"target": "char:greys_anatomy/miranda_bailey", "relation": "mentor"},
-        {"target": "char:greys_anatomy/arizona_robbins", "relation": "mentor"},
-        {"target": "char:greys_anatomy/richard_webber", "relation": "mentor"},
-        {"target": "char:greys_anatomy/jo_wilson", "relation": "partner"},
-        {"target": "char:greys_anatomy/owen_hunt", "relation": "colleague"},
-        {"target": "char:greys_anatomy/derek_shepherd", "relation": "colleague"},
-        {"target": "char:greys_anatomy/callie_torres", "relation": "colleague"},
-        {"target": "char:greys_anatomy/jackson_avery", "relation": "colleague"},
-        {"target": "char:greys_anatomy/amelia_shepherd", "relation": "colleague"}
+        { "target": "char:greys_anatomy/meredith_grey", "relation": "friend" },
+        { "target": "char:greys_anatomy/cristina_yang", "relation": "friend" },
+        { "target": "char:greys_anatomy/miranda_bailey", "relation": "mentor" },
+        { "target": "char:greys_anatomy/arizona_robbins", "relation": "mentor" },
+        { "target": "char:greys_anatomy/richard_webber", "relation": "mentor" },
+        { "target": "char:greys_anatomy/jo_wilson", "relation": "partner" },
+        { "target": "char:greys_anatomy/owen_hunt", "relation": "colleague" },
+        { "target": "char:greys_anatomy/derek_shepherd", "relation": "colleague" },
+        { "target": "char:greys_anatomy/callie_torres", "relation": "colleague" },
+        { "target": "char:greys_anatomy/jackson_avery", "relation": "colleague" },
+        { "target": "char:greys_anatomy/amelia_shepherd", "relation": "colleague" }
       ],
       "arcs": [
         {
@@ -527,16 +571,28 @@
           "start_at": "S1E1",
           "span": "S1-S9",
           "situations": [
-            {"id": "identity_and_self_acceptance", "weight": 0.8},
-            {"id": "coming_of_age", "weight": 0.7},
-            {"id": "mentor_and_protege", "weight": 0.6},
-            {"id": "confidence_struggle", "weight": 0.6}
+            { "id": "identity_and_self_acceptance", "weight": 0.8 },
+            { "id": "coming_of_age", "weight": 0.7 },
+            { "id": "mentor_and_protege", "weight": 0.6 },
+            { "id": "confidence_struggle", "weight": 0.6 }
           ],
           "conflicts": ["independence_vs_connection", "past_vs_future"],
-          "emotions": {"start": ["anger", "shame", "inadequacy"], "middle": ["longing", "betrayal", "guilt"], "end": ["belonging", "self_respect", "confidence"]},
+          "emotions": {
+            "start": ["anger", "shame", "inadequacy"],
+            "middle": ["longing", "betrayal", "guilt"],
+            "end": ["belonging", "self_respect", "confidence"]
+          },
           "ending_tone": "hopeful",
           "intensity": "heavy",
-          "warnings": ["serious_illness", "self_harm_or_suicide", "war_and_violence", "death_of_loved_one", "grief", "betrayal", "medical_trauma"],
+          "warnings": [
+            "serious_illness",
+            "self_harm_or_suicide",
+            "war_and_violence",
+            "death_of_loved_one",
+            "grief",
+            "betrayal",
+            "medical_trauma"
+          ],
           "example_user_messages": [
             "I act like a jerk because if people like me they'll just leave anyway.",
             "I grew up taking care of my whole family and now I don't know how to let anyone take care of me.",
@@ -576,13 +632,17 @@
           "start_at": "S10",
           "span": "S10-S14",
           "situations": [
-            {"id": "difficult_parent", "weight": 0.9},
-            {"id": "redemption_after_mistakes", "weight": 0.7},
-            {"id": "identity_and_self_acceptance", "weight": 0.5},
-            {"id": "grief_and_loss", "weight": 0.3}
+            { "id": "difficult_parent", "weight": 0.9 },
+            { "id": "redemption_after_mistakes", "weight": 0.7 },
+            { "id": "identity_and_self_acceptance", "weight": 0.5 },
+            { "id": "grief_and_loss", "weight": 0.3 }
           ],
           "conflicts": ["revenge_vs_forgiveness", "past_vs_future"],
-          "emotions": {"start": ["anger", "resentment", "fear"], "middle": ["shame", "guilt", "grief"], "end": ["self_respect", "love", "peace"]},
+          "emotions": {
+            "start": ["anger", "resentment", "fear"],
+            "middle": ["shame", "guilt", "grief"],
+            "end": ["self_respect", "love", "peace"]
+          },
           "ending_tone": "hopeful",
           "intensity": "heavy",
           "warnings": ["abuse", "domestic_violence", "addiction", "death_of_loved_one"],
@@ -623,12 +683,16 @@
           "start_at": "S15",
           "span": "S15-S16",
           "situations": [
-            {"id": "caring_for_family", "weight": 0.8},
-            {"id": "loneliness", "weight": 0.5},
-            {"id": "becoming_a_manager", "weight": 0.4}
+            { "id": "caring_for_family", "weight": 0.8 },
+            { "id": "loneliness", "weight": 0.5 },
+            { "id": "becoming_a_manager", "weight": 0.4 }
           ],
           "conflicts": ["control_vs_trust", "holding_on_vs_letting_go"],
-          "emotions": {"start": ["confusion", "anxiety", "fear"], "middle": ["overwhelm", "loneliness", "anger"], "end": ["hope", "love", "acceptance"]},
+          "emotions": {
+            "start": ["confusion", "anxiety", "fear"],
+            "middle": ["overwhelm", "loneliness", "anger"],
+            "end": ["hope", "love", "acceptance"]
+          },
           "ending_tone": "bittersweet",
           "intensity": "heavy",
           "warnings": ["sexual_violence", "betrayal"],
@@ -660,17 +724,17 @@
       "name": "Owen Hunt",
       "role": "An Army trauma surgeon just back from Iraq who joins the hospital's trauma team: brilliant under pressure, but carrying the war home with him.",
       "relations": [
-        {"target": "char:greys_anatomy/cristina_yang", "relation": "ex_partner"},
-        {"target": "char:greys_anatomy/amelia_shepherd", "relation": "ex_partner"},
-        {"target": "char:greys_anatomy/meredith_grey", "relation": "friend"},
-        {"target": "char:greys_anatomy/derek_shepherd", "relation": "friend"},
-        {"target": "char:greys_anatomy/richard_webber", "relation": "friend"},
-        {"target": "char:greys_anatomy/callie_torres", "relation": "friend"},
-        {"target": "char:greys_anatomy/alex_karev", "relation": "colleague"},
-        {"target": "char:greys_anatomy/miranda_bailey", "relation": "colleague"},
-        {"target": "char:greys_anatomy/jackson_avery", "relation": "colleague"},
-        {"target": "char:greys_anatomy/arizona_robbins", "relation": "colleague"},
-        {"target": "char:greys_anatomy/jo_wilson", "relation": "colleague"}
+        { "target": "char:greys_anatomy/cristina_yang", "relation": "ex_partner" },
+        { "target": "char:greys_anatomy/amelia_shepherd", "relation": "ex_partner" },
+        { "target": "char:greys_anatomy/meredith_grey", "relation": "friend" },
+        { "target": "char:greys_anatomy/derek_shepherd", "relation": "friend" },
+        { "target": "char:greys_anatomy/richard_webber", "relation": "friend" },
+        { "target": "char:greys_anatomy/callie_torres", "relation": "friend" },
+        { "target": "char:greys_anatomy/alex_karev", "relation": "colleague" },
+        { "target": "char:greys_anatomy/miranda_bailey", "relation": "colleague" },
+        { "target": "char:greys_anatomy/jackson_avery", "relation": "colleague" },
+        { "target": "char:greys_anatomy/arizona_robbins", "relation": "colleague" },
+        { "target": "char:greys_anatomy/jo_wilson", "relation": "colleague" }
       ],
       "arcs": [
         {
@@ -689,13 +753,17 @@
           "start_at": "S5E1",
           "span": "S5",
           "situations": [
-            {"id": "starting_over", "weight": 0.7},
-            {"id": "grief_and_loss", "weight": 0.7},
-            {"id": "illness_or_injury", "weight": 0.6},
-            {"id": "falling_for_someone_unexpected", "weight": 0.5}
+            { "id": "starting_over", "weight": 0.7 },
+            { "id": "grief_and_loss", "weight": 0.7 },
+            { "id": "illness_or_injury", "weight": 0.6 },
+            { "id": "falling_for_someone_unexpected", "weight": 0.5 }
           ],
           "conflicts": ["independence_vs_connection", "past_vs_future"],
-          "emotions": {"start": ["numbness", "guilt", "restlessness"], "middle": ["fear", "shame", "longing"], "end": ["relief", "hope", "love"]},
+          "emotions": {
+            "start": ["numbness", "guilt", "restlessness"],
+            "middle": ["fear", "shame", "longing"],
+            "end": ["relief", "hope", "love"]
+          },
           "ending_tone": "hopeful",
           "intensity": "heavy",
           "warnings": ["war_and_violence", "domestic_violence", "grief", "medical_trauma"],
@@ -736,12 +804,16 @@
           "start_at": "S8",
           "span": "S8-S15",
           "situations": [
-            {"id": "becoming_a_parent", "weight": 0.8},
-            {"id": "divorce", "weight": 0.7},
-            {"id": "breakup", "weight": 0.5}
+            { "id": "becoming_a_parent", "weight": 0.8 },
+            { "id": "divorce", "weight": 0.7 },
+            { "id": "breakup", "weight": 0.5 }
           ],
           "conflicts": ["holding_on_vs_letting_go", "control_vs_trust"],
-          "emotions": {"start": ["hope", "longing"], "middle": ["resentment", "anger", "grief"], "end": ["joy", "acceptance", "love"]},
+          "emotions": {
+            "start": ["hope", "longing"],
+            "middle": ["resentment", "anger", "grief"],
+            "end": ["joy", "acceptance", "love"]
+          },
           "ending_tone": "hopeful",
           "intensity": "moderate",
           "warnings": ["betrayal", "addiction", "grief"],
@@ -783,12 +855,16 @@
           "start_at": "S15",
           "span": "S15-S16",
           "situations": [
-            {"id": "becoming_a_parent", "weight": 0.6},
-            {"id": "identity_and_self_acceptance", "weight": 0.6},
-            {"id": "breakup", "weight": 0.5}
+            { "id": "becoming_a_parent", "weight": 0.6 },
+            { "id": "identity_and_self_acceptance", "weight": 0.6 },
+            { "id": "breakup", "weight": 0.5 }
           ],
           "conflicts": ["duty_vs_desire", "past_vs_future"],
-          "emotions": {"start": ["confusion", "guilt"], "middle": ["anger", "shame", "relief"], "end": ["joy", "love", "betrayal"]},
+          "emotions": {
+            "start": ["confusion", "guilt"],
+            "middle": ["anger", "shame", "relief"],
+            "end": ["joy", "love", "betrayal"]
+          },
           "ending_tone": "bittersweet",
           "intensity": "moderate",
           "warnings": ["betrayal", "grief", "medical_trauma"],
@@ -819,16 +895,16 @@
       "name": "Derek Shepherd",
       "role": "A charming, gifted neurosurgeon who has just left a prestigious New York practice for Seattle, for reasons he keeps to himself.",
       "relations": [
-        {"target": "char:greys_anatomy/meredith_grey", "relation": "partner"},
-        {"target": "char:greys_anatomy/amelia_shepherd", "relation": "sibling"},
-        {"target": "char:greys_anatomy/richard_webber", "relation": "mentor"},
-        {"target": "char:greys_anatomy/owen_hunt", "relation": "friend"},
-        {"target": "char:greys_anatomy/cristina_yang", "relation": "friend"},
-        {"target": "char:greys_anatomy/miranda_bailey", "relation": "colleague"},
-        {"target": "char:greys_anatomy/callie_torres", "relation": "colleague"},
-        {"target": "char:greys_anatomy/alex_karev", "relation": "colleague"},
-        {"target": "char:greys_anatomy/jackson_avery", "relation": "colleague"},
-        {"target": "char:greys_anatomy/arizona_robbins", "relation": "colleague"}
+        { "target": "char:greys_anatomy/meredith_grey", "relation": "partner" },
+        { "target": "char:greys_anatomy/amelia_shepherd", "relation": "sibling" },
+        { "target": "char:greys_anatomy/richard_webber", "relation": "mentor" },
+        { "target": "char:greys_anatomy/owen_hunt", "relation": "friend" },
+        { "target": "char:greys_anatomy/cristina_yang", "relation": "friend" },
+        { "target": "char:greys_anatomy/miranda_bailey", "relation": "colleague" },
+        { "target": "char:greys_anatomy/callie_torres", "relation": "colleague" },
+        { "target": "char:greys_anatomy/alex_karev", "relation": "colleague" },
+        { "target": "char:greys_anatomy/jackson_avery", "relation": "colleague" },
+        { "target": "char:greys_anatomy/arizona_robbins", "relation": "colleague" }
       ],
       "arcs": [
         {
@@ -847,13 +923,17 @@
           "start_at": "S1E9",
           "span": "S1-S3",
           "situations": [
-            {"id": "divorce", "weight": 0.9},
-            {"id": "starting_over", "weight": 0.7},
-            {"id": "falling_for_someone_unexpected", "weight": 0.6},
-            {"id": "moving_somewhere_new", "weight": 0.5}
+            { "id": "divorce", "weight": 0.9 },
+            { "id": "starting_over", "weight": 0.7 },
+            { "id": "falling_for_someone_unexpected", "weight": 0.6 },
+            { "id": "moving_somewhere_new", "weight": 0.5 }
           ],
           "conflicts": ["duty_vs_desire", "revenge_vs_forgiveness"],
-          "emotions": {"start": ["betrayal", "guilt", "confusion"], "middle": ["jealousy", "longing", "anger"], "end": ["relief", "hope", "love"]},
+          "emotions": {
+            "start": ["betrayal", "guilt", "confusion"],
+            "middle": ["jealousy", "longing", "anger"],
+            "end": ["relief", "hope", "love"]
+          },
           "ending_tone": "hopeful",
           "intensity": "moderate",
           "warnings": ["betrayal"],
@@ -894,13 +974,17 @@
           "start_at": "S7E1",
           "span": "S7",
           "situations": [
-            {"id": "burnout_at_work", "weight": 0.6},
-            {"id": "illness_or_injury", "weight": 0.5},
-            {"id": "responsibility_you_didnt_ask_for", "weight": 0.5},
-            {"id": "career_change", "weight": 0.3}
+            { "id": "burnout_at_work", "weight": 0.6 },
+            { "id": "illness_or_injury", "weight": 0.5 },
+            { "id": "responsibility_you_didnt_ask_for", "weight": 0.5 },
+            { "id": "career_change", "weight": 0.3 }
           ],
           "conflicts": ["duty_vs_desire", "independence_vs_connection"],
-          "emotions": {"start": ["numbness", "restlessness", "anger"], "middle": ["guilt", "fear"], "end": ["relief", "acceptance", "love"]},
+          "emotions": {
+            "start": ["numbness", "restlessness", "anger"],
+            "middle": ["guilt", "fear"],
+            "end": ["relief", "acceptance", "love"]
+          },
           "ending_tone": "hopeful",
           "intensity": "moderate",
           "warnings": ["war_and_violence", "grief", "medical_trauma"],
@@ -940,13 +1024,17 @@
           "start_at": "S10",
           "span": "S10-S11",
           "situations": [
-            {"id": "long_distance", "weight": 0.7},
-            {"id": "midlife_reinvention", "weight": 0.5},
-            {"id": "taking_a_big_risk", "weight": 0.5},
-            {"id": "family_expectations", "weight": 0.4}
+            { "id": "long_distance", "weight": 0.7 },
+            { "id": "midlife_reinvention", "weight": 0.5 },
+            { "id": "taking_a_big_risk", "weight": 0.5 },
+            { "id": "family_expectations", "weight": 0.4 }
           ],
           "conflicts": ["career_vs_relationships", "duty_vs_desire"],
-          "emotions": {"start": ["pride", "hope"], "middle": ["resentment", "anger", "loneliness"], "end": ["love", "peace"]},
+          "emotions": {
+            "start": ["pride", "hope"],
+            "middle": ["resentment", "anger", "loneliness"],
+            "end": ["love", "peace"]
+          },
           "ending_tone": "tragic",
           "intensity": "heavy",
           "warnings": ["death_of_main_character", "grief", "medical_trauma"],

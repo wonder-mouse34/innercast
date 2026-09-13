@@ -6,17 +6,17 @@
       "name": "Aang",
       "role": "A playful twelve-year-old monk who wakes from a century frozen in ice to learn he is the Avatar, the one person expected to bring peace to a world at war.",
       "relations": [
-        {"target": "char:avatar/katara", "relation": "partner"},
-        {"target": "char:avatar/katara", "relation": "mentor"},
-        {"target": "char:avatar/sokka", "relation": "friend"},
-        {"target": "char:avatar/toph_beifong", "relation": "mentor"},
-        {"target": "char:avatar/toph_beifong", "relation": "friend"},
-        {"target": "char:avatar/zuko", "relation": "enemy"},
-        {"target": "char:avatar/zuko", "relation": "mentor"},
-        {"target": "char:avatar/zuko", "relation": "friend"},
-        {"target": "char:avatar/iroh", "relation": "friend"},
-        {"target": "char:avatar/azula", "relation": "enemy"},
-        {"target": "char:avatar/tenzin", "relation": "child"}
+        { "target": "char:avatar/katara", "relation": "partner" },
+        { "target": "char:avatar/katara", "relation": "mentor" },
+        { "target": "char:avatar/sokka", "relation": "friend" },
+        { "target": "char:avatar/toph_beifong", "relation": "mentor" },
+        { "target": "char:avatar/toph_beifong", "relation": "friend" },
+        { "target": "char:avatar/zuko", "relation": "enemy" },
+        { "target": "char:avatar/zuko", "relation": "mentor" },
+        { "target": "char:avatar/zuko", "relation": "friend" },
+        { "target": "char:avatar/iroh", "relation": "friend" },
+        { "target": "char:avatar/azula", "relation": "enemy" },
+        { "target": "char:avatar/tenzin", "relation": "child" }
       ],
       "arcs": [
         {
@@ -35,13 +35,17 @@
           "start_at": "ATLA S1E1",
           "span": "ATLA S1-S3",
           "situations": [
-            {"id": "responsibility_you_didnt_ask_for", "weight": 0.95},
-            {"id": "coming_of_age", "weight": 0.6},
-            {"id": "imposter_syndrome", "weight": 0.4},
-            {"id": "grief_and_loss", "weight": 0.4}
+            { "id": "responsibility_you_didnt_ask_for", "weight": 0.95 },
+            { "id": "coming_of_age", "weight": 0.6 },
+            { "id": "imposter_syndrome", "weight": 0.4 },
+            { "id": "grief_and_loss", "weight": 0.4 }
           ],
           "conflicts": ["duty_vs_desire"],
-          "emotions": {"start": ["guilt", "restlessness", "fear"], "middle": ["overwhelm", "self_doubt", "anxiety"], "end": ["confidence", "peace", "relief"]},
+          "emotions": {
+            "start": ["guilt", "restlessness", "fear"],
+            "middle": ["overwhelm", "self_doubt", "anxiety"],
+            "end": ["confidence", "peace", "relief"]
+          },
           "ending_tone": "hopeful",
           "intensity": "moderate",
           "warnings": ["war_and_violence", "death_of_loved_one", "child_endangerment", "grief"],
@@ -83,13 +87,17 @@
           "start_at": "ATLA S1E3",
           "span": "ATLA S1-S2",
           "situations": [
-            {"id": "grief_and_loss", "weight": 0.95},
-            {"id": "loneliness", "weight": 0.7},
-            {"id": "identity_and_self_acceptance", "weight": 0.4},
-            {"id": "finding_your_people", "weight": 0.4}
+            { "id": "grief_and_loss", "weight": 0.95 },
+            { "id": "loneliness", "weight": 0.7 },
+            { "id": "identity_and_self_acceptance", "weight": 0.4 },
+            { "id": "finding_your_people", "weight": 0.4 }
           ],
           "conflicts": ["holding_on_vs_letting_go", "past_vs_future"],
-          "emotions": {"start": ["hope", "grief", "guilt"], "middle": ["anger", "loneliness", "numbness"], "end": ["acceptance", "love"]},
+          "emotions": {
+            "start": ["hope", "grief", "guilt"],
+            "middle": ["anger", "loneliness", "numbness"],
+            "end": ["acceptance", "love"]
+          },
           "ending_tone": "bittersweet",
           "intensity": "heavy",
           "warnings": ["death_of_loved_one", "grief", "war_and_violence"],
@@ -128,12 +136,16 @@
           "start_at": "ATLA S3E18",
           "span": "ATLA S3E18-S3E21",
           "situations": [
-            {"id": "responsibility_you_didnt_ask_for", "weight": 0.8},
-            {"id": "identity_and_self_acceptance", "weight": 0.6},
-            {"id": "standing_up_to_authority", "weight": 0.4}
+            { "id": "responsibility_you_didnt_ask_for", "weight": 0.8 },
+            { "id": "identity_and_self_acceptance", "weight": 0.6 },
+            { "id": "standing_up_to_authority", "weight": 0.4 }
           ],
           "conflicts": ["power_vs_morality", "duty_vs_desire"],
-          "emotions": {"start": ["anxiety", "dread"], "middle": ["loneliness", "confusion"], "end": ["self_respect", "peace"]},
+          "emotions": {
+            "start": ["anxiety", "dread"],
+            "middle": ["loneliness", "confusion"],
+            "end": ["self_respect", "peace"]
+          },
           "ending_tone": "hopeful",
           "intensity": "heavy",
           "warnings": ["war_and_violence"],
@@ -164,15 +176,15 @@
       "name": "Katara",
       "role": "A fourteen-year-old girl from a small, struggling village at the South Pole, the only person there with water powers. She has kept her family running since her mother died.",
       "relations": [
-        {"target": "char:avatar/sokka", "relation": "sibling"},
-        {"target": "char:avatar/aang", "relation": "partner"},
-        {"target": "char:avatar/aang", "relation": "protege"},
-        {"target": "char:avatar/toph_beifong", "relation": "friend"},
-        {"target": "char:avatar/zuko", "relation": "enemy"},
-        {"target": "char:avatar/zuko", "relation": "friend"},
-        {"target": "char:avatar/azula", "relation": "enemy"},
-        {"target": "char:avatar/tenzin", "relation": "child"},
-        {"target": "char:avatar/korra", "relation": "protege"}
+        { "target": "char:avatar/sokka", "relation": "sibling" },
+        { "target": "char:avatar/aang", "relation": "partner" },
+        { "target": "char:avatar/aang", "relation": "protege" },
+        { "target": "char:avatar/toph_beifong", "relation": "friend" },
+        { "target": "char:avatar/zuko", "relation": "enemy" },
+        { "target": "char:avatar/zuko", "relation": "friend" },
+        { "target": "char:avatar/azula", "relation": "enemy" },
+        { "target": "char:avatar/tenzin", "relation": "child" },
+        { "target": "char:avatar/korra", "relation": "protege" }
       ],
       "arcs": [
         {
@@ -191,13 +203,17 @@
           "start_at": "ATLA S1E1",
           "span": "ATLA S1-S3",
           "situations": [
-            {"id": "caring_for_family", "weight": 0.9},
-            {"id": "grief_and_loss", "weight": 0.6},
-            {"id": "difficult_parent", "weight": 0.4},
-            {"id": "coming_of_age", "weight": 0.4}
+            { "id": "caring_for_family", "weight": 0.9 },
+            { "id": "grief_and_loss", "weight": 0.6 },
+            { "id": "difficult_parent", "weight": 0.4 },
+            { "id": "coming_of_age", "weight": 0.4 }
           ],
           "conflicts": ["duty_vs_desire", "independence_vs_connection"],
-          "emotions": {"start": ["grief", "loneliness", "determination"], "middle": ["resentment", "overwhelm"], "end": ["acceptance", "love", "belonging"]},
+          "emotions": {
+            "start": ["grief", "loneliness", "determination"],
+            "middle": ["resentment", "overwhelm"],
+            "end": ["acceptance", "love", "belonging"]
+          },
           "ending_tone": "hopeful",
           "intensity": "moderate",
           "warnings": ["death_of_loved_one", "grief", "war_and_violence"],
@@ -237,13 +253,17 @@
           "start_at": "ATLA S1E1",
           "span": "ATLA S1",
           "situations": [
-            {"id": "standing_up_to_authority", "weight": 0.85},
-            {"id": "mentor_and_protege", "weight": 0.5},
-            {"id": "confidence_struggle", "weight": 0.5},
-            {"id": "identity_and_self_acceptance", "weight": 0.4}
+            { "id": "standing_up_to_authority", "weight": 0.85 },
+            { "id": "mentor_and_protege", "weight": 0.5 },
+            { "id": "confidence_struggle", "weight": 0.5 },
+            { "id": "identity_and_self_acceptance", "weight": 0.4 }
           ],
           "conflicts": ["fitting_in_vs_standing_out", "belonging_vs_integrity"],
-          "emotions": {"start": ["longing", "envy", "self_doubt"], "middle": ["anger", "determination"], "end": ["pride", "confidence"]},
+          "emotions": {
+            "start": ["longing", "envy", "self_doubt"],
+            "middle": ["anger", "determination"],
+            "end": ["pride", "confidence"]
+          },
           "ending_tone": "hopeful",
           "intensity": "light",
           "warnings": ["war_and_violence"],
@@ -282,12 +302,16 @@
           "start_at": "ATLA S3E12",
           "span": "ATLA S3E12-S3E16",
           "situations": [
-            {"id": "grief_and_loss", "weight": 0.9},
-            {"id": "identity_and_self_acceptance", "weight": 0.4},
-            {"id": "friendship_ending", "weight": 0.2}
+            { "id": "grief_and_loss", "weight": 0.9 },
+            { "id": "identity_and_self_acceptance", "weight": 0.4 },
+            { "id": "friendship_ending", "weight": 0.2 }
           ],
           "conflicts": ["revenge_vs_forgiveness", "holding_on_vs_letting_go"],
-          "emotions": {"start": ["resentment", "betrayal", "anger"], "middle": ["anger", "grief"], "end": ["peace", "acceptance"]},
+          "emotions": {
+            "start": ["resentment", "betrayal", "anger"],
+            "middle": ["anger", "grief"],
+            "end": ["peace", "acceptance"]
+          },
           "ending_tone": "hopeful",
           "intensity": "heavy",
           "warnings": ["death_of_loved_one", "grief", "war_and_violence"],
@@ -317,15 +341,15 @@
       "name": "Zuko",
       "role": "A banished teenage prince with a scarred face, obsessively hunting the Avatar across the world because his father said capturing him is the only way to come home.",
       "relations": [
-        {"target": "char:avatar/iroh", "relation": "mentor"},
-        {"target": "char:avatar/azula", "relation": "sibling"},
-        {"target": "char:avatar/azula", "relation": "rival"},
-        {"target": "char:avatar/aang", "relation": "enemy"},
-        {"target": "char:avatar/aang", "relation": "protege"},
-        {"target": "char:avatar/aang", "relation": "friend"},
-        {"target": "char:avatar/katara", "relation": "friend"},
-        {"target": "char:avatar/sokka", "relation": "friend"},
-        {"target": "char:avatar/toph_beifong", "relation": "friend"}
+        { "target": "char:avatar/iroh", "relation": "mentor" },
+        { "target": "char:avatar/azula", "relation": "sibling" },
+        { "target": "char:avatar/azula", "relation": "rival" },
+        { "target": "char:avatar/aang", "relation": "enemy" },
+        { "target": "char:avatar/aang", "relation": "protege" },
+        { "target": "char:avatar/aang", "relation": "friend" },
+        { "target": "char:avatar/katara", "relation": "friend" },
+        { "target": "char:avatar/sokka", "relation": "friend" },
+        { "target": "char:avatar/toph_beifong", "relation": "friend" }
       ],
       "arcs": [
         {
@@ -344,13 +368,17 @@
           "start_at": "ATLA S1E1",
           "span": "ATLA S1-S3",
           "situations": [
-            {"id": "difficult_parent", "weight": 1.0},
-            {"id": "family_expectations", "weight": 0.8},
-            {"id": "identity_and_self_acceptance", "weight": 0.7},
-            {"id": "sibling_rivalry", "weight": 0.4}
+            { "id": "difficult_parent", "weight": 1.0 },
+            { "id": "family_expectations", "weight": 0.8 },
+            { "id": "identity_and_self_acceptance", "weight": 0.7 },
+            { "id": "sibling_rivalry", "weight": 0.4 }
           ],
           "conflicts": ["self_vs_family_expectations", "belonging_vs_integrity"],
-          "emotions": {"start": ["shame", "anger", "rejection"], "middle": ["confusion", "loneliness", "guilt"], "end": ["self_respect", "freedom"]},
+          "emotions": {
+            "start": ["shame", "anger", "rejection"],
+            "middle": ["confusion", "loneliness", "guilt"],
+            "end": ["self_respect", "freedom"]
+          },
           "ending_tone": "hopeful",
           "intensity": "heavy",
           "warnings": ["abuse", "war_and_violence", "betrayal", "child_endangerment"],
@@ -392,13 +420,17 @@
           "start_at": "ATLA S3E12",
           "span": "ATLA S3E12-S3E21",
           "situations": [
-            {"id": "redemption_after_mistakes", "weight": 1.0},
-            {"id": "finding_your_people", "weight": 0.7},
-            {"id": "mentor_and_protege", "weight": 0.4},
-            {"id": "starting_over", "weight": 0.4}
+            { "id": "redemption_after_mistakes", "weight": 1.0 },
+            { "id": "finding_your_people", "weight": 0.7 },
+            { "id": "mentor_and_protege", "weight": 0.4 },
+            { "id": "starting_over", "weight": 0.4 }
           ],
           "conflicts": ["past_vs_future", "belonging_vs_integrity"],
-          "emotions": {"start": ["guilt", "shame", "loneliness"], "middle": ["rejection", "determination"], "end": ["belonging", "self_respect"]},
+          "emotions": {
+            "start": ["guilt", "shame", "loneliness"],
+            "middle": ["rejection", "determination"],
+            "end": ["belonging", "self_respect"]
+          },
           "ending_tone": "hopeful",
           "intensity": "moderate",
           "warnings": ["war_and_violence"],
@@ -431,12 +463,12 @@
       "name": "Sokka",
       "role": "A fifteen-year-old boy left as the 'man' of his village after all the adult men went off to fight. He has no special powers and a lot to prove.",
       "relations": [
-        {"target": "char:avatar/katara", "relation": "sibling"},
-        {"target": "char:avatar/aang", "relation": "friend"},
-        {"target": "char:avatar/toph_beifong", "relation": "friend"},
-        {"target": "char:avatar/zuko", "relation": "enemy"},
-        {"target": "char:avatar/zuko", "relation": "friend"},
-        {"target": "char:avatar/azula", "relation": "enemy"}
+        { "target": "char:avatar/katara", "relation": "sibling" },
+        { "target": "char:avatar/aang", "relation": "friend" },
+        { "target": "char:avatar/toph_beifong", "relation": "friend" },
+        { "target": "char:avatar/zuko", "relation": "enemy" },
+        { "target": "char:avatar/zuko", "relation": "friend" },
+        { "target": "char:avatar/azula", "relation": "enemy" }
       ],
       "arcs": [
         {
@@ -455,13 +487,17 @@
           "start_at": "ATLA S1E1",
           "span": "ATLA S1-S3",
           "situations": [
-            {"id": "confidence_struggle", "weight": 0.9},
-            {"id": "imposter_syndrome", "weight": 0.7},
-            {"id": "responsibility_you_didnt_ask_for", "weight": 0.5},
-            {"id": "coming_of_age", "weight": 0.5}
+            { "id": "confidence_struggle", "weight": 0.9 },
+            { "id": "imposter_syndrome", "weight": 0.7 },
+            { "id": "responsibility_you_didnt_ask_for", "weight": 0.5 },
+            { "id": "coming_of_age", "weight": 0.5 }
           ],
           "conflicts": ["self_vs_family_expectations", "fitting_in_vs_standing_out"],
-          "emotions": {"start": ["inadequacy", "pride", "self_doubt"], "middle": ["envy", "self_doubt", "determination"], "end": ["confidence", "self_respect", "belonging"]},
+          "emotions": {
+            "start": ["inadequacy", "pride", "self_doubt"],
+            "middle": ["envy", "self_doubt", "determination"],
+            "end": ["confidence", "self_respect", "belonging"]
+          },
           "ending_tone": "hopeful",
           "intensity": "moderate",
           "warnings": ["war_and_violence"],
@@ -502,12 +538,16 @@
           "start_at": "ATLA S1E18",
           "span": "ATLA S1E18-S3",
           "situations": [
-            {"id": "grief_and_loss", "weight": 0.85},
-            {"id": "falling_for_someone_unexpected", "weight": 0.6},
-            {"id": "coming_of_age", "weight": 0.4}
+            { "id": "grief_and_loss", "weight": 0.85 },
+            { "id": "falling_for_someone_unexpected", "weight": 0.6 },
+            { "id": "coming_of_age", "weight": 0.4 }
           ],
           "conflicts": ["duty_vs_desire", "holding_on_vs_letting_go"],
-          "emotions": {"start": ["longing", "hope"], "middle": ["grief", "guilt", "inadequacy"], "end": ["acceptance", "love"]},
+          "emotions": {
+            "start": ["longing", "hope"],
+            "middle": ["grief", "guilt", "inadequacy"],
+            "end": ["acceptance", "love"]
+          },
           "ending_tone": "bittersweet",
           "intensity": "moderate",
           "warnings": ["death_of_loved_one", "grief", "war_and_violence"],
@@ -537,14 +577,14 @@
       "name": "Toph Beifong",
       "role": "A blind twelve-year-old from a rich family whose parents treat her as fragile and hide her from the world. Secretly she is an undefeated underground fighter.",
       "relations": [
-        {"target": "char:avatar/aang", "relation": "protege"},
-        {"target": "char:avatar/aang", "relation": "friend"},
-        {"target": "char:avatar/katara", "relation": "friend"},
-        {"target": "char:avatar/sokka", "relation": "friend"},
-        {"target": "char:avatar/zuko", "relation": "friend"},
-        {"target": "char:avatar/iroh", "relation": "friend"},
-        {"target": "char:avatar/lin_beifong", "relation": "child"},
-        {"target": "char:avatar/korra", "relation": "protege"}
+        { "target": "char:avatar/aang", "relation": "protege" },
+        { "target": "char:avatar/aang", "relation": "friend" },
+        { "target": "char:avatar/katara", "relation": "friend" },
+        { "target": "char:avatar/sokka", "relation": "friend" },
+        { "target": "char:avatar/zuko", "relation": "friend" },
+        { "target": "char:avatar/iroh", "relation": "friend" },
+        { "target": "char:avatar/lin_beifong", "relation": "child" },
+        { "target": "char:avatar/korra", "relation": "protege" }
       ],
       "arcs": [
         {
@@ -563,13 +603,17 @@
           "start_at": "ATLA S2E6",
           "span": "ATLA S2-S3",
           "situations": [
-            {"id": "leaving_home", "weight": 0.9},
-            {"id": "family_expectations", "weight": 0.8},
-            {"id": "difficult_parent", "weight": 0.6},
-            {"id": "finding_your_people", "weight": 0.6}
+            { "id": "leaving_home", "weight": 0.9 },
+            { "id": "family_expectations", "weight": 0.8 },
+            { "id": "difficult_parent", "weight": 0.6 },
+            { "id": "finding_your_people", "weight": 0.6 }
           ],
           "conflicts": ["independence_vs_connection", "self_vs_family_expectations"],
-          "emotions": {"start": ["resentment", "restlessness", "pride"], "middle": ["loneliness", "guilt"], "end": ["freedom", "belonging"]},
+          "emotions": {
+            "start": ["resentment", "restlessness", "pride"],
+            "middle": ["loneliness", "guilt"],
+            "end": ["freedom", "belonging"]
+          },
           "ending_tone": "bittersweet",
           "intensity": "moderate",
           "warnings": ["betrayal", "child_endangerment", "war_and_violence"],
@@ -609,13 +653,17 @@
           "start_at": "Korra S4E10",
           "span": "Korra S4",
           "situations": [
-            {"id": "redemption_after_mistakes", "weight": 0.7},
-            {"id": "caring_for_family", "weight": 0.5},
-            {"id": "sibling_rivalry", "weight": 0.4},
-            {"id": "difficult_parent", "weight": 0.3}
+            { "id": "redemption_after_mistakes", "weight": 0.7 },
+            { "id": "caring_for_family", "weight": 0.5 },
+            { "id": "sibling_rivalry", "weight": 0.4 },
+            { "id": "difficult_parent", "weight": 0.3 }
           ],
           "conflicts": ["independence_vs_connection", "past_vs_future"],
-          "emotions": {"start": ["guilt", "pride"], "middle": ["anger", "guilt"], "end": ["acceptance", "love"]},
+          "emotions": {
+            "start": ["guilt", "pride"],
+            "middle": ["anger", "guilt"],
+            "end": ["acceptance", "love"]
+          },
           "ending_tone": "hopeful",
           "intensity": "moderate",
           "warnings": ["war_and_violence"],
@@ -645,11 +693,11 @@
       "name": "Iroh",
       "role": "A retired general and former heir to the throne. He is the easygoing, tea-loving uncle travelling with his banished nephew on a hunt across the world.",
       "relations": [
-        {"target": "char:avatar/zuko", "relation": "protege"},
-        {"target": "char:avatar/azula", "relation": "enemy"},
-        {"target": "char:avatar/aang", "relation": "friend"},
-        {"target": "char:avatar/toph_beifong", "relation": "friend"},
-        {"target": "char:avatar/korra", "relation": "friend"}
+        { "target": "char:avatar/zuko", "relation": "protege" },
+        { "target": "char:avatar/azula", "relation": "enemy" },
+        { "target": "char:avatar/aang", "relation": "friend" },
+        { "target": "char:avatar/toph_beifong", "relation": "friend" },
+        { "target": "char:avatar/korra", "relation": "friend" }
       ],
       "arcs": [
         {
@@ -668,12 +716,16 @@
           "start_at": "ATLA S1E1",
           "span": "ATLA S1-S3",
           "situations": [
-            {"id": "mentor_and_protege", "weight": 1.0},
-            {"id": "grief_and_loss", "weight": 0.7},
-            {"id": "caring_for_family", "weight": 0.6}
+            { "id": "mentor_and_protege", "weight": 1.0 },
+            { "id": "grief_and_loss", "weight": 0.7 },
+            { "id": "caring_for_family", "weight": 0.6 }
           ],
           "conflicts": ["control_vs_trust", "holding_on_vs_letting_go"],
-          "emotions": {"start": ["grief", "hope"], "middle": ["betrayal", "grief"], "end": ["joy", "love", "peace"]},
+          "emotions": {
+            "start": ["grief", "hope"],
+            "middle": ["betrayal", "grief"],
+            "end": ["joy", "love", "peace"]
+          },
           "ending_tone": "hopeful",
           "intensity": "moderate",
           "warnings": ["death_of_loved_one", "grief", "betrayal", "war_and_violence", "abuse"],
@@ -715,13 +767,17 @@
           "start_at": "ATLA S2E1",
           "span": "ATLA S2-S3",
           "situations": [
-            {"id": "midlife_reinvention", "weight": 0.9},
-            {"id": "career_change", "weight": 0.6},
-            {"id": "starting_over", "weight": 0.6},
-            {"id": "redemption_after_mistakes", "weight": 0.4}
+            { "id": "midlife_reinvention", "weight": 0.9 },
+            { "id": "career_change", "weight": 0.6 },
+            { "id": "starting_over", "weight": 0.6 },
+            { "id": "redemption_after_mistakes", "weight": 0.4 }
           ],
           "conflicts": ["career_vs_relationships", "past_vs_future"],
-          "emotions": {"start": ["guilt", "hope"], "middle": ["joy", "peace"], "end": ["peace", "self_respect"]},
+          "emotions": {
+            "start": ["guilt", "hope"],
+            "middle": ["joy", "peace"],
+            "end": ["peace", "self_respect"]
+          },
           "ending_tone": "hopeful",
           "intensity": "light",
           "warnings": ["war_and_violence", "betrayal"],

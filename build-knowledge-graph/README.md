@@ -1,7 +1,7 @@
 # InnerCast — character-arc knowledge graph
 
 A knowledge graph of TV characters and the emotional journeys they go through, built so an app can
-answer *"I'm going through X — which character has lived this?"* **without spoiling the show**.
+answer _"I'm going through X — which character has lived this?"_ **without spoiling the show**.
 
 This repository contains everything used to make it: the scripts that download the wiki text, the
 prompts the LLM agents followed to extract character arcs, the arc data they produced, the build and
@@ -99,7 +99,7 @@ This step is not a script. One LLM agent per show (or per half of a show's chara
 character texts and wrote `graph/arcs/<show>.json`, following **`graph/extraction_prompt.md`**. Each
 arc has:
 
-- **spoiler-safe fields**: `title`, `hook` (the situation at the *start* of the arc), `why_relatable` (questions, never answers), `watch_for`, `start_at`, `ending_tone`, `intensity`
+- **spoiler-safe fields**: `title`, `hook` (the situation at the _start_ of the arc), `why_relatable` (questions, never answers), `watch_for`, `start_at`, `ending_tone`, `intensity`
 - **a setting-free `pattern_text`**: no names, places or technology. It is the main text used for matching.
 - **vocabulary links**: situations, conflicts, emotions (with phase), content warnings
 - **a hidden `spoiler` block**: the full summary, key events, and what the character got right and wrong
@@ -123,7 +123,7 @@ The pattern and link steps below read these index files.
 
 ### 6. Story patterns (LLM-assisted)
 
-Patterns such as *"handed a role you never asked for"* group arcs from different shows under
+Patterns such as _"handed a role you never asked for"_ group arcs from different shows under
 13 themes. The editable tables (themes, patterns, and which arc belongs to which pattern) are in
 `graph/build_patterns.py`. Later rounds were extended by agents following `graph/extend_patterns_prompt*.md`.
 
@@ -133,13 +133,13 @@ python3 graph/build_patterns.py && python3 graph/validate_patterns.py   # writes
 
 ### 7. Cross-show links (LLM-assisted)
 
-`RESONATES_WITH` links pair arcs from *different* shows that share the same emotional knot. Each link has a
+`RESONATES_WITH` links pair arcs from _different_ shows that share the same emotional knot. Each link has a
 spoiler-free `bridge` sentence. The pair lists are Python tables, one file per round:
 
-| round | pairs | output |
-|---|---|---|
-| 1 (5 shows) | `graph/build_resonances.py` | `graph/resonances.json` |
-| 2 (+13 shows) | `graph/build_resonances_extra.py` | `graph/resonances_extra.json` |
+| round         | pairs                                    | output                               |
+| ------------- | ---------------------------------------- | ------------------------------------ |
+| 1 (5 shows)   | `graph/build_resonances.py`              | `graph/resonances.json`              |
+| 2 (+13 shows) | `graph/build_resonances_extra.py`        | `graph/resonances_extra.json`        |
 | 3 (+10 shows) | `graph/build_resonances_extra_round3.py` | `graph/resonances_extra_round3.json` |
 
 The agent prompts are `graph/extend_resonances_prompt*.md`. Run these commands to rebuild and check the links:
@@ -164,12 +164,12 @@ summary. The build replaces arc ids with neutral numbers (`arc:naruto/itachi_uch
 One JSON file with `meta`, `nodes` and `edges`. The full description is in [`graph_schema.md`](graph_schema.md), and there is
 a zod schema in [`graph/graph.schema.ts`](graph/graph.schema.ts).
 
-| node | what it is |
-|---|---|
-| `show`, `character` | the series and its characters (with a spoiler-safe `role`) |
-| `arc` | one emotional journey of one character |
-| `situation`, `conflict`, `emotion`, `warning` | the fixed vocabularies |
-| `pattern` | setting-free story patterns, grouped under themes by `BROADER` edges |
+| node                                          | what it is                                                           |
+| --------------------------------------------- | -------------------------------------------------------------------- |
+| `show`, `character`                           | the series and its characters (with a spoiler-safe `role`)           |
+| `arc`                                         | one emotional journey of one character                               |
+| `situation`, `conflict`, `emotion`, `warning` | the fixed vocabularies                                               |
+| `pattern`                                     | setting-free story patterns, grouped under themes by `BROADER` edges |
 
 Edges: `IN_SHOW`, `HAS_ARC`, `ABOUT` (arc → situation, weighted), `FACES` (→ conflict),
 `FEELS` (→ emotion, at the start, middle or end), `HAS_WARNING`, `INSTANCE_OF` (→ pattern), `BROADER`,
@@ -177,7 +177,7 @@ Edges: `IN_SHOW`, `HAS_ARC`, `ABOUT` (arc → situation, weighted), `FACES` (→
 
 ### Spoiler firewall
 
-- Everything in `arc.spoiler` is for *choosing* arcs only. It must never reach the text shown to a user.
+- Everything in `arc.spoiler` is for _choosing_ arcs only. It must never reach the text shown to a user.
 - Edges with `props.spoiler: true` can reveal plot: romantic, enemy and boss relations, and arc-level death, betrayal and bleak-ending warnings.
 - Show-level `HAS_WARNING` edges are the safe way to warn users about content.
 - `demo_leak_check.py` checks a finished answer for words from the chosen arcs' hidden key events.
@@ -193,8 +193,8 @@ python3 qwen_server/qwen_tools.py --write-schema            # regenerate qwen_to
 python3 qwen_server/qwen_tools.py find_matching_characters '{"situations": ["breakup"], "emotions": ["grief"]}'
 ```
 
-`demo_pipeline.py` shows the alternative two-step design: a *choosing* LLM that may see spoilers, and a
-*presenting* LLM that gets only safe fields. `demo_example.md` and `demo_friend_vs_boss.md` are example answers.
+`demo_pipeline.py` shows the alternative two-step design: a _choosing_ LLM that may see spoilers, and a
+_presenting_ LLM that gets only safe fields. `demo_example.md` and `demo_friend_vs_boss.md` are example answers.
 
 ## Adding a show
 
@@ -213,7 +213,7 @@ python3 qwen_server/qwen_tools.py find_matching_characters '{"situations": ["bre
 - Since Lost and Star Trek were removed, some arcs have fewer than 2 cross-show links (a few have none).
   The link validators list them as warnings.
 - `check_all.py` does not regenerate `graph/arc_index.txt`. Run `make_arc_index.py` after changing arc files.
-- `start_at` is where an arc *begins*. For serialised shows, recommend watching from the start of the series.
+- `start_at` is where an arc _begins_. For serialised shows, recommend watching from the start of the series.
 
 ## Data sources and attribution
 
@@ -231,4 +231,4 @@ For the code: MIT. For the data: CC BY-SA 4.0
 
 ---
 
-*InnerCast is for entertainment and reflection, not mental-health treatment.*
+_InnerCast is for entertainment and reflection, not mental-health treatment._

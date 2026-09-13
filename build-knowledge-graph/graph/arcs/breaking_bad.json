@@ -65,25 +65,11 @@
               "weight": 0.5
             }
           ],
-          "conflicts": [
-            "power_vs_morality",
-            "loyalty_vs_ambition"
-          ],
+          "conflicts": ["power_vs_morality", "loyalty_vs_ambition"],
           "emotions": {
-            "start": [
-              "shame",
-              "inadequacy",
-              "resentment"
-            ],
-            "middle": [
-              "pride",
-              "confidence",
-              "anger"
-            ],
-            "end": [
-              "loneliness",
-              "acceptance"
-            ]
+            "start": ["shame", "inadequacy", "resentment"],
+            "middle": ["pride", "confidence", "anger"],
+            "end": ["loneliness", "acceptance"]
           },
           "ending_tone": "tragic",
           "intensity": "heavy",
@@ -149,24 +135,11 @@
               "weight": 0.5
             }
           ],
-          "conflicts": [
-            "truth_vs_protecting_others",
-            "control_vs_trust"
-          ],
+          "conflicts": ["truth_vs_protecting_others", "control_vs_trust"],
           "emotions": {
-            "start": [
-              "fear",
-              "determination"
-            ],
-            "middle": [
-              "anger",
-              "resentment",
-              "pride"
-            ],
-            "end": [
-              "loneliness",
-              "grief"
-            ]
+            "start": ["fear", "determination"],
+            "middle": ["anger", "resentment", "pride"],
+            "end": ["loneliness", "grief"]
           },
           "ending_tone": "tragic",
           "intensity": "heavy",
@@ -256,25 +229,11 @@
               "weight": 0.5
             }
           ],
-          "conflicts": [
-            "control_vs_trust",
-            "belonging_vs_integrity"
-          ],
+          "conflicts": ["control_vs_trust", "belonging_vs_integrity"],
           "emotions": {
-            "start": [
-              "rejection",
-              "inadequacy",
-              "restlessness"
-            ],
-            "middle": [
-              "belonging",
-              "betrayal",
-              "anger"
-            ],
-            "end": [
-              "freedom",
-              "relief"
-            ]
+            "start": ["rejection", "inadequacy", "restlessness"],
+            "middle": ["belonging", "betrayal", "anger"],
+            "end": ["freedom", "relief"]
           },
           "ending_tone": "bittersweet",
           "intensity": "heavy",
@@ -338,25 +297,11 @@
               "weight": 0.7
             }
           ],
-          "conflicts": [
-            "past_vs_future",
-            "holding_on_vs_letting_go"
-          ],
+          "conflicts": ["past_vs_future", "holding_on_vs_letting_go"],
           "emotions": {
-            "start": [
-              "guilt",
-              "grief",
-              "numbness"
-            ],
-            "middle": [
-              "shame",
-              "loneliness",
-              "anger"
-            ],
-            "end": [
-              "relief",
-              "freedom"
-            ]
+            "start": ["guilt", "grief", "numbness"],
+            "middle": ["shame", "loneliness", "anger"],
+            "end": ["relief", "freedom"]
           },
           "ending_tone": "bittersweet",
           "intensity": "heavy",
@@ -443,31 +388,15 @@
               "weight": 0.3
             }
           ],
-          "conflicts": [
-            "control_vs_trust",
-            "truth_vs_protecting_others"
-          ],
+          "conflicts": ["control_vs_trust", "truth_vs_protecting_others"],
           "emotions": {
-            "start": [
-              "anxiety",
-              "loneliness",
-              "confusion"
-            ],
-            "middle": [
-              "anger",
-              "betrayal"
-            ],
-            "end": [
-              "determination",
-              "grief"
-            ]
+            "start": ["anxiety", "loneliness", "confusion"],
+            "middle": ["anger", "betrayal"],
+            "end": ["determination", "grief"]
           },
           "ending_tone": "bittersweet",
           "intensity": "moderate",
-          "warnings": [
-            "serious_illness",
-            "betrayal"
-          ],
+          "warnings": ["serious_illness", "betrayal"],
           "example_user_messages": [
             "My husband keeps disappearing and giving me excuses that don't make sense, and everyone tells me I'm overreacting.",
             "I'm pregnant and I feel like I'm the only adult in this marriage.",
@@ -516,25 +445,11 @@
               "weight": 0.4
             }
           ],
-          "conflicts": [
-            "power_vs_morality",
-            "truth_vs_protecting_others"
-          ],
+          "conflicts": ["power_vs_morality", "truth_vs_protecting_others"],
           "emotions": {
-            "start": [
-              "anger",
-              "resentment",
-              "determination"
-            ],
-            "middle": [
-              "fear",
-              "dread",
-              "guilt"
-            ],
-            "end": [
-              "numbness",
-              "relief"
-            ]
+            "start": ["anger", "resentment", "determination"],
+            "middle": ["fear", "dread", "guilt"],
+            "end": ["numbness", "relief"]
           },
           "ending_tone": "bittersweet",
           "intensity": "heavy",
@@ -623,33 +538,15 @@
               "weight": 0.3
             }
           ],
-          "conflicts": [
-            "safety_vs_growth",
-            "duty_vs_desire"
-          ],
+          "conflicts": ["safety_vs_growth", "duty_vs_desire"],
           "emotions": {
-            "start": [
-              "anxiety",
-              "fear",
-              "shame"
-            ],
-            "middle": [
-              "anger",
-              "inadequacy",
-              "resentment"
-            ],
-            "end": [
-              "determination",
-              "self_respect"
-            ]
+            "start": ["anxiety", "fear", "shame"],
+            "middle": ["anger", "inadequacy", "resentment"],
+            "end": ["determination", "self_respect"]
           },
           "ending_tone": "bittersweet",
           "intensity": "heavy",
-          "warnings": [
-            "war_and_violence",
-            "medical_trauma",
-            "graphic_gore"
-          ],
+          "warnings": ["war_and_violence", "medical_trauma", "graphic_gore"],
           "example_user_messages": [
             "I've always been the tough guy in my family and now I'm having panic attacks I can't tell anyone about.",
             "Something happened at work that I can't shake and I keep taking it out on my wife.",
@@ -703,33 +600,15 @@
               "weight": 0.6
             }
           ],
-          "conflicts": [
-            "duty_vs_desire",
-            "truth_vs_protecting_others"
-          ],
+          "conflicts": ["duty_vs_desire", "truth_vs_protecting_others"],
           "emotions": {
-            "start": [
-              "pride",
-              "curiosity",
-              "determination"
-            ],
-            "middle": [
-              "restlessness",
-              "anger"
-            ],
-            "end": [
-              "betrayal",
-              "self_respect"
-            ]
+            "start": ["pride", "curiosity", "determination"],
+            "middle": ["restlessness", "anger"],
+            "end": ["betrayal", "self_respect"]
           },
           "ending_tone": "tragic",
           "intensity": "heavy",
-          "warnings": [
-            "death_of_main_character",
-            "war_and_violence",
-            "betrayal",
-            "bleak_ending"
-          ],
+          "warnings": ["death_of_main_character", "war_and_violence", "betrayal", "bleak_ending"],
           "example_user_messages": [
             "I've been chasing the same problem at work for years and nobody believes me that I'm close.",
             "I found out something about a family member that I can't unsee, and doing the right thing will blow up the whole family.",
@@ -812,35 +691,15 @@
               "weight": 0.5
             }
           ],
-          "conflicts": [
-            "self_vs_family_expectations",
-            "belonging_vs_integrity"
-          ],
+          "conflicts": ["self_vs_family_expectations", "belonging_vs_integrity"],
           "emotions": {
-            "start": [
-              "longing",
-              "inadequacy",
-              "determination"
-            ],
-            "middle": [
-              "betrayal",
-              "anger",
-              "resentment"
-            ],
-            "end": [
-              "guilt",
-              "grief",
-              "numbness"
-            ]
+            "start": ["longing", "inadequacy", "determination"],
+            "middle": ["betrayal", "anger", "resentment"],
+            "end": ["guilt", "grief", "numbness"]
           },
           "ending_tone": "tragic",
           "intensity": "heavy",
-          "warnings": [
-            "death_of_loved_one",
-            "self_harm_or_suicide",
-            "betrayal",
-            "grief"
-          ],
+          "warnings": ["death_of_loved_one", "self_harm_or_suicide", "betrayal", "grief"],
           "example_user_messages": [
             "My older brother is the successful one and no matter what I do he still sees me as the kid who messed up.",
             "I turned my life around years ago but my family still acts like I'm going to screw it up.",
@@ -894,35 +753,15 @@
               "weight": 0.4
             }
           ],
-          "conflicts": [
-            "power_vs_morality",
-            "past_vs_future"
-          ],
+          "conflicts": ["power_vs_morality", "past_vs_future"],
           "emotions": {
-            "start": [
-              "hope",
-              "determination",
-              "self_doubt"
-            ],
-            "middle": [
-              "pride",
-              "numbness",
-              "guilt"
-            ],
-            "end": [
-              "shame",
-              "self_respect",
-              "acceptance"
-            ]
+            "start": ["hope", "determination", "self_doubt"],
+            "middle": ["pride", "numbness", "guilt"],
+            "end": ["shame", "self_respect", "acceptance"]
           },
           "ending_tone": "bittersweet",
           "intensity": "heavy",
-          "warnings": [
-            "war_and_violence",
-            "betrayal",
-            "death_of_loved_one",
-            "grief"
-          ],
+          "warnings": ["war_and_violence", "betrayal", "death_of_loved_one", "grief"],
           "example_user_messages": [
             "I used to be a bit of a hustler and I've tried so hard to go straight, but it feels like honesty just gets me nowhere.",
             "I've built this confident, flashy version of myself for work and I don't know where it ends and I begin.",
@@ -1002,24 +841,11 @@
               "weight": 0.3
             }
           ],
-          "conflicts": [
-            "truth_vs_protecting_others",
-            "holding_on_vs_letting_go"
-          ],
+          "conflicts": ["truth_vs_protecting_others", "holding_on_vs_letting_go"],
           "emotions": {
-            "start": [
-              "numbness",
-              "grief",
-              "guilt"
-            ],
-            "middle": [
-              "determination",
-              "loneliness"
-            ],
-            "end": [
-              "acceptance",
-              "peace"
-            ]
+            "start": ["numbness", "grief", "guilt"],
+            "middle": ["determination", "loneliness"],
+            "end": ["acceptance", "peace"]
           },
           "ending_tone": "tragic",
           "intensity": "heavy",
@@ -1079,32 +905,15 @@
               "weight": 0.5
             }
           ],
-          "conflicts": [
-            "power_vs_morality",
-            "loyalty_vs_ambition"
-          ],
+          "conflicts": ["power_vs_morality", "loyalty_vs_ambition"],
           "emotions": {
-            "start": [
-              "determination",
-              "numbness"
-            ],
-            "middle": [
-              "guilt",
-              "anger",
-              "pride"
-            ],
-            "end": [
-              "acceptance"
-            ]
+            "start": ["determination", "numbness"],
+            "middle": ["guilt", "anger", "pride"],
+            "end": ["acceptance"]
           },
           "ending_tone": "tragic",
           "intensity": "heavy",
-          "warnings": [
-            "death_of_main_character",
-            "war_and_violence",
-            "betrayal",
-            "graphic_gore"
-          ],
+          "warnings": ["death_of_main_character", "war_and_violence", "betrayal", "graphic_gore"],
           "example_user_messages": [
             "I work for a company I don't respect but I tell myself I'm one of the good ones.",
             "I keep ending up looking out for the young guys at work who are in way over their heads.",
@@ -1171,32 +980,15 @@
               "weight": 0.5
             }
           ],
-          "conflicts": [
-            "loyalty_vs_ambition",
-            "career_vs_relationships"
-          ],
+          "conflicts": ["loyalty_vs_ambition", "career_vs_relationships"],
           "emotions": {
-            "start": [
-              "determination",
-              "self_doubt",
-              "pride"
-            ],
-            "middle": [
-              "burnout",
-              "restlessness",
-              "confidence"
-            ],
-            "end": [
-              "guilt",
-              "acceptance"
-            ]
+            "start": ["determination", "self_doubt", "pride"],
+            "middle": ["burnout", "restlessness", "confidence"],
+            "end": ["guilt", "acceptance"]
           },
           "ending_tone": "bittersweet",
           "intensity": "moderate",
-          "warnings": [
-            "war_and_violence",
-            "betrayal"
-          ],
+          "warnings": ["war_and_violence", "betrayal"],
           "example_user_messages": [
             "I worked my way up from nothing and I still feel like my bosses could throw me away any day.",
             "I got punished at work for something I didn't do and I'm not sure whether to stay and grind or leave.",
@@ -1250,35 +1042,15 @@
               "weight": 0.4
             }
           ],
-          "conflicts": [
-            "belonging_vs_integrity",
-            "independence_vs_connection"
-          ],
+          "conflicts": ["belonging_vs_integrity", "independence_vs_connection"],
           "emotions": {
-            "start": [
-              "love",
-              "curiosity",
-              "self_doubt"
-            ],
-            "middle": [
-              "joy",
-              "freedom",
-              "dread"
-            ],
-            "end": [
-              "guilt",
-              "grief",
-              "acceptance"
-            ]
+            "start": ["love", "curiosity", "self_doubt"],
+            "middle": ["joy", "freedom", "dread"],
+            "end": ["guilt", "grief", "acceptance"]
           },
           "ending_tone": "bittersweet",
           "intensity": "heavy",
-          "warnings": [
-            "war_and_violence",
-            "betrayal",
-            "graphic_gore",
-            "grief"
-          ],
+          "warnings": ["war_and_violence", "betrayal", "graphic_gore", "grief"],
           "example_user_messages": [
             "I'm usually the responsible one, but my partner brings out this reckless side of me and I kind of love it.",
             "We have so much fun bending the rules together that I'm scared of what it says about me.",
@@ -1354,26 +1126,11 @@
               "weight": 0.4
             }
           ],
-          "conflicts": [
-            "independence_vs_connection",
-            "truth_vs_protecting_others"
-          ],
+          "conflicts": ["independence_vs_connection", "truth_vs_protecting_others"],
           "emotions": {
-            "start": [
-              "restlessness",
-              "longing",
-              "confusion"
-            ],
-            "middle": [
-              "anger",
-              "loneliness",
-              "confusion"
-            ],
-            "end": [
-              "betrayal",
-              "grief",
-              "anger"
-            ]
+            "start": ["restlessness", "longing", "confusion"],
+            "middle": ["anger", "loneliness", "confusion"],
+            "end": ["betrayal", "grief", "anger"]
           },
           "ending_tone": "tragic",
           "intensity": "moderate",

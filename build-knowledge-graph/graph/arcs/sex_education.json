@@ -6,13 +6,13 @@
       "name": "Otis Milburn",
       "role": "An anxious, awkward sixteen-year-old whose mother is a famous sex therapist, and who knows everything about sex in theory and nothing in practice.",
       "relations": [
-        {"target": "char:sex_education/jean_milburn", "relation": "parent"},
-        {"target": "char:sex_education/eric_effiong", "relation": "friend"},
-        {"target": "char:sex_education/maeve_wiley", "relation": "partner"},
-        {"target": "char:sex_education/ruby_matthews", "relation": "ex_partner"},
-        {"target": "char:sex_education/adam_groff", "relation": "friend"},
-        {"target": "char:sex_education/aimee_gibbs", "relation": "friend"},
-        {"target": "char:sex_education/jackson_marchetti", "relation": "rival"}
+        { "target": "char:sex_education/jean_milburn", "relation": "parent" },
+        { "target": "char:sex_education/eric_effiong", "relation": "friend" },
+        { "target": "char:sex_education/maeve_wiley", "relation": "partner" },
+        { "target": "char:sex_education/ruby_matthews", "relation": "ex_partner" },
+        { "target": "char:sex_education/adam_groff", "relation": "friend" },
+        { "target": "char:sex_education/aimee_gibbs", "relation": "friend" },
+        { "target": "char:sex_education/jackson_marchetti", "relation": "rival" }
       ],
       "arcs": [
         {
@@ -31,13 +31,17 @@
           "start_at": "S1E1",
           "span": "S1-S4",
           "situations": [
-            {"id": "coming_of_age", "weight": 0.8},
-            {"id": "confidence_struggle", "weight": 0.8},
-            {"id": "imposter_syndrome", "weight": 0.5},
-            {"id": "starting_a_business", "weight": 0.4}
+            { "id": "coming_of_age", "weight": 0.8 },
+            { "id": "confidence_struggle", "weight": 0.8 },
+            { "id": "imposter_syndrome", "weight": 0.5 },
+            { "id": "starting_a_business", "weight": 0.4 }
           ],
           "conflicts": ["independence_vs_connection", "fitting_in_vs_standing_out"],
-          "emotions": {"start": ["anxiety", "shame", "inadequacy"], "middle": ["pride", "confusion", "guilt"], "end": ["self_respect", "acceptance"]},
+          "emotions": {
+            "start": ["anxiety", "shame", "inadequacy"],
+            "middle": ["pride", "confusion", "guilt"],
+            "end": ["self_respect", "acceptance"]
+          },
           "ending_tone": "bittersweet",
           "intensity": "moderate",
           "warnings": ["betrayal"],
@@ -78,13 +82,17 @@
           "start_at": "S1E1",
           "span": "S1-S4",
           "situations": [
-            {"id": "difficult_parent", "weight": 0.8},
-            {"id": "coming_of_age", "weight": 0.6},
-            {"id": "caring_for_family", "weight": 0.5},
-            {"id": "responsibility_you_didnt_ask_for", "weight": 0.4}
+            { "id": "difficult_parent", "weight": 0.8 },
+            { "id": "coming_of_age", "weight": 0.6 },
+            { "id": "caring_for_family", "weight": 0.5 },
+            { "id": "responsibility_you_didnt_ask_for", "weight": 0.4 }
           ],
           "conflicts": ["independence_vs_connection", "control_vs_trust"],
-          "emotions": {"start": ["resentment", "shame", "anger"], "middle": ["fear", "guilt"], "end": ["love", "acceptance"]},
+          "emotions": {
+            "start": ["resentment", "shame", "anger"],
+            "middle": ["fear", "guilt"],
+            "end": ["love", "acceptance"]
+          },
           "ending_tone": "hopeful",
           "intensity": "moderate",
           "warnings": ["medical_trauma", "betrayal"],
@@ -126,13 +134,17 @@
           "start_at": "S1E1",
           "span": "S1-S4",
           "situations": [
-            {"id": "unrequited_love", "weight": 0.8},
-            {"id": "falling_for_someone_unexpected", "weight": 0.6},
-            {"id": "long_distance", "weight": 0.4},
-            {"id": "breakup", "weight": 0.4}
+            { "id": "unrequited_love", "weight": 0.8 },
+            { "id": "falling_for_someone_unexpected", "weight": 0.6 },
+            { "id": "long_distance", "weight": 0.4 },
+            { "id": "breakup", "weight": 0.4 }
           ],
           "conflicts": ["truth_vs_protecting_others", "holding_on_vs_letting_go"],
-          "emotions": {"start": ["longing", "self_doubt"], "middle": ["jealousy", "guilt", "hope"], "end": ["love", "grief", "acceptance"]},
+          "emotions": {
+            "start": ["longing", "self_doubt"],
+            "middle": ["jealousy", "guilt", "hope"],
+            "end": ["love", "grief", "acceptance"]
+          },
           "ending_tone": "bittersweet",
           "intensity": "moderate",
           "warnings": ["betrayal", "grief"],
@@ -165,12 +177,12 @@
       "name": "Maeve Wiley",
       "role": "A fiercely intelligent, sarcastic loner who lives alone in a caravan, writes other students' essays for rent money and carries a cruel nickname from an old rumour.",
       "relations": [
-        {"target": "char:sex_education/otis_milburn", "relation": "partner"},
-        {"target": "char:sex_education/aimee_gibbs", "relation": "friend"},
-        {"target": "char:sex_education/jackson_marchetti", "relation": "ex_partner"},
-        {"target": "char:sex_education/eric_effiong", "relation": "friend"},
-        {"target": "char:sex_education/jean_milburn", "relation": "friend"},
-        {"target": "char:sex_education/ruby_matthews", "relation": "rival"}
+        { "target": "char:sex_education/otis_milburn", "relation": "partner" },
+        { "target": "char:sex_education/aimee_gibbs", "relation": "friend" },
+        { "target": "char:sex_education/jackson_marchetti", "relation": "ex_partner" },
+        { "target": "char:sex_education/eric_effiong", "relation": "friend" },
+        { "target": "char:sex_education/jean_milburn", "relation": "friend" },
+        { "target": "char:sex_education/ruby_matthews", "relation": "rival" }
       ],
       "arcs": [
         {
@@ -189,16 +201,26 @@
           "start_at": "S1E1",
           "span": "S1-S4",
           "situations": [
-            {"id": "difficult_parent", "weight": 0.9},
-            {"id": "responsibility_you_didnt_ask_for", "weight": 0.8},
-            {"id": "caring_for_family", "weight": 0.6},
-            {"id": "grief_and_loss", "weight": 0.5}
+            { "id": "difficult_parent", "weight": 0.9 },
+            { "id": "responsibility_you_didnt_ask_for", "weight": 0.8 },
+            { "id": "caring_for_family", "weight": 0.6 },
+            { "id": "grief_and_loss", "weight": 0.5 }
           ],
           "conflicts": ["independence_vs_connection", "self_vs_family_expectations"],
-          "emotions": {"start": ["loneliness", "anger", "resentment"], "middle": ["hope", "betrayal", "guilt"], "end": ["grief", "belonging", "peace"]},
+          "emotions": {
+            "start": ["loneliness", "anger", "resentment"],
+            "middle": ["hope", "betrayal", "guilt"],
+            "end": ["grief", "belonging", "peace"]
+          },
           "ending_tone": "bittersweet",
           "intensity": "heavy",
-          "warnings": ["addiction", "child_endangerment", "death_of_loved_one", "grief", "betrayal"],
+          "warnings": [
+            "addiction",
+            "child_endangerment",
+            "death_of_loved_one",
+            "grief",
+            "betrayal"
+          ],
           "example_user_messages": [
             "My mum was never really there and now she wants back into my life and I don't know if I can trust her.",
             "I've been looking after myself since I was a teenager and I don't know how to let anyone help.",
@@ -236,13 +258,17 @@
           "start_at": "S1E1",
           "span": "S1-S4",
           "situations": [
-            {"id": "imposter_syndrome", "weight": 0.8},
-            {"id": "mentor_and_protege", "weight": 0.6},
-            {"id": "taking_a_big_risk", "weight": 0.6},
-            {"id": "confidence_struggle", "weight": 0.5}
+            { "id": "imposter_syndrome", "weight": 0.8 },
+            { "id": "mentor_and_protege", "weight": 0.6 },
+            { "id": "taking_a_big_risk", "weight": 0.6 },
+            { "id": "confidence_struggle", "weight": 0.5 }
           ],
           "conflicts": ["career_vs_relationships", "safety_vs_growth"],
-          "emotions": {"start": ["self_doubt", "restlessness"], "middle": ["determination", "inadequacy", "burnout"], "end": ["confidence", "self_respect"]},
+          "emotions": {
+            "start": ["self_doubt", "restlessness"],
+            "middle": ["determination", "inadequacy", "burnout"],
+            "end": ["confidence", "self_respect"]
+          },
           "ending_tone": "hopeful",
           "intensity": "moderate",
           "warnings": [],
@@ -283,13 +309,17 @@
           "start_at": "S1E1",
           "span": "S1-S4",
           "situations": [
-            {"id": "falling_for_someone_unexpected", "weight": 0.7},
-            {"id": "identity_and_self_acceptance", "weight": 0.5},
-            {"id": "long_distance", "weight": 0.3},
-            {"id": "breakup", "weight": 0.4}
+            { "id": "falling_for_someone_unexpected", "weight": 0.7 },
+            { "id": "identity_and_self_acceptance", "weight": 0.5 },
+            { "id": "long_distance", "weight": 0.3 },
+            { "id": "breakup", "weight": 0.4 }
           ],
           "conflicts": ["independence_vs_connection", "career_vs_relationships"],
-          "emotions": {"start": ["shame", "loneliness"], "middle": ["longing", "betrayal", "jealousy"], "end": ["love", "grief", "self_respect"]},
+          "emotions": {
+            "start": ["shame", "loneliness"],
+            "middle": ["longing", "betrayal", "jealousy"],
+            "end": ["love", "grief", "self_respect"]
+          },
           "ending_tone": "bittersweet",
           "intensity": "moderate",
           "warnings": ["betrayal"],
@@ -321,10 +351,10 @@
       "name": "Eric Effiong",
       "role": "Otis's flamboyant, joyful best friend: gay, out, a horn player in the school band, and the son of a devout Nigerian-Ghanaian church-going family.",
       "relations": [
-        {"target": "char:sex_education/otis_milburn", "relation": "friend"},
-        {"target": "char:sex_education/adam_groff", "relation": "ex_partner"},
-        {"target": "char:sex_education/maeve_wiley", "relation": "friend"},
-        {"target": "char:sex_education/aimee_gibbs", "relation": "friend"}
+        { "target": "char:sex_education/otis_milburn", "relation": "friend" },
+        { "target": "char:sex_education/adam_groff", "relation": "ex_partner" },
+        { "target": "char:sex_education/maeve_wiley", "relation": "friend" },
+        { "target": "char:sex_education/aimee_gibbs", "relation": "friend" }
       ],
       "arcs": [
         {
@@ -343,13 +373,17 @@
           "start_at": "S1E1",
           "span": "S1-S4",
           "situations": [
-            {"id": "identity_and_self_acceptance", "weight": 0.9},
-            {"id": "family_expectations", "weight": 0.7},
-            {"id": "finding_your_people", "weight": 0.6},
-            {"id": "friendship_ending", "weight": 0.3}
+            { "id": "identity_and_self_acceptance", "weight": 0.9 },
+            { "id": "family_expectations", "weight": 0.7 },
+            { "id": "finding_your_people", "weight": 0.6 },
+            { "id": "friendship_ending", "weight": 0.3 }
           ],
           "conflicts": ["fitting_in_vs_standing_out", "self_vs_family_expectations"],
-          "emotions": {"start": ["joy", "loneliness"], "middle": ["fear", "shame", "belonging"], "end": ["pride", "peace", "acceptance"]},
+          "emotions": {
+            "start": ["joy", "loneliness"],
+            "middle": ["fear", "shame", "belonging"],
+            "end": ["pride", "peace", "acceptance"]
+          },
           "ending_tone": "hopeful",
           "intensity": "moderate",
           "warnings": ["abuse"],
@@ -390,13 +424,17 @@
           "start_at": "S1E1",
           "span": "S1-S4",
           "situations": [
-            {"id": "falling_for_someone_unexpected", "weight": 0.8},
-            {"id": "unrequited_love", "weight": 0.4},
-            {"id": "breakup", "weight": 0.5},
-            {"id": "identity_and_self_acceptance", "weight": 0.5}
+            { "id": "falling_for_someone_unexpected", "weight": 0.8 },
+            { "id": "unrequited_love", "weight": 0.4 },
+            { "id": "breakup", "weight": 0.5 },
+            { "id": "identity_and_self_acceptance", "weight": 0.5 }
           ],
           "conflicts": ["holding_on_vs_letting_go", "independence_vs_connection"],
-          "emotions": {"start": ["longing", "loneliness"], "middle": ["confusion", "love", "guilt"], "end": ["freedom", "self_respect"]},
+          "emotions": {
+            "start": ["longing", "loneliness"],
+            "middle": ["confusion", "love", "guilt"],
+            "end": ["freedom", "self_respect"]
+          },
           "ending_tone": "bittersweet",
           "intensity": "moderate",
           "warnings": ["abuse", "betrayal"],
@@ -428,9 +466,9 @@
       "name": "Jean Milburn",
       "role": "A celebrated sex and relationship therapist and author, single mother to Otis, who is uninhibited in every area of life except commitment.",
       "relations": [
-        {"target": "char:sex_education/otis_milburn", "relation": "child"},
-        {"target": "char:sex_education/aimee_gibbs", "relation": "protege"},
-        {"target": "char:sex_education/maeve_wiley", "relation": "friend"}
+        { "target": "char:sex_education/otis_milburn", "relation": "child" },
+        { "target": "char:sex_education/aimee_gibbs", "relation": "protege" },
+        { "target": "char:sex_education/maeve_wiley", "relation": "friend" }
       ],
       "arcs": [
         {
@@ -449,13 +487,17 @@
           "start_at": "S1E1",
           "span": "S1-S3",
           "situations": [
-            {"id": "falling_for_someone_unexpected", "weight": 0.7},
-            {"id": "midlife_reinvention", "weight": 0.5},
-            {"id": "caring_for_family", "weight": 0.5},
-            {"id": "breakup", "weight": 0.4}
+            { "id": "falling_for_someone_unexpected", "weight": 0.7 },
+            { "id": "midlife_reinvention", "weight": 0.5 },
+            { "id": "caring_for_family", "weight": 0.5 },
+            { "id": "breakup", "weight": 0.4 }
           ],
           "conflicts": ["control_vs_trust", "independence_vs_connection"],
-          "emotions": {"start": ["confidence", "loneliness"], "middle": ["love", "fear", "guilt"], "end": ["grief", "acceptance"]},
+          "emotions": {
+            "start": ["confidence", "loneliness"],
+            "middle": ["love", "fear", "guilt"],
+            "end": ["grief", "acceptance"]
+          },
           "ending_tone": "bittersweet",
           "intensity": "moderate",
           "warnings": ["betrayal"],
@@ -496,13 +538,17 @@
           "start_at": "S3E1",
           "span": "S3-S4",
           "situations": [
-            {"id": "becoming_a_parent", "weight": 0.8},
-            {"id": "midlife_reinvention", "weight": 0.6},
-            {"id": "burnout_at_work", "weight": 0.4},
-            {"id": "caring_for_family", "weight": 0.5}
+            { "id": "becoming_a_parent", "weight": 0.8 },
+            { "id": "midlife_reinvention", "weight": 0.6 },
+            { "id": "burnout_at_work", "weight": 0.4 },
+            { "id": "caring_for_family", "weight": 0.5 }
           ],
           "conflicts": ["independence_vs_connection", "past_vs_future"],
-          "emotions": {"start": ["anxiety", "determination"], "middle": ["fear", "overwhelm", "numbness"], "end": ["relief", "love", "acceptance"]},
+          "emotions": {
+            "start": ["anxiety", "determination"],
+            "middle": ["fear", "overwhelm", "numbness"],
+            "end": ["relief", "love", "acceptance"]
+          },
           "ending_tone": "hopeful",
           "intensity": "heavy",
           "warnings": ["medical_trauma", "abuse"],
@@ -534,10 +580,10 @@
       "name": "Adam Groff",
       "role": "The headmaster's sullen, underachieving son and the school's most feared bully, who can't live up to his strict father's expectations.",
       "relations": [
-        {"target": "char:sex_education/eric_effiong", "relation": "ex_partner"},
-        {"target": "char:sex_education/aimee_gibbs", "relation": "ex_partner"},
-        {"target": "char:sex_education/otis_milburn", "relation": "friend"},
-        {"target": "char:sex_education/ruby_matthews", "relation": "friend"}
+        { "target": "char:sex_education/eric_effiong", "relation": "ex_partner" },
+        { "target": "char:sex_education/aimee_gibbs", "relation": "ex_partner" },
+        { "target": "char:sex_education/otis_milburn", "relation": "friend" },
+        { "target": "char:sex_education/ruby_matthews", "relation": "friend" }
       ],
       "arcs": [
         {
@@ -556,13 +602,17 @@
           "start_at": "S1E1",
           "span": "S1-S3",
           "situations": [
-            {"id": "identity_and_self_acceptance", "weight": 0.9},
-            {"id": "difficult_parent", "weight": 0.8},
-            {"id": "redemption_after_mistakes", "weight": 0.6},
-            {"id": "confidence_struggle", "weight": 0.5}
+            { "id": "identity_and_self_acceptance", "weight": 0.9 },
+            { "id": "difficult_parent", "weight": 0.8 },
+            { "id": "redemption_after_mistakes", "weight": 0.6 },
+            { "id": "confidence_struggle", "weight": 0.5 }
           ],
           "conflicts": ["self_vs_family_expectations", "fitting_in_vs_standing_out"],
-          "emotions": {"start": ["anger", "shame", "inadequacy"], "middle": ["confusion", "fear", "longing"], "end": ["acceptance", "self_respect"]},
+          "emotions": {
+            "start": ["anger", "shame", "inadequacy"],
+            "middle": ["confusion", "fear", "longing"],
+            "end": ["acceptance", "self_respect"]
+          },
           "ending_tone": "bittersweet",
           "intensity": "moderate",
           "warnings": ["abuse"],
@@ -603,13 +653,17 @@
           "start_at": "S4E1",
           "span": "S4",
           "situations": [
-            {"id": "new_job", "weight": 0.8},
-            {"id": "confidence_struggle", "weight": 0.7},
-            {"id": "starting_over", "weight": 0.6},
-            {"id": "difficult_parent", "weight": 0.5}
+            { "id": "new_job", "weight": 0.8 },
+            { "id": "confidence_struggle", "weight": 0.7 },
+            { "id": "starting_over", "weight": 0.6 },
+            { "id": "difficult_parent", "weight": 0.5 }
           ],
           "conflicts": ["past_vs_future", "safety_vs_growth"],
-          "emotions": {"start": ["numbness", "inadequacy", "grief"], "middle": ["curiosity", "fear"], "end": ["pride", "confidence", "hope"]},
+          "emotions": {
+            "start": ["numbness", "inadequacy", "grief"],
+            "middle": ["curiosity", "fear"],
+            "end": ["pride", "confidence", "hope"]
+          },
           "ending_tone": "hopeful",
           "intensity": "light",
           "warnings": [],
@@ -640,13 +694,13 @@
       "name": "Aimee Gibbs",
       "role": "A sweet, bubbly, people-pleasing girl in the school's popular clique who is secretly best friends with the outcast Maeve and dreams of baking.",
       "relations": [
-        {"target": "char:sex_education/maeve_wiley", "relation": "friend"},
-        {"target": "char:sex_education/adam_groff", "relation": "ex_partner"},
-        {"target": "char:sex_education/otis_milburn", "relation": "friend"},
-        {"target": "char:sex_education/eric_effiong", "relation": "friend"},
-        {"target": "char:sex_education/jean_milburn", "relation": "mentor"},
-        {"target": "char:sex_education/ruby_matthews", "relation": "rival"},
-        {"target": "char:sex_education/jackson_marchetti", "relation": "friend"}
+        { "target": "char:sex_education/maeve_wiley", "relation": "friend" },
+        { "target": "char:sex_education/adam_groff", "relation": "ex_partner" },
+        { "target": "char:sex_education/otis_milburn", "relation": "friend" },
+        { "target": "char:sex_education/eric_effiong", "relation": "friend" },
+        { "target": "char:sex_education/jean_milburn", "relation": "mentor" },
+        { "target": "char:sex_education/ruby_matthews", "relation": "rival" },
+        { "target": "char:sex_education/jackson_marchetti", "relation": "friend" }
       ],
       "arcs": [
         {
@@ -665,13 +719,17 @@
           "start_at": "S1E1",
           "span": "S1-S4",
           "situations": [
-            {"id": "identity_and_self_acceptance", "weight": 0.8},
-            {"id": "finding_your_people", "weight": 0.7},
-            {"id": "confidence_struggle", "weight": 0.6},
-            {"id": "breakup", "weight": 0.3}
+            { "id": "identity_and_self_acceptance", "weight": 0.8 },
+            { "id": "finding_your_people", "weight": 0.7 },
+            { "id": "confidence_struggle", "weight": 0.6 },
+            { "id": "breakup", "weight": 0.3 }
           ],
           "conflicts": ["belonging_vs_integrity", "fitting_in_vs_standing_out"],
-          "emotions": {"start": ["self_doubt", "confusion"], "middle": ["curiosity", "guilt"], "end": ["confidence", "self_respect", "joy"]},
+          "emotions": {
+            "start": ["self_doubt", "confusion"],
+            "middle": ["curiosity", "guilt"],
+            "end": ["confidence", "self_respect", "joy"]
+          },
           "ending_tone": "hopeful",
           "intensity": "light",
           "warnings": ["sexual_violence"],
@@ -712,13 +770,17 @@
           "start_at": "S2",
           "span": "S2-S4",
           "situations": [
-            {"id": "identity_and_self_acceptance", "weight": 0.6},
-            {"id": "finding_your_people", "weight": 0.6},
-            {"id": "confidence_struggle", "weight": 0.5},
-            {"id": "breakup", "weight": 0.3}
+            { "id": "identity_and_self_acceptance", "weight": 0.6 },
+            { "id": "finding_your_people", "weight": 0.6 },
+            { "id": "confidence_struggle", "weight": 0.5 },
+            { "id": "breakup", "weight": 0.3 }
           ],
           "conflicts": ["safety_vs_growth", "independence_vs_connection"],
-          "emotions": {"start": ["numbness", "confusion", "fear"], "middle": ["shame", "anxiety", "belonging"], "end": ["relief", "self_respect", "peace"]},
+          "emotions": {
+            "start": ["numbness", "confusion", "fear"],
+            "middle": ["shame", "anxiety", "belonging"],
+            "end": ["relief", "self_respect", "peace"]
+          },
           "ending_tone": "hopeful",
           "intensity": "heavy",
           "warnings": ["sexual_violence"],
@@ -750,9 +812,9 @@
       "name": "Jackson Marchetti",
       "role": "The school's head boy and star swimmer, raised by two mothers, who seems to have it all and is falling apart with anxiety underneath.",
       "relations": [
-        {"target": "char:sex_education/maeve_wiley", "relation": "ex_partner"},
-        {"target": "char:sex_education/otis_milburn", "relation": "rival"},
-        {"target": "char:sex_education/aimee_gibbs", "relation": "friend"}
+        { "target": "char:sex_education/maeve_wiley", "relation": "ex_partner" },
+        { "target": "char:sex_education/otis_milburn", "relation": "rival" },
+        { "target": "char:sex_education/aimee_gibbs", "relation": "friend" }
       ],
       "arcs": [
         {
@@ -771,13 +833,17 @@
           "start_at": "S1E1",
           "span": "S1-S2",
           "situations": [
-            {"id": "family_expectations", "weight": 0.9},
-            {"id": "burnout_at_work", "weight": 0.5},
-            {"id": "career_change", "weight": 0.5},
-            {"id": "identity_and_self_acceptance", "weight": 0.5}
+            { "id": "family_expectations", "weight": 0.9 },
+            { "id": "burnout_at_work", "weight": 0.5 },
+            { "id": "career_change", "weight": 0.5 },
+            { "id": "identity_and_self_acceptance", "weight": 0.5 }
           ],
           "conflicts": ["self_vs_family_expectations", "perfectionism_vs_good_enough"],
-          "emotions": {"start": ["anxiety", "dread"], "middle": ["overwhelm", "shame", "anger"], "end": ["relief", "freedom"]},
+          "emotions": {
+            "start": ["anxiety", "dread"],
+            "middle": ["overwhelm", "shame", "anger"],
+            "end": ["relief", "freedom"]
+          },
           "ending_tone": "hopeful",
           "intensity": "heavy",
           "warnings": ["self_harm_or_suicide"],
@@ -817,13 +883,17 @@
           "start_at": "S3E1",
           "span": "S3-S4",
           "situations": [
-            {"id": "identity_and_self_acceptance", "weight": 0.8},
-            {"id": "falling_for_someone_unexpected", "weight": 0.7},
-            {"id": "unrequited_love", "weight": 0.4},
-            {"id": "difficult_parent", "weight": 0.4}
+            { "id": "identity_and_self_acceptance", "weight": 0.8 },
+            { "id": "falling_for_someone_unexpected", "weight": 0.7 },
+            { "id": "unrequited_love", "weight": 0.4 },
+            { "id": "difficult_parent", "weight": 0.4 }
           ],
           "conflicts": ["holding_on_vs_letting_go", "past_vs_future"],
-          "emotions": {"start": ["confusion", "curiosity"], "middle": ["longing", "rejection", "anger"], "end": ["acceptance", "belonging", "hope"]},
+          "emotions": {
+            "start": ["confusion", "curiosity"],
+            "middle": ["longing", "rejection", "anger"],
+            "end": ["acceptance", "belonging", "hope"]
+          },
           "ending_tone": "hopeful",
           "intensity": "moderate",
           "warnings": ["abuse"],
@@ -855,10 +925,10 @@
       "name": "Ruby Matthews",
       "role": "The school's queen bee and ruthless leader of the popular clique, who polices everyone's status and seems to have no weaknesses.",
       "relations": [
-        {"target": "char:sex_education/otis_milburn", "relation": "ex_partner"},
-        {"target": "char:sex_education/adam_groff", "relation": "friend"},
-        {"target": "char:sex_education/aimee_gibbs", "relation": "rival"},
-        {"target": "char:sex_education/maeve_wiley", "relation": "rival"}
+        { "target": "char:sex_education/otis_milburn", "relation": "ex_partner" },
+        { "target": "char:sex_education/adam_groff", "relation": "friend" },
+        { "target": "char:sex_education/aimee_gibbs", "relation": "rival" },
+        { "target": "char:sex_education/maeve_wiley", "relation": "rival" }
       ],
       "arcs": [
         {
@@ -877,13 +947,17 @@
           "start_at": "S1E1",
           "span": "S1-S3",
           "situations": [
-            {"id": "identity_and_self_acceptance", "weight": 0.7},
-            {"id": "caring_for_family", "weight": 0.6},
-            {"id": "falling_for_someone_unexpected", "weight": 0.7},
-            {"id": "breakup", "weight": 0.5}
+            { "id": "identity_and_self_acceptance", "weight": 0.7 },
+            { "id": "caring_for_family", "weight": 0.6 },
+            { "id": "falling_for_someone_unexpected", "weight": 0.7 },
+            { "id": "breakup", "weight": 0.5 }
           ],
           "conflicts": ["fitting_in_vs_standing_out", "control_vs_trust"],
-          "emotions": {"start": ["pride", "fear"], "middle": ["shame", "love"], "end": ["rejection", "grief"]},
+          "emotions": {
+            "start": ["pride", "fear"],
+            "middle": ["shame", "love"],
+            "end": ["rejection", "grief"]
+          },
           "ending_tone": "bittersweet",
           "intensity": "moderate",
           "warnings": ["serious_illness", "betrayal"],
@@ -924,13 +998,17 @@
           "start_at": "S4E1",
           "span": "S4",
           "situations": [
-            {"id": "starting_over", "weight": 0.8},
-            {"id": "loneliness", "weight": 0.8},
-            {"id": "friendship_ending", "weight": 0.6},
-            {"id": "finding_your_people", "weight": 0.6}
+            { "id": "starting_over", "weight": 0.8 },
+            { "id": "loneliness", "weight": 0.8 },
+            { "id": "friendship_ending", "weight": 0.6 },
+            { "id": "finding_your_people", "weight": 0.6 }
           ],
           "conflicts": ["revenge_vs_forgiveness", "belonging_vs_integrity"],
-          "emotions": {"start": ["loneliness", "rejection"], "middle": ["resentment", "betrayal"], "end": ["belonging", "self_respect"]},
+          "emotions": {
+            "start": ["loneliness", "rejection"],
+            "middle": ["resentment", "betrayal"],
+            "end": ["belonging", "self_respect"]
+          },
           "ending_tone": "hopeful",
           "intensity": "light",
           "warnings": ["betrayal"],

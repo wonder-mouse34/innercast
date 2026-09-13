@@ -65,25 +65,11 @@
               "weight": 0.4
             }
           ],
-          "conflicts": [
-            "independence_vs_connection",
-            "past_vs_future"
-          ],
+          "conflicts": ["independence_vs_connection", "past_vs_future"],
           "emotions": {
-            "start": [
-              "confidence",
-              "restlessness"
-            ],
-            "middle": [
-              "self_doubt",
-              "rejection",
-              "determination"
-            ],
-            "end": [
-              "self_respect",
-              "love",
-              "peace"
-            ]
+            "start": ["confidence", "restlessness"],
+            "middle": ["self_doubt", "rejection", "determination"],
+            "end": ["self_respect", "love", "peace"]
           },
           "ending_tone": "hopeful",
           "intensity": "light",
@@ -138,25 +124,11 @@
               "weight": 0.3
             }
           ],
-          "conflicts": [
-            "independence_vs_connection",
-            "career_vs_relationships"
-          ],
+          "conflicts": ["independence_vs_connection", "career_vs_relationships"],
           "emotions": {
-            "start": [
-              "confidence",
-              "curiosity"
-            ],
-            "middle": [
-              "longing",
-              "anxiety",
-              "hope"
-            ],
-            "end": [
-              "love",
-              "joy",
-              "belonging"
-            ]
+            "start": ["confidence", "curiosity"],
+            "middle": ["longing", "anxiety", "hope"],
+            "end": ["love", "joy", "belonging"]
           },
           "ending_tone": "hopeful",
           "intensity": "light",
@@ -247,25 +219,11 @@
               "weight": 0.4
             }
           ],
-          "conflicts": [
-            "loyalty_vs_ambition",
-            "control_vs_trust"
-          ],
+          "conflicts": ["loyalty_vs_ambition", "control_vs_trust"],
           "emotions": {
-            "start": [
-              "determination",
-              "pride"
-            ],
-            "middle": [
-              "anger",
-              "self_doubt",
-              "belonging"
-            ],
-            "end": [
-              "self_respect",
-              "belonging",
-              "pride"
-            ]
+            "start": ["determination", "pride"],
+            "middle": ["anger", "self_doubt", "belonging"],
+            "end": ["self_respect", "belonging", "pride"]
           },
           "ending_tone": "hopeful",
           "intensity": "light",
@@ -320,25 +278,11 @@
               "weight": 0.5
             }
           ],
-          "conflicts": [
-            "independence_vs_connection",
-            "control_vs_trust"
-          ],
+          "conflicts": ["independence_vs_connection", "control_vs_trust"],
           "emotions": {
-            "start": [
-              "numbness",
-              "pride"
-            ],
-            "middle": [
-              "loneliness",
-              "grief",
-              "hope"
-            ],
-            "end": [
-              "belonging",
-              "love",
-              "joy"
-            ]
+            "start": ["numbness", "pride"],
+            "middle": ["loneliness", "grief", "hope"],
+            "end": ["belonging", "love", "joy"]
           },
           "ending_tone": "hopeful",
           "intensity": "light",
@@ -427,31 +371,15 @@
               "weight": 0.4
             }
           ],
-          "conflicts": [
-            "perfectionism_vs_good_enough",
-            "career_vs_relationships"
-          ],
+          "conflicts": ["perfectionism_vs_good_enough", "career_vs_relationships"],
           "emotions": {
-            "start": [
-              "anxiety",
-              "determination"
-            ],
-            "middle": [
-              "self_doubt",
-              "overwhelm",
-              "pride"
-            ],
-            "end": [
-              "confidence",
-              "self_respect",
-              "pride"
-            ]
+            "start": ["anxiety", "determination"],
+            "middle": ["self_doubt", "overwhelm", "pride"],
+            "end": ["confidence", "self_respect", "pride"]
           },
           "ending_tone": "hopeful",
           "intensity": "light",
-          "warnings": [
-            "sexual_violence"
-          ],
+          "warnings": ["sexual_violence"],
           "example_user_messages": [
             "I need my boss to tell me I'm doing well or I spiral.",
             "I grew up with a bunch of siblings and always had to compete to be noticed, and I still can't stop.",
@@ -538,25 +466,11 @@
               "weight": 0.3
             }
           ],
-          "conflicts": [
-            "independence_vs_connection",
-            "belonging_vs_integrity"
-          ],
+          "conflicts": ["independence_vs_connection", "belonging_vs_integrity"],
           "emotions": {
-            "start": [
-              "anger",
-              "loneliness"
-            ],
-            "middle": [
-              "grief",
-              "fear",
-              "belonging"
-            ],
-            "end": [
-              "belonging",
-              "self_respect",
-              "peace"
-            ]
+            "start": ["anger", "loneliness"],
+            "middle": ["grief", "fear", "belonging"],
+            "end": ["belonging", "self_respect", "peace"]
           },
           "ending_tone": "hopeful",
           "intensity": "moderate",
@@ -609,25 +523,11 @@
               "weight": 0.5
             }
           ],
-          "conflicts": [
-            "self_vs_family_expectations",
-            "belonging_vs_integrity"
-          ],
+          "conflicts": ["self_vs_family_expectations", "belonging_vs_integrity"],
           "emotions": {
-            "start": [
-              "fear",
-              "anxiety"
-            ],
-            "middle": [
-              "rejection",
-              "grief",
-              "anger"
-            ],
-            "end": [
-              "acceptance",
-              "self_respect",
-              "hope"
-            ]
+            "start": ["fear", "anxiety"],
+            "middle": ["rejection", "grief", "anger"],
+            "end": ["acceptance", "self_respect", "hope"]
           },
           "ending_tone": "hopeful",
           "intensity": "moderate",
@@ -711,24 +611,11 @@
               "weight": 0.5
             }
           ],
-          "conflicts": [
-            "safety_vs_growth",
-            "duty_vs_desire"
-          ],
+          "conflicts": ["safety_vs_growth", "duty_vs_desire"],
           "emotions": {
-            "start": [
-              "fear",
-              "shame"
-            ],
-            "middle": [
-              "anxiety",
-              "determination"
-            ],
-            "end": [
-              "confidence",
-              "pride",
-              "love"
-            ]
+            "start": ["fear", "shame"],
+            "middle": ["anxiety", "determination"],
+            "end": ["confidence", "pride", "love"]
           },
           "ending_tone": "hopeful",
           "intensity": "light",
@@ -781,24 +668,11 @@
               "weight": 0.4
             }
           ],
-          "conflicts": [
-            "power_vs_morality",
-            "loyalty_vs_ambition"
-          ],
+          "conflicts": ["power_vs_morality", "loyalty_vs_ambition"],
           "emotions": {
-            "start": [
-              "anger",
-              "shame"
-            ],
-            "middle": [
-              "fear",
-              "resentment",
-              "determination"
-            ],
-            "end": [
-              "self_respect",
-              "hope"
-            ]
+            "start": ["anger", "shame"],
+            "middle": ["fear", "resentment", "determination"],
+            "end": ["self_respect", "hope"]
           },
           "ending_tone": "bittersweet",
           "intensity": "moderate",
@@ -890,25 +764,11 @@
               "weight": 0.4
             }
           ],
-          "conflicts": [
-            "independence_vs_connection",
-            "holding_on_vs_letting_go"
-          ],
+          "conflicts": ["independence_vs_connection", "holding_on_vs_letting_go"],
           "emotions": {
-            "start": [
-              "longing",
-              "loneliness"
-            ],
-            "middle": [
-              "rejection",
-              "jealousy",
-              "hope"
-            ],
-            "end": [
-              "love",
-              "belonging",
-              "joy"
-            ]
+            "start": ["longing", "loneliness"],
+            "middle": ["rejection", "jealousy", "hope"],
+            "end": ["love", "belonging", "joy"]
           },
           "ending_tone": "hopeful",
           "intensity": "light",
@@ -957,25 +817,11 @@
               "weight": 0.5
             }
           ],
-          "conflicts": [
-            "control_vs_trust",
-            "perfectionism_vs_good_enough"
-          ],
+          "conflicts": ["control_vs_trust", "perfectionism_vs_good_enough"],
           "emotions": {
-            "start": [
-              "longing",
-              "hope"
-            ],
-            "middle": [
-              "anxiety",
-              "inadequacy",
-              "rejection"
-            ],
-            "end": [
-              "love",
-              "joy",
-              "belonging"
-            ]
+            "start": ["longing", "hope"],
+            "middle": ["anxiety", "inadequacy", "rejection"],
+            "end": ["love", "joy", "belonging"]
           },
           "ending_tone": "hopeful",
           "intensity": "light",
@@ -1067,25 +913,11 @@
               "weight": 0.3
             }
           ],
-          "conflicts": [
-            "safety_vs_growth",
-            "fitting_in_vs_standing_out"
-          ],
+          "conflicts": ["safety_vs_growth", "fitting_in_vs_standing_out"],
           "emotions": {
-            "start": [
-              "boredom",
-              "confidence"
-            ],
-            "middle": [
-              "restlessness",
-              "curiosity",
-              "self_doubt"
-            ],
-            "end": [
-              "freedom",
-              "confidence",
-              "hope"
-            ]
+            "start": ["boredom", "confidence"],
+            "middle": ["restlessness", "curiosity", "self_doubt"],
+            "end": ["freedom", "confidence", "hope"]
           },
           "ending_tone": "hopeful",
           "intensity": "light",

@@ -6,15 +6,15 @@
       "name": "Buffy Summers",
       "role": "A 16-year-old former cheerleader who moves to a small California town after her parents' divorce, secretly chosen as the one girl in her generation meant to fight the forces of darkness.",
       "relations": [
-        {"target": "char:buffy/rupert_giles", "relation": "mentor"},
-        {"target": "char:buffy/willow_rosenberg", "relation": "friend"},
-        {"target": "char:buffy/alexander_harris", "relation": "friend"},
-        {"target": "char:buffy/angel", "relation": "ex_partner"},
-        {"target": "char:buffy/spike", "relation": "ex_partner"},
-        {"target": "char:buffy/dawn_summers", "relation": "sibling"},
-        {"target": "char:buffy/faith_lehane", "relation": "rival"},
-        {"target": "char:buffy/cordelia_chase", "relation": "friend"},
-        {"target": "char:buffy/anya_jenkins", "relation": "friend"}
+        { "target": "char:buffy/rupert_giles", "relation": "mentor" },
+        { "target": "char:buffy/willow_rosenberg", "relation": "friend" },
+        { "target": "char:buffy/alexander_harris", "relation": "friend" },
+        { "target": "char:buffy/angel", "relation": "ex_partner" },
+        { "target": "char:buffy/spike", "relation": "ex_partner" },
+        { "target": "char:buffy/dawn_summers", "relation": "sibling" },
+        { "target": "char:buffy/faith_lehane", "relation": "rival" },
+        { "target": "char:buffy/cordelia_chase", "relation": "friend" },
+        { "target": "char:buffy/anya_jenkins", "relation": "friend" }
       ],
       "arcs": [
         {
@@ -33,16 +33,27 @@
           "start_at": "S1E1",
           "span": "S1-S5",
           "situations": [
-            {"id": "responsibility_you_didnt_ask_for", "weight": 1.0},
-            {"id": "coming_of_age", "weight": 0.8},
-            {"id": "moving_somewhere_new", "weight": 0.4},
-            {"id": "caring_for_family", "weight": 0.5}
+            { "id": "responsibility_you_didnt_ask_for", "weight": 1.0 },
+            { "id": "coming_of_age", "weight": 0.8 },
+            { "id": "moving_somewhere_new", "weight": 0.4 },
+            { "id": "caring_for_family", "weight": 0.5 }
           ],
           "conflicts": ["duty_vs_desire", "independence_vs_connection"],
-          "emotions": {"start": ["resentment", "restlessness", "fear"], "middle": ["loneliness", "overwhelm", "determination"], "end": ["acceptance", "peace", "love"]},
+          "emotions": {
+            "start": ["resentment", "restlessness", "fear"],
+            "middle": ["loneliness", "overwhelm", "determination"],
+            "end": ["acceptance", "peace", "love"]
+          },
           "ending_tone": "bittersweet",
           "intensity": "heavy",
-          "warnings": ["death_of_main_character", "death_of_loved_one", "grief", "war_and_violence", "serious_illness", "betrayal"],
+          "warnings": [
+            "death_of_main_character",
+            "death_of_loved_one",
+            "grief",
+            "war_and_violence",
+            "serious_illness",
+            "betrayal"
+          ],
           "example_user_messages": [
             "Everyone expects me to be the responsible one and I never signed up for it.",
             "I'm 17 and I feel like my whole life got decided for me before I had a say.",
@@ -82,12 +93,16 @@
           "start_at": "S1E1",
           "span": "S1-S3",
           "situations": [
-            {"id": "falling_for_someone_unexpected", "weight": 0.9},
-            {"id": "breakup", "weight": 0.9},
-            {"id": "coming_of_age", "weight": 0.6}
+            { "id": "falling_for_someone_unexpected", "weight": 0.9 },
+            { "id": "breakup", "weight": 0.9 },
+            { "id": "coming_of_age", "weight": 0.6 }
           ],
           "conflicts": ["holding_on_vs_letting_go", "duty_vs_desire"],
-          "emotions": {"start": ["curiosity", "longing"], "middle": ["love", "betrayal", "shame", "grief"], "end": ["acceptance", "self_respect"]},
+          "emotions": {
+            "start": ["curiosity", "longing"],
+            "middle": ["love", "betrayal", "shame", "grief"],
+            "end": ["acceptance", "self_respect"]
+          },
           "ending_tone": "bittersweet",
           "intensity": "heavy",
           "warnings": ["abuse", "death_of_loved_one", "betrayal", "torture", "war_and_violence"],
@@ -128,16 +143,28 @@
           "start_at": "S6E1",
           "span": "S6",
           "situations": [
-            {"id": "grief_and_loss", "weight": 0.8},
-            {"id": "caring_for_family", "weight": 0.7},
-            {"id": "burnout_at_work", "weight": 0.4},
-            {"id": "loneliness", "weight": 0.6}
+            { "id": "grief_and_loss", "weight": 0.8 },
+            { "id": "caring_for_family", "weight": 0.7 },
+            { "id": "burnout_at_work", "weight": 0.4 },
+            { "id": "loneliness", "weight": 0.6 }
           ],
           "conflicts": ["truth_vs_protecting_others", "past_vs_future"],
-          "emotions": {"start": ["numbness", "grief", "overwhelm"], "middle": ["shame", "loneliness", "self_doubt"], "end": ["hope", "love", "acceptance"]},
+          "emotions": {
+            "start": ["numbness", "grief", "overwhelm"],
+            "middle": ["shame", "loneliness", "self_doubt"],
+            "end": ["hope", "love", "acceptance"]
+          },
           "ending_tone": "hopeful",
           "intensity": "heavy",
-          "warnings": ["grief", "sexual_violence", "abuse", "death_of_loved_one", "addiction", "self_harm_or_suicide", "graphic_gore"],
+          "warnings": [
+            "grief",
+            "sexual_violence",
+            "abuse",
+            "death_of_loved_one",
+            "addiction",
+            "self_harm_or_suicide",
+            "graphic_gore"
+          ],
           "example_user_messages": [
             "I go to work, pay the bills, look after my sister, and feel absolutely nothing.",
             "Everyone thinks I'm fine because I keep functioning, but inside I'm empty.",
@@ -168,15 +195,15 @@
       "name": "Angel",
       "role": "A brooding, centuries-old vampire whose soul has been restored as a curse, haunted by the atrocities he committed and searching for a way to atone.",
       "relations": [
-        {"target": "char:buffy/buffy_summers", "relation": "ex_partner"},
-        {"target": "char:buffy/spike", "relation": "protege"},
-        {"target": "char:buffy/spike", "relation": "rival"},
-        {"target": "char:buffy/cordelia_chase", "relation": "colleague"},
-        {"target": "char:buffy/wesley_wyndam_pryce", "relation": "colleague"},
-        {"target": "char:buffy/winifred_burkle", "relation": "colleague"},
-        {"target": "char:buffy/faith_lehane", "relation": "protege"},
-        {"target": "char:buffy/willow_rosenberg", "relation": "friend"},
-        {"target": "char:buffy/alexander_harris", "relation": "rival"}
+        { "target": "char:buffy/buffy_summers", "relation": "ex_partner" },
+        { "target": "char:buffy/spike", "relation": "protege" },
+        { "target": "char:buffy/spike", "relation": "rival" },
+        { "target": "char:buffy/cordelia_chase", "relation": "colleague" },
+        { "target": "char:buffy/wesley_wyndam_pryce", "relation": "colleague" },
+        { "target": "char:buffy/winifred_burkle", "relation": "colleague" },
+        { "target": "char:buffy/faith_lehane", "relation": "protege" },
+        { "target": "char:buffy/willow_rosenberg", "relation": "friend" },
+        { "target": "char:buffy/alexander_harris", "relation": "rival" }
       ],
       "arcs": [
         {
@@ -195,16 +222,28 @@
           "start_at": "Angel S1E1",
           "span": "Angel S1-S5",
           "situations": [
-            {"id": "redemption_after_mistakes", "weight": 1.0},
-            {"id": "starting_over", "weight": 0.6},
-            {"id": "finding_your_people", "weight": 0.6},
-            {"id": "loneliness", "weight": 0.5}
+            { "id": "redemption_after_mistakes", "weight": 1.0 },
+            { "id": "starting_over", "weight": 0.6 },
+            { "id": "finding_your_people", "weight": 0.6 },
+            { "id": "loneliness", "weight": 0.5 }
           ],
           "conflicts": ["past_vs_future", "independence_vs_connection"],
-          "emotions": {"start": ["guilt", "loneliness", "shame"], "middle": ["determination", "anger", "numbness"], "end": ["belonging", "self_respect", "determination"]},
+          "emotions": {
+            "start": ["guilt", "loneliness", "shame"],
+            "middle": ["determination", "anger", "numbness"],
+            "end": ["belonging", "self_respect", "determination"]
+          },
           "ending_tone": "bittersweet",
           "intensity": "heavy",
-          "warnings": ["death_of_loved_one", "death_of_main_character", "betrayal", "war_and_violence", "torture", "graphic_gore", "grief"],
+          "warnings": [
+            "death_of_loved_one",
+            "death_of_main_character",
+            "betrayal",
+            "war_and_violence",
+            "torture",
+            "graphic_gore",
+            "grief"
+          ],
           "example_user_messages": [
             "I did things in my past that I can never undo and I don't know if I deserve a second chance.",
             "I volunteer and try to help people but the guilt never goes away.",
@@ -244,16 +283,26 @@
           "start_at": "Angel S3E9",
           "span": "Angel S3-S5",
           "situations": [
-            {"id": "becoming_a_parent", "weight": 1.0},
-            {"id": "caring_for_family", "weight": 0.7},
-            {"id": "grief_and_loss", "weight": 0.5},
-            {"id": "difficult_parent", "weight": 0.4}
+            { "id": "becoming_a_parent", "weight": 1.0 },
+            { "id": "caring_for_family", "weight": 0.7 },
+            { "id": "grief_and_loss", "weight": 0.5 },
+            { "id": "difficult_parent", "weight": 0.4 }
           ],
           "conflicts": ["holding_on_vs_letting_go", "truth_vs_protecting_others"],
-          "emotions": {"start": ["love", "fear", "joy"], "middle": ["grief", "rejection", "anger", "guilt"], "end": ["acceptance", "love", "peace"]},
+          "emotions": {
+            "start": ["love", "fear", "joy"],
+            "middle": ["grief", "rejection", "anger", "guilt"],
+            "end": ["acceptance", "love", "peace"]
+          },
           "ending_tone": "bittersweet",
           "intensity": "heavy",
-          "warnings": ["child_endangerment", "death_of_loved_one", "betrayal", "war_and_violence", "grief"],
+          "warnings": [
+            "child_endangerment",
+            "death_of_loved_one",
+            "betrayal",
+            "war_and_violence",
+            "grief"
+          ],
           "example_user_messages": [
             "I never thought I could be a parent and now I'm terrified my past will hurt my kid.",
             "My child was raised by someone else to believe I'm a terrible person.",
@@ -283,13 +332,13 @@
       "name": "Willow Rosenberg",
       "role": "A shy, brilliant high-school computer nerd, mocked by the popular girls and secretly in love with her lifelong best friend.",
       "relations": [
-        {"target": "char:buffy/buffy_summers", "relation": "friend"},
-        {"target": "char:buffy/alexander_harris", "relation": "friend"},
-        {"target": "char:buffy/rupert_giles", "relation": "mentor"},
-        {"target": "char:buffy/cordelia_chase", "relation": "rival"},
-        {"target": "char:buffy/angel", "relation": "friend"},
-        {"target": "char:buffy/anya_jenkins", "relation": "friend"},
-        {"target": "char:buffy/dawn_summers", "relation": "friend"}
+        { "target": "char:buffy/buffy_summers", "relation": "friend" },
+        { "target": "char:buffy/alexander_harris", "relation": "friend" },
+        { "target": "char:buffy/rupert_giles", "relation": "mentor" },
+        { "target": "char:buffy/cordelia_chase", "relation": "rival" },
+        { "target": "char:buffy/angel", "relation": "friend" },
+        { "target": "char:buffy/anya_jenkins", "relation": "friend" },
+        { "target": "char:buffy/dawn_summers", "relation": "friend" }
       ],
       "arcs": [
         {
@@ -308,13 +357,17 @@
           "start_at": "S1E1",
           "span": "S1-S4",
           "situations": [
-            {"id": "confidence_struggle", "weight": 0.9},
-            {"id": "identity_and_self_acceptance", "weight": 0.9},
-            {"id": "unrequited_love", "weight": 0.6},
-            {"id": "finding_your_people", "weight": 0.6}
+            { "id": "confidence_struggle", "weight": 0.9 },
+            { "id": "identity_and_self_acceptance", "weight": 0.9 },
+            { "id": "unrequited_love", "weight": 0.6 },
+            { "id": "finding_your_people", "weight": 0.6 }
           ],
           "conflicts": ["fitting_in_vs_standing_out", "safety_vs_growth"],
-          "emotions": {"start": ["inadequacy", "longing", "anxiety"], "middle": ["rejection", "curiosity", "grief"], "end": ["confidence", "love", "acceptance"]},
+          "emotions": {
+            "start": ["inadequacy", "longing", "anxiety"],
+            "middle": ["rejection", "curiosity", "grief"],
+            "end": ["confidence", "love", "acceptance"]
+          },
           "ending_tone": "hopeful",
           "intensity": "moderate",
           "warnings": ["death_of_loved_one", "betrayal", "war_and_violence"],
@@ -355,16 +408,28 @@
           "start_at": "S6E1",
           "span": "S6-S7",
           "situations": [
-            {"id": "addiction_and_recovery", "weight": 1.0},
-            {"id": "redemption_after_mistakes", "weight": 0.7},
-            {"id": "grief_and_loss", "weight": 0.6},
-            {"id": "breakup", "weight": 0.5}
+            { "id": "addiction_and_recovery", "weight": 1.0 },
+            { "id": "redemption_after_mistakes", "weight": 0.7 },
+            { "id": "grief_and_loss", "weight": 0.6 },
+            { "id": "breakup", "weight": 0.5 }
           ],
           "conflicts": ["power_vs_morality", "control_vs_trust"],
-          "emotions": {"start": ["pride", "confidence", "restlessness"], "middle": ["shame", "grief", "anger"], "end": ["guilt", "hope", "acceptance"]},
+          "emotions": {
+            "start": ["pride", "confidence", "restlessness"],
+            "middle": ["shame", "grief", "anger"],
+            "end": ["guilt", "hope", "acceptance"]
+          },
           "ending_tone": "hopeful",
           "intensity": "heavy",
-          "warnings": ["addiction", "death_of_loved_one", "grief", "graphic_gore", "torture", "betrayal", "child_endangerment"],
+          "warnings": [
+            "addiction",
+            "death_of_loved_one",
+            "grief",
+            "graphic_gore",
+            "torture",
+            "betrayal",
+            "child_endangerment"
+          ],
           "example_user_messages": [
             "I only feel useful and strong when I'm using, and I don't know who I am without it.",
             "My partner left because I kept breaking promises about my habit.",
@@ -395,12 +460,12 @@
       "name": "Spike",
       "role": "A swaggering, punk-styled vampire with a notorious reputation for having killed two Slayers, devoted to his unstable partner Drusilla and eager to make Buffy his third.",
       "relations": [
-        {"target": "char:buffy/buffy_summers", "relation": "ex_partner"},
-        {"target": "char:buffy/angel", "relation": "mentor"},
-        {"target": "char:buffy/angel", "relation": "rival"},
-        {"target": "char:buffy/dawn_summers", "relation": "friend"},
-        {"target": "char:buffy/alexander_harris", "relation": "rival"},
-        {"target": "char:buffy/winifred_burkle", "relation": "friend"}
+        { "target": "char:buffy/buffy_summers", "relation": "ex_partner" },
+        { "target": "char:buffy/angel", "relation": "mentor" },
+        { "target": "char:buffy/angel", "relation": "rival" },
+        { "target": "char:buffy/dawn_summers", "relation": "friend" },
+        { "target": "char:buffy/alexander_harris", "relation": "rival" },
+        { "target": "char:buffy/winifred_burkle", "relation": "friend" }
       ],
       "arcs": [
         {
@@ -419,16 +484,27 @@
           "start_at": "S4E7",
           "span": "S4-S7",
           "situations": [
-            {"id": "redemption_after_mistakes", "weight": 1.0},
-            {"id": "unrequited_love", "weight": 0.8},
-            {"id": "identity_and_self_acceptance", "weight": 0.7},
-            {"id": "finding_your_people", "weight": 0.4}
+            { "id": "redemption_after_mistakes", "weight": 1.0 },
+            { "id": "unrequited_love", "weight": 0.8 },
+            { "id": "identity_and_self_acceptance", "weight": 0.7 },
+            { "id": "finding_your_people", "weight": 0.4 }
           ],
           "conflicts": ["past_vs_future", "belonging_vs_integrity"],
-          "emotions": {"start": ["anger", "shame", "resentment"], "middle": ["longing", "love", "rejection", "guilt"], "end": ["self_respect", "peace", "love"]},
+          "emotions": {
+            "start": ["anger", "shame", "resentment"],
+            "middle": ["longing", "love", "rejection", "guilt"],
+            "end": ["self_respect", "peace", "love"]
+          },
           "ending_tone": "bittersweet",
           "intensity": "heavy",
-          "warnings": ["sexual_violence", "abuse", "torture", "death_of_main_character", "war_and_violence", "self_harm_or_suicide"],
+          "warnings": [
+            "sexual_violence",
+            "abuse",
+            "torture",
+            "death_of_main_character",
+            "war_and_violence",
+            "self_harm_or_suicide"
+          ],
           "example_user_messages": [
             "I've done bad things and I'm trying to be better, but only because I want her to love me.",
             "She keeps telling me I'm incapable of real feelings and part of me believes her.",
@@ -468,13 +544,17 @@
           "start_at": "Angel S5E1",
           "span": "Angel S5",
           "situations": [
-            {"id": "starting_over", "weight": 0.7},
-            {"id": "mentor_and_protege", "weight": 0.6},
-            {"id": "sibling_rivalry", "weight": 0.6},
-            {"id": "identity_and_self_acceptance", "weight": 0.6}
+            { "id": "starting_over", "weight": 0.7 },
+            { "id": "mentor_and_protege", "weight": 0.6 },
+            { "id": "sibling_rivalry", "weight": 0.6 },
+            { "id": "identity_and_self_acceptance", "weight": 0.6 }
           ],
           "conflicts": ["past_vs_future", "independence_vs_connection"],
-          "emotions": {"start": ["confusion", "resentment", "fear"], "middle": ["envy", "determination", "grief"], "end": ["belonging", "self_respect"]},
+          "emotions": {
+            "start": ["confusion", "resentment", "fear"],
+            "middle": ["envy", "determination", "grief"],
+            "end": ["belonging", "self_respect"]
+          },
           "ending_tone": "ambiguous",
           "intensity": "moderate",
           "warnings": ["death_of_loved_one", "war_and_violence", "grief", "torture"],
@@ -506,12 +586,12 @@
       "name": "Rupert Giles",
       "role": "A reserved, tweed-wearing British school librarian who is secretly the Watcher sent to train and guide the new Slayer.",
       "relations": [
-        {"target": "char:buffy/buffy_summers", "relation": "protege"},
-        {"target": "char:buffy/willow_rosenberg", "relation": "protege"},
-        {"target": "char:buffy/alexander_harris", "relation": "protege"},
-        {"target": "char:buffy/faith_lehane", "relation": "protege"},
-        {"target": "char:buffy/wesley_wyndam_pryce", "relation": "colleague"},
-        {"target": "char:buffy/anya_jenkins", "relation": "colleague"}
+        { "target": "char:buffy/buffy_summers", "relation": "protege" },
+        { "target": "char:buffy/willow_rosenberg", "relation": "protege" },
+        { "target": "char:buffy/alexander_harris", "relation": "protege" },
+        { "target": "char:buffy/faith_lehane", "relation": "protege" },
+        { "target": "char:buffy/wesley_wyndam_pryce", "relation": "colleague" },
+        { "target": "char:buffy/anya_jenkins", "relation": "colleague" }
       ],
       "arcs": [
         {
@@ -530,13 +610,17 @@
           "start_at": "S1E1",
           "span": "S1-S3",
           "situations": [
-            {"id": "mentor_and_protege", "weight": 1.0},
-            {"id": "standing_up_to_authority", "weight": 0.7},
-            {"id": "new_job", "weight": 0.3},
-            {"id": "redemption_after_mistakes", "weight": 0.4}
+            { "id": "mentor_and_protege", "weight": 1.0 },
+            { "id": "standing_up_to_authority", "weight": 0.7 },
+            { "id": "new_job", "weight": 0.3 },
+            { "id": "redemption_after_mistakes", "weight": 0.4 }
           ],
           "conflicts": ["belonging_vs_integrity", "duty_vs_desire"],
-          "emotions": {"start": ["anxiety", "self_doubt"], "middle": ["love", "guilt", "grief", "anger"], "end": ["self_respect", "love", "pride"]},
+          "emotions": {
+            "start": ["anxiety", "self_doubt"],
+            "middle": ["love", "guilt", "grief", "anger"],
+            "end": ["self_respect", "love", "pride"]
+          },
           "ending_tone": "hopeful",
           "intensity": "moderate",
           "warnings": ["death_of_loved_one", "torture", "betrayal", "grief", "war_and_violence"],
@@ -578,16 +662,26 @@
           "start_at": "S4E1",
           "span": "S4-S6",
           "situations": [
-            {"id": "losing_a_job", "weight": 0.8},
-            {"id": "midlife_reinvention", "weight": 0.9},
-            {"id": "starting_a_business", "weight": 0.4},
-            {"id": "mentor_and_protege", "weight": 0.7}
+            { "id": "losing_a_job", "weight": 0.8 },
+            { "id": "midlife_reinvention", "weight": 0.9 },
+            { "id": "starting_a_business", "weight": 0.4 },
+            { "id": "mentor_and_protege", "weight": 0.7 }
           ],
           "conflicts": ["holding_on_vs_letting_go", "career_vs_relationships"],
-          "emotions": {"start": ["numbness", "loneliness", "inadequacy"], "middle": ["determination", "grief", "anger"], "end": ["acceptance", "pride", "love"]},
+          "emotions": {
+            "start": ["numbness", "loneliness", "inadequacy"],
+            "middle": ["determination", "grief", "anger"],
+            "end": ["acceptance", "pride", "love"]
+          },
           "ending_tone": "bittersweet",
           "intensity": "moderate",
-          "warnings": ["death_of_loved_one", "death_of_main_character", "grief", "war_and_violence", "addiction"],
+          "warnings": [
+            "death_of_loved_one",
+            "death_of_main_character",
+            "grief",
+            "war_and_violence",
+            "addiction"
+          ],
           "example_user_messages": [
             "My kids have grown up and left and I have no idea what my purpose is now.",
             "I lost the job that defined me and I spend my days feeling useless.",
@@ -617,14 +711,14 @@
       "name": "Xander Harris",
       "role": "A goofy, wisecracking high-school sophomore with no special talents, the lifelong best friend of Willow and instantly smitten with the new girl, Buffy.",
       "relations": [
-        {"target": "char:buffy/buffy_summers", "relation": "friend"},
-        {"target": "char:buffy/willow_rosenberg", "relation": "friend"},
-        {"target": "char:buffy/rupert_giles", "relation": "mentor"},
-        {"target": "char:buffy/anya_jenkins", "relation": "ex_partner"},
-        {"target": "char:buffy/cordelia_chase", "relation": "ex_partner"},
-        {"target": "char:buffy/angel", "relation": "rival"},
-        {"target": "char:buffy/spike", "relation": "rival"},
-        {"target": "char:buffy/dawn_summers", "relation": "friend"}
+        { "target": "char:buffy/buffy_summers", "relation": "friend" },
+        { "target": "char:buffy/willow_rosenberg", "relation": "friend" },
+        { "target": "char:buffy/rupert_giles", "relation": "mentor" },
+        { "target": "char:buffy/anya_jenkins", "relation": "ex_partner" },
+        { "target": "char:buffy/cordelia_chase", "relation": "ex_partner" },
+        { "target": "char:buffy/angel", "relation": "rival" },
+        { "target": "char:buffy/spike", "relation": "rival" },
+        { "target": "char:buffy/dawn_summers", "relation": "friend" }
       ],
       "arcs": [
         {
@@ -643,13 +737,17 @@
           "start_at": "S4E1",
           "span": "S4-S5",
           "situations": [
-            {"id": "confidence_struggle", "weight": 0.9},
-            {"id": "coming_of_age", "weight": 0.8},
-            {"id": "career_change", "weight": 0.5},
-            {"id": "imposter_syndrome", "weight": 0.5}
+            { "id": "confidence_struggle", "weight": 0.9 },
+            { "id": "coming_of_age", "weight": 0.8 },
+            { "id": "career_change", "weight": 0.5 },
+            { "id": "imposter_syndrome", "weight": 0.5 }
           ],
           "conflicts": ["fitting_in_vs_standing_out", "safety_vs_growth"],
-          "emotions": {"start": ["inadequacy", "envy", "loneliness"], "middle": ["self_doubt", "determination"], "end": ["confidence", "self_respect", "belonging"]},
+          "emotions": {
+            "start": ["inadequacy", "envy", "loneliness"],
+            "middle": ["self_doubt", "determination"],
+            "end": ["confidence", "self_respect", "belonging"]
+          },
           "ending_tone": "hopeful",
           "intensity": "light",
           "warnings": ["addiction"],
@@ -690,16 +788,28 @@
           "start_at": "S6E1",
           "span": "S6-S7",
           "situations": [
-            {"id": "difficult_parent", "weight": 0.8},
-            {"id": "breakup", "weight": 0.8},
-            {"id": "family_expectations", "weight": 0.5},
-            {"id": "grief_and_loss", "weight": 0.5}
+            { "id": "difficult_parent", "weight": 0.8 },
+            { "id": "breakup", "weight": 0.8 },
+            { "id": "family_expectations", "weight": 0.5 },
+            { "id": "grief_and_loss", "weight": 0.5 }
           ],
           "conflicts": ["past_vs_future", "holding_on_vs_letting_go"],
-          "emotions": {"start": ["anxiety", "love", "dread"], "middle": ["guilt", "shame", "jealousy", "anger"], "end": ["grief", "acceptance", "love"]},
+          "emotions": {
+            "start": ["anxiety", "love", "dread"],
+            "middle": ["guilt", "shame", "jealousy", "anger"],
+            "end": ["grief", "acceptance", "love"]
+          },
           "ending_tone": "bittersweet",
           "intensity": "heavy",
-          "warnings": ["addiction", "abuse", "death_of_loved_one", "grief", "betrayal", "war_and_violence", "graphic_gore"],
+          "warnings": [
+            "addiction",
+            "abuse",
+            "death_of_loved_one",
+            "grief",
+            "betrayal",
+            "war_and_violence",
+            "graphic_gore"
+          ],
           "example_user_messages": [
             "My dad is an alcoholic who screams at my mom and I'm terrified of turning out like him.",
             "I'm engaged and I love her but I'm panicking that we'll end up like my parents.",

@@ -6,11 +6,11 @@
       "name": "Arya Stark",
       "role": "The tomboyish younger daughter of a northern lord, who would rather learn to fight than learn to sew",
       "relations": [
-        {"target": "char:game_of_thrones/sansa_stark", "relation": "sibling"},
-        {"target": "char:game_of_thrones/jon_snow", "relation": "sibling"},
-        {"target": "char:game_of_thrones/bran_stark", "relation": "sibling"},
-        {"target": "char:game_of_thrones/sandor_clegane", "relation": "mentor"},
-        {"target": "char:game_of_thrones/cersei_lannister", "relation": "enemy"}
+        { "target": "char:game_of_thrones/sansa_stark", "relation": "sibling" },
+        { "target": "char:game_of_thrones/jon_snow", "relation": "sibling" },
+        { "target": "char:game_of_thrones/bran_stark", "relation": "sibling" },
+        { "target": "char:game_of_thrones/sandor_clegane", "relation": "mentor" },
+        { "target": "char:game_of_thrones/cersei_lannister", "relation": "enemy" }
       ],
       "arcs": [
         {
@@ -29,16 +29,28 @@
           "start_at": "S1E10",
           "span": "S1-S8",
           "situations": [
-            {"id": "grief_and_loss", "weight": 0.9},
-            {"id": "coming_of_age", "weight": 0.7},
-            {"id": "loneliness", "weight": 0.5},
-            {"id": "identity_and_self_acceptance", "weight": 0.4}
+            { "id": "grief_and_loss", "weight": 0.9 },
+            { "id": "coming_of_age", "weight": 0.7 },
+            { "id": "loneliness", "weight": 0.5 },
+            { "id": "identity_and_self_acceptance", "weight": 0.4 }
           ],
           "conflicts": ["revenge_vs_forgiveness", "holding_on_vs_letting_go"],
-          "emotions": {"start": ["grief", "anger", "fear"], "middle": ["numbness", "determination", "resentment"], "end": ["freedom", "acceptance"]},
+          "emotions": {
+            "start": ["grief", "anger", "fear"],
+            "middle": ["numbness", "determination", "resentment"],
+            "end": ["freedom", "acceptance"]
+          },
           "ending_tone": "bittersweet",
           "intensity": "heavy",
-          "warnings": ["death_of_loved_one", "grief", "war_and_violence", "graphic_gore", "child_endangerment", "torture", "betrayal"],
+          "warnings": [
+            "death_of_loved_one",
+            "grief",
+            "war_and_violence",
+            "graphic_gore",
+            "child_endangerment",
+            "torture",
+            "betrayal"
+          ],
           "example_user_messages": [
             "Ever since my dad died I just feel angry all the time, and honestly the anger is the only thing getting me out of bed.",
             "I keep a mental list of every person who wronged my family. I know it's not healthy but I can't stop.",
@@ -80,13 +92,17 @@
           "start_at": "S5E2",
           "span": "S5-S6",
           "situations": [
-            {"id": "identity_and_self_acceptance", "weight": 0.9},
-            {"id": "moving_somewhere_new", "weight": 0.6},
-            {"id": "starting_over", "weight": 0.5},
-            {"id": "finding_your_people", "weight": 0.4}
+            { "id": "identity_and_self_acceptance", "weight": 0.9 },
+            { "id": "moving_somewhere_new", "weight": 0.6 },
+            { "id": "starting_over", "weight": 0.5 },
+            { "id": "finding_your_people", "weight": 0.4 }
           ],
           "conflicts": ["belonging_vs_integrity", "past_vs_future"],
-          "emotions": {"start": ["loneliness", "determination"], "middle": ["confusion", "self_doubt", "fear"], "end": ["self_respect", "confidence"]},
+          "emotions": {
+            "start": ["loneliness", "determination"],
+            "middle": ["confusion", "self_doubt", "fear"],
+            "end": ["self_respect", "confidence"]
+          },
           "ending_tone": "hopeful",
           "intensity": "heavy",
           "warnings": ["abuse", "graphic_gore", "betrayal", "child_endangerment"],
@@ -128,13 +144,17 @@
           "start_at": "S1E1",
           "span": "S1-S7",
           "situations": [
-            {"id": "sibling_rivalry", "weight": 0.9},
-            {"id": "family_expectations", "weight": 0.7},
-            {"id": "identity_and_self_acceptance", "weight": 0.5},
-            {"id": "grief_and_loss", "weight": 0.3}
+            { "id": "sibling_rivalry", "weight": 0.9 },
+            { "id": "family_expectations", "weight": 0.7 },
+            { "id": "identity_and_self_acceptance", "weight": 0.5 },
+            { "id": "grief_and_loss", "weight": 0.3 }
           ],
           "conflicts": ["fitting_in_vs_standing_out", "self_vs_family_expectations"],
-          "emotions": {"start": ["resentment", "rejection", "restlessness"], "middle": ["loneliness", "longing", "betrayal"], "end": ["belonging", "love"]},
+          "emotions": {
+            "start": ["resentment", "rejection", "restlessness"],
+            "middle": ["loneliness", "longing", "betrayal"],
+            "end": ["belonging", "love"]
+          },
           "ending_tone": "hopeful",
           "intensity": "moderate",
           "warnings": ["death_of_loved_one", "betrayal", "war_and_violence"],
@@ -165,10 +185,10 @@
       "name": "Theon Greyjoy",
       "role": "The cocky heir of a defeated rebel house, raised as a hostage-ward by the family that beat his father",
       "relations": [
-        {"target": "char:game_of_thrones/jon_snow", "relation": "rival"},
-        {"target": "char:game_of_thrones/sansa_stark", "relation": "friend"},
-        {"target": "char:game_of_thrones/bran_stark", "relation": "friend"},
-        {"target": "char:game_of_thrones/daenerys_targaryen", "relation": "boss"}
+        { "target": "char:game_of_thrones/jon_snow", "relation": "rival" },
+        { "target": "char:game_of_thrones/sansa_stark", "relation": "friend" },
+        { "target": "char:game_of_thrones/bran_stark", "relation": "friend" },
+        { "target": "char:game_of_thrones/daenerys_targaryen", "relation": "boss" }
       ],
       "arcs": [
         {
@@ -187,13 +207,17 @@
           "start_at": "S2E2",
           "span": "S2",
           "situations": [
-            {"id": "difficult_parent", "weight": 0.9},
-            {"id": "family_expectations", "weight": 0.8},
-            {"id": "identity_and_self_acceptance", "weight": 0.6},
-            {"id": "sibling_rivalry", "weight": 0.3}
+            { "id": "difficult_parent", "weight": 0.9 },
+            { "id": "family_expectations", "weight": 0.8 },
+            { "id": "identity_and_self_acceptance", "weight": 0.6 },
+            { "id": "sibling_rivalry", "weight": 0.3 }
           ],
           "conflicts": ["loyalty_vs_ambition", "self_vs_family_expectations"],
-          "emotions": {"start": ["longing", "pride", "hope"], "middle": ["inadequacy", "shame", "anger"], "end": ["dread", "guilt"]},
+          "emotions": {
+            "start": ["longing", "pride", "hope"],
+            "middle": ["inadequacy", "shame", "anger"],
+            "end": ["dread", "guilt"]
+          },
           "ending_tone": "tragic",
           "intensity": "heavy",
           "warnings": ["betrayal", "war_and_violence", "graphic_gore", "child_endangerment"],
@@ -234,16 +258,28 @@
           "start_at": "S3E2",
           "span": "S3-S5",
           "situations": [
-            {"id": "identity_and_self_acceptance", "weight": 0.9},
-            {"id": "standing_up_to_authority", "weight": 0.5},
-            {"id": "loneliness", "weight": 0.5},
-            {"id": "redemption_after_mistakes", "weight": 0.4}
+            { "id": "identity_and_self_acceptance", "weight": 0.9 },
+            { "id": "standing_up_to_authority", "weight": 0.5 },
+            { "id": "loneliness", "weight": 0.5 },
+            { "id": "redemption_after_mistakes", "weight": 0.4 }
           ],
           "conflicts": ["control_vs_trust", "safety_vs_growth"],
-          "emotions": {"start": ["fear", "confusion", "hope"], "middle": ["numbness", "shame", "fear"], "end": ["guilt", "determination"]},
+          "emotions": {
+            "start": ["fear", "confusion", "hope"],
+            "middle": ["numbness", "shame", "fear"],
+            "end": ["guilt", "determination"]
+          },
           "ending_tone": "hopeful",
           "intensity": "heavy",
-          "warnings": ["torture", "abuse", "sexual_violence", "domestic_violence", "graphic_gore", "self_harm_or_suicide", "betrayal"],
+          "warnings": [
+            "torture",
+            "abuse",
+            "sexual_violence",
+            "domestic_violence",
+            "graphic_gore",
+            "self_harm_or_suicide",
+            "betrayal"
+          ],
           "example_user_messages": [
             "I was with someone who'd be sweet one day and cruel the next, and by the end I didn't even know who I was anymore.",
             "Even though I got out, I still hear his voice telling me what I am.",
@@ -282,13 +318,17 @@
           "start_at": "S6E4",
           "span": "S6-S8",
           "situations": [
-            {"id": "redemption_after_mistakes", "weight": 0.9},
-            {"id": "confidence_struggle", "weight": 0.7},
-            {"id": "starting_over", "weight": 0.5},
-            {"id": "caring_for_family", "weight": 0.4}
+            { "id": "redemption_after_mistakes", "weight": 0.9 },
+            { "id": "confidence_struggle", "weight": 0.7 },
+            { "id": "starting_over", "weight": 0.5 },
+            { "id": "caring_for_family", "weight": 0.4 }
           ],
           "conflicts": ["past_vs_future", "duty_vs_desire"],
-          "emotions": {"start": ["shame", "guilt", "self_doubt"], "middle": ["fear", "determination", "hope"], "end": ["self_respect", "peace", "acceptance"]},
+          "emotions": {
+            "start": ["shame", "guilt", "self_doubt"],
+            "middle": ["fear", "determination", "hope"],
+            "end": ["self_respect", "peace", "acceptance"]
+          },
           "ending_tone": "bittersweet",
           "intensity": "heavy",
           "warnings": ["death_of_main_character", "war_and_violence", "graphic_gore", "grief"],
@@ -320,10 +360,10 @@
       "name": "Brienne of Tarth",
       "role": "An unusually tall, strong noblewoman who dreams of knighthood and fights in the guard of a claimant king",
       "relations": [
-        {"target": "char:game_of_thrones/jaime_lannister", "relation": "friend"},
-        {"target": "char:game_of_thrones/sansa_stark", "relation": "boss"},
-        {"target": "char:game_of_thrones/sandor_clegane", "relation": "rival"},
-        {"target": "char:game_of_thrones/arya_stark", "relation": "friend"}
+        { "target": "char:game_of_thrones/jaime_lannister", "relation": "friend" },
+        { "target": "char:game_of_thrones/sansa_stark", "relation": "boss" },
+        { "target": "char:game_of_thrones/sandor_clegane", "relation": "rival" },
+        { "target": "char:game_of_thrones/arya_stark", "relation": "friend" }
       ],
       "arcs": [
         {
@@ -342,12 +382,16 @@
           "start_at": "S2E3",
           "span": "S2-S8",
           "situations": [
-            {"id": "identity_and_self_acceptance", "weight": 0.8},
-            {"id": "finding_your_people", "weight": 0.6},
-            {"id": "confidence_struggle", "weight": 0.5}
+            { "id": "identity_and_self_acceptance", "weight": 0.8 },
+            { "id": "finding_your_people", "weight": 0.6 },
+            { "id": "confidence_struggle", "weight": 0.5 }
           ],
           "conflicts": ["fitting_in_vs_standing_out", "belonging_vs_integrity"],
-          "emotions": {"start": ["rejection", "determination", "pride"], "middle": ["loneliness", "self_doubt"], "end": ["belonging", "self_respect", "joy"]},
+          "emotions": {
+            "start": ["rejection", "determination", "pride"],
+            "middle": ["loneliness", "self_doubt"],
+            "end": ["belonging", "self_respect", "joy"]
+          },
           "ending_tone": "hopeful",
           "intensity": "moderate",
           "warnings": ["war_and_violence", "sexual_violence", "death_of_loved_one", "graphic_gore"],
@@ -387,16 +431,26 @@
           "start_at": "S2E5",
           "span": "S2-S7",
           "situations": [
-            {"id": "grief_and_loss", "weight": 0.7},
-            {"id": "redemption_after_mistakes", "weight": 0.6},
-            {"id": "unrequited_love", "weight": 0.4},
-            {"id": "mentor_and_protege", "weight": 0.3}
+            { "id": "grief_and_loss", "weight": 0.7 },
+            { "id": "redemption_after_mistakes", "weight": 0.6 },
+            { "id": "unrequited_love", "weight": 0.4 },
+            { "id": "mentor_and_protege", "weight": 0.3 }
           ],
           "conflicts": ["duty_vs_desire", "holding_on_vs_letting_go"],
-          "emotions": {"start": ["grief", "guilt", "determination"], "middle": ["rejection", "self_doubt", "anger"], "end": ["relief", "pride"]},
+          "emotions": {
+            "start": ["grief", "guilt", "determination"],
+            "middle": ["rejection", "self_doubt", "anger"],
+            "end": ["relief", "pride"]
+          },
           "ending_tone": "hopeful",
           "intensity": "heavy",
-          "warnings": ["death_of_loved_one", "grief", "war_and_violence", "graphic_gore", "sexual_violence"],
+          "warnings": [
+            "death_of_loved_one",
+            "grief",
+            "war_and_violence",
+            "graphic_gore",
+            "sexual_violence"
+          ],
           "example_user_messages": [
             "I promised my friend before she died that I'd look out for her kids, but they don't even want my help.",
             "The person I cared about most died and I couldn't protect them. I think I've been trying to make up for it ever since.",
@@ -435,11 +489,15 @@
           "start_at": "S2E10",
           "span": "S2-S8",
           "situations": [
-            {"id": "falling_for_someone_unexpected", "weight": 0.9},
-            {"id": "breakup", "weight": 0.4}
+            { "id": "falling_for_someone_unexpected", "weight": 0.9 },
+            { "id": "breakup", "weight": 0.4 }
           ],
           "conflicts": ["independence_vs_connection", "holding_on_vs_letting_go"],
-          "emotions": {"start": ["anger", "resentment"], "middle": ["curiosity", "longing", "love"], "end": ["grief", "love", "acceptance"]},
+          "emotions": {
+            "start": ["anger", "resentment"],
+            "middle": ["curiosity", "longing", "love"],
+            "end": ["grief", "love", "acceptance"]
+          },
           "ending_tone": "bittersweet",
           "intensity": "moderate",
           "warnings": ["sexual_violence", "graphic_gore", "war_and_violence", "death_of_loved_one"],
@@ -472,8 +530,8 @@
       "name": "Samwell Tarly",
       "role": "The bookish, gentle eldest son of a warrior lord, forced by his father to join a remote military order at the Wall",
       "relations": [
-        {"target": "char:game_of_thrones/jon_snow", "relation": "friend"},
-        {"target": "char:game_of_thrones/bran_stark", "relation": "friend"}
+        { "target": "char:game_of_thrones/jon_snow", "relation": "friend" },
+        { "target": "char:game_of_thrones/bran_stark", "relation": "friend" }
       ],
       "arcs": [
         {
@@ -492,16 +550,27 @@
           "start_at": "S1E4",
           "span": "S1-S8",
           "situations": [
-            {"id": "difficult_parent", "weight": 0.9},
-            {"id": "confidence_struggle", "weight": 0.8},
-            {"id": "finding_your_people", "weight": 0.7},
-            {"id": "falling_for_someone_unexpected", "weight": 0.4}
+            { "id": "difficult_parent", "weight": 0.9 },
+            { "id": "confidence_struggle", "weight": 0.8 },
+            { "id": "finding_your_people", "weight": 0.7 },
+            { "id": "falling_for_someone_unexpected", "weight": 0.4 }
           ],
           "conflicts": ["self_vs_family_expectations", "safety_vs_growth"],
-          "emotions": {"start": ["inadequacy", "fear", "shame"], "middle": ["hope", "love", "determination"], "end": ["confidence", "self_respect"]},
+          "emotions": {
+            "start": ["inadequacy", "fear", "shame"],
+            "middle": ["hope", "love", "determination"],
+            "end": ["confidence", "self_respect"]
+          },
           "ending_tone": "hopeful",
           "intensity": "moderate",
-          "warnings": ["abuse", "war_and_violence", "graphic_gore", "child_endangerment", "sexual_violence", "death_of_loved_one"],
+          "warnings": [
+            "abuse",
+            "war_and_violence",
+            "graphic_gore",
+            "child_endangerment",
+            "sexual_violence",
+            "death_of_loved_one"
+          ],
           "example_user_messages": [
             "My dad always wanted a tough, sporty son and I'm the opposite. He made it very clear I was a disappointment.",
             "I got pushed into a path my parents chose and everyone there thinks I'm soft.",
@@ -540,12 +609,16 @@
           "start_at": "S7E1",
           "span": "S7",
           "situations": [
-            {"id": "new_job", "weight": 0.8},
-            {"id": "standing_up_to_authority", "weight": 0.8},
-            {"id": "taking_a_big_risk", "weight": 0.6}
+            { "id": "new_job", "weight": 0.8 },
+            { "id": "standing_up_to_authority", "weight": 0.8 },
+            { "id": "taking_a_big_risk", "weight": 0.6 }
           ],
           "conflicts": ["belonging_vs_integrity", "safety_vs_growth"],
-          "emotions": {"start": ["boredom", "restlessness", "hope"], "middle": ["determination", "anxiety"], "end": ["confidence", "freedom"]},
+          "emotions": {
+            "start": ["boredom", "restlessness", "hope"],
+            "middle": ["determination", "anxiety"],
+            "end": ["confidence", "freedom"]
+          },
           "ending_tone": "hopeful",
           "intensity": "moderate",
           "warnings": ["serious_illness", "medical_trauma"],
@@ -577,10 +650,10 @@
       "name": "Sandor Clegane",
       "role": "A scarred, feared bodyguard to the crown prince who scorns knights and their ideals",
       "relations": [
-        {"target": "char:game_of_thrones/arya_stark", "relation": "protege"},
-        {"target": "char:game_of_thrones/sansa_stark", "relation": "friend"},
-        {"target": "char:game_of_thrones/cersei_lannister", "relation": "boss"},
-        {"target": "char:game_of_thrones/brienne_of_tarth", "relation": "rival"}
+        { "target": "char:game_of_thrones/arya_stark", "relation": "protege" },
+        { "target": "char:game_of_thrones/sansa_stark", "relation": "friend" },
+        { "target": "char:game_of_thrones/cersei_lannister", "relation": "boss" },
+        { "target": "char:game_of_thrones/brienne_of_tarth", "relation": "rival" }
       ],
       "arcs": [
         {
@@ -599,15 +672,25 @@
           "start_at": "S1E1",
           "span": "S1-S2",
           "situations": [
-            {"id": "standing_up_to_authority", "weight": 0.7},
-            {"id": "burnout_at_work", "weight": 0.6},
-            {"id": "losing_a_job", "weight": 0.4}
+            { "id": "standing_up_to_authority", "weight": 0.7 },
+            { "id": "burnout_at_work", "weight": 0.6 },
+            { "id": "losing_a_job", "weight": 0.4 }
           ],
           "conflicts": ["power_vs_morality", "safety_vs_growth"],
-          "emotions": {"start": ["numbness", "resentment", "anger"], "middle": ["restlessness", "fear"], "end": ["freedom", "fear"]},
+          "emotions": {
+            "start": ["numbness", "resentment", "anger"],
+            "middle": ["restlessness", "fear"],
+            "end": ["freedom", "fear"]
+          },
           "ending_tone": "ambiguous",
           "intensity": "heavy",
-          "warnings": ["child_endangerment", "abuse", "war_and_violence", "graphic_gore", "sexual_violence"],
+          "warnings": [
+            "child_endangerment",
+            "abuse",
+            "war_and_violence",
+            "graphic_gore",
+            "sexual_violence"
+          ],
           "example_user_messages": [
             "I work for a boss who's genuinely cruel and I've gotten really good at not feeling anything about it.",
             "Everyone at work thinks I'm the heartless one, but I'm the only one who ever quietly looks out for the new girl.",
@@ -644,16 +727,26 @@
           "start_at": "S3E7",
           "span": "S3-S4",
           "situations": [
-            {"id": "mentor_and_protege", "weight": 0.9},
-            {"id": "responsibility_you_didnt_ask_for", "weight": 0.7},
-            {"id": "loneliness", "weight": 0.4},
-            {"id": "sibling_rivalry", "weight": 0.3}
+            { "id": "mentor_and_protege", "weight": 0.9 },
+            { "id": "responsibility_you_didnt_ask_for", "weight": 0.7 },
+            { "id": "loneliness", "weight": 0.4 },
+            { "id": "sibling_rivalry", "weight": 0.3 }
           ],
           "conflicts": ["independence_vs_connection", "revenge_vs_forgiveness"],
-          "emotions": {"start": ["resentment", "anger"], "middle": ["grief", "shame", "belonging"], "end": ["rejection", "loneliness"]},
+          "emotions": {
+            "start": ["resentment", "anger"],
+            "middle": ["grief", "shame", "belonging"],
+            "end": ["rejection", "loneliness"]
+          },
           "ending_tone": "bittersweet",
           "intensity": "heavy",
-          "warnings": ["death_of_loved_one", "war_and_violence", "graphic_gore", "child_endangerment", "abuse"],
+          "warnings": [
+            "death_of_loved_one",
+            "war_and_violence",
+            "graphic_gore",
+            "child_endangerment",
+            "abuse"
+          ],
           "example_user_messages": [
             "I ended up looking after my teenage niece and she can't stand me. Honestly I can't stand her either, but I'd fight anyone who hurt her.",
             "My older brother did something horrible to me as a kid and my dad covered it up. I never told anyone until recently.",
@@ -690,16 +783,27 @@
           "start_at": "S6E7",
           "span": "S6-S8",
           "situations": [
-            {"id": "starting_over", "weight": 0.9},
-            {"id": "redemption_after_mistakes", "weight": 0.8},
-            {"id": "finding_your_people", "weight": 0.5},
-            {"id": "sibling_rivalry", "weight": 0.5}
+            { "id": "starting_over", "weight": 0.9 },
+            { "id": "redemption_after_mistakes", "weight": 0.8 },
+            { "id": "finding_your_people", "weight": 0.5 },
+            { "id": "sibling_rivalry", "weight": 0.5 }
           ],
           "conflicts": ["revenge_vs_forgiveness", "past_vs_future"],
-          "emotions": {"start": ["numbness", "guilt", "curiosity"], "middle": ["anger", "grief", "belonging"], "end": ["determination", "acceptance"]},
+          "emotions": {
+            "start": ["numbness", "guilt", "curiosity"],
+            "middle": ["anger", "grief", "belonging"],
+            "end": ["determination", "acceptance"]
+          },
           "ending_tone": "tragic",
           "intensity": "heavy",
-          "warnings": ["death_of_main_character", "war_and_violence", "graphic_gore", "grief", "self_harm_or_suicide", "bleak_ending"],
+          "warnings": [
+            "death_of_main_character",
+            "war_and_violence",
+            "graphic_gore",
+            "grief",
+            "self_harm_or_suicide",
+            "bleak_ending"
+          ],
           "example_user_messages": [
             "I've done a lot of damage in my life and someone finally gave me a chance to be different. I really don't want to blow it.",
             "The one place I ever felt at peace got taken away, and now all I want is to hurt the people responsible.",
@@ -729,12 +833,12 @@
       "name": "Bran Stark",
       "role": "The adventurous young son of a northern lord, who loves climbing the walls of his family's castle",
       "relations": [
-        {"target": "char:game_of_thrones/jon_snow", "relation": "sibling"},
-        {"target": "char:game_of_thrones/sansa_stark", "relation": "sibling"},
-        {"target": "char:game_of_thrones/arya_stark", "relation": "sibling"},
-        {"target": "char:game_of_thrones/jaime_lannister", "relation": "enemy"},
-        {"target": "char:game_of_thrones/theon_greyjoy", "relation": "friend"},
-        {"target": "char:game_of_thrones/samwell_tarly", "relation": "friend"}
+        { "target": "char:game_of_thrones/jon_snow", "relation": "sibling" },
+        { "target": "char:game_of_thrones/sansa_stark", "relation": "sibling" },
+        { "target": "char:game_of_thrones/arya_stark", "relation": "sibling" },
+        { "target": "char:game_of_thrones/jaime_lannister", "relation": "enemy" },
+        { "target": "char:game_of_thrones/theon_greyjoy", "relation": "friend" },
+        { "target": "char:game_of_thrones/samwell_tarly", "relation": "friend" }
       ],
       "arcs": [
         {
@@ -753,13 +857,17 @@
           "start_at": "S1E2",
           "span": "S1-S4",
           "situations": [
-            {"id": "illness_or_injury", "weight": 1.0},
-            {"id": "coming_of_age", "weight": 0.7},
-            {"id": "identity_and_self_acceptance", "weight": 0.6},
-            {"id": "leaving_home", "weight": 0.5}
+            { "id": "illness_or_injury", "weight": 1.0 },
+            { "id": "coming_of_age", "weight": 0.7 },
+            { "id": "identity_and_self_acceptance", "weight": 0.6 },
+            { "id": "leaving_home", "weight": 0.5 }
           ],
           "conflicts": ["holding_on_vs_letting_go", "safety_vs_growth"],
-          "emotions": {"start": ["grief", "anger", "loneliness"], "middle": ["curiosity", "determination", "fear"], "end": ["acceptance", "hope"]},
+          "emotions": {
+            "start": ["grief", "anger", "loneliness"],
+            "middle": ["curiosity", "determination", "fear"],
+            "end": ["acceptance", "hope"]
+          },
           "ending_tone": "bittersweet",
           "intensity": "moderate",
           "warnings": ["child_endangerment", "death_of_loved_one", "war_and_violence", "betrayal"],
@@ -800,13 +908,17 @@
           "start_at": "S6E2",
           "span": "S6-S8",
           "situations": [
-            {"id": "responsibility_you_didnt_ask_for", "weight": 0.9},
-            {"id": "identity_and_self_acceptance", "weight": 0.7},
-            {"id": "mentor_and_protege", "weight": 0.5},
-            {"id": "grief_and_loss", "weight": 0.5}
+            { "id": "responsibility_you_didnt_ask_for", "weight": 0.9 },
+            { "id": "identity_and_self_acceptance", "weight": 0.7 },
+            { "id": "mentor_and_protege", "weight": 0.5 },
+            { "id": "grief_and_loss", "weight": 0.5 }
           ],
           "conflicts": ["duty_vs_desire", "past_vs_future"],
-          "emotions": {"start": ["longing", "curiosity", "restlessness"], "middle": ["guilt", "grief", "overwhelm"], "end": ["numbness", "acceptance"]},
+          "emotions": {
+            "start": ["longing", "curiosity", "restlessness"],
+            "middle": ["guilt", "grief", "overwhelm"],
+            "end": ["numbness", "acceptance"]
+          },
           "ending_tone": "ambiguous",
           "intensity": "heavy",
           "warnings": ["death_of_loved_one", "grief", "graphic_gore", "war_and_violence"],

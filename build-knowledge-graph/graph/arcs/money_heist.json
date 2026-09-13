@@ -6,13 +6,13 @@
       "name": "The Professor",
       "role": "A shy, meticulous man who has spent years planning one perfect robbery and runs it from a hidden base outside, bound by strict rules: no real names, no personal relationships, no bloodshed.",
       "relations": [
-        {"target": "char:money_heist/raquel_murillo", "relation": "partner"},
-        {"target": "char:money_heist/berlin", "relation": "sibling"},
-        {"target": "char:money_heist/tokyo", "relation": "protege"},
-        {"target": "char:money_heist/nairobi", "relation": "protege"},
-        {"target": "char:money_heist/rio", "relation": "protege"},
-        {"target": "char:money_heist/denver", "relation": "protege"},
-        {"target": "char:money_heist/helsinki", "relation": "protege"}
+        { "target": "char:money_heist/raquel_murillo", "relation": "partner" },
+        { "target": "char:money_heist/berlin", "relation": "sibling" },
+        { "target": "char:money_heist/tokyo", "relation": "protege" },
+        { "target": "char:money_heist/nairobi", "relation": "protege" },
+        { "target": "char:money_heist/rio", "relation": "protege" },
+        { "target": "char:money_heist/denver", "relation": "protege" },
+        { "target": "char:money_heist/helsinki", "relation": "protege" }
       ],
       "arcs": [
         {
@@ -31,12 +31,16 @@
           "start_at": "Part 1 E1",
           "span": "Part 1-Part 2",
           "situations": [
-            {"id": "falling_for_someone_unexpected", "weight": 0.9},
-            {"id": "taking_a_big_risk", "weight": 0.7},
-            {"id": "confidence_struggle", "weight": 0.3}
+            { "id": "falling_for_someone_unexpected", "weight": 0.9 },
+            { "id": "taking_a_big_risk", "weight": 0.7 },
+            { "id": "confidence_struggle", "weight": 0.3 }
           ],
           "conflicts": ["control_vs_trust", "truth_vs_protecting_others"],
-          "emotions": {"start": ["determination", "anxiety"], "middle": ["guilt", "love", "fear"], "end": ["hope", "love"]},
+          "emotions": {
+            "start": ["determination", "anxiety"],
+            "middle": ["guilt", "love", "fear"],
+            "end": ["hope", "love"]
+          },
           "ending_tone": "hopeful",
           "intensity": "moderate",
           "warnings": ["war_and_violence", "betrayal", "death_of_loved_one"],
@@ -75,16 +79,27 @@
           "start_at": "Part 3 E1",
           "span": "Part 3-Part 5",
           "situations": [
-            {"id": "responsibility_you_didnt_ask_for", "weight": 0.9},
-            {"id": "becoming_a_manager", "weight": 0.5},
-            {"id": "grief_and_loss", "weight": 0.6},
-            {"id": "burnout_at_work", "weight": 0.4}
+            { "id": "responsibility_you_didnt_ask_for", "weight": 0.9 },
+            { "id": "becoming_a_manager", "weight": 0.5 },
+            { "id": "grief_and_loss", "weight": 0.6 },
+            { "id": "burnout_at_work", "weight": 0.4 }
           ],
           "conflicts": ["control_vs_trust", "duty_vs_desire"],
-          "emotions": {"start": ["determination", "guilt"], "middle": ["overwhelm", "grief", "fear"], "end": ["relief", "acceptance"]},
+          "emotions": {
+            "start": ["determination", "guilt"],
+            "middle": ["overwhelm", "grief", "fear"],
+            "end": ["relief", "acceptance"]
+          },
           "ending_tone": "bittersweet",
           "intensity": "heavy",
-          "warnings": ["death_of_main_character", "death_of_loved_one", "grief", "torture", "war_and_violence", "betrayal"],
+          "warnings": [
+            "death_of_main_character",
+            "death_of_loved_one",
+            "grief",
+            "torture",
+            "war_and_violence",
+            "betrayal"
+          ],
           "example_user_messages": [
             "I convinced my friends to join my business and now it's failing and I feel responsible for all of them.",
             "Everyone expects me to stay calm and have a plan, but I'm falling apart inside.",
@@ -112,13 +127,13 @@
       "name": "Tokyo",
       "role": "The story's narrator: an impulsive young fugitive with nowhere left to go, recruited into a robbery crew on the day she was about to be caught.",
       "relations": [
-        {"target": "char:money_heist/rio", "relation": "partner"},
-        {"target": "char:money_heist/the_professor", "relation": "mentor"},
-        {"target": "char:money_heist/nairobi", "relation": "friend"},
-        {"target": "char:money_heist/berlin", "relation": "rival"},
-        {"target": "char:money_heist/denver", "relation": "friend"},
-        {"target": "char:money_heist/helsinki", "relation": "friend"},
-        {"target": "char:money_heist/raquel_murillo", "relation": "colleague"}
+        { "target": "char:money_heist/rio", "relation": "partner" },
+        { "target": "char:money_heist/the_professor", "relation": "mentor" },
+        { "target": "char:money_heist/nairobi", "relation": "friend" },
+        { "target": "char:money_heist/berlin", "relation": "rival" },
+        { "target": "char:money_heist/denver", "relation": "friend" },
+        { "target": "char:money_heist/helsinki", "relation": "friend" },
+        { "target": "char:money_heist/raquel_murillo", "relation": "colleague" }
       ],
       "arcs": [
         {
@@ -137,16 +152,25 @@
           "start_at": "Part 1 E1",
           "span": "Part 1-Part 5",
           "situations": [
-            {"id": "starting_over", "weight": 0.8},
-            {"id": "finding_your_people", "weight": 0.8},
-            {"id": "grief_and_loss", "weight": 0.5},
-            {"id": "standing_up_to_authority", "weight": 0.4}
+            { "id": "starting_over", "weight": 0.8 },
+            { "id": "finding_your_people", "weight": 0.8 },
+            { "id": "grief_and_loss", "weight": 0.5 },
+            { "id": "standing_up_to_authority", "weight": 0.4 }
           ],
           "conflicts": ["belonging_vs_integrity", "control_vs_trust"],
-          "emotions": {"start": ["grief", "restlessness", "anger"], "middle": ["belonging", "guilt", "determination"], "end": ["love", "self_respect"]},
+          "emotions": {
+            "start": ["grief", "restlessness", "anger"],
+            "middle": ["belonging", "guilt", "determination"],
+            "end": ["love", "self_respect"]
+          },
           "ending_tone": "tragic",
           "intensity": "heavy",
-          "warnings": ["death_of_main_character", "death_of_loved_one", "war_and_violence", "grief"],
+          "warnings": [
+            "death_of_main_character",
+            "death_of_loved_one",
+            "war_and_violence",
+            "grief"
+          ],
           "example_user_messages": [
             "I always act on impulse and then regret it, and I think I keep blowing up the good things in my life.",
             "I lost the person I built my whole life around and now I just keep moving so I don't have to feel it.",
@@ -182,12 +206,16 @@
           "start_at": "Part 1 E1",
           "span": "Part 1-Part 5",
           "situations": [
-            {"id": "falling_for_someone_unexpected", "weight": 0.8},
-            {"id": "breakup", "weight": 0.6},
-            {"id": "grief_and_loss", "weight": 0.4}
+            { "id": "falling_for_someone_unexpected", "weight": 0.8 },
+            { "id": "breakup", "weight": 0.6 },
+            { "id": "grief_and_loss", "weight": 0.4 }
           ],
           "conflicts": ["independence_vs_connection", "holding_on_vs_letting_go"],
-          "emotions": {"start": ["fear", "longing"], "middle": ["love", "restlessness", "guilt"], "end": ["acceptance", "love"]},
+          "emotions": {
+            "start": ["fear", "longing"],
+            "middle": ["love", "restlessness", "guilt"],
+            "end": ["acceptance", "love"]
+          },
           "ending_tone": "tragic",
           "intensity": "heavy",
           "warnings": ["death_of_main_character", "torture", "war_and_violence"],
@@ -217,13 +245,13 @@
       "name": "Berlin",
       "role": "The elegant, arrogant and cruelly charming second-in-command who runs the crew on the ground during the robbery.",
       "relations": [
-        {"target": "char:money_heist/the_professor", "relation": "sibling"},
-        {"target": "char:money_heist/tokyo", "relation": "rival"},
-        {"target": "char:money_heist/nairobi", "relation": "rival"},
-        {"target": "char:money_heist/denver", "relation": "colleague"},
-        {"target": "char:money_heist/rio", "relation": "colleague"},
-        {"target": "char:money_heist/helsinki", "relation": "colleague"},
-        {"target": "char:money_heist/raquel_murillo", "relation": "enemy"}
+        { "target": "char:money_heist/the_professor", "relation": "sibling" },
+        { "target": "char:money_heist/tokyo", "relation": "rival" },
+        { "target": "char:money_heist/nairobi", "relation": "rival" },
+        { "target": "char:money_heist/denver", "relation": "colleague" },
+        { "target": "char:money_heist/rio", "relation": "colleague" },
+        { "target": "char:money_heist/helsinki", "relation": "colleague" },
+        { "target": "char:money_heist/raquel_murillo", "relation": "enemy" }
       ],
       "arcs": [
         {
@@ -242,15 +270,25 @@
           "start_at": "Part 1 E1",
           "span": "Part 1-Part 2",
           "situations": [
-            {"id": "illness_or_injury", "weight": 0.7},
-            {"id": "becoming_a_manager", "weight": 0.5},
-            {"id": "redemption_after_mistakes", "weight": 0.5}
+            { "id": "illness_or_injury", "weight": 0.7 },
+            { "id": "becoming_a_manager", "weight": 0.5 },
+            { "id": "redemption_after_mistakes", "weight": 0.5 }
           ],
           "conflicts": ["power_vs_morality", "holding_on_vs_letting_go"],
-          "emotions": {"start": ["pride", "numbness"], "middle": ["anger", "loneliness", "dread"], "end": ["acceptance", "peace"]},
+          "emotions": {
+            "start": ["pride", "numbness"],
+            "middle": ["anger", "loneliness", "dread"],
+            "end": ["acceptance", "peace"]
+          },
           "ending_tone": "tragic",
           "intensity": "heavy",
-          "warnings": ["death_of_main_character", "serious_illness", "sexual_violence", "self_harm_or_suicide", "war_and_violence"],
+          "warnings": [
+            "death_of_main_character",
+            "serious_illness",
+            "sexual_violence",
+            "self_harm_or_suicide",
+            "war_and_violence"
+          ],
           "example_user_messages": [
             "I found out I don't have much time left and honestly I've stopped caring what anyone thinks of me.",
             "I know I can be arrogant and cruel, and I'm starting to wonder if I'll be remembered for anything good.",
@@ -286,13 +324,17 @@
           "start_at": "Part 3 E1",
           "span": "Part 3-Part 5",
           "situations": [
-            {"id": "divorce", "weight": 0.6},
-            {"id": "identity_and_self_acceptance", "weight": 0.6},
-            {"id": "difficult_parent", "weight": 0.4},
-            {"id": "unrequited_love", "weight": 0.4}
+            { "id": "divorce", "weight": 0.6 },
+            { "id": "identity_and_self_acceptance", "weight": 0.6 },
+            { "id": "difficult_parent", "weight": 0.4 },
+            { "id": "unrequited_love", "weight": 0.4 }
           ],
           "conflicts": ["independence_vs_connection", "truth_vs_protecting_others"],
-          "emotions": {"start": ["longing", "pride"], "middle": ["love", "confusion"], "end": ["betrayal", "loneliness"]},
+          "emotions": {
+            "start": ["longing", "pride"],
+            "middle": ["love", "confusion"],
+            "end": ["betrayal", "loneliness"]
+          },
           "ending_tone": "bittersweet",
           "intensity": "moderate",
           "warnings": ["betrayal", "serious_illness"],
@@ -322,13 +364,13 @@
       "name": "Nairobi",
       "role": "A warm, loud and fiercely capable counterfeiter in charge of the money printing, who joins the robbery hoping to change her life and her family's.",
       "relations": [
-        {"target": "char:money_heist/tokyo", "relation": "friend"},
-        {"target": "char:money_heist/helsinki", "relation": "friend"},
-        {"target": "char:money_heist/berlin", "relation": "rival"},
-        {"target": "char:money_heist/the_professor", "relation": "mentor"},
-        {"target": "char:money_heist/denver", "relation": "friend"},
-        {"target": "char:money_heist/rio", "relation": "friend"},
-        {"target": "char:money_heist/raquel_murillo", "relation": "friend"}
+        { "target": "char:money_heist/tokyo", "relation": "friend" },
+        { "target": "char:money_heist/helsinki", "relation": "friend" },
+        { "target": "char:money_heist/berlin", "relation": "rival" },
+        { "target": "char:money_heist/the_professor", "relation": "mentor" },
+        { "target": "char:money_heist/denver", "relation": "friend" },
+        { "target": "char:money_heist/rio", "relation": "friend" },
+        { "target": "char:money_heist/raquel_murillo", "relation": "friend" }
       ],
       "arcs": [
         {
@@ -347,16 +389,26 @@
           "start_at": "Part 1 E1",
           "span": "Part 1-Part 4",
           "situations": [
-            {"id": "redemption_after_mistakes", "weight": 0.8},
-            {"id": "becoming_a_parent", "weight": 0.5},
-            {"id": "caring_for_family", "weight": 0.6},
-            {"id": "starting_over", "weight": 0.5}
+            { "id": "redemption_after_mistakes", "weight": 0.8 },
+            { "id": "becoming_a_parent", "weight": 0.5 },
+            { "id": "caring_for_family", "weight": 0.6 },
+            { "id": "starting_over", "weight": 0.5 }
           ],
           "conflicts": ["past_vs_future", "holding_on_vs_letting_go"],
-          "emotions": {"start": ["shame", "longing", "hope"], "middle": ["determination", "grief"], "end": ["love", "acceptance"]},
+          "emotions": {
+            "start": ["shame", "longing", "hope"],
+            "middle": ["determination", "grief"],
+            "end": ["love", "acceptance"]
+          },
           "ending_tone": "tragic",
           "intensity": "heavy",
-          "warnings": ["death_of_main_character", "grief", "medical_trauma", "war_and_violence", "child_endangerment"],
+          "warnings": [
+            "death_of_main_character",
+            "grief",
+            "medical_trauma",
+            "war_and_violence",
+            "child_endangerment"
+          ],
           "example_user_messages": [
             "I lost custody of my kid years ago because of the choices I made, and I'd do anything to get him back.",
             "Every day I think about the parent I should have been.",
@@ -392,12 +444,16 @@
           "start_at": "Part 1 E1",
           "span": "Part 1-Part 4",
           "situations": [
-            {"id": "standing_up_to_authority", "weight": 0.8},
-            {"id": "leading_former_peers", "weight": 0.7},
-            {"id": "finding_your_people", "weight": 0.5}
+            { "id": "standing_up_to_authority", "weight": 0.8 },
+            { "id": "leading_former_peers", "weight": 0.7 },
+            { "id": "finding_your_people", "weight": 0.5 }
           ],
           "conflicts": ["belonging_vs_integrity", "power_vs_morality"],
-          "emotions": {"start": ["anger", "determination"], "middle": ["pride", "self_doubt"], "end": ["self_respect", "belonging"]},
+          "emotions": {
+            "start": ["anger", "determination"],
+            "middle": ["pride", "self_doubt"],
+            "end": ["self_respect", "belonging"]
+          },
           "ending_tone": "bittersweet",
           "intensity": "moderate",
           "warnings": ["war_and_violence", "sexual_violence", "death_of_main_character"],
@@ -427,13 +483,13 @@
       "name": "Denver",
       "role": "A hot-headed young man with an unforgettable laugh who joins the robbery alongside his father to escape a dangerous debt.",
       "relations": [
-        {"target": "char:money_heist/the_professor", "relation": "mentor"},
-        {"target": "char:money_heist/berlin", "relation": "boss"},
-        {"target": "char:money_heist/tokyo", "relation": "friend"},
-        {"target": "char:money_heist/rio", "relation": "friend"},
-        {"target": "char:money_heist/nairobi", "relation": "friend"},
-        {"target": "char:money_heist/helsinki", "relation": "friend"},
-        {"target": "char:money_heist/raquel_murillo", "relation": "colleague"}
+        { "target": "char:money_heist/the_professor", "relation": "mentor" },
+        { "target": "char:money_heist/berlin", "relation": "boss" },
+        { "target": "char:money_heist/tokyo", "relation": "friend" },
+        { "target": "char:money_heist/rio", "relation": "friend" },
+        { "target": "char:money_heist/nairobi", "relation": "friend" },
+        { "target": "char:money_heist/helsinki", "relation": "friend" },
+        { "target": "char:money_heist/raquel_murillo", "relation": "colleague" }
       ],
       "arcs": [
         {
@@ -452,13 +508,17 @@
           "start_at": "Part 1 E1",
           "span": "Part 1-Part 2",
           "situations": [
-            {"id": "difficult_parent", "weight": 0.6},
-            {"id": "caring_for_family", "weight": 0.5},
-            {"id": "coming_of_age", "weight": 0.6},
-            {"id": "grief_and_loss", "weight": 0.6}
+            { "id": "difficult_parent", "weight": 0.6 },
+            { "id": "caring_for_family", "weight": 0.5 },
+            { "id": "coming_of_age", "weight": 0.6 },
+            { "id": "grief_and_loss", "weight": 0.6 }
           ],
           "conflicts": ["revenge_vs_forgiveness", "self_vs_family_expectations"],
-          "emotions": {"start": ["pride", "anger"], "middle": ["betrayal", "confusion"], "end": ["grief", "acceptance"]},
+          "emotions": {
+            "start": ["pride", "anger"],
+            "middle": ["betrayal", "confusion"],
+            "end": ["grief", "acceptance"]
+          },
           "ending_tone": "bittersweet",
           "intensity": "heavy",
           "warnings": ["death_of_loved_one", "grief", "war_and_violence", "addiction"],
@@ -496,12 +556,16 @@
           "start_at": "Part 1",
           "span": "Part 1-Part 5",
           "situations": [
-            {"id": "falling_for_someone_unexpected", "weight": 0.9},
-            {"id": "becoming_a_parent", "weight": 0.6},
-            {"id": "responsibility_you_didnt_ask_for", "weight": 0.4}
+            { "id": "falling_for_someone_unexpected", "weight": 0.9 },
+            { "id": "becoming_a_parent", "weight": 0.6 },
+            { "id": "responsibility_you_didnt_ask_for", "weight": 0.4 }
           ],
           "conflicts": ["control_vs_trust", "independence_vs_connection"],
-          "emotions": {"start": ["fear", "curiosity"], "middle": ["love", "jealousy", "anxiety"], "end": ["love", "acceptance"]},
+          "emotions": {
+            "start": ["fear", "curiosity"],
+            "middle": ["love", "jealousy", "anxiety"],
+            "end": ["love", "acceptance"]
+          },
           "ending_tone": "hopeful",
           "intensity": "moderate",
           "warnings": ["war_and_violence", "death_of_main_character"],
@@ -531,13 +595,13 @@
       "name": "Rio",
       "role": "The youngest of the crew: a gifted, naive hacker from a normal family, in over his head and in love.",
       "relations": [
-        {"target": "char:money_heist/tokyo", "relation": "partner"},
-        {"target": "char:money_heist/the_professor", "relation": "mentor"},
-        {"target": "char:money_heist/berlin", "relation": "boss"},
-        {"target": "char:money_heist/denver", "relation": "friend"},
-        {"target": "char:money_heist/nairobi", "relation": "friend"},
-        {"target": "char:money_heist/helsinki", "relation": "friend"},
-        {"target": "char:money_heist/raquel_murillo", "relation": "colleague"}
+        { "target": "char:money_heist/tokyo", "relation": "partner" },
+        { "target": "char:money_heist/the_professor", "relation": "mentor" },
+        { "target": "char:money_heist/berlin", "relation": "boss" },
+        { "target": "char:money_heist/denver", "relation": "friend" },
+        { "target": "char:money_heist/nairobi", "relation": "friend" },
+        { "target": "char:money_heist/helsinki", "relation": "friend" },
+        { "target": "char:money_heist/raquel_murillo", "relation": "colleague" }
       ],
       "arcs": [
         {
@@ -556,13 +620,17 @@
           "start_at": "Part 1 E1",
           "span": "Part 1-Part 4",
           "situations": [
-            {"id": "coming_of_age", "weight": 0.8},
-            {"id": "falling_for_someone_unexpected", "weight": 0.6},
-            {"id": "breakup", "weight": 0.5},
-            {"id": "family_expectations", "weight": 0.4}
+            { "id": "coming_of_age", "weight": 0.8 },
+            { "id": "falling_for_someone_unexpected", "weight": 0.6 },
+            { "id": "breakup", "weight": 0.5 },
+            { "id": "family_expectations", "weight": 0.4 }
           ],
           "conflicts": ["independence_vs_connection", "self_vs_family_expectations"],
-          "emotions": {"start": ["love", "self_doubt"], "middle": ["anxiety", "jealousy"], "end": ["grief", "acceptance"]},
+          "emotions": {
+            "start": ["love", "self_doubt"],
+            "middle": ["anxiety", "jealousy"],
+            "end": ["grief", "acceptance"]
+          },
           "ending_tone": "bittersweet",
           "intensity": "moderate",
           "warnings": ["torture", "war_and_violence"],
@@ -601,13 +669,17 @@
           "start_at": "Part 3 E1",
           "span": "Part 3-Part 5",
           "situations": [
-            {"id": "illness_or_injury", "weight": 0.7},
-            {"id": "breakup", "weight": 0.5},
-            {"id": "identity_and_self_acceptance", "weight": 0.5},
-            {"id": "grief_and_loss", "weight": 0.6}
+            { "id": "illness_or_injury", "weight": 0.7 },
+            { "id": "breakup", "weight": 0.5 },
+            { "id": "identity_and_self_acceptance", "weight": 0.5 },
+            { "id": "grief_and_loss", "weight": 0.6 }
           ],
           "conflicts": ["holding_on_vs_letting_go", "independence_vs_connection"],
-          "emotions": {"start": ["fear", "numbness"], "middle": ["anger", "anxiety", "loneliness"], "end": ["grief", "determination"]},
+          "emotions": {
+            "start": ["fear", "numbness"],
+            "middle": ["anger", "anxiety", "loneliness"],
+            "end": ["grief", "determination"]
+          },
           "ending_tone": "bittersweet",
           "intensity": "heavy",
           "warnings": ["torture", "death_of_loved_one", "grief", "war_and_violence", "betrayal"],
@@ -637,13 +709,13 @@
       "name": "Raquel Murillo",
       "role": "A capable police inspector, recently out of an abusive marriage and caring for her young daughter and ageing mother, put in charge of negotiations when robbers take over the Royal Mint.",
       "relations": [
-        {"target": "char:money_heist/the_professor", "relation": "partner"},
-        {"target": "char:money_heist/berlin", "relation": "enemy"},
-        {"target": "char:money_heist/tokyo", "relation": "colleague"},
-        {"target": "char:money_heist/nairobi", "relation": "friend"},
-        {"target": "char:money_heist/denver", "relation": "colleague"},
-        {"target": "char:money_heist/rio", "relation": "colleague"},
-        {"target": "char:money_heist/helsinki", "relation": "colleague"}
+        { "target": "char:money_heist/the_professor", "relation": "partner" },
+        { "target": "char:money_heist/berlin", "relation": "enemy" },
+        { "target": "char:money_heist/tokyo", "relation": "colleague" },
+        { "target": "char:money_heist/nairobi", "relation": "friend" },
+        { "target": "char:money_heist/denver", "relation": "colleague" },
+        { "target": "char:money_heist/rio", "relation": "colleague" },
+        { "target": "char:money_heist/helsinki", "relation": "colleague" }
       ],
       "arcs": [
         {
@@ -662,13 +734,17 @@
           "start_at": "Part 1 E1",
           "span": "Part 1-Part 2",
           "situations": [
-            {"id": "divorce", "weight": 0.7},
-            {"id": "falling_for_someone_unexpected", "weight": 0.7},
-            {"id": "caring_for_family", "weight": 0.5},
-            {"id": "confidence_struggle", "weight": 0.4}
+            { "id": "divorce", "weight": 0.7 },
+            { "id": "falling_for_someone_unexpected", "weight": 0.7 },
+            { "id": "caring_for_family", "weight": 0.5 },
+            { "id": "confidence_struggle", "weight": 0.4 }
           ],
           "conflicts": ["control_vs_trust", "truth_vs_protecting_others"],
-          "emotions": {"start": ["loneliness", "self_doubt", "anger"], "middle": ["hope", "betrayal", "confusion"], "end": ["love", "freedom"]},
+          "emotions": {
+            "start": ["loneliness", "self_doubt", "anger"],
+            "middle": ["hope", "betrayal", "confusion"],
+            "end": ["love", "freedom"]
+          },
           "ending_tone": "hopeful",
           "intensity": "heavy",
           "warnings": ["domestic_violence", "betrayal", "war_and_violence", "serious_illness"],
@@ -706,13 +782,17 @@
           "start_at": "Part 3 E1",
           "span": "Part 3-Part 5",
           "situations": [
-            {"id": "career_change", "weight": 0.8},
-            {"id": "starting_over", "weight": 0.7},
-            {"id": "midlife_reinvention", "weight": 0.6},
-            {"id": "finding_your_people", "weight": 0.4}
+            { "id": "career_change", "weight": 0.8 },
+            { "id": "starting_over", "weight": 0.7 },
+            { "id": "midlife_reinvention", "weight": 0.6 },
+            { "id": "finding_your_people", "weight": 0.4 }
           ],
           "conflicts": ["duty_vs_desire", "belonging_vs_integrity"],
-          "emotions": {"start": ["freedom", "self_doubt"], "middle": ["fear", "determination"], "end": ["belonging", "self_respect"]},
+          "emotions": {
+            "start": ["freedom", "self_doubt"],
+            "middle": ["fear", "determination"],
+            "end": ["belonging", "self_respect"]
+          },
           "ending_tone": "hopeful",
           "intensity": "heavy",
           "warnings": ["torture", "death_of_main_character", "war_and_violence", "betrayal"],
@@ -742,13 +822,13 @@
       "name": "Helsinki",
       "role": "A huge, soft-spoken Serbian ex-soldier who joins the robbery with his cousin, guarding the hostages and sending whatever money he can to family back home.",
       "relations": [
-        {"target": "char:money_heist/nairobi", "relation": "friend"},
-        {"target": "char:money_heist/the_professor", "relation": "mentor"},
-        {"target": "char:money_heist/berlin", "relation": "colleague"},
-        {"target": "char:money_heist/tokyo", "relation": "friend"},
-        {"target": "char:money_heist/denver", "relation": "friend"},
-        {"target": "char:money_heist/rio", "relation": "friend"},
-        {"target": "char:money_heist/raquel_murillo", "relation": "colleague"}
+        { "target": "char:money_heist/nairobi", "relation": "friend" },
+        { "target": "char:money_heist/the_professor", "relation": "mentor" },
+        { "target": "char:money_heist/berlin", "relation": "colleague" },
+        { "target": "char:money_heist/tokyo", "relation": "friend" },
+        { "target": "char:money_heist/denver", "relation": "friend" },
+        { "target": "char:money_heist/rio", "relation": "friend" },
+        { "target": "char:money_heist/raquel_murillo", "relation": "colleague" }
       ],
       "arcs": [
         {
@@ -767,12 +847,16 @@
           "start_at": "Part 1 E1",
           "span": "Part 1-Part 2",
           "situations": [
-            {"id": "caring_for_family", "weight": 0.8},
-            {"id": "grief_and_loss", "weight": 0.8},
-            {"id": "illness_or_injury", "weight": 0.4}
+            { "id": "caring_for_family", "weight": 0.8 },
+            { "id": "grief_and_loss", "weight": 0.8 },
+            { "id": "illness_or_injury", "weight": 0.4 }
           ],
           "conflicts": ["holding_on_vs_letting_go", "duty_vs_desire"],
-          "emotions": {"start": ["belonging", "numbness"], "middle": ["fear", "grief"], "end": ["grief", "acceptance"]},
+          "emotions": {
+            "start": ["belonging", "numbness"],
+            "middle": ["fear", "grief"],
+            "end": ["grief", "acceptance"]
+          },
           "ending_tone": "bittersweet",
           "intensity": "heavy",
           "warnings": ["death_of_loved_one", "grief", "medical_trauma", "war_and_violence"],
@@ -810,16 +894,25 @@
           "start_at": "Part 3 E1",
           "span": "Part 3-Part 5",
           "situations": [
-            {"id": "unrequited_love", "weight": 0.7},
-            {"id": "falling_for_someone_unexpected", "weight": 0.6},
-            {"id": "grief_and_loss", "weight": 0.6},
-            {"id": "identity_and_self_acceptance", "weight": 0.3}
+            { "id": "unrequited_love", "weight": 0.7 },
+            { "id": "falling_for_someone_unexpected", "weight": 0.6 },
+            { "id": "grief_and_loss", "weight": 0.6 },
+            { "id": "identity_and_self_acceptance", "weight": 0.3 }
           ],
           "conflicts": ["independence_vs_connection", "holding_on_vs_letting_go"],
-          "emotions": {"start": ["loneliness", "longing"], "middle": ["grief", "hope"], "end": ["love", "peace"]},
+          "emotions": {
+            "start": ["loneliness", "longing"],
+            "middle": ["grief", "hope"],
+            "end": ["love", "peace"]
+          },
           "ending_tone": "hopeful",
           "intensity": "moderate",
-          "warnings": ["death_of_loved_one", "grief", "war_and_violence", "death_of_main_character"],
+          "warnings": [
+            "death_of_loved_one",
+            "grief",
+            "war_and_violence",
+            "death_of_main_character"
+          ],
           "example_user_messages": [
             "I'm falling for someone who's still hung up on an old love and won't let anyone in.",
             "The person I like is sarcastic and pushes me away, but I can see how much they're hurting.",

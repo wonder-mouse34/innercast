@@ -1,11 +1,12 @@
 # Arc extraction instructions (shared by all extraction agents)
 
 You are building part of a knowledge graph for **InnerCast**, an app where a user
-describes what they are going through in life and gets recommended a *fictional character whose
-journey parallels theirs* — including surprising matches from very different settings and cultures,
+describes what they are going through in life and gets recommended a _fictional character whose
+journey parallels theirs_ — including surprising matches from very different settings and cultures,
 as long as the emotional core is similar. The app must present characters **without spoilers**.
 
 ## Inputs
+
 - Cleaned wiki text per character: `characters/text/<wiki-host>/<file>.txt`
   (long pages: read the whole thing in chunks with offset/limit; the first sections and season-by-season
   history matter most). Combine it with your own knowledge of the show, but never invent episodes or events.
@@ -14,12 +15,14 @@ as long as the emotional core is similar. The app must present characters **with
   MUST come from these lists.
 
 ## What to extract
+
 For each character, 1–3 **arcs**. An arc is one distinct, life-relevant transition (e.g. "exile trying to
 earn a parent's love → choosing his own path"). Prefer arcs that map to real-life situations: career,
 leadership, family, love, loss, identity, belonging, confidence, starting over, redemption, addiction.
 Villains/antiheroes are fine — frame the arc as the human struggle a viewer could recognise in themselves.
 
 ## Output
+
 Write ONE JSON file (path given in your task) with this exact shape, then validate it (see bottom):
 
 ```json
@@ -30,7 +33,7 @@ Write ONE JSON file (path given in your task) with this exact shape, then valida
       "id": "char:<show id>/<character slug>",
       "name": "Display name",
       "role": "Spoiler-safe one-liner of who they are at the start of the show",
-      "relations": [ {"target": "char:<show id>/<other slug>", "relation": "mentor"} ],
+      "relations": [{ "target": "char:<show id>/<other slug>", "relation": "mentor" }],
       "arcs": [
         {
           "id": "arc:<show id>/<character slug>/<arc slug>",
@@ -43,16 +46,24 @@ Write ONE JSON file (path given in your task) with this exact shape, then valida
           "watch_for": ["2-3 open questions for the viewer to notice while watching"],
           "start_at": "S1E1",
           "span": "S1-S3",
-          "situations": [ {"id": "starting_over", "weight": 0.9} ],
+          "situations": [{ "id": "starting_over", "weight": 0.9 }],
           "conflicts": ["belonging_vs_integrity"],
-          "emotions": {"start": ["shame", "anger"], "middle": ["confusion"], "end": ["self_respect"]},
+          "emotions": {
+            "start": ["shame", "anger"],
+            "middle": ["confusion"],
+            "end": ["self_respect"]
+          },
           "ending_tone": "hopeful",
           "intensity": "moderate",
           "warnings": ["abuse"],
-          "example_user_messages": ["3-5 first-person messages a real person in this situation might type, in everyday language, no show references"],
+          "example_user_messages": [
+            "3-5 first-person messages a real person in this situation might type, in everyday language, no show references"
+          ],
           "spoiler": {
             "summary": "Full arc summary including how it ends",
-            "key_events": ["Reveals, deaths, betrayals, twists, who they end up with — short phrases"],
+            "key_events": [
+              "Reveals, deaths, betrayals, twists, who they end up with — short phrases"
+            ],
             "got_right": "What the character gets right",
             "got_wrong": "What the character gets wrong"
           }
@@ -64,6 +75,7 @@ Write ONE JSON file (path given in your task) with this exact shape, then valida
 ```
 
 ## Rules
+
 1. **Spoiler-safe fields** (`role`, `title`, `literal_situation`, `hook`, `why_relatable`, `watch_for`):
    only what is true at the arc's `start_at` point (plus general premise). Never mention deaths, who
    they end up with, betrayals, identity reveals, what they become, or how the arc resolves. `watch_for`
@@ -91,6 +103,7 @@ Write ONE JSON file (path given in your task) with this exact shape, then valida
 6. Be accurate. It is fine to have 1 arc for a character with one clear journey.
 
 ## Validate before finishing
+
 Run this and fix any problems it prints (it must print `OK`):
 
 ```

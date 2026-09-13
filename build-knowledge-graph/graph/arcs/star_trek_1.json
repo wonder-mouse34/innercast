@@ -6,9 +6,9 @@
       "name": "James T. Kirk",
       "role": "A young, confident starship captain beginning a five-year exploration mission, known for bold instincts and fierce loyalty to his crew.",
       "relations": [
-        {"target": "char:star_trek/spock", "relation": "friend"},
-        {"target": "char:star_trek/spock", "relation": "colleague"},
-        {"target": "char:star_trek/jean_luc_picard", "relation": "colleague"}
+        { "target": "char:star_trek/spock", "relation": "friend" },
+        { "target": "char:star_trek/spock", "relation": "colleague" },
+        { "target": "char:star_trek/jean_luc_picard", "relation": "colleague" }
       ],
       "arcs": [
         {
@@ -27,13 +27,17 @@
           "start_at": "TOS S1E1",
           "span": "TOS S1-S3",
           "situations": [
-            {"id": "loneliness", "weight": 0.6},
-            {"id": "falling_for_someone_unexpected", "weight": 0.6},
-            {"id": "burnout_at_work", "weight": 0.4},
-            {"id": "grief_and_loss", "weight": 0.5}
+            { "id": "loneliness", "weight": 0.6 },
+            { "id": "falling_for_someone_unexpected", "weight": 0.6 },
+            { "id": "burnout_at_work", "weight": 0.4 },
+            { "id": "grief_and_loss", "weight": 0.5 }
           ],
           "conflicts": ["career_vs_relationships", "duty_vs_desire"],
-          "emotions": {"start": ["pride", "restlessness"], "middle": ["longing", "loneliness", "grief"], "end": ["acceptance", "belonging"]},
+          "emotions": {
+            "start": ["pride", "restlessness"],
+            "middle": ["longing", "loneliness", "grief"],
+            "end": ["acceptance", "belonging"]
+          },
           "ending_tone": "bittersweet",
           "intensity": "moderate",
           "warnings": ["death_of_loved_one", "grief", "war_and_violence", "sexual_violence"],
@@ -73,12 +77,16 @@
           "start_at": "TOS S1E3",
           "span": "TOS S1-S2",
           "situations": [
-            {"id": "redemption_after_mistakes", "weight": 0.8},
-            {"id": "friendship_ending", "weight": 0.5},
-            {"id": "confidence_struggle", "weight": 0.5}
+            { "id": "redemption_after_mistakes", "weight": 0.8 },
+            { "id": "friendship_ending", "weight": 0.5 },
+            { "id": "confidence_struggle", "weight": 0.5 }
           ],
           "conflicts": ["past_vs_future", "holding_on_vs_letting_go"],
-          "emotions": {"start": ["guilt", "self_doubt"], "middle": ["anger", "determination"], "end": ["relief", "acceptance"]},
+          "emotions": {
+            "start": ["guilt", "self_doubt"],
+            "middle": ["anger", "determination"],
+            "end": ["relief", "acceptance"]
+          },
           "ending_tone": "hopeful",
           "intensity": "moderate",
           "warnings": ["death_of_loved_one", "betrayal", "war_and_violence", "grief"],
@@ -108,9 +116,9 @@
       "name": "Spock",
       "role": "The half-Vulcan, half-Human science officer of the Enterprise, who lives by strict logic and keeps his emotions under tight control.",
       "relations": [
-        {"target": "char:star_trek/james_t_kirk", "relation": "friend"},
-        {"target": "char:star_trek/james_t_kirk", "relation": "boss"},
-        {"target": "char:star_trek/jean_luc_picard", "relation": "colleague"}
+        { "target": "char:star_trek/james_t_kirk", "relation": "friend" },
+        { "target": "char:star_trek/james_t_kirk", "relation": "boss" },
+        { "target": "char:star_trek/jean_luc_picard", "relation": "colleague" }
       ],
       "arcs": [
         {
@@ -129,13 +137,17 @@
           "start_at": "TOS S1E1",
           "span": "TOS S1-S3",
           "situations": [
-            {"id": "identity_and_self_acceptance", "weight": 1.0},
-            {"id": "family_expectations", "weight": 0.6},
-            {"id": "finding_your_people", "weight": 0.6},
-            {"id": "loneliness", "weight": 0.5}
+            { "id": "identity_and_self_acceptance", "weight": 1.0 },
+            { "id": "family_expectations", "weight": 0.6 },
+            { "id": "finding_your_people", "weight": 0.6 },
+            { "id": "loneliness", "weight": 0.5 }
           ],
           "conflicts": ["fitting_in_vs_standing_out", "self_vs_family_expectations"],
-          "emotions": {"start": ["shame", "loneliness"], "middle": ["confusion", "longing", "joy"], "end": ["belonging", "acceptance"]},
+          "emotions": {
+            "start": ["shame", "loneliness"],
+            "middle": ["confusion", "longing", "joy"],
+            "end": ["belonging", "acceptance"]
+          },
           "ending_tone": "bittersweet",
           "intensity": "moderate",
           "warnings": ["war_and_violence"],
@@ -173,13 +185,17 @@
           "start_at": "TOS S2E10",
           "span": "TOS S2 - TNG S5",
           "situations": [
-            {"id": "difficult_parent", "weight": 1.0},
-            {"id": "family_expectations", "weight": 0.8},
-            {"id": "caring_for_family", "weight": 0.4},
-            {"id": "grief_and_loss", "weight": 0.4}
+            { "id": "difficult_parent", "weight": 1.0 },
+            { "id": "family_expectations", "weight": 0.8 },
+            { "id": "caring_for_family", "weight": 0.4 },
+            { "id": "grief_and_loss", "weight": 0.4 }
           ],
           "conflicts": ["self_vs_family_expectations", "duty_vs_desire"],
-          "emotions": {"start": ["resentment", "pride"], "middle": ["guilt", "anxiety"], "end": ["grief", "acceptance", "peace"]},
+          "emotions": {
+            "start": ["resentment", "pride"],
+            "middle": ["guilt", "anxiety"],
+            "end": ["grief", "acceptance", "peace"]
+          },
           "ending_tone": "bittersweet",
           "intensity": "moderate",
           "warnings": ["serious_illness", "death_of_loved_one", "grief"],
@@ -209,11 +225,11 @@
       "name": "Jean-Luc Picard",
       "role": "The cultured, reserved captain of the Federation flagship Enterprise-D, a seasoned diplomat who keeps his crew at a respectful distance.",
       "relations": [
-        {"target": "char:star_trek/data", "relation": "protege"},
-        {"target": "char:star_trek/worf", "relation": "colleague"},
-        {"target": "char:star_trek/james_t_kirk", "relation": "colleague"},
-        {"target": "char:star_trek/spock", "relation": "colleague"},
-        {"target": "char:star_trek/benjamin_sisko", "relation": "colleague"}
+        { "target": "char:star_trek/data", "relation": "protege" },
+        { "target": "char:star_trek/worf", "relation": "colleague" },
+        { "target": "char:star_trek/james_t_kirk", "relation": "colleague" },
+        { "target": "char:star_trek/spock", "relation": "colleague" },
+        { "target": "char:star_trek/benjamin_sisko", "relation": "colleague" }
       ],
       "arcs": [
         {
@@ -232,13 +248,17 @@
           "start_at": "TNG S3E26",
           "span": "TNG S3-S6 (and the film First Contact)",
           "situations": [
-            {"id": "illness_or_injury", "weight": 0.6},
-            {"id": "identity_and_self_acceptance", "weight": 0.6},
-            {"id": "starting_over", "weight": 0.5},
-            {"id": "grief_and_loss", "weight": 0.4}
+            { "id": "illness_or_injury", "weight": 0.6 },
+            { "id": "identity_and_self_acceptance", "weight": 0.6 },
+            { "id": "starting_over", "weight": 0.5 },
+            { "id": "grief_and_loss", "weight": 0.4 }
           ],
           "conflicts": ["revenge_vs_forgiveness", "control_vs_trust"],
-          "emotions": {"start": ["confidence", "dread"], "middle": ["shame", "guilt", "anger"], "end": ["acceptance", "peace"]},
+          "emotions": {
+            "start": ["confidence", "dread"],
+            "middle": ["shame", "guilt", "anger"],
+            "end": ["acceptance", "peace"]
+          },
           "ending_tone": "hopeful",
           "intensity": "heavy",
           "warnings": ["medical_trauma", "war_and_violence", "torture"],
@@ -277,13 +297,17 @@
           "start_at": "TNG S1E1",
           "span": "TNG S1-S7",
           "situations": [
-            {"id": "midlife_reinvention", "weight": 0.7},
-            {"id": "loneliness", "weight": 0.6},
-            {"id": "family_expectations", "weight": 0.5},
-            {"id": "sibling_rivalry", "weight": 0.5}
+            { "id": "midlife_reinvention", "weight": 0.7 },
+            { "id": "loneliness", "weight": 0.6 },
+            { "id": "family_expectations", "weight": 0.5 },
+            { "id": "sibling_rivalry", "weight": 0.5 }
           ],
           "conflicts": ["career_vs_relationships", "past_vs_future"],
-          "emotions": {"start": ["pride", "loneliness"], "middle": ["longing", "nostalgia", "grief"], "end": ["acceptance", "peace"]},
+          "emotions": {
+            "start": ["pride", "loneliness"],
+            "middle": ["longing", "nostalgia", "grief"],
+            "end": ["acceptance", "peace"]
+          },
           "ending_tone": "bittersweet",
           "intensity": "moderate",
           "warnings": ["death_of_loved_one", "grief"],
@@ -313,9 +337,9 @@
       "name": "Data",
       "role": "An android officer on the Enterprise-D who has no emotions, is endlessly curious about people, and wants more than anything to become more human.",
       "relations": [
-        {"target": "char:star_trek/jean_luc_picard", "relation": "mentor"},
-        {"target": "char:star_trek/jean_luc_picard", "relation": "boss"},
-        {"target": "char:star_trek/worf", "relation": "friend"}
+        { "target": "char:star_trek/jean_luc_picard", "relation": "mentor" },
+        { "target": "char:star_trek/jean_luc_picard", "relation": "boss" },
+        { "target": "char:star_trek/worf", "relation": "friend" }
       ],
       "arcs": [
         {
@@ -334,13 +358,17 @@
           "start_at": "TNG S1E1",
           "span": "TNG S1-S7 (continues in the films)",
           "situations": [
-            {"id": "identity_and_self_acceptance", "weight": 1.0},
-            {"id": "finding_your_people", "weight": 0.7},
-            {"id": "loneliness", "weight": 0.5},
-            {"id": "confidence_struggle", "weight": 0.3}
+            { "id": "identity_and_self_acceptance", "weight": 1.0 },
+            { "id": "finding_your_people", "weight": 0.7 },
+            { "id": "loneliness", "weight": 0.5 },
+            { "id": "confidence_struggle", "weight": 0.3 }
           ],
           "conflicts": ["fitting_in_vs_standing_out", "belonging_vs_integrity"],
-          "emotions": {"start": ["curiosity", "longing"], "middle": ["confusion", "inadequacy", "grief"], "end": ["belonging", "self_respect"]},
+          "emotions": {
+            "start": ["curiosity", "longing"],
+            "middle": ["confusion", "inadequacy", "grief"],
+            "end": ["belonging", "self_respect"]
+          },
           "ending_tone": "bittersweet",
           "intensity": "moderate",
           "warnings": ["death_of_main_character", "death_of_loved_one", "grief"],
@@ -379,13 +407,17 @@
           "start_at": "TNG S1E13",
           "span": "TNG S1-S7",
           "situations": [
-            {"id": "sibling_rivalry", "weight": 0.8},
-            {"id": "difficult_parent", "weight": 0.8},
-            {"id": "identity_and_self_acceptance", "weight": 0.5},
-            {"id": "becoming_a_parent", "weight": 0.4}
+            { "id": "sibling_rivalry", "weight": 0.8 },
+            { "id": "difficult_parent", "weight": 0.8 },
+            { "id": "identity_and_self_acceptance", "weight": 0.5 },
+            { "id": "becoming_a_parent", "weight": 0.4 }
           ],
           "conflicts": ["belonging_vs_integrity", "truth_vs_protecting_others"],
-          "emotions": {"start": ["curiosity", "hope"], "middle": ["betrayal", "confusion", "grief"], "end": ["acceptance", "peace"]},
+          "emotions": {
+            "start": ["curiosity", "hope"],
+            "middle": ["betrayal", "confusion", "grief"],
+            "end": ["acceptance", "peace"]
+          },
           "ending_tone": "bittersweet",
           "intensity": "moderate",
           "warnings": ["death_of_loved_one", "betrayal", "war_and_violence", "grief"],
@@ -415,9 +447,9 @@
       "name": "Kathryn Janeway",
       "role": "A scientist-turned-captain commanding the new starship Voyager, sent to track down a missing ship of Maquis rebels in a dangerous region of space.",
       "relations": [
-        {"target": "char:star_trek/seven_of_nine", "relation": "protege"},
-        {"target": "char:star_trek/the_doctor", "relation": "friend"},
-        {"target": "char:star_trek/the_doctor", "relation": "colleague"}
+        { "target": "char:star_trek/seven_of_nine", "relation": "protege" },
+        { "target": "char:star_trek/the_doctor", "relation": "friend" },
+        { "target": "char:star_trek/the_doctor", "relation": "colleague" }
       ],
       "arcs": [
         {
@@ -436,13 +468,17 @@
           "start_at": "VOY S1E1",
           "span": "VOY S1-S7",
           "situations": [
-            {"id": "responsibility_you_didnt_ask_for", "weight": 0.9},
-            {"id": "moving_somewhere_new", "weight": 0.5},
-            {"id": "long_distance", "weight": 0.5},
-            {"id": "burnout_at_work", "weight": 0.5}
+            { "id": "responsibility_you_didnt_ask_for", "weight": 0.9 },
+            { "id": "moving_somewhere_new", "weight": 0.5 },
+            { "id": "long_distance", "weight": 0.5 },
+            { "id": "burnout_at_work", "weight": 0.5 }
           ],
           "conflicts": ["duty_vs_desire", "power_vs_morality"],
-          "emotions": {"start": ["determination", "guilt"], "middle": ["loneliness", "burnout", "anger"], "end": ["relief", "pride"]},
+          "emotions": {
+            "start": ["determination", "guilt"],
+            "middle": ["loneliness", "burnout", "anger"],
+            "end": ["relief", "pride"]
+          },
           "ending_tone": "hopeful",
           "intensity": "moderate",
           "warnings": ["war_and_violence", "death_of_loved_one", "betrayal", "grief"],
@@ -482,12 +518,16 @@
           "start_at": "VOY S4E1",
           "span": "VOY S4-S7",
           "situations": [
-            {"id": "mentor_and_protege", "weight": 1.0},
-            {"id": "becoming_a_parent", "weight": 0.4},
-            {"id": "caring_for_family", "weight": 0.3}
+            { "id": "mentor_and_protege", "weight": 1.0 },
+            { "id": "becoming_a_parent", "weight": 0.4 },
+            { "id": "caring_for_family", "weight": 0.3 }
           ],
           "conflicts": ["control_vs_trust", "independence_vs_connection"],
-          "emotions": {"start": ["determination", "anxiety"], "middle": ["anger", "self_doubt"], "end": ["pride", "love"]},
+          "emotions": {
+            "start": ["determination", "anxiety"],
+            "middle": ["anger", "self_doubt"],
+            "end": ["pride", "love"]
+          },
           "ending_tone": "hopeful",
           "intensity": "moderate",
           "warnings": ["medical_trauma", "war_and_violence"],
@@ -517,12 +557,12 @@
       "name": "Benjamin Sisko",
       "role": "A Starfleet commander sent to run Deep Space Nine, a battered space station orbiting a newly liberated planet, while raising his teenage son alone.",
       "relations": [
-        {"target": "char:star_trek/kira_nerys", "relation": "colleague"},
-        {"target": "char:star_trek/kira_nerys", "relation": "friend"},
-        {"target": "char:star_trek/odo", "relation": "friend"},
-        {"target": "char:star_trek/julian_bashir", "relation": "colleague"},
-        {"target": "char:star_trek/worf", "relation": "colleague"},
-        {"target": "char:star_trek/jean_luc_picard", "relation": "colleague"}
+        { "target": "char:star_trek/kira_nerys", "relation": "colleague" },
+        { "target": "char:star_trek/kira_nerys", "relation": "friend" },
+        { "target": "char:star_trek/odo", "relation": "friend" },
+        { "target": "char:star_trek/julian_bashir", "relation": "colleague" },
+        { "target": "char:star_trek/worf", "relation": "colleague" },
+        { "target": "char:star_trek/jean_luc_picard", "relation": "colleague" }
       ],
       "arcs": [
         {
@@ -541,13 +581,17 @@
           "start_at": "DS9 S1E1",
           "span": "DS9 S1-S3",
           "situations": [
-            {"id": "grief_and_loss", "weight": 1.0},
-            {"id": "starting_over", "weight": 0.8},
-            {"id": "caring_for_family", "weight": 0.6},
-            {"id": "moving_somewhere_new", "weight": 0.6}
+            { "id": "grief_and_loss", "weight": 1.0 },
+            { "id": "starting_over", "weight": 0.8 },
+            { "id": "caring_for_family", "weight": 0.6 },
+            { "id": "moving_somewhere_new", "weight": 0.6 }
           ],
           "conflicts": ["holding_on_vs_letting_go", "revenge_vs_forgiveness"],
-          "emotions": {"start": ["grief", "anger", "numbness"], "middle": ["acceptance", "hope"], "end": ["peace", "love", "belonging"]},
+          "emotions": {
+            "start": ["grief", "anger", "numbness"],
+            "middle": ["acceptance", "hope"],
+            "end": ["peace", "love", "belonging"]
+          },
           "ending_tone": "hopeful",
           "intensity": "moderate",
           "warnings": ["death_of_loved_one", "grief", "war_and_violence"],
@@ -585,15 +629,25 @@
           "start_at": "DS9 S1E1",
           "span": "DS9 S1-S7",
           "situations": [
-            {"id": "responsibility_you_didnt_ask_for", "weight": 1.0},
-            {"id": "identity_and_self_acceptance", "weight": 0.6},
-            {"id": "standing_up_to_authority", "weight": 0.4}
+            { "id": "responsibility_you_didnt_ask_for", "weight": 1.0 },
+            { "id": "identity_and_self_acceptance", "weight": 0.6 },
+            { "id": "standing_up_to_authority", "weight": 0.4 }
           ],
           "conflicts": ["control_vs_trust", "duty_vs_desire"],
-          "emotions": {"start": ["confusion", "resentment"], "middle": ["curiosity", "determination"], "end": ["acceptance", "peace"]},
+          "emotions": {
+            "start": ["confusion", "resentment"],
+            "middle": ["curiosity", "determination"],
+            "end": ["acceptance", "peace"]
+          },
           "ending_tone": "bittersweet",
           "intensity": "heavy",
-          "warnings": ["death_of_main_character", "death_of_loved_one", "serious_illness", "war_and_violence", "grief"],
+          "warnings": [
+            "death_of_main_character",
+            "death_of_loved_one",
+            "serious_illness",
+            "war_and_violence",
+            "grief"
+          ],
           "example_user_messages": [
             "My whole family expects me to take over the role my grandfather had in our community, and I never asked for it.",
             "People at church keep telling me I have a calling, and I honestly don't know what I believe.",
@@ -630,15 +684,25 @@
           "start_at": "DS9 S5E26",
           "span": "DS9 S5-S7",
           "situations": [
-            {"id": "burnout_at_work", "weight": 0.7},
-            {"id": "responsibility_you_didnt_ask_for", "weight": 0.6},
-            {"id": "grief_and_loss", "weight": 0.5}
+            { "id": "burnout_at_work", "weight": 0.7 },
+            { "id": "responsibility_you_didnt_ask_for", "weight": 0.6 },
+            { "id": "grief_and_loss", "weight": 0.5 }
           ],
           "conflicts": ["power_vs_morality", "truth_vs_protecting_others"],
-          "emotions": {"start": ["determination", "dread"], "middle": ["guilt", "burnout", "grief"], "end": ["guilt", "acceptance"]},
+          "emotions": {
+            "start": ["determination", "dread"],
+            "middle": ["guilt", "burnout", "grief"],
+            "end": ["guilt", "acceptance"]
+          },
           "ending_tone": "ambiguous",
           "intensity": "heavy",
-          "warnings": ["war_and_violence", "death_of_loved_one", "death_of_main_character", "betrayal", "grief"],
+          "warnings": [
+            "war_and_violence",
+            "death_of_loved_one",
+            "death_of_main_character",
+            "betrayal",
+            "grief"
+          ],
           "example_user_messages": [
             "I lied to close a deal that saved a lot of jobs, and I'm not sure I can live with myself.",
             "I've lost so many people this year that I'm thinking of walking away from everything.",

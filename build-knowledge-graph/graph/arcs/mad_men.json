@@ -69,25 +69,11 @@
               "weight": 0.4
             }
           ],
-          "conflicts": [
-            "past_vs_future",
-            "truth_vs_protecting_others"
-          ],
+          "conflicts": ["past_vs_future", "truth_vs_protecting_others"],
           "emotions": {
-            "start": [
-              "shame",
-              "restlessness",
-              "loneliness"
-            ],
-            "middle": [
-              "dread",
-              "guilt",
-              "numbness"
-            ],
-            "end": [
-              "acceptance",
-              "peace"
-            ]
+            "start": ["shame", "restlessness", "loneliness"],
+            "middle": ["dread", "guilt", "numbness"],
+            "end": ["acceptance", "peace"]
           },
           "ending_tone": "ambiguous",
           "intensity": "heavy",
@@ -154,34 +140,15 @@
               "weight": 0.4
             }
           ],
-          "conflicts": [
-            "holding_on_vs_letting_go",
-            "control_vs_trust"
-          ],
+          "conflicts": ["holding_on_vs_letting_go", "control_vs_trust"],
           "emotions": {
-            "start": [
-              "loneliness",
-              "numbness",
-              "shame"
-            ],
-            "middle": [
-              "grief",
-              "determination",
-              "self_doubt"
-            ],
-            "end": [
-              "acceptance",
-              "freedom"
-            ]
+            "start": ["loneliness", "numbness", "shame"],
+            "middle": ["grief", "determination", "self_doubt"],
+            "end": ["acceptance", "freedom"]
           },
           "ending_tone": "ambiguous",
           "intensity": "heavy",
-          "warnings": [
-            "addiction",
-            "death_of_loved_one",
-            "grief",
-            "betrayal"
-          ],
+          "warnings": ["addiction", "death_of_loved_one", "grief", "betrayal"],
           "example_user_messages": [
             "I've been drinking alone every night since the separation and I can't remember half of last weekend.",
             "I used to be the one who held everything together and now I'm messing up at work.",
@@ -238,32 +205,15 @@
               "weight": 0.6
             }
           ],
-          "conflicts": [
-            "truth_vs_protecting_others",
-            "career_vs_relationships"
-          ],
+          "conflicts": ["truth_vs_protecting_others", "career_vs_relationships"],
           "emotions": {
-            "start": [
-              "inadequacy",
-              "guilt"
-            ],
-            "middle": [
-              "shame",
-              "love"
-            ],
-            "end": [
-              "acceptance",
-              "love"
-            ]
+            "start": ["inadequacy", "guilt"],
+            "middle": ["shame", "love"],
+            "end": ["acceptance", "love"]
           },
           "ending_tone": "bittersweet",
           "intensity": "moderate",
-          "warnings": [
-            "betrayal",
-            "abuse",
-            "death_of_main_character",
-            "serious_illness"
-          ],
+          "warnings": ["betrayal", "abuse", "death_of_main_character", "serious_illness"],
           "example_user_messages": [
             "My dad was awful to me and now that I have kids I'm scared I don't know how to be any different.",
             "I provide for my family but my kids barely know me.",
@@ -345,33 +295,15 @@
               "weight": 0.7
             }
           ],
-          "conflicts": [
-            "fitting_in_vs_standing_out",
-            "self_vs_family_expectations"
-          ],
+          "conflicts": ["fitting_in_vs_standing_out", "self_vs_family_expectations"],
           "emotions": {
-            "start": [
-              "self_doubt",
-              "anxiety",
-              "curiosity"
-            ],
-            "middle": [
-              "determination",
-              "loneliness",
-              "shame"
-            ],
-            "end": [
-              "confidence",
-              "self_respect",
-              "love"
-            ]
+            "start": ["self_doubt", "anxiety", "curiosity"],
+            "middle": ["determination", "loneliness", "shame"],
+            "end": ["confidence", "self_respect", "love"]
           },
           "ending_tone": "hopeful",
           "intensity": "moderate",
-          "warnings": [
-            "medical_trauma",
-            "betrayal"
-          ],
+          "warnings": ["medical_trauma", "betrayal"],
           "example_user_messages": [
             "I'm the only woman on my team and I feel like I have to be twice as good just to be heard.",
             "I started as an assistant and I know I have better ideas than half the people above me.",
@@ -429,31 +361,15 @@
               "weight": 0.4
             }
           ],
-          "conflicts": [
-            "loyalty_vs_ambition",
-            "independence_vs_connection"
-          ],
+          "conflicts": ["loyalty_vs_ambition", "independence_vs_connection"],
           "emotions": {
-            "start": [
-              "resentment",
-              "longing"
-            ],
-            "middle": [
-              "determination",
-              "guilt",
-              "loneliness"
-            ],
-            "end": [
-              "self_respect",
-              "confidence"
-            ]
+            "start": ["resentment", "longing"],
+            "middle": ["determination", "guilt", "loneliness"],
+            "end": ["self_respect", "confidence"]
           },
           "ending_tone": "hopeful",
           "intensity": "moderate",
-          "warnings": [
-            "death_of_loved_one",
-            "betrayal"
-          ],
+          "warnings": ["death_of_loved_one", "betrayal"],
           "example_user_messages": [
             "My boss taught me everything I know but he never gives me credit and I'm starting to resent him.",
             "I got a much better offer elsewhere and I feel like leaving would be a betrayal.",
@@ -537,32 +453,15 @@
               "weight": 0.4
             }
           ],
-          "conflicts": [
-            "self_vs_family_expectations",
-            "duty_vs_desire"
-          ],
+          "conflicts": ["self_vs_family_expectations", "duty_vs_desire"],
           "emotions": {
-            "start": [
-              "pride",
-              "confidence"
-            ],
-            "middle": [
-              "betrayal",
-              "anger",
-              "loneliness"
-            ],
-            "end": [
-              "self_respect",
-              "determination"
-            ]
+            "start": ["pride", "confidence"],
+            "middle": ["betrayal", "anger", "loneliness"],
+            "end": ["self_respect", "determination"]
           },
           "ending_tone": "bittersweet",
           "intensity": "heavy",
-          "warnings": [
-            "sexual_violence",
-            "domestic_violence",
-            "betrayal"
-          ],
+          "warnings": ["sexual_violence", "domestic_violence", "betrayal"],
           "example_user_messages": [
             "I did everything right: married the right person, stayed home when I was supposed to, and I'm miserable.",
             "My mom raised me to believe my looks were my biggest asset and I don't know who I am without that.",
@@ -618,33 +517,15 @@
               "weight": 0.4
             }
           ],
-          "conflicts": [
-            "power_vs_morality",
-            "belonging_vs_integrity"
-          ],
+          "conflicts": ["power_vs_morality", "belonging_vs_integrity"],
           "emotions": {
-            "start": [
-              "joy",
-              "pride"
-            ],
-            "middle": [
-              "shame",
-              "anger",
-              "resentment"
-            ],
-            "end": [
-              "self_respect",
-              "freedom",
-              "determination"
-            ]
+            "start": ["joy", "pride"],
+            "middle": ["shame", "anger", "resentment"],
+            "end": ["self_respect", "freedom", "determination"]
           },
           "ending_tone": "hopeful",
           "intensity": "heavy",
-          "warnings": [
-            "sexual_violence",
-            "self_harm_or_suicide",
-            "betrayal"
-          ],
+          "warnings": ["sexual_violence", "self_harm_or_suicide", "betrayal"],
           "example_user_messages": [
             "I found something I'm genuinely great at at work and they gave it to a guy they hired above me.",
             "People only notice how I look, never how much I actually run things.",
@@ -724,32 +605,15 @@
               "weight": 0.3
             }
           ],
-          "conflicts": [
-            "loyalty_vs_ambition",
-            "self_vs_family_expectations"
-          ],
+          "conflicts": ["loyalty_vs_ambition", "self_vs_family_expectations"],
           "emotions": {
-            "start": [
-              "envy",
-              "resentment",
-              "inadequacy"
-            ],
-            "middle": [
-              "anger",
-              "rejection",
-              "grief"
-            ],
-            "end": [
-              "pride",
-              "determination"
-            ]
+            "start": ["envy", "resentment", "inadequacy"],
+            "middle": ["anger", "rejection", "grief"],
+            "end": ["pride", "determination"]
           },
           "ending_tone": "bittersweet",
           "intensity": "moderate",
-          "warnings": [
-            "death_of_loved_one",
-            "betrayal"
-          ],
+          "warnings": ["death_of_loved_one", "betrayal"],
           "example_user_messages": [
             "My father has never once said he's proud of me and I'm 26.",
             "I have good ideas at work and nobody listens until someone older says the same thing.",
@@ -804,34 +668,15 @@
               "weight": 0.5
             }
           ],
-          "conflicts": [
-            "career_vs_relationships",
-            "duty_vs_desire"
-          ],
+          "conflicts": ["career_vs_relationships", "duty_vs_desire"],
           "emotions": {
-            "start": [
-              "restlessness",
-              "resentment",
-              "boredom"
-            ],
-            "middle": [
-              "loneliness",
-              "shame",
-              "freedom"
-            ],
-            "end": [
-              "hope",
-              "love",
-              "peace"
-            ]
+            "start": ["restlessness", "resentment", "boredom"],
+            "middle": ["loneliness", "shame", "freedom"],
+            "end": ["hope", "love", "peace"]
           },
           "ending_tone": "hopeful",
           "intensity": "moderate",
-          "warnings": [
-            "betrayal",
-            "medical_trauma",
-            "death_of_loved_one"
-          ],
+          "warnings": ["betrayal", "medical_trauma", "death_of_loved_one"],
           "example_user_messages": [
             "I have the house and the family I always wanted and I'm bored out of my mind.",
             "I cheated on my wife and I still don't understand why I did it.",
@@ -914,33 +759,15 @@
               "weight": 0.3
             }
           ],
-          "conflicts": [
-            "duty_vs_desire",
-            "past_vs_future"
-          ],
+          "conflicts": ["duty_vs_desire", "past_vs_future"],
           "emotions": {
-            "start": [
-              "boredom",
-              "restlessness"
-            ],
-            "middle": [
-              "fear",
-              "loneliness",
-              "nostalgia"
-            ],
-            "end": [
-              "acceptance",
-              "joy"
-            ]
+            "start": ["boredom", "restlessness"],
+            "middle": ["fear", "loneliness", "nostalgia"],
+            "end": ["acceptance", "joy"]
           },
           "ending_tone": "bittersweet",
           "intensity": "moderate",
-          "warnings": [
-            "serious_illness",
-            "addiction",
-            "betrayal",
-            "death_of_loved_one"
-          ],
+          "warnings": ["serious_illness", "addiction", "betrayal", "death_of_loved_one"],
           "example_user_messages": [
             "I've spent my whole life making jokes and I just realised I don't have anything real to show for it.",
             "I had a health scare and now I'm terrified of getting old.",
@@ -996,30 +823,15 @@
               "weight": 0.6
             }
           ],
-          "conflicts": [
-            "holding_on_vs_letting_go",
-            "past_vs_future"
-          ],
+          "conflicts": ["holding_on_vs_letting_go", "past_vs_future"],
           "emotions": {
-            "start": [
-              "inadequacy",
-              "envy"
-            ],
-            "middle": [
-              "shame",
-              "fear"
-            ],
-            "end": [
-              "pride",
-              "acceptance"
-            ]
+            "start": ["inadequacy", "envy"],
+            "middle": ["shame", "fear"],
+            "end": ["pride", "acceptance"]
           },
           "ending_tone": "bittersweet",
           "intensity": "moderate",
-          "warnings": [
-            "betrayal",
-            "self_harm_or_suicide"
-          ],
+          "warnings": ["betrayal", "self_harm_or_suicide"],
           "example_user_messages": [
             "The younger people at work are running circles around me and I feel like a relic.",
             "I lost my biggest client and I haven't told anyone yet.",
@@ -1090,33 +902,15 @@
               "weight": 0.5
             }
           ],
-          "conflicts": [
-            "duty_vs_desire",
-            "self_vs_family_expectations"
-          ],
+          "conflicts": ["duty_vs_desire", "self_vs_family_expectations"],
           "emotions": {
-            "start": [
-              "loneliness",
-              "numbness",
-              "anxiety"
-            ],
-            "middle": [
-              "betrayal",
-              "anger",
-              "resentment"
-            ],
-            "end": [
-              "freedom",
-              "hope"
-            ]
+            "start": ["loneliness", "numbness", "anxiety"],
+            "middle": ["betrayal", "anger", "resentment"],
+            "end": ["freedom", "hope"]
           },
           "ending_tone": "bittersweet",
           "intensity": "moderate",
-          "warnings": [
-            "betrayal",
-            "death_of_loved_one",
-            "grief"
-          ],
+          "warnings": ["betrayal", "death_of_loved_one", "grief"],
           "example_user_messages": [
             "From the outside my life looks perfect and I cry in the car every day.",
             "My partner never tells me anything and I feel like a stranger in my own marriage.",
@@ -1172,35 +966,15 @@
               "weight": 0.4
             }
           ],
-          "conflicts": [
-            "control_vs_trust",
-            "perfectionism_vs_good_enough"
-          ],
+          "conflicts": ["control_vs_trust", "perfectionism_vs_good_enough"],
           "emotions": {
-            "start": [
-              "resentment",
-              "jealousy",
-              "anger"
-            ],
-            "middle": [
-              "inadequacy",
-              "loneliness",
-              "fear"
-            ],
-            "end": [
-              "acceptance",
-              "love",
-              "peace"
-            ]
+            "start": ["resentment", "jealousy", "anger"],
+            "middle": ["inadequacy", "loneliness", "fear"],
+            "end": ["acceptance", "love", "peace"]
           },
           "ending_tone": "tragic",
           "intensity": "heavy",
-          "warnings": [
-            "abuse",
-            "serious_illness",
-            "death_of_main_character",
-            "grief"
-          ],
+          "warnings": ["abuse", "serious_illness", "death_of_main_character", "grief"],
           "example_user_messages": [
             "I hear my mother's voice come out of my mouth every time I criticise my daughter's weight.",
             "My daughter and I fight constantly and I honestly don't know how to talk to her.",
@@ -1273,32 +1047,15 @@
               "weight": 0.4
             }
           ],
-          "conflicts": [
-            "independence_vs_connection",
-            "truth_vs_protecting_others"
-          ],
+          "conflicts": ["independence_vs_connection", "truth_vs_protecting_others"],
           "emotions": {
-            "start": [
-              "curiosity",
-              "love"
-            ],
-            "middle": [
-              "grief",
-              "anger",
-              "confusion"
-            ],
-            "end": [
-              "acceptance",
-              "hope"
-            ]
+            "start": ["curiosity", "love"],
+            "middle": ["grief", "anger", "confusion"],
+            "end": ["acceptance", "hope"]
           },
           "ending_tone": "bittersweet",
           "intensity": "moderate",
-          "warnings": [
-            "death_of_loved_one",
-            "grief",
-            "abuse"
-          ],
+          "warnings": ["death_of_loved_one", "grief", "abuse"],
           "example_user_messages": [
             "When I was a kid nobody ever explained anything to me, I just had to figure out that my parents were falling apart.",
             "My parents split up when I was little and I acted out for years because I didn't know what else to do.",
@@ -1354,24 +1111,11 @@
               "weight": 0.5
             }
           ],
-          "conflicts": [
-            "independence_vs_connection",
-            "revenge_vs_forgiveness"
-          ],
+          "conflicts": ["independence_vs_connection", "revenge_vs_forgiveness"],
           "emotions": {
-            "start": [
-              "anger",
-              "resentment"
-            ],
-            "middle": [
-              "betrayal",
-              "loneliness"
-            ],
-            "end": [
-              "grief",
-              "love",
-              "acceptance"
-            ]
+            "start": ["anger", "resentment"],
+            "middle": ["betrayal", "loneliness"],
+            "end": ["grief", "love", "acceptance"]
           },
           "ending_tone": "bittersweet",
           "intensity": "heavy",
@@ -1462,30 +1206,15 @@
               "weight": 0.4
             }
           ],
-          "conflicts": [
-            "career_vs_relationships",
-            "safety_vs_growth"
-          ],
+          "conflicts": ["career_vs_relationships", "safety_vs_growth"],
           "emotions": {
-            "start": [
-              "restlessness",
-              "longing"
-            ],
-            "middle": [
-              "self_doubt",
-              "rejection",
-              "loneliness"
-            ],
-            "end": [
-              "freedom",
-              "self_respect"
-            ]
+            "start": ["restlessness", "longing"],
+            "middle": ["self_doubt", "rejection", "loneliness"],
+            "end": ["freedom", "self_respect"]
           },
           "ending_tone": "bittersweet",
           "intensity": "moderate",
-          "warnings": [
-            "betrayal"
-          ],
+          "warnings": ["betrayal"],
           "example_user_messages": [
             "I'm good at my job but it isn't what I want, and everyone thinks I'm crazy to leave.",
             "I quit a stable career to chase acting and I keep getting rejected.",

@@ -65,26 +65,11 @@
               "weight": 0.4
             }
           ],
-          "conflicts": [
-            "power_vs_morality",
-            "duty_vs_desire"
-          ],
+          "conflicts": ["power_vs_morality", "duty_vs_desire"],
           "emotions": {
-            "start": [
-              "shame",
-              "inadequacy",
-              "hope"
-            ],
-            "middle": [
-              "fear",
-              "guilt",
-              "belonging"
-            ],
-            "end": [
-              "grief",
-              "guilt",
-              "numbness"
-            ]
+            "start": ["shame", "inadequacy", "hope"],
+            "middle": ["fear", "guilt", "belonging"],
+            "end": ["grief", "guilt", "numbness"]
           },
           "ending_tone": "bittersweet",
           "intensity": "heavy",
@@ -153,26 +138,11 @@
               "weight": 0.5
             }
           ],
-          "conflicts": [
-            "revenge_vs_forgiveness",
-            "past_vs_future"
-          ],
+          "conflicts": ["revenge_vs_forgiveness", "past_vs_future"],
           "emotions": {
-            "start": [
-              "guilt",
-              "determination",
-              "anger"
-            ],
-            "middle": [
-              "hope",
-              "overwhelm",
-              "grief"
-            ],
-            "end": [
-              "guilt",
-              "acceptance",
-              "love"
-            ]
+            "start": ["guilt", "determination", "anger"],
+            "middle": ["hope", "overwhelm", "grief"],
+            "end": ["guilt", "acceptance", "love"]
           },
           "ending_tone": "tragic",
           "intensity": "heavy",
@@ -273,26 +243,11 @@
               "weight": 0.3
             }
           ],
-          "conflicts": [
-            "power_vs_morality",
-            "self_vs_family_expectations"
-          ],
+          "conflicts": ["power_vs_morality", "self_vs_family_expectations"],
           "emotions": {
-            "start": [
-              "shame",
-              "fear",
-              "dread"
-            ],
-            "middle": [
-              "determination",
-              "guilt",
-              "loneliness"
-            ],
-            "end": [
-              "guilt",
-              "shame",
-              "acceptance"
-            ]
+            "start": ["shame", "fear", "dread"],
+            "middle": ["determination", "guilt", "loneliness"],
+            "end": ["guilt", "shame", "acceptance"]
           },
           "ending_tone": "tragic",
           "intensity": "heavy",
@@ -389,25 +344,11 @@
               "weight": 0.4
             }
           ],
-          "conflicts": [
-            "independence_vs_connection",
-            "control_vs_trust"
-          ],
+          "conflicts": ["independence_vs_connection", "control_vs_trust"],
           "emotions": {
-            "start": [
-              "loneliness",
-              "determination",
-              "anxiety"
-            ],
-            "middle": [
-              "belonging",
-              "grief",
-              "hope"
-            ],
-            "end": [
-              "love",
-              "fear"
-            ]
+            "start": ["loneliness", "determination", "anxiety"],
+            "middle": ["belonging", "grief", "hope"],
+            "end": ["love", "fear"]
           },
           "ending_tone": "tragic",
           "intensity": "heavy",
@@ -494,26 +435,11 @@
               "weight": 0.3
             }
           ],
-          "conflicts": [
-            "holding_on_vs_letting_go",
-            "power_vs_morality"
-          ],
+          "conflicts": ["holding_on_vs_letting_go", "power_vs_morality"],
           "emotions": {
-            "start": [
-              "boredom",
-              "nostalgia",
-              "loneliness"
-            ],
-            "middle": [
-              "joy",
-              "belonging",
-              "curiosity"
-            ],
-            "end": [
-              "nostalgia",
-              "loneliness",
-              "acceptance"
-            ]
+            "start": ["boredom", "nostalgia", "loneliness"],
+            "middle": ["joy", "belonging", "curiosity"],
+            "end": ["nostalgia", "loneliness", "acceptance"]
           },
           "ending_tone": "ambiguous",
           "intensity": "heavy",
@@ -601,34 +527,15 @@
               "weight": 0.4
             }
           ],
-          "conflicts": [
-            "control_vs_trust",
-            "belonging_vs_integrity"
-          ],
+          "conflicts": ["control_vs_trust", "belonging_vs_integrity"],
           "emotions": {
-            "start": [
-              "anxiety",
-              "hope",
-              "determination"
-            ],
-            "middle": [
-              "belonging",
-              "relief",
-              "fear"
-            ],
-            "end": [
-              "betrayal",
-              "grief"
-            ]
+            "start": ["anxiety", "hope", "determination"],
+            "middle": ["belonging", "relief", "fear"],
+            "end": ["betrayal", "grief"]
           },
           "ending_tone": "tragic",
           "intensity": "heavy",
-          "warnings": [
-            "death_of_main_character",
-            "betrayal",
-            "war_and_violence",
-            "graphic_gore"
-          ],
+          "warnings": ["death_of_main_character", "betrayal", "war_and_violence", "graphic_gore"],
           "example_user_messages": [
             "I moved to another country to support my family and my employer hasn't paid me in months.",
             "I don't really understand how things work here, so I just trust whoever is nice to me.",
@@ -694,35 +601,15 @@
               "weight": 0.3
             }
           ],
-          "conflicts": [
-            "truth_vs_protecting_others",
-            "duty_vs_desire"
-          ],
+          "conflicts": ["truth_vs_protecting_others", "duty_vs_desire"],
           "emotions": {
-            "start": [
-              "anxiety",
-              "determination",
-              "longing"
-            ],
-            "middle": [
-              "betrayal",
-              "confusion",
-              "anger"
-            ],
-            "end": [
-              "grief",
-              "confusion",
-              "hope"
-            ]
+            "start": ["anxiety", "determination", "longing"],
+            "middle": ["betrayal", "confusion", "anger"],
+            "end": ["grief", "confusion", "hope"]
           },
           "ending_tone": "bittersweet",
           "intensity": "heavy",
-          "warnings": [
-            "war_and_violence",
-            "graphic_gore",
-            "betrayal",
-            "medical_trauma"
-          ],
+          "warnings": ["war_and_violence", "graphic_gore", "betrayal", "medical_trauma"],
           "example_user_messages": [
             "My brother cut contact and nobody seems worried except me and my mom.",
             "I reported something serious and no one believes me, so I feel like I have to handle it myself.",
@@ -794,25 +681,11 @@
               "weight": 0.4
             }
           ],
-          "conflicts": [
-            "independence_vs_connection",
-            "holding_on_vs_letting_go"
-          ],
+          "conflicts": ["independence_vs_connection", "holding_on_vs_letting_go"],
           "emotions": {
-            "start": [
-              "numbness",
-              "loneliness",
-              "resentment"
-            ],
-            "middle": [
-              "belonging",
-              "joy",
-              "grief"
-            ],
-            "end": [
-              "love",
-              "acceptance"
-            ]
+            "start": ["numbness", "loneliness", "resentment"],
+            "middle": ["belonging", "joy", "grief"],
+            "end": ["love", "acceptance"]
           },
           "ending_tone": "bittersweet",
           "intensity": "heavy",
@@ -887,25 +760,11 @@
               "weight": 0.3
             }
           ],
-          "conflicts": [
-            "power_vs_morality",
-            "control_vs_trust"
-          ],
+          "conflicts": ["power_vs_morality", "control_vs_trust"],
           "emotions": {
-            "start": [
-              "fear",
-              "anger",
-              "pride"
-            ],
-            "middle": [
-              "pride",
-              "anxiety",
-              "resentment"
-            ],
-            "end": [
-              "fear",
-              "dread"
-            ]
+            "start": ["fear", "anger", "pride"],
+            "middle": ["pride", "anxiety", "resentment"],
+            "end": ["fear", "dread"]
           },
           "ending_tone": "tragic",
           "intensity": "heavy",

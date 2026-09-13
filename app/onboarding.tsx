@@ -28,10 +28,7 @@ export default function OnboardingScreen() {
           </Typography>
         </View>
 
-        <Surface variant="secondary" className="gap-3 rounded-3xl p-4">
-          <Typography type="body-sm" weight="semibold">
-            Your words stay on this device
-          </Typography>
+        <Surface variant="secondary" className="rounded-3xl p-4">
           <Typography type="body-sm" color="muted" className="leading-6">
             You can start without creating a profile. If you choose to Connect with a circle, we
             will ask what name you want to use there.

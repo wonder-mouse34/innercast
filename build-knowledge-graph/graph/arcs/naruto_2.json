@@ -6,11 +6,11 @@
       "name": "Gaara",
       "role": "A feared, silent young fighter from a desert village, sent abroad with his two older siblings to compete in the Chūnin Exams; everyone around him, including his own family, is terrified of him.",
       "relations": [
-        {"target": "char:naruto/naruto_uzumaki", "relation": "friend"},
-        {"target": "char:naruto/rock_lee", "relation": "rival"},
-        {"target": "char:naruto/sasuke_uchiha", "relation": "rival"},
-        {"target": "char:naruto/shikamaru_nara", "relation": "colleague"},
-        {"target": "char:naruto/tsunade", "relation": "colleague"}
+        { "target": "char:naruto/naruto_uzumaki", "relation": "friend" },
+        { "target": "char:naruto/rock_lee", "relation": "rival" },
+        { "target": "char:naruto/sasuke_uchiha", "relation": "rival" },
+        { "target": "char:naruto/shikamaru_nara", "relation": "colleague" },
+        { "target": "char:naruto/tsunade", "relation": "colleague" }
       ],
       "arcs": [
         {
@@ -29,16 +29,27 @@
           "start_at": "Naruto Ep 20",
           "span": "Naruto Ep 20-80 (from the Chūnin Exams), with a short epilogue later in the series",
           "situations": [
-            {"id": "loneliness", "weight": 0.9},
-            {"id": "identity_and_self_acceptance", "weight": 0.7},
-            {"id": "redemption_after_mistakes", "weight": 0.7},
-            {"id": "difficult_parent", "weight": 0.6}
+            { "id": "loneliness", "weight": 0.9 },
+            { "id": "identity_and_self_acceptance", "weight": 0.7 },
+            { "id": "redemption_after_mistakes", "weight": 0.7 },
+            { "id": "difficult_parent", "weight": 0.6 }
           ],
           "conflicts": ["independence_vs_connection", "past_vs_future"],
-          "emotions": {"start": ["loneliness", "anger", "rejection"], "middle": ["fear", "confusion"], "end": ["hope", "belonging"]},
+          "emotions": {
+            "start": ["loneliness", "anger", "rejection"],
+            "middle": ["fear", "confusion"],
+            "end": ["hope", "belonging"]
+          },
           "ending_tone": "hopeful",
           "intensity": "heavy",
-          "warnings": ["abuse", "child_endangerment", "betrayal", "death_of_loved_one", "war_and_violence", "graphic_gore"],
+          "warnings": [
+            "abuse",
+            "child_endangerment",
+            "betrayal",
+            "death_of_loved_one",
+            "war_and_violence",
+            "graphic_gore"
+          ],
           "example_user_messages": [
             "Everyone has always been scared of me so I stopped trying to be nice. Now I don't even know how to let people in.",
             "My dad treated me like a problem to be managed, not a kid. I learned early that nobody was on my side.",
@@ -76,13 +87,17 @@
           "start_at": "Shippuden Ep 2",
           "span": "Shippuden: from the opening arc onward, returning in later arcs",
           "situations": [
-            {"id": "becoming_a_manager", "weight": 0.8},
-            {"id": "redemption_after_mistakes", "weight": 0.8},
-            {"id": "difficult_parent", "weight": 0.6},
-            {"id": "finding_your_people", "weight": 0.5}
+            { "id": "becoming_a_manager", "weight": 0.8 },
+            { "id": "redemption_after_mistakes", "weight": 0.8 },
+            { "id": "difficult_parent", "weight": 0.6 },
+            { "id": "finding_your_people", "weight": 0.5 }
           ],
           "conflicts": ["past_vs_future", "revenge_vs_forgiveness"],
-          "emotions": {"start": ["self_doubt", "determination"], "middle": ["grief", "hope"], "end": ["belonging", "peace"]},
+          "emotions": {
+            "start": ["self_doubt", "determination"],
+            "middle": ["grief", "hope"],
+            "end": ["belonging", "peace"]
+          },
           "ending_tone": "hopeful",
           "intensity": "heavy",
           "warnings": ["death_of_main_character", "war_and_violence", "grief", "abuse"],
@@ -113,11 +128,11 @@
       "name": "Shikamaru Nara",
       "role": "A brilliant but deeply lazy young ninja who wants nothing more than an unremarkable life watching clouds, forever sighing 'what a drag'.",
       "relations": [
-        {"target": "char:naruto/naruto_uzumaki", "relation": "friend"},
-        {"target": "char:naruto/tsunade", "relation": "boss"},
-        {"target": "char:naruto/gaara", "relation": "colleague"},
-        {"target": "char:naruto/neji_hyuga", "relation": "colleague"},
-        {"target": "char:naruto/kakashi_hatake", "relation": "colleague"}
+        { "target": "char:naruto/naruto_uzumaki", "relation": "friend" },
+        { "target": "char:naruto/tsunade", "relation": "boss" },
+        { "target": "char:naruto/gaara", "relation": "colleague" },
+        { "target": "char:naruto/neji_hyuga", "relation": "colleague" },
+        { "target": "char:naruto/kakashi_hatake", "relation": "colleague" }
       ],
       "arcs": [
         {
@@ -136,13 +151,17 @@
           "start_at": "Naruto Ep 23",
           "span": "Naruto: from the Chūnin Exams to the end of the first series",
           "situations": [
-            {"id": "responsibility_you_didnt_ask_for", "weight": 0.9},
-            {"id": "leading_former_peers", "weight": 0.8},
-            {"id": "becoming_a_manager", "weight": 0.6},
-            {"id": "confidence_struggle", "weight": 0.5}
+            { "id": "responsibility_you_didnt_ask_for", "weight": 0.9 },
+            { "id": "leading_former_peers", "weight": 0.8 },
+            { "id": "becoming_a_manager", "weight": 0.6 },
+            { "id": "confidence_struggle", "weight": 0.5 }
           ],
           "conflicts": ["safety_vs_growth", "duty_vs_desire"],
-          "emotions": {"start": ["boredom", "restlessness"], "middle": ["anxiety", "guilt", "self_doubt"], "end": ["determination", "self_respect"]},
+          "emotions": {
+            "start": ["boredom", "restlessness"],
+            "middle": ["anxiety", "guilt", "self_doubt"],
+            "end": ["determination", "self_respect"]
+          },
           "ending_tone": "hopeful",
           "intensity": "moderate",
           "warnings": ["war_and_violence", "child_endangerment"],
@@ -182,13 +201,17 @@
           "start_at": "Shippuden: Hidan and Kakuzu arc",
           "span": "Shippuden: from the Hidan and Kakuzu arc onward",
           "situations": [
-            {"id": "grief_and_loss", "weight": 0.9},
-            {"id": "mentor_and_protege", "weight": 0.7},
-            {"id": "coming_of_age", "weight": 0.6},
-            {"id": "responsibility_you_didnt_ask_for", "weight": 0.5}
+            { "id": "grief_and_loss", "weight": 0.9 },
+            { "id": "mentor_and_protege", "weight": 0.7 },
+            { "id": "coming_of_age", "weight": 0.6 },
+            { "id": "responsibility_you_didnt_ask_for", "weight": 0.5 }
           ],
           "conflicts": ["revenge_vs_forgiveness", "holding_on_vs_letting_go"],
-          "emotions": {"start": ["curiosity", "anxiety"], "middle": ["grief", "anger", "guilt"], "end": ["determination", "acceptance"]},
+          "emotions": {
+            "start": ["curiosity", "anxiety"],
+            "middle": ["grief", "anger", "guilt"],
+            "end": ["determination", "acceptance"]
+          },
           "ending_tone": "bittersweet",
           "intensity": "heavy",
           "warnings": ["death_of_loved_one", "grief", "war_and_violence", "graphic_gore"],
@@ -220,10 +243,10 @@
       "name": "Itachi Uchiha",
       "role": "A calm, feared fugitive in a sinister criminal organisation, notorious for murdering his entire clan in one night and sparing only his younger brother Sasuke, who has sworn revenge.",
       "relations": [
-        {"target": "char:naruto/sasuke_uchiha", "relation": "sibling"},
-        {"target": "char:naruto/kakashi_hatake", "relation": "enemy"},
-        {"target": "char:naruto/jiraiya", "relation": "enemy"},
-        {"target": "char:naruto/naruto_uzumaki", "relation": "enemy"}
+        { "target": "char:naruto/sasuke_uchiha", "relation": "sibling" },
+        { "target": "char:naruto/kakashi_hatake", "relation": "enemy" },
+        { "target": "char:naruto/jiraiya", "relation": "enemy" },
+        { "target": "char:naruto/naruto_uzumaki", "relation": "enemy" }
       ],
       "arcs": [
         {
@@ -242,16 +265,29 @@
           "start_at": "Naruto Ep 81",
           "span": "Naruto: Search for Tsunade arc; Shippuden: the Itachi Pursuit arc and later arcs",
           "situations": [
-            {"id": "redemption_after_mistakes", "weight": 0.8},
-            {"id": "caring_for_family", "weight": 0.7},
-            {"id": "family_expectations", "weight": 0.6},
-            {"id": "illness_or_injury", "weight": 0.4}
+            { "id": "redemption_after_mistakes", "weight": 0.8 },
+            { "id": "caring_for_family", "weight": 0.7 },
+            { "id": "family_expectations", "weight": 0.6 },
+            { "id": "illness_or_injury", "weight": 0.4 }
           ],
           "conflicts": ["truth_vs_protecting_others", "duty_vs_desire"],
-          "emotions": {"start": ["guilt", "numbness"], "middle": ["loneliness", "dread"], "end": ["acceptance", "love", "peace"]},
+          "emotions": {
+            "start": ["guilt", "numbness"],
+            "middle": ["loneliness", "dread"],
+            "end": ["acceptance", "love", "peace"]
+          },
           "ending_tone": "bittersweet",
           "intensity": "heavy",
-          "warnings": ["death_of_main_character", "death_of_loved_one", "war_and_violence", "torture", "child_endangerment", "serious_illness", "betrayal", "graphic_gore"],
+          "warnings": [
+            "death_of_main_character",
+            "death_of_loved_one",
+            "war_and_violence",
+            "torture",
+            "child_endangerment",
+            "serious_illness",
+            "betrayal",
+            "graphic_gore"
+          ],
           "example_user_messages": [
             "I did something years ago to protect my little brother and he has never forgiven me. He doesn't know the whole story and I don't think he ever should.",
             "I let someone I love believe the worst about me because the truth would hurt them more.",
@@ -281,11 +317,11 @@
       "name": "Neji Hyūga",
       "role": "A cold, arrogant prodigy from the lower branch of a powerful clan, bearing a seal that binds him to serve the main family, and convinced everyone's fate is fixed at birth.",
       "relations": [
-        {"target": "char:naruto/hinata_hyuga", "relation": "rival"},
-        {"target": "char:naruto/rock_lee", "relation": "rival"},
-        {"target": "char:naruto/naruto_uzumaki", "relation": "friend"},
-        {"target": "char:naruto/shikamaru_nara", "relation": "colleague"},
-        {"target": "char:naruto/tsunade", "relation": "boss"}
+        { "target": "char:naruto/hinata_hyuga", "relation": "rival" },
+        { "target": "char:naruto/rock_lee", "relation": "rival" },
+        { "target": "char:naruto/naruto_uzumaki", "relation": "friend" },
+        { "target": "char:naruto/shikamaru_nara", "relation": "colleague" },
+        { "target": "char:naruto/tsunade", "relation": "boss" }
       ],
       "arcs": [
         {
@@ -304,16 +340,26 @@
           "start_at": "Naruto Ep 21",
           "span": "Naruto: Chūnin Exams, with his story continuing into Shippuden",
           "situations": [
-            {"id": "family_expectations", "weight": 0.9},
-            {"id": "identity_and_self_acceptance", "weight": 0.7},
-            {"id": "grief_and_loss", "weight": 0.5},
-            {"id": "redemption_after_mistakes", "weight": 0.5}
+            { "id": "family_expectations", "weight": 0.9 },
+            { "id": "identity_and_self_acceptance", "weight": 0.7 },
+            { "id": "grief_and_loss", "weight": 0.5 },
+            { "id": "redemption_after_mistakes", "weight": 0.5 }
           ],
           "conflicts": ["self_vs_family_expectations", "past_vs_future"],
-          "emotions": {"start": ["resentment", "anger", "pride"], "middle": ["confusion", "shame"], "end": ["freedom", "acceptance", "love"]},
+          "emotions": {
+            "start": ["resentment", "anger", "pride"],
+            "middle": ["confusion", "shame"],
+            "end": ["freedom", "acceptance", "love"]
+          },
           "ending_tone": "bittersweet",
           "intensity": "heavy",
-          "warnings": ["abuse", "death_of_loved_one", "death_of_main_character", "war_and_violence", "grief"],
+          "warnings": [
+            "abuse",
+            "death_of_loved_one",
+            "death_of_main_character",
+            "war_and_violence",
+            "grief"
+          ],
           "example_user_messages": [
             "I'm the most capable one in my family but I'll always come second to my cousin because of who her parents are.",
             "I honestly believe some people are just born to lose, and trying harder won't change that.",
@@ -341,10 +387,10 @@
       "name": "Jiraiya",
       "role": "A legendary but outrageously perverted wandering ninja and author of racy bestsellers, who reluctantly agrees to train a loud, overlooked boy.",
       "relations": [
-        {"target": "char:naruto/naruto_uzumaki", "relation": "protege"},
-        {"target": "char:naruto/tsunade", "relation": "friend"},
-        {"target": "char:naruto/kakashi_hatake", "relation": "colleague"},
-        {"target": "char:naruto/itachi_uchiha", "relation": "enemy"}
+        { "target": "char:naruto/naruto_uzumaki", "relation": "protege" },
+        { "target": "char:naruto/tsunade", "relation": "friend" },
+        { "target": "char:naruto/kakashi_hatake", "relation": "colleague" },
+        { "target": "char:naruto/itachi_uchiha", "relation": "enemy" }
       ],
       "arcs": [
         {
@@ -363,13 +409,17 @@
           "start_at": "Naruto Ep 52",
           "span": "Naruto: from the Chūnin Exam finals training onward, continuing into Shippuden",
           "situations": [
-            {"id": "mentor_and_protege", "weight": 0.9},
-            {"id": "becoming_a_parent", "weight": 0.6},
-            {"id": "responsibility_you_didnt_ask_for", "weight": 0.6},
-            {"id": "midlife_reinvention", "weight": 0.4}
+            { "id": "mentor_and_protege", "weight": 0.9 },
+            { "id": "becoming_a_parent", "weight": 0.6 },
+            { "id": "responsibility_you_didnt_ask_for", "weight": 0.6 },
+            { "id": "midlife_reinvention", "weight": 0.4 }
           ],
           "conflicts": ["independence_vs_connection", "safety_vs_growth"],
-          "emotions": {"start": ["restlessness", "loneliness"], "middle": ["pride", "love", "anxiety"], "end": ["peace", "acceptance"]},
+          "emotions": {
+            "start": ["restlessness", "loneliness"],
+            "middle": ["pride", "love", "anxiety"],
+            "end": ["peace", "acceptance"]
+          },
           "ending_tone": "bittersweet",
           "intensity": "heavy",
           "warnings": ["death_of_main_character", "war_and_violence", "graphic_gore"],
@@ -409,13 +459,17 @@
           "start_at": "Shippuden: Tale of Jiraiya the Gallant arc",
           "span": "Shippuden: Tale of Jiraiya the Gallant arc",
           "situations": [
-            {"id": "unrequited_love", "weight": 0.6},
-            {"id": "grief_and_loss", "weight": 0.6},
-            {"id": "midlife_reinvention", "weight": 0.5},
-            {"id": "redemption_after_mistakes", "weight": 0.5}
+            { "id": "unrequited_love", "weight": 0.6 },
+            { "id": "grief_and_loss", "weight": 0.6 },
+            { "id": "midlife_reinvention", "weight": 0.5 },
+            { "id": "redemption_after_mistakes", "weight": 0.5 }
           ],
           "conflicts": ["holding_on_vs_letting_go", "past_vs_future"],
-          "emotions": {"start": ["nostalgia", "longing", "self_doubt"], "middle": ["dread", "betrayal", "grief"], "end": ["peace", "acceptance", "pride"]},
+          "emotions": {
+            "start": ["nostalgia", "longing", "self_doubt"],
+            "middle": ["dread", "betrayal", "grief"],
+            "end": ["peace", "acceptance", "pride"]
+          },
           "ending_tone": "bittersweet",
           "intensity": "heavy",
           "warnings": ["death_of_main_character", "war_and_violence", "graphic_gore", "betrayal"],
@@ -446,12 +500,12 @@
       "name": "Tsunade",
       "role": "A legendary medical ninja and granddaughter of the village's founder who has walked away from her home and her calling, drifting from town to town gambling and drinking.",
       "relations": [
-        {"target": "char:naruto/jiraiya", "relation": "friend"},
-        {"target": "char:naruto/sakura_haruno", "relation": "protege"},
-        {"target": "char:naruto/naruto_uzumaki", "relation": "friend"},
-        {"target": "char:naruto/kakashi_hatake", "relation": "colleague"},
-        {"target": "char:naruto/shikamaru_nara", "relation": "colleague"},
-        {"target": "char:naruto/gaara", "relation": "colleague"}
+        { "target": "char:naruto/jiraiya", "relation": "friend" },
+        { "target": "char:naruto/sakura_haruno", "relation": "protege" },
+        { "target": "char:naruto/naruto_uzumaki", "relation": "friend" },
+        { "target": "char:naruto/kakashi_hatake", "relation": "colleague" },
+        { "target": "char:naruto/shikamaru_nara", "relation": "colleague" },
+        { "target": "char:naruto/gaara", "relation": "colleague" }
       ],
       "arcs": [
         {
@@ -470,16 +524,27 @@
           "start_at": "Naruto: Search for Tsunade arc",
           "span": "Naruto: Search for Tsunade arc",
           "situations": [
-            {"id": "grief_and_loss", "weight": 0.9},
-            {"id": "starting_over", "weight": 0.6},
-            {"id": "responsibility_you_didnt_ask_for", "weight": 0.6},
-            {"id": "addiction_and_recovery", "weight": 0.4}
+            { "id": "grief_and_loss", "weight": 0.9 },
+            { "id": "starting_over", "weight": 0.6 },
+            { "id": "responsibility_you_didnt_ask_for", "weight": 0.6 },
+            { "id": "addiction_and_recovery", "weight": 0.4 }
           ],
           "conflicts": ["holding_on_vs_letting_go", "past_vs_future"],
-          "emotions": {"start": ["grief", "numbness", "resentment"], "middle": ["longing", "fear"], "end": ["hope", "determination"]},
+          "emotions": {
+            "start": ["grief", "numbness", "resentment"],
+            "middle": ["longing", "fear"],
+            "end": ["hope", "determination"]
+          },
           "ending_tone": "hopeful",
           "intensity": "moderate",
-          "warnings": ["death_of_loved_one", "grief", "addiction", "medical_trauma", "war_and_violence", "graphic_gore"],
+          "warnings": [
+            "death_of_loved_one",
+            "grief",
+            "addiction",
+            "medical_trauma",
+            "war_and_violence",
+            "graphic_gore"
+          ],
           "example_user_messages": [
             "I lost my brother and then my partner, and I just stopped caring about anything. Now I drink and gamble and don't have a plan.",
             "People keep asking me to come back to my old career but everyone I cared about there is gone.",
@@ -517,16 +582,26 @@
           "start_at": "Shippuden Ep 1",
           "span": "Shippuden: from the first episode onward",
           "situations": [
-            {"id": "becoming_a_manager", "weight": 0.8},
-            {"id": "grief_and_loss", "weight": 0.7},
-            {"id": "burnout_at_work", "weight": 0.5},
-            {"id": "mentor_and_protege", "weight": 0.5}
+            { "id": "becoming_a_manager", "weight": 0.8 },
+            { "id": "grief_and_loss", "weight": 0.7 },
+            { "id": "burnout_at_work", "weight": 0.5 },
+            { "id": "mentor_and_protege", "weight": 0.5 }
           ],
           "conflicts": ["control_vs_trust", "holding_on_vs_letting_go"],
-          "emotions": {"start": ["overwhelm", "anxiety"], "middle": ["dread", "grief"], "end": ["acceptance", "peace"]},
+          "emotions": {
+            "start": ["overwhelm", "anxiety"],
+            "middle": ["dread", "grief"],
+            "end": ["acceptance", "peace"]
+          },
           "ending_tone": "bittersweet",
           "intensity": "heavy",
-          "warnings": ["death_of_loved_one", "grief", "war_and_violence", "graphic_gore", "addiction"],
+          "warnings": [
+            "death_of_loved_one",
+            "grief",
+            "war_and_violence",
+            "graphic_gore",
+            "addiction"
+          ],
           "example_user_messages": [
             "I manage a team and every time I send someone into a risky situation I lie awake worrying.",
             "My oldest friend keeps volunteering for the hardest assignments and I can't bring myself to stop him.",

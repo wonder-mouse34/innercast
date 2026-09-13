@@ -6,11 +6,11 @@
       "name": "BoJack Horseman",
       "role": "The washed-up star of a hit 90s family sitcom, now in his fifties, drinking on his couch in a Hollywood hills mansion and trying to get his career and his life going again.",
       "relations": [
-        {"target": "char:bojack/diane_nguyen", "relation": "friend"},
-        {"target": "char:bojack/princess_carolyn", "relation": "ex_partner"},
-        {"target": "char:bojack/todd_chavez", "relation": "friend"},
-        {"target": "char:bojack/mr_peanutbutter", "relation": "rival"},
-        {"target": "char:bojack/hollyhock", "relation": "sibling"}
+        { "target": "char:bojack/diane_nguyen", "relation": "friend" },
+        { "target": "char:bojack/princess_carolyn", "relation": "ex_partner" },
+        { "target": "char:bojack/todd_chavez", "relation": "friend" },
+        { "target": "char:bojack/mr_peanutbutter", "relation": "rival" },
+        { "target": "char:bojack/hollyhock", "relation": "sibling" }
       ],
       "arcs": [
         {
@@ -29,16 +29,27 @@
           "start_at": "S1E1",
           "span": "S1-S6",
           "situations": [
-            {"id": "identity_and_self_acceptance", "weight": 0.8},
-            {"id": "loneliness", "weight": 0.8},
-            {"id": "redemption_after_mistakes", "weight": 0.8},
-            {"id": "midlife_reinvention", "weight": 0.5}
+            { "id": "identity_and_self_acceptance", "weight": 0.8 },
+            { "id": "loneliness", "weight": 0.8 },
+            { "id": "redemption_after_mistakes", "weight": 0.8 },
+            { "id": "midlife_reinvention", "weight": 0.5 }
           ],
           "conflicts": ["past_vs_future", "independence_vs_connection"],
-          "emotions": {"start": ["numbness", "loneliness", "shame"], "middle": ["guilt", "longing", "self_doubt"], "end": ["grief", "acceptance"]},
+          "emotions": {
+            "start": ["numbness", "loneliness", "shame"],
+            "middle": ["guilt", "longing", "self_doubt"],
+            "end": ["grief", "acceptance"]
+          },
           "ending_tone": "bittersweet",
           "intensity": "heavy",
-          "warnings": ["addiction", "abuse", "self_harm_or_suicide", "death_of_loved_one", "grief", "betrayal"],
+          "warnings": [
+            "addiction",
+            "abuse",
+            "self_harm_or_suicide",
+            "death_of_loved_one",
+            "grief",
+            "betrayal"
+          ],
           "example_user_messages": [
             "I keep pushing away anyone who actually cares about me and then I'm furious that I'm alone.",
             "Everything good in my life happened twenty years ago and I don't know who I am now.",
@@ -80,15 +91,26 @@
           "start_at": "S2E1",
           "span": "S2-S5",
           "situations": [
-            {"id": "difficult_parent", "weight": 0.95},
-            {"id": "caring_for_family", "weight": 0.5},
-            {"id": "grief_and_loss", "weight": 0.5}
+            { "id": "difficult_parent", "weight": 0.95 },
+            { "id": "caring_for_family", "weight": 0.5 },
+            { "id": "grief_and_loss", "weight": 0.5 }
           ],
           "conflicts": ["revenge_vs_forgiveness", "holding_on_vs_letting_go"],
-          "emotions": {"start": ["resentment", "longing", "shame"], "middle": ["anger", "confusion", "grief"], "end": ["grief", "acceptance"]},
+          "emotions": {
+            "start": ["resentment", "longing", "shame"],
+            "middle": ["anger", "confusion", "grief"],
+            "end": ["grief", "acceptance"]
+          },
           "ending_tone": "bittersweet",
           "intensity": "heavy",
-          "warnings": ["abuse", "addiction", "serious_illness", "child_endangerment", "death_of_loved_one", "grief"],
+          "warnings": [
+            "abuse",
+            "addiction",
+            "serious_illness",
+            "child_endangerment",
+            "death_of_loved_one",
+            "grief"
+          ],
           "example_user_messages": [
             "I'm 50 and I still want my mom to tell me she's proud of me. She never will.",
             "My parent was cruel to me my whole childhood and now they're old and sick and I'm supposed to take care of them.",
@@ -123,12 +145,16 @@
           "start_at": "S5",
           "span": "S5-S6",
           "situations": [
-            {"id": "addiction_and_recovery", "weight": 0.95},
-            {"id": "redemption_after_mistakes", "weight": 0.9},
-            {"id": "starting_over", "weight": 0.5}
+            { "id": "addiction_and_recovery", "weight": 0.95 },
+            { "id": "redemption_after_mistakes", "weight": 0.9 },
+            { "id": "starting_over", "weight": 0.5 }
           ],
           "conflicts": ["past_vs_future", "truth_vs_protecting_others"],
-          "emotions": {"start": ["numbness", "shame", "dread"], "middle": ["hope", "determination", "guilt"], "end": ["grief", "loneliness", "acceptance"]},
+          "emotions": {
+            "start": ["numbness", "shame", "dread"],
+            "middle": ["hope", "determination", "guilt"],
+            "end": ["grief", "loneliness", "acceptance"]
+          },
           "ending_tone": "bittersweet",
           "intensity": "heavy",
           "warnings": ["addiction", "abuse", "self_harm_or_suicide", "death_of_loved_one", "grief"],
@@ -160,10 +186,10 @@
       "name": "Diane Nguyen",
       "role": "A thoughtful, idealistic writer from Boston, hired to ghostwrite BoJack's memoir, who lives with her cheerful celebrity boyfriend, Mr. Peanutbutter.",
       "relations": [
-        {"target": "char:bojack/bojack_horseman", "relation": "friend"},
-        {"target": "char:bojack/mr_peanutbutter", "relation": "ex_partner"},
-        {"target": "char:bojack/princess_carolyn", "relation": "colleague"},
-        {"target": "char:bojack/todd_chavez", "relation": "friend"}
+        { "target": "char:bojack/bojack_horseman", "relation": "friend" },
+        { "target": "char:bojack/mr_peanutbutter", "relation": "ex_partner" },
+        { "target": "char:bojack/princess_carolyn", "relation": "colleague" },
+        { "target": "char:bojack/todd_chavez", "relation": "friend" }
       ],
       "arcs": [
         {
@@ -182,13 +208,17 @@
           "start_at": "S1E1",
           "span": "S1-S6",
           "situations": [
-            {"id": "career_change", "weight": 0.7},
-            {"id": "identity_and_self_acceptance", "weight": 0.7},
-            {"id": "imposter_syndrome", "weight": 0.5},
-            {"id": "burnout_at_work", "weight": 0.4}
+            { "id": "career_change", "weight": 0.7 },
+            { "id": "identity_and_self_acceptance", "weight": 0.7 },
+            { "id": "imposter_syndrome", "weight": 0.5 },
+            { "id": "burnout_at_work", "weight": 0.4 }
           ],
           "conflicts": ["perfectionism_vs_good_enough", "belonging_vs_integrity"],
-          "emotions": {"start": ["restlessness", "curiosity", "self_doubt"], "middle": ["inadequacy", "burnout", "loneliness"], "end": ["relief", "peace", "joy"]},
+          "emotions": {
+            "start": ["restlessness", "curiosity", "self_doubt"],
+            "middle": ["inadequacy", "burnout", "loneliness"],
+            "end": ["relief", "peace", "joy"]
+          },
           "ending_tone": "hopeful",
           "intensity": "moderate",
           "warnings": ["abuse", "war_and_violence", "betrayal"],
@@ -228,13 +258,17 @@
           "start_at": "S1E5",
           "span": "S1-S6",
           "situations": [
-            {"id": "difficult_parent", "weight": 0.7},
-            {"id": "identity_and_self_acceptance", "weight": 0.6},
-            {"id": "illness_or_injury", "weight": 0.4},
-            {"id": "confidence_struggle", "weight": 0.4}
+            { "id": "difficult_parent", "weight": 0.7 },
+            { "id": "identity_and_self_acceptance", "weight": 0.6 },
+            { "id": "illness_or_injury", "weight": 0.4 },
+            { "id": "confidence_struggle", "weight": 0.4 }
           ],
           "conflicts": ["past_vs_future", "self_vs_family_expectations"],
-          "emotions": {"start": ["rejection", "resentment", "loneliness"], "middle": ["numbness", "overwhelm", "inadequacy"], "end": ["relief", "hope", "peace"]},
+          "emotions": {
+            "start": ["rejection", "resentment", "loneliness"],
+            "middle": ["numbness", "overwhelm", "inadequacy"],
+            "end": ["relief", "hope", "peace"]
+          },
           "ending_tone": "hopeful",
           "intensity": "heavy",
           "warnings": ["abuse", "death_of_loved_one", "self_harm_or_suicide"],
@@ -275,12 +309,16 @@
           "start_at": "S1E1",
           "span": "S1-S5",
           "situations": [
-            {"id": "divorce", "weight": 0.8},
-            {"id": "identity_and_self_acceptance", "weight": 0.5},
-            {"id": "loneliness", "weight": 0.5}
+            { "id": "divorce", "weight": 0.8 },
+            { "id": "identity_and_self_acceptance", "weight": 0.5 },
+            { "id": "loneliness", "weight": 0.5 }
           ],
           "conflicts": ["independence_vs_connection", "belonging_vs_integrity"],
-          "emotions": {"start": ["love", "hope", "self_doubt"], "middle": ["resentment", "loneliness", "guilt"], "end": ["grief", "relief", "acceptance"]},
+          "emotions": {
+            "start": ["love", "hope", "self_doubt"],
+            "middle": ["resentment", "loneliness", "guilt"],
+            "end": ["grief", "relief", "acceptance"]
+          },
           "ending_tone": "bittersweet",
           "intensity": "moderate",
           "warnings": ["betrayal"],
@@ -311,10 +349,10 @@
       "name": "Princess Carolyn",
       "role": "BoJack's tireless, fast-talking talent agent and on-again, off-again girlfriend, who can juggle a dozen crises at once but never finds time for herself.",
       "relations": [
-        {"target": "char:bojack/bojack_horseman", "relation": "ex_partner"},
-        {"target": "char:bojack/diane_nguyen", "relation": "colleague"},
-        {"target": "char:bojack/todd_chavez", "relation": "friend"},
-        {"target": "char:bojack/mr_peanutbutter", "relation": "colleague"}
+        { "target": "char:bojack/bojack_horseman", "relation": "ex_partner" },
+        { "target": "char:bojack/diane_nguyen", "relation": "colleague" },
+        { "target": "char:bojack/todd_chavez", "relation": "friend" },
+        { "target": "char:bojack/mr_peanutbutter", "relation": "colleague" }
       ],
       "arcs": [
         {
@@ -333,12 +371,16 @@
           "start_at": "S1E1",
           "span": "S1-S6",
           "situations": [
-            {"id": "burnout_at_work", "weight": 0.8},
-            {"id": "starting_a_business", "weight": 0.6},
-            {"id": "becoming_a_manager", "weight": 0.5}
+            { "id": "burnout_at_work", "weight": 0.8 },
+            { "id": "starting_a_business", "weight": 0.6 },
+            { "id": "becoming_a_manager", "weight": 0.5 }
           ],
           "conflicts": ["career_vs_relationships", "control_vs_trust"],
-          "emotions": {"start": ["determination", "burnout", "loneliness"], "middle": ["overwhelm", "inadequacy", "resentment"], "end": ["love", "acceptance", "peace"]},
+          "emotions": {
+            "start": ["determination", "burnout", "loneliness"],
+            "middle": ["overwhelm", "inadequacy", "resentment"],
+            "end": ["love", "acceptance", "peace"]
+          },
           "ending_tone": "hopeful",
           "intensity": "moderate",
           "warnings": ["betrayal"],
@@ -378,12 +420,16 @@
           "start_at": "S4E1",
           "span": "S4-S6",
           "situations": [
-            {"id": "becoming_a_parent", "weight": 0.9},
-            {"id": "grief_and_loss", "weight": 0.6},
-            {"id": "breakup", "weight": 0.3}
+            { "id": "becoming_a_parent", "weight": 0.9 },
+            { "id": "grief_and_loss", "weight": 0.6 },
+            { "id": "breakup", "weight": 0.3 }
           ],
           "conflicts": ["career_vs_relationships", "perfectionism_vs_good_enough"],
-          "emotions": {"start": ["hope", "longing", "anxiety"], "middle": ["grief", "shame", "overwhelm"], "end": ["love", "acceptance", "joy"]},
+          "emotions": {
+            "start": ["hope", "longing", "anxiety"],
+            "middle": ["grief", "shame", "overwhelm"],
+            "end": ["love", "acceptance", "joy"]
+          },
           "ending_tone": "hopeful",
           "intensity": "heavy",
           "warnings": ["grief", "medical_trauma"],
@@ -413,10 +459,10 @@
       "name": "Todd Chavez",
       "role": "A sweet, aimless twenty-something who has been crashing on BoJack's couch for years, full of wild schemes and blindly loyal to his grumpy host.",
       "relations": [
-        {"target": "char:bojack/bojack_horseman", "relation": "friend"},
-        {"target": "char:bojack/princess_carolyn", "relation": "friend"},
-        {"target": "char:bojack/diane_nguyen", "relation": "friend"},
-        {"target": "char:bojack/mr_peanutbutter", "relation": "friend"}
+        { "target": "char:bojack/bojack_horseman", "relation": "friend" },
+        { "target": "char:bojack/princess_carolyn", "relation": "friend" },
+        { "target": "char:bojack/diane_nguyen", "relation": "friend" },
+        { "target": "char:bojack/mr_peanutbutter", "relation": "friend" }
       ],
       "arcs": [
         {
@@ -435,13 +481,17 @@
           "start_at": "S1E1",
           "span": "S1-S6",
           "situations": [
-            {"id": "finding_your_people", "weight": 0.8},
-            {"id": "coming_of_age", "weight": 0.6},
-            {"id": "friendship_ending", "weight": 0.5},
-            {"id": "difficult_parent", "weight": 0.4}
+            { "id": "finding_your_people", "weight": 0.8 },
+            { "id": "coming_of_age", "weight": 0.6 },
+            { "id": "friendship_ending", "weight": 0.5 },
+            { "id": "difficult_parent", "weight": 0.4 }
           ],
           "conflicts": ["belonging_vs_integrity", "independence_vs_connection"],
-          "emotions": {"start": ["restlessness", "curiosity", "loneliness"], "middle": ["betrayal", "confusion", "determination"], "end": ["belonging", "self_respect", "joy"]},
+          "emotions": {
+            "start": ["restlessness", "curiosity", "loneliness"],
+            "middle": ["betrayal", "confusion", "determination"],
+            "end": ["belonging", "self_respect", "joy"]
+          },
           "ending_tone": "hopeful",
           "intensity": "moderate",
           "warnings": ["betrayal"],
@@ -481,12 +531,16 @@
           "start_at": "S3E5",
           "span": "S3-S6",
           "situations": [
-            {"id": "identity_and_self_acceptance", "weight": 0.95},
-            {"id": "finding_your_people", "weight": 0.6},
-            {"id": "coming_of_age", "weight": 0.4}
+            { "id": "identity_and_self_acceptance", "weight": 0.95 },
+            { "id": "finding_your_people", "weight": 0.6 },
+            { "id": "coming_of_age", "weight": 0.4 }
           ],
           "conflicts": ["fitting_in_vs_standing_out", "belonging_vs_integrity"],
-          "emotions": {"start": ["confusion", "self_doubt", "loneliness"], "middle": ["fear", "relief", "curiosity"], "end": ["acceptance", "belonging", "joy"]},
+          "emotions": {
+            "start": ["confusion", "self_doubt", "loneliness"],
+            "middle": ["fear", "relief", "curiosity"],
+            "end": ["acceptance", "belonging", "joy"]
+          },
           "ending_tone": "hopeful",
           "intensity": "light",
           "warnings": ["betrayal"],
@@ -516,10 +570,10 @@
       "name": "Mr. Peanutbutter",
       "role": "A relentlessly cheerful, beloved TV star, BoJack's old sitcom rival, who lives with his writer girlfriend Diane and keeps trying to be BoJack's friend.",
       "relations": [
-        {"target": "char:bojack/diane_nguyen", "relation": "ex_partner"},
-        {"target": "char:bojack/bojack_horseman", "relation": "rival"},
-        {"target": "char:bojack/todd_chavez", "relation": "friend"},
-        {"target": "char:bojack/princess_carolyn", "relation": "colleague"}
+        { "target": "char:bojack/diane_nguyen", "relation": "ex_partner" },
+        { "target": "char:bojack/bojack_horseman", "relation": "rival" },
+        { "target": "char:bojack/todd_chavez", "relation": "friend" },
+        { "target": "char:bojack/princess_carolyn", "relation": "colleague" }
       ],
       "arcs": [
         {
@@ -538,13 +592,17 @@
           "start_at": "S1E1",
           "span": "S1-S6",
           "situations": [
-            {"id": "divorce", "weight": 0.7},
-            {"id": "identity_and_self_acceptance", "weight": 0.7},
-            {"id": "loneliness", "weight": 0.6},
-            {"id": "midlife_reinvention", "weight": 0.3}
+            { "id": "divorce", "weight": 0.7 },
+            { "id": "identity_and_self_acceptance", "weight": 0.7 },
+            { "id": "loneliness", "weight": 0.6 },
+            { "id": "midlife_reinvention", "weight": 0.3 }
           ],
           "conflicts": ["independence_vs_connection", "truth_vs_protecting_others"],
-          "emotions": {"start": ["joy", "love", "restlessness"], "middle": ["loneliness", "guilt", "confusion"], "end": ["acceptance", "self_respect", "hope"]},
+          "emotions": {
+            "start": ["joy", "love", "restlessness"],
+            "middle": ["loneliness", "guilt", "confusion"],
+            "end": ["acceptance", "self_respect", "hope"]
+          },
           "ending_tone": "bittersweet",
           "intensity": "moderate",
           "warnings": ["betrayal"],
@@ -573,9 +631,7 @@
       "id": "char:bojack/hollyhock",
       "name": "Hollyhock",
       "role": "A curious, awkward and warm seventeen-year-old raised by eight loving adoptive dads, who comes to Los Angeles in her gap year to find her biological family.",
-      "relations": [
-        {"target": "char:bojack/bojack_horseman", "relation": "sibling"}
-      ],
+      "relations": [{ "target": "char:bojack/bojack_horseman", "relation": "sibling" }],
       "arcs": [
         {
           "id": "arc:bojack/hollyhock/searching_for_where_she_comes_from",
@@ -593,13 +649,17 @@
           "start_at": "S4E3",
           "span": "S4-S5",
           "situations": [
-            {"id": "identity_and_self_acceptance", "weight": 0.8},
-            {"id": "coming_of_age", "weight": 0.7},
-            {"id": "leaving_home", "weight": 0.5},
-            {"id": "confidence_struggle", "weight": 0.4}
+            { "id": "identity_and_self_acceptance", "weight": 0.8 },
+            { "id": "coming_of_age", "weight": 0.7 },
+            { "id": "leaving_home", "weight": 0.5 },
+            { "id": "confidence_struggle", "weight": 0.4 }
           ],
           "conflicts": ["self_vs_family_expectations", "past_vs_future"],
-          "emotions": {"start": ["curiosity", "hope", "guilt"], "middle": ["self_doubt", "anxiety", "fear"], "end": ["belonging", "relief", "hope"]},
+          "emotions": {
+            "start": ["curiosity", "hope", "guilt"],
+            "middle": ["self_doubt", "anxiety", "fear"],
+            "end": ["belonging", "relief", "hope"]
+          },
           "ending_tone": "hopeful",
           "intensity": "heavy",
           "warnings": ["child_endangerment", "medical_trauma"],
@@ -638,13 +698,17 @@
           "start_at": "S5",
           "span": "S5-S6",
           "situations": [
-            {"id": "coming_of_age", "weight": 0.6},
-            {"id": "friendship_ending", "weight": 0.5},
-            {"id": "illness_or_injury", "weight": 0.4},
-            {"id": "family_expectations", "weight": 0.4}
+            { "id": "coming_of_age", "weight": 0.6 },
+            { "id": "friendship_ending", "weight": 0.5 },
+            { "id": "illness_or_injury", "weight": 0.4 },
+            { "id": "family_expectations", "weight": 0.4 }
           ],
           "conflicts": ["holding_on_vs_letting_go", "independence_vs_connection"],
-          "emotions": {"start": ["anxiety", "love", "fear"], "middle": ["confusion", "betrayal", "anger"], "end": ["self_respect", "grief"]},
+          "emotions": {
+            "start": ["anxiety", "love", "fear"],
+            "middle": ["confusion", "betrayal", "anger"],
+            "end": ["self_respect", "grief"]
+          },
           "ending_tone": "bittersweet",
           "intensity": "moderate",
           "warnings": ["addiction", "betrayal", "medical_trauma"],

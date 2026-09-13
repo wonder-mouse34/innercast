@@ -1,13 +1,13 @@
 // zod schema for graph.json (InnerCast character-arc graph).
 // Usage: const graph = GraphSchema.parse(require("./graph.json"));
-import { z } from "zod";
+import { z } from 'zod';
 
-const EndingTone = z.enum(["hopeful", "bittersweet", "tragic", "ambiguous"]);
-const Intensity = z.enum(["light", "moderate", "heavy"]);
+const EndingTone = z.enum(['hopeful', 'bittersweet', 'tragic', 'ambiguous']);
+const Intensity = z.enum(['light', 'moderate', 'heavy']);
 
 export const ShowNode = z.object({
-  id: z.string().startsWith("show:"),
-  type: z.literal("show"),
+  id: z.string().startsWith('show:'),
+  type: z.literal('show'),
   name: z.string(),
   format: z.string(),
   genres: z.array(z.string()),
@@ -19,18 +19,18 @@ export const ShowNode = z.object({
 });
 
 export const CharacterNode = z.object({
-  id: z.string().startsWith("char:"),
-  type: z.literal("character"),
+  id: z.string().startsWith('char:'),
+  type: z.literal('character'),
   name: z.string(),
-  show: z.string().startsWith("show:"),
+  show: z.string().startsWith('show:'),
   role: z.string(), // spoiler-safe
 });
 
 export const ArcNode = z.object({
-  id: z.string().startsWith("arc:"),
-  type: z.literal("arc"),
-  character: z.string().startsWith("char:"),
-  show: z.string().startsWith("show:"),
+  id: z.string().startsWith('arc:'),
+  type: z.literal('arc'),
+  character: z.string().startsWith('char:'),
+  show: z.string().startsWith('show:'),
   // spoiler-safe, user-facing
   title: z.string(),
   literal_situation: z.string(),
@@ -57,33 +57,41 @@ export const ArcNode = z.object({
 const LabelNode = (type: string) =>
   z.object({ id: z.string().startsWith(`${type}:`), type: z.literal(type), label: z.string() });
 
-export const PatternNode = LabelNode("pattern").extend({ description: z.string() });
+export const PatternNode = LabelNode('pattern').extend({ description: z.string() });
 
-export const Node = z.discriminatedUnion("type", [
+export const Node = z.discriminatedUnion('type', [
   ShowNode,
   CharacterNode,
   ArcNode,
   PatternNode,
-  LabelNode("emotion"),
-  LabelNode("conflict"),
-  LabelNode("situation"),
-  LabelNode("warning"),
+  LabelNode('emotion'),
+  LabelNode('conflict'),
+  LabelNode('situation'),
+  LabelNode('warning'),
 ]);
 
 export const Edge = z.object({
   source: z.string(),
   target: z.string(),
   type: z.enum([
-    "IN_SHOW", "HAS_ARC", "INSTANCE_OF", "BROADER", "ABOUT", "FACES",
-    "FEELS", "HAS_WARNING", "RELATES_TO", "RESONATES_WITH",
+    'IN_SHOW',
+    'HAS_ARC',
+    'INSTANCE_OF',
+    'BROADER',
+    'ABOUT',
+    'FACES',
+    'FEELS',
+    'HAS_WARNING',
+    'RELATES_TO',
+    'RESONATES_WITH',
   ]),
   props: z
     .object({
-      weight: z.number().optional(),                                  // ABOUT
-      phase: z.enum(["start", "middle", "end"]).optional(),           // FEELS
-      relation: z.string().optional(),                                // RELATES_TO
-      bridge: z.string().optional(),                                  // RESONATES_WITH
-      arcs: z.number().optional(),                                    // show-level HAS_WARNING
+      weight: z.number().optional(), // ABOUT
+      phase: z.enum(['start', 'middle', 'end']).optional(), // FEELS
+      relation: z.string().optional(), // RELATES_TO
+      bridge: z.string().optional(), // RESONATES_WITH
+      arcs: z.number().optional(), // show-level HAS_WARNING
       spoiler: z.boolean().optional(), // true = may reveal plot; hide from the answer-writing LLM
     })
     .optional(),

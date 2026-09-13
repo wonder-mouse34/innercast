@@ -9,7 +9,7 @@ The Bilt app never talks to Qwen and never contains the knowledge graph. All the
 
 ## Before you start (these are not Bilt messages)
 
-1. The InnerCast API is running (see the README, *Deploy on a Linux server*) and you have:
+1. The InnerCast API is running (see the README, _Deploy on a Linux server_) and you have:
    - its **address**: `INNERCAST_URL.txt` on the server, e.g. `https://something.trycloudflare.com`
    - its **key**: the `INNERCAST_API_KEY=ic-...` line in `qwen_credentials.env` on the server
 2. Check it works: open `<address>/health` in a browser. It should show `{"ok": true, "shows": 28, ...}`.
@@ -25,11 +25,12 @@ each build to finish and check the live preview before sending the next one.
 Build a mobile app called InnerCast for people going through a life change, like a new job, a breakup,
 grief, moving, or family trouble. The user describes what they are going through in their own words, and
 InnerCast recommends TV characters whose story mirrors theirs, without spoilers. Screens:
+
 1. Chat (home screen): a conversation with InnerCast, with a text box and a send button at the bottom.
 2. About: explains what InnerCast is, and shows this note: "InnerCast is for entertainment and reflection,
    not mental-health treatment. If you are in crisis, please contact local emergency services or a crisis
    line: 988 in the US, 116 123 in the UK and Ireland, 112 in the EU."
-For now, reply to every chat message with the placeholder text "InnerCast is thinking about this…".
+   For now, reply to every chat message with the placeholder text "InnerCast is thinking about this…".
 
 ### Message 2 — the two secrets
 
@@ -71,6 +72,7 @@ block quotes (>) and horizontal rules (---). Long answers must scroll inside the
 On the Chat screen, when there are no messages yet, show a short welcome: "Tell me what you're going
 through, and I'll find a TV character who has lived it — no spoilers." Below it, show three tappable
 example messages that send themselves when tapped:
+
 - "I just got promoted to lead my old friends and I feel like a fraud."
 - "My friend and my boss had a fight and I don't know whose side to take."
 - "I moved to a new city and I'm lonely."

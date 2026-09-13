@@ -6,13 +6,13 @@
       "name": "Eleven",
       "role": "A near-silent, shaven-headed girl with a number tattooed on her arm who has fled the secret government laboratory where she was raised as a test subject.",
       "relations": [
-        {"target": "char:stranger_things/mike_wheeler", "relation": "partner"},
-        {"target": "char:stranger_things/jim_hopper", "relation": "parent"},
-        {"target": "char:stranger_things/joyce_byers", "relation": "parent"},
-        {"target": "char:stranger_things/will_byers", "relation": "sibling"},
-        {"target": "char:stranger_things/max_mayfield", "relation": "friend"},
-        {"target": "char:stranger_things/dustin_henderson", "relation": "friend"},
-        {"target": "char:stranger_things/steve_harrington", "relation": "friend"}
+        { "target": "char:stranger_things/mike_wheeler", "relation": "partner" },
+        { "target": "char:stranger_things/jim_hopper", "relation": "parent" },
+        { "target": "char:stranger_things/joyce_byers", "relation": "parent" },
+        { "target": "char:stranger_things/will_byers", "relation": "sibling" },
+        { "target": "char:stranger_things/max_mayfield", "relation": "friend" },
+        { "target": "char:stranger_things/dustin_henderson", "relation": "friend" },
+        { "target": "char:stranger_things/steve_harrington", "relation": "friend" }
       ],
       "arcs": [
         {
@@ -31,13 +31,17 @@
           "start_at": "S1E1",
           "span": "S1-S2",
           "situations": [
-            {"id": "finding_your_people", "weight": 0.9},
-            {"id": "difficult_parent", "weight": 0.6},
-            {"id": "identity_and_self_acceptance", "weight": 0.5},
-            {"id": "coming_of_age", "weight": 0.4}
+            { "id": "finding_your_people", "weight": 0.9 },
+            { "id": "difficult_parent", "weight": 0.6 },
+            { "id": "identity_and_self_acceptance", "weight": 0.5 },
+            { "id": "coming_of_age", "weight": 0.4 }
           ],
           "conflicts": ["control_vs_trust", "past_vs_future"],
-          "emotions": {"start": ["fear", "loneliness", "confusion"], "middle": ["belonging", "anger", "longing"], "end": ["love", "belonging", "hope"]},
+          "emotions": {
+            "start": ["fear", "loneliness", "confusion"],
+            "middle": ["belonging", "anger", "longing"],
+            "end": ["love", "belonging", "hope"]
+          },
           "ending_tone": "hopeful",
           "intensity": "heavy",
           "warnings": ["abuse", "child_endangerment", "war_and_violence", "graphic_gore"],
@@ -79,16 +83,29 @@
           "start_at": "S4E1",
           "span": "S4-S5",
           "situations": [
-            {"id": "identity_and_self_acceptance", "weight": 1.0},
-            {"id": "confidence_struggle", "weight": 0.8},
-            {"id": "responsibility_you_didnt_ask_for", "weight": 0.7},
-            {"id": "moving_somewhere_new", "weight": 0.4}
+            { "id": "identity_and_self_acceptance", "weight": 1.0 },
+            { "id": "confidence_struggle", "weight": 0.8 },
+            { "id": "responsibility_you_didnt_ask_for", "weight": 0.7 },
+            { "id": "moving_somewhere_new", "weight": 0.4 }
           ],
           "conflicts": ["past_vs_future", "duty_vs_desire"],
-          "emotions": {"start": ["shame", "loneliness", "inadequacy"], "middle": ["anger", "fear", "determination"], "end": ["self_respect", "love", "acceptance"]},
+          "emotions": {
+            "start": ["shame", "loneliness", "inadequacy"],
+            "middle": ["anger", "fear", "determination"],
+            "end": ["self_respect", "love", "acceptance"]
+          },
           "ending_tone": "bittersweet",
           "intensity": "heavy",
-          "warnings": ["abuse", "medical_trauma", "child_endangerment", "war_and_violence", "graphic_gore", "death_of_main_character", "death_of_loved_one", "grief"],
+          "warnings": [
+            "abuse",
+            "medical_trauma",
+            "child_endangerment",
+            "war_and_violence",
+            "graphic_gore",
+            "death_of_main_character",
+            "death_of_loved_one",
+            "grief"
+          ],
           "example_user_messages": [
             "I've been telling everyone I'm doing great at my new school, but honestly I get bullied every day and eat lunch alone.",
             "I used to be the best at what I did, and since my injury I feel like a nobody.",
@@ -117,12 +134,12 @@
       "name": "Mike Wheeler",
       "role": "The bossy, fiercely loyal leader of a group of nerdy middle-school friends who spend their nights playing Dungeons & Dragons in his basement.",
       "relations": [
-        {"target": "char:stranger_things/eleven", "relation": "partner"},
-        {"target": "char:stranger_things/will_byers", "relation": "friend"},
-        {"target": "char:stranger_things/dustin_henderson", "relation": "friend"},
-        {"target": "char:stranger_things/max_mayfield", "relation": "friend"},
-        {"target": "char:stranger_things/steve_harrington", "relation": "friend"},
-        {"target": "char:stranger_things/jim_hopper", "relation": "mentor"}
+        { "target": "char:stranger_things/eleven", "relation": "partner" },
+        { "target": "char:stranger_things/will_byers", "relation": "friend" },
+        { "target": "char:stranger_things/dustin_henderson", "relation": "friend" },
+        { "target": "char:stranger_things/max_mayfield", "relation": "friend" },
+        { "target": "char:stranger_things/steve_harrington", "relation": "friend" },
+        { "target": "char:stranger_things/jim_hopper", "relation": "mentor" }
       ],
       "arcs": [
         {
@@ -141,13 +158,17 @@
           "start_at": "S1E1",
           "span": "S1-S2",
           "situations": [
-            {"id": "coming_of_age", "weight": 0.7},
-            {"id": "finding_your_people", "weight": 0.6},
-            {"id": "falling_for_someone_unexpected", "weight": 0.6},
-            {"id": "grief_and_loss", "weight": 0.5}
+            { "id": "coming_of_age", "weight": 0.7 },
+            { "id": "finding_your_people", "weight": 0.6 },
+            { "id": "falling_for_someone_unexpected", "weight": 0.6 },
+            { "id": "grief_and_loss", "weight": 0.5 }
           ],
           "conflicts": ["holding_on_vs_letting_go", "truth_vs_protecting_others"],
-          "emotions": {"start": ["fear", "determination", "anxiety"], "middle": ["anger", "longing", "loneliness"], "end": ["relief", "love", "joy"]},
+          "emotions": {
+            "start": ["fear", "determination", "anxiety"],
+            "middle": ["anger", "longing", "loneliness"],
+            "end": ["relief", "love", "joy"]
+          },
           "ending_tone": "hopeful",
           "intensity": "moderate",
           "warnings": ["child_endangerment", "war_and_violence", "grief"],
@@ -188,16 +209,26 @@
           "start_at": "S4E1",
           "span": "S4-S5",
           "situations": [
-            {"id": "confidence_struggle", "weight": 0.8},
-            {"id": "grief_and_loss", "weight": 0.7},
-            {"id": "long_distance", "weight": 0.6},
-            {"id": "caring_for_family", "weight": 0.4}
+            { "id": "confidence_struggle", "weight": 0.8 },
+            { "id": "grief_and_loss", "weight": 0.7 },
+            { "id": "long_distance", "weight": 0.6 },
+            { "id": "caring_for_family", "weight": 0.4 }
           ],
           "conflicts": ["holding_on_vs_letting_go", "independence_vs_connection"],
-          "emotions": {"start": ["self_doubt", "inadequacy", "longing"], "middle": ["guilt", "fear", "determination"], "end": ["grief", "hope", "acceptance"]},
+          "emotions": {
+            "start": ["self_doubt", "inadequacy", "longing"],
+            "middle": ["guilt", "fear", "determination"],
+            "end": ["grief", "hope", "acceptance"]
+          },
           "ending_tone": "bittersweet",
           "intensity": "heavy",
-          "warnings": ["death_of_loved_one", "grief", "child_endangerment", "war_and_violence", "graphic_gore"],
+          "warnings": [
+            "death_of_loved_one",
+            "grief",
+            "child_endangerment",
+            "war_and_violence",
+            "graphic_gore"
+          ],
           "example_user_messages": [
             "My girlfriend is so talented and I feel like the boring one. What does she even need me for?",
             "I can say supportive stuff all day but I freeze when I try to tell someone I love them.",
@@ -225,12 +256,12 @@
       "name": "Will Byers",
       "role": "A shy, gentle, artistic boy who loves drawing and Dungeons & Dragons with his three best friends, raised by a hard-working single mother and a protective older brother.",
       "relations": [
-        {"target": "char:stranger_things/joyce_byers", "relation": "parent"},
-        {"target": "char:stranger_things/eleven", "relation": "sibling"},
-        {"target": "char:stranger_things/mike_wheeler", "relation": "friend"},
-        {"target": "char:stranger_things/dustin_henderson", "relation": "friend"},
-        {"target": "char:stranger_things/max_mayfield", "relation": "friend"},
-        {"target": "char:stranger_things/steve_harrington", "relation": "friend"}
+        { "target": "char:stranger_things/joyce_byers", "relation": "parent" },
+        { "target": "char:stranger_things/eleven", "relation": "sibling" },
+        { "target": "char:stranger_things/mike_wheeler", "relation": "friend" },
+        { "target": "char:stranger_things/dustin_henderson", "relation": "friend" },
+        { "target": "char:stranger_things/max_mayfield", "relation": "friend" },
+        { "target": "char:stranger_things/steve_harrington", "relation": "friend" }
       ],
       "arcs": [
         {
@@ -249,16 +280,26 @@
           "start_at": "S2E1",
           "span": "S2",
           "situations": [
-            {"id": "illness_or_injury", "weight": 0.8},
-            {"id": "loneliness", "weight": 0.5},
-            {"id": "identity_and_self_acceptance", "weight": 0.4},
-            {"id": "grief_and_loss", "weight": 0.3}
+            { "id": "illness_or_injury", "weight": 0.8 },
+            { "id": "loneliness", "weight": 0.5 },
+            { "id": "identity_and_self_acceptance", "weight": 0.4 },
+            { "id": "grief_and_loss", "weight": 0.3 }
           ],
           "conflicts": ["truth_vs_protecting_others", "independence_vs_connection"],
-          "emotions": {"start": ["anxiety", "fear", "loneliness"], "middle": ["overwhelm", "dread", "guilt"], "end": ["relief", "grief", "belonging"]},
+          "emotions": {
+            "start": ["anxiety", "fear", "loneliness"],
+            "middle": ["overwhelm", "dread", "guilt"],
+            "end": ["relief", "grief", "belonging"]
+          },
           "ending_tone": "hopeful",
           "intensity": "heavy",
-          "warnings": ["child_endangerment", "medical_trauma", "death_of_loved_one", "grief", "war_and_violence"],
+          "warnings": [
+            "child_endangerment",
+            "medical_trauma",
+            "death_of_loved_one",
+            "grief",
+            "war_and_violence"
+          ],
           "example_user_messages": [
             "Ever since the accident I get flashbacks, and I pretend I'm fine because everyone's so worried about me.",
             "People at school act like I'm a freak since what happened.",
@@ -294,16 +335,26 @@
           "start_at": "S3E1",
           "span": "S3-S5",
           "situations": [
-            {"id": "identity_and_self_acceptance", "weight": 1.0},
-            {"id": "unrequited_love", "weight": 0.7},
-            {"id": "coming_of_age", "weight": 0.6},
-            {"id": "finding_your_people", "weight": 0.4}
+            { "id": "identity_and_self_acceptance", "weight": 1.0 },
+            { "id": "unrequited_love", "weight": 0.7 },
+            { "id": "coming_of_age", "weight": 0.6 },
+            { "id": "finding_your_people", "weight": 0.4 }
           ],
           "conflicts": ["fitting_in_vs_standing_out", "belonging_vs_integrity"],
-          "emotions": {"start": ["loneliness", "rejection", "longing"], "middle": ["shame", "fear", "anxiety"], "end": ["acceptance", "belonging", "freedom"]},
+          "emotions": {
+            "start": ["loneliness", "rejection", "longing"],
+            "middle": ["shame", "fear", "anxiety"],
+            "end": ["acceptance", "belonging", "freedom"]
+          },
           "ending_tone": "hopeful",
           "intensity": "heavy",
-          "warnings": ["child_endangerment", "war_and_violence", "graphic_gore", "death_of_loved_one", "grief"],
+          "warnings": [
+            "child_endangerment",
+            "war_and_violence",
+            "graphic_gore",
+            "death_of_loved_one",
+            "grief"
+          ],
           "example_user_messages": [
             "All my friends have girlfriends now and I just feel left behind.",
             "I've had feelings for my best friend for years and I keep helping him with his relationship instead.",
@@ -332,11 +383,11 @@
       "name": "Dustin Henderson",
       "role": "A funny, curious, science-obsessed kid whose missing teeth, caused by a rare condition, make him a target for bullies, and who plays peacemaker in his friend group.",
       "relations": [
-        {"target": "char:stranger_things/steve_harrington", "relation": "mentor"},
-        {"target": "char:stranger_things/mike_wheeler", "relation": "friend"},
-        {"target": "char:stranger_things/will_byers", "relation": "friend"},
-        {"target": "char:stranger_things/max_mayfield", "relation": "friend"},
-        {"target": "char:stranger_things/eleven", "relation": "friend"}
+        { "target": "char:stranger_things/steve_harrington", "relation": "mentor" },
+        { "target": "char:stranger_things/mike_wheeler", "relation": "friend" },
+        { "target": "char:stranger_things/will_byers", "relation": "friend" },
+        { "target": "char:stranger_things/max_mayfield", "relation": "friend" },
+        { "target": "char:stranger_things/eleven", "relation": "friend" }
       ],
       "arcs": [
         {
@@ -355,13 +406,17 @@
           "start_at": "S2E1",
           "span": "S2-S3",
           "situations": [
-            {"id": "mentor_and_protege", "weight": 1.0},
-            {"id": "confidence_struggle", "weight": 0.6},
-            {"id": "finding_your_people", "weight": 0.6},
-            {"id": "coming_of_age", "weight": 0.4}
+            { "id": "mentor_and_protege", "weight": 1.0 },
+            { "id": "confidence_struggle", "weight": 0.6 },
+            { "id": "finding_your_people", "weight": 0.6 },
+            { "id": "coming_of_age", "weight": 0.4 }
           ],
           "conflicts": ["fitting_in_vs_standing_out", "belonging_vs_integrity"],
-          "emotions": {"start": ["curiosity", "self_doubt", "loneliness"], "middle": ["rejection", "belonging", "determination"], "end": ["confidence", "belonging", "joy"]},
+          "emotions": {
+            "start": ["curiosity", "self_doubt", "loneliness"],
+            "middle": ["rejection", "belonging", "determination"],
+            "end": ["confidence", "belonging", "joy"]
+          },
           "ending_tone": "hopeful",
           "intensity": "moderate",
           "warnings": ["child_endangerment", "war_and_violence", "torture"],
@@ -400,16 +455,26 @@
           "start_at": "S4E1",
           "span": "S4-S5",
           "situations": [
-            {"id": "grief_and_loss", "weight": 0.9},
-            {"id": "standing_up_to_authority", "weight": 0.7},
-            {"id": "finding_your_people", "weight": 0.5},
-            {"id": "friendship_ending", "weight": 0.3}
+            { "id": "grief_and_loss", "weight": 0.9 },
+            { "id": "standing_up_to_authority", "weight": 0.7 },
+            { "id": "finding_your_people", "weight": 0.5 },
+            { "id": "friendship_ending", "weight": 0.3 }
           ],
           "conflicts": ["fitting_in_vs_standing_out", "holding_on_vs_letting_go"],
-          "emotions": {"start": ["belonging", "pride", "determination"], "middle": ["grief", "anger", "resentment"], "end": ["acceptance", "pride", "freedom"]},
+          "emotions": {
+            "start": ["belonging", "pride", "determination"],
+            "middle": ["grief", "anger", "resentment"],
+            "end": ["acceptance", "pride", "freedom"]
+          },
           "ending_tone": "bittersweet",
           "intensity": "heavy",
-          "warnings": ["death_of_loved_one", "grief", "graphic_gore", "war_and_violence", "child_endangerment"],
+          "warnings": [
+            "death_of_loved_one",
+            "grief",
+            "graphic_gore",
+            "war_and_violence",
+            "child_endangerment"
+          ],
           "example_user_messages": [
             "My friend got blamed for something he didn't do and now everyone treats him like a criminal.",
             "Since my friend died I've been so angry at everyone, and I'm pushing my other friends away.",
@@ -438,11 +503,11 @@
       "name": "Max Mayfield",
       "role": "A tough, sarcastic, skateboarding new girl who has just moved to Indiana from California with her mother, stepfather and volatile older stepbrother.",
       "relations": [
-        {"target": "char:stranger_things/eleven", "relation": "friend"},
-        {"target": "char:stranger_things/mike_wheeler", "relation": "friend"},
-        {"target": "char:stranger_things/will_byers", "relation": "friend"},
-        {"target": "char:stranger_things/dustin_henderson", "relation": "friend"},
-        {"target": "char:stranger_things/steve_harrington", "relation": "friend"}
+        { "target": "char:stranger_things/eleven", "relation": "friend" },
+        { "target": "char:stranger_things/mike_wheeler", "relation": "friend" },
+        { "target": "char:stranger_things/will_byers", "relation": "friend" },
+        { "target": "char:stranger_things/dustin_henderson", "relation": "friend" },
+        { "target": "char:stranger_things/steve_harrington", "relation": "friend" }
       ],
       "arcs": [
         {
@@ -461,15 +526,25 @@
           "start_at": "S2E1",
           "span": "S2-S3",
           "situations": [
-            {"id": "finding_your_people", "weight": 0.9},
-            {"id": "moving_somewhere_new", "weight": 0.7},
-            {"id": "difficult_parent", "weight": 0.5}
+            { "id": "finding_your_people", "weight": 0.9 },
+            { "id": "moving_somewhere_new", "weight": 0.7 },
+            { "id": "difficult_parent", "weight": 0.5 }
           ],
           "conflicts": ["independence_vs_connection", "belonging_vs_integrity"],
-          "emotions": {"start": ["loneliness", "anger", "rejection"], "middle": ["belonging", "fear", "confidence"], "end": ["belonging", "grief", "confusion"]},
+          "emotions": {
+            "start": ["loneliness", "anger", "rejection"],
+            "middle": ["belonging", "fear", "confidence"],
+            "end": ["belonging", "grief", "confusion"]
+          },
           "ending_tone": "bittersweet",
           "intensity": "heavy",
-          "warnings": ["abuse", "domestic_violence", "child_endangerment", "death_of_loved_one", "war_and_violence"],
+          "warnings": [
+            "abuse",
+            "domestic_violence",
+            "child_endangerment",
+            "death_of_loved_one",
+            "war_and_violence"
+          ],
           "example_user_messages": [
             "I moved to a new school and the group I want to be friends with keeps whispering and shutting me out.",
             "My stepbrother is really aggressive and I've always just dealt with it on my own.",
@@ -506,16 +581,29 @@
           "start_at": "S4E1",
           "span": "S4-S5",
           "situations": [
-            {"id": "grief_and_loss", "weight": 1.0},
-            {"id": "loneliness", "weight": 0.7},
-            {"id": "illness_or_injury", "weight": 0.5},
-            {"id": "finding_your_people", "weight": 0.4}
+            { "id": "grief_and_loss", "weight": 1.0 },
+            { "id": "loneliness", "weight": 0.7 },
+            { "id": "illness_or_injury", "weight": 0.5 },
+            { "id": "finding_your_people", "weight": 0.4 }
           ],
           "conflicts": ["holding_on_vs_letting_go", "independence_vs_connection"],
-          "emotions": {"start": ["numbness", "guilt", "loneliness"], "middle": ["dread", "fear", "grief"], "end": ["hope", "belonging", "love"]},
+          "emotions": {
+            "start": ["numbness", "guilt", "loneliness"],
+            "middle": ["dread", "fear", "grief"],
+            "end": ["hope", "belonging", "love"]
+          },
           "ending_tone": "hopeful",
           "intensity": "heavy",
-          "warnings": ["grief", "death_of_loved_one", "death_of_main_character", "self_harm_or_suicide", "graphic_gore", "medical_trauma", "serious_illness", "child_endangerment"],
+          "warnings": [
+            "grief",
+            "death_of_loved_one",
+            "death_of_main_character",
+            "self_harm_or_suicide",
+            "graphic_gore",
+            "medical_trauma",
+            "serious_illness",
+            "child_endangerment"
+          ],
           "example_user_messages": [
             "My stepbrother died last year and part of me had wished he'd disappear. I can't forgive myself.",
             "I've shut everyone out since the funeral and I don't know how to let them back in.",
@@ -544,8 +632,8 @@
       "name": "Jim Hopper",
       "role": "The gruff, hard-drinking police chief of a sleepy small town, going through the motions of a job where nothing ever happens while carrying a private grief from his past.",
       "relations": [
-        {"target": "char:stranger_things/eleven", "relation": "child"},
-        {"target": "char:stranger_things/joyce_byers", "relation": "partner"}
+        { "target": "char:stranger_things/eleven", "relation": "child" },
+        { "target": "char:stranger_things/joyce_byers", "relation": "partner" }
       ],
       "arcs": [
         {
@@ -564,16 +652,27 @@
           "start_at": "S1E1",
           "span": "S1",
           "situations": [
-            {"id": "grief_and_loss", "weight": 0.9},
-            {"id": "redemption_after_mistakes", "weight": 0.6},
-            {"id": "addiction_and_recovery", "weight": 0.5},
-            {"id": "responsibility_you_didnt_ask_for", "weight": 0.5}
+            { "id": "grief_and_loss", "weight": 0.9 },
+            { "id": "redemption_after_mistakes", "weight": 0.6 },
+            { "id": "addiction_and_recovery", "weight": 0.5 },
+            { "id": "responsibility_you_didnt_ask_for", "weight": 0.5 }
           ],
           "conflicts": ["past_vs_future", "truth_vs_protecting_others"],
-          "emotions": {"start": ["numbness", "grief", "boredom"], "middle": ["determination", "guilt", "anger"], "end": ["hope", "relief", "determination"]},
+          "emotions": {
+            "start": ["numbness", "grief", "boredom"],
+            "middle": ["determination", "guilt", "anger"],
+            "end": ["hope", "relief", "determination"]
+          },
           "ending_tone": "hopeful",
           "intensity": "heavy",
-          "warnings": ["death_of_loved_one", "grief", "serious_illness", "addiction", "child_endangerment", "war_and_violence"],
+          "warnings": [
+            "death_of_loved_one",
+            "grief",
+            "serious_illness",
+            "addiction",
+            "child_endangerment",
+            "war_and_violence"
+          ],
           "example_user_messages": [
             "Since my daughter passed I just go through the motions. Drink, work, sleep, repeat.",
             "I've been numbing myself for years and something just happened that made me realise I can't keep doing this.",
@@ -610,16 +709,27 @@
           "start_at": "S2E1",
           "span": "S2-S5",
           "situations": [
-            {"id": "becoming_a_parent", "weight": 1.0},
-            {"id": "caring_for_family", "weight": 0.7},
-            {"id": "grief_and_loss", "weight": 0.5},
-            {"id": "midlife_reinvention", "weight": 0.3}
+            { "id": "becoming_a_parent", "weight": 1.0 },
+            { "id": "caring_for_family", "weight": 0.7 },
+            { "id": "grief_and_loss", "weight": 0.5 },
+            { "id": "midlife_reinvention", "weight": 0.3 }
           ],
           "conflicts": ["control_vs_trust", "holding_on_vs_letting_go"],
-          "emotions": {"start": ["anxiety", "anger", "fear"], "middle": ["guilt", "grief", "loneliness"], "end": ["acceptance", "love", "peace"]},
+          "emotions": {
+            "start": ["anxiety", "anger", "fear"],
+            "middle": ["guilt", "grief", "loneliness"],
+            "end": ["acceptance", "love", "peace"]
+          },
           "ending_tone": "bittersweet",
           "intensity": "heavy",
-          "warnings": ["death_of_loved_one", "grief", "torture", "war_and_violence", "child_endangerment", "graphic_gore"],
+          "warnings": [
+            "death_of_loved_one",
+            "grief",
+            "torture",
+            "war_and_violence",
+            "child_endangerment",
+            "graphic_gore"
+          ],
           "example_user_messages": [
             "My teenager says I'm suffocating her, but I'm just terrified something will happen to her.",
             "I lost a child years ago and now I can't stop being overprotective with my adopted daughter.",
@@ -648,9 +758,9 @@
       "name": "Joyce Byers",
       "role": "A frazzled, chain-smoking single mother of two who works long hours at the local general store to keep her small family afloat.",
       "relations": [
-        {"target": "char:stranger_things/will_byers", "relation": "child"},
-        {"target": "char:stranger_things/eleven", "relation": "child"},
-        {"target": "char:stranger_things/jim_hopper", "relation": "partner"}
+        { "target": "char:stranger_things/will_byers", "relation": "child" },
+        { "target": "char:stranger_things/eleven", "relation": "child" },
+        { "target": "char:stranger_things/jim_hopper", "relation": "partner" }
       ],
       "arcs": [
         {
@@ -669,12 +779,16 @@
           "start_at": "S1E1",
           "span": "S1",
           "situations": [
-            {"id": "caring_for_family", "weight": 1.0},
-            {"id": "standing_up_to_authority", "weight": 0.7},
-            {"id": "grief_and_loss", "weight": 0.5}
+            { "id": "caring_for_family", "weight": 1.0 },
+            { "id": "standing_up_to_authority", "weight": 0.7 },
+            { "id": "grief_and_loss", "weight": 0.5 }
           ],
           "conflicts": ["holding_on_vs_letting_go", "belonging_vs_integrity"],
-          "emotions": {"start": ["fear", "anxiety", "overwhelm"], "middle": ["determination", "anger", "loneliness"], "end": ["relief", "love", "hope"]},
+          "emotions": {
+            "start": ["fear", "anxiety", "overwhelm"],
+            "middle": ["determination", "anger", "loneliness"],
+            "end": ["relief", "love", "hope"]
+          },
           "ending_tone": "hopeful",
           "intensity": "heavy",
           "warnings": ["child_endangerment", "grief", "war_and_violence"],
@@ -713,15 +827,26 @@
           "start_at": "S2E1",
           "span": "S2-S5",
           "situations": [
-            {"id": "caring_for_family", "weight": 0.9},
-            {"id": "grief_and_loss", "weight": 0.6},
-            {"id": "starting_over", "weight": 0.5}
+            { "id": "caring_for_family", "weight": 0.9 },
+            { "id": "grief_and_loss", "weight": 0.6 },
+            { "id": "starting_over", "weight": 0.5 }
           ],
           "conflicts": ["control_vs_trust", "safety_vs_growth"],
-          "emotions": {"start": ["anxiety", "fear", "hope"], "middle": ["grief", "loneliness", "determination"], "end": ["pride", "love", "peace"]},
+          "emotions": {
+            "start": ["anxiety", "fear", "hope"],
+            "middle": ["grief", "loneliness", "determination"],
+            "end": ["pride", "love", "peace"]
+          },
           "ending_tone": "hopeful",
           "intensity": "heavy",
-          "warnings": ["death_of_loved_one", "grief", "child_endangerment", "medical_trauma", "war_and_violence", "graphic_gore"],
+          "warnings": [
+            "death_of_loved_one",
+            "grief",
+            "child_endangerment",
+            "medical_trauma",
+            "war_and_violence",
+            "graphic_gore"
+          ],
           "example_user_messages": [
             "My son went through something awful and now I can't stop hovering over him, even though he's a teenager.",
             "My kid wants to do something risky to help and every part of me wants to say no.",
@@ -750,9 +875,9 @@
       "name": "Steve Harrington",
       "role": "The rich, popular 'king' of Hawkins High, with perfect hair and careless friends, who is dating a studious girl from outside his usual crowd.",
       "relations": [
-        {"target": "char:stranger_things/dustin_henderson", "relation": "protege"},
-        {"target": "char:stranger_things/max_mayfield", "relation": "friend"},
-        {"target": "char:stranger_things/mike_wheeler", "relation": "friend"}
+        { "target": "char:stranger_things/dustin_henderson", "relation": "protege" },
+        { "target": "char:stranger_things/max_mayfield", "relation": "friend" },
+        { "target": "char:stranger_things/mike_wheeler", "relation": "friend" }
       ],
       "arcs": [
         {
@@ -771,13 +896,17 @@
           "start_at": "S1E1",
           "span": "S1-S2",
           "situations": [
-            {"id": "redemption_after_mistakes", "weight": 0.9},
-            {"id": "mentor_and_protege", "weight": 0.6},
-            {"id": "breakup", "weight": 0.5},
-            {"id": "identity_and_self_acceptance", "weight": 0.5}
+            { "id": "redemption_after_mistakes", "weight": 0.9 },
+            { "id": "mentor_and_protege", "weight": 0.6 },
+            { "id": "breakup", "weight": 0.5 },
+            { "id": "identity_and_self_acceptance", "weight": 0.5 }
           ],
           "conflicts": ["belonging_vs_integrity", "fitting_in_vs_standing_out"],
-          "emotions": {"start": ["pride", "jealousy", "anger"], "middle": ["shame", "rejection", "loneliness"], "end": ["self_respect", "belonging", "acceptance"]},
+          "emotions": {
+            "start": ["pride", "jealousy", "anger"],
+            "middle": ["shame", "rejection", "loneliness"],
+            "end": ["self_respect", "belonging", "acceptance"]
+          },
           "ending_tone": "hopeful",
           "intensity": "moderate",
           "warnings": ["war_and_violence", "child_endangerment"],
@@ -817,13 +946,17 @@
           "start_at": "S3E1",
           "span": "S3-S5",
           "situations": [
-            {"id": "confidence_struggle", "weight": 0.7},
-            {"id": "finding_your_people", "weight": 0.7},
-            {"id": "starting_over", "weight": 0.5},
-            {"id": "unrequited_love", "weight": 0.5}
+            { "id": "confidence_struggle", "weight": 0.7 },
+            { "id": "finding_your_people", "weight": 0.7 },
+            { "id": "starting_over", "weight": 0.5 },
+            { "id": "unrequited_love", "weight": 0.5 }
           ],
           "conflicts": ["past_vs_future", "holding_on_vs_letting_go"],
-          "emotions": {"start": ["inadequacy", "restlessness", "loneliness"], "middle": ["self_doubt", "belonging", "longing"], "end": ["self_respect", "belonging", "acceptance"]},
+          "emotions": {
+            "start": ["inadequacy", "restlessness", "loneliness"],
+            "middle": ["self_doubt", "belonging", "longing"],
+            "end": ["self_respect", "belonging", "acceptance"]
+          },
           "ending_tone": "bittersweet",
           "intensity": "heavy",
           "warnings": ["torture", "war_and_violence", "child_endangerment", "grief"],

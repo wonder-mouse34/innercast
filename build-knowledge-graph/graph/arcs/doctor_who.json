@@ -53,33 +53,15 @@
               "weight": 0.4
             }
           ],
-          "conflicts": [
-            "independence_vs_connection",
-            "holding_on_vs_letting_go"
-          ],
+          "conflicts": ["independence_vs_connection", "holding_on_vs_letting_go"],
           "emotions": {
-            "start": [
-              "joy",
-              "guilt",
-              "loneliness"
-            ],
-            "middle": [
-              "love",
-              "grief",
-              "anger"
-            ],
-            "end": [
-              "grief",
-              "loneliness"
-            ]
+            "start": ["joy", "guilt", "loneliness"],
+            "middle": ["love", "grief", "anger"],
+            "end": ["grief", "loneliness"]
           },
           "ending_tone": "bittersweet",
           "intensity": "moderate",
-          "warnings": [
-            "death_of_loved_one",
-            "grief",
-            "war_and_violence"
-          ],
+          "warnings": ["death_of_loved_one", "grief", "war_and_violence"],
           "example_user_messages": [
             "I'm always the life of the party but honestly I'm just trying not to think about what happened.",
             "Everyone I get close to leaves eventually, so part of me doesn't even want to try anymore.",
@@ -135,24 +117,11 @@
               "weight": 0.4
             }
           ],
-          "conflicts": [
-            "power_vs_morality",
-            "holding_on_vs_letting_go"
-          ],
+          "conflicts": ["power_vs_morality", "holding_on_vs_letting_go"],
           "emotions": {
-            "start": [
-              "loneliness",
-              "grief"
-            ],
-            "middle": [
-              "pride",
-              "dread",
-              "fear"
-            ],
-            "end": [
-              "grief",
-              "acceptance"
-            ]
+            "start": ["loneliness", "grief"],
+            "middle": ["pride", "dread", "fear"],
+            "end": ["grief", "acceptance"]
           },
           "ending_tone": "bittersweet",
           "intensity": "heavy",
@@ -225,33 +194,15 @@
               "weight": 0.4
             }
           ],
-          "conflicts": [
-            "power_vs_morality",
-            "independence_vs_connection"
-          ],
+          "conflicts": ["power_vs_morality", "independence_vs_connection"],
           "emotions": {
-            "start": [
-              "confusion",
-              "self_doubt",
-              "loneliness"
-            ],
-            "middle": [
-              "resentment",
-              "guilt"
-            ],
-            "end": [
-              "acceptance",
-              "self_respect"
-            ]
+            "start": ["confusion", "self_doubt", "loneliness"],
+            "middle": ["resentment", "guilt"],
+            "end": ["acceptance", "self_respect"]
           },
           "ending_tone": "bittersweet",
           "intensity": "moderate",
-          "warnings": [
-            "war_and_violence",
-            "death_of_loved_one",
-            "grief",
-            "betrayal"
-          ],
+          "warnings": ["war_and_violence", "death_of_loved_one", "grief", "betrayal"],
           "example_user_messages": [
             "I've changed so much in the last year that my friends don't seem to know how to be around me.",
             "People say I'm cold now, and I honestly can't tell if I'm a good person anymore.",
@@ -301,33 +252,15 @@
               "weight": 0.5
             }
           ],
-          "conflicts": [
-            "holding_on_vs_letting_go",
-            "control_vs_trust"
-          ],
+          "conflicts": ["holding_on_vs_letting_go", "control_vs_trust"],
           "emotions": {
-            "start": [
-              "joy",
-              "anxiety"
-            ],
-            "middle": [
-              "grief",
-              "anger",
-              "loneliness"
-            ],
-            "end": [
-              "grief",
-              "acceptance"
-            ]
+            "start": ["joy", "anxiety"],
+            "middle": ["grief", "anger", "loneliness"],
+            "end": ["grief", "acceptance"]
           },
           "ending_tone": "bittersweet",
           "intensity": "heavy",
-          "warnings": [
-            "death_of_loved_one",
-            "grief",
-            "torture",
-            "war_and_violence"
-          ],
+          "warnings": ["death_of_loved_one", "grief", "torture", "war_and_violence"],
           "example_user_messages": [
             "My best friend has started taking huge risks and I can't sleep worrying about her.",
             "I lost someone and I'd honestly do anything, even things I know are wrong, to undo it.",
@@ -380,25 +313,11 @@
               "weight": 0.3
             }
           ],
-          "conflicts": [
-            "duty_vs_desire",
-            "holding_on_vs_letting_go"
-          ],
+          "conflicts": ["duty_vs_desire", "holding_on_vs_letting_go"],
           "emotions": {
-            "start": [
-              "restlessness",
-              "loneliness",
-              "curiosity"
-            ],
-            "middle": [
-              "hope",
-              "determination",
-              "fear"
-            ],
-            "end": [
-              "acceptance",
-              "peace"
-            ]
+            "start": ["restlessness", "loneliness", "curiosity"],
+            "middle": ["hope", "determination", "fear"],
+            "end": ["acceptance", "peace"]
           },
           "ending_tone": "bittersweet",
           "intensity": "heavy",
@@ -483,34 +402,15 @@
               "weight": 0.4
             }
           ],
-          "conflicts": [
-            "safety_vs_growth",
-            "independence_vs_connection"
-          ],
+          "conflicts": ["safety_vs_growth", "independence_vs_connection"],
           "emotions": {
-            "start": [
-              "boredom",
-              "restlessness",
-              "curiosity"
-            ],
-            "middle": [
-              "joy",
-              "guilt",
-              "confidence"
-            ],
-            "end": [
-              "grief",
-              "love",
-              "longing"
-            ]
+            "start": ["boredom", "restlessness", "curiosity"],
+            "middle": ["joy", "guilt", "confidence"],
+            "end": ["grief", "love", "longing"]
           },
           "ending_tone": "bittersweet",
           "intensity": "moderate",
-          "warnings": [
-            "death_of_loved_one",
-            "grief",
-            "war_and_violence"
-          ],
+          "warnings": ["death_of_loved_one", "grief", "war_and_violence"],
           "example_user_messages": [
             "I'm 19, stuck in a job I hate and a relationship that's comfortable, and I feel like life is passing me by.",
             "I got offered the chance to go travelling for a year and my mum's acting like I'm abandoning her.",
@@ -564,32 +464,15 @@
               "weight": 0.4
             }
           ],
-          "conflicts": [
-            "holding_on_vs_letting_go",
-            "past_vs_future"
-          ],
+          "conflicts": ["holding_on_vs_letting_go", "past_vs_future"],
           "emotions": {
-            "start": [
-              "love",
-              "joy",
-              "jealousy"
-            ],
-            "middle": [
-              "longing",
-              "grief",
-              "determination"
-            ],
-            "end": [
-              "love",
-              "acceptance"
-            ]
+            "start": ["love", "joy", "jealousy"],
+            "middle": ["longing", "grief", "determination"],
+            "end": ["love", "acceptance"]
           },
           "ending_tone": "bittersweet",
           "intensity": "moderate",
-          "warnings": [
-            "grief",
-            "war_and_violence"
-          ],
+          "warnings": ["grief", "war_and_violence"],
           "example_user_messages": [
             "I'm in love with someone who never talks about feelings and I don't know where I stand.",
             "I get so jealous when he talks about the people he loved before me.",
@@ -660,31 +543,15 @@
               "weight": 0.4
             }
           ],
-          "conflicts": [
-            "holding_on_vs_letting_go",
-            "independence_vs_connection"
-          ],
+          "conflicts": ["holding_on_vs_letting_go", "independence_vs_connection"],
           "emotions": {
-            "start": [
-              "curiosity",
-              "hope",
-              "inadequacy"
-            ],
-            "middle": [
-              "longing",
-              "jealousy",
-              "loneliness"
-            ],
-            "end": [
-              "self_respect",
-              "determination"
-            ]
+            "start": ["curiosity", "hope", "inadequacy"],
+            "middle": ["longing", "jealousy", "loneliness"],
+            "end": ["self_respect", "determination"]
           },
           "ending_tone": "hopeful",
           "intensity": "moderate",
-          "warnings": [
-            "war_and_violence"
-          ],
+          "warnings": ["war_and_violence"],
           "example_user_messages": [
             "I'm in love with a friend who's still hung up on his ex and he barely notices me.",
             "I keep working harder to be good enough for someone who doesn't even see me.",
@@ -737,33 +604,15 @@
               "weight": 0.3
             }
           ],
-          "conflicts": [
-            "duty_vs_desire",
-            "self_vs_family_expectations"
-          ],
+          "conflicts": ["duty_vs_desire", "self_vs_family_expectations"],
           "emotions": {
-            "start": [
-              "anxiety",
-              "overwhelm"
-            ],
-            "middle": [
-              "fear",
-              "determination",
-              "loneliness"
-            ],
-            "end": [
-              "self_respect",
-              "confidence",
-              "relief"
-            ]
+            "start": ["anxiety", "overwhelm"],
+            "middle": ["fear", "determination", "loneliness"],
+            "end": ["self_respect", "confidence", "relief"]
           },
           "ending_tone": "hopeful",
           "intensity": "heavy",
-          "warnings": [
-            "war_and_violence",
-            "torture",
-            "domestic_violence"
-          ],
+          "warnings": ["war_and_violence", "torture", "domestic_violence"],
           "example_user_messages": [
             "I'm the one who keeps the peace in my family and I'm exhausted from it.",
             "My parents are divorced and still fighting and I'm always stuck in the middle.",
@@ -837,34 +686,15 @@
               "weight": 0.5
             }
           ],
-          "conflicts": [
-            "safety_vs_growth",
-            "self_vs_family_expectations"
-          ],
+          "conflicts": ["safety_vs_growth", "self_vs_family_expectations"],
           "emotions": {
-            "start": [
-              "inadequacy",
-              "restlessness",
-              "longing"
-            ],
-            "middle": [
-              "joy",
-              "confidence",
-              "belonging"
-            ],
-            "end": [
-              "confusion",
-              "grief"
-            ]
+            "start": ["inadequacy", "restlessness", "longing"],
+            "middle": ["joy", "confidence", "belonging"],
+            "end": ["confusion", "grief"]
           },
           "ending_tone": "tragic",
           "intensity": "heavy",
-          "warnings": [
-            "war_and_violence",
-            "self_harm_or_suicide",
-            "grief",
-            "bleak_ending"
-          ],
+          "warnings": ["war_and_violence", "self_harm_or_suicide", "grief", "bleak_ending"],
           "example_user_messages": [
             "I'm nearly 40, I've never had a proper career, and my mum makes it clear I'm a disappointment.",
             "I turned down a big opportunity years ago and I still can't stop thinking about it.",
@@ -931,35 +761,15 @@
               "weight": 0.5
             }
           ],
-          "conflicts": [
-            "independence_vs_connection",
-            "past_vs_future"
-          ],
+          "conflicts": ["independence_vs_connection", "past_vs_future"],
           "emotions": {
-            "start": [
-              "restlessness",
-              "rejection",
-              "longing"
-            ],
-            "middle": [
-              "joy",
-              "confusion",
-              "grief"
-            ],
-            "end": [
-              "love",
-              "belonging",
-              "joy"
-            ]
+            "start": ["restlessness", "rejection", "longing"],
+            "middle": ["joy", "confusion", "grief"],
+            "end": ["love", "belonging", "joy"]
           },
           "ending_tone": "hopeful",
           "intensity": "moderate",
-          "warnings": [
-            "death_of_loved_one",
-            "grief",
-            "child_endangerment",
-            "war_and_violence"
-          ],
+          "warnings": ["death_of_loved_one", "grief", "child_endangerment", "war_and_violence"],
           "example_user_messages": [
             "My parents weren't there for me growing up and now I can't believe anyone will stay.",
             "I'm about to settle down with a great guy and all I want to do is run away.",
@@ -1010,24 +820,11 @@
               "weight": 0.5
             }
           ],
-          "conflicts": [
-            "holding_on_vs_letting_go",
-            "truth_vs_protecting_others"
-          ],
+          "conflicts": ["holding_on_vs_letting_go", "truth_vs_protecting_others"],
           "emotions": {
-            "start": [
-              "hope",
-              "anxiety"
-            ],
-            "middle": [
-              "grief",
-              "shame",
-              "loneliness"
-            ],
-            "end": [
-              "love",
-              "acceptance"
-            ]
+            "start": ["hope", "anxiety"],
+            "middle": ["grief", "shame", "loneliness"],
+            "end": ["love", "acceptance"]
           },
           "ending_tone": "bittersweet",
           "intensity": "heavy",
@@ -1099,34 +896,15 @@
               "weight": 0.4
             }
           ],
-          "conflicts": [
-            "control_vs_trust",
-            "fitting_in_vs_standing_out"
-          ],
+          "conflicts": ["control_vs_trust", "fitting_in_vs_standing_out"],
           "emotions": {
-            "start": [
-              "jealousy",
-              "inadequacy",
-              "fear"
-            ],
-            "middle": [
-              "determination",
-              "grief",
-              "love"
-            ],
-            "end": [
-              "self_respect",
-              "love",
-              "confidence"
-            ]
+            "start": ["jealousy", "inadequacy", "fear"],
+            "middle": ["determination", "grief", "love"],
+            "end": ["self_respect", "love", "confidence"]
           },
           "ending_tone": "hopeful",
           "intensity": "moderate",
-          "warnings": [
-            "death_of_main_character",
-            "grief",
-            "war_and_violence"
-          ],
+          "warnings": ["death_of_main_character", "grief", "war_and_violence"],
           "example_user_messages": [
             "My girlfriend has idolised this guy since she was a kid and I feel like I can never compete.",
             "I'm the boring, reliable one and I'm terrified she'll get bored of me.",
@@ -1179,25 +957,11 @@
               "weight": 0.4
             }
           ],
-          "conflicts": [
-            "safety_vs_growth",
-            "control_vs_trust"
-          ],
+          "conflicts": ["safety_vs_growth", "control_vs_trust"],
           "emotions": {
-            "start": [
-              "determination",
-              "anxiety"
-            ],
-            "middle": [
-              "anger",
-              "grief",
-              "loneliness"
-            ],
-            "end": [
-              "love",
-              "peace",
-              "belonging"
-            ]
+            "start": ["determination", "anxiety"],
+            "middle": ["anger", "grief", "loneliness"],
+            "end": ["love", "peace", "belonging"]
           },
           "ending_tone": "bittersweet",
           "intensity": "heavy",
@@ -1272,34 +1036,15 @@
               "weight": 0.4
             }
           ],
-          "conflicts": [
-            "duty_vs_desire",
-            "safety_vs_growth"
-          ],
+          "conflicts": ["duty_vs_desire", "safety_vs_growth"],
           "emotions": {
-            "start": [
-              "restlessness",
-              "longing",
-              "curiosity"
-            ],
-            "middle": [
-              "joy",
-              "grief",
-              "determination"
-            ],
-            "end": [
-              "love",
-              "determination",
-              "belonging"
-            ]
+            "start": ["restlessness", "longing", "curiosity"],
+            "middle": ["joy", "grief", "determination"],
+            "end": ["love", "determination", "belonging"]
           },
           "ending_tone": "hopeful",
           "intensity": "moderate",
-          "warnings": [
-            "grief",
-            "death_of_loved_one",
-            "war_and_violence"
-          ],
+          "warnings": ["grief", "death_of_loved_one", "war_and_violence"],
           "example_user_messages": [
             "I've been looking after other people's kids for years and I never got to go travelling.",
             "I put my plans on hold when a family needed me and now I'm scared to take them back.",
@@ -1351,33 +1096,15 @@
               "weight": 0.4
             }
           ],
-          "conflicts": [
-            "truth_vs_protecting_others",
-            "career_vs_relationships"
-          ],
+          "conflicts": ["truth_vs_protecting_others", "career_vs_relationships"],
           "emotions": {
-            "start": [
-              "confusion",
-              "curiosity"
-            ],
-            "middle": [
-              "guilt",
-              "anxiety",
-              "anger"
-            ],
-            "end": [
-              "grief",
-              "loneliness"
-            ]
+            "start": ["confusion", "curiosity"],
+            "middle": ["guilt", "anxiety", "anger"],
+            "end": ["grief", "loneliness"]
           },
           "ending_tone": "bittersweet",
           "intensity": "heavy",
-          "warnings": [
-            "death_of_loved_one",
-            "grief",
-            "betrayal",
-            "war_and_violence"
-          ],
+          "warnings": ["death_of_loved_one", "grief", "betrayal", "war_and_violence"],
           "example_user_messages": [
             "I'm keeping a big part of my life secret from my boyfriend and it's getting harder to hide.",
             "I tell everyone a different version of the truth and I'm scared it's all about to blow up.",
@@ -1430,32 +1157,15 @@
               "weight": 0.5
             }
           ],
-          "conflicts": [
-            "safety_vs_growth",
-            "control_vs_trust"
-          ],
+          "conflicts": ["safety_vs_growth", "control_vs_trust"],
           "emotions": {
-            "start": [
-              "numbness",
-              "restlessness"
-            ],
-            "middle": [
-              "joy",
-              "pride",
-              "confidence"
-            ],
-            "end": [
-              "acceptance",
-              "freedom"
-            ]
+            "start": ["numbness", "restlessness"],
+            "middle": ["joy", "pride", "confidence"],
+            "end": ["acceptance", "freedom"]
           },
           "ending_tone": "bittersweet",
           "intensity": "heavy",
-          "warnings": [
-            "death_of_main_character",
-            "grief",
-            "war_and_violence"
-          ],
+          "warnings": ["death_of_main_character", "grief", "war_and_violence"],
           "example_user_messages": [
             "Since my partner died I keep doing more and more dangerous things just to feel something.",
             "My friends say I'm being reckless, but it's the only time I feel alive.",

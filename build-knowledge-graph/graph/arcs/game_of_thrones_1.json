@@ -6,11 +6,11 @@
       "name": "Daenerys Targaryen",
       "role": "The exiled younger sister of a would-be king, living on the charity of foreign hosts and about to be married off to a warlord in exchange for an army.",
       "relations": [
-        {"target": "char:game_of_thrones/jon_snow", "relation": "partner"},
-        {"target": "char:game_of_thrones/tyrion_lannister", "relation": "colleague"},
-        {"target": "char:game_of_thrones/cersei_lannister", "relation": "enemy"},
-        {"target": "char:game_of_thrones/jaime_lannister", "relation": "enemy"},
-        {"target": "char:game_of_thrones/sansa_stark", "relation": "rival"}
+        { "target": "char:game_of_thrones/jon_snow", "relation": "partner" },
+        { "target": "char:game_of_thrones/tyrion_lannister", "relation": "colleague" },
+        { "target": "char:game_of_thrones/cersei_lannister", "relation": "enemy" },
+        { "target": "char:game_of_thrones/jaime_lannister", "relation": "enemy" },
+        { "target": "char:game_of_thrones/sansa_stark", "relation": "rival" }
       ],
       "arcs": [
         {
@@ -29,16 +29,29 @@
           "start_at": "S1E1",
           "span": "S1-S3",
           "situations": [
-            {"id": "confidence_struggle", "weight": 0.9},
-            {"id": "family_expectations", "weight": 0.7},
-            {"id": "identity_and_self_acceptance", "weight": 0.7},
-            {"id": "moving_somewhere_new", "weight": 0.6}
+            { "id": "confidence_struggle", "weight": 0.9 },
+            { "id": "family_expectations", "weight": 0.7 },
+            { "id": "identity_and_self_acceptance", "weight": 0.7 },
+            { "id": "moving_somewhere_new", "weight": 0.6 }
           ],
           "conflicts": ["self_vs_family_expectations", "safety_vs_growth"],
-          "emotions": {"start": ["fear", "shame"], "middle": ["grief", "determination"], "end": ["confidence", "pride"]},
+          "emotions": {
+            "start": ["fear", "shame"],
+            "middle": ["grief", "determination"],
+            "end": ["confidence", "pride"]
+          },
           "ending_tone": "hopeful",
           "intensity": "heavy",
-          "warnings": ["abuse", "domestic_violence", "sexual_violence", "death_of_loved_one", "grief", "war_and_violence", "graphic_gore", "betrayal"],
+          "warnings": [
+            "abuse",
+            "domestic_violence",
+            "sexual_violence",
+            "death_of_loved_one",
+            "grief",
+            "war_and_violence",
+            "graphic_gore",
+            "betrayal"
+          ],
           "example_user_messages": [
             "My brother has always decided everything for me and I've never once said no to him.",
             "I got married young because my family needed it and now I'm living somewhere I don't even speak the language.",
@@ -76,16 +89,28 @@
           "start_at": "S4",
           "span": "S4-S6",
           "situations": [
-            {"id": "becoming_a_manager", "weight": 0.9},
-            {"id": "imposter_syndrome", "weight": 0.5},
-            {"id": "burnout_at_work", "weight": 0.5},
-            {"id": "responsibility_you_didnt_ask_for", "weight": 0.4}
+            { "id": "becoming_a_manager", "weight": 0.9 },
+            { "id": "imposter_syndrome", "weight": 0.5 },
+            { "id": "burnout_at_work", "weight": 0.5 },
+            { "id": "responsibility_you_didnt_ask_for", "weight": 0.4 }
           ],
           "conflicts": ["power_vs_morality", "control_vs_trust"],
-          "emotions": {"start": ["pride", "determination"], "middle": ["overwhelm", "self_doubt", "loneliness"], "end": ["confidence", "determination"]},
+          "emotions": {
+            "start": ["pride", "determination"],
+            "middle": ["overwhelm", "self_doubt", "loneliness"],
+            "end": ["confidence", "determination"]
+          },
           "ending_tone": "bittersweet",
           "intensity": "heavy",
-          "warnings": ["war_and_violence", "graphic_gore", "betrayal", "death_of_loved_one", "grief", "child_endangerment", "sexual_violence"],
+          "warnings": [
+            "war_and_violence",
+            "graphic_gore",
+            "betrayal",
+            "death_of_loved_one",
+            "grief",
+            "child_endangerment",
+            "sexual_violence"
+          ],
           "example_user_messages": [
             "I finally got the promotion I fought for and now every decision I make seems to upset someone.",
             "I changed things for the better but half my team is quietly working against me.",
@@ -123,16 +148,29 @@
           "start_at": "S7E1",
           "span": "S7-S8",
           "situations": [
-            {"id": "grief_and_loss", "weight": 0.8},
-            {"id": "moving_somewhere_new", "weight": 0.7},
-            {"id": "loneliness", "weight": 0.7},
-            {"id": "falling_for_someone_unexpected", "weight": 0.6}
+            { "id": "grief_and_loss", "weight": 0.8 },
+            { "id": "moving_somewhere_new", "weight": 0.7 },
+            { "id": "loneliness", "weight": 0.7 },
+            { "id": "falling_for_someone_unexpected", "weight": 0.6 }
           ],
           "conflicts": ["power_vs_morality", "holding_on_vs_letting_go"],
-          "emotions": {"start": ["hope", "determination"], "middle": ["grief", "jealousy", "loneliness"], "end": ["anger", "betrayal"]},
+          "emotions": {
+            "start": ["hope", "determination"],
+            "middle": ["grief", "jealousy", "loneliness"],
+            "end": ["anger", "betrayal"]
+          },
           "ending_tone": "tragic",
           "intensity": "heavy",
-          "warnings": ["death_of_main_character", "death_of_loved_one", "grief", "war_and_violence", "graphic_gore", "betrayal", "child_endangerment", "bleak_ending"],
+          "warnings": [
+            "death_of_main_character",
+            "death_of_loved_one",
+            "grief",
+            "war_and_violence",
+            "graphic_gore",
+            "betrayal",
+            "child_endangerment",
+            "bleak_ending"
+          ],
           "example_user_messages": [
             "I moved back to the place I always thought of as home and nobody there seems to want me.",
             "Everyone keeps comparing me to someone more likeable and I'm starting to resent them for it.",
@@ -163,12 +201,12 @@
       "name": "Tyrion Lannister",
       "role": "The witty, hard-drinking youngest son of the realm's richest family, a dwarf whose father and sister blame him for his mother's death in childbirth.",
       "relations": [
-        {"target": "char:game_of_thrones/jaime_lannister", "relation": "sibling"},
-        {"target": "char:game_of_thrones/cersei_lannister", "relation": "sibling"},
-        {"target": "char:game_of_thrones/sansa_stark", "relation": "ex_partner"},
-        {"target": "char:game_of_thrones/jon_snow", "relation": "friend"},
-        {"target": "char:game_of_thrones/daenerys_targaryen", "relation": "boss"},
-        {"target": "char:game_of_thrones/bran_stark", "relation": "boss"}
+        { "target": "char:game_of_thrones/jaime_lannister", "relation": "sibling" },
+        { "target": "char:game_of_thrones/cersei_lannister", "relation": "sibling" },
+        { "target": "char:game_of_thrones/sansa_stark", "relation": "ex_partner" },
+        { "target": "char:game_of_thrones/jon_snow", "relation": "friend" },
+        { "target": "char:game_of_thrones/daenerys_targaryen", "relation": "boss" },
+        { "target": "char:game_of_thrones/bran_stark", "relation": "boss" }
       ],
       "arcs": [
         {
@@ -187,16 +225,27 @@
           "start_at": "S1E1",
           "span": "S1-S4",
           "situations": [
-            {"id": "difficult_parent", "weight": 1.0},
-            {"id": "family_expectations", "weight": 0.8},
-            {"id": "identity_and_self_acceptance", "weight": 0.6},
-            {"id": "new_job", "weight": 0.4}
+            { "id": "difficult_parent", "weight": 1.0 },
+            { "id": "family_expectations", "weight": 0.8 },
+            { "id": "identity_and_self_acceptance", "weight": 0.6 },
+            { "id": "new_job", "weight": 0.4 }
           ],
           "conflicts": ["self_vs_family_expectations", "belonging_vs_integrity"],
-          "emotions": {"start": ["resentment", "rejection"], "middle": ["pride", "hope"], "end": ["betrayal", "anger", "grief"]},
+          "emotions": {
+            "start": ["resentment", "rejection"],
+            "middle": ["pride", "hope"],
+            "end": ["betrayal", "anger", "grief"]
+          },
           "ending_tone": "tragic",
           "intensity": "heavy",
-          "warnings": ["abuse", "sexual_violence", "war_and_violence", "graphic_gore", "betrayal", "death_of_loved_one"],
+          "warnings": [
+            "abuse",
+            "sexual_violence",
+            "war_and_violence",
+            "graphic_gore",
+            "betrayal",
+            "death_of_loved_one"
+          ],
           "example_user_messages": [
             "My dad has never once said he's proud of me, even when I've done everything right.",
             "I saved the project and my boss gave all the credit to someone else in front of everyone.",
@@ -235,13 +284,17 @@
           "start_at": "S5E1",
           "span": "S5-S6",
           "situations": [
-            {"id": "starting_over", "weight": 1.0},
-            {"id": "addiction_and_recovery", "weight": 0.6},
-            {"id": "new_job", "weight": 0.6},
-            {"id": "losing_a_job", "weight": 0.5}
+            { "id": "starting_over", "weight": 1.0 },
+            { "id": "addiction_and_recovery", "weight": 0.6 },
+            { "id": "new_job", "weight": 0.6 },
+            { "id": "losing_a_job", "weight": 0.5 }
           ],
           "conflicts": ["past_vs_future", "holding_on_vs_letting_go"],
-          "emotions": {"start": ["numbness", "guilt", "grief"], "middle": ["curiosity", "self_doubt"], "end": ["hope", "belonging"]},
+          "emotions": {
+            "start": ["numbness", "guilt", "grief"],
+            "middle": ["curiosity", "self_doubt"],
+            "end": ["hope", "belonging"]
+          },
           "ending_tone": "hopeful",
           "intensity": "moderate",
           "warnings": ["addiction", "self_harm_or_suicide", "grief", "war_and_violence"],
@@ -281,16 +334,27 @@
           "start_at": "S7E1",
           "span": "S7-S8",
           "situations": [
-            {"id": "standing_up_to_authority", "weight": 0.8},
-            {"id": "mentor_and_protege", "weight": 0.6},
-            {"id": "family_expectations", "weight": 0.5},
-            {"id": "burnout_at_work", "weight": 0.4}
+            { "id": "standing_up_to_authority", "weight": 0.8 },
+            { "id": "mentor_and_protege", "weight": 0.6 },
+            { "id": "family_expectations", "weight": 0.5 },
+            { "id": "burnout_at_work", "weight": 0.4 }
           ],
           "conflicts": ["power_vs_morality", "belonging_vs_integrity"],
-          "emotions": {"start": ["hope", "determination"], "middle": ["anxiety", "self_doubt", "guilt"], "end": ["grief", "acceptance"]},
+          "emotions": {
+            "start": ["hope", "determination"],
+            "middle": ["anxiety", "self_doubt", "guilt"],
+            "end": ["grief", "acceptance"]
+          },
           "ending_tone": "bittersweet",
           "intensity": "heavy",
-          "warnings": ["war_and_violence", "graphic_gore", "death_of_loved_one", "betrayal", "grief", "child_endangerment"],
+          "warnings": [
+            "war_and_violence",
+            "graphic_gore",
+            "death_of_loved_one",
+            "betrayal",
+            "grief",
+            "child_endangerment"
+          ],
           "example_user_messages": [
             "I really believed in my boss but lately she's making decisions that scare me.",
             "My plans at work keep failing and I can feel my manager losing faith in me.",
@@ -320,13 +384,13 @@
       "name": "Jon Snow",
       "role": "The illegitimate son of a respected northern lord, raised alongside his half-siblings but never quite one of them, about to leave home to join a remote sworn military order.",
       "relations": [
-        {"target": "char:game_of_thrones/sansa_stark", "relation": "sibling"},
-        {"target": "char:game_of_thrones/arya_stark", "relation": "sibling"},
-        {"target": "char:game_of_thrones/bran_stark", "relation": "sibling"},
-        {"target": "char:game_of_thrones/samwell_tarly", "relation": "friend"},
-        {"target": "char:game_of_thrones/tyrion_lannister", "relation": "friend"},
-        {"target": "char:game_of_thrones/daenerys_targaryen", "relation": "partner"},
-        {"target": "char:game_of_thrones/theon_greyjoy", "relation": "rival"}
+        { "target": "char:game_of_thrones/sansa_stark", "relation": "sibling" },
+        { "target": "char:game_of_thrones/arya_stark", "relation": "sibling" },
+        { "target": "char:game_of_thrones/bran_stark", "relation": "sibling" },
+        { "target": "char:game_of_thrones/samwell_tarly", "relation": "friend" },
+        { "target": "char:game_of_thrones/tyrion_lannister", "relation": "friend" },
+        { "target": "char:game_of_thrones/daenerys_targaryen", "relation": "partner" },
+        { "target": "char:game_of_thrones/theon_greyjoy", "relation": "rival" }
       ],
       "arcs": [
         {
@@ -345,16 +409,28 @@
           "start_at": "S1E1",
           "span": "S1-S4",
           "situations": [
-            {"id": "finding_your_people", "weight": 0.9},
-            {"id": "leaving_home", "weight": 0.8},
-            {"id": "identity_and_self_acceptance", "weight": 0.7},
-            {"id": "falling_for_someone_unexpected", "weight": 0.6}
+            { "id": "finding_your_people", "weight": 0.9 },
+            { "id": "leaving_home", "weight": 0.8 },
+            { "id": "identity_and_self_acceptance", "weight": 0.7 },
+            { "id": "falling_for_someone_unexpected", "weight": 0.6 }
           ],
           "conflicts": ["belonging_vs_integrity", "duty_vs_desire"],
-          "emotions": {"start": ["loneliness", "rejection"], "middle": ["belonging", "love", "confusion"], "end": ["grief", "determination"]},
+          "emotions": {
+            "start": ["loneliness", "rejection"],
+            "middle": ["belonging", "love", "confusion"],
+            "end": ["grief", "determination"]
+          },
           "ending_tone": "tragic",
           "intensity": "heavy",
-          "warnings": ["war_and_violence", "graphic_gore", "death_of_loved_one", "grief", "betrayal", "abuse", "child_endangerment"],
+          "warnings": [
+            "war_and_violence",
+            "graphic_gore",
+            "death_of_loved_one",
+            "grief",
+            "betrayal",
+            "abuse",
+            "child_endangerment"
+          ],
           "example_user_messages": [
             "I've always felt like the odd one out in my family, like I'm only half part of it.",
             "I moved away for a fresh start and it's nothing like I imagined.",
@@ -392,16 +468,28 @@
           "start_at": "S5E1",
           "span": "S5-S6",
           "situations": [
-            {"id": "leading_former_peers", "weight": 1.0},
-            {"id": "becoming_a_manager", "weight": 0.8},
-            {"id": "burnout_at_work", "weight": 0.6},
-            {"id": "responsibility_you_didnt_ask_for", "weight": 0.6}
+            { "id": "leading_former_peers", "weight": 1.0 },
+            { "id": "becoming_a_manager", "weight": 0.8 },
+            { "id": "burnout_at_work", "weight": 0.6 },
+            { "id": "responsibility_you_didnt_ask_for", "weight": 0.6 }
           ],
           "conflicts": ["duty_vs_desire", "belonging_vs_integrity"],
-          "emotions": {"start": ["determination", "anxiety"], "middle": ["loneliness", "betrayal", "burnout"], "end": ["determination", "belonging"]},
+          "emotions": {
+            "start": ["determination", "anxiety"],
+            "middle": ["loneliness", "betrayal", "burnout"],
+            "end": ["determination", "belonging"]
+          },
           "ending_tone": "bittersweet",
           "intensity": "heavy",
-          "warnings": ["betrayal", "death_of_main_character", "war_and_violence", "graphic_gore", "child_endangerment", "death_of_loved_one", "grief"],
+          "warnings": [
+            "betrayal",
+            "death_of_main_character",
+            "war_and_violence",
+            "graphic_gore",
+            "child_endangerment",
+            "death_of_loved_one",
+            "grief"
+          ],
           "example_user_messages": [
             "I just got promoted over the people I used to work alongside and half of them clearly hate it.",
             "I made the right call but my whole team thinks I betrayed them.",
@@ -439,16 +527,27 @@
           "start_at": "S7E1",
           "span": "S7-S8",
           "situations": [
-            {"id": "identity_and_self_acceptance", "weight": 0.8},
-            {"id": "falling_for_someone_unexpected", "weight": 0.8},
-            {"id": "responsibility_you_didnt_ask_for", "weight": 0.7},
-            {"id": "family_expectations", "weight": 0.4}
+            { "id": "identity_and_self_acceptance", "weight": 0.8 },
+            { "id": "falling_for_someone_unexpected", "weight": 0.8 },
+            { "id": "responsibility_you_didnt_ask_for", "weight": 0.7 },
+            { "id": "family_expectations", "weight": 0.4 }
           ],
           "conflicts": ["duty_vs_desire", "truth_vs_protecting_others"],
-          "emotions": {"start": ["determination", "anxiety"], "middle": ["love", "confusion"], "end": ["grief", "guilt"]},
+          "emotions": {
+            "start": ["determination", "anxiety"],
+            "middle": ["love", "confusion"],
+            "end": ["grief", "guilt"]
+          },
           "ending_tone": "bittersweet",
           "intensity": "heavy",
-          "warnings": ["death_of_loved_one", "war_and_violence", "graphic_gore", "betrayal", "grief", "bleak_ending"],
+          "warnings": [
+            "death_of_loved_one",
+            "war_and_violence",
+            "graphic_gore",
+            "betrayal",
+            "grief",
+            "bleak_ending"
+          ],
           "example_user_messages": [
             "I found out the parent who raised me isn't who I thought and I don't know who I am now.",
             "I'm in love with someone who's starting to scare me.",
@@ -477,11 +576,11 @@
       "name": "Jaime Lannister",
       "role": "A famously skilled, arrogant knight of the royal guard, sneered at as the 'Kingslayer' for killing the king he swore to protect, and secretly devoted to his twin sister.",
       "relations": [
-        {"target": "char:game_of_thrones/cersei_lannister", "relation": "partner"},
-        {"target": "char:game_of_thrones/cersei_lannister", "relation": "sibling"},
-        {"target": "char:game_of_thrones/tyrion_lannister", "relation": "sibling"},
-        {"target": "char:game_of_thrones/brienne_of_tarth", "relation": "friend"},
-        {"target": "char:game_of_thrones/daenerys_targaryen", "relation": "enemy"}
+        { "target": "char:game_of_thrones/cersei_lannister", "relation": "partner" },
+        { "target": "char:game_of_thrones/cersei_lannister", "relation": "sibling" },
+        { "target": "char:game_of_thrones/tyrion_lannister", "relation": "sibling" },
+        { "target": "char:game_of_thrones/brienne_of_tarth", "relation": "friend" },
+        { "target": "char:game_of_thrones/daenerys_targaryen", "relation": "enemy" }
       ],
       "arcs": [
         {
@@ -500,16 +599,27 @@
           "start_at": "S2E10",
           "span": "S2-S4",
           "situations": [
-            {"id": "illness_or_injury", "weight": 0.9},
-            {"id": "identity_and_self_acceptance", "weight": 0.8},
-            {"id": "redemption_after_mistakes", "weight": 0.7},
-            {"id": "confidence_struggle", "weight": 0.5}
+            { "id": "illness_or_injury", "weight": 0.9 },
+            { "id": "identity_and_self_acceptance", "weight": 0.8 },
+            { "id": "redemption_after_mistakes", "weight": 0.7 },
+            { "id": "confidence_struggle", "weight": 0.5 }
           ],
           "conflicts": ["past_vs_future", "belonging_vs_integrity"],
-          "emotions": {"start": ["pride", "anger"], "middle": ["shame", "numbness"], "end": ["self_respect", "determination"]},
+          "emotions": {
+            "start": ["pride", "anger"],
+            "middle": ["shame", "numbness"],
+            "end": ["self_respect", "determination"]
+          },
           "ending_tone": "bittersweet",
           "intensity": "heavy",
-          "warnings": ["medical_trauma", "torture", "sexual_violence", "war_and_violence", "graphic_gore", "death_of_loved_one"],
+          "warnings": [
+            "medical_trauma",
+            "torture",
+            "sexual_violence",
+            "war_and_violence",
+            "graphic_gore",
+            "death_of_loved_one"
+          ],
           "example_user_messages": [
             "My whole identity was being an athlete and after the injury I don't know who I am.",
             "Everyone judges me for one thing I did, but nobody ever asked why I did it.",
@@ -547,16 +657,29 @@
           "start_at": "S5E1",
           "span": "S5-S8",
           "situations": [
-            {"id": "breakup", "weight": 0.7},
-            {"id": "redemption_after_mistakes", "weight": 0.7},
-            {"id": "grief_and_loss", "weight": 0.6},
-            {"id": "family_expectations", "weight": 0.5}
+            { "id": "breakup", "weight": 0.7 },
+            { "id": "redemption_after_mistakes", "weight": 0.7 },
+            { "id": "grief_and_loss", "weight": 0.6 },
+            { "id": "family_expectations", "weight": 0.5 }
           ],
           "conflicts": ["holding_on_vs_letting_go", "power_vs_morality"],
-          "emotions": {"start": ["guilt", "anxiety"], "middle": ["grief", "anger", "confusion"], "end": ["longing", "acceptance"]},
+          "emotions": {
+            "start": ["guilt", "anxiety"],
+            "middle": ["grief", "anger", "confusion"],
+            "end": ["longing", "acceptance"]
+          },
           "ending_tone": "tragic",
           "intensity": "heavy",
-          "warnings": ["death_of_main_character", "death_of_loved_one", "grief", "war_and_violence", "graphic_gore", "betrayal", "self_harm_or_suicide", "bleak_ending"],
+          "warnings": [
+            "death_of_main_character",
+            "death_of_loved_one",
+            "grief",
+            "war_and_violence",
+            "graphic_gore",
+            "betrayal",
+            "self_harm_or_suicide",
+            "bleak_ending"
+          ],
           "example_user_messages": [
             "Every time I try to leave this relationship I end up going back, even though I know it's bad for me.",
             "My partner and I have done terrible things for each other and I'm starting to hate who I've become.",
@@ -585,12 +708,12 @@
       "name": "Cersei Lannister",
       "role": "The queen of the realm, trapped in a loveless marriage to a drunken king, fiercely protective of her three children and hiding a dangerous secret about who their father is.",
       "relations": [
-        {"target": "char:game_of_thrones/jaime_lannister", "relation": "partner"},
-        {"target": "char:game_of_thrones/jaime_lannister", "relation": "sibling"},
-        {"target": "char:game_of_thrones/tyrion_lannister", "relation": "sibling"},
-        {"target": "char:game_of_thrones/sansa_stark", "relation": "enemy"},
-        {"target": "char:game_of_thrones/arya_stark", "relation": "enemy"},
-        {"target": "char:game_of_thrones/daenerys_targaryen", "relation": "enemy"}
+        { "target": "char:game_of_thrones/jaime_lannister", "relation": "partner" },
+        { "target": "char:game_of_thrones/jaime_lannister", "relation": "sibling" },
+        { "target": "char:game_of_thrones/tyrion_lannister", "relation": "sibling" },
+        { "target": "char:game_of_thrones/sansa_stark", "relation": "enemy" },
+        { "target": "char:game_of_thrones/arya_stark", "relation": "enemy" },
+        { "target": "char:game_of_thrones/daenerys_targaryen", "relation": "enemy" }
       ],
       "arcs": [
         {
@@ -609,16 +732,29 @@
           "start_at": "S1E1",
           "span": "S1-S4",
           "situations": [
-            {"id": "family_expectations", "weight": 0.8},
-            {"id": "difficult_parent", "weight": 0.7},
-            {"id": "caring_for_family", "weight": 0.6},
-            {"id": "sibling_rivalry", "weight": 0.6}
+            { "id": "family_expectations", "weight": 0.8 },
+            { "id": "difficult_parent", "weight": 0.7 },
+            { "id": "caring_for_family", "weight": 0.6 },
+            { "id": "sibling_rivalry", "weight": 0.6 }
           ],
           "conflicts": ["control_vs_trust", "self_vs_family_expectations"],
-          "emotions": {"start": ["resentment", "fear"], "middle": ["anxiety", "envy", "pride"], "end": ["grief", "anger"]},
+          "emotions": {
+            "start": ["resentment", "fear"],
+            "middle": ["anxiety", "envy", "pride"],
+            "end": ["grief", "anger"]
+          },
           "ending_tone": "tragic",
           "intensity": "heavy",
-          "warnings": ["domestic_violence", "abuse", "sexual_violence", "death_of_loved_one", "grief", "child_endangerment", "war_and_violence", "graphic_gore"],
+          "warnings": [
+            "domestic_violence",
+            "abuse",
+            "sexual_violence",
+            "death_of_loved_one",
+            "grief",
+            "child_endangerment",
+            "war_and_violence",
+            "graphic_gore"
+          ],
           "example_user_messages": [
             "I'd do literally anything for my kids, and people keep telling me that's the problem.",
             "My father never took me seriously and gave every chance to my brother instead.",
@@ -657,16 +793,30 @@
           "start_at": "S5E1",
           "span": "S5-S8",
           "situations": [
-            {"id": "grief_and_loss", "weight": 0.8},
-            {"id": "loneliness", "weight": 0.6},
-            {"id": "caring_for_family", "weight": 0.5},
-            {"id": "standing_up_to_authority", "weight": 0.4}
+            { "id": "grief_and_loss", "weight": 0.8 },
+            { "id": "loneliness", "weight": 0.6 },
+            { "id": "caring_for_family", "weight": 0.5 },
+            { "id": "standing_up_to_authority", "weight": 0.4 }
           ],
           "conflicts": ["control_vs_trust", "revenge_vs_forgiveness"],
-          "emotions": {"start": ["grief", "anger", "jealousy"], "middle": ["shame", "resentment"], "end": ["fear", "dread"]},
+          "emotions": {
+            "start": ["grief", "anger", "jealousy"],
+            "middle": ["shame", "resentment"],
+            "end": ["fear", "dread"]
+          },
           "ending_tone": "tragic",
           "intensity": "heavy",
-          "warnings": ["death_of_main_character", "death_of_loved_one", "self_harm_or_suicide", "abuse", "torture", "war_and_violence", "graphic_gore", "betrayal", "bleak_ending"],
+          "warnings": [
+            "death_of_main_character",
+            "death_of_loved_one",
+            "self_harm_or_suicide",
+            "abuse",
+            "torture",
+            "war_and_violence",
+            "graphic_gore",
+            "betrayal",
+            "bleak_ending"
+          ],
           "example_user_messages": [
             "Ever since my dad died I feel like I have to control everything or it'll all fall apart.",
             "I got humiliated in front of everyone and all I can think about is making them pay.",
@@ -696,15 +846,15 @@
       "name": "Sansa Stark",
       "role": "The elder daughter of a noble northern family, a romantic girl who dreams of marrying a prince and living like the heroines of the songs.",
       "relations": [
-        {"target": "char:game_of_thrones/jon_snow", "relation": "sibling"},
-        {"target": "char:game_of_thrones/arya_stark", "relation": "sibling"},
-        {"target": "char:game_of_thrones/bran_stark", "relation": "sibling"},
-        {"target": "char:game_of_thrones/tyrion_lannister", "relation": "ex_partner"},
-        {"target": "char:game_of_thrones/cersei_lannister", "relation": "enemy"},
-        {"target": "char:game_of_thrones/theon_greyjoy", "relation": "friend"},
-        {"target": "char:game_of_thrones/brienne_of_tarth", "relation": "friend"},
-        {"target": "char:game_of_thrones/sandor_clegane", "relation": "friend"},
-        {"target": "char:game_of_thrones/daenerys_targaryen", "relation": "rival"}
+        { "target": "char:game_of_thrones/jon_snow", "relation": "sibling" },
+        { "target": "char:game_of_thrones/arya_stark", "relation": "sibling" },
+        { "target": "char:game_of_thrones/bran_stark", "relation": "sibling" },
+        { "target": "char:game_of_thrones/tyrion_lannister", "relation": "ex_partner" },
+        { "target": "char:game_of_thrones/cersei_lannister", "relation": "enemy" },
+        { "target": "char:game_of_thrones/theon_greyjoy", "relation": "friend" },
+        { "target": "char:game_of_thrones/brienne_of_tarth", "relation": "friend" },
+        { "target": "char:game_of_thrones/sandor_clegane", "relation": "friend" },
+        { "target": "char:game_of_thrones/daenerys_targaryen", "relation": "rival" }
       ],
       "arcs": [
         {
@@ -723,16 +873,29 @@
           "start_at": "S1E1",
           "span": "S1-S4",
           "situations": [
-            {"id": "coming_of_age", "weight": 1.0},
-            {"id": "grief_and_loss", "weight": 0.7},
-            {"id": "leaving_home", "weight": 0.6},
-            {"id": "identity_and_self_acceptance", "weight": 0.5}
+            { "id": "coming_of_age", "weight": 1.0 },
+            { "id": "grief_and_loss", "weight": 0.7 },
+            { "id": "leaving_home", "weight": 0.6 },
+            { "id": "identity_and_self_acceptance", "weight": 0.5 }
           ],
           "conflicts": ["safety_vs_growth", "truth_vs_protecting_others"],
-          "emotions": {"start": ["hope", "joy"], "middle": ["fear", "grief", "loneliness"], "end": ["determination", "confidence"]},
+          "emotions": {
+            "start": ["hope", "joy"],
+            "middle": ["fear", "grief", "loneliness"],
+            "end": ["determination", "confidence"]
+          },
           "ending_tone": "bittersweet",
           "intensity": "heavy",
-          "warnings": ["abuse", "domestic_violence", "sexual_violence", "death_of_loved_one", "grief", "child_endangerment", "war_and_violence", "graphic_gore"],
+          "warnings": [
+            "abuse",
+            "domestic_violence",
+            "sexual_violence",
+            "death_of_loved_one",
+            "grief",
+            "child_endangerment",
+            "war_and_violence",
+            "graphic_gore"
+          ],
           "example_user_messages": [
             "I was so excited about this relationship and now I'm scared of him but I can't just leave.",
             "I moved to a big city thinking my life would be perfect and it's been the loneliest time of my life.",
@@ -770,16 +933,29 @@
           "start_at": "S5",
           "span": "S5-S6",
           "situations": [
-            {"id": "starting_over", "weight": 0.8},
-            {"id": "standing_up_to_authority", "weight": 0.7},
-            {"id": "identity_and_self_acceptance", "weight": 0.6},
-            {"id": "divorce", "weight": 0.5}
+            { "id": "starting_over", "weight": 0.8 },
+            { "id": "standing_up_to_authority", "weight": 0.7 },
+            { "id": "identity_and_self_acceptance", "weight": 0.6 },
+            { "id": "divorce", "weight": 0.5 }
           ],
           "conflicts": ["revenge_vs_forgiveness", "control_vs_trust"],
-          "emotions": {"start": ["anxiety", "dread"], "middle": ["fear", "shame", "anger"], "end": ["self_respect", "confidence"]},
+          "emotions": {
+            "start": ["anxiety", "dread"],
+            "middle": ["fear", "shame", "anger"],
+            "end": ["self_respect", "confidence"]
+          },
           "ending_tone": "hopeful",
           "intensity": "heavy",
-          "warnings": ["sexual_violence", "domestic_violence", "abuse", "torture", "graphic_gore", "death_of_loved_one", "child_endangerment", "war_and_violence"],
+          "warnings": [
+            "sexual_violence",
+            "domestic_violence",
+            "abuse",
+            "torture",
+            "graphic_gore",
+            "death_of_loved_one",
+            "child_endangerment",
+            "war_and_violence"
+          ],
           "example_user_messages": [
             "I got out of an abusive marriage and I'm still scared he'll find me.",
             "The person who hurt my family is the one who helped me escape, and I don't know how to feel about that.",
@@ -817,16 +993,26 @@
           "start_at": "S7E1",
           "span": "S7-S8",
           "situations": [
-            {"id": "becoming_a_manager", "weight": 0.8},
-            {"id": "sibling_rivalry", "weight": 0.6},
-            {"id": "confidence_struggle", "weight": 0.5},
-            {"id": "responsibility_you_didnt_ask_for", "weight": 0.5}
+            { "id": "becoming_a_manager", "weight": 0.8 },
+            { "id": "sibling_rivalry", "weight": 0.6 },
+            { "id": "confidence_struggle", "weight": 0.5 },
+            { "id": "responsibility_you_didnt_ask_for", "weight": 0.5 }
           ],
           "conflicts": ["control_vs_trust", "loyalty_vs_ambition"],
-          "emotions": {"start": ["anxiety", "determination"], "middle": ["resentment", "self_doubt"], "end": ["confidence", "self_respect"]},
+          "emotions": {
+            "start": ["anxiety", "determination"],
+            "middle": ["resentment", "self_doubt"],
+            "end": ["confidence", "self_respect"]
+          },
           "ending_tone": "hopeful",
           "intensity": "moderate",
-          "warnings": ["war_and_violence", "graphic_gore", "betrayal", "death_of_loved_one", "grief"],
+          "warnings": [
+            "war_and_violence",
+            "graphic_gore",
+            "betrayal",
+            "death_of_loved_one",
+            "grief"
+          ],
           "example_user_messages": [
             "My brother runs the family business and every time I disagree he says I'm undermining him.",
             "My sister came home after years away and she feels like a stranger to me.",

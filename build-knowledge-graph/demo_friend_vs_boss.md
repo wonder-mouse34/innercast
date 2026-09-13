@@ -1,6 +1,6 @@
 # InnerCast — your matches
 
-> *"My friend got into a fight with my boss and now I am not sure who's side to take. Feels horrible."*
+> _"My friend got into a fight with my boss and now I am not sure who's side to take. Feels horrible."_
 
 **What I'm hearing:** two people you care about, or depend on, are pulling in opposite directions,
 and it feels like whichever way you lean, you let someone down. That "stuck in the middle" feeling is
@@ -8,7 +8,8 @@ exhausting, and it's a knot a lot of great characters have had to untie.
 
 ---
 
-## 1. Leslie Higgins — *Ted Lasso* (live-action comedy-drama)
+## 1. Leslie Higgins — _Ted Lasso_ (live-action comedy-drama)
+
 **The yes-man who finds his spine**
 
 Higgins is kind, awkward and jittery around his boss, and fond of the new coach who has just arrived.
@@ -19,6 +20,7 @@ uncomfortable.
 for someone who keeps the peace to finally say where they stand?
 
 **Watch for:**
+
 - How does he justify going along with things to himself?
 - Notice who he feels most at ease with at work, and why.
 - What is he like at home compared with the office?
@@ -28,7 +30,8 @@ for someone who keeps the peace to finally say where they stand?
 
 ---
 
-## 2. Rupert Giles — *Buffy the Vampire Slayer* (live-action, witty supernatural drama)
+## 2. Rupert Giles — _Buffy the Vampire Slayer_ (live-action, witty supernatural drama)
+
 **The mentor who comes to love his student**
 
 He's by-the-book and a little stuffy, answering to an organisation that expects obedience while
@@ -39,6 +42,7 @@ the person you care about pull you in opposite directions? Can you be an authori
 be honest about your own mistakes?
 
 **Watch for:**
+
 - Notice when he chooses the rules and when he chooses her.
 - How does his idea of his job change as the years go by?
 
@@ -47,8 +51,9 @@ be honest about your own mistakes?
 
 ---
 
-## 3. Wildcard — Bolin — *The Legend of Korra* (animated)
-**All in on a cause** · *different world, same knot*
+## 3. Wildcard — Bolin — _The Legend of Korra_ (animated)
+
+**All in on a cause** · _different world, same knot_
 
 He's excited and proud, sure he's doing real good by working for a leader he believes in, and
 frustrated that the people who love him can't see it.
@@ -57,14 +62,15 @@ frustrated that the people who love him can't see it.
 would it take to question someone who gave you purpose?
 
 **Watch for:**
+
 - How does he react when someone he loves challenges what he's seen?
 - What would it take for him to change his mind, and what would it cost him?
 
-**Where to start:** his storyline begins in season 4 of *The Legend of Korra*; best watched from the
+**Where to start:** his storyline begins in season 4 of _The Legend of Korra_; best watched from the
 start of the series. **Feels like:** a hopeful journey, moderately intense.
 **Content notes:** this storyline includes war and violence.
 
 ---
 
-*InnerCast is for entertainment and reflection, not mental-health treatment. If the
-situation at work is affecting your wellbeing, talking it through with someone you trust can help.*
+_InnerCast is for entertainment and reflection, not mental-health treatment. If the
+situation at work is affecting your wellbeing, talking it through with someone you trust can help._
